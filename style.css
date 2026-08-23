@@ -1,6 +1,5 @@
 /* ========================================
    ちいかわ推し活MAP
-   共通スタイル
    ======================================== */
 
 
@@ -57,10 +56,7 @@ body {
 
 
 .site-header h1 {
-  margin:
-    0
-    0
-    6px;
+  margin: 0 0 6px;
 
   font-size: 24px;
   line-height: 1.3;
@@ -87,16 +83,11 @@ body {
   display: flex;
 
   align-items: center;
-
   flex-wrap: wrap;
 
-  gap:
-    10px
-    18px;
+  gap: 10px 18px;
 
-  padding:
-    11px
-    20px;
+  padding: 11px 20px;
 
   background: #ffffff;
 
@@ -108,8 +99,6 @@ body {
 .map-controls-title {
   font-size: 14px;
   font-weight: 700;
-
-  color: #333333;
 }
 
 
@@ -152,14 +141,10 @@ body {
 }
 
 
-/* ちいかわ公式 */
-
 .official-dot {
   background: #ff78aa;
 }
 
-
-/* ナガノ先生 */
 
 .nagano-dot {
   background: #6fae72;
@@ -167,7 +152,7 @@ body {
 
 
 /* ========================================
-   4. メイン
+   4. 地図
    ======================================== */
 
 main {
@@ -182,17 +167,8 @@ main {
 }
 
 
-/* ========================================
-   5. Leaflet地図
-   ======================================== */
-
 #map {
   width: 100%;
-
-  /*
-    ヘッダー + フィルターを除いた
-    画面の大部分を地図にする
-  */
 
   height:
     calc(100vh - 145px);
@@ -204,7 +180,7 @@ main {
 
 
 /* ========================================
-   6. 地図ステータス
+   5. 地図ステータス
    ======================================== */
 
 #map-status {
@@ -224,8 +200,7 @@ main {
     calc(100% - 40px);
 
   padding:
-    10px
-    16px;
+    10px 16px;
 
   background:
     rgba(
@@ -248,9 +223,7 @@ main {
   text-align: center;
 
   box-shadow:
-    0
-    2px
-    8px
+    0 2px 8px
     rgba(
       0,
       0,
@@ -263,12 +236,11 @@ main {
 
 
 /* ========================================
-   7. Leafletカスタムマーカー
+   6. マーカー
    ======================================== */
 
 .spot-marker {
   background: transparent;
-
   border: none;
 }
 
@@ -292,12 +264,8 @@ main {
   font-size: 14px;
   font-weight: 700;
 
-  line-height: 1;
-
   box-shadow:
-    0
-    2px
-    7px
+    0 2px 7px
     rgba(
       0,
       0,
@@ -309,14 +277,10 @@ main {
 }
 
 
-/* ちいかわ公式 */
-
 .spot-pin-official {
   background: #ff78aa;
 }
 
-
-/* ナガノ先生 */
 
 .spot-pin-nagano {
   background: #6fae72;
@@ -324,21 +288,16 @@ main {
 
 
 /* ========================================
-   8. Leafletポップアップ全体
+   7. ポップアップ
    ======================================== */
 
 .spot-popup {
   min-width: 220px;
-
   max-width: 300px;
 
   color: #333333;
 }
 
-
-/* ========================================
-   9. スポットタイトル
-   ======================================== */
 
 .spot-popup-title {
   margin-bottom: 5px;
@@ -350,10 +309,6 @@ main {
 }
 
 
-/* ========================================
-   10. 大分類
-   ======================================== */
-
 .spot-popup-category {
   margin-bottom: 8px;
 
@@ -364,10 +319,6 @@ main {
 }
 
 
-/* ========================================
-   11. スポット属性
-   ======================================== */
-
 .spot-popup-meta {
   margin-bottom: 4px;
 
@@ -377,17 +328,13 @@ main {
 
 
 /* ========================================
-   12. 開催期間
+   8. 開催期間
    ======================================== */
 
 .spot-popup-period {
-  margin:
-    8px
-    0;
+  margin: 8px 0;
 
-  padding:
-    7px
-    8px;
+  padding: 7px 8px;
 
   background: #f6f6f6;
 
@@ -401,17 +348,66 @@ main {
 
 
 /* ========================================
-   13. 入店・入場情報
+   9. 営業・開催情報
+   ======================================== */
+
+.spot-popup-hours {
+  margin: 10px 0;
+
+  padding: 9px 10px;
+
+  background: #eef8ff;
+
+  border:
+    1px solid #cfe6f5;
+
+  border-radius: 8px;
+}
+
+
+.spot-popup-hours-title {
+  margin-bottom: 6px;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.spot-popup-hours-row {
+  margin-bottom: 3px;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+.spot-popup-hours a {
+  display: block;
+
+  margin-top: 6px;
+
+  font-size: 12px;
+}
+
+
+.spot-popup-hours-checked {
+  margin-top: 7px;
+
+  color: #777777;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   10. 入店・入場情報
    ======================================== */
 
 .spot-popup-entry {
-  margin:
-    10px
-    0;
+  margin: 10px 0;
 
-  padding:
-    9px
-    10px;
+  padding: 9px 10px;
 
   background: #fff8e8;
 
@@ -463,8 +459,6 @@ main {
   margin-top: 6px;
 
   font-size: 12px;
-
-  line-height: 1.4;
 }
 
 
@@ -474,29 +468,20 @@ main {
   color: #777777;
 
   font-size: 11px;
-
-  line-height: 1.4;
 }
 
 
 /* ========================================
-   14. 住所
+   11. 住所・説明
    ======================================== */
 
 .spot-popup-address {
-  margin:
-    8px
-    0
-    6px;
+  margin: 8px 0 6px;
 
   font-size: 13px;
   line-height: 1.5;
 }
 
-
-/* ========================================
-   15. 説明
-   ======================================== */
 
 .spot-popup-description {
   margin-bottom: 8px;
@@ -507,7 +492,7 @@ main {
 
 
 /* ========================================
-   16. リンク
+   12. リンク
    ======================================== */
 
 .spot-popup-links {
@@ -523,14 +508,8 @@ main {
 
 .spot-popup-links a {
   font-size: 13px;
-
-  line-height: 1.4;
 }
 
-
-/* ========================================
-   17. リンク共通
-   ======================================== */
 
 .spot-popup a {
   color: #2563a6;
@@ -547,13 +526,11 @@ main {
 
 
 /* ========================================
-   18. Leafletポップアップ調整
+   13. Leafletポップアップ
    ======================================== */
 
 .leaflet-popup-content {
-  margin:
-    14px
-    16px;
+  margin: 14px 16px;
 
   line-height: 1.5;
 }
@@ -565,21 +542,15 @@ main {
 
 
 /* ========================================
-   19. スマホ
+   14. スマホ
    ======================================== */
 
 @media (
   max-width: 600px
 ) {
 
-  /* ------------------------------
-     ヘッダー
-     ------------------------------ */
-
   .site-header {
-    padding:
-      12px
-      14px;
+    padding: 12px 14px;
   }
 
 
@@ -593,18 +564,10 @@ main {
   }
 
 
-  /* ------------------------------
-     フィルター
-     ------------------------------ */
-
   .map-controls {
-    gap:
-      8px
-      14px;
+    gap: 8px 14px;
 
-    padding:
-      9px
-      14px;
+    padding: 9px 14px;
   }
 
 
@@ -620,10 +583,6 @@ main {
   }
 
 
-  /* ------------------------------
-     地図
-     ------------------------------ */
-
   #map {
     height:
       calc(100vh - 175px);
@@ -632,31 +591,20 @@ main {
   }
 
 
-  /* ------------------------------
-     ステータス
-     ------------------------------ */
-
   #map-status {
     top: 8px;
 
     max-width:
       calc(100% - 24px);
 
-    padding:
-      8px
-      12px;
+    padding: 8px 12px;
 
     font-size: 12px;
   }
 
 
-  /* ------------------------------
-     ポップアップ
-     ------------------------------ */
-
   .spot-popup {
     min-width: 190px;
-
     max-width: 240px;
   }
 
@@ -667,16 +615,14 @@ main {
 
 
   .leaflet-popup-content {
-    margin:
-      12px
-      14px;
+    margin: 12px 14px;
   }
 
 }
 
 
 /* ========================================
-   20. かなり小さいスマホ
+   15. 小さいスマホ
    ======================================== */
 
 @media (
