@@ -833,11 +833,216 @@ function getSafeUrl(url) {
 
 // ========================================
 // スポットレイヤー
+// MarkerCluster対応
 // ========================================
 
+
+// ----------------------------------------
+// クラスタアイコン
+// ----------------------------------------
+
+function createClusterIcon(
+  cluster
+) {
+
+  const markers =
+    cluster.getAllChildMarkers();
+
+
+  const count =
+    cluster.getChildCount();
+
+
+  let hasOfficial =
+    false;
+
+
+  let hasNagano =
+    false;
+
+
+  markers.forEach(
+    marker => {
+
+      if (
+        marker.options
+          .spotCategory ===
+        "official"
+      ) {
+
+        hasOfficial =
+          true;
+
+      }
+
+
+      if (
+        marker.options
+          .spotCategory ===
+        "nagano"
+      ) {
+
+        hasNagano =
+          true;
+
+      }
+
+    }
+  );
+
+
+  let colorClass =
+    "cluster-mixed";
+
+
+  if (
+    hasOfficial &&
+    !hasNagano
+  ) {
+
+    colorClass =
+      "cluster-official";
+
+  }
+
+
+  if (
+    hasNagano &&
+    !hasOfficial
+  ) {
+
+    colorClass =
+      "cluster-nagano";
+
+  }
+
+
+  /*
+    件数に応じて
+    少しだけサイズ変更
+  */
+
+  let size =
+    42;
+
+
+  if (
+    count >= 10
+  ) {
+
+    size =
+      48;
+
+  }
+
+
+  if (
+    count >= 30
+  ) {
+
+    size =
+      54;
+
+  }
+
+
+  return L.divIcon({
+
+    className:
+      "marker-cluster-custom",
+
+    html:
+      '<div class="cluster-bubble ' +
+      colorClass +
+      '">' +
+
+      '<span class="cluster-count">' +
+      count +
+      '</span>' +
+
+      '</div>',
+
+    iconSize:
+      [size, size]
+
+  });
+
+}
+
+
+// ----------------------------------------
+// MarkerClusterGroup
+// ----------------------------------------
+
 const spotLayer =
-  L.layerGroup()
-    .addTo(map);
+  L.markerClusterGroup({
+
+    /*
+      クラスタにマウスを乗せた時の
+      青い範囲表示はOFF
+    */
+
+    showCoverageOnHover:
+      false,
+
+
+    /*
+      クラスタをクリックしたら
+      中のピンが見えるところまで拡大
+    */
+
+    zoomToBoundsOnClick:
+      true,
+
+
+    /*
+      最大ズームまで行ったら
+      同一座標のピンを蜘蛛の巣状に展開
+    */
+
+    spiderfyOnMaxZoom:
+      true,
+
+
+    /*
+      同じ建物に5店舗などある時、
+      少し広めにバラす
+    */
+
+    spiderfyDistanceMultiplier:
+      1.35,
+
+
+    /*
+      数字を大きくすると
+      より遠いピンまでまとめる。
+
+      80が標準なので、
+      今回は少し細かめの50px。
+    */
+
+    maxClusterRadius:
+      50,
+
+
+    /*
+      画面外のクラスタを一時的に
+      DOMから外して軽量化
+    */
+
+    removeOutsideVisibleBounds:
+      true,
+
+
+    /*
+      独自デザイン
+    */
+
+    iconCreateFunction:
+      createClusterIcon
+
+  })
+  .addTo(map);
 
 
 const spotRecords = [];
@@ -1630,19 +1835,37 @@ function createSpotRecord(
   }
 
 
-  const marker =
-    L.marker(
-      [
-        spot.lat,
-        spot.lng
-      ],
-      {
-        icon:
-          createSpotIcon(
-            spot.category
-          )
-      }
-    );
+const marker =
+  L.marker(
+    [
+      spot.lat,
+      spot.lng
+    ],
+    {
+      icon:
+        createSpotIcon(
+          spot.category
+        ),
+
+      /*
+        クラスタ色の判定用
+      */
+
+      spotCategory:
+        spot.category,
+
+      /*
+        アクセシビリティ兼
+        マーカー識別用
+      */
+
+      title:
+        spot.name,
+
+      alt:
+        spot.name
+    }
+  );
 
 
   const record = {
