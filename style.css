@@ -1501,3 +1501,60 @@ button {
   }
 
 }
+
+
+/* ==========================================================
+   NAGANO HELP
+   ========================================================== */
+
+.nagano-help-intro {
+  padding: 10px 11px 13px;
+  border: 1px solid #cfe5d6;
+  border-radius: 11px;
+  background: var(--nagano-soft);
+}
+
+.nagano-help-intro h3 {
+  color: #47785a;
+}
+
+.nagano-relation-guide {
+  display: grid;
+  gap: 6px;
+}
+
+.nagano-relation-guide > div {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 8px 9px;
+  border: 1px solid #cfe5d6;
+  border-radius: 9px;
+  background: var(--nagano-soft);
+}
+
+.nagano-relation-guide strong {
+  color: #47785a;
+  font-size: 10px;
+}
+
+.nagano-relation-guide span {
+  color: #5f6f65;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.nagano-example-card {
+  border-color: #cfe5d6;
+  background: var(--nagano-soft);
+}
+
+.nagano-example-card strong {
+  color: #47785a;
+}
+
+.nagano-help-note {
+  color: #47785a !important;
+  background: #e8f5ed;
+}
