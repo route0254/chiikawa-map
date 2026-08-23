@@ -924,6 +924,29 @@ function getRelationTypeLabel(
 }
 
 
+function getEvidenceStatusLabel(
+  evidenceStatus
+) {
+
+  const labels = {
+
+    confirmed:
+      "確定",
+
+    inferred:
+      "推定"
+  };
+
+
+  return (
+    labels[
+      evidenceStatus
+    ] ||
+    "未判定"
+  );
+}
+
+
 function getReservationLabel(
   reservationType
 ) {
@@ -1625,6 +1648,31 @@ function createSpotDetail(
   );
 
 
+  if (
+    spot.category ===
+      "nagano" &&
+    spot.evidenceStatus
+  ) {
+
+    tags.appendChild(
+      createDiv(
+        "spot-tag tag-evidence-" +
+        spot.evidenceStatus,
+
+        (
+          spot.evidenceStatus ===
+          "confirmed"
+            ? "✓ "
+            : "△ "
+        ) +
+        getEvidenceStatusLabel(
+          spot.evidenceStatus
+        )
+      )
+    );
+  }
+
+
   container.appendChild(
     tags
   );
@@ -1662,6 +1710,78 @@ function createSpotDetail(
       )
     )
   );
+
+
+  // ナガセン関連の確度・根拠
+
+  if (
+    spot.category ===
+      "nagano" &&
+    spot.evidenceStatus
+  ) {
+
+    const evidence =
+      createDiv(
+        "spot-info-card spot-evidence-card evidence-" +
+        spot.evidenceStatus
+      );
+
+
+    evidence.appendChild(
+      createDiv(
+        "spot-info-title",
+
+        (
+          spot.evidenceStatus ===
+          "confirmed"
+            ? "✓ ナガセン関連：確定"
+            : "△ ナガセン関連：推定"
+        )
+      )
+    );
+
+
+    if (
+      spot.evidenceNote
+    ) {
+
+      evidence.appendChild(
+        createDiv(
+          "spot-info-note spot-evidence-note",
+          spot.evidenceNote
+        )
+      );
+    }
+
+
+    appendLink(
+      evidence,
+      spot.evidenceUrl,
+      "ナガセン関連の根拠を見る ↗"
+    );
+
+
+    if (
+      spot.evidenceCheckedAt
+    ) {
+
+      evidence.appendChild(
+        createDiv(
+          "spot-info-checked",
+
+          "根拠確認： " +
+          formatDate(
+            spot.evidenceCheckedAt
+          )
+        )
+      );
+    }
+
+
+    container.appendChild(
+      evidence
+    );
+  }
 
 
   // 期間
@@ -2357,6 +2477,12 @@ function spotMatchesFilters(
     );
 
 
+  const evidenceStatuses =
+    getSelectedValues(
+      "filter-nagano-evidence"
+    );
+
+
   if (
     !categories.has(
       spot.category
@@ -2466,6 +2592,17 @@ function spotMatchesFilters(
     if (
       !relations.has(
         spot.relationType
+      )
+    ) {
+
+      return false;
+    }
+
+
+    if (
+      !evidenceStatuses.has(
+        spot.evidenceStatus ||
+        "confirmed"
       )
     ) {
 
