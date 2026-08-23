@@ -9,9 +9,18 @@
     content="width=device-width, initial-scale=1.0"
   >
 
+  <meta
+    name="description"
+    content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問したスポットをまとめる非公式推し活マップです。"
+  >
+
   <title>ちいかわ推し活MAP</title>
 
-  <!-- Leaflet CSS -->
+
+  <!-- ==============================
+       Leaflet CSS
+       ============================== -->
+
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -19,60 +28,122 @@
     crossorigin=""
   >
 
-  <!-- 自作CSS -->
-  <link rel="stylesheet" href="style.css">
+
+  <!-- ==============================
+       自作CSS
+       ============================== -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
 </head>
+
 
 <body>
 
-  <header>
-    <h1>ちいかわ推し活MAP</h1>
+
+  <!-- ==============================
+       ヘッダー
+       ============================== -->
+
+  <header class="site-header">
+
+    <h1>
+      ちいかわ推し活MAP
+    </h1>
+
     <p>
-      ちいかわ関連スポットや、
-      ナガノ先生が紹介したスポットをまとめる非公式ファンサイトです。
+      ちいかわ公式関連スポットや、
+      ナガノ先生が紹介・訪問したスポットをまとめる
+      非公式ファンサイトです。
     </p>
+
   </header>
 
-<section class="map-controls">
 
-  <div class="map-controls-title">
-    表示するスポット
-  </div>
+  <!-- ==============================
+       フィルター
+       ============================== -->
 
-  <label class="filter-option">
+  <section
+    class="map-controls"
+    aria-label="スポット表示フィルター"
+  >
 
-    <input
-      type="checkbox"
-      id="filter-official"
-      checked
-    >
+    <div class="map-controls-title">
+      表示するスポット
+    </div>
 
-    <span class="filter-dot official-dot"></span>
 
-    ちいかわ公式関連
+    <!-- ちいかわ公式 -->
 
-  </label>
+    <label class="filter-option">
 
-  <label class="filter-option">
+      <input
+        type="checkbox"
+        id="filter-official"
+        checked
+      >
 
-    <input
-      type="checkbox"
-      id="filter-nagano"
-      checked
-    >
+      <span
+        class="filter-dot official-dot"
+        aria-hidden="true"
+      ></span>
 
-    <span class="filter-dot nagano-dot"></span>
+      <span>
+        ちいかわ公式関連
+      </span>
 
-    ナガノ先生関連
+    </label>
 
-  </label>
 
-</section>
-  
+    <!-- ナガノ先生 -->
+
+    <label class="filter-option">
+
+      <input
+        type="checkbox"
+        id="filter-nagano"
+        checked
+      >
+
+      <span
+        class="filter-dot nagano-dot"
+        aria-hidden="true"
+      ></span>
+
+      <span>
+        ナガノ先生関連
+      </span>
+
+    </label>
+
+  </section>
+
+
+  <!-- ==============================
+       メイン
+       ============================== -->
+
   <main>
+
     <div id="map-wrapper">
 
-      <div id="map"></div>
+
+      <!-- Leaflet地図 -->
+
+      <div
+        id="map"
+        aria-label="ちいかわ推し活マップ"
+      ></div>
+
+
+      <!--
+        地図サービス障害時などの
+        ステータスメッセージ
+      -->
 
       <div
         id="map-status"
@@ -81,18 +152,29 @@
         hidden
       ></div>
 
+
     </div>
+
   </main>
 
-  <!-- Leaflet JavaScript -->
+
+  <!-- ==============================
+       Leaflet JavaScript
+       ============================== -->
+
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
   ></script>
 
-  <!-- 自作JavaScript -->
+
+  <!-- ==============================
+       自作JavaScript
+       ============================== -->
+
   <script src="app.js"></script>
+
 
 </body>
 
