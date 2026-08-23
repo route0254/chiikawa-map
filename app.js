@@ -1,34 +1,51 @@
-// ========================================
+// ============================================================
 // ちいかわ推し活MAP
-// ========================================
+// ============================================================
 
 
-// ========================================
-// 地図初期設定
-// ========================================
+// ============================================================
+// 基本設定
+// ============================================================
+
+const DATA_AS_OF =
+  "2026-08-24";
+
 
 const INITIAL_POSITION = [
   35.681236,
   139.767125
 ];
 
-const INITIAL_ZOOM = 11;
+
+const INITIAL_ZOOM =
+  11;
 
 
-// ========================================
+// ============================================================
 // タイルプロバイダー
-// ========================================
+// ============================================================
 
 const TILE_PROVIDERS = [
 
   {
-    name: "OpenStreetMap",
+    name:
+      "OpenStreetMap",
 
     url:
       "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
 
     options: {
-      maxZoom: 19,
+
+      /*
+        OSM公式タイルはz19まで。
+        地図自体はz20まで許可し、
+        z20ではz19を拡大表示する。
+      */
+      maxZoom:
+        20,
+
+      maxNativeZoom:
+        19,
 
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">' +
@@ -38,14 +55,16 @@ const TILE_PROVIDERS = [
 
 
   {
-    name: "Stadia Maps",
+    name:
+      "Stadia Maps",
 
     url:
       "https://tiles.stadiamaps.com/tiles/" +
       "alidade_smooth/{z}/{x}/{y}{r}.png",
 
     options: {
-      maxZoom: 20,
+      maxZoom:
+        20,
 
       attribution:
         '&copy; <a href="https://stadiamaps.com/" target="_blank">' +
@@ -62,9 +81,63 @@ const TILE_PROVIDERS = [
 ];
 
 
-// ========================================
+// ============================================================
+// ブランド表示名
+// ============================================================
+
+const BRAND_LABELS = {
+
+  chiikawaland:
+    "ちいかわらんど",
+
+  magical_chiikawa:
+    "まじかるちいかわ",
+
+  mogumogu:
+    "ちいかわもぐもぐ本舗",
+
+  chiikawa_park:
+    "ちいかわパーク",
+
+  chiikawa_restaurant:
+    "ちいかわレストラン",
+
+  chiikawa_bakery:
+    "ちいかわベーカリー",
+
+  ramen_buta:
+    "ちいかわラーメン 豚",
+
+  chiikawa_yaki:
+    "ちいかわ焼き",
+
+  shisa_store:
+    "シーサーのおみやげやさん",
+
+  chiikawa_pocket:
+    "ちいかわぽけっと",
+
+  nagano_market:
+    "ナガノマーケット",
+
+  chiikawa_movie:
+    "映画ちいかわ",
+
+  tokyo_banana:
+    "ちいかわ×東京ばな奈",
+
+  chiikawa:
+    "ちいかわ（その他公式・POP UP）",
+
+  other:
+    "その他"
+
+};
+
+
+// ============================================================
 // 障害試験
-// ========================================
+// ============================================================
 
 const params =
   new URLSearchParams(
@@ -78,25 +151,28 @@ const TILE_TEST_MODE =
   );
 
 
-// ========================================
-// Leaflet地図
-// ========================================
+// ============================================================
+// Leaflet Map
+// MarkerClusterのためMap本体にmaxZoomを明示
+// ============================================================
 
 const map =
   L.map(
     "map",
     {
-      maxZoom: 20
+      maxZoom:
+        20
     }
-  ).setView(
+  )
+  .setView(
     INITIAL_POSITION,
     INITIAL_ZOOM
   );
 
 
-// ========================================
+// ============================================================
 // DOM
-// ========================================
+// ============================================================
 
 const mapStatus =
   document.getElementById(
@@ -107,6 +183,12 @@ const mapStatus =
 const resultCount =
   document.getElementById(
     "result-count"
+  );
+
+
+const dataAsOf =
+  document.getElementById(
+    "data-as-of"
   );
 
 
@@ -134,6 +216,30 @@ const filterReset =
   );
 
 
+const brandFilterList =
+  document.getElementById(
+    "brand-filter-list"
+  );
+
+
+const helpToggle =
+  document.getElementById(
+    "help-toggle"
+  );
+
+
+const helpPanel =
+  document.getElementById(
+    "help-panel"
+  );
+
+
+const helpClose =
+  document.getElementById(
+    "help-close"
+  );
+
+
 const mapContent =
   document.getElementById(
     "map-content"
@@ -158,33 +264,93 @@ const detailClose =
   );
 
 
-// ========================================
+// ============================================================
+// 掲載基準日表示
+// ============================================================
+
+function formatDateJapanese(
+  dateString
+) {
+
+  const parts =
+    dateString.split("-");
+
+
+  if (
+    parts.length !==
+    3
+  ) {
+
+    return dateString;
+  }
+
+
+  return (
+    Number(parts[0]) +
+    "年" +
+    Number(parts[1]) +
+    "月" +
+    Number(parts[2]) +
+    "日"
+  );
+}
+
+
+if (
+  dataAsOf
+) {
+
+  dataAsOf.textContent =
+    formatDateJapanese(
+      DATA_AS_OF
+    );
+}
+
+
+// ============================================================
 // タイル状態
-// ========================================
+// ============================================================
 
-let currentProviderIndex = 0;
-
-let currentTileLayer = null;
-
-let tileErrorTimes = [];
-
-let switchingProvider = false;
-
-let allProvidersFailed = false;
+let currentProviderIndex =
+  0;
 
 
-const TILE_ERROR_THRESHOLD = 3;
+let currentTileLayer =
+  null;
 
-const TILE_ERROR_WINDOW = 5000;
+
+let tileErrorTimes =
+  [];
 
 
-// ========================================
+let switchingProvider =
+  false;
+
+
+let allProvidersFailed =
+  false;
+
+
+const TILE_ERROR_THRESHOLD =
+  3;
+
+
+const TILE_ERROR_WINDOW =
+  5000;
+
+
+// ============================================================
 // 地図ステータス
-// ========================================
+// ============================================================
 
-function showMapStatus(message) {
+function showMapStatus(
+  message
+) {
 
-  if (!mapStatus) {
+  if (
+    !mapStatus
+  ) {
+
     return;
   }
 
@@ -200,7 +366,10 @@ function showMapStatus(message) {
 
 function hideMapStatus() {
 
-  if (!mapStatus) {
+  if (
+    !mapStatus
+  ) {
+
     return;
   }
 
@@ -210,9 +379,9 @@ function hideMapStatus() {
 }
 
 
-// ========================================
+// ============================================================
 // 障害試験用URL
-// ========================================
+// ============================================================
 
 function getTileUrl(
   providerIndex
@@ -233,7 +402,8 @@ function getTileUrl(
   if (
     TILE_TEST_MODE ===
       "osm-fail" &&
-    providerIndex === 0
+    providerIndex ===
+      0
   ) {
 
     return (
@@ -251,9 +421,9 @@ function getTileUrl(
 }
 
 
-// ========================================
+// ============================================================
 // タイル読込
-// ========================================
+// ============================================================
 
 function loadTileProvider(
   providerIndex
@@ -265,7 +435,9 @@ function loadTileProvider(
     ];
 
 
-  if (currentTileLayer) {
+  if (
+    currentTileLayer
+  ) {
 
     currentTileLayer.off();
 
@@ -332,9 +504,9 @@ function loadTileProvider(
 }
 
 
-// ========================================
+// ============================================================
 // タイルエラー
-// ========================================
+// ============================================================
 
 function handleTileError() {
 
@@ -377,9 +549,9 @@ function handleTileError() {
 }
 
 
-// ========================================
+// ============================================================
 // タイルフォールバック
-// ========================================
+// ============================================================
 
 function switchToNextProvider() {
 
@@ -388,7 +560,8 @@ function switchToNextProvider() {
 
 
   const nextProviderIndex =
-    currentProviderIndex + 1;
+    currentProviderIndex +
+    1;
 
 
   if (
@@ -446,9 +619,9 @@ function switchToNextProvider() {
 }
 
 
-// ========================================
-// 日本時間の日付
-// ========================================
+// ============================================================
+// 日本時間
+// ============================================================
 
 function getTodayInJapan() {
 
@@ -506,9 +679,9 @@ function getTodayInJapan() {
 }
 
 
-// ========================================
+// ============================================================
 // 開催状態
-// ========================================
+// ============================================================
 
 function getSpotPeriodStatus(
   spot
@@ -560,15 +733,16 @@ function getSpotPeriodStatus(
 }
 
 
-// ========================================
+// ============================================================
 // ラベル
-// ========================================
+// ============================================================
 
 function getPeriodStatusLabel(
   status
 ) {
 
   const labels = {
+
     permanent:
       "常設",
 
@@ -597,7 +771,9 @@ function formatDate(
   dateString
 ) {
 
-  if (!dateString) {
+  if (
+    !dateString
+  ) {
 
     return "";
   }
@@ -615,6 +791,7 @@ function getCategoryLabel(
 ) {
 
   const labels = {
+
     official:
       "ちいかわ公式関連",
 
@@ -635,6 +812,7 @@ function getPlaceTypeLabel(
 ) {
 
   const labels = {
+
     shop:
       "ショップ",
 
@@ -665,6 +843,7 @@ function getRelationTypeLabel(
 ) {
 
   const officialLabels = {
+
     official_store:
       "公式ショップ",
 
@@ -683,6 +862,7 @@ function getRelationTypeLabel(
 
 
   const naganoLabels = {
+
     introduced:
       "ナガノ先生が紹介",
 
@@ -731,6 +911,7 @@ function getReservationLabel(
 ) {
 
   const labels = {
+
     not_available:
       "予約不可",
 
@@ -762,6 +943,7 @@ function getDefaultEntryLabel(
 ) {
 
   const labels = {
+
     walkin:
       "通常入場",
 
@@ -793,6 +975,7 @@ function getCrowdControlLabel(
 ) {
 
   const labels = {
+
     none:
       null,
 
@@ -825,6 +1008,7 @@ function getCrowdConditionLabel(
 ) {
 
   const labels = {
+
     none:
       "",
 
@@ -849,13 +1033,31 @@ function getCrowdConditionLabel(
 }
 
 
-// ========================================
+function getBrandLabel(
+  brand
+) {
+
+  return (
+    BRAND_LABELS[
+      brand
+    ] ||
+    brand ||
+    "その他"
+  );
+}
+
+
+// ============================================================
 // URLチェック
-// ========================================
+// ============================================================
 
-function getSafeUrl(url) {
+function getSafeUrl(
+  url
+) {
 
-  if (!url) {
+  if (
+    !url
+  ) {
 
     return null;
   }
@@ -877,7 +1079,9 @@ function getSafeUrl(url) {
       return parsed.href;
     }
 
-  } catch (error) {
+  } catch (
+    error
+  ) {
 
     console.warn(
       "不正なURLを無視しました:",
@@ -890,9 +1094,9 @@ function getSafeUrl(url) {
 }
 
 
-// ========================================
+// ============================================================
 // クラスタアイコン
-// ========================================
+// ============================================================
 
 function createClusterIcon(
   cluster
@@ -971,7 +1175,8 @@ function createClusterIcon(
 
 
   if (
-    count >= 10
+    count >=
+    10
   ) {
 
     size =
@@ -980,7 +1185,8 @@ function createClusterIcon(
 
 
   if (
-    count >= 30
+    count >=
+    30
   ) {
 
     size =
@@ -997,11 +1203,9 @@ function createClusterIcon(
       '<div class="cluster-bubble ' +
       colorClass +
       '">' +
-
       '<span class="cluster-count">' +
       count +
       "</span>" +
-
       "</div>",
 
     iconSize:
@@ -1011,12 +1215,10 @@ function createClusterIcon(
 }
 
 
-// ========================================
+// ============================================================
 // スポットレイヤー
-//
-// MarkerClusterが利用できればクラスタ。
-// 読み込めない場合は通常LayerGroup。
-// ========================================
+// MarkerCluster失敗時は通常LayerGroupへ退避
+// ============================================================
 
 let spotLayer;
 
@@ -1087,9 +1289,9 @@ let selectedRecord =
   null;
 
 
-// ========================================
-// 全スポットを初期表示範囲に収める
-// ========================================
+// ============================================================
+// 全スポットを初期表示
+// ============================================================
 
 function fitMapToAllSpots() {
 
@@ -1176,9 +1378,9 @@ function fitMapToAllSpots() {
 }
 
 
-// ========================================
+// ============================================================
 // 通常ピン
-// ========================================
+// ============================================================
 
 function createSpotIcon(
   category
@@ -1229,11 +1431,9 @@ function createSpotIcon(
       '<div class="spot-pin ' +
       className +
       '">' +
-
       "<span>" +
       label +
       "</span>" +
-
       "</div>",
 
     iconSize:
@@ -1246,13 +1446,14 @@ function createSpotIcon(
 }
 
 
-// ========================================
+// ============================================================
 // DOM生成補助
-// ========================================
+// ============================================================
 
 function createDiv(
   className,
-  text = null
+  text =
+    null
 ) {
 
   const element =
@@ -1291,7 +1492,9 @@ function appendLink(
     );
 
 
-  if (!safeUrl) {
+  if (
+    !safeUrl
+  ) {
 
     return;
   }
@@ -1325,9 +1528,9 @@ function appendLink(
 }
 
 
-// ========================================
+// ============================================================
 // 詳細DOM
-// ========================================
+// ============================================================
 
 function createSpotDetail(
   spot
@@ -1409,6 +1612,25 @@ function createSpotDetail(
   );
 
 
+  // シリーズ
+
+  if (
+    spot.brand
+  ) {
+
+    container.appendChild(
+      createDiv(
+        "spot-relation",
+
+        "✨ " +
+        getBrandLabel(
+          spot.brand
+        )
+      )
+    );
+  }
+
+
   // 関係性
 
   container.appendChild(
@@ -1487,9 +1709,7 @@ function createSpotDetail(
   );
 
 
-  // ========================================
-  // 営業・開催情報
-  // ========================================
+  // 営業情報
 
   if (
     spot.hoursText ||
@@ -1572,9 +1792,7 @@ function createSpotDetail(
   }
 
 
-  // ========================================
-  // 入場
-  // ========================================
+  // 入場情報
 
   const entry =
     createDiv(
@@ -1745,9 +1963,9 @@ function createSpotDetail(
 }
 
 
-// ========================================
+// ============================================================
 // 詳細表示
-// ========================================
+// ============================================================
 
 function showSpotDetail(
   record
@@ -1810,9 +2028,9 @@ function showSpotDetail(
 }
 
 
-// ========================================
-// 詳細を閉じる
-// ========================================
+// ============================================================
+// 詳細閉じる
+// ============================================================
 
 function closeSpotDetail() {
 
@@ -1861,9 +2079,9 @@ function closeSpotDetail() {
 }
 
 
-// ========================================
+// ============================================================
 // マーカー生成
-// ========================================
+// ============================================================
 
 function createSpotRecord(
   spot
@@ -1950,9 +2168,122 @@ function createSpotRecord(
 }
 
 
-// ========================================
+// ============================================================
+// ブランドフィルターをspots.jsonから自動生成
+// ============================================================
+
+function renderBrandFilters() {
+
+  if (
+    !brandFilterList
+  ) {
+
+    return;
+  }
+
+
+  brandFilterList.replaceChildren();
+
+
+  const brands =
+    Array.from(
+      new Set(
+        spotRecords.map(
+          record =>
+            record.spot.brand ||
+            "other"
+        )
+      )
+    )
+    .sort(
+      (a, b) =>
+        getBrandLabel(a)
+          .localeCompare(
+            getBrandLabel(b),
+            "ja"
+          )
+    );
+
+
+  brands.forEach(
+    brand => {
+
+      const label =
+        document.createElement(
+          "label"
+        );
+
+
+      label.className =
+        "filter-chip";
+
+
+      const input =
+        document.createElement(
+          "input"
+        );
+
+
+      input.type =
+        "checkbox";
+
+
+      input.className =
+        "spot-filter brand-filter";
+
+
+      input.name =
+        "filter-brand";
+
+
+      input.value =
+        brand;
+
+
+      input.checked =
+        true;
+
+
+      const span =
+        document.createElement(
+          "span"
+        );
+
+
+      span.textContent =
+        getBrandLabel(
+          brand
+        );
+
+
+      label.appendChild(
+        input
+      );
+
+
+      label.appendChild(
+        span
+      );
+
+
+      brandFilterList.appendChild(
+        label
+      );
+
+
+      input.addEventListener(
+        "change",
+        updateSpotFilters
+      );
+
+    }
+  );
+}
+
+
+// ============================================================
 // フィルター値
-// ========================================
+// ============================================================
 
 function getSelectedValues(
   name
@@ -1976,9 +2307,9 @@ function getSelectedValues(
 }
 
 
-// ========================================
+// ============================================================
 // フィルター判定
-// ========================================
+// ============================================================
 
 function spotMatchesFilters(
   spot
@@ -2049,6 +2380,37 @@ function spotMatchesFilters(
   }
 
 
+  // ブランドフィルター
+  const brandInputs =
+    document.querySelectorAll(
+      'input[name="filter-brand"]'
+    );
+
+
+  if (
+    brandInputs.length >
+    0
+  ) {
+
+    const brands =
+      getSelectedValues(
+        "filter-brand"
+      );
+
+
+    if (
+      !brands.has(
+        spot.brand ||
+        "other"
+      )
+    ) {
+
+      return false;
+    }
+  }
+
+
+  // 公式関連
   if (
     spot.category ===
     "official"
@@ -2071,6 +2433,7 @@ function spotMatchesFilters(
   }
 
 
+  // ナガノ先生関連
   if (
     spot.category ===
     "nagano"
@@ -2097,9 +2460,9 @@ function spotMatchesFilters(
 }
 
 
-// ========================================
+// ============================================================
 // フィルター反映
-// ========================================
+// ============================================================
 
 function updateSpotFilters() {
 
@@ -2172,9 +2535,9 @@ function updateSpotFilters() {
 }
 
 
-// ========================================
-// フィルター開閉
-// ========================================
+// ============================================================
+// パネル開閉
+// ============================================================
 
 function setFilterPanelOpen(
   open
@@ -2186,6 +2549,16 @@ function setFilterPanelOpen(
   ) {
 
     return;
+  }
+
+
+  if (
+    open
+  ) {
+
+    setHelpPanelOpen(
+      false
+    );
   }
 
 
@@ -2206,9 +2579,49 @@ function setFilterPanelOpen(
 }
 
 
-// ========================================
+function setHelpPanelOpen(
+  open
+) {
+
+  if (
+    !helpPanel ||
+    !helpToggle
+  ) {
+
+    return;
+  }
+
+
+  if (
+    open
+  ) {
+
+    setFilterPanelOpen(
+      false
+    );
+  }
+
+
+  helpPanel.hidden =
+    !open;
+
+
+  helpToggle.setAttribute(
+    "aria-expanded",
+    String(open)
+  );
+
+
+  helpToggle.classList.toggle(
+    "is-active",
+    open
+  );
+}
+
+
+// ============================================================
 // フィルターリセット
-// ========================================
+// ============================================================
 
 function resetFilters() {
 
@@ -2230,9 +2643,9 @@ function resetFilters() {
 }
 
 
-// ========================================
-// spots.json読込
-// ========================================
+// ============================================================
+// spots.json
+// ============================================================
 
 async function loadSpots() {
 
@@ -2292,8 +2705,6 @@ async function loadSpots() {
           );
 
 
-        // 終了済みは地図に出さない
-
         if (
           periodStatus ===
           "ended"
@@ -2335,10 +2746,15 @@ async function loadSpots() {
     );
 
 
+    // データに合わせてブランドフィルターを生成
+    renderBrandFilters();
+
+
+    // 全チェック状態で初期表示
     updateSpotFilters();
 
 
-    // 全スポットが画面に入るようにする
+    // 全国の表示対象スポットを収める
     fitMapToAllSpots();
 
 
@@ -2371,7 +2787,9 @@ async function loadSpots() {
       );
     }
 
-  } catch (error) {
+  } catch (
+    error
+  ) {
 
     console.error(
       "スポットデータの読み込みに失敗しました。",
@@ -2391,9 +2809,9 @@ async function loadSpots() {
 }
 
 
-// ========================================
-// フィルターイベント
-// ========================================
+// ============================================================
+// 静的フィルターのイベント
+// ============================================================
 
 document
   .querySelectorAll(
@@ -2410,6 +2828,10 @@ document
     }
   );
 
+
+// ============================================================
+// ボタン
+// ============================================================
 
 filterToggle
   ?.addEventListener(
@@ -2444,6 +2866,32 @@ filterReset
   );
 
 
+helpToggle
+  ?.addEventListener(
+    "click",
+    () => {
+
+      setHelpPanelOpen(
+        helpPanel.hidden
+      );
+
+    }
+  );
+
+
+helpClose
+  ?.addEventListener(
+    "click",
+    () => {
+
+      setHelpPanelOpen(
+        false
+      );
+
+    }
+  );
+
+
 detailClose
   ?.addEventListener(
     "click",
@@ -2451,6 +2899,7 @@ detailClose
   );
 
 
+// ESC
 document.addEventListener(
   "keydown",
   event => {
@@ -2479,6 +2928,20 @@ document.addEventListener(
 
 
     if (
+      helpPanel &&
+      !helpPanel.hidden
+    ) {
+
+      setHelpPanelOpen(
+        false
+      );
+
+
+      return;
+    }
+
+
+    if (
       detailPanel &&
       !detailPanel.hidden
     ) {
@@ -2490,9 +2953,9 @@ document.addEventListener(
 );
 
 
-// ========================================
+// ============================================================
 // 起動
-// ========================================
+// ============================================================
 
 loadTileProvider(
   0
