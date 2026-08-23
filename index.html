@@ -14,7 +14,7 @@
     content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所をまとめる非公式の推し活マップです。"
   >
 
-  <title>ちいかわ推し活MAP</title>
+  <title>ちいかわ推し活（ちい活）MAP</title>
 
   <link
     rel="icon"
@@ -56,7 +56,7 @@
       <div class="site-header-top">
 
         <span class="site-kicker">
-          OSHIKATSU MAP
+          CHIIKATSU MAP
         </span>
 
         <span class="unofficial-badge">
@@ -66,7 +66,7 @@
       </div>
 
       <h1>
-        ちいかわ推し活MAP
+        ちいかわ推し活（ちい活）MAP
       </h1>
 
       <p class="site-description">
@@ -156,9 +156,9 @@
           <button
             type="button"
             class="toolbar-button"
-            id="help-toggle"
+            id="official-help-toggle"
             aria-expanded="false"
-            aria-controls="help-panel"
+            aria-controls="official-help-panel"
           >
             <span
               class="help-button-icon"
@@ -167,7 +167,25 @@
               ?
             </span>
 
-            使い方
+            公式関連の使い方
+          </button>
+
+
+          <button
+            type="button"
+            class="toolbar-button"
+            id="nagano-help-toggle"
+            aria-expanded="false"
+            aria-controls="nagano-help-panel"
+          >
+            <span
+              class="help-button-icon"
+              aria-hidden="true"
+            >
+              ?
+            </span>
+
+            ナガセン関連の使い方
           </button>
 
 
@@ -657,11 +675,11 @@
 
 
           <!-- ==============================================
-               HELP PANEL
+               OFFICIAL HELP PANEL
                ============================================== -->
 
           <aside
-            id="help-panel"
+            id="official-help-panel"
             class="overlay-panel help-panel"
             hidden
           >
@@ -671,11 +689,11 @@
               <div>
 
                 <div class="panel-kicker">
-                  GUIDE
+                  OFFICIAL GUIDE
                 </div>
 
                 <h2>
-                  使い方・掲載基準
+                  公式関連の使い方
                 </h2>
 
               </div>
@@ -684,8 +702,8 @@
               <button
                 type="button"
                 class="icon-button"
-                id="help-close"
-                aria-label="使い方を閉じる"
+                id="official-help-close"
+                aria-label="公式関連の使い方を閉じる"
               >
                 ×
               </button>
@@ -698,18 +716,17 @@
               <section class="help-section">
 
                 <h3>
-                  このMAPについて
+                  ちいかわ公式関連について
                 </h3>
 
                 <p>
-                  ちいかわ公式関連スポットと、
-                  ナガノ先生が紹介・訪問した場所をまとめる
-                  非公式のファンMAPです。
+                  ちいかわらんどなどの公式ショップ、常設施設、
+                  公式コラボ、POP UP、イベント・展示などをまとめています。
                 </p>
 
                 <p>
-                  期間限定スポットは、
-                  終了日を過ぎると自動的に地図から非表示になります。
+                  期間限定スポットは、終了日を過ぎると
+                  自動的に地図から非表示になります。
                 </p>
 
               </section>
@@ -718,49 +735,22 @@
               <section class="help-section">
 
                 <h3>
-                  絞り込みの使い方
+                  絞り込みの例
                 </h3>
 
-
                 <div class="example-card">
-
-                  <strong>
-                    ちいかわらんどだけ探したい
-                  </strong>
-
-                  <span>
-                    「シリーズ・施設」→「ちいかわらんど」
-                  </span>
-
+                  <strong>ちいかわらんどだけ探したい</strong>
+                  <span>「シリーズ・施設」→「ちいかわらんど」</span>
                 </div>
 
-
                 <div class="example-card">
-
-                  <strong>
-                    期間限定POP UPを探したい
-                  </strong>
-
-                  <span>
-                    「公式関連の種類」→「POP UP」
-                    ＋「開催期間」→「期間限定」
-                  </span>
-
+                  <strong>期間限定POP UPを探したい</strong>
+                  <span>「公式関連の種類」→「POP UP」＋「開催期間」→「期間限定」</span>
                 </div>
 
-
                 <div class="example-card">
-
-                  <strong>
-                    ナガノ先生紹介の飲食店を探したい
-                  </strong>
-
-                  <span>
-                    「関連」→「ナガノ先生」
-                    ＋「スポットの種類」→「グルメ」
-                    ＋「紹介」
-                  </span>
-
+                  <strong>公式の飲食スポットだけ探したい</strong>
+                  <span>「関連」→「ちいかわ公式」＋「スポットの種類」→「グルメ」</span>
                 </div>
 
               </section>
@@ -773,51 +763,18 @@
                 </h3>
 
                 <dl class="help-definition-list">
-
-                  <div>
-                    <dt>関連</dt>
-                    <dd>
-                      「ちいかわ公式」と
-                      「ナガノ先生本人の紹介・訪問」を分けます。
-                    </dd>
-                  </div>
-
-
-                  <div>
-                    <dt>スポットの種類</dt>
-                    <dd>
-                      ショップ、飲食店、おでかけ施設など、
-                      その場所で何をするかで分類しています。
-                    </dd>
-                  </div>
-
-
                   <div>
                     <dt>シリーズ・施設</dt>
-                    <dd>
-                      ちいかわらんど、ちいかわパーク、
-                      ラーメン 豚など、特定シリーズだけを探せます。
-                    </dd>
+                    <dd>ちいかわらんど、ちいかわパーク、ラーメン 豚など、特定シリーズだけを探せます。</dd>
                   </div>
-
-
                   <div>
                     <dt>公式関連の種類</dt>
-                    <dd>
-                      常設ショップ、公式施設、コラボ、
-                      POP UP、イベント・展示を分類しています。
-                    </dd>
+                    <dd>公式ショップ、公式施設、コラボ、POP UP、イベント・展示に分類しています。</dd>
                   </div>
-
-
                   <div>
                     <dt>開催期間</dt>
-                    <dd>
-                      常設か期間限定かを分類しています。
-                      終了済みの期間限定スポットは通常表示されません。
-                    </dd>
+                    <dd>常設か期間限定かを分類しています。終了済みの期間限定スポットは通常表示されません。</dd>
                   </div>
-
                 </dl>
 
               </section>
@@ -825,86 +782,148 @@
 
               <section class="help-section">
 
-                <h3>
-                  予約表示の考え方
-                </h3>
+                <h3>予約表示の考え方</h3>
 
                 <div class="reservation-guide">
-
-                  <div>
-                    <strong>予約不可</strong>
-                    <span>
-                      事前予約制度なし。
-                      通常入場や整理券方式の場合があります。
-                    </span>
-                  </div>
-
-
-                  <div>
-                    <strong>予約可</strong>
-                    <span>
-                      事前予約できるものの、
-                      原則として予約なしでも利用できます。
-                    </span>
-                  </div>
-
-
-                  <div>
-                    <strong>予約優先</strong>
-                    <span>
-                      予約者が優先。
-                      空きがあれば予約なしでも利用できる場合があります。
-                    </span>
-                  </div>
-
-
-                  <div>
-                    <strong>要予約</strong>
-                    <span>
-                      原則として事前予約・チケットなどが必要です。
-                    </span>
-                  </div>
-
-
-                  <div>
-                    <strong>要確認</strong>
-                    <span>
-                      日付や混雑状況などで運用が変わるため、
-                      公式の最新案内確認をおすすめします。
-                    </span>
-                  </div>
-
+                  <div><strong>予約不可</strong><span>事前予約制度なし。通常入場や整理券方式の場合があります。</span></div>
+                  <div><strong>予約可</strong><span>事前予約できますが、原則として予約なしでも利用できます。</span></div>
+                  <div><strong>予約優先</strong><span>予約者が優先。空きがあれば予約なしでも利用できる場合があります。</span></div>
+                  <div><strong>要予約</strong><span>原則として事前予約・チケットなどが必要です。</span></div>
+                  <div><strong>要確認</strong><span>日付や混雑状況などで運用が変わるため、最新案内の確認をおすすめします。</span></div>
                 </div>
-
 
                 <p class="help-important">
                   ※「予約」と「入場制限」は別に管理しています。
-                  たとえば「予約不可」の店舗でも、
-                  混雑時に整理券が必要になる場合があります。
+                  「予約不可」の店舗でも、混雑時に整理券などが必要になる場合があります。
                 </p>
 
               </section>
 
 
               <section class="help-section">
-
-                <h3>
-                  掲載情報について
-                </h3>
-
+                <h3>掲載情報について</h3>
                 <p>
                   営業時間・開催期間・予約・入場方法などは、
                   原則として公式サイト・施設公式情報を基準に整理しています。
+                  訪問前には各スポットの最新情報もご確認ください。
                 </p>
+              </section>
 
+            </div>
+
+          </aside>
+
+
+          <!-- ==============================================
+               NAGANO HELP PANEL
+               ============================================== -->
+
+          <aside
+            id="nagano-help-panel"
+            class="overlay-panel help-panel"
+            hidden
+          >
+
+            <div class="overlay-panel-header">
+
+              <div>
+                <div class="panel-kicker">NAGANO GUIDE</div>
+                <h2>ナガセン関連の使い方</h2>
+              </div>
+
+              <button
+                type="button"
+                class="icon-button"
+                id="nagano-help-close"
+                aria-label="ナガセン関連の使い方を閉じる"
+              >
+                ×
+              </button>
+
+            </div>
+
+
+            <div class="overlay-panel-body help-body">
+
+              <section class="help-section nagano-help-intro">
+                <h3>ナガセン関連とは？</h3>
                 <p>
-                  ただし、臨時変更・売切れ・当日の混雑状況などを
-                  リアルタイム保証するものではありません。
-                  実際に訪問する前に、各スポットの
-                  「最新の営業時間」「最新の入場情報」「情報元」もご確認ください。
+                  ナガノ先生本人が実際に訪れた場所、SNSや作品などで紹介したお店、
+                  そのほかナガノ先生と明確なゆかりがある場所をまとめるカテゴリです。
                 </p>
+                <p>
+                  「ナガノマーケット」は公式ショップのため、こちらではなく
+                  「ちいかわ公式」側に分類しています。
+                </p>
+              </section>
+
+
+              <section class="help-section">
+                <h3>3つの分類</h3>
+
+                <div class="nagano-relation-guide">
+                  <div>
+                    <strong>紹介</strong>
+                    <span>本人のX・Instagram・作品などで、店や場所を明確に紹介したもの。</span>
+                  </div>
+                  <div>
+                    <strong>訪問</strong>
+                    <span>本人が実際に訪れたことを、本人投稿・作品・公式媒体などから確認できるもの。</span>
+                  </div>
+                  <div>
+                    <strong>ゆかり・関連</strong>
+                    <span>キャラクターデザインなど、本人との明確な関係が確認できる場所。</span>
+                  </div>
+                </div>
+              </section>
+
+
+              <section class="help-section">
+                <h3>MOGUMOGUなどの作品について</h3>
+                <p>
+                  『MOGUMOGU食べ歩きくま』など、ナガノ先生自身の旅行・食体験が
+                  反映されている作品については、店名や場所を十分に確認できる場合に
+                  「訪問」として掲載します。
+                </p>
+                <p>
+                  絵やメニューだけからファンが推定した店舗など、根拠が弱いものは
+                  原則として掲載せず、調査候補として扱います。
+                </p>
+              </section>
+
+
+              <section class="help-section">
+                <h3>情報の確認方針</h3>
+                <p>
+                  本人のX・Instagram、出版社やイベント等の公式媒体、
+                  店舗側の公式な言及など、一次情報または信頼性の高い情報を優先します。
+                </p>
+                <p>
+                  「ナガノ先生おすすめらしい」といった出典不明の情報だけでは掲載しません。
+                  また、閉店・移転・商品終了なども可能な範囲で確認します。
+                </p>
+              </section>
+
+
+              <section class="help-section">
+                <h3>絞り込みの例</h3>
+
+                <div class="example-card nagano-example-card">
+                  <strong>ナガノ先生が訪れた飲食店を探したい</strong>
+                  <span>「関連」→「ナガノ先生」＋「スポットの種類」→「グルメ」＋「ナガノ先生関連の種類」→「訪問」</span>
+                </div>
+
+                <div class="example-card nagano-example-card">
+                  <strong>紹介された場所をまとめて見たい</strong>
+                  <span>「関連」→「ナガノ先生」＋「ナガノ先生関連の種類」→「紹介」</span>
+                </div>
 
               </section>
+
+              <p class="help-important nagano-help-note">
+                ナガセン関連は「聖地っぽい」という推測ではなく、
+                ナガノ先生との関係を確認できたスポットを中心に掲載します。
+              </p>
 
             </div>
 
@@ -915,7 +934,7 @@
 
           <div
             id="map"
-            aria-label="ちいかわ推し活マップ"
+            aria-label="ちいかわ推し活（ちい活）マップ"
           ></div>
 
 
