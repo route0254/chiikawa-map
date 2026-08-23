@@ -168,7 +168,6 @@ button {
   background: var(--surface);
 
   border: 1px solid var(--line);
-
   border-radius: var(--radius-large);
 
   box-shadow: var(--shadow);
@@ -200,6 +199,7 @@ button {
 .map-toolbar-left,
 .map-legend {
   display: flex;
+
   align-items: center;
 
   gap: 10px;
@@ -300,7 +300,7 @@ button {
 
 
 /* ========================================
-   地図フレーム
+   地図
    ======================================== */
 
 #map-wrapper {
@@ -314,11 +314,6 @@ button {
 
 #map {
   width: 100%;
-
-  /*
-    PCでもフル画面にはしない。
-    画面に応じて自然に伸縮。
-  */
 
   height:
     clamp(
@@ -370,7 +365,7 @@ button {
 
 
 /* ========================================
-   フィルターパネル
+   フィルター
    ======================================== */
 
 .filter-panel {
@@ -395,7 +390,8 @@ button {
   border: 1px solid var(--line);
   border-radius: 18px;
 
-  background: rgba(255, 255, 255, 0.98);
+  background:
+    rgba(255, 255, 255, 0.98);
 
   box-shadow:
     0 16px 36px
@@ -603,7 +599,7 @@ button {
 
 
 /* ========================================
-   マーカー
+   通常マーカー
    ======================================== */
 
 .spot-marker {
@@ -679,7 +675,106 @@ button {
 
 
 /* ========================================
-   詳細パネル
+   MarkerCluster
+   ======================================== */
+
+.marker-cluster-custom {
+  background: transparent !important;
+
+  border: 0 !important;
+}
+
+
+.cluster-bubble {
+  display: grid;
+
+  place-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 3px solid #ffffff;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  box-shadow:
+    0 6px 18px
+    rgba(60, 44, 51, 0.28);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.marker-cluster-custom:hover
+.cluster-bubble {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 8px 22px
+    rgba(60, 44, 51, 0.34);
+}
+
+
+.cluster-official {
+  background:
+    linear-gradient(
+      145deg,
+      #ff9bc1,
+      #f477a8
+    );
+}
+
+
+.cluster-nagano {
+  background:
+    linear-gradient(
+      145deg,
+      #91cda3,
+      #71ad86
+    );
+}
+
+
+.cluster-mixed {
+  background:
+    linear-gradient(
+      135deg,
+      #f477a8 0%,
+      #8c7bf3 50%,
+      #71ad86 100%
+    );
+}
+
+
+.cluster-count {
+  transform: translateY(-0.5px);
+}
+
+
+/* ========================================
+   Spiderfy
+   ======================================== */
+
+.leaflet-cluster-spider-leg {
+  stroke: #8d8387;
+
+  stroke-width: 1.5;
+
+  stroke-opacity: 0.65;
+}
+
+
+/* ========================================
+   詳細
    ======================================== */
 
 .spot-detail-panel {
@@ -941,7 +1036,7 @@ button {
 
 
 /* ========================================
-   タブレット・スマホ
+   タブレット
    ======================================== */
 
 @media (max-width: 899px) {
@@ -950,11 +1045,6 @@ button {
     grid-template-columns: minmax(0, 1fr);
   }
 
-
-  /*
-    スマホでは詳細を地図の下へ。
-    地図上には文字を被せない。
-  */
 
   .spot-detail-panel {
     max-height: none;
@@ -1013,11 +1103,6 @@ button {
     padding: 7px 9px;
   }
 
-
-  /*
-    スマホでは地図を画面の半分程度。
-    ドン！と全面を占領しない。
-  */
 
   #map {
     height:
@@ -1093,127 +1178,4 @@ button {
       );
   }
 
-}
-
-/* ========================================
-   MarkerCluster
-   ======================================== */
-
-
-/*
-  MarkerCluster標準の背景を消して、
-  独自クラスタだけ表示
-*/
-
-.marker-cluster-custom {
-  background: transparent !important;
-
-  border: 0 !important;
-}
-
-
-/* クラスタ本体 */
-
-.cluster-bubble {
-  display: grid;
-
-  place-items: center;
-
-  width: 100%;
-  height: 100%;
-
-  border:
-    3px solid #ffffff;
-
-  border-radius:
-    50%;
-
-  color:
-    #ffffff;
-
-  font-size:
-    13px;
-
-  font-weight:
-    800;
-
-  line-height:
-    1;
-
-  box-shadow:
-    0 6px 18px
-    rgba(
-      60,
-      44,
-      51,
-      0.28
-    );
-
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
-}
-
-
-.marker-cluster-custom:hover
-.cluster-bubble {
-  transform:
-    scale(1.08);
-
-  box-shadow:
-    0 8px 22px
-    rgba(
-      60,
-      44,
-      51,
-      0.34
-    );
-}
-
-
-/* 公式のみのクラスタ */
-
-.cluster-official {
-  background:
-    linear-gradient(
-      145deg,
-      #ff9bc1,
-      #f477a8
-    );
-}
-
-
-/* ナガノ先生関連のみ */
-
-.cluster-nagano {
-  background:
-    linear-gradient(
-      145deg,
-      #91cda3,
-      #71ad86
-    );
-}
-
-
-/*
-  公式＋ナガノ先生が
-  混ざっているクラスタ
-*/
-
-.cluster-mixed {
-  background:
-    linear-gradient(
-      135deg,
-      #f477a8 0%,
-      #8c7bf3 50%,
-      #71ad86 100%
-    );
-}
-
-
-/* クラスタ内の件数 */
-
-.cluster-count {
-  transform:
-    translateY(-0.5px);
 }
