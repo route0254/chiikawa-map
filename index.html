@@ -16,6 +16,8 @@
 
   <title>ちいかわ推し活MAP</title>
 
+
+  <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -23,12 +25,15 @@
     crossorigin=""
   >
 
+
   <!-- Leaflet MarkerCluster CSS -->
   <link
     rel="stylesheet"
-    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
   >
 
+
+  <!-- 自作CSS -->
   <link
     rel="stylesheet"
     href="style.css"
@@ -86,9 +91,7 @@
     <section class="map-card">
 
 
-      <!-- ========================================
-           ツールバー
-           ======================================== -->
+      <!-- ツールバー -->
 
       <div class="map-toolbar">
 
@@ -119,12 +122,16 @@
         </div>
 
 
-        <div class="map-legend">
+        <div
+          class="map-legend"
+          aria-label="ピンの凡例"
+        >
 
           <span class="legend-item">
 
             <span
               class="legend-dot official-dot"
+              aria-hidden="true"
             ></span>
 
             公式
@@ -136,6 +143,7 @@
 
             <span
               class="legend-dot nagano-dot"
+              aria-hidden="true"
             ></span>
 
             ナガノ先生
@@ -164,7 +172,7 @@
         <div id="map-wrapper">
 
 
-          <!-- フィルターパネル -->
+          <!-- フィルター -->
 
           <aside
             id="filter-panel"
@@ -210,7 +218,6 @@
                   関連
                 </legend>
 
-
                 <div class="filter-chip-list">
 
                   <label class="filter-chip">
@@ -251,7 +258,7 @@
               </fieldset>
 
 
-              <!-- スポット種類 -->
+              <!-- スポットの種類 -->
 
               <fieldset class="filter-group">
 
@@ -259,11 +266,9 @@
                   スポットの種類
                 </legend>
 
-
                 <div class="filter-chip-list">
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -271,16 +276,11 @@
                       value="shop"
                       checked
                     >
-
-                    <span>
-                      ショップ
-                    </span>
-
+                    <span>ショップ</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -288,16 +288,11 @@
                       value="food"
                       checked
                     >
-
-                    <span>
-                      グルメ
-                    </span>
-
+                    <span>グルメ</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -305,16 +300,11 @@
                       value="spot"
                       checked
                     >
-
-                    <span>
-                      おでかけ
-                    </span>
-
+                    <span>おでかけ</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -322,16 +312,11 @@
                       value="lodging"
                       checked
                     >
-
-                    <span>
-                      宿泊
-                    </span>
-
+                    <span>宿泊</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -339,11 +324,7 @@
                       value="other"
                       checked
                     >
-
-                    <span>
-                      その他
-                    </span>
-
+                    <span>その他</span>
                   </label>
 
                 </div>
@@ -362,11 +343,9 @@
                   ちいかわ公式関連の種類
                 </summary>
 
-
                 <div class="filter-chip-list filter-chip-list-inner">
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -374,16 +353,11 @@
                       value="official_store"
                       checked
                     >
-
-                    <span>
-                      公式ショップ
-                    </span>
-
+                    <span>公式ショップ</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -391,16 +365,11 @@
                       value="official_facility"
                       checked
                     >
-
-                    <span>
-                      公式施設
-                    </span>
-
+                    <span>公式施設</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -408,16 +377,11 @@
                       value="collaboration"
                       checked
                     >
-
-                    <span>
-                      コラボ
-                    </span>
-
+                    <span>コラボ</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -425,16 +389,11 @@
                       value="popup"
                       checked
                     >
-
-                    <span>
-                      POP UP
-                    </span>
-
+                    <span>POP UP</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -442,11 +401,7 @@
                       value="event"
                       checked
                     >
-
-                    <span>
-                      イベント・展示
-                    </span>
-
+                    <span>イベント・展示</span>
                   </label>
 
                 </div>
@@ -462,11 +417,9 @@
                   ナガノ先生関連の種類
                 </summary>
 
-
                 <div class="filter-chip-list filter-chip-list-inner">
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -474,16 +427,11 @@
                       value="introduced"
                       checked
                     >
-
-                    <span>
-                      紹介
-                    </span>
-
+                    <span>紹介</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -491,16 +439,11 @@
                       value="visited"
                       checked
                     >
-
-                    <span>
-                      訪問
-                    </span>
-
+                    <span>訪問</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -508,11 +451,7 @@
                       value="related"
                       checked
                     >
-
-                    <span>
-                      ゆかり・関連
-                    </span>
-
+                    <span>ゆかり・関連</span>
                   </label>
 
                 </div>
@@ -528,11 +467,9 @@
                   開催期間
                 </legend>
 
-
                 <div class="filter-chip-list">
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -540,16 +477,11 @@
                       value="permanent"
                       checked
                     >
-
-                    <span>
-                      常設
-                    </span>
-
+                    <span>常設</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -557,11 +489,7 @@
                       value="limited"
                       checked
                     >
-
-                    <span>
-                      期間限定
-                    </span>
-
+                    <span>期間限定</span>
                   </label>
 
                 </div>
@@ -577,11 +505,9 @@
                   予約
                 </legend>
 
-
                 <div class="filter-chip-list">
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -589,16 +515,11 @@
                       value="not_available"
                       checked
                     >
-
-                    <span>
-                      予約不可
-                    </span>
-
+                    <span>予約不可</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -606,16 +527,11 @@
                       value="optional"
                       checked
                     >
-
-                    <span>
-                      予約可
-                    </span>
-
+                    <span>予約可</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -623,16 +539,11 @@
                       value="priority"
                       checked
                     >
-
-                    <span>
-                      予約優先
-                    </span>
-
+                    <span>予約優先</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -640,16 +551,11 @@
                       value="required"
                       checked
                     >
-
-                    <span>
-                      要予約
-                    </span>
-
+                    <span>要予約</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -657,11 +563,7 @@
                       value="unknown"
                       checked
                     >
-
-                    <span>
-                      要確認
-                    </span>
-
+                    <span>要確認</span>
                   </label>
 
                 </div>
@@ -694,7 +596,7 @@
           ></div>
 
 
-          <!-- 障害時メッセージ -->
+          <!-- 障害表示 -->
 
           <div
             id="map-status"
@@ -707,7 +609,7 @@
 
 
         <!-- ========================================
-             スポット詳細
+             詳細
              ======================================== -->
 
         <aside
@@ -721,7 +623,6 @@
             <span class="spot-detail-kicker">
               SPOT INFO
             </span>
-
 
             <button
               type="button"
@@ -742,7 +643,6 @@
 
         </aside>
 
-
       </div>
 
     </section>
@@ -756,17 +656,21 @@
   </main>
 
 
+  <!-- Leaflet -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
   ></script>
 
-  <!-- Leaflet MarkerCluster -->
+
+  <!-- MarkerCluster -->
   <script
-    src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
+    src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
   ></script>
 
+
+  <!-- 自作JS -->
   <script src="app.js"></script>
 
 </body>
