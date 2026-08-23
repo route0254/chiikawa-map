@@ -878,6 +878,53 @@ button {
 }
 
 
+.evidence-guide {
+  display: grid;
+  gap: 7px;
+  margin: 7px 0 9px;
+}
+
+
+.evidence-guide > div {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 8px 9px;
+  border-radius: 9px;
+}
+
+
+.evidence-guide-confirmed {
+  background: #eef9f2;
+  border: 1px solid #cfe9d7;
+}
+
+
+.evidence-guide-inferred {
+  background: #fff9e9;
+  border: 1px solid #f0dfad;
+}
+
+
+.evidence-guide strong {
+  font-size: 10px;
+}
+
+
+.evidence-guide span {
+  color: #6f666a;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+
+.nagano-evidence-filter {
+  padding-top: 9px;
+  border-top: 1px dashed var(--line);
+}
+
+
 .help-important {
   margin-top: 9px !important;
 
@@ -1171,6 +1218,20 @@ button {
 }
 
 
+.tag-evidence-confirmed {
+  color: #39784e;
+  background: #e9f7ee;
+  border: 1px solid #c9e8d3;
+}
+
+
+.tag-evidence-inferred {
+  color: #8a6418;
+  background: #fff4d6;
+  border: 1px solid #efdca8;
+}
+
+
 .spot-relation {
   margin-bottom: 9px;
 
@@ -1229,6 +1290,30 @@ button {
   background: #fff8e7;
 
   border: 1px solid #efdfb4;
+}
+
+
+.spot-evidence-card {
+  margin-top: 2px;
+}
+
+
+.spot-evidence-card.evidence-confirmed {
+  background: #eef9f2;
+  border: 1px solid #cfe9d7;
+}
+
+
+.spot-evidence-card.evidence-inferred {
+  background: #fff9e9;
+  border: 1px solid #f0dfad;
+}
+
+
+.spot-evidence-note {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
 
