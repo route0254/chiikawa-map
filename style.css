@@ -15,6 +15,10 @@
   --accent: #7568e8;
   --accent-soft: #f1efff;
 
+  --warning: #9c6b16;
+  --warning-bg: #fff9e9;
+  --warning-line: #f0dfad;
+
   --shadow:
     0 16px 40px
     rgba(64, 46, 54, 0.10);
@@ -62,9 +66,9 @@ button {
 }
 
 
-/* ========================================
-   ヘッダー
-   ======================================== */
+/* ==========================================================
+   HEADER
+   ========================================================== */
 
 .site-header {
   background:
@@ -147,9 +151,74 @@ button {
 }
 
 
-/* ========================================
-   ページ
-   ======================================== */
+/* ==========================================================
+   NOTICE
+   ========================================================== */
+
+.site-notice {
+  border-bottom: 1px solid var(--warning-line);
+
+  background: var(--warning-bg);
+}
+
+
+.site-notice-inner {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+
+  width: min(1180px, calc(100% - 32px));
+
+  margin: 0 auto;
+
+  padding: 8px 0;
+}
+
+
+.notice-icon {
+  flex: 0 0 auto;
+
+  padding-top: 1px;
+
+  font-size: 13px;
+}
+
+
+.site-notice p {
+  margin: 0;
+
+  color: #705c32;
+
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+
+.site-notice strong {
+  color: #5e4b24;
+}
+
+
+.site-notice a {
+  margin-left: 5px;
+
+  color: #6657c9;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+.site-notice a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========================================================
+   PAGE
+   ========================================================== */
 
 .page-shell {
   width: min(1240px, calc(100% - 32px));
@@ -158,9 +227,9 @@ button {
 }
 
 
-/* ========================================
-   地図カード
-   ======================================== */
+/* ==========================================================
+   MAP CARD
+   ========================================================== */
 
 .map-card {
   overflow: hidden;
@@ -174,9 +243,9 @@ button {
 }
 
 
-/* ========================================
-   ツールバー
-   ======================================== */
+/* ==========================================================
+   TOOLBAR
+   ========================================================== */
 
 .map-toolbar {
   display: flex;
@@ -202,14 +271,20 @@ button {
 
   align-items: center;
 
-  gap: 10px;
+  gap: 8px;
 }
 
 
-.filter-button {
+.map-toolbar-left {
+  flex-wrap: wrap;
+}
+
+
+.toolbar-button {
   display: inline-flex;
 
   align-items: center;
+  justify-content: center;
 
   gap: 7px;
 
@@ -231,15 +306,32 @@ button {
 }
 
 
-.filter-button:hover,
-.filter-button.is-active {
+.toolbar-button:hover,
+.toolbar-button.is-active {
   background: var(--accent-soft);
 
   border-color: #d7d1ff;
 }
 
 
+.help-button-icon {
+  display: grid;
+  place-items: center;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
 .result-count {
+  margin-left: 2px;
+
   color: var(--muted);
 
   font-size: 12px;
@@ -279,9 +371,9 @@ button {
 }
 
 
-/* ========================================
+/* ==========================================================
    MAP + DETAIL
-   ======================================== */
+   ========================================================== */
 
 .map-content {
   display: grid;
@@ -299,9 +391,9 @@ button {
 }
 
 
-/* ========================================
-   地図
-   ======================================== */
+/* ==========================================================
+   MAP
+   ========================================================== */
 
 #map-wrapper {
   position: relative;
@@ -326,9 +418,9 @@ button {
 }
 
 
-/* ========================================
-   地図ステータス
-   ======================================== */
+/* ==========================================================
+   MAP STATUS
+   ========================================================== */
 
 #map-status {
   position: absolute;
@@ -364,11 +456,11 @@ button {
 }
 
 
-/* ========================================
-   フィルター
-   ======================================== */
+/* ==========================================================
+   OVERLAY PANELS
+   ========================================================== */
 
-.filter-panel {
+.overlay-panel {
   position: absolute;
 
   z-index: 1250;
@@ -378,7 +470,7 @@ button {
 
   width:
     min(
-      370px,
+      410px,
       calc(100% - 24px)
     );
 
@@ -391,7 +483,7 @@ button {
   border-radius: 18px;
 
   background:
-    rgba(255, 255, 255, 0.98);
+    rgba(255, 255, 255, 0.985);
 
   box-shadow:
     0 16px 36px
@@ -399,11 +491,13 @@ button {
 }
 
 
-.filter-panel-header {
+.overlay-panel-header {
   display: flex;
 
   align-items: center;
   justify-content: space-between;
+
+  gap: 12px;
 
   padding: 14px 15px 11px;
 
@@ -411,7 +505,7 @@ button {
 }
 
 
-.filter-panel-kicker {
+.panel-kicker {
   color: var(--accent);
 
   font-size: 9px;
@@ -421,7 +515,7 @@ button {
 }
 
 
-.filter-panel h2 {
+.overlay-panel h2 {
   margin: 2px 0 0;
 
   font-size: 17px;
@@ -432,6 +526,8 @@ button {
   display: grid;
 
   place-items: center;
+
+  flex: 0 0 auto;
 
   width: 32px;
   height: 32px;
@@ -448,7 +544,7 @@ button {
 }
 
 
-.filter-panel-body {
+.overlay-panel-body {
   max-height:
     calc(64svh - 100px);
 
@@ -457,6 +553,21 @@ button {
   padding: 13px 15px 4px;
 }
 
+
+.overlay-panel-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  padding: 10px 15px 13px;
+
+  border-top: 1px solid var(--line);
+}
+
+
+/* ==========================================================
+   FILTER
+   ========================================================== */
 
 .filter-group {
   margin: 0 0 15px;
@@ -474,6 +585,19 @@ button {
 
   font-size: 11px;
   font-weight: 800;
+}
+
+
+.filter-hint {
+  margin:
+    -2px
+    0
+    8px;
+
+  color: #8b8285;
+
+  font-size: 10px;
+  line-height: 1.5;
 }
 
 
@@ -531,6 +655,15 @@ button {
 }
 
 
+.filter-chip input:focus-visible + span {
+  outline:
+    3px solid
+    rgba(117, 104, 232, 0.18);
+
+  outline-offset: 2px;
+}
+
+
 .filter-details {
   margin-bottom: 13px;
 
@@ -571,17 +704,6 @@ button {
 }
 
 
-.filter-panel-footer {
-  display: flex;
-
-  justify-content: flex-end;
-
-  padding: 10px 15px 13px;
-
-  border-top: 1px solid var(--line);
-}
-
-
 .secondary-button {
   min-height: 34px;
 
@@ -598,9 +720,181 @@ button {
 }
 
 
-/* ========================================
-   通常マーカー
-   ======================================== */
+/* ==========================================================
+   HELP
+   ========================================================== */
+
+.help-body {
+  padding-bottom: 15px;
+}
+
+
+.help-section {
+  padding:
+    0
+    0
+    14px;
+
+  margin-bottom: 14px;
+
+  border-bottom: 1px dashed var(--line);
+}
+
+
+.help-section:last-child {
+  margin-bottom: 0;
+
+  border-bottom: 0;
+}
+
+
+.help-section h3 {
+  margin:
+    0
+    0
+    8px;
+
+  font-size: 13px;
+}
+
+
+.help-section p {
+  margin:
+    0
+    0
+    7px;
+
+  color: #645b5f;
+
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+
+.example-card {
+  display: grid;
+
+  gap: 3px;
+
+  margin-bottom: 7px;
+
+  padding: 9px 10px;
+
+  border: 1px solid #ded8ff;
+  border-radius: 10px;
+
+  background: #f7f5ff;
+}
+
+
+.example-card strong {
+  color: #584cc4;
+
+  font-size: 11px;
+}
+
+
+.example-card span {
+  color: #665e61;
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+
+.help-definition-list {
+  display: grid;
+
+  gap: 7px;
+
+  margin: 0;
+}
+
+
+.help-definition-list > div {
+  padding: 8px 9px;
+
+  border-radius: 9px;
+
+  background: #f8f6f7;
+}
+
+
+.help-definition-list dt {
+  margin-bottom: 2px;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+.help-definition-list dd {
+  margin: 0;
+
+  color: #6f666a;
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+
+.reservation-guide {
+  display: grid;
+
+  gap: 6px;
+}
+
+
+.reservation-guide > div {
+  display: grid;
+
+  grid-template-columns: 70px 1fr;
+
+  gap: 8px;
+
+  align-items: start;
+
+  padding: 8px 9px;
+
+  border: 1px solid #f0dfb0;
+  border-radius: 9px;
+
+  background: #fff9e9;
+}
+
+
+.reservation-guide strong {
+  color: #6f571f;
+
+  font-size: 10px;
+}
+
+
+.reservation-guide span {
+  color: #6f6550;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+
+.help-important {
+  margin-top: 9px !important;
+
+  padding: 8px 9px;
+
+  border-radius: 9px;
+
+  color: #71591e !important;
+  background: #fff4d6;
+
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   NORMAL MARKERS
+   ========================================================== */
 
 .spot-marker {
   background: transparent;
@@ -674,9 +968,9 @@ button {
 }
 
 
-/* ========================================
-   MarkerCluster
-   ======================================== */
+/* ==========================================================
+   MARKER CLUSTER
+   ========================================================== */
 
 .marker-cluster-custom {
   background: transparent !important;
@@ -760,10 +1054,6 @@ button {
 }
 
 
-/* ========================================
-   Spiderfy
-   ======================================== */
-
 .leaflet-cluster-spider-leg {
   stroke: #8d8387;
 
@@ -773,9 +1063,9 @@ button {
 }
 
 
-/* ========================================
-   詳細
-   ======================================== */
+/* ==========================================================
+   DETAIL
+   ========================================================== */
 
 .spot-detail-panel {
   min-width: 0;
@@ -915,9 +1205,9 @@ button {
 }
 
 
-/* ========================================
-   詳細カード
-   ======================================== */
+/* ==========================================================
+   DETAIL CARDS
+   ========================================================== */
 
 .spot-info-card {
   margin-bottom: 10px;
@@ -1018,9 +1308,9 @@ button {
 }
 
 
-/* ========================================
-   注記
-   ======================================== */
+/* ==========================================================
+   FOOT NOTE
+   ========================================================== */
 
 .site-note {
   margin:
@@ -1035,9 +1325,9 @@ button {
 }
 
 
-/* ========================================
-   タブレット
-   ======================================== */
+/* ==========================================================
+   TABLET
+   ========================================================== */
 
 @media (max-width: 899px) {
 
@@ -1056,15 +1346,19 @@ button {
 }
 
 
-/* ========================================
-   スマホ
-   ======================================== */
+/* ==========================================================
+   MOBILE
+   ========================================================== */
 
 @media (max-width: 650px) {
 
-  .site-header-inner {
+  .site-header-inner,
+  .site-notice-inner {
     width: calc(100% - 24px);
+  }
 
+
+  .site-header-inner {
     padding:
       12px
       0
@@ -1079,6 +1373,18 @@ button {
 
   .site-description {
     font-size: 11px;
+  }
+
+
+  .site-notice-inner {
+    padding:
+      7px
+      0;
+  }
+
+
+  .site-notice p {
+    font-size: 9px;
   }
 
 
@@ -1104,6 +1410,22 @@ button {
   }
 
 
+  .toolbar-button {
+    min-height: 34px;
+
+    padding:
+      6px
+      9px;
+
+    font-size: 11px;
+  }
+
+
+  .result-count {
+    font-size: 10px;
+  }
+
+
   #map {
     height:
       clamp(
@@ -1124,7 +1446,7 @@ button {
   }
 
 
-  .filter-panel {
+  .overlay-panel {
     top: 8px;
     left: 8px;
 
@@ -1134,7 +1456,7 @@ button {
   }
 
 
-  .filter-panel-body {
+  .overlay-panel-body {
     max-height: 36svh;
   }
 
@@ -1148,9 +1470,9 @@ button {
 }
 
 
-/* ========================================
-   小さいスマホ
-   ======================================== */
+/* ==========================================================
+   SMALL MOBILE
+   ========================================================== */
 
 @media (max-width: 420px) {
 
@@ -1164,11 +1486,6 @@ button {
   }
 
 
-  .result-count {
-    font-size: 11px;
-  }
-
-
   #map {
     height:
       clamp(
@@ -1176,6 +1493,11 @@ button {
         45svh,
         420px
       );
+  }
+
+
+  .reservation-guide > div {
+    grid-template-columns: 64px 1fr;
   }
 
 }
