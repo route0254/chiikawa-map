@@ -34,7 +34,18 @@
   </header>
 
   <main>
-    <div id="map"></div>
+    <div id="map-wrapper">
+
+      <div id="map"></div>
+
+      <div
+        id="map-status"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></div>
+
+    </div>
   </main>
 
   <!-- Leaflet JavaScript -->
