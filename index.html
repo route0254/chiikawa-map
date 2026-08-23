@@ -541,6 +541,47 @@
               </details>
 
 
+              <!-- ナガセン関連の確度 -->
+
+              <fieldset class="filter-group nagano-evidence-filter">
+
+                <legend>
+                  ナガセン関連の確度
+                </legend>
+
+                <p class="filter-hint">
+                  「推定」は作品描写や旅程などから特定度が高い候補です。詳細画面で根拠を確認できます。
+                </p>
+
+                <div class="filter-chip-list">
+
+                  <label class="filter-chip">
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-nagano-evidence"
+                      value="confirmed"
+                      checked
+                    >
+                    <span>✓ 確定</span>
+                  </label>
+
+                  <label class="filter-chip">
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-nagano-evidence"
+                      value="inferred"
+                      checked
+                    >
+                    <span>△ 推定</span>
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+
               <!-- 期間 -->
 
               <fieldset class="filter-group">
@@ -879,15 +920,40 @@
 
 
               <section class="help-section">
-                <h3>MOGUMOGUなどの作品について</h3>
+                <h3>「確定」と「推定」について</h3>
+
+                <div class="evidence-guide">
+                  <div class="evidence-guide-confirmed">
+                    <strong>✓ 確定</strong>
+                    <span>本人のX・Instagram、作品内の明示、出版社・店舗・自治体などの公式情報から、その店・場所との関係を直接確認できたもの。</span>
+                  </div>
+                  <div class="evidence-guide-inferred">
+                    <strong>△ 推定</strong>
+                    <span>作品の描写、食べた商品、外観、旅程、周辺スポットなどを照合すると特定度が高いものの、一次情報だけでは店名・地点まで完全には断定できないもの。</span>
+                  </div>
+                </div>
+
                 <p>
-                  『MOGUMOGU食べ歩きくま』など、ナガノ先生自身の旅行・食体験が
-                  反映されている作品については、店名や場所を十分に確認できる場合に
-                  「訪問」として掲載します。
+                  「推定」は事実として断定する表示ではなく、ナガセン巡礼の有力候補です。
+                  新しい一次情報が見つかった場合は「確定」へ変更し、誤りが判明した場合は修正・削除します。
                 </p>
                 <p>
-                  絵やメニューだけからファンが推定した店舗など、根拠が弱いものは
-                  原則として掲載せず、調査候補として扱います。
+                  なお、この「確定 / 推定」は <strong>ナガノ先生との関係性や場所特定の確度</strong> を示すものです。
+                  現在の営業状況・営業時間・商品提供状況まで保証する表示ではありません。
+                </p>
+              </section>
+
+
+              <section class="help-section">
+                <h3>MOGUMOGUなどの作品について</h3>
+                <p>
+                  『MOGUMOGU食べ歩きくま』は、ナガノ先生自身の旅行・食体験が反映された
+                  イラストエッセイとして扱い、作品内で地域や場所が明示されるものは「確定」、
+                  店舗を描写・メニュー・旅程などから照合したものは「推定」として分けて掲載します。
+                </p>
+                <p>
+                  ただし、根拠が「ナガノ先生おすすめらしい」といった噂だけのものや、
+                  候補店が複数あって絞れないものは掲載しません。
                 </p>
               </section>
 
@@ -921,8 +987,9 @@
               </section>
 
               <p class="help-important nagano-help-note">
-                ナガセン関連は「聖地っぽい」という推測ではなく、
-                ナガノ先生との関係を確認できたスポットを中心に掲載します。
+                ナガセン関連には「確定」と「推定」の両方を掲載しています。
+                ピンを選ぶと詳細上部に ✓確定 / △推定 が表示され、根拠リンクも確認できます。
+                推定スポットは断定情報ではない点をご理解のうえ、巡礼候補としてお楽しみください。
               </p>
 
             </div>
