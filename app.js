@@ -4,7 +4,7 @@
 
 
 // ========================================
-// 地図初期設定
+// 地図設定
 // ========================================
 
 const INITIAL_POSITION = [
@@ -15,93 +15,51 @@ const INITIAL_POSITION = [
 const INITIAL_ZOOM = 11;
 
 
-// ========================================
-// タイルプロバイダー
-// ========================================
-
 const TILE_PROVIDERS = [
 
   {
-
-    name:
-      "OpenStreetMap",
+    name: "OpenStreetMap",
 
     url:
       "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
 
     options: {
-
-      maxZoom:
-        19,
+      maxZoom: 19,
 
       attribution:
-
-        '&copy; ' +
-
-        '<a href="https://www.openstreetmap.org/copyright">' +
-
-        'OpenStreetMap contributors' +
-
-        '</a>'
-
+        '&copy; <a href="https://www.openstreetmap.org/copyright">' +
+        "OpenStreetMap contributors</a>"
     }
-
   },
 
 
   {
-
-    name:
-      "Stadia Maps",
+    name: "Stadia Maps",
 
     url:
-
-      "https://tiles.stadiamaps.com/" +
-
-      "tiles/alidade_smooth/" +
-
-      "{z}/{x}/{y}{r}.png",
+      "https://tiles.stadiamaps.com/tiles/" +
+      "alidade_smooth/{z}/{x}/{y}{r}.png",
 
     options: {
-
-      maxZoom:
-        20,
+      maxZoom: 20,
 
       attribution:
+        '&copy; <a href="https://stadiamaps.com/" target="_blank">' +
+        "Stadia Maps</a>, " +
 
-        '&copy; ' +
+        '&copy; <a href="https://openmaptiles.org/" target="_blank">' +
+        "OpenMapTiles</a>, " +
 
-        '<a href="https://stadiamaps.com/" target="_blank">' +
-
-        'Stadia Maps' +
-
-        '</a>, ' +
-
-        '&copy; ' +
-
-        '<a href="https://openmaptiles.org/" target="_blank">' +
-
-        'OpenMapTiles' +
-
-        '</a>, ' +
-
-        '&copy; ' +
-
-        '<a href="https://www.openstreetmap.org/copyright" target="_blank">' +
-
-        'OpenStreetMap' +
-
-        '</a>'
-
+        '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">' +
+        "OpenStreetMap</a>"
     }
-
   }
 
 ];
 
 
 // ========================================
-// 障害テスト
+// 障害試験
 // ========================================
 
 const params =
@@ -124,43 +82,9 @@ const map =
   L.map(
     "map"
   ).setView(
-
     INITIAL_POSITION,
     INITIAL_ZOOM
-
   );
-
-
-// ========================================
-// タイル状態
-// ========================================
-
-let currentProviderIndex =
-  0;
-
-
-let currentTileLayer =
-  null;
-
-
-let tileErrorTimes =
-  [];
-
-
-let switchingProvider =
-  false;
-
-
-let allProvidersFailed =
-  false;
-
-
-const TILE_ERROR_THRESHOLD =
-  3;
-
-
-const TILE_ERROR_WINDOW =
-  5000;
 
 
 // ========================================
@@ -203,26 +127,65 @@ const filterReset =
   );
 
 
+const mapContent =
+  document.getElementById(
+    "map-content"
+  );
+
+
+const detailPanel =
+  document.getElementById(
+    "spot-detail-panel"
+  );
+
+
+const detailBody =
+  document.getElementById(
+    "spot-detail-body"
+  );
+
+
+const detailClose =
+  document.getElementById(
+    "detail-close"
+  );
+
+
 // ========================================
-// 地図ステータス
+// タイル管理
 // ========================================
 
-function showMapStatus(
-  message
-) {
+let currentProviderIndex = 0;
+
+let currentTileLayer = null;
+
+let tileErrorTimes = [];
+
+let switchingProvider = false;
+
+let allProvidersFailed = false;
+
+
+const TILE_ERROR_THRESHOLD = 3;
+
+const TILE_ERROR_WINDOW = 5000;
+
+
+// ========================================
+// 地図状態
+// ========================================
+
+function showMapStatus(message) {
 
   if (!mapStatus) {
     return;
   }
 
-
   mapStatus.textContent =
     message;
 
-
   mapStatus.hidden =
     false;
-
 }
 
 
@@ -232,21 +195,16 @@ function hideMapStatus() {
     return;
   }
 
-
   mapStatus.hidden =
     true;
-
 }
 
 
 // ========================================
-// テスト用タイル
+// テスト用タイルURL
 // ========================================
 
-function getTileUrl(
-  providerIndex
-) {
-
+function getTileUrl(providerIndex) {
 
   if (
     TILE_TEST_MODE ===
@@ -254,45 +212,30 @@ function getTileUrl(
   ) {
 
     return (
-
       "https://invalid.example.com/" +
-
       "{z}/{x}/{y}.png"
-
     );
-
   }
 
 
   if (
-
     TILE_TEST_MODE ===
       "osm-fail" &&
-
-    providerIndex ===
-      0
-
+    providerIndex === 0
   ) {
 
     return (
-
       "https://invalid.example.com/" +
-
       "{z}/{x}/{y}.png"
-
     );
-
   }
 
 
   return (
-
     TILE_PROVIDERS[
       providerIndex
     ].url
-
   );
-
 }
 
 
@@ -304,59 +247,43 @@ function loadTileProvider(
   providerIndex
 ) {
 
-
   const provider =
-
     TILE_PROVIDERS[
       providerIndex
     ];
 
 
-  if (
-    currentTileLayer
-  ) {
+  if (currentTileLayer) {
 
     currentTileLayer.off();
-
 
     map.removeLayer(
       currentTileLayer
     );
-
   }
 
 
   currentProviderIndex =
     providerIndex;
 
-
-  tileErrorTimes =
-    [];
-
+  tileErrorTimes = [];
 
   switchingProvider =
     false;
 
 
   currentTileLayer =
-
     L.tileLayer(
-
       getTileUrl(
         providerIndex
       ),
-
       provider.options
-
     );
 
 
   currentTileLayer.once(
-
     "tileload",
-
     function () {
-
 
       if (
         currentProviderIndex ===
@@ -368,33 +295,24 @@ function loadTileProvider(
       } else {
 
         showMapStatus(
-
           "バックアップ地図で表示しています：" +
-
           provider.name
-
         );
 
       }
-
     }
-
   );
 
 
   currentTileLayer.on(
-
     "tileerror",
-
     handleTileError
-
   );
 
 
   currentTileLayer.addTo(
     map
   );
-
 }
 
 
@@ -404,17 +322,11 @@ function loadTileProvider(
 
 function handleTileError() {
 
-
   if (
-
     switchingProvider ||
-
     allProvidersFailed
-
   ) {
-
     return;
-
   }
 
 
@@ -423,15 +335,10 @@ function handleTileError() {
 
 
   tileErrorTimes =
-
     tileErrorTimes.filter(
-
       time =>
-
         now - time <
-
         TILE_ERROR_WINDOW
-
     );
 
 
@@ -441,73 +348,53 @@ function handleTileError() {
 
 
   if (
-
     tileErrorTimes.length <
-
     TILE_ERROR_THRESHOLD
-
   ) {
-
     return;
-
   }
 
 
   switchToNextProvider();
-
 }
 
 
 // ========================================
-// タイル切替
+// フォールバック
 // ========================================
 
 function switchToNextProvider() {
-
 
   switchingProvider =
     true;
 
 
   const nextProviderIndex =
-
-    currentProviderIndex +
-    1;
+    currentProviderIndex + 1;
 
 
   if (
-
     nextProviderIndex <
-
     TILE_PROVIDERS.length
-
   ) {
 
-
     const currentName =
-
       TILE_PROVIDERS[
         currentProviderIndex
       ].name;
 
 
     const nextName =
-
       TILE_PROVIDERS[
         nextProviderIndex
       ].name;
 
 
     console.warn(
-
       currentName +
-
       " の読み込みに失敗しました。" +
-
       nextName +
-
       " に切り替えます。"
-
     );
 
 
@@ -522,7 +409,6 @@ function switchToNextProvider() {
 
 
     return;
-
   }
 
 
@@ -536,45 +422,27 @@ function switchToNextProvider() {
 
 
   showMapStatus(
-
     "現在、背景地図を読み込めません。" +
-
     "スポット情報は引き続き利用できます。"
-
   );
-
 }
 
 
 // ========================================
-// 日本時間の日付
+// 日本時間
 // ========================================
 
 function getTodayInJapan() {
 
-
   const formatter =
-
     new Intl.DateTimeFormat(
-
       "en-CA",
-
       {
-
-        timeZone:
-          "Asia/Tokyo",
-
-        year:
-          "numeric",
-
-        month:
-          "2-digit",
-
-        day:
-          "2-digit"
-
+        timeZone: "Asia/Tokyo",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
       }
-
     );
 
 
@@ -582,11 +450,9 @@ function getTodayInJapan() {
 
 
   formatter
-
     .formatToParts(
       new Date()
     )
-
     .forEach(
       part => {
 
@@ -599,38 +465,28 @@ function getTodayInJapan() {
             part.type
           ] =
             part.value;
-
         }
-
       }
     );
 
 
   return (
-
     values.year +
-
     "-" +
-
     values.month +
-
     "-" +
-
     values.day
-
   );
-
 }
 
 
 // ========================================
-// 開催状態
+// 期間判定
 // ========================================
 
 function getSpotPeriodStatus(
   spot
 ) {
-
 
   if (
     spot.periodType ===
@@ -638,7 +494,6 @@ function getSpotPeriodStatus(
   ) {
 
     return "permanent";
-
   }
 
 
@@ -648,7 +503,6 @@ function getSpotPeriodStatus(
   ) {
 
     return "unknown";
-
   }
 
 
@@ -657,92 +511,62 @@ function getSpotPeriodStatus(
 
 
   if (
-
     spot.startDate &&
-
     today <
       spot.startDate
-
   ) {
 
     return "upcoming";
-
   }
 
 
   if (
-
     spot.endDate &&
-
     today >
       spot.endDate
-
   ) {
 
     return "ended";
-
   }
 
 
   return "active";
-
 }
 
 
 // ========================================
-// 各種ラベル
+// ラベル
 // ========================================
 
 function getPeriodStatusLabel(
   status
 ) {
 
-
   const labels = {
-
-    permanent:
-      "常設",
-
-    upcoming:
-      "開催前",
-
-    active:
-      "開催中",
-
-    ended:
-      "終了済み",
-
-    unknown:
-      "期間不明"
-
+    permanent: "常設",
+    upcoming: "開催前",
+    active: "開催中",
+    ended: "終了済み",
+    unknown: "期間不明"
   };
-
 
   return (
     labels[status] ||
     "期間不明"
   );
-
 }
 
 
-function formatDate(
-  dateString
-) {
-
+function formatDate(dateString) {
 
   if (!dateString) {
-
     return "";
-
   }
-
 
   return dateString.replaceAll(
     "-",
     "/"
   );
-
 }
 
 
@@ -750,15 +574,12 @@ function getCategoryLabel(
   category
 ) {
 
-
   const labels = {
-
     official:
       "ちいかわ公式関連",
 
     nagano:
       "ナガノ先生関連"
-
   };
 
 
@@ -766,7 +587,6 @@ function getCategoryLabel(
     labels[category] ||
     "その他"
   );
-
 }
 
 
@@ -774,24 +594,12 @@ function getPlaceTypeLabel(
   placeType
 ) {
 
-
   const labels = {
-
-    shop:
-      "ショップ",
-
-    food:
-      "グルメ",
-
-    spot:
-      "おでかけスポット",
-
-    lodging:
-      "宿泊",
-
-    other:
-      "その他"
-
+    shop: "ショップ",
+    food: "グルメ",
+    spot: "おでかけスポット",
+    lodging: "宿泊",
+    other: "その他"
   };
 
 
@@ -799,20 +607,15 @@ function getPlaceTypeLabel(
     labels[placeType] ||
     "その他"
   );
-
 }
 
 
 function getRelationTypeLabel(
-
   category,
   relationType
-
 ) {
 
-
   const officialLabels = {
-
     official_store:
       "公式ショップ",
 
@@ -827,12 +630,10 @@ function getRelationTypeLabel(
 
     event:
       "イベント・展示"
-
   };
 
 
   const naganoLabels = {
-
     introduced:
       "ナガノ先生が紹介",
 
@@ -841,7 +642,6 @@ function getRelationTypeLabel(
 
     related:
       "ナガノ先生ゆかり・関連"
-
   };
 
 
@@ -851,15 +651,11 @@ function getRelationTypeLabel(
   ) {
 
     return (
-
       officialLabels[
         relationType
       ] ||
-
       "公式関連"
-
     );
-
   }
 
 
@@ -869,20 +665,15 @@ function getRelationTypeLabel(
   ) {
 
     return (
-
       naganoLabels[
         relationType
       ] ||
-
       "ナガノ先生関連"
-
     );
-
   }
 
 
   return "その他";
-
 }
 
 
@@ -890,9 +681,7 @@ function getReservationLabel(
   reservationType
 ) {
 
-
   const labels = {
-
     not_available:
       "予約不可",
 
@@ -907,20 +696,15 @@ function getReservationLabel(
 
     unknown:
       "要確認"
-
   };
 
 
   return (
-
     labels[
       reservationType
     ] ||
-
     "要確認"
-
   );
-
 }
 
 
@@ -928,9 +712,7 @@ function getDefaultEntryLabel(
   entryType
 ) {
 
-
   const labels = {
-
     walkin:
       "通常入場",
 
@@ -945,20 +727,15 @@ function getDefaultEntryLabel(
 
     other:
       "その他"
-
   };
 
 
   return (
-
     labels[
       entryType
     ] ||
-
     "要確認"
-
   );
-
 }
 
 
@@ -966,9 +743,7 @@ function getCrowdControlLabel(
   type
 ) {
 
-
   const labels = {
-
     none:
       null,
 
@@ -986,7 +761,6 @@ function getCrowdControlLabel(
 
     other:
       "その他の入場制限"
-
   };
 
 
@@ -994,7 +768,6 @@ function getCrowdControlLabel(
     labels[type] ??
     null
   );
-
 }
 
 
@@ -1002,24 +775,12 @@ function getCrowdConditionLabel(
   condition
 ) {
 
-
   const labels = {
-
-    none:
-      "",
-
-    when_crowded:
-      "混雑時",
-
-    always:
-      "常時",
-
-    sometimes:
-      "状況により",
-
-    announced:
-      "公式案内時"
-
+    none: "",
+    when_crowded: "混雑時",
+    always: "常時",
+    sometimes: "状況により",
+    announced: "公式案内時"
   };
 
 
@@ -1027,79 +788,63 @@ function getCrowdConditionLabel(
     labels[condition] ||
     ""
   );
-
 }
 
 
 // ========================================
-// URL検証
+// URLチェック
 // ========================================
 
-function getSafeUrl(
-  url
-) {
-
+function getSafeUrl(url) {
 
   if (!url) {
-
     return null;
-
   }
 
 
   try {
-
 
     const parsed =
       new URL(url);
 
 
     if (
-
       parsed.protocol ===
         "https:" ||
-
       parsed.protocol ===
         "http:"
-
     ) {
 
       return parsed.href;
-
     }
-
 
   } catch (error) {
 
-
     console.warn(
-
       "不正なURLを無視しました:",
-
       url
-
     );
-
   }
 
 
   return null;
-
 }
 
 
 // ========================================
-// スポット保持
+// スポットレイヤー
 // ========================================
 
 const spotLayer =
-
   L.layerGroup()
     .addTo(map);
 
 
-const spotRecords =
-  [];
+const spotRecords = [];
+
+
+let selectedRecord =
+  null;
 
 
 // ========================================
@@ -1110,13 +855,8 @@ function createSpotIcon(
   category
 ) {
 
-
-  let label =
-    "?";
-
-
-  let className =
-    "";
+  let label = "?";
+  let className = "";
 
 
   if (
@@ -1124,12 +864,10 @@ function createSpotIcon(
     "official"
   ) {
 
-    label =
-      "公";
+    label = "公";
 
     className =
       "spot-pin-official";
-
   }
 
 
@@ -1138,12 +876,10 @@ function createSpotIcon(
     "nagano"
   ) {
 
-    label =
-      "ナ";
+    label = "ナ";
 
     className =
       "spot-pin-nagano";
-
   }
 
 
@@ -1153,146 +889,161 @@ function createSpotIcon(
       "spot-marker",
 
     html:
-
       '<div class="spot-pin ' +
-
       className +
-
       '">' +
-
-      '<span>' +
-
+      "<span>" +
       label +
-
-      '</span>' +
-
-      '</div>',
-
+      "</span>" +
+      "</div>",
 
     iconSize:
       [38, 38],
 
-
     iconAnchor:
-      [19, 19],
-
-
-    popupAnchor:
-      [0, -20]
+      [19, 19]
 
   });
-
 }
 
 
 // ========================================
-// ポップアップ
+// DOM生成補助
 // ========================================
 
-function createSpotPopup(
+function createDiv(
+  className,
+  text = null
+) {
+
+  const element =
+    document.createElement(
+      "div"
+    );
+
+
+  element.className =
+    className;
+
+
+  if (text !== null) {
+
+    element.textContent =
+      text;
+  }
+
+
+  return element;
+}
+
+
+function appendLink(
+  parent,
+  url,
+  text
+) {
+
+  const safeUrl =
+    getSafeUrl(url);
+
+
+  if (!safeUrl) {
+    return;
+  }
+
+
+  const link =
+    document.createElement(
+      "a"
+    );
+
+
+  link.href =
+    safeUrl;
+
+  link.target =
+    "_blank";
+
+  link.rel =
+    "noopener noreferrer";
+
+  link.textContent =
+    text;
+
+
+  parent.appendChild(
+    link
+  );
+}
+
+
+// ========================================
+// 詳細画面作成
+// ========================================
+
+function createSpotDetail(
   spot
 ) {
 
-
   const container =
-
     document.createElement(
       "div"
     );
 
 
-  container.className =
-    "spot-popup";
-
-
-  /* タイトル */
+  // タイトル
 
   const title =
-
     document.createElement(
-      "div"
+      "h2"
     );
 
-
   title.className =
-    "spot-popup-title";
-
+    "spot-detail-title";
 
   title.textContent =
     spot.name;
-
 
   container.appendChild(
     title
   );
 
 
-  /* タグ */
+  // タグ
 
   const tags =
-
-    document.createElement(
-      "div"
+    createDiv(
+      "spot-tags"
     );
-
-
-  tags.className =
-    "spot-popup-tags";
 
 
   const categoryTag =
-
-    document.createElement(
-      "span"
+    createDiv(
+      "spot-tag " +
+      (
+        spot.category ===
+        "official"
+          ? "tag-official"
+          : "tag-nagano"
+      ),
+      getCategoryLabel(
+        spot.category
+      )
     );
 
 
-  categoryTag.className =
-
-    "spot-popup-tag " +
-
-    (
-      spot.category ===
-      "official"
-
-        ? "tag-official"
-
-        : "tag-nagano"
-    );
-
-
-  categoryTag.textContent =
-
-    getCategoryLabel(
-      spot.category
+  const placeTag =
+    createDiv(
+      "spot-tag tag-neutral",
+      getPlaceTypeLabel(
+        spot.placeType
+      )
     );
 
 
   tags.appendChild(
     categoryTag
   );
-
-
-  const placeTag =
-
-    document.createElement(
-      "span"
-    );
-
-
-  placeTag.className =
-
-    "spot-popup-tag " +
-
-    "tag-neutral";
-
-
-  placeTag.textContent =
-
-    getPlaceTypeLabel(
-      spot.placeType
-    );
-
 
   tags.appendChild(
     placeTag
@@ -1304,60 +1055,29 @@ function createSpotPopup(
   );
 
 
-  /* 関係性 */
-
-  const relation =
-
-    document.createElement(
-      "div"
-    );
-
-
-  relation.className =
-    "spot-popup-meta";
-
-
-  relation.textContent =
-
-    "🏷️ " +
-
-    getRelationTypeLabel(
-
-      spot.category,
-
-      spot.relationType
-
-    );
-
+  // 関係性
 
   container.appendChild(
-    relation
+    createDiv(
+      "spot-relation",
+      "🏷️ " +
+      getRelationTypeLabel(
+        spot.category,
+        spot.relationType
+      )
+    )
   );
 
 
-  /* 開催期間 */
+  // 期間
 
   const periodStatus =
-
     getSpotPeriodStatus(
       spot
     );
 
 
-  const period =
-
-    document.createElement(
-      "div"
-    );
-
-
-  period.className =
-
-    "spot-popup-period " +
-
-    "period-" +
-
-    periodStatus;
+  let periodText;
 
 
   if (
@@ -1365,106 +1085,70 @@ function createSpotPopup(
     "permanent"
   ) {
 
-    period.textContent =
+    periodText =
       "🗓 常設";
 
   } else {
 
-
     const start =
-
       spot.startDate
-
         ? formatDate(
             spot.startDate
           )
-
         : "開始日未定";
 
 
     const end =
-
       spot.endDate
-
         ? formatDate(
             spot.endDate
           )
-
         : "終了日未定";
 
 
-    period.textContent =
-
+    periodText =
       "🗓 " +
-
       start +
-
       " ～ " +
-
       end +
-
       "　" +
-
       getPeriodStatusLabel(
         periodStatus
       );
-
   }
 
 
   container.appendChild(
-    period
+    createDiv(
+      "spot-period period-" +
+      periodStatus,
+      periodText
+    )
   );
 
 
-  /* ==================================
-     営業時間
-     ================================== */
+  // ========================================
+  // 営業情報
+  // ========================================
 
   if (
-
     spot.hoursText ||
-
     spot.closedDaysText ||
-
     spot.hoursInfoUrl ||
-
     spot.hoursCheckedAt
-
   ) {
 
-
-    const hoursBox =
-
-      document.createElement(
-        "section"
+    const hours =
+      createDiv(
+        "spot-info-card spot-hours-card"
       );
 
 
-    hoursBox.className =
-
-      "spot-popup-info " +
-
-      "spot-popup-hours";
-
-
-    const hoursTitle =
-
-      document.createElement(
-        "div"
-      );
-
-
-    hoursTitle.className =
-      "spot-popup-info-title";
-
-
-    hoursTitle.textContent =
-      "🕐 営業・開催情報";
-
-
-    hoursBox.appendChild(
-      hoursTitle
+    hours.appendChild(
+      createDiv(
+        "spot-info-title",
+        "🕐 営業・開催情報"
+      )
     );
 
 
@@ -1472,29 +1156,13 @@ function createSpotPopup(
       spot.hoursText
     ) {
 
-
-      const row =
-
-        document.createElement(
-          "div"
-        );
-
-
-      row.className =
-        "spot-popup-info-row";
-
-
-      row.textContent =
-
-        "時間： " +
-
-        spot.hoursText;
-
-
-      hoursBox.appendChild(
-        row
+      hours.appendChild(
+        createDiv(
+          "spot-info-row",
+          "時間： " +
+          spot.hoursText
+        )
       );
-
     }
 
 
@@ -1502,209 +1170,86 @@ function createSpotPopup(
       spot.closedDaysText
     ) {
 
-
-      const row =
-
-        document.createElement(
-          "div"
-        );
-
-
-      row.className =
-        "spot-popup-info-row";
-
-
-      row.textContent =
-
-        "休業・休催： " +
-
-        spot.closedDaysText;
-
-
-      hoursBox.appendChild(
-        row
+      hours.appendChild(
+        createDiv(
+          "spot-info-row",
+          "休業・休催： " +
+          spot.closedDaysText
+        )
       );
-
     }
 
 
-    const hoursInfoUrl =
-
-      getSafeUrl(
-        spot.hoursInfoUrl
-      );
-
-
-    if (
-      hoursInfoUrl
-    ) {
-
-
-      const link =
-
-        document.createElement(
-          "a"
-        );
-
-
-      link.href =
-        hoursInfoUrl;
-
-
-      link.target =
-        "_blank";
-
-
-      link.rel =
-        "noopener noreferrer";
-
-
-      link.textContent =
-        "最新の営業時間を見る";
-
-
-      hoursBox.appendChild(
-        link
-      );
-
-    }
+    appendLink(
+      hours,
+      spot.hoursInfoUrl,
+      "最新の営業時間を見る ↗"
+    );
 
 
     if (
       spot.hoursCheckedAt
     ) {
 
-
-      const checked =
-
-        document.createElement(
-          "div"
-        );
-
-
-      checked.className =
-        "spot-popup-checked";
-
-
-      checked.textContent =
-
-        "営業時間確認： " +
-
-        formatDate(
-          spot.hoursCheckedAt
-        );
-
-
-      hoursBox.appendChild(
-        checked
+      hours.appendChild(
+        createDiv(
+          "spot-info-checked",
+          "営業時間確認： " +
+          formatDate(
+            spot.hoursCheckedAt
+          )
+        )
       );
-
     }
 
 
     container.appendChild(
-      hoursBox
+      hours
     );
-
   }
 
 
-  /* ==================================
-     入場方法
-     ================================== */
+  // ========================================
+  // 入場情報
+  // ========================================
 
-  const entryBox =
-
-    document.createElement(
-      "section"
+  const entry =
+    createDiv(
+      "spot-info-card spot-entry-card"
     );
 
 
-  entryBox.className =
-
-    "spot-popup-info " +
-
-    "spot-popup-entry";
-
-
-  const entryTitle =
-
-    document.createElement(
-      "div"
-    );
-
-
-  entryTitle.className =
-    "spot-popup-info-title";
-
-
-  entryTitle.textContent =
-    "🎫 入店・入場方法";
-
-
-  entryBox.appendChild(
-    entryTitle
+  entry.appendChild(
+    createDiv(
+      "spot-info-title",
+      "🎫 入店・入場方法"
+    )
   );
 
 
-  /* 予約 */
-
-  const reservation =
-
-    document.createElement(
-      "div"
-    );
-
-
-  reservation.className =
-    "spot-popup-info-row";
-
-
-  reservation.textContent =
-
-    "予約： " +
-
-    getReservationLabel(
-      spot.reservationType
-    );
-
-
-  entryBox.appendChild(
-    reservation
+  entry.appendChild(
+    createDiv(
+      "spot-info-row",
+      "予約： " +
+      getReservationLabel(
+        spot.reservationType
+      )
+    )
   );
 
 
-  /* 通常時 */
-
-  const defaultEntry =
-
-    document.createElement(
-      "div"
-    );
-
-
-  defaultEntry.className =
-    "spot-popup-info-row";
-
-
-  defaultEntry.textContent =
-
-    "通常時： " +
-
-    getDefaultEntryLabel(
-      spot.defaultEntryType
-    );
-
-
-  entryBox.appendChild(
-    defaultEntry
+  entry.appendChild(
+    createDiv(
+      "spot-info-row",
+      "通常時： " +
+      getDefaultEntryLabel(
+        spot.defaultEntryType
+      )
+    )
   );
 
-
-  /* 整理券等 */
 
   const crowdControl =
-
     getCrowdControlLabel(
       spot.crowdControlType
     );
@@ -1714,529 +1259,352 @@ function createSpotPopup(
     crowdControl
   ) {
 
-
-    const crowdRow =
-
-      document.createElement(
-        "div"
-      );
-
-
-    crowdRow.className =
-      "spot-popup-info-row";
-
-
     const condition =
-
       getCrowdConditionLabel(
         spot.crowdControlCondition
       );
 
 
-    crowdRow.textContent =
-
-      (
-        condition
-
-          ? condition + "： "
-
-          : ""
+    entry.appendChild(
+      createDiv(
+        "spot-info-row",
+        (
+          condition
+            ? condition + "： "
+            : ""
+        ) +
+        crowdControl
       )
-
-      +
-
-      crowdControl;
-
-
-    entryBox.appendChild(
-      crowdRow
     );
-
   }
 
-
-  /* 補足 */
 
   if (
     spot.entryNote
   ) {
 
-
-    const note =
-
-      document.createElement(
-        "div"
-      );
-
-
-    note.className =
-      "spot-popup-note";
-
-
-    note.textContent =
-      spot.entryNote;
-
-
-    entryBox.appendChild(
-      note
+    entry.appendChild(
+      createDiv(
+        "spot-info-note",
+        spot.entryNote
+      )
     );
-
   }
 
 
-  /* 予約URL */
-
-  const reservationUrl =
-
-    getSafeUrl(
-      spot.reservationUrl
-    );
+  appendLink(
+    entry,
+    spot.reservationUrl,
+    "予約ページを見る ↗"
+  );
 
 
-  if (
-    reservationUrl
-  ) {
+  appendLink(
+    entry,
+    spot.entryInfoUrl,
+    "最新の入場情報を見る ↗"
+  );
 
-
-    const link =
-
-      document.createElement(
-        "a"
-      );
-
-
-    link.href =
-      reservationUrl;
-
-
-    link.target =
-      "_blank";
-
-
-    link.rel =
-      "noopener noreferrer";
-
-
-    link.textContent =
-      "予約ページを見る";
-
-
-    entryBox.appendChild(
-      link
-    );
-
-  }
-
-
-  /* 入場情報URL */
-
-  const entryInfoUrl =
-
-    getSafeUrl(
-      spot.entryInfoUrl
-    );
-
-
-  if (
-    entryInfoUrl
-  ) {
-
-
-    const link =
-
-      document.createElement(
-        "a"
-      );
-
-
-    link.href =
-      entryInfoUrl;
-
-
-    link.target =
-      "_blank";
-
-
-    link.rel =
-      "noopener noreferrer";
-
-
-    link.textContent =
-      "最新の入場情報を見る";
-
-
-    entryBox.appendChild(
-      link
-    );
-
-  }
-
-
-  /* 確認日 */
 
   if (
     spot.entryInfoCheckedAt
   ) {
 
-
-    const checked =
-
-      document.createElement(
-        "div"
-      );
-
-
-    checked.className =
-      "spot-popup-checked";
-
-
-    checked.textContent =
-
-      "入場情報確認： " +
-
-      formatDate(
-        spot.entryInfoCheckedAt
-      );
-
-
-    entryBox.appendChild(
-      checked
+    entry.appendChild(
+      createDiv(
+        "spot-info-checked",
+        "入場情報確認： " +
+        formatDate(
+          spot.entryInfoCheckedAt
+        )
+      )
     );
-
   }
 
 
   container.appendChild(
-    entryBox
+    entry
   );
 
 
-  /* ==================================
-     住所
-     ================================== */
+  // 住所
 
   if (
     spot.address
   ) {
 
-
-    const address =
-
-      document.createElement(
-        "div"
-      );
-
-
-    address.className =
-      "spot-popup-address";
-
-
-    address.textContent =
-
-      "📌 " +
-
-      spot.address;
-
-
     container.appendChild(
-      address
+      createDiv(
+        "spot-address",
+        "📌 " +
+        spot.address
+      )
     );
-
   }
 
 
-  /* 説明 */
+  // 説明
 
   if (
     spot.description
   ) {
 
-
-    const description =
-
-      document.createElement(
-        "div"
-      );
-
-
-    description.className =
-      "spot-popup-description";
-
-
-    description.textContent =
-      spot.description;
-
-
     container.appendChild(
-      description
+      createDiv(
+        "spot-description",
+        spot.description
+      )
     );
-
   }
 
 
-  /* ==================================
-     外部リンク
-     ================================== */
-
-  const sourceUrl =
-
-    getSafeUrl(
-      spot.sourceUrl
-    );
+  appendLink(
+    container,
+    spot.sourceUrl,
+    "情報元を見る ↗"
+  );
 
 
-  const mapUrl =
-
-    getSafeUrl(
-      spot.mapUrl
-    );
-
-
-  if (
-    sourceUrl ||
-    mapUrl
-  ) {
-
-
-    const links =
-
-      document.createElement(
-        "div"
-      );
-
-
-    links.className =
-      "spot-popup-links";
-
-
-    if (
-      sourceUrl
-    ) {
-
-
-      const sourceLink =
-
-        document.createElement(
-          "a"
-        );
-
-
-      sourceLink.href =
-        sourceUrl;
-
-
-      sourceLink.target =
-        "_blank";
-
-
-      sourceLink.rel =
-        "noopener noreferrer";
-
-
-      sourceLink.textContent =
-        "情報元を見る ↗";
-
-
-      links.appendChild(
-        sourceLink
-      );
-
-    }
-
-
-    if (
-      mapUrl
-    ) {
-
-
-      const mapLink =
-
-        document.createElement(
-          "a"
-        );
-
-
-      mapLink.href =
-        mapUrl;
-
-
-      mapLink.target =
-        "_blank";
-
-
-      mapLink.rel =
-        "noopener noreferrer";
-
-
-      mapLink.textContent =
-        "地図で開く ↗";
-
-
-      links.appendChild(
-        mapLink
-      );
-
-    }
-
-
-    container.appendChild(
-      links
-    );
-
-  }
+  appendLink(
+    container,
+    spot.mapUrl,
+    "地図で開く ↗"
+  );
 
 
   return container;
-
 }
 
 
 // ========================================
-// マーカー生成
+// スポット詳細表示
+// ========================================
+
+function showSpotDetail(
+  record
+) {
+
+  // 前の選択を解除
+
+  if (
+    selectedRecord
+  ) {
+
+    selectedRecord.marker
+      .getElement()
+      ?.classList
+      .remove(
+        "is-selected"
+      );
+  }
+
+
+  selectedRecord =
+    record;
+
+
+  detailBody.replaceChildren(
+    createSpotDetail(
+      record.spot
+    )
+  );
+
+
+  detailPanel.hidden =
+    false;
+
+
+  mapContent.classList.add(
+    "has-detail"
+  );
+
+
+  record.marker
+    .getElement()
+    ?.classList
+    .add(
+      "is-selected"
+    );
+
+
+  /*
+    重要：
+    scrollIntoViewやpanToは呼ばない。
+    そのためスマホでも勝手に
+    スクロール・地図移動しない。
+  */
+
+
+  requestAnimationFrame(
+    () => {
+
+      map.invalidateSize(
+        {
+          pan: false,
+          animate: false
+        }
+      );
+
+    }
+  );
+}
+
+
+// ========================================
+// 詳細を閉じる
+// ========================================
+
+function closeSpotDetail() {
+
+  if (
+    selectedRecord
+  ) {
+
+    selectedRecord.marker
+      .getElement()
+      ?.classList
+      .remove(
+        "is-selected"
+      );
+  }
+
+
+  selectedRecord =
+    null;
+
+
+  detailPanel.hidden =
+    true;
+
+
+  detailBody.replaceChildren();
+
+
+  mapContent.classList.remove(
+    "has-detail"
+  );
+
+
+  requestAnimationFrame(
+    () => {
+
+      map.invalidateSize(
+        {
+          pan: false,
+          animate: false
+        }
+      );
+
+    }
+  );
+}
+
+
+// ========================================
+// スポット作成
 // ========================================
 
 function createSpotRecord(
   spot
 ) {
 
-
   if (
-
     typeof spot.lat !==
       "number" ||
-
     typeof spot.lng !==
       "number"
-
   ) {
 
-
     console.warn(
-
       "緯度経度が不正なためスキップ:",
-
       spot
-
     );
 
-
     return null;
-
   }
 
 
   if (
-
     spot.category !==
       "official" &&
-
     spot.category !==
       "nagano"
-
   ) {
 
-
     console.warn(
-
       "未対応カテゴリのためスキップ:",
-
       spot.category,
-
       spot.name
-
     );
 
-
     return null;
-
   }
 
 
   const marker =
-
     L.marker(
-
       [
         spot.lat,
         spot.lng
       ],
-
       {
-
         icon:
-
           createSpotIcon(
             spot.category
           )
-
       }
-
     );
 
 
-  marker.bindPopup(
+  const record = {
+    spot,
+    marker
+  };
 
-    createSpotPopup(
-      spot
-    ),
 
-    {
+  /*
+    Leaflet Popupは使わない。
+  */
 
-      maxWidth:
-        330,
+  marker.on(
+    "click",
+    () => {
 
-      minWidth:
-        240
+      showSpotDetail(
+        record
+      );
 
     }
-
   );
 
 
-  return {
-
-    spot,
-    marker
-
-  };
-
+  return record;
 }
 
 
 // ========================================
-// フィルター値取得
+// フィルター値
 // ========================================
 
 function getSelectedValues(
   name
 ) {
 
-
   return new Set(
 
     Array.from(
-
       document.querySelectorAll(
-
         'input[name="' +
-
         name +
-
         '"]:checked'
-
       )
-
     )
-
     .map(
-
       input =>
         input.value
-
     )
 
   );
-
 }
 
 
@@ -2248,30 +1616,25 @@ function spotMatchesFilters(
   spot
 ) {
 
-
   const categories =
-
     getSelectedValues(
       "filter-category"
     );
 
 
   const places =
-
     getSelectedValues(
       "filter-place"
     );
 
 
   const periods =
-
     getSelectedValues(
       "filter-period"
     );
 
 
   const reservations =
-
     getSelectedValues(
       "filter-reservation"
     );
@@ -2284,7 +1647,6 @@ function spotMatchesFilters(
   ) {
 
     return false;
-
   }
 
 
@@ -2295,7 +1657,6 @@ function spotMatchesFilters(
   ) {
 
     return false;
-
   }
 
 
@@ -2306,35 +1667,26 @@ function spotMatchesFilters(
   ) {
 
     return false;
-
   }
 
 
   if (
     !reservations.has(
-
       spot.reservationType ||
-
       "unknown"
-
     )
   ) {
 
     return false;
-
   }
 
-
-  /* 公式の関係種類 */
 
   if (
     spot.category ===
     "official"
   ) {
 
-
     const relations =
-
       getSelectedValues(
         "filter-official-relation"
       );
@@ -2347,22 +1699,16 @@ function spotMatchesFilters(
     ) {
 
       return false;
-
     }
-
   }
 
-
-  /* ナガノ先生 */
 
   if (
     spot.category ===
     "nagano"
   ) {
 
-
     const relations =
-
       getSelectedValues(
         "filter-nagano-relation"
       );
@@ -2375,14 +1721,11 @@ function spotMatchesFilters(
     ) {
 
       return false;
-
     }
-
   }
 
 
   return true;
-
 }
 
 
@@ -2392,27 +1735,31 @@ function spotMatchesFilters(
 
 function updateSpotFilters() {
 
+  if (
+    selectedRecord &&
+    !spotMatchesFilters(
+      selectedRecord.spot
+    )
+  ) {
+
+    closeSpotDetail();
+  }
+
 
   spotLayer.clearLayers();
 
 
-  let visibleCount =
-    0;
+  let visibleCount = 0;
 
 
   spotRecords.forEach(
-
     record => {
 
-
       if (
-
         spotMatchesFilters(
           record.spot
         )
-
       ) {
-
 
         record.marker.addTo(
           spotLayer
@@ -2421,25 +1768,33 @@ function updateSpotFilters() {
 
         visibleCount++;
 
+
+        if (
+          record ===
+          selectedRecord
+        ) {
+
+          requestAnimationFrame(
+            () => {
+
+              record.marker
+                .getElement()
+                ?.classList
+                .add(
+                  "is-selected"
+                );
+
+            }
+          );
+        }
       }
-
     }
-
   );
 
 
-  if (
-    resultCount
-  ) {
-
-    resultCount.textContent =
-
-      visibleCount +
-
-      "件表示";
-
-  }
-
+  resultCount.textContent =
+    visibleCount +
+    "件表示";
 }
 
 
@@ -2451,59 +1806,20 @@ function setFilterPanelOpen(
   open
 ) {
 
-
-  if (
-    !filterPanel ||
-    !filterToggle
-  ) {
-
-    return;
-
-  }
-
-
   filterPanel.hidden =
     !open;
 
 
   filterToggle.setAttribute(
-
     "aria-expanded",
-
     String(open)
-
   );
 
 
   filterToggle.classList.toggle(
-
     "is-active",
-
     open
-
   );
-
-
-  if (
-    open
-  ) {
-
-
-    filterPanel
-
-      .querySelector(
-        "input"
-      )
-
-      ?.focus(
-        {
-          preventScroll:
-            true
-        }
-      );
-
-  }
-
 }
 
 
@@ -2513,27 +1829,21 @@ function setFilterPanelOpen(
 
 function resetFilters() {
 
-
   document
-
     .querySelectorAll(
       ".spot-filter"
     )
-
     .forEach(
-
       input => {
 
         input.checked =
           true;
 
       }
-
     );
 
 
   updateSpotFilters();
-
 }
 
 
@@ -2543,23 +1853,14 @@ function resetFilters() {
 
 async function loadSpots() {
 
-
   try {
 
-
     const response =
-
       await fetch(
-
         "./data/spots.json",
-
         {
-
-          cache:
-            "no-store"
-
+          cache: "no-store"
         }
-
       );
 
 
@@ -2568,18 +1869,13 @@ async function loadSpots() {
     ) {
 
       throw new Error(
-
         "HTTP " +
-
         response.status
-
       );
-
     }
 
 
     const spots =
-
       await response.json();
 
 
@@ -2590,85 +1886,58 @@ async function loadSpots() {
     ) {
 
       throw new Error(
-
         "spots.json が配列ではありません。"
-
       );
-
     }
 
 
-    let endedCount =
-      0;
+    let endedCount = 0;
 
-
-    let skippedCount =
-      0;
+    let skippedCount = 0;
 
 
     spots.forEach(
-
       spot => {
 
-
         const periodStatus =
-
           getSpotPeriodStatus(
             spot
           );
 
-
-        /* 終了済み */
 
         if (
           periodStatus ===
           "ended"
         ) {
 
-
           endedCount++;
 
-
           console.log(
-
             "終了済みスポットを非表示:",
-
             spot.name
-
           );
 
-
           return;
-
         }
 
 
         const record =
-
           createSpotRecord(
             spot
           );
 
 
-        if (
-          record
-        ) {
-
+        if (record) {
 
           spotRecords.push(
             record
           );
 
-
         } else {
 
-
           skippedCount++;
-
         }
-
       }
-
     );
 
 
@@ -2676,29 +1945,20 @@ async function loadSpots() {
 
 
     console.log(
-
       spots.length +
-
       "件のスポットデータを読み込みました。"
-
     );
 
 
     console.log(
-
       spotRecords.length +
-
       "件が表示対象です。"
-
     );
 
 
     console.log(
-
       endedCount +
-
       "件の終了済みスポットを非表示にしました。"
-
     );
 
 
@@ -2706,43 +1966,24 @@ async function loadSpots() {
       skippedCount > 0
     ) {
 
-
       console.warn(
-
         skippedCount +
-
         "件のスポットをデータ不備によりスキップしました。"
-
       );
-
     }
 
 
-  } catch (
-    error
-  ) {
-
+  } catch (error) {
 
     console.error(
-
       "スポットデータの読み込みに失敗しました。",
-
       error
-
     );
 
 
-    if (
-      resultCount
-    ) {
-
-      resultCount.textContent =
-        "スポット読込エラー";
-
-    }
-
+    resultCount.textContent =
+      "スポット読込エラー";
   }
-
 }
 
 
@@ -2751,114 +1992,91 @@ async function loadSpots() {
 // ========================================
 
 document
-
   .querySelectorAll(
     ".spot-filter"
   )
-
   .forEach(
-
     input => {
 
-
       input.addEventListener(
-
         "change",
-
         updateSpotFilters
-
       );
 
     }
-
   );
 
 
-// ========================================
-// パネル開閉
-// ========================================
-
 filterToggle
   ?.addEventListener(
-
     "click",
-
     () => {
-
 
       setFilterPanelOpen(
         filterPanel.hidden
       );
 
     }
-
   );
 
 
 filterClose
   ?.addEventListener(
-
     "click",
-
     () => {
-
 
       setFilterPanelOpen(
         false
       );
 
-
-      filterToggle
-        ?.focus();
-
     }
-
   );
 
 
 filterReset
   ?.addEventListener(
-
     "click",
-
     resetFilters
-
   );
 
 
-// ESCでも閉じる
+detailClose
+  ?.addEventListener(
+    "click",
+    closeSpotDetail
+  );
+
 
 document.addEventListener(
-
   "keydown",
-
   event => {
 
-
     if (
-
       event.key ===
-        "Escape" &&
-
-      filterPanel &&
-
-      !filterPanel.hidden
-
+      "Escape"
     ) {
 
+      if (
+        !filterPanel.hidden
+      ) {
 
-      setFilterPanelOpen(
-        false
-      );
+        setFilterPanelOpen(
+          false
+        );
+
+        return;
+      }
 
 
-      filterToggle
-        ?.focus();
+      if (
+        !detailPanel.hidden
+      ) {
 
+        closeSpotDetail();
+      }
     }
 
   }
-
 );
 
 
@@ -2866,9 +2084,6 @@ document.addEventListener(
 // 起動
 // ========================================
 
-loadTileProvider(
-  0
-);
-
+loadTileProvider(0);
 
 loadSpots();
