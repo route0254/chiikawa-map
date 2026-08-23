@@ -1,20 +1,10 @@
 // ========================================
 // ちいかわ推し活MAP
-//
-// ・Leaflet地図
-// ・OpenStreetMap
-// ・Stadia Mapsフォールバック
-// ・障害試験
-// ・スポットJSON読込
-// ・公式 / ナガノ先生フィルター
-// ・開催期間判定
-// ・営業時間表示
-// ・予約 / 入場方法表示
 // ========================================
 
 
 // ========================================
-// 1. 地図の初期設定
+// 地図初期設定
 // ========================================
 
 const INITIAL_POSITION = [
@@ -26,50 +16,92 @@ const INITIAL_ZOOM = 11;
 
 
 // ========================================
-// 2. タイルプロバイダー
+// タイルプロバイダー
 // ========================================
 
 const TILE_PROVIDERS = [
+
   {
-    name: "OpenStreetMap",
+
+    name:
+      "OpenStreetMap",
 
     url:
       "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
 
     options: {
-      maxZoom: 19,
+
+      maxZoom:
+        19,
 
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">' +
-        "OpenStreetMap contributors</a>"
+
+        '&copy; ' +
+
+        '<a href="https://www.openstreetmap.org/copyright">' +
+
+        'OpenStreetMap contributors' +
+
+        '</a>'
+
     }
+
   },
 
+
   {
-    name: "Stadia Maps",
+
+    name:
+      "Stadia Maps",
 
     url:
-      "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
+
+      "https://tiles.stadiamaps.com/" +
+
+      "tiles/alidade_smooth/" +
+
+      "{z}/{x}/{y}{r}.png",
 
     options: {
-      maxZoom: 20,
+
+      maxZoom:
+        20,
 
       attribution:
-        '&copy; <a href="https://stadiamaps.com/" target="_blank">' +
-        "Stadia Maps</a>, " +
 
-        '&copy; <a href="https://openmaptiles.org/" target="_blank">' +
-        "OpenMapTiles</a>, " +
+        '&copy; ' +
 
-        '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">' +
-        "OpenStreetMap</a>"
+        '<a href="https://stadiamaps.com/" target="_blank">' +
+
+        'Stadia Maps' +
+
+        '</a>, ' +
+
+        '&copy; ' +
+
+        '<a href="https://openmaptiles.org/" target="_blank">' +
+
+        'OpenMapTiles' +
+
+        '</a>, ' +
+
+        '&copy; ' +
+
+        '<a href="https://www.openstreetmap.org/copyright" target="_blank">' +
+
+        'OpenStreetMap' +
+
+        '</a>'
+
     }
+
   }
+
 ];
 
 
 // ========================================
-// 3. 障害試験モード
+// 障害テスト
 // ========================================
 
 const params =
@@ -77,39 +109,62 @@ const params =
     window.location.search
   );
 
+
 const TILE_TEST_MODE =
-  params.get("tileTest");
-
-
-// ========================================
-// 4. Leaflet地図作成
-// ========================================
-
-const map =
-  L.map("map").setView(
-    INITIAL_POSITION,
-    INITIAL_ZOOM
+  params.get(
+    "tileTest"
   );
 
 
 // ========================================
-// 5. タイル状態管理
+// Leaflet
 // ========================================
 
-let currentProviderIndex = 0;
-let currentTileLayer = null;
+const map =
+  L.map(
+    "map"
+  ).setView(
 
-let tileErrorTimes = [];
+    INITIAL_POSITION,
+    INITIAL_ZOOM
 
-let switchingProvider = false;
-let allProvidersFailed = false;
-
-const TILE_ERROR_THRESHOLD = 3;
-const TILE_ERROR_WINDOW = 5000;
+  );
 
 
 // ========================================
-// 6. 地図状態メッセージ
+// タイル状態
+// ========================================
+
+let currentProviderIndex =
+  0;
+
+
+let currentTileLayer =
+  null;
+
+
+let tileErrorTimes =
+  [];
+
+
+let switchingProvider =
+  false;
+
+
+let allProvidersFailed =
+  false;
+
+
+const TILE_ERROR_THRESHOLD =
+  3;
+
+
+const TILE_ERROR_WINDOW =
+  5000;
+
+
+// ========================================
+// DOM
 // ========================================
 
 const mapStatus =
@@ -118,17 +173,56 @@ const mapStatus =
   );
 
 
-function showMapStatus(message) {
+const resultCount =
+  document.getElementById(
+    "result-count"
+  );
+
+
+const filterToggle =
+  document.getElementById(
+    "filter-toggle"
+  );
+
+
+const filterPanel =
+  document.getElementById(
+    "filter-panel"
+  );
+
+
+const filterClose =
+  document.getElementById(
+    "filter-close"
+  );
+
+
+const filterReset =
+  document.getElementById(
+    "filter-reset"
+  );
+
+
+// ========================================
+// 地図ステータス
+// ========================================
+
+function showMapStatus(
+  message
+) {
 
   if (!mapStatus) {
     return;
   }
 
+
   mapStatus.textContent =
     message;
 
+
   mapStatus.hidden =
     false;
+
 }
 
 
@@ -138,16 +232,21 @@ function hideMapStatus() {
     return;
   }
 
+
   mapStatus.hidden =
     true;
+
 }
 
 
 // ========================================
-// 7. 障害試験用タイルURL
+// テスト用タイル
 // ========================================
 
-function getTileUrl(providerIndex) {
+function getTileUrl(
+  providerIndex
+) {
+
 
   if (
     TILE_TEST_MODE ===
@@ -155,85 +254,113 @@ function getTileUrl(providerIndex) {
   ) {
 
     return (
+
       "https://invalid.example.com/" +
+
       "{z}/{x}/{y}.png"
+
     );
+
   }
 
 
   if (
+
     TILE_TEST_MODE ===
       "osm-fail" &&
-    providerIndex === 0
+
+    providerIndex ===
+      0
+
   ) {
 
     return (
+
       "https://invalid.example.com/" +
+
       "{z}/{x}/{y}.png"
+
     );
+
   }
 
 
   return (
+
     TILE_PROVIDERS[
       providerIndex
     ].url
+
   );
+
 }
 
 
 // ========================================
-// 8. タイルプロバイダー読込
+// タイル読込
 // ========================================
 
 function loadTileProvider(
   providerIndex
 ) {
 
+
   const provider =
+
     TILE_PROVIDERS[
       providerIndex
     ];
 
 
-  if (currentTileLayer) {
+  if (
+    currentTileLayer
+  ) {
 
     currentTileLayer.off();
+
 
     map.removeLayer(
       currentTileLayer
     );
+
   }
 
 
   currentProviderIndex =
     providerIndex;
 
-  tileErrorTimes = [];
+
+  tileErrorTimes =
+    [];
+
 
   switchingProvider =
     false;
 
 
-  const tileUrl =
-    getTileUrl(
-      providerIndex
-    );
-
-
   currentTileLayer =
+
     L.tileLayer(
-      tileUrl,
+
+      getTileUrl(
+        providerIndex
+      ),
+
       provider.options
+
     );
 
 
   currentTileLayer.once(
+
     "tileload",
+
     function () {
 
+
       if (
-        currentProviderIndex === 0
+        currentProviderIndex ===
+        0
       ) {
 
         hideMapStatus();
@@ -241,37 +368,53 @@ function loadTileProvider(
       } else {
 
         showMapStatus(
+
           "バックアップ地図で表示しています：" +
+
           provider.name
+
         );
 
       }
+
     }
+
   );
 
 
   currentTileLayer.on(
+
     "tileerror",
+
     handleTileError
+
   );
 
 
-  currentTileLayer.addTo(map);
+  currentTileLayer.addTo(
+    map
+  );
+
 }
 
 
 // ========================================
-// 9. タイルエラー処理
+// タイルエラー
 // ========================================
 
 function handleTileError() {
 
+
   if (
+
     switchingProvider ||
+
     allProvidersFailed
+
   ) {
 
     return;
+
   }
 
 
@@ -280,65 +423,91 @@ function handleTileError() {
 
 
   tileErrorTimes =
+
     tileErrorTimes.filter(
+
       time =>
+
         now - time <
+
         TILE_ERROR_WINDOW
+
     );
 
 
-  tileErrorTimes.push(now);
+  tileErrorTimes.push(
+    now
+  );
 
 
   if (
+
     tileErrorTimes.length <
+
     TILE_ERROR_THRESHOLD
+
   ) {
 
     return;
+
   }
 
 
   switchToNextProvider();
+
 }
 
 
 // ========================================
-// 10. 次のタイルへ切替
+// タイル切替
 // ========================================
 
 function switchToNextProvider() {
+
 
   switchingProvider =
     true;
 
 
   const nextProviderIndex =
-    currentProviderIndex + 1;
+
+    currentProviderIndex +
+    1;
 
 
   if (
+
     nextProviderIndex <
+
     TILE_PROVIDERS.length
+
   ) {
 
+
     const currentName =
+
       TILE_PROVIDERS[
         currentProviderIndex
       ].name;
 
 
     const nextName =
+
       TILE_PROVIDERS[
         nextProviderIndex
       ].name;
 
 
     console.warn(
+
       currentName +
+
       " の読み込みに失敗しました。" +
+
       nextName +
+
       " に切り替えます。"
+
     );
 
 
@@ -353,6 +522,7 @@ function switchToNextProvider() {
 
 
     return;
+
   }
 
 
@@ -366,22 +536,31 @@ function switchToNextProvider() {
 
 
   showMapStatus(
+
     "現在、背景地図を読み込めません。" +
+
     "スポット情報は引き続き利用できます。"
+
   );
+
 }
 
 
 // ========================================
-// 11. 日本時間の日付
+// 日本時間の日付
 // ========================================
 
 function getTodayInJapan() {
 
+
   const formatter =
+
     new Intl.DateTimeFormat(
+
       "en-CA",
+
       {
+
         timeZone:
           "Asia/Tokyo",
 
@@ -393,53 +572,65 @@ function getTodayInJapan() {
 
         day:
           "2-digit"
+
       }
-    );
 
-
-  const parts =
-    formatter.formatToParts(
-      new Date()
     );
 
 
   const values = {};
 
 
-  parts.forEach(
-    part => {
+  formatter
 
-      if (
-        part.type !==
-        "literal"
-      ) {
+    .formatToParts(
+      new Date()
+    )
 
-        values[
-          part.type
-        ] =
-          part.value;
+    .forEach(
+      part => {
+
+        if (
+          part.type !==
+          "literal"
+        ) {
+
+          values[
+            part.type
+          ] =
+            part.value;
+
+        }
+
       }
-    }
-  );
+    );
 
 
   return (
+
     values.year +
+
     "-" +
+
     values.month +
+
     "-" +
+
     values.day
+
   );
+
 }
 
 
 // ========================================
-// 12. 開催期間判定
+// 開催状態
 // ========================================
 
 function getSpotPeriodStatus(
   spot
 ) {
+
 
   if (
     spot.periodType ===
@@ -447,6 +638,7 @@ function getSpotPeriodStatus(
   ) {
 
     return "permanent";
+
   }
 
 
@@ -456,6 +648,7 @@ function getSpotPeriodStatus(
   ) {
 
     return "unknown";
+
   }
 
 
@@ -464,36 +657,46 @@ function getSpotPeriodStatus(
 
 
   if (
+
     spot.startDate &&
+
     today <
       spot.startDate
+
   ) {
 
     return "upcoming";
+
   }
 
 
   if (
+
     spot.endDate &&
+
     today >
       spot.endDate
+
   ) {
 
     return "ended";
+
   }
 
 
   return "active";
+
 }
 
 
 // ========================================
-// 13. 開催状態ラベル
+// 各種ラベル
 // ========================================
 
 function getPeriodStatusLabel(
   status
 ) {
+
 
   const labels = {
 
@@ -511,6 +714,7 @@ function getPeriodStatusLabel(
 
     unknown:
       "期間不明"
+
   };
 
 
@@ -518,72 +722,58 @@ function getPeriodStatusLabel(
     labels[status] ||
     "期間不明"
   );
+
 }
 
-
-// ========================================
-// 14. 日付表示
-// ========================================
 
 function formatDate(
   dateString
 ) {
 
+
   if (!dateString) {
+
     return "";
+
   }
 
 
-  return (
-    dateString.replaceAll(
-      "-",
-      "/"
-    )
+  return dateString.replaceAll(
+    "-",
+    "/"
   );
+
 }
 
-
-// ========================================
-// 15. カテゴリ日本語表示
-// ========================================
 
 function getCategoryLabel(
   category
 ) {
 
-  if (
-    category ===
-    "official"
-  ) {
 
-    return (
-      "ちいかわ公式関連"
-    );
-  }
+  const labels = {
 
+    official:
+      "ちいかわ公式関連",
 
-  if (
-    category ===
-    "nagano"
-  ) {
-
-    return (
+    nagano:
       "ナガノ先生関連"
-    );
-  }
+
+  };
 
 
-  return "その他";
+  return (
+    labels[category] ||
+    "その他"
+  );
+
 }
 
-
-// ========================================
-// 16. 場所タイプ
-// ========================================
 
 function getPlaceTypeLabel(
   placeType
 ) {
+
 
   const labels = {
 
@@ -601,6 +791,7 @@ function getPlaceTypeLabel(
 
     other:
       "その他"
+
   };
 
 
@@ -608,17 +799,17 @@ function getPlaceTypeLabel(
     labels[placeType] ||
     "その他"
   );
+
 }
 
 
-// ========================================
-// 17. 関係タイプ
-// ========================================
-
 function getRelationTypeLabel(
+
   category,
   relationType
+
 ) {
+
 
   const officialLabels = {
 
@@ -636,6 +827,7 @@ function getRelationTypeLabel(
 
     event:
       "イベント・展示"
+
   };
 
 
@@ -649,6 +841,7 @@ function getRelationTypeLabel(
 
     related:
       "ナガノ先生ゆかり・関連"
+
   };
 
 
@@ -658,11 +851,15 @@ function getRelationTypeLabel(
   ) {
 
     return (
+
       officialLabels[
         relationType
       ] ||
+
       "公式関連"
+
     );
+
   }
 
 
@@ -672,25 +869,27 @@ function getRelationTypeLabel(
   ) {
 
     return (
+
       naganoLabels[
         relationType
       ] ||
+
       "ナガノ先生関連"
+
     );
+
   }
 
 
   return "その他";
+
 }
 
-
-// ========================================
-// 18. 予約方式
-// ========================================
 
 function getReservationLabel(
   reservationType
 ) {
+
 
   const labels = {
 
@@ -708,25 +907,27 @@ function getReservationLabel(
 
     unknown:
       "要確認"
+
   };
 
 
   return (
+
     labels[
       reservationType
     ] ||
+
     "要確認"
+
   );
+
 }
 
-
-// ========================================
-// 19. 通常入場方式
-// ========================================
 
 function getDefaultEntryLabel(
   entryType
 ) {
+
 
   const labels = {
 
@@ -744,23 +945,27 @@ function getDefaultEntryLabel(
 
     other:
       "その他"
+
   };
 
 
   return (
-    labels[entryType] ||
+
+    labels[
+      entryType
+    ] ||
+
     "要確認"
+
   );
+
 }
 
-
-// ========================================
-// 20. 整理券・抽選など
-// ========================================
 
 function getCrowdControlLabel(
   type
 ) {
+
 
   const labels = {
 
@@ -781,6 +986,7 @@ function getCrowdControlLabel(
 
     other:
       "その他の入場制限"
+
   };
 
 
@@ -788,16 +994,14 @@ function getCrowdControlLabel(
     labels[type] ??
     null
   );
+
 }
 
-
-// ========================================
-// 21. 入場制限の発動条件
-// ========================================
 
 function getCrowdConditionLabel(
   condition
 ) {
+
 
   const labels = {
 
@@ -815,6 +1019,7 @@ function getCrowdConditionLabel(
 
     announced:
       "公式案内時"
+
   };
 
 
@@ -822,76 +1027,96 @@ function getCrowdConditionLabel(
     labels[condition] ||
     ""
   );
+
 }
 
 
 // ========================================
-// 22. URL安全確認
+// URL検証
 // ========================================
 
-function getSafeUrl(url) {
+function getSafeUrl(
+  url
+) {
+
 
   if (!url) {
+
     return null;
+
   }
 
 
   try {
+
 
     const parsed =
       new URL(url);
 
 
     if (
+
       parsed.protocol ===
         "https:" ||
+
       parsed.protocol ===
         "http:"
+
     ) {
 
       return parsed.href;
+
     }
+
 
   } catch (error) {
 
+
     console.warn(
+
       "不正なURLを無視しました:",
+
       url
+
     );
+
   }
 
 
   return null;
+
 }
 
 
 // ========================================
-// 23. スポットレイヤー
+// スポット保持
 // ========================================
 
-const spotLayers = {
+const spotLayer =
 
-  official:
-    L.layerGroup()
-      .addTo(map),
+  L.layerGroup()
+    .addTo(map);
 
-  nagano:
-    L.layerGroup()
-      .addTo(map)
 
-};
+const spotRecords =
+  [];
 
 
 // ========================================
-// 24. マーカーアイコン
+// ピン
 // ========================================
 
 function createSpotIcon(
   category
 ) {
 
-  let label = "?";
-  let className = "";
+
+  let label =
+    "?";
+
+
+  let className =
+    "";
 
 
   if (
@@ -899,10 +1124,12 @@ function createSpotIcon(
     "official"
   ) {
 
-    label = "公";
+    label =
+      "公";
 
     className =
       "spot-pin-official";
+
   }
 
 
@@ -911,10 +1138,12 @@ function createSpotIcon(
     "nagano"
   ) {
 
-    label = "ナ";
+    label =
+      "ナ";
 
     className =
       "spot-pin-nagano";
+
   }
 
 
@@ -924,148 +1153,211 @@ function createSpotIcon(
       "spot-marker",
 
     html:
+
       '<div class="spot-pin ' +
+
       className +
+
       '">' +
+
+      '<span>' +
+
       label +
-      "</div>",
+
+      '</span>' +
+
+      '</div>',
+
 
     iconSize:
-      [34, 34],
+      [38, 38],
+
 
     iconAnchor:
-      [17, 17],
+      [19, 19],
+
 
     popupAnchor:
-      [0, -18]
+      [0, -20]
 
   });
+
 }
 
 
 // ========================================
-// 25. ポップアップ作成
+// ポップアップ
 // ========================================
 
 function createSpotPopup(
   spot
 ) {
 
+
   const container =
+
     document.createElement(
       "div"
     );
+
 
   container.className =
     "spot-popup";
 
 
-  // --------------------------------
-  // タイトル
-  // --------------------------------
+  /* タイトル */
 
   const title =
+
     document.createElement(
       "div"
     );
 
+
   title.className =
     "spot-popup-title";
 
+
   title.textContent =
     spot.name;
+
 
   container.appendChild(
     title
   );
 
 
-  // --------------------------------
-  // 大分類
-  // --------------------------------
+  /* タグ */
 
-  const category =
+  const tags =
+
     document.createElement(
       "div"
     );
 
-  category.className =
-    "spot-popup-category";
 
-  category.textContent =
+  tags.className =
+    "spot-popup-tags";
+
+
+  const categoryTag =
+
+    document.createElement(
+      "span"
+    );
+
+
+  categoryTag.className =
+
+    "spot-popup-tag " +
+
+    (
+      spot.category ===
+      "official"
+
+        ? "tag-official"
+
+        : "tag-nagano"
+    );
+
+
+  categoryTag.textContent =
+
     getCategoryLabel(
       spot.category
     );
 
-  container.appendChild(
-    category
+
+  tags.appendChild(
+    categoryTag
   );
 
 
-  // --------------------------------
-  // 場所タイプ
-  // --------------------------------
+  const placeTag =
 
-  const placeType =
     document.createElement(
-      "div"
+      "span"
     );
 
-  placeType.className =
-    "spot-popup-meta";
 
-  placeType.textContent =
-    "📍 " +
+  placeTag.className =
+
+    "spot-popup-tag " +
+
+    "tag-neutral";
+
+
+  placeTag.textContent =
+
     getPlaceTypeLabel(
       spot.placeType
     );
 
-  container.appendChild(
-    placeType
+
+  tags.appendChild(
+    placeTag
   );
 
 
-  // --------------------------------
-  // 関係性
-  // --------------------------------
+  container.appendChild(
+    tags
+  );
+
+
+  /* 関係性 */
 
   const relation =
+
     document.createElement(
       "div"
     );
 
+
   relation.className =
     "spot-popup-meta";
 
+
   relation.textContent =
+
     "🏷️ " +
+
     getRelationTypeLabel(
+
       spot.category,
+
       spot.relationType
+
     );
+
 
   container.appendChild(
     relation
   );
 
 
-  // --------------------------------
-  // 開催期間
-  // --------------------------------
+  /* 開催期間 */
 
   const periodStatus =
+
     getSpotPeriodStatus(
       spot
     );
 
 
   const period =
+
     document.createElement(
       "div"
     );
 
+
   period.className =
-    "spot-popup-period";
+
+    "spot-popup-period " +
+
+    "period-" +
+
+    periodStatus;
 
 
   if (
@@ -1078,31 +1370,45 @@ function createSpotPopup(
 
   } else {
 
+
     const start =
+
       spot.startDate
+
         ? formatDate(
             spot.startDate
           )
+
         : "開始日未定";
 
 
     const end =
+
       spot.endDate
+
         ? formatDate(
             spot.endDate
           )
+
         : "終了日未定";
 
 
     period.textContent =
+
       "🗓 " +
+
       start +
+
       " ～ " +
+
       end +
+
       "　" +
+
       getPeriodStatusLabel(
         periodStatus
       );
+
   }
 
 
@@ -1111,348 +1417,492 @@ function createSpotPopup(
   );
 
 
-  // =================================
-  // 営業・開催情報
-  // =================================
+  /* ==================================
+     営業時間
+     ================================== */
 
   if (
+
     spot.hoursText ||
+
     spot.closedDaysText ||
+
     spot.hoursInfoUrl ||
+
     spot.hoursCheckedAt
+
   ) {
 
+
     const hoursBox =
+
       document.createElement(
-        "div"
+        "section"
       );
 
+
     hoursBox.className =
+
+      "spot-popup-info " +
+
       "spot-popup-hours";
 
 
     const hoursTitle =
+
       document.createElement(
         "div"
       );
 
+
     hoursTitle.className =
-      "spot-popup-hours-title";
+      "spot-popup-info-title";
+
 
     hoursTitle.textContent =
       "🕐 営業・開催情報";
+
 
     hoursBox.appendChild(
       hoursTitle
     );
 
 
-    if (spot.hoursText) {
+    if (
+      spot.hoursText
+    ) {
 
-      const hoursRow =
+
+      const row =
+
         document.createElement(
           "div"
         );
 
-      hoursRow.className =
-        "spot-popup-hours-row";
 
-      hoursRow.textContent =
+      row.className =
+        "spot-popup-info-row";
+
+
+      row.textContent =
+
         "時間： " +
+
         spot.hoursText;
 
+
       hoursBox.appendChild(
-        hoursRow
+        row
       );
+
     }
 
 
-    if (spot.closedDaysText) {
+    if (
+      spot.closedDaysText
+    ) {
 
-      const closedRow =
+
+      const row =
+
         document.createElement(
           "div"
         );
 
-      closedRow.className =
-        "spot-popup-hours-row";
 
-      closedRow.textContent =
+      row.className =
+        "spot-popup-info-row";
+
+
+      row.textContent =
+
         "休業・休催： " +
+
         spot.closedDaysText;
 
+
       hoursBox.appendChild(
-        closedRow
+        row
       );
+
     }
 
 
     const hoursInfoUrl =
+
       getSafeUrl(
         spot.hoursInfoUrl
       );
 
 
-    if (hoursInfoUrl) {
+    if (
+      hoursInfoUrl
+    ) {
 
-      const hoursLink =
+
+      const link =
+
         document.createElement(
           "a"
         );
 
-      hoursLink.href =
+
+      link.href =
         hoursInfoUrl;
 
-      hoursLink.target =
+
+      link.target =
         "_blank";
 
-      hoursLink.rel =
+
+      link.rel =
         "noopener noreferrer";
 
-      hoursLink.textContent =
+
+      link.textContent =
         "最新の営業時間を見る";
 
+
       hoursBox.appendChild(
-        hoursLink
+        link
       );
+
     }
 
 
-    if (spot.hoursCheckedAt) {
+    if (
+      spot.hoursCheckedAt
+    ) {
 
-      const hoursChecked =
+
+      const checked =
+
         document.createElement(
           "div"
         );
 
-      hoursChecked.className =
-        "spot-popup-hours-checked";
 
-      hoursChecked.textContent =
+      checked.className =
+        "spot-popup-checked";
+
+
+      checked.textContent =
+
         "営業時間確認： " +
+
         formatDate(
           spot.hoursCheckedAt
         );
 
+
       hoursBox.appendChild(
-        hoursChecked
+        checked
       );
+
     }
 
 
     container.appendChild(
       hoursBox
     );
+
   }
 
 
-  // =================================
-  // 入店・入場方法
-  // =================================
+  /* ==================================
+     入場方法
+     ================================== */
 
   const entryBox =
+
     document.createElement(
-      "div"
+      "section"
     );
 
+
   entryBox.className =
+
+    "spot-popup-info " +
+
     "spot-popup-entry";
 
 
   const entryTitle =
+
     document.createElement(
       "div"
     );
 
+
   entryTitle.className =
-    "spot-popup-entry-title";
+    "spot-popup-info-title";
+
 
   entryTitle.textContent =
     "🎫 入店・入場方法";
+
 
   entryBox.appendChild(
     entryTitle
   );
 
 
+  /* 予約 */
+
   const reservation =
+
     document.createElement(
       "div"
     );
 
+
   reservation.className =
-    "spot-popup-entry-row";
+    "spot-popup-info-row";
+
 
   reservation.textContent =
+
     "予約： " +
+
     getReservationLabel(
       spot.reservationType
     );
+
 
   entryBox.appendChild(
     reservation
   );
 
 
+  /* 通常時 */
+
   const defaultEntry =
+
     document.createElement(
       "div"
     );
 
+
   defaultEntry.className =
-    "spot-popup-entry-row";
+    "spot-popup-info-row";
+
 
   defaultEntry.textContent =
+
     "通常時： " +
+
     getDefaultEntryLabel(
       spot.defaultEntryType
     );
+
 
   entryBox.appendChild(
     defaultEntry
   );
 
 
+  /* 整理券等 */
+
   const crowdControl =
+
     getCrowdControlLabel(
       spot.crowdControlType
     );
 
 
-  if (crowdControl) {
+  if (
+    crowdControl
+  ) {
+
 
     const crowdRow =
+
       document.createElement(
         "div"
       );
 
+
     crowdRow.className =
-      "spot-popup-entry-row";
+      "spot-popup-info-row";
 
 
     const condition =
+
       getCrowdConditionLabel(
         spot.crowdControlCondition
       );
 
 
     crowdRow.textContent =
+
       (
         condition
+
           ? condition + "： "
+
           : ""
-      ) +
+      )
+
+      +
+
       crowdControl;
 
 
     entryBox.appendChild(
       crowdRow
     );
+
   }
 
 
-  if (spot.entryNote) {
+  /* 補足 */
+
+  if (
+    spot.entryNote
+  ) {
+
 
     const note =
+
       document.createElement(
         "div"
       );
 
+
     note.className =
-      "spot-popup-entry-note";
+      "spot-popup-note";
+
 
     note.textContent =
       spot.entryNote;
 
+
     entryBox.appendChild(
       note
     );
+
   }
 
 
+  /* 予約URL */
+
   const reservationUrl =
+
     getSafeUrl(
       spot.reservationUrl
     );
 
 
-  if (reservationUrl) {
+  if (
+    reservationUrl
+  ) {
 
-    const reservationLink =
+
+    const link =
+
       document.createElement(
         "a"
       );
 
-    reservationLink.href =
+
+    link.href =
       reservationUrl;
 
-    reservationLink.target =
+
+    link.target =
       "_blank";
 
-    reservationLink.rel =
+
+    link.rel =
       "noopener noreferrer";
 
-    reservationLink.textContent =
+
+    link.textContent =
       "予約ページを見る";
 
+
     entryBox.appendChild(
-      reservationLink
+      link
     );
+
   }
 
 
+  /* 入場情報URL */
+
   const entryInfoUrl =
+
     getSafeUrl(
       spot.entryInfoUrl
     );
 
 
-  if (entryInfoUrl) {
+  if (
+    entryInfoUrl
+  ) {
 
-    const entryLink =
+
+    const link =
+
       document.createElement(
         "a"
       );
 
-    entryLink.href =
+
+    link.href =
       entryInfoUrl;
 
-    entryLink.target =
+
+    link.target =
       "_blank";
 
-    entryLink.rel =
+
+    link.rel =
       "noopener noreferrer";
 
-    entryLink.textContent =
+
+    link.textContent =
       "最新の入場情報を見る";
 
+
     entryBox.appendChild(
-      entryLink
+      link
     );
+
   }
 
+
+  /* 確認日 */
 
   if (
     spot.entryInfoCheckedAt
   ) {
 
-    const checkedAt =
+
+    const checked =
+
       document.createElement(
         "div"
       );
 
-    checkedAt.className =
-      "spot-popup-entry-checked";
 
-    checkedAt.textContent =
+    checked.className =
+      "spot-popup-checked";
+
+
+    checked.textContent =
+
       "入場情報確認： " +
+
       formatDate(
         spot.entryInfoCheckedAt
       );
 
+
     entryBox.appendChild(
-      checkedAt
+      checked
     );
+
   }
 
 
@@ -1461,63 +1911,82 @@ function createSpotPopup(
   );
 
 
-  // =================================
-  // 住所
-  // =================================
+  /* ==================================
+     住所
+     ================================== */
 
-  if (spot.address) {
+  if (
+    spot.address
+  ) {
+
 
     const address =
+
       document.createElement(
         "div"
       );
+
 
     address.className =
       "spot-popup-address";
 
+
     address.textContent =
+
+      "📌 " +
+
       spot.address;
+
 
     container.appendChild(
       address
     );
+
   }
 
 
-  // =================================
-  // 説明
-  // =================================
+  /* 説明 */
 
-  if (spot.description) {
+  if (
+    spot.description
+  ) {
+
 
     const description =
+
       document.createElement(
         "div"
       );
 
+
     description.className =
       "spot-popup-description";
+
 
     description.textContent =
       spot.description;
 
+
     container.appendChild(
       description
     );
+
   }
 
 
-  // =================================
-  // 一般リンク
-  // =================================
+  /* ==================================
+     外部リンク
+     ================================== */
 
   const sourceUrl =
+
     getSafeUrl(
       spot.sourceUrl
     );
 
 
   const mapUrl =
+
     getSafeUrl(
       spot.mapUrl
     );
@@ -1528,175 +1997,589 @@ function createSpotPopup(
     mapUrl
   ) {
 
+
     const links =
+
       document.createElement(
         "div"
       );
+
 
     links.className =
       "spot-popup-links";
 
 
-    if (sourceUrl) {
+    if (
+      sourceUrl
+    ) {
+
 
       const sourceLink =
+
         document.createElement(
           "a"
         );
+
 
       sourceLink.href =
         sourceUrl;
 
+
       sourceLink.target =
         "_blank";
+
 
       sourceLink.rel =
         "noopener noreferrer";
 
+
       sourceLink.textContent =
-        "情報元を見る";
+        "情報元を見る ↗";
+
 
       links.appendChild(
         sourceLink
       );
+
     }
 
 
-    if (mapUrl) {
+    if (
+      mapUrl
+    ) {
+
 
       const mapLink =
+
         document.createElement(
           "a"
         );
 
+
       mapLink.href =
         mapUrl;
+
 
       mapLink.target =
         "_blank";
 
+
       mapLink.rel =
         "noopener noreferrer";
 
+
       mapLink.textContent =
-        "地図で開く";
+        "地図で開く ↗";
+
 
       links.appendChild(
         mapLink
       );
+
     }
 
 
     container.appendChild(
       links
     );
+
   }
 
 
   return container;
+
 }
 
 
 // ========================================
-// 26. スポット1件を地図へ追加
+// マーカー生成
 // ========================================
 
-function addSpotMarker(
+function createSpotRecord(
   spot
 ) {
 
+
   if (
+
     typeof spot.lat !==
       "number" ||
+
     typeof spot.lng !==
       "number"
+
   ) {
 
+
     console.warn(
+
       "緯度経度が不正なためスキップ:",
+
       spot
+
     );
 
-    return false;
+
+    return null;
+
   }
 
 
-  const layer =
-    spotLayers[
-      spot.category
-    ];
+  if (
 
+    spot.category !==
+      "official" &&
 
-  if (!layer) {
+    spot.category !==
+      "nagano"
+
+  ) {
+
 
     console.warn(
+
       "未対応カテゴリのためスキップ:",
+
       spot.category,
+
       spot.name
+
     );
 
-    return false;
+
+    return null;
+
   }
 
 
   const marker =
+
     L.marker(
+
       [
         spot.lat,
         spot.lng
       ],
+
       {
+
         icon:
+
           createSpotIcon(
             spot.category
           )
+
       }
+
     );
 
 
   marker.bindPopup(
+
     createSpotPopup(
       spot
-    )
+    ),
+
+    {
+
+      maxWidth:
+        330,
+
+      minWidth:
+        240
+
+    }
+
   );
 
 
-  marker.addTo(
-    layer
-  );
+  return {
 
+    spot,
+    marker
 
-  return true;
+  };
+
 }
 
 
 // ========================================
-// 27. spots.json読込
+// フィルター値取得
+// ========================================
+
+function getSelectedValues(
+  name
+) {
+
+
+  return new Set(
+
+    Array.from(
+
+      document.querySelectorAll(
+
+        'input[name="' +
+
+        name +
+
+        '"]:checked'
+
+      )
+
+    )
+
+    .map(
+
+      input =>
+        input.value
+
+    )
+
+  );
+
+}
+
+
+// ========================================
+// フィルター判定
+// ========================================
+
+function spotMatchesFilters(
+  spot
+) {
+
+
+  const categories =
+
+    getSelectedValues(
+      "filter-category"
+    );
+
+
+  const places =
+
+    getSelectedValues(
+      "filter-place"
+    );
+
+
+  const periods =
+
+    getSelectedValues(
+      "filter-period"
+    );
+
+
+  const reservations =
+
+    getSelectedValues(
+      "filter-reservation"
+    );
+
+
+  if (
+    !categories.has(
+      spot.category
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  if (
+    !places.has(
+      spot.placeType
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  if (
+    !periods.has(
+      spot.periodType
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  if (
+    !reservations.has(
+
+      spot.reservationType ||
+
+      "unknown"
+
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  /* 公式の関係種類 */
+
+  if (
+    spot.category ===
+    "official"
+  ) {
+
+
+    const relations =
+
+      getSelectedValues(
+        "filter-official-relation"
+      );
+
+
+    if (
+      !relations.has(
+        spot.relationType
+      )
+    ) {
+
+      return false;
+
+    }
+
+  }
+
+
+  /* ナガノ先生 */
+
+  if (
+    spot.category ===
+    "nagano"
+  ) {
+
+
+    const relations =
+
+      getSelectedValues(
+        "filter-nagano-relation"
+      );
+
+
+    if (
+      !relations.has(
+        spot.relationType
+      )
+    ) {
+
+      return false;
+
+    }
+
+  }
+
+
+  return true;
+
+}
+
+
+// ========================================
+// フィルター反映
+// ========================================
+
+function updateSpotFilters() {
+
+
+  spotLayer.clearLayers();
+
+
+  let visibleCount =
+    0;
+
+
+  spotRecords.forEach(
+
+    record => {
+
+
+      if (
+
+        spotMatchesFilters(
+          record.spot
+        )
+
+      ) {
+
+
+        record.marker.addTo(
+          spotLayer
+        );
+
+
+        visibleCount++;
+
+      }
+
+    }
+
+  );
+
+
+  if (
+    resultCount
+  ) {
+
+    resultCount.textContent =
+
+      visibleCount +
+
+      "件表示";
+
+  }
+
+}
+
+
+// ========================================
+// フィルターパネル
+// ========================================
+
+function setFilterPanelOpen(
+  open
+) {
+
+
+  if (
+    !filterPanel ||
+    !filterToggle
+  ) {
+
+    return;
+
+  }
+
+
+  filterPanel.hidden =
+    !open;
+
+
+  filterToggle.setAttribute(
+
+    "aria-expanded",
+
+    String(open)
+
+  );
+
+
+  filterToggle.classList.toggle(
+
+    "is-active",
+
+    open
+
+  );
+
+
+  if (
+    open
+  ) {
+
+
+    filterPanel
+
+      .querySelector(
+        "input"
+      )
+
+      ?.focus(
+        {
+          preventScroll:
+            true
+        }
+      );
+
+  }
+
+}
+
+
+// ========================================
+// フィルターリセット
+// ========================================
+
+function resetFilters() {
+
+
+  document
+
+    .querySelectorAll(
+      ".spot-filter"
+    )
+
+    .forEach(
+
+      input => {
+
+        input.checked =
+          true;
+
+      }
+
+    );
+
+
+  updateSpotFilters();
+
+}
+
+
+// ========================================
+// JSON読込
 // ========================================
 
 async function loadSpots() {
 
+
   try {
 
+
     const response =
+
       await fetch(
+
         "./data/spots.json",
+
         {
-          cache: "no-store"
+
+          cache:
+            "no-store"
+
         }
+
       );
 
 
-    if (!response.ok) {
+    if (
+      !response.ok
+    ) {
 
       throw new Error(
+
         "HTTP " +
+
         response.status
+
       );
+
     }
 
 
     const spots =
+
       await response.json();
 
 
@@ -1707,76 +2590,115 @@ async function loadSpots() {
     ) {
 
       throw new Error(
+
         "spots.json が配列ではありません。"
+
       );
+
     }
 
 
-    let displayedCount = 0;
-    let endedCount = 0;
-    let skippedCount = 0;
+    let endedCount =
+      0;
+
+
+    let skippedCount =
+      0;
 
 
     spots.forEach(
+
       spot => {
 
+
         const periodStatus =
+
           getSpotPeriodStatus(
             spot
           );
 
+
+        /* 終了済み */
 
         if (
           periodStatus ===
           "ended"
         ) {
 
+
           endedCount++;
 
 
           console.log(
+
             "終了済みスポットを非表示:",
+
             spot.name
+
           );
 
 
           return;
+
         }
 
 
-        const added =
-          addSpotMarker(
+        const record =
+
+          createSpotRecord(
             spot
           );
 
 
-        if (added) {
+        if (
+          record
+        ) {
 
-          displayedCount++;
+
+          spotRecords.push(
+            record
+          );
+
 
         } else {
 
+
           skippedCount++;
+
         }
+
       }
+
     );
 
 
+    updateSpotFilters();
+
+
     console.log(
+
       spots.length +
+
       "件のスポットデータを読み込みました。"
+
     );
 
 
     console.log(
-      displayedCount +
-      "件を地図に表示しています。"
+
+      spotRecords.length +
+
+      "件が表示対象です。"
+
     );
 
 
     console.log(
+
       endedCount +
+
       "件の終了済みスポットを非表示にしました。"
+
     );
 
 
@@ -1784,131 +2706,169 @@ async function loadSpots() {
       skippedCount > 0
     ) {
 
+
       console.warn(
+
         skippedCount +
+
         "件のスポットをデータ不備によりスキップしました。"
+
       );
+
     }
 
 
-  } catch (error) {
+  } catch (
+    error
+  ) {
+
 
     console.error(
+
       "スポットデータの読み込みに失敗しました。",
+
       error
+
     );
-  }
-}
 
-
-// ========================================
-// 28. 公式 / ナガノ先生フィルター
-// ========================================
-
-const officialFilter =
-  document.getElementById(
-    "filter-official"
-  );
-
-const naganoFilter =
-  document.getElementById(
-    "filter-nagano"
-  );
-
-
-function updateSpotFilters() {
-
-  if (officialFilter) {
 
     if (
-      officialFilter.checked
+      resultCount
     ) {
 
-      if (
-        !map.hasLayer(
-          spotLayers.official
-        )
-      ) {
+      resultCount.textContent =
+        "スポット読込エラー";
 
-        spotLayers.official
-          .addTo(map);
-      }
-
-    } else {
-
-      if (
-        map.hasLayer(
-          spotLayers.official
-        )
-      ) {
-
-        map.removeLayer(
-          spotLayers.official
-        );
-      }
     }
+
   }
 
+}
 
-  if (naganoFilter) {
+
+// ========================================
+// フィルターイベント
+// ========================================
+
+document
+
+  .querySelectorAll(
+    ".spot-filter"
+  )
+
+  .forEach(
+
+    input => {
+
+
+      input.addEventListener(
+
+        "change",
+
+        updateSpotFilters
+
+      );
+
+    }
+
+  );
+
+
+// ========================================
+// パネル開閉
+// ========================================
+
+filterToggle
+  ?.addEventListener(
+
+    "click",
+
+    () => {
+
+
+      setFilterPanelOpen(
+        filterPanel.hidden
+      );
+
+    }
+
+  );
+
+
+filterClose
+  ?.addEventListener(
+
+    "click",
+
+    () => {
+
+
+      setFilterPanelOpen(
+        false
+      );
+
+
+      filterToggle
+        ?.focus();
+
+    }
+
+  );
+
+
+filterReset
+  ?.addEventListener(
+
+    "click",
+
+    resetFilters
+
+  );
+
+
+// ESCでも閉じる
+
+document.addEventListener(
+
+  "keydown",
+
+  event => {
+
 
     if (
-      naganoFilter.checked
+
+      event.key ===
+        "Escape" &&
+
+      filterPanel &&
+
+      !filterPanel.hidden
+
     ) {
 
-      if (
-        !map.hasLayer(
-          spotLayers.nagano
-        )
-      ) {
 
-        spotLayers.nagano
-          .addTo(map);
-      }
+      setFilterPanelOpen(
+        false
+      );
 
-    } else {
 
-      if (
-        map.hasLayer(
-          spotLayers.nagano
-        )
-      ) {
+      filterToggle
+        ?.focus();
 
-        map.removeLayer(
-          spotLayers.nagano
-        );
-      }
     }
+
   }
-}
+
+);
 
 
 // ========================================
-// 29. フィルターイベント
+// 起動
 // ========================================
 
-if (officialFilter) {
+loadTileProvider(
+  0
+);
 
-  officialFilter.addEventListener(
-    "change",
-    updateSpotFilters
-  );
-}
-
-
-if (naganoFilter) {
-
-  naganoFilter.addEventListener(
-    "change",
-    updateSpotFilters
-  );
-}
-
-
-// ========================================
-// 30. 起動
-// ========================================
-
-loadTileProvider(0);
 
 loadSpots();
