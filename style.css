@@ -43,6 +43,34 @@ main {
   width: 100%;
 }
 
+#map-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#map-status {
+  position: absolute;
+  z-index: 1100;
+
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: calc(100% - 40px);
+
+  padding: 10px 16px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
 /*
  * Leafletでは地図エリアに高さが必須です。
  * 高さがないと地図が表示されません。
