@@ -749,6 +749,108 @@ async function loadSpots() {
 
 }
 
+// ========================================
+// スポットフィルター
+// ========================================
+
+const officialFilter =
+  document.getElementById(
+    "filter-official"
+  );
+
+const naganoFilter =
+  document.getElementById(
+    "filter-nagano"
+  );
+
+
+// ----------------------------------------
+// レイヤー表示切替
+// ----------------------------------------
+
+function updateSpotFilters() {
+
+  // ちいかわ公式
+
+  if (
+    officialFilter.checked
+  ) {
+
+    if (
+      !map.hasLayer(
+        spotLayers.official
+      )
+    ) {
+
+      spotLayers.official.addTo(map);
+
+    }
+
+  } else {
+
+    if (
+      map.hasLayer(
+        spotLayers.official
+      )
+    ) {
+
+      map.removeLayer(
+        spotLayers.official
+      );
+
+    }
+
+  }
+
+
+  // ナガノ先生関連
+
+  if (
+    naganoFilter.checked
+  ) {
+
+    if (
+      !map.hasLayer(
+        spotLayers.nagano
+      )
+    ) {
+
+      spotLayers.nagano.addTo(map);
+
+    }
+
+  } else {
+
+    if (
+      map.hasLayer(
+        spotLayers.nagano
+      )
+    ) {
+
+      map.removeLayer(
+        spotLayers.nagano
+      );
+
+    }
+
+  }
+
+}
+
+
+// ----------------------------------------
+// チェックボックスイベント
+// ----------------------------------------
+
+officialFilter.addEventListener(
+  "change",
+  updateSpotFilters
+);
+
+naganoFilter.addEventListener(
+  "change",
+  updateSpotFilters
+);
 
 // ========================================
 // 起動
