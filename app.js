@@ -8,6 +8,7 @@
 // ・スポットJSON読込
 // ・公式 / ナガノ先生フィルター
 // ・開催期間判定
+// ・営業時間表示
 // ・予約 / 入場方法表示
 // ========================================
 
@@ -69,15 +70,6 @@ const TILE_PROVIDERS = [
 
 // ========================================
 // 3. 障害試験モード
-//
-// 通常
-// /chiikawa-map/
-//
-// OSMだけ故障
-// ?tileTest=osm-fail
-//
-// 全タイル故障
-// ?tileTest=all-fail
 // ========================================
 
 const params =
@@ -111,10 +103,6 @@ let tileErrorTimes = [];
 
 let switchingProvider = false;
 let allProvidersFailed = false;
-
-
-// 5秒以内に3タイル以上失敗したら
-// プロバイダー障害とみなす
 
 const TILE_ERROR_THRESHOLD = 3;
 const TILE_ERROR_WINDOW = 5000;
@@ -161,8 +149,6 @@ function hideMapStatus() {
 
 function getTileUrl(providerIndex) {
 
-  // 全プロバイダーを強制的に失敗
-
   if (
     TILE_TEST_MODE ===
     "all-fail"
@@ -174,8 +160,6 @@ function getTileUrl(providerIndex) {
     );
   }
 
-
-  // OSMだけ強制的に失敗
 
   if (
     TILE_TEST_MODE ===
@@ -212,8 +196,6 @@ function loadTileProvider(
     ];
 
 
-  // 既存レイヤーを削除
-
   if (currentTileLayer) {
 
     currentTileLayer.off();
@@ -246,8 +228,6 @@ function loadTileProvider(
     );
 
 
-  // 最初のタイル読込成功時
-
   currentTileLayer.once(
     "tileload",
     function () {
@@ -269,8 +249,6 @@ function loadTileProvider(
     }
   );
 
-
-  // タイルエラー監視
 
   currentTileLayer.on(
     "tileerror",
@@ -301,8 +279,6 @@ function handleTileError() {
     Date.now();
 
 
-  // 直近5秒以内のエラーのみ残す
-
   tileErrorTimes =
     tileErrorTimes.filter(
       time =>
@@ -313,8 +289,6 @@ function handleTileError() {
 
   tileErrorTimes.push(now);
 
-
-  // 3回未満なら様子を見る
 
   if (
     tileErrorTimes.length <
@@ -342,8 +316,6 @@ function switchToNextProvider() {
   const nextProviderIndex =
     currentProviderIndex + 1;
 
-
-  // 次のプロバイダーあり
 
   if (
     nextProviderIndex <
@@ -383,8 +355,6 @@ function switchToNextProvider() {
     return;
   }
 
-
-  // 全タイルサービス障害
 
   allProvidersFailed =
     true;
@@ -471,8 +441,6 @@ function getSpotPeriodStatus(
   spot
 ) {
 
-  // 常設
-
   if (
     spot.periodType ===
     "permanent"
@@ -481,8 +449,6 @@ function getSpotPeriodStatus(
     return "permanent";
   }
 
-
-  // 不明
 
   if (
     spot.periodType !==
@@ -497,8 +463,6 @@ function getSpotPeriodStatus(
     getTodayInJapan();
 
 
-  // 開催前
-
   if (
     spot.startDate &&
     today <
@@ -509,8 +473,6 @@ function getSpotPeriodStatus(
   }
 
 
-  // 終了済み
-
   if (
     spot.endDate &&
     today >
@@ -520,8 +482,6 @@ function getSpotPeriodStatus(
     return "ended";
   }
 
-
-  // 開催中
 
   return "active";
 }
@@ -563,10 +523,6 @@ function getPeriodStatusLabel(
 
 // ========================================
 // 14. 日付表示
-//
-// 2026-08-24
-// ↓
-// 2026/08/24
 // ========================================
 
 function formatDate(
@@ -1156,6 +1112,141 @@ function createSpotPopup(
 
 
   // =================================
+  // 営業・開催情報
+  // =================================
+
+  if (
+    spot.hoursText ||
+    spot.closedDaysText ||
+    spot.hoursInfoUrl ||
+    spot.hoursCheckedAt
+  ) {
+
+    const hoursBox =
+      document.createElement(
+        "div"
+      );
+
+    hoursBox.className =
+      "spot-popup-hours";
+
+
+    const hoursTitle =
+      document.createElement(
+        "div"
+      );
+
+    hoursTitle.className =
+      "spot-popup-hours-title";
+
+    hoursTitle.textContent =
+      "🕐 営業・開催情報";
+
+    hoursBox.appendChild(
+      hoursTitle
+    );
+
+
+    if (spot.hoursText) {
+
+      const hoursRow =
+        document.createElement(
+          "div"
+        );
+
+      hoursRow.className =
+        "spot-popup-hours-row";
+
+      hoursRow.textContent =
+        "時間： " +
+        spot.hoursText;
+
+      hoursBox.appendChild(
+        hoursRow
+      );
+    }
+
+
+    if (spot.closedDaysText) {
+
+      const closedRow =
+        document.createElement(
+          "div"
+        );
+
+      closedRow.className =
+        "spot-popup-hours-row";
+
+      closedRow.textContent =
+        "休業・休催： " +
+        spot.closedDaysText;
+
+      hoursBox.appendChild(
+        closedRow
+      );
+    }
+
+
+    const hoursInfoUrl =
+      getSafeUrl(
+        spot.hoursInfoUrl
+      );
+
+
+    if (hoursInfoUrl) {
+
+      const hoursLink =
+        document.createElement(
+          "a"
+        );
+
+      hoursLink.href =
+        hoursInfoUrl;
+
+      hoursLink.target =
+        "_blank";
+
+      hoursLink.rel =
+        "noopener noreferrer";
+
+      hoursLink.textContent =
+        "最新の営業時間を見る";
+
+      hoursBox.appendChild(
+        hoursLink
+      );
+    }
+
+
+    if (spot.hoursCheckedAt) {
+
+      const hoursChecked =
+        document.createElement(
+          "div"
+        );
+
+      hoursChecked.className =
+        "spot-popup-hours-checked";
+
+      hoursChecked.textContent =
+        "営業時間確認： " +
+        formatDate(
+          spot.hoursCheckedAt
+        );
+
+      hoursBox.appendChild(
+        hoursChecked
+      );
+    }
+
+
+    container.appendChild(
+      hoursBox
+    );
+  }
+
+
+  // =================================
   // 入店・入場方法
   // =================================
 
@@ -1184,10 +1275,6 @@ function createSpotPopup(
   );
 
 
-  // --------------------------------
-  // 予約
-  // --------------------------------
-
   const reservation =
     document.createElement(
       "div"
@@ -1207,10 +1294,6 @@ function createSpotPopup(
   );
 
 
-  // --------------------------------
-  // 通常時
-  // --------------------------------
-
   const defaultEntry =
     document.createElement(
       "div"
@@ -1229,10 +1312,6 @@ function createSpotPopup(
     defaultEntry
   );
 
-
-  // --------------------------------
-  // 整理券 / 抽選 / 時間指定等
-  // --------------------------------
 
   const crowdControl =
     getCrowdControlLabel(
@@ -1272,10 +1351,6 @@ function createSpotPopup(
   }
 
 
-  // --------------------------------
-  // 入場補足
-  // --------------------------------
-
   if (spot.entryNote) {
 
     const note =
@@ -1294,10 +1369,6 @@ function createSpotPopup(
     );
   }
 
-
-  // --------------------------------
-  // 予約ページ
-  // --------------------------------
 
   const reservationUrl =
     getSafeUrl(
@@ -1330,10 +1401,6 @@ function createSpotPopup(
   }
 
 
-  // --------------------------------
-  // 最新の入場情報
-  // --------------------------------
-
   const entryInfoUrl =
     getSafeUrl(
       spot.entryInfoUrl
@@ -1364,10 +1431,6 @@ function createSpotPopup(
     );
   }
 
-
-  // --------------------------------
-  // 入場情報確認日
-  // --------------------------------
 
   if (
     spot.entryInfoCheckedAt
@@ -1474,8 +1537,6 @@ function createSpotPopup(
       "spot-popup-links";
 
 
-    // 情報元
-
     if (sourceUrl) {
 
       const sourceLink =
@@ -1500,8 +1561,6 @@ function createSpotPopup(
       );
     }
 
-
-    // 地図
 
     if (mapUrl) {
 
@@ -1546,8 +1605,6 @@ function addSpotMarker(
   spot
 ) {
 
-  // 緯度経度チェック
-
   if (
     typeof spot.lat !==
       "number" ||
@@ -1563,8 +1620,6 @@ function addSpotMarker(
     return false;
   }
 
-
-  // 対応カテゴリチェック
 
   const layer =
     spotLayers[
@@ -1625,7 +1680,10 @@ async function loadSpots() {
 
     const response =
       await fetch(
-        "./data/spots.json"
+        "./data/spots.json",
+        {
+          cache: "no-store"
+        }
       );
 
 
@@ -1667,8 +1725,6 @@ async function loadSpots() {
             spot
           );
 
-
-        // 終了済みは表示しない
 
         if (
           periodStatus ===
@@ -1762,10 +1818,6 @@ const naganoFilter =
 
 function updateSpotFilters() {
 
-  // --------------------------------
-  // 公式
-  // --------------------------------
-
   if (officialFilter) {
 
     if (
@@ -1797,10 +1849,6 @@ function updateSpotFilters() {
     }
   }
 
-
-  // --------------------------------
-  // ナガノ先生
-  // --------------------------------
 
   if (naganoFilter) {
 
@@ -1836,7 +1884,7 @@ function updateSpotFilters() {
 
 
 // ========================================
-// 29. フィルターイベント登録
+// 29. フィルターイベント
 // ========================================
 
 if (officialFilter) {
