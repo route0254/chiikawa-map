@@ -1,7 +1,8 @@
 [
   {
-    "id": "test-permanent-001",
-    "name": "テスト：常設公式ショップ",
+    "id": "test-chiikawa-land",
+    "name": "テスト：ちいかわらんど型ショップ",
+
     "category": "official",
     "placeType": "shop",
     "relationType": "official_store",
@@ -11,19 +12,31 @@
     "startDate": null,
     "endDate": null,
 
+    "reservationType": "not_available",
+    "reservationUrl": null,
+
+    "defaultEntryType": "walkin",
+    "crowdControlType": "numbered_ticket",
+    "crowdControlCondition": "when_crowded",
+
+    "entryNote": "通常はそのまま入店できますが、混雑時には整理券が配布される場合があります。",
+    "entryInfoUrl": null,
+    "entryInfoCheckedAt": "2026-08-24",
+
     "lat": 35.681236,
     "lng": 139.767125,
 
     "address": "東京都千代田区・東京駅付近",
-    "description": "常設スポットの表示確認用テストデータです。",
+    "description": "ちいかわらんどのような入店方式を想定したテストデータです。",
 
     "sourceUrl": null,
     "mapUrl": null
   },
 
   {
-    "id": "test-upcoming-001",
-    "name": "テスト：これから開催するポップアップ",
+    "id": "test-popup-upcoming",
+    "name": "テスト：これから開催する予約制ポップアップ",
+
     "category": "official",
     "placeType": "shop",
     "relationType": "popup",
@@ -33,41 +46,65 @@
     "startDate": "2026-09-10",
     "endDate": "2026-09-30",
 
+    "reservationType": "required",
+    "reservationUrl": null,
+
+    "defaultEntryType": "reservation_required",
+    "crowdControlType": "timed_entry",
+    "crowdControlCondition": "always",
+
+    "entryNote": "事前予約および指定された時間帯での入場が必要です。",
+    "entryInfoUrl": null,
+    "entryInfoCheckedAt": "2026-08-24",
+
     "lat": 35.6702,
     "lng": 139.7027,
 
     "address": "東京都渋谷区・原宿付近",
-    "description": "開催前スポットの表示確認用テストデータです。",
+    "description": "開催前・予約必須スポットのテストデータです。",
 
     "sourceUrl": null,
     "mapUrl": null
   },
 
   {
-    "id": "test-active-001",
-    "name": "テスト：現在開催中の紹介スポット",
-    "category": "nagano",
+    "id": "test-ramen-priority",
+    "name": "テスト：ちいかわラーメン豚型店舗",
+
+    "category": "official",
     "placeType": "food",
-    "relationType": "introduced",
-    "brand": "nagano",
+    "relationType": "official_facility",
+    "brand": "chiikawa",
 
     "periodType": "limited",
     "startDate": "2026-08-01",
     "endDate": "2026-08-31",
 
+    "reservationType": "priority",
+    "reservationUrl": null,
+
+    "defaultEntryType": "reservation_priority",
+    "crowdControlType": "none",
+    "crowdControlCondition": "none",
+
+    "entryNote": "予約優先です。予約枠に空きがある場合は、予約なしでも当日利用できる場合があります。",
+    "entryInfoUrl": null,
+    "entryInfoCheckedAt": "2026-08-24",
+
     "lat": 35.6909,
     "lng": 139.7003,
 
     "address": "東京都新宿区・新宿駅付近",
-    "description": "開催中スポットの表示確認用テストデータです。",
+    "description": "予約優先型店舗のテストデータです。",
 
     "sourceUrl": null,
     "mapUrl": null
   },
 
   {
-    "id": "test-ended-001",
+    "id": "test-ended-event",
     "name": "テスト：終了済みイベント",
+
     "category": "official",
     "placeType": "spot",
     "relationType": "event",
@@ -77,11 +114,22 @@
     "startDate": "2026-07-01",
     "endDate": "2026-07-31",
 
+    "reservationType": "unknown",
+    "reservationUrl": null,
+
+    "defaultEntryType": "other",
+    "crowdControlType": "none",
+    "crowdControlCondition": "none",
+
+    "entryNote": null,
+    "entryInfoUrl": null,
+    "entryInfoCheckedAt": "2026-07-01",
+
     "lat": 35.7295,
     "lng": 139.7109,
 
     "address": "東京都豊島区・池袋駅付近",
-    "description": "終了済みスポットの非表示確認用テストデータです。",
+    "description": "終了済みスポットが非表示になることを確認するテストデータです。",
 
     "sourceUrl": null,
     "mapUrl": null
