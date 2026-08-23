@@ -332,6 +332,260 @@ function switchToNextProvider() {
 // スポット表示
 // ========================================
 
+// ----------------------------------------
+// 日本時間の日付取得
+// ----------------------------------------
+
+function getTodayInJapan() {
+
+  const formatter =
+    new Intl.DateTimeFormat(
+      "en-CA",
+      {
+        timeZone: "Asia/Tokyo",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }
+    );
+
+
+  const parts =
+    formatter.formatToParts(
+      new Date()
+    );
+
+
+  const values = {};
+
+
+  parts.forEach(
+    part => {
+
+      if (
+        part.type !== "literal"
+      ) {
+
+        values[part.type] =
+          part.value;
+
+      }
+
+    }
+  );
+
+
+  return (
+    values.year +
+    "-" +
+    values.month +
+    "-" +
+    values.day
+  );
+
+}
+
+
+// ----------------------------------------
+// スポット開催状態
+// ----------------------------------------
+
+function getSpotPeriodStatus(spot) {
+
+  if (
+    spot.periodType === "permanent"
+  ) {
+
+    return "permanent";
+
+  }
+
+
+  if (
+    spot.periodType !== "limited"
+  ) {
+
+    return "unknown";
+
+  }
+
+
+  const today =
+    getTodayInJapan();
+
+
+  if (
+    spot.startDate &&
+    today < spot.startDate
+  ) {
+
+    return "upcoming";
+
+  }
+
+
+  if (
+    spot.endDate &&
+    today > spot.endDate
+  ) {
+
+    return "ended";
+
+  }
+
+
+  return "active";
+
+}
+
+
+// ----------------------------------------
+// 開催状態ラベル
+// ----------------------------------------
+
+function getPeriodStatusLabel(status) {
+
+  const labels = {
+
+    permanent: "常設",
+
+    upcoming: "開催前",
+
+    active: "開催中",
+
+    ended: "終了済み",
+
+    unknown: "期間不明"
+
+  };
+
+
+  return (
+    labels[status] ||
+    "期間不明"
+  );
+
+}
+
+// ----------------------------------------
+// 場所タイプ
+// ----------------------------------------
+
+function getPlaceTypeLabel(placeType) {
+
+  const labels = {
+
+    shop: "ショップ",
+
+    food: "グルメ",
+
+    spot: "おでかけスポット",
+
+    lodging: "宿泊",
+
+    other: "その他"
+
+  };
+
+
+  return (
+    labels[placeType] ||
+    "その他"
+  );
+
+}
+
+
+// ----------------------------------------
+// 関係タイプ
+// ----------------------------------------
+
+function getRelationTypeLabel(
+  category,
+  relationType
+) {
+
+  const officialLabels = {
+
+    official_store:
+      "公式ショップ",
+
+    official_facility:
+      "公式施設・常設スポット",
+
+    collaboration:
+      "公式コラボ",
+
+    popup:
+      "ポップアップ・期間限定ショップ",
+
+    event:
+      "イベント・展示"
+
+  };
+
+
+  const naganoLabels = {
+
+    introduced:
+      "ナガノ先生が紹介",
+
+    visited:
+      "ナガノ先生が訪問",
+
+    related:
+      "ナガノ先生ゆかり・関連"
+
+  };
+
+
+  if (category === "official") {
+
+    return (
+      officialLabels[
+        relationType
+      ] ||
+      "公式関連"
+    );
+
+  }
+
+
+  if (category === "nagano") {
+
+    return (
+      naganoLabels[
+        relationType
+      ] ||
+      "ナガノ先生関連"
+    );
+
+  }
+
+
+  return "その他";
+
+}
+
+// ----------------------------------------
+// YYYY-MM-DD → YYYY/MM/DD
+// ----------------------------------------
+
+function formatDate(dateString) {
+
+  if (!dateString) {
+
+    return "";
+
+  }
+
+
+  return dateString.replaceAll(
+    "-",
+    "/"
+  );
+
+}
 
 // ----------------------------------------
 // カテゴリ別レイヤー
@@ -479,6 +733,8 @@ function createSpotPopup(spot) {
     "spot-popup";
 
 
+  // タイトル
+
   const title =
     document.createElement("div");
 
@@ -488,6 +744,10 @@ function createSpotPopup(spot) {
   title.textContent =
     spot.name;
 
+  container.appendChild(title);
+
+
+  // 大分類
 
   const category =
     document.createElement("div");
@@ -500,44 +760,161 @@ function createSpotPopup(spot) {
       spot.category
     );
 
-
-  const address =
-    document.createElement("div");
-
-  address.className =
-    "spot-popup-address";
-
-  address.textContent =
-    spot.address || "";
-
-
-  const description =
-    document.createElement("div");
-
-  description.className =
-    "spot-popup-description";
-
-  description.textContent =
-    spot.description || "";
-
-
-  container.appendChild(title);
   container.appendChild(category);
 
 
-  if (spot.address) {
+  // 場所タイプ
 
-    container.appendChild(address);
+  const placeType =
+    document.createElement("div");
+
+  placeType.className =
+    "spot-popup-meta";
+
+  placeType.textContent =
+    "📍 " +
+    getPlaceTypeLabel(
+      spot.placeType
+    );
+
+  container.appendChild(
+    placeType
+  );
+
+
+  // 関係性
+
+  const relation =
+    document.createElement("div");
+
+  relation.className =
+    "spot-popup-meta";
+
+  relation.textContent =
+    "🏷️ " +
+    getRelationTypeLabel(
+      spot.category,
+      spot.relationType
+    );
+
+  container.appendChild(
+    relation
+  );
+
+
+  // 期間
+
+  const periodStatus =
+    getSpotPeriodStatus(
+      spot
+    );
+
+
+  const period =
+    document.createElement("div");
+
+  period.className =
+    "spot-popup-period";
+
+
+  if (
+    spot.periodType ===
+    "permanent"
+  ) {
+
+    period.textContent =
+      "🗓 常設";
+
+  } else {
+
+    let periodText =
+      "🗓 ";
+
+
+    if (spot.startDate) {
+
+      periodText +=
+        formatDate(
+          spot.startDate
+        );
+
+    }
+
+
+    periodText += " ～ ";
+
+
+    if (spot.endDate) {
+
+      periodText +=
+        formatDate(
+          spot.endDate
+        );
+
+    }
+
+
+    periodText +=
+      "　" +
+      getPeriodStatusLabel(
+        periodStatus
+      );
+
+
+    period.textContent =
+      periodText;
 
   }
 
+
+  container.appendChild(period);
+
+
+  // 住所
+
+  if (spot.address) {
+
+    const address =
+      document.createElement(
+        "div"
+      );
+
+    address.className =
+      "spot-popup-address";
+
+    address.textContent =
+      spot.address;
+
+    container.appendChild(
+      address
+    );
+
+  }
+
+
+  // 説明
 
   if (spot.description) {
 
-    container.appendChild(description);
+    const description =
+      document.createElement(
+        "div"
+      );
+
+    description.className =
+      "spot-popup-description";
+
+    description.textContent =
+      spot.description;
+
+    container.appendChild(
+      description
+    );
 
   }
 
+
+  // URL
 
   const sourceUrl =
     getSafeUrl(
@@ -557,7 +934,9 @@ function createSpotPopup(spot) {
   ) {
 
     const links =
-      document.createElement("div");
+      document.createElement(
+        "div"
+      );
 
     links.className =
       "spot-popup-links";
@@ -566,7 +945,9 @@ function createSpotPopup(spot) {
     if (sourceUrl) {
 
       const sourceLink =
-        document.createElement("a");
+        document.createElement(
+          "a"
+        );
 
       sourceLink.href =
         sourceUrl;
@@ -590,7 +971,9 @@ function createSpotPopup(spot) {
     if (mapUrl) {
 
       const mapLink =
-        document.createElement("a");
+        document.createElement(
+          "a"
+        );
 
       mapLink.href =
         mapUrl;
@@ -621,7 +1004,6 @@ function createSpotPopup(spot) {
   return container;
 
 }
-
 
 // ----------------------------------------
 // スポット1件を地図へ追加
@@ -727,16 +1109,61 @@ async function loadSpots() {
     }
 
 
-    spots.forEach(
-      addSpotMarker
-    );
+let displayedCount = 0;
+let endedCount = 0;
 
 
-    console.log(
-      spots.length +
-      "件のスポットを読み込みました。"
-    );
+spots.forEach(
+  spot => {
 
+    const periodStatus =
+      getSpotPeriodStatus(
+        spot
+      );
+
+
+    if (
+      periodStatus === "ended"
+    ) {
+
+      endedCount++;
+
+
+      console.log(
+        "終了済みスポットを非表示:",
+        spot.name
+      );
+
+
+      return;
+
+    }
+
+
+    addSpotMarker(spot);
+
+    displayedCount++;
+
+  }
+);
+
+
+console.log(
+  spots.length +
+  "件のスポットデータを読み込みました。"
+);
+
+
+console.log(
+  displayedCount +
+  "件を地図に表示しています。"
+);
+
+
+console.log(
+  endedCount +
+  "件の終了済みスポットを非表示にしました。"
+);
 
   } catch (error) {
 
