@@ -2,273 +2,204 @@
   {
     "id": "chiikawaland-tokyo-station",
     "name": "ちいかわらんど TOKYO Station",
-
     "category": "official",
     "placeType": "shop",
     "relationType": "official_store",
     "brand": "chiikawa",
-
     "periodType": "permanent",
     "startDate": null,
     "endDate": null,
-
     "hoursText": "10:00～20:30",
     "closedDaysText": "東京駅一番街の営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://www.tokyoeki-1bangai.co.jp/shop/detail/?cd=000198",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "not_available",
     "reservationUrl": null,
-
     "defaultEntryType": "walkin",
     "crowdControlType": "numbered_ticket",
     "crowdControlCondition": "when_crowded",
-
     "entryNote": "通常時はそのまま入店できます。混雑時や新商品発売日などは、整理券配布等の入場制限が実施される場合があります。",
-    "entryInfoUrl": null,
+    "entryInfoUrl": "https://x.com/chiikawa_land",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 35.6806373,
     "lng": 139.7655289,
-
     "address": "東京都千代田区丸の内1-9-1 東京駅一番街 東京キャラクターストリート",
     "description": "東京駅一番街にある、ちいかわのオフィシャルグッズショップです。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/index.html",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ちいかわらんど%20TOKYO%20Station"
   },
-
   {
     "id": "chiikawaland-harajuku",
     "name": "ちいかわらんど 原宿店",
-
     "category": "official",
     "placeType": "shop",
     "relationType": "official_store",
     "brand": "chiikawa",
-
     "periodType": "permanent",
     "startDate": null,
     "endDate": null,
-
     "hoursText": "11:00～20:00",
     "closedDaysText": "キデイランド原宿店の営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://www.kiddyland.co.jp/harajuku/",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "not_available",
     "reservationUrl": null,
-
     "defaultEntryType": "walkin",
     "crowdControlType": "numbered_ticket",
     "crowdControlCondition": "when_crowded",
-
     "entryNote": "通常時はそのまま入店できます。混雑時や新商品発売日などは、整理券配布等の入場制限が実施される場合があります。",
-    "entryInfoUrl": null,
+    "entryInfoUrl": "https://x.com/chiikawa_land",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 35.6676281,
     "lng": 139.7064807,
-
     "address": "東京都渋谷区神宮前6-1-9 キデイランド原宿店1F",
     "description": "キデイランド原宿店1Fにある、ちいかわのオフィシャルショップです。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://chiikawa-info.jp/chiikawaland/harajuku/",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ちいかわらんど%20原宿店"
   },
-
   {
     "id": "chiikawa-bakery-tokyo",
     "name": "ちいかわベーカリー",
-
     "category": "official",
     "placeType": "food",
     "relationType": "official_facility",
     "brand": "chiikawa",
-
     "periodType": "permanent",
     "startDate": null,
     "endDate": null,
-
     "hoursText": "11:00～20:00（最終入店19:30）",
     "closedDaysText": "施設の営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://chiikawabakery.jp/",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "priority",
-    "reservationUrl": null,
-
+    "reservationUrl": "https://chiikawabakery.jp/reservation/",
     "defaultEntryType": "reservation_priority",
     "crowdControlType": "none",
     "crowdControlCondition": "none",
-
-    "entryNote": "事前予約のお客様が優先です。2026年2月以降、平日は15:00以降、土日祝は18:00以降に予約不要のフリー入場を実施しています。当日の状況により待ち時間が発生する場合があります。",
-    "entryInfoUrl": null,
+    "entryNote": "事前予約優先です。2026年2月1日以降、平日は15:00以降、土日祝は18:00以降にフリー入場を実施しています。時期や当日の状況により案内が変更される場合があります。",
+    "entryInfoUrl": "https://chiikawabakery.jp/about/guide/guide_01/",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 35.668693,
     "lng": 139.7059632,
-
     "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
     "description": "ちいかわたちをモチーフにしたパンやドリンク、グッズなどを楽しめる公式ベーカリーです。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://chiikawabakery.jp/",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ちいかわベーカリー"
   },
-
   {
     "id": "chiikawa-ramen-buta-shibuya",
     "name": "ちいかわラーメン 豚 渋谷PARCO",
-
     "category": "official",
     "placeType": "food",
     "relationType": "official_facility",
     "brand": "chiikawa",
-
     "periodType": "limited",
     "startDate": "2025-09-19",
     "endDate": null,
-
     "hoursText": "11:00～22:00（最終入店21:20）",
     "closedDaysText": "渋谷PARCOの営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://cafe.parco.jp/event/information/chiikawaramenbuta_shibuya?area=029979",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "priority",
-    "reservationUrl": null,
-
+    "reservationUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya",
     "defaultEntryType": "reservation_priority",
     "crowdControlType": "none",
     "crowdControlCondition": "none",
-
-    "entryNote": "事前予約優先制です。混雑状況によっては事前予約なしでも入店できます。当日の入店可否は公式情報をご確認ください。",
-    "entryInfoUrl": null,
+    "entryNote": "事前予約優先制です。混雑状況によっては事前予約なしでも入店できます。最新の当日案内は公式情報をご確認ください。",
+    "entryInfoUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 35.662009,
     "lng": 139.6987513,
-
     "address": "東京都渋谷区宇田川町15-1 渋谷PARCO B1F",
     "description": "作中に登場するラーメンをイメージした『ちいかわラーメン 豚』の渋谷店です。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shibuya?area=029979",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ちいかわラーメン%20豚%20渋谷PARCO"
   },
-
   {
     "id": "chiikawa-ramen-buta-shinsaibashi",
     "name": "ちいかわラーメン 豚 心斎橋PARCO",
-
     "category": "official",
     "placeType": "food",
     "relationType": "official_facility",
     "brand": "chiikawa",
-
     "periodType": "limited",
     "startDate": "2024-11-15",
     "endDate": null,
-
     "hoursText": "11:00～23:00（最終入店22:00）",
     "closedDaysText": "心斎橋PARCOの営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://cafe.parco.jp/event/information/chiikawaramenbuta_shinsaibashi?area=029689",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "priority",
-    "reservationUrl": null,
-
+    "reservationUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
     "defaultEntryType": "reservation_priority",
     "crowdControlType": "numbered_ticket",
     "crowdControlCondition": "when_crowded",
-
     "entryNote": "事前予約優先制です。空きがある場合は予約なしでも入店できますが、事前予約枠が規定枚数に達した場合は当日席がない場合があります。混雑時には店頭整理券が発行される場合があります。",
-    "entryInfoUrl": null,
+    "entryInfoUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 34.6739052,
     "lng": 135.5008771,
-
     "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO B2F",
     "description": "心斎橋PARCOにある『ちいかわラーメン 豚』です。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ちいかわラーメン%20豚%20心斎橋PARCO"
   },
-
   {
     "id": "chiikawa-ramen-buta-nagoya",
     "name": "ちいかわラーメン 豚 名古屋PARCO",
-
     "category": "official",
     "placeType": "food",
     "relationType": "official_facility",
     "brand": "chiikawa",
-
     "periodType": "limited",
     "startDate": "2024-03-19",
     "endDate": "2026-10-04",
-
     "hoursText": "11:00～21:00（最終入店20:30）",
     "closedDaysText": "名古屋PARCOの営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://cafe.parco.jp/event/information/chiikawaramenbuta_nagoya?area=029691",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "not_available",
     "reservationUrl": null,
-
     "defaultEntryType": "walkin",
     "crowdControlType": "numbered_ticket",
     "crowdControlCondition": "when_crowded",
-
     "entryNote": "事前予約は不要です。混雑時は待機列を形成し、混雑状況によって店頭で整理券が発行される場合があります。",
-    "entryInfoUrl": null,
+    "entryInfoUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_nagoya?area=029691",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 35.1636032,
     "lng": 136.9073786,
-
     "address": "愛知県名古屋市中区栄3-29-1 名古屋PARCO 西館7F",
     "description": "全国で最初にオープンした『ちいかわラーメン 豚』。2026年10月4日で営業終了予定です。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_nagoya?area=029691",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ちいかわラーメン%20豚%20名古屋PARCO"
   },
-
   {
     "id": "nagano-market-shinsaibashi",
     "name": "ナガノマーケット SHINSAIBASHI店",
-
     "category": "official",
     "placeType": "shop",
     "relationType": "official_store",
     "brand": "nagano_market",
-
     "periodType": "permanent",
     "startDate": null,
     "endDate": null,
-
     "hoursText": "10:00～20:00",
     "closedDaysText": "心斎橋PARCOの営業日に準ずる",
-    "hoursInfoUrl": null,
+    "hoursInfoUrl": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
     "hoursCheckedAt": "2026-08-24",
-
     "reservationType": "unknown",
     "reservationUrl": null,
-
     "defaultEntryType": "walkin",
-    "crowdControlType": "none",
-    "crowdControlCondition": "none",
-
-    "entryNote": "通常の入店方法や、特定日の入場予約・整理券等についてはナガノマーケットSHOP公式の最新案内をご確認ください。",
-    "entryInfoUrl": null,
+    "crowdControlType": "other",
+    "crowdControlCondition": "announced",
+    "entryNote": "通常時の入店方法や、特定日の入場予約・整理券等については、ナガノマーケットSHOP公式Xの最新案内をご確認ください。",
+    "entryInfoUrl": "https://x.com/nagano_mkt_shop",
     "entryInfoCheckedAt": "2026-08-24",
-
     "lat": 34.6739052,
     "lng": 135.5008771,
-
     "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO 5F",
     "description": "ナガノのくま、もぐらコロッケ、ちいかわなど、ナガノ作品のグッズを扱う公式ショップです。",
-
-    "sourceUrl": null,
-    "mapUrl": null
+    "sourceUrl": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ナガノマーケット%20SHINSAIBASHI店"
   }
 ]
