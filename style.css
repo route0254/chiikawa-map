@@ -1,19 +1,95 @@
 /* ========================================
-   ちいかわ推し活MAP
+   カラーテーマ
    ======================================== */
+
+:root {
+
+  --bg:
+    #fffafc;
+
+  --surface:
+    rgba(
+      255,
+      255,
+      255,
+      0.96
+    );
+
+  --surface-strong:
+    #ffffff;
+
+  --text:
+    #2d2a2b;
+
+  --muted:
+    #746d70;
+
+  --line:
+    #ece6e8;
+
+
+  /* 公式 */
+
+  --official:
+    #f475a8;
+
+  --official-soft:
+    #fff0f6;
+
+
+  /* ナガノ */
+
+  --nagano:
+    #71ad86;
+
+  --nagano-soft:
+    #eef8f1;
+
+
+  /* 共通アクセント */
+
+  --accent:
+    #7c6ff2;
+
+  --accent-soft:
+    #f2efff;
+
+
+  --shadow:
+    0 12px 30px
+    rgba(
+      69,
+      52,
+      59,
+      0.12
+    );
+
+
+  --radius-lg:
+    18px;
+
+  --radius-md:
+    12px;
+
+  --radius-sm:
+    9px;
+
+}
 
 
 /* ========================================
-   1. 基本設定
+   基本設定
    ======================================== */
 
 * {
-  box-sizing: border-box;
+  box-sizing:
+    border-box;
 }
 
 
 html,
 body {
+
   margin: 0;
   padding: 0;
 
@@ -30,414 +106,1424 @@ body {
     "Meiryo",
     sans-serif;
 
-  color: #333333;
+  color:
+    var(--text);
 
-  background: #fffafc;
+  background:
+    var(--bg);
+
 }
 
 
 body {
-  min-height: 100vh;
+  min-height:
+    100vh;
+}
+
+
+button,
+input {
+  font: inherit;
+}
+
+
+button {
+  -webkit-tap-highlight-color:
+    transparent;
 }
 
 
 /* ========================================
-   2. ヘッダー
+   ヘッダー
    ======================================== */
 
 .site-header {
-  padding: 16px 20px;
 
-  background: #ffffff;
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+
+  background:
+
+    radial-gradient(
+      circle at top right,
+      rgba(
+        244,
+        117,
+        168,
+        0.15
+      ),
+      transparent 38%
+    ),
+
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #fff9fc 48%,
+      #f7f4ff 100%
+    );
+
 
   border-bottom:
-    1px solid #eeeeee;
+    1px solid
+    var(--line);
+
 }
 
 
-.site-header h1 {
-  margin: 0 0 6px;
+/* 下部アクセントライン */
 
-  font-size: 24px;
-  line-height: 1.3;
-}
+.site-header::after {
 
+  content: "";
 
-.site-header p {
-  margin: 0;
+  position:
+    absolute;
 
-  max-width: 900px;
-
-  font-size: 14px;
-  line-height: 1.6;
-
-  color: #555555;
-}
-
-
-/* ========================================
-   3. フィルター
-   ======================================== */
-
-.map-controls {
-  display: flex;
-
-  align-items: center;
-  flex-wrap: wrap;
-
-  gap: 10px 18px;
-
-  padding: 11px 20px;
-
-  background: #ffffff;
-
-  border-bottom:
-    1px solid #eeeeee;
-}
-
-
-.map-controls-title {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-
-.filter-option {
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 6px;
-
-  min-height: 28px;
-
-  font-size: 14px;
-
-  cursor: pointer;
-
-  user-select: none;
-}
-
-
-.filter-option input {
-  width: 18px;
-  height: 18px;
-
-  margin: 0;
-
-  cursor: pointer;
-}
-
-
-.filter-dot {
-  display: inline-block;
-
-  flex-shrink: 0;
-
-  width: 12px;
-  height: 12px;
-
-  border-radius: 50%;
-}
-
-
-.official-dot {
-  background: #ff78aa;
-}
-
-
-.nagano-dot {
-  background: #6fae72;
-}
-
-
-/* ========================================
-   4. 地図
-   ======================================== */
-
-main {
-  width: 100%;
-}
-
-
-#map-wrapper {
-  position: relative;
-
-  width: 100%;
-}
-
-
-#map {
-  width: 100%;
+  inset:
+    auto 0 0 0;
 
   height:
-    calc(100vh - 145px);
+    3px;
 
-  min-height: 500px;
 
-  background: #dddddd;
+  background:
+
+    linear-gradient(
+      90deg,
+      var(--official),
+      #f8c867,
+      var(--nagano),
+      #8a7cf4
+    );
+
+
+  opacity:
+    0.78;
+
 }
 
 
-/* ========================================
-   5. 地図ステータス
-   ======================================== */
-
-#map-status {
-  position: absolute;
-
-  z-index: 1100;
-
-  top: 12px;
-  left: 50%;
-
-  transform:
-    translateX(-50%);
-
-  width: max-content;
+.site-header-inner {
 
   max-width:
-    calc(100% - 40px);
+    1180px;
+
+  margin:
+    0 auto;
 
   padding:
-    10px 16px;
+    20px
+    24px
+    18px;
+
+}
+
+
+.site-kicker-row {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  margin-bottom:
+    7px;
+
+}
+
+
+.site-kicker {
+
+  font-size:
+    11px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.14em;
+
+  color:
+    var(--accent);
+
+}
+
+
+.unofficial-badge {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  padding:
+    4px
+    8px;
+
+  border-radius:
+    999px;
 
   background:
     rgba(
       255,
       255,
       255,
-      0.96
+      0.84
     );
 
   border:
-    1px solid #cccccc;
+    1px solid
+    var(--line);
 
-  border-radius: 8px;
+  color:
+    var(--muted);
 
-  font-size: 14px;
-  font-weight: 600;
+  font-size:
+    10px;
 
-  line-height: 1.5;
+  font-weight:
+    700;
 
-  text-align: center;
+}
 
-  box-shadow:
-    0 2px 8px
-    rgba(
-      0,
-      0,
-      0,
-      0.15
+
+.site-header h1 {
+
+  margin:
+    0 0 6px;
+
+  font-size:
+    clamp(
+      24px,
+      3vw,
+      34px
     );
 
-  pointer-events: none;
+  line-height:
+    1.2;
+
+  letter-spacing:
+    -0.03em;
+
+}
+
+
+.site-header p {
+
+  margin:
+    0;
+
+  max-width:
+    760px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.7;
+
 }
 
 
 /* ========================================
-   6. マーカー
+   マップツールバー
+   ======================================== */
+
+.map-toolbar {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    14px;
+
+  padding:
+    10px 20px;
+
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+
+  backdrop-filter:
+    blur(12px);
+
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+}
+
+
+.map-toolbar-left,
+.map-legend {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+}
+
+
+.filter-button,
+.secondary-button,
+.icon-button {
+
+  border:
+    0;
+
+  cursor:
+    pointer;
+
+}
+
+
+/* 絞り込みボタン */
+
+.filter-button {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+
+  min-height:
+    38px;
+
+  padding:
+    8px
+    13px;
+
+  border-radius:
+    11px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--line);
+
+  color:
+    var(--text);
+
+  font-weight:
+    700;
+
+
+  box-shadow:
+
+    0 3px 12px
+    rgba(
+      65,
+      49,
+      55,
+      0.06
+    );
+
+
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    border-color 0.16s ease;
+
+}
+
+
+.filter-button:hover {
+
+  transform:
+    translateY(-1px);
+
+
+  box-shadow:
+
+    0 6px 16px
+    rgba(
+      65,
+      49,
+      55,
+      0.09
+    );
+
+}
+
+
+.filter-button.is-active {
+
+  border-color:
+    #cfc8ff;
+
+  background:
+    var(--accent-soft);
+
+}
+
+
+.result-count {
+
+  color:
+    var(--muted);
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+}
+
+
+/* ========================================
+   凡例
+   ======================================== */
+
+.legend-item {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    6px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+}
+
+
+.legend-dot,
+.filter-dot {
+
+  width:
+    10px;
+
+  height:
+    10px;
+
+  border-radius:
+    50%;
+
+  flex-shrink:
+    0;
+
+}
+
+
+.official-dot {
+
+  background:
+    var(--official);
+
+}
+
+
+.nagano-dot {
+
+  background:
+    var(--nagano);
+
+}
+
+
+/* ========================================
+   地図
+   ======================================== */
+
+main {
+  width:
+    100%;
+}
+
+
+#map-wrapper {
+
+  position:
+    relative;
+
+  width:
+    100%;
+
+}
+
+
+#map {
+
+  width:
+    100%;
+
+  height:
+    calc(
+      100vh - 159px
+    );
+
+  min-height:
+    520px;
+
+  background:
+    #dedede;
+
+}
+
+
+/* ========================================
+   地図ステータス
+   ======================================== */
+
+#map-status {
+
+  position:
+    absolute;
+
+  z-index:
+    1300;
+
+  top:
+    12px;
+
+  left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  width:
+    max-content;
+
+  max-width:
+    calc(
+      100% - 40px
+    );
+
+  padding:
+    10px
+    15px;
+
+  border-radius:
+    999px;
+
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.97
+    );
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  box-shadow:
+    var(--shadow);
+
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.5;
+
+  text-align:
+    center;
+
+  pointer-events:
+    none;
+
+}
+
+
+/* ========================================
+   フィルターパネル
+   ======================================== */
+
+.filter-panel {
+
+  position:
+    absolute;
+
+  z-index:
+    1250;
+
+  top:
+    14px;
+
+  left:
+    14px;
+
+
+  width:
+    min(
+      390px,
+      calc(
+        100% - 28px
+      )
+    );
+
+
+  max-height:
+    calc(
+      100% - 28px
+    );
+
+
+  overflow:
+    hidden;
+
+
+  border-radius:
+    var(--radius-lg);
+
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.97
+    );
+
+
+  backdrop-filter:
+    blur(18px);
+
+
+  border:
+    1px solid
+    rgba(
+      236,
+      230,
+      232,
+      0.94
+    );
+
+
+  box-shadow:
+    var(--shadow);
+
+}
+
+
+.filter-panel-header {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    12px;
+
+  padding:
+    16px
+    16px
+    12px;
+
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+}
+
+
+.filter-panel-kicker {
+
+  margin-bottom:
+    2px;
+
+  color:
+    var(--accent);
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.15em;
+
+}
+
+
+.filter-panel h2 {
+
+  margin:
+    0;
+
+  font-size:
+    18px;
+
+  line-height:
+    1.35;
+
+}
+
+
+/* 閉じる */
+
+.icon-button {
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  width:
+    34px;
+
+  height:
+    34px;
+
+  border-radius:
+    50%;
+
+  background:
+    #f7f4f5;
+
+  color:
+    #70676a;
+
+  font-size:
+    22px;
+
+  line-height:
+    1;
+
+}
+
+
+/* 中身スクロール */
+
+.filter-panel-body {
+
+  max-height:
+    calc(
+      100vh - 305px
+    );
+
+  overflow-y:
+    auto;
+
+  padding:
+    14px
+    16px
+    6px;
+
+}
+
+
+/* ========================================
+   フィルターグループ
+   ======================================== */
+
+.filter-group {
+
+  margin:
+    0 0 16px;
+
+  padding:
+    0;
+
+  border:
+    0;
+
+}
+
+
+.filter-group legend,
+.filter-details summary {
+
+  margin-bottom:
+    8px;
+
+  color:
+    #4f474a;
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+}
+
+
+.filter-chip-list {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    7px;
+
+}
+
+
+.filter-chip-list-inner {
+
+  padding:
+    8px 0 4px;
+
+}
+
+
+/* ========================================
+   フィルターチップ
+   ======================================== */
+
+.filter-chip {
+
+  position:
+    relative;
+
+  cursor:
+    pointer;
+
+  user-select:
+    none;
+
+}
+
+
+.filter-chip input {
+
+  position:
+    absolute;
+
+  opacity:
+    0;
+
+  pointer-events:
+    none;
+
+}
+
+
+.filter-chip span {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  min-height:
+    32px;
+
+  padding:
+    6px
+    10px;
+
+  border-radius:
+    999px;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  background:
+    #ffffff;
+
+
+  color:
+    #6e6568;
+
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+
+  transition:
+    background 0.14s ease,
+    border-color 0.14s ease,
+    color 0.14s ease,
+    transform 0.14s ease;
+
+}
+
+
+/* ON */
+
+.filter-chip input:checked + span {
+
+  border-color:
+    #d9d2ff;
+
+  background:
+    var(--accent-soft);
+
+  color:
+    #5f54c9;
+
+}
+
+
+/* キーボード操作 */
+
+.filter-chip
+input:focus-visible + span {
+
+  outline:
+    3px solid
+    rgba(
+      124,
+      111,
+      242,
+      0.2
+    );
+
+  outline-offset:
+    2px;
+
+}
+
+
+/* ========================================
+   開閉式フィルター
+   ======================================== */
+
+.filter-details {
+
+  margin:
+    0 0 15px;
+
+  padding:
+    10px 0 2px;
+
+  border-top:
+    1px dashed
+    var(--line);
+
+}
+
+
+.filter-details summary {
+
+  cursor:
+    pointer;
+
+  list-style:
+    none;
+
+}
+
+
+.filter-details
+summary::-webkit-details-marker {
+
+  display:
+    none;
+
+}
+
+
+.filter-details summary::after {
+
+  content:
+    "＋";
+
+  float:
+    right;
+
+  color:
+    var(--muted);
+
+}
+
+
+.filter-details[open]
+summary::after {
+
+  content:
+    "−";
+
+}
+
+
+/* ========================================
+   フィルターフッター
+   ======================================== */
+
+.filter-panel-footer {
+
+  display:
+    flex;
+
+  justify-content:
+    flex-end;
+
+  padding:
+    12px
+    16px
+    16px;
+
+  border-top:
+    1px solid
+    var(--line);
+
+}
+
+
+.secondary-button {
+
+  min-height:
+    36px;
+
+  padding:
+    8px
+    12px;
+
+  border-radius:
+    10px;
+
+  background:
+    #f7f4f5;
+
+  color:
+    #5c5457;
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+}
+
+
+/* ========================================
+   マーカー
    ======================================== */
 
 .spot-marker {
-  background: transparent;
-  border: none;
+
+  background:
+    transparent;
+
+  border:
+    0;
+
 }
 
 
 .spot-pin {
-  display: flex;
 
-  align-items: center;
-  justify-content: center;
+  display:
+    grid;
 
-  width: 34px;
-  height: 34px;
+  place-items:
+    center;
+
+  width:
+    38px;
+
+  height:
+    38px;
+
 
   border:
-    3px solid #ffffff;
+    3px solid
+    #ffffff;
 
-  border-radius: 50%;
 
-  color: #ffffff;
+  border-radius:
+    50%
+    50%
+    50%
+    18%;
 
-  font-size: 14px;
-  font-weight: 700;
+
+  color:
+    #ffffff;
+
+
+  font-size:
+    13px;
+
+  font-weight:
+    800;
+
+  line-height:
+    1;
+
+
+  transform:
+    rotate(-45deg);
+
 
   box-shadow:
-    0 2px 7px
+
+    0 5px 14px
     rgba(
-      0,
-      0,
-      0,
-      0.35
+      67,
+      49,
+      56,
+      0.25
     );
 
-  cursor: pointer;
+}
+
+
+.spot-pin span {
+
+  transform:
+    rotate(45deg);
+
 }
 
 
 .spot-pin-official {
-  background: #ff78aa;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      #ff91bb,
+      var(--official)
+    );
+
 }
 
 
 .spot-pin-nagano {
-  background: #6fae72;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      #8ac99e,
+      var(--nagano)
+    );
+
 }
 
 
 /* ========================================
-   7. ポップアップ
+   ポップアップ
    ======================================== */
 
 .spot-popup {
-  min-width: 220px;
-  max-width: 300px;
 
-  color: #333333;
+  min-width:
+    230px;
+
+  max-width:
+    320px;
+
+  color:
+    var(--text);
+
 }
 
 
 .spot-popup-title {
-  margin-bottom: 5px;
 
-  font-size: 16px;
-  font-weight: 700;
+  margin-bottom:
+    8px;
 
-  line-height: 1.4;
-}
+  font-size:
+    16px;
 
+  font-weight:
+    800;
 
-.spot-popup-category {
-  margin-bottom: 8px;
+  line-height:
+    1.45;
 
-  font-size: 12px;
-  font-weight: 700;
-
-  color: #666666;
-}
-
-
-.spot-popup-meta {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.4;
 }
 
 
 /* ========================================
-   8. 開催期間
+   タグ
+   ======================================== */
+
+.spot-popup-tags {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    5px;
+
+  margin-bottom:
+    8px;
+
+}
+
+
+.spot-popup-tag {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  padding:
+    4px
+    7px;
+
+  border-radius:
+    999px;
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+}
+
+
+.tag-official {
+
+  background:
+    var(--official-soft);
+
+  color:
+    #c84f82;
+
+}
+
+
+.tag-nagano {
+
+  background:
+    var(--nagano-soft);
+
+  color:
+    #4f8d63;
+
+}
+
+
+.tag-neutral {
+
+  background:
+    #f4f2f3;
+
+  color:
+    #71686b;
+
+}
+
+
+/* ========================================
+   メタ情報
+   ======================================== */
+
+.spot-popup-meta {
+
+  margin-bottom:
+    6px;
+
+  color:
+    #625a5d;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.5;
+
+}
+
+
+/* ========================================
+   開催期間
    ======================================== */
 
 .spot-popup-period {
-  margin: 8px 0;
 
-  padding: 7px 8px;
+  margin:
+    9px 0;
 
-  background: #f6f6f6;
+  padding:
+    7px
+    9px;
 
-  border-radius: 6px;
+  border-radius:
+    var(--radius-sm);
 
-  font-size: 12px;
-  font-weight: 600;
+  background:
+    #f6f4f5;
 
-  line-height: 1.5;
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  line-height:
+    1.5;
+
+}
+
+
+.period-upcoming {
+
+  background:
+    #fff7df;
+
+}
+
+
+.period-active {
+
+  background:
+    #eef9f0;
+
 }
 
 
 /* ========================================
-   9. 営業・開催情報
+   情報カード
    ======================================== */
+
+.spot-popup-info {
+
+  margin:
+    10px 0;
+
+  padding:
+    10px
+    11px;
+
+  border-radius:
+    var(--radius-md);
+
+}
+
+
+/* 営業 */
 
 .spot-popup-hours {
-  margin: 10px 0;
 
-  padding: 9px 10px;
-
-  background: #eef8ff;
+  background:
+    #eef8ff;
 
   border:
-    1px solid #cfe6f5;
+    1px solid
+    #d6eaf8;
 
-  border-radius: 8px;
 }
 
 
-.spot-popup-hours-title {
-  margin-bottom: 6px;
-
-  font-size: 13px;
-  font-weight: 700;
-}
-
-
-.spot-popup-hours-row {
-  margin-bottom: 3px;
-
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-
-.spot-popup-hours a {
-  display: block;
-
-  margin-top: 6px;
-
-  font-size: 12px;
-}
-
-
-.spot-popup-hours-checked {
-  margin-top: 7px;
-
-  color: #777777;
-
-  font-size: 11px;
-  line-height: 1.4;
-}
-
-
-/* ========================================
-   10. 入店・入場情報
-   ======================================== */
+/* 入場 */
 
 .spot-popup-entry {
-  margin: 10px 0;
 
-  padding: 9px 10px;
-
-  background: #fff8e8;
+  background:
+    #fff8e8;
 
   border:
-    1px solid #f0dfb0;
+    1px solid
+    #f0dfb0;
 
-  border-radius: 8px;
 }
 
 
-.spot-popup-entry-title {
-  margin-bottom: 6px;
+.spot-popup-info-title {
 
-  font-size: 13px;
-  font-weight: 700;
+  margin-bottom:
+    6px;
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
 }
 
 
-.spot-popup-entry-row {
-  margin-bottom: 3px;
+.spot-popup-info-row {
 
-  font-size: 12px;
-  line-height: 1.5;
+  margin-bottom:
+    3px;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.5;
+
 }
 
 
-.spot-popup-entry-note {
-  margin-top: 7px;
+.spot-popup-note {
 
-  padding-top: 6px;
+  margin-top:
+    7px;
+
+  padding-top:
+    7px;
 
   border-top:
     1px solid
@@ -445,198 +1531,341 @@ main {
       0,
       0,
       0,
-      0.08
+      0.07
     );
 
-  font-size: 12px;
-  line-height: 1.5;
+  font-size:
+    12px;
+
+  line-height:
+    1.55;
+
 }
 
 
-.spot-popup-entry a {
-  display: block;
+.spot-popup-checked {
 
-  margin-top: 6px;
+  margin-top:
+    7px;
 
-  font-size: 12px;
-}
+  color:
+    #82797c;
 
+  font-size:
+    10px;
 
-.spot-popup-entry-checked {
-  margin-top: 7px;
+  line-height:
+    1.45;
 
-  color: #777777;
-
-  font-size: 11px;
 }
 
 
 /* ========================================
-   11. 住所・説明
+   住所・説明
    ======================================== */
 
 .spot-popup-address {
-  margin: 8px 0 6px;
 
-  font-size: 13px;
-  line-height: 1.5;
+  margin:
+    10px 0 6px;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.55;
+
 }
 
 
 .spot-popup-description {
-  margin-bottom: 8px;
 
-  font-size: 13px;
-  line-height: 1.6;
+  margin-bottom:
+    9px;
+
+  color:
+    #564f51;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.65;
+
 }
 
 
 /* ========================================
-   12. リンク
+   リンク
    ======================================== */
 
 .spot-popup-links {
-  display: flex;
 
-  flex-direction: column;
+  display:
+    flex;
 
-  gap: 5px;
+  flex-direction:
+    column;
 
-  margin-top: 8px;
-}
+  gap:
+    5px;
 
+  margin-top:
+    9px;
 
-.spot-popup-links a {
-  font-size: 13px;
 }
 
 
 .spot-popup a {
-  color: #2563a6;
 
-  text-decoration: underline;
+  display:
+    block;
 
-  text-underline-offset: 2px;
+  margin-top:
+    5px;
+
+  color:
+    #6557cf;
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  text-decoration:
+    none;
+
 }
 
 
 .spot-popup a:hover {
-  text-decoration: none;
+
+  text-decoration:
+    underline;
+
+  text-underline-offset:
+    2px;
+
 }
 
 
 /* ========================================
-   13. Leafletポップアップ
+   Leafletポップアップ
    ======================================== */
 
 .leaflet-popup-content {
-  margin: 14px 16px;
 
-  line-height: 1.5;
+  margin:
+    15px 16px;
+
+  line-height:
+    1.5;
+
 }
 
 
 .leaflet-popup-content-wrapper {
-  border-radius: 10px;
+
+  border-radius:
+    15px;
+
+
+  box-shadow:
+
+    0 10px 28px
+    rgba(
+      55,
+      42,
+      47,
+      0.18
+    );
+
+}
+
+
+.leaflet-popup-tip {
+
+  box-shadow:
+
+    3px 3px 8px
+    rgba(
+      55,
+      42,
+      47,
+      0.08
+    );
+
 }
 
 
 /* ========================================
-   14. スマホ
+   スマホ
    ======================================== */
 
 @media (
-  max-width: 600px
+  max-width: 700px
 ) {
 
-  .site-header {
-    padding: 12px 14px;
-  }
+  .site-header-inner {
 
+    padding:
+      15px
+      14px
+      14px;
 
-  .site-header h1 {
-    font-size: 20px;
   }
 
 
   .site-header p {
-    font-size: 12px;
+
+    font-size:
+      12px;
+
   }
 
 
-  .map-controls {
-    gap: 8px 14px;
+  .map-toolbar {
 
-    padding: 9px 14px;
+    padding:
+      9px
+      12px;
+
   }
 
 
-  .map-controls-title {
-    width: 100%;
+  .map-legend {
 
-    font-size: 13px;
+    gap:
+      8px;
+
   }
 
 
-  .filter-option {
-    font-size: 13px;
+  .legend-item {
+
+    font-size:
+      11px;
+
   }
 
 
   #map {
-    height:
-      calc(100vh - 175px);
 
-    min-height: 450px;
+    height:
+      calc(
+        100vh - 150px
+      );
+
+    min-height:
+      480px;
+
+  }
+
+
+  .filter-panel {
+
+    top:
+      10px;
+
+    left:
+      10px;
+
+
+    width:
+      calc(
+        100% - 20px
+      );
+
+
+    max-height:
+      calc(
+        100% - 20px
+      );
+
+  }
+
+
+  .filter-panel-body {
+
+    max-height:
+      calc(
+        100vh - 325px
+      );
+
   }
 
 
   #map-status {
-    top: 8px;
+
+    top:
+      10px;
+
 
     max-width:
-      calc(100% - 24px);
+      calc(
+        100% - 24px
+      );
 
-    padding: 8px 12px;
 
-    font-size: 12px;
+    font-size:
+      11px;
+
   }
 
 
   .spot-popup {
-    min-width: 190px;
-    max-width: 240px;
-  }
 
+    min-width:
+      205px;
 
-  .spot-popup-title {
-    font-size: 15px;
-  }
+    max-width:
+      255px;
 
-
-  .leaflet-popup-content {
-    margin: 12px 14px;
   }
 
 }
 
 
 /* ========================================
-   15. 小さいスマホ
+   小さいスマホ
    ======================================== */
 
 @media (
-  max-width: 380px
+  max-width: 420px
 ) {
 
-  .filter-option {
-    width: 100%;
+  .unofficial-badge {
+
+    display:
+      none;
+
+  }
+
+
+  .map-legend {
+
+    display:
+      none;
+
+  }
+
+
+  .result-count {
+
+    font-size:
+      11px;
+
   }
 
 
   #map {
+
     height:
-      calc(100vh - 210px);
+      calc(
+        100vh - 143px
+      );
+
   }
 
 }
