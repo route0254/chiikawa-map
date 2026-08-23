@@ -16,9 +16,6 @@
 
   <title>ちいかわ推し活MAP</title>
 
-
-  <!-- Leaflet CSS -->
-
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -26,29 +23,24 @@
     crossorigin=""
   >
 
-
-  <!-- 自作CSS -->
-
   <link
     rel="stylesheet"
     href="style.css"
   >
-
 </head>
 
 
 <body>
 
-
-  <!-- ==================================
+  <!-- ========================================
        ヘッダー
-       ================================== -->
+       ======================================== -->
 
   <header class="site-header">
 
     <div class="site-header-inner">
 
-      <div class="site-kicker-row">
+      <div class="site-header-top">
 
         <span class="site-kicker">
           OSHIKATSU MAP
@@ -60,16 +52,13 @@
 
       </div>
 
-
       <h1>
         ちいかわ推し活MAP
       </h1>
 
-
-      <p>
+      <p class="site-description">
         ちいかわ公式関連スポットや、
-        ナガノ先生が紹介・訪問した場所を
-        ひとつの地図で探せます。
+        ナガノ先生が紹介・訪問した場所をまとめています。
       </p>
 
     </div>
@@ -77,682 +66,689 @@
   </header>
 
 
-  <!-- ==================================
-       マップツールバー
-       ================================== -->
+  <!-- ========================================
+       ページ本体
+       ======================================== -->
 
-  <section
-    class="map-toolbar"
-    aria-label="マップ操作"
-  >
-
-    <div class="map-toolbar-left">
+  <main class="page-shell">
 
 
-      <!-- 絞り込みボタン -->
+    <!-- ========================================
+         マップカード
+         ======================================== -->
 
-      <button
-        type="button"
-        class="filter-button"
-        id="filter-toggle"
-        aria-expanded="false"
-        aria-controls="filter-panel"
-      >
-
-        <span aria-hidden="true">
-          ☰
-        </span>
-
-        絞り込み
-
-      </button>
+    <section class="map-card">
 
 
-      <!-- 表示件数 -->
+      <!-- ========================================
+           ツールバー
+           ======================================== -->
 
-      <span
-        class="result-count"
-        id="result-count"
-      >
-        読み込み中…
-      </span>
+      <div class="map-toolbar">
 
-    </div>
+        <div class="map-toolbar-left">
 
+          <button
+            type="button"
+            class="filter-button"
+            id="filter-toggle"
+            aria-expanded="false"
+            aria-controls="filter-panel"
+          >
+            <span aria-hidden="true">
+              ☰
+            </span>
 
-    <!-- 凡例 -->
-
-    <div
-      class="map-legend"
-      aria-label="ピンの凡例"
-    >
-
-      <span class="legend-item">
-
-        <span
-          class="legend-dot official-dot"
-          aria-hidden="true"
-        ></span>
-
-        公式
-
-      </span>
+            絞り込み
+          </button>
 
 
-      <span class="legend-item">
+          <span
+            id="result-count"
+            class="result-count"
+          >
+            読み込み中…
+          </span>
 
-        <span
-          class="legend-dot nagano-dot"
-          aria-hidden="true"
-        ></span>
-
-        ナガノ先生
-
-      </span>
-
-    </div>
-
-  </section>
+        </div>
 
 
-  <!-- ==================================
-       メイン
-       ================================== -->
+        <div class="map-legend">
 
-  <main>
+          <span class="legend-item">
 
-    <div id="map-wrapper">
+            <span
+              class="legend-dot official-dot"
+            ></span>
+
+            公式
+
+          </span>
 
 
-      <!-- ==================================
-           フィルターパネル
-           ================================== -->
+          <span class="legend-item">
 
-      <aside
-        id="filter-panel"
-        class="filter-panel"
-        hidden
+            <span
+              class="legend-dot nagano-dot"
+            ></span>
+
+            ナガノ先生
+
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================
+           地図＋詳細
+           ======================================== -->
+
+      <div
+        class="map-content"
+        id="map-content"
       >
 
 
-        <!-- ヘッダー -->
+        <!-- ========================================
+             地図エリア
+             ======================================== -->
 
-        <div class="filter-panel-header">
+        <div id="map-wrapper">
 
-          <div>
 
-            <div class="filter-panel-kicker">
-              FILTER
+          <!-- フィルターパネル -->
+
+          <aside
+            id="filter-panel"
+            class="filter-panel"
+            hidden
+          >
+
+            <div class="filter-panel-header">
+
+              <div>
+
+                <div class="filter-panel-kicker">
+                  FILTER
+                </div>
+
+                <h2>
+                  スポットを絞り込む
+                </h2>
+
+              </div>
+
+
+              <button
+                type="button"
+                class="icon-button"
+                id="filter-close"
+                aria-label="絞り込みを閉じる"
+              >
+                ×
+              </button>
+
             </div>
 
-            <h2>
-              スポットを絞り込む
-            </h2>
+
+            <div class="filter-panel-body">
+
+
+              <!-- 関連 -->
+
+              <fieldset class="filter-group">
+
+                <legend>
+                  関連
+                </legend>
+
+
+                <div class="filter-chip-list">
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-category"
+                      value="official"
+                      checked
+                    >
+
+                    <span>
+                      ちいかわ公式
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-category"
+                      value="nagano"
+                      checked
+                    >
+
+                    <span>
+                      ナガノ先生
+                    </span>
+
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+
+              <!-- スポット種類 -->
+
+              <fieldset class="filter-group">
+
+                <legend>
+                  スポットの種類
+                </legend>
+
+
+                <div class="filter-chip-list">
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-place"
+                      value="shop"
+                      checked
+                    >
+
+                    <span>
+                      ショップ
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-place"
+                      value="food"
+                      checked
+                    >
+
+                    <span>
+                      グルメ
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-place"
+                      value="spot"
+                      checked
+                    >
+
+                    <span>
+                      おでかけ
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-place"
+                      value="lodging"
+                      checked
+                    >
+
+                    <span>
+                      宿泊
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-place"
+                      value="other"
+                      checked
+                    >
+
+                    <span>
+                      その他
+                    </span>
+
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+
+              <!-- 公式関連 -->
+
+              <details
+                class="filter-details"
+                open
+              >
+
+                <summary>
+                  ちいかわ公式関連の種類
+                </summary>
+
+
+                <div class="filter-chip-list filter-chip-list-inner">
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-official-relation"
+                      value="official_store"
+                      checked
+                    >
+
+                    <span>
+                      公式ショップ
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-official-relation"
+                      value="official_facility"
+                      checked
+                    >
+
+                    <span>
+                      公式施設
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-official-relation"
+                      value="collaboration"
+                      checked
+                    >
+
+                    <span>
+                      コラボ
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-official-relation"
+                      value="popup"
+                      checked
+                    >
+
+                    <span>
+                      POP UP
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-official-relation"
+                      value="event"
+                      checked
+                    >
+
+                    <span>
+                      イベント・展示
+                    </span>
+
+                  </label>
+
+                </div>
+
+              </details>
+
+
+              <!-- ナガノ先生関連 -->
+
+              <details class="filter-details">
+
+                <summary>
+                  ナガノ先生関連の種類
+                </summary>
+
+
+                <div class="filter-chip-list filter-chip-list-inner">
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-nagano-relation"
+                      value="introduced"
+                      checked
+                    >
+
+                    <span>
+                      紹介
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-nagano-relation"
+                      value="visited"
+                      checked
+                    >
+
+                    <span>
+                      訪問
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-nagano-relation"
+                      value="related"
+                      checked
+                    >
+
+                    <span>
+                      ゆかり・関連
+                    </span>
+
+                  </label>
+
+                </div>
+
+              </details>
+
+
+              <!-- 開催期間 -->
+
+              <fieldset class="filter-group">
+
+                <legend>
+                  開催期間
+                </legend>
+
+
+                <div class="filter-chip-list">
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-period"
+                      value="permanent"
+                      checked
+                    >
+
+                    <span>
+                      常設
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-period"
+                      value="limited"
+                      checked
+                    >
+
+                    <span>
+                      期間限定
+                    </span>
+
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+
+              <!-- 予約 -->
+
+              <fieldset class="filter-group">
+
+                <legend>
+                  予約
+                </legend>
+
+
+                <div class="filter-chip-list">
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-reservation"
+                      value="not_available"
+                      checked
+                    >
+
+                    <span>
+                      予約不可
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-reservation"
+                      value="optional"
+                      checked
+                    >
+
+                    <span>
+                      予約可
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-reservation"
+                      value="priority"
+                      checked
+                    >
+
+                    <span>
+                      予約優先
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-reservation"
+                      value="required"
+                      checked
+                    >
+
+                    <span>
+                      要予約
+                    </span>
+
+                  </label>
+
+
+                  <label class="filter-chip">
+
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-reservation"
+                      value="unknown"
+                      checked
+                    >
+
+                    <span>
+                      要確認
+                    </span>
+
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+            </div>
+
+
+            <div class="filter-panel-footer">
+
+              <button
+                type="button"
+                class="secondary-button"
+                id="filter-reset"
+              >
+                すべて表示に戻す
+              </button>
+
+            </div>
+
+          </aside>
+
+
+          <!-- Leaflet地図 -->
+
+          <div
+            id="map"
+            aria-label="ちいかわ推し活マップ"
+          ></div>
+
+
+          <!-- 障害時メッセージ -->
+
+          <div
+            id="map-status"
+            role="status"
+            aria-live="polite"
+            hidden
+          ></div>
+
+        </div>
+
+
+        <!-- ========================================
+             スポット詳細
+             ======================================== -->
+
+        <aside
+          id="spot-detail-panel"
+          class="spot-detail-panel"
+          hidden
+        >
+
+          <div class="spot-detail-header">
+
+            <span class="spot-detail-kicker">
+              SPOT INFO
+            </span>
+
+
+            <button
+              type="button"
+              id="detail-close"
+              class="icon-button"
+              aria-label="スポット詳細を閉じる"
+            >
+              ×
+            </button>
 
           </div>
 
 
-          <button
-            type="button"
-            class="icon-button"
-            id="filter-close"
-            aria-label="絞り込みを閉じる"
-          >
-            ×
-          </button>
+          <div
+            id="spot-detail-body"
+            class="spot-detail-body"
+          ></div>
 
-        </div>
+        </aside>
 
 
-        <!-- ==================================
-             フィルター本体
-             ================================== -->
+      </div>
 
-        <div class="filter-panel-body">
+    </section>
 
 
-          <!-- 関連 -->
-
-          <fieldset class="filter-group">
-
-            <legend>
-              関連
-            </legend>
-
-
-            <div class="filter-chip-list">
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-category"
-                  value="official"
-                  checked
-                >
-
-                <span>
-                  ちいかわ公式
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-category"
-                  value="nagano"
-                  checked
-                >
-
-                <span>
-                  ナガノ先生
-                </span>
-
-              </label>
-
-
-            </div>
-
-          </fieldset>
-
-
-          <!-- ==================================
-               スポット種類
-               ================================== -->
-
-          <fieldset class="filter-group">
-
-            <legend>
-              スポットの種類
-            </legend>
-
-
-            <div class="filter-chip-list">
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-place"
-                  value="shop"
-                  checked
-                >
-
-                <span>
-                  ショップ
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-place"
-                  value="food"
-                  checked
-                >
-
-                <span>
-                  グルメ
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-place"
-                  value="spot"
-                  checked
-                >
-
-                <span>
-                  おでかけ
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-place"
-                  value="lodging"
-                  checked
-                >
-
-                <span>
-                  宿泊
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-place"
-                  value="other"
-                  checked
-                >
-
-                <span>
-                  その他
-                </span>
-
-              </label>
-
-
-            </div>
-
-          </fieldset>
-
-
-          <!-- ==================================
-               公式関連
-               ================================== -->
-
-          <details
-            class="filter-details"
-            open
-          >
-
-            <summary>
-              ちいかわ公式関連の種類
-            </summary>
-
-
-            <div
-              class="filter-chip-list
-                     filter-chip-list-inner"
-            >
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-official-relation"
-                  value="official_store"
-                  checked
-                >
-
-                <span>
-                  公式ショップ
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-official-relation"
-                  value="official_facility"
-                  checked
-                >
-
-                <span>
-                  公式施設
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-official-relation"
-                  value="collaboration"
-                  checked
-                >
-
-                <span>
-                  コラボ
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-official-relation"
-                  value="popup"
-                  checked
-                >
-
-                <span>
-                  POP UP
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-official-relation"
-                  value="event"
-                  checked
-                >
-
-                <span>
-                  イベント・展示
-                </span>
-
-              </label>
-
-
-            </div>
-
-          </details>
-
-
-          <!-- ==================================
-               ナガノ先生関連
-               ================================== -->
-
-          <details class="filter-details">
-
-            <summary>
-              ナガノ先生関連の種類
-            </summary>
-
-
-            <div
-              class="filter-chip-list
-                     filter-chip-list-inner"
-            >
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-nagano-relation"
-                  value="introduced"
-                  checked
-                >
-
-                <span>
-                  紹介
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-nagano-relation"
-                  value="visited"
-                  checked
-                >
-
-                <span>
-                  訪問
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-nagano-relation"
-                  value="related"
-                  checked
-                >
-
-                <span>
-                  ゆかり・関連
-                </span>
-
-              </label>
-
-
-            </div>
-
-          </details>
-
-
-          <!-- ==================================
-               開催期間
-               ================================== -->
-
-          <fieldset class="filter-group">
-
-            <legend>
-              開催期間
-            </legend>
-
-
-            <div class="filter-chip-list">
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-period"
-                  value="permanent"
-                  checked
-                >
-
-                <span>
-                  常設
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-period"
-                  value="limited"
-                  checked
-                >
-
-                <span>
-                  期間限定
-                </span>
-
-              </label>
-
-
-            </div>
-
-          </fieldset>
-
-
-          <!-- ==================================
-               予約
-               ================================== -->
-
-          <fieldset class="filter-group">
-
-            <legend>
-              予約
-            </legend>
-
-
-            <div class="filter-chip-list">
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-reservation"
-                  value="not_available"
-                  checked
-                >
-
-                <span>
-                  予約不可
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-reservation"
-                  value="optional"
-                  checked
-                >
-
-                <span>
-                  予約可
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-reservation"
-                  value="priority"
-                  checked
-                >
-
-                <span>
-                  予約優先
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-reservation"
-                  value="required"
-                  checked
-                >
-
-                <span>
-                  要予約
-                </span>
-
-              </label>
-
-
-              <label class="filter-chip">
-
-                <input
-                  class="spot-filter"
-                  type="checkbox"
-                  name="filter-reservation"
-                  value="unknown"
-                  checked
-                >
-
-                <span>
-                  要確認
-                </span>
-
-              </label>
-
-
-            </div>
-
-          </fieldset>
-
-
-        </div>
-
-
-        <!-- ==================================
-             フッター
-             ================================== -->
-
-        <div class="filter-panel-footer">
-
-          <button
-            type="button"
-            class="secondary-button"
-            id="filter-reset"
-          >
-            すべて表示に戻す
-          </button>
-
-        </div>
-
-
-      </aside>
-
-
-      <!-- 地図 -->
-
-      <div
-        id="map"
-        aria-label="ちいかわ推し活マップ"
-      ></div>
-
-
-      <!-- 障害・バックアップ表示 -->
-
-      <div
-        id="map-status"
-        role="status"
-        aria-live="polite"
-        hidden
-      ></div>
-
-
-    </div>
+    <p class="site-note">
+      掲載情報は変更される場合があります。
+      営業時間・入場方法などは各公式情報もあわせてご確認ください。
+    </p>
 
   </main>
 
-
-  <!-- Leaflet JS -->
 
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -760,11 +756,7 @@
     crossorigin=""
   ></script>
 
-
-  <!-- 自作JS -->
-
   <script src="app.js"></script>
-
 
 </body>
 
