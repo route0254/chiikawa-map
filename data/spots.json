@@ -1,53 +1,88 @@
 [
   {
-    "id": "test-official-001",
-    "name": "テスト：ちいかわ公式スポット 東京",
+    "id": "test-permanent-001",
+    "name": "テスト：常設公式ショップ",
     "category": "official",
-    "genre": "shop",
-    "status": "active",
+    "placeType": "shop",
+    "relationType": "official_store",
+    "brand": "chiikawa",
+
+    "periodType": "permanent",
+    "startDate": null,
+    "endDate": null,
+
     "lat": 35.681236,
     "lng": 139.767125,
+
     "address": "東京都千代田区・東京駅付近",
-    "description": "公式関連スポットを想定したテストデータです。",
+    "description": "常設スポットの表示確認用テストデータです。",
+
     "sourceUrl": null,
     "mapUrl": null
   },
+
   {
-    "id": "test-official-002",
-    "name": "テスト：ちいかわ公式スポット 原宿",
+    "id": "test-upcoming-001",
+    "name": "テスト：これから開催するポップアップ",
     "category": "official",
-    "genre": "shop",
-    "status": "active",
+    "placeType": "shop",
+    "relationType": "popup",
+    "brand": "chiikawa",
+
+    "periodType": "limited",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-30",
+
     "lat": 35.6702,
     "lng": 139.7027,
+
     "address": "東京都渋谷区・原宿付近",
-    "description": "公式関連スポットを想定したテストデータです。",
+    "description": "開催前スポットの表示確認用テストデータです。",
+
     "sourceUrl": null,
     "mapUrl": null
   },
+
   {
-    "id": "test-nagano-001",
-    "name": "テスト：ナガノ先生おすすめ 新宿",
+    "id": "test-active-001",
+    "name": "テスト：現在開催中の紹介スポット",
     "category": "nagano",
-    "genre": "food",
-    "status": "active",
+    "placeType": "food",
+    "relationType": "introduced",
+    "brand": "nagano",
+
+    "periodType": "limited",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-31",
+
     "lat": 35.6909,
     "lng": 139.7003,
+
     "address": "東京都新宿区・新宿駅付近",
-    "description": "ナガノ先生紹介スポットを想定したテストデータです。",
+    "description": "開催中スポットの表示確認用テストデータです。",
+
     "sourceUrl": null,
     "mapUrl": null
   },
+
   {
-    "id": "test-nagano-002",
-    "name": "テスト：ナガノ先生おすすめ 池袋",
-    "category": "nagano",
-    "genre": "food",
-    "status": "active",
+    "id": "test-ended-001",
+    "name": "テスト：終了済みイベント",
+    "category": "official",
+    "placeType": "spot",
+    "relationType": "event",
+    "brand": "chiikawa",
+
+    "periodType": "limited",
+    "startDate": "2026-07-01",
+    "endDate": "2026-07-31",
+
     "lat": 35.7295,
     "lng": 139.7109,
+
     "address": "東京都豊島区・池袋駅付近",
-    "description": "ナガノ先生紹介スポットを想定したテストデータです。",
+    "description": "終了済みスポットの非表示確認用テストデータです。",
+
     "sourceUrl": null,
     "mapUrl": null
   }
