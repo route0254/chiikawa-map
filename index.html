@@ -11,13 +11,18 @@
 
   <meta
     name="description"
-    content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問したスポットをまとめる非公式推し活マップです。"
+    content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所をまとめる非公式の推し活マップです。"
   >
 
   <title>ちいかわ推し活MAP</title>
 
+  <link
+    rel="icon"
+    href="favicon.svg"
+    type="image/svg+xml"
+  >
 
-  <!-- Leaflet CSS -->
+  <!-- Leaflet -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -25,15 +30,12 @@
     crossorigin=""
   >
 
-
-  <!-- Leaflet MarkerCluster CSS -->
+  <!-- Leaflet MarkerCluster -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
   >
 
-
-  <!-- 自作CSS -->
   <link
     rel="stylesheet"
     href="style.css"
@@ -43,9 +45,9 @@
 
 <body>
 
-  <!-- ========================================
-       ヘッダー
-       ======================================== -->
+  <!-- ======================================================
+       HEADER
+       ====================================================== -->
 
   <header class="site-header">
 
@@ -77,21 +79,60 @@
   </header>
 
 
-  <!-- ========================================
-       ページ本体
-       ======================================== -->
+  <!-- ======================================================
+       NOTICE
+       ====================================================== -->
+
+  <div class="site-notice">
+
+    <div class="site-notice-inner">
+
+      <span
+        class="notice-icon"
+        aria-hidden="true"
+      >
+        ⚠
+      </span>
+
+      <p>
+        <strong>
+          掲載情報は
+          <span id="data-as-of">
+            2026年8月24日
+          </span>
+          時点です。
+        </strong>
+
+        ファンによる非営利の個人的なまとめです。
+        営業時間・入場方法・開催状況などは変更される場合があるため、
+        最新情報は各公式ページをご確認ください。
+
+        <a
+          href="https://github.com/route0254/chiikawa-map/issues/new"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          掲載内容について連絡 ↗
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ======================================================
+       PAGE
+       ====================================================== -->
 
   <main class="page-shell">
-
-
-    <!-- ========================================
-         マップカード
-         ======================================== -->
 
     <section class="map-card">
 
 
-      <!-- ツールバー -->
+      <!-- ==================================================
+           TOOLBAR
+           ================================================== -->
 
       <div class="map-toolbar">
 
@@ -99,7 +140,7 @@
 
           <button
             type="button"
-            class="filter-button"
+            class="toolbar-button"
             id="filter-toggle"
             aria-expanded="false"
             aria-controls="filter-panel"
@@ -109,6 +150,24 @@
             </span>
 
             絞り込み
+          </button>
+
+
+          <button
+            type="button"
+            class="toolbar-button"
+            id="help-toggle"
+            aria-expanded="false"
+            aria-controls="help-panel"
+          >
+            <span
+              class="help-button-icon"
+              aria-hidden="true"
+            >
+              ?
+            </span>
+
+            使い方
           </button>
 
 
@@ -135,7 +194,6 @@
             ></span>
 
             公式
-
           </span>
 
 
@@ -147,7 +205,6 @@
             ></span>
 
             ナガノ先生
-
           </span>
 
         </div>
@@ -155,36 +212,33 @@
       </div>
 
 
-      <!-- ========================================
-           地図＋詳細
-           ======================================== -->
+      <!-- ==================================================
+           MAP + DETAIL
+           ================================================== -->
 
       <div
         class="map-content"
         id="map-content"
       >
 
-
-        <!-- ========================================
-             地図エリア
-             ======================================== -->
-
         <div id="map-wrapper">
 
 
-          <!-- フィルター -->
+          <!-- ==============================================
+               FILTER PANEL
+               ============================================== -->
 
           <aside
             id="filter-panel"
-            class="filter-panel"
+            class="overlay-panel filter-panel"
             hidden
           >
 
-            <div class="filter-panel-header">
+            <div class="overlay-panel-header">
 
               <div>
 
-                <div class="filter-panel-kicker">
+                <div class="panel-kicker">
                   FILTER
                 </div>
 
@@ -207,7 +261,7 @@
             </div>
 
 
-            <div class="filter-panel-body">
+            <div class="overlay-panel-body">
 
 
               <!-- 関連 -->
@@ -221,7 +275,6 @@
                 <div class="filter-chip-list">
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -229,16 +282,11 @@
                       value="official"
                       checked
                     >
-
-                    <span>
-                      ちいかわ公式
-                    </span>
-
+                    <span>ちいかわ公式</span>
                   </label>
 
 
                   <label class="filter-chip">
-
                     <input
                       class="spot-filter"
                       type="checkbox"
@@ -246,11 +294,7 @@
                       value="nagano"
                       checked
                     >
-
-                    <span>
-                      ナガノ先生
-                    </span>
-
+                    <span>ナガノ先生</span>
                   </label>
 
                 </div>
@@ -258,7 +302,7 @@
               </fieldset>
 
 
-              <!-- スポットの種類 -->
+              <!-- スポット種類 -->
 
               <fieldset class="filter-group">
 
@@ -328,6 +372,26 @@
                   </label>
 
                 </div>
+
+              </fieldset>
+
+
+              <!-- シリーズ・施設 -->
+
+              <fieldset class="filter-group">
+
+                <legend>
+                  シリーズ・施設
+                </legend>
+
+                <p class="filter-hint">
+                  ちいかわらんどなど、特定のショップ・施設だけを探したいときに使います。
+                </p>
+
+                <div
+                  id="brand-filter-list"
+                  class="filter-chip-list"
+                ></div>
 
               </fieldset>
 
@@ -459,7 +523,7 @@
               </details>
 
 
-              <!-- 開催期間 -->
+              <!-- 期間 -->
 
               <fieldset class="filter-group">
 
@@ -504,6 +568,10 @@
                 <legend>
                   予約
                 </legend>
+
+                <p class="filter-hint">
+                  「予約不可」でも混雑時に整理券などが必要になる場合があります。
+                </p>
 
                 <div class="filter-chip-list">
 
@@ -573,7 +641,7 @@
             </div>
 
 
-            <div class="filter-panel-footer">
+            <div class="overlay-panel-footer">
 
               <button
                 type="button"
@@ -588,7 +656,262 @@
           </aside>
 
 
-          <!-- Leaflet地図 -->
+          <!-- ==============================================
+               HELP PANEL
+               ============================================== -->
+
+          <aside
+            id="help-panel"
+            class="overlay-panel help-panel"
+            hidden
+          >
+
+            <div class="overlay-panel-header">
+
+              <div>
+
+                <div class="panel-kicker">
+                  GUIDE
+                </div>
+
+                <h2>
+                  使い方・掲載基準
+                </h2>
+
+              </div>
+
+
+              <button
+                type="button"
+                class="icon-button"
+                id="help-close"
+                aria-label="使い方を閉じる"
+              >
+                ×
+              </button>
+
+            </div>
+
+
+            <div class="overlay-panel-body help-body">
+
+              <section class="help-section">
+
+                <h3>
+                  このMAPについて
+                </h3>
+
+                <p>
+                  ちいかわ公式関連スポットと、
+                  ナガノ先生が紹介・訪問した場所をまとめる
+                  非公式のファンMAPです。
+                </p>
+
+                <p>
+                  期間限定スポットは、
+                  終了日を過ぎると自動的に地図から非表示になります。
+                </p>
+
+              </section>
+
+
+              <section class="help-section">
+
+                <h3>
+                  絞り込みの使い方
+                </h3>
+
+
+                <div class="example-card">
+
+                  <strong>
+                    ちいかわらんどだけ探したい
+                  </strong>
+
+                  <span>
+                    「シリーズ・施設」→「ちいかわらんど」
+                  </span>
+
+                </div>
+
+
+                <div class="example-card">
+
+                  <strong>
+                    期間限定POP UPを探したい
+                  </strong>
+
+                  <span>
+                    「公式関連の種類」→「POP UP」
+                    ＋「開催期間」→「期間限定」
+                  </span>
+
+                </div>
+
+
+                <div class="example-card">
+
+                  <strong>
+                    ナガノ先生紹介の飲食店を探したい
+                  </strong>
+
+                  <span>
+                    「関連」→「ナガノ先生」
+                    ＋「スポットの種類」→「グルメ」
+                    ＋「紹介」
+                  </span>
+
+                </div>
+
+              </section>
+
+
+              <section class="help-section">
+
+                <h3>
+                  各フィルターの意味
+                </h3>
+
+                <dl class="help-definition-list">
+
+                  <div>
+                    <dt>関連</dt>
+                    <dd>
+                      「ちいかわ公式」と
+                      「ナガノ先生本人の紹介・訪問」を分けます。
+                    </dd>
+                  </div>
+
+
+                  <div>
+                    <dt>スポットの種類</dt>
+                    <dd>
+                      ショップ、飲食店、おでかけ施設など、
+                      その場所で何をするかで分類しています。
+                    </dd>
+                  </div>
+
+
+                  <div>
+                    <dt>シリーズ・施設</dt>
+                    <dd>
+                      ちいかわらんど、ちいかわパーク、
+                      ラーメン 豚など、特定シリーズだけを探せます。
+                    </dd>
+                  </div>
+
+
+                  <div>
+                    <dt>公式関連の種類</dt>
+                    <dd>
+                      常設ショップ、公式施設、コラボ、
+                      POP UP、イベント・展示を分類しています。
+                    </dd>
+                  </div>
+
+
+                  <div>
+                    <dt>開催期間</dt>
+                    <dd>
+                      常設か期間限定かを分類しています。
+                      終了済みの期間限定スポットは通常表示されません。
+                    </dd>
+                  </div>
+
+                </dl>
+
+              </section>
+
+
+              <section class="help-section">
+
+                <h3>
+                  予約表示の考え方
+                </h3>
+
+                <div class="reservation-guide">
+
+                  <div>
+                    <strong>予約不可</strong>
+                    <span>
+                      事前予約制度なし。
+                      通常入場や整理券方式の場合があります。
+                    </span>
+                  </div>
+
+
+                  <div>
+                    <strong>予約可</strong>
+                    <span>
+                      事前予約できるものの、
+                      原則として予約なしでも利用できます。
+                    </span>
+                  </div>
+
+
+                  <div>
+                    <strong>予約優先</strong>
+                    <span>
+                      予約者が優先。
+                      空きがあれば予約なしでも利用できる場合があります。
+                    </span>
+                  </div>
+
+
+                  <div>
+                    <strong>要予約</strong>
+                    <span>
+                      原則として事前予約・チケットなどが必要です。
+                    </span>
+                  </div>
+
+
+                  <div>
+                    <strong>要確認</strong>
+                    <span>
+                      日付や混雑状況などで運用が変わるため、
+                      公式の最新案内確認をおすすめします。
+                    </span>
+                  </div>
+
+                </div>
+
+
+                <p class="help-important">
+                  ※「予約」と「入場制限」は別に管理しています。
+                  たとえば「予約不可」の店舗でも、
+                  混雑時に整理券が必要になる場合があります。
+                </p>
+
+              </section>
+
+
+              <section class="help-section">
+
+                <h3>
+                  掲載情報について
+                </h3>
+
+                <p>
+                  営業時間・開催期間・予約・入場方法などは、
+                  原則として公式サイト・施設公式情報を基準に整理しています。
+                </p>
+
+                <p>
+                  ただし、臨時変更・売切れ・当日の混雑状況などを
+                  リアルタイム保証するものではありません。
+                  実際に訪問する前に、各スポットの
+                  「最新の営業時間」「最新の入場情報」「情報元」もご確認ください。
+                </p>
+
+              </section>
+
+            </div>
+
+          </aside>
+
+
+          <!-- MAP -->
 
           <div
             id="map"
@@ -596,7 +919,7 @@
           ></div>
 
 
-          <!-- 障害表示 -->
+          <!-- TILE STATUS -->
 
           <div
             id="map-status"
@@ -608,9 +931,9 @@
         </div>
 
 
-        <!-- ========================================
-             詳細
-             ======================================== -->
+        <!-- ==================================================
+             SPOT DETAIL
+             ================================================== -->
 
         <aside
           id="spot-detail-panel"
@@ -623,6 +946,7 @@
             <span class="spot-detail-kicker">
               SPOT INFO
             </span>
+
 
             <button
               type="button"
@@ -649,8 +973,8 @@
 
 
     <p class="site-note">
-      掲載情報は変更される場合があります。
-      営業時間・入場方法などは各公式情報もあわせてご確認ください。
+      本サイトは公式とは関係のない非公式ファンサイトです。
+      掲載内容は予告なく変更・終了している場合があります。
     </p>
 
   </main>
@@ -670,7 +994,7 @@
   ></script>
 
 
-  <!-- 自作JS -->
+  <!-- App -->
   <script src="app.js"></script>
 
 </body>
