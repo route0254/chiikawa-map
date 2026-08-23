@@ -84,7 +84,10 @@ const TILE_TEST_MODE =
 
 const map =
   L.map(
-    "map"
+    "map",
+    {
+      maxZoom: 20
+    }
   ).setView(
     INITIAL_POSITION,
     INITIAL_ZOOM
