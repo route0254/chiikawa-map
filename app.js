@@ -846,6 +846,95 @@ const spotRecords = [];
 let selectedRecord =
   null;
 
+// ========================================
+// 全スポットが入る範囲へ初期表示
+// ========================================
+
+function fitMapToAllSpots() {
+
+  const latLngs =
+    spotRecords.map(
+      record => [
+        record.spot.lat,
+        record.spot.lng
+      ]
+    );
+
+
+  if (
+    latLngs.length === 0
+  ) {
+
+    return;
+  }
+
+
+  requestAnimationFrame(
+    () => {
+
+      /*
+        レスポンシブレイアウト反映後の
+        正しい地図サイズをLeafletへ通知
+      */
+
+      map.invalidateSize({
+        pan: false,
+        animate: false
+      });
+
+
+      /*
+        1件しかない場合は
+        fitBoundsだと拡大しすぎるので固定
+      */
+
+      if (
+        latLngs.length === 1
+      ) {
+
+        map.setView(
+          latLngs[0],
+          13,
+          {
+            animate: false
+          }
+        );
+
+        return;
+      }
+
+
+      const bounds =
+        L.latLngBounds(
+          latLngs
+        );
+
+
+      const padding =
+        window.innerWidth <= 650
+          ? [24, 24]
+          : [40, 40];
+
+
+      map.fitBounds(
+        bounds,
+        {
+          padding: padding,
+
+          /*
+            将来、近所の数店舗しか
+            データがなくなっても
+            拡大しすぎないための保険
+          */
+          maxZoom: 12,
+
+          animate: false
+        }
+      );
+
+    }
+  );
+}
 
 // ========================================
 // ピン
@@ -1942,6 +2031,7 @@ async function loadSpots() {
 
 
     updateSpotFilters();
+    fitMapToAllSpots();
 
 
     console.log(
