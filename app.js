@@ -1,5 +1,5 @@
 // ============================================================
-// ちいかわ推し活MAP
+// ちいかわ推し活（ちい活）MAP
 // ============================================================
 
 
@@ -222,21 +222,39 @@ const brandFilterList =
   );
 
 
-const helpToggle =
+const officialHelpToggle =
   document.getElementById(
-    "help-toggle"
+    "official-help-toggle"
   );
 
 
-const helpPanel =
+const officialHelpPanel =
   document.getElementById(
-    "help-panel"
+    "official-help-panel"
   );
 
 
-const helpClose =
+const officialHelpClose =
   document.getElementById(
-    "help-close"
+    "official-help-close"
+  );
+
+
+const naganoHelpToggle =
+  document.getElementById(
+    "nagano-help-toggle"
+  );
+
+
+const naganoHelpPanel =
+  document.getElementById(
+    "nagano-help-panel"
+  );
+
+
+const naganoHelpClose =
+  document.getElementById(
+    "nagano-help-close"
   );
 
 
@@ -2169,7 +2187,7 @@ function createSpotRecord(
 
 
 // ============================================================
-// ブランドフィルターをspots.jsonから自動生成
+// ブランドフィルターをスポットデータから自動生成
 // ============================================================
 
 function renderBrandFilters() {
@@ -2556,7 +2574,11 @@ function setFilterPanelOpen(
     open
   ) {
 
-    setHelpPanelOpen(
+    setOfficialHelpPanelOpen(
+      false
+    );
+
+    setNaganoHelpPanelOpen(
       false
     );
   }
@@ -2579,40 +2601,66 @@ function setFilterPanelOpen(
 }
 
 
-function setHelpPanelOpen(
+function setOfficialHelpPanelOpen(
   open
 ) {
 
   if (
-    !helpPanel ||
-    !helpToggle
+    !officialHelpPanel ||
+    !officialHelpToggle
   ) {
-
     return;
   }
-
 
   if (
     open
   ) {
-
-    setFilterPanelOpen(
-      false
-    );
+    setFilterPanelOpen(false);
+    setNaganoHelpPanelOpen(false);
   }
 
-
-  helpPanel.hidden =
+  officialHelpPanel.hidden =
     !open;
 
-
-  helpToggle.setAttribute(
+  officialHelpToggle.setAttribute(
     "aria-expanded",
     String(open)
   );
 
+  officialHelpToggle.classList.toggle(
+    "is-active",
+    open
+  );
+}
 
-  helpToggle.classList.toggle(
+
+function setNaganoHelpPanelOpen(
+  open
+) {
+
+  if (
+    !naganoHelpPanel ||
+    !naganoHelpToggle
+  ) {
+    return;
+  }
+
+  if (
+    open
+  ) {
+    setFilterPanelOpen(false);
+    setOfficialHelpPanelOpen(false);
+  }
+
+  naganoHelpPanel.hidden =
+    !open;
+
+  naganoHelpToggle.setAttribute(
+    "aria-expanded",
+    String(open)
+  );
+
+  naganoHelpToggle.classList.toggle(
     "is-active",
     open
   );
@@ -2644,143 +2692,189 @@ function resetFilters() {
 
 
 // ============================================================
-// spots.json
+// スポットデータ
+// 公式関連とナガノ先生関連を別JSONから読み込む
 // ============================================================
+
+const SPOT_DATA_SOURCES = [
+  {
+    label: "公式関連",
+    url: "./data/official-spots.json"
+  },
+  {
+    label: "ナガノ先生関連",
+    url: "./data/nagano-spots.json"
+  }
+];
+
+
+async function fetchSpotSource(
+  source
+) {
+
+  const response =
+    await fetch(
+      source.url,
+      {
+        cache: "no-store"
+      }
+    );
+
+  if (
+    !response.ok
+  ) {
+    throw new Error(
+      source.label +
+      "データ: HTTP " +
+      response.status
+    );
+  }
+
+  const spots =
+    await response.json();
+
+  if (
+    !Array.isArray(spots)
+  ) {
+    throw new Error(
+      source.url +
+      " が配列ではありません。"
+    );
+  }
+
+  return spots;
+}
+
 
 async function loadSpots() {
 
   try {
 
-    const response =
-      await fetch(
-        "./data/spots.json",
-        {
-          cache:
-            "no-store"
+    const results =
+      await Promise.allSettled(
+        SPOT_DATA_SOURCES.map(
+          fetchSpotSource
+        )
+      );
+
+    const spots = [];
+    let sourceErrorCount = 0;
+
+    results.forEach(
+      (result, index) => {
+
+        const source =
+          SPOT_DATA_SOURCES[index];
+
+        if (
+          result.status ===
+          "fulfilled"
+        ) {
+
+          spots.push(
+            ...result.value
+          );
+
+          console.log(
+            source.label +
+            ": " +
+            result.value.length +
+            "件を読み込みました。"
+          );
+
+        } else {
+
+          sourceErrorCount++;
+
+          console.error(
+            source.label +
+            "データの読み込みに失敗しました。",
+            result.reason
+          );
         }
-      );
-
+      }
+    );
 
     if (
-      !response.ok
+      sourceErrorCount ===
+      SPOT_DATA_SOURCES.length
     ) {
-
       throw new Error(
-        "HTTP " +
-        response.status
+        "すべてのスポットデータの読み込みに失敗しました。"
       );
     }
 
-
-    const spots =
-      await response.json();
-
-
-    if (
-      !Array.isArray(
-        spots
-      )
-    ) {
-
-      throw new Error(
-        "spots.json が配列ではありません。"
-      );
-    }
-
-
-    let endedCount =
-      0;
-
-
-    let skippedCount =
-      0;
-
+    let endedCount = 0;
+    let skippedCount = 0;
 
     spots.forEach(
       spot => {
 
         const periodStatus =
-          getSpotPeriodStatus(
-            spot
-          );
-
+          getSpotPeriodStatus(spot);
 
         if (
           periodStatus ===
           "ended"
         ) {
-
           endedCount++;
-
-
           console.log(
             "終了済みスポットを非表示:",
             spot.name
           );
-
-
           return;
         }
 
-
         const record =
-          createSpotRecord(
-            spot
-          );
-
+          createSpotRecord(spot);
 
         if (
           record
         ) {
-
-          spotRecords.push(
-            record
-          );
-
+          spotRecords.push(record);
         } else {
-
           skippedCount++;
         }
-
       }
     );
-
 
     // データに合わせてブランドフィルターを生成
     renderBrandFilters();
 
-
     // 全チェック状態で初期表示
     updateSpotFilters();
 
-
     // 全国の表示対象スポットを収める
     fitMapToAllSpots();
-
 
     console.log(
       spots.length +
       "件のスポットデータを読み込みました。"
     );
 
-
     console.log(
       spotRecords.length +
       "件が表示対象です。"
     );
-
 
     console.log(
       endedCount +
       "件の終了済みスポットを非表示にしました。"
     );
 
+    if (
+      sourceErrorCount > 0
+    ) {
+      console.warn(
+        sourceErrorCount +
+        "個のデータファイルを読み込めませんでしたが、" +
+        "読み込めたデータで表示を継続します。"
+      );
+    }
 
     if (
-      skippedCount >
-      0
+      skippedCount > 0
     ) {
-
       console.warn(
         skippedCount +
         "件のスポットをデータ不備によりスキップしました。"
@@ -2796,15 +2890,12 @@ async function loadSpots() {
       error
     );
 
-
     if (
       resultCount
     ) {
-
       resultCount.textContent =
         "スポット読込エラー";
     }
-
   }
 }
 
@@ -2866,25 +2957,51 @@ filterReset
   );
 
 
-helpToggle
+officialHelpToggle
   ?.addEventListener(
     "click",
     () => {
 
-      setHelpPanelOpen(
-        helpPanel.hidden
+      setOfficialHelpPanelOpen(
+        officialHelpPanel.hidden
       );
 
     }
   );
 
 
-helpClose
+officialHelpClose
   ?.addEventListener(
     "click",
     () => {
 
-      setHelpPanelOpen(
+      setOfficialHelpPanelOpen(
+        false
+      );
+
+    }
+  );
+
+
+naganoHelpToggle
+  ?.addEventListener(
+    "click",
+    () => {
+
+      setNaganoHelpPanelOpen(
+        naganoHelpPanel.hidden
+      );
+
+    }
+  );
+
+
+naganoHelpClose
+  ?.addEventListener(
+    "click",
+    () => {
+
+      setNaganoHelpPanelOpen(
         false
       );
 
@@ -2928,14 +3045,26 @@ document.addEventListener(
 
 
     if (
-      helpPanel &&
-      !helpPanel.hidden
+      officialHelpPanel &&
+      !officialHelpPanel.hidden
     ) {
 
-      setHelpPanelOpen(
+      setOfficialHelpPanelOpen(
         false
       );
 
+      return;
+    }
+
+
+    if (
+      naganoHelpPanel &&
+      !naganoHelpPanel.hidden
+    ) {
+
+      setNaganoHelpPanelOpen(
+        false
+      );
 
       return;
     }
