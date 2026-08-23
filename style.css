@@ -170,3 +170,75 @@ main {
   font-size: 13px;
 }
 
+/* ==============================
+   マップフィルター
+   ============================== */
+
+.map-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  padding: 12px 20px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.map-controls-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.filter-option input {
+  width: 18px;
+  height: 18px;
+
+  cursor: pointer;
+}
+
+.filter-dot {
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.official-dot {
+  background: #ff78aa;
+}
+
+.nagano-dot {
+  background: #6fae72;
+}
+
+
+/* スマホ向け */
+
+@media (max-width: 600px) {
+
+  .map-controls {
+    gap: 10px 16px;
+  }
+
+  .map-controls-title {
+    width: 100%;
+  }
+
+}
