@@ -1094,3 +1094,126 @@ button {
   }
 
 }
+
+/* ========================================
+   MarkerCluster
+   ======================================== */
+
+
+/*
+  MarkerCluster標準の背景を消して、
+  独自クラスタだけ表示
+*/
+
+.marker-cluster-custom {
+  background: transparent !important;
+
+  border: 0 !important;
+}
+
+
+/* クラスタ本体 */
+
+.cluster-bubble {
+  display: grid;
+
+  place-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border:
+    3px solid #ffffff;
+
+  border-radius:
+    50%;
+
+  color:
+    #ffffff;
+
+  font-size:
+    13px;
+
+  font-weight:
+    800;
+
+  line-height:
+    1;
+
+  box-shadow:
+    0 6px 18px
+    rgba(
+      60,
+      44,
+      51,
+      0.28
+    );
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.marker-cluster-custom:hover
+.cluster-bubble {
+  transform:
+    scale(1.08);
+
+  box-shadow:
+    0 8px 22px
+    rgba(
+      60,
+      44,
+      51,
+      0.34
+    );
+}
+
+
+/* 公式のみのクラスタ */
+
+.cluster-official {
+  background:
+    linear-gradient(
+      145deg,
+      #ff9bc1,
+      #f477a8
+    );
+}
+
+
+/* ナガノ先生関連のみ */
+
+.cluster-nagano {
+  background:
+    linear-gradient(
+      145deg,
+      #91cda3,
+      #71ad86
+    );
+}
+
+
+/*
+  公式＋ナガノ先生が
+  混ざっているクラスタ
+*/
+
+.cluster-mixed {
+  background:
+    linear-gradient(
+      135deg,
+      #f477a8 0%,
+      #8c7bf3 50%,
+      #71ad86 100%
+    );
+}
+
+
+/* クラスタ内の件数 */
+
+.cluster-count {
+  transform:
+    translateY(-0.5px);
+}
