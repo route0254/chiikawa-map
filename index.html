@@ -912,7 +912,9 @@
                 </p>
                 <p>
                   「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で表示方法を切り替えられます。
+                  一覧では「◎ 近い順」や「▣ 地図範囲内」も利用でき、検索・絞り込み条件と組み合わせられます。
                   詳細の「♡ 行きたいに保存」はこのブラウザ内に保存され、「♡ 行きたい」で保存済みだけを表示できます。
+                  「🔗 このスポットを共有」から、そのスポットを直接開けるURLも共有できます。
                   位置情報や行きたい情報をサーバーへ送信する機能はありません。
                 </p>
               </section>
@@ -1052,7 +1054,9 @@
                 </p>
                 <p>
                   「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で巡礼候補を見比べられます。
+                  一覧では「◎ 近い順」や「▣ 地図範囲内」を既存の絞り込みと併用できます。
                   気になる場所は「♡ 行きたいに保存」でき、保存済みだけの表示にも対応しています。
+                  「🔗 このスポットを共有」から、その場所を直接開けるURLも共有できます。
                   保存内容はこのブラウザ内だけに保持されます。
                 </p>
               </section>
@@ -1229,8 +1233,26 @@
           <div>
             <span class="spot-list-kicker">SPOT LIST</span>
             <h2>スポット一覧</h2>
+            <p id="spot-list-summary">絞り込み結果を一覧で表示します。</p>
           </div>
-          <p id="spot-list-summary">絞り込み結果を一覧で表示します。</p>
+
+          <div class="spot-list-tools" role="group" aria-label="一覧の表示条件">
+            <button
+              type="button"
+              id="list-nearby-sort-button"
+              class="spot-list-tool-button"
+              aria-pressed="false"
+              title="現在地から近い順に並べ替え"
+            >◎ 近い順</button>
+
+            <button
+              type="button"
+              id="list-bounds-filter-button"
+              class="spot-list-tool-button"
+              aria-pressed="false"
+              title="最後に地図で表示していた範囲内だけ一覧表示"
+            >▣ 地図範囲内</button>
+          </div>
         </div>
 
         <div id="spot-list" class="spot-list"></div>
