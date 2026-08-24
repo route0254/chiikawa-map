@@ -151,6 +151,12 @@ const TILE_TEST_MODE =
   );
 
 
+const SHARED_SPOT_ID =
+  params.get(
+    "spot"
+  );
+
+
 // ============================================================
 // Leaflet Map
 // MarkerClusterのためMap本体にmaxZoomを明示
@@ -225,6 +231,18 @@ const mapViewButton =
 const listViewButton =
   document.getElementById(
     "list-view-button"
+  );
+
+
+const listNearbySortButton =
+  document.getElementById(
+    "list-nearby-sort-button"
+  );
+
+
+const listBoundsFilterButton =
+  document.getElementById(
+    "list-bounds-filter-button"
   );
 
 
@@ -1914,6 +1932,22 @@ let currentViewMode =
   "map";
 
 
+let listSortMode =
+  "default";
+
+
+let listWithinMapBounds =
+  false;
+
+
+let lastUserLocation =
+  null;
+
+
+let lastFilteredRecords =
+  [];
+
+
 let userLocationMarker =
   null;
 
@@ -2094,6 +2128,269 @@ function toggleFavoriteSpot(
 }
 
 
+function toRadians(
+  degrees
+) {
+  return degrees *
+    Math.PI /
+    180;
+}
+
+
+function getDistanceMeters(
+  lat1,
+  lng1,
+  lat2,
+  lng2
+) {
+
+  const earthRadius =
+    6371000;
+
+  const dLat =
+    toRadians(
+      lat2 - lat1
+    );
+
+  const dLng =
+    toRadians(
+      lng2 - lng1
+    );
+
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRadians(lat1)) *
+    Math.cos(toRadians(lat2)) *
+    Math.sin(dLng / 2) ** 2;
+
+  return earthRadius *
+    2 *
+    Math.atan2(
+      Math.sqrt(a),
+      Math.sqrt(1 - a)
+    );
+}
+
+
+function getRecordDistance(
+  record
+) {
+
+  if (
+    !lastUserLocation
+  ) {
+    return null;
+  }
+
+  return getDistanceMeters(
+    lastUserLocation.lat,
+    lastUserLocation.lng,
+    record.spot.lat,
+    record.spot.lng
+  );
+}
+
+
+function formatDistance(
+  meters
+) {
+
+  if (
+    typeof meters !==
+      "number" ||
+    !Number.isFinite(meters)
+  ) {
+    return "";
+  }
+
+  if (
+    meters < 1000
+  ) {
+    return Math.max(
+      10,
+      Math.round(
+        meters / 10
+      ) * 10
+    ) + "m";
+  }
+
+  const kilometers =
+    meters / 1000;
+
+  return (
+    kilometers < 10
+      ? kilometers.toFixed(1)
+      : Math.round(kilometers).toString()
+  ) + "km";
+}
+
+
+function getListRecords(
+  records
+) {
+
+  let listRecords =
+    records.slice();
+
+  if (
+    listWithinMapBounds
+  ) {
+
+    const bounds =
+      map.getBounds();
+
+    listRecords =
+      listRecords.filter(
+        record =>
+          bounds.contains(
+            record.marker.getLatLng()
+          )
+      );
+  }
+
+  if (
+    listSortMode ===
+      "distance" &&
+    lastUserLocation
+  ) {
+
+    listRecords.sort(
+      (a, b) =>
+        getRecordDistance(a) -
+        getRecordDistance(b)
+    );
+  }
+
+  return listRecords;
+}
+
+
+function syncListControlButtons() {
+
+  listNearbySortButton?.classList.toggle(
+    "is-active",
+    listSortMode ===
+      "distance"
+  );
+
+  listNearbySortButton?.setAttribute(
+    "aria-pressed",
+    String(
+      listSortMode ===
+        "distance"
+    )
+  );
+
+  listBoundsFilterButton?.classList.toggle(
+    "is-active",
+    listWithinMapBounds
+  );
+
+  listBoundsFilterButton?.setAttribute(
+    "aria-pressed",
+    String(
+      listWithinMapBounds
+    )
+  );
+}
+
+
+function getSpotShareUrl(
+  spot
+) {
+
+  const url =
+    new URL(
+      window.location.href
+    );
+
+  url.searchParams.delete(
+    "tileTest"
+  );
+
+  url.searchParams.set(
+    "spot",
+    spot.id
+  );
+
+  url.hash =
+    "";
+
+  return url.toString();
+}
+
+
+async function shareSpot(
+  spot
+) {
+
+  if (
+    !spot?.id
+  ) {
+    return;
+  }
+
+  const url =
+    getSpotShareUrl(
+      spot
+    );
+
+  const shareData = {
+    title:
+      spot.name +
+      " | ちいかわ推し活（ちい活）MAP",
+    text:
+      spot.name,
+    url
+  };
+
+  if (
+    navigator.share
+  ) {
+
+    try {
+      await navigator.share(
+        shareData
+      );
+      return;
+    } catch (error) {
+      if (
+        error?.name ===
+        "AbortError"
+      ) {
+        return;
+      }
+    }
+  }
+
+  if (
+    navigator.clipboard?.writeText
+  ) {
+
+    try {
+      await navigator.clipboard.writeText(
+        url
+      );
+
+      showTransientMapStatus(
+        "スポット共有URLをコピーしました。"
+      );
+      return;
+    } catch (error) {
+      console.warn(
+        "共有URLをクリップボードへコピーできませんでした。",
+        error
+      );
+    }
+  }
+
+  window.prompt(
+    "このURLをコピーして共有してください。",
+    url
+  );
+}
+
+
 function setViewMode(
   mode
 ) {
@@ -2259,12 +2556,51 @@ function createSpotListCard(
     }
   );
 
+  const shareButton =
+    document.createElement(
+      "button"
+    );
+
+  shareButton.type =
+    "button";
+
+  shareButton.className =
+    "spot-list-share-button";
+
+  shareButton.textContent =
+    "🔗";
+
+  shareButton.setAttribute(
+    "aria-label",
+    "このスポットを共有"
+  );
+
+  shareButton.addEventListener(
+    "click",
+    () => {
+      shareSpot(spot);
+    }
+  );
+
+  const headerActions =
+    createDiv(
+      "spot-list-card-actions"
+    );
+
+  headerActions.appendChild(
+    shareButton
+  );
+
+  headerActions.appendChild(
+    favoriteButton
+  );
+
   header.appendChild(
     headingWrap
   );
 
   header.appendChild(
-    favoriteButton
+    headerActions
   );
 
   card.appendChild(
@@ -2297,6 +2633,25 @@ function createSpotListCard(
         "spot-list-address",
         "📌 " +
         spot.address
+      )
+    );
+  }
+
+  const distance =
+    getRecordDistance(
+      record
+    );
+
+  if (
+    distance !== null
+  ) {
+    card.appendChild(
+      createDiv(
+        "spot-list-distance",
+        "◎ 現在地から約" +
+        formatDistance(
+          distance
+        )
       )
     );
   }
@@ -2358,7 +2713,9 @@ function createSpotListCard(
 
 
 function renderSpotList(
-  records
+  records,
+  totalFilteredCount =
+    records.length
 ) {
 
   if (
@@ -2372,9 +2729,41 @@ function renderSpotList(
   if (
     spotListSummary
   ) {
+
+    const parts =
+      [];
+
+    if (
+      listWithinMapBounds
+    ) {
+      parts.push(
+        "地図範囲内 " +
+        records.length +
+        "件 / 条件一致 " +
+        totalFilteredCount +
+        "件"
+      );
+    } else {
+      parts.push(
+        records.length +
+        "件のスポット"
+      );
+    }
+
+    if (
+      listSortMode ===
+        "distance" &&
+      lastUserLocation
+    ) {
+      parts.push(
+        "現在地から近い順"
+      );
+    }
+
     spotListSummary.textContent =
-      records.length +
-      "件のスポットを表示しています。";
+      parts.join(
+        " ・ "
+      );
   }
 
   if (
@@ -2447,7 +2836,147 @@ function showTransientMapStatus(
 }
 
 
-function locateUser() {
+function setLocationLoading(
+  loading
+) {
+
+  locationButton?.classList.toggle(
+    "is-loading",
+    loading
+  );
+
+  listNearbySortButton?.classList.toggle(
+    "is-loading",
+    loading
+  );
+
+  if (
+    loading
+  ) {
+    locationButton?.setAttribute(
+      "aria-busy",
+      "true"
+    );
+    listNearbySortButton?.setAttribute(
+      "aria-busy",
+      "true"
+    );
+  } else {
+    locationButton?.removeAttribute(
+      "aria-busy"
+    );
+    listNearbySortButton?.removeAttribute(
+      "aria-busy"
+    );
+  }
+}
+
+
+function applyUserLocation(
+  position,
+  options = {}
+) {
+
+  const lat =
+    position.coords.latitude;
+
+  const lng =
+    position.coords.longitude;
+
+  const accuracy =
+    Math.max(
+      position.coords.accuracy ||
+      0,
+      10
+    );
+
+  lastUserLocation = {
+    lat,
+    lng,
+    accuracy
+  };
+
+  if (
+    userLocationMarker
+  ) {
+    map.removeLayer(
+      userLocationMarker
+    );
+  }
+
+  if (
+    userAccuracyCircle
+  ) {
+    map.removeLayer(
+      userAccuracyCircle
+    );
+  }
+
+  userAccuracyCircle =
+    L.circle(
+      [lat, lng],
+      {
+        radius: accuracy,
+        weight: 1,
+        opacity: 0.5,
+        fillOpacity: 0.08
+      }
+    ).addTo(map);
+
+  userLocationMarker =
+    L.circleMarker(
+      [lat, lng],
+      {
+        radius: 8,
+        weight: 3,
+        fillOpacity: 0.95
+      }
+    )
+      .bindTooltip(
+        "現在地",
+        {
+          permanent: false,
+          direction: "top"
+        }
+      )
+      .addTo(map);
+
+  if (
+    options.focusMap
+  ) {
+
+    setViewMode(
+      "map"
+    );
+
+    requestAnimationFrame(
+      () => {
+        map.setView(
+          [lat, lng],
+          Math.max(
+            map.getZoom(),
+            15
+          ),
+          {
+            animate: true
+          }
+        );
+      }
+    );
+  }
+
+  if (
+    listSortMode ===
+      "distance"
+  ) {
+    updateSpotFilters();
+  }
+}
+
+
+function requestUserLocation(
+  options = {}
+) {
 
   if (
     !navigator.geolocation
@@ -2458,13 +2987,8 @@ function locateUser() {
     return;
   }
 
-  locationButton?.classList.add(
-    "is-loading"
-  );
-
-  locationButton?.setAttribute(
-    "aria-busy",
-    "true"
+  setLocationLoading(
+    true
   );
 
   showMapStatus(
@@ -2474,103 +2998,28 @@ function locateUser() {
   navigator.geolocation.getCurrentPosition(
     position => {
 
-      locationButton?.classList.remove(
-        "is-loading"
+      setLocationLoading(
+        false
       );
 
-      locationButton?.removeAttribute(
-        "aria-busy"
+      applyUserLocation(
+        position,
+        options
       );
 
-      const lat =
-        position.coords.latitude;
-
-      const lng =
-        position.coords.longitude;
-
-      const accuracy =
-        Math.max(
-          position.coords.accuracy ||
-          0,
-          10
-        );
-
-      if (
-        userLocationMarker
-      ) {
-        map.removeLayer(
-          userLocationMarker
-        );
-      }
-
-      if (
-        userAccuracyCircle
-      ) {
-        map.removeLayer(
-          userAccuracyCircle
-        );
-      }
-
-      userAccuracyCircle =
-        L.circle(
-          [lat, lng],
-          {
-            radius: accuracy,
-            weight: 1,
-            opacity: 0.5,
-            fillOpacity: 0.08
-          }
-        ).addTo(map);
-
-      userLocationMarker =
-        L.circleMarker(
-          [lat, lng],
-          {
-            radius: 8,
-            weight: 3,
-            fillOpacity: 0.95
-          }
-        )
-          .bindTooltip(
-            "現在地",
-            {
-              permanent: false,
-              direction: "top"
-            }
-          )
-          .addTo(map);
-
-      setViewMode(
-        "map"
-      );
-
-      requestAnimationFrame(
-        () => {
-          map.setView(
-            [lat, lng],
-            Math.max(
-              map.getZoom(),
-              15
-            ),
-            {
-              animate: true
-            }
-          );
-        }
+      options.onSuccess?.(
+        position
       );
 
       showTransientMapStatus(
+        options.successMessage ||
         "現在地を表示しました。位置情報は保存・送信しません。"
       );
     },
     error => {
 
-      locationButton?.classList.remove(
-        "is-loading"
-      );
-
-      locationButton?.removeAttribute(
-        "aria-busy"
+      setLocationLoading(
+        false
       );
 
       let message =
@@ -2594,6 +3043,13 @@ function locateUser() {
       maximumAge: 60000
     }
   );
+}
+
+
+function locateUser() {
+  requestUserLocation({
+    focusMap: true
+  });
 }
 
 
@@ -2916,8 +3372,42 @@ function createSpotDetail(
     }
   );
 
-  container.appendChild(
+  const shareButton =
+    document.createElement(
+      "button"
+    );
+
+  shareButton.type =
+    "button";
+
+  shareButton.className =
+    "spot-share-button";
+
+  shareButton.textContent =
+    "🔗 このスポットを共有";
+
+  shareButton.addEventListener(
+    "click",
+    () => {
+      shareSpot(spot);
+    }
+  );
+
+  const spotActions =
+    createDiv(
+      "spot-detail-actions"
+    );
+
+  spotActions.appendChild(
     favoriteButton
+  );
+
+  spotActions.appendChild(
+    shareButton
+  );
+
+  container.appendChild(
+    spotActions
   );
 
 
@@ -4130,10 +4620,20 @@ function updateSpotFilters() {
   }
 
 
+  lastFilteredRecords =
+    visibleRecords;
+
+  const listRecords =
+    getListRecords(
+      visibleRecords
+    );
+
   renderSpotList(
-    visibleRecords
+    listRecords,
+    visibleRecords.length
   );
 
+  syncListControlButtons();
   updateFavoriteCount();
 }
 
@@ -4458,8 +4958,47 @@ async function loadSpots() {
     // 全チェック状態で初期表示
     updateSpotFilters();
 
-    // 全国の表示対象スポットを収める
-    fitMapToAllSpots();
+    // 共有URLでスポット指定がある場合は、そのスポットを優先表示
+    if (
+      SHARED_SPOT_ID
+    ) {
+
+      const sharedRecord =
+        spotRecords.find(
+          record =>
+            record.spot.id ===
+            SHARED_SPOT_ID
+        );
+
+      if (
+        sharedRecord
+      ) {
+        setViewMode(
+          "map"
+        );
+
+        requestAnimationFrame(
+          () => {
+            requestAnimationFrame(
+              () => {
+                focusSpotRecord(
+                  sharedRecord
+                );
+              }
+            );
+          }
+        );
+      } else {
+        fitMapToAllSpots();
+        showTransientMapStatus(
+          "共有されたスポットは現在表示対象外、または見つかりませんでした。"
+        );
+      }
+
+    } else {
+      // 全国の表示対象スポットを収める
+      fitMapToAllSpots();
+    }
 
     console.log(
       spots.length +
@@ -4674,6 +5213,59 @@ listViewButton
   );
 
 
+listNearbySortButton
+  ?.addEventListener(
+    "click",
+    () => {
+
+      if (
+        listSortMode ===
+          "distance"
+      ) {
+        listSortMode =
+          "default";
+        syncListControlButtons();
+        updateSpotFilters();
+        return;
+      }
+
+      if (
+        lastUserLocation
+      ) {
+        listSortMode =
+          "distance";
+        syncListControlButtons();
+        updateSpotFilters();
+        return;
+      }
+
+      requestUserLocation({
+        focusMap: false,
+        successMessage:
+          "現在地を使って近い順に並べ替えました。位置情報は保存・送信しません。",
+        onSuccess: () => {
+          listSortMode =
+            "distance";
+          syncListControlButtons();
+          updateSpotFilters();
+        }
+      });
+    }
+  );
+
+
+listBoundsFilterButton
+  ?.addEventListener(
+    "click",
+    () => {
+      listWithinMapBounds =
+        !listWithinMapBounds;
+      syncListControlButtons();
+      updateSpotFilters();
+    }
+  );
+
+
 favoriteFilterButton
   ?.addEventListener(
     "click",
@@ -4684,6 +5276,24 @@ favoriteFilterButton
       updateSpotFilters();
     }
   );
+
+
+map.on(
+  "moveend",
+  () => {
+    if (
+      listWithinMapBounds &&
+      lastFilteredRecords.length
+    ) {
+      renderSpotList(
+        getListRecords(
+          lastFilteredRecords
+        ),
+        lastFilteredRecords.length
+      );
+    }
+  }
+);
 
 
 // ============================================================
