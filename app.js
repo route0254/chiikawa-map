@@ -186,6 +186,30 @@ const resultCount =
   );
 
 
+const spotSearch =
+  document.getElementById(
+    "spot-search"
+  );
+
+
+const spotSearchClear =
+  document.getElementById(
+    "spot-search-clear"
+  );
+
+
+const spotSearchSuggestions =
+  document.getElementById(
+    "spot-search-suggestions"
+  );
+
+
+const prefectureFilter =
+  document.getElementById(
+    "prefecture-filter"
+  );
+
+
 const dataAsOf =
   document.getElementById(
     "data-as-of"
@@ -748,6 +772,430 @@ function getSpotPeriodStatus(
 
 
   return "active";
+}
+
+
+// ============================================================
+// 検索・都道府県
+// ============================================================
+
+const PREFECTURE_ORDER = [
+  "北海道",
+  "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県",
+  "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
+  "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県",
+  "岐阜県", "静岡県", "愛知県", "三重県",
+  "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県",
+  "鳥取県", "島根県", "岡山県", "広島県", "山口県",
+  "徳島県", "香川県", "愛媛県", "高知県",
+  "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
+];
+
+
+function normalizeSearchText(
+  value
+) {
+
+  return String(
+    value || ""
+  )
+    .normalize("NFKC")
+    .toLocaleLowerCase("ja")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+
+function getSpotPrefecture(
+  spot
+) {
+
+  const address =
+    String(
+      spot.address || ""
+    );
+
+  return (
+    PREFECTURE_ORDER.find(
+      prefecture =>
+        address.includes(
+          prefecture
+        )
+    ) ||
+    ""
+  );
+}
+
+
+function getSpotSearchText(
+  spot
+) {
+
+  return normalizeSearchText(
+    [
+      spot.name,
+      spot.address,
+      spot.description,
+      getBrandLabel(
+        spot.brand
+      ),
+      getCategoryLabel(
+        spot.category
+      ),
+      getPlaceTypeLabel(
+        spot.placeType
+      ),
+      getRelationTypeLabel(
+        spot.category,
+        spot.relationType
+      ),
+      spot.evidenceNote
+    ]
+      .filter(Boolean)
+      .join(" ")
+  );
+}
+
+
+function renderPrefectureOptions() {
+
+  if (
+    !prefectureFilter
+  ) {
+    return;
+  }
+
+  const currentValue =
+    prefectureFilter.value;
+
+  const prefectures =
+    new Set(
+      spotRecords
+        .map(
+          record =>
+            getSpotPrefecture(
+              record.spot
+            )
+        )
+        .filter(Boolean)
+    );
+
+  prefectureFilter.replaceChildren();
+
+  const allOption =
+    document.createElement(
+      "option"
+    );
+
+  allOption.value = "";
+  allOption.textContent = "全国";
+
+  prefectureFilter.appendChild(
+    allOption
+  );
+
+  PREFECTURE_ORDER.forEach(
+    prefecture => {
+
+      if (
+        !prefectures.has(
+          prefecture
+        )
+      ) {
+        return;
+      }
+
+      const option =
+        document.createElement(
+          "option"
+        );
+
+      option.value =
+        prefecture;
+
+      option.textContent =
+        prefecture;
+
+      prefectureFilter.appendChild(
+        option
+      );
+    }
+  );
+
+  if (
+    Array.from(
+      prefectureFilter.options
+    ).some(
+      option =>
+        option.value ===
+        currentValue
+    )
+  ) {
+    prefectureFilter.value =
+      currentValue;
+  }
+}
+
+
+function updateSearchClearButton() {
+
+  if (
+    !spotSearchClear ||
+    !spotSearch
+  ) {
+    return;
+  }
+
+  spotSearchClear.hidden =
+    !spotSearch.value;
+}
+
+
+function hideSearchSuggestions() {
+
+  if (
+    !spotSearchSuggestions
+  ) {
+    return;
+  }
+
+  spotSearchSuggestions.hidden =
+    true;
+
+  spotSearchSuggestions.replaceChildren();
+}
+
+
+function focusSpotRecord(
+  record
+) {
+
+  if (
+    !record
+  ) {
+    return;
+  }
+
+  const openRecord =
+    () => {
+
+      map.setView(
+        [
+          record.spot.lat,
+          record.spot.lng
+        ],
+        Math.max(
+          map.getZoom(),
+          15
+        ),
+        {
+          animate: true
+        }
+      );
+
+      showSpotDetail(
+        record
+      );
+    };
+
+  if (
+    typeof spotLayer.zoomToShowLayer ===
+    "function"
+  ) {
+
+    spotLayer.zoomToShowLayer(
+      record.marker,
+      openRecord
+    );
+
+  } else {
+
+    openRecord();
+  }
+}
+
+
+function renderSearchSuggestions() {
+
+  if (
+    !spotSearch ||
+    !spotSearchSuggestions
+  ) {
+    return;
+  }
+
+  const query =
+    normalizeSearchText(
+      spotSearch.value
+    );
+
+  if (
+    !query
+  ) {
+    hideSearchSuggestions();
+    return;
+  }
+
+  const selectedPrefecture =
+    prefectureFilter?.value ||
+    "";
+
+  const matches =
+    spotRecords
+      .filter(
+        record => {
+
+          if (
+            selectedPrefecture &&
+            getSpotPrefecture(
+              record.spot
+            ) !==
+            selectedPrefecture
+          ) {
+            return false;
+          }
+
+          return getSpotSearchText(
+            record.spot
+          ).includes(
+            query
+          );
+        }
+      )
+      .sort(
+        (a, b) => {
+
+          const aName =
+            normalizeSearchText(
+              a.spot.name
+            );
+
+          const bName =
+            normalizeSearchText(
+              b.spot.name
+            );
+
+          const aStarts =
+            aName.startsWith(
+              query
+            ) ? 0 : 1;
+
+          const bStarts =
+            bName.startsWith(
+              query
+            ) ? 0 : 1;
+
+          if (
+            aStarts !==
+            bStarts
+          ) {
+            return aStarts - bStarts;
+          }
+
+          return a.spot.name.localeCompare(
+            b.spot.name,
+            "ja"
+          );
+        }
+      )
+      .slice(0, 8);
+
+  spotSearchSuggestions.replaceChildren();
+
+  if (
+    matches.length ===
+    0
+  ) {
+
+    const empty =
+      createDiv(
+        "search-suggestion-empty",
+        "該当するスポットがありません"
+      );
+
+    spotSearchSuggestions.appendChild(
+      empty
+    );
+
+    spotSearchSuggestions.hidden =
+      false;
+
+    return;
+  }
+
+  matches.forEach(
+    record => {
+
+      const button =
+        document.createElement(
+          "button"
+        );
+
+      button.type =
+        "button";
+
+      button.className =
+        "search-suggestion";
+
+      button.setAttribute(
+        "role",
+        "option"
+      );
+
+      const name =
+        createDiv(
+          "search-suggestion-name",
+          record.spot.name
+        );
+
+      const metaParts = [
+        getSpotPrefecture(
+          record.spot
+        ),
+        getPlaceTypeLabel(
+          record.spot.placeType
+        ),
+        record.spot.category === "nagano" &&
+          record.spot.evidenceStatus
+          ? (
+              record.spot.evidenceStatus === "confirmed"
+                ? "✓確定"
+                : "△推定"
+            )
+          : null
+      ].filter(Boolean);
+
+      const meta =
+        createDiv(
+          "search-suggestion-meta",
+          metaParts.join(" ・ ")
+        );
+
+      button.appendChild(name);
+      button.appendChild(meta);
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          spotSearch.value =
+            record.spot.name;
+
+          updateSearchClearButton();
+          hideSearchSuggestions();
+          updateSpotFilters();
+          focusSpotRecord(record);
+        }
+      );
+
+      spotSearchSuggestions.appendChild(
+        button
+      );
+    }
+  );
+
+  spotSearchSuggestions.hidden =
+    false;
 }
 
 
@@ -1424,25 +1872,23 @@ function fitMapToAllSpots() {
 // ============================================================
 
 function createSpotIcon(
-  category
+  spot
 ) {
 
   let label =
     "?";
-
 
   let className =
     "";
 
 
   if (
-    category ===
+    spot.category ===
     "official"
   ) {
 
     label =
       "公";
-
 
     className =
       "spot-pin-official";
@@ -1450,16 +1896,29 @@ function createSpotIcon(
 
 
   if (
-    category ===
+    spot.category ===
     "nagano"
   ) {
 
-    label =
-      "ナ";
+    if (
+      spot.evidenceStatus ===
+      "inferred"
+    ) {
 
+      label =
+        "ナ△";
 
-    className =
-      "spot-pin-nagano";
+      className =
+        "spot-pin-nagano-inferred";
+
+    } else {
+
+      label =
+        "ナ✓";
+
+      className =
+        "spot-pin-nagano-confirmed";
+    }
   }
 
 
@@ -1485,7 +1944,6 @@ function createSpotIcon(
 
   });
 }
-
 
 // ============================================================
 // DOM生成補助
@@ -2269,11 +2727,14 @@ function createSpotRecord(
       {
         icon:
           createSpotIcon(
-            spot.category
+            spot
           ),
 
         spotCategory:
           spot.category,
+
+        spotEvidenceStatus:
+          spot.evidenceStatus || null,
 
         title:
           spot.name,
@@ -2483,6 +2944,41 @@ function spotMatchesFilters(
     );
 
 
+  const searchQuery =
+    normalizeSearchText(
+      spotSearch?.value ||
+      ""
+    );
+
+
+  const selectedPrefecture =
+    prefectureFilter?.value ||
+    "";
+
+
+  if (
+    searchQuery &&
+    !getSpotSearchText(
+      spot
+    ).includes(
+      searchQuery
+    )
+  ) {
+    return false;
+  }
+
+
+  if (
+    selectedPrefecture &&
+    getSpotPrefecture(
+      spot
+    ) !==
+    selectedPrefecture
+  ) {
+    return false;
+  }
+
+
   if (
     !categories.has(
       spot.category
@@ -2620,6 +3116,9 @@ function spotMatchesFilters(
 // ============================================================
 
 function updateSpotFilters() {
+
+  updateSearchClearButton();
+
 
   if (
     selectedRecord &&
@@ -2810,6 +3309,23 @@ function setNaganoHelpPanelOpen(
 
 function resetFilters() {
 
+  if (
+    spotSearch
+  ) {
+    spotSearch.value =
+      "";
+  }
+
+  if (
+    prefectureFilter
+  ) {
+    prefectureFilter.value =
+      "";
+  }
+
+  hideSearchSuggestions();
+  updateSearchClearButton();
+
   document
     .querySelectorAll(
       ".spot-filter"
@@ -2975,8 +3491,9 @@ async function loadSpots() {
       }
     );
 
-    // データに合わせてブランドフィルターを生成
+    // データに合わせてブランド / 都道府県フィルターを生成
     renderBrandFilters();
+    renderPrefectureOptions();
 
     // 全チェック状態で初期表示
     updateSpotFilters();
@@ -3055,6 +3572,111 @@ document
 
     }
   );
+
+
+// ============================================================
+// 検索・都道府県イベント
+// ============================================================
+
+spotSearch
+  ?.addEventListener(
+    "input",
+    () => {
+      updateSearchClearButton();
+      updateSpotFilters();
+      renderSearchSuggestions();
+    }
+  );
+
+
+spotSearch
+  ?.addEventListener(
+    "focus",
+    renderSearchSuggestions
+  );
+
+
+spotSearch
+  ?.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key ===
+        "Escape"
+      ) {
+        hideSearchSuggestions();
+        return;
+      }
+
+      if (
+        event.key ===
+        "Enter"
+      ) {
+
+        const firstSuggestion =
+          spotSearchSuggestions
+            ?.querySelector(
+              ".search-suggestion"
+            );
+
+        if (
+          firstSuggestion
+        ) {
+          event.preventDefault();
+          firstSuggestion.click();
+        }
+      }
+    }
+  );
+
+
+spotSearchClear
+  ?.addEventListener(
+    "click",
+    () => {
+      spotSearch.value = "";
+      hideSearchSuggestions();
+      updateSearchClearButton();
+      updateSpotFilters();
+      spotSearch.focus();
+    }
+  );
+
+
+prefectureFilter
+  ?.addEventListener(
+    "change",
+    () => {
+      updateSpotFilters();
+      renderSearchSuggestions();
+    }
+  );
+
+
+document.addEventListener(
+  "click",
+  event => {
+
+    if (
+      !spotSearchSuggestions ||
+      !spotSearch
+    ) {
+      return;
+    }
+
+    if (
+      event.target === spotSearch ||
+      spotSearchSuggestions.contains(
+        event.target
+      )
+    ) {
+      return;
+    }
+
+    hideSearchSuggestions();
+  }
+);
 
 
 // ============================================================
