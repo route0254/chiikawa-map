@@ -14,12 +14,32 @@
     content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所をまとめる非公式の推し活マップです。"
   >
 
+  <!-- OGP / X -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="ちいかわ推し活（ちい活）MAP">
+  <meta property="og:description" content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所を地図から探せる非公式ファンMAPです。">
+  <meta property="og:url" content="https://route0254.github.io/chiikawa-map/">
+  <meta property="og:image" content="https://route0254.github.io/chiikawa-map/assets/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ちいかわ推し活（ちい活）MAP">
+  <meta name="twitter:description" content="公式スポット＆ナガセン関連スポットを地図・検索・絞り込みから探せます。">
+  <meta name="twitter:image" content="https://route0254.github.io/chiikawa-map/assets/ogp.png">
+
   <title>ちいかわ推し活（ちい活）MAP</title>
 
   <link
     rel="icon"
     href="favicon.svg"
     type="image/svg+xml"
+  >
+
+  <!-- Japanese rounded font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
   >
 
   <!-- Leaflet -->
@@ -131,6 +151,56 @@
 
 
       <!-- ==================================================
+           SEARCH
+           ================================================== -->
+
+      <div class="map-search-bar">
+
+        <div class="spot-search-wrap">
+          <label class="sr-only" for="spot-search">スポットを検索</label>
+
+          <div class="spot-search-field">
+            <span class="spot-search-icon" aria-hidden="true">🔍</span>
+
+            <input
+              id="spot-search"
+              type="search"
+              inputmode="search"
+              autocomplete="off"
+              placeholder="スポット名・地名から検索"
+              aria-label="スポット名・地名から検索"
+              aria-controls="spot-search-suggestions"
+              aria-autocomplete="list"
+            >
+
+            <button
+              type="button"
+              id="spot-search-clear"
+              class="spot-search-clear"
+              aria-label="検索をクリア"
+              hidden
+            >×</button>
+          </div>
+
+          <div
+            id="spot-search-suggestions"
+            class="spot-search-suggestions"
+            role="listbox"
+            hidden
+          ></div>
+        </div>
+
+        <div class="prefecture-filter-wrap">
+          <label for="prefecture-filter">都道府県</label>
+          <select id="prefecture-filter" aria-label="都道府県で絞り込む">
+            <option value="">全国</option>
+          </select>
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================
            TOOLBAR
            ================================================== -->
 
@@ -218,11 +288,22 @@
           <span class="legend-item">
 
             <span
-              class="legend-dot nagano-dot"
+              class="legend-dot nagano-confirmed-dot"
               aria-hidden="true"
             ></span>
 
-            ナガノ先生
+            ナガセン確定
+          </span>
+
+
+          <span class="legend-item">
+
+            <span
+              class="legend-dot nagano-inferred-dot"
+              aria-hidden="true"
+            ></span>
+
+            ナガセン推定
           </span>
 
         </div>
@@ -774,6 +855,15 @@
 
 
               <section class="help-section">
+                <h3>検索・都道府県から探す</h3>
+                <p>
+                  MAP上部の検索欄では、スポット名・住所・説明・シリーズ名などから検索できます。
+                  「都道府県」と組み合わせれば、旅行先や近くのエリアだけに絞ることもできます。
+                </p>
+              </section>
+
+
+              <section class="help-section">
 
                 <h3>
                   絞り込みの例
@@ -895,6 +985,15 @@
                 <p>
                   「ナガノマーケット」は公式ショップのため、こちらではなく
                   「ちいかわ公式」側に分類しています。
+                </p>
+              </section>
+
+
+              <section class="help-section">
+                <h3>検索・都道府県から探す</h3>
+                <p>
+                  MAP上部の検索欄から店名・地名を検索できます。
+                  都道府県や「紹介 / 訪問 / ゆかり・関連」「確定 / 推定」の絞り込みと併用できます。
                 </p>
               </section>
 
