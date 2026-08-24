@@ -157,6 +157,22 @@ const SHARED_SPOT_ID =
   );
 
 
+const SOON_ENDING_DAYS =
+  7;
+
+
+const SHARE_FILTER_PARAM_KEYS = [
+  "q", "pref", "cat", "type", "period", "reservation",
+  "official", "nagano", "evidence", "brand", "soon", "view"
+];
+
+
+const HAS_SHARED_FILTERS =
+  SHARE_FILTER_PARAM_KEYS.some(
+    key => params.has(key)
+  );
+
+
 // ============================================================
 // Leaflet Map
 // MarkerClusterのためMap本体にmaxZoomを明示
@@ -246,6 +262,18 @@ const listBoundsFilterButton =
   );
 
 
+const listEndingSortButton =
+  document.getElementById(
+    "list-ending-sort-button"
+  );
+
+
+const listNameSortButton =
+  document.getElementById(
+    "list-name-sort-button"
+  );
+
+
 const favoriteFilterButton =
   document.getElementById(
     "favorite-filter-button"
@@ -255,6 +283,30 @@ const favoriteFilterButton =
 const favoriteCount =
   document.getElementById(
     "favorite-count"
+  );
+
+
+const visitedFilterButton =
+  document.getElementById(
+    "visited-filter-button"
+  );
+
+
+const visitedCount =
+  document.getElementById(
+    "visited-count"
+  );
+
+
+const shareFiltersButton =
+  document.getElementById(
+    "share-filters-button"
+  );
+
+
+const soonEndingFilter =
+  document.getElementById(
+    "filter-soon-ending"
   );
 
 
@@ -838,6 +890,172 @@ function getSpotPeriodStatus(
 
 
   return "active";
+}
+
+
+function parseJapanDateString(
+  dateString
+) {
+
+  if (
+    !/^\d{4}-\d{2}-\d{2}$/.test(
+      String(dateString || "")
+    )
+  ) {
+    return null;
+  }
+
+  const [year, month, day] =
+    dateString.split("-").map(Number);
+
+  return Date.UTC(
+    year,
+    month - 1,
+    day
+  );
+}
+
+
+function getDaysBetweenDateStrings(
+  fromDate,
+  toDate
+) {
+
+  const from =
+    parseJapanDateString(fromDate);
+
+  const to =
+    parseJapanDateString(toDate);
+
+  if (
+    from === null ||
+    to === null
+  ) {
+    return null;
+  }
+
+  return Math.round(
+    (to - from) /
+    86400000
+  );
+}
+
+
+function getSpotTimingInfo(
+  spot
+) {
+
+  const status =
+    getSpotPeriodStatus(spot);
+
+  const today =
+    getTodayInJapan();
+
+  if (
+    status === "upcoming" &&
+    spot.startDate
+  ) {
+    const days =
+      getDaysBetweenDateStrings(
+        today,
+        spot.startDate
+      );
+
+    if (days === 1) {
+      return {
+        type: "upcoming",
+        days,
+        label: "明日から開催"
+      };
+    }
+
+    if (
+      typeof days === "number" &&
+      days > 1
+    ) {
+      return {
+        type: "upcoming",
+        days,
+        label: "あと" + days + "日で開催"
+      };
+    }
+  }
+
+  if (
+    status === "active" &&
+    spot.periodType === "limited" &&
+    spot.endDate
+  ) {
+    const days =
+      getDaysBetweenDateStrings(
+        today,
+        spot.endDate
+      );
+
+    if (days === 0) {
+      return {
+        type: "ending",
+        days,
+        soon: true,
+        label: "本日終了"
+      };
+    }
+
+    if (
+      typeof days === "number" &&
+      days > 0
+    ) {
+      return {
+        type: "ending",
+        days,
+        soon: days <= SOON_ENDING_DAYS,
+        label: "あと" + days + "日"
+      };
+    }
+  }
+
+  return null;
+}
+
+
+function isSpotEndingSoon(
+  spot
+) {
+
+  const timing =
+    getSpotTimingInfo(spot);
+
+  return Boolean(
+    timing &&
+    timing.type === "ending" &&
+    timing.soon
+  );
+}
+
+
+function createSpotTimingBadge(
+  spot,
+  baseClass = "spot-timing-badge"
+) {
+
+  const timing =
+    getSpotTimingInfo(spot);
+
+  if (!timing) {
+    return null;
+  }
+
+  const className =
+    baseClass +
+    " timing-" +
+    timing.type +
+    (timing.soon ? " is-soon" : "");
+
+  return createDiv(
+    className,
+    (timing.type === "ending" ? "⌛ " : "🗓 ") +
+    timing.label
+  );
 }
 
 
@@ -1920,11 +2138,26 @@ const FAVORITES_STORAGE_KEY =
   "chiikawa-map-favorites-v1";
 
 
+const VISITED_STORAGE_KEY =
+  "chiikawa-map-visited-v1";
+
+
 let favoriteSpotIds =
   loadFavoriteSpotIds();
 
 
+let visitedSpotIds =
+  loadStringSetFromStorage(
+    VISITED_STORAGE_KEY,
+    "行った！スポット"
+  );
+
+
 let favoriteOnly =
+  false;
+
+
+let visitedOnly =
   false;
 
 
@@ -1996,6 +2229,69 @@ function loadFavoriteSpotIds() {
     );
 
     return new Set();
+  }
+}
+
+
+function loadStringSetFromStorage(
+  storageKey,
+  label
+) {
+
+  try {
+    const value =
+      window.localStorage.getItem(
+        storageKey
+      );
+
+    if (!value) {
+      return new Set();
+    }
+
+    const parsed =
+      JSON.parse(value);
+
+    if (!Array.isArray(parsed)) {
+      return new Set();
+    }
+
+    return new Set(
+      parsed.filter(
+        id =>
+          typeof id === "string"
+      )
+    );
+
+  } catch (error) {
+    console.warn(
+      label +
+      "の保存データを読み込めませんでした。",
+      error
+    );
+    return new Set();
+  }
+}
+
+
+function saveStringSetToStorage(
+  storageKey,
+  values,
+  label
+) {
+
+  try {
+    window.localStorage.setItem(
+      storageKey,
+      JSON.stringify(
+        Array.from(values)
+      )
+    );
+  } catch (error) {
+    console.warn(
+      label +
+      "を保存できませんでした。",
+      error
+    );
   }
 }
 
@@ -2128,6 +2424,90 @@ function toggleFavoriteSpot(
 }
 
 
+function isVisitedSpot(
+  spot
+) {
+  return Boolean(
+    spot?.id &&
+    visitedSpotIds.has(spot.id)
+  );
+}
+
+
+function updateVisitedCount() {
+
+  if (!visitedCount) {
+    return;
+  }
+
+  const count =
+    spotRecords.length
+      ? spotRecords.filter(
+          record =>
+            isVisitedSpot(record.spot)
+        ).length
+      : visitedSpotIds.size;
+
+  visitedCount.textContent =
+    String(count);
+}
+
+
+function syncVisitedFilterButton() {
+
+  if (!visitedFilterButton) {
+    return;
+  }
+
+  visitedFilterButton.classList.toggle(
+    "is-active",
+    visitedOnly
+  );
+
+  visitedFilterButton.setAttribute(
+    "aria-pressed",
+    String(visitedOnly)
+  );
+}
+
+
+function toggleVisitedSpot(
+  spot
+) {
+
+  if (!spot?.id) {
+    return;
+  }
+
+  if (visitedSpotIds.has(spot.id)) {
+    visitedSpotIds.delete(spot.id);
+  } else {
+    visitedSpotIds.add(spot.id);
+  }
+
+  saveStringSetToStorage(
+    VISITED_STORAGE_KEY,
+    visitedSpotIds,
+    "行った！スポット"
+  );
+
+  updateVisitedCount();
+  updateSpotFilters();
+
+  if (
+    selectedRecord &&
+    selectedRecord.spot.id === spot.id &&
+    spotMatchesFilters(selectedRecord.spot)
+  ) {
+    detailBody.replaceChildren(
+      createSpotDetail(
+        selectedRecord.spot
+      )
+    );
+  }
+}
+
+
 function toRadians(
   degrees
 ) {
@@ -2249,15 +2629,39 @@ function getListRecords(
   }
 
   if (
-    listSortMode ===
-      "distance" &&
+    listSortMode === "distance" &&
     lastUserLocation
   ) {
-
     listRecords.sort(
       (a, b) =>
         getRecordDistance(a) -
         getRecordDistance(b)
+    );
+  } else if (
+    listSortMode === "ending"
+  ) {
+    listRecords.sort(
+      (a, b) => {
+        const aEnd =
+          a.spot.endDate || "9999-12-31";
+        const bEnd =
+          b.spot.endDate || "9999-12-31";
+        return aEnd.localeCompare(bEnd) ||
+          a.spot.name.localeCompare(
+            b.spot.name,
+            "ja"
+          );
+      }
+    );
+  } else if (
+    listSortMode === "name"
+  ) {
+    listRecords.sort(
+      (a, b) =>
+        a.spot.name.localeCompare(
+          b.spot.name,
+          "ja"
+        )
     );
   }
 
@@ -2292,6 +2696,32 @@ function syncListControlButtons() {
       listWithinMapBounds
     )
   );
+
+  listEndingSortButton?.classList.toggle(
+    "is-active",
+    listSortMode === "ending"
+  );
+  listEndingSortButton?.setAttribute(
+    "aria-pressed",
+    String(listSortMode === "ending")
+  );
+
+  listNameSortButton?.classList.toggle(
+    "is-active",
+    listSortMode === "name"
+  );
+  listNameSortButton?.setAttribute(
+    "aria-pressed",
+    String(listSortMode === "name")
+  );
+}
+
+
+function getBasePublicUrl() {
+  return new URL(
+    window.location.origin +
+    window.location.pathname
+  );
 }
 
 
@@ -2300,23 +2730,203 @@ function getSpotShareUrl(
 ) {
 
   const url =
-    new URL(
-      window.location.href
-    );
-
-  url.searchParams.delete(
-    "tileTest"
-  );
+    getBasePublicUrl();
 
   url.searchParams.set(
     "spot",
     spot.id
   );
 
-  url.hash =
-    "";
+  return url.toString();
+}
+
+
+function getFilterGroupValuesForShare(
+  name
+) {
+  const inputs =
+    Array.from(
+      document.querySelectorAll(
+        'input[name="' +
+        name +
+        '"]'
+      )
+    );
+
+  if (!inputs.length) {
+    return null;
+  }
+
+  const selected =
+    inputs.filter(input => input.checked)
+      .map(input => input.value);
+
+  if (selected.length === inputs.length) {
+    return null;
+  }
+
+  return selected.length
+    ? selected.join(",")
+    : "__none__";
+}
+
+
+function setSharedGroupParam(
+  url,
+  paramName,
+  inputName
+) {
+  const value =
+    getFilterGroupValuesForShare(
+      inputName
+    );
+  if (value !== null) {
+    url.searchParams.set(
+      paramName,
+      value
+    );
+  }
+}
+
+
+function getCurrentFiltersShareUrl() {
+
+  const url =
+    getBasePublicUrl();
+
+  const query =
+    spotSearch?.value.trim();
+  if (query) {
+    url.searchParams.set("q", query);
+  }
+
+  const prefecture =
+    prefectureFilter?.value;
+  if (prefecture) {
+    url.searchParams.set("pref", prefecture);
+  }
+
+  setSharedGroupParam(url, "cat", "filter-category");
+  setSharedGroupParam(url, "type", "filter-place");
+  setSharedGroupParam(url, "period", "filter-period");
+  setSharedGroupParam(url, "reservation", "filter-reservation");
+  setSharedGroupParam(url, "official", "filter-official-relation");
+  setSharedGroupParam(url, "nagano", "filter-nagano-relation");
+  setSharedGroupParam(url, "evidence", "filter-nagano-evidence");
+  setSharedGroupParam(url, "brand", "filter-brand");
+
+  if (soonEndingFilter?.checked) {
+    url.searchParams.set("soon", "1");
+  }
+
+  if (currentViewMode === "list") {
+    url.searchParams.set("view", "list");
+  }
 
   return url.toString();
+}
+
+
+function applySharedGroupParam(
+  paramName,
+  inputName
+) {
+
+  if (!params.has(paramName)) {
+    return;
+  }
+
+  const raw =
+    params.get(paramName) || "";
+
+  const wanted =
+    raw === "__none__"
+      ? new Set()
+      : new Set(
+          raw.split(",")
+            .filter(Boolean)
+        );
+
+  document.querySelectorAll(
+    'input[name="' + inputName + '"]'
+  ).forEach(
+    input => {
+      input.checked =
+        wanted.has(input.value);
+    }
+  );
+}
+
+
+function applySharedFilterState() {
+
+  if (params.has("q") && spotSearch) {
+    spotSearch.value = params.get("q") || "";
+  }
+
+  if (params.has("pref") && prefectureFilter) {
+    const value = params.get("pref") || "";
+    const hasOption =
+      Array.from(prefectureFilter.options)
+        .some(option => option.value === value);
+    if (hasOption) {
+      prefectureFilter.value = value;
+    }
+  }
+
+  applySharedGroupParam("cat", "filter-category");
+  applySharedGroupParam("type", "filter-place");
+  applySharedGroupParam("period", "filter-period");
+  applySharedGroupParam("reservation", "filter-reservation");
+  applySharedGroupParam("official", "filter-official-relation");
+  applySharedGroupParam("nagano", "filter-nagano-relation");
+  applySharedGroupParam("evidence", "filter-nagano-evidence");
+  applySharedGroupParam("brand", "filter-brand");
+
+  if (soonEndingFilter) {
+    soonEndingFilter.checked =
+      params.get("soon") === "1";
+  }
+
+  if (params.get("view") === "list") {
+    currentViewMode = "list";
+  }
+}
+
+
+async function shareCurrentFilters() {
+
+  const url =
+    getCurrentFiltersShareUrl();
+
+  const shareData = {
+    title: "ちいかわ推し活（ちい活）MAP",
+    text: "この条件でスポットを表示しています",
+    url
+  };
+
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+      return;
+    } catch (error) {
+      if (error?.name === "AbortError") {
+        return;
+      }
+    }
+  }
+
+  try {
+    await navigator.clipboard.writeText(url);
+    showTransientMapStatus(
+      "検索・絞り込み条件のURLをコピーしました。"
+    );
+  } catch (error) {
+    window.prompt(
+      "このURLをコピーしてください。",
+      url
+    );
+  }
 }
 
 
@@ -2478,6 +3088,14 @@ function createSpotListCard(
     );
   }
 
+  if (
+    isVisitedSpot(spot)
+  ) {
+    card.classList.add(
+      "is-visited"
+    );
+  }
+
   const header =
     createDiv(
       "spot-list-card-header"
@@ -2556,6 +3174,41 @@ function createSpotListCard(
     }
   );
 
+  const visitedButton =
+    document.createElement(
+      "button"
+    );
+
+  visitedButton.type =
+    "button";
+
+  visitedButton.className =
+    "spot-list-visited-button" +
+    (
+      isVisitedSpot(spot)
+        ? " is-active"
+        : ""
+    );
+
+  visitedButton.textContent =
+    isVisitedSpot(spot)
+      ? "✓"
+      : "○";
+
+  visitedButton.setAttribute(
+    "aria-label",
+    isVisitedSpot(spot)
+      ? "行った！から削除"
+      : "行った！に登録"
+  );
+
+  visitedButton.addEventListener(
+    "click",
+    () => {
+      toggleVisitedSpot(spot);
+    }
+  );
+
   const shareButton =
     document.createElement(
       "button"
@@ -2592,6 +3245,10 @@ function createSpotListCard(
   );
 
   headerActions.appendChild(
+    visitedButton
+  );
+
+  headerActions.appendChild(
     favoriteButton
   );
 
@@ -2622,6 +3279,18 @@ function createSpotListCard(
           ? "✓ ナガセン関連：確定"
           : "△ ナガセン関連：推定"
       )
+    );
+  }
+
+  const timingBadge =
+    createSpotTimingBadge(
+      spot,
+      "spot-list-timing"
+    );
+
+  if (timingBadge) {
+    card.appendChild(
+      timingBadge
     );
   }
 
@@ -3057,6 +3726,56 @@ function locateUser() {
 // 全スポットを初期表示
 // ============================================================
 
+function fitMapToRecords(
+  records
+) {
+
+  const latLngs =
+    records.map(
+      record => [
+        record.spot.lat,
+        record.spot.lng
+      ]
+    );
+
+  if (!latLngs.length) {
+    return;
+  }
+
+  requestAnimationFrame(
+    () => {
+      map.invalidateSize({
+        pan: false,
+        animate: false
+      });
+
+      if (latLngs.length === 1) {
+        map.setView(
+          latLngs[0],
+          13,
+          { animate: false }
+        );
+        return;
+      }
+
+      const padding =
+        window.innerWidth <= 650
+          ? [24, 24]
+          : [40, 40];
+
+      map.fitBounds(
+        L.latLngBounds(latLngs),
+        {
+          padding,
+          maxZoom: 12,
+          animate: false
+        }
+      );
+    }
+  );
+}
+
+
 function fitMapToAllSpots() {
 
   const latLngs =
@@ -3372,6 +4091,39 @@ function createSpotDetail(
     }
   );
 
+  const visitedButton =
+    document.createElement(
+      "button"
+    );
+
+  visitedButton.type =
+    "button";
+
+  visitedButton.className =
+    "spot-visited-button" +
+    (
+      isVisitedSpot(spot)
+        ? " is-active"
+        : ""
+    );
+
+  visitedButton.setAttribute(
+    "aria-pressed",
+    String(isVisitedSpot(spot))
+  );
+
+  visitedButton.textContent =
+    isVisitedSpot(spot)
+      ? "✓ 行った！登録済み"
+      : "○ 行った！に登録";
+
+  visitedButton.addEventListener(
+    "click",
+    () => {
+      toggleVisitedSpot(spot);
+    }
+  );
+
   const shareButton =
     document.createElement(
       "button"
@@ -3400,6 +4152,10 @@ function createSpotDetail(
 
   spotActions.appendChild(
     favoriteButton
+  );
+
+  spotActions.appendChild(
+    visitedButton
   );
 
   spotActions.appendChild(
@@ -3643,6 +4399,15 @@ function createSpotDetail(
       );
   }
 
+
+  const timingBadge =
+    createSpotTimingBadge(spot);
+
+  if (timingBadge) {
+    container.appendChild(
+      timingBadge
+    );
+  }
 
   container.appendChild(
     createDiv(
@@ -4380,6 +5145,24 @@ function spotMatchesFilters(
 
 
   if (
+    visitedOnly &&
+    !isVisitedSpot(
+      spot
+    )
+  ) {
+    return false;
+  }
+
+
+  if (
+    soonEndingFilter?.checked &&
+    !isSpotEndingSoon(spot)
+  ) {
+    return false;
+  }
+
+
+  if (
     searchQuery &&
     !getSpotSearchText(
       spot
@@ -4635,6 +5418,7 @@ function updateSpotFilters() {
 
   syncListControlButtons();
   updateFavoriteCount();
+  updateVisitedCount();
 }
 
 
@@ -4776,7 +5560,19 @@ function resetFilters() {
   favoriteOnly =
     false;
 
+  visitedOnly =
+    false;
+
+  if (soonEndingFilter) {
+    soonEndingFilter.checked = false;
+  }
+
+  listSortMode =
+    "default";
+
   syncFavoriteFilterButton();
+  syncVisitedFilterButton();
+  syncListControlButtons();
 
   hideSearchSuggestions();
   updateSearchClearButton();
@@ -4949,13 +5745,21 @@ async function loadSpots() {
     // データに合わせてブランド / 都道府県フィルターを生成
     renderBrandFilters();
     renderPrefectureOptions();
+
+    // URLで共有された検索・絞り込み条件を、動的フィルター生成後に適用
+    if (!SHARED_SPOT_ID) {
+      applySharedFilterState();
+    }
+
     updateFavoriteCount();
+    updateVisitedCount();
     syncFavoriteFilterButton();
+    syncVisitedFilterButton();
     setViewMode(
       currentViewMode
     );
 
-    // 全チェック状態で初期表示
+    // 初期表示（共有条件があればその状態を反映）
     updateSpotFilters();
 
     // 共有URLでスポット指定がある場合は、そのスポットを優先表示
@@ -4996,8 +5800,18 @@ async function loadSpots() {
       }
 
     } else {
-      // 全国の表示対象スポットを収める
-      fitMapToAllSpots();
+      // 条件共有URLでは、共有された条件に一致するスポットへ初期表示を合わせる
+      if (
+        HAS_SHARED_FILTERS &&
+        lastFilteredRecords.length
+      ) {
+        fitMapToRecords(
+          lastFilteredRecords
+        );
+      } else {
+        // 通常アクセスでは全国の表示対象スポットを収める
+        fitMapToAllSpots();
+      }
     }
 
     console.log(
@@ -5266,6 +6080,34 @@ listBoundsFilterButton
   );
 
 
+listEndingSortButton
+  ?.addEventListener(
+    "click",
+    () => {
+      listSortMode =
+        listSortMode === "ending"
+          ? "default"
+          : "ending";
+      syncListControlButtons();
+      updateSpotFilters();
+    }
+  );
+
+
+listNameSortButton
+  ?.addEventListener(
+    "click",
+    () => {
+      listSortMode =
+        listSortMode === "name"
+          ? "default"
+          : "name";
+      syncListControlButtons();
+      updateSpotFilters();
+    }
+  );
+
+
 favoriteFilterButton
   ?.addEventListener(
     "click",
@@ -5275,6 +6117,32 @@ favoriteFilterButton
       syncFavoriteFilterButton();
       updateSpotFilters();
     }
+  );
+
+
+visitedFilterButton
+  ?.addEventListener(
+    "click",
+    () => {
+      visitedOnly =
+        !visitedOnly;
+      syncVisitedFilterButton();
+      updateSpotFilters();
+    }
+  );
+
+
+shareFiltersButton
+  ?.addEventListener(
+    "click",
+    shareCurrentFilters
+  );
+
+
+soonEndingFilter
+  ?.addEventListener(
+    "change",
+    updateSpotFilters
   );
 
 
