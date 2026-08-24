@@ -275,6 +275,27 @@
 
           <button
             type="button"
+            class="toolbar-button visited-filter-button"
+            id="visited-filter-button"
+            aria-pressed="false"
+            title="行った！に保存したスポットだけ表示"
+          >
+            ✓ 行った <span id="visited-count">0</span>
+          </button>
+
+
+          <button
+            type="button"
+            class="toolbar-button"
+            id="share-filters-button"
+            title="現在の検索・絞り込み条件を共有"
+          >
+            🔗 条件を共有
+          </button>
+
+
+          <button
+            type="button"
             class="toolbar-button"
             id="official-help-toggle"
             aria-expanded="false"
@@ -746,7 +767,19 @@
                     <span>期間限定</span>
                   </label>
 
+                  <label class="filter-chip filter-chip-attention">
+                    <input
+                      type="checkbox"
+                      id="filter-soon-ending"
+                    >
+                    <span>⚠ まもなく終了（7日以内）</span>
+                  </label>
+
                 </div>
+
+                <p class="filter-hint">
+                  「まもなく終了」は、終了日が設定された開催中の期間限定スポットが対象です。
+                </p>
 
               </fieldset>
 
@@ -912,10 +945,11 @@
                 </p>
                 <p>
                   「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で表示方法を切り替えられます。
-                  一覧では「◎ 近い順」や「▣ 地図範囲内」も利用でき、検索・絞り込み条件と組み合わせられます。
-                  詳細の「♡ 行きたいに保存」はこのブラウザ内に保存され、「♡ 行きたい」で保存済みだけを表示できます。
-                  「🔗 このスポットを共有」から、そのスポットを直接開けるURLも共有できます。
-                  位置情報や行きたい情報をサーバーへ送信する機能はありません。
+                  一覧では「◎ 近い順」「⌛ 終了が近い順」「あ 名前順」「▣ 地図範囲内」を利用でき、検索・絞り込み条件と組み合わせられます。
+                  期間限定スポットは残り日数・開催までの日数も表示し、「⚠ まもなく終了（7日以内）」だけに絞れます。
+                  「♡ 行きたい」と「✓ 行った！」はこのブラウザ内に保存され、それぞれ保存済みだけの表示にも対応しています。
+                  「🔗 このスポットを共有」は1スポットを直接共有、「🔗 条件を共有」は現在の検索・絞り込み状態を共有できます。
+                  位置情報・行きたい・行った情報をサーバーへ送信する機能はありません。
                 </p>
               </section>
 
@@ -1054,10 +1088,10 @@
                 </p>
                 <p>
                   「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で巡礼候補を見比べられます。
-                  一覧では「◎ 近い順」や「▣ 地図範囲内」を既存の絞り込みと併用できます。
-                  気になる場所は「♡ 行きたいに保存」でき、保存済みだけの表示にも対応しています。
-                  「🔗 このスポットを共有」から、その場所を直接開けるURLも共有できます。
-                  保存内容はこのブラウザ内だけに保持されます。
+                  一覧では「◎ 近い順」「⌛ 終了が近い順」「あ 名前順」「▣ 地図範囲内」を既存の絞り込みと併用できます。
+                  気になる場所は「♡ 行きたい」、訪問済みは「✓ 行った！」として保存でき、それぞれ保存済みだけの表示にも対応しています。
+                  「🔗 このスポットを共有」から1スポットを直接共有でき、「🔗 条件を共有」では現在の検索・絞り込み状態を共有できます。
+                  行きたい・行った等の保存内容はこのブラウザ内だけに保持され、条件共有URLにも含まれません。
                 </p>
               </section>
 
@@ -1244,6 +1278,22 @@
               aria-pressed="false"
               title="現在地から近い順に並べ替え"
             >◎ 近い順</button>
+
+            <button
+              type="button"
+              id="list-ending-sort-button"
+              class="spot-list-tool-button"
+              aria-pressed="false"
+              title="期間限定スポットを終了が近い順に並べ替え"
+            >⌛ 終了が近い順</button>
+
+            <button
+              type="button"
+              id="list-name-sort-button"
+              class="spot-list-tool-button"
+              aria-pressed="false"
+              title="スポット名の五十音・文字順に並べ替え"
+            >あ 名前順</button>
 
             <button
               type="button"
