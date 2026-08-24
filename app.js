@@ -1042,7 +1042,11 @@ function focusSpotRecord(
       );
 
       showSpotDetail(
-        record
+        record,
+        {
+          scrollOnMobile:
+            true
+        }
       );
     };
 
@@ -1632,7 +1636,27 @@ function getSafeUrl(
 
 
 // ============================================================
+// 地図ラベル用HTMLエスケープ
+// ============================================================
+
+function escapeHtml(
+  value
+) {
+
+  return String(
+    value ?? ""
+  )
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+
+// ============================================================
 // クラスタアイコン
+// 6件以下ならスポット名も地図上へ表示
 // ============================================================
 
 function createClusterIcon(
@@ -1731,18 +1755,62 @@ function createClusterIcon(
   }
 
 
+  let nameListHtml =
+    "";
+
+
+  if (
+    count <=
+    6
+  ) {
+
+    const names =
+      markers
+        .map(
+          marker =>
+            marker.options
+              .spotName ||
+            "スポット"
+        )
+        .sort(
+          (a, b) =>
+            String(a)
+              .localeCompare(
+                String(b),
+                "ja"
+              )
+        );
+
+
+    nameListHtml =
+      '<div class="cluster-name-list" aria-hidden="true">' +
+      names
+        .map(
+          name =>
+            '<div class="cluster-name-item">' +
+            escapeHtml(name) +
+            "</div>"
+        )
+        .join("") +
+      "</div>";
+  }
+
+
   return L.divIcon({
 
     className:
       "marker-cluster-custom",
 
     html:
+      '<div class="cluster-label-wrap">' +
       '<div class="cluster-bubble ' +
       colorClass +
       '">' +
       '<span class="cluster-count">' +
       count +
       "</span>" +
+      "</div>" +
+      nameListHtml +
       "</div>",
 
     iconSize:
@@ -3355,7 +3423,8 @@ function createSpotDetail(
 // ============================================================
 
 function showSpotDetail(
-  record
+  record,
+  options = {}
 ) {
 
   if (
@@ -3412,6 +3481,38 @@ function showSpotDetail(
 
     }
   );
+
+
+  if (
+    options.scrollOnMobile &&
+    window.matchMedia(
+      "(max-width: 899px)"
+    ).matches
+  ) {
+
+    window.setTimeout(
+      () => {
+
+        const reduceMotion =
+          window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+          ).matches;
+
+
+        detailPanel.scrollIntoView({
+          behavior:
+            reduceMotion
+              ? "auto"
+              : "smooth",
+
+          block:
+            "start"
+        });
+
+      },
+      120
+    );
+  }
 }
 
 
@@ -3524,6 +3625,9 @@ function createSpotRecord(
         spotCategory:
           spot.category,
 
+        spotName:
+          spot.name,
+
         spotEvidenceStatus:
           spot.evidenceStatus || null,
 
@@ -3542,12 +3646,40 @@ function createSpotRecord(
   };
 
 
+  marker.bindTooltip(
+    spot.name,
+    {
+      permanent:
+        true,
+
+      direction:
+        "top",
+
+      offset:
+        [0, -15],
+
+      opacity:
+        1,
+
+      className:
+        "spot-name-label",
+
+      interactive:
+        false
+    }
+  );
+
+
   marker.on(
     "click",
     () => {
 
       showSpotDetail(
-        record
+        record,
+        {
+          scrollOnMobile:
+            true
+        }
       );
 
     }
