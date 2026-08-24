@@ -2137,6 +2137,33 @@ button {
   border-color: #e9a7c1;
 }
 
+.spot-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 8px 0 2px;
+}
+
+.spot-detail-actions .spot-favorite-button {
+  margin: 0;
+}
+
+.spot-share-button {
+  min-height: 36px;
+  padding: 7px 11px;
+  border: 1px solid #dcd6fb;
+  border-radius: 10px;
+  color: #6257c5;
+  background: #faf9ff;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.spot-share-button:hover {
+  background: var(--accent-soft);
+  border-color: #cbc3ff;
+}
+
 
 /* ==========================================================
    LIST VIEW
@@ -2173,6 +2200,36 @@ button {
   font-size: 11px;
 }
 
+.spot-list-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.spot-list-tool-button {
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #655d60;
+  background: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.spot-list-tool-button:hover,
+.spot-list-tool-button.is-active {
+  color: #5e53c2;
+  background: var(--accent-soft);
+  border-color: #d7d1ff;
+}
+
+.spot-list-tool-button.is-loading {
+  opacity: 0.65;
+  cursor: progress;
+}
+
 .spot-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2202,6 +2259,13 @@ button {
 
 .spot-list-card-heading {
   min-width: 0;
+}
+
+.spot-list-card-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
 }
 
 .spot-list-card h3 {
@@ -2238,6 +2302,24 @@ button {
   border-color: #e9adc4;
 }
 
+.spot-list-share-button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid #ddd8f7;
+  border-radius: 50%;
+  color: #665bc5;
+  background: #faf9ff;
+  font-size: 14px;
+}
+
+.spot-list-share-button:hover {
+  background: var(--accent-soft);
+  border-color: #cfc7ff;
+}
+
 .spot-list-evidence {
   display: inline-flex;
   margin-top: 9px;
@@ -2258,11 +2340,17 @@ button {
 }
 
 .spot-list-address,
-.spot-list-hours {
+.spot-list-hours,
+.spot-list-distance {
   margin-top: 8px;
   color: #61595c;
   font-size: 10px;
   line-height: 1.55;
+}
+
+.spot-list-distance {
+  color: #6557c7;
+  font-weight: 800;
 }
 
 .spot-list-open-button {
@@ -2315,7 +2403,12 @@ button {
   .spot-list-header {
     align-items: flex-start;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
+  }
+
+  .spot-list-tools {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .spot-list {
