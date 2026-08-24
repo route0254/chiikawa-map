@@ -233,6 +233,49 @@
           <button
             type="button"
             class="toolbar-button"
+            id="location-button"
+            aria-label="現在地を地図に表示"
+          >
+            <span aria-hidden="true">◎</span>
+            現在地
+          </button>
+
+
+          <div class="view-switch" role="group" aria-label="表示切替">
+            <button
+              type="button"
+              class="toolbar-button view-switch-button is-active"
+              id="map-view-button"
+              aria-pressed="true"
+            >
+              🗺 地図
+            </button>
+
+            <button
+              type="button"
+              class="toolbar-button view-switch-button"
+              id="list-view-button"
+              aria-pressed="false"
+            >
+              ☷ 一覧
+            </button>
+          </div>
+
+
+          <button
+            type="button"
+            class="toolbar-button favorite-filter-button"
+            id="favorite-filter-button"
+            aria-pressed="false"
+            title="行きたいに保存したスポットだけ表示"
+          >
+            ♡ 行きたい <span id="favorite-count">0</span>
+          </button>
+
+
+          <button
+            type="button"
+            class="toolbar-button"
             id="official-help-toggle"
             aria-expanded="false"
             aria-controls="official-help-panel"
@@ -867,6 +910,11 @@
                   MAP上部の検索欄では、スポット名・住所・説明・シリーズ名などから検索できます。
                   「都道府県」と組み合わせれば、旅行先や近くのエリアだけに絞ることもできます。
                 </p>
+                <p>
+                  「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で表示方法を切り替えられます。
+                  詳細の「♡ 行きたいに保存」はこのブラウザ内に保存され、「♡ 行きたい」で保存済みだけを表示できます。
+                  位置情報や行きたい情報をサーバーへ送信する機能はありません。
+                </p>
               </section>
 
 
@@ -1001,6 +1049,11 @@
                 <p>
                   MAP上部の検索欄から店名・地名を検索できます。
                   都道府県や「紹介 / 訪問 / ゆかり・関連」「確定 / 推定」の絞り込みと併用できます。
+                </p>
+                <p>
+                  「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で巡礼候補を見比べられます。
+                  気になる場所は「♡ 行きたいに保存」でき、保存済みだけの表示にも対応しています。
+                  保存内容はこのブラウザ内だけに保持されます。
                 </p>
               </section>
 
@@ -1160,6 +1213,28 @@
         </aside>
 
       </div>
+
+
+      <!-- ==================================================
+           LIST VIEW
+           ================================================== -->
+
+      <section
+        id="spot-list-panel"
+        class="spot-list-panel"
+        aria-label="スポット一覧"
+        hidden
+      >
+        <div class="spot-list-header">
+          <div>
+            <span class="spot-list-kicker">SPOT LIST</span>
+            <h2>スポット一覧</h2>
+          </div>
+          <p id="spot-list-summary">絞り込み結果を一覧で表示します。</p>
+        </div>
+
+        <div id="spot-list" class="spot-list"></div>
+      </section>
 
     </section>
 
