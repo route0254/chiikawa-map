@@ -1955,3 +1955,254 @@ button {
   color: #47785a !important;
   background: #e8f5ed;
 }
+
+
+/* ==========================================================
+   CURRENT LOCATION / VIEW SWITCH / FAVORITES
+   ========================================================== */
+
+.view-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.view-switch-button {
+  min-width: 68px;
+}
+
+.favorite-filter-button.is-active {
+  color: #c34f7d;
+  background: var(--official-soft);
+  border-color: #f2bdd1;
+}
+
+#favorite-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+#location-button.is-loading {
+  opacity: 0.72;
+  cursor: progress;
+}
+
+.spot-favorite-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  margin: 0 0 11px;
+  padding: 8px 12px;
+  border: 1px solid #efc4d5;
+  border-radius: 999px;
+  color: #b34f75;
+  background: #fff7fa;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.spot-favorite-button:hover,
+.spot-favorite-button.is-active {
+  color: #a53f68;
+  background: #ffeaf2;
+  border-color: #e9a7c1;
+}
+
+
+/* ==========================================================
+   LIST VIEW
+   ========================================================== */
+
+.spot-list-panel {
+  padding: 18px;
+  background: #fbf9fa;
+}
+
+.spot-list-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.spot-list-kicker {
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.spot-list-header h2 {
+  margin: 2px 0 0;
+  font-size: 19px;
+}
+
+.spot-list-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.spot-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.spot-list-card {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 7px 20px rgba(60, 45, 51, 0.05);
+}
+
+.spot-list-card.is-favorite {
+  border-color: #f0bed1;
+  box-shadow: 0 7px 22px rgba(196, 78, 126, 0.09);
+}
+
+.spot-list-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.spot-list-card-heading {
+  min-width: 0;
+}
+
+.spot-list-card h3 {
+  margin: 0 0 5px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.spot-list-card-meta {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.spot-list-favorite-button {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #eed6df;
+  border-radius: 50%;
+  color: #b95d80;
+  background: #fff9fb;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.spot-list-favorite-button:hover,
+.spot-list-favorite-button.is-active {
+  color: #a74369;
+  background: #ffeaf2;
+  border-color: #e9adc4;
+}
+
+.spot-list-evidence {
+  display: inline-flex;
+  margin-top: 9px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.spot-list-evidence.evidence-confirmed {
+  color: #39784e;
+  background: #e9f7ee;
+}
+
+.spot-list-evidence.evidence-inferred {
+  color: #8a6418;
+  background: #fff4d6;
+}
+
+.spot-list-address,
+.spot-list-hours {
+  margin-top: 8px;
+  color: #61595c;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.spot-list-open-button {
+  width: 100%;
+  min-height: 36px;
+  margin-top: 12px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 10px;
+  color: #5f55c1;
+  background: var(--accent-soft);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.spot-list-open-button:hover {
+  background: #e8e4ff;
+}
+
+.spot-list-empty {
+  grid-column: 1 / -1;
+  padding: 36px 18px;
+  border: 1px dashed #ddd3d8;
+  border-radius: 14px;
+  color: var(--muted);
+  background: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 899px) {
+  .spot-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .view-switch {
+    gap: 4px;
+  }
+
+  .view-switch-button {
+    min-width: 0;
+  }
+
+  .spot-list-panel {
+    padding: 12px 10px 14px;
+  }
+
+  .spot-list-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .spot-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+  }
+
+  .spot-list-card {
+    padding: 12px;
+  }
+}
