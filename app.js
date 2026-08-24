@@ -210,6 +210,54 @@ const prefectureFilter =
   );
 
 
+const locationButton =
+  document.getElementById(
+    "location-button"
+  );
+
+
+const mapViewButton =
+  document.getElementById(
+    "map-view-button"
+  );
+
+
+const listViewButton =
+  document.getElementById(
+    "list-view-button"
+  );
+
+
+const favoriteFilterButton =
+  document.getElementById(
+    "favorite-filter-button"
+  );
+
+
+const favoriteCount =
+  document.getElementById(
+    "favorite-count"
+  );
+
+
+const spotListPanel =
+  document.getElementById(
+    "spot-list-panel"
+  );
+
+
+const spotList =
+  document.getElementById(
+    "spot-list"
+  );
+
+
+const spotListSummary =
+  document.getElementById(
+    "spot-list-summary"
+  );
+
+
 const dataAsOf =
   document.getElementById(
     "data-as-of"
@@ -1779,6 +1827,709 @@ let selectedRecord =
 
 
 // ============================================================
+// 現在地・一覧表示・行きたい保存
+// ============================================================
+
+const FAVORITES_STORAGE_KEY =
+  "chiikawa-map-favorites-v1";
+
+
+let favoriteSpotIds =
+  loadFavoriteSpotIds();
+
+
+let favoriteOnly =
+  false;
+
+
+let currentViewMode =
+  "map";
+
+
+let userLocationMarker =
+  null;
+
+
+let userAccuracyCircle =
+  null;
+
+
+function loadFavoriteSpotIds() {
+
+  try {
+
+    const value =
+      window.localStorage.getItem(
+        FAVORITES_STORAGE_KEY
+      );
+
+    if (
+      !value
+    ) {
+      return new Set();
+    }
+
+    const parsed =
+      JSON.parse(value);
+
+    if (
+      !Array.isArray(parsed)
+    ) {
+      return new Set();
+    }
+
+    return new Set(
+      parsed.filter(
+        id =>
+          typeof id ===
+          "string"
+      )
+    );
+
+  } catch (error) {
+
+    console.warn(
+      "行きたいスポットの保存データを読み込めませんでした。",
+      error
+    );
+
+    return new Set();
+  }
+}
+
+
+function saveFavoriteSpotIds() {
+
+  try {
+
+    window.localStorage.setItem(
+      FAVORITES_STORAGE_KEY,
+      JSON.stringify(
+        Array.from(
+          favoriteSpotIds
+        )
+      )
+    );
+
+  } catch (error) {
+
+    console.warn(
+      "行きたいスポットを保存できませんでした。",
+      error
+    );
+  }
+}
+
+
+function isFavoriteSpot(
+  spot
+) {
+
+  return Boolean(
+    spot?.id &&
+    favoriteSpotIds.has(
+      spot.id
+    )
+  );
+}
+
+
+function updateFavoriteCount() {
+
+  if (
+    !favoriteCount
+  ) {
+    return;
+  }
+
+  const count =
+    spotRecords.length
+      ? spotRecords.filter(
+          record =>
+            isFavoriteSpot(
+              record.spot
+            )
+        ).length
+      : favoriteSpotIds.size;
+
+  favoriteCount.textContent =
+    String(count);
+}
+
+
+function syncFavoriteFilterButton() {
+
+  if (
+    !favoriteFilterButton
+  ) {
+    return;
+  }
+
+  favoriteFilterButton.classList.toggle(
+    "is-active",
+    favoriteOnly
+  );
+
+  favoriteFilterButton.setAttribute(
+    "aria-pressed",
+    String(favoriteOnly)
+  );
+}
+
+
+function toggleFavoriteSpot(
+  spot
+) {
+
+  if (
+    !spot?.id
+  ) {
+    return;
+  }
+
+  if (
+    favoriteSpotIds.has(
+      spot.id
+    )
+  ) {
+
+    favoriteSpotIds.delete(
+      spot.id
+    );
+
+  } else {
+
+    favoriteSpotIds.add(
+      spot.id
+    );
+  }
+
+  saveFavoriteSpotIds();
+  updateFavoriteCount();
+  updateSpotFilters();
+
+  if (
+    selectedRecord &&
+    selectedRecord.spot.id ===
+      spot.id &&
+    spotMatchesFilters(
+      selectedRecord.spot
+    )
+  ) {
+
+    detailBody.replaceChildren(
+      createSpotDetail(
+        selectedRecord.spot
+      )
+    );
+  }
+}
+
+
+function setViewMode(
+  mode
+) {
+
+  currentViewMode =
+    mode ===
+    "list"
+      ? "list"
+      : "map";
+
+  const listMode =
+    currentViewMode ===
+    "list";
+
+  if (
+    mapContent
+  ) {
+    mapContent.hidden =
+      listMode;
+  }
+
+  if (
+    spotListPanel
+  ) {
+    spotListPanel.hidden =
+      !listMode;
+  }
+
+  mapViewButton?.classList.toggle(
+    "is-active",
+    !listMode
+  );
+
+  listViewButton?.classList.toggle(
+    "is-active",
+    listMode
+  );
+
+  mapViewButton?.setAttribute(
+    "aria-pressed",
+    String(!listMode)
+  );
+
+  listViewButton?.setAttribute(
+    "aria-pressed",
+    String(listMode)
+  );
+
+  if (
+    !listMode
+  ) {
+
+    requestAnimationFrame(
+      () => {
+        map.invalidateSize({
+          pan: false,
+          animate: false
+        });
+      }
+    );
+  }
+}
+
+
+function createSpotListCard(
+  record
+) {
+
+  const spot =
+    record.spot;
+
+  const card =
+    document.createElement(
+      "article"
+    );
+
+  card.className =
+    "spot-list-card";
+
+  if (
+    isFavoriteSpot(spot)
+  ) {
+    card.classList.add(
+      "is-favorite"
+    );
+  }
+
+  const header =
+    createDiv(
+      "spot-list-card-header"
+    );
+
+  const headingWrap =
+    createDiv(
+      "spot-list-card-heading"
+    );
+
+  const title =
+    document.createElement(
+      "h3"
+    );
+
+  title.textContent =
+    spot.name;
+
+  headingWrap.appendChild(
+    title
+  );
+
+  const meta =
+    createDiv(
+      "spot-list-card-meta",
+      [
+        getSpotPrefecture(spot),
+        getPlaceTypeLabel(
+          spot.placeType
+        ),
+        getRelationTypeLabel(
+          spot.category,
+          spot.relationType
+        )
+      ]
+        .filter(Boolean)
+        .join(" ・ ")
+    );
+
+  headingWrap.appendChild(
+    meta
+  );
+
+  const favoriteButton =
+    document.createElement(
+      "button"
+    );
+
+  favoriteButton.type =
+    "button";
+
+  favoriteButton.className =
+    "spot-list-favorite-button" +
+    (
+      isFavoriteSpot(spot)
+        ? " is-active"
+        : ""
+    );
+
+  favoriteButton.textContent =
+    isFavoriteSpot(spot)
+      ? "♥"
+      : "♡";
+
+  favoriteButton.setAttribute(
+    "aria-label",
+    isFavoriteSpot(spot)
+      ? "行きたいから削除"
+      : "行きたいに保存"
+  );
+
+  favoriteButton.addEventListener(
+    "click",
+    () => {
+      toggleFavoriteSpot(spot);
+    }
+  );
+
+  header.appendChild(
+    headingWrap
+  );
+
+  header.appendChild(
+    favoriteButton
+  );
+
+  card.appendChild(
+    header
+  );
+
+  if (
+    spot.category ===
+    "nagano" &&
+    spot.evidenceStatus
+  ) {
+
+    card.appendChild(
+      createDiv(
+        "spot-list-evidence evidence-" +
+        spot.evidenceStatus,
+        spot.evidenceStatus ===
+        "confirmed"
+          ? "✓ ナガセン関連：確定"
+          : "△ ナガセン関連：推定"
+      )
+    );
+  }
+
+  if (
+    spot.address
+  ) {
+    card.appendChild(
+      createDiv(
+        "spot-list-address",
+        "📌 " +
+        spot.address
+      )
+    );
+  }
+
+  if (
+    spot.hoursText
+  ) {
+    card.appendChild(
+      createDiv(
+        "spot-list-hours",
+        "🕐 " +
+        spot.hoursText
+      )
+    );
+  }
+
+  const openButton =
+    document.createElement(
+      "button"
+    );
+
+  openButton.type =
+    "button";
+
+  openButton.className =
+    "spot-list-open-button";
+
+  openButton.textContent =
+    "地図で詳細を見る →";
+
+  openButton.addEventListener(
+    "click",
+    () => {
+
+      setViewMode(
+        "map"
+      );
+
+      requestAnimationFrame(
+        () => {
+          requestAnimationFrame(
+            () => {
+              focusSpotRecord(
+                record
+              );
+            }
+          );
+        }
+      );
+    }
+  );
+
+  card.appendChild(
+    openButton
+  );
+
+  return card;
+}
+
+
+function renderSpotList(
+  records
+) {
+
+  if (
+    !spotList
+  ) {
+    return;
+  }
+
+  spotList.replaceChildren();
+
+  if (
+    spotListSummary
+  ) {
+    spotListSummary.textContent =
+      records.length +
+      "件のスポットを表示しています。";
+  }
+
+  if (
+    records.length ===
+    0
+  ) {
+
+    spotList.appendChild(
+      createDiv(
+        "spot-list-empty",
+        favoriteOnly
+          ? "条件に合う『行きたい』スポットがありません。"
+          : "条件に合うスポットがありません。"
+      )
+    );
+
+    return;
+  }
+
+  records.forEach(
+    record => {
+      spotList.appendChild(
+        createSpotListCard(
+          record
+        )
+      );
+    }
+  );
+}
+
+
+function showTransientMapStatus(
+  message
+) {
+
+  showMapStatus(
+    message
+  );
+
+  window.setTimeout(
+    () => {
+
+      if (
+        allProvidersFailed
+      ) {
+        showMapStatus(
+          "現在、背景地図を読み込めません。" +
+          "スポット情報は引き続き利用できます。"
+        );
+        return;
+      }
+
+      if (
+        currentProviderIndex >
+        0
+      ) {
+        showMapStatus(
+          "バックアップ地図で表示しています：" +
+          TILE_PROVIDERS[
+            currentProviderIndex
+          ].name
+        );
+        return;
+      }
+
+      hideMapStatus();
+    },
+    2800
+  );
+}
+
+
+function locateUser() {
+
+  if (
+    !navigator.geolocation
+  ) {
+    showTransientMapStatus(
+      "このブラウザでは現在地を取得できません。"
+    );
+    return;
+  }
+
+  locationButton?.classList.add(
+    "is-loading"
+  );
+
+  locationButton?.setAttribute(
+    "aria-busy",
+    "true"
+  );
+
+  showMapStatus(
+    "現在地を取得しています…"
+  );
+
+  navigator.geolocation.getCurrentPosition(
+    position => {
+
+      locationButton?.classList.remove(
+        "is-loading"
+      );
+
+      locationButton?.removeAttribute(
+        "aria-busy"
+      );
+
+      const lat =
+        position.coords.latitude;
+
+      const lng =
+        position.coords.longitude;
+
+      const accuracy =
+        Math.max(
+          position.coords.accuracy ||
+          0,
+          10
+        );
+
+      if (
+        userLocationMarker
+      ) {
+        map.removeLayer(
+          userLocationMarker
+        );
+      }
+
+      if (
+        userAccuracyCircle
+      ) {
+        map.removeLayer(
+          userAccuracyCircle
+        );
+      }
+
+      userAccuracyCircle =
+        L.circle(
+          [lat, lng],
+          {
+            radius: accuracy,
+            weight: 1,
+            opacity: 0.5,
+            fillOpacity: 0.08
+          }
+        ).addTo(map);
+
+      userLocationMarker =
+        L.circleMarker(
+          [lat, lng],
+          {
+            radius: 8,
+            weight: 3,
+            fillOpacity: 0.95
+          }
+        )
+          .bindTooltip(
+            "現在地",
+            {
+              permanent: false,
+              direction: "top"
+            }
+          )
+          .addTo(map);
+
+      setViewMode(
+        "map"
+      );
+
+      requestAnimationFrame(
+        () => {
+          map.setView(
+            [lat, lng],
+            Math.max(
+              map.getZoom(),
+              15
+            ),
+            {
+              animate: true
+            }
+          );
+        }
+      );
+
+      showTransientMapStatus(
+        "現在地を表示しました。位置情報は保存・送信しません。"
+      );
+    },
+    error => {
+
+      locationButton?.classList.remove(
+        "is-loading"
+      );
+
+      locationButton?.removeAttribute(
+        "aria-busy"
+      );
+
+      let message =
+        "現在地を取得できませんでした。";
+
+      if (
+        error.code ===
+        error.PERMISSION_DENIED
+      ) {
+        message =
+          "位置情報の利用が許可されていません。ブラウザの設定をご確認ください。";
+      }
+
+      showTransientMapStatus(
+        message
+      );
+    },
+    {
+      enableHighAccuracy: false,
+      timeout: 10000,
+      maximumAge: 60000
+    }
+  );
+}
+
+
+// ============================================================
 // 全スポットを初期表示
 // ============================================================
 
@@ -2059,6 +2810,46 @@ function createSpotDetail(
 
   container.appendChild(
     title
+  );
+
+
+  const favoriteButton =
+    document.createElement(
+      "button"
+    );
+
+  favoriteButton.type =
+    "button";
+
+  favoriteButton.className =
+    "spot-favorite-button" +
+    (
+      isFavoriteSpot(spot)
+        ? " is-active"
+        : ""
+    );
+
+  favoriteButton.setAttribute(
+    "aria-pressed",
+    String(
+      isFavoriteSpot(spot)
+    )
+  );
+
+  favoriteButton.textContent =
+    isFavoriteSpot(spot)
+      ? "♥ 行きたいに保存済み"
+      : "♡ 行きたいに保存";
+
+  favoriteButton.addEventListener(
+    "click",
+    () => {
+      toggleFavoriteSpot(spot);
+    }
+  );
+
+  container.appendChild(
+    favoriteButton
   );
 
 
@@ -2957,6 +3748,16 @@ function spotMatchesFilters(
 
 
   if (
+    favoriteOnly &&
+    !isFavoriteSpot(
+      spot
+    )
+  ) {
+    return false;
+  }
+
+
+  if (
     searchQuery &&
     !getSpotSearchText(
       spot
@@ -3138,6 +3939,10 @@ function updateSpotFilters() {
     0;
 
 
+  const visibleRecords =
+    [];
+
+
   spotRecords.forEach(
     record => {
 
@@ -3153,6 +3958,11 @@ function updateSpotFilters() {
 
 
         visibleCount++;
+
+
+        visibleRecords.push(
+          record
+        );
 
 
         if (
@@ -3186,7 +3996,15 @@ function updateSpotFilters() {
       visibleCount +
       "件表示";
   }
+
+
+  renderSpotList(
+    visibleRecords
+  );
+
+  updateFavoriteCount();
 }
+
 
 
 // ============================================================
@@ -3322,6 +4140,11 @@ function resetFilters() {
     prefectureFilter.value =
       "";
   }
+
+  favoriteOnly =
+    false;
+
+  syncFavoriteFilterButton();
 
   hideSearchSuggestions();
   updateSearchClearButton();
@@ -3494,6 +4317,11 @@ async function loadSpots() {
     // データに合わせてブランド / 都道府県フィルターを生成
     renderBrandFilters();
     renderPrefectureOptions();
+    updateFavoriteCount();
+    syncFavoriteFilterButton();
+    setViewMode(
+      currentViewMode
+    );
 
     // 全チェック状態で初期表示
     updateSpotFilters();
@@ -3677,6 +4505,53 @@ document.addEventListener(
     hideSearchSuggestions();
   }
 );
+
+
+// ============================================================
+// 現在地・表示切替・行きたい
+// ============================================================
+
+locationButton
+  ?.addEventListener(
+    "click",
+    locateUser
+  );
+
+
+mapViewButton
+  ?.addEventListener(
+    "click",
+    () => {
+      setViewMode(
+        "map"
+      );
+    }
+  );
+
+
+listViewButton
+  ?.addEventListener(
+    "click",
+    () => {
+      closeSpotDetail();
+      setViewMode(
+        "list"
+      );
+      updateSpotFilters();
+    }
+  );
+
+
+favoriteFilterButton
+  ?.addEventListener(
+    "click",
+    () => {
+      favoriteOnly =
+        !favoriteOnly;
+      syncFavoriteFilterButton();
+      updateSpotFilters();
+    }
+  );
 
 
 // ============================================================
