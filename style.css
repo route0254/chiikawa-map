@@ -2420,3 +2420,108 @@ button {
     padding: 12px;
   }
 }
+
+
+/* ==========================================================
+   PERIOD TIMING / VISITED / SHARE CONDITION ENHANCEMENTS
+   ========================================================== */
+
+.visited-filter-button.is-active {
+  background: #eef8f1;
+  border-color: #b8dbc4;
+  color: #477c59;
+}
+
+#visited-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: rgba(113, 173, 134, 0.14);
+  font-size: 10px;
+}
+
+.spot-visited-button {
+  min-height: 36px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: #655e61;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.spot-visited-button:hover,
+.spot-visited-button.is-active {
+  background: var(--nagano-soft);
+  border-color: #b8dbc4;
+  color: #477c59;
+}
+
+.spot-list-visited-button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fff;
+  color: #786f73;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.spot-list-visited-button:hover,
+.spot-list-visited-button.is-active {
+  background: var(--nagano-soft);
+  border-color: #b8dbc4;
+  color: #477c59;
+}
+
+.spot-list-card.is-visited {
+  box-shadow: inset 4px 0 0 rgba(113, 173, 134, 0.55);
+}
+
+.spot-timing-badge,
+.spot-list-timing {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 8px 0 4px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #f1efff;
+  color: #6557c8;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.spot-timing-badge.timing-ending,
+.spot-list-timing.timing-ending {
+  background: #fff5df;
+  color: #8b6219;
+}
+
+.spot-timing-badge.is-soon,
+.spot-list-timing.is-soon {
+  background: #fff0e9;
+  color: #a6532e;
+  border: 1px solid #f2c5ae;
+}
+
+.filter-chip-attention input:checked + span {
+  color: #9b542e;
+  background: #fff0e9;
+  border-color: #f2c5ae;
+}
+
+@media (max-width: 760px) {
+  .spot-detail-actions {
+    align-items: stretch;
+  }
+
+  .spot-detail-actions .spot-visited-button {
+    width: 100%;
+  }
+}
