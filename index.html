@@ -62,6 +62,8 @@
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    integrity="sha384-pmjIAcz2bAn0xukfxADbZIb3t8oRT9Sv0rvO+BR5Csr6Dhqq+nZs59P0pPKQJkEV"
+    crossorigin="anonymous"
   >
 
   <link
@@ -176,9 +178,12 @@
               inputmode="search"
               autocomplete="off"
               placeholder="スポット名・地名から検索"
+              role="combobox"
               aria-label="スポット名・地名から検索"
               aria-controls="spot-search-suggestions"
               aria-autocomplete="list"
+              aria-haspopup="listbox"
+              aria-expanded="false"
             >
 
             <button
@@ -334,6 +339,9 @@
           <span
             id="result-count"
             class="result-count"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
           >
             読み込み中…
           </span>
@@ -402,6 +410,8 @@
           <aside
             id="filter-panel"
             class="overlay-panel filter-panel"
+            role="dialog"
+            aria-labelledby="filter-panel-title"
             hidden
           >
 
@@ -413,7 +423,7 @@
                   FILTER
                 </div>
 
-                <h2>
+                <h2 id="filter-panel-title">
                   スポットを絞り込む
                 </h2>
 
@@ -887,6 +897,8 @@
           <aside
             id="official-help-panel"
             class="overlay-panel help-panel"
+            role="dialog"
+            aria-labelledby="official-help-panel-title"
             hidden
           >
 
@@ -898,7 +910,7 @@
                   OFFICIAL GUIDE
                 </div>
 
-                <h2>
+                <h2 id="official-help-panel-title">
                   公式関連の使い方
                 </h2>
 
@@ -1044,6 +1056,8 @@
           <aside
             id="nagano-help-panel"
             class="overlay-panel help-panel"
+            role="dialog"
+            aria-labelledby="nagano-help-panel-title"
             hidden
           >
 
@@ -1051,7 +1065,7 @@
 
               <div>
                 <div class="panel-kicker">NAGANO GUIDE</div>
-                <h2>ナガセン関連の使い方</h2>
+                <h2 id="nagano-help-panel-title">ナガセン関連の使い方</h2>
               </div>
 
               <button
@@ -1331,6 +1345,8 @@
   <!-- MarkerCluster -->
   <script
     src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
+    integrity="sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr"
+    crossorigin="anonymous"
   ></script>
 
 

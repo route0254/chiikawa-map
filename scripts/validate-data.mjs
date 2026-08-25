@@ -180,6 +180,11 @@ const evidenceStatuses = new Set([
   "inferred"
 ]);
 
+const confirmedOpenEndedLimitedSpotIds = new Set([
+  "ramen-buta-shibuya",
+  "ramen-buta-shinsaibashi"
+]);
+
 const dateFields = [
   "startDate",
   "endDate",
@@ -187,6 +192,18 @@ const dateFields = [
   "entryInfoCheckedAt",
   "evidenceCheckedAt"
 ];
+
+const freshnessRules = {
+  hoursCheckedAt: 90,
+  entryInfoCheckedAt: 90,
+  evidenceCheckedAt: 365
+};
+
+const millisecondsPerDay =
+  24 * 60 * 60 * 1000;
+
+const today =
+  new Date().toISOString().slice(0, 10);
 
 const urlFields = [
   "hoursInfoUrl",
@@ -204,6 +221,7 @@ const numericFields = new Set([
 
 const errors = [];
 const warnings = [];
+const notices = [];
 const seenIds = new Map();
 const counts = new Map();
 
@@ -222,6 +240,10 @@ function addError(location, message) {
 
 function addWarning(location, message) {
   warnings.push(`${location}: ${message}`);
+}
+
+function addNotice(location, message) {
+  notices.push(`${location}: ${message}`);
 }
 
 function isNonEmptyString(value) {
@@ -247,6 +269,16 @@ function isValidDateString(value) {
     date.getUTCFullYear() === year &&
     date.getUTCMonth() === month - 1 &&
     date.getUTCDate() === day
+  );
+}
+
+function getDaysSince(dateString) {
+  return Math.floor(
+    (
+      Date.parse(`${today}T00:00:00Z`) -
+      Date.parse(`${dateString}T00:00:00Z`)
+    ) /
+    millisecondsPerDay
   );
 }
 
@@ -453,6 +485,28 @@ function validateDates(spot, location) {
     }
   }
 
+  for (const [field, maxAgeDays] of Object.entries(freshnessRules)) {
+    const value = spot[field];
+
+    if (!isValidDateString(value ?? "")) {
+      continue;
+    }
+
+    const ageDays = getDaysSince(value);
+
+    if (ageDays < 0) {
+      addError(
+        location,
+        `${field} が未来の日付になっています`
+      );
+    } else if (ageDays > maxAgeDays) {
+      addWarning(
+        location,
+        `${field} の確認から ${ageDays}日経過しています。${maxAgeDays}日以内を目安に再確認してください`
+      );
+    }
+  }
+
   if (
     isValidDateString(spot.startDate ?? "") &&
     isValidDateString(spot.endDate ?? "") &&
@@ -478,10 +532,19 @@ function validateDates(spot, location) {
     spot.periodType === "limited" &&
     !isNonEmptyString(spot.endDate)
   ) {
-    addWarning(
-      location,
-      "期間限定スポットですが endDate がありません。終了済み自動非表示の対象になりません"
-    );
+    if (
+      confirmedOpenEndedLimitedSpotIds.has(spot.id)
+    ) {
+      addNotice(
+        location,
+        "公式情報で終了日未定と確認済みです。終了日発表時に endDate を更新してください"
+      );
+    } else {
+      addWarning(
+        location,
+        "期間限定スポットですが endDate がありません。終了済み自動非表示の対象になりません"
+      );
+    }
   }
 }
 
@@ -614,12 +677,45 @@ for (const dataset of datasets) {
 console.log(`- 合計: ${total}件`);
 console.log(`- エラー: ${errors.length}件`);
 console.log(`- 警告: ${warnings.length}件`);
+console.log(`- 確認情報: ${notices.length}件`);
+
+if (notices.length > 0) {
+  console.log("\n確認情報:");
+
+  for (const notice of notices) {
+    console.log(`- ${notice}`);
+  }
+}
 
 if (warnings.length > 0) {
   console.log("\n警告:");
 
   for (const warning of warnings) {
     console.log(`- ${warning}`);
+  }
+}
+
+if (process.env.GITHUB_ACTIONS === "true") {
+  for (const warning of warnings) {
+    const escapedWarning = warning
+      .replaceAll("%", "%25")
+      .replaceAll("\r", "%0D")
+      .replaceAll("\n", "%0A");
+
+    console.log(
+      `::warning title=スポットデータ要確認::${escapedWarning}`
+    );
+  }
+
+  for (const error of errors) {
+    const escapedError = error
+      .replaceAll("%", "%25")
+      .replaceAll("\r", "%0D")
+      .replaceAll("\n", "%0A");
+
+    console.log(
+      `::error title=スポットデータ検証エラー::${escapedError}`
+    );
   }
 }
 

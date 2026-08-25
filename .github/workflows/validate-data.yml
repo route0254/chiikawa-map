@@ -13,6 +13,10 @@ on:
       - "data/*.json"
       - "scripts/validate-data.mjs"
       - ".github/workflows/validate-data.yml"
+  schedule:
+    - cron: "23 6 * * 1"
+      timezone: "Asia/Tokyo"
+  workflow_dispatch:
 
 permissions:
   contents: read

@@ -47,6 +47,7 @@ git push origin main
 
 GitHub Pagesは `main` ブランチのルートから公開されます。`main` へのプッシュ後は自動的に公開処理が始まるため、ローカル検証を省略しないでください。
 GitHub ActionsでもJSON検証を行いますが、現在のPages設定では公開を停止するゲートではなく、GitHub上で異常を検知するための二重チェックです。
+毎週月曜日6時23分（日本時間）の定期検証と、Actions画面からの手動実行にも対応しています。
 
 ### 互換性を維持するルール
 
@@ -310,6 +311,13 @@ GitHub ActionsでもJSON検証を行いますが、現在のPages設定では公
 検証スクリプトは、JSON構文、フィールド構造、必須項目、ID重複、座標、日付、列挙値、URLを確認します。
 エラーが1件でもある場合は終了コード1になり、修正するまでプッシュしません。
 期間限定スポットの終了日不足やHTTP URLは警告として表示します。警告は内容を確認し、根拠なしに日付やURLを推測して埋めないでください。
+
+`hoursCheckedAt` と `entryInfoCheckedAt` は90日、`evidenceCheckedAt` は365日を超えると再確認の警告を表示します。
+GitHub Actions上では警告をアノテーションとして表示し、データ更新が必要な箇所を見つけやすくします。
+
+公式情報に「期間限定・終了日未定」と明記されている場合は、`periodType` を `limited`、`endDate` を `null` のまま維持できます。
+確認済みスポットは `scripts/validate-data.mjs` の `confirmedOpenEndedLimitedSpotIds` にIDを登録し、警告ではなく確認情報として表示します。
+終了日が発表された時点で `endDate` を更新し、許容リストからIDを削除してください。
 
 ### 1. 公式関連
 `data/official-spots.json` を更新します。

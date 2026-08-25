@@ -418,7 +418,8 @@ button {
 }
 
 .search-suggestion:hover,
-.search-suggestion:focus-visible {
+.search-suggestion:focus-visible,
+.search-suggestion.is-keyboard-active {
   background: var(--accent-soft);
   outline: none;
 }

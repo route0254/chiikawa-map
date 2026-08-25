@@ -226,6 +226,10 @@ const spotSearchSuggestions =
   );
 
 
+let activeSearchSuggestionIndex =
+  -1;
+
+
 const prefectureFilter =
   document.getElementById(
     "prefecture-filter"
@@ -1247,6 +1251,84 @@ function hideSearchSuggestions() {
     true;
 
   spotSearchSuggestions.replaceChildren();
+
+  activeSearchSuggestionIndex =
+    -1;
+
+  spotSearch?.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  spotSearch?.removeAttribute(
+    "aria-activedescendant"
+  );
+}
+
+
+function getSearchSuggestionButtons() {
+  return Array.from(
+    spotSearchSuggestions
+      ?.querySelectorAll(
+        ".search-suggestion"
+      ) ||
+      []
+  );
+}
+
+
+function setActiveSearchSuggestion(
+  index
+) {
+
+  const buttons =
+    getSearchSuggestionButtons();
+
+  if (
+    !spotSearch ||
+    buttons.length === 0
+  ) {
+    return;
+  }
+
+  const normalizedIndex =
+    (
+      index +
+      buttons.length
+    ) %
+    buttons.length;
+
+  activeSearchSuggestionIndex =
+    normalizedIndex;
+
+  buttons.forEach(
+    (button, buttonIndex) => {
+      const active =
+        buttonIndex === normalizedIndex;
+
+      button.classList.toggle(
+        "is-keyboard-active",
+        active
+      );
+
+      button.setAttribute(
+        "aria-selected",
+        String(active)
+      );
+    }
+  );
+
+  const activeButton =
+    buttons[normalizedIndex];
+
+  spotSearch.setAttribute(
+    "aria-activedescendant",
+    activeButton.id
+  );
+
+  activeButton.scrollIntoView({
+    block: "nearest"
+  });
 }
 
 
@@ -1316,6 +1398,13 @@ function renderSearchSuggestions() {
     normalizeSearchText(
       spotSearch.value
     );
+
+  activeSearchSuggestionIndex =
+    -1;
+
+  spotSearch.removeAttribute(
+    "aria-activedescendant"
+  );
 
   if (
     !query
@@ -1408,11 +1497,16 @@ function renderSearchSuggestions() {
     spotSearchSuggestions.hidden =
       false;
 
+    spotSearch.setAttribute(
+      "aria-expanded",
+      "true"
+    );
+
     return;
   }
 
   matches.forEach(
-    record => {
+    (record, index) => {
 
       const button =
         document.createElement(
@@ -1425,9 +1519,17 @@ function renderSearchSuggestions() {
       button.className =
         "search-suggestion";
 
+      button.id =
+        `spot-search-suggestion-${index}`;
+
       button.setAttribute(
         "role",
         "option"
+      );
+
+      button.setAttribute(
+        "aria-selected",
+        "false"
       );
 
       const name =
@@ -1484,6 +1586,11 @@ function renderSearchSuggestions() {
 
   spotSearchSuggestions.hidden =
     false;
+
+  spotSearch.setAttribute(
+    "aria-expanded",
+    "true"
+  );
 }
 
 
@@ -5454,6 +5561,13 @@ function setFilterPanelOpen(
   }
 
 
+  const restoreFocus =
+    !open &&
+    filterPanel.contains(
+      document.activeElement
+    );
+
+
   filterPanel.hidden =
     !open;
 
@@ -5468,6 +5582,13 @@ function setFilterPanelOpen(
     "is-active",
     open
   );
+
+
+  if (open) {
+    filterClose?.focus();
+  } else if (restoreFocus) {
+    filterToggle.focus();
+  }
 }
 
 
@@ -5489,6 +5610,12 @@ function setOfficialHelpPanelOpen(
     setNaganoHelpPanelOpen(false);
   }
 
+  const restoreFocus =
+    !open &&
+    officialHelpPanel.contains(
+      document.activeElement
+    );
+
   officialHelpPanel.hidden =
     !open;
 
@@ -5501,6 +5628,12 @@ function setOfficialHelpPanelOpen(
     "is-active",
     open
   );
+
+  if (open) {
+    officialHelpClose?.focus();
+  } else if (restoreFocus) {
+    officialHelpToggle.focus();
+  }
 }
 
 
@@ -5522,6 +5655,12 @@ function setNaganoHelpPanelOpen(
     setOfficialHelpPanelOpen(false);
   }
 
+  const restoreFocus =
+    !open &&
+    naganoHelpPanel.contains(
+      document.activeElement
+    );
+
   naganoHelpPanel.hidden =
     !open;
 
@@ -5534,6 +5673,12 @@ function setNaganoHelpPanelOpen(
     "is-active",
     open
   );
+
+  if (open) {
+    naganoHelpClose?.focus();
+  } else if (restoreFocus) {
+    naganoHelpToggle.focus();
+  }
 }
 
 
@@ -5923,21 +6068,61 @@ spotSearch
       }
 
       if (
+        event.key === "ArrowDown" ||
+        event.key === "ArrowUp"
+      ) {
+        const buttons =
+          getSearchSuggestionButtons();
+
+        if (
+          spotSearchSuggestions?.hidden ||
+          buttons.length === 0
+        ) {
+          return;
+        }
+
+        event.preventDefault();
+
+        const direction =
+          event.key === "ArrowDown"
+            ? 1
+            : -1;
+
+        const nextIndex =
+          activeSearchSuggestionIndex === -1
+            ? (
+                direction === 1
+                  ? 0
+                  : buttons.length - 1
+              )
+            : activeSearchSuggestionIndex + direction;
+
+        setActiveSearchSuggestion(
+          nextIndex
+        );
+
+        return;
+      }
+
+      if (
         event.key ===
         "Enter"
       ) {
 
-        const firstSuggestion =
-          spotSearchSuggestions
-            ?.querySelector(
-              ".search-suggestion"
-            );
+        const suggestions =
+          getSearchSuggestionButtons();
+
+        const selectedSuggestion =
+          suggestions[
+            activeSearchSuggestionIndex
+          ] ||
+          suggestions[0];
 
         if (
-          firstSuggestion
+          selectedSuggestion
         ) {
           event.preventDefault();
-          firstSuggestion.click();
+          selectedSuggestion.click();
         }
       }
     }
