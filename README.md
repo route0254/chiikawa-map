@@ -2,6 +2,8 @@
 
 GitHub Pages向けの静的Webサイトです。
 
+公開URL: <https://chiikatsu-map.com/>
+
 ## ファイル構成
 
 - `index.html` : 画面構造
@@ -11,6 +13,7 @@ GitHub Pages向けの静的Webサイトです。
 - `data/nagano-spots.json` : ナガノ先生関連スポット
 - `favicon.svg` : ファビコン
 - `assets/ogp.png` : X / SNS共有用OGP画像
+- `CNAME` : GitHub Pagesの独自ドメイン設定
 
 ## 今回の版
 
@@ -300,13 +303,13 @@ const DATA_AS_OF = "2026-08-24";
 ## テストURL
 
 通常:
-`https://route0254.github.io/chiikawa-map/`
+`https://chiikatsu-map.com/`
 
 OSM障害テスト:
-`https://route0254.github.io/chiikawa-map/?tileTest=osm-fail`
+`https://chiikatsu-map.com/?tileTest=osm-fail`
 
 全背景地図障害テスト:
-`https://route0254.github.io/chiikawa-map/?tileTest=all-fail`
+`https://chiikatsu-map.com/?tileTest=all-fail`
 
 ## 注意
 
