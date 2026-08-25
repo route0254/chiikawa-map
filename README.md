@@ -14,6 +14,48 @@ GitHub Pages向けの静的Webサイトです。
 - `favicon.svg` : ファビコン
 - `assets/ogp.png` : X / SNS共有用OGP画像
 - `CNAME` : GitHub Pagesの独自ドメイン設定
+- `scripts/validate-data.mjs` : スポットJSONの検証
+- `.github/workflows/validate-data.yml` : JSON検証のGitHub Actions
+- `robots.txt` : 検索エンジン向けクロール設定
+- `sitemap.xml` : 独自ドメインのサイトマップ
+- `404.html` : 存在しないURL向け案内ページ
+
+## ローカルGit運用
+
+作業開始時にGitHubの最新版を取得します。
+
+```bash
+git pull --ff-only origin main
+```
+
+データやコードを変更したら、コミット前にJSON検証とローカル表示確認を行います。
+
+```bash
+node scripts/validate-data.mjs
+python -m http.server 8000
+```
+
+ブラウザで `http://localhost:8000/` を開き、通常表示・検索・一覧・スポット詳細を確認します。
+表示確認後、変更したファイルだけを指定してコミット・プッシュします。
+
+```bash
+git status
+git add <変更したファイル>
+git commit -m "変更内容の要約"
+git push origin main
+```
+
+GitHub Pagesは `main` ブランチのルートから公開されます。`main` へのプッシュ後は自動的に公開処理が始まるため、ローカル検証を省略しないでください。
+GitHub ActionsでもJSON検証を行いますが、現在のPages設定では公開を停止するゲートではなく、GitHub上で異常を検知するための二重チェックです。
+
+### 互換性を維持するルール
+
+- 既存スポットの `id` は変更・再利用しない（`?spot=<id>` 形式の共有URLとの互換性を維持するため）
+- `chiikawa-map-favorites-v1` と `chiikawa-map-visited-v1` のキー名・保存形式を変更しない
+- 既存の共有URLパラメータ名や意味を変更しない
+- JSONの既存フィールドを削除・改名しない
+- `CNAME` の内容 `chiikatsu-map.com` を維持する
+- 互換性を壊す変更が必要な場合は、移行処理を用意した別作業として扱う
 
 ## 今回の版
 
@@ -256,6 +298,19 @@ GitHub Pages向けの静的Webサイトです。
 
 ## データ更新時
 
+### 更新手順
+
+1. `git pull --ff-only origin main` で最新版を取得
+2. 対象のJSONを編集
+3. 情報を確認した日付と、必要に応じて `app.js` の `DATA_AS_OF` を更新
+4. `node scripts/validate-data.mjs` を実行
+5. ローカルサーバーで表示・検索・絞り込み・詳細を確認
+6. 変更したファイルだけをコミットして `main` へプッシュ
+
+検証スクリプトは、JSON構文、フィールド構造、必須項目、ID重複、座標、日付、列挙値、URLを確認します。
+エラーが1件でもある場合は終了コード1になり、修正するまでプッシュしません。
+期間限定スポットの終了日不足やHTTP URLは警告として表示します。警告は内容を確認し、根拠なしに日付やURLを推測して埋めないでください。
+
 ### 1. 公式関連
 `data/official-spots.json` を更新します。
 
@@ -299,6 +354,7 @@ const DATA_AS_OF = "2026-08-24";
 
 ### 4. 新しいシリーズ・施設を追加した場合
 `app.js` の `BRAND_LABELS` に表示名を追加すると、「シリーズ・施設」フィルターへ自動表示されます。
+あわせて `scripts/validate-data.mjs` の `officialBrands` に同じキーを追加し、JSON検証で許可してください。
 
 ## テストURL
 
