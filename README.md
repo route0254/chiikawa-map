@@ -136,6 +136,10 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - スポット詳細の「地図で開く」を、共有ボタンと同じ操作エリアにあるボタン表示へ変更
 - スポット詳細から対象情報を入力済みのGitHub Issueフォームへ移動できる報告リンクを追加
 - PlaywrightスモークテストとGitHub Actionsを追加
+- 適用中の検索・絞り込み条件を画面上に表示し、1操作ですべて解除できるよう改善
+- 検索・絞り込み結果が0件の際に、全件表示へ戻す案内と解除ボタンを表示
+- 公式情報URLの404・410、アクセス制限、HTTPリンクを週次確認する外部リンク検査を追加
+- GitHub ActionsをNode.js 24ランタイム対応版へ更新
 
 ### 2026-08-24 初期版
 
@@ -348,8 +352,9 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 2. 対象のJSONを編集
 3. 情報を確認した日付と、必要に応じて `app.js` の `DATA_AS_OF` を更新
 4. `pnpm run check` を実行
-5. `pnpm run test:smoke` で表示・検索・絞り込み・詳細を確認
-6. 変更したファイルだけをコミットして `main` へプッシュ
+5. URLを変更した場合は `pnpm run check:links` を実行
+6. `pnpm run test:smoke` で表示・検索・絞り込み・詳細を確認
+7. 変更したファイルだけをコミットして `main` へプッシュ
 
 検証スクリプトは、JSON構文、フィールド構造、必須項目、ID重複、座標、日付、列挙値、URLを確認します。
 エラーが1件でもある場合は終了コード1になり、修正するまでプッシュしません。
@@ -357,6 +362,12 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 
 `hoursCheckedAt` と `entryInfoCheckedAt` は90日、`evidenceCheckedAt` は365日を超えると再確認の警告を表示します。
 GitHub Actions上では警告をアノテーションとして表示し、データ更新が必要な箇所を見つけやすくします。
+終了日まで14日以内の期間限定スポットも確認情報として表示します。
+
+`pnpm run check:links` は営業時間・入店方法・予約・根拠・情報元URLへ実際に接続して確認します。
+404・410は破損リンクとして終了コード1、403・429・タイムアウトなどはBot制限や一時障害の可能性があるため要確認として扱います。
+GoogleマップURLは通常の検査対象から除外しており、必要な場合だけ `node scripts/check-links.mjs --include-map` で確認できます。
+同じ検査は `.github/workflows/check-links.yml` により毎週自動実行され、公開サイトのデプロイ処理とは独立しています。
 
 公式情報に「期間限定・終了日未定」と明記されている場合は、`periodType` を `limited`、`endDate` を `null` のまま維持できます。
 確認済みスポットは `scripts/validate-data.mjs` の `confirmedOpenEndedLimitedSpotIds` にIDを登録し、警告ではなく確認情報として表示します。

@@ -68,7 +68,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260826-2"
+    href="style.css?v=20260826-3"
   >
 </head>
 
@@ -128,7 +128,7 @@
         <strong>
           掲載情報は
           <span id="data-as-of">
-            2026年8月24日
+            2026年8月26日
           </span>
           時点です。
         </strong>
@@ -404,6 +404,30 @@
 
 
       <div
+        id="active-filter-summary"
+        class="active-filter-summary"
+        aria-label="適用中の検索・絞り込み条件"
+        hidden
+      >
+        <div class="active-filter-summary-content">
+          <span class="active-filter-summary-label">適用中</span>
+          <ul
+            id="active-filter-list"
+            class="active-filter-list"
+          ></ul>
+        </div>
+
+        <button
+          type="button"
+          id="active-filter-reset"
+          class="active-filter-reset"
+        >
+          すべて表示に戻す
+        </button>
+      </div>
+
+
+      <div
         id="app-status"
         class="app-status"
         role="status"
@@ -419,6 +443,28 @@
           hidden
         >
           再読み込み
+        </button>
+      </div>
+
+
+      <div
+        id="no-results"
+        class="no-results"
+        role="status"
+        aria-live="polite"
+        hidden
+      >
+        <span>
+          <strong>条件に合うスポットがありません。</strong>
+          条件を解除すると、すべてのスポットを再表示できます。
+        </span>
+
+        <button
+          type="button"
+          id="no-results-reset"
+          class="no-results-reset"
+        >
+          条件をすべて解除
         </button>
       </div>
 
@@ -1480,7 +1526,7 @@
 
 
   <!-- App -->
-  <script src="app.js?v=20260826-2"></script>
+  <script src="app.js?v=20260826-3"></script>
 
 </body>
 

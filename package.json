@@ -3,7 +3,8 @@
   "private": true,
   "packageManager": "pnpm@11.19.0",
   "scripts": {
-    "check": "node --check app.js && node scripts/validate-data.mjs",
+    "check": "node --check app.js && node --check scripts/check-links.mjs && node scripts/validate-data.mjs",
+    "check:links": "node scripts/check-links.mjs",
     "test:smoke": "playwright test"
   },
   "devDependencies": {

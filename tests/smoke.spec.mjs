@@ -684,6 +684,80 @@ test(
 
 
 test(
+  "適用中の条件を表示し、ゼロ件から全件表示へ戻せる",
+  async ({ page }) => {
+    await page.goto("/");
+
+    const visibleCount =
+      await waitForSpots(page);
+
+    const search =
+      page.locator(
+        "#spot-search"
+      );
+
+    await search.fill(
+      "存在しないスポット名12345"
+    );
+
+    await expect(
+      page.locator(
+        "#result-count"
+      )
+    ).toHaveText("0件表示");
+
+    await expect(
+      page.locator(
+        "#active-filter-summary"
+      )
+    ).toBeVisible();
+
+    await expect(
+      page.locator(
+        "#active-filter-list"
+      )
+    ).toContainText(
+      "存在しないスポット名12345"
+    );
+
+    await expect(
+      page.locator(
+        "#no-results"
+      )
+    ).toBeVisible();
+
+    await page.locator(
+      "#no-results-reset"
+    ).click();
+
+    await expect(search).toHaveValue("");
+    await expect(search).toBeFocused();
+
+    await expect(
+      page.locator(
+        "#result-count"
+      )
+    ).toHaveText(
+      visibleCount +
+      "件表示"
+    );
+
+    await expect(
+      page.locator(
+        "#active-filter-summary"
+      )
+    ).toBeHidden();
+
+    await expect(
+      page.locator(
+        "#no-results"
+      )
+    ).toBeHidden();
+  }
+);
+
+
+test(
   "各ダイアログのフォーカスを保ち、保存データを専用パネルで操作する",
   async ({ page }) => {
     await page.goto("/");

@@ -199,6 +199,8 @@ const freshnessRules = {
   evidenceCheckedAt: 365
 };
 
+const endingSoonNoticeDays = 14;
+
 const millisecondsPerDay =
   24 * 60 * 60 * 1000;
 
@@ -546,6 +548,25 @@ function validateDates(spot, location) {
       );
     }
   }
+
+  if (
+    spot.periodType === "limited" &&
+    isValidDateString(spot.endDate ?? "")
+  ) {
+    const daysUntilEnd = -getDaysSince(spot.endDate);
+
+    if (
+      daysUntilEnd >= 0 &&
+      daysUntilEnd <= endingSoonNoticeDays
+    ) {
+      addNotice(
+        location,
+        daysUntilEnd === 0
+          ? "期間限定スポットの終了日当日です"
+          : `期間限定スポットの終了まで残り${daysUntilEnd}日です`
+      );
+    }
+  }
 }
 
 function validateUrls(spot, location) {
@@ -696,6 +717,17 @@ if (warnings.length > 0) {
 }
 
 if (process.env.GITHUB_ACTIONS === "true") {
+  for (const notice of notices) {
+    const escapedNotice = notice
+      .replaceAll("%", "%25")
+      .replaceAll("\r", "%0D")
+      .replaceAll("\n", "%0A");
+
+    console.log(
+      `::notice title=スポットデータ確認情報::${escapedNotice}`
+    );
+  }
+
   for (const warning of warnings) {
     const escapedWarning = warning
       .replaceAll("%", "%25")

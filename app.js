@@ -8,7 +8,7 @@
 // ============================================================
 
 const DATA_AS_OF =
-  "2026-08-24";
+  "2026-08-26";
 
 
 const INITIAL_POSITION = [
@@ -223,6 +223,36 @@ const dataRetryButton =
 const resultCount =
   document.getElementById(
     "result-count"
+  );
+
+
+const activeFilterSummary =
+  document.getElementById(
+    "active-filter-summary"
+  );
+
+
+const activeFilterList =
+  document.getElementById(
+    "active-filter-list"
+  );
+
+
+const activeFilterReset =
+  document.getElementById(
+    "active-filter-reset"
+  );
+
+
+const noResults =
+  document.getElementById(
+    "no-results"
+  );
+
+
+const noResultsReset =
+  document.getElementById(
+    "no-results-reset"
   );
 
 
@@ -6221,6 +6251,175 @@ function recordMatchesFilters(
 }
 
 
+function getFilterOptionLabel(
+  input
+) {
+
+  return (
+    input
+      .closest("label")
+      ?.querySelector("span")
+      ?.textContent
+      ?.replace(/\s+/g, " ")
+      .trim() ||
+    input.value
+  );
+}
+
+
+function describeCheckedFilterGroup(
+  name,
+  groupLabel
+) {
+
+  const inputs =
+    Array.from(
+      document.querySelectorAll(
+        `input[name="${name}"]`
+      )
+    );
+
+  if (
+    inputs.length === 0 ||
+    inputs.every(
+      input => input.checked
+    )
+  ) {
+    return null;
+  }
+
+  const selectedLabels =
+    inputs
+      .filter(
+        input => input.checked
+      )
+      .map(
+        getFilterOptionLabel
+      );
+
+  return (
+    groupLabel +
+    ": " +
+    (
+      selectedLabels.length > 0
+        ? selectedLabels.join("・")
+        : "選択なし"
+    )
+  );
+}
+
+
+function getActiveFilterDescriptions() {
+
+  const descriptions = [];
+
+  const rawSearchQuery =
+    spotSearch?.value.trim() ||
+    "";
+
+  if (rawSearchQuery) {
+    descriptions.push(
+      `検索「${rawSearchQuery}」`
+    );
+  }
+
+  if (prefectureFilter?.value) {
+    descriptions.push(
+      "都道府県: " +
+      prefectureFilter.value
+    );
+  }
+
+  if (favoriteOnly) {
+    descriptions.push(
+      "行きたいのみ"
+    );
+  }
+
+  if (visitedOnly) {
+    descriptions.push(
+      "行った！のみ"
+    );
+  }
+
+  if (soonEndingFilter?.checked) {
+    descriptions.push(
+      "まもなく終了"
+    );
+  }
+
+  const filterGroups = [
+    ["filter-category", "カテゴリ"],
+    ["filter-place", "場所"],
+    ["filter-brand", "シリーズ・施設"],
+    ["filter-official-relation", "公式関係"],
+    ["filter-nagano-relation", "ナガセン関係"],
+    ["filter-nagano-evidence", "根拠"],
+    ["filter-period", "期間"],
+    ["filter-reservation", "入店"]
+  ];
+
+  filterGroups.forEach(
+    ([name, label]) => {
+
+      const description =
+        describeCheckedFilterGroup(
+          name,
+          label
+        );
+
+      if (description) {
+        descriptions.push(
+          description
+        );
+      }
+    }
+  );
+
+  return descriptions;
+}
+
+
+function renderFilterFeedback(
+  visibleCount
+) {
+
+  const descriptions =
+    getActiveFilterDescriptions();
+
+  if (
+    activeFilterSummary &&
+    activeFilterList
+  ) {
+    activeFilterList.replaceChildren(
+      ...descriptions.map(
+        description => {
+
+          const item =
+            document.createElement(
+              "li"
+            );
+
+          item.textContent =
+            description;
+
+          return item;
+        }
+      )
+    );
+
+    activeFilterSummary.hidden =
+      descriptions.length === 0;
+  }
+
+  if (noResults) {
+    noResults.hidden =
+      visibleCount !== 0 ||
+      spotRecords.length === 0;
+  }
+}
+
+
 // ============================================================
 // フィルター反映
 // ============================================================
@@ -6312,6 +6511,11 @@ function updateSpotFilters() {
       visibleCount +
       "件表示";
   }
+
+
+  renderFilterFeedback(
+    visibleCount
+  );
 
 
   lastFilteredRecords =
@@ -7366,6 +7570,23 @@ filterReset
   ?.addEventListener(
     "click",
     resetFilters
+  );
+
+
+activeFilterReset
+  ?.addEventListener(
+    "click",
+    resetFilters
+  );
+
+
+noResultsReset
+  ?.addEventListener(
+    "click",
+    () => {
+      resetFilters();
+      spotSearch?.focus();
+    }
   );
 
 
