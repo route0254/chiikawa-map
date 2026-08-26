@@ -241,8 +241,22 @@ const endingSoonNoticeDays = 14;
 const millisecondsPerDay =
   24 * 60 * 60 * 1000;
 
+const japanDateParts = Object.fromEntries(
+  new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  })
+    .formatToParts(new Date())
+    .filter(part => part.type !== "literal")
+    .map(part => [part.type, part.value])
+);
+
 const today =
-  new Date().toISOString().slice(0, 10);
+  `${japanDateParts.year}-` +
+  `${japanDateParts.month}-` +
+  japanDateParts.day;
 
 const urlFields = [
   "hoursInfoUrl",
