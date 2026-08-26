@@ -524,14 +524,49 @@ test(
 
     await page.waitForTimeout(700);
 
-    const duplicateIds = [
-      "chiikawaland-nagoya",
-      "magical-nagoya",
-      "ramen-buta-nagoya",
-      "chiikawa-yaki-nagoya",
-      "pocket-popup-nagoya",
-      "movie-cafe-nagoya"
+    const duplicateSpots = [
+      {
+        id:
+          "chiikawaland-nagoya",
+        name:
+          "ちいかわらんど 名古屋パルコ店"
+      },
+      {
+        id:
+          "magical-nagoya",
+        name:
+          "まじかるちいかわストア 名古屋パルコ店"
+      },
+      {
+        id:
+          "ramen-buta-nagoya",
+        name:
+          "ちいかわラーメン 豚 名古屋PARCO"
+      },
+      {
+        id:
+          "chiikawa-yaki-nagoya",
+        name:
+          "ちいかわ焼き 名古屋PARCO店"
+      },
+      {
+        id:
+          "pocket-popup-nagoya",
+        name:
+          "ちいかわぽけっと POP UP STORE 名古屋"
+      },
+      {
+        id:
+          "movie-cafe-nagoya",
+        name:
+          "映画ちいかわ 人魚の島のひみつ Collaboration CAFE 名古屋"
+      }
     ];
+
+    const duplicateIds =
+      duplicateSpots.map(
+        spot => spot.id
+      );
 
     const markerPositions = [];
 
@@ -565,6 +600,45 @@ test(
     ).toBe(
       duplicateIds.length
     );
+
+    for (
+      const spot of
+      duplicateSpots
+    ) {
+      const marker =
+        page.locator(
+          '.spot-marker[data-spot-id="' +
+          spot.id +
+          '"]'
+        );
+
+      const label =
+        page.locator(
+          '.spot-name-label-duplicate[data-spot-id="' +
+          spot.id +
+          '"]'
+        );
+
+      await label.click();
+
+      await expect(
+        page.locator(
+          "#spot-detail-title"
+        )
+      ).toHaveText(
+        spot.name
+      );
+
+      await marker.click();
+
+      await expect(
+        page.locator(
+          "#spot-detail-title"
+        )
+      ).toHaveText(
+        spot.name
+      );
+    }
 
     const labels =
       await page.locator(

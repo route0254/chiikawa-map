@@ -5769,12 +5769,82 @@ function createSpotRecord(
   marker.on(
     "tooltipopen",
     () => {
-      marker.getTooltip()
-        ?.getElement()
+      const tooltipElement =
+        marker.getTooltip()
+          ?.getElement();
+
+      tooltipElement
         ?.setAttribute(
           "data-spot-id",
           spot.id
         );
+
+      if (
+        !tooltipLayout ||
+        !tooltipElement ||
+        tooltipElement.dataset
+          .spotActionBound ===
+          "true"
+      ) {
+        return;
+      }
+
+      tooltipElement.dataset
+        .spotActionBound =
+        "true";
+
+      tooltipElement.setAttribute(
+        "role",
+        "button"
+      );
+
+      tooltipElement.setAttribute(
+        "tabindex",
+        "0"
+      );
+
+      tooltipElement.setAttribute(
+        "aria-label",
+        spot.name +
+        "の詳細を開く"
+      );
+
+      const openFromTooltip =
+        event => {
+          event.preventDefault();
+          event.stopPropagation();
+
+          showSpotDetail(
+            record,
+            {
+              scrollOnMobile:
+                true,
+              returnFocusTo:
+                tooltipElement
+            }
+          );
+        };
+
+      tooltipElement.addEventListener(
+        "click",
+        openFromTooltip
+      );
+
+      tooltipElement.addEventListener(
+        "keydown",
+        event => {
+          if (
+            event.key ===
+              "Enter" ||
+            event.key ===
+              " "
+          ) {
+            openFromTooltip(
+              event
+            );
+          }
+        }
+      );
     }
   );
 

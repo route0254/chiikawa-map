@@ -1471,6 +1471,69 @@ button {
 }
 
 
+.spot-name-label-duplicate {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+
+.spot-name-label-duplicate:focus-visible {
+  outline: 3px solid rgba(100, 87, 206, 0.35);
+  outline-offset: 2px;
+}
+
+
+.spot-name-label-duplicate::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+
+  background: rgba(124, 109, 145, 0.68);
+
+  pointer-events: none;
+}
+
+
+.spot-name-label-right::after,
+.spot-name-label-left::after {
+  top: 50%;
+
+  width: 28px;
+  height: 1px;
+}
+
+
+.spot-name-label-right::after {
+  right: 100%;
+}
+
+
+.spot-name-label-left::after {
+  left: 100%;
+}
+
+
+.spot-name-label-top::after,
+.spot-name-label-bottom::after {
+  left: 50%;
+
+  width: 1px;
+  height: 68px;
+}
+
+
+.spot-name-label-top::after {
+  top: 100%;
+}
+
+
+.spot-name-label-bottom::after {
+  bottom: 100%;
+}
+
+
 .leaflet-marker-icon.is-selected .spot-pin {
   transform:
     rotate(-45deg)
