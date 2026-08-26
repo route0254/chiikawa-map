@@ -878,9 +878,10 @@ button {
 
 
 .saved-data-tools {
-  padding: 12px 15px;
+  padding: 13px;
 
-  border-top: 1px solid var(--line);
+  border: 1px solid var(--line);
+  border-radius: 12px;
 
   background: #fbfafb;
 }
@@ -909,6 +910,72 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+}
+
+
+.saved-data-panel {
+  width:
+    min(
+      440px,
+      calc(100% - 24px)
+    );
+}
+
+
+.saved-data-panel-body {
+  display: grid;
+  gap: 12px;
+
+  padding-bottom: 15px;
+}
+
+
+.saved-data-intro,
+.saved-data-note {
+  margin: 0;
+
+  color: #625a5d;
+
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+
+.saved-data-current {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+
+.saved-data-current span {
+  padding: 7px 10px;
+
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  color: #665d61;
+  background: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.saved-data-current strong {
+  color: #6457ce;
+}
+
+
+.saved-data-button {
+  min-height: 40px;
+  padding: 8px 12px;
+}
+
+
+.saved-data-note {
+  color: #887e82;
+  font-size: 10px;
 }
 
 
@@ -2298,20 +2365,46 @@ button {
   margin: 0;
 }
 
-.spot-share-button {
+.spot-share-button,
+.spot-detail-actions .spot-map-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   min-height: 36px;
+  margin: 0;
   padding: 7px 11px;
+
   border: 1px solid #dcd6fb;
   border-radius: 10px;
+
   color: #6257c5;
   background: #faf9ff;
+
   font-size: 10px;
   font-weight: 800;
+
+  text-decoration: none;
 }
 
-.spot-share-button:hover {
+.spot-share-button:hover,
+.spot-detail-actions .spot-map-button:hover {
   background: var(--accent-soft);
   border-color: #cbc3ff;
+
+  text-decoration: none;
+}
+
+.spot-detail-actions .spot-map-button {
+  color: #397396;
+  background: #f3faff;
+  border-color: #cde3ef;
+}
+
+.spot-detail-actions .spot-map-button:hover {
+  color: #2f6688;
+  background: #e9f6fd;
+  border-color: #acd3e6;
 }
 
 
@@ -2706,7 +2799,8 @@ button {
   .spot-list-open-button,
   .spot-favorite-button,
   .spot-visited-button,
-  .spot-share-button {
+  .spot-share-button,
+  .spot-detail-actions .spot-map-button {
     min-height: 44px;
   }
 }

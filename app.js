@@ -380,6 +380,24 @@ const filterReset =
   );
 
 
+const savedDataToggle =
+  document.getElementById(
+    "saved-data-toggle"
+  );
+
+
+const savedDataPanel =
+  document.getElementById(
+    "saved-data-panel"
+  );
+
+
+const savedDataClose =
+  document.getElementById(
+    "saved-data-close"
+  );
+
+
 const savedDataExport =
   document.getElementById(
     "saved-data-export"
@@ -395,6 +413,18 @@ const savedDataImport =
 const savedDataFile =
   document.getElementById(
     "saved-data-file"
+  );
+
+
+const savedDataFavoriteCount =
+  document.getElementById(
+    "saved-data-favorite-count"
+  );
+
+
+const savedDataVisitedCount =
+  document.getElementById(
+    "saved-data-visited-count"
   );
 
 
@@ -2826,7 +2856,8 @@ function isFavoriteSpot(
 function updateFavoriteCount() {
 
   if (
-    !favoriteCount
+    !favoriteCount &&
+    !savedDataFavoriteCount
   ) {
     return;
   }
@@ -2841,8 +2872,19 @@ function updateFavoriteCount() {
         ).length
       : favoriteSpotIds.size;
 
-  favoriteCount.textContent =
-    String(count);
+  if (
+    favoriteCount
+  ) {
+    favoriteCount.textContent =
+      String(count);
+  }
+
+  if (
+    savedDataFavoriteCount
+  ) {
+    savedDataFavoriteCount.textContent =
+      String(count);
+  }
 }
 
 
@@ -2928,7 +2970,10 @@ function isVisitedSpot(
 
 function updateVisitedCount() {
 
-  if (!visitedCount) {
+  if (
+    !visitedCount &&
+    !savedDataVisitedCount
+  ) {
     return;
   }
 
@@ -2940,8 +2985,19 @@ function updateVisitedCount() {
         ).length
       : visitedSpotIds.size;
 
-  visitedCount.textContent =
-    String(count);
+  if (
+    visitedCount
+  ) {
+    visitedCount.textContent =
+      String(count);
+  }
+
+  if (
+    savedDataVisitedCount
+  ) {
+    savedDataVisitedCount.textContent =
+      String(count);
+  }
 }
 
 
@@ -4698,6 +4754,37 @@ function createSpotDetail(
     }
   );
 
+  const safeMapUrl =
+    getSafeUrl(
+      spot.mapUrl
+    );
+
+  const mapButton =
+    safeMapUrl
+      ? document.createElement(
+          "a"
+        )
+      : null;
+
+  if (
+    mapButton
+  ) {
+    mapButton.className =
+      "spot-map-button";
+
+    mapButton.href =
+      safeMapUrl;
+
+    mapButton.target =
+      "_blank";
+
+    mapButton.rel =
+      "noopener noreferrer";
+
+    mapButton.textContent =
+      "🗺 地図で開く";
+  }
+
   const spotActions =
     createDiv(
       "spot-detail-actions"
@@ -4714,6 +4801,14 @@ function createSpotDetail(
   spotActions.appendChild(
     shareButton
   );
+
+  if (
+    mapButton
+  ) {
+    spotActions.appendChild(
+      mapButton
+    );
+  }
 
   container.appendChild(
     spotActions
@@ -5217,13 +5312,6 @@ function createSpotDetail(
 
   appendLink(
     container,
-    spot.mapUrl,
-    "地図で開く ↗"
-  );
-
-
-  appendLink(
-    container,
     getSpotReportUrl(spot),
     "掲載内容の修正・終了を報告する ↗",
     "spot-report-link"
@@ -5428,8 +5516,134 @@ function closeSpotDetail(
 // マーカー生成
 // ============================================================
 
-function createSpotRecord(
+function getSpotCoordinateKey(
   spot
+) {
+  return spot.lat.toFixed(6) +
+    "," +
+    spot.lng.toFixed(6);
+}
+
+
+function getDuplicateTooltipDirection(
+  index,
+  count
+) {
+
+  const angle =
+    Math.PI / 6 +
+    index *
+      Math.PI * 2 /
+      count;
+
+  const horizontal =
+    Math.cos(angle);
+
+  const vertical =
+    Math.sin(angle);
+
+  if (
+    Math.abs(horizontal) >=
+    Math.abs(vertical)
+  ) {
+    return horizontal >= 0
+      ? "right"
+      : "left";
+  }
+
+  return vertical >= 0
+    ? "bottom"
+    : "top";
+}
+
+
+function createDuplicateTooltipLayoutMap(
+  spots
+) {
+
+  const coordinateGroups =
+    new Map();
+
+  spots.forEach(
+    spot => {
+      if (
+        typeof spot.lat !==
+          "number" ||
+        typeof spot.lng !==
+          "number" ||
+        getSpotPeriodStatus(spot) ===
+          "ended"
+      ) {
+        return;
+      }
+
+      const coordinateKey =
+        getSpotCoordinateKey(spot);
+
+      const group =
+        coordinateGroups.get(
+          coordinateKey
+        ) || [];
+
+      group.push(spot);
+
+      coordinateGroups.set(
+        coordinateKey,
+        group
+      );
+    }
+  );
+
+  const layouts =
+    new Map();
+
+  coordinateGroups.forEach(
+    group => {
+      if (
+        group.length < 2
+      ) {
+        return;
+      }
+
+      group.forEach(
+        (spot, index) => {
+          const direction =
+            getDuplicateTooltipDirection(
+              index,
+              group.length
+            );
+
+          const offsets = {
+            top: [0, -80],
+            right: [40, 0],
+            bottom: [0, 80],
+            left: [-40, 0]
+          };
+
+          layouts.set(
+            spot.id,
+            {
+              direction,
+              offset:
+                offsets[direction],
+              groupSize:
+                group.length,
+              groupIndex:
+                index
+            }
+          );
+        }
+      );
+    }
+  );
+
+  return layouts;
+}
+
+
+function createSpotRecord(
+  spot,
+  tooltipLayout = null
 ) {
 
   if (
@@ -5514,19 +5728,53 @@ function createSpotRecord(
         true,
 
       direction:
+        tooltipLayout?.direction ||
         "top",
 
       offset:
+        tooltipLayout?.offset ||
         [0, -15],
 
       opacity:
         1,
 
       className:
-        "spot-name-label",
+        "spot-name-label" +
+        (
+          tooltipLayout
+            ? " spot-name-label-duplicate " +
+              "spot-name-label-" +
+              tooltipLayout.direction
+            : ""
+        ),
 
       interactive:
         false
+    }
+  );
+
+
+  marker.on(
+    "add",
+    () => {
+      marker.getElement()
+        ?.setAttribute(
+          "data-spot-id",
+          spot.id
+        );
+    }
+  );
+
+
+  marker.on(
+    "tooltipopen",
+    () => {
+      marker.getTooltip()
+        ?.getElement()
+        ?.setAttribute(
+          "data-spot-id",
+          spot.id
+        );
     }
   );
 
@@ -5992,6 +6240,7 @@ function getOpenDialogPanel() {
 
   return [
     filterPanel,
+    savedDataPanel,
     officialHelpPanel,
     naganoHelpPanel
   ].find(
@@ -6077,6 +6326,10 @@ function setFilterPanelOpen(
     open
   ) {
 
+    setSavedDataPanelOpen(
+      false
+    );
+
     setOfficialHelpPanelOpen(
       false
     );
@@ -6118,6 +6371,58 @@ function setFilterPanelOpen(
 }
 
 
+function setSavedDataPanelOpen(
+  open
+) {
+
+  if (
+    !savedDataPanel ||
+    !savedDataToggle
+  ) {
+    return;
+  }
+
+  if (
+    open
+  ) {
+    setFilterPanelOpen(false);
+    setOfficialHelpPanelOpen(false);
+    setNaganoHelpPanelOpen(false);
+    updateFavoriteCount();
+    updateVisitedCount();
+  }
+
+  const restoreFocus =
+    !open &&
+    savedDataPanel.contains(
+      document.activeElement
+    );
+
+  savedDataPanel.hidden =
+    !open;
+
+  savedDataToggle.setAttribute(
+    "aria-expanded",
+    String(open)
+  );
+
+  savedDataToggle.classList.toggle(
+    "is-active",
+    open
+  );
+
+  if (
+    open
+  ) {
+    savedDataClose?.focus();
+  } else if (
+    restoreFocus
+  ) {
+    savedDataToggle.focus();
+  }
+}
+
+
 function setOfficialHelpPanelOpen(
   open
 ) {
@@ -6133,6 +6438,7 @@ function setOfficialHelpPanelOpen(
     open
   ) {
     setFilterPanelOpen(false);
+    setSavedDataPanelOpen(false);
     setNaganoHelpPanelOpen(false);
   }
 
@@ -6178,6 +6484,7 @@ function setNaganoHelpPanelOpen(
     open
   ) {
     setFilterPanelOpen(false);
+    setSavedDataPanelOpen(false);
     setOfficialHelpPanelOpen(false);
   }
 
@@ -6387,6 +6694,11 @@ async function loadSpots() {
     let endedCount = 0;
     let skippedCount = 0;
 
+    const duplicateTooltipLayouts =
+      createDuplicateTooltipLayoutMap(
+        spots
+      );
+
     spots.forEach(
       spot => {
 
@@ -6406,7 +6718,12 @@ async function loadSpots() {
         }
 
         const record =
-          createSpotRecord(spot);
+          createSpotRecord(
+            spot,
+            duplicateTooltipLayouts.get(
+              spot.id
+            ) || null
+          );
 
         if (
           record
@@ -6940,6 +7257,28 @@ filterReset
   );
 
 
+savedDataToggle
+  ?.addEventListener(
+    "click",
+    () => {
+      setSavedDataPanelOpen(
+        savedDataPanel.hidden
+      );
+    }
+  );
+
+
+savedDataClose
+  ?.addEventListener(
+    "click",
+    () => {
+      setSavedDataPanelOpen(
+        false
+      );
+    }
+  );
+
+
 savedDataExport
   ?.addEventListener(
     "click",
@@ -7090,6 +7429,19 @@ document.addEventListener(
     ) {
 
       setOfficialHelpPanelOpen(
+        false
+      );
+
+      return;
+    }
+
+
+    if (
+      savedDataPanel &&
+      !savedDataPanel.hidden
+    ) {
+
+      setSavedDataPanelOpen(
         false
       );
 

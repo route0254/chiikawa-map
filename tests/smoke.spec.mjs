@@ -289,6 +289,39 @@ test(
       /github\.com\/route0254\/chiikawa-map\/issues\/new/
     );
 
+    await expect(
+      detailPanel.locator(
+        ".spot-map-button"
+      )
+    ).toBeVisible();
+
+    await expect(
+      detailPanel.locator(
+        ".spot-map-button"
+      )
+    ).toHaveAttribute(
+      "href",
+      /^https?:\/\//
+    );
+
+    await expect(
+      detailPanel.locator(
+        ".spot-map-button"
+      )
+    ).toHaveAttribute(
+      "target",
+      "_blank"
+    );
+
+    await expect(
+      detailPanel.locator(
+        ".spot-map-button"
+      )
+    ).toHaveAttribute(
+      "rel",
+      "noopener noreferrer"
+    );
+
     await page.locator(
       "#detail-close"
     ).click();
@@ -299,7 +332,7 @@ test(
 
 
 test(
-  "絞り込みダイアログ内にフォーカスを保ち、保存データ操作を表示する",
+  "各ダイアログのフォーカスを保ち、保存データを専用パネルで操作する",
   async ({ page }) => {
     await page.goto("/");
     await waitForSpots(page);
@@ -339,6 +372,36 @@ test(
           )
       )
     ).toBe(true);
+
+    await page.keyboard.press(
+      "Escape"
+    );
+
+    await expect(panel).toBeHidden();
+    await expect(toggle).toBeFocused();
+
+    const savedToggle =
+      page.locator(
+        "#saved-data-toggle"
+      );
+
+    const savedPanel =
+      page.locator(
+        "#saved-data-panel"
+      );
+
+    await savedToggle.click();
+
+    await expect(savedPanel).toBeVisible();
+    await expect(savedPanel).toHaveAttribute(
+      "aria-modal",
+      "true"
+    );
+    await expect(
+      page.locator(
+        "#saved-data-close"
+      )
+    ).toBeFocused();
 
     await expect(
       page.locator(
@@ -438,8 +501,192 @@ test(
       "Escape"
     );
 
-    await expect(panel).toBeHidden();
-    await expect(toggle).toBeFocused();
+    await expect(savedPanel).toBeHidden();
+    await expect(savedToggle).toBeFocused();
+  }
+);
+
+
+test(
+  "同一座標の最大6スポットを展開し、ピンと名称ラベルを分散する",
+  async ({ page }) => {
+    await page.goto(
+      "/?spot=chiikawaland-nagoya"
+    );
+
+    await waitForSpots(page);
+
+    await expect(
+      page.locator(
+        "#spot-detail-panel"
+      )
+    ).toBeVisible();
+
+    await page.waitForTimeout(700);
+
+    const duplicateIds = [
+      "chiikawaland-nagoya",
+      "magical-nagoya",
+      "ramen-buta-nagoya",
+      "chiikawa-yaki-nagoya",
+      "pocket-popup-nagoya",
+      "movie-cafe-nagoya"
+    ];
+
+    const markerPositions = [];
+
+    for (
+      const spotId of
+      duplicateIds
+    ) {
+      const marker =
+        page.locator(
+          '.spot-marker[data-spot-id="' +
+          spotId +
+          '"]'
+        );
+
+      await expect(marker).toBeVisible();
+
+      const box =
+        await marker.boundingBox();
+
+      markerPositions.push(
+        Math.round(box.x) +
+        "," +
+        Math.round(box.y)
+      );
+    }
+
+    expect(
+      new Set(
+        markerPositions
+      ).size
+    ).toBe(
+      duplicateIds.length
+    );
+
+    const labels =
+      await page.locator(
+        ".spot-name-label-duplicate"
+      ).evaluateAll(
+        elements =>
+          elements
+            .filter(
+              element =>
+                element.getClientRects().length >
+                0
+            )
+            .map(
+              element => {
+                const rect =
+                  element.getBoundingClientRect();
+
+                return {
+                  className:
+                    element.className,
+                  left:
+                    rect.left,
+                  right:
+                    rect.right,
+                  top:
+                    rect.top,
+                  bottom:
+                    rect.bottom
+                };
+              }
+            )
+      );
+
+    expect(labels).toHaveLength(
+      duplicateIds.length
+    );
+
+    expect(
+      labels.some(
+        label =>
+          label.className.includes(
+            "spot-name-label-right"
+          )
+      )
+    ).toBe(true);
+
+    expect(
+      labels.some(
+        label =>
+          label.className.includes(
+            "spot-name-label-left"
+          )
+      )
+    ).toBe(true);
+
+    expect(
+      labels.some(
+        label =>
+          label.className.includes(
+            "spot-name-label-top"
+          )
+      )
+    ).toBe(true);
+
+    expect(
+      labels.some(
+        label =>
+          label.className.includes(
+            "spot-name-label-bottom"
+          )
+      )
+    ).toBe(true);
+
+    for (
+      let firstIndex = 0;
+      firstIndex < labels.length;
+      firstIndex++
+    ) {
+      for (
+        let secondIndex =
+          firstIndex + 1;
+        secondIndex < labels.length;
+        secondIndex++
+      ) {
+        const first =
+          labels[firstIndex];
+
+        const second =
+          labels[secondIndex];
+
+        const overlapWidth =
+          Math.max(
+            0,
+            Math.min(
+              first.right,
+              second.right
+            ) -
+            Math.max(
+              first.left,
+              second.left
+            )
+          );
+
+        const overlapHeight =
+          Math.max(
+            0,
+            Math.min(
+              first.bottom,
+              second.bottom
+            ) -
+            Math.max(
+              first.top,
+              second.top
+            )
+          );
+
+        expect(
+          overlapWidth *
+          overlapHeight
+        ).toBe(0);
+      }
+    }
   }
 );
 
@@ -463,7 +710,8 @@ test(
       "#map-view-button",
       "#list-view-button",
       "#favorite-filter-button",
-      "#visited-filter-button"
+      "#visited-filter-button",
+      "#saved-data-toggle"
     ];
 
     for (

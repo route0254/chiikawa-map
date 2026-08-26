@@ -292,6 +292,18 @@
 
           <button
             type="button"
+            class="toolbar-button saved-data-toggle-button"
+            id="saved-data-toggle"
+            aria-expanded="false"
+            aria-controls="saved-data-panel"
+            title="行きたい・行った！のバックアップ"
+          >
+            💾 保存データ
+          </button>
+
+
+          <button
+            type="button"
             class="toolbar-button"
             id="share-filters-button"
             title="現在の検索・絞り込み条件を共有"
@@ -894,42 +906,6 @@
               </fieldset>
 
 
-              <section
-                class="saved-data-tools"
-                aria-labelledby="saved-data-title"
-              >
-                <h3 id="saved-data-title">行きたい・行った！の保存データ</h3>
-                <p>
-                  この端末に保存された内容をJSONファイルでバックアップできます。
-                  インポート時は、現在の保存内容を消さずに追加統合します。
-                </p>
-
-                <div class="saved-data-actions">
-                  <button
-                    type="button"
-                    class="secondary-button"
-                    id="saved-data-export"
-                  >
-                    エクスポート
-                  </button>
-
-                  <button
-                    type="button"
-                    class="secondary-button"
-                    id="saved-data-import"
-                  >
-                    インポート
-                  </button>
-
-                  <input
-                    type="file"
-                    id="saved-data-file"
-                    accept="application/json,.json"
-                    hidden
-                  >
-                </div>
-              </section>
-
             </div>
 
 
@@ -942,6 +918,96 @@
               >
                 すべて表示に戻す
               </button>
+
+            </div>
+
+          </aside>
+
+
+          <!-- ==============================================
+               SAVED DATA PANEL
+               ============================================== -->
+
+          <aside
+            id="saved-data-panel"
+            class="overlay-panel saved-data-panel"
+            role="dialog"
+            aria-labelledby="saved-data-panel-title"
+            aria-modal="true"
+            hidden
+          >
+
+            <div class="overlay-panel-header">
+
+              <div>
+                <div class="panel-kicker">SAVED DATA</div>
+                <h2 id="saved-data-panel-title">
+                  保存データのバックアップ
+                </h2>
+              </div>
+
+              <button
+                type="button"
+                class="icon-button"
+                id="saved-data-close"
+                aria-label="保存データのバックアップを閉じる"
+              >
+                ×
+              </button>
+
+            </div>
+
+
+            <div class="overlay-panel-body saved-data-panel-body">
+
+              <p class="saved-data-intro">
+                「行きたい」「行った！」は、このブラウザの端末内に保存されています。
+                JSONファイルへ書き出して、機種変更やブラウザデータ削除に備えられます。
+              </p>
+
+              <div class="saved-data-current" role="status" aria-live="polite">
+                <span>♡ 行きたい <strong id="saved-data-favorite-count">0</strong>件</span>
+                <span>✓ 行った！ <strong id="saved-data-visited-count">0</strong>件</span>
+              </div>
+
+              <section
+                class="saved-data-tools"
+                aria-labelledby="saved-data-actions-title"
+              >
+                <h3 id="saved-data-actions-title">バックアップ操作</h3>
+                <p>
+                  読み込み時は、現在の保存内容を消さずに追加統合します。
+                </p>
+
+                <div class="saved-data-actions">
+                  <button
+                    type="button"
+                    class="secondary-button saved-data-button"
+                    id="saved-data-export"
+                  >
+                    ↓ JSONを書き出す
+                  </button>
+
+                  <button
+                    type="button"
+                    class="secondary-button saved-data-button"
+                    id="saved-data-import"
+                  >
+                    ↑ JSONを読み込む
+                  </button>
+
+                  <input
+                    type="file"
+                    id="saved-data-file"
+                    accept="application/json,.json"
+                    hidden
+                  >
+                </div>
+              </section>
+
+              <p class="saved-data-note">
+                アカウントやサーバーへの送信は行いません。書き出したJSONファイルは大切に保管してください。
+              </p>
 
             </div>
 
