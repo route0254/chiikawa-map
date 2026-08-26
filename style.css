@@ -1517,6 +1517,26 @@ button {
 }
 
 
+.spot-pin-cancelled {
+  color: #fff;
+  background:
+    linear-gradient(
+      145deg,
+      #c45262,
+      #852b3a
+    );
+  box-shadow:
+    0 5px 14px
+    rgba(107, 28, 42, 0.34);
+}
+
+
+.spot-pin-cancelled span {
+  font-size: 9px;
+  letter-spacing: -0.04em;
+}
+
+
 .spot-pin-nagano-confirmed {
   background:
     linear-gradient(
@@ -2048,6 +2068,26 @@ button {
 .period-ended {
   color: #756d71;
   background: #efedef;
+}
+
+
+.period-cancelled {
+  color: #8d3541;
+  background: #fff0f2;
+  border: 1px solid #efc2c8;
+}
+
+
+.spot-cancelled-notice {
+  margin: 4px 0 10px;
+  padding: 10px 11px;
+  border: 1px solid #e8adb6;
+  border-radius: var(--radius-small);
+  color: #842e3c;
+  background: #fff1f3;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.55;
 }
 
 
@@ -3204,6 +3244,14 @@ button {
 }
 
 
+.spot-timing-badge.timing-cancelled,
+.spot-list-timing.timing-cancelled {
+  color: #8d3541;
+  background: #fff0f2;
+  border: 1px solid #efc2c8;
+}
+
+
 .spot-timing-badge.is-soon,
 .spot-list-timing.is-soon {
   background: #fff0e9;
@@ -3278,6 +3326,47 @@ button {
 
 
 .filter-chip-archive input:disabled + span {
+  cursor: progress;
+  opacity: 0.68;
+}
+
+
+.archive-year-filter-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #ded5e7;
+  border-radius: 12px;
+  background: #faf8fc;
+}
+
+
+.archive-year-filter-wrap[hidden] {
+  display: none;
+}
+
+
+.archive-year-filter-wrap label {
+  color: #665b72;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+.archive-year-filter-wrap select {
+  min-height: 40px;
+  padding: 7px 34px 7px 10px;
+  border: 1px solid #cfc3dc;
+  border-radius: 10px;
+  color: #4f4657;
+  background: #fff;
+}
+
+
+.archive-year-filter-wrap select:disabled {
   cursor: progress;
   opacity: 0.68;
 }

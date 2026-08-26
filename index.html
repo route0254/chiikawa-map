@@ -21,17 +21,17 @@
   <meta property="og:title" content="ちいかわ推し活（ちい活）MAP">
   <meta property="og:description" content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所を地図から探せる非公式ファンMAPです。">
   <meta property="og:url" content="https://chiikatsu-map.com/">
-  <meta property="og:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260824-2">
-  <meta property="og:image:secure_url" content="https://chiikatsu-map.com/assets/ogp.png?v=20260824-2">
+  <meta property="og:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260826-1">
+  <meta property="og:image:secure_url" content="https://chiikatsu-map.com/assets/ogp.png?v=20260826-1">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
   <meta property="og:image:alt" content="ちいかわ推し活（ちい活）MAP - 公式スポット＆ナガセン関連スポットを地図から探せる非公式ファンMAP">
   <meta property="og:site_name" content="ちいかわ推し活（ちい活）MAP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ちいかわ推し活（ちい活）MAP">
   <meta name="twitter:description" content="公式スポット＆ナガセン関連スポットを地図・検索・絞り込みから探せます。">
-  <meta name="twitter:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260824-2">
+  <meta name="twitter:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260826-1">
   <meta name="twitter:image:alt" content="ちいかわ推し活（ちい活）MAP - 公式スポット＆ナガセン関連スポットを地図から探せる非公式ファンMAP">
 
   <title>ちいかわ推し活（ちい活）MAP</title>
@@ -870,13 +870,30 @@
                       type="checkbox"
                       id="filter-ended"
                     >
-                    <span>🗂 終了済み（過去イベント）</span>
+                    <span>🗂 過去イベント（終了・中止）</span>
                   </label>
 
                 </div>
 
+                <div
+                  id="archive-year-filter-wrap"
+                  class="archive-year-filter-wrap"
+                  hidden
+                >
+                  <label for="filter-event-year">
+                    過去イベントの開催年
+                  </label>
+                  <select
+                    id="filter-event-year"
+                    aria-label="過去イベントの開催年で絞り込む"
+                    disabled
+                  >
+                    <option value="">すべての年</option>
+                  </select>
+                </div>
+
                 <p class="filter-hint">
-                  「まもなく終了」は、終了日が設定された開催中の期間限定スポットが対象です。過去イベントは初期状態では読み込まず、「終了済み」を選んだときだけ検索・地図・一覧の対象に加えます。
+                  「まもなく終了」は、終了日が設定された開催中の期間限定スポットが対象です。過去イベントは初期状態では読み込まず、「過去イベント（終了・中止）」を選んだときだけ検索・地図・一覧の対象に加えます。読み込み後は開催年でも絞り込めます。開催中止になったイベントは赤い「開催中止」表示で区別します。
                 </p>
 
               </fieldset>

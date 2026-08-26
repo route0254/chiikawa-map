@@ -1,0 +1,410 @@
+{
+  "checkedAt": "2026-08-26",
+  "venues": [
+    {
+      "key": "jr-ikebukuro",
+      "name": "JR池袋駅",
+      "address": "東京都豊島区南池袋1丁目28-2 JR池袋駅",
+      "query": "JR池袋駅 東京都豊島区",
+      "aliases": ["JR池袋駅"],
+      "lat": 35.7295,
+      "lng": 139.7109
+    },
+    {
+      "key": "ikebukuro-parco",
+      "name": "池袋PARCO",
+      "address": "東京都豊島区南池袋1-28-2 池袋PARCO",
+      "query": "池袋PARCO 東京都豊島区",
+      "aliases": ["PARCO FACTORY 池袋パルコ", "THE GUEST cafe&diner 池袋", "池袋パルコ"],
+      "lat": 35.7295,
+      "lng": 139.7109
+    },
+    {
+      "key": "jr-akihabara",
+      "name": "JR秋葉原駅",
+      "address": "東京都千代田区外神田1丁目 JR秋葉原駅",
+      "query": "JR秋葉原駅 東京都千代田区",
+      "aliases": ["JR秋葉原駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "sapporo-parco",
+      "name": "札幌PARCO",
+      "address": "北海道札幌市中央区南1条西3-3 札幌PARCO",
+      "query": "札幌PARCO 北海道札幌市",
+      "aliases": ["スペース7 札幌PARCO", "スペース7 札幌パルコ", "札幌PARCO", "札幌パルコ"],
+      "lat": 43.0582,
+      "lng": 141.3529
+    },
+    {
+      "key": "jr-shin-osaka",
+      "name": "JR新大阪駅",
+      "address": "大阪府大阪市淀川区西中島5-16-1 JR新大阪駅",
+      "query": "大阪府大阪市淀川区西中島5丁目16-1",
+      "aliases": ["エキマルシェ新大阪", "JR新大阪駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-shinagawa",
+      "name": "JR品川駅",
+      "address": "東京都港区高輪3-26-27 JR品川駅",
+      "query": "東京都港区高輪3丁目26-27",
+      "aliases": ["JR品川駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "nagoya-parco",
+      "name": "名古屋PARCO",
+      "address": "愛知県名古屋市中区栄3-29-1 名古屋PARCO",
+      "query": "名古屋PARCO 愛知県名古屋市",
+      "aliases": ["THE GUEST cafe&diner 名古屋パルコ", "THE GUEST cafe&diner 名古屋", "名古屋パルコ", "名古屋PARCO"],
+      "lat": 35.1636,
+      "lng": 136.9074
+    },
+    {
+      "key": "hiroshima-parco",
+      "name": "広島PARCO",
+      "address": "広島県広島市中区本通10-1 広島PARCO",
+      "query": "広島PARCO 広島県広島市",
+      "aliases": ["PARCO FACTORY 広島PARCO", "広島PARCO"],
+      "lat": 34.3929,
+      "lng": 132.4623
+    },
+    {
+      "key": "shinsaibashi-parco",
+      "name": "心斎橋PARCO",
+      "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO",
+      "query": "心斎橋PARCO 大阪府大阪市",
+      "aliases": ["THE GUEST cafe&diner 心斎橋パルコ", "THE GUEST cafe&diner 心斎橋", "心斎橋PARCO", "心斎橋パルコ"],
+      "lat": 34.6739,
+      "lng": 135.5009
+    },
+    {
+      "key": "shizuoka-parco",
+      "name": "静岡PARCO",
+      "address": "静岡県静岡市葵区紺屋町6-7 静岡PARCO",
+      "query": "静岡県静岡市葵区紺屋町6-7",
+      "aliases": ["静岡PARCO", "静岡パルコ"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "shibuya-parco",
+      "name": "渋谷PARCO",
+      "address": "東京都渋谷区宇田川町15-1 渋谷PARCO",
+      "query": "渋谷PARCO 東京都渋谷区",
+      "aliases": ["渋谷PARCO", "渋谷パルコ"],
+      "lat": 35.662,
+      "lng": 139.6988
+    },
+    {
+      "key": "jr-takasaki",
+      "name": "JR高崎駅",
+      "address": "群馬県高崎市八島町222 JR高崎駅",
+      "query": "群馬県高崎市八島町222",
+      "aliases": ["JR高崎"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-kyoto",
+      "name": "JR京都駅",
+      "address": "京都府京都市下京区東塩小路町 JR京都駅",
+      "query": "JR京都駅 京都府京都市",
+      "aliases": ["JR京都駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "urawa-parco",
+      "name": "浦和PARCO",
+      "address": "埼玉県さいたま市浦和区東高砂町11-1 浦和PARCO",
+      "query": "埼玉県さいたま市浦和区東高砂町11-1",
+      "aliases": ["浦和PARCO", "浦和パルコ"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "fukuoka-parco",
+      "name": "福岡PARCO",
+      "address": "福岡県福岡市中央区天神2-11-1 福岡PARCO",
+      "query": "福岡PARCO 福岡県福岡市",
+      "aliases": ["PARCO FACTORY 福岡PARCO", "福岡PARCO", "福岡パルコ"],
+      "lat": 33.5902,
+      "lng": 130.3984
+    },
+    {
+      "key": "sendai-parco",
+      "name": "仙台PARCO",
+      "address": "宮城県仙台市青葉区中央1-2-3 仙台PARCO",
+      "query": "仙台PARCO 宮城県仙台市",
+      "aliases": ["仙台PARCO", "仙台パルコ"],
+      "lat": 38.2604,
+      "lng": 140.8822
+    },
+    {
+      "key": "fujimaru-obihiro",
+      "name": "藤丸百貨店",
+      "address": "北海道帯広市西2条南8-1 藤丸百貨店",
+      "query": "北海道帯広市西2条南8丁目1",
+      "aliases": ["藤丸百貨店"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-hachioji",
+      "name": "JR八王子駅",
+      "address": "東京都八王子市旭町1-1 JR八王子駅",
+      "query": "東京都八王子市旭町1-1",
+      "aliases": ["JR八王子駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "lucua-1100",
+      "name": "LUCUA 1100",
+      "address": "大阪府大阪市北区梅田3-1-3 LUCUA 1100",
+      "query": "LUCUA 1100 大阪府大阪市",
+      "aliases": ["LUCUA1100", "LUCUA 1100"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "keio-artman-fuchu",
+      "name": "京王アートマン府中店",
+      "address": "東京都府中市府中町1-2-1 ぷらりと京王府中 京王アートマン府中店",
+      "query": "京王アートマン府中店 東京都府中市",
+      "aliases": ["京王アートマン 府中店", "京王アートマン府中店"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-omiya",
+      "name": "JR大宮駅",
+      "address": "埼玉県さいたま市大宮区錦町630 JR大宮駅",
+      "query": "埼玉県さいたま市大宮区錦町630",
+      "aliases": ["JR大宮駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-musashi-mizonokuchi",
+      "name": "JR武蔵溝ノ口駅",
+      "address": "神奈川県川崎市高津区溝口1丁目 JR武蔵溝ノ口駅",
+      "query": "JR武蔵溝ノ口駅 神奈川県川崎市",
+      "aliases": ["JR武蔵溝ノ口駅"],
+      "lat": 35.5990079,
+      "lng": 139.6112408
+    },
+    {
+      "key": "kinshicho-termina",
+      "name": "錦糸町TERMINA",
+      "address": "東京都墨田区江東橋3-14-5 錦糸町TERMINA",
+      "query": "東京都墨田区江東橋3丁目14-5",
+      "aliases": ["錦糸町TERMINA"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-hakata",
+      "name": "JR博多駅",
+      "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅",
+      "query": "福岡県福岡市博多区博多駅中央街1-1",
+      "aliases": ["JR博多駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "aeon-laketown-mori",
+      "name": "イオンレイクタウンmori",
+      "address": "埼玉県越谷市レイクタウン3-1-1 イオンレイクタウンmori",
+      "query": "イオンレイクタウンmori 埼玉県越谷市",
+      "aliases": ["イオンレイクタウンmori"],
+      "lat": 35.8779,
+      "lng": 139.8269
+    },
+    {
+      "key": "chofu-parco",
+      "name": "調布PARCO",
+      "address": "東京都調布市小島町1-38-1 調布PARCO",
+      "query": "調布PARCO 東京都調布市",
+      "aliases": ["調布PARCO", "調布パルコ"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "matsumoto-parco",
+      "name": "松本PARCO",
+      "address": "長野県松本市中央1-10-30 松本PARCO",
+      "query": "長野県松本市中央1丁目10-30",
+      "aliases": ["松本PARCO", "松本パルコ"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "ati-koriyama",
+      "name": "アティ郡山",
+      "address": "福島県郡山市駅前1-16-7 アティ郡山",
+      "query": "アティ郡山 福島県郡山市",
+      "aliases": ["アティ郡山"],
+      "lat": 37.3981,
+      "lng": 140.3889
+    },
+    {
+      "key": "jr-sendai",
+      "name": "JR仙台駅",
+      "address": "宮城県仙台市青葉区中央1丁目 JR仙台駅",
+      "query": "JR仙台駅 宮城県仙台市",
+      "aliases": ["JR仙台駅"],
+      "lat": 38.2603516,
+      "lng": 140.8823921
+    },
+    {
+      "key": "marui-imai-hakodate",
+      "name": "丸井今井函館店",
+      "address": "北海道函館市本町32-15 丸井今井函館店",
+      "query": "丸井今井函館店 北海道函館市",
+      "aliases": ["丸井今井函館店"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-urawa",
+      "name": "JR浦和駅",
+      "address": "埼玉県さいたま市浦和区高砂1-16-12 JR浦和駅",
+      "query": "埼玉県さいたま市浦和区高砂1丁目16-12",
+      "aliases": ["JR浦和駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "ariake-garden",
+      "name": "有明ガーデン",
+      "address": "東京都江東区有明2-1-8 有明ガーデン",
+      "query": "有明ガーデン 東京都江東区",
+      "aliases": ["有明ガーデン"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "jr-shinjuku",
+      "name": "JR新宿駅",
+      "address": "東京都新宿区新宿3-38-1 JR新宿駅",
+      "query": "JR新宿駅 東京都新宿区",
+      "aliases": ["JR新宿駅"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "aeon-shinrifu",
+      "name": "イオンモール新利府",
+      "address": "宮城県宮城郡利府町新中道3-1-1 イオンモール新利府",
+      "query": "イオンモール新利府 宮城県宮城郡利府町",
+      "aliases": ["イオンモール新利府"],
+      "lat": 38.328,
+      "lng": 140.972
+    },
+    {
+      "key": "tsudanuma-parco",
+      "name": "津田沼PARCO",
+      "address": "千葉県船橋市前原西2-18-1 津田沼PARCO",
+      "query": "千葉県船橋市前原西2丁目18-1",
+      "aliases": ["津田沼PARCO", "津田沼パルコ"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-aomori",
+      "name": "ロフト青森店",
+      "address": "青森県青森市浜田1-14-1 イトーヨーカドー青森店1F ロフト青森店",
+      "query": "青森県青森市浜田1丁目14-1",
+      "aliases": ["ロフト青森"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-matsuyama",
+      "name": "松山ロフト",
+      "address": "愛媛県伊予郡松前町筒井850 エミフルMASAKI 1F 松山ロフト",
+      "query": "エミフルMASAKI 愛媛県伊予郡松前町筒井850",
+      "aliases": ["松山ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-akita",
+      "name": "秋田ロフト",
+      "address": "秋田県秋田市中通2-8-1 フォンテAKITA 2F 秋田ロフト",
+      "query": "フォンテAKITA 秋田県秋田市中通2-8-1",
+      "aliases": ["秋田ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-colorful-town-gifu",
+      "name": "カラフルタウン岐阜ロフト",
+      "address": "岐阜県岐阜市柳津町丸野3-3-6 カラフルタウン岐阜1F",
+      "query": "岐阜県岐阜市柳津町丸野3丁目3-6",
+      "aliases": ["カラフルタウン岐阜ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-mito",
+      "name": "水戸ロフト",
+      "address": "茨城県水戸市泉町1-6-1 水戸京成百貨店8F 水戸ロフト",
+      "query": "茨城県水戸市泉町1丁目6-1",
+      "aliases": ["水戸ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-yumetown-tokushima",
+      "name": "ゆめタウン徳島ロフト",
+      "address": "徳島県板野郡藍住町奥野字東中須88-1 ゆめタウン徳島1F",
+      "query": "徳島県板野郡藍住町奥野字東中須88-1",
+      "aliases": ["ゆめタウン徳島ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-miyazaki",
+      "name": "宮崎ロフト",
+      "address": "宮崎県宮崎市新別府町江口862-1 イオンモール宮崎2F 宮崎ロフト",
+      "query": "宮崎県宮崎市新別府町江口862-1",
+      "aliases": ["宮崎ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-machida",
+      "name": "町田ロフト",
+      "address": "東京都町田市原町田6-2-6 町田モディ5F・6F 町田ロフト",
+      "query": "東京都町田市原町田6丁目2-6",
+      "aliases": ["町田ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-utsunomiya",
+      "name": "宇都宮ロフト",
+      "address": "栃木県宇都宮市今泉町237 FKDショッピングプラザ宇都宮店2F",
+      "query": "栃木県宇都宮市今泉町237",
+      "aliases": ["宇都宮ロフト"],
+      "lat": null,
+      "lng": null
+    },
+    {
+      "key": "loft-okayama",
+      "name": "岡山ロフト",
+      "address": "岡山県岡山市北区表町2-1-1 天満屋岡山本店5F 岡山ロフト",
+      "query": "岡山県岡山市北区表町2丁目1-1",
+      "aliases": ["岡山ロフト"],
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

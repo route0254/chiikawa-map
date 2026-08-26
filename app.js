@@ -368,6 +368,18 @@ const endedFilter =
   );
 
 
+const archiveYearFilterWrap =
+  document.getElementById(
+    "archive-year-filter-wrap"
+  );
+
+
+const archiveYearFilter =
+  document.getElementById(
+    "filter-event-year"
+  );
+
+
 const spotListPanel =
   document.getElementById(
     "spot-list-panel"
@@ -1115,9 +1127,29 @@ function getDaysBetweenDateStrings(
 }
 
 
+function isCancelledEvent(
+  spot
+) {
+
+  return (
+    spot?.eventStatus ===
+    "cancelled"
+  );
+}
+
+
 function getSpotTimingInfo(
   spot
 ) {
+
+  if (
+    isCancelledEvent(spot)
+  ) {
+    return {
+      type: "cancelled",
+      label: "開催中止"
+    };
+  }
 
   const status =
     getSpotPeriodStatus(spot);
@@ -1236,7 +1268,13 @@ function createSpotTimingBadge(
 
   return createDiv(
     className,
-    (timing.type === "ending" ? "⌛ " : "🗓 ") +
+    (
+      timing.type === "ending"
+        ? "⌛ "
+        : timing.type === "cancelled"
+          ? "⚠ "
+          : "🗓 "
+    ) +
     timing.label
   );
 }
@@ -1399,6 +1437,92 @@ function renderPrefectureOptions() {
     prefectureFilter.value =
       currentValue;
   }
+}
+
+
+function renderArchiveYearOptions() {
+
+  if (!archiveYearFilter) {
+    return;
+  }
+
+  const currentValue =
+    archiveYearFilter.value;
+
+  const years =
+    Array.from(
+      new Set(
+        spotRecords
+          .filter(
+            record =>
+              getSpotPeriodStatus(
+                record.spot
+              ) === "ended"
+          )
+          .map(
+            record =>
+              record.spot.startDate
+                ?.slice(0, 4)
+          )
+          .filter(
+            year =>
+              /^\d{4}$/.test(year)
+          )
+      )
+    ).sort(
+      (a, b) =>
+        Number(b) - Number(a)
+    );
+
+  archiveYearFilter.replaceChildren();
+
+  const allOption =
+    document.createElement("option");
+
+  allOption.value = "";
+  allOption.textContent = "すべての年";
+  archiveYearFilter.appendChild(allOption);
+
+  years.forEach(
+    year => {
+      const option =
+        document.createElement("option");
+
+      option.value = year;
+      option.textContent = year + "年";
+      archiveYearFilter.appendChild(option);
+    }
+  );
+
+  if (
+    Array.from(archiveYearFilter.options)
+      .some(
+        option =>
+          option.value === currentValue
+      )
+  ) {
+    archiveYearFilter.value = currentValue;
+  }
+}
+
+
+function syncArchiveYearFilter() {
+
+  if (
+    !archiveYearFilterWrap ||
+    !archiveYearFilter
+  ) {
+    return;
+  }
+
+  const active =
+    Boolean(endedFilter?.checked);
+
+  archiveYearFilterWrap.hidden =
+    !active;
+
+  archiveYearFilter.disabled =
+    !active || !archiveDataLoaded;
 }
 
 
@@ -1805,6 +1929,9 @@ function getPeriodStatusLabel(
 
     ended:
       "終了済み",
+
+    cancelled:
+      "開催中止",
 
     unknown:
       "期間不明"
@@ -3792,6 +3919,13 @@ function getCurrentFiltersShareUrl() {
 
   if (endedFilter?.checked) {
     url.searchParams.set("past", "1");
+
+    if (archiveYearFilter?.value) {
+      url.searchParams.set(
+        "year",
+        archiveYearFilter.value
+      );
+    }
   }
 
   if (currentViewMode === "list") {
@@ -3867,6 +4001,28 @@ function applySharedFilterState() {
     endedFilter.checked =
       params.get("past") === "1";
   }
+
+  if (
+    endedFilter?.checked &&
+    archiveYearFilter &&
+    /^\d{4}$/.test(
+      params.get("year") || ""
+    )
+  ) {
+    const year = params.get("year");
+    const hasOption =
+      Array.from(archiveYearFilter.options)
+        .some(
+          option =>
+            option.value === year
+        );
+
+    if (hasOption) {
+      archiveYearFilter.value = year;
+    }
+  }
+
+  syncArchiveYearFilter();
 
   if (params.get("view") === "list") {
     currentViewMode = "list";
@@ -4912,6 +5068,15 @@ function createSpotIcon(
   }
 
 
+  if (
+    isCancelledEvent(spot)
+  ) {
+    label = "中止";
+    className =
+      "spot-pin-cancelled";
+  }
+
+
   return L.divIcon({
 
     className:
@@ -5849,6 +6014,11 @@ function createSpotDetail(
       spot
     );
 
+  const displayPeriodStatus =
+    isCancelledEvent(spot)
+      ? "cancelled"
+      : periodStatus;
+
 
   let periodText;
 
@@ -5890,7 +6060,7 @@ function createSpotDetail(
       end +
       "　" +
       getPeriodStatusLabel(
-        periodStatus
+        displayPeriodStatus
       );
   }
 
@@ -5904,10 +6074,21 @@ function createSpotDetail(
     );
   }
 
+  if (
+    isCancelledEvent(spot)
+  ) {
+    container.appendChild(
+      createDiv(
+        "spot-cancelled-notice",
+        "⚠ このイベントは開催中止となり、実際には開催されませんでした。"
+      )
+    );
+  }
+
   container.appendChild(
     createDiv(
       "spot-period period-" +
-      periodStatus,
+      displayPeriodStatus,
 
       periodText
     )
@@ -6576,6 +6757,11 @@ function createSpotRecord(
     return null;
   }
 
+  const markerLabel =
+    isCancelledEvent(spot)
+      ? "⚠ 開催中止｜" + spot.name
+      : spot.name;
+
 
   const marker =
     L.marker(
@@ -6599,10 +6785,10 @@ function createSpotRecord(
           spot.evidenceStatus || null,
 
         title:
-          spot.name,
+          markerLabel,
 
         alt:
-          spot.name
+          markerLabel
       }
     );
 
@@ -6618,7 +6804,7 @@ function createSpotRecord(
 
 
   marker.bindTooltip(
-    spot.name,
+    markerLabel,
     {
       permanent:
         true,
@@ -6989,7 +7175,11 @@ function getCurrentFilterState() {
     includeEnded:
       Boolean(
         endedFilter?.checked
-      )
+      ),
+    archiveYear:
+      endedFilter?.checked
+        ? archiveYearFilter?.value || ""
+        : ""
   };
 }
 
@@ -7002,10 +7192,24 @@ function recordMatchesFilters(
   const spot =
     record.spot;
 
+  const periodStatus =
+    getSpotPeriodStatus(spot);
+
   if (
-    getSpotPeriodStatus(spot) ===
-      "ended" &&
+    periodStatus === "ended" &&
     !state.includeEnded
+  ) {
+    return false;
+  }
+
+  if (
+    state.archiveYear &&
+    (
+      periodStatus !== "ended" ||
+      !spot.startDate?.startsWith(
+        state.archiveYear + "-"
+      )
+    )
   ) {
     return false;
   }
@@ -7206,7 +7410,15 @@ function getActiveFilterDescriptions() {
 
   if (endedFilter?.checked) {
     descriptions.push(
-      "終了済み（過去イベント）を含む"
+      "過去イベント（終了・中止）を含む"
+    );
+  }
+
+  if (archiveYearFilter?.value) {
+    descriptions.push(
+      "開催年: " +
+      archiveYearFilter.value +
+      "年"
     );
   }
 
@@ -7727,6 +7939,12 @@ function resetFilters() {
     endedFilter.checked = false;
   }
 
+  if (archiveYearFilter) {
+    archiveYearFilter.value = "";
+  }
+
+  syncArchiveYearFilter();
+
   listSortMode =
     "default";
 
@@ -7932,8 +8150,10 @@ async function ensureArchiveDataLoaded() {
 
         renderBrandFilters();
         renderPrefectureOptions();
+        renderArchiveYearOptions();
         updateFavoriteCount();
         updateVisitedCount();
+        syncArchiveYearFilter();
 
         console.log(
           "過去イベント: " +
@@ -8130,6 +8350,7 @@ async function loadSpots() {
     // データに合わせてブランド / 都道府県フィルターを生成
     renderBrandFilters();
     renderPrefectureOptions();
+    renderArchiveYearOptions();
 
     // URLで共有された検索・絞り込み条件を、動的フィルター生成後に適用
     if (!SHARED_SPOT_ID) {
@@ -8154,6 +8375,8 @@ async function loadSpots() {
     ) {
       endedFilter.checked = true;
     }
+
+    syncArchiveYearFilter();
 
     updateFavoriteCount();
     updateVisitedCount();
@@ -8617,8 +8840,21 @@ endedFilter
         if (!loaded) {
           endedFilter.checked = false;
         }
+      } else if (archiveYearFilter) {
+        archiveYearFilter.value = "";
       }
 
+      syncArchiveYearFilter();
+      updateSpotFilters();
+      renderSearchSuggestions();
+    }
+  );
+
+
+archiveYearFilter
+  ?.addEventListener(
+    "change",
+    () => {
       updateSpotFilters();
       renderSearchSuggestions();
     }

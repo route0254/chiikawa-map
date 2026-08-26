@@ -73,7 +73,13 @@ const datasets = [
     file: "data/official-events-archive.json",
     category: "official",
     archive: true,
-    fields: commonFields,
+    fields: [
+      ...commonFields,
+      "eventStatus"
+    ],
+    optionalFields: [
+      "eventStatus"
+    ],
     requiredStrings: [
       "id",
       "name",
@@ -206,6 +212,11 @@ const evidenceStatuses = new Set([
   "inferred"
 ]);
 
+const eventStatuses = new Set([
+  "held",
+  "cancelled"
+]);
+
 const confirmedOpenEndedLimitedSpotIds = new Set([
   "ramen-buta-shibuya",
   "ramen-buta-shinsaibashi"
@@ -330,9 +341,15 @@ function validateShape(dataset, spot, index) {
   }
 
   const expectedFields = new Set(dataset.fields);
+  const optionalFields = new Set(
+    dataset.optionalFields || []
+  );
 
   for (const field of dataset.fields) {
-    if (!Object.hasOwn(spot, field)) {
+    if (
+      !optionalFields.has(field) &&
+      !Object.hasOwn(spot, field)
+    ) {
       addError(
         location,
         `フィールド ${field} がありません`
@@ -466,6 +483,18 @@ function validateEnums(dataset, spot, location) {
     addError(
       location,
       `evidenceStatus の値 ${JSON.stringify(spot.evidenceStatus)} は未定義です`
+    );
+  }
+
+  if (
+    dataset.archive &&
+    !eventStatuses.has(
+      spot.eventStatus || "held"
+    )
+  ) {
+    addError(
+      location,
+      `eventStatus の値 ${JSON.stringify(spot.eventStatus)} は未定義です`
     );
   }
 }

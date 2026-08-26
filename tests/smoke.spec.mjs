@@ -793,6 +793,15 @@ test(
         )
       );
 
+    const cancelledSpot =
+      archiveSpots.find(
+        spot =>
+          spot.eventStatus ===
+          "cancelled"
+      );
+
+    expect(cancelledSpot).toBeTruthy();
+
     await page.locator(
       "#filter-toggle"
     ).click();
@@ -827,7 +836,7 @@ test(
         "#active-filter-list"
       )
     ).toContainText(
-      "終了済み（過去イベント）を含む"
+      "過去イベント（終了・中止）を含む"
     );
 
     const sharedUrl =
@@ -839,6 +848,49 @@ test(
     expect(sharedUrl).toContain(
       "past=1"
     );
+
+    const yearFilter =
+      page.locator(
+        "#filter-event-year"
+      );
+
+    await expect(yearFilter).toBeEnabled();
+    await yearFilter.selectOption("2021");
+
+    const archive2021Count =
+      archiveSpots.filter(
+        spot =>
+          spot.startDate.startsWith(
+            "2021-"
+          )
+      ).length;
+
+    await expect(
+      page.locator("#result-count")
+    ).toHaveText(
+      archive2021Count + "件表示"
+    );
+
+    await expect(
+      page.locator(
+        "#active-filter-list"
+      )
+    ).toContainText("開催年: 2021年");
+
+    const sharedYearUrl =
+      await page.evaluate(
+        () =>
+          window.getCurrentFiltersShareUrl()
+      );
+
+    expect(sharedYearUrl).toContain(
+      "past=1"
+    );
+    expect(sharedYearUrl).toContain(
+      "year=2021"
+    );
+
+    await yearFilter.selectOption("");
 
     await page.locator(
       "#filter-close"
@@ -891,6 +943,59 @@ test(
     ).toHaveText(
       "お台場ファンライジング ちいかわ おばけの森"
     );
+
+    await page.goto(
+      "/?spot=" +
+      encodeURIComponent(
+        cancelledSpot.id
+      )
+    );
+
+    await waitForSpots(page);
+
+    await expect(
+      page.locator(
+        "#spot-detail-title"
+      )
+    ).toHaveText(
+      cancelledSpot.name
+    );
+
+    await expect(
+      page.locator(
+        ".spot-timing-badge.timing-cancelled"
+      )
+    ).toContainText("開催中止");
+
+    await expect(
+      page.locator(
+        ".spot-cancelled-notice"
+      )
+    ).toContainText(
+      "実際には開催されませんでした"
+    );
+
+    await expect(
+      page.locator(
+        ".spot-period.period-cancelled"
+      )
+    ).toContainText("開催中止");
+
+    await expect(
+      page.locator(
+        '[data-spot-id="' +
+        cancelledSpot.id +
+        '"] .spot-pin-cancelled'
+      )
+    ).toBeVisible();
+
+    await expect(
+      page.locator(
+        '.spot-name-label[data-spot-id="' +
+        cancelledSpot.id +
+        '"]'
+      )
+    ).toContainText("開催中止");
   }
 );
 
