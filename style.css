@@ -1490,7 +1490,38 @@ button {
 
   display: block;
 
-  background: rgba(124, 109, 145, 0.68);
+  background: rgba(90, 66, 119, 0.92);
+
+  box-shadow:
+    0 0 0 1px
+    rgba(255, 255, 255, 0.96),
+    0 1px 4px
+    rgba(62, 44, 77, 0.32);
+
+  pointer-events: none;
+}
+
+
+.spot-name-label-duplicate::before {
+  content: "";
+
+  position: absolute;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 7px;
+  height: 7px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  background: #5a4277;
+
+  box-shadow:
+    0 1px 4px
+    rgba(62, 44, 77, 0.36);
 
   pointer-events: none;
 }
@@ -1501,7 +1532,10 @@ button {
   top: 50%;
 
   width: 28px;
-  height: 1px;
+  height: 3px;
+
+  transform:
+    translateY(-50%);
 }
 
 
@@ -1515,12 +1549,34 @@ button {
 }
 
 
+.spot-name-label-right::before,
+.spot-name-label-left::before {
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+}
+
+
+.spot-name-label-right::before {
+  right: calc(100% + 25px);
+}
+
+
+.spot-name-label-left::before {
+  left: calc(100% + 25px);
+}
+
+
 .spot-name-label-top::after,
 .spot-name-label-bottom::after {
   left: 50%;
 
-  width: 1px;
+  width: 3px;
   height: 68px;
+
+  transform:
+    translateX(-50%);
 }
 
 
@@ -1531,6 +1587,25 @@ button {
 
 .spot-name-label-bottom::after {
   bottom: 100%;
+}
+
+
+.spot-name-label-top::before,
+.spot-name-label-bottom::before {
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+}
+
+
+.spot-name-label-top::before {
+  top: calc(100% + 65px);
+}
+
+
+.spot-name-label-bottom::before {
+  bottom: calc(100% + 65px);
 }
 
 
