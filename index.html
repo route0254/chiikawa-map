@@ -391,6 +391,26 @@
       </div>
 
 
+      <div
+        id="app-status"
+        class="app-status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        hidden
+      >
+        <span id="app-status-message"></span>
+        <button
+          type="button"
+          id="data-retry-button"
+          class="app-status-action"
+          hidden
+        >
+          再読み込み
+        </button>
+      </div>
+
+
       <!-- ==================================================
            MAP + DETAIL
            ================================================== -->
@@ -412,6 +432,7 @@
             class="overlay-panel filter-panel"
             role="dialog"
             aria-labelledby="filter-panel-title"
+            aria-modal="true"
             hidden
           >
 
@@ -872,6 +893,43 @@
 
               </fieldset>
 
+
+              <section
+                class="saved-data-tools"
+                aria-labelledby="saved-data-title"
+              >
+                <h3 id="saved-data-title">行きたい・行った！の保存データ</h3>
+                <p>
+                  この端末に保存された内容をJSONファイルでバックアップできます。
+                  インポート時は、現在の保存内容を消さずに追加統合します。
+                </p>
+
+                <div class="saved-data-actions">
+                  <button
+                    type="button"
+                    class="secondary-button"
+                    id="saved-data-export"
+                  >
+                    エクスポート
+                  </button>
+
+                  <button
+                    type="button"
+                    class="secondary-button"
+                    id="saved-data-import"
+                  >
+                    インポート
+                  </button>
+
+                  <input
+                    type="file"
+                    id="saved-data-file"
+                    accept="application/json,.json"
+                    hidden
+                  >
+                </div>
+              </section>
+
             </div>
 
 
@@ -899,6 +957,7 @@
             class="overlay-panel help-panel"
             role="dialog"
             aria-labelledby="official-help-panel-title"
+            aria-modal="true"
             hidden
           >
 
@@ -1058,6 +1117,7 @@
             class="overlay-panel help-panel"
             role="dialog"
             aria-labelledby="nagano-help-panel-title"
+            aria-modal="true"
             hidden
           >
 
@@ -1236,6 +1296,9 @@
         <aside
           id="spot-detail-panel"
           class="spot-detail-panel"
+          role="region"
+          aria-labelledby="spot-detail-title"
+          tabindex="-1"
           hidden
         >
 

@@ -202,6 +202,24 @@ const mapStatus =
   );
 
 
+const appStatus =
+  document.getElementById(
+    "app-status"
+  );
+
+
+const appStatusMessage =
+  document.getElementById(
+    "app-status-message"
+  );
+
+
+const dataRetryButton =
+  document.getElementById(
+    "data-retry-button"
+  );
+
+
 const resultCount =
   document.getElementById(
     "result-count"
@@ -362,6 +380,24 @@ const filterReset =
   );
 
 
+const savedDataExport =
+  document.getElementById(
+    "saved-data-export"
+  );
+
+
+const savedDataImport =
+  document.getElementById(
+    "saved-data-import"
+  );
+
+
+const savedDataFile =
+  document.getElementById(
+    "saved-data-file"
+  );
+
+
 const brandFilterList =
   document.getElementById(
     "brand-filter-list"
@@ -426,6 +462,74 @@ const detailClose =
   document.getElementById(
     "detail-close"
   );
+
+
+let appStatusTimer =
+  null;
+
+
+function showAppStatus(
+  message,
+  options = {}
+) {
+
+  if (
+    !appStatus ||
+    !appStatusMessage
+  ) {
+    return;
+  }
+
+  const type =
+    options.type ||
+    "info";
+
+  window.clearTimeout(
+    appStatusTimer
+  );
+
+  appStatusMessage.textContent =
+    message;
+
+  appStatus.className =
+    "app-status" +
+    (
+      type === "info"
+        ? ""
+        : " is-" + type
+    );
+
+  appStatus.setAttribute(
+    "role",
+    type === "error"
+      ? "alert"
+      : "status"
+  );
+
+  if (
+    dataRetryButton
+  ) {
+    dataRetryButton.hidden =
+      !options.retry;
+  }
+
+  appStatus.hidden =
+    false;
+
+  if (
+    !options.persistent
+  ) {
+    appStatusTimer =
+      window.setTimeout(
+        () => {
+          appStatus.hidden =
+            true;
+        },
+        options.duration ||
+          5000
+      );
+  }
+}
 
 
 // ============================================================
@@ -1161,9 +1265,7 @@ function renderPrefectureOptions() {
       spotRecords
         .map(
           record =>
-            getSpotPrefecture(
-              record.spot
-            )
+            record.prefecture
         )
         .filter(Boolean)
     );
@@ -1333,7 +1435,8 @@ function setActiveSearchSuggestion(
 
 
 function focusSpotRecord(
-  record
+  record,
+  options = {}
 ) {
 
   if (
@@ -1344,7 +1447,6 @@ function focusSpotRecord(
 
   const openRecord =
     () => {
-
       map.setView(
         [
           record.spot.lat,
@@ -1363,7 +1465,9 @@ function focusSpotRecord(
         record,
         {
           scrollOnMobile:
-            true
+            true,
+          returnFocusTo:
+            options.returnFocusTo
         }
       );
     };
@@ -1372,14 +1476,11 @@ function focusSpotRecord(
     typeof spotLayer.zoomToShowLayer ===
     "function"
   ) {
-
     spotLayer.zoomToShowLayer(
       record.marker,
       openRecord
     );
-
   } else {
-
     openRecord();
   }
 }
@@ -1424,17 +1525,13 @@ function renderSearchSuggestions() {
 
           if (
             selectedPrefecture &&
-            getSpotPrefecture(
-              record.spot
-            ) !==
+            record.prefecture !==
             selectedPrefecture
           ) {
             return false;
           }
 
-          return getSpotSearchText(
-            record.spot
-          ).includes(
+          return record.searchText.includes(
             query
           );
         }
@@ -1539,9 +1636,7 @@ function renderSearchSuggestions() {
         );
 
       const metaParts = [
-        getSpotPrefecture(
-          record.spot
-        ),
+        record.prefecture,
         getPlaceTypeLabel(
           record.spot.placeType
         ),
@@ -1574,7 +1669,13 @@ function renderSearchSuggestions() {
           updateSearchClearButton();
           hideSearchSuggestions();
           updateSpotFilters();
-          focusSpotRecord(record);
+          focusSpotRecord(
+            record,
+            {
+              returnFocusTo:
+                spotSearch
+            }
+          );
         }
       );
 
@@ -2237,6 +2338,10 @@ let selectedRecord =
   null;
 
 
+let detailReturnFocusElement =
+  null;
+
+
 // ============================================================
 // 現在地・一覧表示・行きたい保存
 // ============================================================
@@ -2317,6 +2422,12 @@ function loadFavoriteSpotIds() {
     if (
       !Array.isArray(parsed)
     ) {
+      showAppStatus(
+        "行きたいスポットの保存データを読み込めなかったため、空の状態で表示しています。",
+        {
+          type: "warning"
+        }
+      );
       return new Set();
     }
 
@@ -2333,6 +2444,13 @@ function loadFavoriteSpotIds() {
     console.warn(
       "行きたいスポットの保存データを読み込めませんでした。",
       error
+    );
+
+    showAppStatus(
+      "行きたいスポットの保存データを読み込めなかったため、空の状態で表示しています。",
+      {
+        type: "warning"
+      }
     );
 
     return new Set();
@@ -2359,6 +2477,13 @@ function loadStringSetFromStorage(
       JSON.parse(value);
 
     if (!Array.isArray(parsed)) {
+      showAppStatus(
+        label +
+        "の保存データを読み込めなかったため、空の状態で表示しています。",
+        {
+          type: "warning"
+        }
+      );
       return new Set();
     }
 
@@ -2375,6 +2500,15 @@ function loadStringSetFromStorage(
       "の保存データを読み込めませんでした。",
       error
     );
+
+    showAppStatus(
+      label +
+      "の保存データを読み込めなかったため、空の状態で表示しています。",
+      {
+        type: "warning"
+      }
+    );
+
     return new Set();
   }
 }
@@ -2393,35 +2527,285 @@ function saveStringSetToStorage(
         Array.from(values)
       )
     );
+
+    return true;
+
   } catch (error) {
     console.warn(
       label +
       "を保存できませんでした。",
       error
     );
+
+    showAppStatus(
+      label +
+      "を端末に保存できませんでした。ブラウザの保存設定や空き容量をご確認ください。",
+      {
+        type: "error",
+        persistent: true
+      }
+    );
+
+    return false;
   }
 }
 
 
 function saveFavoriteSpotIds() {
 
+  return saveStringSetToStorage(
+    FAVORITES_STORAGE_KEY,
+    favoriteSpotIds,
+    "行きたいスポット"
+  );
+}
+
+
+const SAVED_DATA_FORMAT =
+  "chiikatsu-map-saved-spots";
+
+
+const SAVED_DATA_VERSION =
+  1;
+
+
+function exportSavedSpotData() {
+
+  const exportedData = {
+    format:
+      SAVED_DATA_FORMAT,
+    version:
+      SAVED_DATA_VERSION,
+    exportedAt:
+      new Date().toISOString(),
+    favorites:
+      Array.from(
+        favoriteSpotIds
+      ).sort(),
+    visited:
+      Array.from(
+        visitedSpotIds
+      ).sort()
+  };
+
+  const file =
+    new Blob(
+      [
+        JSON.stringify(
+          exportedData,
+          null,
+          2
+        ) + "\n"
+      ],
+      {
+        type:
+          "application/json"
+      }
+    );
+
+  const downloadUrl =
+    URL.createObjectURL(
+      file
+    );
+
+  const downloadLink =
+    document.createElement(
+      "a"
+    );
+
+  downloadLink.href =
+    downloadUrl;
+
+  downloadLink.download =
+    "chiikatsu-map-saved-" +
+    getTodayInJapan() +
+    ".json";
+
+  document.body.appendChild(
+    downloadLink
+  );
+
+  downloadLink.click();
+  downloadLink.remove();
+
+  window.setTimeout(
+    () => {
+      URL.revokeObjectURL(
+        downloadUrl
+      );
+    },
+    0
+  );
+
+  showAppStatus(
+    "行きたい・行った！の保存データを書き出しました。",
+    {
+      type: "success"
+    }
+  );
+}
+
+
+function getImportedSpotIds(
+  value,
+  label
+) {
+
+  if (
+    !Array.isArray(value) ||
+    value.length > 10000 ||
+    value.some(
+      id =>
+        typeof id !== "string" ||
+        !id.trim() ||
+        id.length > 200
+    )
+  ) {
+    throw new Error(
+      label +
+      "の形式が正しくありません。"
+    );
+  }
+
+  return value.map(
+    id =>
+      id.trim()
+  );
+}
+
+
+async function importSavedSpotData(
+  file
+) {
+
+  if (
+    !file
+  ) {
+    return;
+  }
+
   try {
 
-    window.localStorage.setItem(
-      FAVORITES_STORAGE_KEY,
-      JSON.stringify(
-        Array.from(
-          favoriteSpotIds
-        )
-      )
+    if (
+      file.size >
+      1024 * 1024
+    ) {
+      throw new Error(
+        "ファイルサイズは1MB以下にしてください。"
+      );
+    }
+
+    const importedData =
+      JSON.parse(
+        await file.text()
+      );
+
+    if (
+      !importedData ||
+      importedData.format !==
+        SAVED_DATA_FORMAT ||
+      importedData.version !==
+        SAVED_DATA_VERSION
+    ) {
+      throw new Error(
+        "ちい活マップから書き出した保存データではありません。"
+      );
+    }
+
+    const importedFavorites =
+      getImportedSpotIds(
+        importedData.favorites,
+        "行きたいスポット"
+      );
+
+    const importedVisited =
+      getImportedSpotIds(
+        importedData.visited,
+        "行った！スポット"
+      );
+
+    const favoriteCountBefore =
+      favoriteSpotIds.size;
+
+    const visitedCountBefore =
+      visitedSpotIds.size;
+
+    importedFavorites.forEach(
+      id =>
+        favoriteSpotIds.add(id)
     );
+
+    importedVisited.forEach(
+      id =>
+        visitedSpotIds.add(id)
+    );
+
+    const favoriteSaved =
+      saveFavoriteSpotIds();
+
+    const visitedSaved =
+      saveStringSetToStorage(
+        VISITED_STORAGE_KEY,
+        visitedSpotIds,
+        "行った！スポット"
+      );
+
+    updateFavoriteCount();
+    updateVisitedCount();
+    updateSpotFilters();
+
+    if (
+      favoriteSaved &&
+      visitedSaved
+    ) {
+      const addedFavorites =
+        favoriteSpotIds.size -
+        favoriteCountBefore;
+
+      const addedVisited =
+        visitedSpotIds.size -
+        visitedCountBefore;
+
+      showAppStatus(
+        "保存データを追加統合しました（行きたい +" +
+        addedFavorites +
+        "件、行った！ +" +
+        addedVisited +
+        "件）。",
+        {
+          type: "success"
+        }
+      );
+    }
 
   } catch (error) {
 
     console.warn(
-      "行きたいスポットを保存できませんでした。",
+      "保存データをインポートできませんでした。",
       error
     );
+
+    showAppStatus(
+      "保存データを読み込めませんでした。" +
+      (
+        error instanceof Error
+          ? " " + error.message
+          : ""
+      ),
+      {
+        type: "error",
+        persistent: true
+      }
+    );
+
+  } finally {
+
+    if (
+      savedDataFile
+    ) {
+      savedDataFile.value =
+        "";
+    }
   }
 }
 
@@ -2517,8 +2901,9 @@ function toggleFavoriteSpot(
     selectedRecord &&
     selectedRecord.spot.id ===
       spot.id &&
-    spotMatchesFilters(
-      selectedRecord.spot
+    recordMatchesFilters(
+      selectedRecord,
+      getCurrentFilterState()
     )
   ) {
 
@@ -2604,7 +2989,10 @@ function toggleVisitedSpot(
   if (
     selectedRecord &&
     selectedRecord.spot.id === spot.id &&
-    spotMatchesFilters(selectedRecord.spot)
+    recordMatchesFilters(
+      selectedRecord,
+      getCurrentFilterState()
+    )
   ) {
     detailBody.replaceChildren(
       createSpotDetail(
@@ -2842,6 +3230,45 @@ function getSpotShareUrl(
   url.searchParams.set(
     "spot",
     spot.id
+  );
+
+  return url.toString();
+}
+
+
+function getSpotReportUrl(
+  spot
+) {
+
+  const url =
+    new URL(
+      "https://github.com/route0254/chiikawa-map/issues/new"
+    );
+
+  url.searchParams.set(
+    "template",
+    "01-spot-correction.yml"
+  );
+
+  url.searchParams.set(
+    "title",
+    "[スポット情報] " +
+    spot.name
+  );
+
+  url.searchParams.set(
+    "spot-id",
+    spot.id
+  );
+
+  url.searchParams.set(
+    "spot-name",
+    spot.name
+  );
+
+  url.searchParams.set(
+    "page-url",
+    getSpotShareUrl(spot)
   );
 
   return url.toString();
@@ -3160,6 +3587,8 @@ function setViewMode(
     !listMode
   ) {
 
+    spotList?.replaceChildren();
+
     requestAnimationFrame(
       () => {
         map.invalidateSize({
@@ -3229,7 +3658,7 @@ function createSpotListCard(
     createDiv(
       "spot-list-card-meta",
       [
-        getSpotPrefecture(spot),
+        record.prefecture,
         getPlaceTypeLabel(
           spot.placeType
         ),
@@ -3471,7 +3900,11 @@ function createSpotListCard(
           requestAnimationFrame(
             () => {
               focusSpotRecord(
-                record
+                record,
+                {
+                  returnFocusTo:
+                    mapViewButton
+                }
               );
             }
           );
@@ -4083,7 +4516,8 @@ function createDiv(
 function appendLink(
   parent,
   url,
-  text
+  text,
+  className = ""
 ) {
 
   const safeUrl =
@@ -4122,6 +4556,14 @@ function appendLink(
     text;
 
 
+  if (
+    className
+  ) {
+    link.className =
+      className;
+  }
+
+
   parent.appendChild(
     link
   );
@@ -4151,6 +4593,10 @@ function createSpotDetail(
 
 
   title.className =
+    "spot-detail-title";
+
+
+  title.id =
     "spot-detail-title";
 
 
@@ -4776,6 +5222,14 @@ function createSpotDetail(
   );
 
 
+  appendLink(
+    container,
+    getSpotReportUrl(spot),
+    "掲載内容の修正・終了を報告する ↗",
+    "spot-report-link"
+  );
+
+
   return container;
 }
 
@@ -4788,6 +5242,20 @@ function showSpotDetail(
   record,
   options = {}
 ) {
+
+  const returnFocusCandidate =
+    options.returnFocusTo ||
+    document.activeElement;
+
+  if (
+    returnFocusCandidate instanceof
+      HTMLElement &&
+    returnFocusCandidate !==
+      document.body
+  ) {
+    detailReturnFocusElement =
+      returnFocusCandidate;
+  }
 
   if (
     selectedRecord
@@ -4832,6 +5300,10 @@ function showSpotDetail(
 
   requestAnimationFrame(
     () => {
+
+      detailPanel.focus({
+        preventScroll: true
+      });
 
       map.invalidateSize({
         pan:
@@ -4882,7 +5354,15 @@ function showSpotDetail(
 // 詳細閉じる
 // ============================================================
 
-function closeSpotDetail() {
+function closeSpotDetail(
+  options = {}
+) {
+
+  const returnFocusElement =
+    detailReturnFocusElement;
+
+  detailReturnFocusElement =
+    null;
 
   if (
     selectedRecord
@@ -4923,6 +5403,21 @@ function closeSpotDetail() {
         animate:
           false
       });
+
+      if (
+        options.restoreFocus !==
+          false
+      ) {
+        const focusTarget =
+          returnFocusElement?.isConnected &&
+          returnFocusElement.getClientRects().length
+            ? returnFocusElement
+            : mapViewButton;
+
+        focusTarget?.focus({
+          preventScroll: true
+        });
+      }
 
     }
   );
@@ -5004,7 +5499,11 @@ function createSpotRecord(
 
   const record = {
     spot,
-    marker
+    marker,
+    prefecture:
+      getSpotPrefecture(spot),
+    searchText:
+      getSpotSearchText(spot)
   };
 
 
@@ -5040,7 +5539,9 @@ function createSpotRecord(
         record,
         {
           scrollOnMobile:
-            true
+            true,
+          returnFocusTo:
+            marker.getElement()
         }
       );
 
@@ -5195,230 +5696,166 @@ function getSelectedValues(
 // フィルター判定
 // ============================================================
 
-function spotMatchesFilters(
-  spot
+function getCurrentFilterState() {
+
+  const hasBrandFilters =
+    document.querySelector(
+      'input[name="filter-brand"]'
+    ) !== null;
+
+  return {
+    categories:
+      getSelectedValues(
+        "filter-category"
+      ),
+    places:
+      getSelectedValues(
+        "filter-place"
+      ),
+    periods:
+      getSelectedValues(
+        "filter-period"
+      ),
+    reservations:
+      getSelectedValues(
+        "filter-reservation"
+      ),
+    evidenceStatuses:
+      getSelectedValues(
+        "filter-nagano-evidence"
+      ),
+    officialRelations:
+      getSelectedValues(
+        "filter-official-relation"
+      ),
+    naganoRelations:
+      getSelectedValues(
+        "filter-nagano-relation"
+      ),
+    brands:
+      hasBrandFilters
+        ? getSelectedValues(
+            "filter-brand"
+          )
+        : null,
+    searchQuery:
+      normalizeSearchText(
+        spotSearch?.value ||
+        ""
+      ),
+    selectedPrefecture:
+      prefectureFilter?.value ||
+      "",
+    favoriteOnly,
+    visitedOnly,
+    soonEnding:
+      Boolean(
+        soonEndingFilter?.checked
+      )
+  };
+}
+
+
+function recordMatchesFilters(
+  record,
+  state
 ) {
 
-  const categories =
-    getSelectedValues(
-      "filter-category"
-    );
-
-
-  const places =
-    getSelectedValues(
-      "filter-place"
-    );
-
-
-  const periods =
-    getSelectedValues(
-      "filter-period"
-    );
-
-
-  const reservations =
-    getSelectedValues(
-      "filter-reservation"
-    );
-
-
-  const evidenceStatuses =
-    getSelectedValues(
-      "filter-nagano-evidence"
-    );
-
-
-  const searchQuery =
-    normalizeSearchText(
-      spotSearch?.value ||
-      ""
-    );
-
-
-  const selectedPrefecture =
-    prefectureFilter?.value ||
-    "";
-
+  const spot =
+    record.spot;
 
   if (
-    favoriteOnly &&
-    !isFavoriteSpot(
-      spot
-    )
+    state.favoriteOnly &&
+    !isFavoriteSpot(spot)
   ) {
     return false;
   }
 
-
   if (
-    visitedOnly &&
-    !isVisitedSpot(
-      spot
-    )
+    state.visitedOnly &&
+    !isVisitedSpot(spot)
   ) {
     return false;
   }
 
-
   if (
-    soonEndingFilter?.checked &&
+    state.soonEnding &&
     !isSpotEndingSoon(spot)
   ) {
     return false;
   }
 
-
   if (
-    searchQuery &&
-    !getSpotSearchText(
-      spot
-    ).includes(
-      searchQuery
+    state.searchQuery &&
+    !record.searchText.includes(
+      state.searchQuery
     )
   ) {
     return false;
   }
 
-
   if (
-    selectedPrefecture &&
-    getSpotPrefecture(
-      spot
-    ) !==
-    selectedPrefecture
+    state.selectedPrefecture &&
+    record.prefecture !==
+      state.selectedPrefecture
   ) {
     return false;
   }
 
-
   if (
-    !categories.has(
+    !state.categories.has(
       spot.category
-    )
-  ) {
-
-    return false;
-  }
-
-
-  if (
-    !places.has(
+    ) ||
+    !state.places.has(
       spot.placeType
-    )
-  ) {
-
-    return false;
-  }
-
-
-  if (
-    !periods.has(
+    ) ||
+    !state.periods.has(
       spot.periodType
-    )
-  ) {
-
-    return false;
-  }
-
-
-  if (
-    !reservations.has(
+    ) ||
+    !state.reservations.has(
       spot.reservationType ||
       "unknown"
     )
   ) {
-
     return false;
   }
 
-
-  // ブランドフィルター
-  const brandInputs =
-    document.querySelectorAll(
-      'input[name="filter-brand"]'
-    );
-
-
   if (
-    brandInputs.length >
-    0
+    state.brands &&
+    !state.brands.has(
+      spot.brand ||
+      "other"
+    )
   ) {
-
-    const brands =
-      getSelectedValues(
-        "filter-brand"
-      );
-
-
-    if (
-      !brands.has(
-        spot.brand ||
-        "other"
-      )
-    ) {
-
-      return false;
-    }
+    return false;
   }
 
-
-  // 公式関連
   if (
     spot.category ===
-    "official"
+      "official" &&
+    !state.officialRelations.has(
+      spot.relationType
+    )
   ) {
-
-    const relations =
-      getSelectedValues(
-        "filter-official-relation"
-      );
-
-
-    if (
-      !relations.has(
-        spot.relationType
-      )
-    ) {
-
-      return false;
-    }
+    return false;
   }
 
-
-  // ナガノ先生関連
   if (
     spot.category ===
     "nagano"
   ) {
-
-    const relations =
-      getSelectedValues(
-        "filter-nagano-relation"
-      );
-
-
     if (
-      !relations.has(
+      !state.naganoRelations.has(
         spot.relationType
-      )
-    ) {
-
-      return false;
-    }
-
-
-    if (
-      !evidenceStatuses.has(
+      ) ||
+      !state.evidenceStatuses.has(
         spot.evidenceStatus ||
         "confirmed"
       )
     ) {
-
       return false;
     }
   }
-
 
   return true;
 }
@@ -5432,15 +5869,21 @@ function updateSpotFilters() {
 
   updateSearchClearButton();
 
+  const filterState =
+    getCurrentFilterState();
+
 
   if (
     selectedRecord &&
-    !spotMatchesFilters(
-      selectedRecord.spot
+    !recordMatchesFilters(
+      selectedRecord,
+      filterState
     )
   ) {
 
-    closeSpotDetail();
+    closeSpotDetail({
+      restoreFocus: false
+    });
   }
 
 
@@ -5459,8 +5902,9 @@ function updateSpotFilters() {
     record => {
 
       if (
-        spotMatchesFilters(
-          record.spot
+        recordMatchesFilters(
+          record,
+          filterState
         )
       ) {
 
@@ -5513,15 +5957,19 @@ function updateSpotFilters() {
   lastFilteredRecords =
     visibleRecords;
 
-  const listRecords =
-    getListRecords(
-      visibleRecords
+  if (
+    currentViewMode ===
+    "list"
+  ) {
+    renderSpotList(
+      getListRecords(
+        visibleRecords
+      ),
+      visibleRecords.length
     );
-
-  renderSpotList(
-    listRecords,
-    visibleRecords.length
-  );
+  } else {
+    spotList?.replaceChildren();
+  }
 
   syncListControlButtons();
   updateFavoriteCount();
@@ -5533,6 +5981,84 @@ function updateSpotFilters() {
 // ============================================================
 // パネル開閉
 // ============================================================
+
+const PANEL_FOCUSABLE_SELECTOR =
+  'a[href], button:not([disabled]), input:not([disabled]), ' +
+  'select:not([disabled]), textarea:not([disabled]), ' +
+  '[tabindex]:not([tabindex="-1"])';
+
+
+function getOpenDialogPanel() {
+
+  return [
+    filterPanel,
+    officialHelpPanel,
+    naganoHelpPanel
+  ].find(
+    panel =>
+      panel &&
+      !panel.hidden
+  ) || null;
+}
+
+
+function trapFocusInPanel(
+  event,
+  panel
+) {
+
+  const focusableElements =
+    Array.from(
+      panel.querySelectorAll(
+        PANEL_FOCUSABLE_SELECTOR
+      )
+    ).filter(
+      element =>
+        element.getClientRects().length >
+        0
+    );
+
+  if (
+    focusableElements.length ===
+    0
+  ) {
+    return;
+  }
+
+  const firstElement =
+    focusableElements[0];
+
+  const lastElement =
+    focusableElements[
+      focusableElements.length - 1
+    ];
+
+  if (
+    !panel.contains(
+      document.activeElement
+    )
+  ) {
+    event.preventDefault();
+    firstElement.focus();
+    return;
+  }
+
+  if (
+    event.shiftKey &&
+    document.activeElement ===
+      firstElement
+  ) {
+    event.preventDefault();
+    lastElement.focus();
+  } else if (
+    !event.shiftKey &&
+    document.activeElement ===
+      lastElement
+  ) {
+    event.preventDefault();
+    firstElement.focus();
+  }
+}
 
 function setFilterPanelOpen(
   open
@@ -5808,6 +6334,7 @@ async function loadSpots() {
 
     const spots = [];
     let sourceErrorCount = 0;
+    const failedSourceLabels = [];
 
     results.forEach(
       (result, index) => {
@@ -5834,6 +6361,10 @@ async function loadSpots() {
         } else {
 
           sourceErrorCount++;
+
+          failedSourceLabels.push(
+            source.label
+          );
 
           console.error(
             source.label +
@@ -5982,6 +6513,16 @@ async function loadSpots() {
         "個のデータファイルを読み込めませんでしたが、" +
         "読み込めたデータで表示を継続します。"
       );
+
+      showAppStatus(
+        failedSourceLabels.join("・") +
+        "のデータを読み込めませんでした。読み込めたスポットだけで表示しています。",
+        {
+          type: "warning",
+          persistent: true,
+          retry: true
+        }
+      );
     }
 
     if (
@@ -6008,6 +6549,15 @@ async function loadSpots() {
       resultCount.textContent =
         "スポット読込エラー";
     }
+
+    showAppStatus(
+      "スポットデータを読み込めませんでした。通信状況をご確認のうえ、再読み込みしてください。",
+      {
+        type: "error",
+        persistent: true,
+        retry: true
+      }
+    );
   }
 }
 
@@ -6203,7 +6753,9 @@ listViewButton
   ?.addEventListener(
     "click",
     () => {
-      closeSpotDetail();
+      closeSpotDetail({
+        restoreFocus: false
+      });
       setViewMode(
         "list"
       );
@@ -6335,6 +6887,8 @@ map.on(
   "moveend",
   () => {
     if (
+      currentViewMode ===
+        "list" &&
       listWithinMapBounds &&
       lastFilteredRecords.length
     ) {
@@ -6383,6 +6937,42 @@ filterReset
   ?.addEventListener(
     "click",
     resetFilters
+  );
+
+
+savedDataExport
+  ?.addEventListener(
+    "click",
+    exportSavedSpotData
+  );
+
+
+savedDataImport
+  ?.addEventListener(
+    "click",
+    () => {
+      savedDataFile?.click();
+    }
+  );
+
+
+savedDataFile
+  ?.addEventListener(
+    "change",
+    () => {
+      importSavedSpotData(
+        savedDataFile.files?.[0]
+      );
+    }
+  );
+
+
+dataRetryButton
+  ?.addEventListener(
+    "click",
+    () => {
+      window.location.reload();
+    }
   );
 
 
@@ -6441,7 +7031,9 @@ naganoHelpClose
 detailClose
   ?.addEventListener(
     "click",
-    closeSpotDetail
+    () => {
+      closeSpotDetail();
+    }
   );
 
 
@@ -6449,6 +7041,25 @@ detailClose
 document.addEventListener(
   "keydown",
   event => {
+
+    if (
+      event.key ===
+      "Tab"
+    ) {
+      const openPanel =
+        getOpenDialogPanel();
+
+      if (
+        openPanel
+      ) {
+        trapFocusInPanel(
+          event,
+          openPanel
+        );
+      }
+
+      return;
+    }
 
     if (
       event.key !==

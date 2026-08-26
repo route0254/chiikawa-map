@@ -1,0 +1,60 @@
+name: 新しいスポットの掲載提案
+description: 未掲載の公式・ナガノ先生関連スポットを提案します
+title: "[掲載提案] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        掲載基準に照らして確認します。噂のみではなく、一次情報または信頼性の高い根拠を添えてください。
+
+  - type: input
+    id: spot-name
+    attributes:
+      label: スポット名
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 関連カテゴリ
+      options:
+        - ちいかわ公式関連
+        - ナガノ先生関連
+        - 判断できない
+    validations:
+      required: true
+
+  - type: input
+    id: address
+    attributes:
+      label: 住所・場所
+    validations:
+      required: true
+
+  - type: input
+    id: period
+    attributes:
+      label: 開催期間
+      description: 常設の場合は「常設」、期間限定の場合は開始日・終了日をご記入ください。
+
+  - type: textarea
+    id: relation
+    attributes:
+      label: ちいかわ／ナガノ先生との関係
+      description: コラボ、店舗、訪問、作品登場など、掲載理由をご記入ください。
+    validations:
+      required: true
+
+  - type: input
+    id: source-url
+    attributes:
+      label: 根拠となる公式情報のURL
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 補足情報
+      description: 営業時間、予約方法、注意事項などがあればご記入ください。

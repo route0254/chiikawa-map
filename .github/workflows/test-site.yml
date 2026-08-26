@@ -1,0 +1,65 @@
+name: Test site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "app.js"
+      - "index.html"
+      - "style.css"
+      - "data/*.json"
+      - "scripts/**"
+      - "tests/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "playwright.config.mjs"
+      - ".github/workflows/test-site.yml"
+  pull_request:
+    paths:
+      - "app.js"
+      - "index.html"
+      - "style.css"
+      - "data/*.json"
+      - "scripts/**"
+      - "tests/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "playwright.config.mjs"
+      - ".github/workflows/test-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Syntax, data, and UI smoke tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Check JavaScript and spot data
+        run: pnpm run check
+
+      - name: Run UI smoke tests
+        run: pnpm run test:smoke

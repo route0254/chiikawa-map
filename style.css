@@ -585,6 +585,67 @@ button {
 }
 
 
+.app-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 9px 14px;
+
+  border-bottom: 1px solid #e3dce0;
+
+  color: #5f575a;
+  background: #f8f6f7;
+
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+.app-status[hidden] {
+  display: none;
+}
+
+
+.app-status.is-warning {
+  color: #7c5a18;
+  background: #fff8e6;
+  border-color: #ecd9a8;
+}
+
+
+.app-status.is-error {
+  color: #93442f;
+  background: #fff0eb;
+  border-color: #efc5b8;
+}
+
+
+.app-status.is-success {
+  color: #39724d;
+  background: #edf8f1;
+  border-color: #c7e2d0;
+}
+
+
+.app-status-action {
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: 5px 10px;
+
+  border: 1px solid currentColor;
+  border-radius: 8px;
+
+  color: inherit;
+  background: rgba(255, 255, 255, 0.76);
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
 .legend-item {
   display: inline-flex;
 
@@ -813,6 +874,41 @@ button {
   padding: 10px 15px 13px;
 
   border-top: 1px solid var(--line);
+}
+
+
+.saved-data-tools {
+  padding: 12px 15px;
+
+  border-top: 1px solid var(--line);
+
+  background: #fbfafb;
+}
+
+
+.saved-data-tools h3 {
+  margin: 0 0 5px;
+
+  color: #544c4f;
+
+  font-size: 11px;
+}
+
+
+.saved-data-tools p {
+  margin: 0 0 9px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+
+.saved-data-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
 }
 
 
@@ -1762,6 +1858,18 @@ button {
 }
 
 
+.spot-detail-body a.spot-report-link {
+  margin-top: 12px;
+  padding-top: 10px;
+
+  border-top: 1px dashed var(--line);
+
+  color: #7b6f74;
+
+  font-size: 11px;
+}
+
+
 /* ==========================================================
    FOOT NOTE
    ========================================================== */
@@ -1867,12 +1975,23 @@ button {
 
   .spot-search-field,
   #prefecture-filter {
-    min-height: 40px;
+    min-height: 44px;
+  }
+
+  .spot-search-clear {
+    width: 44px;
+    height: 44px;
+    margin-right: 0;
   }
 
   #spot-search {
+    min-height: 44px;
     padding: 8px 7px;
     font-size: 11px;
+  }
+
+  .search-suggestion {
+    min-height: 44px;
   }
 
   .spot-search-icon {
@@ -1897,13 +2016,43 @@ button {
 
 
   .toolbar-button {
-    min-height: 34px;
+    min-height: 44px;
 
     padding:
       6px
       9px;
 
     font-size: 11px;
+  }
+
+
+  .icon-button,
+  .secondary-button,
+  .app-status-action,
+  .spot-list-tool-button,
+  .spot-list-favorite-button,
+  .spot-list-share-button,
+  .spot-list-visited-button,
+  .spot-list-open-button,
+  .spot-favorite-button,
+  .spot-visited-button,
+  .spot-share-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+
+  .leaflet-control-zoom a {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+
+
+  .app-status {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 9px;
   }
 
 
@@ -2524,5 +2673,40 @@ button {
 
   .spot-detail-actions .spot-visited-button {
     width: 100%;
+  }
+}
+
+
+@media (max-width: 650px) {
+  button {
+    min-height: 44px;
+  }
+
+  .filter-chip span,
+  .filter-details summary {
+    min-height: 44px;
+  }
+
+  .filter-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon-button,
+  .spot-list-favorite-button,
+  .spot-list-share-button,
+  .spot-list-visited-button {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .spot-list-tool-button,
+  .spot-list-open-button,
+  .spot-favorite-button,
+  .spot-visited-button,
+  .spot-share-button {
+    min-height: 44px;
   }
 }

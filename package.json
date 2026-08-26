@@ -1,0 +1,14 @@
+{
+  "name": "chiikawa-map",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "check": "node --check app.js && node scripts/validate-data.mjs",
+    "test:smoke": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "leaflet": "1.9.4",
+    "leaflet.markercluster": "1.5.3"
+  }
+}

@@ -1,0 +1,67 @@
+name: 掲載スポットの修正
+description: 掲載中のスポット情報の誤りや変更を報告します
+title: "[スポット情報] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご連絡ありがとうございます。確認できる公式情報がある場合は、URLもお知らせください。
+
+  - type: input
+    id: spot-id
+    attributes:
+      label: スポットID
+      description: マップの詳細画面から開いた場合は自動入力されます。
+      placeholder: 例）chiikawaland-tokyo-station
+    validations:
+      required: true
+
+  - type: input
+    id: spot-name
+    attributes:
+      label: スポット名
+    validations:
+      required: true
+
+  - type: input
+    id: page-url
+    attributes:
+      label: マップ上のURL
+      description: 対象スポットを表示した共有URLです。
+
+  - type: dropdown
+    id: correction-type
+    attributes:
+      label: 報告の種類
+      options:
+        - 営業時間・休業日の変更
+        - 住所・位置の修正
+        - 予約・入場方法の変更
+        - 期間・開催日の変更
+        - 閉店・開催終了
+        - リンク切れ
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 修正内容
+      description: 現在の記載と、正しいと思われる内容をご記入ください。
+    validations:
+      required: true
+
+  - type: input
+    id: evidence-url
+    attributes:
+      label: 確認できる公式情報のURL
+      description: 店舗・施設・主催者などの公式ページや公式SNSを優先してください。
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 確認
+      options:
+        - label: 個人情報や非公開情報を含めていません
+          required: true
