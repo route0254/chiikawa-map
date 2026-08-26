@@ -2414,6 +2414,14 @@ const VISITED_STORAGE_KEY =
   "chiikawa-map-visited-v1";
 
 
+const VISIT_DETAILS_STORAGE_KEY =
+  "chiikawa-map-visit-details-v1";
+
+
+const VISIT_NOTE_MAX_LENGTH =
+  500;
+
+
 let favoriteSpotIds =
   loadFavoriteSpotIds();
 
@@ -2423,6 +2431,10 @@ let visitedSpotIds =
     VISITED_STORAGE_KEY,
     "行った！スポット"
   );
+
+
+let visitDetailsBySpotId =
+  loadVisitDetails();
 
 
 let favoriteOnly =
@@ -2621,6 +2633,208 @@ function saveFavoriteSpotIds() {
 }
 
 
+function isValidVisitDate(
+  value
+) {
+
+  if (
+    value === ""
+  ) {
+    return true;
+  }
+
+  if (
+    typeof value !== "string" ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(value)
+  ) {
+    return false;
+  }
+
+  const date =
+    new Date(
+      value + "T00:00:00Z"
+    );
+
+  return !Number.isNaN(
+    date.getTime()
+  ) &&
+    date.toISOString()
+      .slice(0, 10) === value;
+}
+
+
+function normalizeVisitDetail(
+  value
+) {
+
+  if (
+    !value ||
+    typeof value !== "object" ||
+    Array.isArray(value)
+  ) {
+    return null;
+  }
+
+  const visitedAt =
+    typeof value.visitedAt ===
+      "string"
+      ? value.visitedAt.trim()
+      : "";
+
+  const note =
+    typeof value.note ===
+      "string"
+      ? value.note.trim()
+      : "";
+
+  if (
+    !isValidVisitDate(visitedAt) ||
+    note.length >
+      VISIT_NOTE_MAX_LENGTH
+  ) {
+    return null;
+  }
+
+  if (
+    !visitedAt &&
+    !note
+  ) {
+    return null;
+  }
+
+  return {
+    visitedAt,
+    note
+  };
+}
+
+
+function loadVisitDetails() {
+
+  try {
+    const value =
+      window.localStorage.getItem(
+        VISIT_DETAILS_STORAGE_KEY
+      );
+
+    if (!value) {
+      return new Map();
+    }
+
+    const parsed =
+      JSON.parse(value);
+
+    if (
+      !parsed ||
+      typeof parsed !== "object" ||
+      Array.isArray(parsed)
+    ) {
+      throw new Error(
+        "保存形式が正しくありません。"
+      );
+    }
+
+    const entries =
+      Object.entries(parsed);
+
+    if (
+      entries.length > 10000
+    ) {
+      throw new Error(
+        "保存件数が上限を超えています。"
+      );
+    }
+
+    const details =
+      new Map();
+
+    entries.forEach(
+      ([id, detail]) => {
+        const normalized =
+          normalizeVisitDetail(
+            detail
+          );
+
+        if (
+          id &&
+          id.length <= 200 &&
+          normalized
+        ) {
+          details.set(
+            id,
+            normalized
+          );
+        }
+      }
+    );
+
+    return details;
+
+  } catch (error) {
+    console.warn(
+      "訪問日・メモの保存データを読み込めませんでした。",
+      error
+    );
+
+    showAppStatus(
+      "訪問日・メモの保存データを読み込めなかったため、空の状態で表示しています。",
+      {
+        type: "warning"
+      }
+    );
+
+    return new Map();
+  }
+}
+
+
+function getVisitDetailsForExport() {
+
+  return Object.fromEntries(
+    Array.from(
+      visitDetailsBySpotId.entries()
+    )
+      .sort(
+        ([firstId], [secondId]) =>
+          firstId.localeCompare(
+            secondId
+          )
+      )
+  );
+}
+
+
+function saveVisitDetails() {
+
+  try {
+    window.localStorage.setItem(
+      VISIT_DETAILS_STORAGE_KEY,
+      JSON.stringify(
+        getVisitDetailsForExport()
+      )
+    );
+
+    return true;
+
+  } catch (error) {
+    console.warn(
+      "訪問日・メモを保存できませんでした。",
+      error
+    );
+
+    showAppStatus(
+      "訪問日・メモを端末に保存できませんでした。ブラウザの保存設定や空き容量をご確認ください。",
+      {
+        type: "error",
+        persistent: true
+      }
+    );
+
+    return false;
+  }
+}
+
+
 const SAVED_DATA_FORMAT =
   "chiikatsu-map-saved-spots";
 
@@ -2645,7 +2859,9 @@ function exportSavedSpotData() {
     visited:
       Array.from(
         visitedSpotIds
-      ).sort()
+      ).sort(),
+    visitDetails:
+      getVisitDetailsForExport()
   };
 
   const file =
@@ -2698,7 +2914,7 @@ function exportSavedSpotData() {
   );
 
   showAppStatus(
-    "行きたい・行った！の保存データを書き出しました。",
+    "行きたい・行った！・訪問記録の保存データを書き出しました。",
     {
       type: "success"
     }
@@ -2731,6 +2947,68 @@ function getImportedSpotIds(
     id =>
       id.trim()
   );
+}
+
+
+function getImportedVisitDetails(
+  value
+) {
+
+  if (
+    value === undefined
+  ) {
+    return new Map();
+  }
+
+  if (
+    !value ||
+    typeof value !== "object" ||
+    Array.isArray(value)
+  ) {
+    throw new Error(
+      "訪問日・メモの形式が正しくありません。"
+    );
+  }
+
+  const entries =
+    Object.entries(value);
+
+  if (
+    entries.length > 10000
+  ) {
+    throw new Error(
+      "訪問日・メモの件数が上限を超えています。"
+    );
+  }
+
+  const importedDetails =
+    new Map();
+
+  entries.forEach(
+    ([id, detail]) => {
+      const normalized =
+        normalizeVisitDetail(
+          detail
+        );
+
+      if (
+        !id.trim() ||
+        id.length > 200 ||
+        !normalized
+      ) {
+        throw new Error(
+          "訪問日・メモの形式が正しくありません。"
+        );
+      }
+
+      importedDetails.set(
+        id.trim(),
+        normalized
+      );
+    }
+  );
+
+  return importedDetails;
 }
 
 
@@ -2784,11 +3062,19 @@ async function importSavedSpotData(
         "行った！スポット"
       );
 
+    const importedVisitDetails =
+      getImportedVisitDetails(
+        importedData.visitDetails
+      );
+
     const favoriteCountBefore =
       favoriteSpotIds.size;
 
     const visitedCountBefore =
       visitedSpotIds.size;
+
+    let addedVisitDetails =
+      0;
 
     importedFavorites.forEach(
       id =>
@@ -2798,6 +3084,36 @@ async function importSavedSpotData(
     importedVisited.forEach(
       id =>
         visitedSpotIds.add(id)
+    );
+
+    importedVisitDetails.forEach(
+      (detail, id) => {
+        const current =
+          visitDetailsBySpotId.get(id);
+
+        const merged = {
+          visitedAt:
+            current?.visitedAt ||
+            detail.visitedAt,
+          note:
+            current?.note ||
+            detail.note
+        };
+
+        if (
+          !current ||
+          current.visitedAt !==
+            merged.visitedAt ||
+          current.note !==
+            merged.note
+        ) {
+          visitDetailsBySpotId.set(
+            id,
+            merged
+          );
+          addedVisitDetails += 1;
+        }
+      }
     );
 
     const favoriteSaved =
@@ -2810,13 +3126,17 @@ async function importSavedSpotData(
         "行った！スポット"
       );
 
+    const visitDetailsSaved =
+      saveVisitDetails();
+
     updateFavoriteCount();
     updateVisitedCount();
     updateSpotFilters();
 
     if (
       favoriteSaved &&
-      visitedSaved
+      visitedSaved &&
+      visitDetailsSaved
     ) {
       const addedFavorites =
         favoriteSpotIds.size -
@@ -2831,6 +3151,8 @@ async function importSavedSpotData(
         addedFavorites +
         "件、行った！ +" +
         addedVisited +
+        "件、訪問記録 +" +
+        addedVisitDetails +
         "件）。",
         {
           type: "success"
@@ -4656,6 +4978,444 @@ function appendLink(
 }
 
 
+function createVisitDetailsCard(
+  spot
+) {
+
+  if (
+    !isVisitedSpot(spot)
+  ) {
+    return null;
+  }
+
+  const savedDetail =
+    visitDetailsBySpotId.get(
+      spot.id
+    ) || {
+      visitedAt: "",
+      note: ""
+    };
+
+  const card =
+    createDiv(
+      "spot-info-card spot-visit-card"
+    );
+
+  card.appendChild(
+    createDiv(
+      "spot-info-title",
+      "📝 訪問記録"
+    )
+  );
+
+  card.appendChild(
+    createDiv(
+      "spot-visit-intro",
+      "訪問日と自分用メモをこの端末に保存できます。"
+    )
+  );
+
+  const form =
+    document.createElement(
+      "form"
+    );
+
+  form.className =
+    "spot-visit-form";
+
+  const dateLabel =
+    document.createElement(
+      "label"
+    );
+
+  dateLabel.className =
+    "spot-visit-field";
+
+  dateLabel.appendChild(
+    createDiv(
+      "spot-visit-label",
+      "訪問日"
+    )
+  );
+
+  const dateInput =
+    document.createElement(
+      "input"
+    );
+
+  dateInput.type =
+    "date";
+  dateInput.className =
+    "spot-visit-date";
+  dateInput.max =
+    getTodayInJapan();
+  dateInput.value =
+    savedDetail.visitedAt;
+
+  dateLabel.appendChild(
+    dateInput
+  );
+
+  const noteLabel =
+    document.createElement(
+      "label"
+    );
+
+  noteLabel.className =
+    "spot-visit-field";
+
+  noteLabel.appendChild(
+    createDiv(
+      "spot-visit-label",
+      "メモ"
+    )
+  );
+
+  const noteInput =
+    document.createElement(
+      "textarea"
+    );
+
+  noteInput.className =
+    "spot-visit-note";
+  noteInput.maxLength =
+    VISIT_NOTE_MAX_LENGTH;
+  noteInput.rows = 3;
+  noteInput.placeholder =
+    "食べたもの、買ったもの、次回のメモなど";
+  noteInput.value =
+    savedDetail.note;
+
+  noteLabel.appendChild(
+    noteInput
+  );
+
+  const noteCount =
+    createDiv(
+      "spot-visit-note-count"
+    );
+
+  noteCount.setAttribute(
+    "aria-live",
+    "polite"
+  );
+
+  const updateNoteCount =
+    () => {
+      noteCount.textContent =
+        noteInput.value.length +
+        " / " +
+        VISIT_NOTE_MAX_LENGTH;
+    };
+
+  updateNoteCount();
+
+  noteInput.addEventListener(
+    "input",
+    updateNoteCount
+  );
+
+  const actions =
+    createDiv(
+      "spot-visit-actions"
+    );
+
+  const saveButton =
+    document.createElement(
+      "button"
+    );
+
+  saveButton.type =
+    "submit";
+  saveButton.className =
+    "spot-visit-save";
+  saveButton.textContent =
+    "訪問記録を保存";
+
+  const clearButton =
+    document.createElement(
+      "button"
+    );
+
+  clearButton.type =
+    "button";
+  clearButton.className =
+    "spot-visit-clear";
+  clearButton.textContent =
+    "日付・メモを消去";
+
+  const status =
+    createDiv(
+      "spot-visit-status"
+    );
+
+  status.setAttribute(
+    "role",
+    "status"
+  );
+  status.setAttribute(
+    "aria-live",
+    "polite"
+  );
+
+  form.addEventListener(
+    "submit",
+    event => {
+      event.preventDefault();
+
+      const visitedAt =
+        dateInput.value;
+      const note =
+        noteInput.value.trim();
+
+      if (
+        !visitedAt &&
+        !note
+      ) {
+        visitDetailsBySpotId.delete(
+          spot.id
+        );
+      } else {
+        visitDetailsBySpotId.set(
+          spot.id,
+          {
+            visitedAt,
+            note
+          }
+        );
+      }
+
+      if (
+        saveVisitDetails()
+      ) {
+        noteInput.value =
+          note;
+        updateNoteCount();
+        status.textContent =
+          "この端末に保存しました。";
+      }
+    }
+  );
+
+  clearButton.addEventListener(
+    "click",
+    () => {
+      dateInput.value = "";
+      noteInput.value = "";
+      updateNoteCount();
+      visitDetailsBySpotId.delete(
+        spot.id
+      );
+
+      if (
+        saveVisitDetails()
+      ) {
+        status.textContent =
+          "訪問日・メモを消去しました。";
+        dateInput.focus();
+      }
+    }
+  );
+
+  actions.appendChild(
+    saveButton
+  );
+  actions.appendChild(
+    clearButton
+  );
+
+  form.appendChild(
+    dateLabel
+  );
+  form.appendChild(
+    noteLabel
+  );
+  form.appendChild(
+    noteCount
+  );
+  form.appendChild(
+    actions
+  );
+  form.appendChild(
+    status
+  );
+
+  card.appendChild(form);
+
+  return card;
+}
+
+
+function getNearbySpotRecords(
+  spot,
+  limit = 5
+) {
+
+  if (
+    typeof spot?.lat !== "number" ||
+    typeof spot?.lng !== "number"
+  ) {
+    return [];
+  }
+
+  return spotRecords
+    .filter(
+      record =>
+        record.spot.id !== spot.id &&
+        getSpotPeriodStatus(
+          record.spot
+        ) !== "ended"
+    )
+    .map(
+      record => ({
+        record,
+        distance:
+          getDistanceMeters(
+            spot.lat,
+            spot.lng,
+            record.spot.lat,
+            record.spot.lng
+          )
+      })
+    )
+    .sort(
+      (first, second) =>
+        first.distance -
+          second.distance ||
+        first.record.spot.name
+          .localeCompare(
+            second.record.spot.name,
+            "ja"
+          )
+    )
+    .slice(0, limit);
+}
+
+
+function createNearbySpotsCard(
+  spot
+) {
+
+  const nearbySpots =
+    getNearbySpotRecords(spot);
+
+  if (!nearbySpots.length) {
+    return null;
+  }
+
+  const card =
+    createDiv(
+      "spot-info-card spot-nearby-card"
+    );
+
+  card.appendChild(
+    createDiv(
+      "spot-info-title",
+      "📍 近くのスポット"
+    )
+  );
+
+  card.appendChild(
+    createDiv(
+      "spot-nearby-note",
+      "終了済みを除き、直線距離が近い順に5件表示しています。"
+    )
+  );
+
+  const list =
+    document.createElement(
+      "ul"
+    );
+
+  list.className =
+    "spot-nearby-list";
+
+  nearbySpots.forEach(
+    ({ record, distance }) => {
+      const item =
+        document.createElement(
+          "li"
+        );
+
+      const button =
+        document.createElement(
+          "button"
+        );
+
+      button.type =
+        "button";
+      button.className =
+        "spot-nearby-button";
+      button.dataset.spotId =
+        record.spot.id;
+
+      const name =
+        createDiv(
+          "spot-nearby-name",
+          record.spot.name
+        );
+
+      const distanceText =
+        distance < 1
+          ? "同じ地点"
+          : formatDistance(
+              distance
+            ) +
+            "（直線距離）";
+
+      const meta =
+        createDiv(
+          "spot-nearby-meta",
+          distanceText +
+          "・" +
+          getCategoryLabel(
+            record.spot.category
+          )
+        );
+
+      button.appendChild(name);
+      button.appendChild(meta);
+
+      button.addEventListener(
+        "click",
+        () => {
+          map.setView(
+            [
+              record.spot.lat,
+              record.spot.lng
+            ],
+            Math.max(
+              map.getZoom(),
+              15
+            ),
+            {
+              animate: true
+            }
+          );
+
+          showSpotDetail(
+            record,
+            {
+              scrollOnMobile:
+                true,
+              returnFocusTo:
+                button
+            }
+          );
+        }
+      );
+
+      item.appendChild(button);
+      list.appendChild(item);
+    }
+  );
+
+  card.appendChild(list);
+
+  return card;
+}
+
+
 // ============================================================
 // 詳細DOM
 // ============================================================
@@ -4843,6 +5603,15 @@ function createSpotDetail(
   container.appendChild(
     spotActions
   );
+
+  const visitDetailsCard =
+    createVisitDetailsCard(spot);
+
+  if (visitDetailsCard) {
+    container.appendChild(
+      visitDetailsCard
+    );
+  }
 
 
   // タグ
@@ -5329,6 +6098,15 @@ function createSpotDetail(
         "spot-description",
         spot.description
       )
+    );
+  }
+
+  const nearbySpotsCard =
+    createNearbySpotsCard(spot);
+
+  if (nearbySpotsCard) {
+    container.appendChild(
+      nearbySpotsCard
     );
   }
 

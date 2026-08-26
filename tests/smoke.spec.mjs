@@ -934,6 +934,281 @@ test(
 
 
 test(
+  "訪問日・メモを保存し、再読込とJSON書き出しで維持する",
+  async ({ page }) => {
+    await page.goto("/");
+    await waitForSpots(page);
+
+    const search =
+      page.locator(
+        "#spot-search"
+      );
+
+    await search.fill(
+      "ちいかわらんど 大阪梅田店"
+    );
+
+    await page.locator(
+      ".search-suggestion"
+    ).filter({
+      hasText:
+        "ちいかわらんど 大阪梅田店"
+    }).first().click();
+
+    await page.locator(
+      ".spot-visited-button"
+    ).click();
+
+    const visitCard =
+      page.locator(
+        ".spot-visit-card"
+      );
+
+    await expect(
+      visitCard
+    ).toBeVisible();
+
+    await visitCard.locator(
+      ".spot-visit-date"
+    ).fill("2026-08-24");
+
+    await visitCard.locator(
+      ".spot-visit-note"
+    ).fill(
+      "限定グッズを購入。次回は午前中に行く。"
+    );
+
+    await visitCard.locator(
+      ".spot-visit-save"
+    ).click();
+
+    await expect(
+      visitCard.locator(
+        ".spot-visit-status"
+      )
+    ).toHaveText(
+      "この端末に保存しました。"
+    );
+
+    const storedDetails =
+      await page.evaluate(
+        () => JSON.parse(
+          localStorage.getItem(
+            "chiikawa-map-visit-details-v1"
+          )
+        )
+      );
+
+    expect(
+      storedDetails[
+        "chiikawaland-osaka-umeda"
+      ]
+    ).toEqual({
+      visitedAt:
+        "2026-08-24",
+      note:
+        "限定グッズを購入。次回は午前中に行く。"
+    });
+
+    await page.locator(
+      "#saved-data-toggle"
+    ).click();
+
+    await page.locator(
+      "#saved-data-file"
+    ).setInputFiles({
+      name:
+        "chiikatsu-map-saved-visit-details.json",
+      mimeType:
+        "application/json",
+      buffer:
+        Buffer.from(
+          JSON.stringify({
+            format:
+              "chiikatsu-map-saved-spots",
+            version:
+              1,
+            exportedAt:
+              "2026-08-26T00:00:00.000Z",
+            favorites: [],
+            visited: [
+              "nagano-takao-mountain"
+            ],
+            visitDetails: {
+              "chiikawaland-osaka-umeda": {
+                visitedAt:
+                  "2026-08-20",
+                note:
+                  "インポート側の記録"
+              },
+              "nagano-takao-mountain": {
+                visitedAt:
+                  "2026-08-25",
+                note:
+                  "高尾山の記録"
+              }
+            }
+          })
+        )
+    });
+
+    const mergedDetails =
+      await page.evaluate(
+        () => JSON.parse(
+          localStorage.getItem(
+            "chiikawa-map-visit-details-v1"
+          )
+        )
+      );
+
+    expect(
+      mergedDetails[
+        "chiikawaland-osaka-umeda"
+      ]
+    ).toEqual({
+      visitedAt:
+        "2026-08-24",
+      note:
+        "限定グッズを購入。次回は午前中に行く。"
+    });
+
+    expect(
+      mergedDetails[
+        "nagano-takao-mountain"
+      ]
+    ).toEqual({
+      visitedAt:
+        "2026-08-25",
+      note:
+        "高尾山の記録"
+    });
+
+    await page.keyboard.press(
+      "Escape"
+    );
+
+    await page.reload();
+    await waitForSpots(page);
+    await search.fill(
+      "ちいかわらんど 大阪梅田店"
+    );
+
+    await page.locator(
+      ".search-suggestion"
+    ).filter({
+      hasText:
+        "ちいかわらんど 大阪梅田店"
+    }).first().click();
+
+    await expect(
+      page.locator(
+        ".spot-visit-date"
+      )
+    ).toHaveValue(
+      "2026-08-24"
+    );
+
+    await expect(
+      page.locator(
+        ".spot-visit-note"
+      )
+    ).toHaveValue(
+      "限定グッズを購入。次回は午前中に行く。"
+    );
+
+    await page.locator(
+      "#saved-data-toggle"
+    ).click();
+
+    const downloadPromise =
+      page.waitForEvent(
+        "download"
+      );
+
+    await page.locator(
+      "#saved-data-export"
+    ).click();
+
+    const download =
+      await downloadPromise;
+
+    const exportedData =
+      JSON.parse(
+        await readFile(
+          await download.path(),
+          "utf8"
+        )
+      );
+
+    expect(
+      exportedData.visitDetails[
+        "chiikawaland-osaka-umeda"
+      ]
+    ).toEqual({
+      visitedAt:
+        "2026-08-24",
+      note:
+        "限定グッズを購入。次回は午前中に行く。"
+    });
+  }
+);
+
+
+test(
+  "詳細に近隣5件を表示し、絞り込み中でも別スポットを開ける",
+  async ({ page }) => {
+    await page.goto("/");
+    await waitForSpots(page);
+
+    await page.locator(
+      "#spot-search"
+    ).fill(
+      "ちいかわらんど 大阪梅田店"
+    );
+
+    await page.locator(
+      ".search-suggestion"
+    ).filter({
+      hasText:
+        "ちいかわらんど 大阪梅田店"
+    }).first().click();
+
+    const nearbyButtons =
+      page.locator(
+        ".spot-nearby-button"
+      );
+
+    await expect(
+      nearbyButtons
+    ).toHaveCount(5);
+
+    await expect(
+      nearbyButtons.first()
+    ).toContainText(
+      "直線距離"
+    );
+
+    const nearbyName =
+      await nearbyButtons.first()
+        .locator(
+          ".spot-nearby-name"
+        ).textContent();
+
+    await nearbyButtons.first()
+      .click();
+
+    await expect(
+      page.locator(
+        "#spot-detail-title"
+      )
+    ).toHaveText(
+      nearbyName
+    );
+  }
+);
+
+
+test(
   "同一座標の2〜6スポットを件数別パターンで外向きに配置する",
   async ({ page }) => {
     const scenarios = [

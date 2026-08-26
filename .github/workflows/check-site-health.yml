@@ -1,0 +1,27 @@
+name: Check public site health
+
+on:
+  schedule:
+    - cron: "17 7 * * 3"
+      timezone: "Asia/Tokyo"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check HTTPS and canonical URLs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Check public site health
+        run: node scripts/check-site-health.mjs

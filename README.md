@@ -15,14 +15,19 @@ GitHub Pages向けの静的Webサイトです。
 - `assets/ogp.png` : X / SNS共有用OGP画像
 - `CNAME` : GitHub Pagesの独自ドメイン設定
 - `scripts/validate-data.mjs` : スポットJSONの検証
+- `scripts/check-links.mjs` : 公式情報リンクの定期検査
+- `scripts/check-site-health.mjs` : 公開サイトのHTTPS・正規URL・主要ファイル検査
 - `.github/workflows/validate-data.yml` : JSON検証のGitHub Actions
 - `.github/workflows/test-site.yml` : JavaScript・JSON・主要UIのGitHub Actions
+- `.github/workflows/check-links.yml` : 公式情報リンクの週次検査
+- `.github/workflows/check-site-health.yml` : 公開サイト状態の週次検査
 - `.github/ISSUE_TEMPLATE/` : 修正・掲載提案・終了報告用のIssueフォーム
 - `tests/` : Playwrightによる主要UIのスモークテスト
 - `package.json` / `pnpm-lock.yaml` : 開発・テスト用の依存関係
 - `robots.txt` : 検索エンジン向けクロール設定
 - `sitemap.xml` : 独自ドメインのサイトマップ
 - `404.html` : 存在しないURL向け案内ページ
+- `ROADMAP.md` : 今後のデータ・運用・機能課題
 
 ## ローカルGit運用
 
@@ -58,12 +63,13 @@ git push origin main
 
 GitHub Pagesは `main` ブランチのルートから公開されます。`main` へのプッシュ後は自動的に公開処理が始まるため、ローカル検証を省略しないでください。
 GitHub ActionsでもJSON検証と主要UIのスモークテストを行いますが、現在のPages設定では公開を停止するゲートではなく、GitHub上で異常を検知するための二重チェックです。
-毎週月曜日6時23分（日本時間）の定期検証と、Actions画面からの手動実行にも対応しています。
+データ検証は毎週月曜日6時23分、外部リンク検査は同6時41分、公開サイト状態の検査は毎週水曜日7時17分（いずれも日本時間）に自動実行します。各検査はActions画面から手動実行もできます。
 
 ### 互換性を維持するルール
 
 - 既存スポットの `id` は変更・再利用しない（`?spot=<id>` 形式の共有URLとの互換性を維持するため）
 - `chiikawa-map-favorites-v1` と `chiikawa-map-visited-v1` のキー名・保存形式を変更しない
+- 訪問日・メモは別キー `chiikawa-map-visit-details-v1` の任意データとして扱い、既存2キーへ混在させない
 - 既存の共有URLパラメータ名や意味を変更しない
 - JSONの既存フィールドを削除・改名しない
 - `CNAME` の内容 `chiikatsu-map.com` を維持する
@@ -71,7 +77,7 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 
 ## 今回の版
 
-- 掲載基準日: 2026-08-24
+- 掲載基準日: 2026-08-26
 - 公式関連: 70件
 - ナガノ先生関連: 68件（確定 15件 / 推定 53件）
 - `spots.json` を公式関連 / ナガノ先生関連の2ファイルへ分割
@@ -114,6 +120,9 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - スポット詳細の「地図で開く」を「このスポットを共有」と並ぶボタンへ変更
 - スポット詳細からGitHubの報告フォームへ対象情報を引き継ぐ導線を追加
 - JavaScript構文・JSON・主要UIの自動検証を追加
+- 「行った！」登録済みスポットに訪問日・メモを端末保存できる機能を追加
+- スポット詳細に終了済みを除く近隣5件と直線距離を表示
+- HTTPS・www転送・canonical・OGP・公開JSONの週次監視を追加
 
 
 ## 更新履歴
@@ -140,6 +149,10 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - 検索・絞り込み結果が0件の際に、全件表示へ戻す案内と解除ボタンを表示
 - 公式情報URLの404・410、アクセス制限、HTTPリンクを週次確認する外部リンク検査を追加
 - GitHub ActionsをNode.js 24ランタイム対応版へ更新
+- 訪問日・メモを既存の「行った！」データと分離して端末保存し、JSONバックアップにも追加
+- 旧形式のバックアップを引き続き読み込める互換性を維持し、訪問記録の競合時は端末側の入力済み項目を優先
+- スポット詳細に、終了済みを除く近隣5件を直線距離順で表示する導線を追加
+- 公開サイトのHTTPS、HTTP・www転送、canonical、OGP、主要ファイルを毎週確認するGitHub Actionsを追加
 
 ### 2026-08-24 初期版
 
@@ -332,15 +345,18 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - 現在地・距離順・地図範囲・行きたい・行った等の端末固有情報は共有URLに含めない
 - スポット単体共有URL `?spot=<id>` と条件共有URLを分離し、既存機能との競合を防止
 
-## 行きたい保存について
+## 端末への保存について
 
-「♡ 行きたい」はブラウザの `localStorage` を利用します。
+「♡ 行きたい」「✓ 行った！」と、行ったスポットに入力した訪問日・メモはブラウザの `localStorage` を利用します。
 アカウント登録やサーバーへの保存・送信はありません。
 そのため、別ブラウザ・別端末・シークレットモードなどとは共有されず、ブラウザデータを削除すると保存内容も消えます。
 
 ツールバーの「💾 保存データ」を開き、「↓ JSONを書き出す」でJSONファイルへバックアップできます。
 別端末などで「↑ JSONを読み込む」を選ぶと、その端末にある現在の保存内容を消さずに追加統合します。
-既存の保存キー `chiikawa-map-favorites-v1` / `chiikawa-map-visited-v1` と配列形式は維持しています。
+既存の保存キー `chiikawa-map-favorites-v1` / `chiikawa-map-visited-v1` と配列形式は維持しています。訪問日・メモのみ、別キー `chiikawa-map-visit-details-v1` にスポットID単位で保存します。
+
+旧版が書き出した訪問記録を含まないJSONも、そのまま読み込めます。新しいJSONの訪問記録と端末側の内容が競合した場合は、誤上書きを避けるため端末側の入力済み項目を優先し、空欄だけを補います。
+「行った！」を解除しても訪問日・メモは誤消去防止のため保持し、再登録すると再表示します。完全に削除する場合は詳細内の「日付・メモを消去」を使用します。
 
 現在地機能はブラウザの Geolocation API を利用し、取得した位置情報をサーバーへ保存・送信する処理はありません。
 
@@ -353,8 +369,9 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 3. 情報を確認した日付と、必要に応じて `app.js` の `DATA_AS_OF` を更新
 4. `pnpm run check` を実行
 5. URLを変更した場合は `pnpm run check:links` を実行
-6. `pnpm run test:smoke` で表示・検索・絞り込み・詳細を確認
-7. 変更したファイルだけをコミットして `main` へプッシュ
+6. 公開ドメイン設定やメタ情報を変更した場合は `pnpm run check:site` を実行
+7. `pnpm run test:smoke` で表示・検索・絞り込み・詳細を確認
+8. 変更したファイルだけをコミットして `main` へプッシュ
 
 検証スクリプトは、JSON構文、フィールド構造、必須項目、ID重複、座標、日付、列挙値、URLを確認します。
 エラーが1件でもある場合は終了コード1になり、修正するまでプッシュしません。
@@ -368,6 +385,9 @@ GitHub Actions上では警告をアノテーションとして表示し、デー
 404・410は破損リンクとして終了コード1、403・429・タイムアウトなどはBot制限や一時障害の可能性があるため要確認として扱います。
 GoogleマップURLは通常の検査対象から除外しており、必要な場合だけ `node scripts/check-links.mjs --include-map` で確認できます。
 同じ検査は `.github/workflows/check-links.yml` により毎週自動実行され、公開サイトのデプロイ処理とは独立しています。
+
+`pnpm run check:site` は公開URLへ接続し、HTTPS証明書、HTTPからHTTPSへの転送、wwwから正規ドメインへの転送、canonical、OGP URL、`app.js`、2つのスポットJSONを確認します。
+同じ検査は `.github/workflows/check-site-health.yml` により毎週自動実行されます。2026-08-26時点で `https://chiikatsu-map.com/` は200、HTTPとwwwは正規HTTPS URLへ301転送されます。
 
 公式情報に「期間限定・終了日未定」と明記されている場合は、`periodType` を `limited`、`endDate` を `null` のまま維持できます。
 確認済みスポットは `scripts/validate-data.mjs` の `confirmedOpenEndedLimitedSpotIds` にIDを登録し、警告ではなく確認情報として表示します。
@@ -411,7 +431,7 @@ GoogleマップURLは通常の検査対象から除外しており、必要な�
 `app.js` 冒頭の以下を変更してください。
 
 ```js
-const DATA_AS_OF = "2026-08-24";
+const DATA_AS_OF = "2026-08-26";
 ```
 
 ### 4. 新しいシリーズ・施設を追加した場合

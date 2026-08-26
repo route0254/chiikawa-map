@@ -2089,6 +2089,186 @@ button {
 }
 
 
+.spot-visit-card {
+  background: #f7f4ff;
+  border: 1px solid #ddd5fb;
+}
+
+
+.spot-visit-intro,
+.spot-nearby-note {
+  margin-bottom: 9px;
+  color: #6f666b;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+
+.spot-visit-form {
+  display: grid;
+  gap: 8px;
+}
+
+
+.spot-visit-field {
+  display: grid;
+  gap: 4px;
+}
+
+
+.spot-visit-label {
+  color: #51484d;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+.spot-visit-date,
+.spot-visit-note {
+  width: 100%;
+  border: 1px solid #d8d1e8;
+  border-radius: 9px;
+  color: #3f383b;
+  background: #fff;
+  font: inherit;
+  font-size: 12px;
+}
+
+
+.spot-visit-date {
+  min-height: 40px;
+  padding: 7px 9px;
+}
+
+
+.spot-visit-note {
+  min-height: 78px;
+  padding: 9px;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+
+.spot-visit-date:focus,
+.spot-visit-note:focus {
+  border-color: #8b7cda;
+  outline: 3px solid rgba(139, 124, 218, 0.2);
+}
+
+
+.spot-visit-note-count {
+  margin-top: -5px;
+  color: #82787d;
+  font-size: 10px;
+  text-align: right;
+}
+
+
+.spot-visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+
+.spot-visit-save,
+.spot-visit-clear {
+  min-height: 38px;
+  padding: 7px 11px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+.spot-visit-save {
+  border: 1px solid #7668ca;
+  color: #fff;
+  background: #7668ca;
+}
+
+
+.spot-visit-save:hover {
+  background: #6557b9;
+}
+
+
+.spot-visit-clear {
+  border: 1px solid #d8d1d4;
+  color: #71666b;
+  background: #fff;
+}
+
+
+.spot-visit-clear:hover {
+  background: #f6f3f4;
+}
+
+
+.spot-visit-status {
+  min-height: 1.4em;
+  color: #4e7d5e;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.spot-nearby-card {
+  margin-top: 11px;
+  background: #f2f9ff;
+  border: 1px solid #d2e7f4;
+}
+
+
+.spot-nearby-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.spot-nearby-button {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid #cfe1ec;
+  border-radius: 9px;
+  color: #3f5969;
+  background: #fff;
+  text-align: left;
+}
+
+
+.spot-nearby-button:hover {
+  border-color: #99c4dc;
+  background: #f8fcff;
+}
+
+
+.spot-nearby-button:focus-visible {
+  outline: 3px solid rgba(73, 143, 182, 0.24);
+  outline-offset: 1px;
+}
+
+
+.spot-nearby-name {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+
+.spot-nearby-meta {
+  color: #71838e;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+
 .spot-evidence-note {
   margin-top: 0;
   padding-top: 0;
@@ -3064,6 +3244,12 @@ button {
   .spot-visited-button,
   .spot-share-button,
   .spot-detail-actions .spot-map-button {
+    min-height: 44px;
+  }
+
+  .spot-visit-date,
+  .spot-visit-save,
+  .spot-visit-clear {
     min-height: 44px;
   }
 }
