@@ -192,6 +192,358 @@ async function expectMinTouchTarget(
 }
 
 
+async function getDuplicateLayoutAudit(
+  page,
+  spotIds
+) {
+  return page.evaluate(
+    ids => {
+      const directions = [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ];
+
+      const items =
+        ids.map(
+          id => {
+            const marker =
+              document.querySelector(
+                '.spot-marker[data-spot-id="' +
+                id +
+                '"]'
+              )
+                ?.getBoundingClientRect();
+
+            const labelElement =
+              document.querySelector(
+                '.spot-name-label-duplicate[data-spot-id="' +
+                id +
+                '"]'
+              );
+
+            const label =
+              labelElement
+                ?.getBoundingClientRect();
+
+            const direction =
+              directions.find(
+                value =>
+                  labelElement
+                    ?.classList
+                    .contains(
+                      "spot-name-label-" +
+                      value
+                    )
+              );
+
+            return {
+              direction,
+              label: {
+                bottom:
+                  label.bottom,
+                left:
+                  label.left,
+                right:
+                  label.right,
+                top:
+                  label.top
+              },
+              marker: {
+                x:
+                  marker.left +
+                  marker.width / 2,
+                y:
+                  marker.top +
+                  marker.height / 2
+              }
+            };
+          }
+        );
+
+      const center = {
+        x:
+          items.reduce(
+            (sum, item) =>
+              sum + item.marker.x,
+            0
+          ) / items.length,
+        y:
+          items.reduce(
+            (sum, item) =>
+              sum + item.marker.y,
+            0
+          ) / items.length
+      };
+
+      const labelOverlaps = [];
+
+      for (
+        let firstIndex = 0;
+        firstIndex < items.length;
+        firstIndex++
+      ) {
+        for (
+          let secondIndex =
+            firstIndex + 1;
+          secondIndex < items.length;
+          secondIndex++
+        ) {
+          const first =
+            items[firstIndex].label;
+
+          const second =
+            items[secondIndex].label;
+
+          const overlapWidth =
+            Math.max(
+              0,
+              Math.min(
+                first.right,
+                second.right
+              ) -
+              Math.max(
+                first.left,
+                second.left
+              )
+            );
+
+          const overlapHeight =
+            Math.max(
+              0,
+              Math.min(
+                first.bottom,
+                second.bottom
+              ) -
+              Math.max(
+                first.top,
+                second.top
+              )
+            );
+
+          if (
+            overlapWidth *
+            overlapHeight > 0
+          ) {
+            labelOverlaps.push([
+              firstIndex,
+              secondIndex
+            ]);
+          }
+        }
+      }
+
+      const segments =
+        items.map(
+          item => {
+            if (
+              item.direction ===
+                "top"
+            ) {
+              return {
+                axis: "vertical",
+                fixed:
+                  item.marker.x,
+                from:
+                  item.label.bottom,
+                to:
+                  item.marker.y
+              };
+            }
+
+            if (
+              item.direction ===
+                "bottom"
+            ) {
+              return {
+                axis: "vertical",
+                fixed:
+                  item.marker.x,
+                from:
+                  item.marker.y,
+                to:
+                  item.label.top
+              };
+            }
+
+            if (
+              item.direction ===
+                "left"
+            ) {
+              return {
+                axis: "horizontal",
+                fixed:
+                  item.marker.y,
+                from:
+                  item.label.right,
+                to:
+                  item.marker.x
+              };
+            }
+
+            return {
+              axis: "horizontal",
+              fixed:
+                item.marker.y,
+              from:
+                item.marker.x,
+              to:
+                item.label.left
+            };
+          }
+        );
+
+      const isBetween =
+        (
+          value,
+          first,
+          second
+        ) =>
+          value >=
+            Math.min(
+              first,
+              second
+            ) &&
+          value <=
+            Math.max(
+              first,
+              second
+            );
+
+      const lineCrossings = [];
+
+      for (
+        let firstIndex = 0;
+        firstIndex < segments.length;
+        firstIndex++
+      ) {
+        for (
+          let secondIndex =
+            firstIndex + 1;
+          secondIndex < segments.length;
+          secondIndex++
+        ) {
+          const first =
+            segments[firstIndex];
+
+          const second =
+            segments[secondIndex];
+
+          let crosses = false;
+
+          if (
+            first.axis ===
+            second.axis
+          ) {
+            crosses =
+              Math.abs(
+                first.fixed -
+                second.fixed
+              ) < 0.5 &&
+              Math.max(
+                Math.min(
+                  first.from,
+                  first.to
+                ),
+                Math.min(
+                  second.from,
+                  second.to
+                )
+              ) <=
+              Math.min(
+                Math.max(
+                  first.from,
+                  first.to
+                ),
+                Math.max(
+                  second.from,
+                  second.to
+                )
+              );
+          } else {
+            const vertical =
+              first.axis ===
+                "vertical"
+                ? first
+                : second;
+
+            const horizontal =
+              first.axis ===
+                "horizontal"
+                ? first
+                : second;
+
+            crosses =
+              isBetween(
+                vertical.fixed,
+                horizontal.from,
+                horizontal.to
+              ) &&
+              isBetween(
+                horizontal.fixed,
+                vertical.from,
+                vertical.to
+              );
+          }
+
+          if (crosses) {
+            lineCrossings.push([
+              firstIndex,
+              secondIndex
+            ]);
+          }
+        }
+      }
+
+      const outward =
+        items.every(
+          item => {
+            if (
+              item.direction ===
+                "top"
+            ) {
+              return item.marker.y <=
+                center.y;
+            }
+
+            if (
+              item.direction ===
+                "bottom"
+            ) {
+              return item.marker.y >=
+                center.y;
+            }
+
+            if (
+              item.direction ===
+                "left"
+            ) {
+              return item.marker.x <=
+                center.x;
+            }
+
+            return item.marker.x >=
+              center.x;
+          }
+        );
+
+      return {
+        directions:
+          items.map(
+            item =>
+              item.direction
+          ),
+        labelOverlaps,
+        lineCrossings,
+        outward
+      };
+    },
+    spotIds
+  );
+}
+
+
 test(
   "地図と一覧を切り替え、一覧DOMは必要な時だけ生成する",
   async ({ page }) => {
@@ -503,6 +855,209 @@ test(
 
     await expect(savedPanel).toBeHidden();
     await expect(savedToggle).toBeFocused();
+  }
+);
+
+
+test(
+  "同一座標の2〜6スポットを件数別パターンで外向きに配置する",
+  async ({ page }) => {
+    const scenarios = [
+      {
+        directions: [
+          "left",
+          "right"
+        ],
+        ids: [
+          "ramen-buta-shibuya",
+          "movie-cafe-shibuya"
+        ],
+        spot:
+          "ramen-buta-shibuya"
+      },
+      {
+        directions: [
+          "top",
+          "bottom",
+          "right"
+        ],
+        ids: [
+          "chiikawaland-solamachi",
+          "collab-skytree-2026",
+          "nagano-tokyo-skytree"
+        ],
+        spot:
+          "chiikawaland-solamachi"
+      },
+      {
+        directions: [
+          "top",
+          "left",
+          "bottom",
+          "right"
+        ],
+        ids: [
+          "chiikawaland-ikebukuro",
+          "chiikawa-restaurant-ikebukuro",
+          "shisa-popup-ikebukuro",
+          "pocket-popup-ikebukuro"
+        ],
+        spot:
+          "chiikawaland-ikebukuro"
+      },
+      {
+        directions: [
+          "top",
+          "left",
+          "left",
+          "left",
+          "bottom",
+          "right"
+        ],
+        ids: [
+          "chiikawaland-nagoya",
+          "magical-nagoya",
+          "ramen-buta-nagoya",
+          "chiikawa-yaki-nagoya",
+          "pocket-popup-nagoya",
+          "movie-cafe-nagoya"
+        ],
+        spot:
+          "chiikawaland-nagoya"
+      }
+    ];
+
+    for (
+      const scenario of
+      scenarios
+    ) {
+      await page.goto(
+        "/?spot=" +
+        scenario.spot
+      );
+
+      await waitForSpots(page);
+
+      await page.waitForTimeout(300);
+
+      const audit =
+        await getDuplicateLayoutAudit(
+          page,
+          scenario.ids
+        );
+
+      expect(
+        audit.directions
+      ).toEqual(
+        scenario.directions
+      );
+
+      expect(
+        audit.outward
+      ).toBe(true);
+
+      expect(
+        audit.labelOverlaps
+      ).toEqual([]);
+
+      expect(
+        audit.lineCrossings
+      ).toEqual([]);
+    }
+
+    const officialSpots =
+      JSON.parse(
+        await readFile(
+          resolve(
+            projectDirectory,
+            "data/official-spots.json"
+          ),
+          "utf8"
+        )
+      );
+
+    const templateSpot =
+      officialSpots.find(
+        spot =>
+          spot.id ===
+          "chiikawaland-ikebukuro"
+      );
+
+    const syntheticSpots =
+      Array.from(
+        {
+          length: 5
+        },
+        (_, index) => ({
+          ...templateSpot,
+          endDate: null,
+          id:
+            "layout-five-" +
+            index,
+          lat: 35,
+          lng: 135,
+          name:
+            "5件配置確認スポット " +
+            (index + 1),
+          periodType:
+            "permanent",
+          startDate: null
+        })
+      );
+
+    await page.route(
+      "**/data/official-spots.json",
+      async route => {
+        await route.fulfill({
+          body:
+            JSON.stringify([
+              ...officialSpots,
+              ...syntheticSpots
+            ]),
+          contentType:
+            "application/json",
+          status: 200
+        });
+      }
+    );
+
+    await page.goto(
+      "/?spot=layout-five-0"
+    );
+
+    await waitForSpots(page);
+
+    await page.waitForTimeout(300);
+
+    const fiveSpotAudit =
+      await getDuplicateLayoutAudit(
+        page,
+        syntheticSpots.map(
+          spot => spot.id
+        )
+      );
+
+    expect(
+      fiveSpotAudit.directions
+    ).toEqual([
+      "top",
+      "left",
+      "left",
+      "bottom",
+      "right"
+    ]);
+
+    expect(
+      fiveSpotAudit.outward
+    ).toBe(true);
+
+    expect(
+      fiveSpotAudit.labelOverlaps
+    ).toEqual([]);
+
+    expect(
+      fiveSpotAudit.lineCrossings
+    ).toEqual([]);
   }
 );
 

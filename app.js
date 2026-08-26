@@ -5529,18 +5529,60 @@ function getDuplicateTooltipDirection(
   index,
   count
 ) {
+  const directionPatterns = {
+    2: [
+      "left",
+      "right"
+    ],
+    3: [
+      "top",
+      "bottom",
+      "right"
+    ],
+    4: [
+      "top",
+      "left",
+      "bottom",
+      "right"
+    ],
+    5: [
+      "top",
+      "left",
+      "left",
+      "bottom",
+      "right"
+    ],
+    6: [
+      "top",
+      "left",
+      "left",
+      "left",
+      "bottom",
+      "right"
+    ]
+  };
 
-  const angle =
-    Math.PI / 6 +
-    index *
-      Math.PI * 2 /
-      count;
+  const pattern =
+    directionPatterns[count];
+
+  if (
+    pattern?.[index]
+  ) {
+    return pattern[index];
+  }
+
+  const markerAngle =
+    -(
+      index + 1
+    ) *
+    Math.PI * 2 /
+    count;
 
   const horizontal =
-    Math.cos(angle);
+    Math.cos(markerAngle);
 
   const vertical =
-    Math.sin(angle);
+    Math.sin(markerAngle);
 
   if (
     Math.abs(horizontal) >=
