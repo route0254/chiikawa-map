@@ -304,6 +304,10 @@ await Promise.all([
     { json: true }
   ),
   checkPublishedAsset(
+    "data/official-events-archive.json",
+    { json: true }
+  ),
+  checkPublishedAsset(
     "data/nagano-spots.json",
     { json: true }
   )

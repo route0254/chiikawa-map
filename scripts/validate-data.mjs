@@ -70,6 +70,32 @@ const datasets = [
     ]
   },
   {
+    file: "data/official-events-archive.json",
+    category: "official",
+    archive: true,
+    fields: commonFields,
+    requiredStrings: [
+      "id",
+      "name",
+      "category",
+      "placeType",
+      "relationType",
+      "brand",
+      "periodType",
+      "startDate",
+      "endDate",
+      "reservationType",
+      "defaultEntryType",
+      "crowdControlType",
+      "crowdControlCondition",
+      "entryNote",
+      "address",
+      "description",
+      "sourceUrl",
+      "mapUrl"
+    ]
+  },
+  {
     file: "data/nagano-spots.json",
     category: "nagano",
     fields: [
@@ -569,6 +595,29 @@ function validateDates(spot, location) {
   }
 }
 
+function validateArchiveStatus(
+  dataset,
+  spot,
+  location
+) {
+  if (!dataset.archive) {
+    return;
+  }
+
+  if (
+    spot.periodType !== "limited" ||
+    !isValidDateString(
+      spot.endDate ?? ""
+    ) ||
+    spot.endDate >= today
+  ) {
+    addError(
+      location,
+      "過去イベントJSONには終了日が今日より前の期間限定スポットだけを登録してください"
+    );
+  }
+}
+
 function validateUrls(spot, location) {
   for (const field of urlFields) {
     const value = spot[field];
@@ -677,6 +726,11 @@ for (const dataset of datasets) {
     validateEnums(dataset, spot, location);
     validateCoordinates(spot, location);
     validateDates(spot, location);
+    validateArchiveStatus(
+      dataset,
+      spot,
+      location
+    );
     validateUrls(spot, location);
   });
 }

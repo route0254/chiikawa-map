@@ -68,7 +68,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260826-4"
+    href="style.css?v=20260826-5"
   >
 </head>
 
@@ -865,10 +865,18 @@
                     <span>⚠ まもなく終了（7日以内）</span>
                   </label>
 
+                  <label class="filter-chip filter-chip-archive">
+                    <input
+                      type="checkbox"
+                      id="filter-ended"
+                    >
+                    <span>🗂 終了済み（過去イベント）</span>
+                  </label>
+
                 </div>
 
                 <p class="filter-hint">
-                  「まもなく終了」は、終了日が設定された開催中の期間限定スポットが対象です。
+                  「まもなく終了」は、終了日が設定された開催中の期間限定スポットが対象です。過去イベントは初期状態では読み込まず、「終了済み」を選んだときだけ検索・地図・一覧の対象に加えます。
                 </p>
 
               </fieldset>
@@ -1526,7 +1534,7 @@
 
 
   <!-- App -->
-  <script src="app.js?v=20260826-4"></script>
+  <script src="app.js?v=20260826-5"></script>
 
 </body>
 

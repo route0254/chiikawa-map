@@ -2045,6 +2045,12 @@ button {
 }
 
 
+.period-ended {
+  color: #756d71;
+  background: #efedef;
+}
+
+
 /* ==========================================================
    DETAIL CARDS
    ========================================================== */
@@ -3189,6 +3195,15 @@ button {
   color: #8b6219;
 }
 
+
+.spot-timing-badge.timing-ended,
+.spot-list-timing.timing-ended {
+  color: #6f676b;
+  background: #ece9eb;
+  border: 1px solid #d8d2d5;
+}
+
+
 .spot-timing-badge.is-soon,
 .spot-list-timing.is-soon {
   background: #fff0e9;
@@ -3252,4 +3267,17 @@ button {
   .spot-visit-clear {
     min-height: 44px;
   }
+}
+
+
+.filter-chip-archive input:checked + span {
+  color: #665b72;
+  background: #f1ecf7;
+  border-color: #cfc3dc;
+}
+
+
+.filter-chip-archive input:disabled + span {
+  cursor: progress;
+  opacity: 0.68;
 }

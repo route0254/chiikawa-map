@@ -163,7 +163,7 @@ const SOON_ENDING_DAYS =
 
 const SHARE_FILTER_PARAM_KEYS = [
   "q", "pref", "cat", "type", "period", "reservation",
-  "official", "nagano", "evidence", "brand", "soon", "view"
+  "official", "nagano", "evidence", "brand", "soon", "past", "view"
 ];
 
 
@@ -359,6 +359,12 @@ const shareFiltersButton =
 const soonEndingFilter =
   document.getElementById(
     "filter-soon-ending"
+  );
+
+
+const endedFilter =
+  document.getElementById(
+    "filter-ended"
   );
 
 
@@ -1120,6 +1126,15 @@ function getSpotTimingInfo(
     getTodayInJapan();
 
   if (
+    status === "ended"
+  ) {
+    return {
+      type: "ended",
+      label: "終了済み"
+    };
+  }
+
+  if (
     status === "upcoming" &&
     spot.startDate
   ) {
@@ -1578,10 +1593,24 @@ function renderSearchSuggestions() {
     prefectureFilter?.value ||
     "";
 
+  const includeEnded =
+    Boolean(
+      endedFilter?.checked
+    );
+
   const matches =
     spotRecords
       .filter(
         record => {
+
+          if (
+            getSpotPeriodStatus(
+              record.spot
+            ) === "ended" &&
+            !includeEnded
+          ) {
+            return false;
+          }
 
           if (
             selectedPrefecture &&
@@ -3761,6 +3790,10 @@ function getCurrentFiltersShareUrl() {
     url.searchParams.set("soon", "1");
   }
 
+  if (endedFilter?.checked) {
+    url.searchParams.set("past", "1");
+  }
+
   if (currentViewMode === "list") {
     url.searchParams.set("view", "list");
   }
@@ -3828,6 +3861,11 @@ function applySharedFilterState() {
   if (soonEndingFilter) {
     soonEndingFilter.checked =
       params.get("soon") === "1";
+  }
+
+  if (endedFilter) {
+    endedFilter.checked =
+      params.get("past") === "1";
   }
 
   if (params.get("view") === "list") {
@@ -4726,8 +4764,18 @@ function fitMapToRecords(
 
 function fitMapToAllSpots() {
 
+  const records =
+    lastFilteredRecords.length
+      ? lastFilteredRecords
+      : spotRecords.filter(
+          record =>
+            getSpotPeriodStatus(
+              record.spot
+            ) !== "ended"
+        );
+
   const latLngs =
-    spotRecords.map(
+    records.map(
       record => [
         record.spot.lat,
         record.spot.lng
@@ -6420,9 +6468,7 @@ function createDuplicateTooltipLayoutMap(
         typeof spot.lat !==
           "number" ||
         typeof spot.lng !==
-          "number" ||
-        getSpotPeriodStatus(spot) ===
-          "ended"
+          "number"
       ) {
         return;
       }
@@ -6735,6 +6781,23 @@ function renderBrandFilters() {
   }
 
 
+  const existingInputs =
+    Array.from(
+      brandFilterList.querySelectorAll(
+        'input[name="filter-brand"]'
+      )
+    );
+
+  const existingSelections =
+    new Set(
+      existingInputs
+        .filter(input => input.checked)
+        .map(input => input.value)
+    );
+
+  const hasExistingFilters =
+    existingInputs.length > 0;
+
   brandFilterList.replaceChildren();
 
 
@@ -6794,7 +6857,10 @@ function renderBrandFilters() {
 
 
       input.checked =
-        true;
+        !hasExistingFilters ||
+        existingSelections.has(
+          brand
+        );
 
 
       const span =
@@ -6919,6 +6985,10 @@ function getCurrentFilterState() {
     soonEnding:
       Boolean(
         soonEndingFilter?.checked
+      ),
+    includeEnded:
+      Boolean(
+        endedFilter?.checked
       )
   };
 }
@@ -6931,6 +7001,14 @@ function recordMatchesFilters(
 
   const spot =
     record.spot;
+
+  if (
+    getSpotPeriodStatus(spot) ===
+      "ended" &&
+    !state.includeEnded
+  ) {
+    return false;
+  }
 
   if (
     state.favoriteOnly &&
@@ -7123,6 +7201,12 @@ function getActiveFilterDescriptions() {
   if (soonEndingFilter?.checked) {
     descriptions.push(
       "まもなく終了"
+    );
+  }
+
+  if (endedFilter?.checked) {
+    descriptions.push(
+      "終了済み（過去イベント）を含む"
     );
   }
 
@@ -7639,6 +7723,10 @@ function resetFilters() {
     soonEndingFilter.checked = false;
   }
 
+  if (endedFilter) {
+    endedFilter.checked = false;
+  }
+
   listSortMode =
     "default";
 
@@ -7669,7 +7757,7 @@ function resetFilters() {
 
 // ============================================================
 // スポットデータ
-// 公式関連とナガノ先生関連を別JSONから読み込む
+// 現在の公式関連・ナガノ先生関連と過去イベントを別JSONから読み込む
 // ============================================================
 
 const SPOT_DATA_SOURCES = [
@@ -7682,6 +7770,21 @@ const SPOT_DATA_SOURCES = [
     url: "./data/nagano-spots.json"
   }
 ];
+
+
+const ARCHIVE_DATA_SOURCE = {
+  label: "過去イベント",
+  url:
+    "./data/official-events-archive.json"
+};
+
+
+let archiveDataLoaded =
+  false;
+
+
+let archiveLoadPromise =
+  null;
 
 
 async function fetchSpotSource(
@@ -7722,26 +7825,196 @@ async function fetchSpotSource(
 }
 
 
+function appendSpotRecords(
+  spots
+) {
+
+  const duplicateTooltipLayouts =
+    createDuplicateTooltipLayoutMap(
+      spots
+    );
+
+  let addedCount = 0;
+  let skippedCount = 0;
+
+  spots.forEach(
+    spot => {
+      if (
+        spotRecords.some(
+          record =>
+            record.spot.id ===
+            spot.id
+        )
+      ) {
+        console.warn(
+          "重複IDのスポットをスキップ:",
+          spot.id
+        );
+        skippedCount++;
+        return;
+      }
+
+      const record =
+        createSpotRecord(
+          spot,
+          duplicateTooltipLayouts.get(
+            spot.id
+          ) || null
+        );
+
+      if (record) {
+        spotRecords.push(record);
+        addedCount++;
+      } else {
+        skippedCount++;
+      }
+    }
+  );
+
+  return {
+    addedCount,
+    skippedCount
+  };
+}
+
+
+async function ensureArchiveDataLoaded() {
+
+  if (archiveDataLoaded) {
+    return true;
+  }
+
+  if (archiveLoadPromise) {
+    return archiveLoadPromise;
+  }
+
+  if (endedFilter) {
+    endedFilter.disabled = true;
+    endedFilter.setAttribute(
+      "aria-busy",
+      "true"
+    );
+  }
+
+  archiveLoadPromise =
+    (async () => {
+      try {
+        const spots =
+          await fetchSpotSource(
+            ARCHIVE_DATA_SOURCE
+          );
+
+        const archiveSpots =
+          spots.filter(
+            spot => {
+              const ended =
+                getSpotPeriodStatus(
+                  spot
+                ) === "ended";
+
+              if (!ended) {
+                console.warn(
+                  "終了前のため過去イベントからスキップ:",
+                  spot?.name || spot?.id
+                );
+              }
+
+              return ended;
+            }
+          );
+
+        const result =
+          appendSpotRecords(
+            archiveSpots
+          );
+
+        archiveDataLoaded = true;
+
+        renderBrandFilters();
+        renderPrefectureOptions();
+        updateFavoriteCount();
+        updateVisitedCount();
+
+        console.log(
+          "過去イベント: " +
+          result.addedCount +
+          "件を読み込みました。"
+        );
+
+        if (result.skippedCount > 0) {
+          console.warn(
+            result.skippedCount +
+            "件の過去イベントをデータ不備または重複によりスキップしました。"
+          );
+        }
+
+        return true;
+
+      } catch (error) {
+        console.error(
+          "過去イベントデータの読み込みに失敗しました。",
+          error
+        );
+
+        showAppStatus(
+          "過去イベントを読み込めませんでした。通信状況をご確認のうえ、もう一度お試しください。",
+          {
+            type: "warning",
+            persistent: true
+          }
+        );
+
+        return false;
+
+      } finally {
+        if (endedFilter) {
+          endedFilter.disabled = false;
+          endedFilter.removeAttribute(
+            "aria-busy"
+          );
+        }
+
+        archiveLoadPromise = null;
+      }
+    })();
+
+  return archiveLoadPromise;
+}
+
+
 async function loadSpots() {
 
   try {
 
+    const shouldLoadArchiveInitially =
+      params.get("past") === "1";
+
+    const initialSources =
+      shouldLoadArchiveInitially
+        ? [
+            ...SPOT_DATA_SOURCES,
+            ARCHIVE_DATA_SOURCE
+          ]
+        : SPOT_DATA_SOURCES;
+
     const results =
       await Promise.allSettled(
-        SPOT_DATA_SOURCES.map(
+        initialSources.map(
           fetchSpotSource
         )
       );
 
     const spots = [];
     let sourceErrorCount = 0;
+    let attemptedSourceCount =
+      initialSources.length;
     const failedSourceLabels = [];
 
     results.forEach(
       (result, index) => {
 
         const source =
-          SPOT_DATA_SOURCES[index];
+          initialSources[index];
 
         if (
           result.status ===
@@ -7751,6 +8024,13 @@ async function loadSpots() {
           spots.push(
             ...result.value
           );
+
+          if (
+            source ===
+            ARCHIVE_DATA_SOURCE
+          ) {
+            archiveDataLoaded = true;
+          }
 
           console.log(
             source.label +
@@ -7776,9 +8056,55 @@ async function loadSpots() {
       }
     );
 
+    const sharedSpotIsInCurrentData =
+      Boolean(
+        SHARED_SPOT_ID &&
+        spots.some(
+          spot =>
+            spot.id ===
+            SHARED_SPOT_ID
+        )
+      );
+
+    if (
+      SHARED_SPOT_ID &&
+      !sharedSpotIsInCurrentData &&
+      !archiveDataLoaded
+    ) {
+      attemptedSourceCount++;
+
+      try {
+        const archiveSpots =
+          await fetchSpotSource(
+            ARCHIVE_DATA_SOURCE
+          );
+
+        spots.push(
+          ...archiveSpots
+        );
+        archiveDataLoaded = true;
+
+        console.log(
+          ARCHIVE_DATA_SOURCE.label +
+          ": " +
+          archiveSpots.length +
+          "件を読み込みました。"
+        );
+      } catch (error) {
+        sourceErrorCount++;
+        failedSourceLabels.push(
+          ARCHIVE_DATA_SOURCE.label
+        );
+        console.error(
+          "共有スポット確認用の過去イベントデータを読み込めませんでした。",
+          error
+        );
+      }
+    }
+
     if (
       sourceErrorCount ===
-      SPOT_DATA_SOURCES.length
+      attemptedSourceCount
     ) {
       throw new Error(
         "すべてのスポットデータの読み込みに失敗しました。"
@@ -7788,46 +8114,18 @@ async function loadSpots() {
     let endedCount = 0;
     let skippedCount = 0;
 
-    const duplicateTooltipLayouts =
-      createDuplicateTooltipLayoutMap(
-        spots
-      );
-
-    spots.forEach(
-      spot => {
-
-        const periodStatus =
-          getSpotPeriodStatus(spot);
-
-        if (
-          periodStatus ===
+    endedCount =
+      spots.filter(
+        spot =>
+          getSpotPeriodStatus(spot) ===
           "ended"
-        ) {
-          endedCount++;
-          console.log(
-            "終了済みスポットを非表示:",
-            spot.name
-          );
-          return;
-        }
+      ).length;
 
-        const record =
-          createSpotRecord(
-            spot,
-            duplicateTooltipLayouts.get(
-              spot.id
-            ) || null
-          );
+    const appendResult =
+      appendSpotRecords(spots);
 
-        if (
-          record
-        ) {
-          spotRecords.push(record);
-        } else {
-          skippedCount++;
-        }
-      }
-    );
+    skippedCount =
+      appendResult.skippedCount;
 
     // データに合わせてブランド / 都道府県フィルターを生成
     renderBrandFilters();
@@ -7836,6 +8134,25 @@ async function loadSpots() {
     // URLで共有された検索・絞り込み条件を、動的フィルター生成後に適用
     if (!SHARED_SPOT_ID) {
       applySharedFilterState();
+    }
+
+    const sharedRecord =
+      SHARED_SPOT_ID
+        ? spotRecords.find(
+            record =>
+              record.spot.id ===
+              SHARED_SPOT_ID
+          )
+        : null;
+
+    if (
+      sharedRecord &&
+      getSpotPeriodStatus(
+        sharedRecord.spot
+      ) === "ended" &&
+      endedFilter
+    ) {
+      endedFilter.checked = true;
     }
 
     updateFavoriteCount();
@@ -7853,13 +8170,6 @@ async function loadSpots() {
     if (
       SHARED_SPOT_ID
     ) {
-
-      const sharedRecord =
-        spotRecords.find(
-          record =>
-            record.spot.id ===
-            SHARED_SPOT_ID
-        );
 
       if (
         sharedRecord
@@ -7913,7 +8223,7 @@ async function loadSpots() {
 
     console.log(
       endedCount +
-      "件の終了済みスポットを非表示にしました。"
+      "件の終了済みスポットを読み込みました（初期状態では非表示）。"
     );
 
     if (
@@ -8291,6 +8601,27 @@ soonEndingFilter
   ?.addEventListener(
     "change",
     updateSpotFilters
+  );
+
+
+endedFilter
+  ?.addEventListener(
+    "change",
+    async () => {
+      if (
+        endedFilter.checked
+      ) {
+        const loaded =
+          await ensureArchiveDataLoaded();
+
+        if (!loaded) {
+          endedFilter.checked = false;
+        }
+      }
+
+      updateSpotFilters();
+      renderSearchSuggestions();
+    }
   );
 
 

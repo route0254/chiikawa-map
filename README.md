@@ -9,7 +9,8 @@ GitHub Pages向けの静的Webサイトです。
 - `index.html` : 画面構造
 - `style.css` : デザイン / レスポンシブ対応
 - `app.js` : 地図 / フィルター / 期間判定 / MarkerCluster / データ読込
-- `data/official-spots.json` : ちいかわ公式関連スポット
+- `data/official-spots.json` : 現在開催中・今後開催のちいかわ公式関連スポット
+- `data/official-events-archive.json` : 終了済みの公式イベント（必要時のみ読込）
 - `data/nagano-spots.json` : ナガノ先生関連スポット
 - `favicon.svg` : ファビコン
 - `assets/ogp.png` : X / SNS共有用OGP画像
@@ -28,6 +29,8 @@ GitHub Pages向けの静的Webサイトです。
 - `sitemap.xml` : 独自ドメインのサイトマップ
 - `404.html` : 存在しないURL向け案内ページ
 - `ROADMAP.md` : 今後のデータ・運用・機能課題
+- `DATA-OPERATIONS.md` : データ確認・追加・終了処理の運用手順
+- `docs/nagano-evidence-audit.md` : ナガセン関連の信憑性監査基準
 
 ## ローカルGit運用
 
@@ -78,7 +81,8 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 ## 今回の版
 
 - 掲載基準日: 2026-08-26
-- 公式関連: 70件
+- 公式関連（現在・今後）: 69件
+- 公式過去イベント: 1件
 - ナガノ先生関連: 68件（確定 15件 / 推定 53件）
 - `spots.json` を公式関連 / ナガノ先生関連の2ファイルへ分割
 - 2つのJSONは `app.js` で独立して読み込み、片方が失敗しても読み込めた側で表示を継続
@@ -123,6 +127,8 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - 「行った！」登録済みスポットに訪問日・メモを端末保存できる機能を追加
 - スポット詳細に終了済みを除く近隣5件と直線距離を表示
 - HTTPS・www転送・canonical・OGP・公開JSONの週次監視を追加
+- 絞り込みに「終了済み（過去イベント）」を追加し、初期状態では読み込まない遅延読込に対応
+- 終了済みイベントを専用JSONへ分離し、既存IDと共有URLを維持
 
 
 ## 更新履歴
@@ -153,6 +159,9 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - 旧形式のバックアップを引き続き読み込める互換性を維持し、訪問記録の競合時は端末側の入力済み項目を優先
 - スポット詳細に、終了済みを除く近隣5件を直線距離順で表示する導線を追加
 - 公開サイトのHTTPS、HTTP・www転送、canonical、OGP、主要ファイルを毎週確認するGitHub Actionsを追加
+- 過去イベントを通常表示では読み込まず、絞り込みで有効化した場合だけ検索・地図・一覧に追加
+- 終了済みイベントの共有URLを開いた場合はアーカイブを自動読込して詳細を表示
+- データ更新運用とナガセン関連の信憑性監査基準を文書化
 
 ### 2026-08-24 初期版
 
@@ -386,7 +395,7 @@ GitHub Actions上では警告をアノテーションとして表示し、デー
 GoogleマップURLは通常の検査対象から除外しており、必要な場合だけ `node scripts/check-links.mjs --include-map` で確認できます。
 同じ検査は `.github/workflows/check-links.yml` により毎週自動実行され、公開サイトのデプロイ処理とは独立しています。
 
-`pnpm run check:site` は公開URLへ接続し、HTTPS証明書、HTTPからHTTPSへの転送、wwwから正規ドメインへの転送、canonical、OGP URL、`app.js`、2つのスポットJSONを確認します。
+`pnpm run check:site` は公開URLへ接続し、HTTPS証明書、HTTPからHTTPSへの転送、wwwから正規ドメインへの転送、canonical、OGP URL、`app.js`、3つのスポットJSONを確認します。
 同じ検査は `.github/workflows/check-site-health.yml` により毎週自動実行されます。2026-08-26時点で `https://chiikatsu-map.com/` は200、HTTPとwwwは正規HTTPS URLへ301転送されます。
 
 公式情報に「期間限定・終了日未定」と明記されている場合は、`periodType` を `limited`、`endDate` を `null` のまま維持できます。
@@ -394,7 +403,8 @@ GoogleマップURLは通常の検査対象から除外しており、必要な�
 終了日が発表された時点で `endDate` を更新し、許容リストからIDを削除してください。
 
 ### 1. 公式関連
-`data/official-spots.json` を更新します。
+現在開催中・今後開催は`data/official-spots.json`を更新します。
+終了済みイベントは、同じ`id`を維持したまま`data/official-events-archive.json`へ移します。詳しい確認頻度・掲載基準・移動手順は`DATA-OPERATIONS.md`を参照してください。
 
 ### 2. ナガノ先生関連
 `data/nagano-spots.json` を更新します。

@@ -11,6 +11,7 @@ const projectRoot = path.resolve(
 
 const datasets = [
   "data/official-spots.json",
+  "data/official-events-archive.json",
   "data/nagano-spots.json"
 ];
 

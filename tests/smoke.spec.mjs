@@ -758,6 +758,144 @@ test(
 
 
 test(
+  "過去イベントを初期非表示にし、絞り込み時だけ遅延読込する",
+  async ({ page }) => {
+    let archiveRequestCount = 0;
+
+    page.on(
+      "request",
+      request => {
+        if (
+          request.url().includes(
+            "official-events-archive.json"
+          )
+        ) {
+          archiveRequestCount++;
+        }
+      }
+    );
+
+    await page.goto("/");
+
+    const initialCount =
+      await waitForSpots(page);
+
+    expect(archiveRequestCount).toBe(0);
+
+    const archiveSpots =
+      JSON.parse(
+        await readFile(
+          resolve(
+            projectDirectory,
+            "data/official-events-archive.json"
+          ),
+          "utf8"
+        )
+      );
+
+    await page.locator(
+      "#filter-toggle"
+    ).click();
+
+    const endedFilter =
+      page.locator(
+        "#filter-ended"
+      );
+
+    await expect(
+      endedFilter
+    ).not.toBeChecked();
+
+    await page.locator(
+      ".filter-chip-archive span"
+    ).click();
+
+    await expect(
+      page.locator(
+        "#result-count"
+      )
+    ).toHaveText(
+      initialCount +
+      archiveSpots.length +
+      "件表示"
+    );
+
+    expect(archiveRequestCount).toBe(1);
+
+    await expect(
+      page.locator(
+        "#active-filter-list"
+      )
+    ).toContainText(
+      "終了済み（過去イベント）を含む"
+    );
+
+    const sharedUrl =
+      await page.evaluate(
+        () =>
+          window.getCurrentFiltersShareUrl()
+      );
+
+    expect(sharedUrl).toContain(
+      "past=1"
+    );
+
+    await page.locator(
+      "#filter-close"
+    ).click();
+
+    await page.locator(
+      "#spot-search"
+    ).fill("おばけの森");
+
+    await expect(
+      page.locator(
+        "#result-count"
+      )
+    ).toHaveText("1件表示");
+
+    await page.locator(
+      ".search-suggestion"
+    ).first().click();
+
+    await expect(
+      page.locator(
+        "#spot-detail-title"
+      )
+    ).toHaveText(
+      "お台場ファンライジング ちいかわ おばけの森"
+    );
+
+    await expect(
+      page.locator(
+        ".spot-timing-badge.timing-ended"
+      )
+    ).toContainText("終了済み");
+
+    await page.goto(
+      "/?spot=collab-odaiba-obake-forest"
+    );
+
+    await waitForSpots(page);
+
+    await expect(
+      page.locator(
+        "#filter-ended"
+      )
+    ).toBeChecked();
+
+    await expect(
+      page.locator(
+        "#spot-detail-title"
+      )
+    ).toHaveText(
+      "お台場ファンライジング ちいかわ おばけの森"
+    );
+  }
+);
+
+
+test(
   "各ダイアログのフォーカスを保ち、保存データを専用パネルで操作する",
   async ({ page }) => {
     await page.goto("/");
