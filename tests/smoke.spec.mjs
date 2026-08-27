@@ -793,6 +793,47 @@ test(
         )
       );
 
+    const currentSpots =
+      (
+        await Promise.all(
+          [
+            "official-spots.json",
+            "nagano-spots.json"
+          ].map(
+            async fileName =>
+              JSON.parse(
+                await readFile(
+                  resolve(
+                    projectDirectory,
+                    "data",
+                    fileName
+                  ),
+                  "utf8"
+                )
+              )
+          )
+        )
+      ).flat();
+
+    const todayInJapan =
+      new Intl.DateTimeFormat(
+        "en-CA",
+        {
+          timeZone: "Asia/Tokyo",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }
+      ).format(new Date());
+
+    const currentEndedCount =
+      currentSpots.filter(
+        spot =>
+          spot.periodType === "limited" &&
+          spot.endDate &&
+          todayInJapan > spot.endDate
+      ).length;
+
     const cancelledSpot =
       archiveSpots.find(
         spot =>
@@ -825,6 +866,7 @@ test(
       )
     ).toHaveText(
       initialCount +
+      currentEndedCount +
       archiveSpots.length +
       "件表示"
     );
