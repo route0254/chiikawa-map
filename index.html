@@ -68,7 +68,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260827-1"
+    href="style.css?v=20260827-2"
   >
 </head>
 
@@ -1090,6 +1090,39 @@
                     hidden
                   >
                 </div>
+
+                <div
+                  class="saved-data-import-preview"
+                  id="saved-data-import-preview"
+                  role="region"
+                  aria-labelledby="saved-data-import-preview-title"
+                  aria-live="polite"
+                  hidden
+                >
+                  <h4 id="saved-data-import-preview-title">読み込み内容の確認</h4>
+                  <p class="saved-data-import-file" id="saved-data-import-file"></p>
+                  <ul id="saved-data-import-summary"></ul>
+                  <p class="saved-data-import-conflict" id="saved-data-import-conflict" hidden></p>
+                  <p>
+                    現在の保存内容は削除せず、上記の内容を追加統合します。
+                  </p>
+                  <div class="saved-data-actions">
+                    <button
+                      type="button"
+                      class="primary-button saved-data-button"
+                      id="saved-data-import-confirm"
+                    >
+                      追加統合する
+                    </button>
+                    <button
+                      type="button"
+                      class="secondary-button saved-data-button"
+                      id="saved-data-import-cancel"
+                    >
+                      キャンセル
+                    </button>
+                  </div>
+                </div>
               </section>
 
               <p class="saved-data-note">
@@ -1570,7 +1603,7 @@
 
 
   <!-- App -->
-  <script src="app.js?v=20260827-1"></script>
+  <script src="app.js?v=20260827-2"></script>
 
 </body>
 

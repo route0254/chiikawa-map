@@ -1619,6 +1619,42 @@ function sortByName(
 }
 
 
+function sortByPrefecture(
+  first,
+  second
+) {
+  const firstPrefecture =
+    getPrefecture(first.address);
+  const secondPrefecture =
+    getPrefecture(second.address);
+  const firstIndex =
+    PREFECTURES.indexOf(
+      firstPrefecture
+    );
+  const secondIndex =
+    PREFECTURES.indexOf(
+      secondPrefecture
+    );
+  const prefectureDifference =
+    (
+      firstIndex === -1
+        ? PREFECTURES.length
+        : firstIndex
+    ) -
+    (
+      secondIndex === -1
+        ? PREFECTURES.length
+        : secondIndex
+    );
+
+  return prefectureDifference ||
+    sortByName(
+      first,
+      second
+    );
+}
+
+
 function sortCurrentByEnding(
   first,
   second
@@ -1686,6 +1722,8 @@ function sortArchiveOldest(
 
 function getCurrentSortFunction() {
   switch (currentSort.value) {
+    case "default":
+      return sortCurrentSpots;
     case "ending":
       return sortCurrentByEnding;
     case "starting":
@@ -1693,7 +1731,7 @@ function getCurrentSortFunction() {
     case "name":
       return sortByName;
     default:
-      return sortCurrentSpots;
+      return sortByPrefecture;
   }
 }
 
@@ -2777,8 +2815,8 @@ function applyCurrentFiltersFromUrl() {
   setSelectFromUrl(
     currentSort,
     params.get("sort") ||
-      "default",
-    "default"
+      "prefecture",
+    "prefecture"
   );
 }
 
@@ -2901,7 +2939,7 @@ function getCatalogUrl(
       url,
       "sort",
       currentSort.value,
-      "default"
+      "prefecture"
     );
   } else if (view === "past") {
     url.searchParams.set(
@@ -3045,7 +3083,7 @@ function syncMobileFilterPanel(
   const customSort =
     isCurrent
       ? currentSort.value !==
-        "default"
+        "prefecture"
       : pastSort.value !==
         "newest";
 
@@ -3481,7 +3519,7 @@ document.getElementById(
     currentStatus.value = "";
     currentReservation.value = "";
     currentSaved.value = "";
-    currentSort.value = "default";
+    currentSort.value = "prefecture";
     handleCurrentFiltersChanged(
       currentSearch
     );

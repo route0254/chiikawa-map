@@ -712,6 +712,44 @@ test(
 
 
 test(
+  "地図検索でカナ・全角半角・空白の表記差を吸収する",
+  async ({ page }) => {
+    await page.goto("/");
+    await waitForSpots(page);
+
+    const search =
+      page.locator("#spot-search");
+
+    await search.fill(
+      "ﾁｲｶﾜﾗﾝﾄﾞ　大阪梅田店"
+    );
+
+    await expect(
+      page.locator(
+        ".search-suggestion"
+      ).filter({
+        hasText:
+          "ちいかわらんど 大阪梅田店"
+      }).first()
+    ).toBeVisible();
+
+    await search.fill(
+      "ながの まーけっと"
+    );
+
+    await expect(
+      page.locator(
+        ".search-suggestion"
+      ).filter({
+        hasText:
+          "ナガノマーケット"
+      }).first()
+    ).toBeVisible();
+  }
+);
+
+
+test(
   "適用中の条件を表示し、ゼロ件から全件表示へ戻せる",
   async ({ page }) => {
     await page.goto("/");
@@ -1175,10 +1213,43 @@ test(
             ],
             visited: [
               "nagano-takao-mountain"
-            ]
+            ],
+            visitDetails: {
+              "nagano-takao-mountain": {
+                visitedAt:
+                  "2026-08-20",
+                note:
+                  "端末側メモ"
+              }
+            }
           })
         )
     });
+
+    await expect(
+      page.locator(
+        "#saved-data-import-preview"
+      )
+    ).toBeVisible();
+
+    await expect(
+      page.locator(
+        "#saved-data-import-summary"
+      )
+    ).toContainText("行きたい: +1件");
+
+    expect(
+      await page.evaluate(
+        () =>
+          localStorage.getItem(
+            "chiikawa-map-favorites-v1"
+          )
+      )
+    ).toBeNull();
+
+    await page.locator(
+      "#saved-data-import-confirm"
+    ).click();
 
     await expect(
       page.locator(
@@ -1217,6 +1288,70 @@ test(
     ).toContain(
       "nagano-takao-mountain"
     );
+
+    await page.locator(
+      "#saved-data-file"
+    ).setInputFiles({
+      name:
+        "chiikatsu-map-conflict.json",
+      mimeType:
+        "application/json",
+      buffer:
+        Buffer.from(
+          JSON.stringify({
+            format:
+              "chiikatsu-map-saved-spots",
+            version: 1,
+            exportedAt:
+              "2026-08-27T00:00:00.000Z",
+            favorites: [],
+            visited: [],
+            visitDetails: {
+              "nagano-takao-mountain": {
+                visitedAt:
+                  "2026-08-21",
+                note:
+                  "取込側メモ"
+              }
+            }
+          })
+        )
+    });
+
+    await expect(
+      page.locator(
+        "#saved-data-import-conflict"
+      )
+    ).toContainText(
+      "1件の訪問記録に内容の違い"
+    );
+
+    await page.locator(
+      "#saved-data-import-cancel"
+    ).click();
+
+    await expect(
+      page.locator(
+        "#saved-data-import-preview"
+      )
+    ).toBeHidden();
+
+    const storedVisitDetail =
+      await page.evaluate(
+        () =>
+          JSON.parse(
+            localStorage.getItem(
+              "chiikawa-map-visit-details-v1"
+            )
+          )[
+            "nagano-takao-mountain"
+          ]
+      );
+
+    expect(storedVisitDetail).toEqual({
+      visitedAt: "2026-08-20",
+      note: "端末側メモ"
+    });
 
     const downloadPromise =
       page.waitForEvent(
@@ -1364,6 +1499,18 @@ test(
           })
         )
     });
+
+    await expect(
+      page.locator(
+        "#saved-data-import-conflict"
+      )
+    ).toContainText(
+      "1件の訪問記録に内容の違い"
+    );
+
+    await page.locator(
+      "#saved-data-import-confirm"
+    ).click();
 
     const mergedDetails =
       await page.evaluate(
@@ -2113,6 +2260,16 @@ test(
       await waitForOfficialCurrent(
         page
       );
+
+    await expect(
+      page.locator("#current-sort")
+    ).toHaveValue("prefecture");
+
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card"
+      ).first()
+    ).toContainText("北海道");
 
     await expect(
       page.locator(

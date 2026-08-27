@@ -464,6 +464,42 @@ const savedDataFile =
   );
 
 
+const savedDataImportPreview =
+  document.getElementById(
+    "saved-data-import-preview"
+  );
+
+
+const savedDataImportFile =
+  document.getElementById(
+    "saved-data-import-file"
+  );
+
+
+const savedDataImportSummary =
+  document.getElementById(
+    "saved-data-import-summary"
+  );
+
+
+const savedDataImportConflict =
+  document.getElementById(
+    "saved-data-import-conflict"
+  );
+
+
+const savedDataImportConfirm =
+  document.getElementById(
+    "saved-data-import-confirm"
+  );
+
+
+const savedDataImportCancel =
+  document.getElementById(
+    "saved-data-import-cancel"
+  );
+
+
 const savedDataFavoriteCount =
   document.getElementById(
     "saved-data-favorite-count"
@@ -1306,8 +1342,15 @@ function normalizeSearchText(
   )
     .normalize("NFKC")
     .toLocaleLowerCase("ja")
-    .replace(/\s+/g, " ")
-    .trim();
+    .replace(
+      /[ァ-ヶ]/g,
+      character =>
+        String.fromCharCode(
+          character.charCodeAt(0) -
+          0x60
+        )
+    )
+    .replace(/\s+/g, "");
 }
 
 
@@ -2999,6 +3042,10 @@ const SAVED_DATA_VERSION =
   1;
 
 
+let pendingSavedDataImport =
+  null;
+
+
 function exportSavedSpotData() {
 
   const exportedData = {
@@ -3168,18 +3215,184 @@ function getImportedVisitDetails(
 }
 
 
-async function importSavedSpotData(
-  file
+function getMergedVisitDetail(
+  current,
+  imported
 ) {
+  return {
+    visitedAt:
+      current?.visitedAt ||
+      imported.visitedAt,
+    note:
+      current?.note ||
+      imported.note
+  };
+}
 
+
+function getVisitImportPreview(
+  importedVisitDetails
+) {
+  let updateCount = 0;
+  let conflictCount = 0;
+
+  importedVisitDetails.forEach(
+    (detail, id) => {
+      const current =
+        visitDetailsBySpotId.get(id);
+      const merged =
+        getMergedVisitDetail(
+          current,
+          detail
+        );
+      const hasConflict =
+        Boolean(
+          current?.visitedAt &&
+          detail.visitedAt &&
+          current.visitedAt !==
+            detail.visitedAt
+        ) ||
+        Boolean(
+          current?.note &&
+          detail.note &&
+          current.note !==
+            detail.note
+        );
+
+      if (
+        !current ||
+        current.visitedAt !==
+          merged.visitedAt ||
+        current.note !==
+          merged.note
+      ) {
+        updateCount += 1;
+      }
+
+      if (hasConflict) {
+        conflictCount += 1;
+      }
+    }
+  );
+
+  return {
+    updateCount,
+    conflictCount
+  };
+}
+
+
+function clearSavedDataImportPreview(
+  options = {}
+) {
+  pendingSavedDataImport =
+    null;
+
+  if (savedDataImportPreview) {
+    savedDataImportPreview.hidden =
+      true;
+  }
+
+  savedDataImportSummary
+    ?.replaceChildren();
+
+  if (savedDataImportConflict) {
+    savedDataImportConflict.hidden =
+      true;
+    savedDataImportConflict.textContent =
+      "";
+  }
+
+  if (savedDataFile) {
+    savedDataFile.value =
+      "";
+  }
+
+  if (options.focusImport) {
+    savedDataImport?.focus();
+  }
+}
+
+
+function appendSavedDataImportSummary(
+  text
+) {
+  if (!savedDataImportSummary) {
+    return;
+  }
+
+  const item =
+    document.createElement("li");
+  item.textContent = text;
+  savedDataImportSummary.appendChild(
+    item
+  );
+}
+
+
+function renderSavedDataImportPreview() {
   if (
-    !file
+    !pendingSavedDataImport ||
+    !savedDataImportPreview
   ) {
     return;
   }
 
-  try {
+  const preview =
+    pendingSavedDataImport.preview;
 
+  if (savedDataImportFile) {
+    savedDataImportFile.textContent =
+      "ファイル: " +
+      pendingSavedDataImport.fileName;
+  }
+
+  savedDataImportSummary
+    ?.replaceChildren();
+
+  appendSavedDataImportSummary(
+    "行きたい: +" +
+    preview.addedFavorites +
+    "件（既に保存済み " +
+    preview.duplicateFavorites +
+    "件）"
+  );
+  appendSavedDataImportSummary(
+    "行った！: +" +
+    preview.addedVisited +
+    "件（既に保存済み " +
+    preview.duplicateVisited +
+    "件）"
+  );
+  appendSavedDataImportSummary(
+    "訪問日・メモ: " +
+    preview.visitUpdates +
+    "件を追加・補完"
+  );
+
+  if (savedDataImportConflict) {
+    savedDataImportConflict.hidden =
+      preview.visitConflicts === 0;
+    savedDataImportConflict.textContent =
+      preview.visitConflicts +
+      "件の訪問記録に内容の違いがあります。" +
+      "競合する訪問日・メモは、この端末の現在の内容を優先します。";
+  }
+
+  savedDataImportPreview.hidden =
+    false;
+  savedDataImportConfirm?.focus();
+}
+
+
+async function prepareSavedSpotDataImport(
+  file
+) {
+  if (!file) {
+    return;
+  }
+
+  try {
     if (
       file.size >
       1024 * 1024
@@ -3207,116 +3420,71 @@ async function importSavedSpotData(
     }
 
     const importedFavorites =
-      getImportedSpotIds(
-        importedData.favorites,
-        "行きたいスポット"
+      new Set(
+        getImportedSpotIds(
+          importedData.favorites,
+          "行きたいスポット"
+        )
       );
-
     const importedVisited =
-      getImportedSpotIds(
-        importedData.visited,
-        "行った！スポット"
+      new Set(
+        getImportedSpotIds(
+          importedData.visited,
+          "行った！スポット"
+        )
       );
-
     const importedVisitDetails =
       getImportedVisitDetails(
         importedData.visitDetails
       );
+    const visitPreview =
+      getVisitImportPreview(
+        importedVisitDetails
+      );
+    const addedFavorites =
+      Array.from(
+        importedFavorites
+      ).filter(
+        id =>
+          !favoriteSpotIds.has(id)
+      ).length;
+    const addedVisited =
+      Array.from(
+        importedVisited
+      ).filter(
+        id =>
+          !visitedSpotIds.has(id)
+      ).length;
 
-    const favoriteCountBefore =
-      favoriteSpotIds.size;
-
-    const visitedCountBefore =
-      visitedSpotIds.size;
-
-    let addedVisitDetails =
-      0;
-
-    importedFavorites.forEach(
-      id =>
-        favoriteSpotIds.add(id)
-    );
-
-    importedVisited.forEach(
-      id =>
-        visitedSpotIds.add(id)
-    );
-
-    importedVisitDetails.forEach(
-      (detail, id) => {
-        const current =
-          visitDetailsBySpotId.get(id);
-
-        const merged = {
-          visitedAt:
-            current?.visitedAt ||
-            detail.visitedAt,
-          note:
-            current?.note ||
-            detail.note
-        };
-
-        if (
-          !current ||
-          current.visitedAt !==
-            merged.visitedAt ||
-          current.note !==
-            merged.note
-        ) {
-          visitDetailsBySpotId.set(
-            id,
-            merged
-          );
-          addedVisitDetails += 1;
-        }
+    pendingSavedDataImport = {
+      fileName:
+        file.name ||
+        "保存データ.json",
+      favorites:
+        importedFavorites,
+      visited:
+        importedVisited,
+      visitDetails:
+        importedVisitDetails,
+      preview: {
+        addedFavorites,
+        duplicateFavorites:
+          importedFavorites.size -
+          addedFavorites,
+        addedVisited,
+        duplicateVisited:
+          importedVisited.size -
+          addedVisited,
+        visitUpdates:
+          visitPreview.updateCount,
+        visitConflicts:
+          visitPreview.conflictCount
       }
-    );
+    };
 
-    const favoriteSaved =
-      saveFavoriteSpotIds();
-
-    const visitedSaved =
-      saveStringSetToStorage(
-        VISITED_STORAGE_KEY,
-        visitedSpotIds,
-        "行った！スポット"
-      );
-
-    const visitDetailsSaved =
-      saveVisitDetails();
-
-    updateFavoriteCount();
-    updateVisitedCount();
-    updateSpotFilters();
-
-    if (
-      favoriteSaved &&
-      visitedSaved &&
-      visitDetailsSaved
-    ) {
-      const addedFavorites =
-        favoriteSpotIds.size -
-        favoriteCountBefore;
-
-      const addedVisited =
-        visitedSpotIds.size -
-        visitedCountBefore;
-
-      showAppStatus(
-        "保存データを追加統合しました（行きたい +" +
-        addedFavorites +
-        "件、行った！ +" +
-        addedVisited +
-        "件、訪問記録 +" +
-        addedVisitDetails +
-        "件）。",
-        {
-          type: "success"
-        }
-      );
-    }
-
+    renderSavedDataImportPreview();
   } catch (error) {
+    clearSavedDataImportPreview();
 
     console.warn(
       "保存データをインポートできませんでした。",
@@ -3335,15 +3503,105 @@ async function importSavedSpotData(
         persistent: true
       }
     );
-
   } finally {
-
-    if (
-      savedDataFile
-    ) {
+    if (savedDataFile) {
       savedDataFile.value =
         "";
     }
+  }
+}
+
+
+function applySavedSpotDataImport() {
+  if (!pendingSavedDataImport) {
+    return;
+  }
+
+  const favoriteCountBefore =
+    favoriteSpotIds.size;
+  const visitedCountBefore =
+    visitedSpotIds.size;
+  let addedVisitDetails = 0;
+
+  pendingSavedDataImport.favorites
+    .forEach(
+      id =>
+        favoriteSpotIds.add(id)
+    );
+  pendingSavedDataImport.visited
+    .forEach(
+      id =>
+        visitedSpotIds.add(id)
+    );
+  pendingSavedDataImport.visitDetails
+    .forEach(
+      (detail, id) => {
+        const current =
+          visitDetailsBySpotId.get(id);
+        const merged =
+          getMergedVisitDetail(
+            current,
+            detail
+          );
+
+        if (
+          !current ||
+          current.visitedAt !==
+            merged.visitedAt ||
+          current.note !==
+            merged.note
+        ) {
+          visitDetailsBySpotId.set(
+            id,
+            merged
+          );
+          addedVisitDetails += 1;
+        }
+      }
+    );
+
+  const favoriteSaved =
+    saveFavoriteSpotIds();
+  const visitedSaved =
+    saveStringSetToStorage(
+      VISITED_STORAGE_KEY,
+      visitedSpotIds,
+      "行った！スポット"
+    );
+  const visitDetailsSaved =
+    saveVisitDetails();
+
+  updateFavoriteCount();
+  updateVisitedCount();
+  updateSpotFilters();
+
+  if (
+    favoriteSaved &&
+    visitedSaved &&
+    visitDetailsSaved
+  ) {
+    const addedFavorites =
+      favoriteSpotIds.size -
+      favoriteCountBefore;
+    const addedVisited =
+      visitedSpotIds.size -
+      visitedCountBefore;
+
+    clearSavedDataImportPreview({
+      focusImport: true
+    });
+    showAppStatus(
+      "保存データを追加統合しました（行きたい +" +
+      addedFavorites +
+      "件、行った！ +" +
+      addedVisited +
+      "件、訪問記録 +" +
+      addedVisitDetails +
+      "件）。",
+      {
+        type: "success"
+      }
+    );
   }
 }
 
@@ -7788,6 +8046,10 @@ function setSavedDataPanelOpen(
       document.activeElement
     );
 
+  if (!open) {
+    clearSavedDataImportPreview();
+  }
+
   savedDataPanel.hidden =
     !open;
 
@@ -8977,9 +9239,27 @@ savedDataFile
   ?.addEventListener(
     "change",
     () => {
-      importSavedSpotData(
+      prepareSavedSpotDataImport(
         savedDataFile.files?.[0]
       );
+    }
+  );
+
+
+savedDataImportConfirm
+  ?.addEventListener(
+    "click",
+    applySavedSpotDataImport
+  );
+
+
+savedDataImportCancel
+  ?.addEventListener(
+    "click",
+    () => {
+      clearSavedDataImportPreview({
+        focusImport: true
+      });
     }
   );
 
