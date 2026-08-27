@@ -505,7 +505,7 @@
 
 .catalog-filters {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(140px, 200px) auto;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   align-items: end;
 
   gap: 10px;
@@ -519,8 +519,8 @@
 }
 
 
-#catalog-panel-past .catalog-filters {
-  grid-template-columns: minmax(220px, 1fr) 150px 170px auto;
+.catalog-search-field {
+  grid-column: span 2;
 }
 
 
@@ -580,6 +580,84 @@
 
   font-size: 10px;
   font-weight: 900;
+}
+
+
+.catalog-active-filters {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin-top: 10px;
+  padding: 9px 11px;
+
+  border: 1px solid #ebe3e7;
+  border-radius: 14px;
+
+  background: #fffafd;
+}
+
+
+.catalog-active-filters > span {
+  flex: 0 0 auto;
+
+  padding-top: 6px;
+
+  color: #8a7d84;
+
+  font-size: 8px;
+  font-weight: 900;
+}
+
+
+.catalog-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+
+.catalog-filter-chip {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 5px;
+
+  min-height: 28px;
+
+  padding: 4px 8px;
+
+  border: 1px solid #ead8e1;
+  border-radius: 999px;
+
+  color: #9b4168;
+  background: #fff0f6;
+
+  font-size: 8px;
+  font-weight: 900;
+}
+
+
+.catalog-filter-chip::after {
+  content: "×";
+
+  color: #bd6a8c;
+
+  font-size: 11px;
+}
+
+
+.catalog-filter-chip:hover {
+  border-color: #debccc;
+  background: #ffe7f1;
+}
+
+
+.catalog-filter-chip:focus-visible {
+  outline: 3px solid rgba(244, 119, 168, 0.2);
+  outline-offset: 1px;
 }
 
 
@@ -790,7 +868,8 @@
 
 
 .spot-status-badge,
-.spot-type-badge {
+.spot-type-badge,
+.spot-saved-badge {
   display: inline-flex;
   align-items: center;
 
@@ -802,6 +881,18 @@
 
   font-size: 8px;
   font-weight: 900;
+}
+
+
+.spot-saved-favorite {
+  color: #bd3f70;
+  background: #fff0f6;
+}
+
+
+.spot-saved-visited {
+  color: #277553;
+  background: #e9f8f0;
 }
 
 
@@ -1474,6 +1565,18 @@
   .catalog-filters,
   #catalog-panel-past .catalog-filters {
     grid-template-columns: 1fr;
+  }
+
+  .catalog-search-field {
+    grid-column: span 1;
+  }
+
+  .catalog-active-filters {
+    flex-direction: column;
+  }
+
+  .catalog-active-filters > span {
+    padding-top: 0;
   }
 
   .spot-card-grid,

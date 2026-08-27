@@ -44,7 +44,7 @@
   >
 
   <link rel="stylesheet" href="style.css?v=20260827-1">
-  <link rel="stylesheet" href="official.css?v=20260827-1">
+  <link rel="stylesheet" href="official.css?v=20260827-2">
 </head>
 
 <body class="official-page">
@@ -228,9 +228,66 @@
             </select>
           </label>
 
+          <label>
+            <span>店舗・施設の種類</span>
+            <select id="current-kind">
+              <option value="">すべての種類</option>
+              <option value="permanent-shop">常設ショップ</option>
+              <option value="permanent-experience">常設フード・体験</option>
+              <option value="limited-shop">期間限定ショップ</option>
+              <option value="limited-food">期間限定カフェ・フード</option>
+              <option value="limited-event">イベント・体験</option>
+            </select>
+          </label>
+
+          <label>
+            <span>ブランド・シリーズ</span>
+            <select id="current-brand">
+              <option value="">すべてのブランド</option>
+            </select>
+          </label>
+
+          <label>
+            <span>開催状況</span>
+            <select id="current-status">
+              <option value="">すべての状況</option>
+              <option value="permanent">常設</option>
+              <option value="active">開催中</option>
+              <option value="upcoming">開催予定</option>
+              <option value="ending-soon">まもなく終了（7日以内）</option>
+            </select>
+          </label>
+
+          <label>
+            <span>予約・入店方法</span>
+            <select id="current-reservation">
+              <option value="">すべて</option>
+              <option value="ticket_required">入場チケット必要</option>
+              <option value="required">予約必要</option>
+              <option value="priority">予約優先</option>
+              <option value="optional">予約可</option>
+              <option value="not_available">予約なし</option>
+              <option value="unknown">最新情報を確認</option>
+            </select>
+          </label>
+
+          <label>
+            <span>保存状態</span>
+            <select id="current-saved">
+              <option value="">すべて</option>
+              <option value="favorite">♡ 行きたい</option>
+              <option value="visited">✓ 行った！</option>
+            </select>
+          </label>
+
           <button type="button" class="filter-reset-button" id="current-filter-reset">
             条件をクリア
           </button>
+        </div>
+
+        <div id="current-active-filters" class="catalog-active-filters" hidden>
+          <span>適用中</span>
+          <div id="current-filter-chips" class="catalog-filter-chips"></div>
         </div>
 
         <p id="current-result-summary" class="result-summary" role="status" aria-live="polite">
@@ -251,7 +308,7 @@
 
         <div id="current-empty" class="catalog-message" hidden>
           <strong>条件に合うスポットがありません。</strong>
-          <p>キーワードまたは都道府県を変えてみてください。</p>
+          <p>キーワードや絞り込み条件を変えてみてください。</p>
         </div>
       </section>
 
@@ -301,9 +358,52 @@
             </select>
           </label>
 
+          <label>
+            <span>都道府県</span>
+            <select id="past-prefecture">
+              <option value="">全国</option>
+            </select>
+          </label>
+
+          <label>
+            <span>開催結果</span>
+            <select id="past-status">
+              <option value="">終了・中止すべて</option>
+              <option value="ended">開催終了</option>
+              <option value="cancelled">開催中止</option>
+            </select>
+          </label>
+
+          <label>
+            <span>予約・入店方法</span>
+            <select id="past-reservation">
+              <option value="">すべて</option>
+              <option value="ticket_required">入場チケット必要</option>
+              <option value="required">予約必要</option>
+              <option value="priority">予約優先</option>
+              <option value="optional">予約可</option>
+              <option value="not_available">予約なし</option>
+              <option value="unknown">最新情報を確認</option>
+            </select>
+          </label>
+
+          <label>
+            <span>保存状態</span>
+            <select id="past-saved">
+              <option value="">すべて</option>
+              <option value="favorite">♡ 行きたい</option>
+              <option value="visited">✓ 行った！</option>
+            </select>
+          </label>
+
           <button type="button" class="filter-reset-button" id="past-filter-reset">
             条件をクリア
           </button>
+        </div>
+
+        <div id="past-active-filters" class="catalog-active-filters" hidden>
+          <span>適用中</span>
+          <div id="past-filter-chips" class="catalog-filter-chips"></div>
         </div>
 
         <p id="past-result-summary" class="result-summary" role="status" aria-live="polite">
@@ -503,7 +603,7 @@
     </p>
   </main>
 
-  <script src="official.js?v=20260827-1" defer></script>
+  <script src="official.js?v=20260827-2" defer></script>
 </body>
 
 </html>

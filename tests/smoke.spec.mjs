@@ -2067,6 +2067,17 @@ test(
     await page.goto("/");
     await waitForSpots(page);
 
+    await page.evaluate(
+      () => {
+        window.localStorage.setItem(
+          "chiikawa-map-favorites-v1",
+          JSON.stringify([
+            "chiikawaland-osaka-umeda"
+          ])
+        );
+      }
+    );
+
     const officialNavLink =
       page.locator(
         '.site-nav-link[href="official.html"]'
@@ -2086,6 +2097,52 @@ test(
       await waitForOfficialCurrent(
         page
       );
+
+    await expect(
+      page.locator(
+        ".official-spot-card"
+      )
+    ).toHaveCount(currentCount);
+
+    await page.locator(
+      "#current-kind"
+    ).selectOption(
+      "permanent-shop"
+    );
+
+    await page.locator(
+      "#current-brand"
+    ).selectOption(
+      "chiikawaland"
+    );
+
+    await page.locator(
+      "#current-saved"
+    ).selectOption("favorite");
+
+    await expect(
+      page.locator(
+        "#current-result-summary"
+      )
+    ).toHaveText("1件を表示しています。");
+
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card h4"
+      )
+    ).toContainText(
+      "ちいかわらんど 大阪梅田店"
+    );
+
+    await expect(
+      page.locator(
+        "#current-filter-chips .catalog-filter-chip"
+      )
+    ).toHaveCount(3);
+
+    await page.locator(
+      "#current-filter-reset"
+    ).click();
 
     await expect(
       page.locator(
@@ -2188,6 +2245,26 @@ test(
     ).toContainText("おばけの森");
 
     await page.locator(
+      "#past-filter-reset"
+    ).click();
+
+    await page.locator(
+      "#past-status"
+    ).selectOption("cancelled");
+
+    await expect(
+      page.locator(
+        "#past-result-summary"
+      )
+    ).toHaveText("1件を表示しています。");
+
+    await expect(
+      page.locator(
+        "#past-groups .official-spot-card h4"
+      )
+    ).toContainText("池袋");
+
+    await page.locator(
       "#catalog-tab-guide"
     ).click();
 
@@ -2225,6 +2302,11 @@ test(
         ".catalog-tab",
         "#current-search",
         "#current-prefecture",
+        "#current-kind",
+        "#current-brand",
+        "#current-status",
+        "#current-reservation",
+        "#current-saved",
         "#current-filter-reset",
         ".spot-card-action"
       ]

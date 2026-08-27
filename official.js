@@ -9,6 +9,14 @@ const ARCHIVE_DATA_URL =
   "./data/official-events-archive.json";
 
 
+const FAVORITES_STORAGE_KEY =
+  "chiikawa-map-favorites-v1";
+
+
+const VISITED_STORAGE_KEY =
+  "chiikawa-map-visited-v1";
+
+
 const VALID_VIEWS =
   new Set([
     "current",
@@ -293,6 +301,36 @@ const currentPrefecture =
   );
 
 
+const currentKind =
+  document.getElementById(
+    "current-kind"
+  );
+
+
+const currentBrand =
+  document.getElementById(
+    "current-brand"
+  );
+
+
+const currentStatus =
+  document.getElementById(
+    "current-status"
+  );
+
+
+const currentReservation =
+  document.getElementById(
+    "current-reservation"
+  );
+
+
+const currentSaved =
+  document.getElementById(
+    "current-saved"
+  );
+
+
 const pastSearch =
   document.getElementById(
     "past-search"
@@ -311,12 +349,44 @@ const pastKind =
   );
 
 
+const pastPrefecture =
+  document.getElementById(
+    "past-prefecture"
+  );
+
+
+const pastStatus =
+  document.getElementById(
+    "past-status"
+  );
+
+
+const pastReservation =
+  document.getElementById(
+    "past-reservation"
+  );
+
+
+const pastSaved =
+  document.getElementById(
+    "past-saved"
+  );
+
+
 let currentSpots = [];
 let archiveSpots = [];
 let currentLoaded = false;
 let archiveLoaded = false;
 let currentLoadPromise = null;
 let archiveLoadPromise = null;
+let favoriteSpotIds =
+  loadStringSetFromStorage(
+    FAVORITES_STORAGE_KEY
+  );
+let visitedSpotIds =
+  loadStringSetFromStorage(
+    VISITED_STORAGE_KEY
+  );
 
 
 function createElement(
@@ -343,6 +413,43 @@ function createElement(
   }
 
   return element;
+}
+
+
+function loadStringSetFromStorage(
+  key
+) {
+  try {
+    const value =
+      window.localStorage.getItem(
+        key
+      );
+
+    if (!value) {
+      return new Set();
+    }
+
+    const parsed =
+      JSON.parse(value);
+
+    if (!Array.isArray(parsed)) {
+      return new Set();
+    }
+
+    return new Set(
+      parsed.filter(
+        id =>
+          typeof id === "string"
+      )
+    );
+  } catch (error) {
+    console.warn(
+      "保存済みスポットを読み込めませんでした。",
+      error
+    );
+
+    return new Set();
+  }
 }
 
 
@@ -645,6 +752,119 @@ function getEntryLabel(
 }
 
 
+function getReservationFilterValue(
+  spot
+) {
+  if (
+    spot.defaultEntryType ===
+    "ticket_required"
+  ) {
+    return "ticket_required";
+  }
+
+  return (
+    spot.reservationType ||
+    "unknown"
+  );
+}
+
+
+function matchesSavedFilter(
+  spot,
+  selectedValue
+) {
+  if (!selectedValue) {
+    return true;
+  }
+
+  if (
+    selectedValue ===
+    "favorite"
+  ) {
+    return favoriteSpotIds.has(
+      spot.id
+    );
+  }
+
+  if (
+    selectedValue ===
+    "visited"
+  ) {
+    return visitedSpotIds.has(
+      spot.id
+    );
+  }
+
+  return true;
+}
+
+
+function getSelectedOptionLabel(
+  select
+) {
+  if (!select.value) {
+    return "";
+  }
+
+  return (
+    select.selectedOptions[0]
+      ?.textContent ||
+    select.value
+  );
+}
+
+
+function renderActiveFilterChips(
+  wrapperId,
+  containerId,
+  filters
+) {
+  const wrapper =
+    document.getElementById(
+      wrapperId
+    );
+
+  const container =
+    document.getElementById(
+      containerId
+    );
+
+  container.replaceChildren();
+
+  filters.forEach(
+    filter => {
+      if (!filter.label) {
+        return;
+      }
+
+      const button =
+        createElement(
+          "button",
+          "catalog-filter-chip",
+          filter.label
+        );
+
+      button.type = "button";
+      button.setAttribute(
+        "aria-label",
+        filter.label +
+        "を解除"
+      );
+
+      button.addEventListener(
+        "click",
+        filter.reset
+      );
+
+      container.appendChild(button);
+    }
+  );
+
+  wrapper.hidden =
+    container.childElementCount === 0;
+}
+
+
 function appendDetail(
   list,
   label,
@@ -715,6 +935,34 @@ function createSpotCard(
       ] || "スポット"
     )
   );
+
+  if (
+    favoriteSpotIds.has(
+      spot.id
+    )
+  ) {
+    badges.appendChild(
+      createElement(
+        "span",
+        "spot-saved-badge spot-saved-favorite",
+        "♡ 行きたい"
+      )
+    );
+  }
+
+  if (
+    visitedSpotIds.has(
+      spot.id
+    )
+  ) {
+    badges.appendChild(
+      createElement(
+        "span",
+        "spot-saved-badge spot-saved-visited",
+        "✓ 行った！"
+      )
+    );
+  }
 
   card.appendChild(badges);
 
@@ -1052,6 +1300,27 @@ function renderCurrentSpots() {
   const prefecture =
     currentPrefecture.value;
 
+  const selectedKind =
+    currentKind.value;
+
+  const selectedBrand =
+    currentBrand.value;
+
+  const selectedStatus =
+    currentStatus.value;
+
+  const selectedReservation =
+    currentReservation.value;
+
+  const selectedSaved =
+    currentSaved.value;
+
+  const selectedGroup =
+    CURRENT_GROUPS.find(
+      group =>
+        group.id === selectedKind
+    );
+
   const visibleSpots =
     getCurrentVisibleSpots();
 
@@ -1068,8 +1337,129 @@ function renderCurrentSpots() {
           getPrefecture(
             spot.address
           ) === prefecture
+        ) &&
+        (
+          !selectedGroup ||
+          selectedGroup.matches(spot)
+        ) &&
+        (
+          !selectedBrand ||
+          spot.brand === selectedBrand
+        ) &&
+        (
+          !selectedStatus ||
+          (
+            selectedStatus ===
+              "ending-soon"
+              ? isEndingSoon(spot)
+              : getPeriodStatus(spot) ===
+                selectedStatus
+          )
+        ) &&
+        (
+          !selectedReservation ||
+          getReservationFilterValue(
+            spot
+          ) === selectedReservation
+        ) &&
+        matchesSavedFilter(
+          spot,
+          selectedSaved
         )
     );
+
+  renderActiveFilterChips(
+    "current-active-filters",
+    "current-filter-chips",
+    [
+      {
+        label:
+          currentSearch.value.trim() &&
+          "検索: " +
+            currentSearch.value.trim(),
+        reset: () => {
+          currentSearch.value = "";
+          renderCurrentSpots();
+          currentSearch.focus();
+        }
+      },
+      {
+        label:
+          prefecture &&
+          "都道府県: " + prefecture,
+        reset: () => {
+          currentPrefecture.value = "";
+          renderCurrentSpots();
+          currentPrefecture.focus();
+        }
+      },
+      {
+        label:
+          selectedKind &&
+          "種類: " +
+            getSelectedOptionLabel(
+              currentKind
+            ),
+        reset: () => {
+          currentKind.value = "";
+          renderCurrentSpots();
+          currentKind.focus();
+        }
+      },
+      {
+        label:
+          selectedBrand &&
+          "ブランド: " +
+            getSelectedOptionLabel(
+              currentBrand
+            ),
+        reset: () => {
+          currentBrand.value = "";
+          renderCurrentSpots();
+          currentBrand.focus();
+        }
+      },
+      {
+        label:
+          selectedStatus &&
+          "開催状況: " +
+            getSelectedOptionLabel(
+              currentStatus
+            ),
+        reset: () => {
+          currentStatus.value = "";
+          renderCurrentSpots();
+          currentStatus.focus();
+        }
+      },
+      {
+        label:
+          selectedReservation &&
+          "予約・入店: " +
+            getSelectedOptionLabel(
+              currentReservation
+            ),
+        reset: () => {
+          currentReservation.value = "";
+          renderCurrentSpots();
+          currentReservation.focus();
+        }
+      },
+      {
+        label:
+          selectedSaved &&
+          "保存状況: " +
+            getSelectedOptionLabel(
+              currentSaved
+            ),
+        reset: () => {
+          currentSaved.value = "";
+          renderCurrentSpots();
+          currentSaved.focus();
+        }
+      }
+    ]
+  );
 
   renderGroups(
     currentGroupsElement,
@@ -1106,6 +1496,18 @@ function renderPastSpots() {
 
   const selectedKind =
     pastKind.value;
+
+  const selectedPrefecture =
+    pastPrefecture.value;
+
+  const selectedStatus =
+    pastStatus.value;
+
+  const selectedReservation =
+    pastReservation.value;
+
+  const selectedSaved =
+    pastSaved.value;
 
   const endedCurrentSpots =
     currentSpots.filter(
@@ -1157,8 +1559,123 @@ function renderPastSpots() {
           !selectedKind ||
           spot.placeType ===
             selectedKind
+        ) &&
+        (
+          !selectedPrefecture ||
+          getPrefecture(
+            spot.address
+          ) === selectedPrefecture
+        ) &&
+        (
+          !selectedStatus ||
+          getPeriodStatus(spot) ===
+            selectedStatus
+        ) &&
+        (
+          !selectedReservation ||
+          getReservationFilterValue(
+            spot
+          ) === selectedReservation
+        ) &&
+        matchesSavedFilter(
+          spot,
+          selectedSaved
         )
     );
+
+  renderActiveFilterChips(
+    "past-active-filters",
+    "past-filter-chips",
+    [
+      {
+        label:
+          pastSearch.value.trim() &&
+          "検索: " +
+            pastSearch.value.trim(),
+        reset: () => {
+          pastSearch.value = "";
+          renderPastSpots();
+          pastSearch.focus();
+        }
+      },
+      {
+        label:
+          selectedYear &&
+          "開催年: " +
+            getSelectedOptionLabel(
+              pastYear
+            ),
+        reset: () => {
+          pastYear.value = "";
+          renderPastSpots();
+          pastYear.focus();
+        }
+      },
+      {
+        label:
+          selectedKind &&
+          "種類: " +
+            getSelectedOptionLabel(
+              pastKind
+            ),
+        reset: () => {
+          pastKind.value = "";
+          renderPastSpots();
+          pastKind.focus();
+        }
+      },
+      {
+        label:
+          selectedPrefecture &&
+          "都道府県: " +
+            selectedPrefecture,
+        reset: () => {
+          pastPrefecture.value = "";
+          renderPastSpots();
+          pastPrefecture.focus();
+        }
+      },
+      {
+        label:
+          selectedStatus &&
+          "開催結果: " +
+            getSelectedOptionLabel(
+              pastStatus
+            ),
+        reset: () => {
+          pastStatus.value = "";
+          renderPastSpots();
+          pastStatus.focus();
+        }
+      },
+      {
+        label:
+          selectedReservation &&
+          "予約・入店: " +
+            getSelectedOptionLabel(
+              pastReservation
+            ),
+        reset: () => {
+          pastReservation.value = "";
+          renderPastSpots();
+          pastReservation.focus();
+        }
+      },
+      {
+        label:
+          selectedSaved &&
+          "保存状況: " +
+            getSelectedOptionLabel(
+              pastSaved
+            ),
+        reset: () => {
+          pastSaved.value = "";
+          renderPastSpots();
+          pastSaved.focus();
+        }
+      }
+    ]
+  );
 
   renderGroups(
     pastGroupsElement,
@@ -1267,6 +1784,41 @@ function populatePrefectures() {
 }
 
 
+function populateBrands() {
+  const brands =
+    Array.from(
+      new Set(
+        getCurrentVisibleSpots()
+          .map(spot => spot.brand)
+          .filter(Boolean)
+      )
+    ).sort(
+      (first, second) =>
+        (
+          BRAND_LABELS[first] || first
+        ).localeCompare(
+          BRAND_LABELS[second] || second,
+          "ja"
+        )
+    );
+
+  brands.forEach(
+    brand => {
+      const option =
+        createElement(
+          "option",
+          "",
+          BRAND_LABELS[brand] ||
+            brand
+        );
+
+      option.value = brand;
+      currentBrand.appendChild(option);
+    }
+  );
+}
+
+
 function populateArchiveYears() {
   const years =
     Array.from(
@@ -1297,6 +1849,62 @@ function populateArchiveYears() {
 
       option.value = year;
       pastYear.appendChild(option);
+    }
+  );
+}
+
+
+function populateArchivePrefectures() {
+  pastPrefecture
+    .querySelectorAll(
+      "option:not(:first-child)"
+    )
+    .forEach(option => option.remove());
+
+  const availablePrefectures =
+    new Set(
+      [
+        ...archiveSpots,
+        ...currentSpots.filter(
+          spot =>
+            [
+              "ended",
+              "cancelled"
+            ].includes(
+              getPeriodStatus(spot)
+            )
+        )
+      ]
+        .map(
+          spot =>
+            getPrefecture(
+              spot.address
+            )
+        )
+        .filter(Boolean)
+    );
+
+  PREFECTURES.forEach(
+    prefecture => {
+      if (
+        !availablePrefectures.has(
+          prefecture
+        )
+      ) {
+        return;
+      }
+
+      const option =
+        createElement(
+          "option",
+          "",
+          prefecture
+        );
+
+      option.value = prefecture;
+      pastPrefecture.appendChild(
+        option
+      );
     }
   );
 }
@@ -1398,10 +2006,12 @@ async function loadCurrentSpots() {
 
         populateCurrentSummary();
         populatePrefectures();
+        populateBrands();
         updateGuideCounts();
         renderCurrentSpots();
 
         if (archiveLoaded) {
+          populateArchivePrefectures();
           renderPastSpots();
         }
 
@@ -1473,6 +2083,7 @@ async function loadArchiveSpots() {
           String(archiveSpots.length);
 
         populateArchiveYears();
+        populateArchivePrefectures();
         renderPastSpots();
 
         return true;
@@ -1662,6 +2273,22 @@ currentPrefecture.addEventListener(
 );
 
 
+[
+  currentKind,
+  currentBrand,
+  currentStatus,
+  currentReservation,
+  currentSaved
+].forEach(
+  control => {
+    control.addEventListener(
+      "change",
+      renderCurrentSpots
+    );
+  }
+);
+
+
 pastSearch.addEventListener(
   "input",
   renderPastSpots
@@ -1680,6 +2307,21 @@ pastKind.addEventListener(
 );
 
 
+[
+  pastPrefecture,
+  pastStatus,
+  pastReservation,
+  pastSaved
+].forEach(
+  control => {
+    control.addEventListener(
+      "change",
+      renderPastSpots
+    );
+  }
+);
+
+
 document.getElementById(
   "current-filter-reset"
 ).addEventListener(
@@ -1687,6 +2329,11 @@ document.getElementById(
   () => {
     currentSearch.value = "";
     currentPrefecture.value = "";
+    currentKind.value = "";
+    currentBrand.value = "";
+    currentStatus.value = "";
+    currentReservation.value = "";
+    currentSaved.value = "";
     renderCurrentSpots();
     currentSearch.focus();
   }
@@ -1701,6 +2348,10 @@ document.getElementById(
     pastSearch.value = "";
     pastYear.value = "";
     pastKind.value = "";
+    pastPrefecture.value = "";
+    pastStatus.value = "";
+    pastReservation.value = "";
+    pastSaved.value = "";
     renderPastSpots();
     pastSearch.focus();
   }
@@ -1736,6 +2387,43 @@ window.addEventListener(
       "current"
     );
   }
+);
+
+
+function refreshSavedSpotIds() {
+  favoriteSpotIds =
+    loadStringSetFromStorage(
+      FAVORITES_STORAGE_KEY
+    );
+
+  visitedSpotIds =
+    loadStringSetFromStorage(
+      VISITED_STORAGE_KEY
+    );
+
+  renderCurrentSpots();
+  renderPastSpots();
+}
+
+
+window.addEventListener(
+  "storage",
+  event => {
+    if (
+      event.key ===
+        FAVORITES_STORAGE_KEY ||
+      event.key ===
+        VISITED_STORAGE_KEY
+    ) {
+      refreshSavedSpotIds();
+    }
+  }
+);
+
+
+window.addEventListener(
+  "pageshow",
+  refreshSavedSpotIds
 );
 
 
