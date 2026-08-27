@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-08-28",
+  "coordinateSources": [
+    "公式施設アクセス情報",
+    "https://msearch.gsi.go.jp/address-search/AddressSearch"
+  ],
+  "venues": [
+    {
+      "key": "aeon-tottori-kita",
+      "name": "イオンモール鳥取北",
+      "address": "鳥取県鳥取市晩稲348 イオンモール鳥取北",
+      "addressSourceUrl": "https://www.aeonmall.com/facility/detail/3795/",
+      "query": "鳥取県鳥取市晩稲348",
+      "aliases": ["イオンモール鳥取北"],
+      "lat": 35.523964,
+      "lng": 134.201614
+    },
+    {
+      "key": "aeon-kisarazu",
+      "name": "イオンモール木更津",
+      "address": "千葉県木更津市築地1番4 イオンモール木更津",
+      "addressSourceUrl": "https://kisarazu.aeonmall.jp/access",
+      "query": "千葉県木更津市築地1番4",
+      "aliases": ["イオンモール木更津"],
+      "lat": 35.356682,
+      "lng": 139.901382
+    },
+    {
+      "key": "nagano-tokyu",
+      "name": "ながの東急百貨店",
+      "address": "長野県長野市南千歳1-1-1 ながの東急百貨店",
+      "addressSourceUrl": "https://www.nagano-tokyu.co.jp/",
+      "query": "長野県長野市南千歳1-1-1",
+      "aliases": ["ながの東急百貨店"],
+      "lat": 36.644936,
+      "lng": 138.188644
+    },
+    {
+      "key": "maruhiro-kawagoe",
+      "name": "まるひろ川越店",
+      "address": "埼玉県川越市新富町2-6-1 まるひろ川越店",
+      "addressSourceUrl": "https://www.maruhiro.co.jp/shops/access/kawagoe",
+      "query": "埼玉県川越市新富町2-6-1",
+      "aliases": ["まるひろ川越店"],
+      "lat": 35.913283,
+      "lng": 139.482103
+    }
+  ]
+}
