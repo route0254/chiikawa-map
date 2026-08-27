@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-08-27",
+  "coordinateSources": [
+    "既存のちい活マップ確認済み座標",
+    "https://msearch.gsi.go.jp/address-search/AddressSearch"
+  ],
+  "venues": [
+    {
+      "key": "sunshine-city-annex",
+      "name": "サンシャインシティ アネックス",
+      "address": "東京都豊島区東池袋3-3-5 サンシャインシティ アネックス",
+      "addressSourceUrl": "https://sunshinecity.jp/",
+      "query": "サンシャインシティ アネックス 東京都豊島区",
+      "aliases": ["サンシャインシティ アネックス"],
+      "lat": 35.7308,
+      "lng": 139.7196
+    },
+    {
+      "key": "aeon-sapporo-hassamu",
+      "name": "イオンモール札幌発寒",
+      "address": "北海道札幌市西区発寒8条12丁目1番1号 イオンモール札幌発寒",
+      "addressSourceUrl": "https://sapporohassamu.aeonmallhokkaido.com/static-pages/access",
+      "query": "北海道札幌市西区発寒8条12丁目1番1号",
+      "aliases": ["イオンモール札幌発寒"],
+      "lat": 43.096231,
+      "lng": 141.2767873
+    },
+    {
+      "key": "parco-city-urasoe",
+      "name": "サンエー浦添西海岸 PARCO CITY",
+      "address": "沖縄県浦添市西洲3-1-1 サンエー浦添西海岸 PARCO CITY",
+      "addressSourceUrl": "https://www.parcocity.jp/access/",
+      "query": "サンエー浦添西海岸 PARCO CITY 沖縄県浦添市",
+      "aliases": [
+        "サンエー 浦添西海岸 PARCO CITY",
+        "サンエー 浦添西海岸パルコシティ",
+        "サンエー浦添西海岸 PARCO CITY"
+      ],
+      "lat": 26.2613,
+      "lng": 127.699
+    },
+    {
+      "key": "aeon-okayama",
+      "name": "イオンモール岡山",
+      "address": "岡山県岡山市北区下石井1-2-1 イオンモール岡山",
+      "addressSourceUrl": "https://okayama.aeonmall.jp/access",
+      "query": "イオンモール岡山 岡山県岡山市",
+      "aliases": ["イオンモール岡山"],
+      "lat": 34.6653,
+      "lng": 133.917
+    },
+    {
+      "key": "aeon-tsu-minami",
+      "name": "イオンモール津南",
+      "address": "三重県津市高茶屋小森町145番地 イオンモール津南",
+      "addressSourceUrl": "https://tsuminami-aeonmall.com/",
+      "query": "三重県津市高茶屋小森町145番地",
+      "aliases": ["イオンモール津南"],
+      "lat": 34.670269,
+      "lng": 136.517746
+    },
+    {
+      "key": "aeon-hiroshima-gion",
+      "name": "イオンモール広島祇園",
+      "address": "広島県広島市安佐南区祇園3丁目2-1 イオンモール広島祇園",
+      "addressSourceUrl": "https://gion.aeonmall.com/",
+      "query": "広島県広島市安佐南区祇園3丁目2-1",
+      "aliases": ["イオンモール広島祇園"],
+      "lat": 34.443783,
+      "lng": 132.461578
+    },
+    {
+      "key": "matsumoto-parco",
+      "name": "松本PARCO",
+      "address": "長野県松本市中央1-10-30 松本PARCO",
+      "addressSourceUrl": "https://www.parco.co.jp/news/detail/?id=2758",
+      "historicalNote": "松本PARCOは2025年2月28日に営業終了。イベントは営業中の2024年に開催。",
+      "query": "長野県松本市中央1丁目10-30",
+      "aliases": ["松本PARCO", "松本パルコ"],
+      "lat": 36.232265,
+      "lng": 137.968079
+    },
+    {
+      "key": "aeon-morioka",
+      "name": "イオンモール盛岡",
+      "address": "岩手県盛岡市前潟4-7-1 イオンモール盛岡",
+      "addressSourceUrl": "https://morioka-aeonmall.com/",
+      "query": "岩手県盛岡市前潟4-7-1",
+      "aliases": ["イオンモール盛岡"],
+      "lat": 39.710526,
+      "lng": 141.101059
+    }
+  ]
+}
