@@ -7,11 +7,13 @@ on:
     paths:
       - "data/*.json"
       - "scripts/validate-data.mjs"
+      - "scripts/report-status-candidates.mjs"
       - ".github/workflows/validate-data.yml"
   pull_request:
     paths:
       - "data/*.json"
       - "scripts/validate-data.mjs"
+      - "scripts/report-status-candidates.mjs"
       - ".github/workflows/validate-data.yml"
   schedule:
     - cron: "23 6 * * 1"
@@ -37,3 +39,6 @@ jobs:
 
       - name: Validate spot data
         run: node scripts/validate-data.mjs
+
+      - name: Report official spot status
+        run: node scripts/report-status-candidates.mjs --github-summary --fail-on-archive-candidates
