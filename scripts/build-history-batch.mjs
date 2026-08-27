@@ -112,6 +112,25 @@ const batchConfigs = {
       event.startDate <= "2024-03-31",
     summaryYears: ["2024"]
   },
+  "2024-q3": {
+    label: "2024年7～9月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2024-q3.json",
+      "research/history-venue-seeds-2024-q1.json",
+      "research/history-venue-seeds-2023-q4.json",
+      "research/history-venue-seeds-2023-q3.json",
+      "research/history-venue-seeds-2023-q2.json",
+      "research/history-venue-seeds-2021-2022.json"
+    ],
+    outputFile:
+      "research/history-batch-2024-q3.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2024-07-01" &&
+      event.startDate <= "2024-09-30",
+    summaryYears: ["2024"]
+  },
   "2024-06": {
     label: "2024年6月",
     checkedAt: "2026-08-27",
