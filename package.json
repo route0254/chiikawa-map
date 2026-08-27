@@ -5,7 +5,9 @@
   "scripts": {
     "build:history-candidates": "node scripts/build-history-candidates.mjs",
     "build:history-batch": "node scripts/build-history-batch.mjs",
+    "build:history-batch:2023-q4": "node scripts/build-history-batch.mjs --batch=2023-q4",
     "import:history-batch": "node scripts/build-history-batch.mjs --write",
+    "import:history-batch:2023-q4": "node scripts/build-history-batch.mjs --batch=2023-q4 --write",
     "geocode:history-venues": "node scripts/geocode-history-venues.mjs",
     "geocode:history-venues:gsi": "node scripts/geocode-history-venues-gsi.mjs",
     "report:status": "node scripts/report-status-candidates.mjs",

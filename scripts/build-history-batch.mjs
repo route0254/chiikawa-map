@@ -14,11 +14,55 @@ const projectRoot = path.resolve(
   ".."
 );
 
-const checkedAt = "2026-08-26";
-const selectedYears = new Set([
-  "2021",
-  "2022"
-]);
+const batchArgument = process.argv.find(
+  argument => argument.startsWith("--batch=")
+);
+const batchName = batchArgument
+  ? batchArgument.slice("--batch=".length)
+  : "2021-2022";
+
+const batchConfigs = {
+  "2021-2022": {
+    label: "2021～2022年",
+    checkedAt: "2026-08-26",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2021-2022.json"
+    ],
+    outputFile:
+      "research/history-batch-2021-2022.json",
+    extrasFile:
+      "research/history-extra-events-2021-2022.json",
+    includes: event =>
+      new Set(["2021", "2022"]).has(
+        event.startDate?.slice(0, 4)
+      ),
+    summaryYears: ["2021", "2022"]
+  },
+  "2023-q4": {
+    label: "2023年10～12月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2023-q4.json"
+    ],
+    outputFile:
+      "research/history-batch-2023-q4.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2023-10-01" &&
+      event.startDate <= "2023-12-31",
+    summaryYears: ["2023"]
+  }
+};
+
+const batchConfig = batchConfigs[batchName];
+
+if (!batchConfig) {
+  throw new Error(
+    "未定義のバッチです: " + batchName
+  );
+}
+
+const checkedAt = batchConfig.checkedAt;
 
 async function readJson(relativePath) {
   return JSON.parse(
@@ -173,15 +217,24 @@ function createRecord(event, venue) {
 const candidates = await readJson(
   "research/official-history-candidates.json"
 );
-const venueSeeds = await readJson(
-  "research/history-venue-seeds-2021-2022.json"
+const venueSeedFiles = await Promise.all(
+  batchConfig.venueSeedFiles.map(readJson)
 );
+const venueSeeds = {
+  venues: venueSeedFiles.flatMap(
+    seedFile => seedFile.venues
+  )
+};
 const geocodes = await readJson(
   "research/history-venue-geocodes.json"
 );
-const extras = await readJson(
-  "research/history-extra-events-2021-2022.json"
-);
+const extras = batchConfig.extrasFile
+  ? await readJson(batchConfig.extrasFile)
+  : {
+      replacesCandidateName: null,
+      sourceUrl: null,
+      events: []
+    };
 const archive = await readJson(
   "data/official-events-archive.json"
 );
@@ -227,12 +280,12 @@ if (unresolvedVenues.length > 0) {
 const baseEvents = candidates.events.filter(
   event =>
     event.archiveEligible &&
-    !event.alreadyRegistered &&
-    selectedYears.has(
-      event.startDate?.slice(0, 4)
-    ) &&
-    event.name !==
-      extras.replacesCandidateName
+    batchConfig.includes(event) &&
+    (
+      !extras.replacesCandidateName ||
+      event.name !==
+        extras.replacesCandidateName
+    )
 );
 
 const extraEvents = extras.events.map(
@@ -308,12 +361,16 @@ for (const record of records) {
 const outputPath = path.join(
   projectRoot,
   "research",
-  "history-batch-2021-2022.json"
+  path.basename(batchConfig.outputFile)
 );
 
 await writeFile(
   outputPath,
-  JSON.stringify(records, null, 2) +
+  JSON.stringify(
+    generatedRecords,
+    null,
+    2
+  ) +
     "\n",
   "utf8"
 );
@@ -340,7 +397,7 @@ if (process.argv.includes("--write")) {
 }
 
 console.log(
-  "ちい活マップ 2021～2022年履歴バッチ"
+  `ちい活マップ ${batchConfig.label}履歴バッチ`
 );
 console.log(
   `- 一覧由来: ${baseEvents.length}件`
@@ -349,20 +406,22 @@ console.log(
   `- ロフト会場分割: ${extraEvents.length}件`
 );
 console.log(
-  `- 合計: ${records.length}件`
+  `- 監査用バッチ: ${generatedRecords.length}件`
+);
+console.log(
+  `- 今回の追加対象: ${records.length}件`
 );
 console.log(
   `- 登録済みのため除外: ${skippedExistingCount}件`
 );
 console.log(
-  `- 中止: ${records.filter(record => record.eventStatus === "cancelled").length}件`
+  `- 中止: ${generatedRecords.filter(record => record.eventStatus === "cancelled").length}件`
 );
-console.log(
-  `- 2021年: ${records.filter(record => record.startDate.startsWith("2021-")).length}件`
-);
-console.log(
-  `- 2022年: ${records.filter(record => record.startDate.startsWith("2022-")).length}件`
-);
+for (const year of batchConfig.summaryYears) {
+  console.log(
+    `- ${year}年: ${generatedRecords.filter(record => record.startDate.startsWith(`${year}-`)).length}件`
+  );
+}
 console.log(
   process.argv.includes("--write")
     ? "- アーカイブへ統合しました。"
