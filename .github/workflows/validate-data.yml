@@ -16,7 +16,7 @@ on:
       - "scripts/report-status-candidates.mjs"
       - ".github/workflows/validate-data.yml"
   schedule:
-    - cron: "23 6 * * 1"
+    - cron: "23 6 * * *"
       timezone: "Asia/Tokyo"
   workflow_dispatch:
 

@@ -23,7 +23,7 @@ GitHub Pages向けの静的Webサイトです。
 - `.github/workflows/validate-data.yml` : JSON検証のGitHub Actions
 - `.github/workflows/test-site.yml` : JavaScript・JSON・主要UIのGitHub Actions
 - `.github/workflows/check-links.yml` : 公式情報リンクの週次検査
-- `.github/workflows/check-site-health.yml` : 公開サイト状態の週次検査
+- `.github/workflows/check-site-health.yml` : 公開サイト状態の日次検査
 - `.github/ISSUE_TEMPLATE/` : 修正・掲載提案・終了報告用のIssueフォーム
 - `tests/` : Playwrightによる主要UIのスモークテスト
 - `package.json` / `pnpm-lock.yaml` : 開発・テスト用の依存関係
@@ -68,7 +68,7 @@ git push origin main
 
 GitHub Pagesは `main` ブランチのルートから公開されます。`main` へのプッシュ後は自動的に公開処理が始まるため、ローカル検証を省略しないでください。
 GitHub ActionsでもJSON検証と主要UIのスモークテストを行いますが、現在のPages設定では公開を停止するゲートではなく、GitHub上で異常を検知するための二重チェックです。
-データ検証は毎週月曜日6時23分、外部リンク検査は同6時41分、公開サイト状態の検査は毎週水曜日7時17分（いずれも日本時間）に自動実行します。月曜のデータ検証では公式スポットの終了状況をJob Summaryにも一覧化し、終了日経過後も現在JSONに残る候補がある場合は更新漏れとして失敗にします。各検査はActions画面から手動実行もできます。
+データ検証は毎日6時23分、公開サイト状態の検査は毎日7時17分、外部リンク検査は毎週月曜日6時41分（いずれも日本時間）に自動実行します。毎日のデータ検証では公式スポットの終了状況をJob Summaryにも一覧化し、終了日経過後も現在JSONに残る候補がある場合は更新漏れとして失敗にします。各検査はActions画面から手動実行もできます。
 
 ### 互換性を維持するルール
 
@@ -141,7 +141,7 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - JavaScript構文・JSON・主要UIの自動検証を追加
 - 「行った！」登録済みスポットに訪問日・メモを端末保存できる機能を追加
 - スポット詳細に終了済みを除く近隣5件と直線距離を表示
-- HTTPS・www転送・canonical・OGP・公開JSONの週次監視を追加
+- HTTPS・www転送・canonical・OGP・公開JSONの日次監視を追加
 - 絞り込みに「過去イベント（終了・中止）」を追加し、初期状態では読み込まない遅延読込に対応
 - 終了済みイベントを専用JSONへ分離し、既存IDと共有URLを維持
 - 過去イベントの開催年絞り込みと、`past=1&year=2021` 形式の条件共有に対応
@@ -460,7 +460,7 @@ GoogleマップURLは通常の検査対象から除外しており、必要な�
 同じ検査は `.github/workflows/check-links.yml` により毎週自動実行され、公開サイトのデプロイ処理とは独立しています。
 
 `pnpm run check:site` は公開URLへ接続し、HTTPS証明書、HTTPからHTTPSへの転送、wwwから正規ドメインへの転送、canonical、OGP URL、`app.js`、3つのスポットJSONを確認します。
-同じ検査は `.github/workflows/check-site-health.yml` により毎週自動実行されます。2026-08-26時点で `https://chiikatsu-map.com/` は200、HTTPとwwwは正規HTTPS URLへ301転送されます。
+同じ検査は `.github/workflows/check-site-health.yml` により毎日自動実行されます。2026-08-28時点で `https://chiikatsu-map.com/` は200、HTTPとwwwは正規HTTPS URLへ301転送されます。
 
 `pnpm run report:status` は、現在の公式スポットから「終了日を過ぎたアーカイブ移動候補」「14日以内に終了するスポット」「終了日未定の期間限定スポット」を抽出し、終了日までの残日数も表示します。候補を自動更新するコマンドではないため、JSONを変更する前に必ず公式情報を確認してください。GitHub Actionsでは同じ結果をJob Summaryとアノテーションへ表示し、終了日経過候補が1件以上ある場合だけ検証を失敗にします。
 
