@@ -125,6 +125,20 @@ const batchConfigs = {
       event.startDate >= "2024-06-01" &&
       event.startDate <= "2024-06-30",
     summaryYears: ["2024"]
+  },
+  "2024-05": {
+    label: "2024年5月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2024-05.json"
+    ],
+    outputFile:
+      "research/history-batch-2024-05.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2024-05-01" &&
+      event.startDate <= "2024-05-31",
+    summaryYears: ["2024"]
   }
 };
 
