@@ -65,6 +65,24 @@ const batchConfigs = {
       event.startDate >= "2023-07-01" &&
       event.startDate <= "2023-09-30",
     summaryYears: ["2023"]
+  },
+  "2023-q2": {
+    label: "2023年4～6月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2023-q2.json"
+    ],
+    outputFile:
+      "research/history-batch-2023-q2.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2023-04-01" &&
+      event.startDate <= "2023-06-30",
+    venueTextOverrides: {
+      "https://chiikawa-info.jp/p23/pus_ent/index.html":
+        "遠鉄百貨店 本館8階 催会場"
+    },
+    summaryYears: ["2023"]
   }
 };
 
@@ -300,7 +318,13 @@ const baseEvents = candidates.events.filter(
       event.name !==
         extras.replacesCandidateName
     )
-);
+).map(event => ({
+  ...event,
+  venueText:
+    batchConfig.venueTextOverrides?.[
+      event.sourceUrl
+    ] || event.venueText
+}));
 
 const extraEvents = extras.events.map(
   event => ({

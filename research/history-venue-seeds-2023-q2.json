@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-08-27",
+  "coordinateSources": [
+    "既存のちい活マップ確認済み座標",
+    "施設公式ページの地図リンク",
+    "https://msearch.gsi.go.jp/address-search/AddressSearch",
+    "https://nominatim.openstreetmap.org/search"
+  ],
+  "venues": [
+    {
+      "key": "fesan-morioka",
+      "name": "盛岡駅ビル フェザン",
+      "address": "岩手県盛岡市盛岡駅前通1-44 盛岡駅ビル フェザン",
+      "addressSourceUrl": "https://fesan-jp.com/access/",
+      "query": "盛岡駅ビル フェザン 岩手県盛岡市",
+      "aliases": ["フェザン"],
+      "lat": 39.702602,
+      "lng": 141.135582
+    },
+    {
+      "key": "sunshine-city-annex",
+      "name": "サンシャインシティ アネックス",
+      "address": "東京都豊島区東池袋3-3-5 サンシャインシティ アネックス",
+      "addressSourceUrl": "https://sunshinecity.jp/",
+      "query": "サンシャインシティ アネックス 東京都豊島区",
+      "aliases": ["サンシャインシティ アネックス"],
+      "lat": 35.7308,
+      "lng": 139.7196
+    },
+    {
+      "key": "entetsu-department-store",
+      "name": "遠鉄百貨店",
+      "address": "静岡県浜松市中央区砂山町320-2 遠鉄百貨店",
+      "addressSourceUrl": "https://www.entetsu.co.jp/company/group/depart.html",
+      "query": "遠鉄百貨店 静岡県浜松市",
+      "aliases": ["遠鉄百貨店"],
+      "lat": 34.7037909,
+      "lng": 137.7331523
+    },
+    {
+      "key": "jr-akihabara",
+      "name": "JR秋葉原駅",
+      "address": "東京都千代田区外神田1丁目 JR秋葉原駅",
+      "addressSourceUrl": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=41",
+      "query": "JR秋葉原駅 東京都千代田区",
+      "aliases": ["JR秋葉原駅"],
+      "lat": 35.6983358,
+      "lng": 139.7729413
+    },
+    {
+      "key": "aeon-iwaki-onahama",
+      "name": "イオンモールいわき小名浜",
+      "address": "福島県いわき市小名浜字辰巳町79 イオンモールいわき小名浜",
+      "addressSourceUrl": "https://iwakionahama-aeonmall.com/",
+      "query": "イオンモールいわき小名浜 福島県いわき市",
+      "aliases": ["イオンモールいわき小名浜"],
+      "lat": 36.9467306,
+      "lng": 140.903848
+    },
+    {
+      "key": "jr-omiya",
+      "name": "JR大宮駅",
+      "address": "埼玉県さいたま市大宮区錦町630 JR大宮駅",
+      "addressSourceUrl": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=350",
+      "query": "埼玉県さいたま市大宮区錦町630",
+      "aliases": ["JR大宮駅"],
+      "lat": 35.904289,
+      "lng": 139.624069
+    },
+    {
+      "key": "jr-niigata",
+      "name": "JR新潟駅",
+      "address": "新潟県新潟市中央区花園1-1-1 JR新潟駅 CoCoLo新潟",
+      "addressSourceUrl": "https://jenic.jp/cocolo/access/?sc_name=niigata",
+      "query": "新潟県新潟市中央区花園1-1-1",
+      "aliases": ["新潟駅"],
+      "lat": 37.913288,
+      "lng": 139.060867
+    },
+    {
+      "key": "s-pal-yamagata",
+      "name": "エスパル山形",
+      "address": "山形県山形市香澄町1-1-1 エスパル山形",
+      "addressSourceUrl": "https://www.s-pal.jp/yamagata/",
+      "query": "エスパル山形 山形県山形市",
+      "aliases": ["エスパル山形"],
+      "lat": 38.2486351,
+      "lng": 140.3279395
+    },
+    {
+      "key": "lalaport-shonan-hiratsuka",
+      "name": "ららぽーと湘南平塚",
+      "address": "神奈川県平塚市天沼10-1 ららぽーと湘南平塚",
+      "addressSourceUrl": "https://mitsui-shopping-park.com/lalaport/hiratsuka/access/index.html",
+      "query": "ららぽーと湘南平塚 神奈川県平塚市",
+      "aliases": ["ららぽーと湘南平塚"],
+      "lat": 35.3364008,
+      "lng": 139.3550733
+    },
+    {
+      "key": "jr-ikebukuro",
+      "name": "JR池袋駅",
+      "address": "東京都豊島区南池袋1丁目28-2 JR池袋駅",
+      "addressSourceUrl": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=108",
+      "query": "JR池袋駅 東京都豊島区",
+      "aliases": ["JR池袋駅"],
+      "lat": 35.7295,
+      "lng": 139.7109
+    },
+    {
+      "key": "abeno-qs-mall",
+      "name": "あべのキューズモール",
+      "address": "大阪府大阪市阿倍野区阿倍野筋1-6-1 あべのキューズモール",
+      "addressSourceUrl": "https://qs-mall.jp/abeno/access/",
+      "query": "あべのキューズモール 大阪府大阪市",
+      "aliases": ["あべのキューズモール"],
+      "lat": 34.6444799,
+      "lng": 135.5115032
+    },
+    {
+      "key": "parco-city-urasoe",
+      "name": "サンエー浦添西海岸 PARCO CITY",
+      "address": "沖縄県浦添市西洲3-1-1 サンエー浦添西海岸 PARCO CITY",
+      "addressSourceUrl": "https://www.parcocity.jp/access/",
+      "query": "サンエー浦添西海岸 PARCO CITY 沖縄県浦添市",
+      "aliases": ["サンエー 浦添西海岸パルコシティ", "サンエー浦添西海岸 PARCO CITY"],
+      "lat": 26.2613,
+      "lng": 127.699
+    },
+    {
+      "key": "loft-koshien",
+      "name": "甲子園ロフト",
+      "address": "兵庫県西宮市甲子園八番町1-100 ららぽーと甲子園2F 甲子園ロフト",
+      "addressSourceUrl": "https://www.loft.co.jp/shop_list/detail.php?shop_id=581",
+      "query": "ららぽーと甲子園 兵庫県西宮市",
+      "aliases": ["甲子園ロフト"],
+      "lat": 34.7185166,
+      "lng": 135.3635003
+    },
+    {
+      "key": "loft-oita",
+      "name": "大分ロフト",
+      "address": "大分県大分市大字玉沢字楠本755-1 トキハわさだタウン2街区2F 大分ロフト",
+      "addressSourceUrl": "https://www.loft.co.jp/shop_list/detail.php?shop_id=153",
+      "query": "トキハわさだタウン 大分県大分市",
+      "aliases": ["大分ロフト"],
+      "lat": 33.1884716,
+      "lng": 131.5817969
+    }
+  ]
+}
