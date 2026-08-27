@@ -331,6 +331,12 @@ const currentSaved =
   );
 
 
+const currentSort =
+  document.getElementById(
+    "current-sort"
+  );
+
+
 const pastSearch =
   document.getElementById(
     "past-search"
@@ -355,6 +361,12 @@ const pastPrefecture =
   );
 
 
+const pastBrand =
+  document.getElementById(
+    "past-brand"
+  );
+
+
 const pastStatus =
   document.getElementById(
     "past-status"
@@ -373,6 +385,42 @@ const pastSaved =
   );
 
 
+const pastSort =
+  document.getElementById(
+    "past-sort"
+  );
+
+
+const currentFilterToggle =
+  document.getElementById(
+    "current-filter-toggle"
+  );
+
+
+const pastFilterToggle =
+  document.getElementById(
+    "past-filter-toggle"
+  );
+
+
+const currentFilters =
+  document.getElementById(
+    "current-filters"
+  );
+
+
+const pastFilters =
+  document.getElementById(
+    "past-filters"
+  );
+
+
+const catalogActionStatus =
+  document.getElementById(
+    "catalog-action-status"
+  );
+
+
 let currentSpots = [];
 let archiveSpots = [];
 let currentLoaded = false;
@@ -387,6 +435,28 @@ let visitedSpotIds =
   loadStringSetFromStorage(
     VISITED_STORAGE_KEY
   );
+let catalogStatusTimer = null;
+let currentFiltersExpanded = false;
+let pastFiltersExpanded = false;
+
+
+const mobileFilterMedia =
+  window.matchMedia(
+    "(max-width: 680px)"
+  );
+
+
+const CATALOG_FILTER_PARAMS = [
+  "q",
+  "pref",
+  "kind",
+  "brand",
+  "status",
+  "entry",
+  "saved",
+  "sort",
+  "year"
+];
 
 
 function createElement(
@@ -450,6 +520,140 @@ function loadStringSetFromStorage(
 
     return new Set();
   }
+}
+
+
+function saveStringSetToStorage(
+  key,
+  values
+) {
+  try {
+    window.localStorage.setItem(
+      key,
+      JSON.stringify(
+        Array.from(values)
+      )
+    );
+
+    return true;
+  } catch (error) {
+    console.warn(
+      "保存済みスポットを更新できませんでした。",
+      error
+    );
+
+    showCatalogStatus(
+      "端末へ保存できませんでした。ブラウザの保存設定をご確認ください。"
+    );
+
+    return false;
+  }
+}
+
+
+function showCatalogStatus(
+  message
+) {
+  if (catalogStatusTimer) {
+    window.clearTimeout(
+      catalogStatusTimer
+    );
+  }
+
+  catalogActionStatus.textContent =
+    message;
+  catalogActionStatus.hidden = false;
+
+  catalogStatusTimer =
+    window.setTimeout(
+      () => {
+        catalogActionStatus.hidden =
+          true;
+        catalogStatusTimer = null;
+      },
+      3500
+    );
+}
+
+
+function getSpotShareUrl(
+  spot
+) {
+  const url =
+    new URL(
+      "./",
+      window.location.href
+    );
+
+  url.searchParams.set(
+    "spot",
+    spot.id
+  );
+
+  return url.toString();
+}
+
+
+async function shareUrl(
+  title,
+  text,
+  url,
+  copiedMessage
+) {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title,
+        text,
+        url
+      });
+      return;
+    } catch (error) {
+      if (
+        error?.name ===
+        "AbortError"
+      ) {
+        return;
+      }
+    }
+  }
+
+  if (
+    navigator.clipboard
+      ?.writeText
+  ) {
+    try {
+      await navigator.clipboard
+        .writeText(url);
+      showCatalogStatus(
+        copiedMessage
+      );
+      return;
+    } catch (error) {
+      console.warn(
+        "共有URLをコピーできませんでした。",
+        error
+      );
+    }
+  }
+
+  window.prompt(
+    "このURLをコピーして共有してください。",
+    url
+  );
+}
+
+
+function shareSpot(
+  spot
+) {
+  return shareUrl(
+    spot.name +
+      " | ちいかわ推し活（ちい活）MAP",
+    spot.name,
+    getSpotShareUrl(spot),
+    "スポット共有URLをコピーしました。"
+  );
 }
 
 
@@ -808,8 +1012,79 @@ function getSelectedOptionLabel(
 
   return (
     select.selectedOptions[0]
+      ?.dataset.baseLabel ||
+    select.selectedOptions[0]
       ?.textContent ||
     select.value
+  );
+}
+
+
+function getOptionBaseLabel(
+  option
+) {
+  if (!option.dataset.baseLabel) {
+    option.dataset.baseLabel =
+      option.textContent;
+  }
+
+  return option.dataset.baseLabel;
+}
+
+
+function appendSelectOption(
+  select,
+  value,
+  label
+) {
+  const option =
+    createElement(
+      "option",
+      "",
+      label
+    );
+
+  option.value = value;
+  option.dataset.baseLabel = label;
+  select.appendChild(option);
+
+  return option;
+}
+
+
+function updateSelectOptionCounts(
+  select,
+  spots,
+  getCandidateState,
+  matches
+) {
+  Array.from(
+    select.options
+  ).forEach(
+    option => {
+      const baseLabel =
+        getOptionBaseLabel(option);
+
+      const candidateState =
+        getCandidateState(
+          option.value
+        );
+
+      const count =
+        spots.filter(
+          spot =>
+            matches(
+              spot,
+              candidateState
+            )
+        ).length;
+
+      option.textContent =
+        baseLabel +
+        "（" +
+        count +
+        "）";
+    }
   );
 }
 
@@ -897,6 +1172,148 @@ function appendDetail(
 }
 
 
+function toggleSavedSpot(
+  spot,
+  type
+) {
+  const isFavorite =
+    type === "favorite";
+
+  const values =
+    isFavorite
+      ? favoriteSpotIds
+      : visitedSpotIds;
+
+  const storageKey =
+    isFavorite
+      ? FAVORITES_STORAGE_KEY
+      : VISITED_STORAGE_KEY;
+
+  const wasSaved =
+    values.has(spot.id);
+
+  if (wasSaved) {
+    values.delete(spot.id);
+  } else {
+    values.add(spot.id);
+  }
+
+  if (
+    !saveStringSetToStorage(
+      storageKey,
+      values
+    )
+  ) {
+    if (wasSaved) {
+      values.add(spot.id);
+    } else {
+      values.delete(spot.id);
+    }
+    return;
+  }
+
+  renderCurrentSpots();
+  renderPastSpots();
+
+  const label =
+    isFavorite
+      ? "行きたい"
+      : "行った！";
+
+  showCatalogStatus(
+    spot.name +
+      "を「" +
+      label +
+      "」" +
+      (
+        wasSaved
+          ? "から解除しました。"
+          : "に保存しました。"
+      )
+  );
+
+  window.requestAnimationFrame(
+    () => {
+      const selector =
+        '[data-save-type="' +
+        type +
+        '"][data-spot-id="' +
+        CSS.escape(spot.id) +
+        '"]';
+
+      const nextButton =
+        document.querySelector(
+          selector
+        );
+
+      if (nextButton) {
+        nextButton.focus({
+          preventScroll: true
+        });
+      }
+    }
+  );
+}
+
+
+function createSaveButton(
+  spot,
+  type
+) {
+  const isFavorite =
+    type === "favorite";
+
+  const isSaved =
+    isFavorite
+      ? favoriteSpotIds.has(spot.id)
+      : visitedSpotIds.has(spot.id);
+
+  const label =
+    isFavorite
+      ? "♡ 行きたい"
+      : "✓ 行った！";
+
+  const button =
+    createElement(
+      "button",
+      "spot-card-save-button " +
+        (
+          isFavorite
+            ? "spot-card-save-favorite"
+            : "spot-card-save-visited"
+        ) +
+        (
+          isSaved
+            ? " is-active"
+            : ""
+        ),
+      isSaved
+        ? label + "に保存済み"
+        : label
+    );
+
+  button.type = "button";
+  button.dataset.saveType = type;
+  button.dataset.spotId = spot.id;
+  button.setAttribute(
+    "aria-pressed",
+    String(isSaved)
+  );
+
+  button.addEventListener(
+    "click",
+    () => {
+      toggleSavedSpot(
+        spot,
+        type
+      );
+    }
+  );
+
+  return button;
+}
+
+
 function createSpotCard(
   spot
 ) {
@@ -974,6 +1391,26 @@ function createSpotCard(
     )
   );
 
+  const saveActions =
+    createElement(
+      "div",
+      "spot-card-save-actions"
+    );
+
+  saveActions.appendChild(
+    createSaveButton(
+      spot,
+      "favorite"
+    )
+  );
+
+  saveActions.appendChild(
+    createSaveButton(
+      spot,
+      "visited"
+    )
+  );
+
   card.appendChild(
     createElement(
       "p",
@@ -984,6 +1421,8 @@ function createSpotCard(
       BRAND_LABELS.other
     )
   );
+
+  card.appendChild(saveActions);
 
   const details =
     createElement(
@@ -1052,6 +1491,31 @@ function createSpotCard(
 
   actions.appendChild(
     sourceLink
+  );
+
+  const shareButton =
+    createElement(
+      "button",
+      "spot-card-action spot-card-action-share",
+      "🔗 共有"
+    );
+
+  shareButton.type = "button";
+  shareButton.setAttribute(
+    "aria-label",
+    spot.name +
+      "を共有"
+  );
+
+  shareButton.addEventListener(
+    "click",
+    () => {
+      shareSpot(spot);
+    }
+  );
+
+  actions.appendChild(
+    shareButton
   );
 
   card.appendChild(actions);
@@ -1141,6 +1605,108 @@ function sortArchiveSpots(
     first.name,
     second.name
   );
+}
+
+
+function sortByName(
+  first,
+  second
+) {
+  return collator.compare(
+    first.name,
+    second.name
+  );
+}
+
+
+function sortCurrentByEnding(
+  first,
+  second
+) {
+  const dateDifference =
+    (
+      first.endDate ||
+      "9999-12-31"
+    ).localeCompare(
+      second.endDate ||
+      "9999-12-31"
+    );
+
+  return dateDifference ||
+    sortCurrentSpots(
+      first,
+      second
+    );
+}
+
+
+function sortCurrentByStarting(
+  first,
+  second
+) {
+  const dateDifference =
+    (
+      first.startDate ||
+      "9999-12-31"
+    ).localeCompare(
+      second.startDate ||
+      "9999-12-31"
+    );
+
+  return dateDifference ||
+    sortCurrentSpots(
+      first,
+      second
+    );
+}
+
+
+function sortArchiveOldest(
+  first,
+  second
+) {
+  const dateDifference =
+    (
+      first.startDate ||
+      first.endDate ||
+      ""
+    ).localeCompare(
+      second.startDate ||
+      second.endDate ||
+      ""
+    );
+
+  return dateDifference ||
+    sortByName(
+      first,
+      second
+    );
+}
+
+
+function getCurrentSortFunction() {
+  switch (currentSort.value) {
+    case "ending":
+      return sortCurrentByEnding;
+    case "starting":
+      return sortCurrentByStarting;
+    case "name":
+      return sortByName;
+    default:
+      return sortCurrentSpots;
+  }
+}
+
+
+function getPastSortFunction() {
+  switch (pastSort.value) {
+    case "oldest":
+      return sortArchiveOldest;
+    case "name":
+      return sortByName;
+    default:
+      return sortArchiveSpots;
+  }
 }
 
 
@@ -1287,39 +1853,250 @@ function getCurrentVisibleSpots() {
 }
 
 
+function getCurrentFilterState() {
+  return {
+    query:
+      normalizeSearchText(
+        currentSearch.value
+      ),
+    prefecture:
+      currentPrefecture.value,
+    kind:
+      currentKind.value,
+    brand:
+      currentBrand.value,
+    status:
+      currentStatus.value,
+    reservation:
+      currentReservation.value,
+    saved:
+      currentSaved.value
+  };
+}
+
+
+function matchesCurrentSpot(
+  spot,
+  state
+) {
+  const selectedGroup =
+    CURRENT_GROUPS.find(
+      group =>
+        group.id === state.kind
+    );
+
+  return (
+    (
+      !state.query ||
+      getSearchableText(spot)
+        .includes(state.query)
+    ) &&
+    (
+      !state.prefecture ||
+      getPrefecture(
+        spot.address
+      ) === state.prefecture
+    ) &&
+    (
+      !selectedGroup ||
+      selectedGroup.matches(spot)
+    ) &&
+    (
+      !state.brand ||
+      spot.brand === state.brand
+    ) &&
+    (
+      !state.status ||
+      (
+        state.status ===
+          "ending-soon"
+          ? isEndingSoon(spot)
+          : getPeriodStatus(spot) ===
+            state.status
+      )
+    ) &&
+    (
+      !state.reservation ||
+      getReservationFilterValue(
+        spot
+      ) === state.reservation
+    ) &&
+    matchesSavedFilter(
+      spot,
+      state.saved
+    )
+  );
+}
+
+
+function getAllPastSpots() {
+  const endedCurrentSpots =
+    currentSpots.filter(
+      spot =>
+        [
+          "ended",
+          "cancelled"
+        ].includes(
+          getPeriodStatus(spot)
+        )
+    );
+
+  const seenIds = new Set();
+
+  return [
+    ...archiveSpots,
+    ...endedCurrentSpots
+  ].filter(
+    spot => {
+      if (
+        !spot.id ||
+        seenIds.has(spot.id)
+      ) {
+        return false;
+      }
+
+      seenIds.add(spot.id);
+      return true;
+    }
+  );
+}
+
+
+function getPastFilterState() {
+  return {
+    query:
+      normalizeSearchText(
+        pastSearch.value
+      ),
+    year:
+      pastYear.value,
+    kind:
+      pastKind.value,
+    prefecture:
+      pastPrefecture.value,
+    brand:
+      pastBrand.value,
+    status:
+      pastStatus.value,
+    reservation:
+      pastReservation.value,
+    saved:
+      pastSaved.value
+  };
+}
+
+
+function matchesPastSpot(
+  spot,
+  state
+) {
+  return (
+    (
+      !state.query ||
+      getSearchableText(spot)
+        .includes(state.query)
+    ) &&
+    (
+      !state.year ||
+      spot.startDate?.startsWith(
+        state.year + "-"
+      )
+    ) &&
+    (
+      !state.kind ||
+      spot.placeType === state.kind
+    ) &&
+    (
+      !state.prefecture ||
+      getPrefecture(
+        spot.address
+      ) === state.prefecture
+    ) &&
+    (
+      !state.brand ||
+      spot.brand === state.brand
+    ) &&
+    (
+      !state.status ||
+      getPeriodStatus(spot) ===
+        state.status
+    ) &&
+    (
+      !state.reservation ||
+      getReservationFilterValue(
+        spot
+      ) === state.reservation
+    ) &&
+    matchesSavedFilter(
+      spot,
+      state.saved
+    )
+  );
+}
+
+
+function updateCurrentFilterCounts(
+  spots,
+  state
+) {
+  [
+    [currentPrefecture, "prefecture"],
+    [currentKind, "kind"],
+    [currentBrand, "brand"],
+    [currentStatus, "status"],
+    [currentReservation, "reservation"],
+    [currentSaved, "saved"]
+  ].forEach(
+    ([select, key]) => {
+      updateSelectOptionCounts(
+        select,
+        spots,
+        value => ({
+          ...state,
+          [key]: value
+        }),
+        matchesCurrentSpot
+      );
+    }
+  );
+}
+
+
+function updatePastFilterCounts(
+  spots,
+  state
+) {
+  [
+    [pastYear, "year"],
+    [pastKind, "kind"],
+    [pastPrefecture, "prefecture"],
+    [pastBrand, "brand"],
+    [pastStatus, "status"],
+    [pastReservation, "reservation"],
+    [pastSaved, "saved"]
+  ].forEach(
+    ([select, key]) => {
+      updateSelectOptionCounts(
+        select,
+        spots,
+        value => ({
+          ...state,
+          [key]: value
+        }),
+        matchesPastSpot
+      );
+    }
+  );
+}
+
+
 function renderCurrentSpots() {
   if (!currentLoaded) {
     return;
   }
 
-  const query =
-    normalizeSearchText(
-      currentSearch.value
-    );
-
-  const prefecture =
-    currentPrefecture.value;
-
-  const selectedKind =
-    currentKind.value;
-
-  const selectedBrand =
-    currentBrand.value;
-
-  const selectedStatus =
-    currentStatus.value;
-
-  const selectedReservation =
-    currentReservation.value;
-
-  const selectedSaved =
-    currentSaved.value;
-
-  const selectedGroup =
-    CURRENT_GROUPS.find(
-      group =>
-        group.id === selectedKind
-    );
+  const state =
+    getCurrentFilterState();
 
   const visibleSpots =
     getCurrentVisibleSpots();
@@ -1327,46 +2104,16 @@ function renderCurrentSpots() {
   const filteredSpots =
     visibleSpots.filter(
       spot =>
-        (
-          !query ||
-          getSearchableText(spot)
-            .includes(query)
-        ) &&
-        (
-          !prefecture ||
-          getPrefecture(
-            spot.address
-          ) === prefecture
-        ) &&
-        (
-          !selectedGroup ||
-          selectedGroup.matches(spot)
-        ) &&
-        (
-          !selectedBrand ||
-          spot.brand === selectedBrand
-        ) &&
-        (
-          !selectedStatus ||
-          (
-            selectedStatus ===
-              "ending-soon"
-              ? isEndingSoon(spot)
-              : getPeriodStatus(spot) ===
-                selectedStatus
-          )
-        ) &&
-        (
-          !selectedReservation ||
-          getReservationFilterValue(
-            spot
-          ) === selectedReservation
-        ) &&
-        matchesSavedFilter(
+        matchesCurrentSpot(
           spot,
-          selectedSaved
+          state
         )
     );
+
+  updateCurrentFilterCounts(
+    visibleSpots,
+    state
+  );
 
   renderActiveFilterChips(
     "current-active-filters",
@@ -1379,93 +2126,105 @@ function renderCurrentSpots() {
             currentSearch.value.trim(),
         reset: () => {
           currentSearch.value = "";
-          renderCurrentSpots();
-          currentSearch.focus();
+          handleCurrentFiltersChanged(
+            currentSearch
+          );
         }
       },
       {
         label:
-          prefecture &&
-          "都道府県: " + prefecture,
+          state.prefecture &&
+          "都道府県: " +
+            state.prefecture,
         reset: () => {
           currentPrefecture.value = "";
-          renderCurrentSpots();
-          currentPrefecture.focus();
+          handleCurrentFiltersChanged(
+            currentPrefecture
+          );
         }
       },
       {
         label:
-          selectedKind &&
+          state.kind &&
           "種類: " +
             getSelectedOptionLabel(
               currentKind
             ),
         reset: () => {
           currentKind.value = "";
-          renderCurrentSpots();
-          currentKind.focus();
+          handleCurrentFiltersChanged(
+            currentKind
+          );
         }
       },
       {
         label:
-          selectedBrand &&
+          state.brand &&
           "ブランド: " +
             getSelectedOptionLabel(
               currentBrand
             ),
         reset: () => {
           currentBrand.value = "";
-          renderCurrentSpots();
-          currentBrand.focus();
+          handleCurrentFiltersChanged(
+            currentBrand
+          );
         }
       },
       {
         label:
-          selectedStatus &&
+          state.status &&
           "開催状況: " +
             getSelectedOptionLabel(
               currentStatus
             ),
         reset: () => {
           currentStatus.value = "";
-          renderCurrentSpots();
-          currentStatus.focus();
+          handleCurrentFiltersChanged(
+            currentStatus
+          );
         }
       },
       {
         label:
-          selectedReservation &&
+          state.reservation &&
           "予約・入店: " +
             getSelectedOptionLabel(
               currentReservation
             ),
         reset: () => {
           currentReservation.value = "";
-          renderCurrentSpots();
-          currentReservation.focus();
+          handleCurrentFiltersChanged(
+            currentReservation
+          );
         }
       },
       {
         label:
-          selectedSaved &&
+          state.saved &&
           "保存状況: " +
             getSelectedOptionLabel(
               currentSaved
             ),
         reset: () => {
           currentSaved.value = "";
-          renderCurrentSpots();
-          currentSaved.focus();
+          handleCurrentFiltersChanged(
+            currentSaved
+          );
         }
       }
     ]
+  );
+
+  syncMobileFilterPanel(
+    "current"
   );
 
   renderGroups(
     currentGroupsElement,
     CURRENT_GROUPS,
     filteredSpots,
-    sortCurrentSpots
+    getCurrentSortFunction()
   );
 
   document.getElementById(
@@ -1486,102 +2245,25 @@ function renderPastSpots() {
     return;
   }
 
-  const query =
-    normalizeSearchText(
-      pastSearch.value
-    );
-
-  const selectedYear =
-    pastYear.value;
-
-  const selectedKind =
-    pastKind.value;
-
-  const selectedPrefecture =
-    pastPrefecture.value;
-
-  const selectedStatus =
-    pastStatus.value;
-
-  const selectedReservation =
-    pastReservation.value;
-
-  const selectedSaved =
-    pastSaved.value;
-
-  const endedCurrentSpots =
-    currentSpots.filter(
-      spot =>
-        [
-          "ended",
-          "cancelled"
-        ].includes(
-          getPeriodStatus(spot)
-        )
-    );
-
-  const seenIds =
-    new Set();
+  const state =
+    getPastFilterState();
 
   const allPastSpots =
-    [
-      ...archiveSpots,
-      ...endedCurrentSpots
-    ].filter(
-      spot => {
-        if (
-          !spot.id ||
-          seenIds.has(spot.id)
-        ) {
-          return false;
-        }
-
-        seenIds.add(spot.id);
-        return true;
-      }
-    );
+    getAllPastSpots();
 
   const filteredSpots =
     allPastSpots.filter(
       spot =>
-        (
-          !query ||
-          getSearchableText(spot)
-            .includes(query)
-        ) &&
-        (
-          !selectedYear ||
-          spot.startDate?.startsWith(
-            selectedYear + "-"
-          )
-        ) &&
-        (
-          !selectedKind ||
-          spot.placeType ===
-            selectedKind
-        ) &&
-        (
-          !selectedPrefecture ||
-          getPrefecture(
-            spot.address
-          ) === selectedPrefecture
-        ) &&
-        (
-          !selectedStatus ||
-          getPeriodStatus(spot) ===
-            selectedStatus
-        ) &&
-        (
-          !selectedReservation ||
-          getReservationFilterValue(
-            spot
-          ) === selectedReservation
-        ) &&
-        matchesSavedFilter(
+        matchesPastSpot(
           spot,
-          selectedSaved
+          state
         )
     );
+
+  updatePastFilterCounts(
+    allPastSpots,
+    state
+  );
 
   renderActiveFilterChips(
     "past-active-filters",
@@ -1594,94 +2276,119 @@ function renderPastSpots() {
             pastSearch.value.trim(),
         reset: () => {
           pastSearch.value = "";
-          renderPastSpots();
-          pastSearch.focus();
+          handlePastFiltersChanged(
+            pastSearch
+          );
         }
       },
       {
         label:
-          selectedYear &&
+          state.year &&
           "開催年: " +
             getSelectedOptionLabel(
               pastYear
             ),
         reset: () => {
           pastYear.value = "";
-          renderPastSpots();
-          pastYear.focus();
+          handlePastFiltersChanged(
+            pastYear
+          );
         }
       },
       {
         label:
-          selectedKind &&
+          state.kind &&
           "種類: " +
             getSelectedOptionLabel(
               pastKind
             ),
         reset: () => {
           pastKind.value = "";
-          renderPastSpots();
-          pastKind.focus();
+          handlePastFiltersChanged(
+            pastKind
+          );
         }
       },
       {
         label:
-          selectedPrefecture &&
+          state.prefecture &&
           "都道府県: " +
-            selectedPrefecture,
+            state.prefecture,
         reset: () => {
           pastPrefecture.value = "";
-          renderPastSpots();
-          pastPrefecture.focus();
+          handlePastFiltersChanged(
+            pastPrefecture
+          );
         }
       },
       {
         label:
-          selectedStatus &&
+          state.brand &&
+          "ブランド: " +
+            getSelectedOptionLabel(
+              pastBrand
+            ),
+        reset: () => {
+          pastBrand.value = "";
+          handlePastFiltersChanged(
+            pastBrand
+          );
+        }
+      },
+      {
+        label:
+          state.status &&
           "開催結果: " +
             getSelectedOptionLabel(
               pastStatus
             ),
         reset: () => {
           pastStatus.value = "";
-          renderPastSpots();
-          pastStatus.focus();
+          handlePastFiltersChanged(
+            pastStatus
+          );
         }
       },
       {
         label:
-          selectedReservation &&
+          state.reservation &&
           "予約・入店: " +
             getSelectedOptionLabel(
               pastReservation
             ),
         reset: () => {
           pastReservation.value = "";
-          renderPastSpots();
-          pastReservation.focus();
+          handlePastFiltersChanged(
+            pastReservation
+          );
         }
       },
       {
         label:
-          selectedSaved &&
+          state.saved &&
           "保存状況: " +
             getSelectedOptionLabel(
               pastSaved
             ),
         reset: () => {
           pastSaved.value = "";
-          renderPastSpots();
-          pastSaved.focus();
+          handlePastFiltersChanged(
+            pastSaved
+          );
         }
       }
     ]
+  );
+
+  syncMobileFilterPanel(
+    "past"
   );
 
   renderGroups(
     pastGroupsElement,
     ARCHIVE_GROUPS,
     filteredSpots,
-    sortArchiveSpots
+    getPastSortFunction()
   );
 
   document.getElementById(
@@ -1766,18 +2473,10 @@ function populatePrefectures() {
         return;
       }
 
-      const option =
-        createElement(
-          "option",
-          "",
-          prefecture
-        );
-
-      option.value =
-        prefecture;
-
-      currentPrefecture.appendChild(
-        option
+      appendSelectOption(
+        currentPrefecture,
+        prefecture,
+        prefecture
       );
     }
   );
@@ -1804,26 +2503,28 @@ function populateBrands() {
 
   brands.forEach(
     brand => {
-      const option =
-        createElement(
-          "option",
-          "",
-          BRAND_LABELS[brand] ||
-            brand
-        );
-
-      option.value = brand;
-      currentBrand.appendChild(option);
+      appendSelectOption(
+        currentBrand,
+        brand,
+        BRAND_LABELS[brand] ||
+          brand
+      );
     }
   );
 }
 
 
 function populateArchiveYears() {
+  pastYear
+    .querySelectorAll(
+      "option:not(:first-child)"
+    )
+    .forEach(option => option.remove());
+
   const years =
     Array.from(
       new Set(
-        archiveSpots
+        getAllPastSpots()
           .map(
             spot =>
               spot.startDate?.slice(
@@ -1840,15 +2541,11 @@ function populateArchiveYears() {
 
   years.forEach(
     year => {
-      const option =
-        createElement(
-          "option",
-          "",
-          year + "年"
-        );
-
-      option.value = year;
-      pastYear.appendChild(option);
+      appendSelectOption(
+        pastYear,
+        year,
+        year + "年"
+      );
     }
   );
 }
@@ -1894,16 +2591,47 @@ function populateArchivePrefectures() {
         return;
       }
 
-      const option =
-        createElement(
-          "option",
-          "",
-          prefecture
-        );
+      appendSelectOption(
+        pastPrefecture,
+        prefecture,
+        prefecture
+      );
+    }
+  );
+}
 
-      option.value = prefecture;
-      pastPrefecture.appendChild(
-        option
+
+function populateArchiveBrands() {
+  pastBrand
+    .querySelectorAll(
+      "option:not(:first-child)"
+    )
+    .forEach(option => option.remove());
+
+  const brands =
+    Array.from(
+      new Set(
+        getAllPastSpots()
+          .map(spot => spot.brand)
+          .filter(Boolean)
+      )
+    ).sort(
+      (first, second) =>
+        (
+          BRAND_LABELS[first] || first
+        ).localeCompare(
+          BRAND_LABELS[second] || second,
+          "ja"
+        )
+    );
+
+  brands.forEach(
+    brand => {
+      appendSelectOption(
+        pastBrand,
+        brand,
+        BRAND_LABELS[brand] ||
+          brand
       );
     }
   );
@@ -1977,6 +2705,415 @@ async function fetchJsonArray(
 }
 
 
+function getViewFromUrl() {
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  const view =
+    params.get("view") ||
+    "current";
+
+  return VALID_VIEWS.has(view)
+    ? view
+    : "current";
+}
+
+
+function setSelectFromUrl(
+  select,
+  value,
+  defaultValue = ""
+) {
+  const available =
+    Array.from(
+      select.options
+    ).some(
+      option =>
+        option.value === value
+    );
+
+  select.value =
+    available
+      ? value
+      : defaultValue;
+}
+
+
+function applyCurrentFiltersFromUrl() {
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  currentSearch.value =
+    params.get("q") || "";
+
+  setSelectFromUrl(
+    currentPrefecture,
+    params.get("pref") || ""
+  );
+  setSelectFromUrl(
+    currentKind,
+    params.get("kind") || ""
+  );
+  setSelectFromUrl(
+    currentBrand,
+    params.get("brand") || ""
+  );
+  setSelectFromUrl(
+    currentStatus,
+    params.get("status") || ""
+  );
+  setSelectFromUrl(
+    currentReservation,
+    params.get("entry") || ""
+  );
+  setSelectFromUrl(
+    currentSaved,
+    params.get("saved") || ""
+  );
+  setSelectFromUrl(
+    currentSort,
+    params.get("sort") ||
+      "default",
+    "default"
+  );
+}
+
+
+function applyPastFiltersFromUrl() {
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  pastSearch.value =
+    params.get("q") || "";
+
+  setSelectFromUrl(
+    pastYear,
+    params.get("year") || ""
+  );
+  setSelectFromUrl(
+    pastKind,
+    params.get("kind") || ""
+  );
+  setSelectFromUrl(
+    pastPrefecture,
+    params.get("pref") || ""
+  );
+  setSelectFromUrl(
+    pastBrand,
+    params.get("brand") || ""
+  );
+  setSelectFromUrl(
+    pastStatus,
+    params.get("status") || ""
+  );
+  setSelectFromUrl(
+    pastReservation,
+    params.get("entry") || ""
+  );
+  setSelectFromUrl(
+    pastSaved,
+    params.get("saved") || ""
+  );
+  setSelectFromUrl(
+    pastSort,
+    params.get("sort") ||
+      "newest",
+    "newest"
+  );
+}
+
+
+function setUrlParam(
+  url,
+  key,
+  value,
+  defaultValue = ""
+) {
+  if (
+    value &&
+    value !== defaultValue
+  ) {
+    url.searchParams.set(
+      key,
+      value
+    );
+  }
+}
+
+
+function getCatalogUrl(
+  view
+) {
+  const url =
+    new URL(
+      window.location.href
+    );
+
+  CATALOG_FILTER_PARAMS.forEach(
+    key =>
+      url.searchParams.delete(key)
+  );
+
+  if (view === "current") {
+    url.searchParams.delete("view");
+    setUrlParam(
+      url,
+      "q",
+      currentSearch.value.trim()
+    );
+    setUrlParam(
+      url,
+      "pref",
+      currentPrefecture.value
+    );
+    setUrlParam(
+      url,
+      "kind",
+      currentKind.value
+    );
+    setUrlParam(
+      url,
+      "brand",
+      currentBrand.value
+    );
+    setUrlParam(
+      url,
+      "status",
+      currentStatus.value
+    );
+    setUrlParam(
+      url,
+      "entry",
+      currentReservation.value
+    );
+    setUrlParam(
+      url,
+      "saved",
+      currentSaved.value
+    );
+    setUrlParam(
+      url,
+      "sort",
+      currentSort.value,
+      "default"
+    );
+  } else if (view === "past") {
+    url.searchParams.set(
+      "view",
+      "past"
+    );
+    setUrlParam(
+      url,
+      "q",
+      pastSearch.value.trim()
+    );
+    setUrlParam(
+      url,
+      "year",
+      pastYear.value
+    );
+    setUrlParam(
+      url,
+      "kind",
+      pastKind.value
+    );
+    setUrlParam(
+      url,
+      "pref",
+      pastPrefecture.value
+    );
+    setUrlParam(
+      url,
+      "brand",
+      pastBrand.value
+    );
+    setUrlParam(
+      url,
+      "status",
+      pastStatus.value
+    );
+    setUrlParam(
+      url,
+      "entry",
+      pastReservation.value
+    );
+    setUrlParam(
+      url,
+      "saved",
+      pastSaved.value
+    );
+    setUrlParam(
+      url,
+      "sort",
+      pastSort.value,
+      "newest"
+    );
+  } else {
+    url.searchParams.set(
+      "view",
+      "guide"
+    );
+  }
+
+  return url;
+}
+
+
+function writeCatalogUrl(
+  view,
+  mode = "replace"
+) {
+  const url =
+    getCatalogUrl(view);
+
+  const state = { view };
+
+  if (mode === "push") {
+    window.history.pushState(
+      state,
+      "",
+      url
+    );
+  } else {
+    window.history.replaceState(
+      state,
+      "",
+      url
+    );
+  }
+
+  return url;
+}
+
+
+function handleCurrentFiltersChanged(
+  focusTarget
+) {
+  renderCurrentSpots();
+  writeCatalogUrl(
+    "current"
+  );
+  focusTarget?.focus();
+}
+
+
+function handlePastFiltersChanged(
+  focusTarget
+) {
+  renderPastSpots();
+  writeCatalogUrl(
+    "past"
+  );
+  focusTarget?.focus();
+}
+
+
+function syncMobileFilterPanel(
+  view
+) {
+  const isCurrent =
+    view === "current";
+
+  const filters =
+    isCurrent
+      ? currentFilters
+      : pastFilters;
+
+  const toggle =
+    isCurrent
+      ? currentFilterToggle
+      : pastFilterToggle;
+
+  const expanded =
+    isCurrent
+      ? currentFiltersExpanded
+      : pastFiltersExpanded;
+
+  const chipCount =
+    document.getElementById(
+      isCurrent
+        ? "current-filter-chips"
+        : "past-filter-chips"
+    ).childElementCount;
+
+  const customSort =
+    isCurrent
+      ? currentSort.value !==
+        "default"
+      : pastSort.value !==
+        "newest";
+
+  const settingCount =
+    chipCount +
+    (customSort ? 1 : 0);
+
+  const summary =
+    document.getElementById(
+      isCurrent
+        ? "current-filter-toggle-summary"
+        : "past-filter-toggle-summary"
+    );
+
+  summary.textContent =
+    settingCount
+      ? settingCount +
+        "個の設定を適用中"
+      : "条件を選ぶ";
+
+  if (mobileFilterMedia.matches) {
+    filters.hidden = !expanded;
+    toggle.setAttribute(
+      "aria-expanded",
+      String(expanded)
+    );
+  } else {
+    filters.hidden = false;
+    toggle.setAttribute(
+      "aria-expanded",
+      "true"
+    );
+  }
+}
+
+
+function toggleMobileFilterPanel(
+  view
+) {
+  if (view === "current") {
+    currentFiltersExpanded =
+      !currentFiltersExpanded;
+  } else {
+    pastFiltersExpanded =
+      !pastFiltersExpanded;
+  }
+
+  syncMobileFilterPanel(view);
+}
+
+
+function shareCatalogFilters(
+  view
+) {
+  const url =
+    writeCatalogUrl(
+      view
+    ).toString();
+
+  return shareUrl(
+    "ちいかわ公式スポット一覧",
+    "この条件で公式スポットを表示しています",
+    url,
+    "絞り込み条件のURLをコピーしました。"
+  );
+}
+
+
 async function loadCurrentSpots() {
   if (currentLoaded) {
     return true;
@@ -2008,10 +3145,28 @@ async function loadCurrentSpots() {
         populatePrefectures();
         populateBrands();
         updateGuideCounts();
+
+        if (
+          getViewFromUrl() ===
+            "current"
+        ) {
+          applyCurrentFiltersFromUrl();
+        }
+
         renderCurrentSpots();
 
         if (archiveLoaded) {
+          populateArchiveYears();
           populateArchivePrefectures();
+          populateArchiveBrands();
+
+          if (
+            getViewFromUrl() ===
+              "past"
+          ) {
+            applyPastFiltersFromUrl();
+          }
+
           renderPastSpots();
         }
 
@@ -2084,6 +3239,15 @@ async function loadArchiveSpots() {
 
         populateArchiveYears();
         populateArchivePrefectures();
+        populateArchiveBrands();
+
+        if (
+          getViewFromUrl() ===
+            "past"
+        ) {
+          applyPastFiltersFromUrl();
+        }
+
         renderPastSpots();
 
         return true;
@@ -2160,27 +3324,14 @@ function setView(
     loadArchiveSpots();
   }
 
+  if (view !== "guide") {
+    syncMobileFilterPanel(view);
+  }
+
   if (options.updateHistory) {
-    const url =
-      new URL(
-        window.location.href
-      );
-
-    if (view === "current") {
-      url.searchParams.delete(
-        "view"
-      );
-    } else {
-      url.searchParams.set(
-        "view",
-        view
-      );
-    }
-
-    window.history.pushState(
-      { view },
-      "",
-      url
+    writeCatalogUrl(
+      view,
+      "push"
     );
   }
 
@@ -2263,27 +3414,27 @@ tabs.forEach(
 
 currentSearch.addEventListener(
   "input",
-  renderCurrentSpots
-);
-
-
-currentPrefecture.addEventListener(
-  "change",
-  renderCurrentSpots
+  () => {
+    handleCurrentFiltersChanged();
+  }
 );
 
 
 [
+  currentPrefecture,
   currentKind,
   currentBrand,
   currentStatus,
   currentReservation,
-  currentSaved
+  currentSaved,
+  currentSort
 ].forEach(
   control => {
     control.addEventListener(
       "change",
-      renderCurrentSpots
+      () => {
+        handleCurrentFiltersChanged();
+      }
     );
   }
 );
@@ -2291,32 +3442,28 @@ currentPrefecture.addEventListener(
 
 pastSearch.addEventListener(
   "input",
-  renderPastSpots
-);
-
-
-pastYear.addEventListener(
-  "change",
-  renderPastSpots
-);
-
-
-pastKind.addEventListener(
-  "change",
-  renderPastSpots
+  () => {
+    handlePastFiltersChanged();
+  }
 );
 
 
 [
+  pastYear,
+  pastKind,
   pastPrefecture,
+  pastBrand,
   pastStatus,
   pastReservation,
-  pastSaved
+  pastSaved,
+  pastSort
 ].forEach(
   control => {
     control.addEventListener(
       "change",
-      renderPastSpots
+      () => {
+        handlePastFiltersChanged();
+      }
     );
   }
 );
@@ -2334,8 +3481,10 @@ document.getElementById(
     currentStatus.value = "";
     currentReservation.value = "";
     currentSaved.value = "";
-    renderCurrentSpots();
-    currentSearch.focus();
+    currentSort.value = "default";
+    handleCurrentFiltersChanged(
+      currentSearch
+    );
   }
 );
 
@@ -2349,11 +3498,14 @@ document.getElementById(
     pastYear.value = "";
     pastKind.value = "";
     pastPrefecture.value = "";
+    pastBrand.value = "";
     pastStatus.value = "";
     pastReservation.value = "";
     pastSaved.value = "";
-    renderPastSpots();
-    pastSearch.focus();
+    pastSort.value = "newest";
+    handlePastFiltersChanged(
+      pastSearch
+    );
   }
 );
 
@@ -2377,14 +3529,87 @@ document.getElementById(
 window.addEventListener(
   "popstate",
   () => {
-    const params =
-      new URLSearchParams(
-        window.location.search
-      );
+    const view =
+      getViewFromUrl();
 
-    setView(
-      params.get("view") ||
+    setView(view);
+
+    if (
+      view === "current" &&
+      currentLoaded
+    ) {
+      applyCurrentFiltersFromUrl();
+      renderCurrentSpots();
+    }
+
+    if (view === "past") {
+      loadArchiveSpots().then(
+        loaded => {
+          if (!loaded) {
+            return;
+          }
+
+          applyPastFiltersFromUrl();
+          renderPastSpots();
+        }
+      );
+    }
+  }
+);
+
+
+currentFilterToggle.addEventListener(
+  "click",
+  () => {
+    toggleMobileFilterPanel(
       "current"
+    );
+  }
+);
+
+
+pastFilterToggle.addEventListener(
+  "click",
+  () => {
+    toggleMobileFilterPanel(
+      "past"
+    );
+  }
+);
+
+
+document.getElementById(
+  "current-share-filters"
+).addEventListener(
+  "click",
+  () => {
+    shareCatalogFilters(
+      "current"
+    );
+  }
+);
+
+
+document.getElementById(
+  "past-share-filters"
+).addEventListener(
+  "click",
+  () => {
+    shareCatalogFilters(
+      "past"
+    );
+  }
+);
+
+
+mobileFilterMedia.addEventListener(
+  "change",
+  () => {
+    syncMobileFilterPanel(
+      "current"
+    );
+    syncMobileFilterPanel(
+      "past"
     );
   }
 );
@@ -2427,15 +3652,16 @@ window.addEventListener(
 );
 
 
-const initialParams =
-  new URLSearchParams(
-    window.location.search
-  );
-
-
 setView(
-  initialParams.get("view") ||
+  getViewFromUrl()
+);
+
+
+syncMobileFilterPanel(
   "current"
+);
+syncMobileFilterPanel(
+  "past"
 );
 
 

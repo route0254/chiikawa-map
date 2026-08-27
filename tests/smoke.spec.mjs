@@ -2064,6 +2064,22 @@ test(
 test(
   "地図と公式スポット一覧を相互に移動できる",
   async ({ page }) => {
+    await page.addInitScript(
+      () => {
+        Object.defineProperty(
+          navigator,
+          "share",
+          {
+            configurable: true,
+            value: async data => {
+              window.__lastShareData =
+                data;
+            }
+          }
+        );
+      }
+    );
+
     await page.goto("/");
     await waitForSpots(page);
 
@@ -2120,6 +2136,10 @@ test(
       "#current-saved"
     ).selectOption("favorite");
 
+    await expect(page).toHaveURL(
+      /kind=permanent-shop.*brand=chiikawaland.*saved=favorite/
+    );
+
     await expect(
       page.locator(
         "#current-result-summary"
@@ -2140,6 +2160,43 @@ test(
       )
     ).toHaveCount(3);
 
+    await expect(
+      page.locator(
+        '#current-brand option[value="chiikawaland"]'
+      )
+    ).toHaveText(
+      /^ちいかわらんど（1）$/
+    );
+
+    await page.reload();
+    await waitForOfficialCurrent(page);
+
+    await expect(
+      page.locator(
+        "#current-result-summary"
+      )
+    ).toHaveText("1件を表示しています。");
+
+    await expect(
+      page.locator(
+        "#current-kind"
+      )
+    ).toHaveValue("permanent-shop");
+
+    await page.locator(
+      "#current-share-filters"
+    ).click();
+
+    const sharedFilterUrl =
+      await page.evaluate(
+        () =>
+          window.__lastShareData?.url
+      );
+
+    expect(sharedFilterUrl).toContain(
+      "kind=permanent-shop"
+    );
+
     await page.locator(
       "#current-filter-reset"
     ).click();
@@ -2149,6 +2206,97 @@ test(
         ".official-spot-card"
       )
     ).toHaveCount(currentCount);
+
+    const osakaCard =
+      page.locator(
+        ".official-spot-card"
+      ).filter({
+        hasText:
+          "ちいかわらんど 大阪梅田店"
+      });
+
+    const favoriteButton =
+      osakaCard.locator(
+        '[data-save-type="favorite"]'
+      );
+
+    await expect(
+      favoriteButton
+    ).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+
+    await favoriteButton.click();
+
+    await expect(
+      favoriteButton
+    ).toHaveAttribute(
+      "aria-pressed",
+      "false"
+    );
+
+    await favoriteButton.click();
+
+    await expect(
+      favoriteButton
+    ).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+
+    const visitedButton =
+      osakaCard.locator(
+        '[data-save-type="visited"]'
+      );
+
+    await visitedButton.click();
+
+    await expect(
+      visitedButton
+    ).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+
+    const savedIds =
+      await page.evaluate(
+        () => ({
+          favorites:
+            JSON.parse(
+              window.localStorage.getItem(
+                "chiikawa-map-favorites-v1"
+              )
+            ),
+          visited:
+            JSON.parse(
+              window.localStorage.getItem(
+                "chiikawa-map-visited-v1"
+              )
+            )
+        })
+      );
+
+    expect(savedIds.favorites).toContain(
+      "chiikawaland-osaka-umeda"
+    );
+    expect(savedIds.visited).toContain(
+      "chiikawaland-osaka-umeda"
+    );
+
+    await osakaCard.locator(
+      ".spot-card-action-share"
+    ).click();
+
+    const sharedSpotUrl =
+      await page.evaluate(
+        () =>
+          window.__lastShareData?.url
+      );
+
+    expect(sharedSpotUrl).toContain(
+      "?spot=chiikawaland-osaka-umeda"
+    );
 
     await expect(
       page.locator(
@@ -2252,6 +2400,18 @@ test(
       "#past-status"
     ).selectOption("cancelled");
 
+    await page.locator(
+      "#past-brand"
+    ).selectOption("chiikawa");
+
+    await page.locator(
+      "#past-sort"
+    ).selectOption("oldest");
+
+    await expect(page).toHaveURL(
+      /view=past.*brand=chiikawa.*status=cancelled.*sort=oldest/
+    );
+
     await expect(
       page.locator(
         "#past-result-summary"
@@ -2263,6 +2423,14 @@ test(
         "#past-groups .official-spot-card h4"
       )
     ).toContainText("池袋");
+
+    await expect(
+      page.locator(
+        '#past-brand option[value="chiikawa"]'
+      )
+    ).toHaveText(
+      /^ちいかわ（その他公式・POP UP）（1）$/
+    );
 
     await page.locator(
       "#catalog-tab-guide"
@@ -2280,6 +2448,24 @@ test(
       )
     ).toBeVisible();
 
+    await expect(
+      page.locator("#past-status")
+    ).toHaveValue("cancelled");
+
+    await expect(
+      page.locator("#past-brand")
+    ).toHaveValue("chiikawa");
+
+    await expect(
+      page.locator("#past-sort")
+    ).toHaveValue("oldest");
+
+    await expect(
+      page.locator(
+        "#past-result-summary"
+      )
+    ).toHaveText("1件を表示しています。");
+
     expect(archiveRequestCount).toBe(1);
   }
 );
@@ -2296,6 +2482,32 @@ test(
     await page.goto("/official.html");
     await waitForOfficialCurrent(page);
 
+    await expect(
+      page.locator("#current-filters")
+    ).toBeHidden();
+
+    await expect(
+      page.locator(
+        "#current-filter-toggle"
+      )
+    ).toHaveAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+    await expectMinTouchTarget(
+      page,
+      "#current-filter-toggle"
+    );
+
+    await page.locator(
+      "#current-filter-toggle"
+    ).click();
+
+    await expect(
+      page.locator("#current-filters")
+    ).toBeVisible();
+
     for (
       const selector of [
         ".site-nav-link",
@@ -2307,7 +2519,10 @@ test(
         "#current-status",
         "#current-reservation",
         "#current-saved",
+        "#current-sort",
         "#current-filter-reset",
+        "#current-share-filters",
+        ".spot-card-save-button",
         ".spot-card-action"
       ]
     ) {
@@ -2316,6 +2531,34 @@ test(
         selector
       );
     }
+
+    await page.locator(
+      "#current-kind"
+    ).selectOption(
+      "permanent-shop"
+    );
+
+    await expect(
+      page.locator(
+        "#current-filter-toggle-summary"
+      )
+    ).toHaveText(
+      "1個の設定を適用中"
+    );
+
+    await page.locator(
+      "#current-filter-toggle"
+    ).click();
+
+    await expect(
+      page.locator("#current-filters")
+    ).toBeHidden();
+
+    await expect(
+      page.locator(
+        "#current-active-filters"
+      )
+    ).toBeVisible();
 
     const hasHorizontalOverflow =
       await page.evaluate(

@@ -44,7 +44,7 @@
   >
 
   <link rel="stylesheet" href="style.css?v=20260827-1">
-  <link rel="stylesheet" href="official.css?v=20260827-2">
+  <link rel="stylesheet" href="official.css?v=20260827-3">
 </head>
 
 <body class="official-page">
@@ -210,7 +210,18 @@
           </div>
         </div>
 
-        <div class="catalog-filters" aria-label="開催中スポットの絞り込み">
+        <button
+          type="button"
+          class="catalog-filter-toggle"
+          id="current-filter-toggle"
+          aria-expanded="true"
+          aria-controls="current-filters"
+        >
+          <span>⚙ 絞り込み・並び順</span>
+          <small id="current-filter-toggle-summary">条件を選ぶ</small>
+        </button>
+
+        <div class="catalog-filters" id="current-filters" aria-label="開催中スポットの絞り込み">
           <label class="catalog-search-field">
             <span>キーワード</span>
             <input
@@ -280,6 +291,16 @@
             </select>
           </label>
 
+          <label>
+            <span>並び順</span>
+            <select id="current-sort">
+              <option value="default">おすすめ順</option>
+              <option value="ending">終了が近い順</option>
+              <option value="starting">開始日が近い順</option>
+              <option value="name">名前順</option>
+            </select>
+          </label>
+
           <button type="button" class="filter-reset-button" id="current-filter-reset">
             条件をクリア
           </button>
@@ -290,9 +311,14 @@
           <div id="current-filter-chips" class="catalog-filter-chips"></div>
         </div>
 
-        <p id="current-result-summary" class="result-summary" role="status" aria-live="polite">
-          公式スポットを読み込んでいます…
-        </p>
+        <div class="catalog-result-toolbar">
+          <p id="current-result-summary" class="result-summary" role="status" aria-live="polite">
+            公式スポットを読み込んでいます…
+          </p>
+          <button type="button" class="catalog-share-button" id="current-share-filters">
+            🔗 この条件を共有
+          </button>
+        </div>
 
         <div id="current-loading" class="catalog-loading" aria-hidden="true">
           <span></span><span></span><span></span>
@@ -330,7 +356,18 @@
           <span class="archive-note">初期表示では読み込みません</span>
         </div>
 
-        <div class="catalog-filters" aria-label="過去イベントの絞り込み">
+        <button
+          type="button"
+          class="catalog-filter-toggle"
+          id="past-filter-toggle"
+          aria-expanded="true"
+          aria-controls="past-filters"
+        >
+          <span>⚙ 絞り込み・並び順</span>
+          <small id="past-filter-toggle-summary">条件を選ぶ</small>
+        </button>
+
+        <div class="catalog-filters" id="past-filters" aria-label="過去イベントの絞り込み">
           <label class="catalog-search-field">
             <span>キーワード</span>
             <input
@@ -366,6 +403,13 @@
           </label>
 
           <label>
+            <span>ブランド・シリーズ</span>
+            <select id="past-brand">
+              <option value="">すべてのブランド</option>
+            </select>
+          </label>
+
+          <label>
             <span>開催結果</span>
             <select id="past-status">
               <option value="">終了・中止すべて</option>
@@ -396,6 +440,15 @@
             </select>
           </label>
 
+          <label>
+            <span>並び順</span>
+            <select id="past-sort">
+              <option value="newest">新しい順</option>
+              <option value="oldest">古い順</option>
+              <option value="name">名前順</option>
+            </select>
+          </label>
+
           <button type="button" class="filter-reset-button" id="past-filter-reset">
             条件をクリア
           </button>
@@ -406,9 +459,14 @@
           <div id="past-filter-chips" class="catalog-filter-chips"></div>
         </div>
 
-        <p id="past-result-summary" class="result-summary" role="status" aria-live="polite">
-          「過去」タブを開くとデータを読み込みます。
-        </p>
+        <div class="catalog-result-toolbar">
+          <p id="past-result-summary" class="result-summary" role="status" aria-live="polite">
+            「過去」タブを開くとデータを読み込みます。
+          </p>
+          <button type="button" class="catalog-share-button" id="past-share-filters">
+            🔗 この条件を共有
+          </button>
+        </div>
 
         <div id="past-loading" class="catalog-loading" hidden aria-label="過去イベントを読み込み中">
           <span></span><span></span><span></span>
@@ -424,7 +482,7 @@
 
         <div id="past-empty" class="catalog-message" hidden>
           <strong>条件に合う過去イベントがありません。</strong>
-          <p>キーワード、開催年、種類を変えてみてください。</p>
+          <p>キーワードや絞り込み条件を変えてみてください。</p>
         </div>
       </section>
 
@@ -603,7 +661,9 @@
     </p>
   </main>
 
-  <script src="official.js?v=20260827-2" defer></script>
+  <p id="catalog-action-status" class="catalog-action-status" role="status" aria-live="polite" hidden></p>
+
+  <script src="official.js?v=20260827-3" defer></script>
 </body>
 
 </html>
