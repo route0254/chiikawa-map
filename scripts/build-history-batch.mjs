@@ -83,6 +83,20 @@ const batchConfigs = {
         "遠鉄百貨店 本館8階 催会場"
     },
     summaryYears: ["2023"]
+  },
+  "2023-q1": {
+    label: "2023年1～3月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2023-q1.json"
+    ],
+    outputFile:
+      "research/history-batch-2023-q1.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2023-01-01" &&
+      event.startDate <= "2023-03-31",
+    summaryYears: ["2023"]
   }
 };
 
