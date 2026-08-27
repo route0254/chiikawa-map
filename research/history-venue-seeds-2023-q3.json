@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-08-27",
+  "coordinateSources": [
+    "既存のちい活マップ確認済み座標",
+    "https://msearch.gsi.go.jp/address-search/AddressSearch",
+    "https://nominatim.openstreetmap.org/search"
+  ],
+  "venues": [
+    {
+      "key": "chofu-parco",
+      "name": "調布PARCO",
+      "address": "東京都調布市小島町1-38-1 調布PARCO",
+      "addressSourceUrl": "https://chofu.parco.jp/info/?gcd=access",
+      "query": "東京都調布市小島町1-38-1",
+      "aliases": ["調布PARCO", "調布パルコ"],
+      "lat": 35.6528967,
+      "lng": 139.5435778
+    },
+    {
+      "key": "aeon-hakusan",
+      "name": "イオンモール白山",
+      "address": "石川県白山市横江町5001 イオンモール白山",
+      "addressSourceUrl": "https://hakusan.aeonmall.com/",
+      "query": "イオンモール白山 石川県白山市",
+      "aliases": ["イオンモール白山"],
+      "lat": 36.5440425,
+      "lng": 136.5820905
+    },
+    {
+      "key": "jr-omiya",
+      "name": "JR大宮駅",
+      "address": "埼玉県さいたま市大宮区錦町630 JR大宮駅",
+      "addressSourceUrl": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=350",
+      "query": "埼玉県さいたま市大宮区錦町630",
+      "aliases": ["大宮駅", "JR大宮駅"],
+      "lat": 35.904289,
+      "lng": 139.624069
+    },
+    {
+      "key": "jr-hakata",
+      "name": "JR博多駅",
+      "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅",
+      "addressSourceUrl": "https://www.jrkyushu.co.jp/railway/station/1191771_1601.html",
+      "query": "福岡県福岡市博多区博多駅中央街1-1",
+      "aliases": ["JR博多駅"],
+      "lat": 33.5908794,
+      "lng": 130.4199461
+    },
+    {
+      "key": "aeon-suzuka",
+      "name": "イオンモール鈴鹿",
+      "address": "三重県鈴鹿市庄野羽山4-1-2 イオンモール鈴鹿",
+      "addressSourceUrl": "https://suzuka.aeonmall.jp/access",
+      "query": "三重県鈴鹿市庄野羽山4-1-2",
+      "aliases": ["イオンモール鈴鹿"],
+      "lat": 34.87376,
+      "lng": 136.533142
+    },
+    {
+      "key": "aeon-takasaki",
+      "name": "イオンモール高崎",
+      "address": "群馬県高崎市棟高町1400 イオンモール高崎",
+      "addressSourceUrl": "https://takasaki-aeonmall.com/",
+      "query": "イオンモール高崎 群馬県高崎市",
+      "aliases": ["イオンモール高崎"],
+      "lat": 36.390351,
+      "lng": 139.006909
+    },
+    {
+      "key": "aeon-makuhari-shintoshin",
+      "name": "イオンモール幕張新都心",
+      "address": "千葉県千葉市美浜区豊砂1-1 イオンモール幕張新都心",
+      "addressSourceUrl": "https://makuharishintoshin-aeonmall.com/",
+      "query": "イオンモール幕張新都心 千葉県千葉市",
+      "aliases": ["イオンモール幕張新都心"],
+      "lat": 35.648,
+      "lng": 140.034
+    },
+    {
+      "key": "jr-ikebukuro",
+      "name": "JR池袋駅",
+      "address": "東京都豊島区南池袋1丁目28-2 JR池袋駅",
+      "addressSourceUrl": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=108",
+      "query": "JR池袋駅 東京都豊島区",
+      "aliases": ["JR池袋駅"],
+      "lat": 35.7295,
+      "lng": 139.7109
+    },
+    {
+      "key": "jr-musashi-mizonokuchi",
+      "name": "JR武蔵溝ノ口駅",
+      "address": "神奈川県川崎市高津区溝口1丁目 JR武蔵溝ノ口駅",
+      "addressSourceUrl": "https://www.jreast.co.jp/estation/stations/1535.html",
+      "query": "JR武蔵溝ノ口駅 神奈川県川崎市",
+      "aliases": ["JR武蔵溝ノ口駅"],
+      "lat": 35.5990079,
+      "lng": 139.6112408
+    },
+    {
+      "key": "aeon-ageo",
+      "name": "イオンモール上尾",
+      "address": "埼玉県上尾市愛宕3-8-1 イオンモール上尾",
+      "addressSourceUrl": "https://ageo-aeonmall.com/",
+      "query": "埼玉県上尾市愛宕3-8-1",
+      "aliases": ["イオンモール上尾"],
+      "lat": 35.965076,
+      "lng": 139.598068
+    },
+    {
+      "key": "aeon-akita",
+      "name": "イオンモール秋田",
+      "address": "秋田県秋田市御所野地蔵田1-1-1 イオンモール秋田",
+      "addressSourceUrl": "https://akita-aeonmall.com/",
+      "query": "イオンモール秋田 秋田県秋田市",
+      "aliases": ["イオンモール秋田"],
+      "lat": 39.663,
+      "lng": 140.161
+    }
+  ]
+}

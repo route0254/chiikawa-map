@@ -51,6 +51,20 @@ const batchConfigs = {
       event.startDate >= "2023-10-01" &&
       event.startDate <= "2023-12-31",
     summaryYears: ["2023"]
+  },
+  "2023-q3": {
+    label: "2023年7～9月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2023-q3.json"
+    ],
+    outputFile:
+      "research/history-batch-2023-q3.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2023-07-01" &&
+      event.startDate <= "2023-09-30",
+    summaryYears: ["2023"]
   }
 };
 
