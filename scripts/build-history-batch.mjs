@@ -131,6 +131,40 @@ const batchConfigs = {
       event.startDate <= "2024-09-30",
     summaryYears: ["2024"]
   },
+  "2024-q4": {
+    label: "2024年10～12月",
+    checkedAt: "2026-08-27",
+    venueSeedFiles: [
+      "research/history-venue-seeds-2024-q4.json",
+      "research/history-venue-seeds-2021-2022.json",
+      "research/history-venue-seeds-2023-q2.json",
+      "research/history-venue-seeds-2024-q1.json",
+      "research/history-venue-seeds-2023-q4.json",
+      "research/history-venue-seeds-2023-q3.json",
+      "research/history-venue-seeds-2024-04.json"
+    ],
+    outputFile:
+      "research/history-batch-2024-q4.json",
+    extrasFile: null,
+    includes: event =>
+      event.startDate >= "2024-10-01" &&
+      event.startDate <= "2024-12-31",
+    eventOverrides: {
+      "https://chiikawa-info.jp/p24/pus_kyoto/index.html": {
+        endDate: "2025-01-13",
+        closedDaysText: "2024年12月31日は開催なし",
+        venueText:
+          "イオンモールKYOTO Sakura館1F センターコート（2024年12月13日～30日）／Sakura館2F 吹き抜け横（2025年1月1日～13日）"
+      },
+      "https://chiikawa-info.jp/chiikawarestaurant/nagoya/index.html": {
+        venueText: "名古屋PARCO"
+      },
+      "https://chiikawa-info.jp/chiikawarestaurant/shinsaibashi/index.html": {
+        venueText: "心斎橋PARCO 6F THE GUEST cafe&diner"
+      }
+    },
+    summaryYears: ["2024"]
+  },
   "2024-06": {
     label: "2024年6月",
     checkedAt: "2026-08-27",
@@ -289,7 +323,8 @@ function createRecord(event, venue) {
       : event.isLoftSeries
         ? "開催時の会場営業時間に準ずる（最終日は18:00閉場）"
         : "開催時の会場営業時間に準ずる",
-    closedDaysText: null,
+    closedDaysText:
+      event.closedDaysText || null,
     hoursInfoUrl: event.sourceUrl,
     hoursCheckedAt: checkedAt,
     reservationType: "unknown",
@@ -407,13 +442,23 @@ const baseEvents = candidates.events.filter(
       event.name !==
         extras.replacesCandidateName
     )
-).map(event => ({
-  ...event,
-  venueText:
-    batchConfig.venueTextOverrides?.[
+).map(event => {
+  const override =
+    batchConfig.eventOverrides?.[
       event.sourceUrl
-    ] || event.venueText
-}));
+    ] || {};
+
+  return {
+    ...event,
+    ...override,
+    venueText:
+      override.venueText ||
+      batchConfig.venueTextOverrides?.[
+        event.sourceUrl
+      ] ||
+      event.venueText
+  };
+});
 
 const extraEvents = extras.events.map(
   event => ({
