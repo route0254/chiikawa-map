@@ -8,7 +8,7 @@
     "import:history-batch": "node scripts/build-history-batch.mjs --write",
     "geocode:history-venues": "node scripts/geocode-history-venues.mjs",
     "geocode:history-venues:gsi": "node scripts/geocode-history-venues-gsi.mjs",
-    "check": "node --check app.js && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node scripts/validate-data.mjs",
+    "check": "node --check app.js && node --check official.js && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node scripts/validate-data.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:site": "node scripts/check-site-health.mjs",
     "test:smoke": "playwright test"

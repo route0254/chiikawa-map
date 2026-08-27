@@ -163,6 +163,34 @@ async function waitForSpots(
 }
 
 
+async function waitForOfficialCurrent(
+  page
+) {
+  const summary =
+    page.locator(
+      "#current-result-summary"
+    );
+
+  await expect(summary).toHaveText(
+    /^\d+件を表示しています。$/
+  );
+
+  const count =
+    Number(
+      (
+        await summary.textContent()
+      ).replace(
+        /件を表示しています。$/,
+        ""
+      )
+    );
+
+  expect(count).toBeGreaterThan(0);
+
+  return count;
+}
+
+
 async function expectMinTouchTarget(
   page,
   selector
@@ -2011,6 +2039,194 @@ test(
         ".spot-list-visited-button",
         ".spot-list-share-button",
         ".spot-list-open-button"
+      ]
+    ) {
+      await expectMinTouchTarget(
+        page,
+        selector
+      );
+    }
+
+    const hasHorizontalOverflow =
+      await page.evaluate(
+        () =>
+          document.documentElement.scrollWidth >
+          document.documentElement.clientWidth
+      );
+
+    expect(
+      hasHorizontalOverflow
+    ).toBe(false);
+  }
+);
+
+
+test(
+  "地図と公式スポット一覧を相互に移動できる",
+  async ({ page }) => {
+    await page.goto("/");
+    await waitForSpots(page);
+
+    const officialNavLink =
+      page.locator(
+        '.site-nav-link[href="official.html"]'
+      );
+
+    await expect(
+      officialNavLink
+    ).toBeVisible();
+
+    await officialNavLink.click();
+
+    await expect(page).toHaveURL(
+      /\/official\.html$/
+    );
+
+    const currentCount =
+      await waitForOfficialCurrent(
+        page
+      );
+
+    await expect(
+      page.locator(
+        ".official-spot-card"
+      )
+    ).toHaveCount(currentCount);
+
+    await expect(
+      page.locator(
+        ".spot-card-action-map"
+      ).first()
+    ).toHaveAttribute(
+      "href",
+      /^\.\/\?spot=/
+    );
+
+    await page.locator(
+      '.site-nav-link[href="./"]'
+    ).click();
+
+    await expect(page).toHaveURL(
+      /\/$/
+    );
+
+    await waitForSpots(page);
+  }
+);
+
+
+test(
+  "公式一覧のタブURL・過去データ遅延読込・絞り込みを利用できる",
+  async ({ page }) => {
+    let archiveRequestCount = 0;
+
+    page.on(
+      "request",
+      request => {
+        if (
+          request.url().includes(
+            "official-events-archive.json"
+          )
+        ) {
+          archiveRequestCount++;
+        }
+      }
+    );
+
+    await page.goto(
+      "/official.html?view=guide"
+    );
+
+    await waitForOfficialCurrent(page);
+
+    await expect(
+      page.locator(
+        "#catalog-panel-guide"
+      )
+    ).toBeVisible();
+
+    expect(archiveRequestCount).toBe(0);
+
+    await expect(
+      page.locator(
+        "[data-guide-count]"
+      ).first()
+    ).toHaveText(/^\d+件掲載$/);
+
+    await page.locator(
+      "#catalog-tab-past"
+    ).click();
+
+    await expect(page).toHaveURL(
+      /view=past/
+    );
+
+    await expect(
+      page.locator(
+        "#past-result-summary"
+      )
+    ).toHaveText(
+      /^\d+件を表示しています。$/
+    );
+
+    expect(archiveRequestCount).toBe(1);
+
+    await page.locator(
+      "#past-search"
+    ).fill("おばけの森");
+
+    await expect(
+      page.locator(
+        "#past-result-summary"
+      )
+    ).toHaveText("1件を表示しています。");
+
+    await expect(
+      page.locator(
+        "#past-groups .official-spot-card h4"
+      )
+    ).toContainText("おばけの森");
+
+    await page.locator(
+      "#catalog-tab-guide"
+    ).click();
+
+    await expect(page).toHaveURL(
+      /view=guide/
+    );
+
+    await page.goBack();
+
+    await expect(
+      page.locator(
+        "#catalog-panel-past"
+      )
+    ).toBeVisible();
+
+    expect(archiveRequestCount).toBe(1);
+  }
+);
+
+
+test(
+  "公式一覧をスマートフォン幅で操作できる",
+  async ({ page }) => {
+    await page.setViewportSize({
+      width: 390,
+      height: 844
+    });
+
+    await page.goto("/official.html");
+    await waitForOfficialCurrent(page);
+
+    for (
+      const selector of [
+        ".site-nav-link",
+        ".catalog-tab",
+        "#current-search",
+        "#current-prefecture",
+        "#current-filter-reset",
+        ".spot-card-action"
       ]
     ) {
       await expectMinTouchTarget(

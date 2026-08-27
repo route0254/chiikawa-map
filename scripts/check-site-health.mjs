@@ -299,6 +299,9 @@ await Promise.all([
     WWW_URL
   ),
   checkPublishedAsset("app.js"),
+  checkPublishedAsset("official.html"),
+  checkPublishedAsset("official.css"),
+  checkPublishedAsset("official.js"),
   checkPublishedAsset(
     "data/official-spots.json",
     { json: true }
