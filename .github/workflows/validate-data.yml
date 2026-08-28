@@ -8,12 +8,20 @@ on:
       - "data/*.json"
       - "scripts/validate-data.mjs"
       - "scripts/report-status-candidates.mjs"
+      - "scripts/build-spot-pages.mjs"
+      - "spot/**"
+      - ".spot-pages-manifest.json"
+      - "sitemap.xml"
       - ".github/workflows/validate-data.yml"
   pull_request:
     paths:
       - "data/*.json"
       - "scripts/validate-data.mjs"
       - "scripts/report-status-candidates.mjs"
+      - "scripts/build-spot-pages.mjs"
+      - "spot/**"
+      - ".spot-pages-manifest.json"
+      - "sitemap.xml"
       - ".github/workflows/validate-data.yml"
   schedule:
     - cron: "23 6 * * *"
@@ -39,6 +47,9 @@ jobs:
 
       - name: Validate spot data
         run: node scripts/validate-data.mjs
+
+      - name: Verify generated spot pages
+        run: node scripts/build-spot-pages.mjs --check
 
       - name: Report official spot status
         run: node scripts/report-status-candidates.mjs --github-summary --fail-on-archive-candidates

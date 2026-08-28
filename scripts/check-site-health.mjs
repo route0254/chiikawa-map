@@ -302,6 +302,15 @@ await Promise.all([
   checkPublishedAsset("official.html"),
   checkPublishedAsset("official.css"),
   checkPublishedAsset("official.js"),
+  checkPublishedAsset("journal.html"),
+  checkPublishedAsset("journal.css"),
+  checkPublishedAsset("journal.js"),
+  checkPublishedAsset("manifest.webmanifest"),
+  checkPublishedAsset("service-worker.js"),
+  checkPublishedAsset("sitemap.xml"),
+  checkPublishedAsset(
+    "spot/chiikawaland-osaka-umeda/"
+  ),
   checkPublishedAsset(
     "data/official-spots.json",
     { json: true }

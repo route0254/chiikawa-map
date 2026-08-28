@@ -163,7 +163,7 @@ const SOON_ENDING_DAYS =
 
 const SHARE_FILTER_PARAM_KEYS = [
   "q", "pref", "cat", "type", "period", "reservation",
-  "official", "nagano", "evidence", "brand", "soon", "past", "view"
+  "official", "nagano", "evidence", "brand", "soon", "when", "past", "view"
 ];
 
 
@@ -350,6 +350,12 @@ const visitedCount =
   );
 
 
+const planCount =
+  document.getElementById(
+    "plan-count"
+  );
+
+
 const shareFiltersButton =
   document.getElementById(
     "share-filters-button"
@@ -359,6 +365,14 @@ const shareFiltersButton =
 const soonEndingFilter =
   document.getElementById(
     "filter-soon-ending"
+  );
+
+
+const dateQuickButtons =
+  Array.from(
+    document.querySelectorAll(
+      "[data-date-quick]"
+    )
   );
 
 
@@ -509,6 +523,12 @@ const savedDataFavoriteCount =
 const savedDataVisitedCount =
   document.getElementById(
     "saved-data-visited-count"
+  );
+
+
+const savedDataPlanCount =
+  document.getElementById(
+    "saved-data-plan-count"
   );
 
 
@@ -1171,6 +1191,235 @@ function isCancelledEvent(
     spot?.eventStatus ===
     "cancelled"
   );
+}
+
+
+function addDaysToDateString(
+  dateString,
+  days
+) {
+
+  const timestamp =
+    parseJapanDateString(
+      dateString
+    );
+
+  if (
+    timestamp === null ||
+    !Number.isInteger(days)
+  ) {
+    return "";
+  }
+
+  return new Date(
+    timestamp +
+    days * 86400000
+  )
+    .toISOString()
+    .slice(0, 10);
+}
+
+
+function getWeekendDateRange(
+  today = getTodayInJapan()
+) {
+
+  const timestamp =
+    parseJapanDateString(today);
+
+  if (timestamp === null) {
+    return {
+      start: today,
+      end: today
+    };
+  }
+
+  const dayOfWeek =
+    new Date(timestamp)
+      .getUTCDay();
+
+  const daysUntilSaturday =
+    dayOfWeek === 6
+      ? 0
+      : dayOfWeek === 0
+        ? 0
+        : 6 - dayOfWeek;
+
+  const start =
+    addDaysToDateString(
+      today,
+      daysUntilSaturday
+    );
+
+  return {
+    start,
+    end:
+      dayOfWeek === 0
+        ? today
+        : addDaysToDateString(
+            start,
+            1
+          )
+  };
+}
+
+
+function doesSpotOverlapDateRange(
+  spot,
+  rangeStart,
+  rangeEnd
+) {
+
+  if (
+    spot.periodType ===
+    "permanent"
+  ) {
+    return true;
+  }
+
+  if (
+    spot.periodType !==
+    "limited"
+  ) {
+    return false;
+  }
+
+  const spotStart =
+    spot.startDate ||
+    "0000-01-01";
+
+  const spotEnd =
+    spot.endDate ||
+    "9999-12-31";
+
+  return (
+    spotStart <= rangeEnd &&
+    spotEnd >= rangeStart
+  );
+}
+
+
+function getDateQuickLabel(
+  mode
+) {
+  return {
+    today: "今日の候補",
+    weekend: "今週末の候補",
+    upcoming: "近日開催",
+    ending: "まもなく終了"
+  }[mode] || "";
+}
+
+
+function spotMatchesDateQuickMode(
+  spot,
+  mode
+) {
+
+  if (!mode) {
+    return true;
+  }
+
+  const today =
+    getTodayInJapan();
+
+  if (mode === "today") {
+    return doesSpotOverlapDateRange(
+      spot,
+      today,
+      today
+    );
+  }
+
+  if (mode === "weekend") {
+    const weekend =
+      getWeekendDateRange(today);
+
+    return doesSpotOverlapDateRange(
+      spot,
+      weekend.start,
+      weekend.end
+    );
+  }
+
+  if (mode === "upcoming") {
+    if (
+      spot.periodType !== "limited" ||
+      !spot.startDate
+    ) {
+      return false;
+    }
+
+    const days =
+      getDaysBetweenDateStrings(
+        today,
+        spot.startDate
+      );
+
+    return (
+      typeof days === "number" &&
+      days > 0 &&
+      days <= 14
+    );
+  }
+
+  if (mode === "ending") {
+    return isSpotEndingSoon(spot);
+  }
+
+  return true;
+}
+
+
+function syncDateQuickButtons() {
+  dateQuickButtons.forEach(
+    button => {
+      const active =
+        button.dataset.dateQuick ===
+        dateQuickMode;
+
+      button.classList.toggle(
+        "is-active",
+        active
+      );
+
+      button.setAttribute(
+        "aria-pressed",
+        String(active)
+      );
+    }
+  );
+}
+
+
+function setDateQuickMode(
+  mode,
+  options = {}
+) {
+  const allowedModes =
+    new Set([
+      "today",
+      "weekend",
+      "upcoming",
+      "ending"
+    ]);
+
+  dateQuickMode =
+    allowedModes.has(mode)
+      ? mode
+      : "";
+
+  if (soonEndingFilter) {
+    soonEndingFilter.checked =
+      dateQuickMode === "ending";
+  }
+
+  syncDateQuickButtons();
+
+  if (options.update !== false) {
+    updateSpotFilters();
+    renderSearchSuggestions();
+  }
 }
 
 
@@ -2674,6 +2923,14 @@ const VISIT_DETAILS_STORAGE_KEY =
   "chiikawa-map-visit-details-v1";
 
 
+const PLAN_STORAGE_KEY =
+  "chiikawa-map-plan-v1";
+
+
+const PLAN_MAX_SPOTS =
+  8;
+
+
 const VISIT_NOTE_MAX_LENGTH =
   500;
 
@@ -2693,6 +2950,10 @@ let visitDetailsBySpotId =
   loadVisitDetails();
 
 
+let planSpotIds =
+  loadPlanSpotIds();
+
+
 let favoriteOnly =
   false;
 
@@ -2703,6 +2964,10 @@ let visitedOnly =
 
 let currentViewMode =
   "map";
+
+
+let dateQuickMode =
+  "";
 
 
 let listSortMode =
@@ -2886,6 +3151,74 @@ function saveFavoriteSpotIds() {
     favoriteSpotIds,
     "行きたいスポット"
   );
+}
+
+
+function loadPlanSpotIds() {
+  try {
+    const parsed =
+      JSON.parse(
+        window.localStorage.getItem(
+          PLAN_STORAGE_KEY
+        ) ||
+        "[]"
+      );
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    return Array.from(
+      new Set(
+        parsed.filter(
+          id =>
+            typeof id === "string" &&
+            id.length <= 200
+        )
+      )
+    ).slice(
+      0,
+      PLAN_MAX_SPOTS
+    );
+  } catch (error) {
+    console.warn(
+      "今日のプランを読み込めませんでした。",
+      error
+    );
+    showAppStatus(
+      "今日のプランを読み込めなかったため、空の状態で表示しています。",
+      {
+        type: "warning"
+      }
+    );
+    return [];
+  }
+}
+
+
+function savePlanSpotIds() {
+  try {
+    window.localStorage.setItem(
+      PLAN_STORAGE_KEY,
+      JSON.stringify(
+        planSpotIds
+      )
+    );
+    return true;
+  } catch (error) {
+    console.warn(
+      "今日のプランを保存できませんでした。",
+      error
+    );
+    showAppStatus(
+      "今日のプランを端末に保存できませんでした。ブラウザの保存設定や空き容量をご確認ください。",
+      {
+        type: "error",
+        persistent: true
+      }
+    );
+    return false;
+  }
 }
 
 
@@ -3116,6 +3449,8 @@ function exportSavedSpotData() {
       Array.from(
         favoriteSpotIds
       ).sort(),
+    plan:
+      planSpotIds.slice(),
     visited:
       Array.from(
         visitedSpotIds
@@ -3174,7 +3509,7 @@ function exportSavedSpotData() {
   );
 
   showAppStatus(
-    "行きたい・行った！・訪問記録の保存データを書き出しました。",
+    "行きたい・今日のプラン・行った！・訪問記録の保存データを書き出しました。",
     {
       type: "success"
     }
@@ -3415,6 +3750,13 @@ function renderSavedDataImportPreview() {
     "件）"
   );
   appendSavedDataImportSummary(
+    "今日のプラン: +" +
+    preview.addedPlanSpots +
+    "件（既に追加済み " +
+    preview.duplicatePlanSpots +
+    "件）"
+  );
+  appendSavedDataImportSummary(
     "行った！: +" +
     preview.addedVisited +
     "件（既に保存済み " +
@@ -3490,6 +3832,14 @@ async function prepareSavedSpotDataImport(
           "行った！スポット"
         )
       );
+    const importedPlan =
+      getImportedSpotIds(
+        importedData.plan || [],
+        "今日のプラン"
+      ).slice(
+        0,
+        PLAN_MAX_SPOTS
+      );
     const importedVisitDetails =
       getImportedVisitDetails(
         importedData.visitDetails
@@ -3512,6 +3862,11 @@ async function prepareSavedSpotDataImport(
         id =>
           !visitedSpotIds.has(id)
       ).length;
+    const addedPlanSpots =
+      importedPlan.filter(
+        id =>
+          !planSpotIds.includes(id)
+      ).length;
 
     pendingSavedDataImport = {
       fileName:
@@ -3521,6 +3876,8 @@ async function prepareSavedSpotDataImport(
         importedFavorites,
       visited:
         importedVisited,
+      plan:
+        importedPlan,
       visitDetails:
         importedVisitDetails,
       preview: {
@@ -3528,6 +3885,10 @@ async function prepareSavedSpotDataImport(
         duplicateFavorites:
           importedFavorites.size -
           addedFavorites,
+        addedPlanSpots,
+        duplicatePlanSpots:
+          importedPlan.length -
+          addedPlanSpots,
         addedVisited,
         duplicateVisited:
           importedVisited.size -
@@ -3578,6 +3939,8 @@ function applySavedSpotDataImport() {
     favoriteSpotIds.size;
   const visitedCountBefore =
     visitedSpotIds.size;
+  const planCountBefore =
+    planSpotIds.length;
   let addedVisitDetails = 0;
 
   pendingSavedDataImport.favorites
@@ -3589,6 +3952,18 @@ function applySavedSpotDataImport() {
     .forEach(
       id =>
         visitedSpotIds.add(id)
+    );
+  pendingSavedDataImport.plan
+    .forEach(
+      id => {
+        if (
+          planSpotIds.length <
+            PLAN_MAX_SPOTS &&
+          !planSpotIds.includes(id)
+        ) {
+          planSpotIds.push(id);
+        }
+      }
     );
   pendingSavedDataImport.visitDetails
     .forEach(
@@ -3625,16 +4000,20 @@ function applySavedSpotDataImport() {
       visitedSpotIds,
       "行った！スポット"
     );
+  const planSaved =
+    savePlanSpotIds();
   const visitDetailsSaved =
     saveVisitDetails();
 
   updateFavoriteCount();
   updateVisitedCount();
+  updatePlanCount();
   updateSpotFilters();
 
   if (
     favoriteSaved &&
     visitedSaved &&
+    planSaved &&
     visitDetailsSaved
   ) {
     const addedFavorites =
@@ -3643,6 +4022,9 @@ function applySavedSpotDataImport() {
     const addedVisited =
       visitedSpotIds.size -
       visitedCountBefore;
+    const addedPlanSpots =
+      planSpotIds.length -
+      planCountBefore;
 
     clearSavedDataImportPreview({
       focusImport: true
@@ -3652,6 +4034,8 @@ function applySavedSpotDataImport() {
       addedFavorites +
       "件、行った！ +" +
       addedVisited +
+      "件、今日のプラン +" +
+      addedPlanSpots +
       "件、訪問記録 +" +
       addedVisitDetails +
       "件）。",
@@ -3772,6 +4156,97 @@ function toggleFavoriteSpot(
     )
   ) {
 
+    detailBody.replaceChildren(
+      createSpotDetail(
+        selectedRecord.spot
+      )
+    );
+  }
+}
+
+
+function isPlanSpot(
+  spot
+) {
+  return Boolean(
+    spot?.id &&
+    planSpotIds.includes(
+      spot.id
+    )
+  );
+}
+
+
+function updatePlanCount() {
+  const count =
+    spotRecords.length
+      ? planSpotIds.filter(
+          id =>
+            spotRecords.some(
+              record =>
+                record.spot.id === id
+            )
+        ).length
+      : planSpotIds.length;
+
+  if (planCount) {
+    planCount.textContent =
+      String(count);
+  }
+
+  if (savedDataPlanCount) {
+    savedDataPlanCount.textContent =
+      String(count);
+  }
+}
+
+
+function togglePlanSpot(
+  spot
+) {
+  if (!spot?.id) {
+    return;
+  }
+
+  if (isPlanSpot(spot)) {
+    planSpotIds =
+      planSpotIds.filter(
+        id => id !== spot.id
+      );
+  } else {
+    if (
+      planSpotIds.length >=
+      PLAN_MAX_SPOTS
+    ) {
+      showAppStatus(
+        "今日のプランへ追加できるのは" +
+        PLAN_MAX_SPOTS +
+        "件までです。手帳で不要なスポットを外してから追加してください。",
+        {
+          type: "warning"
+        }
+      );
+      return;
+    }
+
+    planSpotIds.push(
+      spot.id
+    );
+  }
+
+  savePlanSpotIds();
+  updatePlanCount();
+  updateSpotFilters();
+
+  if (
+    selectedRecord &&
+    selectedRecord.spot.id ===
+      spot.id &&
+    recordMatchesFilters(
+      selectedRecord,
+      getCurrentFilterState()
+    )
+  ) {
     detailBody.replaceChildren(
       createSpotDetail(
         selectedRecord.spot
@@ -4102,16 +4577,12 @@ function getBasePublicUrl() {
 function getSpotShareUrl(
   spot
 ) {
-
-  const url =
-    getBasePublicUrl();
-
-  url.searchParams.set(
-    "spot",
-    spot.id
-  );
-
-  return url.toString();
+  return new URL(
+    "spot/" +
+      encodeURIComponent(spot.id) +
+      "/",
+    getBasePublicUrl()
+  ).toString();
 }
 
 
@@ -4228,6 +4699,13 @@ function getCurrentFiltersShareUrl() {
   setSharedGroupParam(url, "evidence", "filter-nagano-evidence");
   setSharedGroupParam(url, "brand", "filter-brand");
 
+  if (dateQuickMode) {
+    url.searchParams.set(
+      "when",
+      dateQuickMode
+    );
+  }
+
   if (soonEndingFilter?.checked) {
     url.searchParams.set("soon", "1");
   }
@@ -4341,9 +4819,25 @@ function applySharedFilterState() {
   applySharedEvidenceParam();
   applySharedGroupParam("brand", "filter-brand");
 
+  const sharedDateQuickMode =
+    params.get("when") ||
+    (
+      params.get("soon") === "1"
+        ? "ending"
+        : ""
+    );
+
+  setDateQuickMode(
+    sharedDateQuickMode,
+    {
+      update: false
+    }
+  );
+
   if (soonEndingFilter) {
     soonEndingFilter.checked =
-      params.get("soon") === "1";
+      sharedDateQuickMode ===
+      "ending";
   }
 
   if (endedFilter) {
@@ -4722,6 +5216,41 @@ function createSpotListCard(
     }
   );
 
+  const planButton =
+    document.createElement(
+      "button"
+    );
+
+  planButton.type =
+    "button";
+
+  planButton.className =
+    "spot-list-plan-button" +
+    (
+      isPlanSpot(spot)
+        ? " is-active"
+        : ""
+    );
+
+  planButton.textContent =
+    isPlanSpot(spot)
+      ? "👜"
+      : "＋";
+
+  planButton.setAttribute(
+    "aria-label",
+    isPlanSpot(spot)
+      ? "今日のプランから外す"
+      : "今日のプランに追加"
+  );
+
+  planButton.addEventListener(
+    "click",
+    () => {
+      togglePlanSpot(spot);
+    }
+  );
+
   const headerActions =
     createDiv(
       "spot-list-card-actions"
@@ -4729,6 +5258,10 @@ function createSpotListCard(
 
   headerActions.appendChild(
     shareButton
+  );
+
+  headerActions.appendChild(
+    planButton
   );
 
   headerActions.appendChild(
@@ -6189,6 +6722,41 @@ function createSpotDetail(
     }
   );
 
+  const planButton =
+    document.createElement(
+      "button"
+    );
+
+  planButton.type =
+    "button";
+
+  planButton.className =
+    "spot-plan-button" +
+    (
+      isPlanSpot(spot)
+        ? " is-active"
+        : ""
+    );
+
+  planButton.setAttribute(
+    "aria-pressed",
+    String(
+      isPlanSpot(spot)
+    )
+  );
+
+  planButton.textContent =
+    isPlanSpot(spot)
+      ? "👜 プランに追加済み"
+      : "＋ 今日のプランに追加";
+
+  planButton.addEventListener(
+    "click",
+    () => {
+      togglePlanSpot(spot);
+    }
+  );
+
   const safeMapUrl =
     getSafeUrl(
       spot.mapUrl
@@ -6231,6 +6799,10 @@ function createSpotDetail(
 
   spotActions.appendChild(
     visitedButton
+  );
+
+  spotActions.appendChild(
+    planButton
   );
 
   spotActions.appendChild(
@@ -7594,6 +8166,7 @@ function getCurrentFilterState() {
       "",
     favoriteOnly,
     visitedOnly,
+    dateQuickMode,
     soonEnding:
       Boolean(
         soonEndingFilter?.checked
@@ -7657,6 +8230,16 @@ function recordMatchesFilters(
   if (
     state.soonEnding &&
     !isSpotEndingSoon(spot)
+  ) {
+    return false;
+  }
+
+  if (
+    state.dateQuickMode &&
+    !spotMatchesDateQuickMode(
+      spot,
+      state.dateQuickMode
+    )
   ) {
     return false;
   }
@@ -7827,7 +8410,16 @@ function getActiveFilterDescriptions() {
     );
   }
 
-  if (soonEndingFilter?.checked) {
+  if (dateQuickMode) {
+    descriptions.push(
+      "日付: " +
+      getDateQuickLabel(
+        dateQuickMode
+      )
+    );
+  } else if (
+    soonEndingFilter?.checked
+  ) {
     descriptions.push(
       "まもなく終了"
     );
@@ -8037,6 +8629,7 @@ function updateSpotFilters() {
   syncListControlButtons();
   updateFavoriteCount();
   updateVisitedCount();
+  updatePlanCount();
 }
 
 
@@ -8205,6 +8798,7 @@ function setSavedDataPanelOpen(
     setNaganoHelpPanelOpen(false);
     updateFavoriteCount();
     updateVisitedCount();
+    updatePlanCount();
   }
 
   const restoreFocus =
@@ -8360,6 +8954,9 @@ function resetFilters() {
   visitedOnly =
     false;
 
+  dateQuickMode =
+    "";
+
   if (soonEndingFilter) {
     soonEndingFilter.checked = false;
   }
@@ -8380,6 +8977,7 @@ function resetFilters() {
   syncFavoriteFilterButton();
   syncVisitedFilterButton();
   syncListControlButtons();
+  syncDateQuickButtons();
 
   hideSearchSuggestions();
   updateSearchClearButton();
@@ -8582,6 +9180,7 @@ async function ensureArchiveDataLoaded() {
         renderArchiveYearOptions();
         updateFavoriteCount();
         updateVisitedCount();
+        updatePlanCount();
         syncArchiveYearFilter();
 
         console.log(
@@ -8809,6 +9408,7 @@ async function loadSpots() {
 
     updateFavoriteCount();
     updateVisitedCount();
+    updatePlanCount();
     syncFavoriteFilterButton();
     syncVisitedFilterButton();
     setViewMode(
@@ -9261,10 +9861,36 @@ shareFiltersButton
   );
 
 
+dateQuickButtons.forEach(
+  button => {
+    button.addEventListener(
+      "click",
+      () => {
+        const mode =
+          button.dataset.dateQuick ||
+          "";
+
+        setDateQuickMode(
+          dateQuickMode === mode
+            ? ""
+            : mode
+        );
+      }
+    );
+  }
+);
+
+
 soonEndingFilter
   ?.addEventListener(
     "change",
-    updateSpotFilters
+    () => {
+      setDateQuickMode(
+        soonEndingFilter.checked
+          ? "ending"
+          : ""
+      );
+    }
   );
 
 

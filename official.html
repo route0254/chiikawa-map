@@ -35,6 +35,9 @@
   <title>ちいかわ公式店舗・開催中イベント一覧｜ちい活マップ</title>
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <meta name="theme-color" content="#f477a8">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,8 +46,8 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css?v=20260827-2">
-  <link rel="stylesheet" href="official.css?v=20260827-3">
+  <link rel="stylesheet" href="style.css?v=20260828-3">
+  <link rel="stylesheet" href="official.css?v=20260828-1">
 </head>
 
 <body class="official-page">
@@ -74,6 +77,11 @@
         >
           <span aria-hidden="true">✦</span>
           公式スポット一覧
+        </a>
+
+        <a class="site-nav-link" href="journal.html">
+          <span aria-hidden="true">🌱</span>
+          ちい活手帳
         </a>
       </nav>
     </div>
@@ -657,6 +665,14 @@
       <a href="./"><span aria-hidden="true">🗺</span> ちい活マップを開く</a>
     </section>
 
+    <aside class="home-screen-card" data-home-screen-card>
+      <div class="home-screen-card-copy">
+        <strong>スマホから、もっとすぐに。</strong>
+        <span data-home-screen-status>ホーム画面に追加すると、ちい活MAPをアプリのように開けます。</span>
+      </div>
+      <button type="button" class="home-screen-button" data-home-screen>ホーム画面に追加</button>
+    </aside>
+
     <p class="site-note">
       本サイトは公式とは関係のない非公式ファンサイトです。掲載内容は予告なく変更・終了している場合があります。
     </p>
@@ -664,7 +680,8 @@
 
   <p id="catalog-action-status" class="catalog-action-status" role="status" aria-live="polite" hidden></p>
 
-  <script src="official.js?v=20260827-4" defer></script>
+  <script src="official.js?v=20260828-1" defer></script>
+  <script src="pwa.js?v=20260828-1" defer></script>
 </body>
 
 </html>

@@ -17,6 +17,13 @@ const VISITED_STORAGE_KEY =
   "chiikawa-map-visited-v1";
 
 
+const PLAN_STORAGE_KEY =
+  "chiikawa-map-plan-v1";
+
+
+const PLAN_MAX_SPOTS = 8;
+
+
 const VALID_VIEWS =
   new Set([
     "current",
@@ -435,6 +442,10 @@ let visitedSpotIds =
   loadStringSetFromStorage(
     VISITED_STORAGE_KEY
   );
+let planSpotIds =
+  loadStringArrayFromStorage(
+    PLAN_STORAGE_KEY
+  );
 let catalogStatusTimer = null;
 let currentFiltersExpanded = false;
 let pastFiltersExpanded = false;
@@ -551,6 +562,58 @@ function saveStringSetToStorage(
 }
 
 
+function loadStringArrayFromStorage(
+  key
+) {
+  try {
+    const parsed = JSON.parse(
+      window.localStorage.getItem(
+        key
+      ) || "[]"
+    );
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    return Array.from(
+      new Set(
+        parsed.filter(
+          id =>
+            typeof id === "string"
+        )
+      )
+    ).slice(0, PLAN_MAX_SPOTS);
+  } catch (error) {
+    console.warn(
+      "ちい活プランを読み込めませんでした。",
+      error
+    );
+    return [];
+  }
+}
+
+
+function savePlanSpotIds() {
+  try {
+    window.localStorage.setItem(
+      PLAN_STORAGE_KEY,
+      JSON.stringify(planSpotIds)
+    );
+    return true;
+  } catch (error) {
+    console.warn(
+      "ちい活プランを更新できませんでした。",
+      error
+    );
+    showCatalogStatus(
+      "端末へ保存できませんでした。ブラウザの保存設定をご確認ください。"
+    );
+    return false;
+  }
+}
+
+
 function showCatalogStatus(
   message
 ) {
@@ -579,18 +642,15 @@ function showCatalogStatus(
 function getSpotShareUrl(
   spot
 ) {
-  const url =
+  return new URL(
+    "spot/" +
+      encodeURIComponent(spot.id) +
+      "/",
     new URL(
       "./",
       window.location.href
-    );
-
-  url.searchParams.set(
-    "spot",
-    spot.id
-  );
-
-  return url.toString();
+    )
+  ).toString();
 }
 
 
@@ -1314,6 +1374,100 @@ function createSaveButton(
 }
 
 
+function togglePlanSpot(spot) {
+  const wasSaved =
+    planSpotIds.includes(spot.id);
+
+  if (wasSaved) {
+    planSpotIds =
+      planSpotIds.filter(
+        id => id !== spot.id
+      );
+  } else {
+    if (
+      planSpotIds.length >=
+      PLAN_MAX_SPOTS
+    ) {
+      showCatalogStatus(
+        "今日のプランへ追加できるのは" +
+          PLAN_MAX_SPOTS +
+          "件までです。"
+      );
+      return;
+    }
+
+    planSpotIds.push(spot.id);
+  }
+
+  if (!savePlanSpotIds()) {
+    if (wasSaved) {
+      planSpotIds.push(spot.id);
+    } else {
+      planSpotIds =
+        planSpotIds.filter(
+          id => id !== spot.id
+        );
+    }
+    return;
+  }
+
+  renderCurrentSpots();
+  renderPastSpots();
+
+  showCatalogStatus(
+    spot.name +
+      (wasSaved
+        ? "を今日のプランから外しました。"
+        : "を今日のプランに追加しました。")
+  );
+
+  window.requestAnimationFrame(
+    () => {
+      const nextButton =
+        document.querySelector(
+          '[data-plan-spot-id="' +
+            CSS.escape(spot.id) +
+            '"]'
+        );
+
+      if (nextButton) {
+        nextButton.focus({
+          preventScroll: true
+        });
+      }
+    }
+  );
+}
+
+
+function createPlanButton(spot) {
+  const isSaved =
+    planSpotIds.includes(spot.id);
+  const button = createElement(
+    "button",
+    "spot-card-save-button spot-card-save-plan" +
+      (isSaved ? " is-active" : ""),
+    isSaved
+      ? "👜 プランに追加済み"
+      : "＋ 今日のプラン"
+  );
+
+  button.type = "button";
+  button.dataset.planSpotId =
+    spot.id;
+  button.setAttribute(
+    "aria-pressed",
+    String(isSaved)
+  );
+  button.addEventListener(
+    "click",
+    () => togglePlanSpot(spot)
+  );
+
+  return button;
+}
+
+
 function createSpotCard(
   spot
 ) {
@@ -1381,6 +1535,20 @@ function createSpotCard(
     );
   }
 
+  if (
+    planSpotIds.includes(
+      spot.id
+    )
+  ) {
+    badges.appendChild(
+      createElement(
+        "span",
+        "spot-saved-badge spot-saved-plan",
+        "👜 今日のプラン"
+      )
+    );
+  }
+
   card.appendChild(badges);
 
   card.appendChild(
@@ -1409,6 +1577,10 @@ function createSpotCard(
       spot,
       "visited"
     )
+  );
+
+  saveActions.appendChild(
+    createPlanButton(spot)
   );
 
   card.appendChild(
@@ -1455,6 +1627,16 @@ function createSpotCard(
       "div",
       "spot-card-actions"
     );
+
+  const detailLink =
+    createElement(
+      "a",
+      "spot-card-action spot-card-action-detail",
+      "✦ 詳しいスポット情報"
+    );
+  detailLink.href =
+    getSpotShareUrl(spot);
+  actions.appendChild(detailLink);
 
   const mapLink =
     createElement(
@@ -3664,6 +3846,11 @@ function refreshSavedSpotIds() {
       VISITED_STORAGE_KEY
     );
 
+  planSpotIds =
+    loadStringArrayFromStorage(
+      PLAN_STORAGE_KEY
+    );
+
   renderCurrentSpots();
   renderPastSpots();
 }
@@ -3676,7 +3863,9 @@ window.addEventListener(
       event.key ===
         FAVORITES_STORAGE_KEY ||
       event.key ===
-        VISITED_STORAGE_KEY
+        VISITED_STORAGE_KEY ||
+      event.key ===
+        PLAN_STORAGE_KEY
     ) {
       refreshSavedSpotIds();
     }

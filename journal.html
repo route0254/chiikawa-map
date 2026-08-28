@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="ちいかわの開催予定をカレンダーで確認し、今日のちい活プランや自分の訪問記録を楽しめる、ちい活マップの手帳ページです。"
+  >
+  <link rel="canonical" href="https://chiikatsu-map.com/journal.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="ちい活手帳｜カレンダー・プラン・わたしの足あと">
+  <meta property="og:description" content="いつ行く？どこを回る？これまでどこへ行った？ ちい活を計画して記録できる手帳ページです。">
+  <meta property="og:url" content="https://chiikatsu-map.com/journal.html">
+  <meta property="og:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260826-1">
+  <meta property="og:site_name" content="ちいかわ推し活（ちい活）MAP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>ちい活手帳｜カレンダー・プラン・わたしの足あと</title>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <meta name="theme-color" content="#f477a8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260828-3">
+  <link rel="stylesheet" href="journal.css?v=20260828-1">
+</head>
+
+<body class="journal-page">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-header-top">
+        <span class="site-kicker">CHIIKATSU MAP</span>
+        <span class="unofficial-badge">非公式ファンサイト</span>
+      </div>
+
+      <h1>ちい活手帳</h1>
+      <p class="site-description">
+        開催予定を見つけて、今日のプランを作って、ちい活の足あとを育てられます。
+      </p>
+
+      <nav class="site-nav" aria-label="サイト内メニュー">
+        <a class="site-nav-link" href="./">
+          <span aria-hidden="true">🗺</span>
+          地図から探す
+        </a>
+
+        <a class="site-nav-link" href="official.html">
+          <span aria-hidden="true">✦</span>
+          公式スポット一覧
+        </a>
+
+        <a class="site-nav-link is-active" href="journal.html" aria-current="page">
+          <span aria-hidden="true">🌱</span>
+          ちい活手帳
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-notice">
+    <div class="site-notice-inner">
+      <span class="notice-icon" aria-hidden="true">⚠</span>
+      <p>
+        開催状況・営業時間・入場方法は変更される場合があります。
+        訪問前に各スポットの公式情報をご確認ください。保存内容はこの端末内だけに保持されます。
+      </p>
+    </div>
+  </div>
+
+  <main class="journal-shell">
+    <section class="journal-hero" aria-labelledby="journal-hero-title">
+      <div>
+        <span class="journal-eyebrow">MY CHIIKATSU JOURNAL</span>
+        <h2 id="journal-hero-title">次の楽しみも、これまでの思い出も。</h2>
+        <p>
+          地図で見つけたスポットを、予定と記録につなげるページです。
+          ログインやサーバー送信はありません。
+        </p>
+      </div>
+
+      <div class="journal-hero-stats" aria-label="保存状況">
+        <div>
+          <strong id="journal-favorite-count">--</strong>
+          <span>行きたい</span>
+        </div>
+        <div>
+          <strong id="journal-plan-count">--</strong>
+          <span>今日のプラン</span>
+        </div>
+        <div>
+          <strong id="journal-visited-count">--</strong>
+          <span>行った！</span>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="journal-status"
+      class="journal-status"
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
+
+    <div class="journal-tabs" role="tablist" aria-label="ちい活手帳の表示切替">
+      <button
+        type="button"
+        class="journal-tab is-active"
+        id="calendar-tab"
+        role="tab"
+        aria-selected="true"
+        aria-controls="calendar-view"
+        data-journal-view="calendar"
+      >
+        <span aria-hidden="true">🗓</span>
+        カレンダー
+      </button>
+
+      <button
+        type="button"
+        class="journal-tab"
+        id="plan-tab"
+        role="tab"
+        aria-selected="false"
+        aria-controls="plan-view"
+        data-journal-view="plan"
+      >
+        <span aria-hidden="true">👜</span>
+        今日のプラン
+      </button>
+
+      <button
+        type="button"
+        class="journal-tab"
+        id="activity-tab"
+        role="tab"
+        aria-selected="false"
+        aria-controls="activity-view"
+        data-journal-view="activity"
+      >
+        <span aria-hidden="true">🌱</span>
+        わたしの足あと
+      </button>
+    </div>
+
+    <section
+      id="calendar-view"
+      class="journal-view"
+      role="tabpanel"
+      aria-labelledby="calendar-tab"
+      data-journal-panel="calendar"
+    >
+      <div class="journal-section-heading calendar-heading">
+        <div>
+          <span class="journal-eyebrow">EVENT CALENDAR</span>
+          <h2>いつ、何が開催されている？</h2>
+          <p>期間限定スポットを開催日で確認できます。日を選ぶと下に詳しい一覧が表示されます。</p>
+        </div>
+
+        <button type="button" class="journal-share-button" id="calendar-share">
+          共有
+        </button>
+      </div>
+
+      <div class="calendar-toolbar">
+        <button type="button" id="calendar-previous" aria-label="前の月">‹</button>
+        <div class="calendar-month-title" aria-live="polite">
+          <strong id="calendar-month-label">--</strong>
+          <button type="button" id="calendar-today">今月へ</button>
+        </div>
+        <button type="button" id="calendar-next" aria-label="次の月">›</button>
+      </div>
+
+      <div class="calendar-filters" aria-label="カレンダーの絞り込み">
+        <label>
+          <span>キーワード</span>
+          <input id="calendar-search" type="search" placeholder="イベント名・会場">
+        </label>
+
+        <label>
+          <span>都道府県</span>
+          <select id="calendar-prefecture">
+            <option value="">全国</option>
+          </select>
+        </label>
+
+        <label>
+          <span>関連</span>
+          <select id="calendar-category">
+            <option value="">すべて</option>
+            <option value="official">ちいかわ公式</option>
+            <option value="nagano">ナガノ先生</option>
+          </select>
+        </label>
+
+        <label>
+          <span>保存状態</span>
+          <select id="calendar-saved">
+            <option value="">すべて</option>
+            <option value="favorite">行きたい</option>
+            <option value="visited">行った！</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="calendar-card">
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span>
+        </div>
+        <div id="calendar-grid" class="calendar-grid" aria-label="イベントカレンダー"></div>
+      </div>
+
+      <section class="calendar-day-section" aria-labelledby="calendar-day-title">
+        <div class="calendar-day-heading">
+          <div>
+            <span class="journal-eyebrow">SELECTED DAY</span>
+            <h3 id="calendar-day-title">--</h3>
+          </div>
+          <span id="calendar-day-count" class="calendar-day-count">--件</span>
+        </div>
+        <div id="calendar-day-list" class="calendar-day-list"></div>
+      </section>
+    </section>
+
+    <section
+      id="plan-view"
+      class="journal-view"
+      role="tabpanel"
+      aria-labelledby="plan-tab"
+      data-journal-panel="plan"
+      hidden
+    >
+      <div class="journal-section-heading">
+        <div>
+          <span class="journal-eyebrow">TODAY'S PLAN</span>
+          <h2>今日はここを回ろう</h2>
+          <p>行きたいスポットから選び、順番を整えて外部地図へ渡せます。独自の経路検索は行いません。</p>
+        </div>
+      </div>
+
+      <div id="shared-plan-banner" class="shared-plan-banner" hidden>
+        <div>
+          <strong>共有されたプランを表示しています</strong>
+          <span>まだこの端末には保存していません。</span>
+        </div>
+        <button type="button" id="save-shared-plan">この端末に保存</button>
+      </div>
+
+      <div class="plan-summary">
+        <div>
+          <strong id="plan-summary-count">0</strong>
+          <span>スポット</span>
+        </div>
+        <div>
+          <strong id="plan-summary-distance">--</strong>
+          <span>直線距離の合計</span>
+        </div>
+        <p>実際の移動距離・所要時間・営業時間は外部地図と公式情報でご確認ください。</p>
+      </div>
+
+      <div class="plan-actions">
+        <button type="button" id="plan-optimize">↕ 移動距離を短く並べる</button>
+        <a id="plan-route" class="plan-primary-action" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+          地図アプリで経路を開く
+        </a>
+        <button type="button" id="plan-share">共有</button>
+      </div>
+
+      <div class="plan-layout">
+        <section class="plan-column" aria-labelledby="plan-list-title">
+          <div class="plan-column-heading">
+            <h3 id="plan-list-title">回る順番</h3>
+            <span id="plan-list-hint">上下ボタンで調整できます</span>
+          </div>
+          <div id="plan-list" class="plan-list"></div>
+        </section>
+
+        <section class="plan-column plan-candidates" aria-labelledby="plan-candidates-title">
+          <div class="plan-column-heading">
+            <h3 id="plan-candidates-title">スポットを追加</h3>
+            <span>まずは「行きたい」から選べます</span>
+          </div>
+
+          <div class="plan-candidate-filters">
+            <input id="plan-search" type="search" placeholder="スポット名・地名を検索">
+            <select id="plan-candidate-source" aria-label="追加候補の種類">
+              <option value="favorite">行きたいから</option>
+              <option value="all">すべてのスポットから</option>
+            </select>
+          </div>
+
+          <div id="plan-candidate-list" class="plan-candidate-list"></div>
+        </section>
+      </div>
+    </section>
+
+    <section
+      id="activity-view"
+      class="journal-view"
+      role="tabpanel"
+      aria-labelledby="activity-tab"
+      data-journal-panel="activity"
+      hidden
+    >
+      <div class="journal-section-heading activity-heading">
+        <div>
+          <span class="journal-eyebrow">MY CHIIKATSU</span>
+          <h2>わたしのちい活の足あと</h2>
+          <p>スポットで「行った！」を押すだけで、ここが少しずつ育っていきます。</p>
+        </div>
+
+        <button type="button" class="activity-share-button" id="activity-share-image">
+          画像にして共有
+        </button>
+      </div>
+
+      <section class="activity-summary-card" aria-labelledby="activity-message">
+        <div class="activity-summary-copy">
+          <span class="journal-eyebrow">YOUR FOOTPRINTS</span>
+          <h3 id="activity-message">ちい活の足あとを読み込んでいます…</h3>
+          <p id="activity-submessage"></p>
+        </div>
+
+        <div class="activity-big-stats">
+          <div>
+            <strong id="activity-visited-total">--</strong>
+            <span>行ったスポット</span>
+          </div>
+          <div>
+            <strong id="activity-prefecture-total">--</strong>
+            <span>訪問都道府県</span>
+          </div>
+          <div>
+            <strong id="activity-favorite-total">--</strong>
+            <span>次に行きたい</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="activity-layout">
+        <section class="activity-panel" aria-labelledby="footprint-map-title">
+          <div class="activity-panel-heading">
+            <div>
+              <span class="journal-eyebrow">PREFECTURES</span>
+              <h3 id="footprint-map-title">訪れた都道府県</h3>
+            </div>
+            <span>色がついた場所が、これまでの足あとです。</span>
+          </div>
+          <div id="activity-prefecture-map" class="activity-prefecture-map"></div>
+        </section>
+
+        <section class="activity-panel" aria-labelledby="activity-progress-title">
+          <div class="activity-panel-heading">
+            <div>
+              <span class="journal-eyebrow">COLLECTIONS</span>
+              <h3 id="activity-progress-title">ちい活の広がり</h3>
+            </div>
+            <span>競争ではなく、自分の積み重ねを楽しむ目安です。</span>
+          </div>
+          <div id="activity-progress" class="activity-progress"></div>
+        </section>
+      </div>
+
+      <section class="activity-panel recent-activity-panel" aria-labelledby="recent-activity-title">
+        <div class="activity-panel-heading">
+          <div>
+            <span class="journal-eyebrow">MEMORIES</span>
+            <h3 id="recent-activity-title">最近のちい活</h3>
+          </div>
+          <a href="./?view=list">地図の一覧で記録を見る</a>
+        </div>
+        <div id="recent-activity-list" class="recent-activity-list"></div>
+      </section>
+    </section>
+
+    <aside class="home-screen-card" data-home-screen-card>
+      <div class="home-screen-card-copy">
+        <strong>スマホから、もっとすぐに。</strong>
+        <span data-home-screen-status>ホーム画面に追加すると、ちい活MAPをアプリのように開けます。</span>
+      </div>
+      <button type="button" class="home-screen-button" data-home-screen>ホーム画面に追加</button>
+    </aside>
+
+    <p class="site-note">
+      本サイトは公式とは関係のない非公式ファンサイトです。保存情報や位置情報をサーバーへ送信する機能はありません。
+    </p>
+  </main>
+
+  <script src="journal.js?v=20260828-1" defer></script>
+  <script src="pwa.js?v=20260828-1" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "ちいかわ推し活（ちい活）MAP",
+  "short_name": "ちい活MAP",
+  "description": "ちいかわ公式関連スポットやナガノ先生関連スポットを探し、ちい活の予定と記録を楽しめる非公式ファンMAPです。",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffafd",
+  "theme_color": "#f477a8",
+  "lang": "ja",
+  "categories": ["travel", "lifestyle", "entertainment"],
+  "icons": [
+    {
+      "src": "assets/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "今日行ける場所",
+      "short_name": "今日の候補",
+      "url": "./?when=today"
+    },
+    {
+      "name": "ちい活手帳",
+      "short_name": "手帳",
+      "url": "journal.html"
+    }
+  ]
+}

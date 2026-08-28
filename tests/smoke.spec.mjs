@@ -1630,6 +1630,9 @@ test(
             exportedAt:
               "2026-08-26T00:00:00.000Z",
             favorites: [],
+            plan: [
+              "nagano-takao-mountain"
+            ],
             visited: [
               "nagano-takao-mountain"
             ],
@@ -1693,6 +1696,19 @@ test(
       note:
         "高尾山の記録"
     });
+
+    const mergedPlan =
+      await page.evaluate(
+        () => JSON.parse(
+          localStorage.getItem(
+            "chiikawa-map-plan-v1"
+          ) || "[]"
+        )
+      );
+
+    expect(mergedPlan).toEqual([
+      "nagano-takao-mountain"
+    ]);
 
     await page.keyboard.press(
       "Escape"
@@ -1761,6 +1777,10 @@ test(
       note:
         "限定グッズを購入。次回は午前中に行く。"
     });
+
+    expect(exportedData.plan).toEqual([
+      "nagano-takao-mountain"
+    ]);
   }
 );
 
@@ -2603,7 +2623,7 @@ test(
       );
 
     expect(sharedSpotUrl).toContain(
-      "?spot=chiikawaland-osaka-umeda"
+      "/spot/chiikawaland-osaka-umeda/"
     );
 
     await expect(
@@ -2942,5 +2962,239 @@ test(
     expect(
       hasHorizontalOverflow
     ).toBe(false);
+  }
+);
+
+
+test(
+  "日付の候補を少ない操作で絞り込み、URLへ復元できる",
+  async ({ page }) => {
+    await page.goto("/");
+    await waitForSpots(page);
+
+    const todayButton = page.locator(
+      '[data-date-quick="today"]'
+    );
+    await todayButton.click();
+
+    await expect(todayButton).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+    await expect(
+      page.locator("#active-filter-summary")
+    ).toContainText("今日の候補");
+
+    await page.goto("/?when=today");
+    await waitForSpots(page);
+    await expect(todayButton).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+
+    await page.locator(
+      '[data-date-quick="upcoming"]'
+    ).click();
+    await expect(
+      page.locator(
+        '[data-date-quick="upcoming"]'
+      )
+    ).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+  }
+);
+
+
+test(
+  "手帳でカレンダー・プラン・足あとを一続きで利用できる",
+  async ({ page }) => {
+    await page.addInitScript(() => {
+      localStorage.setItem(
+        "chiikawa-map-favorites-v1",
+        JSON.stringify([
+          "chiikawaland-osaka-umeda",
+          "nagano-takao-mountain"
+        ])
+      );
+      localStorage.setItem(
+        "chiikawa-map-plan-v1",
+        JSON.stringify([
+          "chiikawaland-osaka-umeda",
+          "nagano-takao-mountain",
+          "collab-odaiba-obake-forest"
+        ])
+      );
+      localStorage.setItem(
+        "chiikawa-map-visited-v1",
+        JSON.stringify([
+          "chiikawaland-osaka-umeda",
+          "nagano-takao-mountain",
+          "collab-odaiba-obake-forest"
+        ])
+      );
+      localStorage.setItem(
+        "chiikawa-map-visit-details-v1",
+        JSON.stringify({
+          "chiikawaland-osaka-umeda": {
+            visitedAt: "2026-08-20",
+            note: "大阪でちい活"
+          },
+          "nagano-takao-mountain": {
+            visitedAt: "2026-07-01",
+            note: "高尾山へ"
+          }
+        })
+      );
+    });
+
+    await page.goto(
+      "/journal.html?view=calendar&date=2026-08-23"
+    );
+    await expect(
+      page.locator("#calendar-grid .calendar-day")
+    ).toHaveCount(42);
+    await expect(
+      page.locator("#calendar-day-count")
+    ).toHaveText(/^\d+件$/);
+    await expect(
+      page.locator("#calendar-day-list .calendar-event-card")
+    ).not.toHaveCount(0);
+    await expect(
+      page.locator("#calendar-day-list .calendar-event-card")
+        .first()
+        .locator(".calendar-event-actions a")
+    ).toHaveCount(2);
+
+    await page.locator("#plan-tab").click();
+    await expect(page).toHaveURL(/view=plan/);
+    await expect(
+      page.locator("#plan-summary-count")
+    ).toHaveText("3");
+    await expect(
+      page.locator("#plan-list .plan-stop")
+    ).toHaveCount(3);
+    await expect(
+      page.locator("#plan-route")
+    ).toHaveAttribute("aria-disabled", "false");
+
+    await page.locator("#activity-tab").click();
+    await expect(page).toHaveURL(/view=activity/);
+    await expect(
+      page.locator("#activity-visited-total")
+    ).toHaveText("3");
+    await expect(
+      page.locator("#activity-prefecture-total")
+    ).toHaveText("2");
+    await expect(
+      page.locator("#recent-activity-list")
+    ).toContainText("大阪梅田店");
+
+    const downloadPromise =
+      page.waitForEvent("download");
+    await page.locator(
+      "#activity-share-image"
+    ).click();
+    const download =
+      await downloadPromise;
+    expect(
+      download.suggestedFilename()
+    ).toMatch(
+      /^watashi-no-chiikatsu-\d{4}-\d{2}-\d{2}\.png$/
+    );
+  }
+);
+
+
+test(
+  "公式一覧とスポット個別ページで今日のプランを共有する",
+  async ({ page }) => {
+    await page.goto("/official.html");
+    await waitForOfficialCurrent(page);
+
+    const planButton = page.locator(
+      ".official-spot-card",
+      {
+        hasText:
+          "ちいかわらんど 大阪梅田店"
+      }
+    ).locator(
+      ".spot-card-save-plan"
+    );
+    await planButton.click();
+    await expect(planButton).toHaveClass(/is-active/);
+
+    const savedPlan = await page.evaluate(
+      () => JSON.parse(
+        localStorage.getItem(
+          "chiikawa-map-plan-v1"
+        ) || "[]"
+      )
+    );
+    expect(savedPlan).toHaveLength(1);
+
+    await page.goto(
+      "/spot/chiikawaland-osaka-umeda/"
+    );
+    await expect(page).toHaveTitle(
+      /ちいかわらんど 大阪梅田店/
+    );
+    await expect(
+      page.locator('link[rel="canonical"]')
+    ).toHaveAttribute(
+      "href",
+      "https://chiikatsu-map.com/spot/chiikawaland-osaka-umeda/"
+    );
+
+    const favoriteButton = page.locator(
+      '[data-save-type="favorite"]'
+    );
+    await favoriteButton.click();
+    await expect(favoriteButton).toHaveClass(/is-active/);
+    await expect(
+      page.locator('[data-save-type="plan"]')
+    ).toHaveClass(/is-active/);
+    await expect(
+      page.locator(".spot-page-actions .is-primary")
+    ).toHaveAttribute(
+      "href",
+      "../../?spot=chiikawaland-osaka-umeda"
+    );
+  }
+);
+
+
+test(
+  "終了済み個別ページを検索対象外にし、ホーム画面追加の案内を任意表示する",
+  async ({ page }) => {
+    await page.goto(
+      "/spot/collab-odaiba-obake-forest/"
+    );
+    await expect(
+      page.locator('meta[name="robots"]')
+    ).toHaveAttribute(
+      "content",
+      "noindex,follow"
+    );
+
+    await page.goto("/journal.html");
+    await expect(
+      page.locator('link[rel="manifest"]')
+    ).toHaveAttribute(
+      "href",
+      "manifest.webmanifest"
+    );
+    await page.locator(
+      "[data-home-screen]"
+    ).click();
+    await expect(
+      page.locator("#home-screen-help")
+    ).toBeVisible();
+    await expect(
+      page.locator("#home-screen-help")
+    ).toContainText(
+      "ホーム画面"
+    );
   }
 );

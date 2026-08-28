@@ -8,9 +8,14 @@ GitHub Pages向けの静的Webサイトです。
 
 - `index.html` : 地図ページの画面構造
 - `official.html` : 公式スポット一覧・店舗比較ページ
+- `journal.html` : カレンダー・今日のプラン・わたしの足あとをまとめた「ちい活手帳」
 - `style.css` : デザイン / レスポンシブ対応
 - `app.js` : 地図 / フィルター / 期間判定 / MarkerCluster / データ読込
 - `official.css` / `official.js` : 公式一覧ページのデザイン / タブ / 分類 / 遅延読込
+- `journal.css` / `journal.js` : ちい活手帳のデザイン / カレンダー / プラン / 訪問記録の可視化
+- `spot/` : 3つのスポットJSONから自動生成するスポット個別ページ
+- `spot.css` / `spot-page.js` : スポット個別ページの表示・端末保存・共有
+- `manifest.webmanifest` / `service-worker.js` / `pwa.js` : ホーム画面追加と最低限のオフライン対応
 - `data/official-spots.json` : 現在開催中・今後開催のちいかわ公式関連スポット
 - `data/official-events-archive.json` : 終了・開催中止となった公式イベント（必要時のみ読込）
 - `data/nagano-spots.json` : ナガノ先生関連スポット
@@ -18,6 +23,7 @@ GitHub Pages向けの静的Webサイトです。
 - `assets/ogp.png` : X / SNS共有用OGP画像
 - `CNAME` : GitHub Pagesの独自ドメイン設定
 - `scripts/validate-data.mjs` : スポットJSONの検証
+- `scripts/build-spot-pages.mjs` : 個別ページ543件とサイトマップの生成・生成漏れ検査
 - `scripts/check-links.mjs` : 公式情報リンクの定期検査
 - `scripts/check-site-health.mjs` : 公開サイトのHTTPS・正規URL・主要ファイル検査
 - `.github/workflows/validate-data.yml` : JSON検証のGitHub Actions
@@ -56,6 +62,13 @@ pnpm run check
 pnpm run test:smoke
 ```
 
+スポットJSONを変更した場合は、検証前に個別ページとサイトマップも再生成します。
+
+```bash
+pnpm run build:spot-pages
+pnpm run check
+```
+
 Playwrightがローカルサーバーを自動起動し、通常表示・検索・一覧・スポット詳細・ダイアログ・スマホのタップ領域を確認します。
 表示確認後、変更したファイルだけを指定してコミット・プッシュします。
 
@@ -74,6 +87,7 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 
 - 既存スポットの `id` は変更・再利用しない（`?spot=<id>` 形式の共有URLとの互換性を維持するため）
 - `chiikawa-map-favorites-v1` と `chiikawa-map-visited-v1` のキー名・保存形式を変更しない
+- 今日のプランは別キー `chiikawa-map-plan-v1` の順序付き配列として保存し、最大8件を維持する
 - 訪問日・メモは別キー `chiikawa-map-visit-details-v1` の任意データとして扱い、既存2キーへ混在させない
 - 既存の共有URLパラメータ名や意味を変更しない
 - JSONの既存フィールドを削除・改名しない
@@ -86,6 +100,14 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - 公式関連（現在・今後）: 70件
 - 公式過去イベント: 382件（開催中止1件を含む）
 - ナガノ先生関連: 91件（確定 23件 / 推定・高確度 60件 / 要注意候補 8件、食べる 61件 / 観光・体験 19件 / 買う 6件 / 泊まる 5件）
+- 地図上部に「今日の候補 / 今週末 / 近日開催 / まもなく終了」の日付ショートカットを追加
+- 「ちい活手帳」で月間カレンダー、選択日のイベント一覧、今日のプラン、わたしの足あとを一画面に整理
+- 今日のプランは地図・公式一覧・個別ページから最大8件を追加でき、順序変更・距離順提案・外部地図経路・URL共有に対応
+- 「行った！」の既存記録から訪問スポット数・都道府県・カテゴリ進捗・最近の記録を自動集計し、共有用PNGを端末内で生成
+- 対応端末ではWeb Share API、非対応環境ではURLコピーまたはPNGダウンロードへフォールバック
+- ホーム画面追加用Manifest・アイコン・任意表示の端末別案内を追加。地図タイルはキャッシュせず静的画面とデータだけを最低限保存
+- 543スポットすべてに `/spot/<id>/` 個別ページをJSONから自動生成。現在・ナガノ関連161件をサイトマップへ掲載し、終了済み382件は `noindex,follow`
+- 従来の `?spot=<id>` URLは地図を直接開く互換URLとして引き続き利用可能
 - 地図と相互移動できる「公式スポット一覧」ページを追加
 - 公式一覧を「開催中・開催予定 / 過去の店舗・イベント / お店・施設の違い」の3タブで表示
 - 公式一覧上部の過去件数は過去JSONの実数とUIテストで照合し、古い固定値の残存を防止
@@ -425,7 +447,7 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 
 ## 端末への保存について
 
-「♡ 行きたい」「✓ 行った！」と、行ったスポットに入力した訪問日・メモはブラウザの `localStorage` を利用します。
+「♡ 行きたい」「👜 今日のプラン」「✓ 行った！」と、行ったスポットに入力した訪問日・メモはブラウザの `localStorage` を利用します。
 アカウント登録やサーバーへの保存・送信はありません。
 そのため、別ブラウザ・別端末・シークレットモードなどとは共有されず、ブラウザデータを削除すると保存内容も消えます。
 
@@ -464,7 +486,7 @@ GitHub Actions上では警告をアノテーションとして表示し、デー
 GoogleマップURLは通常の検査対象から除外しており、必要な場合だけ `node scripts/check-links.mjs --include-map` で確認できます。
 同じ検査は `.github/workflows/check-links.yml` により毎週自動実行され、公開サイトのデプロイ処理とは独立しています。
 
-`pnpm run check:site` は公開URLへ接続し、HTTPS証明書、HTTPからHTTPSへの転送、wwwから正規ドメインへの転送、canonical、OGP URL、`app.js`、3つのスポットJSONを確認します。
+`pnpm run check:site` は公開URLへ接続し、HTTPS証明書、HTTPからHTTPSへの転送、wwwから正規ドメインへの転送、canonical、OGP URL、地図・公式一覧・手帳・PWA・個別ページ・サイトマップ・3つのスポットJSONを確認します。
 同じ検査は `.github/workflows/check-site-health.yml` により毎日自動実行されます。2026-08-28時点で `https://chiikatsu-map.com/` は200、HTTPとwwwは正規HTTPS URLへ301転送されます。
 
 `pnpm run report:status` は、現在の公式スポットから「終了日を過ぎたアーカイブ移動候補」「14日以内に終了するスポット」「終了日未定の期間限定スポット」を抽出し、終了日までの残日数も表示します。候補を自動更新するコマンドではないため、JSONを変更する前に必ず公式情報を確認してください。GitHub Actionsでは同じ結果をJob Summaryとアノテーションへ表示し、終了日経過候補が1件以上ある場合だけ検証を失敗にします。

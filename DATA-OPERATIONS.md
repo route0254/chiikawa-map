@@ -58,6 +58,8 @@
 4. 終了日・会場・根拠が曖昧な場合は推測せず、確認事項として報告する
 5. `pnpm run check` を実行する
 6. URL変更時は `pnpm run check:links` を実行する
+
+JSONを変更した場合は、5の前に `pnpm run build:spot-pages` を実行し、`spot/<id>/index.html` と `sitemap.xml` を再生成します。生成物を手作業で編集せず、表示変更は `scripts/build-spot-pages.mjs`・`spot.css`・`spot-page.js` 側で行います。GitHub ActionsでもJSONと生成物の差異を検出します。
 7. `pnpm run test:smoke` を実行する
 8. 変更をコミット・プッシュする
 9. GitHub Actionsと公開サイトを確認する
@@ -98,7 +100,7 @@
 2. 公式情報で終了を確認する
 3. `id`を変更せず、オブジェクトを`official-spots.json`から`official-events-archive.json`へ移す
 4. 「現在の地図では非表示」など移動前の状態に依存した説明を修正する
-5. 共有URL `?spot=<id>` から詳細が開くことを確認する
+5. 共有URL `?spot=<id>` から地図詳細が開き、`/spot/<id>/` 個別ページも生成されていることを確認する
 6. 「行きたい」「行った！」「訪問記録」のID互換性を確認する
 
 `report:status` は候補を表示するだけで、JSONを自動変更しません。終了日当日までは開催中として扱い、終了日より後になった項目だけをアーカイブ移動候補として表示します。
@@ -136,6 +138,7 @@ Actionsの失敗は自動修正の合図ではなく、調査開始の合図と�
 - JSONの既存フィールドを削除・改名していない
 - `chiikawa-map-favorites-v1`、`chiikawa-map-visited-v1`、`chiikawa-map-visit-details-v1`を壊していない
 - `?spot=`と条件共有URLを壊していない
+- `pnpm run build:spot-pages` 後に個別ページとサイトマップの差分を確認した
 - 通常アクセスでは過去イベントが初期非表示
 - 過去イベントを有効にすると検索・地図・一覧へ追加される
 - 開催年を指定すると、その年に開始した過去イベントだけが表示される

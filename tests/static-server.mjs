@@ -32,6 +32,8 @@ const contentTypes = {
     "text/javascript; charset=utf-8",
   ".json":
     "application/json; charset=utf-8",
+  ".webmanifest":
+    "application/manifest+json; charset=utf-8",
   ".mjs":
     "text/javascript; charset=utf-8",
   ".png":
@@ -66,7 +68,7 @@ createServer(
               ""
             );
 
-      const filePath =
+      let filePath =
         resolve(
           rootDirectory,
           relativePath
@@ -84,8 +86,16 @@ createServer(
         return;
       }
 
-      const fileStat =
+      let fileStat =
         await stat(filePath);
+
+      if (fileStat.isDirectory()) {
+        filePath = resolve(
+          filePath,
+          "index.html"
+        );
+        fileStat = await stat(filePath);
+      }
 
       if (
         !fileStat.isFile()

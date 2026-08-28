@@ -68,8 +68,11 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260828-2"
+    href="style.css?v=20260828-3"
   >
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <meta name="theme-color" content="#f477a8">
 </head>
 
 
@@ -117,6 +120,11 @@
         <a class="site-nav-link" href="official.html">
           <span aria-hidden="true">✦</span>
           公式スポット一覧
+        </a>
+
+        <a class="site-nav-link" href="journal.html">
+          <span aria-hidden="true">🌱</span>
+          ちい活手帳
         </a>
       </nav>
 
@@ -293,6 +301,15 @@
           >
             ♡ 行きたい <span id="favorite-count">0</span>
           </button>
+
+
+          <a
+            class="toolbar-button plan-open-button"
+            href="journal.html?view=plan"
+            title="今日回るスポットをまとめる"
+          >
+            👜 プラン <span id="plan-count">0</span>
+          </a>
 
 
           <button
@@ -494,6 +511,64 @@
           条件をすべて解除
         </button>
       </div>
+
+
+      <!-- ==================================================
+           DATE DISCOVERY
+           ================================================== -->
+
+      <section
+        class="date-discovery"
+        aria-labelledby="date-discovery-title"
+      >
+        <div class="date-discovery-copy">
+          <span class="date-discovery-kicker">WHEN TO GO?</span>
+          <strong id="date-discovery-title">いつ行く？</strong>
+          <span>開催日を基準に、今行きやすい候補をすぐ絞れます。</span>
+        </div>
+
+        <div
+          class="date-discovery-actions"
+          role="group"
+          aria-label="行く日からスポットを絞り込む"
+        >
+          <button
+            type="button"
+            class="date-quick-button"
+            data-date-quick="today"
+            aria-pressed="false"
+          >今日の候補</button>
+
+          <button
+            type="button"
+            class="date-quick-button"
+            data-date-quick="weekend"
+            aria-pressed="false"
+          >今週末</button>
+
+          <button
+            type="button"
+            class="date-quick-button"
+            data-date-quick="upcoming"
+            aria-pressed="false"
+          >近日開催</button>
+
+          <button
+            type="button"
+            class="date-quick-button"
+            data-date-quick="ending"
+            aria-pressed="false"
+          >まもなく終了</button>
+
+          <a class="date-calendar-link" href="journal.html?view=calendar">
+            🗓 カレンダーを見る
+          </a>
+        </div>
+
+        <p class="date-discovery-note">
+          営業日・休館日・入店方法は、訪問前に各公式情報をご確認ください。
+        </p>
+      </section>
 
 
       <!-- ==================================================
@@ -1042,12 +1117,13 @@
             <div class="overlay-panel-body saved-data-panel-body">
 
               <p class="saved-data-intro">
-                「行きたい」「行った！」と訪問日・メモは、このブラウザの端末内に保存されています。
+                「行きたい」「今日のプラン」「行った！」と訪問日・メモは、このブラウザの端末内に保存されています。
                 JSONファイルへ書き出して、機種変更やブラウザデータ削除に備えられます。
               </p>
 
               <div class="saved-data-current" role="status" aria-live="polite">
                 <span>♡ 行きたい <strong id="saved-data-favorite-count">0</strong>件</span>
+                <span>👜 今日のプラン <strong id="saved-data-plan-count">0</strong>件</span>
                 <span>✓ 行った！ <strong id="saved-data-visited-count">0</strong>件</span>
               </div>
 
@@ -1576,6 +1652,14 @@
     </section>
 
 
+    <aside class="home-screen-card" data-home-screen-card>
+      <div class="home-screen-card-copy">
+        <strong>スマホから、もっとすぐに。</strong>
+        <span data-home-screen-status>ホーム画面に追加すると、ちい活MAPをアプリのように開けます。</span>
+      </div>
+      <button type="button" class="home-screen-button" data-home-screen>ホーム画面に追加</button>
+    </aside>
+
     <p class="site-note">
       本サイトは公式とは関係のない非公式ファンサイトです。
       掲載内容は予告なく変更・終了している場合があります。
@@ -1601,7 +1685,8 @@
 
 
   <!-- App -->
-  <script src="app.js?v=20260828-2"></script>
+  <script src="app.js?v=20260828-3"></script>
+  <script src="pwa.js?v=20260828-1" defer></script>
 
 </body>
 
