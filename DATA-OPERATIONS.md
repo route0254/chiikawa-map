@@ -117,6 +117,8 @@ IDを維持するため、移動後も既存共有URLとlocalStorageはそのま
 
 `relationType`は重複しない主分類として扱います。現地訪問・飲食・購入・施設利用を確認できる場合は`visited`、紹介は確認できるが訪問までは確認できない場合だけ`introduced`、訪問・紹介とは別の制作・公的関与は`related`とします。ナガノマーケット、ナガノ展、ナガノの水族館などの公式店舗・イベントは公式関連データの対象とし、ナガセンへ二重登録しません。
 
+通常の絞り込みは、`placeType`による目的別と3段階の確度を組み合わせます。`evidenceStatus: confirmed`は「確定」、`evidenceStatus: inferred`かつ`evidenceNote`冒頭が「【推定・高確度】」のものは「推定・高確度」、それ以外の`inferred`は安全側に倒して「要注意候補」と表示します。旧`evidence=inferred`共有URLは後者2つへ展開し、`relationType`は詳細表示と旧URL互換のため削除しません。
+
 ## GitHub Actions失敗時の対応
 
 | 検査 | 主な意味 | 最初に行うこと |

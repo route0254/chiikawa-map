@@ -864,9 +864,14 @@ button {
   background: var(--nagano);
 }
 
-.nagano-inferred-dot {
+.nagano-high-dot {
   background: #d9efdf;
   border: 1.5px dashed #5f9b73;
+}
+
+.nagano-caution-dot {
+  background: #fff0dc;
+  border: 1.5px dashed #b97932;
 }
 
 
@@ -1565,9 +1570,15 @@ button {
 }
 
 
-.evidence-guide-inferred {
+.evidence-guide-high {
   background: #fff9e9;
   border: 1px solid #f0dfad;
+}
+
+
+.evidence-guide-caution {
+  background: #fff2e8;
+  border: 1px solid #efc9a9;
 }
 
 
@@ -1687,7 +1698,7 @@ button {
     );
 }
 
-.spot-pin-nagano-inferred {
+.spot-pin-nagano-high {
   border-style: dashed;
 
   color: #3f7451;
@@ -1703,8 +1714,23 @@ button {
     rgba(75, 126, 91, 0.24);
 }
 
+.spot-pin-nagano-caution {
+  border-style: dashed;
+  color: #86521f;
+  background:
+    linear-gradient(
+      145deg,
+      #fff7ec,
+      #f3c995
+    );
+  box-shadow:
+    0 5px 14px
+    rgba(150, 95, 35, 0.24);
+}
+
 .spot-pin-nagano-confirmed span,
-.spot-pin-nagano-inferred span {
+.spot-pin-nagano-high span,
+.spot-pin-nagano-caution span {
   font-size: 11px;
 }
 
@@ -2165,10 +2191,17 @@ button {
 }
 
 
-.tag-evidence-inferred {
+.tag-evidence-high {
   color: #8a6418;
   background: #fff4d6;
   border: 1px solid #efdca8;
+}
+
+
+.tag-evidence-caution {
+  color: #8b531f;
+  background: #fff0e2;
+  border: 1px solid #efc8a4;
 }
 
 
@@ -2270,9 +2303,15 @@ button {
 }
 
 
-.spot-evidence-card.evidence-inferred {
+.spot-evidence-card.evidence-high {
   background: #fff9e9;
   border: 1px solid #f0dfad;
+}
+
+
+.spot-evidence-card.evidence-caution {
+  background: #fff3e9;
+  border: 1px solid #efcaaa;
 }
 
 
@@ -3207,9 +3246,14 @@ button {
   background: #e9f7ee;
 }
 
-.spot-list-evidence.evidence-inferred {
+.spot-list-evidence.evidence-high {
   color: #8a6418;
   background: #fff4d6;
+}
+
+.spot-list-evidence.evidence-caution {
+  color: #8b531f;
+  background: #fff0e2;
 }
 
 .spot-list-address,

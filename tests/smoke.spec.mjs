@@ -824,6 +824,157 @@ test(
 
 
 test(
+  "目的別と3段階の確度を組み合わせ、旧共有URLも維持する",
+  async ({ page }) => {
+    const naganoSpots =
+      JSON.parse(
+        await readFile(
+          resolve(
+            projectDirectory,
+            "data/nagano-spots.json"
+          ),
+          "utf8"
+        )
+      );
+
+    const getEvidenceLevel =
+      spot =>
+        spot.evidenceStatus ===
+        "confirmed"
+          ? "confirmed"
+          : String(
+              spot.evidenceNote || ""
+            ).startsWith(
+              "【推定・高確度】"
+            )
+            ? "high"
+            : "caution";
+
+    const highFoodCount =
+      naganoSpots.filter(
+        spot =>
+          spot.placeType === "food" &&
+          getEvidenceLevel(spot) ===
+            "high"
+      ).length;
+
+    const inferredFoodCount =
+      naganoSpots.filter(
+        spot =>
+          spot.placeType === "food" &&
+          spot.evidenceStatus ===
+            "inferred"
+      ).length;
+
+    await page.goto("/");
+    await waitForSpots(page);
+
+    await page.locator(
+      "#filter-toggle"
+    ).click();
+
+    await page.locator(
+      'input[name="filter-category"][value="official"] + span'
+    ).click();
+
+    for (const value of [
+      "shop",
+      "spot",
+      "lodging",
+      "other"
+    ]) {
+      await page.locator(
+        'input[name="filter-place"][value="' +
+          value +
+          '"] + span'
+      ).click();
+    }
+
+    await page.locator(
+      'input[name="filter-nagano-evidence"][value="confirmed"] + span'
+    ).click();
+
+    await page.locator(
+      'input[name="filter-nagano-evidence"][value="caution"] + span'
+    ).click();
+
+    await expect(
+      page.locator("#result-count")
+    ).toHaveText(
+      highFoodCount + "件表示"
+    );
+
+    await expect(
+      page.locator(
+        "#active-filter-list"
+      )
+    ).toContainText(
+      "目的: 食べる"
+    );
+
+    await expect(
+      page.locator(
+        "#active-filter-list"
+      )
+    ).toContainText(
+      "確度: △ 推定・高確度"
+    );
+
+    const sharedUrl =
+      await page.evaluate(
+        () =>
+          window.getCurrentFiltersShareUrl()
+      );
+
+    expect(sharedUrl).toContain(
+      "cat=nagano"
+    );
+    expect(sharedUrl).toContain(
+      "type=food"
+    );
+    expect(sharedUrl).toContain(
+      "evidence=high"
+    );
+    expect(sharedUrl).not.toContain(
+      "nagano="
+    );
+
+    await page.goto(
+      "/?cat=nagano&type=food&evidence=inferred"
+    );
+    await waitForSpots(page);
+
+    await expect(
+      page.locator("#result-count")
+    ).toHaveText(
+      inferredFoodCount + "件表示"
+    );
+
+    await expect(
+      page.locator(
+        'input[name="filter-nagano-evidence"][value="high"]'
+      )
+    ).toBeChecked();
+
+    await expect(
+      page.locator(
+        'input[name="filter-nagano-evidence"][value="caution"]'
+      )
+    ).toBeChecked();
+
+    await page.goto(
+      "/?cat=nagano&nagano=introduced"
+    );
+    await waitForSpots(page);
+
+    await expect(
+      page.locator("#result-count")
+    ).toHaveText("1件表示");
+  }
+);
+
+
+test(
   "過去イベントを初期非表示にし、絞り込み時だけ遅延読込する",
   async ({ page }) => {
     let archiveRequestCount = 0;

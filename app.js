@@ -1896,14 +1896,9 @@ function renderSearchSuggestions() {
         getPlaceTypeLabel(
           record.spot.placeType
         ),
-        record.spot.category === "nagano" &&
-          record.spot.evidenceStatus
-          ? (
-              record.spot.evidenceStatus === "confirmed"
-                ? "✓確定"
-                : "△推定"
-            )
-          : null
+        getEvidenceCompactLabel(
+          record.spot
+        )
       ].filter(Boolean);
 
       const meta =
@@ -2035,16 +2030,16 @@ function getPlaceTypeLabel(
   const labels = {
 
     shop:
-      "ショップ",
+      "買う",
 
     food:
-      "グルメ",
+      "食べる",
 
     spot:
-      "おでかけスポット",
+      "観光・体験",
 
     lodging:
-      "宿泊",
+      "泊まる",
 
     other:
       "その他"
@@ -2127,8 +2122,33 @@ function getRelationTypeLabel(
 }
 
 
-function getEvidenceStatusLabel(
-  evidenceStatus
+function getEvidenceLevel(
+  spot
+) {
+
+  if (
+    spot?.category !== "nagano"
+  ) {
+    return "";
+  }
+
+  if (
+    spot.evidenceStatus ===
+    "confirmed"
+  ) {
+    return "confirmed";
+  }
+
+  return String(
+    spot.evidenceNote || ""
+  ).startsWith("【推定・高確度】")
+    ? "high"
+    : "caution";
+}
+
+
+function getEvidenceLevelLabel(
+  evidenceLevel
 ) {
 
   const labels = {
@@ -2136,16 +2156,53 @@ function getEvidenceStatusLabel(
     confirmed:
       "確定",
 
-    inferred:
-      "推定"
+    high:
+      "推定・高確度",
+
+    caution:
+      "要注意候補"
   };
 
 
   return (
     labels[
-      evidenceStatus
+      evidenceLevel
     ] ||
     "未判定"
+  );
+}
+
+
+function getEvidenceLevelIcon(
+  evidenceLevel
+) {
+
+  return {
+    confirmed: "✓",
+    high: "△",
+    caution: "？"
+  }[evidenceLevel] || "";
+}
+
+
+function getEvidenceCompactLabel(
+  spot
+) {
+
+  const evidenceLevel =
+    getEvidenceLevel(spot);
+
+  if (!evidenceLevel) {
+    return null;
+  }
+
+  return (
+    getEvidenceLevelIcon(
+      evidenceLevel
+    ) +
+    getEvidenceLevelLabel(
+      evidenceLevel
+    )
   );
 }
 
@@ -4225,6 +4282,40 @@ function applySharedGroupParam(
 }
 
 
+function applySharedEvidenceParam() {
+
+  if (!params.has("evidence")) {
+    return;
+  }
+
+  const raw =
+    params.get("evidence") || "";
+
+  const wanted =
+    raw === "__none__"
+      ? new Set()
+      : new Set(
+          raw.split(",")
+            .filter(Boolean)
+        );
+
+  if (wanted.has("inferred")) {
+    wanted.delete("inferred");
+    wanted.add("high");
+    wanted.add("caution");
+  }
+
+  document.querySelectorAll(
+    'input[name="filter-nagano-evidence"]'
+  ).forEach(
+    input => {
+      input.checked =
+        wanted.has(input.value);
+    }
+  );
+}
+
+
 function applySharedFilterState() {
 
   if (params.has("q") && spotSearch) {
@@ -4247,7 +4338,7 @@ function applySharedFilterState() {
   applySharedGroupParam("reservation", "filter-reservation");
   applySharedGroupParam("official", "filter-official-relation");
   applySharedGroupParam("nagano", "filter-nagano-relation");
-  applySharedGroupParam("evidence", "filter-nagano-evidence");
+  applySharedEvidenceParam();
   applySharedGroupParam("brand", "filter-brand");
 
   if (soonEndingFilter) {
@@ -4660,20 +4751,22 @@ function createSpotListCard(
     header
   );
 
-  if (
-    spot.category ===
-    "nagano" &&
-    spot.evidenceStatus
-  ) {
+  const evidenceLevel =
+    getEvidenceLevel(spot);
+
+  if (evidenceLevel) {
 
     card.appendChild(
       createDiv(
         "spot-list-evidence evidence-" +
-        spot.evidenceStatus,
-        spot.evidenceStatus ===
-        "confirmed"
-          ? "✓ ナガセン関連：確定"
-          : "△ ナガセン関連：推定"
+        evidenceLevel,
+        getEvidenceLevelIcon(
+          evidenceLevel
+        ) +
+        " ナガセン関連：" +
+        getEvidenceLevelLabel(
+          evidenceLevel
+        )
       )
     );
   }
@@ -5371,16 +5464,30 @@ function createSpotIcon(
     "nagano"
   ) {
 
+    const evidenceLevel =
+      getEvidenceLevel(spot);
+
     if (
-      spot.evidenceStatus ===
-      "inferred"
+      evidenceLevel ===
+      "high"
     ) {
 
       label =
         "ナ△";
 
       className =
-        "spot-pin-nagano-inferred";
+        "spot-pin-nagano-high";
+
+    } else if (
+      evidenceLevel ===
+      "caution"
+    ) {
+
+      label =
+        "ナ?";
+
+      className =
+        "spot-pin-nagano-caution";
 
     } else {
 
@@ -6196,25 +6303,22 @@ function createSpotDetail(
   );
 
 
-  if (
-    spot.category ===
-      "nagano" &&
-    spot.evidenceStatus
-  ) {
+  const evidenceLevel =
+    getEvidenceLevel(spot);
+
+  if (evidenceLevel) {
 
     tags.appendChild(
       createDiv(
         "spot-tag tag-evidence-" +
-        spot.evidenceStatus,
+        evidenceLevel,
 
-        (
-          spot.evidenceStatus ===
-          "confirmed"
-            ? "✓ "
-            : "△ "
+        getEvidenceLevelIcon(
+          evidenceLevel
         ) +
-        getEvidenceStatusLabel(
-          spot.evidenceStatus
+        " " +
+        getEvidenceLevelLabel(
+          evidenceLevel
         )
       )
     );
@@ -6262,16 +6366,12 @@ function createSpotDetail(
 
   // ナガセン関連の確度・根拠
 
-  if (
-    spot.category ===
-      "nagano" &&
-    spot.evidenceStatus
-  ) {
+  if (evidenceLevel) {
 
     const evidence =
       createDiv(
         "spot-info-card spot-evidence-card evidence-" +
-        spot.evidenceStatus
+        evidenceLevel
       );
 
 
@@ -6279,11 +6379,12 @@ function createSpotDetail(
       createDiv(
         "spot-info-title",
 
-        (
-          spot.evidenceStatus ===
-          "confirmed"
-            ? "✓ ナガセン関連：確定"
-            : "△ ナガセン関連：推定"
+        getEvidenceLevelIcon(
+          evidenceLevel
+        ) +
+        " ナガセン関連：" +
+        getEvidenceLevelLabel(
+          evidenceLevel
         )
       )
     );
@@ -7465,7 +7566,7 @@ function getCurrentFilterState() {
       getSelectedValues(
         "filter-reservation"
       ),
-    evidenceStatuses:
+    evidenceLevels:
       getSelectedValues(
         "filter-nagano-evidence"
       ),
@@ -7623,9 +7724,8 @@ function recordMatchesFilters(
       !state.naganoRelations.has(
         spot.relationType
       ) ||
-      !state.evidenceStatuses.has(
-        spot.evidenceStatus ||
-        "confirmed"
+      !state.evidenceLevels.has(
+        getEvidenceLevel(spot)
       )
     ) {
       return false;
@@ -7749,11 +7849,11 @@ function getActiveFilterDescriptions() {
 
   const filterGroups = [
     ["filter-category", "カテゴリ"],
-    ["filter-place", "場所"],
+    ["filter-place", "目的"],
     ["filter-brand", "シリーズ・施設"],
     ["filter-official-relation", "公式関係"],
     ["filter-nagano-relation", "ナガセン関係"],
-    ["filter-nagano-evidence", "根拠"],
+    ["filter-nagano-evidence", "確度"],
     ["filter-period", "期間"],
     ["filter-reservation", "入店"]
   ];

@@ -68,7 +68,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260827-2"
+    href="style.css?v=20260828-2"
   >
 </head>
 
@@ -407,11 +407,22 @@
           <span class="legend-item">
 
             <span
-              class="legend-dot nagano-inferred-dot"
+              class="legend-dot nagano-high-dot"
               aria-hidden="true"
             ></span>
 
-            ナガセン推定
+            ナガセン高確度
+          </span>
+
+
+          <span class="legend-item">
+
+            <span
+              class="legend-dot nagano-caution-dot"
+              aria-hidden="true"
+            ></span>
+
+            ナガセン要注意
           </span>
 
         </div>
@@ -578,13 +589,17 @@
               </fieldset>
 
 
-              <!-- スポット種類 -->
+              <!-- 目的 -->
 
               <fieldset class="filter-group">
 
                 <legend>
-                  スポットの種類
+                  目的から探す
                 </legend>
+
+                <p class="filter-hint">
+                  食べる・観光・買い物・宿泊の目的と、ナガセン関連の確度を組み合わせて探せます。
+                </p>
 
                 <div class="filter-chip-list">
 
@@ -596,7 +611,7 @@
                       value="shop"
                       checked
                     >
-                    <span>ショップ</span>
+                    <span>買う</span>
                   </label>
 
 
@@ -608,7 +623,7 @@
                       value="food"
                       checked
                     >
-                    <span>グルメ</span>
+                    <span>食べる</span>
                   </label>
 
 
@@ -620,7 +635,7 @@
                       value="spot"
                       checked
                     >
-                    <span>おでかけ</span>
+                    <span>観光・体験</span>
                   </label>
 
 
@@ -632,7 +647,7 @@
                       value="lodging"
                       checked
                     >
-                    <span>宿泊</span>
+                    <span>泊まる</span>
                   </label>
 
 
@@ -749,54 +764,22 @@
               </details>
 
 
-              <!-- ナガノ先生関連 -->
+              <!-- 旧共有URLのナガセン関係条件を維持する互換入力 -->
 
-              <details class="filter-details">
-
-                <summary>
-                  ナガノ先生関連の種類
-                </summary>
-
-                <div class="filter-chip-list filter-chip-list-inner">
-
-                  <label class="filter-chip">
-                    <input
-                      class="spot-filter"
-                      type="checkbox"
-                      name="filter-nagano-relation"
-                      value="introduced"
-                      checked
-                    >
-                    <span>紹介のみ</span>
-                  </label>
-
-
-                  <label class="filter-chip">
-                    <input
-                      class="spot-filter"
-                      type="checkbox"
-                      name="filter-nagano-relation"
-                      value="visited"
-                      checked
-                    >
-                    <span>訪問・利用</span>
-                  </label>
-
-
-                  <label class="filter-chip">
-                    <input
-                      class="spot-filter"
-                      type="checkbox"
-                      name="filter-nagano-relation"
-                      value="related"
-                      checked
-                    >
-                    <span>制作・公式ゆかり</span>
-                  </label>
-
-                </div>
-
-              </details>
+              <div hidden aria-hidden="true">
+                <label>
+                  <input class="spot-filter" type="checkbox" name="filter-nagano-relation" value="introduced" checked>
+                  <span>紹介のみ</span>
+                </label>
+                <label>
+                  <input class="spot-filter" type="checkbox" name="filter-nagano-relation" value="visited" checked>
+                  <span>訪問・利用</span>
+                </label>
+                <label>
+                  <input class="spot-filter" type="checkbox" name="filter-nagano-relation" value="related" checked>
+                  <span>制作・公式ゆかり</span>
+                </label>
+              </div>
 
 
               <!-- ナガセン関連の確度 -->
@@ -808,7 +791,7 @@
                 </legend>
 
                 <p class="filter-hint">
-                  「推定」は作品描写や旅程などから特定度が高い候補です。詳細画面で根拠を確認できます。
+                  目的と確度は同時に選べます。「要注意候補」は場所や支店を一意に断定できないものです。
                 </p>
 
                 <div class="filter-chip-list">
@@ -829,10 +812,21 @@
                       class="spot-filter"
                       type="checkbox"
                       name="filter-nagano-evidence"
-                      value="inferred"
+                      value="high"
                       checked
                     >
-                    <span>△ 推定</span>
+                    <span>△ 推定・高確度</span>
+                  </label>
+
+                  <label class="filter-chip">
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-nagano-evidence"
+                      value="caution"
+                      checked
+                    >
+                    <span>？ 要注意候補</span>
                   </label>
 
                 </div>
@@ -1230,7 +1224,7 @@
 
                 <div class="example-card">
                   <strong>公式の飲食スポットだけ探したい</strong>
-                  <span>「関連」→「ちいかわ公式」＋「スポットの種類」→「グルメ」</span>
+                  <span>「関連」→「ちいかわ公式」＋「目的から探す」→「食べる」</span>
                 </div>
 
               </section>
@@ -1345,7 +1339,7 @@
                 <h3>検索・都道府県から探す</h3>
                 <p>
                   MAP上部の検索欄から店名・地名を検索できます。
-                  都道府県や「紹介 / 訪問 / ゆかり・関連」「確定 / 推定」の絞り込みと併用できます。
+                  都道府県や「食べる / 観光・体験 / 買う / 泊まる」「確定 / 推定・高確度 / 要注意候補」の絞り込みと併用できます。
                 </p>
                 <p>
                   「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で巡礼候補を見比べられます。
@@ -1358,48 +1352,52 @@
 
 
               <section class="help-section">
-                <h3>3つの分類</h3>
+                <h3>目的と確度を組み合わせる</h3>
 
                 <div class="nagano-relation-guide">
                   <div>
-                    <strong>紹介のみ</strong>
-                    <span>本人のX・Instagram・作品などで店や場所を紹介しているものの、現地訪問までは確認できないもの。</span>
+                    <strong>目的別</strong>
+                    <span>「食べる」「観光・体験」「買う」「泊まる」から、行きたい過ごし方を選びます。</span>
                   </div>
                   <div>
-                    <strong>訪問・利用</strong>
-                    <span>本人が実際に訪れた、食べた、利用したことを、本人投稿・作品・公式媒体などから確認できるもの。紹介と訪問の両方に当てはまる場合はこちらを優先します。</span>
+                    <strong>確度別</strong>
+                    <span>「確定」「推定・高確度」「要注意候補」から、場所特定の確からしさを選びます。</span>
                   </div>
                   <div>
-                    <strong>制作・公式ゆかり</strong>
-                    <span>キャラクターデザインなど、訪問や紹介とは別の明確な関係が確認できる場所。ナガノマーケットやナガノ展などの公式店舗・イベントは「公式関連」で扱い、重複登録しません。</span>
+                    <strong>組み合わせ</strong>
+                    <span>たとえば「食べる」＋「確定」で、店名まで直接確認できる飲食スポットだけを表示できます。</span>
                   </div>
                 </div>
               </section>
 
 
               <section class="help-section">
-                <h3>「確定」と「推定」について</h3>
+                <h3>3段階の確度について</h3>
 
                 <div class="evidence-guide">
                   <div class="evidence-guide-confirmed">
                     <strong>✓ 確定</strong>
                     <span>本人のX・Instagram、作品内の明示、出版社・店舗・自治体などの公式情報から、その店・場所との関係を直接確認できたもの。</span>
                   </div>
-                  <div class="evidence-guide-inferred">
-                    <strong>△ 推定</strong>
-                    <span>作品の描写、食べた商品、外観、旅程、周辺スポットなどを照合すると特定度が高いものの、一次情報だけでは店名・地点まで完全には断定できないもの。</span>
+                  <div class="evidence-guide-high">
+                    <strong>△ 高確度</strong>
+                    <span>商品、外観、店内、旅程など複数の固有要素が一致し、有力な別候補が見つからないもの。</span>
+                  </div>
+                  <div class="evidence-guide-caution">
+                    <strong>？ 要注意</strong>
+                    <span>作品との関係は追跡できるものの、店舗・支店を一つに絞れない、または一部に相違が残る候補。</span>
                   </div>
                 </div>
 
                 <p>
-                  「推定」は事実として断定する表示ではなく、ナガセン巡礼の有力候補です。
-                  本人発信で店名の一部を確認でき、商品・外観・店内・旅程など複数の固有要素が一致するものは、
-                  詳細の根拠説明に「推定・高確度」と明記します。
+                  「推定・高確度」と「要注意候補」は、どちらも事実として断定する表示ではありません。
+                  本人発信、商品、外観、店内、旅程などの一致度によって分け、
+                  詳細画面では個別の根拠と断定できない点を確認できます。
                   特定度が非常に高くても、支店や階まで直接確認できなければ「推定」を維持します。
                   新しい一次情報が見つかった場合は「確定」へ変更し、誤りが判明した場合は修正・削除します。
                 </p>
                 <p>
-                  なお、この「確定 / 推定」は <strong>ナガノ先生との関係性や場所特定の確度</strong> を示すものです。
+                  なお、この3段階は <strong>ナガノ先生との関係性や場所特定の確度</strong> を示すものです。
                   現在の営業状況・営業時間・商品提供状況まで保証する表示ではありません。
                 </p>
               </section>
@@ -1436,20 +1434,20 @@
                 <h3>絞り込みの例</h3>
 
                 <div class="example-card nagano-example-card">
-                  <strong>ナガノ先生が訪れた飲食店を探したい</strong>
-                  <span>「関連」→「ナガノ先生」＋「スポットの種類」→「グルメ」＋「ナガノ先生関連の種類」→「訪問」</span>
+                  <strong>確度の高い飲食店を探したい</strong>
+                  <span>「関連」→「ナガノ先生」＋「目的から探す」→「食べる」＋「ナガセン関連の確度」→「確定」「推定・高確度」</span>
                 </div>
 
                 <div class="example-card nagano-example-card">
-                  <strong>紹介された場所をまとめて見たい</strong>
-                  <span>「関連」→「ナガノ先生」＋「ナガノ先生関連の種類」→「紹介」</span>
+                  <strong>場所特定に注意が必要な候補を確認したい</strong>
+                  <span>「関連」→「ナガノ先生」＋「ナガセン関連の確度」→「要注意候補」</span>
                 </div>
 
               </section>
 
               <p class="help-important nagano-help-note">
-                ナガセン関連には「確定」と「推定」の両方を掲載しています。
-                ピンを選ぶと詳細上部に ✓確定 / △推定 が表示され、根拠リンクも確認できます。
+                ナガセン関連には「確定」「推定・高確度」「要注意候補」を掲載しています。
+                ピンを選ぶと詳細上部に ✓確定 / △推定・高確度 / ？要注意候補が表示され、根拠リンクも確認できます。
                 推定スポットは断定情報ではない点をご理解のうえ、巡礼候補としてお楽しみください。
               </p>
 
@@ -1603,7 +1601,7 @@
 
 
   <!-- App -->
-  <script src="app.js?v=20260828-1"></script>
+  <script src="app.js?v=20260828-2"></script>
 
 </body>
 
