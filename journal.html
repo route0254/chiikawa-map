@@ -32,7 +32,7 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="style.css?v=20260828-3">
-  <link rel="stylesheet" href="journal.css?v=20260828-1">
+  <link rel="stylesheet" href="journal.css?v=20260829-1">
 </head>
 
 <body class="journal-page">
@@ -72,7 +72,7 @@
       <span class="notice-icon" aria-hidden="true">⚠</span>
       <p>
         開催状況・営業時間・入場方法は変更される場合があります。
-        訪問前に各スポットの公式情報をご確認ください。保存内容はこの端末内だけに保持されます。
+        訪問前に各スポットの公式情報をご確認ください。ログインしない場合、保存内容はこの端末内だけに保持されます。
       </p>
     </div>
   </div>
@@ -84,7 +84,7 @@
         <h2 id="journal-hero-title">次の楽しみも、これまでの思い出も。</h2>
         <p>
           地図で見つけたスポットを、予定と記録につなげるページです。
-          ログインやサーバー送信はありません。
+          ログインなしですぐ使え、クラウド保存は任意です。
         </p>
       </div>
 
@@ -316,12 +316,17 @@
         <div>
           <span class="journal-eyebrow">MY CHIIKATSU</span>
           <h2>わたしのちい活の足あと</h2>
-          <p>スポットで「行った！」を押すだけで、ここが少しずつ育っていきます。</p>
+          <p>行った場所を記録して、自分だけのちい活記録をつくろう。</p>
         </div>
 
-        <button type="button" class="activity-share-button" id="activity-share-image">
-          画像にして共有
-        </button>
+        <div class="activity-share-actions">
+          <button type="button" class="activity-share-button is-x" id="activity-share-x">
+            Xに投稿
+          </button>
+          <button type="button" class="activity-share-button" id="activity-share-image">
+            画像を作る・共有
+          </button>
+        </div>
       </div>
 
       <section class="activity-summary-card" aria-labelledby="activity-message">
@@ -354,7 +359,7 @@
               <span class="journal-eyebrow">PREFECTURES</span>
               <h3 id="footprint-map-title">訪れた都道府県</h3>
             </div>
-            <span>色がついた場所が、これまでの足あとです。</span>
+            <span>訪問した地域と件数を確認できます。</span>
           </div>
           <div id="activity-prefecture-map" class="activity-prefecture-map"></div>
         </section>
@@ -363,11 +368,54 @@
           <div class="activity-panel-heading">
             <div>
               <span class="journal-eyebrow">COLLECTIONS</span>
-              <h3 id="activity-progress-title">ちい活の広がり</h3>
+              <h3 id="activity-progress-title">ちい活の集計</h3>
             </div>
-            <span>競争ではなく、自分の積み重ねを楽しむ目安です。</span>
+            <span>訪問記録から、あなたのちい活を自動で集計します。</span>
           </div>
           <div id="activity-progress" class="activity-progress"></div>
+        </section>
+      </div>
+
+      <section
+        class="activity-panel activity-next-panel"
+        id="activity-next-events"
+        aria-labelledby="activity-next-title"
+        tabindex="-1"
+      >
+        <div class="activity-panel-heading">
+          <div>
+            <span class="journal-eyebrow">WHAT'S NEXT?</span>
+            <h3 id="activity-next-title">まだ行っていない開催中イベント</h3>
+          </div>
+          <span id="activity-next-summary">開催情報を確認しています…</span>
+        </div>
+        <div id="activity-next-list" class="activity-next-list"></div>
+        <button type="button" class="activity-more-button" id="activity-next-more" hidden>
+          すべて表示
+        </button>
+      </section>
+
+      <div class="activity-collection-layout">
+        <section class="activity-panel" aria-labelledby="activity-brand-title">
+          <div class="activity-panel-heading">
+            <div>
+              <span class="journal-eyebrow">BRAND COLLECTION</span>
+              <h3 id="activity-brand-title">ブランド別コレクション</h3>
+            </div>
+            <span>訪問した店舗が少しずつ埋まります。</span>
+          </div>
+          <div id="activity-brand-collections" class="activity-brand-collections"></div>
+        </section>
+
+        <section class="activity-panel" aria-labelledby="activity-history-title">
+          <div class="activity-panel-heading">
+            <div>
+              <span class="journal-eyebrow">EVENT HISTORY</span>
+              <h3 id="activity-history-title">過去イベントの参加記録</h3>
+            </div>
+            <span>全イベントとの比較ではなく、参加した数を年別に表示します。</span>
+          </div>
+          <div id="activity-event-history" class="activity-event-history"></div>
         </section>
       </div>
 
@@ -381,6 +429,35 @@
         </div>
         <div id="recent-activity-list" class="recent-activity-list"></div>
       </section>
+
+      <section
+        class="activity-panel cloud-sync-card"
+        id="cloud-sync-card"
+        aria-labelledby="cloud-sync-title"
+        hidden
+      >
+        <div class="cloud-sync-copy">
+          <span class="journal-eyebrow">OPTIONAL CLOUD BACKUP</span>
+          <h3 id="cloud-sync-title">Googleで記録を守る</h3>
+          <p id="cloud-sync-description">
+            ログインすると、この端末の記録をクラウドにも保存できます。ログインしなくても今までどおり使えます。
+          </p>
+          <a class="cloud-sync-privacy" href="privacy.html">保存内容とプライバシーを確認</a>
+          <span id="cloud-sync-status" class="cloud-sync-status" role="status" aria-live="polite">
+            同期状態を確認しています…
+          </span>
+        </div>
+        <div class="cloud-sync-actions">
+          <button type="button" class="cloud-sync-primary" id="cloud-sync-sign-in">
+            Googleで保存する
+          </button>
+          <button type="button" id="cloud-sync-now" hidden>今すぐ同期</button>
+          <button type="button" id="cloud-sync-sign-out" hidden>ログアウト</button>
+          <button type="button" class="cloud-sync-delete" id="cloud-sync-delete" hidden>
+            クラウド記録を削除
+          </button>
+        </div>
+      </section>
     </section>
 
     <aside class="home-screen-card" data-home-screen-card>
@@ -392,11 +469,12 @@
     </aside>
 
     <p class="site-note">
-      本サイトは公式とは関係のない非公式ファンサイトです。保存情報や位置情報をサーバーへ送信する機能はありません。
+      本サイトは公式とは関係のない非公式ファンサイトです。位置情報は保存・送信しません。任意のクラウド保存を利用した場合だけ、ちい活記録を同期します。
+      <a href="privacy.html">プライバシーと記録の保存</a>
     </p>
   </main>
 
-  <script src="journal.js?v=20260828-1" defer></script>
+  <script src="journal.js?v=20260829-1" defer></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 </body>
 

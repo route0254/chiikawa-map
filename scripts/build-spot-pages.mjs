@@ -7,7 +7,7 @@ const manifestPath = resolve(root, ".spot-pages-manifest.json");
 const writeMode = process.argv.includes("--write");
 const checkMode = process.argv.includes("--check");
 const siteOrigin = "https://chiikatsu-map.com";
-const pageLastModified = "2026-08-28";
+const pageLastModified = "2026-08-29";
 
 if (!writeMode && !checkMode) {
   console.log("Use --write to generate pages or --check to verify them.");
@@ -266,7 +266,7 @@ function createPage(spot) {
     </article>
     <p class="site-note">本サイトは公式とは関係のない非公式ファンサイトです。</p>
   </main>
-  <script src="../../spot-page.js?v=20260828-1" defer></script>
+  <script src="../../spot-page.js?v=20260829-1" defer></script>
   <script src="../../pwa.js?v=20260828-1" defer></script>
 </body>
 </html>
@@ -278,6 +278,7 @@ function createSitemap() {
     { loc: `${siteOrigin}/`, priority: "1.0" },
     { loc: `${siteOrigin}/official.html`, priority: "0.9" },
     { loc: `${siteOrigin}/journal.html`, priority: "0.9" },
+    { loc: `${siteOrigin}/privacy.html`, priority: "0.4" },
     ...spots
       .filter(spot => !spot.isArchive)
       .map(spot => ({ loc: `${siteOrigin}/spot/${encodeURIComponent(spot.id)}/`, priority: "0.7" }))

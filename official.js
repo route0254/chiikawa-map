@@ -3893,3 +3893,28 @@ syncMobileFilterPanel(
 
 
 loadCurrentSpots();
+
+const officialScriptUrl =
+  Array.from(document.scripts)
+    .find(
+      script =>
+        /\/official\.js(?:\?|$)/.test(
+          script.src
+        )
+    )?.src;
+
+if (officialScriptUrl) {
+  import(
+    new URL(
+      "./cloud-sync-loader.js",
+      officialScriptUrl
+    ).href
+  ).catch(
+    error => {
+      console.warn(
+        "クラウド保存機能を読み込めませんでした。",
+        error
+      );
+    }
+  );
+}

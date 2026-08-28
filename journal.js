@@ -54,6 +54,17 @@ const PREFECTURE_REGIONS = [
   ["九州・沖縄", ["福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"]]
 ];
 
+const BRAND_COLLECTIONS = [
+  ["chiikawaland", "ちいかわらんど"],
+  ["ramen_buta", "ちいかわラーメン 豚"],
+  ["mogumogu", "ちいかわもぐもぐ本舗"],
+  ["magical_chiikawa", "まじかるちいかわ"],
+  ["chiikawa_yaki", "ちいかわ焼き"],
+  ["nagano_market", "ナガノマーケット"],
+  ["chiikawa_restaurant", "ちいかわレストラン"],
+  ["shisa_store", "シーサーのおみやげやさん"]
+];
+
 const params =
   new URLSearchParams(
     window.location.search
@@ -95,6 +106,7 @@ let workingPlanIds =
 let viewingSharedPlan = false;
 let currentView = "calendar";
 let statusTimer = null;
+let showAllActivityNextEvents = false;
 
 
 function createElement(
@@ -1925,7 +1937,58 @@ function renderPlan() {
 // わたしの足あと
 // ============================================================
 
+function isActivityEvent(
+  spot
+) {
+  return (
+    spot.category === "official" &&
+    spot.periodType === "limited" &&
+    spot.relationType !== "official_facility" &&
+    spot.eventStatus !== "cancelled"
+  );
+}
+
+
+function isActiveActivityEvent(
+  spot,
+  today
+) {
+  return (
+    !spot._archive &&
+    isActivityEvent(spot) &&
+    (!spot.startDate || spot.startDate <= today) &&
+    (!spot.endDate || spot.endDate >= today)
+  );
+}
+
+
+function overlapsYear(
+  spot,
+  year
+) {
+  const firstDay =
+    year + "-01-01";
+  const lastDay =
+    year + "-12-31";
+  const startDate =
+    spot.startDate ||
+    "0000-01-01";
+  const endDate =
+    spot.endDate ||
+    "9999-12-31";
+
+  return (
+    startDate <= lastDay &&
+    endDate >= firstDay
+  );
+}
+
+
 function getActivityData() {
+  const today =
+    getTodayInJapan();
+  const currentYear =
+    today.slice(0, 4);
   const visitedSpots =
     spots.filter(
       spot =>
@@ -1972,13 +2035,89 @@ function getActivityData() {
       spot =>
         spot.category === "nagano"
     );
-  const limitedVisited =
+  const activeEvents =
+    spots.filter(
+      spot =>
+        isActiveActivityEvent(
+          spot,
+          today
+        )
+    );
+  const yearEvents =
+    spots.filter(
+      spot =>
+        isActivityEvent(spot) &&
+        overlapsYear(
+          spot,
+          currentYear
+        )
+    );
+  const pastVisitedEvents =
     visitedSpots.filter(
       spot =>
-        spot.periodType === "limited"
+        spot._archive &&
+        isActivityEvent(spot)
+    );
+  const pastParticipationByYear =
+    new Map();
+
+  pastVisitedEvents.forEach(
+    spot => {
+      const year =
+        String(
+          spot.startDate ||
+          spot.endDate ||
+          ""
+        ).slice(0, 4);
+
+      if (!/^\d{4}$/.test(year)) {
+        return;
+      }
+
+      pastParticipationByYear.set(
+        year,
+        (
+          pastParticipationByYear.get(
+            year
+          ) || 0
+        ) + 1
+      );
+    }
+  );
+
+  const brandCollections =
+    BRAND_COLLECTIONS.map(
+      ([brand, label]) => {
+        const brandSpots =
+          spots.filter(
+            spot =>
+              !spot._archive &&
+              spot.category === "official" &&
+              spot.brand === brand
+          );
+
+        return {
+          brand,
+          label,
+          total:
+            brandSpots.length,
+          visited:
+            brandSpots.filter(
+              spot =>
+                visitedSpotIds.has(
+                  spot.id
+                )
+            ).length
+        };
+      }
+    ).filter(
+      collection =>
+        collection.total > 0
     );
 
   return {
+    today,
+    currentYear,
     visitedSpots,
     favoriteSpots,
     prefectureCounts,
@@ -1998,7 +2137,42 @@ function getActivityData() {
             spot.id
           )
       ).length,
-    limitedVisited
+    activeEvents,
+    activeEventsVisited:
+      activeEvents.filter(
+        spot =>
+          visitedSpotIds.has(
+            spot.id
+          )
+      ).length,
+    unvisitedActiveEvents:
+      activeEvents.filter(
+        spot =>
+          !visitedSpotIds.has(
+            spot.id
+          )
+      ).sort(
+        (first, second) =>
+          (first.endDate || "9999-12-31")
+            .localeCompare(
+              second.endDate || "9999-12-31"
+            ) ||
+          first.name.localeCompare(
+            second.name,
+            "ja"
+          )
+      ),
+    yearEvents,
+    yearEventsVisited:
+      yearEvents.filter(
+        spot =>
+          visitedSpotIds.has(
+            spot.id
+          )
+      ).length,
+    pastVisitedEvents,
+    pastParticipationByYear,
+    brandCollections
   };
 }
 
@@ -2013,35 +2187,14 @@ function getActivityMessage(
 
   if (!visitedCount) {
     return {
-      title: "ここから、あなたのちい活が育っていきます。",
-      text: "訪れたスポットで「行った！」を押すと、都道府県や思い出がここに色づきます。"
-    };
-  }
-
-  if (prefectureCount >= 20) {
-    return {
-      title: "日本のいろいろな場所に、ちい活の足あとができました。",
-      text: `${visitedCount}スポット・${prefectureCount}都道府県。ひとつひとつが、あなた自身のちい活の思い出です。`
-    };
-  }
-
-  if (visitedCount >= 30) {
-    return {
-      title: "気づけば、ちい活の景色がこんなに広がっています。",
-      text: `${visitedCount}スポットを訪問しました。次はまだ色のない地域へ足を延ばすのも楽しそうです。`
-    };
-  }
-
-  if (visitedCount >= 10) {
-    return {
-      title: "ちい活の足あとが、少しずつ地図を彩っています。",
-      text: `${prefectureCount}都道府県に思い出ができました。これから増える足あとも楽しみです。`
+      title: "まだ訪問記録はありません。",
+      text: "訪問記録から、あなたのちい活を自動で集計します。訪れたスポットで「行った！」を登録してみましょう。"
     };
   }
 
   return {
-    title: "最初の足あとがつきました。ここからが楽しみです。",
-    text: `${visitedCount}スポット・${prefectureCount}都道府県。自分のペースで、好きな思い出を重ねていきましょう。`
+    title: `${visitedCount}スポットのちい活記録`,
+    text: `訪問記録から、あなたのちい活を自動で集計します。現在は${prefectureCount}都道府県に記録があります。`
   };
 }
 
@@ -2121,13 +2274,36 @@ function appendProgressItem(
   label,
   current,
   total,
-  suffix = ""
+  suffix = "",
+  options = {}
 ) {
   const item =
     createElement(
-      "div",
+      options.targetId
+        ? "button"
+        : "div",
       "activity-progress-item"
     );
+
+  if (options.targetId) {
+    item.type = "button";
+    item.addEventListener(
+      "click",
+      () => {
+        const target =
+          document.getElementById(
+            options.targetId
+          );
+        target?.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+        target?.focus({
+          preventScroll: true
+        });
+      }
+    );
+  }
   const copy =
     createElement(
       "div",
@@ -2172,6 +2348,17 @@ function appendProgressItem(
     ) + "%";
   track.appendChild(bar);
   item.appendChild(track);
+
+  if (options.actionLabel) {
+    item.appendChild(
+      createElement(
+        "span",
+        "activity-progress-action",
+        options.actionLabel
+      )
+    );
+  }
+
   container.appendChild(item);
 }
 
@@ -2185,16 +2372,31 @@ function renderActivityProgress(
 
   appendProgressItem(
     container,
-    "訪問した都道府県",
-    data.prefectureCounts.size,
-    47,
-    "県"
+    "常設の公式スポット",
+    data.permanentOfficialVisited,
+    data.permanentOfficial.length,
+    "件"
   );
   appendProgressItem(
     container,
-    "現在掲載中の常設公式スポット",
-    data.permanentOfficialVisited,
-    data.permanentOfficial.length,
+    "現在開催中の期間限定イベント",
+    data.activeEventsVisited,
+    data.activeEvents.length,
+    "件",
+    {
+      targetId:
+        "activity-next-events",
+      actionLabel:
+        data.unvisitedActiveEvents.length
+          ? `未訪問の${data.unvisitedActiveEvents.length}件を見る ↓`
+          : "開催中イベントをすべて訪問済みです"
+    }
+  );
+  appendProgressItem(
+    container,
+    `${data.currentYear}年開催イベント`,
+    data.yearEventsVisited,
+    data.yearEvents.length,
     "件"
   );
   appendProgressItem(
@@ -2204,16 +2406,286 @@ function renderActivityProgress(
     data.naganoSpots.length,
     "件"
   );
-  appendProgressItem(
-    container,
-    "期間限定イベントの思い出",
-    data.limitedVisited.length,
-    Math.max(
-      data.visitedSpots.length,
-      1
-    ),
-    "件"
+}
+
+
+function getActivityEventTimingLabel(
+  spot,
+  today
+) {
+  if (!spot.endDate) {
+    return "終了日未定";
+  }
+
+  const endDate =
+    parseDateString(
+      spot.endDate
+    );
+  const currentDate =
+    parseDateString(today);
+
+  if (!endDate || !currentDate) {
+    return spot.endDate;
+  }
+
+  const days =
+    Math.round(
+      (endDate - currentDate) /
+      86400000
+    );
+
+  if (days === 0) {
+    return "本日まで";
+  }
+
+  if (days > 0 && days <= 14) {
+    return `あと${days}日`;
+  }
+
+  return `${spot.endDate.replaceAll("-", "/")}まで`;
+}
+
+
+function renderActivityNextEvents(
+  data
+) {
+  const container =
+    $("#activity-next-list");
+  const summary =
+    $("#activity-next-summary");
+  const moreButton =
+    $("#activity-next-more");
+  const events =
+    data.unvisitedActiveEvents;
+  const visibleEvents =
+    showAllActivityNextEvents
+      ? events
+      : events.slice(0, 6);
+
+  container.replaceChildren();
+  summary.textContent =
+    events.length
+      ? `${events.length}件の候補があります`
+      : "開催中イベントはすべて訪問済みです";
+
+  if (!events.length) {
+    container.appendChild(
+      createElement(
+        "p",
+        "activity-empty",
+        data.activeEvents.length
+          ? "現在開催中の期間限定イベントはすべて「行った！」に登録されています。"
+          : "現在開催中として登録されている期間限定イベントはありません。"
+      )
+    );
+    moreButton.hidden = true;
+    return;
+  }
+
+  visibleEvents.forEach(
+    spot => {
+      const card =
+        createElement(
+          "article",
+          "activity-next-card"
+        );
+      const meta =
+        createElement(
+          "div",
+          "activity-next-card-meta"
+        );
+
+      if (spot._prefecture) {
+        meta.appendChild(
+          createElement(
+            "span",
+            "",
+            spot._prefecture
+          )
+        );
+      }
+
+      meta.appendChild(
+        createElement(
+          "span",
+          "",
+          getActivityEventTimingLabel(
+            spot,
+            data.today
+          )
+        )
+      );
+      card.appendChild(meta);
+      card.appendChild(
+        createElement(
+          "strong",
+          "",
+          spot.name
+        )
+      );
+
+      const link =
+        createElement(
+          "a",
+          "",
+          "地図で確認する →"
+        );
+      link.href =
+        getSpotMapUrl(spot);
+      card.appendChild(link);
+      container.appendChild(card);
+    }
   );
+
+  moreButton.hidden =
+    events.length <= 6;
+  moreButton.textContent =
+    showAllActivityNextEvents
+      ? "表示を少なくする"
+      : `残り${events.length - 6}件も表示`;
+}
+
+
+function renderBrandCollections(
+  data
+) {
+  const container =
+    $("#activity-brand-collections");
+  container.replaceChildren();
+
+  data.brandCollections.forEach(
+    collection => {
+      const card =
+        createElement(
+          "div",
+          "activity-brand-card"
+        );
+      const copy =
+        createElement(
+          "div",
+          "activity-brand-copy"
+        );
+      copy.appendChild(
+        createElement(
+          "span",
+          "",
+          collection.label
+        )
+      );
+      copy.appendChild(
+        createElement(
+          "strong",
+          "",
+          `${collection.visited} / ${collection.total}`
+        )
+      );
+      card.appendChild(copy);
+
+      const track =
+        createElement(
+          "div",
+          "activity-progress-track"
+        );
+      const bar =
+        createElement(
+          "div",
+          "activity-progress-bar"
+        );
+      bar.style.width =
+        Math.min(
+          100,
+          collection.visited /
+            collection.total *
+            100
+        ) + "%";
+      track.appendChild(bar);
+      card.appendChild(track);
+      container.appendChild(card);
+    }
+  );
+}
+
+
+function renderPastParticipation(
+  data
+) {
+  const container =
+    $("#activity-event-history");
+  container.replaceChildren();
+
+  const total =
+    createElement(
+      "div",
+      "activity-history-total"
+    );
+  total.appendChild(
+    createElement(
+      "span",
+      "",
+      "過去イベント累計参加数"
+    )
+  );
+  total.appendChild(
+    createElement(
+      "strong",
+      "",
+      data.pastVisitedEvents.length +
+        "件"
+    )
+  );
+  container.appendChild(total);
+
+  const years =
+    Array.from(
+      data.pastParticipationByYear.entries()
+    ).sort(
+      ([firstYear], [secondYear]) =>
+        secondYear.localeCompare(
+          firstYear
+        )
+    );
+
+  if (!years.length) {
+    container.appendChild(
+      createElement(
+        "p",
+        "activity-empty",
+        "過去の店舗・イベントで「行った！」を登録すると、年ごとの参加数を確認できます。"
+      )
+    );
+    return;
+  }
+
+  const list =
+    createElement(
+      "div",
+      "activity-history-years"
+    );
+  years.forEach(
+    ([year, count]) => {
+      const row =
+        createElement(
+          "div",
+          "activity-history-year"
+        );
+      row.appendChild(
+        createElement(
+          "span",
+          "",
+          year + "年"
+        )
+      );
+      row.appendChild(
+        createElement(
+          "strong",
+          "",
+          count + "件"
+        )
+      );
+      list.appendChild(row);
+    }
+  );
+  container.appendChild(list);
 }
 
 
@@ -2340,6 +2812,9 @@ function renderActivity() {
 
   renderPrefectureFootprints(data);
   renderActivityProgress(data);
+  renderActivityNextEvents(data);
+  renderBrandCollections(data);
+  renderPastParticipation(data);
   renderRecentActivity(data);
 }
 
@@ -2508,7 +2983,7 @@ async function createActivityImage() {
   context.font =
     '900 43px "Zen Maru Gothic", sans-serif';
   context.fillText(
-    "わたしのちい活の足あと",
+    "わたしのちい活記録",
     96,
     162
   );
@@ -2522,13 +2997,13 @@ async function createActivityImage() {
   stats.forEach(
     ([number, label, color], index) => {
       const x =
-        96 + index * 225;
+        96 + index * 320;
       drawRoundRect(
         context,
         x,
-        205,
-        202,
-        145,
+        192,
+        292,
+        126,
         24,
         index === 0
           ? "#fff0f6"
@@ -2542,7 +3017,7 @@ async function createActivityImage() {
       context.fillText(
         String(number),
         x + 24,
-        273
+        253
       );
       context.fillStyle = "#766a78";
       context.font =
@@ -2550,81 +3025,137 @@ async function createActivityImage() {
       context.fillText(
         label,
         x + 24,
-        318
+        292
       );
     }
   );
 
-  const visitedPrefectures =
-    PREFECTURE_ORDER.filter(
-      prefecture =>
-        data.prefectureCounts.has(
-          prefecture
-        )
-    );
-  drawRoundRect(
-    context,
-    800,
-    205,
-    298,
-    325,
-    26,
-    "#fffafd"
-  );
-  context.fillStyle = "#8a72dc";
-  context.font =
-    '900 16px "Zen Maru Gothic", sans-serif';
-  context.fillText(
-    "VISITED PREFECTURES",
-    830,
-    247
-  );
-  context.fillStyle = "#514653";
-  context.font =
-    '700 20px "Zen Maru Gothic", sans-serif';
-  drawWrappedText(
-    context,
-    visitedPrefectures.length
-      ? visitedPrefectures.join("・")
-      : "まだ足あとはありません。最初のちい活から始めよう。",
-    830,
-    290,
-    238,
-    34,
-    7
+  const progress = [
+    ["常設スポット", data.permanentOfficialVisited, data.permanentOfficial.length, "#c95f8c"],
+    ["開催中イベント", data.activeEventsVisited, data.activeEvents.length, "#6a59c8"],
+    [`${data.currentYear}年イベント`, data.yearEventsVisited, data.yearEvents.length, "#d08448"],
+    ["ナガセン", data.naganoVisited, data.naganoSpots.length, "#3f8965"]
+  ];
+
+  progress.forEach(
+    ([label, current, total, color], index) => {
+      const x =
+        96 + index * 250;
+      drawRoundRect(
+        context,
+        x,
+        350,
+        230,
+        134,
+        20,
+        "#fffafd"
+      );
+      context.fillStyle = "#6f6272";
+      context.font =
+        '800 15px "Zen Maru Gothic", sans-serif';
+      context.fillText(
+        label,
+        x + 18,
+        382
+      );
+      context.fillStyle = color;
+      context.font =
+        '900 31px "Zen Maru Gothic", sans-serif';
+      context.fillText(
+        `${current} / ${total}`,
+        x + 18,
+        428
+      );
+
+      drawRoundRect(
+        context,
+        x + 18,
+        450,
+        194,
+        10,
+        5,
+        "#eee8ef"
+      );
+      const progressWidth =
+        Math.max(
+          0,
+          Math.min(
+            194,
+            total
+              ? 194 * current / total
+              : 0
+          )
+        );
+
+      if (progressWidth > 0) {
+        drawRoundRect(
+          context,
+          x + 18,
+          450,
+          progressWidth,
+          10,
+          5,
+          color
+        );
+      }
+    }
   );
 
-  const message =
-    getActivityMessage(data);
+  const brandHighlights =
+    data.brandCollections
+      .filter(
+        collection =>
+          collection.visited > 0
+      )
+      .sort(
+        (first, second) =>
+          second.visited / second.total -
+            first.visited / first.total ||
+          second.visited -
+            first.visited
+      )
+      .slice(0, 3);
+
   context.fillStyle = "#4e4251";
   context.font =
-    '900 24px "Zen Maru Gothic", sans-serif';
-  drawWrappedText(
-    context,
-    message.title,
-    96,
-    408,
-    640,
-    38,
-    3
-  );
-
-  context.fillStyle = "#867987";
-  context.font =
-    '700 16px "Zen Maru Gothic", sans-serif';
+    '900 17px "Zen Maru Gothic", sans-serif';
   context.fillText(
-    "他人と競うのではなく、自分のちい活が積み上がっていく楽しさを。",
+    "ブランド別コレクション",
     96,
-    548
+    526
+  );
+  context.fillStyle = "#796d7b";
+  context.font =
+    '700 15px "Zen Maru Gothic", sans-serif';
+  context.fillText(
+    brandHighlights.length
+      ? brandHighlights.map(
+          collection =>
+            `${collection.label} ${collection.visited}/${collection.total}`
+        ).join("  ・  ")
+      : "訪問記録を追加すると、ブランド別の進捗が表示されます。",
+    96,
+    558,
+    1000
   );
 
   context.fillStyle = "#9a8e9b";
   context.font =
     '700 15px "Zen Maru Gothic", sans-serif';
   context.fillText(
-    "chiikatsu-map.com  |  非公式ファンサイト",
+    "行った場所を記録して、自分だけのちい活記録をつくろう。",
     96,
-    591
+    598,
+    565
+  );
+  context.fillStyle = "#8a72dc";
+  context.font =
+    '900 15px "Zen Maru Gothic", sans-serif';
+  context.fillText(
+    "chiikatsu-map.com  #ちい活MAP  |  非公式ファンサイト",
+    674,
+    598,
+    430
   );
 
   return new Promise(
@@ -2634,6 +3165,53 @@ async function createActivityImage() {
         "image/png"
       );
     }
+  );
+}
+
+
+function getActivityShareUrl() {
+  return new URL(
+    "./journal.html?view=activity",
+    window.location.href
+  ).toString();
+}
+
+
+function getActivityShareText() {
+  const data =
+    getActivityData();
+
+  return [
+    "ちい活MAPで、これまでのちい活をまとめてみました📍",
+    `行ったスポット ${data.visitedSpots.length}件・訪問都道府県 ${data.prefectureCounts.size}`,
+    "自分だけのちい活記録もつくれます。",
+    "#ちい活MAP #ちいかわ"
+  ].join("\n");
+}
+
+
+function downloadActivityImage(
+  blob
+) {
+  const downloadUrl =
+    URL.createObjectURL(blob);
+  const link =
+    document.createElement("a");
+  link.href = downloadUrl;
+  link.download =
+    "watashi-no-chiikatsu-" +
+    getTodayInJapan() +
+    ".png";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(
+    () => {
+      URL.revokeObjectURL(
+        downloadUrl
+      );
+    },
+    0
   );
 }
 
@@ -2672,13 +3250,10 @@ async function shareActivityImage() {
     ) {
       try {
         await navigator.share({
-          title: "わたしのちい活の足あと",
-          text: "ちい活マップで、これまでの足あとをまとめました。",
+          title: "わたしのちい活記録",
+          text: getActivityShareText(),
           files: [file],
-          url: new URL(
-            "./journal.html?view=activity",
-            window.location.href
-          ).toString()
+          url: getActivityShareUrl()
         });
         return;
       } catch (error) {
@@ -2688,26 +3263,7 @@ async function shareActivityImage() {
       }
     }
 
-    const downloadUrl =
-      URL.createObjectURL(blob);
-    const link =
-      document.createElement("a");
-    link.href = downloadUrl;
-    link.download =
-      "watashi-no-chiikatsu-" +
-      getTodayInJapan() +
-      ".png";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    window.setTimeout(
-      () => {
-        URL.revokeObjectURL(
-          downloadUrl
-        );
-      },
-      0
-    );
+    downloadActivityImage(blob);
     showStatus(
       "共有用画像を保存しました。Xなどの投稿画面から画像を選んでご利用ください。",
       "success"
@@ -2724,9 +3280,322 @@ async function shareActivityImage() {
   } finally {
     button.disabled = false;
     button.textContent =
-      "画像にして共有";
+      "画像を作る・共有";
   }
 }
+
+
+function getXIntentUrl() {
+  const intent =
+    new URL(
+      "https://twitter.com/intent/tweet"
+    );
+  intent.searchParams.set(
+    "text",
+    getActivityShareText()
+  );
+  intent.searchParams.set(
+    "url",
+    getActivityShareUrl()
+  );
+  return intent.toString();
+}
+
+
+async function postActivityToX() {
+  const button =
+    $("#activity-share-x");
+  const isTouchDevice =
+    window.matchMedia?.(
+      "(pointer: coarse)"
+    ).matches;
+  const intentWindow =
+    !isTouchDevice
+      ? window.open(
+          "about:blank",
+          "chiikatsu-x-share"
+        )
+      : null;
+
+  button.disabled = true;
+  button.textContent =
+    "投稿を準備中…";
+
+  try {
+    const blob =
+      await createActivityImage();
+
+    if (!blob) {
+      throw new Error(
+        "CanvasからPNGを生成できませんでした。"
+      );
+    }
+
+    const file =
+      new File(
+        [blob],
+        "watashi-no-chiikatsu.png",
+        {
+          type: "image/png"
+        }
+      );
+
+    if (
+      isTouchDevice &&
+      navigator.share &&
+      navigator.canShare?.({
+        files: [file]
+      })
+    ) {
+      try {
+        await navigator.share({
+          title: "わたしのちい活記録",
+          text: getActivityShareText(),
+          files: [file],
+          url: getActivityShareUrl()
+        });
+        return;
+      } catch (error) {
+        if (error?.name === "AbortError") {
+          return;
+        }
+      }
+    }
+
+    let imageCopied = false;
+
+    if (
+      window.isSecureContext &&
+      navigator.clipboard?.write &&
+      typeof ClipboardItem ===
+        "function"
+    ) {
+      try {
+        await navigator.clipboard.write([
+          new ClipboardItem({
+            "image/png": blob
+          })
+        ]);
+        imageCopied = true;
+      } catch (error) {
+        console.info(
+          "共有画像をクリップボードへコピーできませんでした。",
+          error
+        );
+      }
+    }
+
+    if (!imageCopied) {
+      downloadActivityImage(blob);
+    }
+
+    const intentUrl =
+      getXIntentUrl();
+
+    if (intentWindow) {
+      intentWindow.location.replace(
+        intentUrl
+      );
+    } else {
+      window.open(
+        intentUrl,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
+
+    showStatus(
+      imageCopied
+        ? "共有画像をコピーしてXの投稿画面を開きました。投稿画面で画像を貼り付けてください。"
+        : "共有画像を保存してXの投稿画面を開きました。保存した画像を添付してください。",
+      "success"
+    );
+  } catch (error) {
+    intentWindow?.close();
+    console.error(
+      "Xへの投稿を準備できませんでした。",
+      error
+    );
+    showStatus(
+      "Xへの投稿を準備できませんでした。もう一度お試しください。",
+      "error"
+    );
+  } finally {
+    button.disabled = false;
+    button.textContent =
+      "Xに投稿";
+  }
+}
+
+
+function formatCloudSyncTime(
+  value
+) {
+  if (!value) {
+    return "";
+  }
+
+  const date = new Date(value);
+
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
+    return "";
+  }
+
+  return new Intl.DateTimeFormat(
+    "ja-JP",
+    {
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    }
+  ).format(date);
+}
+
+
+function renderCloudSyncState(
+  state
+) {
+  const card =
+    $("#cloud-sync-card");
+
+  if (!card) {
+    return;
+  }
+
+  card.hidden =
+    !state.available;
+
+  if (!state.available) {
+    return;
+  }
+
+  const signInButton =
+    $("#cloud-sync-sign-in");
+  const syncButton =
+    $("#cloud-sync-now");
+  const signOutButton =
+    $("#cloud-sync-sign-out");
+  const deleteButton =
+    $("#cloud-sync-delete");
+  const status =
+    $("#cloud-sync-status");
+  const description =
+    $("#cloud-sync-description");
+  const hasImportantRecords =
+    visitedSpotIds.size >= 3 ||
+    visitDetailsBySpotId.size > 0;
+
+  signInButton.hidden =
+    state.signedIn;
+  syncButton.hidden =
+    !state.signedIn;
+  signOutButton.hidden =
+    !state.signedIn;
+  deleteButton.hidden =
+    !state.signedIn ||
+    state.needsAccountConfirmation;
+
+  [
+    signInButton,
+    syncButton,
+    signOutButton,
+    deleteButton
+  ].forEach(
+    button => {
+      button.disabled =
+        state.syncing;
+    }
+  );
+
+  if (state.needsAccountConfirmation) {
+    description.textContent =
+      "以前とは別のGoogleアカウントです。この端末の記録を統合する場合だけ続けてください。";
+    syncButton.textContent =
+      "このアカウントに統合";
+    status.textContent =
+      "確認待ち（まだ送信していません）";
+    status.dataset.state =
+      "warning";
+    return;
+  }
+
+  syncButton.textContent =
+    "今すぐ同期";
+  description.textContent =
+    state.signedIn
+      ? "操作は先にこの端末へ保存し、その後クラウドへ同期します。オフラインでも記録できます。"
+      : hasImportantRecords
+        ? "記録が増えてきました。Googleで保存すると、機種変更やホーム画面の再追加後も復元できます。"
+        : "Googleで保存すると、この端末の記録をクラウドにも残せます。ログインしなくても今までどおり使えます。";
+
+  const lastSynced =
+    formatCloudSyncTime(
+      state.lastSyncedAt
+    );
+  const labels = {
+    loading:
+      "ログイン状態を確認しています…",
+    "signed-out":
+      "この端末だけに保存しています",
+    pending:
+      "端末へ保存済み・同期を待っています",
+    syncing:
+      "クラウドへ同期しています…",
+    synced:
+      lastSynced
+        ? `${lastSynced}に同期済み`
+        : "クラウドへ同期済み",
+    offline:
+      "オフラインです。端末へ保存し、接続後に同期します",
+    error:
+      "同期できませんでした。端末の記録は保持されています"
+  };
+  status.textContent =
+    labels[state.status] ||
+    "この端末だけに保存しています";
+  status.dataset.state =
+    state.status === "error"
+      ? "error"
+      : state.status === "offline" ||
+          state.status === "pending"
+        ? "warning"
+        : "ok";
+}
+
+
+async function runCloudSyncAction(
+  action,
+  failureMessage
+) {
+  try {
+    await action();
+  } catch (error) {
+    console.warn(
+      failureMessage,
+      error
+    );
+    showStatus(
+      failureMessage +
+      " 端末内の記録は保持されています。",
+      "error"
+    );
+  }
+}
+
+
+window.addEventListener(
+  "chiikatsu:cloud-sync-state",
+  event => {
+    renderCloudSyncState(
+      event.detail || {}
+    );
+  }
+);
 
 
 // ============================================================
@@ -3017,6 +3886,110 @@ $("#activity-share-image")
     shareActivityImage
   );
 
+$("#activity-share-x")
+  ?.addEventListener(
+    "click",
+    postActivityToX
+  );
+
+$("#activity-next-more")
+  ?.addEventListener(
+    "click",
+    () => {
+      showAllActivityNextEvents =
+        !showAllActivityNextEvents;
+      renderActivity();
+    }
+  );
+
+$("#cloud-sync-sign-in")
+  ?.addEventListener(
+    "click",
+    () => {
+      runCloudSyncAction(
+        () =>
+          window.ChiikatsuCloudSync
+            ?.signIn(),
+        "Googleログインを開始できませんでした。"
+      );
+    }
+  );
+
+$("#cloud-sync-now")
+  ?.addEventListener(
+    "click",
+    () => {
+      const sync =
+        window.ChiikatsuCloudSync;
+      const state =
+        sync?.getState();
+
+      if (
+        state
+          ?.needsAccountConfirmation
+      ) {
+        if (
+          !window.confirm(
+            "この端末の記録を、現在選択している別のGoogleアカウントへ統合しますか？"
+          )
+        ) {
+          return;
+        }
+        runCloudSyncAction(
+          () =>
+            sync.confirmAccountSwitch(),
+          "記録を統合できませんでした。"
+        );
+        return;
+      }
+
+      runCloudSyncAction(
+        () => sync?.syncNow(),
+        "クラウドへ同期できませんでした。"
+      );
+    }
+  );
+
+$("#cloud-sync-sign-out")
+  ?.addEventListener(
+    "click",
+    () => {
+      runCloudSyncAction(
+        () =>
+          window.ChiikatsuCloudSync
+            ?.signOut(),
+        "ログアウトできませんでした。"
+      );
+    }
+  );
+
+$("#cloud-sync-delete")
+  ?.addEventListener(
+    "click",
+    () => {
+      if (
+        !window.confirm(
+          "クラウド上のちい活記録を削除しますか？この端末内の記録は残ります。"
+        )
+      ) {
+        return;
+      }
+
+      runCloudSyncAction(
+        async () => {
+          await window
+            .ChiikatsuCloudSync
+            ?.deleteCloudData();
+          showStatus(
+            "クラウド上の記録を削除しました。この端末内の記録は残っています。",
+            "success"
+          );
+        },
+        "クラウド上の記録を削除できませんでした。"
+      );
+    }
+  );
+
 window.addEventListener(
   "popstate",
   () => {
@@ -3108,3 +4081,28 @@ loadSpots().catch(
     );
   }
 );
+
+const journalScriptUrl =
+  Array.from(document.scripts)
+    .find(
+      script =>
+        /\/journal\.js(?:\?|$)/.test(
+          script.src
+        )
+    )?.src;
+
+if (journalScriptUrl) {
+  import(
+    new URL(
+      "./cloud-sync-loader.js",
+      journalScriptUrl
+    ).href
+  ).catch(
+    error => {
+      console.warn(
+        "クラウド保存機能を読み込めませんでした。",
+        error
+      );
+    }
+  );
+}

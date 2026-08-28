@@ -132,3 +132,28 @@ window.addEventListener("storage", event => {
 });
 window.addEventListener("pageshow", syncButtons);
 syncButtons();
+
+const spotPageScriptUrl =
+  Array.from(document.scripts)
+    .find(
+      script =>
+        /\/spot-page\.js(?:\?|$)/.test(
+          script.src
+        )
+    )?.src;
+
+if (spotPageScriptUrl) {
+  import(
+    new URL(
+      "./cloud-sync-loader.js",
+      spotPageScriptUrl
+    ).href
+  ).catch(
+    error => {
+      console.warn(
+        "クラウド保存機能を読み込めませんでした。",
+        error
+      );
+    }
+  );
+}

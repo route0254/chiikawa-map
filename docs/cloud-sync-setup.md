@@ -1,0 +1,68 @@
+# 任意クラウド保存の有効化手順
+
+ちい活MAPの通常保存先は、これまでどおりブラウザの `localStorage` です。Firebaseを有効にした場合だけ、Googleログインした利用者の記録をFirestoreへ同期します。ログインは必須ではありません。
+
+## 実装済みの同期仕様
+
+- 対象: 「行きたい」「行った！」「訪問日・メモ」「今日のプラン」
+- 操作時は先に端末へ保存し、5秒間まとめてからクラウドへ同期
+- 画面表示中は5分ごと、オンライン復帰時・画面復帰時にも同期確認
+- 初回ログインは端末とクラウドを統合し、片方を空データで上書きしない
+- 各項目に更新時刻と端末IDを持ち、新しい変更を優先
+- 解除・削除も削除状態として保存し、別端末の古い記録から復活することを防止
+- 同期中の端末操作を検知した場合は、上書きせず再同期
+- JSON書き出し・追加統合読み込みは非常用バックアップとして引き続き利用可能
+- 位置情報、Googleの表示名・メールアドレスはFirestoreへ保存しない
+
+## あなたがFirebase Consoleで行う作業
+
+1. [Firebase Console](https://console.firebase.google.com/)でプロジェクトを作成します。Google Analyticsは、この用途だけなら必須ではありません。
+2. 「プロジェクトの設定」からWebアプリを追加し、表示されたFirebase構成値を控えます。
+3. Authenticationの「Sign-in method」でGoogleを有効にします。
+4. Google Cloud ConsoleのOAuth同意画面で、アプリ名・サポート用メールアドレス・承認済みドメインを設定します。プライバシーポリシーURLには `https://chiikatsu-map.com/privacy.html` を指定できます。
+5. Authenticationの「Settings > Authorized domains」に `chiikatsu-map.com` と `www.chiikatsu-map.com` を追加します。ローカル確認も行う場合は `localhost` も許可します。
+6. Firestore Databaseを作成します。リージョンは主な利用者に近い場所を選び、本番モードで開始します。
+7. Firestoreの「ルール」に、リポジトリ直下の `firestore.rules` を貼り付けて公開します。このルールは、ログイン利用者本人の `users/{uid}/private/chiikatsu` だけを読み書き可能にします。
+8. `firebase-config.json` の `firebase` をWebアプリの構成値で埋め、`enabled` を `true` にします。FirebaseのWeb APIキーは秘密鍵ではありません。アクセス制御はSecurity RulesとApp Checkで行います。
+9. 足あと画面で「Googleで保存する」が表示されること、初回同期・ログアウト・再ログイン・別ブラウザ復元を確認します。
+
+設定例:
+
+```json
+{
+  "enabled": true,
+  "firebase": {
+    "apiKey": "Firebase Consoleの値",
+    "authDomain": "プロジェクトID.firebaseapp.com",
+    "projectId": "プロジェクトID",
+    "storageBucket": "Firebase Consoleの値",
+    "messagingSenderId": "Firebase Consoleの値",
+    "appId": "Firebase Consoleの値"
+  },
+  "appCheck": {
+    "enabled": false,
+    "provider": "recaptcha-enterprise",
+    "siteKey": ""
+  }
+}
+```
+
+## 公開前に推奨する安全・費用設定
+
+- Firebase App CheckでWebアプリを登録し、reCAPTCHA Enterpriseのサイトキーを設定します。最初はメトリクスを確認し、問題がなければFirestoreとAuthenticationの適用を有効にします。
+- `firebase-config.json` の `appCheck.siteKey` を設定して `appCheck.enabled` を `true` にします。
+- Google Cloudの「予算とアラート」を少額から設定します。予算アラートは課金を自動停止する機能ではない点に注意してください。
+- Firebase ConsoleのFirestore使用量を公開直後に確認します。本実装は変更を5秒単位でまとめ、定期確認を5分間隔にして読み書きを抑えています。
+- Firebaseの無料枠・料金は変更される可能性があるため、公開時に[Firestoreの料金](https://firebase.google.com/docs/firestore/pricing)と[使用量・上限](https://firebase.google.com/docs/firestore/quotas)を確認します。
+
+## 確認項目
+
+- 未ログインのまま従来どおり保存・JSONバックアップできる
+- 既存記録がある端末で初回ログインしても記録が消えない
+- 端末Aで追加した記録が端末Bに復元される
+- 端末Aで解除した「行きたい」が端末Bの古い状態から復活しない
+- オフラインで変更後、オンライン復帰すると同期される
+- 別のGoogleアカウントを選んだ場合、確認前には端末データが送信されない
+- 「クラウド記録を削除」後も端末内データが残る
+
+参考: [Firebase Webセットアップ](https://firebase.google.com/docs/web/setup)、[Googleログイン](https://firebase.google.com/docs/auth/web/google-signin)、[Security Rules](https://firebase.google.com/docs/firestore/security/rules-conditions)、[Web APIキーの扱い](https://firebase.google.com/docs/projects/api-keys)、[App Check](https://firebase.google.com/docs/app-check/web/recaptcha-provider)

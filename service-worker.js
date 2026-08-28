@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20260828-1";
+  "chiikatsu-map-v20260829-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -12,13 +12,16 @@ const CORE_FILES = [
   "./index.html",
   "./official.html",
   "./journal.html",
+  "./privacy.html",
   "./offline.html",
   "./style.css",
   "./official.css",
   "./journal.css",
+  "./legal.css",
   "./app.js",
   "./official.js",
   "./journal.js",
+  "./cloud-sync-loader.js",
   "./pwa.js",
   "./manifest.webmanifest",
   "./favicon.svg",
@@ -70,6 +73,13 @@ function isDataRequest(url) {
     url.pathname.endsWith(".json");
 }
 
+function isCloudConfigRequest(url) {
+  return url.origin === self.location.origin &&
+    url.pathname.endsWith(
+      "/firebase-config.json"
+    );
+}
+
 async function networkFirst(request) {
   const cache = await caches.open(
     RUNTIME_CACHE
@@ -118,7 +128,10 @@ self.addEventListener(
       return;
     }
 
-    if (isDataRequest(url)) {
+    if (
+      isDataRequest(url) ||
+      isCloudConfigRequest(url)
+    ) {
       event.respondWith(
         networkFirst(request)
       );

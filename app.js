@@ -10247,3 +10247,28 @@ loadTileProvider(
 
 
 loadSpots();
+
+const appScriptUrl =
+  Array.from(document.scripts)
+    .find(
+      script =>
+        /\/app\.js(?:\?|$)/.test(
+          script.src
+        )
+    )?.src;
+
+if (appScriptUrl) {
+  import(
+    new URL(
+      "./cloud-sync-loader.js",
+      appScriptUrl
+    ).href
+  ).catch(
+    error => {
+      console.warn(
+        "クラウド保存機能を読み込めませんでした。",
+        error
+      );
+    }
+  );
+}

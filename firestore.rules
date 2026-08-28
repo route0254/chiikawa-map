@@ -1,0 +1,45 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId}/private/{documentId} {
+      function isOwner() {
+        return request.auth != null &&
+          request.auth.uid == userId &&
+          documentId == 'chiikatsu';
+      }
+
+      function hasValidShape() {
+        return request.resource.data.keys().hasOnly([
+          'schemaVersion',
+          'ownerUid',
+          'updatedAt',
+          'favorites',
+          'visited',
+          'visitDetails',
+          'plan'
+        ]) &&
+          request.resource.data.schemaVersion == 1 &&
+          request.resource.data.ownerUid == userId &&
+          request.resource.data.updatedAt is int &&
+          request.resource.data.favorites is map &&
+          request.resource.data.visited is map &&
+          request.resource.data.visitDetails is map &&
+          request.resource.data.favorites.size() <= 5000 &&
+          request.resource.data.visited.size() <= 5000 &&
+          request.resource.data.visitDetails.size() <= 5000 &&
+          (
+            request.resource.data.plan == null ||
+            request.resource.data.plan is map
+          );
+      }
+
+      allow read, delete: if isOwner();
+      allow create, update: if isOwner() && hasValidShape();
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

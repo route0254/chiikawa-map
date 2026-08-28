@@ -1,0 +1,126 @@
+body.legal-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 22%, rgba(247, 192, 215, 0.26), transparent 26%),
+    radial-gradient(circle at 94% 70%, rgba(157, 220, 189, 0.22), transparent 28%),
+    #fffafd;
+}
+
+.legal-shell {
+  width: min(1080px, calc(100% - 28px));
+  margin: 28px auto 48px;
+}
+
+.legal-intro,
+.legal-grid section {
+  border: 1px solid #eadfe8;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 15px 38px rgba(86, 67, 83, 0.07);
+}
+
+.legal-intro {
+  padding: clamp(24px, 5vw, 48px);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255, 244, 250, 0.96), rgba(241, 250, 246, 0.96));
+}
+
+.legal-intro > span {
+  color: #8a72dc;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.legal-intro h2 {
+  margin: 8px 0 12px;
+  color: #504452;
+  font-size: clamp(23px, 4vw, 36px);
+}
+
+.legal-intro p {
+  max-width: 760px;
+  margin: 0;
+  color: #766a78;
+  line-height: 1.9;
+}
+
+.legal-intro time {
+  display: block;
+  margin-top: 16px;
+  color: #958897;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.legal-grid section {
+  padding: 24px;
+  border-radius: 21px;
+}
+
+.legal-grid h3 {
+  margin: 0 0 12px;
+  color: #594c5b;
+  font-size: 18px;
+}
+
+.legal-grid p,
+.legal-provider-links {
+  margin: 0;
+  color: #786c7a;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.legal-grid p + p {
+  margin-top: 10px;
+}
+
+.legal-grid a,
+.legal-provider-links a {
+  color: #6756b8;
+  font-weight: 800;
+}
+
+.legal-provider-links {
+  margin: 18px 0;
+  padding: 18px 22px;
+  border: 1px dashed #d8cdef;
+  border-radius: 18px;
+  background: #f9f6ff;
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 17px;
+  border: 1px solid #d8cdef;
+  border-radius: 999px;
+  color: #5e4f9d;
+  background: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .legal-shell {
+    width: min(100% - 18px, 1080px);
+    margin-top: 16px;
+  }
+
+  .legal-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .legal-grid section {
+    padding: 19px;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ちい活MAPにおける端末保存、任意のクラウド保存、位置情報などの取り扱いについて説明します。">
+  <link rel="canonical" href="https://chiikatsu-map.com/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="プライバシーと記録の保存｜ちい活MAP">
+  <meta property="og:description" content="ちい活MAPで保存する記録と、任意のクラウド保存についてのご案内です。">
+  <meta property="og:url" content="https://chiikatsu-map.com/privacy.html">
+  <meta property="og:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260826-1">
+  <meta property="og:site_name" content="ちいかわ推し活（ちい活）MAP">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>プライバシーと記録の保存｜ちい活MAP</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260828-3">
+  <link rel="stylesheet" href="legal.css?v=20260829-1">
+</head>
+
+<body class="legal-page">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-header-top">
+        <span class="site-kicker">CHIIKATSU MAP</span>
+        <span class="unofficial-badge">非公式ファンサイト</span>
+      </div>
+      <h1>プライバシーと記録の保存</h1>
+      <p class="site-description">ちい活MAPで扱うデータと、保存先を分かりやすくご案内します。</p>
+      <nav class="site-nav" aria-label="サイト内メニュー">
+        <a class="site-nav-link" href="./"><span aria-hidden="true">🗺</span>地図から探す</a>
+        <a class="site-nav-link" href="official.html"><span aria-hidden="true">✦</span>公式スポット一覧</a>
+        <a class="site-nav-link" href="journal.html"><span aria-hidden="true">🌱</span>ちい活手帳</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-shell">
+    <section class="legal-intro">
+      <span>PRIVACY &amp; DATA</span>
+      <h2>記録は、まずお使いの端末へ保存します。</h2>
+      <p>
+        ちい活MAPはログインなしで利用できます。Googleでのクラウド保存は、利用者が希望した場合だけ有効になります。
+      </p>
+      <time datetime="2026-08-29">最終更新：2026年8月29日</time>
+    </section>
+
+    <div class="legal-grid">
+      <section>
+        <h3>ログインしない場合</h3>
+        <p>
+          「行きたい」「行った！」「訪問日・メモ」「今日のプラン」はブラウザのlocalStorageへ保存されます。サイト運営者のサーバーへは送信しません。
+        </p>
+        <p>
+          ブラウザデータの削除、シークレットモード、アプリの再追加などで消える場合があります。保存データ画面のJSON書き出しもご利用ください。
+        </p>
+      </section>
+
+      <section>
+        <h3>Googleで保存する場合</h3>
+        <p>
+          Firebase AuthenticationでGoogleログインを行い、利用者を区別するIDとちい活記録をFirestoreで扱います。記録の同期にGoogleの表示名やメールアドレスは使用・保存しません。
+        </p>
+        <p>
+          保存対象は「行きたい」「行った！」「訪問日・メモ」「今日のプラン」と同期に必要な更新情報です。ログイン後も操作は先に端末へ保存されます。
+        </p>
+      </section>
+
+      <section>
+        <h3>位置情報</h3>
+        <p>
+          現在地機能は、ブラウザから許可された位置を地図表示や距離計算に利用します。取得した位置情報をlocalStorageやFirestoreへ保存せず、ちい活MAPからサーバーへ送信しません。
+        </p>
+      </section>
+
+      <section>
+        <h3>削除とログアウト</h3>
+        <p>
+          足あと画面の「クラウド記録を削除」でFirestore上のちい活記録を削除できます。この操作では端末内の記録は残ります。端末内の記録はブラウザのサイトデータ削除で消去できます。
+        </p>
+        <p>
+          「ログアウト」だけでは、端末内・クラウド上の記録を削除しません。
+        </p>
+      </section>
+
+      <section>
+        <h3>外部サービスと安全対策</h3>
+        <p>
+          公開にはGitHub Pages、任意の認証・同期にはGoogle Firebaseを利用します。各サービスでは不正利用防止や提供に必要な技術情報が、各社の方針に基づいて処理される場合があります。
+        </p>
+        <p>
+          Firestore Security Rulesにより、ログイン中の本人だけが自分の記録を読み書きできるよう制限します。本サイトはアクセス解析ツールや広告を現在使用していません。
+        </p>
+      </section>
+
+      <section>
+        <h3>お問い合わせ</h3>
+        <p>
+          保存内容や本ページについてのご連絡は、GitHubの<a href="https://github.com/route0254/chiikawa-map/issues" target="_blank" rel="noopener noreferrer">Issueページ</a>からお願いします。
+        </p>
+        <p>
+          機能や利用サービスの変更に応じて、この案内を更新する場合があります。
+        </p>
+      </section>
+    </div>
+
+    <p class="legal-provider-links">
+      外部サービスの方針：
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>
+      ／
+      <a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHubプライバシーステートメント</a>
+    </p>
+
+    <a class="legal-back" href="journal.html?view=activity">← わたしの足あとへ戻る</a>
+    <p class="site-note">本サイトは公式とは関係のない非公式ファンサイトです。</p>
+  </main>
+</body>
+
+</html>

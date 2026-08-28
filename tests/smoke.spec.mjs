@@ -3010,6 +3010,24 @@ test(
 test(
   "手帳でカレンダー・プラン・足あとを一続きで利用できる",
   async ({ page }) => {
+    const disabledCloudRequests = [];
+    page.on(
+      "request",
+      request => {
+        if (
+          request.url().includes(
+            "/cloud-sync.js"
+          ) ||
+          request.url().includes(
+            "gstatic.com/firebasejs"
+          )
+        ) {
+          disabledCloudRequests.push(
+            request.url()
+          );
+        }
+      }
+    );
     await page.addInitScript(() => {
       localStorage.setItem(
         "chiikawa-map-favorites-v1",
@@ -3031,7 +3049,8 @@ test(
         JSON.stringify([
           "chiikawaland-osaka-umeda",
           "nagano-takao-mountain",
-          "collab-odaiba-obake-forest"
+          "collab-odaiba-obake-forest",
+          "cafe-2021-04-29-ikebukuro-parco"
         ])
       );
       localStorage.setItem(
@@ -3083,13 +3102,40 @@ test(
     await expect(page).toHaveURL(/view=activity/);
     await expect(
       page.locator("#activity-visited-total")
-    ).toHaveText("3");
+    ).toHaveText("4");
     await expect(
       page.locator("#activity-prefecture-total")
     ).toHaveText("2");
     await expect(
       page.locator("#recent-activity-list")
     ).toContainText("大阪梅田店");
+    await expect(
+      page.locator(
+        "#activity-progress .activity-progress-item"
+      )
+    ).toHaveCount(4);
+    await expect(
+      page.locator(
+        "#activity-brand-collections .activity-brand-card"
+      )
+    ).not.toHaveCount(0);
+    await expect(
+      page.locator("#activity-event-history")
+    ).toContainText("2021年");
+    await expect(
+      page.locator("#activity-next-summary")
+    ).toContainText("件の候補");
+    await expect(
+      page.locator("#cloud-sync-card")
+    ).toBeHidden();
+    expect(
+      disabledCloudRequests
+    ).toEqual([]);
+    await expect(
+      page.locator(
+        'a[href="privacy.html"]'
+      ).last()
+    ).toBeVisible();
 
     const downloadPromise =
       page.waitForEvent("download");
@@ -3102,6 +3148,48 @@ test(
       download.suggestedFilename()
     ).toMatch(
       /^watashi-no-chiikatsu-\d{4}-\d{2}-\d{2}\.png$/
+    );
+
+    await page.evaluate(() => {
+      window.__activityXIntent = "";
+      Object.defineProperty(
+        navigator,
+        "clipboard",
+        {
+          configurable: true,
+          value: {
+            async write() {
+              throw new Error(
+                "clipboard disabled in test"
+              );
+            }
+          }
+        }
+      );
+      window.open = () => ({
+        location: {
+          replace(url) {
+            window.__activityXIntent =
+              url;
+          }
+        },
+        close() {}
+      });
+    });
+    const xDownloadPromise =
+      page.waitForEvent("download");
+    await page.locator(
+      "#activity-share-x"
+    ).click();
+    await xDownloadPromise;
+    await expect.poll(
+      () =>
+        page.evaluate(
+          () =>
+            window.__activityXIntent
+        )
+    ).toContain(
+      "twitter.com/intent/tweet"
     );
   }
 );

@@ -178,6 +178,19 @@
   cursor: pointer;
 }
 
+.activity-share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.activity-share-button.is-x {
+  border-color: #3c3540;
+  color: #fff;
+  background: #242127;
+}
+
 .calendar-toolbar {
   display: grid;
   grid-template-columns: 52px minmax(0, 1fr) 52px;
@@ -868,6 +881,30 @@
   gap: 7px;
 }
 
+button.activity-progress-item {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e8deea;
+  border-radius: 13px;
+  background: #fffafd;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+button.activity-progress-item:hover,
+button.activity-progress-item:focus-visible {
+  border-color: #cbbde7;
+  background: #f8f4ff;
+  outline: none;
+}
+
+.activity-progress-action {
+  color: #6756b8;
+  font-size: 8px;
+  font-weight: 900;
+}
+
 .activity-progress-copy {
   display: flex;
   justify-content: space-between;
@@ -892,6 +929,161 @@
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, #e979a5, #8f79df, #64b38b);
+}
+
+.activity-next-panel,
+.activity-collection-layout,
+.cloud-sync-card {
+  margin-top: 16px;
+}
+
+.activity-next-panel:focus {
+  outline: 3px solid rgba(143, 121, 223, 0.25);
+  outline-offset: 3px;
+}
+
+.activity-next-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.activity-next-card {
+  display: grid;
+  gap: 7px;
+  padding: 14px;
+  border: 1px solid #e7deea;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #fffafd, #f7fbff);
+}
+
+.activity-next-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: #8b7c8d;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.activity-next-card-meta span {
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f3edf5;
+}
+
+.activity-next-card strong {
+  color: #514653;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.activity-next-card a {
+  justify-self: start;
+  color: #6554b9;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.activity-more-button {
+  display: block;
+  min-height: 42px;
+  margin: 14px auto 0;
+  padding: 8px 18px;
+  border: 1px solid #d8cdef;
+  border-radius: 999px;
+  color: #5e4f9d;
+  background: #f8f5ff;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.activity-collection-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 16px;
+}
+
+.activity-brand-collections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.activity-brand-card {
+  display: grid;
+  gap: 7px;
+  padding: 12px;
+  border: 1px solid #eadfe8;
+  border-radius: 14px;
+  background: #fffbfd;
+}
+
+.activity-brand-copy {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.activity-brand-copy span {
+  overflow: hidden;
+  color: #625665;
+  font-size: 9px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-brand-copy strong {
+  flex: none;
+  color: #b1547b;
+  font-size: 10px;
+}
+
+.activity-event-history {
+  display: grid;
+  gap: 8px;
+}
+
+.activity-history-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px;
+  border-radius: 14px;
+  color: #655a68;
+  background: #fff2f7;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.activity-history-total strong {
+  color: #c75e89;
+  font-size: 22px;
+}
+
+.activity-history-years {
+  display: grid;
+  gap: 5px;
+}
+
+.activity-history-year {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 10px;
+  border-bottom: 1px solid #f0e8ef;
+  color: #756878;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.activity-history-year strong {
+  color: #6654b7;
 }
 
 .recent-activity-panel {
@@ -942,10 +1134,96 @@
   font-weight: 900;
 }
 
+.cloud-sync-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(135deg, #f7f4ff, #f1faf6);
+}
+
+.cloud-sync-card[hidden] {
+  display: none;
+}
+
+.cloud-sync-copy h3 {
+  margin: 4px 0 7px;
+  color: #514653;
+  font-size: 17px;
+}
+
+.cloud-sync-copy p {
+  margin: 0 0 7px;
+  color: #7f7281;
+  font-size: 10px;
+  line-height: 1.75;
+}
+
+.cloud-sync-privacy {
+  display: inline-block;
+  margin: 0 0 7px;
+  color: #6756b8;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.cloud-sync-status {
+  color: #5e806d;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.cloud-sync-status[data-state="warning"] {
+  color: #9a6b2f;
+}
+
+.cloud-sync-status[data-state="error"] {
+  color: #a04e68;
+}
+
+.cloud-sync-actions button:disabled {
+  cursor: wait;
+  opacity: 0.58;
+}
+
+.cloud-sync-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+  max-width: 330px;
+}
+
+.cloud-sync-actions button {
+  min-height: 42px;
+  padding: 8px 13px;
+  border: 1px solid #d8cdef;
+  border-radius: 999px;
+  color: #5e4f9d;
+  background: #fff;
+  font: inherit;
+  font-size: 9px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.cloud-sync-actions .cloud-sync-primary {
+  border-color: #6a5bc5;
+  color: #fff;
+  background: #7568e8;
+}
+
+.cloud-sync-actions .cloud-sync-delete {
+  border-color: #ebc8d3;
+  color: #a04e68;
+}
+
 @media (max-width: 900px) {
   .journal-hero,
   .activity-summary-card,
   .activity-layout,
+  .activity-collection-layout,
+  .cloud-sync-card,
   .plan-layout {
     grid-template-columns: 1fr;
   }
@@ -960,6 +1238,15 @@
 
   .recent-activity-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .activity-next-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cloud-sync-actions {
+    justify-content: flex-start;
+    max-width: none;
   }
 }
 
@@ -1015,6 +1302,12 @@
 
   .journal-share-button,
   .activity-share-button {
+    width: 100%;
+  }
+
+  .activity-share-actions {
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
   }
 
@@ -1092,6 +1385,24 @@
 
   .recent-activity-list {
     grid-template-columns: 1fr;
+  }
+
+  .activity-next-list,
+  .activity-brand-collections {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-panel-heading {
+    flex-direction: column;
+  }
+
+  .cloud-sync-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cloud-sync-actions button {
+    width: 100%;
   }
 }
 
