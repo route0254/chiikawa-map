@@ -218,6 +218,7 @@ const eventStatuses = new Set([
 ]);
 
 const confirmedOpenEndedLimitedSpotIds = new Set([
+  "ramen-buta-ikebukuro",
   "ramen-buta-shibuya",
   "ramen-buta-shinsaibashi"
 ]);
