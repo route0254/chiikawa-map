@@ -2085,13 +2085,13 @@ function getRelationTypeLabel(
   const naganoLabels = {
 
     introduced:
-      "ナガノ先生が紹介",
+      "ナガノ先生が紹介（訪問未確認）",
 
     visited:
-      "ナガノ先生が訪問",
+      "ナガノ先生が訪問・利用",
 
     related:
-      "ナガノ先生ゆかり・関連"
+      "ナガノ先生が制作・公式に関与"
   };
 
 
@@ -5127,8 +5127,18 @@ function locateUser() {
 // ============================================================
 
 function fitMapToRecords(
-  records
+  records,
+  options = {}
 ) {
+
+  const maxZoom =
+    options.maxZoom ?? 12;
+
+  const singleZoom =
+    options.singleZoom ?? 13;
+
+  const animate =
+    options.animate ?? false;
 
   const latLngs =
     records.map(
@@ -5152,8 +5162,8 @@ function fitMapToRecords(
       if (latLngs.length === 1) {
         map.setView(
           latLngs[0],
-          13,
-          { animate: false }
+          singleZoom,
+          { animate }
         );
         return;
       }
@@ -5167,10 +5177,67 @@ function fitMapToRecords(
         L.latLngBounds(latLngs),
         {
           padding,
-          maxZoom: 12,
-          animate: false
+          maxZoom,
+          animate
         }
       );
+    }
+  );
+}
+
+
+function focusMapOnPrefecture(
+  prefecture
+) {
+
+  if (!prefecture) {
+    return;
+  }
+
+  if (prefecture === "北海道") {
+    requestAnimationFrame(
+      () => {
+        map.invalidateSize({
+          pan: false,
+          animate: false
+        });
+
+        map.setView(
+          [43.0618, 141.3545],
+          9,
+          { animate: true }
+        );
+      }
+    );
+
+    return;
+  }
+
+  const visibleRecords =
+    lastFilteredRecords.filter(
+      record =>
+        record.prefecture ===
+        prefecture
+    );
+
+  const prefectureRecords =
+    spotRecords.filter(
+      record =>
+        record.prefecture ===
+          prefecture &&
+        getSpotPeriodStatus(
+          record.spot
+        ) !== "ended"
+    );
+
+  fitMapToRecords(
+    visibleRecords.length
+      ? visibleRecords
+      : prefectureRecords,
+    {
+      maxZoom: 10,
+      singleZoom: 10,
+      animate: true
     }
   );
 }
@@ -8687,9 +8754,15 @@ async function loadSpots() {
         HAS_SHARED_FILTERS &&
         lastFilteredRecords.length
       ) {
-        fitMapToRecords(
-          lastFilteredRecords
-        );
+        if (prefectureFilter?.value) {
+          focusMapOnPrefecture(
+            prefectureFilter.value
+          );
+        } else {
+          fitMapToRecords(
+            lastFilteredRecords
+          );
+        }
       } else {
         // 通常アクセスでは全国の表示対象スポットを収める
         fitMapToAllSpots();
@@ -8902,8 +8975,14 @@ prefectureFilter
   ?.addEventListener(
     "change",
     () => {
+      const prefecture =
+        prefectureFilter.value;
+
       updateSpotFilters();
       renderSearchSuggestions();
+      focusMapOnPrefecture(
+        prefecture
+      );
     }
   );
 

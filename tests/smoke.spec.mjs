@@ -2482,6 +2482,17 @@ test(
   async ({ page }) => {
     let archiveRequestCount = 0;
 
+    const archiveSpots =
+      JSON.parse(
+        await readFile(
+          resolve(
+            projectDirectory,
+            "data/official-events-archive.json"
+          ),
+          "utf8"
+        )
+      );
+
     page.on(
       "request",
       request => {
@@ -2506,6 +2517,14 @@ test(
         "#catalog-panel-guide"
       )
     ).toBeVisible();
+
+    await expect(
+      page.locator(
+        "#past-total-count"
+      )
+    ).toHaveText(
+      String(archiveSpots.length)
+    );
 
     expect(archiveRequestCount).toBe(0);
 
@@ -2624,6 +2643,51 @@ test(
     ).toHaveText("1件を表示しています。");
 
     expect(archiveRequestCount).toBe(1);
+  }
+);
+
+
+test(
+  "都道府県を選ぶと該当地域へ地図を移動する",
+  async ({ page }) => {
+    await page.goto("/");
+    await waitForSpots(page);
+
+    await page.locator(
+      "#prefecture-filter"
+    ).selectOption("大阪府");
+
+    await page.waitForFunction(
+      () => {
+        const center =
+          map.getCenter();
+
+        return (
+          center.lat > 33 &&
+          center.lat < 36 &&
+          center.lng > 134 &&
+          center.lng < 137 &&
+          map.getZoom() <= 10
+        );
+      }
+    );
+
+    await page.locator(
+      "#prefecture-filter"
+    ).selectOption("北海道");
+
+    await page.waitForFunction(
+      () => {
+        const center =
+          map.getCenter();
+
+        return (
+          Math.abs(center.lat - 43.0618) < 0.1 &&
+          Math.abs(center.lng - 141.3545) < 0.1 &&
+          map.getZoom() === 9
+        );
+      }
+    );
   }
 );
 
