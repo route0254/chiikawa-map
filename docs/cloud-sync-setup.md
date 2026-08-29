@@ -27,7 +27,8 @@
 6. Firestore Databaseを作成します。リージョンは主な利用者に近い場所を選び、本番モードで開始します。
 7. Firestoreの「ルール」に、リポジトリ直下の `firestore.rules` を貼り付けて公開します。このルールは、ログイン利用者本人の `users/{uid}/private/chiikatsu` だけを読み書き可能にします。
 8. `firebase-config.json` の `firebase` をWebアプリの構成値で埋め、`enabled` と `analytics.enabled` を `true` にします。FirebaseのWeb APIキーは秘密鍵ではありません。アクセス制御はSecurity RulesとApp Checkで行います。
-9. 各ページ右上に「Googleで保存」が表示されること、足あと画面で詳しい同期操作ができること、GA4のリアルタイム計測、初回同期・ログアウト・再ログイン・別ブラウザ復元を確認します。
+9. Google Cloud ConsoleでWeb APIキーをHTTPリファラー制限する場合は、本番ドメインに加えて `authDomain` のドメインも許可します。本サイトでは `https://chiikatsu-map.firebaseapp.com` と `https://chiikatsu-map.firebaseapp.com/*` が必要です。これを省くとGoogleログイン画面で `The requested action is invalid.` になります。
+10. 各ページ右上に「Googleで保存」が表示されること、足あと画面で詳しい同期操作ができること、GA4のリアルタイム計測、初回同期・ログアウト・再ログイン・別ブラウザ復元を確認します。
 
 設定例:
 
