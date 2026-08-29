@@ -2535,6 +2535,32 @@ test(
       )
     ).toHaveCount(currentCount);
 
+    await expect(
+      page.locator(
+        '#current-brand option[value="baby_castella"]'
+      )
+    ).toHaveText(
+      /^ちいかわベビーカステラ（1）$/
+    );
+
+    await page.locator(
+      "#current-brand"
+    ).selectOption(
+      "baby_castella"
+    );
+
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card h4"
+      )
+    ).toHaveText(
+      "ちいかわベビーカステラ 小樽店"
+    );
+
+    await page.locator(
+      "#current-filter-reset"
+    ).click();
+
     const osakaCard =
       page.locator(
         ".official-spot-card"
@@ -3349,6 +3375,26 @@ test(
       ).last()
     ).toBeVisible();
 
+    await page.evaluate(() => {
+      window.__activityImageTexts = [];
+      const originalFillText =
+        CanvasRenderingContext2D.prototype.fillText;
+      CanvasRenderingContext2D.prototype.fillText =
+        function captureActivityImageText(
+          text,
+          ...args
+        ) {
+          window.__activityImageTexts.push(
+            String(text)
+          );
+          return originalFillText.call(
+            this,
+            text,
+            ...args
+          );
+        };
+    });
+
     const downloadPromise =
       page.waitForEvent("download");
     await page.locator(
@@ -3360,6 +3406,25 @@ test(
       download.suggestedFilename()
     ).toMatch(
       /^watashi-no-chiikatsu-\d{4}-\d{2}-\d{2}\.png$/
+    );
+    expect(
+      await page.evaluate(
+        () =>
+          window.__activityImageTexts
+      )
+    ).toEqual(
+      expect.arrayContaining([
+        "ブランド別コレクション",
+        "ちいかわらんど",
+        "ちいかわラーメン 豚",
+        "ちいかわもぐもぐ本舗",
+        "ちいかわベビーカステラ",
+        "まじかるちいかわ",
+        "ちいかわ焼き",
+        "ナガノマーケット",
+        "ちいかわレストラン",
+        "シーサーのおみやげやさん"
+      ])
     );
 
     await page.evaluate(() => {
@@ -3402,6 +3467,34 @@ test(
         )
     ).toContain(
       "twitter.com/intent/tweet"
+    );
+    const xShare =
+      await page.evaluate(() => {
+        const intent = new URL(
+          window.__activityXIntent
+        );
+        return {
+          text:
+            intent.searchParams.get(
+              "text"
+            ),
+          hasSeparateUrl:
+            intent.searchParams.has(
+              "url"
+            ),
+          expectedUrl:
+            new URL(
+              "./journal.html?view=activity",
+              window.location.href
+            ).toString()
+        };
+      });
+    expect(
+      xShare.hasSeparateUrl
+    ).toBe(false);
+    expect(xShare.text).toContain(
+      "#ちい活MAP #ちいかわ #ちい活\n" +
+        xShare.expectedUrl
     );
   }
 );

@@ -39,6 +39,8 @@ const BRAND_LABELS = {
     "まじかるちいかわ",
   mogumogu:
     "ちいかわもぐもぐ本舗",
+  baby_castella:
+    "ちいかわベビーカステラ",
   chiikawa_park:
     "ちいかわパーク",
   chiikawa_restaurant:

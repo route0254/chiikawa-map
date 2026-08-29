@@ -58,6 +58,7 @@ const BRAND_COLLECTIONS = [
   ["chiikawaland", "ちいかわらんど"],
   ["ramen_buta", "ちいかわラーメン 豚"],
   ["mogumogu", "ちいかわもぐもぐ本舗"],
+  ["baby_castella", "ちいかわベビーカステラ"],
   ["magical_chiikawa", "まじかるちいかわ"],
   ["chiikawa_yaki", "ちいかわ焼き"],
   ["nagano_market", "ナガノマーケット"],
@@ -3101,21 +3102,6 @@ async function createActivityImage() {
     }
   );
 
-  const brandHighlights =
-    data.brandCollections
-      .filter(
-        collection =>
-          collection.visited > 0
-      )
-      .sort(
-        (first, second) =>
-          second.visited / second.total -
-            first.visited / first.total ||
-          second.visited -
-            first.visited
-      )
-      .slice(0, 3);
-
   context.fillStyle = "#4e4251";
   context.font =
     '900 17px "Zen Maru Gothic", sans-serif';
@@ -3124,39 +3110,73 @@ async function createActivityImage() {
     96,
     526
   );
-  context.fillStyle = "#796d7b";
-  context.font =
-    '700 15px "Zen Maru Gothic", sans-serif';
-  context.fillText(
-    brandHighlights.length
-      ? brandHighlights.map(
-          collection =>
-            `${collection.label} ${collection.visited}/${collection.total}`
-        ).join("  ・  ")
-      : "訪問記録を追加すると、ブランド別の進捗が表示されます。",
-    96,
-    558,
-    1000
+  const brandCardWidth = 316;
+  const brandCardHeight = 26;
+  const brandCardGapX = 16;
+  const brandCardGapY = 6;
+
+  data.brandCollections.forEach(
+    (collection, index) => {
+      const column = index % 3;
+      const row = Math.floor(index / 3);
+      const x =
+        96 + column * (
+          brandCardWidth +
+          brandCardGapX
+        );
+      const y =
+        536 + row * (
+          brandCardHeight +
+          brandCardGapY
+        );
+
+      drawRoundRect(
+        context,
+        x,
+        y,
+        brandCardWidth,
+        brandCardHeight,
+        9,
+        collection.visited > 0
+          ? "#fff0f6"
+          : "#f7f3f7"
+      );
+      context.fillStyle = "#655a68";
+      context.font =
+        '800 12px "Zen Maru Gothic", sans-serif';
+      context.textAlign = "left";
+      context.fillText(
+        collection.label,
+        x + 11,
+        y + 18,
+        238
+      );
+      context.fillStyle =
+        collection.visited > 0
+          ? "#c95f8c"
+          : "#897d8b";
+      context.font =
+        '900 13px "Zen Maru Gothic", sans-serif';
+      context.textAlign = "right";
+      context.fillText(
+        `${collection.visited}/${collection.total}`,
+        x + brandCardWidth - 11,
+        y + 18
+      );
+    }
   );
 
-  context.fillStyle = "#9a8e9b";
-  context.font =
-    '700 15px "Zen Maru Gothic", sans-serif';
-  context.fillText(
-    "行った場所を記録して、自分だけのちい活記録をつくろう。",
-    96,
-    598,
-    565
-  );
+  context.textAlign = "left";
   context.fillStyle = "#8a72dc";
   context.font =
-    '900 15px "Zen Maru Gothic", sans-serif';
+    '900 14px "Zen Maru Gothic", sans-serif';
+  context.textAlign = "right";
   context.fillText(
-    "chiikatsu-map.com  #ちい活MAP  |  非公式ファンサイト",
-    674,
-    598,
-    430
+    "chiikatsu-map.com  |  非公式ファンサイト",
+    1104,
+    105
   );
+  context.textAlign = "left";
 
   return new Promise(
     resolve => {
@@ -3185,7 +3205,15 @@ function getActivityShareText() {
     "ちい活MAPで、これまでのちい活をまとめてみました📍",
     `行ったスポット ${data.visitedSpots.length}件・訪問都道府県 ${data.prefectureCounts.size}`,
     "自分だけのちい活記録もつくれます。",
-    "#ちい活MAP #ちいかわ"
+    "#ちい活MAP #ちいかわ #ちい活"
+  ].join("\n");
+}
+
+
+function getActivitySharePostText() {
+  return [
+    getActivityShareText(),
+    getActivityShareUrl()
   ].join("\n");
 }
 
@@ -3251,9 +3279,8 @@ async function shareActivityImage() {
       try {
         await navigator.share({
           title: "わたしのちい活記録",
-          text: getActivityShareText(),
-          files: [file],
-          url: getActivityShareUrl()
+          text: getActivitySharePostText(),
+          files: [file]
         });
         return;
       } catch (error) {
@@ -3292,11 +3319,7 @@ function getXIntentUrl() {
     );
   intent.searchParams.set(
     "text",
-    getActivityShareText()
-  );
-  intent.searchParams.set(
-    "url",
-    getActivityShareUrl()
+    getActivitySharePostText()
   );
   return intent.toString();
 }
@@ -3350,9 +3373,8 @@ async function postActivityToX() {
       try {
         await navigator.share({
           title: "わたしのちい活記録",
-          text: getActivityShareText(),
-          files: [file],
-          url: getActivityShareUrl()
+          text: getActivitySharePostText(),
+          files: [file]
         });
         return;
       } catch (error) {
