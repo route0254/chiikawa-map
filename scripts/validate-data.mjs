@@ -194,6 +194,7 @@ const officialBrands = new Set([
   "magical_chiikawa",
   "mogumogu",
   "baby_castella",
+  "chiikawa_baby",
   "chiikawa_park",
   "chiikawa_restaurant",
   "chiikawa_bakery",

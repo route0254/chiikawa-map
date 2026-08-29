@@ -2561,6 +2561,50 @@ test(
       "#current-filter-reset"
     ).click();
 
+    await expect(
+      page.locator(
+        '#current-brand option[value="chiikawa_baby"]'
+      )
+    ).toHaveText(
+      /^Chiikawa Baby（3）$/
+    );
+
+    await page.locator(
+      "#current-brand"
+    ).selectOption(
+      "chiikawa_baby"
+    );
+
+    await expect(
+      page.locator(
+        "#current-result-summary"
+      )
+    ).toHaveText("3件を表示しています。");
+
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card"
+      )
+    ).toHaveCount(3);
+
+    for (const venueName of [
+      "JR大宮駅",
+      "遠鉄百貨店",
+      "羽田空港第1ターミナル"
+    ]) {
+      await expect(
+        page.locator(
+          "#current-groups .official-spot-card h4"
+        ).filter({
+          hasText: venueName
+        })
+      ).toHaveCount(1);
+    }
+
+    await page.locator(
+      "#current-filter-reset"
+    ).click();
+
     const osakaCard =
       page.locator(
         ".official-spot-card"
@@ -2748,6 +2792,36 @@ test(
     );
 
     expect(archiveRequestCount).toBe(1);
+
+    await expect(
+      page.locator(
+        '#past-brand option[value="chiikawa_baby"]'
+      )
+    ).toHaveText(
+      /^Chiikawa Baby（8）$/
+    );
+
+    await page.locator(
+      "#past-brand"
+    ).selectOption(
+      "chiikawa_baby"
+    );
+
+    await expect(
+      page.locator(
+        "#past-result-summary"
+      )
+    ).toHaveText("8件を表示しています。");
+
+    await expect(
+      page.locator(
+        "#past-groups .official-spot-card"
+      )
+    ).toHaveCount(8);
+
+    await page.locator(
+      "#past-filter-reset"
+    ).click();
 
     await page.locator(
       "#past-search"

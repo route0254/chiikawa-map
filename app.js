@@ -99,6 +99,9 @@ const BRAND_LABELS = {
   baby_castella:
     "ちいかわベビーカステラ",
 
+  chiikawa_baby:
+    "Chiikawa Baby",
+
   chiikawa_park:
     "ちいかわパーク",
 
