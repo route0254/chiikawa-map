@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20260829-2";
+  "chiikatsu-map-v20260829-3";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -22,6 +22,8 @@ const CORE_FILES = [
   "./official.js",
   "./journal.js",
   "./cloud-sync-loader.js",
+  "./cloud-sync-ui.js",
+  "./cloud-sync-merge.js",
   "./pwa.js",
   "./manifest.webmanifest",
   "./favicon.svg",

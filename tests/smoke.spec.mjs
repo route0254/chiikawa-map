@@ -3073,6 +3073,153 @@ test(
 
 
 test(
+  "各ページ右上からGoogle保存を案内できる",
+  async ({ page }) => {
+    await page.goto("/privacy.html");
+
+    const account =
+      page.locator(
+        "[data-cloud-header-account]"
+      );
+    await expect(account).toBeAttached();
+    await expect(account).toBeHidden();
+
+    await page.evaluate(() => {
+      window.__cloudUiActions = [];
+      window.ChiikatsuCloudSync = {
+        getState() {
+          return {
+            available: true,
+            signedIn: false,
+            syncing: false,
+            status: "signed-out",
+            needsAccountConfirmation:
+              false,
+            lastSyncedAt: null
+          };
+        },
+        async signIn() {
+          window.__cloudUiActions.push(
+            "signIn"
+          );
+        },
+        async syncNow() {
+          window.__cloudUiActions.push(
+            "syncNow"
+          );
+        },
+        async signOut() {
+          window.__cloudUiActions.push(
+            "signOut"
+          );
+        }
+      };
+      window.dispatchEvent(
+        new CustomEvent(
+          "chiikatsu:cloud-sync-state",
+          {
+            detail:
+              window.ChiikatsuCloudSync
+                .getState()
+          }
+        )
+      );
+    });
+
+    await expect(account).toBeVisible();
+    const button =
+      account.locator(
+        "[data-cloud-header-button]"
+      );
+    await expect(button).toContainText(
+      "Googleで保存"
+    );
+    await expect(button).toContainText(
+      "行きたい・行った！を守る"
+    );
+    await button.click();
+    expect(
+      await page.evaluate(
+        () => window.__cloudUiActions
+      )
+    ).toContain("signIn");
+
+    await page.evaluate(() => {
+      window.dispatchEvent(
+        new CustomEvent(
+          "chiikatsu:cloud-sync-state",
+          {
+            detail: {
+              available: true,
+              signedIn: true,
+              syncing: false,
+              status: "synced",
+              needsAccountConfirmation:
+                false,
+              lastSyncedAt:
+                "2026-08-29T03:00:00.000Z"
+            }
+          }
+        )
+      );
+    });
+
+    await expect(button).toContainText(
+      "Google保存中"
+    );
+    await expect(button).toContainText(
+      "端末間で自動同期"
+    );
+    await button.click();
+    const popover =
+      account.locator(
+        "[data-cloud-header-popover]"
+      );
+    await expect(popover).toBeVisible();
+    await expect(popover).toContainText(
+      "端末を丸ごと上書きせず"
+    );
+    await popover
+      .getByRole("button", {
+        name: "今すぐ同期"
+      })
+      .click();
+    expect(
+      await page.evaluate(
+        () => window.__cloudUiActions
+      )
+    ).toContain("syncNow");
+
+    await page.setViewportSize({
+      width: 390,
+      height: 844
+    });
+    const box =
+      await button.boundingBox();
+    expect(box?.height).toBeGreaterThanOrEqual(
+      44
+    );
+
+    for (
+      const url of [
+        "/",
+        "/official.html",
+        "/journal.html",
+        "/spot/chiikawaland-osaka-umeda/"
+      ]
+    ) {
+      await page.goto(url);
+      await expect(
+        page.locator(
+          "[data-cloud-header-account]"
+        )
+      ).toBeAttached();
+    }
+  }
+);
+
+
+test(
   "手帳でカレンダー・プラン・足あとを一続きで利用できる",
   async ({ page }) => {
     const disabledCloudRequests = [];

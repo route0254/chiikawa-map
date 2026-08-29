@@ -16,6 +16,28 @@ try {
   if (response.ok) {
     const config =
       await response.json();
+    const createModuleUrl =
+      fileName => {
+        const url = new URL(
+          fileName,
+          import.meta.url
+        );
+
+        if (config.version) {
+          url.searchParams.set(
+            "v",
+            config.version
+          );
+        }
+
+        return url;
+      };
+
+    await import(
+      createModuleUrl(
+        "./cloud-sync-ui.js"
+      ).href
+    );
 
     const enabledHosts =
       Array.isArray(
@@ -48,21 +70,16 @@ try {
     ) {
       window.__CHIIKATSU_FIREBASE_CONFIG__ =
         config;
-      const syncModuleUrl =
-        new URL(
-          "./cloud-sync.js",
-          import.meta.url
-        );
-
-      if (config.version) {
-        syncModuleUrl.searchParams.set(
-          "v",
-          config.version
-        );
-      }
+      await import(
+        createModuleUrl(
+          "./cloud-sync-merge.js"
+        ).href
+      );
 
       await import(
-        syncModuleUrl.href
+        createModuleUrl(
+          "./cloud-sync.js"
+        ).href
       );
     }
   }

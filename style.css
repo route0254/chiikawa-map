@@ -109,6 +109,245 @@ button {
 }
 
 
+.cloud-header-account {
+  position: relative;
+  z-index: 1200;
+
+  margin-left: auto;
+}
+
+
+.cloud-header-account[hidden],
+.cloud-header-popover[hidden],
+.cloud-header-actions [hidden] {
+  display: none;
+}
+
+
+.cloud-header-button {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 44px;
+  padding: 6px 12px 6px 8px;
+
+  border: 1px solid #e6dce3;
+  border-radius: 14px;
+
+  color: #4f414b;
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 5px 16px rgba(91, 68, 83, 0.08);
+}
+
+
+.cloud-header-button:hover {
+  border-color: #d8b6c8;
+  background: #fff;
+
+  transform: translateY(-1px);
+}
+
+
+.cloud-header-button:focus-visible {
+  outline: 3px solid rgba(117, 104, 232, 0.24);
+  outline-offset: 2px;
+}
+
+
+.cloud-header-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+
+.cloud-header-button.is-signed-in {
+  border-color: #bfe2d0;
+  background: #f2fff8;
+}
+
+
+.cloud-header-button.is-warning {
+  border-color: #f1ce83;
+  background: #fffaf0;
+}
+
+
+.cloud-header-icon {
+  display: grid;
+  place-items: center;
+
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #fff0f6,
+    #f0edff
+  );
+
+  font-size: 17px;
+}
+
+
+.cloud-header-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+
+.cloud-header-copy strong {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+
+.cloud-header-copy small {
+  margin-top: 3px;
+
+  color: #806f7a;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+.cloud-header-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+
+  width: min(330px, calc(100vw - 32px));
+  padding: 15px;
+
+  border: 1px solid #eadde5;
+  border-radius: 17px;
+
+  background: rgba(255, 255, 255, 0.98);
+
+  box-shadow:
+    0 18px 45px rgba(70, 50, 63, 0.2);
+}
+
+
+.cloud-header-popover > strong {
+  color: #4b3d46;
+
+  font-size: 14px;
+  font-weight: 900;
+}
+
+
+.cloud-header-popover > p {
+  margin: 7px 0 9px;
+
+  color: #71616b;
+
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+
+.cloud-header-status {
+  display: block;
+
+  padding: 8px 9px;
+
+  border-radius: 10px;
+
+  color: #466657;
+  background: #eefaf4;
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+.cloud-header-status[data-state="offline"],
+.cloud-header-status[data-state="pending"],
+.cloud-header-status[data-state="account-confirmation"] {
+  color: #7a5b1f;
+  background: #fff6df;
+}
+
+
+.cloud-header-status[data-state="error"] {
+  color: #943d59;
+  background: #fff0f5;
+}
+
+
+.cloud-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 10px;
+}
+
+
+.cloud-header-actions button,
+.cloud-header-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+  padding: 7px 10px;
+
+  border: 1px solid #e4dce1;
+  border-radius: 10px;
+
+  color: #5c4b55;
+  background: #fff;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+.cloud-header-actions button:hover,
+.cloud-header-actions a:hover {
+  border-color: #d8b6c8;
+  background: #fff8fb;
+}
+
+
+@media (max-width: 560px) {
+  .site-header-top {
+    flex-wrap: wrap;
+  }
+
+  .cloud-header-account {
+    flex-basis: 100%;
+
+    margin-top: 5px;
+  }
+
+  .cloud-header-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .cloud-header-popover {
+    width: 100%;
+  }
+}
+
+
 .site-kicker {
   color: var(--accent);
 

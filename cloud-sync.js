@@ -1,5 +1,21 @@
 const FIREBASE_VERSION =
   "12.18.0";
+const cloudMerge =
+  window.ChiikatsuCloudMerge;
+
+if (
+  !cloudMerge ||
+  typeof cloudMerge.mergePayloads !==
+    "function"
+) {
+  throw new Error(
+    "クラウド同期の統合処理を読み込めませんでした。"
+  );
+}
+
+const {
+  mergePayloads
+} = cloudMerge;
 
 const STORAGE_KEYS = {
   favorites:
@@ -782,87 +798,6 @@ function normalizePayload(
                 false
               )
             : undefined
-      )
-  };
-}
-
-
-function chooseNewestRecord(
-  first,
-  second
-) {
-  if (!first) {
-    return second || null;
-  }
-  if (!second) {
-    return first;
-  }
-  if (
-    first.updatedAt !==
-      second.updatedAt
-  ) {
-    return first.updatedAt >
-      second.updatedAt
-      ? first
-      : second;
-  }
-  return first.deviceId >=
-    second.deviceId
-    ? first
-    : second;
-}
-
-
-function mergeRecordMaps(
-  first,
-  second
-) {
-  const ids =
-    new Set([
-      ...Object.keys(first),
-      ...Object.keys(second)
-    ]);
-
-  return Object.fromEntries(
-    Array.from(ids)
-      .sort()
-      .map(
-        id => [
-          id,
-          chooseNewestRecord(
-            first[id],
-            second[id]
-          )
-        ]
-      )
-  );
-}
-
-
-function mergePayloads(
-  first,
-  second
-) {
-  return {
-    favorites:
-      mergeRecordMaps(
-        first.favorites,
-        second.favorites
-      ),
-    visited:
-      mergeRecordMaps(
-        first.visited,
-        second.visited
-      ),
-    visitDetails:
-      mergeRecordMaps(
-        first.visitDetails,
-        second.visitDetails
-      ),
-    plan:
-      chooseNewestRecord(
-        first.plan,
-        second.plan
       )
   };
 }

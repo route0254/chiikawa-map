@@ -207,7 +207,7 @@ function createPage(spot) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../style.css?v=20260828-3">
+  <link rel="stylesheet" href="../../style.css?v=20260829-1">
   <link rel="stylesheet" href="../../spot.css?v=20260828-1">
   <script type="application/ld+json">${escapeJson(createStructuredData(spot))}</script>
 </head>
