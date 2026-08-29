@@ -94,10 +94,20 @@
       <section>
         <h3>外部サービスと安全対策</h3>
         <p>
-          公開にはGitHub Pages、任意の認証・同期にはGoogle Firebaseを利用します。各サービスでは不正利用防止や提供に必要な技術情報が、各社の方針に基づいて処理される場合があります。
+          公開にはGitHub Pages、任意の認証・同期と利用状況の把握にはGoogle Firebaseを利用します。各サービスでは不正利用防止や提供に必要な技術情報が、各社の方針に基づいて処理される場合があります。
         </p>
         <p>
-          Firestore Security Rulesにより、ログイン中の本人だけが自分の記録を読み書きできるよう制限します。本サイトはアクセス解析ツールや広告を現在使用していません。
+          Firestore Security Rulesにより、ログイン中の本人だけが自分の記録を読み書きできるよう制限します。App Checkは準備中で、現時点では強制していません。
+        </p>
+      </section>
+
+      <section>
+        <h3>アクセス解析</h3>
+        <p>
+          サイトの改善と利用状況の把握のため、Google Analytics for Firebase（GA4）を利用します。閲覧したページ、アクセス日時、端末・ブラウザの種類、おおよその地域などの情報が、Cookieや類似の識別子とともにGoogleへ送信される場合があります。
+        </p>
+        <p>
+          「行きたい」「行った！」「訪問日・メモ」「今日のプラン」、現在地、Googleログインの表示名・メールアドレスをアクセス解析へ送る独自イベントは実装していません。広告は現在掲載していません。Cookie等はブラウザの設定やGoogleのオプトアウト手段で制限できます。
         </p>
       </section>
 
@@ -116,12 +126,15 @@
       外部サービスの方針：
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>
       ／
+      <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a>
+      ／
       <a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHubプライバシーステートメント</a>
     </p>
 
     <a class="legal-back" href="journal.html?view=activity">← わたしの足あとへ戻る</a>
     <p class="site-note">本サイトは公式とは関係のない非公式ファンサイトです。</p>
   </main>
+  <script type="module" src="cloud-sync-loader.js?v=20260829-2"></script>
 </body>
 
 </html>

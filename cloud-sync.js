@@ -16,6 +16,8 @@ const META_STORAGE_KEY =
   "chiikawa-map-cloud-sync-meta-v1";
 const STATE_EVENT =
   "chiikatsu:cloud-sync-state";
+const ANALYTICS_STATE_EVENT =
+  "chiikatsu:analytics-state";
 const SCHEMA_VERSION = 1;
 const MAX_RECORDS = 5000;
 const MAX_ID_LENGTH = 200;
@@ -46,6 +48,13 @@ let publicState = {
   needsAccountConfirmation: false,
   error: ""
 };
+let analyticsState = {
+  enabled: false,
+  initialized: false,
+  supported: null,
+  status: "disabled",
+  error: ""
+};
 
 
 function publishState(
@@ -61,6 +70,26 @@ function publishState(
       {
         detail: {
           ...publicState
+        }
+      }
+    )
+  );
+}
+
+
+function publishAnalyticsState(
+  patch = {}
+) {
+  analyticsState = {
+    ...analyticsState,
+    ...patch
+  };
+  window.dispatchEvent(
+    new CustomEvent(
+      ANALYTICS_STATE_EVENT,
+      {
+        detail: {
+          ...analyticsState
         }
       }
     )
@@ -1397,6 +1426,15 @@ window.ChiikatsuCloudSync = {
 };
 
 
+window.ChiikatsuAnalytics = {
+  getState() {
+    return {
+      ...analyticsState
+    };
+  }
+};
+
+
 window.addEventListener(
   "online",
   () => {
@@ -1436,6 +1474,67 @@ window.addEventListener(
     }
   }
 );
+
+
+async function initializeAnalytics(
+  app,
+  config,
+  baseUrl
+) {
+  const measurementId =
+    config.firebase
+      ?.measurementId;
+
+  if (
+    config.analytics?.enabled ===
+      false ||
+    !measurementId
+  ) {
+    return;
+  }
+
+  publishAnalyticsState({
+    enabled: true,
+    status: "loading",
+    error: ""
+  });
+
+  try {
+    const analyticsApi =
+      await import(
+        `${baseUrl}/firebase-analytics.js`
+      );
+    const supported =
+      await analyticsApi.isSupported();
+
+    if (!supported) {
+      publishAnalyticsState({
+        supported: false,
+        status: "unsupported"
+      });
+      return;
+    }
+
+    analyticsApi.getAnalytics(app);
+    publishAnalyticsState({
+      initialized: true,
+      supported: true,
+      status: "ready"
+    });
+  } catch (error) {
+    console.warn(
+      "アクセス解析を初期化できませんでした。",
+      error
+    );
+    publishAnalyticsState({
+      supported: false,
+      status: "error",
+      error:
+        error?.message ||
+        "アクセス解析を初期化できませんでした。"
+    });
+  }
+}
 
 
 async function initializeCloudSync() {
@@ -1507,6 +1606,12 @@ async function initializeCloudSync() {
       appModule.initializeApp(
         firebaseConfig
       );
+
+    void initializeAnalytics(
+      app,
+      config,
+      baseUrl
+    );
 
     if (
       config.appCheck?.enabled &&

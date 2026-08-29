@@ -3008,6 +3008,71 @@ test(
 
 
 test(
+  "FirebaseとGA4を本番ドメインだけで有効化する",
+  async ({ page }) => {
+    const config = JSON.parse(
+      await readFile(
+        resolve(
+          projectDirectory,
+          "firebase-config.json"
+        ),
+        "utf8"
+      )
+    );
+
+    expect(config.enabled).toBe(true);
+    expect(
+      config.enabledHosts
+    ).toEqual([
+      "chiikatsu-map.com",
+      "www.chiikatsu-map.com"
+    ]);
+    expect(
+      config.analytics?.enabled
+    ).toBe(true);
+    expect(
+      config.firebase?.measurementId
+    ).toBe("G-CXQQ9MEQZZ");
+
+    const firebaseRequests = [];
+    page.on(
+      "request",
+      request => {
+        if (
+          request.url().includes(
+            "/cloud-sync.js"
+          ) ||
+          request.url().includes(
+            "gstatic.com/firebasejs"
+          )
+        ) {
+          firebaseRequests.push(
+            request.url()
+          );
+        }
+      }
+    );
+
+    await page.goto("/privacy.html");
+    await expect(
+      page.locator("main")
+    ).toContainText(
+      "Google Analytics for Firebase"
+    );
+    await page.waitForTimeout(300);
+
+    expect(firebaseRequests).toEqual([]);
+    expect(
+      await page.evaluate(
+        () =>
+          window.ChiikatsuCloudSync
+      )
+    ).toBeUndefined();
+  }
+);
+
+
+test(
   "手帳でカレンダー・プラン・足あとを一続きで利用できる",
   async ({ page }) => {
     const disabledCloudRequests = [];

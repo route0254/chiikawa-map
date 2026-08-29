@@ -14,7 +14,7 @@ GitHub Pages向けの静的Webサイトです。
 - `app.js` : 地図 / フィルター / 期間判定 / MarkerCluster / データ読込
 - `official.css` / `official.js` : 公式一覧ページのデザイン / タブ / 分類 / 遅延読込
 - `journal.css` / `journal.js` : ちい活手帳のデザイン / カレンダー / プラン / 訪問記録の可視化
-- `cloud-sync-loader.js` / `cloud-sync.js` / `firebase-config.json` : 任意のGoogleログイン・Firestore同期（設定が無効な間は同期本体とFirebase SDKを読込しない）
+- `cloud-sync-loader.js` / `cloud-sync.js` / `firebase-config.json` : 任意のGoogleログイン・Firestore同期とGA4（本番ドメインだけでFirebase SDKを読込）
 - `firestore.rules` / `docs/cloud-sync-setup.md` : 利用者本人だけに限定するルールと有効化手順
 - `spot/` : 3つのスポットJSONから自動生成するスポット個別ページ
 - `spot.css` / `spot-page.js` : スポット個別ページの表示・端末保存・共有
@@ -109,7 +109,8 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 - 「わたしの足あと」で訪問総数・都道府県・常設・開催中・今年・ナガセン・ブランド別・過去イベント年別の記録を自動集計
 - 未訪問の開催中イベントを終了日順に表示し、足あと集計から次のちい活へ移動できる導線を追加
 - SNS向け共有PNGを再設計し、スマホの共有メニューとPCの画像コピー / 保存 + X Web Intentに対応
-- 既存の端末保存を維持したlocal-firstクラウド同期基盤を追加。Firebase未設定時はUIも外部SDK読込も無効
+- 既存の端末保存を維持したlocal-firstクラウド同期をFirebaseで有効化。Googleログインは任意で、App Checkは未強制
+- Google Analytics for Firebase（GA4）を本番ドメインで有効化。保存したちい活記録を解析イベントとして送る処理は追加しない
 - ホーム画面追加用Manifest・アイコン・任意表示の端末別案内を追加。地図タイルはキャッシュせず静的画面とデータだけを最低限保存
 - 545スポットすべてに `/spot/<id>/` 個別ページをJSONから自動生成。現在・ナガノ関連162件をサイトマップへ掲載し、終了済み383件は `noindex,follow`
 - 従来の `?spot=<id>` URLは地図を直接開く互換URLとして引き続き利用可能
@@ -453,7 +454,7 @@ GitHub ActionsでもJSON検証と主要UIのスモークテストを行います
 ## 記録の保存について
 
 「♡ 行きたい」「👜 今日のプラン」「✓ 行った！」と、行ったスポットに入力した訪問日・メモはブラウザの `localStorage` を利用します。
-操作時は必ず端末へ先に保存するため、ログインなし・オフラインでも従来どおり利用できます。クラウド保存を有効化してGoogleログインした場合だけ、同じ記録をFirestoreにも同期します。Firebaseが未設定の現在は端末保存のみです。
+操作時は必ず端末へ先に保存するため、ログインなし・オフラインでも従来どおり利用できます。「Googleで保存する」からログインした場合だけ、同じ記録をFirestoreにも同期します。
 
 クラウド同期は既存の保存キーと形式を変更せず、別の同期メタデータに更新時刻・端末ID・削除状態を保持します。初回ログイン時は端末とクラウドを統合し、複数端末では原則として新しい変更を優先します。設定・公開手順は `docs/cloud-sync-setup.md` を参照してください。
 

@@ -1,12 +1,21 @@
 {
-  "enabled": false,
+  "enabled": true,
+  "version": "20260829-2",
+  "enabledHosts": [
+    "chiikatsu-map.com",
+    "www.chiikatsu-map.com"
+  ],
   "firebase": {
-    "apiKey": "",
-    "authDomain": "",
-    "projectId": "",
-    "storageBucket": "",
-    "messagingSenderId": "",
-    "appId": ""
+    "apiKey": "AIzaSyBe2LuxM64clFKqaABFfeRL0OPVNNVSC8I",
+    "authDomain": "chiikatsu-map.firebaseapp.com",
+    "projectId": "chiikatsu-map",
+    "storageBucket": "chiikatsu-map.firebasestorage.app",
+    "messagingSenderId": "585369925803",
+    "appId": "1:585369925803:web:86d4ede4cb48708b40dfee",
+    "measurementId": "G-CXQQ9MEQZZ"
+  },
+  "analytics": {
+    "enabled": true
   },
   "appCheck": {
     "enabled": false,
