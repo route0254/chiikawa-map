@@ -172,7 +172,7 @@ const CURRENT_GROUPS = [
     title:
       "常設ショップ",
     description:
-      "いつでも立ち寄りやすい公式グッズショップ",
+      "常設の公式グッズショップ",
     matches:
       spot =>
         spot.periodType === "permanent" &&
@@ -186,7 +186,7 @@ const CURRENT_GROUPS = [
     title:
       "常設フード・体験",
     description:
-      "食事、スイーツ、展示などを楽しめる常設施設",
+      "飲食、スイーツ、展示などの常設施設",
     matches:
       spot =>
         spot.periodType === "permanent" &&

@@ -42,7 +42,6 @@
     type="image/svg+xml"
   >
 
-  <!-- Japanese rounded font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -50,7 +49,6 @@
     rel="stylesheet"
   >
 
-  <!-- Leaflet -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -58,7 +56,6 @@
     crossorigin=""
   >
 
-  <!-- Leaflet MarkerCluster -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
@@ -78,9 +75,7 @@
 
 <body>
 
-  <!-- ======================================================
-       HEADER
-       ====================================================== -->
+  <!-- HEADER -->
 
   <header class="site-header">
 
@@ -133,9 +128,7 @@
   </header>
 
 
-  <!-- ======================================================
-       NOTICE
-       ====================================================== -->
+  <!-- NOTICE -->
 
   <div class="site-notice">
 
@@ -176,18 +169,14 @@
   </div>
 
 
-  <!-- ======================================================
-       PAGE
-       ====================================================== -->
+  <!-- PAGE -->
 
   <main class="page-shell">
 
     <section class="map-card">
 
 
-      <!-- ==================================================
-           SEARCH
-           ================================================== -->
+      <!-- SEARCH -->
 
       <div class="map-search-bar">
 
@@ -238,9 +227,7 @@
       </div>
 
 
-      <!-- ==================================================
-           TOOLBAR
-           ================================================== -->
+      <!-- TOOLBAR -->
 
       <div class="map-toolbar">
 
@@ -514,9 +501,7 @@
       </div>
 
 
-      <!-- ==================================================
-           DATE DISCOVERY
-           ================================================== -->
+      <!-- DATE DISCOVERY -->
 
       <section
         class="date-discovery"
@@ -524,8 +509,8 @@
       >
         <div class="date-discovery-copy">
           <span class="date-discovery-kicker">WHEN TO GO?</span>
-          <strong id="date-discovery-title">いつ行く？</strong>
-          <span>開催日を基準に、今行きやすい候補をすぐ絞れます。</span>
+          <strong id="date-discovery-title">開催日から絞り込む</strong>
+          <span>今日、今週末、近日開始、終了間近のスポットを表示します。</span>
         </div>
 
         <div
@@ -572,9 +557,7 @@
       </section>
 
 
-      <!-- ==================================================
-           MAP + DETAIL
-           ================================================== -->
+      <!-- MAP + DETAIL -->
 
       <div
         class="map-content"
@@ -584,9 +567,7 @@
         <div id="map-wrapper">
 
 
-          <!-- ==============================================
-               FILTER PANEL
-               ============================================== -->
+          <!-- FILTER PANEL -->
 
           <aside
             id="filter-panel"
@@ -1081,9 +1062,7 @@
           </aside>
 
 
-          <!-- ==============================================
-               SAVED DATA PANEL
-               ============================================== -->
+          <!-- SAVED DATA PANEL -->
 
           <aside
             id="saved-data-panel"
@@ -1205,9 +1184,7 @@
           </aside>
 
 
-          <!-- ==============================================
-               OFFICIAL HELP PANEL
-               ============================================== -->
+          <!-- OFFICIAL HELP PANEL -->
 
           <aside
             id="official-help-panel"
@@ -1340,7 +1317,7 @@
                   <div><strong>予約可</strong><span>事前予約できますが、原則として予約なしでも利用できます。</span></div>
                   <div><strong>予約優先</strong><span>予約者が優先。空きがあれば予約なしでも利用できる場合があります。</span></div>
                   <div><strong>要予約</strong><span>原則として事前予約・チケットなどが必要です。</span></div>
-                  <div><strong>要確認</strong><span>日付や混雑状況などで運用が変わるため、最新案内の確認をおすすめします。</span></div>
+                  <div><strong>要確認</strong><span>日付や混雑状況などで運用が変わるため、最新案内を確認してください。</span></div>
                 </div>
 
                 <p class="help-important">
@@ -1365,9 +1342,7 @@
           </aside>
 
 
-          <!-- ==============================================
-               NAGANO HELP PANEL
-               ============================================== -->
+          <!-- NAGANO HELP PANEL -->
 
           <aside
             id="nagano-help-panel"
@@ -1525,7 +1500,7 @@
               <p class="help-important nagano-help-note">
                 ナガセン関連には「確定」「推定・高確度」「要注意候補」を掲載しています。
                 ピンを選ぶと詳細上部に ✓確定 / △推定・高確度 / ？要注意候補が表示され、根拠リンクも確認できます。
-                推定スポットは断定情報ではない点をご理解のうえ、巡礼候補としてお楽しみください。
+                推定スポットは断定情報ではありません。巡礼候補として参照してください。
               </p>
 
             </div>
@@ -1553,9 +1528,7 @@
         </div>
 
 
-        <!-- ==================================================
-             SPOT DETAIL
-             ================================================== -->
+        <!-- SPOT DETAIL -->
 
         <aside
           id="spot-detail-panel"
@@ -1595,9 +1568,7 @@
       </div>
 
 
-      <!-- ==================================================
-           LIST VIEW
-           ================================================== -->
+      <!-- LIST VIEW -->
 
       <section
         id="spot-list-panel"
@@ -1655,7 +1626,7 @@
 
     <aside class="home-screen-card" data-home-screen-card>
       <div class="home-screen-card-copy">
-        <strong>スマホから、もっとすぐに。</strong>
+        <strong>ホーム画面に追加</strong>
         <span data-home-screen-status>ホーム画面に追加すると、ちい活MAPをアプリのように開けます。</span>
       </div>
       <button type="button" class="home-screen-button" data-home-screen>ホーム画面に追加</button>
@@ -1670,7 +1641,6 @@
   </main>
 
 
-  <!-- Leaflet -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -1678,7 +1648,6 @@
   ></script>
 
 
-  <!-- MarkerCluster -->
   <script
     src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
     integrity="sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr"
@@ -1686,7 +1655,6 @@
   ></script>
 
 
-  <!-- App -->
   <script src="app.js?v=20260831-2"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 

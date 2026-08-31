@@ -25,6 +25,12 @@ const projectDirectory =
   );
 
 
+const TEST_NOW =
+  new Date(
+    "2026-08-31T03:00:00.000Z"
+  );
+
+
 const localMapAssets = [
   {
     url:
@@ -70,6 +76,10 @@ const transparentTile =
 
 test.beforeEach(
   async ({ page }) => {
+    await page.clock.setFixedTime(
+      TEST_NOW
+    );
+
     for (
       const asset of
       localMapAssets
@@ -1041,7 +1051,7 @@ test(
           month: "2-digit",
           day: "2-digit"
         }
-      ).format(new Date());
+      ).format(TEST_NOW);
 
     const currentEndedCount =
       currentSpots.filter(
@@ -3234,7 +3244,7 @@ test(
       "Googleで保存"
     );
     await expect(button).toContainText(
-      "行きたい・行った！を守る"
+      "行きたい・行った！を保存"
     );
     await button.click();
     expect(

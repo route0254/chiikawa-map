@@ -2,7 +2,7 @@
 
 ちい活MAPの通常保存先は、これまでどおりブラウザの `localStorage` です。Firebaseを有効にした場合だけ、Googleログインした利用者の記録をFirestoreへ同期します。ログインは必須ではありません。
 
-## 実装済みの同期仕様
+## 同期仕様
 
 - 対象: 「行きたい」「行った！」「訪問日・メモ」「今日のプラン」
 - 地図・公式スポット一覧・ちい活手帳・個別スポット・プライバシーの各ページ右上からGoogleログイン可能
@@ -17,7 +17,7 @@
 - JSON書き出し・追加統合読み込みは非常用バックアップとして引き続き利用可能
 - 位置情報、Googleの表示名・メールアドレスはFirestoreへ保存しない
 
-## あなたがFirebase Consoleで行う作業
+## Firebase Console側の設定
 
 1. [Firebase Console](https://console.firebase.google.com/)でプロジェクトを作成します。本サイトではGoogle Analytics for Firebaseも有効化しています。
 2. 「プロジェクトの設定」からWebアプリを追加し、表示されたFirebase構成値を控えます。
@@ -64,7 +64,7 @@
 
 GA4はFirebase初期化とは別に読み込み、解析側の初期化に失敗してもAuthenticationとFirestore同期を止めません。保存したスポットID・訪問日・メモ・現在地・Googleアカウント情報を独自イベントとして送信する処理はありません。
 
-## 公開前に推奨する安全・費用設定
+## 安全・費用設定
 
 - Firebase App CheckでWebアプリを登録し、reCAPTCHA Enterpriseのサイトキーを設定します。最初はメトリクスを確認し、問題がなければFirestoreとAuthenticationの適用を有効にします。
 - `firebase-config.json` の `appCheck.siteKey` を設定して `appCheck.enabled` を `true` にします。

@@ -85,7 +85,7 @@ function createHeaderCloudUi() {
       <span class="cloud-header-icon" aria-hidden="true">☁</span>
       <span class="cloud-header-copy">
         <strong data-cloud-header-label>Googleで保存</strong>
-        <small data-cloud-header-detail>行きたい・行った！を守る</small>
+        <small data-cloud-header-detail>行きたい・行った！を保存</small>
       </span>
     </button>
     <div
@@ -258,7 +258,7 @@ function createHeaderCloudUi() {
         currentCloudState.status ===
           "error"
           ? "再読込してお試しください"
-          : "行きたい・行った！を守る";
+          : "行きたい・行った！を保存";
       closePopover();
     } else if (confirming) {
       label.textContent =

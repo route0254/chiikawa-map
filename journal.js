@@ -1,6 +1,4 @@
-// ============================================================
 // ちい活手帳
-// ============================================================
 
 const DATA_SOURCES = [
   {
@@ -686,9 +684,7 @@ function updateHeroCounts() {
 }
 
 
-// ============================================================
 // カレンダー
-// ============================================================
 
 let selectedDate =
   isDateString(
@@ -1323,9 +1319,7 @@ function populateCalendarPrefectures() {
 }
 
 
-// ============================================================
 // 今日のプラン
-// ============================================================
 
 function getWorkingPlanSpots() {
   return workingPlanIds
@@ -1934,9 +1928,7 @@ function renderPlan() {
 }
 
 
-// ============================================================
 // わたしの足あと
-// ============================================================
 
 function isActivityEvent(
   spot
@@ -2189,13 +2181,13 @@ function getActivityMessage(
   if (!visitedCount) {
     return {
       title: "まだ訪問記録はありません。",
-      text: "訪問記録から、あなたのちい活を自動で集計します。訪れたスポットで「行った！」を登録してみましょう。"
+      text: "スポットで「行った！」を登録すると、ここに集計結果を表示します。"
     };
   }
 
   return {
     title: `${visitedCount}スポットのちい活記録`,
-    text: `訪問記録から、あなたのちい活を自動で集計します。現在は${prefectureCount}都道府県に記録があります。`
+    text: `${prefectureCount}都道府県に訪問記録があります。`
   };
 }
 
@@ -3202,9 +3194,8 @@ function getActivityShareText() {
     getActivityData();
 
   return [
-    "ちい活MAPで、これまでのちい活をまとめてみました📍",
+    "ちい活MAPの訪問記録📍",
     `行ったスポット ${data.visitedSpots.length}件・訪問都道府県 ${data.prefectureCounts.size}`,
-    "自分だけのちい活記録もつくれます。",
     "#ちい活MAP #ちいかわ #ちい活"
   ].join("\n");
 }
@@ -3292,7 +3283,7 @@ async function shareActivityImage() {
 
     downloadActivityImage(blob);
     showStatus(
-      "共有用画像を保存しました。Xなどの投稿画面から画像を選んでご利用ください。",
+      "共有用画像を保存しました。投稿画面から画像を選択してください。",
       "success"
     );
   } catch (error) {
@@ -3620,9 +3611,7 @@ window.addEventListener(
 );
 
 
-// ============================================================
 // 読み込み・イベント
-// ============================================================
 
 async function loadSpots() {
   const results =
