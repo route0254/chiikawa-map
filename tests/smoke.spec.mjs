@@ -1890,7 +1890,6 @@ test(
           "top",
           "left",
           "left",
-          "left",
           "bottom",
           "right"
         ],
@@ -1899,7 +1898,6 @@ test(
           "magical-nagoya",
           "ramen-buta-nagoya",
           "chiikawa-yaki-nagoya",
-          "pocket-popup-nagoya",
           "movie-cafe-nagoya"
         ],
         spot:
@@ -2043,7 +2041,7 @@ test(
 
 
 test(
-  "同一座標の最大6スポットを展開し、ピンと名称ラベルを分散する",
+  "同一座標の5スポットを展開し、ピンと名称ラベルを分散する",
   async ({ page }) => {
     await page.goto(
       "/?spot=chiikawaland-nagoya"
@@ -2083,12 +2081,6 @@ test(
           "chiikawa-yaki-nagoya",
         name:
           "ちいかわ焼き 名古屋PARCO店"
-      },
-      {
-        id:
-          "pocket-popup-nagoya",
-        name:
-          "ちいかわぽけっと POP UP STORE 名古屋"
       },
       {
         id:
@@ -2734,6 +2726,13 @@ test(
         )
       );
 
+    const babyArchiveCount =
+      archiveSpots.filter(
+        spot =>
+          spot.brand ===
+          "chiikawa_baby"
+      ).length;
+
     page.on(
       "request",
       request => {
@@ -2798,7 +2797,7 @@ test(
         '#past-brand option[value="chiikawa_baby"]'
       )
     ).toHaveText(
-      /^Chiikawa Baby（8）$/
+      `Chiikawa Baby（${babyArchiveCount}）`
     );
 
     await page.locator(
@@ -2811,13 +2810,13 @@ test(
       page.locator(
         "#past-result-summary"
       )
-    ).toHaveText("8件を表示しています。");
+    ).toHaveText(`${babyArchiveCount}件を表示しています。`);
 
     await expect(
       page.locator(
         "#past-groups .official-spot-card"
       )
-    ).toHaveCount(8);
+    ).toHaveCount(babyArchiveCount);
 
     await page.locator(
       "#past-filter-reset"

@@ -43,6 +43,24 @@ const BRAND_LABELS = {
     "ちいかわベビーカステラ",
   chiikawa_baby:
     "Chiikawa Baby",
+  chiikawa_sanrio:
+    "Chiikawa×Sanrio characters",
+  chiikawa_sushi:
+    "むちゃうま!!ちいかわ寿司",
+  tenshi_akuma:
+    "ちいかわ てんし♡あくま",
+  wakuwaku_amusement:
+    "ちいかわワクワクゆうえんち",
+  parco_chiikawa_gw:
+    "PARCOとちいかわのG.W.",
+  tourism_station:
+    "ちいかわ観光ステーション",
+  chiikawa_tigers:
+    "ちいかわ×阪神タイガース",
+  heroaca_chiikawa:
+    "僕のヒーローアカデミア×ちいかわ",
+  chiikawa_mini_shop:
+    "ちいかわ mini shop",
   chiikawa_park:
     "ちいかわパーク",
   chiikawa_restaurant:
