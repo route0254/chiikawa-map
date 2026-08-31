@@ -250,7 +250,7 @@ function createPage(spot) {
             ${detailRow("入場案内", spot.entryNote)}
             ${evidenceRow}
           </dl>
-          <p class="spot-page-note">掲載内容は非公式のまとめです。営業時間・開催状況・入場方法は変更される場合があるため、訪問前に必ず公式情報をご確認ください。</p>
+          <p class="spot-page-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。営業時間・開催状況・入場方法は変更される場合があるため、訪問前に必ず公式情報をご確認ください。</p>
         </div>
         <aside class="spot-page-actions" aria-label="このスポットの操作">
           <a class="is-primary" href="${mapPageUrl}">🗺 ちい活MAPで見る</a>
@@ -264,7 +264,7 @@ function createPage(spot) {
         </aside>
       </div>
     </article>
-    <p class="site-note">本サイトは公式とは関係のない非公式ファンサイトです。</p>
+    <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。</p>
   </main>
   <script src="../../spot-page.js?v=20260829-1" defer></script>
   <script src="../../pwa.js?v=20260828-1" defer></script>
