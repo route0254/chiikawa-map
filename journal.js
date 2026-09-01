@@ -722,6 +722,8 @@ function setJournalView(
           "aria-selected",
           String(active)
         );
+        button.tabIndex =
+          active ? 0 : -1;
       }
     );
 
@@ -744,11 +746,18 @@ function setJournalView(
       currentView
     );
 
-    window.history.pushState(
-      null,
-      "",
-      url
-    );
+    if (
+      new URLSearchParams(
+        window.location.search
+      ).get("view") !==
+        currentView
+    ) {
+      window.history.pushState(
+        null,
+        "",
+        url
+      );
+    }
   }
 
   if (currentView === "calendar") {
@@ -759,6 +768,16 @@ function setJournalView(
     renderPlan();
   } else {
     renderActivity();
+  }
+
+  if (options.focusPanel) {
+    document.querySelector(
+      '[data-journal-panel="' +
+      currentView +
+      '"]'
+    )?.focus({
+      preventScroll: true
+    });
   }
 }
 
@@ -1828,6 +1847,22 @@ function renderCalendar() {
         (date === selectedDate ? " is-selected" : "")
       );
     button.type = "button";
+    button.setAttribute(
+      "aria-pressed",
+      String(
+        date === selectedDate
+      )
+    );
+
+    if (
+      date === getTodayInJapan()
+    ) {
+      button.setAttribute(
+        "aria-current",
+        "date"
+      );
+    }
+
     button.setAttribute(
       "aria-label",
       formatDateJapanese(date) +
@@ -2999,7 +3034,12 @@ function appendProgressItem(
             options.targetId
           );
         target?.scrollIntoView({
-          behavior: "smooth",
+          behavior:
+            window.matchMedia(
+              "(prefers-reduced-motion: reduce)"
+            ).matches
+              ? "auto"
+              : "smooth",
           block: "start"
         });
         target?.focus({
@@ -4456,14 +4496,64 @@ async function loadSpots() {
 }
 
 
-$$('[data-journal-view]')
-  .forEach(
-    button => {
+const journalTabs =
+  $$('[data-journal-view]');
+
+journalTabs.forEach(
+    (button, index) => {
       button.addEventListener(
         "click",
         () => {
           setJournalView(
-            button.dataset.journalView
+            button.dataset.journalView,
+            {
+              focusPanel: true
+            }
+          );
+        }
+      );
+
+      button.addEventListener(
+        "keydown",
+        event => {
+          let nextIndex = index;
+
+          if (
+            event.key ===
+            "ArrowRight"
+          ) {
+            nextIndex =
+              (index + 1) %
+              journalTabs.length;
+          } else if (
+            event.key ===
+            "ArrowLeft"
+          ) {
+            nextIndex =
+              (
+                index - 1 +
+                journalTabs.length
+              ) %
+              journalTabs.length;
+          } else if (
+            event.key === "Home"
+          ) {
+            nextIndex = 0;
+          } else if (
+            event.key === "End"
+          ) {
+            nextIndex =
+              journalTabs.length - 1;
+          } else {
+            return;
+          }
+
+          event.preventDefault();
+          journalTabs[nextIndex]
+            .focus();
+          setJournalView(
+            journalTabs[nextIndex]
+              .dataset.journalView
           );
         }
       );

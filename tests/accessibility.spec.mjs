@@ -20,6 +20,23 @@ const pages = [
     path: "/journal.html?view=favorites",
     ready: "#favorites-list .favorite-card",
     favorites: true
+  },
+  {
+    name: "ちい活プラン",
+    path: "/journal.html?view=plan",
+    ready: "#plan-list .plan-stop",
+    records: true
+  },
+  {
+    name: "共有されたちい活プラン",
+    path: "/journal.html?view=plan&plan=chiikawaland-osaka-umeda,nagano-takao-mountain",
+    ready: "#shared-plan-banner:not([hidden])"
+  },
+  {
+    name: "わたしの足あと",
+    path: "/journal.html?view=activity",
+    ready: ".activity-summary-card",
+    records: true
   }
 ];
 
@@ -27,10 +44,31 @@ for (const target of pages) {
   test(
     `${target.name}に重大なアクセシビリティ違反がない`,
     async ({ page }) => {
-      if (target.favorites) {
+      if (
+        target.favorites ||
+        target.records
+      ) {
         await page.addInitScript(() => {
           localStorage.setItem(
             "chiikawa-map-favorites-v1",
+            JSON.stringify([
+              "chiikawaland-osaka-umeda"
+            ])
+          );
+        });
+      }
+
+      if (target.records) {
+        await page.addInitScript(() => {
+          localStorage.setItem(
+            "chiikawa-map-plan-v1",
+            JSON.stringify([
+              "chiikawaland-osaka-umeda",
+              "nagano-takao-mountain"
+            ])
+          );
+          localStorage.setItem(
+            "chiikawa-map-visited-v1",
             JSON.stringify([
               "chiikawaland-osaka-umeda"
             ])
