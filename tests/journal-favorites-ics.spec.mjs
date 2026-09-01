@@ -136,7 +136,35 @@ test(
       page.locator(
         ".calendar-export-help"
       )
-    ).toContainText("Android");
+    ).toContainText(
+      "予定作成画面を直接開けない"
+    );
+
+    await page.context()
+      .grantPermissions([
+        "clipboard-read",
+        "clipboard-write"
+      ]);
+    await page.locator(
+      "#calendar-copy-details"
+    ).click();
+    await expect(
+      page.locator(
+        "#calendar-export-status"
+      )
+    ).toContainText(
+      "予定情報をコピーしました"
+    );
+    const copiedEvent =
+      await page.evaluate(
+        () => navigator.clipboard.readText()
+      );
+    expect(copiedEvent).toContain(
+      "日程:"
+    );
+    expect(copiedEvent).toContain(
+      "ちい活MAP:"
+    );
 
     const eventDownloadPromise =
       page.waitForEvent("download");
@@ -166,7 +194,7 @@ test(
         "#calendar-export-status"
       )
     ).toContainText(
-      "Chromeの「ダウンロード」"
+      "ICSに対応している場合"
     );
     await expect(
       page.locator(

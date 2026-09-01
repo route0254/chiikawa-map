@@ -617,11 +617,79 @@ function downloadCalendarFile(
 }
 
 
+function getEventCalendarCopyText(
+  spot,
+  pageUrl
+) {
+  return [
+    spot.name,
+    "日程: " +
+      getPeriodLabel(spot),
+    spot.address
+      ? "場所: " + spot.address
+      : "",
+    spot.sourceUrl ||
+      spot.officialUrl
+      ? "公式情報: " +
+        (spot.sourceUrl ||
+          spot.officialUrl)
+      : "",
+    "ちい活MAP: " + pageUrl
+  ].filter(Boolean).join("\n");
+}
+
+
+function getPlanCalendarCopyText(
+  planSpots,
+  date,
+  pageUrl
+) {
+  const stops =
+    planSpots.flatMap(
+      (spot, index) => [
+        (index + 1) +
+          ". " +
+          spot.name,
+        spot.address
+          ? "   " + spot.address
+          : ""
+      ].filter(Boolean)
+    );
+
+  return [
+    "今日のちい活プラン",
+    "日付: " +
+      formatDateJapanese(date),
+    ...stops,
+    "ちい活MAP: " + pageUrl
+  ].join("\n");
+}
+
+
+async function copyCalendarDetails(
+  text
+) {
+  try {
+    await navigator.clipboard.writeText(
+      text
+    );
+    return true;
+  } catch (error) {
+    window.prompt(
+      "以下の予定情報をコピーしてください。",
+      text
+    );
+    return false;
+  }
+}
+
+
 function showCalendarExportDialog({
   summary,
   googleUrl,
   content,
-  filename
+  filename,
+  copyText
 }) {
   const dialog =
     $("#calendar-export-dialog");
@@ -632,7 +700,8 @@ function showCalendarExportDialog({
 
   pendingCalendarExport = {
     content,
-    filename
+    filename,
+    copyText
   };
   $("#calendar-export-summary")
     .textContent = summary;
@@ -687,7 +756,12 @@ function openEventCalendarOptions(
       filename:
         "chiikatsu-" +
         spot.id +
-        ".ics"
+        ".ics",
+      copyText:
+        getEventCalendarCopyText(
+          spot,
+          pageUrl
+        )
     });
   } catch (error) {
     console.warn(
@@ -735,7 +809,13 @@ function openPlanCalendarOptions() {
       filename:
         "chiikatsu-plan-" +
         date +
-        ".ics"
+        ".ics",
+      copyText:
+        getPlanCalendarCopyText(
+          planSpots,
+          date,
+          pageUrl
+        )
     });
   } catch (error) {
     console.warn(
@@ -4796,7 +4876,28 @@ $("#calendar-google-link")
       const status =
         $("#calendar-export-status");
       status.textContent =
-        "Googleカレンダーを開きました。内容を確認して、カレンダー側の「保存」を押してください。";
+        "PCブラウザでは予定作成画面が開きます。Androidでカレンダー画面だけが開いた場合は、予定情報をコピーして手動で登録してください。";
+      status.hidden = false;
+    }
+  );
+
+$("#calendar-copy-details")
+  ?.addEventListener(
+    "click",
+    async () => {
+      if (!pendingCalendarExport) {
+        return;
+      }
+
+      const copied =
+        await copyCalendarDetails(
+          pendingCalendarExport.copyText
+        );
+      const status =
+        $("#calendar-export-status");
+      status.textContent = copied
+        ? "予定情報をコピーしました。カレンダーで新しい予定を作成し、貼り付けてください。"
+        : "表示された予定情報をコピーし、カレンダーで新しい予定を作成して貼り付けてください。";
       status.hidden = false;
     }
   );
@@ -4816,7 +4917,7 @@ $("#calendar-ics-download")
       const status =
         $("#calendar-export-status");
       status.textContent =
-        "ICSファイルを保存しました。AndroidではChromeの「ダウンロード」からファイルを開き、カレンダーへ登録してください。";
+        "ICSファイルを保存しました。端末のカレンダーアプリがICSに対応している場合は、保存したファイルを開いて登録できます。";
       status.hidden = false;
       $("#calendar-ics-download")
         .textContent =

@@ -32,7 +32,7 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="style.css?v=20260829-1">
-  <link rel="stylesheet" href="journal.css?v=20260901-3">
+  <link rel="stylesheet" href="journal.css?v=20260901-4">
 </head>
 
 <body class="journal-page">
@@ -555,14 +555,20 @@
         <p id="calendar-export-summary"></p>
 
         <div class="calendar-export-actions">
+          <button
+            type="button"
+            id="calendar-copy-details"
+            class="calendar-export-primary"
+          >
+            予定情報をコピー
+          </button>
           <a
             id="calendar-google-link"
-            class="calendar-export-primary"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Googleカレンダーで開く
+            Googleカレンダー（PC）
           </a>
           <button type="button" id="calendar-ics-download">
             ICSファイルを保存
@@ -570,7 +576,7 @@
         </div>
 
         <p class="calendar-export-help">
-          Androidでは「Googleカレンダーで開く」を選び、内容を確認してカレンダー側の「保存」を押してください。予定は自動登録されません。Appleカレンダーなどを使う場合はICSファイルを保存して開いてください。
+          Androidのカレンダーアプリは、Webサイトから予定作成画面を直接開けない場合があります。その場合は予定情報をコピーし、カレンダーで新しい予定を作成して貼り付けてください。GoogleリンクはPCブラウザ向け、ICSは対応しているカレンダーアプリ向けです。
         </p>
         <p
           id="calendar-export-status"
@@ -598,7 +604,7 @@
 
   <script src="calendar-utils.js?v=20260901-1" defer></script>
   <script src="journal-export-utils.js?v=20260901-2" defer></script>
-  <script src="journal.js?v=20260901-4" defer></script>
+  <script src="journal.js?v=20260901-5" defer></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 </body>
 

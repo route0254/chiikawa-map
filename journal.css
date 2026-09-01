@@ -1500,6 +1500,7 @@ button.activity-progress-item:focus-visible {
 }
 
 .calendar-export-actions .calendar-export-primary {
+  grid-column: 1 / -1;
   border-color: #5f50b8;
   color: #fff;
   background: #5f50b8;
