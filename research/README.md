@@ -7,6 +7,7 @@
 - `official-history-source.json`: 公式のPOP UP STORE・カフェ・展覧会履歴の確認済みスナップショット
 - `official-history-candidates.json`: 国内・終了済み・登録済みの判定を加えた候補一覧
 - `official-special-events-source.json`: 上記3一覧に含まれない特設ページ系列の確認済み原本
+- `official-special-series-catalog.json`: 公式総合ページで確認した特設系列の対応状況
 - `history-venue-seeds-*.json`: 会場名、住所、座標確認用の検索語
 - `history-venue-geocodes.json`: 会場座標と取得元のキャッシュ
 - `history-extra-events-2021-2022.json`: 公式画像にだけ日程が掲載されたロフト10会場の転記
@@ -46,6 +47,8 @@ pnpm run geocode:history-venues:gsi
 `build:history-candidates`は公式スナップショットから候補一覧を再生成します。監査用バッチは再生成でき、公開JSONへの統合時に登録済みIDを除外します。2026年4〜6月分は、先行登録済み2件のIDを維持するため公式URL単位で生成対象から除外します。
 
 Nominatimは1.2秒間隔、国土地理院住所検索は0.75秒間隔で実行し、結果をキャッシュします。自動取得した座標は、住所・都道府県・国内座標の範囲を確認してから採用します。
+
+特設系列の確認後は`official-special-series-catalog.json`を更新し、`pnpm run audit:special-series`で原本との対応を確認します。保留項目も削除せず、未掲載の理由を台帳に残します。
 
 ## 公開基準
 

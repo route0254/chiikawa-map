@@ -115,14 +115,38 @@ POP UP STORE・カフェ・展覧会の3一覧に含まれない系列イベン�
 
 振り分け基準日は原本の`statusAsOf`です。省略時だけ`checkedAt`を使います。`endDate`が基準日より前なら過去、それ以外は現在・今後として生成します。`checkedAt`は営業時間・入場方法を確認した日として公開JSONへ反映します。原本で管理するIDは再実行時も維持され、基準日更新後は同じIDのまま現在JSONから過去JSONへ移動します。`pnpm run check`は原本の管理対象が正しいJSONに同期していることと、既存データとのID・系列・期間・会場の重複を検査します。
 
+公式総合ページを確認した際は、系列を`research/official-special-series-catalog.json`へ追加し、`managed`、`hold`、`excluded`のいずれかを記録します。`managed`は特設イベント原本の`sourceKey`と対応させ、保留・対象外には理由を残します。
+
+```bash
+pnpm run audit:special-series
+```
+
+このコマンドは台帳と特設イベント原本の未対応系列、重複、保留理由の欠落を検出します。公式サイトの取得は自動化していないため、確認依頼を受けた際に公式総合ページを見て台帳を更新します。
+
 ## 開催終了時の移動手順
 
 1. `pnpm run report:status` で終了日経過候補を抽出する
 2. 公式情報で終了を確認する
-3. `id`を変更せず、オブジェクトを`official-spots.json`から`official-events-archive.json`へ移す
-4. 「現在の地図では非表示」など移動前の状態に依存した説明を修正する
-5. 共有URL `?spot=<id>` から地図詳細が開き、`/spot/<id>/` 個別ページも生成されていることを確認する
-6. 「行きたい」「行った！」「訪問記録」のID互換性を確認する
+3. 移動対象をプレビューする
+
+   ```bash
+   pnpm run archive:ended -- --today=2026-09-07 --ids=event-id
+   ```
+
+4. 内容を確認し、公式確認済みフラグと書き込み指定を追加する
+
+   ```bash
+   pnpm run archive:ended -- --today=2026-09-07 --ids=event-id --confirm-official --write
+   ```
+
+5. `id`が変わらず、オブジェクトが`official-spots.json`から`official-events-archive.json`へ移ったことを確認する
+6. 「現在の地図では非表示」など移動前の状態に依存した説明を修正する
+7. `pnpm run build:spot-pages`を実行し、共有URL `?spot=<id>` と`/spot/<id>/`を確認する
+8. 「行きたい」「行った！」「訪問記録」のID互換性を確認する
+
+`archive:ended`は既定ではプレビューだけを行います。書き込み時は対象ID、終了日経過、過去JSONとのID重複を検査し、`eventStatus`がなければ`held`を設定します。移動後も現在形の説明が残る場合は警告を表示します。
+
+`official-special-events-source.json`で管理しているIDはこのコマンドでは直接移動できません。原本の`statusAsOf`と必要な日程を更新して`pnpm run import:special-events`を実行します。
 
 `report:status` は候補を表示するだけで、JSONを自動変更しません。終了日当日までは開催中として扱い、終了日より後になった項目だけをアーカイブ移動候補として表示します。
 
