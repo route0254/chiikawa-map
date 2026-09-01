@@ -292,6 +292,28 @@
   font-weight: 900;
 }
 
+.favorites-location-status {
+  margin: -6px 0 16px;
+  padding: 10px 12px;
+  border: 1px solid #cfe4da;
+  border-radius: 13px;
+  color: #347255;
+  background: #f2fbf7;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.65;
+}
+
+.favorites-location-status.is-error {
+  border-color: #edc8d2;
+  color: #8d4058;
+  background: #fff5f8;
+}
+
+.favorites-location-status[hidden] {
+  display: none;
+}
+
 .favorites-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -345,6 +367,11 @@
 .favorite-card-badge.is-ended {
   color: #7f7078;
   background: #eee9ec;
+}
+
+.favorite-card-badge.is-distance {
+  color: #25658a;
+  background: #eaf7ff;
 }
 
 .favorite-card h3 {

@@ -81,6 +81,13 @@ const $$ =
       )
     );
 
+const {
+  formatDistance,
+  getDistanceMeters,
+  getGeolocationErrorMessage,
+  hasCoordinates
+} = window.ChiikatsuLocation;
+
 const journalStatus =
   $("#journal-status");
 
@@ -107,6 +114,10 @@ let currentView = "calendar";
 let statusTimer = null;
 let showAllActivityNextEvents = false;
 let pendingCalendarExport = null;
+let favoriteLocation = null;
+let favoriteLocationRequestId = 0;
+let favoriteSortBeforeDistance =
+  "prefecture";
 
 
 function createElement(
@@ -487,63 +498,6 @@ function getPeriodLabel(
       : "終了日未定";
 
   return start + "〜" + end;
-}
-
-
-function getDistanceMeters(
-  first,
-  second
-) {
-  const toRadians =
-    value =>
-      value * Math.PI / 180;
-
-  const latitudeDelta =
-    toRadians(
-      second.lat - first.lat
-    );
-  const longitudeDelta =
-    toRadians(
-      second.lng - first.lng
-    );
-
-  const a =
-    Math.sin(latitudeDelta / 2) ** 2 +
-    Math.cos(toRadians(first.lat)) *
-    Math.cos(toRadians(second.lat)) *
-    Math.sin(longitudeDelta / 2) ** 2;
-
-  return 6371000 * 2 *
-    Math.atan2(
-      Math.sqrt(a),
-      Math.sqrt(1 - a)
-    );
-}
-
-
-function formatDistance(
-  meters
-) {
-  if (
-    typeof meters !== "number" ||
-    !Number.isFinite(meters)
-  ) {
-    return "--";
-  }
-
-  if (meters < 1000) {
-    return Math.round(
-      meters / 10
-    ) * 10 + "m";
-  }
-
-  return (
-    meters < 10000
-      ? (meters / 1000).toFixed(1)
-      : Math.round(
-          meters / 1000
-        )
-  ) + "km";
 }
 
 
@@ -954,6 +908,135 @@ function updateHeroCounts() {
 
 // 行きたいリスト
 
+function setFavoriteLocationStatus(
+  message = "",
+  type = "info"
+) {
+  const status =
+    $("#favorites-location-status");
+
+  status.textContent = message;
+  status.className =
+    "favorites-location-status" +
+    (
+      type === "error"
+        ? " is-error"
+        : ""
+    );
+  status.hidden = !message;
+}
+
+
+function getCurrentPosition() {
+  return new Promise(
+    (resolve, reject) => {
+      if (!navigator.geolocation) {
+        reject({ code: 0 });
+        return;
+      }
+
+      navigator.geolocation
+        .getCurrentPosition(
+          resolve,
+          reject,
+          {
+            enableHighAccuracy: false,
+            timeout: 10000,
+            maximumAge: 300000
+          }
+        );
+    }
+  );
+}
+
+
+async function activateFavoriteDistanceSort() {
+  const select =
+    $("#favorites-sort");
+
+  if (favoriteLocation) {
+    setFavoriteLocationStatus(
+      "現在地からの直線距離で並べています。位置情報は保存・送信しません。"
+    );
+    renderFavorites();
+    writeFavoritesUrl();
+    return;
+  }
+
+  const requestId =
+    ++favoriteLocationRequestId;
+  select.setAttribute(
+    "aria-busy",
+    "true"
+  );
+  setFavoriteLocationStatus(
+    "現在地を確認しています…"
+  );
+
+  try {
+    const position =
+      await getCurrentPosition();
+    const location = {
+      lat:
+        Number(
+          position.coords.latitude
+        ),
+      lng:
+        Number(
+          position.coords.longitude
+        )
+    };
+
+    if (!hasCoordinates(location)) {
+      const error = new Error(
+        "現在地の座標が不正です"
+      );
+      error.code = 0;
+      throw error;
+    }
+
+    if (
+      requestId !==
+        favoriteLocationRequestId ||
+      select.value !== "distance"
+    ) {
+      return;
+    }
+
+    favoriteLocation = location;
+    setFavoriteLocationStatus(
+      "現在地からの直線距離で並べています。位置情報は保存・送信しません。"
+    );
+    renderFavorites();
+    writeFavoritesUrl();
+  } catch (error) {
+    if (
+      requestId !==
+      favoriteLocationRequestId
+    ) {
+      return;
+    }
+
+    select.value =
+      favoriteSortBeforeDistance;
+    setFavoriteLocationStatus(
+      getGeolocationErrorMessage(error),
+      "error"
+    );
+    renderFavorites();
+    writeFavoritesUrl();
+  } finally {
+    if (
+      requestId ===
+      favoriteLocationRequestId
+    ) {
+      select.removeAttribute(
+        "aria-busy"
+      );
+    }
+  }
+}
+
 function getFavoriteStatus(
   spot,
   today = getTodayInJapan()
@@ -1129,6 +1212,26 @@ function getFavoriteSpots() {
           );
         }
 
+        if (
+          sort === "distance" &&
+          favoriteLocation
+        ) {
+          return (
+            getDistanceMeters(
+              favoriteLocation,
+              first
+            ) -
+              getDistanceMeters(
+                favoriteLocation,
+                second
+              ) ||
+            first.name.localeCompare(
+              second.name,
+              "ja"
+            )
+          );
+        }
+
         const firstPrefecture =
           PREFECTURE_ORDER.indexOf(
             first._prefecture
@@ -1250,6 +1353,25 @@ function createFavoriteCard(
       )
     )
   );
+  if (
+    $("#favorites-sort")?.value ===
+      "distance" &&
+    favoriteLocation
+  ) {
+    top.appendChild(
+      createElement(
+        "span",
+        "favorite-card-badge is-distance",
+        "現在地から約" +
+          formatDistance(
+            getDistanceMeters(
+              favoriteLocation,
+              spot
+            )
+          )
+      )
+    );
+  }
   card.appendChild(top);
   card.appendChild(
     createElement(
@@ -1355,7 +1477,12 @@ function writeFavoritesUrl() {
     ["fstatus", $("#favorites-status")?.value],
     [
       "fsort",
-      $("#favorites-sort")?.value === "prefecture"
+      [
+        "prefecture",
+        "distance"
+      ].includes(
+        $("#favorites-sort")?.value
+      )
         ? ""
         : $("#favorites-sort")?.value
     ]
@@ -4771,8 +4898,7 @@ $("#calendar-share")
 [
   "#favorites-search",
   "#favorites-prefecture",
-  "#favorites-status",
-  "#favorites-sort"
+  "#favorites-status"
 ].forEach(
   selector => {
     const element = $(selector);
@@ -4789,6 +4915,33 @@ $("#calendar-share")
     );
   }
 );
+
+$("#favorites-sort")
+  ?.addEventListener(
+    "change",
+    event => {
+      const select =
+        event.currentTarget;
+
+      if (
+        select.value ===
+        "distance"
+      ) {
+        activateFavoriteDistanceSort();
+        return;
+      }
+
+      favoriteLocationRequestId += 1;
+      favoriteSortBeforeDistance =
+        select.value;
+      select.removeAttribute(
+        "aria-busy"
+      );
+      setFavoriteLocationStatus();
+      renderFavorites();
+      writeFavoritesUrl();
+    }
+  );
 
 $("#plan-search")
   ?.addEventListener(
@@ -5149,6 +5302,8 @@ if ([
   "name"
 ].includes(params.get("fsort"))) {
   $("#favorites-sort").value =
+    params.get("fsort");
+  favoriteSortBeforeDistance =
     params.get("fsort");
 }
 

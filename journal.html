@@ -32,7 +32,7 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="style.css?v=20260829-1">
-  <link rel="stylesheet" href="journal.css?v=20260901-4">
+  <link rel="stylesheet" href="journal.css?v=20260901-5">
 </head>
 
 <body class="journal-page">
@@ -293,13 +293,22 @@
 
         <label>
           <span>並び順</span>
-          <select id="favorites-sort">
+          <select id="favorites-sort" aria-describedby="favorites-location-status">
             <option value="prefecture">都道府県順</option>
             <option value="deadline">終了日が近い順</option>
             <option value="name">名前順</option>
+            <option value="distance">現在地から近い順</option>
           </select>
         </label>
       </div>
+
+      <p
+        id="favorites-location-status"
+        class="favorites-location-status"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></p>
 
       <div id="favorites-list" class="favorites-list"></div>
     </section>
@@ -604,7 +613,8 @@
 
   <script src="calendar-utils.js?v=20260901-1" defer></script>
   <script src="journal-export-utils.js?v=20260901-2" defer></script>
-  <script src="journal.js?v=20260901-5" defer></script>
+  <script src="location-utils.js?v=20260901-1" defer></script>
+  <script src="journal.js?v=20260901-6" defer></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 </body>
 

@@ -105,6 +105,119 @@ test(
 );
 
 test(
+  "許可した現在地から近い順に行きたいスポットを並べる",
+  async ({ page }) => {
+    await page.context()
+      .grantPermissions(
+        ["geolocation"],
+        {
+          origin:
+            "http://127.0.0.1:4173"
+        }
+      );
+    await page.context()
+      .setGeolocation({
+        latitude: 34.7053,
+        longitude: 135.4983
+      });
+    await page.setViewportSize({
+      width: 390,
+      height: 844
+    });
+    await page.goto(
+      "/journal.html?view=favorites"
+    );
+
+    await page.locator(
+      "#favorites-sort"
+    ).selectOption("distance");
+
+    await expect(
+      page.locator(
+        "#favorites-location-status"
+      )
+    ).toContainText(
+      "保存・送信しません"
+    );
+    await expect(
+      page.locator(
+        "#favorites-list .favorite-card h3"
+      ).first()
+    ).toHaveText(
+      "ちいかわらんど 大阪梅田店"
+    );
+    await expect(
+      page.locator(
+        "#favorites-list .favorite-card"
+      ).first()
+    ).toContainText(
+      "現在地から約0m"
+    );
+    await expect(page).not.toHaveURL(
+      /fsort=distance/
+    );
+    expect(
+      await page.evaluate(
+        () =>
+          Object.keys(localStorage)
+            .some(key =>
+              /location|position/i.test(key)
+            )
+      )
+    ).toBe(false);
+    expect(
+      await page.evaluate(
+        () =>
+          document.documentElement
+            .scrollWidth <=
+          window.innerWidth
+      )
+    ).toBe(true);
+  }
+);
+
+test(
+  "位置情報を利用できない場合は元の並び順へ戻す",
+  async ({ page }) => {
+    await page.addInitScript(() => {
+      Object.defineProperty(
+        navigator,
+        "geolocation",
+        {
+          configurable: true,
+          value: {
+            getCurrentPosition(
+              _success,
+              failure
+            ) {
+              failure({ code: 1 });
+            }
+          }
+        }
+      );
+    });
+    await page.goto(
+      "/journal.html?view=favorites"
+    );
+
+    await page.locator(
+      "#favorites-sort"
+    ).selectOption("distance");
+
+    await expect(
+      page.locator("#favorites-sort")
+    ).toHaveValue("prefecture");
+    await expect(
+      page.locator(
+        "#favorites-location-status"
+      )
+    ).toContainText(
+      "許可されませんでした"
+    );
+  }
+);
+
+test(
   "登録方法を選び、イベントと今日のプランをICSで保存できる",
   async ({ page }) => {
     await page.goto(
