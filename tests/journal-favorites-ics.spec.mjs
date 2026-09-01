@@ -105,14 +105,12 @@ test(
 );
 
 test(
-  "イベントと今日のプランをICSで保存できる",
+  "登録方法を選び、イベントと今日のプランをICSで保存できる",
   async ({ page }) => {
     await page.goto(
       "/journal.html?view=calendar&date=2026-09-01"
     );
 
-    const eventDownloadPromise =
-      page.waitForEvent("download");
     await page.locator(
       "#calendar-day-list .calendar-event-card"
     ).first().getByRole(
@@ -120,6 +118,30 @@ test(
       {
         name: "カレンダーに登録"
       }
+    ).click();
+    await expect(
+      page.locator(
+        "#calendar-export-dialog"
+      )
+    ).toBeVisible();
+    await expect(
+      page.locator(
+        "#calendar-google-link"
+      )
+    ).toHaveAttribute(
+      "href",
+      /calendar\.google\.com.*action=TEMPLATE/
+    );
+    await expect(
+      page.locator(
+        ".calendar-export-help"
+      )
+    ).toContainText("Android");
+
+    const eventDownloadPromise =
+      page.waitForEvent("download");
+    await page.locator(
+      "#calendar-ics-download"
     ).click();
     const eventDownload =
       await eventDownloadPromise;
@@ -139,14 +161,41 @@ test(
     expect(eventCalendar).toContain(
       "BEGIN:VEVENT"
     );
+    await expect(
+      page.locator(
+        "#calendar-export-status"
+      )
+    ).toContainText(
+      "Chromeの「ダウンロード」"
+    );
+    await expect(
+      page.locator(
+        "#calendar-ics-download"
+      )
+    ).toHaveText(
+      "ICSファイルをもう一度保存"
+    );
+    await page.locator(
+      "#calendar-export-close"
+    ).click();
 
     await page.locator(
       "#plan-tab"
     ).click();
+    await page.locator(
+      "#plan-calendar"
+    ).click();
+    await expect(
+      page.locator(
+        "#calendar-export-summary"
+      )
+    ).toContainText(
+      "今日のプラン（2スポット）"
+    );
     const planDownloadPromise =
       page.waitForEvent("download");
     await page.locator(
-      "#plan-calendar"
+      "#calendar-ics-download"
     ).click();
     const planDownload =
       await planDownloadPromise;

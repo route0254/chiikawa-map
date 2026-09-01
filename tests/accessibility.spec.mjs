@@ -16,6 +16,12 @@ const pages = [
     ready: "#calendar-grid .calendar-day"
   },
   {
+    name: "カレンダー登録画面",
+    path: "/journal.html?view=calendar&date=2026-09-01",
+    ready: "#calendar-export-dialog[open]",
+    openCalendar: true
+  },
+  {
     name: "行きたいリスト",
     path: "/journal.html?view=favorites",
     ready: "#favorites-list .favorite-card",
@@ -77,6 +83,16 @@ for (const target of pages) {
       }
 
       await page.goto(target.path);
+
+      if (target.openCalendar) {
+        await page.getByRole(
+          "button",
+          {
+            name: "カレンダーに登録"
+          }
+        ).first().click();
+      }
+
       await page.locator(target.ready)
         .first()
         .waitFor();

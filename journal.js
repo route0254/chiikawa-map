@@ -106,6 +106,7 @@ let viewingSharedPlan = false;
 let currentView = "calendar";
 let statusTimer = null;
 let showAllActivityNextEvents = false;
+let pendingCalendarExport = null;
 
 
 function createElement(
@@ -616,29 +617,78 @@ function downloadCalendarFile(
 }
 
 
-function downloadEventCalendar(
+function showCalendarExportDialog({
+  summary,
+  googleUrl,
+  content,
+  filename
+}) {
+  const dialog =
+    $("#calendar-export-dialog");
+  const status =
+    $("#calendar-export-status");
+  const downloadButton =
+    $("#calendar-ics-download");
+
+  pendingCalendarExport = {
+    content,
+    filename
+  };
+  $("#calendar-export-summary")
+    .textContent = summary;
+  $("#calendar-google-link").href =
+    googleUrl;
+  status.hidden = true;
+  status.textContent = "";
+  downloadButton.textContent =
+    "ICSファイルを保存";
+
+  if (!dialog.open) {
+    dialog.showModal();
+  }
+
+  window.requestAnimationFrame(
+    () => {
+      $("#calendar-google-link")
+        ?.focus();
+    }
+  );
+}
+
+
+function openEventCalendarOptions(
   spot,
   date
 ) {
   try {
+    const pageUrl =
+      getSpotPageUrl(spot);
     const content =
       window.ChiikatsuJournalExport
         .createEventCalendar({
           spot,
           selectedDate: date,
-          pageUrl:
-            getSpotPageUrl(spot)
+          pageUrl
         });
-    downloadCalendarFile(
+    const googleUrl =
+      window.ChiikatsuJournalExport
+        .createEventGoogleCalendarUrl({
+          spot,
+          selectedDate: date,
+          pageUrl
+        });
+    showCalendarExportDialog({
+      summary:
+        spot.name +
+        "\n" +
+        getPeriodLabel(spot),
+      googleUrl,
       content,
-      "chiikatsu-" +
+      filename:
+        "chiikatsu-" +
         spot.id +
         ".ics"
-    );
-    showStatus(
-      "カレンダーファイルを保存しました。開いて予定を登録してください。",
-      "success"
-    );
+    });
   } catch (error) {
     console.warn(
       "カレンダーファイルを作成できませんでした。",
@@ -652,31 +702,41 @@ function downloadEventCalendar(
 }
 
 
-function downloadPlanCalendar() {
+function openPlanCalendarOptions() {
   const planSpots =
     getWorkingPlanSpots();
 
   try {
     const date =
       getTodayInJapan();
+    const pageUrl =
+      getPlanShareUrl();
     const content =
       window.ChiikatsuJournalExport
         .createPlanCalendar({
           spots: planSpots,
           date,
-          pageUrl:
-            getPlanShareUrl()
+          pageUrl
         });
-    downloadCalendarFile(
+    const googleUrl =
+      window.ChiikatsuJournalExport
+        .createPlanGoogleCalendarUrl({
+          spots: planSpots,
+          date,
+          pageUrl
+        });
+    showCalendarExportDialog({
+      summary:
+        "今日のプラン（" +
+        planSpots.length +
+        "スポット）",
+      googleUrl,
       content,
-      "chiikatsu-plan-" +
+      filename:
+        "chiikatsu-plan-" +
         date +
         ".ics"
-    );
-    showStatus(
-      "今日のプランをカレンダーファイルに保存しました。",
-      "success"
-    );
+    });
   } catch (error) {
     console.warn(
       "今日のプランをカレンダーへ書き出せませんでした。",
@@ -1673,7 +1733,7 @@ function createCalendarEventCard(
     calendarButton.addEventListener(
       "click",
       () => {
-        downloadEventCalendar(
+        openEventCalendarOptions(
           spot,
           date
         );
@@ -4704,7 +4764,64 @@ $("#plan-share")
 $("#plan-calendar")
   ?.addEventListener(
     "click",
-    downloadPlanCalendar
+    openPlanCalendarOptions
+  );
+
+$("#calendar-export-close")
+  ?.addEventListener(
+    "click",
+    () => {
+      $("#calendar-export-dialog")
+        ?.close();
+    }
+  );
+
+$("#calendar-export-dialog")
+  ?.addEventListener(
+    "click",
+    event => {
+      if (
+        event.target ===
+        $("#calendar-export-dialog")
+      ) {
+        event.currentTarget.close();
+      }
+    }
+  );
+
+$("#calendar-google-link")
+  ?.addEventListener(
+    "click",
+    () => {
+      const status =
+        $("#calendar-export-status");
+      status.textContent =
+        "Googleカレンダーを開きました。内容を確認して、カレンダー側の「保存」を押してください。";
+      status.hidden = false;
+    }
+  );
+
+$("#calendar-ics-download")
+  ?.addEventListener(
+    "click",
+    () => {
+      if (!pendingCalendarExport) {
+        return;
+      }
+
+      downloadCalendarFile(
+        pendingCalendarExport.content,
+        pendingCalendarExport.filename
+      );
+      const status =
+        $("#calendar-export-status");
+      status.textContent =
+        "ICSファイルを保存しました。AndroidではChromeの「ダウンロード」からファイルを開き、カレンダーへ登録してください。";
+      status.hidden = false;
+      $("#calendar-ics-download")
+        .textContent =
+          "ICSファイルをもう一度保存";
+    }
   );
 
 $("#save-shared-plan")

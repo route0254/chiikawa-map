@@ -67,6 +67,65 @@ test(
 );
 
 test(
+  "Googleカレンダー用URLへ日付とイベント情報を設定する",
+  () => {
+    const calendarUrl =
+      new URL(
+        exportUtils
+          .createEventGoogleCalendarUrl({
+            spot: {
+              id: "event-tokyo",
+              name: "イベント東京",
+              address: "東京都千代田区",
+              startDate: "2026-09-10",
+              endDate: "2026-09-12",
+              sourceUrl:
+                "https://example.com/event"
+            },
+            selectedDate: "2026-09-11",
+            pageUrl:
+              "https://chiikatsu-map.com/spot/event-tokyo/"
+          })
+      );
+
+    assert.equal(
+      calendarUrl.origin,
+      "https://calendar.google.com"
+    );
+    assert.equal(
+      calendarUrl.searchParams.get(
+        "action"
+      ),
+      "TEMPLATE"
+    );
+    assert.equal(
+      calendarUrl.searchParams.get(
+        "dates"
+      ),
+      "20260910/20260913"
+    );
+    assert.equal(
+      calendarUrl.searchParams.get(
+        "text"
+      ),
+      "イベント東京"
+    );
+    assert.equal(
+      calendarUrl.searchParams.get(
+        "location"
+      ),
+      "東京都千代田区"
+    );
+    assert.match(
+      calendarUrl.searchParams.get(
+        "details"
+      ),
+      /chiikatsu-map\.com\/spot\/event-tokyo/
+    );
+  }
+);
+
+test(
   "プラン内の名称と住所を1日の予定にまとめる",
   () => {
     const calendar =

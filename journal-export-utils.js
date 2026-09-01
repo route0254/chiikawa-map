@@ -104,11 +104,54 @@
       "\r\n";
   }
 
-  function createEventCalendar({
+  function createGoogleCalendarUrl({
+    title,
+    startDate,
+    endDate,
+    description,
+    location,
+    pageUrl
+  }) {
+    const url =
+      new URL(
+        "https://calendar.google.com/calendar/r/eventedit"
+      );
+    url.searchParams.set(
+      "action",
+      "TEMPLATE"
+    );
+    url.searchParams.set(
+      "dates",
+      toIcsDate(startDate) +
+        "/" +
+        toIcsDate(endDate)
+    );
+    url.searchParams.set(
+      "text",
+      title
+    );
+    url.searchParams.set(
+      "details",
+      [
+        description,
+        pageUrl
+      ].filter(Boolean).join("\n")
+    );
+
+    if (location) {
+      url.searchParams.set(
+        "location",
+        location
+      );
+    }
+
+    return url.toString();
+  }
+
+  function getEventFields({
     spot,
     selectedDate,
-    pageUrl,
-    generatedAt
+    pageUrl
   }) {
     const hasEnd =
       Boolean(spot?.endDate);
@@ -140,6 +183,63 @@
         spot.officialUrl ||
         ""
     ].filter(Boolean).join("\n");
+
+    return {
+      title: spot.name,
+      startDate,
+      endDate,
+      description,
+      location: spot.address || "",
+      pageUrl
+    };
+  }
+
+  function getPlanFields({
+    spots,
+    date,
+    pageUrl
+  }) {
+    if (!date || !spots?.length) {
+      throw new Error(
+        "カレンダーに登録するプランがありません。"
+      );
+    }
+
+    return {
+      title:
+        "ちい活プラン（" +
+        spots.length +
+        "スポット）",
+      startDate: date,
+      endDate: addOneDay(date),
+      description:
+        spots.map(
+          (spot, index) =>
+            (index + 1) +
+            ". " +
+            spot.name +
+            (spot.address
+              ? "（" + spot.address + "）"
+              : "")
+        ).join("\n"),
+      location:
+        spots[0].address || "",
+      pageUrl
+    };
+  }
+
+  function createEventCalendar({
+    spot,
+    selectedDate,
+    pageUrl,
+    generatedAt
+  }) {
+    const fields =
+      getEventFields({
+        spot,
+        selectedDate,
+        pageUrl
+      });
     const uidSource =
       String(spot.id || spot.name || "event")
         .toLowerCase()
@@ -151,20 +251,32 @@
       "UID:" +
         uidSource +
         "-" +
-        toIcsDate(startDate) +
+        toIcsDate(
+          fields.startDate
+        ) +
         "@chiikatsu-map.com",
       "DTSTAMP:" +
         toUtcTimestamp(generatedAt),
       "DTSTART;VALUE=DATE:" +
-        toIcsDate(startDate),
+        toIcsDate(
+          fields.startDate
+        ),
       "DTEND;VALUE=DATE:" +
-        toIcsDate(endDate),
+        toIcsDate(
+          fields.endDate
+        ),
       "SUMMARY:" +
-        escapeIcsText(spot.name),
+        escapeIcsText(
+          fields.title
+        ),
       "LOCATION:" +
-        escapeIcsText(spot.address),
+        escapeIcsText(
+          fields.location
+        ),
       "DESCRIPTION:" +
-        escapeIcsText(description),
+        escapeIcsText(
+          fields.description
+        ),
       "URL:" +
         sanitizeIcsUri(pageUrl),
       "END:VEVENT"
@@ -177,22 +289,12 @@
     pageUrl,
     generatedAt
   }) {
-    if (!date || !spots?.length) {
-      throw new Error(
-        "カレンダーに登録するプランがありません。"
-      );
-    }
-
-    const description =
-      spots.map(
-        (spot, index) =>
-          (index + 1) +
-          ". " +
-          spot.name +
-          (spot.address
-            ? "（" + spot.address + "）"
-            : "")
-      ).join("\n");
+    const fields =
+      getPlanFields({
+        spots,
+        date,
+        pageUrl
+      });
     const uidSource =
       spots.map(spot => spot.id)
         .join("-")
@@ -211,31 +313,53 @@
       "DTSTAMP:" +
         toUtcTimestamp(generatedAt),
       "DTSTART;VALUE=DATE:" +
-        toIcsDate(date),
+        toIcsDate(
+          fields.startDate
+        ),
       "DTEND;VALUE=DATE:" +
-        toIcsDate(addOneDay(date)),
+        toIcsDate(
+          fields.endDate
+        ),
       "SUMMARY:" +
         escapeIcsText(
-          "ちい活プラン（" +
-          spots.length +
-          "スポット）"
+          fields.title
         ),
       "LOCATION:" +
         escapeIcsText(
-          spots[0].address
+          fields.location
         ),
       "DESCRIPTION:" +
-        escapeIcsText(description),
+        escapeIcsText(
+          fields.description
+        ),
       "URL:" +
         sanitizeIcsUri(pageUrl),
       "END:VEVENT"
     ]);
   }
 
+  function createEventGoogleCalendarUrl(
+    options
+  ) {
+    return createGoogleCalendarUrl(
+      getEventFields(options)
+    );
+  }
+
+  function createPlanGoogleCalendarUrl(
+    options
+  ) {
+    return createGoogleCalendarUrl(
+      getPlanFields(options)
+    );
+  }
+
   const api = {
     addOneDay,
     createEventCalendar,
+    createEventGoogleCalendarUrl,
     createPlanCalendar,
+    createPlanGoogleCalendarUrl,
     escapeIcsText
   };
 
