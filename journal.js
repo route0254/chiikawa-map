@@ -584,6 +584,112 @@ async function shareUrl(
 }
 
 
+function downloadCalendarFile(
+  content,
+  filename
+) {
+  const blob =
+    new Blob(
+      [content],
+      {
+        type:
+          "text/calendar;charset=utf-8"
+      }
+    );
+  const objectUrl =
+    URL.createObjectURL(blob);
+  const link =
+    document.createElement("a");
+  link.href = objectUrl;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(
+    () => {
+      URL.revokeObjectURL(
+        objectUrl
+      );
+    },
+    0
+  );
+}
+
+
+function downloadEventCalendar(
+  spot,
+  date
+) {
+  try {
+    const content =
+      window.ChiikatsuJournalExport
+        .createEventCalendar({
+          spot,
+          selectedDate: date,
+          pageUrl:
+            getSpotPageUrl(spot)
+        });
+    downloadCalendarFile(
+      content,
+      "chiikatsu-" +
+        spot.id +
+        ".ics"
+    );
+    showStatus(
+      "カレンダーファイルを保存しました。開いて予定を登録してください。",
+      "success"
+    );
+  } catch (error) {
+    console.warn(
+      "カレンダーファイルを作成できませんでした。",
+      error
+    );
+    showStatus(
+      "カレンダーファイルを作成できませんでした。",
+      "error"
+    );
+  }
+}
+
+
+function downloadPlanCalendar() {
+  const planSpots =
+    getWorkingPlanSpots();
+
+  try {
+    const date =
+      getTodayInJapan();
+    const content =
+      window.ChiikatsuJournalExport
+        .createPlanCalendar({
+          spots: planSpots,
+          date,
+          pageUrl:
+            getPlanShareUrl()
+        });
+    downloadCalendarFile(
+      content,
+      "chiikatsu-plan-" +
+        date +
+        ".ics"
+    );
+    showStatus(
+      "今日のプランをカレンダーファイルに保存しました。",
+      "success"
+    );
+  } catch (error) {
+    console.warn(
+      "今日のプランをカレンダーへ書き出せませんでした。",
+      error
+    );
+    showStatus(
+      "今日のプランをカレンダーへ書き出せませんでした。",
+      "error"
+    );
+  }
+}
+
+
 function setJournalView(
   view,
   options = {}
@@ -591,6 +697,7 @@ function setJournalView(
   const allowed =
     new Set([
       "calendar",
+      "favorites",
       "plan",
       "activity"
     ]);
@@ -646,6 +753,8 @@ function setJournalView(
 
   if (currentView === "calendar") {
     renderCalendar();
+  } else if (currentView === "favorites") {
+    renderFavorites();
   } else if (currentView === "plan") {
     renderPlan();
   } else {
@@ -681,6 +790,528 @@ function updateHeroCounts() {
     String(localPlanIds.length);
   $("#journal-visited-count").textContent =
     String(knownVisited);
+}
+
+
+// 行きたいリスト
+
+function getFavoriteStatus(
+  spot,
+  today = getTodayInJapan()
+) {
+  if (
+    spot.eventStatus === "cancelled" ||
+    spot._archive ||
+    (
+      spot.periodType === "limited" &&
+      spot.endDate &&
+      spot.endDate < today
+    )
+  ) {
+    return "ended";
+  }
+
+  if (
+    spot.periodType === "limited" &&
+    spot.startDate &&
+    spot.startDate > today
+  ) {
+    return "upcoming";
+  }
+
+  if (
+    spot.periodType === "limited" &&
+    spot.endDate &&
+    spot.endDate <= addDays(today, 7)
+  ) {
+    return "ending";
+  }
+
+  return "current";
+}
+
+
+function getFavoriteStatusLabel(
+  spot,
+  status
+) {
+  if (
+    spot.eventStatus === "cancelled"
+  ) {
+    return "開催中止";
+  }
+
+  return {
+    current:
+      spot.periodType === "permanent"
+        ? "常設"
+        : "開催中",
+    upcoming: "開催予定",
+    ending: "まもなく終了",
+    ended: "終了"
+  }[status] || "";
+}
+
+
+function getFavoriteSortRank(
+  spot,
+  today
+) {
+  const status =
+    getFavoriteStatus(
+      spot,
+      today
+    );
+
+  return {
+    ending: 0,
+    upcoming: 1,
+    current: 2,
+    ended: 3
+  }[status] ?? 4;
+}
+
+
+function getFavoriteSpots() {
+  const query =
+    normalizeSearchText(
+      $("#favorites-search")?.value
+    );
+  const prefecture =
+    $("#favorites-prefecture")?.value ||
+    "";
+  const statusFilter =
+    $("#favorites-status")?.value ||
+    "";
+  const sort =
+    $("#favorites-sort")?.value ||
+    "prefecture";
+  const today = getTodayInJapan();
+
+  return spots
+    .filter(
+      spot => {
+        if (
+          !favoriteSpotIds.has(
+            spot.id
+          )
+        ) {
+          return false;
+        }
+
+        if (
+          query &&
+          !spot._searchText.includes(
+            query
+          )
+        ) {
+          return false;
+        }
+
+        if (
+          prefecture &&
+          spot._prefecture !==
+            prefecture
+        ) {
+          return false;
+        }
+
+        const status =
+          getFavoriteStatus(
+            spot,
+            today
+          );
+
+        if (
+          statusFilter === "current"
+        ) {
+          return (
+            status === "current" ||
+            status === "ending"
+          );
+        }
+
+        return (
+          !statusFilter ||
+          status === statusFilter
+        );
+      }
+    )
+    .sort(
+      (first, second) => {
+        if (sort === "name") {
+          return first.name.localeCompare(
+            second.name,
+            "ja"
+          );
+        }
+
+        if (sort === "deadline") {
+          return (
+            getFavoriteSortRank(
+              first,
+              today
+            ) -
+              getFavoriteSortRank(
+                second,
+                today
+              ) ||
+            String(
+              first.endDate ||
+              "9999-12-31"
+            ).localeCompare(
+              second.endDate ||
+              "9999-12-31"
+            ) ||
+            first.name.localeCompare(
+              second.name,
+              "ja"
+            )
+          );
+        }
+
+        const firstPrefecture =
+          PREFECTURE_ORDER.indexOf(
+            first._prefecture
+          );
+        const secondPrefecture =
+          PREFECTURE_ORDER.indexOf(
+            second._prefecture
+          );
+
+        return (
+          (
+            firstPrefecture < 0
+              ? PREFECTURE_ORDER.length
+              : firstPrefecture
+          ) -
+            (
+              secondPrefecture < 0
+                ? PREFECTURE_ORDER.length
+                : secondPrefecture
+            ) ||
+          first.name.localeCompare(
+            second.name,
+            "ja"
+          )
+        );
+      }
+    );
+}
+
+
+function saveFavoriteSpotIds() {
+  try {
+    window.localStorage.setItem(
+      FAVORITES_STORAGE_KEY,
+      JSON.stringify(
+        Array.from(
+          favoriteSpotIds
+        )
+      )
+    );
+    return true;
+  } catch (error) {
+    console.warn(
+      "行きたいリストを保存できませんでした。",
+      error
+    );
+    showStatus(
+      "行きたいリストを保存できませんでした。ブラウザの保存設定をご確認ください。",
+      "error",
+      true
+    );
+    return false;
+  }
+}
+
+
+function removeFavoriteSpot(
+  spot
+) {
+  favoriteSpotIds.delete(
+    spot.id
+  );
+
+  if (!saveFavoriteSpotIds()) {
+    favoriteSpotIds.add(
+      spot.id
+    );
+    return;
+  }
+
+  updateHeroCounts();
+  renderFavorites();
+  renderCalendar();
+  renderPlanCandidates();
+  showStatus(
+    "「行きたい」から外しました。",
+    "success"
+  );
+}
+
+
+function createFavoriteCard(
+  spot
+) {
+  const status =
+    getFavoriteStatus(spot);
+  const card =
+    createElement(
+      "article",
+      "favorite-card" +
+        (
+          status === "ended"
+            ? " is-ended"
+            : ""
+        )
+    );
+  const top =
+    createElement(
+      "div",
+      "favorite-card-top"
+    );
+  top.appendChild(
+    createElement(
+      "span",
+      "favorite-card-badge is-" +
+        status,
+      getFavoriteStatusLabel(
+        spot,
+        status
+      )
+    )
+  );
+  top.appendChild(
+    createElement(
+      "span",
+      "favorite-card-badge",
+      getPlaceTypeLabel(
+        spot.placeType
+      )
+    )
+  );
+  card.appendChild(top);
+  card.appendChild(
+    createElement(
+      "h3",
+      "",
+      spot.name
+    )
+  );
+  card.appendChild(
+    createElement(
+      "p",
+      "",
+      (
+        spot.address ||
+        "住所要確認"
+      ) +
+        "\n" +
+        getPeriodLabel(spot)
+    )
+  );
+
+  const actions =
+    createElement(
+      "div",
+      "favorite-card-actions"
+    );
+  const detailLink =
+    createElement(
+      "a",
+      "",
+      "詳しい情報"
+    );
+  detailLink.href =
+    getSpotPageUrl(spot);
+  actions.appendChild(detailLink);
+
+  const mapLink =
+    createElement(
+      "a",
+      "",
+      "地図で見る"
+    );
+  mapLink.href =
+    getSpotMapUrl(spot);
+  actions.appendChild(mapLink);
+
+  const planButton =
+    createElement(
+      "button",
+      "",
+      workingPlanIds.includes(
+        spot.id
+      )
+        ? "プランに追加済み"
+        : "＋ プランに追加"
+    );
+  planButton.type = "button";
+  planButton.disabled =
+    workingPlanIds.includes(
+      spot.id
+    );
+  planButton.addEventListener(
+    "click",
+    () => {
+      addSpotToPlan(spot.id);
+      renderFavorites();
+    }
+  );
+  actions.appendChild(planButton);
+
+  const removeButton =
+    createElement(
+      "button",
+      "favorite-remove",
+      "行きたいから外す"
+    );
+  removeButton.type = "button";
+  removeButton.addEventListener(
+    "click",
+    () => {
+      removeFavoriteSpot(spot);
+    }
+  );
+  actions.appendChild(removeButton);
+  card.appendChild(actions);
+
+  return card;
+}
+
+
+function writeFavoritesUrl() {
+  if (currentView !== "favorites") {
+    return;
+  }
+
+  const url =
+    new URL(
+      window.location.href
+    );
+  const values = [
+    ["fq", $("#favorites-search")?.value],
+    ["fpref", $("#favorites-prefecture")?.value],
+    ["fstatus", $("#favorites-status")?.value],
+    [
+      "fsort",
+      $("#favorites-sort")?.value === "prefecture"
+        ? ""
+        : $("#favorites-sort")?.value
+    ]
+  ];
+
+  values.forEach(
+    ([key, value]) => {
+      if (value) {
+        url.searchParams.set(
+          key,
+          value
+        );
+      } else {
+        url.searchParams.delete(key);
+      }
+    }
+  );
+
+  window.history.replaceState(
+    null,
+    "",
+    url
+  );
+}
+
+
+function populateFavoritePrefectures() {
+  const select =
+    $("#favorites-prefecture");
+  const previousValue =
+    select.value;
+  const prefectures =
+    new Set(
+      spots
+        .filter(
+          spot =>
+            favoriteSpotIds.has(
+              spot.id
+            )
+        )
+        .map(
+          spot => spot._prefecture
+        )
+        .filter(Boolean)
+    );
+
+  select.replaceChildren(
+    new Option(
+      "全国",
+      ""
+    )
+  );
+  PREFECTURE_ORDER.forEach(
+    prefecture => {
+      if (prefectures.has(prefecture)) {
+        select.appendChild(
+          new Option(
+            prefecture,
+            prefecture
+          )
+        );
+      }
+    }
+  );
+
+  const requestedValue =
+    previousValue ||
+    params.get("fpref");
+
+  if (
+    requestedValue &&
+    Array.from(select.options)
+      .some(
+        option =>
+          option.value ===
+          requestedValue
+      )
+  ) {
+    select.value =
+      requestedValue;
+  }
+}
+
+
+function renderFavorites() {
+  if (!spots.length) {
+    return;
+  }
+
+  const list =
+    $("#favorites-list");
+  const favoriteSpots =
+    getFavoriteSpots();
+  $("#favorites-result-count").textContent =
+    favoriteSpots.length + "件";
+  list.replaceChildren();
+
+  if (!favoriteSpots.length) {
+    list.appendChild(
+      createElement(
+        "p",
+        "calendar-empty",
+        favoriteSpotIds.size
+          ? "条件に合う「行きたい」スポットはありません。絞り込み条件を変更してください。"
+          : "まだ「行きたい」スポットはありません。地図や公式スポット一覧から保存できます。"
+      )
+    );
+    return;
+  }
+
+  list.append(
+    ...favoriteSpots.map(
+      createFavoriteCard
+    )
+  );
 }
 
 
@@ -1008,6 +1639,31 @@ function createCalendarEventCard(
   mapLink.href =
     getSpotMapUrl(spot);
   actions.appendChild(mapLink);
+
+  if (
+    spot.eventStatus !==
+    "cancelled"
+  ) {
+    const calendarButton =
+      createElement(
+        "button",
+        "",
+        "カレンダーに登録"
+      );
+    calendarButton.type = "button";
+    calendarButton.addEventListener(
+      "click",
+      () => {
+        downloadEventCalendar(
+          spot,
+          date
+        );
+      }
+    );
+    actions.appendChild(
+      calendarButton
+    );
+  }
 
   const planButton =
     createElement(
@@ -1973,6 +2629,8 @@ function renderPlan() {
 
   $("#plan-optimize").disabled =
     planSpots.length < 3;
+  $("#plan-calendar").disabled =
+    planSpots.length === 0;
   $("#plan-share").disabled =
     planSpots.length === 0;
 
@@ -3777,6 +4435,7 @@ async function loadSpots() {
   }
 
   populateCalendarPrefectures();
+  populateFavoritePrefectures();
   updateHeroCounts();
 
   if (failed.length) {
@@ -3879,6 +4538,28 @@ $("#calendar-share")
     }
   );
 
+[
+  "#favorites-search",
+  "#favorites-prefecture",
+  "#favorites-status",
+  "#favorites-sort"
+].forEach(
+  selector => {
+    const element = $(selector);
+    element?.addEventListener(
+      element.matches(
+        'input[type="search"]'
+      )
+        ? "input"
+        : "change",
+      () => {
+        renderFavorites();
+        writeFavoritesUrl();
+      }
+    );
+  }
+);
+
 $("#plan-search")
   ?.addEventListener(
     "input",
@@ -3928,6 +4609,12 @@ $("#plan-share")
         "ちい活プランのURLをコピーしました。"
       );
     }
+  );
+
+$("#plan-calendar")
+  ?.addEventListener(
+    "click",
+    downloadPlanCalendar
   );
 
 $("#save-shared-plan")
@@ -4104,7 +4791,9 @@ window.addEventListener(
       }
 
       updateHeroCounts();
+      populateFavoritePrefectures();
       renderCalendar();
+      renderFavorites();
       renderPlan();
       renderActivity();
     }
@@ -4129,6 +4818,30 @@ if (["favorite", "visited"].includes(
 )) {
   $("#calendar-saved").value =
     params.get("saved");
+}
+
+if (params.get("fq")) {
+  $("#favorites-search").value =
+    params.get("fq");
+}
+
+if ([
+  "current",
+  "upcoming",
+  "ending",
+  "ended"
+].includes(params.get("fstatus"))) {
+  $("#favorites-status").value =
+    params.get("fstatus");
+}
+
+if ([
+  "prefecture",
+  "deadline",
+  "name"
+].includes(params.get("fsort"))) {
+  $("#favorites-sort").value =
+    params.get("fsort");
 }
 
 

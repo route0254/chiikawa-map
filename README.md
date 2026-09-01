@@ -10,7 +10,8 @@
 - 開催中・開催予定・終了済みの公式スポット一覧
 - ナガノ先生関連スポットの根拠と確度表示
 - 「行きたい」「行った！」「今日のプラン」「訪問日・メモ」の端末保存
-- イベントカレンダー、訪問記録の集計、共有画像の作成
+- 行きたい一覧、イベントカレンダー、今日のプランのカレンダー登録
+- 訪問記録の集計、共有画像の作成
 - Googleログインを使った任意のクラウド同期
 - スポット個別ページ、共有URL、PWA対応
 
@@ -40,7 +41,7 @@ pnpm run check:site
 | --- | --- |
 | `index.html` / `style.css` / `app.js` | 地図ページ |
 | `official.html` / `official.css` / `official.js` | 公式スポット一覧 |
-| `journal.html` / `journal.css` / `journal.js` | カレンダー、プラン、訪問記録 |
+| `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
 | `privacy.html` / `legal.css` | 保存データとプライバシーの説明 |
 | `data/official-spots.json` | 現在・今後の公式スポット |
 | `data/official-events-archive.json` | 終了・開催中止となった公式イベント |

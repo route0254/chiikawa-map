@@ -14,6 +14,12 @@ const pages = [
     name: "ちい活手帳",
     path: "/journal.html?view=calendar&date=2026-09-01",
     ready: "#calendar-grid .calendar-day"
+  },
+  {
+    name: "行きたいリスト",
+    path: "/journal.html?view=favorites",
+    ready: "#favorites-list .favorite-card",
+    favorites: true
   }
 ];
 
@@ -21,6 +27,17 @@ for (const target of pages) {
   test(
     `${target.name}に重大なアクセシビリティ違反がない`,
     async ({ page }) => {
+      if (target.favorites) {
+        await page.addInitScript(() => {
+          localStorage.setItem(
+            "chiikawa-map-favorites-v1",
+            JSON.stringify([
+              "chiikawaland-osaka-umeda"
+            ])
+          );
+        });
+      }
+
       await page.goto(target.path);
       await page.locator(target.ready)
         .first()
