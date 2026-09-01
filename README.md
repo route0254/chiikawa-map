@@ -47,9 +47,9 @@ pnpm run check:site
 | `data/nagano-spots.json` | ナガノ先生関連スポット |
 | `spot/` | JSONから生成するスポット個別ページ |
 | `cloud-sync-*.js` / `firebase-config.json` | Firebase Authentication、Firestore同期、GA4 |
-| `scripts/` | データ検証、個別ページ生成、調査用スクリプト |
+| `scripts/` | データ検証、掲載件数・個別ページ生成、調査用スクリプト |
 | `research/` | 過去イベント調査の作業データ |
-| `tests/` | Playwrightのスモークテスト |
+| `tests/` | 単体テスト、PlaywrightのUI・アクセシビリティテスト |
 
 データ更新の手順と掲載基準は[DATA-OPERATIONS.md](DATA-OPERATIONS.md)、今後の課題は[ROADMAP.md](ROADMAP.md)にまとめています。Firebaseの設定は[docs/cloud-sync-setup.md](docs/cloud-sync-setup.md)を参照してください。
 
@@ -65,7 +65,7 @@ pnpm run test:smoke
 
 URLを変更した場合は`pnpm run check:links`も実行します。`spot/`配下の生成物は直接編集せず、`scripts/build-spot-pages.mjs`、`spot.css`、`spot-page.js`を変更してください。
 
-掲載基準日は`app.js`の`DATA_AS_OF`で管理します。データ構造と許容値は`scripts/validate-data.mjs`が検証します。
+掲載件数と確認日は、各データの確認日から`data/site-meta.json`へ生成します。データ構造と許容値は`scripts/validate-data.mjs`が検証します。
 
 ## 保存データ
 

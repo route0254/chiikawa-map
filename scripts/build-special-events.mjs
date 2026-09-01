@@ -8,6 +8,11 @@ import path from "node:path";
 import {
   fileURLToPath
 } from "node:url";
+import {
+  isDateString,
+  mergeManagedRecords,
+  shouldArchiveEvent
+} from "./lib/data-utils.mjs";
 
 const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -40,9 +45,7 @@ async function readJson(filePath) {
 }
 
 function isDate(value) {
-  return /^\d{4}-\d{2}-\d{2}$/.test(
-    String(value || "")
-  );
+  return isDateString(value);
 }
 
 function normalize(value) {
@@ -233,7 +236,10 @@ for (const { series, event } of sourceEvents) {
 const records = sourceEvents.map(
   ({ series, event }) => {
     const archiveEvent =
-      event.endDate < statusAsOf;
+      shouldArchiveEvent(
+        event,
+        statusAsOf
+      );
 
     return {
       archive: archiveEvent,
@@ -292,20 +298,16 @@ for (const { record } of records) {
   }
 }
 
-const nextCurrent = [
-  ...current.filter(
-    record =>
-      !managedIds.has(record.id)
-  ),
-  ...currentRecords
-];
-const nextArchive = [
-  ...archive.filter(
-    record =>
-      !managedIds.has(record.id)
-  ),
-  ...archiveRecords
-];
+const nextCurrent = mergeManagedRecords(
+  current,
+  currentRecords,
+  managedIds
+);
+const nextArchive = mergeManagedRecords(
+  archive,
+  archiveRecords,
+  managedIds
+);
 
 function assertManagedRecords() {
   const currentById = new Map(

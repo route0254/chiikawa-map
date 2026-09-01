@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20260901-2";
+  "chiikatsu-map-v20260901-3";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -21,6 +21,7 @@ const CORE_FILES = [
   "./app.js",
   "./official.js",
   "./journal.js",
+  "./calendar-utils.js",
   "./cloud-sync-loader.js",
   "./cloud-sync-ui.js",
   "./cloud-sync-merge.js",
@@ -30,7 +31,8 @@ const CORE_FILES = [
   "./assets/app-icon-192.png",
   "./assets/app-icon-512.png",
   "./data/official-spots.json",
-  "./data/nagano-spots.json"
+  "./data/nagano-spots.json",
+  "./data/site-meta.json"
 ];
 
 self.addEventListener(

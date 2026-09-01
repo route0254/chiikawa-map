@@ -329,8 +329,8 @@
 }
 
 .calendar-day.is-empty {
-  color: #b7adb8;
-  background: #fcfafc;
+  color: #756d76;
+  background: #f8f6f8;
 }
 
 .calendar-day.is-today {
@@ -354,6 +354,43 @@
   font-weight: 900;
 }
 
+.calendar-day-groups {
+  display: grid;
+  gap: 3px;
+}
+
+.calendar-day-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  min-width: 0;
+  padding: 3px 5px;
+  border-radius: 6px;
+  color: #5d4da7;
+  background: #f2efff;
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.calendar-day-group-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calendar-day-group b {
+  flex: none;
+  font-size: inherit;
+}
+
+.calendar-day-group-more {
+  color: #6d626f;
+  font-size: 7px;
+  font-weight: 800;
+}
+
 .calendar-day-meta {
   display: flex;
   flex-wrap: wrap;
@@ -368,12 +405,12 @@
 }
 
 .calendar-day-meta .starts {
-  color: #337456;
+  color: #296347;
   background: #e8f7ef;
 }
 
 .calendar-day-meta .ends {
-  color: #aa5a39;
+  color: #874429;
   background: #fff0e6;
 }
 
@@ -458,7 +495,7 @@
 
 .calendar-event-card p {
   margin: 0;
-  color: #827683;
+  color: #706472;
   font-size: 10px;
   line-height: 1.65;
 }
@@ -1327,6 +1364,25 @@ button.activity-progress-item:focus-visible {
 
   .calendar-day-count {
     font-size: 9px;
+  }
+
+  .calendar-day-groups {
+    gap: 2px;
+  }
+
+  .calendar-day-group {
+    display: grid;
+    gap: 0;
+    padding: 2px 3px;
+    font-size: 6px;
+  }
+
+  .calendar-day-group b {
+    justify-self: end;
+  }
+
+  .calendar-day-group-more {
+    font-size: 6px;
   }
 
   .calendar-day-meta {

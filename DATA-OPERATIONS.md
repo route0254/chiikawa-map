@@ -20,8 +20,19 @@
 - `data/official-spots.json`: 現在開催中・今後開催の公式関連
 - `data/official-events-archive.json`: 終了・開催中止となった公式イベント
 - `data/nagano-spots.json`: ナガセン関連
+- `data/site-meta.json`: 掲載件数とデータ確認日（生成ファイル）
 
 過去イベントJSONは通常アクセスでは読み込まず、絞り込みの「過去イベント（終了・中止）」または過去イベントの共有URLを開いた場合だけ読み込みます。読み込み後は開催年でも絞り込めます。
+
+掲載件数、トップページの確認日、サイトマップの更新日はデータから生成します。データ更新後は`pnpm run build:spot-pages`を実行してください。
+
+追加前のJSONを確認する場合は、次のコマンドを使います。既存ID、同名、75m以内のスポット、期間や必須項目を確認し、公開JSONは変更しません。
+
+```bash
+pnpm run preview:spot -- --file=research/draft.json --dataset=official
+```
+
+既存スポットの更新は`--replace=既存ID`を追加します。`--dataset`には`official`、`archive`、`nagano`を指定できます。
 
 ## 更新頻度
 
@@ -102,7 +113,7 @@ POP UP STORE・カフェ・展覧会の3一覧に含まれない系列イベン�
 3. 内容を確認して`pnpm run import:special-events`で2つの公開JSONへ反映する
 4. `pnpm run build:spot-pages`と`pnpm run check`を実行する
 
-振り分け基準日は原本の`checkedAt`です。`endDate`が基準日より前なら過去、それ以外は現在・今後として生成します。原本で管理するIDは再実行時も維持され、基準日更新後は同じIDのまま現在JSONから過去JSONへ移動します。`pnpm run check`は原本の管理対象が正しいJSONに同期していることと、既存データとのID・系列・期間・会場の重複を検査します。
+振り分け基準日は原本の`statusAsOf`です。省略時だけ`checkedAt`を使います。`endDate`が基準日より前なら過去、それ以外は現在・今後として生成します。`checkedAt`は営業時間・入場方法を確認した日として公開JSONへ反映します。原本で管理するIDは再実行時も維持され、基準日更新後は同じIDのまま現在JSONから過去JSONへ移動します。`pnpm run check`は原本の管理対象が正しいJSONに同期していることと、既存データとのID・系列・期間・会場の重複を検査します。
 
 ## 開催終了時の移動手順
 

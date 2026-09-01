@@ -1150,6 +1150,9 @@ function renderCalendar() {
         date,
         filteredSpots
       );
+    const eventGroups =
+      window.ChiikatsuCalendar
+        .groupCalendarEvents(events);
     const starts =
       events.filter(
         spot =>
@@ -1173,8 +1176,16 @@ function renderCalendar() {
       "aria-label",
       formatDateJapanese(date) +
       "、" +
-      events.length +
-      "件"
+      (
+        eventGroups.length
+          ? eventGroups.map(
+              group =>
+                group.label +
+                group.count +
+                "件"
+            ).join("、")
+          : "イベントなし"
+      )
     );
     button.appendChild(
       createElement(
@@ -1185,13 +1196,55 @@ function renderCalendar() {
     );
 
     if (events.length) {
-      button.appendChild(
+      const groupList =
         createElement(
           "span",
-          "calendar-day-count",
-          events.length + "件"
-        )
-      );
+          "calendar-day-groups"
+        );
+      const visibleGroups =
+        eventGroups.slice(0, 3);
+
+      visibleGroups.forEach(group => {
+        const row = createElement(
+          "span",
+          "calendar-day-group"
+        );
+        row.appendChild(
+          createElement(
+            "span",
+            "calendar-day-group-label",
+            group.label
+          )
+        );
+        row.appendChild(
+          createElement(
+            "b",
+            "",
+            group.count + "件"
+          )
+        );
+        groupList.appendChild(row);
+      });
+
+      if (
+        eventGroups.length >
+        visibleGroups.length
+      ) {
+        groupList.appendChild(
+          createElement(
+            "span",
+            "calendar-day-group-more",
+            "ほか" +
+              (
+                eventGroups.length -
+                visibleGroups.length
+              ) +
+              "種類"
+          )
+        );
+      }
+
+      button.appendChild(groupList);
     }
 
     if (starts || ends) {

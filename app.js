@@ -1,12 +1,6 @@
 // ちいかわ推し活（ちい活）MAP
 
 
-// 基本設定
-
-const DATA_AS_OF =
-  "2026-09-01";
-
-
 const INITIAL_POSITION = [
   35.681236,
   139.767125
@@ -431,12 +425,6 @@ const spotListSummary =
   );
 
 
-const dataAsOf =
-  document.getElementById(
-    "data-as-of"
-  );
-
-
 const filterToggle =
   document.getElementById(
     "filter-toggle"
@@ -682,47 +670,6 @@ function showAppStatus(
           5000
       );
   }
-}
-
-
-// 掲載基準日表示
-
-function formatDateJapanese(
-  dateString
-) {
-
-  const parts =
-    dateString.split("-");
-
-
-  if (
-    parts.length !==
-    3
-  ) {
-
-    return dateString;
-  }
-
-
-  return (
-    Number(parts[0]) +
-    "年" +
-    Number(parts[1]) +
-    "月" +
-    Number(parts[2]) +
-    "日"
-  );
-}
-
-
-if (
-  dataAsOf
-) {
-
-  dataAsOf.textContent =
-    formatDateJapanese(
-      DATA_AS_OF
-    );
 }
 
 

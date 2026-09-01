@@ -1,5 +1,11 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import {
+  getLatestCheckedDate
+} from "./lib/data-utils.mjs";
+import {
+  createSiteMeta
+} from "./lib/site-meta.mjs";
 
 const root = process.cwd();
 const outputRoot = resolve(root, "spot");
@@ -7,7 +13,8 @@ const manifestPath = resolve(root, ".spot-pages-manifest.json");
 const writeMode = process.argv.includes("--write");
 const checkMode = process.argv.includes("--check");
 const siteOrigin = "https://chiikatsu-map.com";
-const pageLastModified = "2026-08-29";
+const siteMeta = await createSiteMeta(root);
+const pageLastModified = siteMeta.dataAsOf;
 
 if (!writeMode && !checkMode) {
   console.log("Use --write to generate pages or --check to verify them.");
@@ -275,20 +282,27 @@ function createPage(spot) {
 
 function createSitemap() {
   const urls = [
-    { loc: `${siteOrigin}/`, priority: "1.0" },
-    { loc: `${siteOrigin}/official.html`, priority: "0.9" },
-    { loc: `${siteOrigin}/journal.html`, priority: "0.9" },
-    { loc: `${siteOrigin}/privacy.html`, priority: "0.4" },
+    { loc: `${siteOrigin}/`, priority: "1.0", lastmod: pageLastModified },
+    { loc: `${siteOrigin}/official.html`, priority: "0.9", lastmod: pageLastModified },
+    { loc: `${siteOrigin}/journal.html`, priority: "0.9", lastmod: pageLastModified },
+    { loc: `${siteOrigin}/privacy.html`, priority: "0.4", lastmod: pageLastModified },
     ...spots
       .filter(spot => !spot.isArchive)
-      .map(spot => ({ loc: `${siteOrigin}/spot/${encodeURIComponent(spot.id)}/`, priority: "0.7" }))
+      .map(spot => ({
+        loc: `${siteOrigin}/spot/${encodeURIComponent(spot.id)}/`,
+        priority: "0.7",
+        lastmod: getLatestCheckedDate(
+          [spot],
+          pageLastModified
+        )
+      }))
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(url => `  <url>
     <loc>${escapeHtml(url.loc)}</loc>
-    <lastmod>${pageLastModified}</lastmod>
+    <lastmod>${url.lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${url.priority}</priority>
   </url>`).join("\n")}

@@ -1,0 +1,53 @@
+import AxeBuilder from "@axe-core/playwright";
+import {
+  expect,
+  test
+} from "@playwright/test";
+
+const pages = [
+  {
+    name: "公式スポット一覧",
+    path: "/official.html",
+    ready: "#current-groups .official-spot-card"
+  },
+  {
+    name: "ちい活手帳",
+    path: "/journal.html?view=calendar&date=2026-09-01",
+    ready: "#calendar-grid .calendar-day"
+  }
+];
+
+for (const target of pages) {
+  test(
+    `${target.name}に重大なアクセシビリティ違反がない`,
+    async ({ page }) => {
+      await page.goto(target.path);
+      await page.locator(target.ready)
+        .first()
+        .waitFor();
+
+      const results = await new AxeBuilder({ page })
+        .withTags([
+          "wcag2a",
+          "wcag2aa",
+          "wcag21a",
+          "wcag21aa"
+        ])
+        .analyze();
+      const summary = results.violations.map(
+        violation => ({
+          id: violation.id,
+          impact: violation.impact,
+          help: violation.help,
+          targets: violation.nodes
+            .map(node => node.target)
+        })
+      );
+
+      expect(
+        summary,
+        JSON.stringify(summary, null, 2)
+      ).toEqual([]);
+    }
+  );
+}
