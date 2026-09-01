@@ -157,6 +157,15 @@ if (!isDate(source.checkedAt)) {
   );
 }
 
+const statusAsOf =
+  source.statusAsOf || source.checkedAt;
+
+if (!isDate(statusAsOf)) {
+  throw new Error(
+    "statusAsOf はYYYY-MM-DD形式で指定してください。"
+  );
+}
+
 const sourceEvents =
   source.series.flatMap(
     series =>
@@ -224,7 +233,7 @@ for (const { series, event } of sourceEvents) {
 const records = sourceEvents.map(
   ({ series, event }) => {
     const archiveEvent =
-      event.endDate < source.checkedAt;
+      event.endDate < statusAsOf;
 
     return {
       archive: archiveEvent,

@@ -4,7 +4,7 @@
 // 基本設定
 
 const DATA_AS_OF =
-  "2026-08-31";
+  "2026-09-01";
 
 
 const INITIAL_POSITION = [

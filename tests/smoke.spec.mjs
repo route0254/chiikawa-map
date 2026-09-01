@@ -27,7 +27,7 @@ const projectDirectory =
 
 const TEST_NOW =
   new Date(
-    "2026-08-31T03:00:00.000Z"
+    "2026-09-01T03:00:00.000Z"
   );
 
 
@@ -1889,7 +1889,7 @@ test(
         ids: [
           "chiikawaland-ikebukuro",
           "chiikawa-restaurant-ikebukuro",
-          "shisa-popup-ikebukuro",
+          "ramen-buta-ikebukuro",
           "pocket-popup-ikebukuro"
         ],
         spot:
@@ -2568,7 +2568,7 @@ test(
         '#current-brand option[value="chiikawa_baby"]'
       )
     ).toHaveText(
-      /^Chiikawa Baby（3）$/
+      /^Chiikawa Baby（2）$/
     );
 
     await page.locator(
@@ -2581,17 +2581,16 @@ test(
       page.locator(
         "#current-result-summary"
       )
-    ).toHaveText("3件を表示しています。");
+    ).toHaveText("2件を表示しています。");
 
     await expect(
       page.locator(
         "#current-groups .official-spot-card"
       )
-    ).toHaveCount(3);
+    ).toHaveCount(2);
 
     for (const venueName of [
       "JR大宮駅",
-      "遠鉄百貨店",
       "羽田空港第1ターミナル"
     ]) {
       await expect(
