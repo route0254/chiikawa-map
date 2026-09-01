@@ -6,6 +6,11 @@ import {
 
 const pages = [
   {
+    name: "地図",
+    path: "/",
+    ready: "#result-count"
+  },
+  {
     name: "公式スポット一覧",
     path: "/official.html",
     ready: "#current-groups .official-spot-card"
@@ -43,6 +48,17 @@ const pages = [
     path: "/journal.html?view=activity",
     ready: ".activity-summary-card",
     records: true
+  },
+  {
+    name: "プライバシー",
+    path: "/privacy.html",
+    ready: ".legal-grid"
+  },
+  {
+    name: "スポット個別ページ",
+    path:
+      "/spot/chiikawaland-osaka-umeda/",
+    ready: ".spot-page-card"
   }
 ];
 

@@ -86,6 +86,58 @@ test(
 );
 
 test(
+  "主要ページで本文へ直接移動できる",
+  async ({ page }) => {
+    for (const path of [
+      "/",
+      "/official.html",
+      "/journal.html",
+      "/privacy.html"
+    ]) {
+      await page.goto(path);
+      await page.keyboard.press("Tab");
+
+      const skipLink =
+        page.getByRole("link", {
+          name: "本文へ移動"
+        });
+      await expect(skipLink)
+        .toBeFocused();
+      await expect(skipLink)
+        .toBeInViewport();
+      await page.keyboard.press("Enter");
+      await expect(
+        page.locator("#main-content")
+      ).toBeFocused();
+    }
+  }
+);
+
+test(
+  "行きたいリストの絞り込み件数を状態として通知する",
+  async ({ page }) => {
+    await page.goto(
+      "/journal.html?view=favorites"
+    );
+
+    const resultCount =
+      page.locator(
+        "#favorites-result-count"
+      );
+    await expect(resultCount)
+      .toHaveAttribute(
+        "role",
+        "status"
+      );
+    await page.locator(
+      "#favorites-prefecture"
+    ).selectOption("大阪府");
+    await expect(resultCount)
+      .toHaveText("1件");
+  }
+);
+
+test(
   "200%拡大相当でも手帳の各表示が横にはみ出さない",
   async ({ page }) => {
     await page.setViewportSize({

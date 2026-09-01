@@ -65,7 +65,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260829-1"
+    href="style.css?v=20260901-1"
   >
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
@@ -74,6 +74,8 @@
 
 
 <body>
+
+  <a class="skip-link" href="#main-content">本文へ移動</a>
 
   <!-- HEADER -->
 
@@ -169,7 +171,7 @@
 
   <!-- PAGE -->
 
-  <main class="page-shell">
+  <main id="main-content" class="page-shell" tabindex="-1">
 
     <section class="map-card">
 
@@ -1510,6 +1512,7 @@
 
           <div
             id="map"
+            role="region"
             aria-label="ちいかわ推し活（ちい活）マップ"
           ></div>
 

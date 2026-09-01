@@ -31,11 +31,13 @@
     href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css?v=20260829-1">
+  <link rel="stylesheet" href="style.css?v=20260901-1">
   <link rel="stylesheet" href="journal.css?v=20260901-5">
 </head>
 
 <body class="journal-page">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
   <header class="site-header">
     <div class="site-header-inner">
       <div class="site-header-top">
@@ -77,7 +79,7 @@
     </div>
   </div>
 
-  <main class="journal-shell">
+  <main id="main-content" class="journal-shell" tabindex="-1">
     <section class="journal-hero" aria-labelledby="journal-hero-title">
       <div>
         <span class="journal-eyebrow">MY CHIIKATSU JOURNAL</span>
@@ -264,7 +266,13 @@
           <h2>行きたいリスト</h2>
           <p>地図や一覧で保存したスポットを、開催状況や都道府県で確認できます。</p>
         </div>
-        <span id="favorites-result-count" class="favorites-result-count">--件</span>
+        <span
+          id="favorites-result-count"
+          class="favorites-result-count"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >--件</span>
       </div>
 
       <div class="favorites-filters" aria-label="行きたいリストの絞り込み">
