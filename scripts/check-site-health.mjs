@@ -19,6 +19,26 @@ const TIMEOUT_MS =
   20000;
 
 
+const MAX_ATTEMPTS =
+  3;
+
+
+const RETRY_DELAY_MS =
+  1000;
+
+
+const RETRYABLE_STATUSES =
+  new Set([
+    408,
+    425,
+    429,
+    500,
+    502,
+    503,
+    504
+  ]);
+
+
 const results = [];
 
 
@@ -68,6 +88,91 @@ async function fetchWithTimeout(
 }
 
 
+function wait(
+  milliseconds
+) {
+  return new Promise(
+    resolve => {
+      setTimeout(
+        resolve,
+        milliseconds
+      );
+    }
+  );
+}
+
+
+async function fetchWithRetry(
+  url,
+  options = {}
+) {
+  let lastError;
+
+  for (
+    let attempt = 1;
+    attempt <= MAX_ATTEMPTS;
+    attempt += 1
+  ) {
+    try {
+      const response =
+        await fetchWithTimeout(
+          url,
+          options
+        );
+
+      if (
+        !RETRYABLE_STATUSES.has(
+          response.status
+        ) ||
+        attempt === MAX_ATTEMPTS
+      ) {
+        return response;
+      }
+
+      await response.body?.cancel();
+
+      console.warn(
+        "RETRY " +
+          url +
+          " — status=" +
+          response.status +
+          " (" +
+          attempt +
+          "/" +
+          MAX_ATTEMPTS +
+          ")"
+      );
+    } catch (error) {
+      lastError = error;
+
+      if (attempt === MAX_ATTEMPTS) {
+        throw error;
+      }
+
+      console.warn(
+        "RETRY " +
+          url +
+          " — " +
+          (error instanceof Error
+            ? error.message
+            : String(error)) +
+          " (" +
+          attempt +
+          "/" +
+          MAX_ATTEMPTS +
+          ")"
+      );
+    }
+
+    await wait(
+      RETRY_DELAY_MS * attempt
+    );
+  }
+
+  throw lastError;
+}
+
+
 function isRedirectStatus(
   status
 ) {
@@ -107,7 +212,7 @@ async function checkRedirect(
 ) {
   try {
     const response =
-      await fetchWithTimeout(
+      await fetchWithRetry(
         requestUrl,
         {
           redirect: "manual"
@@ -157,7 +262,7 @@ async function checkRedirect(
 async function checkPublicPage() {
   try {
     const response =
-      await fetchWithTimeout(
+      await fetchWithRetry(
         SITE_URL
       );
 
@@ -242,7 +347,7 @@ async function checkPublishedAsset(
 
   try {
     const response =
-      await fetchWithTimeout(url);
+      await fetchWithRetry(url);
 
     if (response.status !== 200) {
       fail(
