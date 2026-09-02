@@ -3312,6 +3312,7 @@ test(
       const url of [
         "/",
         "/official.html",
+        "/collaborations.html",
         "/journal.html",
         "/spot/chiikawaland-osaka-umeda/"
       ]
@@ -3323,6 +3324,135 @@ test(
         )
       ).toBeAttached();
     }
+  }
+);
+
+
+test(
+  "コラボ一覧を種類・開催状況・年で絞り込める",
+  async ({ page }) => {
+    const currentRecords = JSON.parse(
+      await readFile(
+        resolve(
+          projectDirectory,
+          "data/collaborations-current.json"
+        ),
+        "utf8"
+      )
+    );
+    const archiveRecords = JSON.parse(
+      await readFile(
+        resolve(
+          projectDirectory,
+          "data/collaborations-archive.json"
+        ),
+        "utf8"
+      )
+    );
+
+    await page.goto(
+      "/collaborations.html"
+    );
+    await expect(
+      page.locator(
+        '[data-groups="current"] .collaboration-card'
+      )
+    ).toHaveCount(currentRecords.length);
+    await expect(
+      page.locator(
+        "#collaboration-current-total"
+      )
+    ).toHaveText(
+      String(currentRecords.length)
+    );
+
+    await page.locator(
+      '[data-filter="category"][data-list="current"]'
+    ).selectOption("experience");
+    await page.locator(
+      '[data-filter="status"][data-list="current"]'
+    ).selectOption("active");
+
+    const activeExperiences =
+      currentRecords.filter(
+        record =>
+          record.category ===
+            "experience" &&
+          record.status === "active"
+      );
+    await expect(
+      page.locator(
+        '[data-groups="current"] .collaboration-card'
+      )
+    ).toHaveCount(
+      activeExperiences.length
+    );
+
+    await page.locator(
+      '[data-reset="current"]'
+    ).click();
+    await page.locator(
+      "#collaboration-tab-archive"
+    ).click();
+    await expect(
+      page.locator(
+        '[data-groups="archive"] .collaboration-card'
+      )
+    ).toHaveCount(archiveRecords.length);
+    await expect(
+      page.locator(
+        "#collaboration-archive-total"
+      )
+    ).toHaveText(
+      String(archiveRecords.length)
+    );
+
+    await page.locator(
+      '[data-filter="year"][data-list="archive"]'
+    ).selectOption("2023");
+    const records2023 =
+      archiveRecords.filter(record =>
+        record.periods.some(
+          period =>
+            period.startDate?.startsWith(
+              "2023-"
+            )
+        )
+      );
+    await expect(
+      page.locator(
+        '[data-groups="archive"] .collaboration-card'
+      )
+    ).toHaveCount(records2023.length);
+    await expect(
+      page.locator(
+        '[data-groups="archive"]'
+      )
+    ).toContainText(
+      "阪急電車×ちいかわ"
+    );
+
+    await page.setViewportSize({
+      width: 390,
+      height: 844
+    });
+    expect(
+      await page.evaluate(() => ({
+        viewport: window.innerWidth,
+        documentWidth:
+          document.documentElement.scrollWidth
+      }))
+    ).toEqual({
+      viewport: 390,
+      documentWidth: 390
+    });
+    const sourceLinkBox =
+      await page.locator(
+        '[data-groups="archive"] .collaboration-card-action'
+      ).first().boundingBox();
+    expect(
+      sourceLinkBox?.height
+    ).toBeGreaterThanOrEqual(40);
   }
 );
 

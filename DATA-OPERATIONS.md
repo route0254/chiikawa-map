@@ -166,6 +166,22 @@ IDを維持するため、移動後も既存共有URLとlocalStorageはそのま
 
 通常の絞り込みは、`placeType`による目的別と3段階の確度を組み合わせます。`evidenceStatus: confirmed`は「確定」、`evidenceStatus: inferred`かつ`evidenceNote`冒頭が「【推定・高確度】」のものは「推定・高確度」、それ以外の`inferred`は安全側に倒して「要注意候補」と表示します。旧`evidence=inferred`共有URLは後者2つへ展開し、`relationType`は詳細表示と旧URL互換のため削除しません。
 
+## コラボ一覧
+
+企業・施設とのコラボは、開催中・開催予定を`data/collaborations-current.json`、終了済みを`data/collaborations-archive.json`で管理します。公式スポットJSONは会場単位、コラボJSONは企画単位です。同じ企画の複数会場や複数期間は、1レコードの`periods`と`linkedSpotIds`にまとめます。
+
+掲載対象は国内の企画で、主催企業・施設・権利元などの発表から企画名と内容を確認できるものです。通常の公式POP UP STORE、一般商品、プライズやカプセルトイだけの展開、SNS投稿だけで確認した情報は対象外とします。過去分は網羅性より根拠を優先します。
+
+更新時は`checkedAt`と`sourceUrl`を確認し、次を実行します。
+
+```bash
+pnpm run check:collaborations
+pnpm run check
+pnpm run test:smoke
+```
+
+終了日は推測せず、固定日がない商品は`endDate: null`のまま`past`として記録します。これは当時発売されたことを示すもので、現在の在庫を示すものではありません。
+
 ## GitHub Actions失敗時の対応
 
 | 検査 | 主な意味 | 最初に行うこと |

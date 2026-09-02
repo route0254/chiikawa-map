@@ -407,6 +407,9 @@ await Promise.all([
   checkPublishedAsset("official.html"),
   checkPublishedAsset("official.css"),
   checkPublishedAsset("official.js"),
+  checkPublishedAsset("collaborations.html"),
+  checkPublishedAsset("collaborations.css"),
+  checkPublishedAsset("collaborations.js"),
   checkPublishedAsset("journal.html"),
   checkPublishedAsset("journal.css"),
   checkPublishedAsset("journal.js"),
@@ -422,6 +425,14 @@ await Promise.all([
   ),
   checkPublishedAsset(
     "data/official-events-archive.json",
+    { json: true }
+  ),
+  checkPublishedAsset(
+    "data/collaborations-current.json",
+    { json: true }
+  ),
+  checkPublishedAsset(
+    "data/collaborations-archive.json",
     { json: true }
   ),
   checkPublishedAsset(

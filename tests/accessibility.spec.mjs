@@ -16,6 +16,11 @@ const pages = [
     ready: "#current-groups .official-spot-card"
   },
   {
+    name: "コラボ一覧",
+    path: "/collaborations.html",
+    ready: "[data-groups=\"current\"] .collaboration-card"
+  },
+  {
     name: "ちい活手帳",
     path: "/journal.html?view=calendar&date=2026-09-01",
     ready: "#calendar-grid .calendar-day"

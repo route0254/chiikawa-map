@@ -8,6 +8,7 @@
 
 - 地図・一覧・検索・都道府県・カテゴリによるスポット検索
 - 開催中・開催予定・終了済みの公式スポット一覧
+- 開催中・開催予定と過去の企業・施設コラボ一覧
 - ナガノ先生関連スポットの根拠と確度表示
 - 「行きたい」「行った！」「今日のプラン」「訪問日・メモ」の端末保存
 - 行きたい一覧（現在地からの距離順を含む）、イベントカレンダー、今日のプランのカレンダー登録
@@ -41,10 +42,13 @@ pnpm run check:site
 | --- | --- |
 | `index.html` / `style.css` / `app.js` | 地図ページ |
 | `official.html` / `official.css` / `official.js` | 公式スポット一覧 |
+| `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
 | `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
 | `privacy.html` / `legal.css` | 保存データとプライバシーの説明 |
 | `data/official-spots.json` | 現在・今後の公式スポット |
 | `data/official-events-archive.json` | 終了・開催中止となった公式イベント |
+| `data/collaborations-current.json` | 開催中・開催予定の企業・施設コラボ |
+| `data/collaborations-archive.json` | 確認できた過去の企業・施設コラボ |
 | `data/nagano-spots.json` | ナガノ先生関連スポット |
 | `spot/` | JSONから生成するスポット個別ページ |
 | `cloud-sync-*.js` / `firebase-config.json` | Firebase Authentication、Firestore同期、GA4 |

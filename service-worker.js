@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20260901-9";
+  "chiikatsu-map-v20260902-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -11,15 +11,18 @@ const CORE_FILES = [
   "./",
   "./index.html",
   "./official.html",
+  "./collaborations.html",
   "./journal.html",
   "./privacy.html",
   "./offline.html",
   "./style.css",
   "./official.css",
+  "./collaborations.css",
   "./journal.css",
   "./legal.css",
   "./app.js",
   "./official.js",
+  "./collaborations.js",
   "./journal.js",
   "./calendar-utils.js",
   "./journal-export-utils.js",
@@ -33,6 +36,7 @@ const CORE_FILES = [
   "./assets/app-icon-192.png",
   "./assets/app-icon-512.png",
   "./data/official-spots.json",
+  "./data/collaborations-current.json",
   "./data/nagano-spots.json",
   "./data/site-meta.json"
 ];

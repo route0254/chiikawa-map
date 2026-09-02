@@ -91,6 +91,7 @@ test(
     for (const path of [
       "/",
       "/official.html",
+      "/collaborations.html",
       "/journal.html",
       "/privacy.html"
     ]) {
