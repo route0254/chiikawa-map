@@ -1,7 +1,88 @@
 {
   "checkedAt": "2026-08-29",
-  "statusAsOf": "2026-09-01",
+  "statusAsOf": "2026-09-04",
   "series": [
+    {
+      "key": "chiikawaland-popup",
+      "label": "ちいかわらんど POP UP SHOP",
+      "brand": "chiikawaland",
+      "placeType": "shop",
+      "relationType": "popup",
+      "checkedAt": "2026-09-04",
+      "events": [
+        {
+          "id": "chiikawaland-popup-2026-09-11-amu-oita",
+          "name": "ちいかわらんど POP UP SHOP アミュプラザおおいた",
+          "startDate": "2026-09-11",
+          "endDate": "2026-10-12",
+          "venueName": "アミュプラザおおいた",
+          "venueSpace": "2階 特設会場",
+          "address": "大分県大分市要町1-14 アミュプラザおおいた",
+          "lat": 33.233311,
+          "lng": 131.606415,
+          "sourceUrl": "https://chiikawa-info.jp/chiikawaland/oita/index.html"
+        },
+        {
+          "id": "chiikawaland-popup-2025-12-05-amu-kumamoto",
+          "name": "ちいかわらんど POP UP SHOP アミュプラザくまもと",
+          "startDate": "2025-12-05",
+          "endDate": "2026-01-13",
+          "venueName": "アミュプラザくまもと",
+          "venueSpace": "5階 特設会場",
+          "address": "熊本県熊本市西区春日3-15-26 アミュプラザくまもと",
+          "lat": 32.788967,
+          "lng": 130.688232,
+          "sourceUrl": "https://chiikawa-info.jp/chiikawaland/kumamoto/index.html"
+        }
+      ]
+    },
+    {
+      "key": "magical-chiikawa-popup-2026",
+      "label": "まじかるちいかわPOP UP STORE",
+      "brand": "magical_chiikawa",
+      "placeType": "shop",
+      "relationType": "popup",
+      "checkedAt": "2026-09-04",
+      "events": [
+        {
+          "id": "magical-popup-2026-09-11-kochi-tsutaya",
+          "name": "まじかるちいかわPOP UP STORE 高知 蔦屋書店",
+          "startDate": "2026-09-11",
+          "endDate": "2026-10-05",
+          "venueName": "高知 蔦屋書店",
+          "venueSpace": "1F 中央広場",
+          "address": "高知県高知市南御座6-10 高知 蔦屋書店",
+          "lat": 33.566982,
+          "lng": 133.562805,
+          "sourceUrl": "https://chiikawa-info.jp/p26/mg_koch/index.html"
+        }
+      ]
+    },
+    {
+      "key": "chiikawa-bakery-popup-2026",
+      "label": "ちいかわベーカリー POP UP SHOP",
+      "brand": "chiikawa_bakery",
+      "placeType": "shop",
+      "relationType": "popup",
+      "checkedAt": "2026-09-04",
+      "events": [
+        {
+          "id": "bakery-popup-2026-08-13-kyoto",
+          "name": "ちいかわベーカリー KYOTO POP UP SHOP",
+          "startDate": "2026-08-13",
+          "endDate": "2026-09-09",
+          "venueName": "JR京都駅",
+          "venueSpace": "西口改札前 特設会場",
+          "address": "京都府京都市下京区東塩小路町 JR京都駅",
+          "lat": 34.987062,
+          "lng": 135.760645,
+          "sourceUrl": "https://chiikawabakery.jp/topics/20260804/",
+          "hoursText": "10:00～21:00（最終日9月9日は16:00まで）",
+          "reservationType": "not_available",
+          "entryNote": "フリー入場です。混雑時は入場規制を行う場合があります。整理券の実施状況は公式案内をご確認ください。"
+        }
+      ]
+    },
     {
       "key": "chiikawa-baby",
       "label": "Chiikawa Baby POP UP SHOP",

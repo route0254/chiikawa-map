@@ -1,6 +1,6 @@
 # ちい活マップ データ更新運用
 
-最終更新: 2026-09-01
+最終更新: 2026-09-04
 
 ## 目的
 
@@ -114,6 +114,8 @@ POP UP STORE・カフェ・展覧会の3一覧に含まれない系列イベン�
 4. `pnpm run build:spot-pages`と`pnpm run check`を実行する
 
 振り分け基準日は原本の`statusAsOf`です。省略時だけ`checkedAt`を使います。`endDate`が基準日より前なら過去、それ以外は現在・今後として生成します。`checkedAt`は営業時間・入場方法を確認した日として公開JSONへ反映します。原本で管理するIDは再実行時も維持され、基準日更新後は同じIDのまま現在JSONから過去JSONへ移動します。`pnpm run check`は原本の管理対象が正しいJSONに同期していることと、既存データとのID・系列・期間・会場の重複を検査します。
+
+一部の系列だけを確認した場合は、その系列に`checkedAt`を指定します。原本全体の確認日を更新せず、未調査の系列の確認日を維持できます。会場固有の案内がある場合は、イベントの`hoursText`・`entryNote`を指定できます（現在・今後のデータに反映）。
 
 公式総合ページを確認した際は、系列を`research/official-special-series-catalog.json`へ追加し、`managed`、`hold`、`excluded`のいずれかを記録します。`managed`は特設イベント原本の`sourceKey`と対応させ、保留・対象外には理由を残します。
 

@@ -104,7 +104,7 @@ function createRecord(
       ? "開催中止"
       : archive
         ? "開催時の会場営業時間に準ずる"
-        : "会場営業時間に準ずる",
+        : event.hoursText || "会場営業時間に準ずる",
     closedDaysText: null,
     hoursInfoUrl: event.sourceUrl,
     hoursCheckedAt: checkedAt,
@@ -122,7 +122,7 @@ function createRecord(
       ? "開催予定でしたが中止となり、実際には開催されませんでした。"
       : archive
         ? `開催当時の入店方法は公式イベントページで案内されていました。${endLabel}で終了済みです。`
-        : "入店方法・販売方法は公式イベントページをご確認ください。",
+        : event.entryNote || "入店方法・販売方法は公式イベントページをご確認ください。",
     entryInfoUrl: event.sourceUrl,
     entryInfoCheckedAt: checkedAt,
     lat: event.lat,
@@ -178,6 +178,12 @@ const sourceEvents =
       }))
   );
 const managedIds = new Set();
+
+for (const series of source.series) {
+  if (series.checkedAt !== undefined && !isDate(series.checkedAt)) {
+    throw new Error(`系列のcheckedAtが不正です: ${series.key}`);
+  }
+}
 
 for (const { series, event } of sourceEvents) {
   const requiredStrings = [
@@ -246,7 +252,7 @@ const records = sourceEvents.map(
       record: createRecord(
         series,
         event,
-        source.checkedAt,
+        series.checkedAt || source.checkedAt,
         archiveEvent
       )
     };
