@@ -1061,6 +1061,14 @@ test(
           todayInJapan > spot.endDate
       ).length;
 
+    const archiveEndedCount =
+      archiveSpots.filter(
+        spot =>
+          spot.periodType === "limited" &&
+          spot.endDate &&
+          todayInJapan > spot.endDate
+      ).length;
+
     const cancelledSpot =
       archiveSpots.find(
         spot =>
@@ -1094,7 +1102,7 @@ test(
     ).toHaveText(
       initialCount +
       currentEndedCount +
-      archiveSpots.length +
+      archiveEndedCount +
       "件表示"
     );
 
