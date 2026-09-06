@@ -205,7 +205,7 @@ function createPage(spot) {
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${pageUrl}">
-  <meta property="og:image" content="${siteOrigin}/assets/ogp.png?v=20260826-1">
+  <meta property="og:image" content="${siteOrigin}/assets/ogp.png?v=20260907-1">
   <meta property="og:site_name" content="ちいかわ推し活（ちい活）MAP">
   <meta name="twitter:card" content="summary_large_image">
   <title>${escapeHtml(title)}</title>
