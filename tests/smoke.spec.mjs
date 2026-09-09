@@ -2642,7 +2642,7 @@ test(
         '#current-brand option[value="chiikawa_baby"]'
       )
     ).toHaveText(
-      /^Chiikawa Baby（2）$/
+      /^Chiikawa Baby（1）$/
     );
 
     await page.locator(
@@ -2655,26 +2655,30 @@ test(
       page.locator(
         "#current-result-summary"
       )
-    ).toHaveText("2件を表示しています。");
+    ).toHaveText("1件を表示しています。");
 
     await expect(
       page.locator(
         "#current-groups .official-spot-card"
       )
-    ).toHaveCount(2);
+    ).toHaveCount(1);
 
-    for (const venueName of [
-      "JR大宮駅",
-      "羽田空港第1ターミナル"
-    ]) {
-      await expect(
-        page.locator(
-          "#current-groups .official-spot-card h4"
-        ).filter({
-          hasText: venueName
-        })
-      ).toHaveCount(1);
-    }
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card h4"
+      ).filter({
+        hasText:
+          "羽田空港第1ターミナル"
+      })
+    ).toHaveCount(1);
+
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card h4"
+      ).filter({
+        hasText: "JR大宮駅"
+      })
+    ).toHaveCount(0);
 
     await page.locator(
       "#current-filter-reset"
