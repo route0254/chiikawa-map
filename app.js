@@ -2205,7 +2205,10 @@ function getCategoryLabel(
       "ちいかわ公式関連",
 
     nagano:
-      "ナガノ先生関連"
+      "ナガノ先生関連",
+
+    community:
+      "ファン発の聖地"
   };
 
 
@@ -2283,6 +2286,13 @@ function getRelationTypeLabel(
   };
 
 
+  const communityLabels = {
+
+    fan_landmark:
+      "ファンの間で話題の場所"
+  };
+
+
   if (
     category ===
     "official"
@@ -2311,7 +2321,39 @@ function getRelationTypeLabel(
   }
 
 
+  if (
+    category ===
+    "community"
+  ) {
+
+    return (
+      communityLabels[
+        relationType
+      ] ||
+      "ファン発の聖地"
+    );
+  }
+
+
   return "その他";
+}
+
+
+function getCommunityBasisLabel(
+  basisType
+) {
+
+  const labels = {
+
+    wordplay:
+      "店名・言葉遊び"
+  };
+
+
+  return (
+    labels[basisType] ||
+    "ファンの間での話題"
+  );
 }
 
 
@@ -5964,6 +6006,19 @@ function createSpotIcon(
 
 
   if (
+    spot.category ===
+    "community"
+  ) {
+
+    label =
+      "聖";
+
+    className =
+      "spot-pin-community";
+  }
+
+
+  if (
     isCancelledEvent(spot)
   ) {
     label = "中止";
@@ -6768,7 +6823,10 @@ function createSpotDetail(
         spot.category ===
         "official"
           ? "tag-official"
-          : "tag-nagano"
+          : spot.category ===
+            "nagano"
+            ? "tag-nagano"
+            : "tag-community"
       ),
 
       getCategoryLabel(
@@ -6852,6 +6910,80 @@ function createSpotDetail(
       )
     )
   );
+
+
+  if (
+    spot.category ===
+    "community"
+  ) {
+
+    container.appendChild(
+      createDiv(
+        "spot-relation",
+
+        "💡 " +
+        getCommunityBasisLabel(
+          spot.basisType
+        )
+      )
+    );
+
+
+    const communityEvidence =
+      createDiv(
+        "spot-info-card spot-community-card"
+      );
+
+
+    communityEvidence.appendChild(
+      createDiv(
+        "spot-info-title",
+        "🔎 掲載理由"
+      )
+    );
+
+
+    if (
+      spot.evidenceNote
+    ) {
+
+      communityEvidence.appendChild(
+        createDiv(
+          "spot-info-note",
+          spot.evidenceNote
+        )
+      );
+    }
+
+
+    appendLink(
+      communityEvidence,
+      spot.evidenceUrl,
+      "掲載根拠を見る ↗"
+    );
+
+
+    if (
+      spot.evidenceCheckedAt
+    ) {
+
+      communityEvidence.appendChild(
+        createDiv(
+          "spot-info-checked",
+
+          "根拠確認： " +
+          formatDate(
+            spot.evidenceCheckedAt
+          )
+        )
+      );
+    }
+
+
+    container.appendChild(
+      communityEvidence
+    );
+  }
 
 
   if (evidenceLevel) {
@@ -7642,7 +7774,9 @@ function createSpotRecord(
     spot.category !==
       "official" &&
     spot.category !==
-      "nagano"
+      "nagano" &&
+    spot.category !==
+      "community"
   ) {
 
     console.warn(
@@ -8895,7 +9029,7 @@ function resetFilters() {
 
 
 // スポットデータ
-// 現在の公式関連・ナガノ先生関連と過去イベントを別JSONから読み込む
+// 現在の公式関連・ナガノ先生関連・ファン発の聖地と過去イベントを別JSONから読み込む
 
 const SPOT_DATA_SOURCES = [
   {
@@ -8905,6 +9039,10 @@ const SPOT_DATA_SOURCES = [
   {
     label: "ナガノ先生関連",
     url: "./data/nagano-spots.json"
+  },
+  {
+    label: "ファン発の聖地",
+    url: "./data/community-spots.json"
   }
 ];
 

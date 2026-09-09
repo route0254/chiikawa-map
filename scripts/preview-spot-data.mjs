@@ -18,7 +18,8 @@ const replaceArgument = process.argv.find(
 const datasetFiles = {
   official: "data/official-spots.json",
   archive: "data/official-events-archive.json",
-  nagano: "data/nagano-spots.json"
+  nagano: "data/nagano-spots.json",
+  community: "data/community-spots.json"
 };
 
 if (!fileArgument || !datasetArgument) {
@@ -36,7 +37,7 @@ const targetFile = datasetFiles[dataset];
 
 if (!targetFile) {
   throw new Error(
-    "--dataset は official、archive、nagano のいずれかです。"
+    "--dataset は official、archive、nagano、community のいずれかです。"
   );
 }
 

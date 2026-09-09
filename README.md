@@ -1,6 +1,6 @@
 # ちいかわ推し活（ちい活）MAP
 
-ちいかわ公式関連スポットと、ナガノ先生が紹介・訪問した場所を探せる非公式マップです。
+ちいかわ公式関連スポット、ナガノ先生が紹介・訪問した場所、ファン発の聖地を探せる非公式マップです。
 
 公開URL: <https://chiikatsu-map.com/>
 
@@ -10,6 +10,7 @@
 - 開催中・開催予定・終了済みの公式スポット一覧
 - 開催中・開催予定と過去の企業・施設コラボ一覧
 - ナガノ先生関連スポットの根拠と確度表示
+- 公式・ナガノ先生関連とは区別した、ファン発の聖地
 - 「行きたい」「行った！」「今日のプラン」「訪問日・メモ」の端末保存
 - 行きたい一覧（現在地からの距離順を含む）、イベントカレンダー、今日のプランのカレンダー登録
 - 訪問記録の集計、共有画像の作成
@@ -50,6 +51,7 @@ pnpm run check:site
 | `data/collaborations-current.json` | 開催中・開催予定の企業・施設コラボ |
 | `data/collaborations-archive.json` | 確認できた過去の企業・施設コラボ |
 | `data/nagano-spots.json` | ナガノ先生関連スポット |
+| `data/community-spots.json` | ファン発の聖地 |
 | `spot/` | JSONから生成するスポット個別ページ |
 | `cloud-sync-*.js` / `firebase-config.json` | Firebase Authentication、Firestore同期、GA4 |
 | `scripts/` | データ検証、掲載件数・個別ページ生成、調査用スクリプト |

@@ -26,7 +26,8 @@ if (!writeMode && !checkMode) {
 const sources = [
   { file: "data/official-spots.json", archive: false },
   { file: "data/official-events-archive.json", archive: true },
-  { file: "data/nagano-spots.json", archive: false }
+  { file: "data/nagano-spots.json", archive: false },
+  { file: "data/community-spots.json", archive: false }
 ];
 
 const spots = [];
@@ -88,7 +89,11 @@ const relationLabels = {
   collaboration: "公式コラボ",
   introduced: "紹介",
   visited: "訪問",
-  related: "ゆかり・関連"
+  related: "ゆかり・関連",
+  fan_landmark: "ファンの間で話題の場所"
+};
+const communityBasisLabels = {
+  wordplay: "店名・言葉遊び"
 };
 const entryLabels = {
   walkin: "通常入場",
@@ -169,28 +174,49 @@ function createStructuredData(spot) {
 }
 
 function createPage(spot) {
-  const title = spot.category === "nagano"
-    ? `${spot.name}｜場所・根拠・関連情報｜ちい活MAP`
-    : `${spot.name}｜場所・期間・公式情報｜ちい活MAP`;
+  const title = spot.category === "official"
+    ? `${spot.name}｜場所・期間・公式情報｜ちい活MAP`
+    : `${spot.name}｜場所・根拠・関連情報｜ちい活MAP`;
   const description = getDescription(spot).slice(0, 155);
   const pageUrl = `${siteOrigin}/spot/${encodeURIComponent(spot.id)}/`;
   const mapPageUrl = `../../?spot=${encodeURIComponent(spot.id)}`;
-  const categoryLabel = spot.category === "nagano" ? "ナガノ先生関連" : "ちいかわ公式関連";
+  const categoryLabel = spot.category === "nagano"
+    ? "ナガノ先生関連"
+    : spot.category === "community"
+      ? "ファン発の聖地"
+      : "ちいかわ公式関連";
   const relationLabel = relationLabels[spot.relationType] || categoryLabel;
   const evidence = getEvidenceLabel(spot);
+  const evidenceBadgeLine = evidence
+    ? `          <span class="spot-page-badge is-nagano">根拠: ${escapeHtml(evidence)}</span>\n`
+    : spot.category === "community"
+      ? ""
+      : "          \n";
   const robots = spot.isArchive
     ? "noindex,follow"
     : "index,follow,max-image-preview:large";
   const badgeClass = spot.isArchive
     ? " is-ended"
-    : spot.category === "nagano" ? " is-nagano" : "";
+    : spot.category === "nagano"
+      ? " is-nagano"
+      : spot.category === "community"
+        ? " is-community"
+        : "";
   const sourceLink = spot.sourceUrl
-    ? `<a href="${escapeHtml(spot.sourceUrl)}" target="_blank" rel="noopener noreferrer">公式・根拠情報を見る ↗</a>`
+    ? `<a href="${escapeHtml(spot.sourceUrl)}" target="_blank" rel="noopener noreferrer">${spot.category === "community" ? "店舗情報を見る" : "公式・根拠情報を見る"} ↗</a>`
+    : "";
+  const evidenceLink = spot.category === "community" && spot.evidenceUrl
+    ? `<a href="${escapeHtml(spot.evidenceUrl)}" target="_blank" rel="noopener noreferrer">掲載根拠を見る ↗</a>`
     : "";
   const externalMap = spot.mapUrl
     ? `<a href="${escapeHtml(spot.mapUrl)}" target="_blank" rel="noopener noreferrer">外部地図で開く ↗</a>`
     : "";
-  const evidenceRow = spot.evidenceNote ? detailRow("根拠", spot.evidenceNote) : "";
+  const evidenceRow = spot.evidenceNote
+    ? detailRow(spot.category === "community" ? "掲載理由" : "根拠", spot.evidenceNote)
+    : "";
+  const basisRow = spot.category === "community"
+    ? detailRow("話題の由来", communityBasisLabels[spot.basisType] || "ファンの間での話題")
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -244,8 +270,7 @@ function createPage(spot) {
           <span class="spot-page-badge">${escapeHtml(categoryLabel)}</span>
           <span class="spot-page-badge">${escapeHtml(placeTypeLabels[spot.placeType] || "スポット")}</span>
           <span class="spot-page-badge">${escapeHtml(relationLabel)}</span>
-          ${evidence ? `<span class="spot-page-badge is-nagano">根拠: ${escapeHtml(evidence)}</span>` : ""}
-        </div>
+${evidenceBadgeLine}        </div>
         <h1>${escapeHtml(spot.name)}</h1>
         <p class="spot-page-address">📍 ${escapeHtml(spot.address || "所在地は公式情報をご確認ください")}</p>
       </header>
@@ -258,14 +283,14 @@ function createPage(spot) {
             ${detailRow("休業・休館", spot.closedDaysText)}
             ${detailRow("入場方法", entryLabels[spot.defaultEntryType] || spot.entryNote)}
             ${detailRow("入場案内", spot.entryNote)}
-            ${evidenceRow}
+            ${basisRow}${evidenceRow}
           </dl>
           <p class="spot-page-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。営業時間・開催状況・入場方法は変更される場合があるため、訪問前に必ず公式情報をご確認ください。</p>
         </div>
         <aside class="spot-page-actions" aria-label="このスポットの操作">
           <a class="is-primary" href="${mapPageUrl}">🗺 ちい活MAPで見る</a>
           ${externalMap}
-          ${sourceLink}
+          ${sourceLink}${evidenceLink}
           <button type="button" data-save-type="favorite">♡ 行きたい</button>
           <button type="button" data-save-type="visited">✓ 行った！</button>
           <button type="button" data-save-type="plan">＋ 今日のプラン</button>

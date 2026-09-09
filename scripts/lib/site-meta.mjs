@@ -16,6 +16,10 @@ const sourceDefinitions = [
   {
     key: "nagano",
     file: "data/nagano-spots.json"
+  },
+  {
+    key: "community",
+    file: "data/community-spots.json"
   }
 ];
 
@@ -65,11 +69,13 @@ export async function createSiteMeta(root) {
       ...counts,
       current:
         counts.officialCurrent +
-        counts.nagano,
+        counts.nagano +
+        counts.community,
       total:
         counts.officialCurrent +
         counts.officialArchive +
-        counts.nagano
+        counts.nagano +
+        counts.community
     }
   };
 }

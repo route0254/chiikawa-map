@@ -15,7 +15,7 @@
 
   <meta
     name="description"
-    content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所をまとめる非公式の推し活マップです。"
+    content="ちいかわ公式関連スポット、ナガノ先生が紹介・訪問した場所、ファン発の聖地をまとめる非公式の推し活マップです。"
   >
   <link rel="canonical" href="https://chiikatsu-map.com/">
 
@@ -23,20 +23,20 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:title" content="ちいかわ推し活（ちい活）MAP">
-  <meta property="og:description" content="ちいかわ公式関連スポットや、ナガノ先生が紹介・訪問した場所を地図から探せる非公式ファンMAPです。">
+  <meta property="og:description" content="ちいかわ公式関連スポット、ナガノ先生が紹介・訪問した場所、ファン発の聖地を地図から探せる非公式ファンMAPです。">
   <meta property="og:url" content="https://chiikatsu-map.com/">
   <meta property="og:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260907-1">
   <meta property="og:image:secure_url" content="https://chiikatsu-map.com/assets/ogp.png?v=20260907-1">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="ちいかわ推し活（ちい活）MAP - 公式スポット＆ナガセン関連スポットを地図から探せる非公式ファンMAP">
+  <meta property="og:image:alt" content="ちいかわ推し活（ちい活）MAP - 公式・ナガセン関連・ファン発の聖地を地図から探せる非公式ファンMAP">
   <meta property="og:site_name" content="ちいかわ推し活（ちい活）MAP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ちいかわ推し活（ちい活）MAP">
-  <meta name="twitter:description" content="公式スポット＆ナガセン関連スポットを地図・検索・絞り込みから探せます。">
+  <meta name="twitter:description" content="公式・ナガセン関連・ファン発の聖地を地図・検索・絞り込みから探せます。">
   <meta name="twitter:image" content="https://chiikatsu-map.com/assets/ogp.png?v=20260907-1">
-  <meta name="twitter:image:alt" content="ちいかわ推し活（ちい活）MAP - 公式スポット＆ナガセン関連スポットを地図から探せる非公式ファンMAP">
+  <meta name="twitter:image:alt" content="ちいかわ推し活（ちい活）MAP - 公式・ナガセン関連・ファン発の聖地を地図から探せる非公式ファンMAP">
 
   <title>ちいかわ推し活（ちい活）MAP</title>
 
@@ -104,8 +104,8 @@
       </h1>
 
       <p class="site-description">
-        ちいかわ公式関連スポットや、
-        ナガノ先生が紹介・訪問した場所をまとめています。
+        ちいかわ公式関連、ナガノ先生の紹介・訪問先、
+        ファン発の聖地をまとめています。
       </p>
 
       <nav class="site-nav" aria-label="サイト内メニュー">
@@ -155,7 +155,7 @@
       <p>
         <strong>
           掲載情報は
-          <span id="data-as-of">2026年9月4日</span>
+          <span id="data-as-of">2026年9月9日</span>
           時点です。
         </strong>
 
@@ -439,6 +439,17 @@
             ナガセン要注意
           </span>
 
+
+          <span class="legend-item">
+
+            <span
+              class="legend-dot community-dot"
+              aria-hidden="true"
+            ></span>
+
+            ファン発
+          </span>
+
         </div>
 
       </div>
@@ -650,7 +661,23 @@
                     <span>ナガノ先生</span>
                   </label>
 
+
+                  <label class="filter-chip">
+                    <input
+                      class="spot-filter"
+                      type="checkbox"
+                      name="filter-category"
+                      value="community"
+                      checked
+                    >
+                    <span>ファン発の聖地</span>
+                  </label>
+
                 </div>
+
+                <p class="filter-hint">
+                  「ファン発の聖地」は、公式コラボやナガノ先生との直接の関係を示す分類ではありません。
+                </p>
 
               </fieldset>
 
@@ -664,7 +691,7 @@
                 </legend>
 
                 <p class="filter-hint">
-                  食べる・観光・買い物・宿泊の目的と、ナガセン関連の確度を組み合わせて探せます。
+                  食べる・観光・買い物・宿泊の目的と、関連やナガセン関連の確度を組み合わせて探せます。
                 </p>
 
                 <div class="filter-chip-list">

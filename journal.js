@@ -10,6 +10,10 @@ const DATA_SOURCES = [
     archive: false
   },
   {
+    url: "./data/community-spots.json",
+    archive: false
+  },
+  {
     url: "./data/official-events-archive.json",
     archive: true
   }

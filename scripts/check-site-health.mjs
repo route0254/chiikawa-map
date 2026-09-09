@@ -420,6 +420,9 @@ await Promise.all([
     "spot/chiikawaland-osaka-umeda/"
   ),
   checkPublishedAsset(
+    "spot/community-wakaichi-sendai/"
+  ),
+  checkPublishedAsset(
     "data/official-spots.json",
     { json: true }
   ),
@@ -437,6 +440,10 @@ await Promise.all([
   ),
   checkPublishedAsset(
     "data/nagano-spots.json",
+    { json: true }
+  ),
+  checkPublishedAsset(
+    "data/community-spots.json",
     { json: true }
   )
 ]);

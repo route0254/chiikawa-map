@@ -46,6 +46,13 @@ const naganoEvidenceFields = [
   "evidenceCheckedAt"
 ];
 
+const communityEvidenceFields = [
+  "basisType",
+  "evidenceNote",
+  "evidenceUrl",
+  "evidenceCheckedAt"
+];
+
 const datasets = [
   {
     file: "data/official-spots.json",
@@ -129,6 +136,36 @@ const datasets = [
       "description",
       "mapUrl"
     ]
+  },
+  {
+    file: "data/community-spots.json",
+    category: "community",
+    fields: [
+      ...commonFields.slice(0, 6),
+      ...communityEvidenceFields,
+      ...commonFields.slice(6)
+    ],
+    requiredStrings: [
+      "id",
+      "name",
+      "category",
+      "placeType",
+      "relationType",
+      "basisType",
+      "evidenceNote",
+      "evidenceUrl",
+      "evidenceCheckedAt",
+      "periodType",
+      "reservationType",
+      "defaultEntryType",
+      "crowdControlType",
+      "crowdControlCondition",
+      "entryNote",
+      "address",
+      "description",
+      "sourceUrl",
+      "mapUrl"
+    ]
   }
 ];
 
@@ -186,8 +223,15 @@ const relationTypes = {
     "introduced",
     "visited",
     "related"
+  ]),
+  community: new Set([
+    "fan_landmark"
   ])
 };
+
+const communityBasisTypes = new Set([
+  "wordplay"
+]);
 
 const officialBrands = new Set([
   "chiikawaland",
@@ -509,6 +553,16 @@ function validateEnums(dataset, spot, location) {
     addError(
       location,
       `evidenceStatus の値 ${JSON.stringify(spot.evidenceStatus)} は未定義です`
+    );
+  }
+
+  if (
+    dataset.category === "community" &&
+    !communityBasisTypes.has(spot.basisType)
+  ) {
+    addError(
+      location,
+      `basisType の値 ${JSON.stringify(spot.basisType)} は未定義です`
     );
   }
 

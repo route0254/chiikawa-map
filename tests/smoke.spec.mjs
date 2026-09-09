@@ -887,6 +887,10 @@ test(
       'input[name="filter-category"][value="official"] + span'
     ).click();
 
+    await page.locator(
+      'input[name="filter-category"][value="community"] + span'
+    ).click();
+
     for (const value of [
       "shop",
       "spot",
@@ -985,6 +989,67 @@ test(
 
 
 test(
+  "ファン発の聖地を独立して絞り込み、掲載理由を確認できる",
+  async ({ page }) => {
+    await page.goto(
+      "/?cat=community"
+    );
+    await waitForSpots(page);
+
+    await expect(
+      page.locator("#result-count")
+    ).toHaveText("1件表示");
+
+    await expect(
+      page.locator(
+        'input[name="filter-category"][value="community"]'
+      )
+    ).toBeChecked();
+    await expect(
+      page.locator(
+        'input[name="filter-category"][value="official"]'
+      )
+    ).not.toBeChecked();
+    await expect(
+      page.locator(
+        'input[name="filter-category"][value="nagano"]'
+      )
+    ).not.toBeChecked();
+
+    await expect(
+      page.locator(
+        '.spot-marker[data-spot-id="community-wakaichi-sendai"]'
+      )
+    ).toBeVisible();
+
+    await page.goto(
+      "/?spot=community-wakaichi-sendai"
+    );
+    await waitForSpots(page);
+
+    await expect(
+      page.locator("#spot-detail-panel")
+    ).toContainText(
+      "らーめん中華 わかいち"
+    );
+    await expect(
+      page.locator(".tag-community")
+    ).toHaveText("ファン発の聖地");
+    await expect(
+      page.locator(".spot-community-card")
+    ).toContainText(
+      "公式コラボやナガノ先生との直接の関係は確認されていません"
+    );
+    await expect(
+      page.locator(
+        '.spot-community-card a[href="https://sendaiminami-tusin.com/wakaichi240706/"]'
+      )
+    ).toHaveText("掲載根拠を見る ↗");
+  }
+);
+
+
+test(
   "過去イベントを初期非表示にし、絞り込み時だけ遅延読込する",
   async ({ page }) => {
     let archiveRequestCount = 0;
@@ -1025,7 +1090,8 @@ test(
         await Promise.all(
           [
             "official-spots.json",
-            "nagano-spots.json"
+            "nagano-spots.json",
+            "community-spots.json"
           ].map(
             async fileName =>
               JSON.parse(

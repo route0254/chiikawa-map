@@ -12,6 +12,9 @@
   --nagano: #71ad86;
   --nagano-soft: #edf8f1;
 
+  --community: #7d6bc4;
+  --community-soft: #f3f0ff;
+
   --accent: #7568e8;
   --accent-soft: #f1efff;
 
@@ -1208,6 +1211,10 @@ button {
   border: 1.5px dashed #b97932;
 }
 
+.community-dot {
+  background: var(--community);
+}
+
 
 /* MAP + DETAIL */
 
@@ -2059,6 +2066,15 @@ button {
     rgba(150, 95, 35, 0.24);
 }
 
+.spot-pin-community {
+  background:
+    linear-gradient(
+      145deg,
+      #aa98e6,
+      var(--community)
+    );
+}
+
 .spot-pin-nagano-confirmed span,
 .spot-pin-nagano-high span,
 .spot-pin-nagano-caution span {
@@ -2504,6 +2520,13 @@ button {
 }
 
 
+.tag-community {
+  color: #6653ad;
+
+  background: var(--community-soft);
+}
+
+
 .tag-neutral {
   color: #71686b;
 
@@ -2637,6 +2660,13 @@ button {
 .spot-evidence-card.evidence-caution {
   background: #fff3e9;
   border: 1px solid #efcaaa;
+}
+
+
+.spot-community-card {
+  margin-top: 2px;
+  background: var(--community-soft);
+  border: 1px solid #d9d0f4;
 }
 
 
