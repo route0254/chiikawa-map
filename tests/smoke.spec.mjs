@@ -998,7 +998,7 @@ test(
 
     await expect(
       page.locator("#result-count")
-    ).toHaveText("1件表示");
+    ).toHaveText("2件表示");
 
     await expect(
       page.locator(
@@ -1019,6 +1019,11 @@ test(
     await expect(
       page.locator(
         '.spot-marker[data-spot-id="community-wakaichi-sendai"]'
+      )
+    ).toBeVisible();
+    await expect(
+      page.locator(
+        '.spot-marker[data-spot-id="community-chii-river-kakegawa"]'
       )
     ).toBeVisible();
 
@@ -1933,11 +1938,11 @@ test(
           "right"
         ],
         ids: [
-          "ramen-buta-shibuya",
-          "movie-cafe-shibuya"
+          "mogumogu-otaru",
+          "baby-castella-otaru"
         ],
         spot:
-          "ramen-buta-shibuya"
+          "mogumogu-otaru"
       },
       {
         directions: [
@@ -3393,6 +3398,7 @@ test(
         "/",
         "/official.html",
         "/collaborations.html",
+        "/nagano.html",
         "/journal.html",
         "/spot/chiikawaland-osaka-umeda/"
       ]
@@ -3512,6 +3518,37 @@ test(
       "阪急電車×ちいかわ"
     );
 
+    await page.locator(
+      "#collaboration-tab-partners"
+    ).click();
+    const partnerCount = new Set([
+      ...currentRecords,
+      ...archiveRecords
+    ].map(record => record.partner)).size;
+    await expect(
+      page.locator(
+        '[data-groups="partners"] .collaboration-partner-card'
+      )
+    ).toHaveCount(partnerCount);
+    await expect(
+      page.locator(
+        '[data-groups="partners"]'
+      )
+    ).toContainText("くら寿司");
+    await page.locator(
+      '[data-filter="search"][data-list="partners"]'
+    ).fill("くら寿司");
+    await expect(
+      page.locator(
+        '[data-groups="partners"] .collaboration-partner-card'
+      )
+    ).toHaveCount(1);
+    await expect(
+      page.locator(
+        '[data-groups="partners"]'
+      )
+    ).toContainText("中止");
+
     await page.setViewportSize({
       width: 390,
       height: 844
@@ -3528,11 +3565,31 @@ test(
     });
     const sourceLinkBox =
       await page.locator(
-        '[data-groups="archive"] .collaboration-card-action'
+        '[data-groups="partners"] summary'
       ).first().boundingBox();
     expect(
       sourceLinkBox?.height
-    ).toBeGreaterThanOrEqual(40);
+    ).toBeGreaterThanOrEqual(44);
+  }
+);
+
+
+test(
+  "店舗未特定のナガノ先生関連記録を検索できる",
+  async ({ page }) => {
+    await page.goto("/nagano.html");
+    await expect(
+      page.locator(".nagano-card")
+    ).toHaveCount(3);
+    await page.locator(
+      "#nagano-mention-search"
+    ).fill("チキンクリスプ");
+    await expect(
+      page.locator(".nagano-card")
+    ).toHaveCount(1);
+    await expect(
+      page.locator(".nagano-card")
+    ).toContainText("マクドナルド");
   }
 );
 

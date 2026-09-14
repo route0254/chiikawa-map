@@ -166,26 +166,38 @@
     "checkedAt": "2026-09-04"
   },
   {
-    "id": "kurasushi-movie-chiikawa-2026",
-    "title": "くら寿司×映画『ちいかわ 人魚の島のひみつ』",
-    "partner": "くら寿司",
-    "category": "food",
+    "id": "seven-eleven-christmas-chiikawa-2026",
+    "title": "セブン‐イレブン×ちいかわ クリスマス2026",
+    "partner": "セブン‐イレブン",
+    "category": "campaign",
     "status": "active",
-    "summary": "オリジナルグッズのプレゼントや「ビッくらポン！」景品を展開する全国キャンペーンです。景品はなくなり次第終了します。",
-    "areaText": "全国のくら寿司",
-    "channels": ["飲食店"],
+    "summary": "ちいかわデザインのクリスマスケーキ2種を予約販売し、対象商品の購入ポイントでちいかわグッズに応募できるキャンペーンです。",
+    "areaText": "全国のセブン‐イレブン・7NOW",
+    "channels": ["店舗", "アプリ"],
     "periods": [
       {
-        "label": "キャンペーン期間",
-        "startDate": "2026-08-21",
-        "endDate": "2026-09-30",
-        "note": "各景品はなくなり次第終了します。"
+        "label": "予約受付",
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-20",
+        "note": "締切は受取日と予約方法により12月16日〜20日。予定数に達し次第終了します。"
+      },
+      {
+        "label": "商品受取期間",
+        "startDate": "2026-12-19",
+        "endDate": "2026-12-25",
+        "note": "店頭で受け取ります。"
+      },
+      {
+        "label": "グッズ応募期限",
+        "startDate": "2026-12-19",
+        "endDate": "2027-01-15",
+        "note": "シリアル番号・注文番号の登録は2026年12月28日までです。"
       }
     ],
-    "tags": ["映画", "全国", "ノベルティ"],
-    "sourceUrl": "https://www.kurasushi.co.jp/author/008384.html",
+    "tags": ["クリスマス", "ケーキ", "予約", "応募"],
+    "sourceUrl": "https://www.sej.co.jp/products/christmas.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-09-15"
   },
   {
     "id": "matsukiyo-cocokara-chiikawa-2026",
@@ -206,34 +218,6 @@
     ],
     "tags": ["全国", "購入特典", "アプリ"],
     "sourceUrl": "https://mcc-collab-cp.com/2026-chiikawa-cp/",
-    "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
-  },
-  {
-    "id": "cocoichi-movie-chiikawa-2026",
-    "title": "ココイチ×映画『ちいかわ 人魚の島のひみつ』",
-    "partner": "カレーハウスCoCo壱番屋",
-    "category": "campaign",
-    "status": "application_only",
-    "summary": "店頭プレゼント企画は終了し、レシート応募キャンペーンの応募受付期間です。",
-    "areaText": "全国の対象店舗・オンライン応募",
-    "channels": ["飲食店", "オンライン"],
-    "periods": [
-      {
-        "label": "店頭キャンペーン",
-        "startDate": "2026-07-18",
-        "endDate": "2026-08-31",
-        "note": "終了済み"
-      },
-      {
-        "label": "レシート応募期限",
-        "startDate": "2026-07-18",
-        "endDate": "2026-09-07",
-        "note": "応募条件は公式ページをご確認ください。"
-      }
-    ],
-    "tags": ["映画", "全国", "応募"],
-    "sourceUrl": "https://www.ichibanya.co.jp/cp/chiikawa-themovie2026/",
     "linkedSpotIds": [],
     "checkedAt": "2026-09-02"
   },

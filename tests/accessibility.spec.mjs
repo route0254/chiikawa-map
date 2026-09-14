@@ -21,6 +21,11 @@ const pages = [
     ready: "[data-groups=\"current\"] .collaboration-card"
   },
   {
+    name: "ナガノ先生関連一覧",
+    path: "/nagano.html",
+    ready: "#nagano-mention-list .nagano-card"
+  },
+  {
     name: "ちい活手帳",
     path: "/journal.html?view=calendar&date=2026-09-01",
     ready: "#calendar-grid .calendar-day"

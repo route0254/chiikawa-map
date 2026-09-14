@@ -44,6 +44,7 @@ const statusLabels = {
   application_only: "応募受付中",
   while_supplies_last: "在庫限り",
   needs_review: "取扱状況を確認",
+  cancelled: "中止",
   ended: "終了",
   past: "過去の記録"
 };
@@ -69,6 +70,14 @@ const listStates = {
       year: "",
       channel: "",
       sort: "newest"
+    }
+  },
+  partners: {
+    filters: {
+      search: "",
+      category: "",
+      period: "",
+      sort: "name"
     }
   }
 };
@@ -490,6 +499,198 @@ function renderList(type) {
     .join("");
 }
 
+function getPartnerGroups() {
+  if (
+    !listStates.current.records ||
+    !listStates.archive.records
+  ) {
+    return [];
+  }
+
+  const groups = new Map();
+
+  for (const [period, records] of [
+    ["current", listStates.current.records],
+    ["archive", listStates.archive.records]
+  ]) {
+    for (const record of records) {
+      if (!groups.has(record.partner)) {
+        groups.set(record.partner, {
+          name: record.partner,
+          records: []
+        });
+      }
+
+      groups.get(record.partner).records.push({
+        ...record,
+        period
+      });
+    }
+  }
+
+  return [...groups.values()];
+}
+
+function renderPartnerCampaign(record) {
+  const category = categoryDetails[
+    record.category
+  ];
+  const status =
+    statusLabels[record.status] ||
+    record.status;
+
+  return `
+    <li>
+      <div>
+        <span class="collaboration-status is-${escapeHtml(record.status)}">${escapeHtml(status)}</span>
+        <span class="collaboration-partner-category">${category.icon} ${escapeHtml(category.label)}</span>
+      </div>
+      <a href="${escapeHtml(record.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(record.title)} <span aria-hidden="true">↗</span></a>
+    </li>
+  `;
+}
+
+function renderPartnerList() {
+  const filters = listStates.partners.filters;
+  const search = normalizeText(
+    filters.search
+  );
+  const collator = new Intl.Collator(
+    "ja",
+    {
+      numeric: true,
+      sensitivity: "base"
+    }
+  );
+  const allGroups = getPartnerGroups();
+  const groups = allGroups
+    .filter(group => {
+      const records = group.records;
+
+      if (
+        search &&
+        !normalizeText([
+          group.name,
+          ...records.map(record =>
+            getRecordSearchText(record)
+          )
+        ].join(" ")).includes(search)
+      ) {
+        return false;
+      }
+
+      if (
+        filters.category &&
+        !records.some(record =>
+          record.category ===
+          filters.category
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        filters.period &&
+        !records.some(record =>
+          record.period === filters.period
+        )
+      ) {
+        return false;
+      }
+
+      return true;
+    })
+    .sort((left, right) => {
+      if (filters.sort === "count") {
+        return (
+          right.records.length -
+            left.records.length ||
+          collator.compare(
+            left.name,
+            right.name
+          )
+        );
+      }
+
+      if (filters.sort === "recent") {
+        const leftDate = left.records
+          .map(record => record.checkedAt)
+          .sort()
+          .at(-1);
+        const rightDate = right.records
+          .map(record => record.checkedAt)
+          .sort()
+          .at(-1);
+
+        return (
+          rightDate.localeCompare(leftDate) ||
+          collator.compare(
+            left.name,
+            right.name
+          )
+        );
+      }
+
+      return collator.compare(
+        left.name,
+        right.name
+      );
+    });
+
+  getListElement(
+    "partners",
+    "summary"
+  ).textContent =
+    `${allGroups.length}社中 ${groups.length}社を表示`;
+  getListElement(
+    "partners",
+    "empty"
+  ).hidden = groups.length > 0;
+  getListElement(
+    "partners",
+    "groups"
+  ).innerHTML = groups.map(group => {
+    const currentCount = group.records.filter(
+      record => record.period === "current"
+    ).length;
+    const archiveCount =
+      group.records.length - currentCount;
+    const records = [...group.records].sort(
+      (left, right) =>
+        (left.period === right.period
+          ? 0
+          : left.period === "current"
+            ? -1
+            : 1) ||
+        getLatestDate(
+          right,
+          "startDate"
+        ) -
+          getLatestDate(
+            left,
+            "startDate"
+          )
+    );
+
+    return `
+      <article class="collaboration-partner-card">
+        <div class="collaboration-partner-head">
+          <h3>${escapeHtml(group.name)}</h3>
+          <span>${group.records.length}件</span>
+        </div>
+        <div class="collaboration-partner-counts">
+          <span class="is-current">開催中・予定 ${currentCount}</span>
+          <span>過去 ${archiveCount}</span>
+        </div>
+        <details>
+          <summary>掲載しているコラボを見る</summary>
+          <ul>${records.map(renderPartnerCampaign).join("")}</ul>
+        </details>
+      </article>
+    `;
+  }).join("");
+}
+
 function populateSelect(
   type,
   filterName,
@@ -627,6 +828,13 @@ async function loadList(type, force = false) {
     queryElement(
       `#collaboration-${type}-total`
     ).textContent = String(records.length);
+
+    if (
+      listStates.current.records &&
+      listStates.archive.records
+    ) {
+      renderPartnerList();
+    }
   } catch (error) {
     console.error(
       "コラボ情報を読み込めませんでした。",
@@ -643,6 +851,42 @@ async function loadList(type, force = false) {
     state.loading = false;
     loadingElement.hidden = true;
   }
+}
+
+async function loadPartnerList(force = false) {
+  const loadingElement = getListElement(
+    "partners",
+    "loading"
+  );
+  const errorElement = getListElement(
+    "partners",
+    "error"
+  );
+
+  loadingElement.hidden = false;
+  errorElement.hidden = true;
+
+  await Promise.all([
+    loadList("current", force),
+    loadList("archive", force)
+  ]);
+
+  loadingElement.hidden = true;
+
+  if (
+    listStates.current.records &&
+    listStates.archive.records
+  ) {
+    renderPartnerList();
+    return;
+  }
+
+  errorElement.hidden = false;
+  getListElement(
+    "partners",
+    "summary"
+  ).textContent =
+    "企業別の情報を読み込めませんでした。";
 }
 
 function selectTab(type, focus = false) {
@@ -673,7 +917,11 @@ function selectTab(type, focus = false) {
       panel.dataset.panel !== type;
   });
 
-  loadList(type);
+  if (type === "partners") {
+    loadPartnerList();
+  } else {
+    loadList(type);
+  }
 }
 
 document.querySelectorAll(
@@ -695,10 +943,19 @@ document.querySelectorAll(
       }
 
       event.preventDefault();
+      const tabs = [
+        ...document.querySelectorAll(
+          ".collaboration-tab"
+        )
+      ];
+      const currentIndex = tabs.indexOf(tab);
+      const direction =
+        event.key === "ArrowRight" ? 1 : -1;
+      const nextIndex =
+        (currentIndex + direction + tabs.length) %
+        tabs.length;
       const nextType =
-        tab.dataset.list === "current"
-          ? "archive"
-          : "current";
+        tabs[nextIndex].dataset.list;
       selectTab(nextType, true);
     }
   );
@@ -719,7 +976,11 @@ document.querySelectorAll(
         control.dataset;
       listStates[list].filters[filter] =
         control.value;
-      renderList(list);
+      if (list === "partners") {
+        renderPartnerList();
+      } else {
+        renderList(list);
+      }
     }
   );
 });
@@ -747,19 +1008,30 @@ document.querySelectorAll(
               channel: "",
               sort: "ending"
             }
-          : {
+          : type === "archive"
+          ? {
               search: "",
               category: "",
               year: "",
               channel: "",
               sort: "newest"
+            }
+          : {
+              search: "",
+              category: "",
+              period: "",
+              sort: "name"
             };
 
       queryElement(
         `[data-filter="sort"][data-list="${type}"]`
       ).value =
         listStates[type].filters.sort;
-      renderList(type);
+      if (type === "partners") {
+        renderPartnerList();
+      } else {
+        renderList(type);
+      }
     }
   );
 });
@@ -769,10 +1041,15 @@ document.querySelectorAll(
 ).forEach(button => {
   button.addEventListener(
     "click",
-    () => loadList(
-      button.dataset.retry,
-      true
-    )
+    () => {
+      const type = button.dataset.retry;
+
+      if (type === "partners") {
+        loadPartnerList(true);
+      } else {
+        loadList(type, true);
+      }
+    }
   );
 });
 

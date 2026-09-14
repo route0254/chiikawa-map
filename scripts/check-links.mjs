@@ -13,6 +13,7 @@ const datasets = [
   "data/official-spots.json",
   "data/official-events-archive.json",
   "data/nagano-spots.json",
+  "data/nagano-unlocated-mentions.json",
   "data/community-spots.json"
 ];
 

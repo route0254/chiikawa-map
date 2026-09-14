@@ -44,6 +44,7 @@ pnpm run check:site
 | `index.html` / `style.css` / `app.js` | 地図ページ |
 | `official.html` / `official.css` / `official.js` | 公式スポット一覧 |
 | `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
+| `nagano.html` / `nagano.css` / `nagano.js` | 店舗を特定できないナガノ先生関連情報 |
 | `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
 | `privacy.html` / `legal.css` | 保存データとプライバシーの説明 |
 | `data/official-spots.json` | 現在・今後の公式スポット |
@@ -51,6 +52,7 @@ pnpm run check:site
 | `data/collaborations-current.json` | 開催中・開催予定の企業・施設コラボ |
 | `data/collaborations-archive.json` | 確認できた過去の企業・施設コラボ |
 | `data/nagano-spots.json` | ナガノ先生関連スポット |
+| `data/nagano-unlocated-mentions.json` | 店舗を特定できないナガノ先生関連情報 |
 | `data/community-spots.json` | ファン発の聖地 |
 | `spot/` | JSONから生成するスポット個別ページ |
 | `cloud-sync-*.js` / `firebase-config.json` | Firebase Authentication、Firestore同期、GA4 |

@@ -410,6 +410,9 @@ await Promise.all([
   checkPublishedAsset("collaborations.html"),
   checkPublishedAsset("collaborations.css"),
   checkPublishedAsset("collaborations.js"),
+  checkPublishedAsset("nagano.html"),
+  checkPublishedAsset("nagano.css"),
+  checkPublishedAsset("nagano.js"),
   checkPublishedAsset("journal.html"),
   checkPublishedAsset("journal.css"),
   checkPublishedAsset("journal.js"),
@@ -432,6 +435,10 @@ await Promise.all([
   ),
   checkPublishedAsset(
     "data/collaborations-current.json",
+    { json: true }
+  ),
+  checkPublishedAsset(
+    "data/nagano-unlocated-mentions.json",
     { json: true }
   ),
   checkPublishedAsset(

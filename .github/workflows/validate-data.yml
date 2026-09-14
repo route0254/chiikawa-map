@@ -8,6 +8,7 @@ on:
       - "data/*.json"
       - "scripts/validate-data.mjs"
       - "scripts/validate-collaborations.mjs"
+      - "scripts/validate-nagano-mentions.mjs"
       - "scripts/report-status-candidates.mjs"
       - "scripts/build-spot-pages.mjs"
       - "spot/**"
@@ -19,6 +20,7 @@ on:
       - "data/*.json"
       - "scripts/validate-data.mjs"
       - "scripts/validate-collaborations.mjs"
+      - "scripts/validate-nagano-mentions.mjs"
       - "scripts/report-status-candidates.mjs"
       - "scripts/build-spot-pages.mjs"
       - "spot/**"
@@ -52,6 +54,9 @@ jobs:
 
       - name: Validate collaboration data
         run: node scripts/validate-collaborations.mjs
+
+      - name: Validate unlocated Nagano mentions
+        run: node scripts/validate-nagano-mentions.mjs
 
       - name: Verify generated spot pages
         run: node scripts/build-spot-pages.mjs --check

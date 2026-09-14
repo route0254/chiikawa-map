@@ -39,6 +39,7 @@ const validStatuses = {
     "needs_review"
   ]),
   archive: new Set([
+    "cancelled",
     "ended",
     "past"
   ])

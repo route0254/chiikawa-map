@@ -42,7 +42,7 @@
   >
 
   <link rel="stylesheet" href="style.css?v=20260901-1">
-  <link rel="stylesheet" href="collaborations.css?v=20260902-2">
+  <link rel="stylesheet" href="collaborations.css?v=20260915-1">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,7 +54,7 @@
           "url": "https://chiikatsu-map.com/collaborations.html",
           "description": "開催中・開催予定のちいかわコラボと、確認できた過去のコラボを種類別に掲載しています。",
           "inLanguage": "ja",
-          "dateModified": "2026-09-02",
+          "dateModified": "2026-09-15",
           "breadcrumb": {
             "@id": "https://chiikatsu-map.com/collaborations.html#breadcrumb"
           },
@@ -104,6 +104,7 @@
         <a class="site-nav-link" href="./"><span aria-hidden="true">🗺</span>地図から探す</a>
         <a class="site-nav-link" href="official.html"><span aria-hidden="true">✦</span>公式スポット一覧</a>
         <a class="site-nav-link is-active" href="collaborations.html" aria-current="page"><span aria-hidden="true">🎀</span>ちいかわコラボ一覧</a>
+        <a class="site-nav-link" href="nagano.html"><span aria-hidden="true">✎</span>ナガセン関連一覧</a>
         <a class="site-nav-link" href="journal.html"><span aria-hidden="true">🌱</span>ちい活手帳</a>
       </nav>
     </div>
@@ -159,7 +160,7 @@
         <h2 id="collaboration-about-title">ちいかわコラボ一覧について</h2>
       </div>
       <div class="collaboration-about-copy">
-        <p>企業や施設が実施するちいかわとのコラボを、開催中・開催予定と終了済みに分けて掲載しています。イベント、飲食店、キャンペーン、商品、作品・スポーツの5種類から絞り込めます。</p>
+        <p>企業や施設が実施するちいかわとのコラボを、開催中・開催予定と終了済みに分けて掲載しています。イベント、飲食店、キャンペーン、商品、作品・スポーツの5種類に加え、企業名からも探せます。</p>
         <p>同じ企画が複数会場で開催される場合は1件にまとめています。常設店や公式イベントを場所から探す場合は、<a href="official.html">ちいかわ公式スポット一覧</a>をご覧ください。</p>
       </div>
     </section>
@@ -198,6 +199,19 @@
         >
           <span aria-hidden="true">◷</span>
           <span><strong>終了済み・過去の記録</strong><small>確認できた主なコラボ</small></span>
+        </button>
+        <button
+          type="button"
+          class="collaboration-tab"
+          id="collaboration-tab-partners"
+          role="tab"
+          aria-selected="false"
+          aria-controls="collaboration-panel-partners"
+          tabindex="-1"
+          data-list="partners"
+        >
+          <span aria-hidden="true">⌕</span>
+          <span><strong>企業から探す</strong><small>企業ごとの開催履歴</small></span>
         </button>
       </div>
 
@@ -330,12 +344,70 @@
         <div class="collaboration-message" data-empty="archive" hidden><strong>条件に合う過去のコラボがありません。</strong><p>キーワードや絞り込み条件を変えてみてください。</p></div>
         <div class="collaboration-message is-error" data-error="archive" hidden><strong>過去のコラボを読み込めませんでした。</strong><p>通信状況をご確認のうえ、もう一度お試しください。</p><button type="button" data-retry="archive">再読み込み</button></div>
       </section>
+
+      <section
+        class="collaboration-panel"
+        id="collaboration-panel-partners"
+        role="tabpanel"
+        aria-labelledby="collaboration-tab-partners"
+        data-panel="partners"
+        hidden
+      >
+        <div class="collaboration-panel-intro">
+          <div>
+            <span class="collaboration-panel-kicker">BROWSE BY PARTNER</span>
+            <h2>企業から探す</h2>
+            <p>開催中・予定と過去の記録を企業ごとにまとめて表示します。</p>
+          </div>
+        </div>
+
+        <div class="collaboration-filters is-partner-filters" aria-label="企業別コラボの絞り込み">
+          <label class="is-wide">
+            <span>キーワード</span>
+            <input type="search" data-filter="search" data-list="partners" placeholder="企業名・企画名" autocomplete="off">
+          </label>
+          <label>
+            <span>種類</span>
+            <select data-filter="category" data-list="partners">
+              <option value="">すべての種類</option>
+              <option value="experience">おでかけ・体験</option>
+              <option value="food">飲食店</option>
+              <option value="campaign">お買い物・キャンペーン</option>
+              <option value="collection">商品・コレクション</option>
+              <option value="media_sports">作品・スポーツ</option>
+            </select>
+          </label>
+          <label>
+            <span>開催状況</span>
+            <select data-filter="period" data-list="partners">
+              <option value="">すべて</option>
+              <option value="current">開催中・予定あり</option>
+              <option value="archive">過去の記録あり</option>
+            </select>
+          </label>
+          <label>
+            <span>並び順</span>
+            <select data-filter="sort" data-list="partners">
+              <option value="name">企業名順</option>
+              <option value="count">掲載件数順</option>
+              <option value="recent">更新が新しい順</option>
+            </select>
+          </label>
+          <button type="button" class="collaboration-reset" data-reset="partners">条件をクリア</button>
+        </div>
+
+        <p class="collaboration-result-summary" data-summary="partners" role="status" aria-live="polite">「企業から探す」タブを開くとデータを読み込みます。</p>
+        <div class="collaboration-loading" data-loading="partners" hidden aria-label="企業別コラボを読み込み中"><span></span><span></span><span></span></div>
+        <div class="collaboration-partner-grid" data-groups="partners"></div>
+        <div class="collaboration-message" data-empty="partners" hidden><strong>条件に合う企業がありません。</strong><p>キーワードや絞り込み条件を変えてみてください。</p></div>
+        <div class="collaboration-message is-error" data-error="partners" hidden><strong>企業別の情報を読み込めませんでした。</strong><p>通信状況をご確認のうえ、もう一度お試しください。</p><button type="button" data-retry="partners">再読み込み</button></div>
+      </section>
     </section>
 
     <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。</p>
   </main>
 
-  <script type="module" src="collaborations.js?v=20260902-1"></script>
+  <script type="module" src="collaborations.js?v=20260915-1"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 </body>
 

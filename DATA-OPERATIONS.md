@@ -20,6 +20,7 @@
 - `data/official-spots.json`: 現在開催中・今後開催の公式関連
 - `data/official-events-archive.json`: 終了・開催中止となった公式イベント
 - `data/nagano-spots.json`: ナガセン関連
+- `data/nagano-unlocated-mentions.json`: 店舗を特定できないナガセン関連
 - `data/community-spots.json`: ファン発の聖地
 - `data/site-meta.json`: 掲載件数とデータ確認日（生成ファイル）
 
@@ -167,6 +168,8 @@ IDを維持するため、移動後も既存共有URLとlocalStorageはそのま
 
 `relationType`は重複しない主分類として扱います。現地訪問・飲食・購入・施設利用を確認できる場合は`visited`、紹介は確認できるが訪問までは確認できない場合だけ`introduced`、訪問・紹介とは別の制作・公的関与は`related`とします。ナガノマーケット、ナガノ展、ナガノの水族館などの公式店舗・イベントは公式関連データの対象とし、ナガセンへ二重登録しません。
 
+企業・チェーン名までは確認できても店舗を特定できない情報は、地図へ推定ピンを置かず`data/nagano-unlocated-mentions.json`で管理します。出典で確認できる範囲と「店舗不明」であることを明記し、`nagano.html`に表示します。
+
 通常の絞り込みは、`placeType`による目的別と3段階の確度を組み合わせます。`evidenceStatus: confirmed`は「確定」、`evidenceStatus: inferred`かつ`evidenceNote`冒頭が「【推定・高確度】」のものは「推定・高確度」、それ以外の`inferred`は安全側に倒して「要注意候補」と表示します。旧`evidence=inferred`共有URLは後者2つへ展開し、`relationType`は詳細表示と旧URL互換のため削除しません。
 
 ## ファン発の聖地
@@ -177,7 +180,7 @@ IDを維持するため、移動後も既存共有URLとlocalStorageはそのま
 
 ## コラボ一覧
 
-企業・施設とのコラボは、開催中・開催予定を`data/collaborations-current.json`、終了済みを`data/collaborations-archive.json`で管理します。公式スポットJSONは会場単位、コラボJSONは企画単位です。同じ企画の複数会場や複数期間は、1レコードの`periods`と`linkedSpotIds`にまとめます。
+企業・施設とのコラボは、開催中・開催予定を`data/collaborations-current.json`、終了・中止を`data/collaborations-archive.json`で管理します。公式スポットJSONは会場単位、コラボJSONは企画単位です。同じ企画の複数会場や複数期間は、1レコードの`periods`と`linkedSpotIds`にまとめます。コラボ一覧の「企業・施設別」は、この2ファイルを企業・施設ごとにまとめて表示します。
 
 掲載対象は国内の企画で、主催企業・施設・権利元などの発表から企画名と内容を確認できるものです。通常の公式POP UP STORE、一般商品、プライズやカプセルトイだけの展開、SNS投稿だけで確認した情報は対象外とします。過去分は網羅性より根拠を優先します。
 

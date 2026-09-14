@@ -256,6 +256,7 @@ function createPage(spot) {
         <a class="site-nav-link" href="../../"><span aria-hidden="true">🗺</span>地図から探す</a>
         <a class="site-nav-link" href="../../official.html"><span aria-hidden="true">✦</span>公式スポット一覧</a>
         <a class="site-nav-link" href="../../collaborations.html"><span aria-hidden="true">🎀</span>ちいかわコラボ一覧</a>
+        <a class="site-nav-link" href="../../nagano.html"><span aria-hidden="true">✎</span>ナガセン関連一覧</a>
         <a class="site-nav-link" href="../../journal.html"><span aria-hidden="true">🌱</span>ちい活手帳</a>
       </nav>
     </div>
@@ -313,6 +314,7 @@ function createSitemap() {
     { loc: `${siteOrigin}/`, priority: "1.0", lastmod: pageLastModified },
     { loc: `${siteOrigin}/official.html`, priority: "0.9", lastmod: pageLastModified },
     { loc: `${siteOrigin}/collaborations.html`, priority: "0.8", lastmod: collaborationLastModified },
+    { loc: `${siteOrigin}/nagano.html`, priority: "0.7", lastmod: pageLastModified },
     { loc: `${siteOrigin}/journal.html`, priority: "0.9", lastmod: pageLastModified },
     { loc: `${siteOrigin}/privacy.html`, priority: "0.4", lastmod: pageLastModified },
     ...spots
