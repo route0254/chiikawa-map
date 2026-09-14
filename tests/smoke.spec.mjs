@@ -1957,6 +1957,7 @@ test(
         directions: [
           "top",
           "left",
+          "left",
           "bottom",
           "right"
         ],
@@ -1964,7 +1965,8 @@ test(
           "chiikawaland-ikebukuro",
           "chiikawa-restaurant-ikebukuro",
           "ramen-buta-ikebukuro",
-          "pocket-popup-ikebukuro"
+          "pocket-popup-ikebukuro",
+          "popup-2026-09-18-jr-ikebukuro"
         ],
         spot:
           "chiikawaland-ikebukuro"
