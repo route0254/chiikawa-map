@@ -46,7 +46,7 @@ pnpm run check:site
 | `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
 | `nagano.html` / `nagano.css` / `nagano.js` | 店舗を特定できないナガノ先生関連情報 |
 | `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
-| `privacy.html` / `legal.css` | 保存データとプライバシーの説明 |
+| `privacy.html` / `terms.html` / `legal.css` | プライバシー、利用条件、権利表記 |
 | `data/official-spots.json` | 現在・今後の公式スポット |
 | `data/official-events-archive.json` | 終了・開催中止となった公式イベント |
 | `data/collaborations-current.json` | 開催中・開催予定の企業・施設コラボ |
@@ -59,6 +59,7 @@ pnpm run check:site
 | `scripts/` | データ検証、掲載件数・個別ページ生成、調査用スクリプト |
 | `research/` | 過去イベント調査の作業データ |
 | `tests/` | 単体テスト、PlaywrightのUI・アクセシビリティテスト |
+| `LICENSE` | ソースコード・文章・編集済みデータの利用条件 |
 
 データ更新の手順と掲載基準は[DATA-OPERATIONS.md](DATA-OPERATIONS.md)、今後の課題は[ROADMAP.md](ROADMAP.md)にまとめています。Firebaseの設定は[docs/cloud-sync-setup.md](docs/cloud-sync-setup.md)を参照してください。
 
@@ -124,3 +125,7 @@ Actionsは異常を通知しますが、データの自動修正は行いませ�
 ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。
 
 営業時間、入場方法、予約条件、開催状況は変更される場合があります。訪問前に各公式情報を確認してください。作品名、キャラクター名、企業名などの権利は各権利者に帰属します。
+
+## ライセンス
+
+本リポジトリはソースを公開していますが、オープンソースではありません。GitHub上での閲覧・フォークおよびサイトへの通常のリンク共有を除き、コード、独自文章、デザイン、編集済みデータの複製・再配布・別サイトへの転用は許諾していません。詳細は[LICENSE](LICENSE)を確認してください。

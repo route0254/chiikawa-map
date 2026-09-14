@@ -6612,6 +6612,40 @@ function createSpotDetail(
   );
 
 
+  if (
+    spot.importantNotice
+  ) {
+
+    const notice =
+      createDiv(
+        "spot-important-notice"
+      );
+
+    notice.setAttribute(
+      "role",
+      "note"
+    );
+
+    notice.appendChild(
+      createDiv(
+        "spot-important-notice-title",
+        "⚠ ご来店前にご確認ください"
+      )
+    );
+
+    notice.appendChild(
+      createDiv(
+        "spot-important-notice-text",
+        spot.importantNotice
+      )
+    );
+
+    container.appendChild(
+      notice
+    );
+  }
+
+
   const favoriteButton =
     document.createElement(
       "button"

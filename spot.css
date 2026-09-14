@@ -136,6 +136,25 @@
   line-height: 1.9;
 }
 
+.spot-page-important-notice {
+  margin: 0 0 23px;
+  padding: 15px 17px;
+  border: 2px solid #df5b65;
+  border-radius: 15px;
+  color: #6f2830;
+  background: #fff1f2;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.spot-page-important-notice strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
 .spot-page-details {
   display: grid;
   gap: 0;

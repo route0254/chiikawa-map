@@ -65,6 +65,11 @@ const pages = [
     ready: ".legal-grid"
   },
   {
+    name: "利用条件・権利表記",
+    path: "/terms.html",
+    ready: ".legal-grid"
+  },
+  {
     name: "スポット個別ページ",
     path:
       "/spot/chiikawaland-osaka-umeda/",

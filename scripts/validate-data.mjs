@@ -28,6 +28,7 @@ const commonFields = [
   "defaultEntryType",
   "crowdControlType",
   "crowdControlCondition",
+  "importantNotice",
   "entryNote",
   "entryInfoUrl",
   "entryInfoCheckedAt",
@@ -58,6 +59,9 @@ const datasets = [
     file: "data/official-spots.json",
     category: "official",
     fields: commonFields,
+    optionalFields: [
+      "importantNotice"
+    ],
     requiredStrings: [
       "id",
       "name",
@@ -85,7 +89,8 @@ const datasets = [
       "eventStatus"
     ],
     optionalFields: [
-      "eventStatus"
+      "eventStatus",
+      "importantNotice"
     ],
     requiredStrings: [
       "id",
@@ -116,6 +121,9 @@ const datasets = [
       ...naganoEvidenceFields,
       ...commonFields.slice(6)
     ],
+    optionalFields: [
+      "importantNotice"
+    ],
     requiredStrings: [
       "id",
       "name",
@@ -144,6 +152,9 @@ const datasets = [
       ...commonFields.slice(0, 6),
       ...communityEvidenceFields,
       ...commonFields.slice(6)
+    ],
+    optionalFields: [
+      "importantNotice"
     ],
     requiredStrings: [
       "id",

@@ -3400,6 +3400,8 @@ test(
         "/collaborations.html",
         "/nagano.html",
         "/journal.html",
+        "/privacy.html",
+        "/terms.html",
         "/spot/chiikawaland-osaka-umeda/"
       ]
     ) {
@@ -3937,6 +3939,68 @@ test(
       page.locator("#home-screen-help")
     ).toContainText(
       "ホーム画面"
+    );
+  }
+);
+
+
+test(
+  "亀戸店の撮影・投稿ルールを地図と個別ページで案内する",
+  async ({ page }) => {
+    await page.goto(
+      "/?spot=nagano-ramen-jiro-kameido"
+    );
+    await waitForSpots(page);
+
+    const mapNotice = page.locator(
+      ".spot-important-notice"
+    );
+    await expect(mapNotice).toBeVisible();
+    await expect(mapNotice).toContainText(
+      "ラーメン以外の写真・動画"
+    );
+    await expect(mapNotice).toContainText(
+      "SNS投稿"
+    );
+
+    await page.goto(
+      "/spot/nagano-ramen-jiro-kameido/"
+    );
+    const pageNotice = page.locator(
+      ".spot-page-important-notice"
+    );
+    await expect(pageNotice).toBeVisible();
+    await expect(pageNotice).toContainText(
+      "現地掲示と店舗公式X"
+    );
+  }
+);
+
+
+test(
+  "利用条件で通常のURL共有と無断転用の範囲を確認できる",
+  async ({ page }) => {
+    await page.goto("/terms.html");
+    await expect(page).toHaveTitle(
+      /利用条件・権利表記/
+    );
+    await expect(
+      page.locator("#main-content")
+    ).toContainText(
+      "サイトや個別ページへのリンク"
+    );
+    await expect(
+      page.locator("#main-content")
+    ).toContainText(
+      "オープンソースではありません"
+    );
+    await expect(
+      page.getByRole("link", {
+        name: "LICENSEを確認する"
+      })
+    ).toHaveAttribute(
+      "href",
+      /github\.com\/route0254\/chiikawa-map\/blob\/main\/LICENSE/
     );
   }
 );

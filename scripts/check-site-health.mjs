@@ -416,6 +416,7 @@ await Promise.all([
   checkPublishedAsset("journal.html"),
   checkPublishedAsset("journal.css"),
   checkPublishedAsset("journal.js"),
+  checkPublishedAsset("terms.html"),
   checkPublishedAsset("manifest.webmanifest"),
   checkPublishedAsset("service-worker.js"),
   checkPublishedAsset("sitemap.xml"),

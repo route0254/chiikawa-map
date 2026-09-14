@@ -208,6 +208,9 @@ function createPage(spot) {
   const evidenceLink = spot.category === "community" && spot.evidenceUrl
     ? `<a href="${escapeHtml(spot.evidenceUrl)}" target="_blank" rel="noopener noreferrer">掲載根拠を見る ↗</a>`
     : "";
+  const importantNotice = spot.importantNotice
+    ? `          <div class="spot-page-important-notice" role="note"><strong>⚠ ご来店前にご確認ください</strong>${escapeHtml(spot.importantNotice)}</div>\n`
+    : "";
   const externalMap = spot.mapUrl
     ? `<a href="${escapeHtml(spot.mapUrl)}" target="_blank" rel="noopener noreferrer">外部地図で開く ↗</a>`
     : "";
@@ -242,8 +245,8 @@ function createPage(spot) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../style.css?v=20260829-1">
-  <link rel="stylesheet" href="../../spot.css?v=20260828-1">
+  <link rel="stylesheet" href="../../style.css?v=20260915-1">
+  <link rel="stylesheet" href="../../spot.css?v=20260915-1">
   <script type="application/ld+json">${escapeJson(createStructuredData(spot))}</script>
 </head>
 <body class="spot-page" data-spot-id="${escapeHtml(spot.id)}" data-spot-name="${escapeHtml(spot.name)}">
@@ -278,7 +281,7 @@ ${evidenceBadgeLine}        </div>
       <div class="spot-page-content">
         <div>
           <p class="spot-page-description">${escapeHtml(spot.description || `${spot.name}のスポット情報です。`)}</p>
-          <dl class="spot-page-details">
+${importantNotice}          <dl class="spot-page-details">
             ${detailRow("期間", formatPeriod(spot))}
             ${detailRow("営業時間", spot.hoursText)}
             ${detailRow("休業・休館", spot.closedDaysText)}
@@ -300,7 +303,7 @@ ${evidenceBadgeLine}        </div>
         </aside>
       </div>
     </article>
-    <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。</p>
+    <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。 <a href="../../privacy.html">プライバシー</a> ／ <a href="../../terms.html">利用条件・権利表記</a></p>
   </main>
   <script src="../../spot-page.js?v=20260829-1" defer></script>
   <script src="../../pwa.js?v=20260828-1" defer></script>
@@ -317,6 +320,7 @@ function createSitemap() {
     { loc: `${siteOrigin}/nagano.html`, priority: "0.7", lastmod: pageLastModified },
     { loc: `${siteOrigin}/journal.html`, priority: "0.9", lastmod: pageLastModified },
     { loc: `${siteOrigin}/privacy.html`, priority: "0.4", lastmod: pageLastModified },
+    { loc: `${siteOrigin}/terms.html`, priority: "0.4", lastmod: pageLastModified },
     ...spots
       .filter(spot => !spot.isArchive)
       .map(spot => ({

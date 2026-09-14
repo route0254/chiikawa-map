@@ -82,6 +82,18 @@ body.legal-page {
   margin-top: 10px;
 }
 
+.legal-list {
+  margin: 10px 0 0;
+  padding-left: 1.35rem;
+  color: #786c7a;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.legal-list li + li {
+  margin-top: 5px;
+}
+
 .legal-grid a,
 .legal-provider-links a {
   color: #6756b8;

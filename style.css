@@ -2887,6 +2887,30 @@ button {
 }
 
 
+.spot-important-notice {
+  margin: 10px 0 12px;
+  padding: 12px 13px;
+  border: 2px solid #df5b65;
+  border-radius: 12px;
+  color: #6f2830;
+  background: #fff1f2;
+}
+
+
+.spot-important-notice-title {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+
+.spot-important-notice-text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+
 .spot-info-checked {
   margin-top: 7px;
 
@@ -3996,6 +4020,12 @@ button {
   color: #81737b;
   font-size: 11px;
   line-height: 1.6;
+}
+
+
+.site-note a {
+  color: #6657ae;
+  font-weight: 800;
 }
 
 

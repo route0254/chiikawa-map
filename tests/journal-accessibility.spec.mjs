@@ -93,7 +93,8 @@ test(
       "/official.html",
       "/collaborations.html",
       "/journal.html",
-      "/privacy.html"
+      "/privacy.html",
+      "/terms.html"
     ]) {
       await page.goto(path);
       await page.keyboard.press("Tab");
