@@ -25,3 +25,6 @@ jobs:
 
       - name: Check external links
         run: node scripts/check-links.mjs
+
+      - name: Check Nagano official event lists
+        run: node scripts/import-nagano-official-series.mjs --check

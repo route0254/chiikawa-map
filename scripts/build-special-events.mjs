@@ -103,7 +103,7 @@ function createRecord(
     hoursText: cancelled
       ? "開催中止"
       : archive
-        ? "開催時の会場営業時間に準ずる"
+        ? event.hoursText || "開催時の会場営業時間に準ずる"
         : event.hoursText || "会場営業時間に準ずる",
     closedDaysText: null,
     hoursInfoUrl: event.sourceUrl,
@@ -120,19 +120,19 @@ function createRecord(
       "announced",
     entryNote: cancelled
       ? "開催予定でしたが中止となり、実際には開催されませんでした。"
-      : archive
+      : event.entryNote || (archive
         ? `開催当時の入店方法は公式イベントページで案内されていました。${endLabel}で終了済みです。`
-        : event.entryNote || "入店方法・販売方法は公式イベントページをご確認ください。",
+        : "入店方法・販売方法は公式イベントページをご確認ください。"),
     entryInfoUrl: event.sourceUrl,
     entryInfoCheckedAt: checkedAt,
     lat: event.lat,
     lng: event.lng,
     address: venueAddress,
-    description: cancelled
+    description: event.description || (cancelled
       ? `${event.venueName}で開催予定だった${series.label}です。公式発表により開催中止となりました。`
       : archive
         ? `${event.venueName}で開催された期間限定の${series.label}です。`
-        : `${event.venueName}で開催される期間限定の${series.label}です。`,
+        : `${event.venueName}で開催される期間限定の${series.label}です。`),
     sourceUrl: event.sourceUrl,
     mapUrl: createGoogleMapsUrl(
       `${event.venueName} ${event.address}`

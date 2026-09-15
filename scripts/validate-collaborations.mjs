@@ -50,6 +50,22 @@ const idPattern =
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const errors = [];
 
+function getTodayInJapan() {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(new Date());
+  const values = Object.fromEntries(
+    parts.map(part => [part.type, part.value])
+  );
+
+  return `${values.year}-${values.month}-${values.day}`;
+}
+
+const today = getTodayInJapan();
+
 function readJson(filePath) {
   try {
     return JSON.parse(
@@ -387,6 +403,24 @@ for (const [type, records] of
             periodIndex
           )
       );
+
+      if (type === "current" && record.status !== "needs_review") {
+        const endDates = record.periods
+          .map(period => period.endDate)
+          .filter(Boolean);
+        const hasOpenPeriod = record.periods.some(
+          period => period.endDate === null
+        );
+        const latestEndDate = endDates.sort().at(-1);
+
+        if (!hasOpenPeriod && latestEndDate && latestEndDate < today) {
+          addError(
+            type,
+            index,
+            `全期間が${latestEndDate}までに終了しています。公式情報を確認し、過去データへの移動または期間更新を行ってください。`
+          );
+        }
+      }
     }
   });
 }

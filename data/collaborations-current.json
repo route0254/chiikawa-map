@@ -204,8 +204,8 @@
     "title": "マツキヨココカラ×ちいかわキャンペーン",
     "partner": "マツキヨココカラ＆カンパニー",
     "category": "campaign",
-    "status": "active",
-    "summary": "対象商品の購入特典やアプリ企画などを実施するキャンペーンです。企画ごとに期間と条件が異なります。",
+    "status": "application_only",
+    "summary": "対象商品の購入特典やアプリ企画などを実施したキャンペーンです。購入・アプリ企画は終了し、LIPS連携プレゼントの応募のみ受け付けています。",
     "areaText": "全国の対象店舗・公式アプリ",
     "channels": ["店舗", "アプリ"],
     "periods": [
@@ -213,22 +213,28 @@
         "label": "アプリアイコン着せ替え期間",
         "startDate": "2026-08-16",
         "endDate": "2026-09-15",
-        "note": "購入特典などはなくなり次第終了する場合があります。"
+        "note": "終了済み"
+      },
+      {
+        "label": "LIPS連携プレゼント応募期限",
+        "startDate": "2026-08-16",
+        "endDate": "2026-09-20",
+        "note": "応募に必要なアカウント連携は9月15日までです。"
       }
     ],
     "tags": ["全国", "購入特典", "アプリ"],
-    "sourceUrl": "https://mcc-collab-cp.com/2026-chiikawa-cp/",
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000311.000018721.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-09-15"
   },
   {
     "id": "suntory-movie-chiikawa-2026",
     "title": "サントリー×映画『ちいかわ 人魚の島のひみつ』",
     "partner": "サントリー食品インターナショナル",
     "category": "campaign",
-    "status": "application_only",
-    "summary": "対象商品のレシートでオリジナルグッズに応募できるキャンペーンです。購入対象期間は終了し、応募のみ受け付けています。",
-    "areaText": "全国・オンライン応募",
+    "status": "while_supplies_last",
+    "summary": "レシート応募企画に続き、映画デザインのペットボトル全24種を全国で順次販売するキャンペーンです。店舗により取扱いと在庫が異なります。",
+    "areaText": "全国の対象店舗",
     "channels": ["店舗", "オンライン"],
     "periods": [
       {
@@ -241,13 +247,19 @@
         "label": "応募期限",
         "startDate": "2026-07-14",
         "endDate": "2026-09-08",
-        "note": ""
+        "note": "終了済み"
+      },
+      {
+        "label": "映画デザインボトル発売",
+        "startDate": "2026-09-01",
+        "endDate": null,
+        "note": "9月上旬から順次発売。なくなり次第終了します。"
       }
     ],
-    "tags": ["映画", "全国", "応募"],
-    "sourceUrl": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+    "tags": ["映画", "全国", "飲料", "限定商品"],
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-09-15"
   },
   {
     "id": "monteur-muchahuma-pudding-2026",
@@ -276,7 +288,7 @@
     "title": "CITEN×ちいかわ スペシャルコレクション",
     "partner": "CITEN",
     "category": "collection",
-    "status": "upcoming",
+    "status": "active",
     "summary": "アパレルやバッグなどを展開するスペシャルコレクションです。販売店舗・オンラインの案内は発表元で確認できます。",
     "areaText": "対象店舗・オンライン",
     "channels": ["店舗", "オンライン"],
@@ -288,10 +300,10 @@
         "note": "数量限定のため、なくなり次第終了します。"
       }
     ],
-    "tags": ["アパレル", "限定商品", "開催予定"],
+    "tags": ["アパレル", "限定商品"],
     "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-09-15"
   },
   {
     "id": "merry-jenny-chiikawa-2026",
@@ -408,5 +420,55 @@
     "sourceUrl": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
     "linkedSpotIds": [],
     "checkedAt": "2026-09-02"
+  },
+  {
+    "id": "kadokawa-chiikawa-book-fair-2026-summer",
+    "title": "KADOKAWA ちいかわブックフェア 2026サマー",
+    "partner": "KADOKAWA",
+    "category": "campaign",
+    "status": "active",
+    "summary": "全国の書店で対象のちいかわ関連書籍を購入し、KADOKAWAアプリから応募するプレゼント企画です。",
+    "areaText": "全国の対象書店・KADOKAWAアプリ",
+    "channels": ["店舗", "アプリ"],
+    "periods": [
+      {
+        "label": "レシート対象期間",
+        "startDate": "2026-07-13",
+        "endDate": "2026-09-30",
+        "note": "購入後1週間以内にレシートを投稿してください。"
+      }
+    ],
+    "tags": ["全国", "書籍", "応募"],
+    "sourceUrl": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-09-15"
+  },
+  {
+    "id": "uniqlo-movie-chiikawa-2026",
+    "title": "ユニクロ×映画『ちいかわ 人魚の島のひみつ』",
+    "partner": "ユニクロ",
+    "category": "collection",
+    "status": "while_supplies_last",
+    "summary": "映画をモチーフにしたUTとスウェットシャツを販売するコレクションです。店舗・商品により在庫が異なります。",
+    "areaText": "全国の対象店舗・オンラインストア",
+    "channels": ["店舗", "オンライン"],
+    "periods": [
+      {
+        "label": "UT発売日",
+        "startDate": "2026-07-17",
+        "endDate": null,
+        "note": "なくなり次第終了します。"
+      },
+      {
+        "label": "スウェットシャツ発売日",
+        "startDate": "2026-07-24",
+        "endDate": null,
+        "note": "なくなり次第終了します。"
+      }
+    ],
+    "tags": ["映画", "全国", "アパレル", "限定商品"],
+    "sourceUrl": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-09-15"
   }
 ]

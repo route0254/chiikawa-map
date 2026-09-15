@@ -10,6 +10,10 @@ on:
       - "scripts/validate-collaborations.mjs"
       - "scripts/validate-nagano-mentions.mjs"
       - "scripts/report-status-candidates.mjs"
+      - "scripts/build-special-events.mjs"
+      - "scripts/audit-special-series.mjs"
+      - "research/official-special-events-source.json"
+      - "research/official-special-series-catalog.json"
       - "scripts/build-spot-pages.mjs"
       - "spot/**"
       - ".spot-pages-manifest.json"
@@ -22,6 +26,10 @@ on:
       - "scripts/validate-collaborations.mjs"
       - "scripts/validate-nagano-mentions.mjs"
       - "scripts/report-status-candidates.mjs"
+      - "scripts/build-special-events.mjs"
+      - "scripts/audit-special-series.mjs"
+      - "research/official-special-events-source.json"
+      - "research/official-special-series-catalog.json"
       - "scripts/build-spot-pages.mjs"
       - "spot/**"
       - ".spot-pages-manifest.json"
@@ -57,6 +65,12 @@ jobs:
 
       - name: Validate unlocated Nagano mentions
         run: node scripts/validate-nagano-mentions.mjs
+
+      - name: Verify generated special event data
+        run: node scripts/build-special-events.mjs --check
+
+      - name: Audit special event series
+        run: node scripts/audit-special-series.mjs
 
       - name: Verify generated spot pages
         run: node scripts/build-spot-pages.mjs --check

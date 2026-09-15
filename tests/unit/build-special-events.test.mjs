@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-test("系列ごとの確認日と会場案内を保持し、未指定の系列は従来どおり生成する", async t => {
+test("系列ごとの確認日と会場案内を現在・過去データへ保持し、未指定時は既定値を使う", async t => {
   const root = await mkdtemp(path.join(os.tmpdir(), "chiikatsu-special-events-"));
   t.after(() => rm(root, { recursive: true, force: true }));
   await mkdir(path.join(root, "scripts", "lib"), { recursive: true });
@@ -44,8 +44,8 @@ test("系列ごとの確認日と会場案内を保持し、未指定の系列�
   assert.equal(current[0].entryNote, event.entryNote);
   assert.equal(archive[0].hoursCheckedAt, "2026-08-29");
   assert.equal(archive[0].entryInfoCheckedAt, "2026-08-29");
-  assert.equal(archive[0].hoursText, "開催時の会場営業時間に準ずる");
-  assert.match(archive[0].entryNote, /終了済み/);
+  assert.equal(archive[0].hoursText, event.hoursText);
+  assert.equal(archive[0].entryNote, event.entryNote);
 
   delete source.series[0].checkedAt;
   delete event.hoursText;
