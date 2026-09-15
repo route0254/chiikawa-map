@@ -1981,6 +1981,7 @@ test(
           "top",
           "left",
           "left",
+          "left",
           "bottom",
           "right"
         ],
@@ -1989,7 +1990,8 @@ test(
           "magical-nagoya",
           "ramen-buta-nagoya",
           "chiikawa-yaki-nagoya",
-          "movie-cafe-nagoya"
+          "movie-cafe-nagoya",
+          "nagano-market-popup-2026-09-04-nagoya-p"
         ],
         spot:
           "chiikawaland-nagoya"
@@ -2132,7 +2134,7 @@ test(
 
 
 test(
-  "同一座標の5スポットを展開し、ピンと名称ラベルを分散する",
+  "同一座標の6スポットを展開し、ピンと名称ラベルを分散する",
   async ({ page }) => {
     await page.goto(
       "/?spot=chiikawaland-nagoya"
@@ -2178,6 +2180,12 @@ test(
           "movie-cafe-nagoya",
         name:
           "映画ちいかわ 人魚の島のひみつ Collaboration CAFE 名古屋"
+      },
+      {
+        id:
+          "nagano-market-popup-2026-09-04-nagoya-p",
+        name:
+          "ナガノマーケット POP UP SHOP 名古屋PARCO"
       }
     ];
 
