@@ -259,7 +259,7 @@ function createPage(spot) {
         <a class="site-nav-link" href="../../"><span aria-hidden="true">🗺</span>地図から探す</a>
         <a class="site-nav-link" href="../../official.html"><span aria-hidden="true">✦</span>公式スポット一覧</a>
         <a class="site-nav-link" href="../../collaborations.html"><span aria-hidden="true">🎀</span>ちいかわコラボ一覧</a>
-        <a class="site-nav-link" href="../../nagano.html"><span aria-hidden="true">✎</span>ナガセン関連一覧</a>
+        <a class="site-nav-link" href="../../nagano.html"><span aria-hidden="true">✎</span>ナガノ先生の歩み</a>
         <a class="site-nav-link" href="../../journal.html"><span aria-hidden="true">🌱</span>ちい活手帳</a>
       </nav>
     </div>

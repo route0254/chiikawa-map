@@ -3585,6 +3585,33 @@ test(
 
 
 test(
+  "各ページの共通ナビからナガノ先生の歩みへ移動できる",
+  async ({ page }) => {
+    const pages = [
+      "/",
+      "/official.html",
+      "/collaborations.html",
+      "/journal.html",
+      "/privacy.html",
+      "/terms.html",
+      "/spot/chiikawaland-osaka-umeda/"
+    ];
+
+    for (const path of pages) {
+      await page.goto(path);
+      const historyLink = page.locator(
+        'a.site-nav-link[href$="nagano.html"]'
+      ).first();
+      await expect(historyLink).toBeVisible();
+      await expect(historyLink).toHaveText(
+        /ナガノ先生の歩み/
+      );
+    }
+  }
+);
+
+
+test(
   "ナガノ先生の歩みを出典付きで絞り込める",
   async ({ page }) => {
     await page.goto("/nagano.html");
