@@ -3585,21 +3585,109 @@ test(
 
 
 test(
-  "店舗未特定のナガノ先生関連記録を検索できる",
+  "ナガノ先生の歩みを出典付きで絞り込める",
   async ({ page }) => {
     await page.goto("/nagano.html");
+
+    await expect(page.locator("h1")).toHaveText(
+      "ナガノ先生の歩み"
+    );
     await expect(
-      page.locator(".nagano-card")
-    ).toHaveCount(3);
+      page.locator("#nagano-mentions")
+    ).toHaveCount(0);
+    await expect(
+      page.locator("#nagano-profile")
+    ).toBeVisible();
+    await expect(
+      page.locator("#nagano-profile-name")
+    ).toHaveText("ナガノ");
+    await expect(
+      page.locator("#nagano-profile-works li")
+    ).toHaveCount(4);
+    await expect(
+      page.locator(".nagano-profile-interest-card")
+    ).toHaveCount(5);
+    await expect(
+      page.locator("#nagano-profile-interest-list")
+    ).toContainText("ラーメン");
+    await expect(
+      page.locator("#nagano-profile-interest-list")
+    ).toContainText("クリームソーダ");
+    await expect(
+      page.locator("#nagano-profile-interest-list")
+    ).toContainText("キムチ焼きそば");
+    await expect(
+      page.locator("#nagano-profile-interest-list")
+    ).toContainText("ガリガリスパム");
+    await expect(
+      page.locator("#nagano-history")
+    ).toBeHidden();
+
+    const navigationCount = await page.evaluate(
+      () => performance.getEntriesByType(
+        "navigation"
+      ).length
+    );
     await page.locator(
-      "#nagano-mention-search"
-    ).fill("チキンクリスプ");
+      '[data-nagano-tab="history"]'
+    ).click();
     await expect(
-      page.locator(".nagano-card")
-    ).toHaveCount(1);
+      page.locator("#nagano-history")
+    ).toBeVisible();
+    await expect(page).toHaveURL(
+      /#nagano-history$/
+    );
     await expect(
-      page.locator(".nagano-card")
-    ).toContainText("マクドナルド");
+      page.locator(".nagano-history-item")
+    ).toHaveCount(30);
+    await expect(
+      page.locator("#nagano-history")
+    ).toContainText(
+      "Nagano’s characters展"
+    );
+    await expect(
+      page.locator(
+        '.nagano-history-sources a[href*="1421673317816168450"]'
+      )
+    ).toHaveCount(0);
+
+    await page.locator(
+      '[data-history-filter="milestones"]'
+    ).click();
+
+    const filteredCount = await page.locator(
+      ".nagano-history-item"
+    ).count();
+    expect(filteredCount).toBeGreaterThan(0);
+    expect(filteredCount).toBeLessThan(30);
+    await expect(
+      page.locator(
+        '[data-history-filter="milestones"]'
+      )
+    ).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+    await expect(
+      page.locator("#nagano-history-summary")
+    ).toContainText("件を表示");
+
+    await page.locator(
+      '[data-nagano-tab="themes"]'
+    ).click();
+    await expect(
+      page.locator("#nagano-themes")
+    ).toBeVisible();
+    await expect(
+      page.locator(".nagano-theme-card")
+    ).toHaveCount(5);
+    expect(
+      await page.evaluate(
+        () => performance.getEntriesByType(
+          "navigation"
+        ).length
+      )
+    ).toBe(navigationCount);
   }
 );
 

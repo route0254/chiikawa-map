@@ -21,9 +21,9 @@ const pages = [
     ready: "[data-groups=\"current\"] .collaboration-card"
   },
   {
-    name: "ナガノ先生関連一覧",
+    name: "ナガノ先生の歩み",
     path: "/nagano.html",
-    ready: "#nagano-mention-list .nagano-card"
+    ready: "#nagano-profile-interest-list .nagano-profile-interest-card"
   },
   {
     name: "ちい活手帳",

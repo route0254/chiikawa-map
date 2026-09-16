@@ -44,7 +44,7 @@ pnpm run check:site
 | `index.html` / `style.css` / `app.js` | 地図ページ |
 | `official.html` / `official.css` / `official.js` | 公式スポット一覧 |
 | `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
-| `nagano.html` / `nagano.css` / `nagano.js` | 店舗を特定できないナガノ先生関連情報 |
+| `nagano.html` / `nagano.css` / `nagano.js` | 公開情報と出典からたどる「ナガノ先生の歩み」 |
 | `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
 | `privacy.html` / `terms.html` / `legal.css` | プライバシー、利用条件、権利表記 |
 | `data/official-spots.json` | 現在・今後の公式スポット |
@@ -52,6 +52,7 @@ pnpm run check:site
 | `data/collaborations-current.json` | 開催中・開催予定の企業・施設コラボ |
 | `data/collaborations-archive.json` | 確認できた過去の企業・施設コラボ |
 | `data/nagano-spots.json` | ナガノ先生関連スポット |
+| `data/nagano-history.json` | 公開情報から整理したナガノ先生のプロフィール・歩み・創作テーマ |
 | `data/nagano-unlocated-mentions.json` | 店舗を特定できないナガノ先生関連情報 |
 | `data/community-spots.json` | ファン発の聖地 |
 | `spot/` | JSONから生成するスポット個別ページ |
