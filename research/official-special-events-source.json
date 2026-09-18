@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-09-15",
-  "statusAsOf": "2026-09-15",
+  "statusAsOf": "2026-09-18",
   "series": [
     {
       "key": "chiikawaland-popup",
@@ -42,8 +42,23 @@
       "brand": "magical_chiikawa",
       "placeType": "shop",
       "relationType": "popup",
-      "checkedAt": "2026-09-04",
+      "checkedAt": "2026-09-18",
       "events": [
+        {
+          "id": "magical-popup-2026-09-30-granduo-tachikawa",
+          "name": "まじかるちいかわPOP UP STORE グランデュオ立川",
+          "startDate": "2026-09-30",
+          "endDate": "2026-11-08",
+          "venueName": "グランデュオ立川",
+          "venueSpace": "2F イベントスペース2",
+          "address": "東京都立川市柴崎町3-2-1 グランデュオ立川",
+          "lat": 35.697296,
+          "lng": 139.414185,
+          "sourceUrl": "https://www.granduo.jp/tachikawa/events/events-26889/",
+          "hoursText": "10:00～20:30（日曜・祝日は20:00まで、最終日は17:00まで）",
+          "reservationType": "not_available",
+          "entryNote": "初日は9:30から1F正面入口で時間帯別整理券を配布します。10月1日以降も混雑状況により整理券入場となる場合があります。"
+        },
         {
           "id": "magical-popup-2026-09-11-kochi-tsutaya",
           "name": "まじかるちいかわPOP UP STORE 高知 蔦屋書店",
@@ -64,8 +79,23 @@
       "brand": "chiikawa_bakery",
       "placeType": "shop",
       "relationType": "popup",
-      "checkedAt": "2026-09-04",
+      "checkedAt": "2026-09-18",
       "events": [
+        {
+          "id": "bakery-popup-2026-10-01-okinawa-ryubo",
+          "name": "ちいかわベーカリー OKINAWA POP UP SHOP",
+          "startDate": "2026-10-01",
+          "endDate": "2026-10-12",
+          "venueName": "デパートリウボウ",
+          "venueSpace": "6階 イベントスペース",
+          "address": "沖縄県那覇市久茂地1-1-1 デパートリウボウ",
+          "lat": 26.213209,
+          "lng": 127.678604,
+          "sourceUrl": "https://chiikawabakery.jp/topics/20260918/",
+          "hoursText": "10:00～20:00（最終日は17:00まで）",
+          "reservationType": "not_available",
+          "entryNote": "10月1日はデジタル整理券で案内されます。以降も混雑状況によりデジタル整理券となる場合があります。"
+        },
         {
           "id": "bakery-popup-2026-08-13-kyoto",
           "name": "ちいかわベーカリー KYOTO POP UP SHOP",
@@ -89,7 +119,21 @@
       "brand": "chiikawa_baby",
       "placeType": "shop",
       "relationType": "popup",
+      "checkedAt": "2026-09-18",
       "events": [
+        {
+          "id": "chiikawa-baby-2026-10-02-aomori-elm",
+          "name": "Chiikawa Baby POP UP SHOP 青森ELM",
+          "startDate": "2026-10-02",
+          "endDate": "2026-10-19",
+          "venueName": "青森ELM",
+          "venueSpace": "2階 ELMホール",
+          "address": "青森県五所川原市大字唐笠柳字藤巻517-1 ELM",
+          "lat": 40.800228,
+          "lng": 140.452988,
+          "sourceUrl": "https://chiikawa-info.jp/p26/ck_baby/aomori/index.html",
+          "hoursText": "10:00～20:00"
+        },
         {
           "id": "chiikawa-baby-2026-09-02-jr-omiya",
           "name": "Chiikawa Baby POP UP SHOP JR大宮駅",
@@ -2700,8 +2744,23 @@
       "brand": "tokyo_banana",
       "placeType": "shop",
       "relationType": "collaboration",
-      "checkedAt": "2026-09-15",
+      "checkedAt": "2026-09-18",
       "events": [
+        {
+          "id": "tokyo-banana-popup-morioka-2026-09",
+          "name": "ちいかわ×東京ばな奈 POP UP SHOP 盛岡駅",
+          "startDate": "2026-09-18",
+          "endDate": "2026-09-30",
+          "venueName": "盛岡駅ビル フェザン",
+          "venueSpace": "IGRいわて銀河鉄道改札前 フェザンタベナクル",
+          "address": "岩手県盛岡市盛岡駅前通1-44 盛岡駅ビル フェザン",
+          "lat": 39.696392,
+          "lng": 141.139297,
+          "sourceUrl": "https://fesan-jp.com/tabernacle/",
+          "hoursText": "10:00～20:00（最終日は18:00まで）",
+          "reservationType": "not_available",
+          "entryNote": "商品はなくなり次第終了します。販売方法の変更は公式案内をご確認ください。"
+        },
         {
           "id": "tokyo-banana-popup-ikebukuro-2026-09",
           "name": "ちいかわ×東京ばな奈 POP UP SHOP JR池袋駅",

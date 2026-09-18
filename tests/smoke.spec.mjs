@@ -2657,7 +2657,7 @@ test(
         '#current-brand option[value="chiikawa_baby"]'
       )
     ).toHaveText(
-      /^Chiikawa Baby（1）$/
+      /^Chiikawa Baby（2）$/
     );
 
     await page.locator(
@@ -2670,13 +2670,13 @@ test(
       page.locator(
         "#current-result-summary"
       )
-    ).toHaveText("1件を表示しています。");
+    ).toHaveText("2件を表示しています。");
 
     await expect(
       page.locator(
         "#current-groups .official-spot-card"
       )
-    ).toHaveCount(1);
+    ).toHaveCount(2);
 
     await expect(
       page.locator(

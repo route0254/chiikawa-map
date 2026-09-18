@@ -1,5 +1,27 @@
 [
   {
+    "id": "abema-chiikawa-free-channel-2026",
+    "title": "ABEMA ちいかわ公式無料チャンネル",
+    "partner": "ABEMA・ちいかわぽけっと",
+    "category": "media_sports",
+    "status": "upcoming",
+    "summary": "『ちいかわぽけっと』1.5周年を記念し、アニメ第1話～第362話を無料一挙放送する期間限定チャンネルです。ゲーム内アイテムがもらえるシリアルコード企画も実施されます。",
+    "areaText": "オンライン",
+    "channels": ["オンライン"],
+    "periods": [
+      {
+        "label": "チャンネル開設期間",
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-29",
+        "note": "9月19日10:00から9月29日21:50まで。放送後1週間は放送エピソードを無料視聴できます。"
+      }
+    ],
+    "tags": ["アニメ", "無料配信", "ちいかわぽけっと"],
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003990.000064643.html",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-09-18"
+  },
+  {
     "id": "sunflower-movie-chiikawa-2026",
     "title": "さんふらわあ × 映画『ちいかわ 人魚の島のひみつ』",
     "partner": "商船三井さんふらわあ",
@@ -362,7 +384,7 @@
     "category": "food",
     "status": "active",
     "summary": "ちいかわたちをデザインした東京ばな奈を販売するコラボです。販売場所と取扱日は公式ページで更新されています。",
-    "areaText": "東京都内の対象店舗ほか",
+    "areaText": "東京都内の対象店舗・JR池袋駅・盛岡駅ほか",
     "channels": ["店舗", "オンライン"],
     "periods": [
       {
@@ -370,12 +392,28 @@
         "startDate": null,
         "endDate": null,
         "note": "店舗・商品により販売期間と在庫が異なります。"
+      },
+      {
+        "label": "JR池袋駅 POP UP SHOP",
+        "startDate": "2026-09-17",
+        "endDate": "2026-10-14",
+        "note": "イベントステーション池袋南通路で開催。"
+      },
+      {
+        "label": "盛岡駅 POP UP SHOP",
+        "startDate": "2026-09-18",
+        "endDate": "2026-09-30",
+        "note": "盛岡駅ビル フェザンのフェザンタベナクルで開催。"
       }
     ],
     "tags": ["お菓子", "お土産", "限定商品"],
     "sourceUrl": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
-    "linkedSpotIds": ["collab-tokyobanana-tokyo"],
-    "checkedAt": "2026-09-02"
+    "linkedSpotIds": [
+      "collab-tokyobanana-tokyo",
+      "tokyo-banana-popup-ikebukuro-2026-09",
+      "tokyo-banana-popup-morioka-2026-09"
+    ],
+    "checkedAt": "2026-09-18"
   },
   {
     "id": "donquijote-chiikawa-2026",
