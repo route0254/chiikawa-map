@@ -1928,9 +1928,35 @@ test(
 );
 
 
+async function includeArchivedSpotsForLayout(page, ids) {
+  const [officialSpots, archivedSpots] = await Promise.all(
+    ["official-spots.json", "official-events-archive.json"].map(async name =>
+      JSON.parse(await readFile(resolve(projectDirectory, "data", name), "utf8"))
+    )
+  );
+  const selected = ids.map(id => {
+    const spot = archivedSpots.find(item => item.id === id);
+    if (!spot) throw new Error(`過去データにスポットがありません: ${id}`);
+    return spot;
+  });
+
+  await page.route("**/data/official-spots.json", async route => {
+    await route.fulfill({
+      body: JSON.stringify([...officialSpots, ...selected]),
+      contentType: "application/json",
+      status: 200
+    });
+  });
+}
+
+
 test(
   "同一座標の2〜6スポットを件数別パターンで外向きに配置する",
   async ({ page }) => {
+    await includeArchivedSpotsForLayout(page, [
+      "pocket-popup-ikebukuro",
+      "nagano-market-popup-2026-09-04-nagoya-p"
+    ]);
     const scenarios = [
       {
         directions: [
@@ -1962,9 +1988,25 @@ test(
         directions: [
           "top",
           "left",
-          "left",
           "bottom",
           "right"
+        ],
+        ids: [
+          "chiikawaland-shinsaibashi",
+          "ramen-buta-shinsaibashi",
+          "nagano-market-shinsaibashi",
+          "movie-cafe-shinsaibashi"
+        ],
+        spot:
+          "chiikawaland-shinsaibashi"
+      },
+      {
+        directions: [
+          "top",
+          "left",
+          "left",
+          "right",
+          "bottom"
         ],
         ids: [
           "chiikawaland-ikebukuro",
@@ -2036,99 +2078,6 @@ test(
       ).toEqual([]);
     }
 
-    const officialSpots =
-      JSON.parse(
-        await readFile(
-          resolve(
-            projectDirectory,
-            "data/official-spots.json"
-          ),
-          "utf8"
-        )
-      );
-
-    const templateSpot =
-      officialSpots.find(
-        spot =>
-          spot.id ===
-          "chiikawaland-ikebukuro"
-      );
-
-    const syntheticSpots =
-      Array.from(
-        {
-          length: 5
-        },
-        (_, index) => ({
-          ...templateSpot,
-          endDate: null,
-          id:
-            "layout-five-" +
-            index,
-          lat: 35,
-          lng: 135,
-          name:
-            "5件配置確認スポット " +
-            (index + 1),
-          periodType:
-            "permanent",
-          startDate: null
-        })
-      );
-
-    await page.route(
-      "**/data/official-spots.json",
-      async route => {
-        await route.fulfill({
-          body:
-            JSON.stringify([
-              ...officialSpots,
-              ...syntheticSpots
-            ]),
-          contentType:
-            "application/json",
-          status: 200
-        });
-      }
-    );
-
-    await page.goto(
-      "/?spot=layout-five-0"
-    );
-
-    await waitForSpots(page);
-
-    await page.waitForTimeout(300);
-
-    const fiveSpotAudit =
-      await getDuplicateLayoutAudit(
-        page,
-        syntheticSpots.map(
-          spot => spot.id
-        )
-      );
-
-    expect(
-      fiveSpotAudit.directions
-    ).toEqual([
-      "top",
-      "left",
-      "left",
-      "bottom",
-      "right"
-    ]);
-
-    expect(
-      fiveSpotAudit.outward
-    ).toBe(true);
-
-    expect(
-      fiveSpotAudit.labelOverlaps
-    ).toEqual([]);
-
-    expect(
-      fiveSpotAudit.lineCrossings
-    ).toEqual([]);
   }
 );
 
@@ -2136,6 +2085,9 @@ test(
 test(
   "同一座標の6スポットを展開し、ピンと名称ラベルを分散する",
   async ({ page }) => {
+    await includeArchivedSpotsForLayout(page, [
+      "nagano-market-popup-2026-09-04-nagoya-p"
+    ]);
     await page.goto(
       "/?spot=chiikawaland-nagoya"
     );

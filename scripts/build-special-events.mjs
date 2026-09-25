@@ -222,6 +222,10 @@ for (const { series, event } of sourceEvents) {
     );
   }
 
+  if (event.checkedAt !== undefined && !isDate(event.checkedAt)) {
+    throw new Error(`checkedAtが不正です: ${event.id}`);
+  }
+
   if (
     !Number.isFinite(event.lat) ||
     !Number.isFinite(event.lng)
@@ -252,7 +256,7 @@ const records = sourceEvents.map(
       record: createRecord(
         series,
         event,
-        series.checkedAt || source.checkedAt,
+        event.checkedAt || series.checkedAt || source.checkedAt,
         archiveEvent
       )
     };

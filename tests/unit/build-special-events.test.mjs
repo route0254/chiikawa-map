@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-test("系列ごとの確認日と会場案内を現在・過去データへ保持し、未指定時は既定値を使う", async t => {
+test("会場・系列の確認日と案内を現在・過去データへ保持し、未指定時は既定値を使う", async t => {
   const root = await mkdtemp(path.join(os.tmpdir(), "chiikatsu-special-events-"));
   t.after(() => rm(root, { recursive: true, force: true }));
   await mkdir(path.join(root, "scripts", "lib"), { recursive: true });
@@ -47,7 +47,15 @@ test("系列ごとの確認日と会場案内を現在・過去データへ保�
   assert.equal(archive[0].hoursText, event.hoursText);
   assert.equal(archive[0].entryNote, event.entryNote);
 
+  event.checkedAt = "2026-09-05";
+  await writeFile(sourcePath, JSON.stringify(source));
+  execFileSync(process.execPath, [script, "--write"]);
+  const venueChecked = JSON.parse(await readFile(path.join(root, "data", "official-spots.json")));
+  assert.equal(venueChecked[0].hoursCheckedAt, "2026-09-05");
+  assert.equal(venueChecked[0].entryInfoCheckedAt, "2026-09-05");
+
   delete source.series[0].checkedAt;
+  delete event.checkedAt;
   delete event.hoursText;
   delete event.entryNote;
   await writeFile(sourcePath, JSON.stringify(source));
@@ -60,4 +68,9 @@ test("系列ごとの確認日と会場案内を現在・過去データへ保�
   source.series[0].checkedAt = "invalid";
   await writeFile(sourcePath, JSON.stringify(source));
   assert.throws(() => execFileSync(process.execPath, [script, "--check"], { stdio: "pipe" }), /系列のcheckedAtが不正/);
+
+  source.series[0].checkedAt = "2026-09-04";
+  event.checkedAt = "invalid";
+  await writeFile(sourcePath, JSON.stringify(source));
+  assert.throws(() => execFileSync(process.execPath, [script, "--check"], { stdio: "pipe" }), /checkedAtが不正/);
 });
