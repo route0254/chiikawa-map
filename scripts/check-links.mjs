@@ -208,10 +208,15 @@ function classifyResponse(target, response) {
   const finalUrl = response.url || target.url;
 
   if (status === 404 || status === 410) {
+    const archiveOnly = target.references.every(
+      reference => reference.file === "data/official-events-archive.json"
+    );
     return {
-      kind: "broken",
+      kind: archiveOnly ? "warning" : "broken",
       target,
-      message: `HTTP ${status}`
+      message: archiveOnly
+        ? `HTTP ${status}（終了済みイベントの公式ページは公開終了の可能性）`
+        : `HTTP ${status}`
     };
   }
 
