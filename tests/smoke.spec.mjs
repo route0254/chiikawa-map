@@ -1955,7 +1955,9 @@ test(
   async ({ page }) => {
     await includeArchivedSpotsForLayout(page, [
       "pocket-popup-ikebukuro",
-      "nagano-market-popup-2026-09-04-nagoya-p"
+      "nagano-market-popup-2026-09-04-nagoya-p",
+      "movie-cafe-shinsaibashi",
+      "popup-2026-09-18-jr-ikebukuro"
     ]);
     const scenarios = [
       {
@@ -2005,8 +2007,8 @@ test(
           "top",
           "left",
           "left",
-          "right",
-          "bottom"
+          "bottom",
+          "right"
         ],
         ids: [
           "chiikawaland-ikebukuro",
@@ -2609,7 +2611,7 @@ test(
         '#current-brand option[value="chiikawa_baby"]'
       )
     ).toHaveText(
-      /^Chiikawa Baby（2）$/
+      /^Chiikawa Baby（1）$/
     );
 
     await page.locator(
@@ -2622,13 +2624,13 @@ test(
       page.locator(
         "#current-result-summary"
       )
-    ).toHaveText("2件を表示しています。");
+    ).toHaveText("1件を表示しています。");
 
     await expect(
       page.locator(
         "#current-groups .official-spot-card"
       )
-    ).toHaveCount(2);
+    ).toHaveCount(1);
 
     await expect(
       page.locator(
@@ -2636,6 +2638,14 @@ test(
       ).filter({
         hasText:
           "羽田空港第1ターミナル"
+      })
+    ).toHaveCount(0);
+
+    await expect(
+      page.locator(
+        "#current-groups .official-spot-card h4"
+      ).filter({
+        hasText: "青森ELM"
       })
     ).toHaveCount(1);
 
