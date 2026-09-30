@@ -46,6 +46,7 @@ pnpm run check:site
 | `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
 | `nagano.html` / `nagano.css` / `nagano.js` | 公開情報と出典からたどる「ナガノ先生の歩み」 |
 | `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
+| `official-links.html` / `official-links.css` | ちいかわ・ナガノ先生の公式サイトとSNSへのリンク |
 | `privacy.html` / `terms.html` / `legal.css` | プライバシー、利用条件、権利表記 |
 | `data/official-spots.json` | 現在・今後の公式スポット |
 | `data/official-events-archive.json` | 終了・開催中止となった公式イベント |

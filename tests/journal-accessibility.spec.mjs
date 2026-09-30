@@ -92,6 +92,7 @@ test(
       "/",
       "/official.html",
       "/collaborations.html",
+      "/official-links.html",
       "/journal.html",
       "/privacy.html",
       "/terms.html"

@@ -3369,6 +3369,7 @@ test(
         "/official.html",
         "/collaborations.html",
         "/nagano.html",
+        "/official-links.html",
         "/journal.html",
         "/privacy.html",
         "/terms.html",
@@ -3569,6 +3570,52 @@ test(
         /ナガノ先生の歩み/
       );
     }
+  }
+);
+
+
+test(
+  "各ページから公式サイト・SNSを開き、確認済みの発信先へ移動できる",
+  async ({ page }) => {
+    const pages = [
+      "/",
+      "/official.html",
+      "/collaborations.html",
+      "/nagano.html",
+      "/journal.html",
+      "/privacy.html",
+      "/terms.html",
+      "/spot/chiikawaland-osaka-umeda/"
+    ];
+
+    for (const path of pages) {
+      await page.goto(path);
+      await expect(
+        page.locator('a.site-nav-link[href$="official-links.html"]')
+      ).toBeVisible();
+    }
+
+    await page.goto("/");
+    await page.locator('a.site-nav-link[href="official-links.html"]').click();
+    await expect(page).toHaveURL(/\/official-links\.html$/);
+    await expect(page.locator(".official-links-list a")).toHaveCount(9);
+    await expect(
+      page.getByRole("link", { name: /めざましテレビチャンネル/ })
+    ).toHaveAttribute(
+      "href",
+      "https://www.youtube.com/channel/UCrrsHarrLoiLTqu1LHxDJpw"
+    );
+
+    for (const link of await page.locator(".official-links-list a").all()) {
+      await expect(link).toHaveAttribute("href", /^https:\/\//);
+      await expect(link).toHaveAttribute("target", "_blank");
+      await expect(link).toHaveAttribute("rel", /noopener/);
+    }
+
+    await page.setViewportSize({ width: 390, height: 844 });
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth)
+    ).toBeLessThanOrEqual(390);
   }
 );
 

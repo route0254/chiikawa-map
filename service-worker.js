@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20260916-6";
+  "chiikatsu-map-v20260930-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -14,6 +14,7 @@ const CORE_FILES = [
   "./collaborations.html",
   "./nagano.html",
   "./journal.html",
+  "./official-links.html",
   "./privacy.html",
   "./terms.html",
   "./offline.html",
@@ -22,6 +23,7 @@ const CORE_FILES = [
   "./collaborations.css",
   "./nagano.css",
   "./journal.css",
+  "./official-links.css",
   "./legal.css",
   "./app.js",
   "./official.js",

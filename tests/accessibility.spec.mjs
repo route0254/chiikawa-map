@@ -26,6 +26,11 @@ const pages = [
     ready: "#nagano-profile-interest-list .nagano-profile-interest-card"
   },
   {
+    name: "公式サイト・SNS",
+    path: "/official-links.html",
+    ready: ".official-links-list a"
+  },
+  {
     name: "ちい活手帳",
     path: "/journal.html?view=calendar&date=2026-09-01",
     ready: "#calendar-grid .calendar-day"
