@@ -1928,7 +1928,7 @@ test(
 );
 
 
-async function includeArchivedSpotsForLayout(page, ids) {
+async function includeArchivedSpotsForLayout(page, ids, excludedIds = []) {
   const [officialSpots, archivedSpots] = await Promise.all(
     ["official-spots.json", "official-events-archive.json"].map(async name =>
       JSON.parse(await readFile(resolve(projectDirectory, "data", name), "utf8"))
@@ -1940,9 +1940,13 @@ async function includeArchivedSpotsForLayout(page, ids) {
     return spot;
   });
 
+  const layoutSpots = officialSpots.filter(
+    spot => !excludedIds.includes(spot.id)
+  );
+
   await page.route("**/data/official-spots.json", async route => {
     await route.fulfill({
-      body: JSON.stringify([...officialSpots, ...selected]),
+      body: JSON.stringify([...layoutSpots, ...selected]),
       contentType: "application/json",
       status: 200
     });
@@ -1958,6 +1962,8 @@ test(
       "nagano-market-popup-2026-09-04-nagoya-p",
       "movie-cafe-shinsaibashi",
       "popup-2026-09-18-jr-ikebukuro"
+    ], [
+      "tokyo-banana-popup-solamachi-2026-10"
     ]);
     const scenarios = [
       {
