@@ -234,28 +234,6 @@
     "checkedAt": "2026-09-15"
   },
   {
-    "id": "monteur-muchahuma-pudding-2026",
-    "title": "モンテール×ちいかわ「むちゃうまプリン」スイーツ",
-    "partner": "モンテール",
-    "category": "food",
-    "status": "active",
-    "summary": "作中の「むちゃうまプリン」をイメージした期間限定スイーツを全国のスーパーなどで販売します。店舗により取扱いが異なります。",
-    "areaText": "全国の取扱店舗",
-    "channels": ["店舗"],
-    "periods": [
-      {
-        "label": "販売期間",
-        "startDate": "2026-09-01",
-        "endDate": "2026-09-30",
-        "note": "店舗により販売開始・終了日が異なる場合があります。"
-      }
-    ],
-    "tags": ["全国", "スイーツ", "期間限定商品"],
-    "sourceUrl": "https://www.monteur.co.jp/information/4167",
-    "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
-  },
-  {
     "id": "citen-chiikawa-2026",
     "title": "CITEN×ちいかわ スペシャルコレクション",
     "partner": "CITEN",
@@ -414,8 +392,8 @@
     "title": "KADOKAWA ちいかわブックフェア 2026サマー",
     "partner": "KADOKAWA",
     "category": "campaign",
-    "status": "active",
-    "summary": "全国の書店で対象のちいかわ関連書籍を購入し、KADOKAWAアプリから応募するプレゼント企画です。",
+    "status": "needs_review",
+    "summary": "レシート対象期間は終了しました。対象期間中に購入済みの方は、購入後1週間以内にレシートを投稿してください。賞品への応募期限はKADOKAWAアプリの応募要項をご確認ください。",
     "areaText": "全国の対象書店・KADOKAWAアプリ",
     "channels": ["店舗", "アプリ"],
     "periods": [
@@ -423,13 +401,13 @@
         "label": "レシート対象期間",
         "startDate": "2026-07-13",
         "endDate": "2026-09-30",
-        "note": "購入後1週間以内にレシートを投稿してください。"
+        "note": "9月30日23:59までの購入分が対象です。購入後1週間以内にレシートを投稿してください。賞品への応募期限はKADOKAWAアプリの応募要項をご確認ください。"
       }
     ],
     "tags": ["全国", "書籍", "応募"],
     "sourceUrl": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-15"
+    "checkedAt": "2026-10-01"
   },
   {
     "id": "uniqlo-movie-chiikawa-2026",
