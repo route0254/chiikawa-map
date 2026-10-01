@@ -69,7 +69,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20260915-1"
+    href="style.css?v=20261001-1"
   >
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
@@ -191,6 +191,15 @@
   <!-- PAGE -->
 
   <main id="main-content" class="page-shell" tabindex="-1">
+
+    <section id="recent-additions" class="recent-additions" aria-labelledby="recent-additions-title" hidden>
+      <div class="recent-additions-heading">
+        <h2 id="recent-additions-title">最近追加した情報</h2>
+        <span id="recent-additions-count"></span>
+      </div>
+      <p class="recent-additions-note">追加から14日間のNEW情報 · 日付はサイトへの追加日です</p>
+      <ul id="recent-additions-list" class="recent-additions-list"></ul>
+    </section>
 
     <section class="map-card">
 
@@ -1703,7 +1712,8 @@
   ></script>
 
 
-  <script src="app.js?v=20260915-1"></script>
+  <script src="recent-utils.js?v=20261001-1"></script>
+  <script src="app.js?v=20261001-1"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 
 </body>

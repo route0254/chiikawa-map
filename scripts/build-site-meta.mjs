@@ -3,6 +3,7 @@ import {
   writeFile
 } from "node:fs/promises";
 import { resolve } from "node:path";
+import { syncAddedDates } from "./lib/added-dates.mjs";
 import {
   createSiteMeta
 } from "./lib/site-meta.mjs";
@@ -50,6 +51,7 @@ function replaceElementText(
   );
 }
 
+await syncAddedDates(root, writeMode);
 const meta = await createSiteMeta(root);
 const expectedMeta =
   JSON.stringify(meta, null, 2) + "\n";

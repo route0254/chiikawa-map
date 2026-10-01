@@ -5075,6 +5075,9 @@ function createSpotListCard(
     title
   );
 
+  const addedDate = createAddedDateLabel(spot);
+  if (addedDate) headingWrap.appendChild(addedDate);
+
   const meta =
     createDiv(
       "spot-list-card-meta",
@@ -6610,6 +6613,9 @@ function createSpotDetail(
   container.appendChild(
     title
   );
+
+  const addedDate = createAddedDateLabel(spot);
+  if (addedDate) container.appendChild(addedDate);
 
 
   if (
@@ -9294,6 +9300,60 @@ async function ensureArchiveDataLoaded() {
 }
 
 
+let firstAddedDates = {};
+
+function createAddedDateLabel(spot) {
+  const date = firstAddedDates[spot.id];
+  if (!RecentAdditions.validDate(date)) return null;
+  const label = document.createElement("p");
+  label.className = "spot-added-date";
+  if (RecentAdditions.isNew(date)) {
+    const badge = document.createElement("span");
+    badge.className = "new-badge";
+    badge.textContent = "NEW";
+    label.append(badge, " ");
+  }
+  const time = document.createElement("time");
+  time.dateTime = date;
+  time.textContent = `${date.replaceAll("-", "/")} 追加`;
+  label.append(time);
+  return label;
+}
+
+async function loadRecentAdditions(spots) {
+  try {
+    const response = await fetch("data/added-dates.json", {
+      cache: "no-store", signal: AbortSignal.timeout(3000)
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const registry = await response.json();
+    if (registry.schemaVersion !== 1 || !registry.firstAdded ||
+        typeof registry.firstAdded !== "object" || Array.isArray(registry.firstAdded)) {
+      throw new Error("Invalid addition dates");
+    }
+    firstAddedDates = registry.firstAdded;
+    const recent = RecentAdditions.selectRecent(spots, firstAddedDates);
+    const list = document.getElementById("recent-additions-list");
+    for (const spot of recent.slice(0, 6)) {
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = `spot/${encodeURIComponent(spot.id)}/`;
+      const title = document.createElement("span");
+      title.className = "recent-addition-name";
+      title.textContent = spot.name;
+      link.append(createAddedDateLabel(spot), title);
+      item.append(link);
+      list.append(item);
+    }
+    document.getElementById("recent-additions-count").textContent =
+      recent.length > 6 ? `${recent.length}件のうち最新6件` : `${recent.length}件`;
+    document.getElementById("recent-additions").hidden = recent.length === 0;
+  } catch (error) {
+    // New announcements are optional; map/search must still work when unavailable.
+    console.warn("最近追加した情報を読み込めませんでした。", error);
+  }
+}
+
 async function loadSpots() {
 
   try {
@@ -9432,6 +9492,8 @@ async function loadSpots() {
           getSpotPeriodStatus(spot) ===
           "ended"
       ).length;
+
+    await loadRecentAdditions(spots);
 
     const appendResult =
       appendSpotRecords(spots);
