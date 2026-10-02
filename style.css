@@ -4123,3 +4123,76 @@ button {
 .recent-addition-name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; font-weight: 700; line-height: 1.5; }
 .spot-added-date { margin: 0 0 5px; font-size: 12px; color: #66545e; }
 .new-badge { display: inline-block; border-radius: 5px; padding: 2px 5px; background: #9b365b; color: white; font-size: 10px; font-weight: 700; }
+
+/* Homepage prototype: prioritise search, the chosen view, and visit details. */
+.home-map .map-content[hidden],
+.home-map .spot-list-panel[hidden],
+.home-map .spot-detail-panel[hidden] { display: none; }
+.home-map .map-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+.home-map .map-toolbar-left { grid-column: 1 / -1; min-width: 0; gap: 8px; }
+.home-map .view-switch { order: -3; padding: 3px; border-radius: 12px; background: #f1efff; }
+.home-map .view-switch-button { min-height: 44px; min-width: 90px; box-shadow: none; }
+.home-map .view-switch-button.is-active { color: #fff; border-color: #6457ce; background: #6457ce; }
+.home-map #filter-toggle { order: -2; }
+.home-map #location-button { order: -1; }
+.home-map .map-extra-actions { display: flex; flex-basis: 100%; min-width: 0; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.home-map .map-extra-actions > * { flex-shrink: 0; }
+.home-map .map-legend { grid-column: 1; grid-row: 2; flex-wrap: wrap; }
+.home-map .result-count { grid-column: 2; grid-row: 2; font-size: 13px; }
+.home-map .site-notice summary { min-height: 44px; padding: 12px 0; cursor: pointer; font-size: 13px; }
+.home-map .site-notice-inner { display: block; padding-block: 0; }
+.home-map .notice-more { margin-left: 8px; color: #71561f; }
+.home-map .site-notice p { padding-bottom: 12px; font-size: 13px; }
+.home-map .site-notice summary:focus-visible { outline: 3px solid #6457ce; outline-offset: 2px; }
+.home-map .brand-selection-status { margin: 0 0 8px; color: #554b61; font-size: 13px; font-weight: 700; }
+.home-map .spot-detail-actions { gap: 8px; }
+.home-map .spot-detail-actions > * { min-height: 44px; font-size: 13px; }
+.home-map .spot-description, .home-map .spot-address { font-size: 14px; line-height: 1.7; }
+.home-map .spot-detail-body a { font-size: 13px; }
+.home-map .spot-list-card h3 { font-size: 16px; }
+.home-map .spot-list-card-meta, .home-map .spot-list-header p { font-size: 12px; }
+.home-map .spot-list-address, .home-map .spot-list-hours, .home-map .spot-list-distance { font-size: 13px; line-height: 1.6; }
+.home-map .spot-list-tool-button, .home-map .spot-list-open-button { font-size: 12px; }
+.home-map .recent-additions { padding: 9px 12px; }
+.home-map .recent-additions-note { margin: 3px 0 5px; }
+.home-map .recent-additions-list li { flex-basis: 270px; }
+.home-map .recent-additions-list a { padding: 7px 9px; min-height: 64px; }
+.home-map .recent-addition-name { font-size: 14px; line-height: 1.4; }
+
+@media (max-width: 899px) {
+  .home-map .map-content.has-detail .spot-detail-panel { grid-row: 1; border-top: 0; border-bottom: 1px solid var(--line); }
+  .home-map .map-content.has-detail #map { height: 280px; }
+}
+@media (max-width: 650px) {
+  .home-map .site-header-inner { padding-block: 10px; }
+  .home-map .site-header h1 { margin-block: 5px; font-size: 20px; }
+  .home-map .site-description { margin-block: 5px 8px; font-size: 12px; }
+  .home-map .site-nav { display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; padding-bottom: 3px; }
+  .home-map .site-nav-link { flex: 0 0 auto; min-height: 44px; padding: 8px 10px; font-size: 12px; }
+  .home-map .site-notice summary { font-size: 12px; }
+  .home-map .notice-more { font-size: 11px; }
+  .home-map #spot-search { font-size: 16px; }
+  .home-map #prefecture-filter { font-size: 14px; }
+  .home-map .map-search-bar { grid-template-columns: minmax(0, 1fr) 95px; }
+  .home-map .prefecture-filter-wrap { position: relative; }
+  .home-map .prefecture-filter-wrap label { position: absolute; z-index: 1; top: -7px; left: 7px; padding: 0 4px; background: #fff; font-size: 11px; }
+  .home-map .map-toolbar-left { gap: 6px; }
+  .home-map .toolbar-button { padding-inline: 8px; font-size: 13px; }
+  .home-map .view-switch { gap: 3px; }
+  .home-map .view-switch-button { min-width: 66px; padding-inline: 7px; }
+  .home-map .map-legend { justify-content: flex-start; gap: 6px; }
+  .home-map .legend-item { font-size: 10px; }
+  .home-map .date-discovery { gap: 6px; padding: 9px; }
+  .home-map .date-discovery-copy { display: block; }
+  .home-map .date-discovery-kicker { display: none; }
+  .home-map .date-discovery-copy strong { font-size: 13px; }
+  .home-map .date-discovery-copy > span:last-child { display: none; }
+  .home-map .date-discovery-actions { display: flex; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
+  .home-map .date-discovery-actions > * { flex: 0 0 auto; width: auto; }
+  .home-map .date-discovery-note { font-size: 11px; }
+  .home-map .recent-additions-heading h2 { font-size: 14px; }
+  .home-map .recent-additions-heading > span { font-size: 11px; }
+  .home-map .recent-additions-note { font-size: 11px; }
+  .home-map .spot-list-panel { padding: 12px; }
+  .home-map .spot-list-card-header { flex-direction: column; gap: 8px; }
+}

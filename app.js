@@ -4971,6 +4971,15 @@ async function shareSpot(
 }
 
 
+function focusActiveViewOnMobile() {
+  if (!window.matchMedia("(max-width: 899px)").matches) return;
+  const target = currentViewMode === "list" ? spotListPanel : map.getContainer();
+  requestAnimationFrame(() => {
+    target?.focus({ preventScroll: true });
+    target?.scrollIntoView({ block: "start", behavior: "auto" });
+  });
+}
+
 function setViewMode(
   mode
 ) {
@@ -5374,7 +5383,6 @@ function createSpotListCard(
       setViewMode(
         "map"
       );
-
       requestAnimationFrame(
         () => {
           requestAnimationFrame(
@@ -8564,6 +8572,18 @@ function renderFilterFeedback(
   visibleCount
 ) {
 
+  const brandInputs = Array.from(document.querySelectorAll('input[name="filter-brand"]'));
+  const selectedBrands = brandInputs.filter(input => input.checked).length;
+  const brandStatus = document.getElementById("brand-selection-status");
+  if (brandStatus) {
+    const summary = selectedBrands === brandInputs.length
+      ? "すべてのシリーズを表示（絞り込みなし）"
+      : selectedBrands === 0
+        ? "シリーズが未選択のため、表示は0件です"
+        : `${brandInputs.length}シリーズ中${selectedBrands}シリーズを表示`;
+    if (brandStatus.textContent !== summary) brandStatus.textContent = summary;
+  }
+
   const descriptions =
     getActiveFilterDescriptions();
 
@@ -9816,7 +9836,8 @@ prefectureFilter
         prefectureFilter.value;
 
       updateSpotFilters();
-      renderSearchSuggestions();
+      if (document.activeElement === spotSearch) renderSearchSuggestions();
+      else hideSearchSuggestions();
       focusMapOnPrefecture(
         prefecture
       );
@@ -9865,6 +9886,7 @@ mapViewButton
       setViewMode(
         "map"
       );
+      focusActiveViewOnMobile();
     }
   );
 
@@ -9880,6 +9902,7 @@ listViewButton
         "list"
       );
       updateSpotFilters();
+      focusActiveViewOnMobile();
     }
   );
 

@@ -69,7 +69,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20261001-1"
+    href="style.css?v=20261002-ui-prototype-1"
   >
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
@@ -77,7 +77,7 @@
 </head>
 
 
-<body>
+<body class="home-map">
 
   <a class="skip-link" href="#main-content">本文へ移動</a>
 
@@ -104,8 +104,7 @@
       </h1>
 
       <p class="site-description">
-        ちいかわ公式関連、ナガノ先生の紹介・訪問先、
-        ファン発の聖地をまとめています。
+        公式・ナガセン・ファン発のスポットを探せます。
       </p>
 
       <nav class="site-nav" aria-label="サイト内メニュー">
@@ -152,23 +151,10 @@
   <!-- NOTICE -->
 
   <div class="site-notice">
-
-    <div class="site-notice-inner">
-
-      <span
-        class="notice-icon"
-        aria-hidden="true"
-      >
-        ⚠
-      </span>
-
+    <details class="site-notice-inner">
+      <summary>非公式まとめ · <span id="data-as-of">2026年10月2日</span>時点 <span class="notice-more">掲載情報のご注意</span></summary>
       <p>
-        <strong>
-          掲載情報は
-          <span id="data-as-of">2026年10月2日</span>
-          時点です。
-        </strong>
-
+        ちいかわ公式関連、ナガノ先生の紹介・訪問先、ファン発の聖地をまとめています。
         ちい活MAPは、ファンが個人で運営する非公式サイトです。
         公式各社とは関係ありません。
         営業時間・入場方法・開催状況などは変更される場合があるため、
@@ -182,11 +168,8 @@
           掲載内容について連絡 ↗
         </a>
       </p>
-
-    </div>
-
+    </details>
   </div>
-
 
   <!-- PAGE -->
 
@@ -197,7 +180,7 @@
         <h2 id="recent-additions-title">最近追加した情報</h2>
         <span id="recent-additions-count"></span>
       </div>
-      <p class="recent-additions-note">追加から14日間のNEW情報 · 日付はサイトへの追加日です</p>
+      <p class="recent-additions-note">NEWは追加から14日間 · 開催日とは異なります</p>
       <ul id="recent-additions-list" class="recent-additions-list"></ul>
     </section>
 
@@ -308,6 +291,7 @@
           </div>
 
 
+          <div class="map-extra-actions" role="group" aria-label="保存・共有・使い方">
           <button
             type="button"
             class="toolbar-button favorite-filter-button"
@@ -397,6 +381,13 @@
           </button>
 
 
+          </div>
+
+
+
+        </div>
+
+
           <span
             id="result-count"
             class="result-count"
@@ -406,9 +397,6 @@
           >
             読み込み中…
           </span>
-
-        </div>
-
 
         <div
           class="map-legend"
@@ -787,12 +775,15 @@
                   シリーズ・施設
                 </legend>
 
+                <p id="brand-selection-status" class="brand-selection-status" role="status" aria-live="polite"></p>
+
                 <p class="filter-hint">
-                  ちいかわらんどなど、特定のショップ・施設だけを探したいときに使います。
+                  チェックしたシリーズを表示します。すべてONは絞り込みなし、すべてOFFは表示なしです。
                 </p>
 
                 <div
                   id="brand-filter-list"
+                  aria-describedby="brand-selection-status"
                   class="filter-chip-list"
                 ></div>
 
@@ -1628,6 +1619,7 @@
 
       <section
         id="spot-list-panel"
+        tabindex="-1"
         class="spot-list-panel"
         aria-label="スポット一覧"
         hidden
@@ -1713,7 +1705,7 @@
 
 
   <script src="recent-utils.js?v=20261001-1"></script>
-  <script src="app.js?v=20261002-listings-1"></script>
+  <script src="app.js?v=20261002-ui-prototype-1"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 
 </body>
