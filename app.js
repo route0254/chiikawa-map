@@ -1142,6 +1142,17 @@ function isCancelledEvent(
 }
 
 
+// Visit suggestions exclude explicit historical places without inventing closure dates.
+// Keep period status unchanged so historical records remain searchable and shareable.
+function isSpotUnavailableForVisit(spot) {
+  const historicalName = /[（(](?:閉店(?:済み)?|営業終了|閉業|跡地)[）)]/.test(spot.name || "");
+  const historicalHours = /^(?:\d{4}年\d{1,2}月\d{1,2}日)?(?:閉店(?:済み)?|営業終了|閉業|跡地)$/.test(
+    (spot.hoursText || "").trim()
+  );
+  return historicalName || historicalHours || isCancelledEvent(spot) ||
+    getSpotPeriodStatus(spot) === "ended";
+}
+
 function addDaysToDateString(
   dateString,
   days
@@ -1266,6 +1277,10 @@ function spotMatchesDateQuickMode(
 
   if (!mode) {
     return true;
+  }
+
+  if (isSpotUnavailableForVisit(spot)) {
+    return false;
   }
 
   const today =
@@ -6426,9 +6441,7 @@ function getNearbySpotRecords(
     .filter(
       record =>
         record.spot.id !== spot.id &&
-        getSpotPeriodStatus(
-          record.spot
-        ) !== "ended"
+        !isSpotUnavailableForVisit(record.spot)
     )
     .map(
       record => ({
@@ -6482,7 +6495,7 @@ function createNearbySpotsCard(
   card.appendChild(
     createDiv(
       "spot-nearby-note",
-      "終了済みを除き、直線距離が近い順に5件表示しています。"
+      "閉店・終了済み・開催中止を除き、直線距離が近い順に5件表示しています。"
     )
   );
 

@@ -4142,3 +4142,31 @@ test(
     );
   }
 );
+
+test("closed Midtown shop remains historical but is excluded from today and nearby suggestions", async ({ page }) => {
+  await page.clock.setFixedTime(new Date("2026-10-02T03:00:00Z"));
+  await page.goto("/");
+  await expect(page.locator("#result-count")).toHaveText(/^\d+件表示$/);
+  await page.locator("#spot-search").fill("RECIPE & MARKET");
+  await page.locator("#spot-search").blur();
+  await expect(page.locator("#spot-search")).toHaveValue("RECIPE & MARKET");
+  await page.locator("#recent-additions-title").click();
+  await page.locator("#list-view-button").click();
+  await expect(page.locator(".spot-list-card h3", { hasText: "RECIPE & MARKET 東京ミッドタウン店" })).toHaveCount(1);
+  await page.getByRole("button", { name: "今日の候補", exact: true }).click();
+  await expect(page.locator(".spot-list-card h3", { hasText: "RECIPE & MARKET 東京ミッドタウン店" })).toHaveCount(0);
+  await page.locator("#spot-list-panel").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/closed-today-desktop.png" });
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
+  await page.locator("#spot-list-panel").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/closed-today-mobile.png" });
+  await page.goto("/?spot=chiikawaland-harajuku");
+  await expect(page.locator(".spot-detail-title")).toContainText("原宿");
+  await expect(page.locator(".spot-nearby-card")).toBeVisible();
+  await expect(page.locator(".spot-nearby-card")).not.toContainText("東京ミッドタウン店");
+  await page.locator(".spot-nearby-card").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "test-results/closed-nearby-mobile.png" });
+  await page.goto("/?spot=nagano-recipe-market-midtown");
+  await expect(page.locator(".spot-detail-title")).toContainText("東京ミッドタウン店（営業終了）");
+});
