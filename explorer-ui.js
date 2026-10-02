@@ -8,6 +8,7 @@ let explorerPreviewRecord = null;
 let explorerSheetHistoryActive = false;
 let explorerPendingClose = null;
 let explorerSelectionRequest = 0;
+const explorerWordSegmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ja',{granularity:'word'}):null;
 
 function explorerIcon(name) {
   const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
@@ -64,7 +65,13 @@ function finishExplorerCandidate(card,record,openButton) {
   const timing=card.querySelector('.spot-list-timing');
   if(timing){timing.textContent=timing.textContent.replace(/^[^\p{L}\p{N}]+/u,'').replace('本日終了','本日まで');period.append(timing);}else if(spot.periodType!=='permanent')period.append(createDiv('explorer-period-state',getPeriodStatusLabel(getSpotPeriodStatus(spot))));
   card.querySelector('.explorer-classification').textContent=explorerCategory(spot);
-  const heading=card.querySelector('h3');openButton.replaceChildren(explorerIcon('bookmark'),document.createTextNode(spot.name));heading.replaceChildren(openButton);
+  const name=document.createElement('span');name.className='explorer-candidate-name';
+  const words=explorerWordSegmenter?explorerWordSegmenter.segment(spot.name):[{segment:spot.name,isWordLike:true}];
+  for(const word of words) {
+    if(word.isWordLike){const part=document.createElement('span');part.className='explorer-name-part';part.textContent=word.segment;name.append(part);}
+    else name.append(document.createTextNode(word.segment));
+  }
+  const heading=card.querySelector('h3');openButton.replaceChildren(explorerIcon('bookmark'),name);heading.replaceChildren(openButton);
   meta.before(period);
   const summary=createDiv('explorer-candidate-summary');meta.after(summary);summary.append(meta);
   const entryLabel=spot.defaultEntryType==='normal'?'予約：'+getReservationLabel(spot.reservationType):'入場：'+getDefaultEntryLabel(spot.defaultEntryType)+' · 予約：'+getReservationLabel(spot.reservationType);

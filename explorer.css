@@ -196,6 +196,9 @@
 .home-map.explorer .explorer-save, .home-map.explorer .explorer-visited { line-height:1.43; }
 .home-map.explorer .preview-place, .home-map.explorer .preview-period, .home-map.explorer .preview-category { font-size:13px; line-height:1.6; }
 .home-map.explorer .preview-actions button { font-size:14px; line-height:1.43; }
+.home-map.explorer .explorer-candidate-name { flex:1; min-width:0; }
+.home-map.explorer .explorer-name-part { display:inline-block; width:max-content; max-width:100%; overflow-wrap:anywhere; vertical-align:top; }
+.home-map.explorer #active-filter-reset[hidden] { display:none; }
 .home-map.explorer .spot-name-label.is-selected-label::before { display:none; }
 .home-map.explorer .explorer-visit-facts { margin:10px 0; font-size:14px; line-height:22px; }
 .home-map.explorer .explorer-visit-fact { display:flex; align-items:flex-start; gap:6px; margin:6px 0; }

@@ -345,3 +345,18 @@ test("actual search selection retains geographic context and a connected selecte
   await expect(page.locator('.spot-marker.is-selected')).toHaveCount(1);
   await expect(page.locator('.explorer-selection-leader line')).toHaveCount(1);
 });
+
+test("Saga Yamato wraps in words and zero candidates offer one reset action", async ({page}) => {
+  await page.setViewportSize({width:1440,height:1000});await page.goto('/');await expect(page.locator('.spot-list-card').first()).toBeVisible();
+  const title=page.locator('.spot-list-card').filter({hasText:'イオンモール佐賀大和'}).first().locator('.explorer-candidate-name');
+  await expect(title).toHaveText('ちいかわPOP UP STORE イオンモール佐賀大和');
+  const lines=await title.evaluate(el=>{
+    const text=[...el.querySelectorAll('.explorer-name-part')].find(part=>part.textContent.includes('大和')).firstChild;
+    const index=text.textContent.indexOf('大和');const range=document.createRange();range.setStart(text,index);range.setEnd(text,index+2);
+    return [...range.getClientRects()].map(rect=>Math.round(rect.top));
+  });expect(new Set(lines).size).toBe(1);
+  await page.locator('#spot-search').fill('候補のない検索zzzz');await page.locator('h1').click();
+  await expect(page.locator('#no-results-reset')).toBeVisible();await expect(page.locator('#active-filter-reset')).toBeHidden();
+  await expect(page.locator('#no-results-reset')).toHaveText('絞り込みをリセット');await page.locator('#no-results-reset').click();
+  await expect(page.locator('#spot-search')).toHaveValue('');await expect(page.locator('#no-results')).toBeHidden();await expect(page.locator('#spot-search')).toBeFocused();
+});

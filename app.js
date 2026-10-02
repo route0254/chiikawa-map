@@ -8629,6 +8629,7 @@ function renderFilterFeedback(
       visibleCount !== 0 ||
       spotRecords.length === 0;
   }
+  if(activeFilterReset)activeFilterReset.hidden=visibleCount===0 && spotRecords.length>0;
 }
 
 
