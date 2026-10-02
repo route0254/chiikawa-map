@@ -4143,6 +4143,31 @@ test(
   }
 );
 
+test("unopened Osaka permanent store remains searchable but is excluded from today and nearby until opening", async ({ page }) => {
+  await page.clock.setFixedTime(new Date("2026-10-02T03:00:00Z"));
+  await page.goto("/");
+  await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
+  await page.locator("#spot-search").fill("ちいかわパークストア 大阪");
+  await page.locator("#spot-search").blur();
+  await page.locator("#recent-additions-title").click();
+  await page.locator("#list-view-button").click();
+  await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(1);
+  await page.getByRole("button", { name: "今日の候補", exact: true }).click();
+  await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(0);
+  await page.goto("/?spot=chiikawaland-osaka-umeda");
+  await expect(page.locator(".spot-nearby-card")).toBeVisible();
+  await expect(page.locator(".spot-nearby-card")).not.toContainText("ちいかわパークストア 大阪");
+  await expect(page.locator(".spot-nearby-card")).not.toContainText("ナガノマーケット UMEDA");
+  await page.clock.setFixedTime(new Date("2026-11-24T03:00:00Z"));
+  await page.goto("/");
+  await page.locator("#spot-search").fill("ちいかわパークストア 大阪");
+  await page.locator("#spot-search").blur();
+  await page.locator("h1").first().click();
+  await page.locator("#list-view-button").click();
+  await page.getByRole("button", { name: "今日の候補", exact: true }).click();
+  await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(1);
+});
+
 test("closed Midtown shop remains historical but is excluded from today and nearby suggestions", async ({ page }) => {
   await page.clock.setFixedTime(new Date("2026-10-02T03:00:00Z"));
   await page.goto("/");

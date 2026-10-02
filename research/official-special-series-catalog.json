@@ -33,10 +33,12 @@
     {
       "key": "chiikawa-park-store-osaka",
       "label": "ちいかわパークストア 大阪",
-      "status": "hold",
-      "reason": "LUCUA SOUTHに2026年11月開店予定。具体的な開店日が未発表のため、日付を推測せず続報待ち。",
+      "status": "excluded",
+      "reason": "2026年11月24日開業予定と施設公式発表で確認済み。常設店舗としてdata/official-spots.jsonのchiikawa-park-store-osakaに掲載し、終了日を必須とする期間限定イベント原本の対象外とする。",
       "sourceUrls": [
-        "https://chiikawapark-tokyo.jp/news/hsmicx_vflth/"
+        "https://chiikawapark-tokyo.jp/news/hsmicx_vflth/",
+        "https://www.lucua.jp/special/south-open/",
+        "https://prtimes.jp/main/html/rd/p/000000247.000014414.html"
       ]
     },
     {
@@ -266,7 +268,10 @@
       "sourceUrls": [
         "https://zama.aeonmall.jp/event/2695bc95-337a-47f4-8605-543b2942915a",
         "https://kawaguchi.aeonmall.jp/event/522195ab-0a44-4907-98d2-62fda7ca6294",
-        "https://tokushima.aeonmall.jp/event/4de7b78d-c270-4278-abee-efe71dcb24c1"
+        "https://tokushima.aeonmall.jp/event/4de7b78d-c270-4278-abee-efe71dcb24c1",
+        "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+        "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f",
+        "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f"
       ]
     },
     {
