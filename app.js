@@ -4930,6 +4930,10 @@ async function shareSpot(
 
 
 function focusActiveViewOnMobile() {
+  if (isWideExplorer()) {
+    (currentViewMode === "list" ? spotListPanel : map.getContainer())?.focus({preventScroll:true});
+    return;
+  }
   if (!window.matchMedia("(max-width: 899px)").matches) return;
   const target = currentViewMode === "list" ? spotListPanel : map.getContainer();
   requestAnimationFrame(() => {
@@ -4956,14 +4960,14 @@ function setViewMode(
     mapContent
   ) {
     mapContent.hidden =
-      listMode;
+      listMode && !isWideExplorer();
   }
 
   if (
     spotListPanel
   ) {
     spotListPanel.hidden =
-      !listMode;
+      !listMode && !isWideExplorer();
   }
 
   mapViewButton?.classList.toggle(
@@ -4990,7 +4994,7 @@ function setViewMode(
     !listMode
   ) {
 
-    spotList?.replaceChildren();
+    if (!document.body.classList.contains("explorer")) spotList?.replaceChildren();
 
     requestAnimationFrame(
       () => {
@@ -5018,6 +5022,7 @@ function createSpotListCard(
 
   card.className =
     "spot-list-card";
+  card.dataset.spotId = spot.id;
 
   if (
     isFavoriteSpot(spot)
@@ -5237,9 +5242,10 @@ function createSpotListCard(
     headingWrap
   );
 
-  header.appendChild(
-    headerActions
-  );
+  const more = document.createElement("details");
+  more.className="candidate-tools";
+  const moreSummary=document.createElement("summary"); moreSummary.textContent="その他の操作";
+  more.append(moreSummary,headerActions);
 
   card.appendChild(
     header
@@ -5332,7 +5338,7 @@ function createSpotListCard(
     "spot-list-open-button";
 
   openButton.textContent =
-    "地図で詳細を見る →";
+    "訪問情報の詳細を見る →";
 
   openButton.addEventListener(
     "click",
@@ -5349,7 +5355,7 @@ function createSpotListCard(
                 record,
                 {
                   returnFocusTo:
-                    mapViewButton
+                    openButton
                 }
               );
             }
@@ -5359,9 +5365,19 @@ function createSpotListCard(
     }
   );
 
-  card.appendChild(
-    openButton
-  );
+  const footer=createDiv("candidate-footer");
+  footer.append(favoriteButton,more);
+  favoriteButton.textContent=isFavoriteSpot(spot) ? "栞 保存済み" : "栞 保存";
+  card.append(footer,openButton);
+  card.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));
+  const period=createDiv("explorer-period", spot.periodType === "permanent" ? "常設" : `${formatDate(spot.startDate)}〜${formatDate(spot.endDate)}`);
+  period.append(document.createTextNode(" · 入場：" + getReservationLabel(spot.reservationType)));
+  footer.before(period);
+  card.dataset.sourceClass=spot.category === "nagano" ? "nagano-" + getEvidenceLevel(spot) : spot.category;
+  if(isVisitedSpot(spot)) {
+    const visit=visitDetailsBySpotId[spot.id];
+    footer.before(createDiv("explorer-visit-stamp", visit?.visitedAt ? formatDate(visit.visitedAt) + " 訪問" : "行った"));
+  }
 
   return card;
 }
@@ -5379,6 +5395,7 @@ function renderSpotList(
     return;
   }
 
+  const priorScroll = spotListPanel.scrollTop;
   spotList.replaceChildren();
 
   if (
@@ -5447,6 +5464,8 @@ function renderSpotList(
       );
     }
   );
+  spotListPanel.scrollTop=priorScroll;
+  syncExplorerSelection();
 }
 
 
@@ -7420,11 +7439,14 @@ function createSpotDetail(
   const addedLabel = container.querySelector(".spot-added-date");
   const factTitle = container.querySelector(".spot-detail-title");
   let anchor = addedLabel || factTitle;
-  for (const selector of [".spot-address", ".spot-period", ".spot-hours-card", ".spot-entry-card"]) {
+  for (const selector of [".spot-period", ".spot-address", ".spot-entry-card"]) {
     const fact = container.querySelector(selector);
     if (fact && anchor) { anchor.after(fact); anchor = fact; }
   }
   if (anchor) anchor.after(actionDisclosure);
+  const hoursFact=container.querySelector(".spot-hours-card");
+  if(hoursFact) actionDisclosure.after(hoursFact);
+  container.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));
   const samePlace = createSamePlaceCard(spot);
   if (samePlace) actionDisclosure.after(samePlace);
 
@@ -7439,6 +7461,7 @@ function showSpotDetail(
   options = {}
 ) {
 
+  if (document.body.classList.contains("explorer")) prepareExplorerDetail(record);
   const returnFocusCandidate =
     options.returnFocusTo ||
     document.activeElement;
@@ -7516,6 +7539,7 @@ function showSpotDetail(
 
   if (
     options.scrollOnMobile &&
+    !document.body.classList.contains("explorer") &&
     window.matchMedia(
       "(max-width: 899px)"
     ).matches
@@ -7552,6 +7576,7 @@ function showSpotDetail(
 function closeSpotDetail(
   options = {}
 ) {
+  if (document.body.classList.contains("explorer")) { closeExplorerDetail(options); return; }
 
   const returnFocusElement =
     detailReturnFocusElement;
@@ -8012,15 +8037,7 @@ function createSpotRecord(
     "click",
     () => {
 
-      showSpotDetail(
-        record,
-        {
-          scrollOnMobile:
-            true,
-          returnFocusTo:
-            marker.getElement()
-        }
-      );
+      openSpotPreview(record);
 
     }
   );
@@ -8702,8 +8719,7 @@ function updateSpotFilters() {
     visibleRecords;
 
   if (
-    currentViewMode ===
-    "list"
+    (currentViewMode === "list" || isWideExplorer() || spotList.childElementCount > 0)
   ) {
     renderSpotList(
       getListRecords(
@@ -8737,7 +8753,8 @@ function getOpenDialogPanel() {
     filterPanel,
     savedDataPanel,
     officialHelpPanel,
-    naganoHelpPanel
+    naganoHelpPanel,
+    document.body.classList.contains("explorer") && !isWideExplorer() ? detailPanel : null
   ].find(
     panel =>
       panel &&
@@ -10421,7 +10438,7 @@ if (appScriptUrl) {
 // Dismiss optional menus when returning to the main map controls.
 document.addEventListener("pointerdown", event => {
   if (getOpenDialogPanel()) return;
-  for (const menu of document.querySelectorAll(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open]")) {
+  for (const menu of document.querySelectorAll(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open], .explorer-dates[open], .explorer-sort[open]")) {
     if (!menu.contains(event.target)) menu.open = false;
   }
 });

@@ -1,0 +1,131 @@
+/* Unpublished structural exploration: milk paper, sky map, a bookmark for saved places. */
+.home-map.explorer { --text:#263B46; --muted:#60717a; --line:#d8e5e9; --selection:#17607C; background:#FFFDF7; color:var(--text); }
+.home-map.explorer .site-header { height:56px; background:#FFFDF7; border-bottom:1px solid var(--line); }
+.home-map.explorer .site-header-inner { max-width:none; height:56px; padding:0 16px; gap:14px; }
+.home-map.explorer .site-description { display:none; }
+.home-map.explorer .site-header h1 { font-size:21px; color:#263B46; }
+.home-map.explorer .recent-additions { margin:0 auto 0 0; padding:0; border:0; background:none; min-width:0; max-width:440px; }
+.home-map.explorer .recent-additions-strip { grid-template-columns:minmax(0,1fr) auto; gap:8px; }
+.home-map.explorer .recent-additions-details summary { background:#EAF5FA; border-radius:8px; }
+.home-map.explorer .recent-additions-expanded { top:48px; min-width:300px; }
+.home-map.explorer .map-tools-menu { margin-left:auto; }
+.home-map.explorer .map-tools-menu summary { font-size:12px; white-space:nowrap; border-radius:8px; color:#17607C; }
+.home-map.explorer .map-extra-actions { position:absolute; top:48px; width:min(420px,calc(100vw - 24px)); max-height:calc(100dvh - 70px); overflow-y:auto; background:#FFFDF7; z-index:2000; }
+.home-map.explorer .map-extra-actions .site-nav { position:static; width:auto; padding:0; box-shadow:none; }
+.home-map.explorer .map-extra-actions > .site-nav, .home-map.explorer .map-extra-actions > .site-notice, .home-map.explorer .map-extra-actions > .map-legend, .home-map.explorer .map-extra-actions > .home-screen-card, .home-map.explorer .map-extra-actions > .site-note { grid-column:1/-1; margin:0; }
+.home-map.explorer .map-extra-actions .site-notice summary { white-space:normal; }
+.home-map.explorer .page-shell { width:100%; max-width:none; margin:0; padding:0; }
+.home-map.explorer .map-card { display:grid; grid-template-columns:368px minmax(0,1fr); height:calc(100dvh - 56px); border:0; border-radius:0; box-shadow:none; overflow:hidden; background:#FFFDF7; }
+.home-map.explorer .explorer-sidebar { display:flex; flex-direction:column; min-height:0; min-width:0; border-right:1px solid var(--line); }
+.home-map.explorer .map-search-bar { flex-shrink:0; padding:12px; gap:8px; background:#FFFDF7; grid-template-columns:minmax(0,1fr) 104px; }
+.home-map.explorer .spot-search-field { border-radius:8px; box-shadow:none; background:#fff; }
+.home-map.explorer #spot-search { font-size:14px; }
+.home-map.explorer #prefecture-filter { border-radius:8px; }
+.home-map.explorer .map-toolbar { display:flex; align-items:center; flex-shrink:0; padding:6px 12px; position:relative; border-bottom:1px solid var(--line); }
+.home-map.explorer .map-toolbar-left { flex:1; gap:6px; }
+.home-map.explorer .toolbar-button, .home-map.explorer .explorer-dates summary { border-radius:8px; box-shadow:none; color:#17607C; background:#fff; }
+.home-map.explorer .view-switch { display:flex; background:#EAF5FA; }
+.home-map.explorer .view-switch-button { min-width:48px; }
+.home-map.explorer .view-switch-button.is-active { background:#17607C; border-color:#17607C; color:#fff; }
+.home-map.explorer .map-toolbar-left { flex-wrap:wrap; }
+.home-map.explorer #filter-toggle { min-width:44px; }
+.home-map.explorer .result-count { margin-left:auto; white-space:nowrap; font-size:11px; }
+.home-map.explorer .explorer-dates { position:static; }
+.home-map.explorer .explorer-dates summary { min-height:44px; display:flex; align-items:center; padding:8px 10px; border:1px solid var(--line); cursor:pointer; font-size:12px; font-weight:700; white-space:nowrap; }
+.home-map.explorer .explorer-dates .date-discovery { position:absolute; top:100%; left:12px; right:12px; width:auto; padding:10px; border:1px solid var(--line); border-radius:10px; background:#FFFDF7; box-shadow:0 8px 30px #263b4624; z-index:1600; }
+.home-map.explorer .date-discovery-help summary { color:#17607C; }
+.home-map.explorer .spot-list-panel { flex:1; min-height:0; overflow:auto; padding:12px; background:#FFFDF7; }
+.home-map.explorer .spot-list { grid-template-columns:minmax(0,1fr); gap:0; }
+.home-map.explorer .spot-list-header { align-items:center; margin-bottom:12px; }
+.home-map.explorer .spot-list-kicker { display:none; }
+.home-map.explorer .spot-list-header h2 { font-size:17px; }
+.home-map.explorer .explorer-sort { position:relative; }
+.home-map.explorer .explorer-sort summary { min-height:44px; display:flex; align-items:center; font-size:12px; padding:8px; border:1px solid var(--line); border-radius:8px; cursor:pointer; }
+.home-map.explorer .explorer-sort .spot-list-tools { position:absolute; top:100%; right:0; width:270px; display:grid; grid-template-columns:1fr 1fr; padding:10px; border:1px solid var(--line); background:#FFFDF7; z-index:1100; }
+.home-map.explorer .spot-list-card { padding:16px 8px; border:0; border-bottom:1px solid var(--line); border-radius:0; box-shadow:none; background:transparent; }
+.home-map.explorer .spot-list-card.is-selected-candidate { background:#EAF5FA; box-shadow:inset 3px 0 #17607C; }
+.home-map.explorer .spot-list-card-header { display:block; }
+.home-map.explorer .spot-list-card h3 { font-size:16px; line-height:1.6; color:#263B46; }
+.home-map.explorer .explorer-classification { margin-bottom:6px; font-size:11px; font-weight:700; }
+.home-map.explorer .spot-list-card-meta { margin-top:4px; }
+.home-map.explorer .spot-list-address, .home-map.explorer .explorer-period { font-size:12px; line-height:1.6; margin-top:8px; }
+.home-map.explorer .candidate-footer { display:flex; gap:8px; align-items:center; margin-top:12px; }
+.home-map.explorer .spot-list-favorite-button { width:auto; min-height:44px; padding:8px 12px; border-radius:4px; border:1px solid #d2b943; color:#263B46; background:#FFFDF7; font-size:12px; }
+.home-map.explorer .spot-list-favorite-button.is-active { background:#F4D86A; }
+.home-map.explorer .candidate-tools summary { min-height:44px; display:flex; align-items:center; padding:8px; font-size:12px; cursor:pointer; }
+.home-map.explorer .candidate-tools .spot-list-card-actions { display:flex; gap:6px; padding-block:6px; }
+.home-map.explorer .spot-list-open-button { width:auto; margin-top:6px; padding-inline:0; border:0; border-radius:4px; background:transparent; color:#17607C; font-size:12px; }
+.home-map.explorer { font-family:system-ui,"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif; }
+.home-map.explorer .site-header h1 { font-family:"Zen Maru Gothic",sans-serif; }
+.home-map.explorer .spot-detail-title { font-size:22px; line-height:1.6; }
+.home-map.explorer .spot-info-title, .home-map.explorer .spot-info-row, .home-map.explorer .spot-info-note { font-size:14px; line-height:1.6; }
+.home-map.explorer .cluster-mixed { background:#55707C; }
+.home-map.explorer .explorer-visit-stamp { display:inline-block; font-size:11px; border:1px solid #55707C; border-radius:50%; padding:6px; color:#55707C; }
+.home-map.explorer [data-source-class=official] .explorer-classification { color:#B74368; }
+.home-map.explorer [data-source-class=community] .explorer-classification { color:#6550A3; }
+.home-map.explorer [data-source-class=nagano-confirmed] .explorer-classification { color:#377361; }
+.home-map.explorer [data-source-class=nagano-high] .explorer-classification { color:#38685b; }
+.home-map.explorer [data-source-class=nagano-caution] .explorer-classification { color:#955B18; }
+.home-map.explorer .map-content { display:block; position:relative; min-width:0; height:100%; }
+.home-map.explorer #map-wrapper { height:100%; }
+.home-map.explorer #map, .home-map.explorer .map-content.has-detail #map { height:100%; border-radius:0; background:#EAF5FA; }
+.home-map.explorer .spot-detail-panel { position:absolute; top:12px; bottom:12px; right:12px; width:360px; max-width:calc(100% - 24px); padding:0; border:1px solid var(--line); border-radius:12px; overflow:auto; background:#FFFDF7; z-index:1200; box-shadow:0 8px 30px #263b4624; }
+.home-map.explorer .spot-detail-header { position:sticky; top:0; z-index:1; background:#FFFDF7; border-color:var(--line); }
+.home-map.explorer #detail-close { width:auto; min-height:44px; padding-inline:12px; border-radius:6px; font-size:12px; color:#17607C; background:#EAF5FA; }
+.home-map.explorer .spot-info-card { background:#fff; border-color:var(--line); border-radius:8px; }
+.home-map.explorer .spot-detail-action-menu summary { color:#17607C; background:#EAF5FA; }
+.home-map.explorer .spot-name-label.is-selected-label { border-color:#17607C; color:#263B46; }
+.home-map.explorer .overlay-panel { z-index:1800; }
+.home-map.explorer .active-filter-summary { flex-shrink:0; border-radius:0; margin:0; font-size:11px; }
+.home-map.explorer .spot-preview[hidden] { display:none; }
+.home-map.explorer .spot-preview { position:absolute; left:12px; right:12px; bottom:16px; z-index:1100; border:1px solid var(--line); border-radius:12px; padding:14px; background:#FFFDF7; box-shadow:0 8px 30px #263b4624; }
+.home-map.explorer .preview-close { position:absolute; right:8px; top:8px; width:44px; height:44px; border:0; border-radius:50%; background:#EAF5FA; font-size:22px; cursor:pointer; }
+.home-map.explorer .preview-category { padding-right:40px; color:#17607C; font-size:11px; font-weight:700; }
+.home-map.explorer .spot-preview h2 { margin:7px 35px 6px 0; font-size:16px; line-height:1.5; }
+.home-map.explorer .preview-place, .home-map.explorer .preview-period { font-size:12px; line-height:1.6; margin-block:4px; }
+.home-map.explorer .preview-actions { display:flex; gap:8px; margin-top:10px; }
+.home-map.explorer .preview-actions button { min-height:44px; border-radius:6px; padding:8px 12px; font:inherit; font-size:12px; font-weight:700; cursor:pointer; }
+.home-map.explorer .preview-open { flex:1; background:#17607C; color:#fff; border:1px solid #17607C; }
+.home-map.explorer .preview-save { background:#F4D86A; color:#263B46; border:1px solid #d2b943; }
+.home-map.explorer :focus-visible { outline:3px solid #17607C; outline-offset:2px; }
+@media(max-width:899px) {
+ .home-map.explorer .site-header-inner { padding-inline:12px; gap:8px; }
+ .home-map.explorer .site-header h1 { font-size:20px; }
+ .home-map.explorer .recent-additions { margin-left:auto; }
+ .home-map.explorer .recent-additions-latest { display:none; }
+ .home-map.explorer .recent-additions-strip { display:block; }
+ .home-map.explorer .recent-additions-details summary { font-size:11px; padding:6px 8px; white-space:nowrap; flex-wrap:nowrap; }
+ .home-map.explorer .recent-additions-expanded { position:fixed; top:56px; left:12px; right:12px; min-width:0; }
+ .home-map.explorer .map-tools-menu { margin:0; }
+ .home-map.explorer .map-extra-actions { right:0; }
+ .home-map.explorer .map-card { display:flex; flex-direction:column; height:calc(100dvh - 56px); }
+ .home-map.explorer .explorer-sidebar { display:contents; }
+ .home-map.explorer .map-search-bar { order:0; padding:6px 12px; }
+ .home-map.explorer #spot-search { font-size:16px; }
+ .home-map.explorer .map-toolbar { order:1; padding:4px 12px; }
+ .home-map.explorer .view-switch { display:flex; background:#EAF5FA; }
+ .home-map.explorer .view-switch-button { min-width:48px; }
+ .home-map.explorer .toolbar-button { white-space:nowrap; flex-shrink:0; }
+ .home-map.explorer .view-switch-button.is-active { background:#17607C; border-color:#17607C; color:#fff; }
+ .home-map.explorer #location-button { width:44px; }
+ .home-map.explorer .location-button-label { display:none; }
+ .home-map.explorer .map-toolbar-left { flex-wrap:nowrap; }
+ .home-map.explorer .map-content { order:3; flex:1; min-height:0; }
+ .home-map.explorer .spot-list-panel { order:3; flex:1; }
+ .home-map.explorer .active-filter-summary, .home-map.explorer .app-status, .home-map.explorer .no-results { order:2; }
+ .home-map.explorer .map-content.has-detail .spot-detail-panel { position:absolute; grid-row:auto; top:16px; bottom:0; left:0; right:0; width:100%; max-width:none; border-radius:16px 16px 0 0; }
+ .home-map.explorer .spot-detail-panel { top:16px; bottom:0; left:0; right:0; width:100%; max-width:none; border-radius:16px 16px 0 0; }
+}
+@media(min-width:900px) and (max-width:1279px) {
+ .home-map.explorer .spot-detail-panel { position:fixed; top:56px; bottom:0; left:0; right:auto; width:368px; max-width:none; border-radius:0; box-shadow:none; }
+ .home-map.explorer .explorer-sidebar[inert] { visibility:hidden; }
+}
+@media(max-width:359px) {
+ .home-map.explorer .map-toolbar-left { flex-wrap:wrap; }
+ .home-map.explorer .result-count { display:none; }
+}
+.home-map.explorer .map-content[hidden], .home-map.explorer .spot-list-panel[hidden], .home-map.explorer .spot-detail-panel[hidden], .home-map.explorer .spot-preview[hidden] { display:none; }
+.home-map.explorer .spot-preview { margin-bottom:env(safe-area-inset-bottom); }
+.home-map.explorer .spot-detail-body { padding-bottom:calc(16px + env(safe-area-inset-bottom)); }
+.home-map.explorer .spot-detail-panel { max-height:none; }
+@media(prefers-reduced-motion:reduce) { .home-map.explorer * { scroll-behavior:auto !important; transition:none !important; } }
