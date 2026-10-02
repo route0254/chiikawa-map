@@ -1233,7 +1233,7 @@ function doesSpotOverlapDateRange(
     spot.periodType ===
     "permanent"
   ) {
-    return true;
+    return !spot.startDate || spot.startDate <= rangeEnd;
   }
 
   if (
@@ -6441,7 +6441,9 @@ function getNearbySpotRecords(
     .filter(
       record =>
         record.spot.id !== spot.id &&
-        !isSpotUnavailableForVisit(record.spot)
+        !isSpotUnavailableForVisit(record.spot) &&
+        !(record.spot.periodType === "permanent" &&
+          record.spot.startDate > getTodayInJapan())
     )
     .map(
       record => ({
