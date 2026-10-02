@@ -95,3 +95,33 @@ test("mobile detail appears before the map and its close action restores map vie
   await expect(page.locator("#spot-detail-panel")).toBeHidden();
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
 });
+
+test("overview uses counts, selected labels stay inside the map and detailed labels do not collide", async ({ page }) => {
+  await page.setViewportSize({ width:390, height:844 });
+  await page.goto("/");
+  await expect(page.locator(".cluster-count").first()).toBeVisible();
+  await expect(page.locator(".cluster-name-list")).toHaveCount(0);
+  await expect(page.locator(".spot-name-label.is-readable")).toHaveCount(0);
+  const select=await page.locator("#prefecture-filter").boundingBox();
+  expect(select.x+select.width).toBeLessThanOrEqual(380);
+  for(const selector of [".map-tools-menu summary", ".date-discovery-help summary"]) {
+    const lines=await page.locator(selector).evaluate(el=>({height:el.getBoundingClientRect().height,lineHeight:parseFloat(getComputedStyle(el).lineHeight),textHeight:el.scrollHeight}));
+    expect(lines.height).toBeGreaterThanOrEqual(44);
+    expect(lines.height).toBeLessThan(50);
+  }
+  await page.goto("/?spot=chiikawaland-harajuku");
+  await expect(page.locator(".spot-name-label.is-selected-label.is-readable")).toHaveCount(1);
+  await page.evaluate(()=>map.setZoom(16));
+  await page.waitForTimeout(400);
+  await page.evaluate(()=>map.panBy([100,75],{animate:false}));
+  await page.waitForTimeout(100);
+  const audit=await page.evaluate(()=>{
+    const bounds=document.querySelector('#map').getBoundingClientRect();
+    const rects=[...document.querySelectorAll('.spot-name-label.is-readable')].map(el=>el.getBoundingClientRect());
+    return {count:rects.length,contained:rects.every(r=>r.left>=bounds.left && r.right<=bounds.right && r.top>=bounds.top && r.bottom<=bounds.bottom),collision:rects.some((a,i)=>rects.slice(i+1).some(b=>a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top))};
+  });
+  expect(audit.count).toBeGreaterThan(0);
+  expect(audit.contained).toBe(true);
+  expect(audit.collision).toBe(false);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
+});

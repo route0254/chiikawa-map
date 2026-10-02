@@ -2759,47 +2759,6 @@ function createClusterIcon(
   }
 
 
-  let nameListHtml =
-    "";
-
-
-  if (
-    count <=
-    6
-  ) {
-
-    const names =
-      markers
-        .map(
-          marker =>
-            marker.options
-              .spotName ||
-            "スポット"
-        )
-        .sort(
-          (a, b) =>
-            String(a)
-              .localeCompare(
-                String(b),
-                "ja"
-              )
-        );
-
-
-    nameListHtml =
-      '<div class="cluster-name-list" aria-hidden="true">' +
-      names
-        .map(
-          name =>
-            '<div class="cluster-name-item">' +
-            escapeHtml(name) +
-            "</div>"
-        )
-        .join("") +
-      "</div>";
-  }
-
-
   return L.divIcon({
 
     className:
@@ -2814,7 +2773,6 @@ function createClusterIcon(
       count +
       "</span>" +
       "</div>" +
-      nameListHtml +
       "</div>",
 
     iconSize:
@@ -7467,6 +7425,8 @@ function createSpotDetail(
     if (fact && anchor) { anchor.after(fact); anchor = fact; }
   }
   if (anchor) anchor.after(actionDisclosure);
+  const samePlace = createSamePlaceCard(spot);
+  if (samePlace) actionDisclosure.after(samePlace);
 
   return container;
 }
@@ -7508,6 +7468,7 @@ function showSpotDetail(
 
   selectedRecord =
     record;
+  scheduleMapLabels();
 
 
   detailBody.replaceChildren(
@@ -7613,6 +7574,7 @@ function closeSpotDetail(
 
   selectedRecord =
     null;
+  scheduleMapLabels();
 
 
   detailPanel.hidden =
@@ -7825,6 +7787,89 @@ function createDuplicateTooltipLayoutMap(
 }
 
 
+function createSamePlaceCard(spot) {
+  const candidates = spotRecords.filter(record => getSpotCoordinateKey(record.spot) === getSpotCoordinateKey(spot));
+  if (candidates.length < 2) return null;
+  const card = createDiv("spot-info-card spot-same-place-card");
+  card.append(createDiv("spot-info-title", `同じ場所のスポット · ${candidates.length}件`));
+  const list = document.createElement("ul");
+  for (const record of candidates) {
+    const item = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = record.spot.name;
+    button.setAttribute("aria-pressed", String(record.spot.id === spot.id));
+    button.addEventListener("click", () => showSpotDetail(record, {scrollOnMobile:true, returnFocusTo:button}));
+    item.append(button); list.append(item);
+  }
+  card.append(list); return card;
+}
+
+let mapLabelFrame = null;
+function scheduleMapLabels() {
+  if (mapLabelFrame !== null) return;
+  mapLabelFrame = requestAnimationFrame(() => { mapLabelFrame = null; updateMapLabels(); });
+}
+
+function updateMapLabels() {
+  const mapElement = map.getContainer();
+  const bounds = mapElement.getBoundingClientRect();
+  if (!bounds.width || !bounds.height) return;
+  const labels = [...mapElement.querySelectorAll(".spot-name-label")];
+  const selectedId = selectedRecord?.spot.id;
+  // Count bubbles remain the overview. Names appear only when there is room.
+  const occupied = [...mapElement.querySelectorAll(".cluster-bubble, .leaflet-control")].map(el => el.getBoundingClientRect());
+  const overlaps = (a, b) => a.left < b.right + 8 && a.right > b.left - 8 && a.top < b.bottom + 8 && a.bottom > b.top - 8;
+  labels.sort((a,b) => Number(b.dataset.spotId === selectedId) - Number(a.dataset.spotId === selectedId));
+  for (const label of labels) {
+    const selected = label.dataset.spotId === selectedId;
+    label.classList.remove("is-readable", "is-selected-label");
+    label.style.marginLeft = "0px"; label.style.marginTop = "0px";
+    if (selected) {
+      const markerRect = selectedRecord.marker.getElement()?.getBoundingClientRect();
+      if (!markerRect || markerRect.right < bounds.left || markerRect.left > bounds.right || markerRect.bottom < bounds.top || markerRect.top > bounds.bottom) continue;
+    }
+    if (!selected && (map.getZoom() < 14 || label.classList.contains("spot-name-label-duplicate"))) continue;
+    label.classList.add("is-readable");
+    label.classList.toggle("is-selected-label", selected);
+    // Leaflet initially measures hidden tooltips at zero width; re-anchor after revealing.
+    spotRecords.find(record => record.spot.id === label.dataset.spotId)?.marker.getTooltip()?.update();
+    let rect = label.getBoundingClientRect();
+    if (selected) {
+      // Keep the selected name fully inside the map, including near its edges.
+      const dx = Math.max(bounds.left + 8 - rect.left, Math.min(0, bounds.right - 8 - rect.right));
+      const dy = Math.max(bounds.top + 8 - rect.top, Math.min(0, bounds.bottom - 28 - rect.bottom));
+      label.style.marginLeft = dx + "px"; label.style.marginTop = dy + "px";
+      rect = label.getBoundingClientRect();
+      if (occupied.some(other => overlaps(rect, other))) {
+        const positions = [
+          {left:rect.left, top:rect.top - rect.height - 12},
+          {left:rect.left, top:rect.bottom + 12},
+          {left:bounds.left + 8, top:rect.top},
+          {left:bounds.right - 8 - rect.width, top:rect.top}
+        ];
+        const free = positions.find(pos => {
+          const candidate = {...pos, right:pos.left + rect.width, bottom:pos.top + rect.height};
+          return candidate.left >= bounds.left + 8 && candidate.right <= bounds.right - 8 && candidate.top >= bounds.top + 8 && candidate.bottom <= bounds.bottom - 28 && !occupied.some(other => overlaps(candidate,other));
+        });
+        if (free) {
+          label.style.marginLeft = dx + free.left - rect.left + "px";
+          label.style.marginTop = dy + free.top - rect.top + "px";
+          rect = label.getBoundingClientRect();
+        }
+      }
+    }
+    const contained = rect.left >= bounds.left + 7 && rect.right <= bounds.right - 7 && rect.top >= bounds.top + 7 && rect.bottom <= bounds.bottom - 7;
+    if (!contained || (!selected && occupied.some(other => overlaps(rect,other)))) {
+      label.classList.remove("is-readable"); continue;
+    }
+    occupied.push(rect);
+  }
+}
+
+map.on("zoomend moveend resize layeradd", scheduleMapLabels);
+spotLayer.on("animationend spiderfied unspiderfied", scheduleMapLabels);
+
 function createSpotRecord(
   spot,
   tooltipLayout = null
@@ -7957,88 +8002,11 @@ function createSpotRecord(
   );
 
 
-  marker.on(
-    "tooltipopen",
-    () => {
-      const tooltipElement =
-        marker.getTooltip()
-          ?.getElement();
+  marker.on("tooltipopen", scheduleMapLabels);
 
-      tooltipElement
-        ?.setAttribute(
-          "data-spot-id",
-          spot.id
-        );
-
-      if (
-        !tooltipLayout ||
-        !tooltipElement ||
-        tooltipElement.dataset
-          .spotActionBound ===
-          "true"
-      ) {
-        return;
-      }
-
-      tooltipElement.dataset
-        .spotActionBound =
-        "true";
-
-      tooltipElement.setAttribute(
-        "role",
-        "button"
-      );
-
-      tooltipElement.setAttribute(
-        "tabindex",
-        "0"
-      );
-
-      tooltipElement.setAttribute(
-        "aria-label",
-        spot.name +
-        "の詳細を開く"
-      );
-
-      const openFromTooltip =
-        event => {
-          event.preventDefault();
-          event.stopPropagation();
-
-          showSpotDetail(
-            record,
-            {
-              scrollOnMobile:
-                true,
-              returnFocusTo:
-                tooltipElement
-            }
-          );
-        };
-
-      tooltipElement.addEventListener(
-        "click",
-        openFromTooltip
-      );
-
-      tooltipElement.addEventListener(
-        "keydown",
-        event => {
-          if (
-            event.key ===
-              "Enter" ||
-            event.key ===
-              " "
-          ) {
-            openFromTooltip(
-              event
-            );
-          }
-        }
-      );
-    }
-  );
-
+  marker.on("tooltipopen", () => {
+    marker.getTooltip()?.getElement()?.setAttribute("data-spot-id", spot.id);
+  });
 
   marker.on(
     "click",
