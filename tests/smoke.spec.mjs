@@ -679,6 +679,7 @@ test(
       /github\.com\/route0254\/chiikawa-map\/issues\/new/
     );
 
+    await detailPanel.locator(".spot-detail-action-menu summary").click();
     await expect(
       detailPanel.locator(
         ".spot-map-button"
@@ -1407,6 +1408,7 @@ test(
         "#saved-data-panel"
       );
 
+    await page.locator(".map-tools-menu summary").click();
     await savedToggle.click();
 
     await expect(savedPanel).toBeVisible();
@@ -1643,6 +1645,7 @@ test(
         "ちいかわらんど 大阪梅田店"
     }).first().click();
 
+    await page.locator(".spot-detail-action-menu summary").click();
     await page.locator(
       ".spot-visited-button"
     ).click();
@@ -1698,6 +1701,7 @@ test(
         "限定グッズを購入。次回は午前中に行く。"
     });
 
+    await page.locator(".map-tools-menu summary").click();
     await page.locator(
       "#saved-data-toggle"
     ).click();
@@ -1832,6 +1836,7 @@ test(
       "限定グッズを購入。次回は午前中に行く。"
     );
 
+    await page.locator(".map-tools-menu summary").click();
     await page.locator(
       "#saved-data-toggle"
     ).click();
@@ -2362,6 +2367,7 @@ test(
     await page.goto("/");
     await waitForSpots(page);
 
+    await page.locator(".map-tools-menu summary").click();
     const selectors = [
       "#spot-search",
       "#prefecture-filter",
@@ -2463,6 +2469,7 @@ test(
       }
     );
 
+    await page.locator(".site-menu summary").click();
     const officialNavLink =
       page.locator(
         '.site-nav-link[href="official.html"]'
@@ -3568,6 +3575,7 @@ test(
 
     for (const path of pages) {
       await page.goto(path);
+      if (await page.locator(".site-menu").count()) await page.locator(".site-menu summary").click();
       const historyLink = page.locator(
         'a.site-nav-link[href$="nagano.html"]'
       ).first();
@@ -3596,12 +3604,14 @@ test(
 
     for (const path of pages) {
       await page.goto(path);
+      if (await page.locator(".site-menu").count()) await page.locator(".site-menu summary").click();
       await expect(
         page.locator('a.site-nav-link[href$="official-links.html"]')
       ).toBeVisible();
     }
 
     await page.goto("/");
+    await page.locator(".site-menu summary").click();
     await page.locator('a.site-nav-link[href="official-links.html"]').click();
     await expect(page).toHaveURL(/\/official-links\.html$/);
     await expect(page.locator(".official-links-list a")).toHaveCount(9);
@@ -4149,7 +4159,7 @@ test("unopened Osaka permanent store remains searchable but is excluded from tod
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
   await page.locator("#spot-search").fill("ちいかわパークストア 大阪");
   await page.locator("#spot-search").blur();
-  await page.locator("#recent-additions-title").click();
+  await page.locator("h1").click();
   await page.locator("#list-view-button").click();
   await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(1);
   await page.getByRole("button", { name: "今日の候補", exact: true }).click();
@@ -4175,7 +4185,7 @@ test("closed Midtown shop remains historical but is excluded from today and near
   await page.locator("#spot-search").fill("RECIPE & MARKET");
   await page.locator("#spot-search").blur();
   await expect(page.locator("#spot-search")).toHaveValue("RECIPE & MARKET");
-  await page.locator("#recent-additions-title").click();
+  await page.locator("h1").click();
   await page.locator("#list-view-button").click();
   await expect(page.locator(".spot-list-card h3", { hasText: "RECIPE & MARKET 東京ミッドタウン店" })).toHaveCount(1);
   await page.getByRole("button", { name: "今日の候補", exact: true }).click();

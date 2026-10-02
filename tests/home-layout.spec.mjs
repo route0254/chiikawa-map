@@ -15,7 +15,8 @@ test("mobile prioritises the chosen view and preserves search and prefecture acr
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
-  expect((await page.locator("#map").boundingBox()).y).toBeLessThan(844);
+  expect((await page.locator("#map").boundingBox()).y).toBeLessThan(400);
+  expect((await page.locator("#map").boundingBox()).height).toBeGreaterThanOrEqual(300);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
   await page.locator("#spot-search").fill("町田");
   await page.locator("#spot-search").blur();
@@ -35,6 +36,32 @@ test("mobile prioritises the chosen view and preserves search and prefecture acr
   await expect(page.locator("#spot-search")).toHaveValue("町田");
   await expect(page.locator("#prefecture-filter")).toHaveValue("東京都");
   await expect(page.locator("#result-count")).toHaveText(count);
+});
+
+test("visit facts precede optional detail actions and menus keep their original functions", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/?spot=chiikawaland-harajuku");
+  await expect(page.locator(".spot-detail-title")).toBeVisible();
+  const actions = page.locator(".spot-detail-action-menu");
+  await expect(actions).not.toHaveAttribute("open", "");
+  const order = await page.evaluate(() => {
+    const menu = document.querySelector(".spot-detail-action-menu");
+    return [".spot-address", ".spot-period", ".spot-hours-card", ".spot-entry-card"].every(selector => {
+      const fact = document.querySelector(`#spot-detail-body ${selector}`);
+      return !fact || Boolean(fact.compareDocumentPosition(menu) & Node.DOCUMENT_POSITION_FOLLOWING);
+    });
+  });
+  expect(order).toBe(true);
+  await actions.locator("summary").click();
+  await expect(page.locator(".spot-detail-actions .spot-visited-button")).toBeVisible();
+  await page.locator("#detail-close").click();
+  await page.locator(".map-tools-menu summary").click();
+  await expect(page.locator("#saved-data-toggle")).toBeVisible();
+  expect((await page.locator(".map-tools-menu summary").boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await page.locator("#filter-toggle").click();
+  await expect(page.locator(".map-tools-menu")).not.toHaveAttribute("open", "");
+  await expect(page.locator("#filter-close")).toBeVisible();
+  await page.locator("#filter-close").click();
 });
 
 test("series selection explains all and partial states without resetting selections", async ({ page }) => {

@@ -4196,3 +4196,73 @@ button {
   .home-map .spot-list-panel { padding: 12px; }
   .home-map .spot-list-card-header { flex-direction: column; gap: 8px; }
 }
+
+/* Operation-first homepage: show search and the map before optional tools. */
+.home-map .site-header-inner { display:flex; align-items:center; gap:14px; padding-block:12px; position:relative; }
+.home-map .site-header h1 { margin:0; font-size:24px; white-space:nowrap; }
+.home-map .site-description { margin:0; font-size:13px; }
+.home-map .site-menu { margin-left:auto; }
+.home-map .site-menu summary, .home-map .map-tools-menu summary, .home-map .recent-additions-details summary, .home-map .date-discovery-help summary, .home-map .spot-detail-action-menu summary { min-height:44px; display:flex; align-items:center; cursor:pointer; padding:8px 10px; border:1px solid #e6dce9; border-radius:10px; background:#fff; font-size:13px; font-weight:700; }
+.home-map summary:focus-visible { outline:3px solid #6457ce; outline-offset:2px; }
+.home-map .site-menu .site-nav { display:flex; flex-wrap:wrap; margin:0; position:absolute; right:0; top:100%; width:min(450px,calc(100vw - 24px)); padding:12px; background:#fff; box-shadow:0 8px 30px #54474e30; border-radius:12px; z-index:1700; }
+.home-map .site-nav-link { min-height:44px; }
+.home-map .recent-additions { padding:6px 10px; margin-bottom:8px; }
+.home-map .recent-additions-strip { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:start; gap:10px; position:relative; }
+.home-map .recent-additions-latest { min-width:0; min-height:44px; display:flex; align-items:center; gap:8px; color:#47343e; text-decoration:none; }
+.home-map .recent-additions-latest .spot-added-date { flex-shrink:0; margin:0; }
+.home-map .recent-additions-latest .recent-addition-name { display:block; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.home-map .recent-additions-details summary { white-space:nowrap; gap:5px; border:0; background:#fff5f8; }
+.home-map .recent-additions-expanded { position:absolute; top:100%; left:0; right:0; padding:12px; background:#fff; border:1px solid #eadde3; border-radius:12px; box-shadow:0 8px 30px #54474e30; z-index:1650; }
+.home-map .map-toolbar { padding-block:8px; gap:5px; }
+.home-map .map-toolbar-left { flex-wrap:nowrap; gap:8px; }
+.home-map .map-tools-menu { position:relative; margin-left:auto; }
+.home-map .map-extra-actions { position:absolute; right:0; top:100%; width:min(340px,calc(100vw - 36px)); display:grid; grid-template-columns:1fr 1fr; overflow:visible; padding:12px; background:#fff; border:1px solid #eadde3; border-radius:12px; box-shadow:0 8px 30px #54474e30; z-index:1600; }
+.home-map .map-extra-actions > * { white-space:normal; }
+.home-map .date-discovery { display:flex; flex-wrap:wrap; align-items:center; gap:6px; padding:6px 10px; }
+.home-map .date-discovery-actions { flex:1; min-width:0; display:flex; flex-wrap:nowrap; overflow-x:auto; padding:0; gap:6px; }
+.home-map .date-discovery-actions > * { flex:0 0 auto; min-height:44px; width:auto; }
+.home-map .date-discovery-help { position:relative; }
+.home-map .date-discovery-help[open] { flex-basis:100%; }
+.home-map .date-discovery-copy, .home-map .date-discovery-note { margin:8px 0; }
+.home-map .spot-detail-action-menu { margin-block:10px; }
+.home-map .spot-detail-action-menu summary { justify-content:center; }
+.home-map .spot-detail-actions { display:flex; flex-wrap:nowrap; overflow-x:auto; padding-top:8px; }
+.home-map .spot-detail-actions > * { flex:0 0 auto; width:auto; padding-inline:10px; }
+@media(max-width:650px) {
+ .home-map .site-header-inner { padding-block:8px; gap:8px; }
+ .home-map .site-header h1 { margin:0; font-size:21px; }
+ .home-map .site-description { display:none; }
+ .home-map .site-menu summary { font-size:12px; }
+ .home-map .notice-more { display:none; }
+ .home-map .recent-additions-strip { grid-template-columns:minmax(0,1fr) 92px; gap:6px; }
+ .home-map .recent-additions-latest { display:block; padding-top:2px; }
+ .home-map .recent-additions-latest .spot-added-date { font-size:10px; }
+ .home-map .recent-additions-latest .recent-addition-name { font-size:12px; line-height:1.5; }
+ .home-map .recent-additions-details summary { white-space:normal; font-size:11px; line-height:1.3; padding:4px 6px; flex-wrap:wrap; gap:0 4px; }
+ .home-map .map-toolbar-left { gap:5px; }
+ .home-map .view-switch-button { min-width:58px; padding-inline:5px; font-size:12px; }
+ .home-map #filter-toggle { padding-inline:6px; font-size:12px; }
+ .home-map #location-button { width:44px; padding-inline:0; }
+ .home-map .location-button-label { display:none; }
+ .home-map .map-tools-menu { margin-left:auto; flex-shrink:0; width:66px; }
+ .home-map .map-tools-menu summary { font-size:11px; padding:5px; text-align:center; justify-content:center; line-height:1.4; }
+ .home-map .map-legend { gap:4px; }
+ .home-map .legend-item { font-size:9px; }
+ .home-map .result-count { font-size:11px; }
+ .home-map .date-discovery { flex-wrap:nowrap; padding:5px 8px; }
+ .home-map .date-discovery-help summary { width:48px; padding:4px; font-size:10px; text-align:center; }
+ .home-map .date-discovery-help[open] { position:absolute; right:12px; left:12px; background:#fff; z-index:1550; padding:10px; box-shadow:0 8px 30px #54474e30; border-radius:12px; }
+ .home-map .date-discovery-help[open] summary { width:auto; }
+ .home-map .date-quick-button, .home-map .date-calendar-link { font-size:12px; padding-inline:10px; }
+}
+@media(max-width:360px) { .home-map .map-toolbar-left { flex-wrap:wrap; } }
+
+.home-map .prefecture-filter-wrap { min-width:0; }
+.home-map .map-search-bar { padding-block:10px; }
+@media(min-width:651px) { .home-map .prefecture-filter-wrap { position:relative; } .home-map .prefecture-filter-wrap label { position:absolute; top:-8px; left:8px; z-index:1; padding:0 4px; background:#fff; } }
+
+.home-map .map-extra-actions .site-header-top { grid-column:1 / -1; margin:0; }
+.home-map .map-extra-actions .site-header-top:has([data-cloud-header-account][hidden]) { display:none; }
+
+.home-map .map-extra-actions { z-index:1000; }
+.home-map .date-discovery-help[open] .date-discovery-copy > span:last-child { display:block; font-size:12px; line-height:1.6; }

@@ -6859,9 +6859,11 @@ function createSpotDetail(
     );
   }
 
-  container.appendChild(
-    spotActions
-  );
+  const actionDisclosure = document.createElement("details");
+  actionDisclosure.className = "spot-detail-action-menu";
+  const actionSummary = document.createElement("summary");
+  actionSummary.textContent = "♡ 保存・行った・プラン・共有";
+  actionDisclosure.append(actionSummary, spotActions);
 
   const visitDetailsCard =
     createVisitDetailsCard(spot);
@@ -6872,6 +6874,8 @@ function createSpotDetail(
     );
   }
 
+
+  container.appendChild(actionDisclosure);
 
   const tags =
     createDiv(
@@ -7453,6 +7457,16 @@ function createSpotDetail(
     "spot-report-link"
   );
 
+
+  // Put the visit facts ahead of optional saving and background evidence.
+  const addedLabel = container.querySelector(".spot-added-date");
+  const factTitle = container.querySelector(".spot-detail-title");
+  let anchor = addedLabel || factTitle;
+  for (const selector of [".spot-address", ".spot-period", ".spot-hours-card", ".spot-entry-card"]) {
+    const fact = container.querySelector(selector);
+    if (fact && anchor) { anchor.after(fact); anchor = fact; }
+  }
+  if (anchor) anchor.after(actionDisclosure);
 
   return container;
 }
@@ -9368,8 +9382,17 @@ async function loadRecentAdditions(spots) {
     }
     firstAddedDates = registry.firstAdded;
     const recent = RecentAdditions.selectRecent(spots, firstAddedDates);
+    const latestLink = document.getElementById("recent-additions-latest");
+    if (recent[0]) {
+      latestLink.href = `spot/${encodeURIComponent(recent[0].id)}/`;
+      latestLink.append(createAddedDateLabel(recent[0]));
+      const latestName = document.createElement("span");
+      latestName.className = "recent-addition-name";
+      latestName.textContent = recent[0].name;
+      latestLink.append(latestName);
+    }
     const list = document.getElementById("recent-additions-list");
-    for (const spot of recent.slice(0, 6)) {
+    for (const spot of recent) {
       const item = document.createElement("li");
       const link = document.createElement("a");
       link.href = `spot/${encodeURIComponent(spot.id)}/`;
@@ -9381,7 +9404,7 @@ async function loadRecentAdditions(spots) {
       list.append(item);
     }
     document.getElementById("recent-additions-count").textContent =
-      recent.length > 6 ? `${recent.length}件のうち最新6件` : `${recent.length}件`;
+      `${recent.length}件`;
     document.getElementById("recent-additions").hidden = recent.length === 0;
   } catch (error) {
     // New announcements are optional; map/search must still work when unavailable.
@@ -10426,3 +10449,16 @@ if (appScriptUrl) {
     }
   );
 }
+
+// Dismiss optional menus when returning to the main map controls.
+document.addEventListener("pointerdown", event => {
+  if (getOpenDialogPanel()) return;
+  for (const menu of document.querySelectorAll(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open]")) {
+    if (!menu.contains(event.target)) menu.open = false;
+  }
+});
+document.addEventListener("keydown", event => {
+  if (event.key !== "Escape" || event.defaultPrevented) return;
+  const menu = event.target instanceof Element ? event.target.closest(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open]") : null;
+  if (menu) { menu.open = false; menu.querySelector("summary")?.focus(); }
+});
