@@ -1897,8 +1897,11 @@ function focusSpotRecord(
     return;
   }
 
+  const selectionRequest = options.selectionRequest ?? ++explorerSelectionRequest;
+  if(selectionRequest !== explorerSelectionRequest) return;
   const openRecord =
     () => {
+      if(selectionRequest !== explorerSelectionRequest || !recordMatchesFilters(record,getCurrentFilterState())) return;
       map.setView(
         [
           record.spot.lat,
@@ -4960,8 +4963,11 @@ function setViewMode(
     mapContent
   ) {
     mapContent.hidden =
-      listMode && !isWideExplorer();
+      listMode;
   }
+  document.body.classList.toggle("explorer-list-wide",listMode && isWideExplorer());
+  mapViewButton.textContent=isWideExplorer() ? "地図＋一覧" : "地図";
+  listViewButton.textContent=isWideExplorer() ? "一覧を広く" : "一覧";
 
   if (
     spotListPanel
@@ -5344,6 +5350,7 @@ function createSpotListCard(
     "click",
     () => {
 
+      const selectionRequest=++explorerSelectionRequest;
       setViewMode(
         "map"
       );
@@ -5355,7 +5362,8 @@ function createSpotListCard(
                 record,
                 {
                   returnFocusTo:
-                    openButton
+                    openButton,
+                  selectionRequest
                 }
               );
             }
@@ -5378,6 +5386,7 @@ function createSpotListCard(
     const visit=visitDetailsBySpotId[spot.id];
     footer.before(createDiv("explorer-visit-stamp", visit?.visitedAt ? formatDate(visit.visitedAt) + " 訪問" : "行った"));
   }
+  finishExplorerCandidate(card,record,openButton);
 
   return card;
 }
@@ -7449,6 +7458,7 @@ function createSpotDetail(
   container.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));
   const samePlace = createSamePlaceCard(spot);
   if (samePlace) actionDisclosure.after(samePlace);
+  finishExplorerDetail(container,spot,actionDisclosure);
 
   return container;
 }
@@ -7461,6 +7471,7 @@ function showSpotDetail(
   options = {}
 ) {
 
+  explorerSelectionRequest++;
   if (document.body.classList.contains("explorer")) prepareExplorerDetail(record);
   const returnFocusCandidate =
     options.returnFocusTo ||
@@ -7521,6 +7532,7 @@ function showSpotDetail(
   requestAnimationFrame(
     () => {
 
+      if(detailPanel.hidden || selectedRecord !== record) return;
       detailPanel.focus({
         preventScroll: true
       });
@@ -7813,17 +7825,16 @@ function createDuplicateTooltipLayoutMap(
 
 
 function createSamePlaceCard(spot) {
-  const candidates = spotRecords.filter(record => getSpotCoordinateKey(record.spot) === getSpotCoordinateKey(spot));
-  if (candidates.length < 2) return null;
+  const candidates = spotRecords.filter(record => record.spot.id !== spot.id && getSpotCoordinateKey(record.spot) === getSpotCoordinateKey(spot));
+  if (!candidates.length) return null;
   const card = createDiv("spot-info-card spot-same-place-card");
-  card.append(createDiv("spot-info-title", `同じ場所のスポット · ${candidates.length}件`));
+  card.append(createDiv("spot-info-title", `この施設のほかのスポット · ${candidates.length}件`));
   const list = document.createElement("ul");
   for (const record of candidates) {
     const item = document.createElement("li");
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = record.spot.name;
-    button.setAttribute("aria-pressed", String(record.spot.id === spot.id));
     button.addEventListener("click", () => showSpotDetail(record, {scrollOnMobile:true, returnFocusTo:button}));
     item.append(button); list.append(item);
   }
@@ -7837,13 +7848,14 @@ function scheduleMapLabels() {
 }
 
 function updateMapLabels() {
+  document.querySelector('.explorer-selection-leader')?.replaceChildren();
   const mapElement = map.getContainer();
   const bounds = mapElement.getBoundingClientRect();
   if (!bounds.width || !bounds.height) return;
   const labels = [...mapElement.querySelectorAll(".spot-name-label")];
   const selectedId = selectedRecord?.spot.id;
   // Count bubbles remain the overview. Names appear only when there is room.
-  const occupied = [...mapElement.querySelectorAll(".cluster-bubble, .leaflet-control")].map(el => el.getBoundingClientRect());
+  const occupied = [...mapElement.querySelectorAll(".cluster-bubble, .leaflet-control"), ...mapContent.querySelectorAll(".explorer-map-legend")].map(el => el.getBoundingClientRect());
   const overlaps = (a, b) => a.left < b.right + 8 && a.right > b.left - 8 && a.top < b.bottom + 8 && a.bottom > b.top - 8;
   labels.sort((a,b) => Number(b.dataset.spotId === selectedId) - Number(a.dataset.spotId === selectedId));
   for (const label of labels) {
@@ -7889,6 +7901,7 @@ function updateMapLabels() {
       label.classList.remove("is-readable"); continue;
     }
     occupied.push(rect);
+    if(selected)explorerLeader(spotRecords.find(record=>record.spot.id===selectedId),rect,bounds);
   }
 }
 
@@ -8623,6 +8636,7 @@ function renderFilterFeedback(
 
 function updateSpotFilters() {
 
+  explorerSelectionRequest++;
   updateSearchClearButton();
 
   const filterState =
@@ -8685,6 +8699,7 @@ function updateSpotFilters() {
           requestAnimationFrame(
             () => {
 
+              if(selectedRecord !== record) return;
               record.marker
                 .getElement()
                 ?.classList
@@ -10444,6 +10459,6 @@ document.addEventListener("pointerdown", event => {
 });
 document.addEventListener("keydown", event => {
   if (event.key !== "Escape" || event.defaultPrevented) return;
-  const menu = event.target instanceof Element ? event.target.closest(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open]") : null;
+  const menu = event.target instanceof Element ? event.target.closest(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open], .explorer-dates[open], .explorer-sort[open], .explorer-map-legend[open]") : null;
   if (menu) { menu.open = false; menu.querySelector("summary")?.focus(); }
 });

@@ -1965,12 +1965,12 @@ test("同一座標の候補を一覧から選び直し、選択名だけを地�
  for (const [spot,count] of [["mogumogu-otaru",2],["chiikawaland-solamachi",3],["chiikawaland-shinsaibashi",4],["chiikawaland-ikebukuro",5],["chiikawaland-nagoya",6]]) {
   await page.goto('/?spot='+spot); await waitForSpots(page);
   const choices=page.locator('.spot-same-place-card button');
-  await expect(choices).toHaveCount(count);
+  await expect(choices).toHaveCount(count-1);
   const names=await choices.allTextContents();
   for(const name of names) {
    await page.locator('.spot-same-place-card').getByRole('button',{name,exact:true}).click();
    await expect(page.locator('#spot-detail-title')).toHaveText(name);
-   await expect(page.locator('.spot-same-place-card button[aria-pressed=true]')).toHaveText(name);
+   await expect(page.locator('.spot-same-place-card').getByRole('button',{name,exact:true})).toHaveCount(0);
    await expect(page.locator('.spot-name-label-duplicate.is-readable')).toHaveCount(1);
   }
  }
@@ -1985,7 +1985,7 @@ test("同一座標6件のピンを展開し、全候補と保存・詳細を保�
  for(const id of ids) {
   const marker=page.locator('.spot-marker[data-spot-id="'+id+'"]');
   await expect(marker).toBeVisible(); const box=await marker.boundingBox(); positions.push(Math.round(box.x)+','+Math.round(box.y));
-  await marker.click(); await expect(page.locator('.spot-same-place-card button')).toHaveCount(6);
+  await marker.click(); await expect(page.locator('.spot-same-place-card button')).toHaveCount(5);
   await expect(page.locator('.spot-name-label-duplicate.is-readable')).toHaveCount(1);
  }
  expect(new Set(positions).size).toBe(6);
