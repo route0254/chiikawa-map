@@ -37,7 +37,11 @@ test("recent additions stay compact on mobile and desktop and link to existing d
 });
 
 test("expired or unavailable announcements do not block map and search", async ({ page }) => {
-  await page.clock.setFixedTime(new Date("2026-10-15T03:00:00Z"));
+  const registry = JSON.parse(await readFile(new URL("../data/added-dates.json", import.meta.url), "utf8"));
+  const latestAddition = Object.values(registry.firstAdded).filter(Boolean).sort().at(-1);
+  const afterNewPeriod = new Date(`${latestAddition}T03:00:00Z`);
+  afterNewPeriod.setUTCDate(afterNewPeriod.getUTCDate() + 14);
+  await page.clock.setFixedTime(afterNewPeriod);
   await page.goto("/");
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
   await expect(page.locator("#recent-additions")).toBeHidden();
