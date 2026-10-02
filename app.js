@@ -5383,7 +5383,7 @@ function createSpotListCard(
   footer.before(period);
   card.dataset.sourceClass=spot.category === "nagano" ? "nagano-" + getEvidenceLevel(spot) : spot.category;
   if(isVisitedSpot(spot)) {
-    const visit=visitDetailsBySpotId[spot.id];
+    const visit=visitDetailsBySpotId.get(spot.id);
     footer.before(createDiv("explorer-visit-stamp", visit?.visitedAt ? formatDate(visit.visitedAt) + " 訪問" : "行った"));
   }
   finishExplorerCandidate(card,record,openButton);
@@ -8919,6 +8919,7 @@ function setSavedDataPanelOpen(
     updateFavoriteCount();
     updateVisitedCount();
     updatePlanCount();
+    closeExplorerMenus();
   }
 
   const restoreFocus =
@@ -8951,7 +8952,7 @@ function setSavedDataPanelOpen(
   } else if (
     restoreFocus
   ) {
-    savedDataToggle.focus();
+    focusExplorerMenuTrigger(savedDataToggle);
   }
 }
 
@@ -8973,6 +8974,7 @@ function setOfficialHelpPanelOpen(
     setFilterPanelOpen(false);
     setSavedDataPanelOpen(false);
     setNaganoHelpPanelOpen(false);
+    closeExplorerMenus();
   }
 
   const restoreFocus =
@@ -8997,7 +8999,7 @@ function setOfficialHelpPanelOpen(
   if (open) {
     officialHelpClose?.focus();
   } else if (restoreFocus) {
-    officialHelpToggle.focus();
+    focusExplorerMenuTrigger(officialHelpToggle);
   }
 }
 
@@ -9019,6 +9021,7 @@ function setNaganoHelpPanelOpen(
     setFilterPanelOpen(false);
     setSavedDataPanelOpen(false);
     setOfficialHelpPanelOpen(false);
+    closeExplorerMenus();
   }
 
   const restoreFocus =
@@ -9043,7 +9046,7 @@ function setNaganoHelpPanelOpen(
   if (open) {
     naganoHelpClose?.focus();
   } else if (restoreFocus) {
-    naganoHelpToggle.focus();
+    focusExplorerMenuTrigger(naganoHelpToggle);
   }
 }
 

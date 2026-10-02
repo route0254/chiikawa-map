@@ -1619,7 +1619,7 @@ test(
     );
 
     await expect(savedPanel).toBeHidden();
-    await expect(savedToggle).toBeFocused();
+    await expect(page.locator('.map-tools-menu > summary')).toBeFocused();
   }
 );
 

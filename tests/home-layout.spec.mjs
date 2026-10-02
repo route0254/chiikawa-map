@@ -2,6 +2,15 @@ import { test, expect } from "@playwright/test";
 import { readFile } from "node:fs/promises";
 import AxeBuilder from "@axe-core/playwright";
 const pageErrors=new WeakMap();
+test('saved-data menu closes behind its dialog and returns focus to a visible trigger',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/');
+ await page.locator('.map-tools-menu>summary').click();await page.locator('#saved-data-toggle').click();
+ await expect(page.locator('.map-tools-menu')).not.toHaveAttribute('open','');
+ await expect(page.locator('#saved-data-panel')).toBeVisible();
+ expect(await page.locator('#saved-data-export').evaluate(el=>{const r=el.getBoundingClientRect();return el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
+ await page.keyboard.press('Escape');await expect(page.locator('#saved-data-panel')).toBeHidden();
+ await expect(page.locator('.map-tools-menu>summary')).toBeFocused();
+});
 test.afterEach(async ({page})=>expect(pageErrors.get(page)||[]).toEqual([]));
 
 test.beforeEach(async ({ page }) => {

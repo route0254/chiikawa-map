@@ -10,12 +10,16 @@ let explorerPendingClose = null;
 let explorerSelectionRequest = 0;
 const explorerWordSegmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ja',{granularity:'word'}):null;
 
-function explorerIcon(name) {
-  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
-  svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');svg.classList.add('explorer-icon');
-  const shapes={bookmark:'M6 3h12v18l-6-4-6 4Z',check:'M5 12l4 4L19 6',visit:'M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0ZM8 12l3 3 5-6',search:'M16 16l5 5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z',location:'M12 21s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12ZM15 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z',calendar:'M4 5h16v16H4ZM4 10h16M8 3v4M16 3v4',clock:'M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0ZM12 7v5l3 2',share:'M12 16V3M7 8l5-5 5 5M5 13v8h14v-8',plan:'M5 6h14M5 12h14M5 18h9'};
-  const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',shapes[name]||shapes.bookmark);svg.append(path);return svg;
+function closeExplorerMenus() {
+  document.querySelectorAll('.map-tools-menu[open],.recent-additions-details[open],.explorer-dates[open],.explorer-sort[open]').forEach(menu=>menu.open=false);
 }
+
+function focusExplorerMenuTrigger(button) {
+  const closedMenu=button?.closest('details:not([open])');
+  (closedMenu?.querySelector('summary') || (button?.getClientRects().length?button:document.querySelector('.map-tools-menu > summary')))?.focus({preventScroll:true});
+}
+
+function explorerIcon(name) { const icon=ChiikatsuUI.icon(name);icon.classList.add('explorer-icon');return icon; }
 
 function explorerSaveButton(button,spot) {
   const saved=isFavoriteSpot(spot);
@@ -117,6 +121,8 @@ function finishExplorerDetail(container,spot,actionDisclosure) {
   for(const [selector,icon,label] of [['.spot-share-button','share','このスポットを共有'],['.spot-plan-button','plan',null]]) {
     const button=container.querySelector(selector);if(button)button.replaceChildren(explorerIcon(icon),document.createTextNode(label||button.textContent.replace(/^[^\p{L}\p{N}]+/u,'')));
   }
+  ChiikatsuUI.decorateAction(container.querySelector('.spot-visit-save'),'visit');
+  ChiikatsuUI.decorateAction(container.querySelector('.spot-visit-clear'),'close');
 }
 
 function explorerCategory(spot) {
@@ -253,6 +259,10 @@ function initializeExplorer() {
   const savedHeading=document.createElement('h3');savedHeading.className='explorer-menu-heading';savedHeading.textContent='手帳と保存データ';actions.prepend(savedHeading);
   const guideHeading=document.createElement('h3');guideHeading.className='explorer-menu-heading';guideHeading.textContent='サイト案内';actions.querySelector('.site-nav').before(guideHeading);
   document.querySelector(".site-menu:not(.map-tools-menu)").remove();
+  for(const [selector,icon] of [['#favorite-filter-button','bookmark'],['.plan-open-button','plan'],['#visited-filter-button','visit'],['#saved-data-toggle','data'],['#share-filters-button','share'],['#official-help-toggle','info'],['#nagano-help-toggle','info']])ChiikatsuUI.decorateAction(document.querySelector(selector),icon);
+  for(const link of actions.querySelectorAll('.site-nav-link'))ChiikatsuUI.decorateAction(link,link.getAttribute('href')?.includes('journal')?'bookmark':'info');
+  for(const [index,icon] of ['bookmark','plan','visit'].entries())ChiikatsuUI.decorateAction(document.querySelectorAll('.saved-data-current > span')[index],icon);
+  ChiikatsuUI.decorateAction(document.getElementById('saved-data-export'),'data');
   const header=document.querySelector(".site-header-inner");
   header.append(document.querySelector("#recent-additions"), tools);
   document.getElementById("recent-additions-title").textContent="新着";

@@ -223,3 +223,63 @@
 @media(max-width:899px) { .home-map.explorer .site-header-inner { gap:6px; } }
 @media(max-width:899px) { .home-map.explorer .site-header-inner { min-height:55px; } }
 @media(prefers-reduced-motion:reduce) { .home-map.explorer * { scroll-behavior:auto !important; transition:none !important; } }
+/* Shared actions and existing journal views use the explorer's visual language. */
+.chiikatsu-icon { width:20px; height:20px; flex:none; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; vertical-align:middle; }
+.chiikatsu-action { gap:6px; }
+.chiikatsu-icon.is-saved-mark,.is-saved-action .chiikatsu-icon { fill:#FFE58B; stroke:#17607C; }
+.journal-page { color:#263B46; background:#FFFDF7; font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif; }
+.journal-page button,.journal-page input,.journal-page select,.journal-page textarea { font-family:inherit; }
+.journal-page [hidden] { display:none!important; }
+.journal-page .journal-shell { max-width:1200px; padding-top:16px; }
+.journal-page .journal-hero { background:#EAF5FA; border:1px solid #D8E5E9; border-radius:10px; box-shadow:none; padding:20px; }
+.journal-page .journal-hero h2 { font-size:22px; color:#263B46; }
+.journal-page .journal-hero p,.journal-page .journal-section-heading p { font-size:14px; line-height:1.65; color:#526773; }
+.journal-page .journal-eyebrow,.journal-page .journal-hero-stats span { font-size:13px; color:#526773; }
+.journal-page .journal-hero-stats > div { background:#FFFDF7; border-radius:8px; box-shadow:none; }
+.journal-page .journal-hero-stats strong { font-size:24px; color:#17607C; }
+.journal-page .journal-tabs { gap:8px; background:transparent; padding:0; }
+.journal-page .journal-tab { min-height:48px; font-size:14px; border-radius:8px; border:1px solid #D8E5E9; background:#fff; color:#263B46; box-shadow:none; }
+.journal-page .journal-tab.is-active { color:#17607C; background:#EAF5FA; border-color:#17607C; box-shadow:none; }
+.journal-page .journal-view,.journal-page .favorite-card,.journal-page .plan-column,.journal-page .activity-panel { border-radius:10px; background:#fff; border:1px solid #D8E5E9; box-shadow:none; }
+.journal-page .journal-section-heading h2 { font-size:20px; color:#263B46; }
+.journal-page .favorite-card { padding:16px; }
+.journal-page .favorite-card h3 { font-size:16px; line-height:1.55; color:#263B46; }
+.journal-page .favorite-card p { font-size:14px; line-height:1.65; }
+.journal-page .favorite-card-badge,.journal-page .favorites-result-count,.journal-page .plan-stop-copy span { font-size:13px; }
+.journal-page .favorite-card-actions a,.journal-page .favorite-card-actions button,.journal-page .plan-actions button,.journal-page .plan-primary-action,.journal-page .journal-share-button,.journal-page .activity-share-button { display:inline-flex; align-items:center; justify-content:center; min-height:44px; font-size:14px; border-radius:8px; background:#EAF5FA; color:#17607C; border:1px solid #D8E5E9; box-shadow:none; }
+.journal-page .favorite-card-actions .favorite-remove { color:#17607C; background:#FFF6D3; }
+.journal-page .plan-stop-number { background:#17607C; color:white; }
+.journal-page .plan-stop-copy strong { font-size:16px; line-height:1.5; }
+.journal-page .plan-stop-actions button { min-width:44px; min-height:44px; border-radius:8px; color:#17607C; }
+.journal-page .favorites-filters label>span,.journal-page .plan-candidate-filters label>span,.journal-page .calendar-filters label>span { font-size:13px; color:#526773; }
+.journal-page input,.journal-page select,.journal-page textarea { font-size:16px; min-height:44px; }
+.journal-page .site-header { background:#FFFDF7; box-shadow:none; border-bottom:1px solid #D8E5E9; }
+.journal-page .site-nav-link { border-radius:8px; box-shadow:none; }
+.journal-page .site-nav-link.is-active { color:#17607C; background:#EAF5FA; border-color:#17607C; }
+.journal-page .activity-summary-card,.journal-page .plan-summary,.journal-page .favorites-filters,.journal-page .home-screen-card { background:#EAF5FA; border-radius:10px; border-color:#D8E5E9; box-shadow:none; }
+.journal-page .plan-summary strong,.journal-page .activity-big-stats strong { color:#17607C; }
+.journal-page .plan-summary span,.journal-page .plan-summary p,.journal-page .activity-panel-heading>span,.journal-page .activity-panel-heading a,.journal-page .activity-big-stats span,.journal-page .activity-summary-copy p,.journal-page .activity-progress-copy,.journal-page .activity-brand-copy span,.journal-page .recent-activity-card time { font-size:13px; line-height:1.6; }
+.journal-page .activity-panel-heading h3,.journal-page .activity-summary-copy h3,.journal-page .recent-activity-card strong { font-size:16px; line-height:1.5; }
+.journal-page .recent-activity-card p,.journal-page .activity-next-card strong { font-size:14px; line-height:1.6; }
+.journal-page .activity-next-card,.journal-page .recent-activity-card,.journal-page .activity-brand-card,.journal-page .activity-progress-item { border-radius:8px; background:#FFFDF7; border-color:#D8E5E9; }
+.journal-page .activity-progress-bar { background:#17607C; }
+.journal-page .shared-plan-banner { background:#EAF5FA; border-color:#D8E5E9; border-radius:10px; }
+.journal-page .shared-plan-banner strong { font-size:14px; color:#263B46; }
+.journal-page .shared-plan-banner span { font-size:13px; color:#526773; }
+.journal-page .shared-plan-banner button { background:#17607C; border-radius:8px; min-height:44px; font-size:14px; }
+.journal-page .unofficial-badge { display:inline-flex; }
+.journal-page .site-kicker { color:#17607C; }
+.journal-page .plan-summary span,.journal-page .plan-summary p,.journal-page #activity-submessage,.journal-page .activity-big-stats span,.journal-page [data-home-screen-status] { color:#526773; }
+.spot-visit-card input,.spot-visit-card textarea { font-family:inherit; font-size:16px; }
+.spot-visit-save { background:#17607C!important; color:white!important; }
+.spot-visit-clear { color:#17607C!important; background:#EAF5FA!important; }
+.overlay-panel { z-index:2200; }
+@media(max-width:600px) {
+ .journal-page .site-nav { display:flex; flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; }
+ .journal-page .site-nav-link { flex:none; font-size:13px; min-height:44px; }
+ .journal-page .journal-hero { padding:16px; }
+ .journal-page .journal-tabs { grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .journal-page .journal-tab { font-size:13px; display:flex; flex-direction:column; gap:4px; padding:8px 2px; }
+ .journal-page .journal-view { padding:16px; }
+ .journal-page .plan-stop-actions { flex-wrap:wrap; }
+}
