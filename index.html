@@ -69,12 +69,12 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20261003-ux-recovery-4"
+    href="style.css?v=20261003-recent-results-1"
   >
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
   <meta name="theme-color" content="#f477a8">
-  <link rel="stylesheet" href="explorer.css?v=20261003-ux-recovery-4">
+  <link rel="stylesheet" href="explorer.css?v=20261003-recent-results-1">
 </head>
 
 
@@ -167,8 +167,9 @@
     <section id="recent-additions" class="recent-additions" aria-labelledby="recent-additions-title" hidden>
 <div class="recent-additions-strip">
         <a id="recent-additions-latest" class="recent-additions-latest"></a>
+        <button type="button" class="toolbar-button" data-recent-filter aria-pressed="false"><span id="recent-additions-title">新着</span> <span id="recent-additions-count"></span></button>
         <details class="recent-additions-details">
-          <summary aria-label="最近追加した情報をすべて見る"><span id="recent-additions-title">新着情報</span> <span id="recent-additions-count"></span> ▾</summary>
+          <summary aria-label="最近追加した情報をすべて見る">▾</summary>
           <div class="recent-additions-expanded"><p class="recent-additions-note">NEWは追加から14日間 · 開催日とは異なります</p><ul id="recent-additions-list" class="recent-additions-list"></ul></div>
         </details>
       </div>
@@ -231,6 +232,7 @@
       <!-- TOOLBAR -->
 
       <div class="map-toolbar">
+        <button id="recent-filter-clear" type="button" class="toolbar-button" hidden>新着の絞り込みを解除 ×</button>
 
         <div class="map-toolbar-left">
 
@@ -1697,10 +1699,10 @@
   ></script>
 
 
-  <script src="recent-utils.js?v=20261001-1"></script>
+  <script src="recent-utils.js?v=20261003-recent-results-1"></script>
   <script src="ui-icons.js?v=20261003-ux-recovery-4"></script>
-  <script src="explorer-ui.js?v=20261003-ux-recovery-4"></script>
-  <script src="app.js?v=20261003-ux-recovery-4"></script>
+  <script src="explorer-ui.js?v=20261003-recent-results-1"></script>
+  <script src="app.js?v=20261003-recent-results-1"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 
   <script src="navigation.js?v=20261003-ux-recovery-4" defer></script>

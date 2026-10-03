@@ -298,23 +298,24 @@ function initializeExplorer() {
 }
 
 initializeExplorer();
+// Filters belong to both views; the map container is hidden in list mode.
+document.body.append(document.getElementById("filter-panel"));
+document.getElementById("active-filter-summary").append(document.getElementById("recent-filter-clear"));
 // A concrete starting point for the nationwide desktop view; location permission is optional.
 const discovery=document.createElement('div');
 discovery.className='explorer-discovery';
 const discoveryCopy=document.createElement('p');discoveryCopy.textContent='行きたい地域や、最近追加されたスポットから探せます。';
 const regionAction=document.createElement('button');regionAction.type='button';regionAction.textContent='地域を選ぶ';
 const recentAction=document.createElement('button');recentAction.type='button';recentAction.textContent='最近追加した情報';
+recentAction.dataset.recentFilter='';recentAction.setAttribute('aria-pressed','false');
 discovery.append(discoveryCopy,regionAction,recentAction);
 document.querySelector('.spot-list-header').after(discovery);
 regionAction.addEventListener('click',()=>{
  const select=document.querySelector('#prefecture-filter');
  select.focus();try{select.showPicker?.();}catch{/* The native select remains keyboard-operable. */}
 });
-recentAction.addEventListener('click',()=>{
- const recent=document.querySelector('.recent-additions-details');recent.open=true;recent.querySelector('summary').focus();
-});
 const discoveryRegion=document.querySelector('#prefecture-filter');
-const refreshDiscovery=()=>{discovery.hidden=Boolean(discoveryRegion.value);};
+const refreshDiscovery=()=>{regionAction.hidden=Boolean(discoveryRegion.value);};
 discoveryRegion.addEventListener('change',refreshDiscovery);refreshDiscovery();
 addEventListener("popstate", () => {
   if(explorerSheetHistoryActive) {

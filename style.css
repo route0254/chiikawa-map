@@ -4310,3 +4310,11 @@ button {
 /* Shared personality: the same navigation symbols and gentle palette on every page. */
 .site-nav-link { display:inline-flex; align-items:center; justify-content:center; gap:5px; color:#654763; }
 .chiikatsu-nav-icon { display:inline-block; flex:none; width:1.2em; font-size:16px; line-height:1; text-align:center; }
+
+/* First-publication filters: dates describe listing additions, independently of event dates. */
+.catalog-recent { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 0; }
+.catalog-recent small { flex-basis:100%; color:#705d6c; font-size:12px; }
+.catalog-recent button, [data-recent-filter] { min-height:44px; border-radius:18px; }
+[data-catalog-recent][aria-pressed="true"], [data-recent-filter][aria-pressed="true"] { background:#87536e; color:#fff; }
+#recent-filter-clear { font-size:12px; margin:4px 8px; }
+#recent-filter-clear[hidden], .catalog-recent button[hidden] { display:none; }

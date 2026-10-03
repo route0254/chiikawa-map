@@ -180,7 +180,7 @@ const SOON_ENDING_DAYS =
 
 const SHARE_FILTER_PARAM_KEYS = [
   "q", "pref", "cat", "type", "period", "reservation",
-  "official", "nagano", "evidence", "brand", "soon", "when", "past", "view"
+  "official", "nagano", "evidence", "brand", "soon", "when", "past", "view", "recent"
 ];
 
 
@@ -2922,6 +2922,7 @@ let currentViewMode =
   "map";
 
 
+let recentOnly = false;
 let dateQuickMode =
   "";
 
@@ -4633,6 +4634,7 @@ function getCurrentFiltersShareUrl() {
 
   const url =
     getBasePublicUrl();
+  if (recentOnly) url.searchParams.set("recent", "1");
 
   const query =
     spotSearch?.value.trim();
@@ -4751,6 +4753,7 @@ function applySharedEvidenceParam() {
 
 
 function applySharedFilterState() {
+  recentOnly = params.get("recent") === "1";
 
   if (params.has("q") && spotSearch) {
     spotSearch.value = params.get("q") || "";
@@ -4962,6 +4965,9 @@ function setViewMode(
   const listMode =
     currentViewMode ===
     "list";
+  locationButton.hidden = listMode;
+  filterToggle.hidden = false;
+  document.body.dataset.viewMode = currentViewMode;
 
   if (
     mapContent
@@ -8280,6 +8286,7 @@ function getCurrentFilterState() {
       "",
     favoriteOnly,
     visitedOnly,
+    recentOnly,
     dateQuickMode,
     soonEnding:
       Boolean(
@@ -8304,6 +8311,9 @@ function recordMatchesFilters(
 
   const spot =
     record.spot;
+
+  if (state.recentOnly && (!RecentAdditions.isNew(firstAddedDates[spot.id]) ||
+      (spot.endDate && spot.endDate < RecentAdditions.japanToday()))) return false;
 
   const periodStatus =
     getSpotPeriodStatus(spot);
@@ -8494,6 +8504,7 @@ function describeCheckedFilterGroup(
 function getActiveFilterDescriptions() {
 
   const descriptions = [];
+  if (recentOnly) descriptions.push("最近追加（14日以内）");
 
   const rawSearchQuery =
     spotSearch?.value.trim() ||
@@ -8588,6 +8599,16 @@ function getActiveFilterDescriptions() {
 function renderFilterFeedback(
   visibleCount
 ) {
+  if (recentOnly || new URLSearchParams(location.search).has("recent")) {
+    const url = new URL(location.href);
+    url.search = new URL(getCurrentFiltersShareUrl()).search;
+    history.replaceState(history.state, "", url);
+  }
+  document.querySelectorAll("[data-recent-filter]").forEach(button => {
+    button.setAttribute("aria-pressed", String(recentOnly));
+  });
+  const recentClear = document.getElementById("recent-filter-clear");
+  if (recentClear) recentClear.hidden = !recentOnly;
 
   const brandInputs = Array.from(document.querySelectorAll('input[name="filter-brand"]'));
   const selectedBrands = brandInputs.filter(input => input.checked).length;
@@ -8898,6 +8919,11 @@ function setFilterPanelOpen(
 
   filterPanel.hidden =
     !open;
+  if (open) {
+    const top = Math.min(filterToggle.getBoundingClientRect().bottom + 8, Math.max(12, innerHeight - 260));
+    filterPanel.style.top = `${top}px`;
+    filterPanel.style.maxHeight = `calc(100dvh - ${top + 12}px)`;
+  }
 
 
   filterToggle.setAttribute(
@@ -9075,6 +9101,7 @@ function setNaganoHelpPanelOpen(
 // フィルターリセット
 
 function resetFilters() {
+  recentOnly = false;
 
   if (
     spotSearch
@@ -9376,12 +9403,26 @@ async function ensureArchiveDataLoaded() {
 
 let firstAddedDates = {};
 
+function setRecentFilter(enabled = true) {
+  recentOnly = enabled;
+  updateSpotFilters();
+  document.getElementById("recent-additions").querySelector("details").open = false;
+  document.getElementById("recent-filter-clear").hidden = !enabled;
+}
+
+document.addEventListener("click", event => {
+  const action = event.target.closest("[data-recent-filter], #recent-filter-clear");
+  if (!action) return;
+  event.preventDefault();
+  setRecentFilter(action.id !== "recent-filter-clear");
+});
+
 function createAddedDateLabel(spot) {
   const date = firstAddedDates[spot.id];
   if (!RecentAdditions.validDate(date)) return null;
   const label = document.createElement("p");
   label.className = "spot-added-date";
-  if (RecentAdditions.isNew(date)) {
+  if (RecentAdditions.isNew(date) && (!spot.endDate || spot.endDate >= RecentAdditions.japanToday())) {
     const badge = document.createElement("span");
     badge.className = "new-badge";
     badge.textContent = "NEW";

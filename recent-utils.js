@@ -24,5 +24,12 @@
       (!spot.endDate || spot.endDate >= today))
       .sort((a, b) => dates[b.id].localeCompare(dates[a.id]) || a.id.localeCompare(b.id));
   }
-  return { NEW_DAYS, japanToday, validDate, isNew, selectRecent };
+  function isHistoricalCollaboration(record, today = japanToday()) {
+    return ["ended", "past", "cancelled"].includes(record.status) ||
+      (record.periods?.length > 0 && record.periods.every(period => period.endDate && period.endDate < today));
+  }
+  function isRecentCollaboration(record, dates, today = japanToday()) {
+    return isNew(dates[record.id], today) && !isHistoricalCollaboration(record, today);
+  }
+  return { NEW_DAYS, japanToday, validDate, isNew, selectRecent, isRecentCollaboration, isHistoricalCollaboration };
 });

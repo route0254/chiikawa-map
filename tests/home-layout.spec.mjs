@@ -243,7 +243,7 @@ test("360px long names and 200 percent text keep exploration actions reachable",
   await page.addStyleTag({content:'.home-map.explorer .spot-list-card h3,.home-map.explorer .spot-list-open-button{font-size:32px!important}.home-map.explorer .explorer-classification,.home-map.explorer .spot-list-card-meta,.home-map.explorer .explorer-entry-hint,.home-map.explorer .spot-list-timing{font-size:26px!important}.home-map.explorer .explorer-period,.home-map.explorer .explorer-save,.home-map.explorer .explorer-visited{font-size:28px!important}'});
   expect(await page.locator('.spot-list-open-button').first().evaluate(el=>parseFloat(getComputedStyle(el).lineHeight))).toBeGreaterThanOrEqual(48);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(360);
-  for(const selector of ['#spot-search','#prefecture-filter','#filter-toggle','#list-view-button','.map-tools-menu > summary','.recent-additions-details > summary','.spot-list-open-button']) {
+  for(const selector of ['#spot-search','#prefecture-filter','#filter-toggle','#list-view-button','.map-tools-menu > summary','#recent-additions [data-recent-filter]','.spot-list-open-button']) {
     const box=await page.locator(selector).first().boundingBox();
     expect(box.x).toBeGreaterThanOrEqual(0);expect(box.x+box.width).toBeLessThanOrEqual(360);
   }

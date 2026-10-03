@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20261003-ux-recovery-4";
+  "chiikatsu-map-v20261003-recent-results-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -35,6 +35,7 @@ const CORE_FILES = [
   "./legal.css",
   "./app.js",
   "./recent-utils.js",
+  "./recent-ui.js",
   "./data/added-dates.json",
   "./official.js",
   "./collaborations.js",
