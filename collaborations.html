@@ -41,7 +41,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css?v=20261003-ux-recovery-4">
+  <link rel="stylesheet" href="style.css?v=20261003-recent-results-2">
   <link rel="stylesheet" href="collaborations.css?v=20260915-1">
   <script type="application/ld+json">
     {
@@ -232,6 +232,7 @@
           </div>
         </div>
 
+        <div id="collaboration-recent" class="catalog-recent"><button type="button" class="toolbar-button" data-catalog-recent aria-pressed="false">新着</button><button type="button" class="toolbar-button" data-catalog-recent-clear hidden>新着の絞り込みを解除 ×</button><small>一覧への追加から14日間 · 開催日・情報確認日とは別</small></div>
         <div class="collaboration-filters" aria-label="開催中コラボの絞り込み">
           <label class="is-wide">
             <span>キーワード</span>
@@ -409,7 +410,9 @@
     <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。 <a href="privacy.html">プライバシー</a> ／ <a href="terms.html">利用条件・権利表記</a></p>
   </main>
 
-  <script type="module" src="collaborations.js?v=20261003-ux-recovery-4"></script>
+  <script src="recent-utils.js?v=20261003-recent-results-1" defer></script>
+  <script src="recent-ui.js?v=20261003-recent-results-2" defer></script>
+  <script type="module" src="collaborations.js?v=20261003-recent-results-1"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
   <script src="ui-icons.js?v=20261003-ux-recovery-4" defer></script>
   <script src="site-ui.js?v=20261003-ux-recovery-4" defer></script>

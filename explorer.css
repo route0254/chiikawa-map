@@ -354,3 +354,18 @@
 .journal-page .favorite-card-actions button:not(.favorite-remove),.journal-page .plan-candidate button { background:#fbe2ed; color:#654763; border-color:#cf7ea1; }
 .journal-page .journal-tab.is-active { background:#fbe2ed; color:#654763; border-color:#cf7ea1; }
 .journal-page .plan-stop-copy strong,.journal-page .plan-candidate-copy strong,.journal-page .plan-column-heading h3,.journal-page .activity-panel-heading h3,.journal-page .calendar-day-heading h3 { color:#593e4f; }
+
+@media(max-width:799px) {
+ .home-map.explorer[data-view-mode="list"] .explorer-discovery { display:flex; gap:6px; margin:0 0 8px; padding:6px; }
+ .home-map.explorer[data-view-mode="list"] .explorer-discovery p { display:none; }
+}
+.home-map.explorer #location-button[hidden] { display:none; }
+.home-map.explorer #filter-panel { position:fixed; top:12px; left:12px; z-index:3000; max-height:calc(100dvh - 24px); }
+.home-map.explorer .recent-additions-strip { display:flex; align-items:center; gap:4px; }
+.home-map.explorer .recent-additions-latest { flex:1; min-width:0; }
+.home-map.explorer .recent-additions-strip > button { flex:none; padding:6px 8px; font-size:12px; white-space:nowrap; }
+.home-map.explorer .recent-additions-details summary { min-width:44px; min-height:44px; justify-content:center; padding:6px; }
+@media(max-width:899px) {
+ .home-map.explorer .site-header-inner { column-gap:8px; }
+ .home-map.explorer .recent-additions-details { display:none; }
+}

@@ -1,5 +1,13 @@
 "use strict";
 
+let collaborationAddedDates = {};
+document.addEventListener("click", event => {
+  const action = event.target.closest("#collaboration-recent button");
+  if (!action) return;
+  listStates.current.filters.recent = action.hasAttribute("data-catalog-recent");
+  renderList("current");
+});
+
 const dataUrls = {
   current: new URL(
     "./data/collaborations-current.json",
@@ -81,6 +89,13 @@ const listStates = {
     }
   }
 };
+
+const initialRecentParams = new URLSearchParams(location.search);
+for (const key of ["search", "category", "status", "channel", "sort"]) {
+  const value = initialRecentParams.get(key === "search" ? "q" : key);
+  if (value) listStates.current.filters[key] = value;
+}
+listStates.current.filters.recent = initialRecentParams.get("recent") === "1";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -344,6 +359,7 @@ function filterRecords(type) {
 
   const filtered = state.records.filter(
     record => {
+      if (filters.recent && !RecentAdditions.isRecentCollaboration(record, collaborationAddedDates)) return false;
       if (
         search &&
         !getRecordSearchText(record)
@@ -428,6 +444,7 @@ function renderCard(record) {
         <div class="collaboration-card-title-wrap">
           <span class="collaboration-status is-${escapeHtml(record.status)}">${escapeHtml(status)}</span>
           <h4>${escapeHtml(record.title)}</h4>
+          ${RecentUI.label(collaborationAddedDates[record.id], RecentAdditions.isRecentCollaboration(record, collaborationAddedDates))?.outerHTML || ""}
           <p class="collaboration-partner">${escapeHtml(record.partner)}</p>
         </div>
         <span class="collaboration-group-icon" title="${escapeHtml(category.label)}" aria-label="${escapeHtml(category.label)}">${category.icon}</span>
@@ -452,6 +469,19 @@ function renderList(type) {
 
   if (!state.records) {
     return;
+  }
+  if (type === "current") RecentUI.renderControl("collaboration-recent",
+    state.records.filter(record => RecentAdditions.isRecentCollaboration(record, collaborationAddedDates)).length,
+    Boolean(state.filters.recent));
+  if (type === "current") {
+    const url = new URL(location.href);
+    for (const key of ["search", "category", "status", "channel", "sort", "recent"]) {
+      const param = key === "search" ? "q" : key;
+      const value = state.filters[key];
+      if (value && !(key === "sort" && value === "ending")) url.searchParams.set(param, value === true ? "1" : value);
+      else url.searchParams.delete(param);
+    }
+    history.replaceState(history.state, "", url);
   }
 
   const records = filterRecords(type);
@@ -821,8 +851,13 @@ async function loadList(type, force = false) {
       );
     }
 
+    const registry = await RecentUI.registry();
+    collaborationAddedDates = registry.collaborationFirstAdded || {};
     state.records = records;
     populateDynamicFilters(type);
+    if (type === "current") document.querySelectorAll('[data-filter][data-list="current"]').forEach(control => {
+      control.value = state.filters[control.dataset.filter] || "";
+    });
     renderList(type);
     updateDataAsOf();
 

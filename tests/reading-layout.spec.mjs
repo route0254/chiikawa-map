@@ -232,12 +232,14 @@ test('desktop discovery leads to recent entries and a regional search without ge
  await page.setViewportSize({width:1440,height:1000});
  await page.goto('/');
  await page.locator('.explorer-discovery button').nth(1).click();
- await expect(page.locator('.recent-additions-details')).toHaveAttribute('open','');
+ await expect(page.locator('#recent-additions [data-recent-filter]')).toHaveAttribute('aria-pressed','true');
+ await expect(page.locator('.recent-additions-details')).not.toHaveAttribute('open','');
  await page.keyboard.press('Escape');
  await page.locator('.explorer-discovery button').first().click();
  await expect(page.locator('#prefecture-filter')).toBeFocused();
  await page.locator('#prefecture-filter').selectOption('東京都');
- await expect(page.locator('.explorer-discovery')).toBeHidden();
+ await expect(page.locator('.explorer-discovery button').first()).toBeHidden();
+ await expect(page.locator('.explorer-discovery [data-recent-filter]')).toBeVisible();
  await expect(page.locator('#prefecture-filter')).toHaveValue('東京都');
 });
 

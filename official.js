@@ -1,5 +1,14 @@
 "use strict";
 
+let officialAddedDates = {};
+let officialRecentOnly = false;
+document.addEventListener("click", event => {
+  const action = event.target.closest("#official-recent button");
+  if (!action) return;
+  officialRecentOnly = action.hasAttribute("data-catalog-recent");
+  handleCurrentFiltersChanged(action);
+});
+
 
 const CURRENT_DATA_URL =
   "./data/official-spots.json";
@@ -480,6 +489,7 @@ const mobileFilterMedia =
 
 
 const CATALOG_FILTER_PARAMS = [
+  "recent",
   "q",
   "pref",
   "kind",
@@ -1572,6 +1582,8 @@ function createSpotCard(
   }
 
   card.appendChild(badges);
+  const addedLabel = RecentUI.label(officialAddedDates[spot.id],
+    RecentAdditions.selectRecent([spot], officialAddedDates).length > 0);
 
   card.appendChild(
     createElement(
@@ -1580,6 +1592,7 @@ function createSpotCard(
       spot.name
     )
   );
+  if (addedLabel) card.appendChild(addedLabel);
 
   const saveActions =
     createElement(
@@ -2097,6 +2110,7 @@ function getCurrentVisibleSpots() {
 
 function getCurrentFilterState() {
   return {
+    recent: officialRecentOnly,
     query:
       normalizeSearchText(
         currentSearch.value
@@ -2121,6 +2135,7 @@ function matchesCurrentSpot(
   spot,
   state
 ) {
+  if (state.recent && !RecentAdditions.selectRecent([spot], officialAddedDates).length) return false;
   const selectedGroup =
     CURRENT_GROUPS.find(
       group =>
@@ -2342,6 +2357,7 @@ function renderCurrentSpots() {
 
   const visibleSpots =
     getCurrentVisibleSpots();
+  RecentUI.renderControl("official-recent", RecentAdditions.selectRecent(visibleSpots, officialAddedDates).length, officialRecentOnly);
 
   const filteredSpots =
     visibleSpots.filter(
@@ -2988,6 +3004,7 @@ function applyCurrentFiltersFromUrl() {
     new URLSearchParams(
       window.location.search
     );
+  officialRecentOnly = params.get("recent") === "1";
 
   currentSearch.value =
     params.get("q") || "";
@@ -3104,6 +3121,7 @@ function getCatalogUrl(
 
   if (view === "current") {
     url.searchParams.delete("view");
+    setUrlParam(url, "recent", officialRecentOnly ? "1" : "");
     setUrlParam(
       url,
       "q",
@@ -3381,6 +3399,8 @@ async function loadCurrentSpots() {
             CURRENT_DATA_URL
           );
 
+        const registry = await RecentUI.registry();
+        officialAddedDates = registry.firstAdded || {};
         currentLoaded = true;
 
         populateCurrentSummary();
@@ -3717,6 +3737,7 @@ document.getElementById(
   "click",
   () => {
     currentSearch.value = "";
+    officialRecentOnly = false;
     currentPrefecture.value = "";
     currentKind.value = "";
     currentBrand.value = "";

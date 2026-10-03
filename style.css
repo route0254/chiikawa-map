@@ -4310,3 +4310,21 @@ button {
 /* Shared personality: the same navigation symbols and gentle palette on every page. */
 .site-nav-link { display:inline-flex; align-items:center; justify-content:center; gap:5px; color:#654763; }
 .chiikatsu-nav-icon { display:inline-block; flex:none; width:1.2em; font-size:16px; line-height:1; text-align:center; }
+
+/* First-publication filters: dates describe listing additions, independently of event dates. */
+.catalog-recent { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 0; }
+.catalog-recent small { flex-basis:100%; color:#705d6c; font-size:12px; }
+.catalog-recent button, [data-recent-filter] { min-height:44px; border-radius:18px; }
+[data-catalog-recent][aria-pressed="true"], [data-recent-filter][aria-pressed="true"] { background:#87536e; color:#fff; }
+#recent-filter-clear { font-size:12px; margin:4px 8px; }
+#recent-filter-clear[hidden], .catalog-recent button[hidden] { display:none; }
+
+/* Official additions use one visible state; date details are available on demand. */
+#official-recent { gap:6px; margin:6px 0 8px; }
+#official-recent [data-catalog-recent] { gap:5px; }
+#official-recent[data-active="true"] [data-catalog-recent]::after { content:"適用中"; font-size:10px; }
+#official-recent .recent-date-help { position:relative; margin:0; }
+#official-recent .recent-date-help summary { display:flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; border:1px solid #e7d6e3; border-radius:999px; color:#654763; cursor:pointer; }
+#official-recent .recent-date-help small { position:absolute; right:0; top:48px; z-index:20; width:min(280px,calc(100vw - 48px)); padding:12px; background:#fffaf7; border:1px solid #e7d6e3; border-radius:12px; box-shadow:0 4px 16px #593e4f24; font-size:12px; line-height:1.6; }
+.official-page #current-groups { margin-top:10px; }
+.official-page #current-groups .spot-group-heading { margin-bottom:8px; }
