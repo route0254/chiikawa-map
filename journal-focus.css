@@ -79,7 +79,10 @@
  .journal-page .plan-column-heading { flex-wrap:wrap; }
  .journal-page .plan-stop-actions { justify-content:flex-start; gap:4px; }
  .journal-page .activity-heading { display:block; }
- .journal-page .activity-share-actions { display:flex; margin-top:10px; }
+ .journal-page .activity-share-actions { display:flex; margin-top:4px; }
+ .journal-page #activity-view .journal-section-heading { margin-bottom:4px; }
+ .journal-page #activity-view .recent-activity-panel { padding-top:8px; }
+ .journal-page #activity-view .recent-activity-panel .activity-panel-heading { margin-bottom:4px; }
  .journal-page .activity-share-button { flex:1; padding:8px; font-size:13px; }
  .journal-page .activity-panel-heading { flex-direction:row; flex-wrap:wrap; }
  .journal-page .recent-activity-list { grid-template-columns:1fr; }
