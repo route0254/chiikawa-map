@@ -167,6 +167,18 @@ test("official new results show the first card title before the navigation on mo
     await expect(page.locator("#official-recent [data-catalog-recent-clear]")).toBeVisible();
     await expect(page.locator("#official-recent small")).toBeHidden();
     await page.evaluate(() => document.fonts.ready);
+    // Production adds this header asynchronously; localhost has no enabled account.
+    await page.evaluate(async () => {
+      await import("/cloud-sync-ui.js");
+      window.dispatchEvent(new CustomEvent("chiikatsu:cloud-sync-state", {
+        detail: { available: true, signedIn: false, status: "ready" }
+      }));
+    });
+    await expect(page.locator("[data-cloud-header-button]")).toBeVisible();
+    if (width === 390) {
+      // Keep the real Japanese font's two-line tab height even if CI cannot fetch it.
+      await page.addStyleTag({ content: ".catalog-tabs { min-height:59px; }" });
+    }
     const position = await page.locator("#current-groups .official-spot-card h4").first().evaluate(el => {
       const rect = el.getBoundingClientRect();
       const navigation = document.querySelector(".site-nav").getBoundingClientRect();

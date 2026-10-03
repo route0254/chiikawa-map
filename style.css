@@ -4328,3 +4328,12 @@ button {
 #official-recent .recent-date-help small { position:absolute; right:0; top:48px; z-index:20; width:min(280px,calc(100vw - 48px)); padding:12px; background:#fffaf7; border:1px solid #e7d6e3; border-radius:12px; box-shadow:0 4px 16px #593e4f24; font-size:12px; line-height:1.6; }
 .official-page #current-groups { margin-top:10px; }
 .official-page #current-groups .spot-group-heading { margin-bottom:8px; }
+/* Leave room for the asynchronously loaded save header and wrapped Japanese tabs. */
+@media (max-width:680px) {
+ .official-page.reading-page .catalog-tabs { margin-bottom:8px; }
+ .official-page.reading-page #catalog-panel-current .site-primary-search { margin-bottom:6px; }
+ .official-page #official-recent { margin:4px 0; }
+ .official-page.reading-page #catalog-panel-current .catalog-result-toolbar { margin-top:4px; }
+ .official-page #current-groups { margin-top:6px; }
+ .official-page #current-groups .spot-group-heading { margin-bottom:4px; }
+}
