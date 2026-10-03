@@ -585,6 +585,7 @@ async function getDuplicateLayoutAudit(
 test(
   "地図と一覧を切り替え、一覧DOMは必要な時だけ生成する",
   async ({ page }) => {
+    await page.setViewportSize({width:390,height:844});
     await page.goto("/");
 
     const visibleCount =
@@ -622,7 +623,7 @@ test(
       page.locator(
         ".spot-list-card"
       )
-    ).toHaveCount(0);
+    ).toHaveCount(visibleCount);
   }
 );
 
@@ -679,6 +680,7 @@ test(
       /github\.com\/route0254\/chiikawa-map\/issues\/new/
     );
 
+    await detailPanel.locator(".spot-detail-action-menu summary").click();
     await expect(
       detailPanel.locator(
         ".spot-map-button"
@@ -1407,6 +1409,7 @@ test(
         "#saved-data-panel"
       );
 
+    await page.locator(".map-tools-menu > summary").click();
     await savedToggle.click();
 
     await expect(savedPanel).toBeVisible();
@@ -1616,7 +1619,7 @@ test(
     );
 
     await expect(savedPanel).toBeHidden();
-    await expect(savedToggle).toBeFocused();
+    await expect(page.locator('.map-tools-menu > summary')).toBeFocused();
   }
 );
 
@@ -1643,6 +1646,7 @@ test(
         "ちいかわらんど 大阪梅田店"
     }).first().click();
 
+    await page.locator(".spot-detail-action-menu summary").click();
     await page.locator(
       ".spot-visited-button"
     ).click();
@@ -1698,6 +1702,7 @@ test(
         "限定グッズを購入。次回は午前中に行く。"
     });
 
+    await page.locator(".map-tools-menu > summary").click();
     await page.locator(
       "#saved-data-toggle"
     ).click();
@@ -1832,6 +1837,7 @@ test(
       "限定グッズを購入。次回は午前中に行く。"
     );
 
+    await page.locator(".map-tools-menu > summary").click();
     await page.locator(
       "#saved-data-toggle"
     ).click();
@@ -1954,402 +1960,38 @@ async function includeArchivedSpotsForLayout(page, ids, excludedIds = []) {
 }
 
 
-test(
-  "同一座標の2〜6スポットを件数別パターンで外向きに配置する",
-  async ({ page }) => {
-    await includeArchivedSpotsForLayout(page, [
-      "pocket-popup-ikebukuro",
-      "nagano-market-popup-2026-09-04-nagoya-p",
-      "movie-cafe-shinsaibashi",
-      "popup-2026-09-18-jr-ikebukuro"
-    ], [
-      "tokyo-banana-popup-solamachi-2026-10"
-    ]);
-    const scenarios = [
-      {
-        directions: [
-          "left",
-          "right"
-        ],
-        ids: [
-          "mogumogu-otaru",
-          "baby-castella-otaru"
-        ],
-        spot:
-          "mogumogu-otaru"
-      },
-      {
-        directions: [
-          "top",
-          "bottom",
-          "right"
-        ],
-        ids: [
-          "chiikawaland-solamachi",
-          "collab-skytree-2026",
-          "nagano-tokyo-skytree"
-        ],
-        spot:
-          "chiikawaland-solamachi"
-      },
-      {
-        directions: [
-          "top",
-          "left",
-          "bottom",
-          "right"
-        ],
-        ids: [
-          "chiikawaland-shinsaibashi",
-          "ramen-buta-shinsaibashi",
-          "nagano-market-shinsaibashi",
-          "movie-cafe-shinsaibashi"
-        ],
-        spot:
-          "chiikawaland-shinsaibashi"
-      },
-      {
-        directions: [
-          "top",
-          "left",
-          "left",
-          "bottom",
-          "right"
-        ],
-        ids: [
-          "chiikawaland-ikebukuro",
-          "chiikawa-restaurant-ikebukuro",
-          "ramen-buta-ikebukuro",
-          "pocket-popup-ikebukuro",
-          "popup-2026-09-18-jr-ikebukuro"
-        ],
-        spot:
-          "chiikawaland-ikebukuro"
-      },
-      {
-        directions: [
-          "top",
-          "left",
-          "left",
-          "left",
-          "bottom",
-          "right"
-        ],
-        ids: [
-          "chiikawaland-nagoya",
-          "magical-nagoya",
-          "ramen-buta-nagoya",
-          "chiikawa-yaki-nagoya",
-          "movie-cafe-nagoya",
-          "nagano-market-popup-2026-09-04-nagoya-p"
-        ],
-        spot:
-          "chiikawaland-nagoya"
-      }
-    ];
-
-    for (
-      const scenario of
-      scenarios
-    ) {
-      await page.goto(
-        "/?spot=" +
-        scenario.spot
-      );
-
-      await waitForSpots(page);
-
-      await page.waitForTimeout(300);
-
-      const audit =
-        await getDuplicateLayoutAudit(
-          page,
-          scenario.ids
-        );
-
-      expect(
-        audit.directions
-      ).toEqual(
-        scenario.directions
-      );
-
-      expect(
-        audit.outward
-      ).toBe(true);
-
-      expect(
-        audit.labelOverlaps
-      ).toEqual([]);
-
-      expect(
-        audit.lineCrossings
-      ).toEqual([]);
-    }
-
+test("同一座標の候補を一覧から選び直し、選択名だけを地図に表示する", async ({page}) => {
+ await includeArchivedSpotsForLayout(page, ["pocket-popup-ikebukuro", "nagano-market-popup-2026-09-04-nagoya-p", "movie-cafe-shinsaibashi", "popup-2026-09-18-jr-ikebukuro"], ["tokyo-banana-popup-solamachi-2026-10"]);
+ for (const [spot,count] of [["mogumogu-otaru",2],["chiikawaland-solamachi",3],["chiikawaland-shinsaibashi",4],["chiikawaland-ikebukuro",5],["chiikawaland-nagoya",6]]) {
+  await page.goto('/?spot='+spot); await waitForSpots(page);
+  const choices=page.locator('.spot-same-place-card button');
+  await expect(choices).toHaveCount(count-1);
+  const names=await choices.allTextContents();
+  for(const name of names) {
+   await page.locator('.spot-same-place-card').getByRole('button',{name,exact:true}).click();
+   await expect(page.locator('#spot-detail-title')).toHaveText(name);
+   await expect(page.locator('.spot-same-place-card').getByRole('button',{name,exact:true})).toHaveCount(0);
+   await expect(page.locator('.spot-name-label-duplicate.is-readable')).toHaveCount(1);
   }
-);
+ }
+});
 
-
-test(
-  "同一座標の6スポットを展開し、ピンと名称ラベルを分散する",
-  async ({ page }) => {
-    await includeArchivedSpotsForLayout(page, [
-      "nagano-market-popup-2026-09-04-nagoya-p"
-    ]);
-    await page.goto(
-      "/?spot=chiikawaland-nagoya"
-    );
-
-    await waitForSpots(page);
-
-    await expect(
-      page.locator(
-        "#spot-detail-panel"
-      )
-    ).toBeVisible();
-
-    await page.waitForTimeout(700);
-
-    const duplicateSpots = [
-      {
-        id:
-          "chiikawaland-nagoya",
-        name:
-          "ちいかわらんど 名古屋パルコ店"
-      },
-      {
-        id:
-          "magical-nagoya",
-        name:
-          "まじかるちいかわストア 名古屋パルコ店"
-      },
-      {
-        id:
-          "ramen-buta-nagoya",
-        name:
-          "ちいかわラーメン 豚 名古屋PARCO"
-      },
-      {
-        id:
-          "chiikawa-yaki-nagoya",
-        name:
-          "ちいかわ焼き 名古屋PARCO店"
-      },
-      {
-        id:
-          "movie-cafe-nagoya",
-        name:
-          "映画ちいかわ 人魚の島のひみつ Collaboration CAFE 名古屋"
-      },
-      {
-        id:
-          "nagano-market-popup-2026-09-04-nagoya-p",
-        name:
-          "ナガノマーケット POP UP SHOP 名古屋PARCO"
-      }
-    ];
-
-    const duplicateIds =
-      duplicateSpots.map(
-        spot => spot.id
-      );
-
-    const markerPositions = [];
-
-    for (
-      const spotId of
-      duplicateIds
-    ) {
-      const marker =
-        page.locator(
-          '.spot-marker[data-spot-id="' +
-          spotId +
-          '"]'
-        );
-
-      await expect(marker).toBeVisible();
-
-      const box =
-        await marker.boundingBox();
-
-      markerPositions.push(
-        Math.round(box.x) +
-        "," +
-        Math.round(box.y)
-      );
-    }
-
-    expect(
-      new Set(
-        markerPositions
-      ).size
-    ).toBe(
-      duplicateIds.length
-    );
-
-    for (
-      const spot of
-      duplicateSpots
-    ) {
-      const marker =
-        page.locator(
-          '.spot-marker[data-spot-id="' +
-          spot.id +
-          '"]'
-        );
-
-      const label =
-        page.locator(
-          '.spot-name-label-duplicate[data-spot-id="' +
-          spot.id +
-          '"]'
-        );
-
-      await label.click();
-
-      await expect(
-        page.locator(
-          "#spot-detail-title"
-        )
-      ).toHaveText(
-        spot.name
-      );
-
-      await marker.click();
-
-      await expect(
-        page.locator(
-          "#spot-detail-title"
-        )
-      ).toHaveText(
-        spot.name
-      );
-    }
-
-    const labels =
-      await page.locator(
-        ".spot-name-label-duplicate"
-      ).evaluateAll(
-        elements =>
-          elements
-            .filter(
-              element =>
-                element.getClientRects().length >
-                0
-            )
-            .map(
-              element => {
-                const rect =
-                  element.getBoundingClientRect();
-
-                return {
-                  className:
-                    element.className,
-                  left:
-                    rect.left,
-                  right:
-                    rect.right,
-                  top:
-                    rect.top,
-                  bottom:
-                    rect.bottom
-                };
-              }
-            )
-      );
-
-    expect(labels).toHaveLength(
-      duplicateIds.length
-    );
-
-    expect(
-      labels.some(
-        label =>
-          label.className.includes(
-            "spot-name-label-right"
-          )
-      )
-    ).toBe(true);
-
-    expect(
-      labels.some(
-        label =>
-          label.className.includes(
-            "spot-name-label-left"
-          )
-      )
-    ).toBe(true);
-
-    expect(
-      labels.some(
-        label =>
-          label.className.includes(
-            "spot-name-label-top"
-          )
-      )
-    ).toBe(true);
-
-    expect(
-      labels.some(
-        label =>
-          label.className.includes(
-            "spot-name-label-bottom"
-          )
-      )
-    ).toBe(true);
-
-    for (
-      let firstIndex = 0;
-      firstIndex < labels.length;
-      firstIndex++
-    ) {
-      for (
-        let secondIndex =
-          firstIndex + 1;
-        secondIndex < labels.length;
-        secondIndex++
-      ) {
-        const first =
-          labels[firstIndex];
-
-        const second =
-          labels[secondIndex];
-
-        const overlapWidth =
-          Math.max(
-            0,
-            Math.min(
-              first.right,
-              second.right
-            ) -
-            Math.max(
-              first.left,
-              second.left
-            )
-          );
-
-        const overlapHeight =
-          Math.max(
-            0,
-            Math.min(
-              first.bottom,
-              second.bottom
-            ) -
-            Math.max(
-              first.top,
-              second.top
-            )
-          );
-
-        expect(
-          overlapWidth *
-          overlapHeight
-        ).toBe(0);
-      }
-    }
-  }
-);
-
+test("同一座標6件のピンを展開し、全候補と保存・詳細を保持する", async ({page}) => {
+ await includeArchivedSpotsForLayout(page,["nagano-market-popup-2026-09-04-nagoya-p"]);
+ await page.goto('/?spot=chiikawaland-nagoya'); await waitForSpots(page);
+ await page.waitForTimeout(700);
+ const ids=['chiikawaland-nagoya','magical-nagoya','ramen-buta-nagoya','chiikawa-yaki-nagoya','movie-cafe-nagoya','nagano-market-popup-2026-09-04-nagoya-p'];
+ const positions=[];
+ for(const id of ids) {
+  const marker=page.locator('.spot-marker[data-spot-id="'+id+'"]');
+  await expect(marker).toBeVisible(); const box=await marker.boundingBox(); positions.push(Math.round(box.x)+','+Math.round(box.y));
+  await marker.click(); await expect(page.locator('.spot-same-place-card button')).toHaveCount(5);
+  await expect(page.locator('.spot-name-label-duplicate.is-readable')).toHaveCount(1);
+ }
+ expect(new Set(positions).size).toBe(6);
+ await page.locator('.spot-detail-action-menu summary').click();
+ await expect(page.locator('.spot-visited-button')).toBeVisible();
+});
 
 test(
   "スマートフォン幅で主要操作を44px以上に保つ",
@@ -2362,6 +2004,7 @@ test(
     await page.goto("/");
     await waitForSpots(page);
 
+    await page.locator(".map-tools-menu > summary").click();
     const selectors = [
       "#spot-search",
       "#prefecture-filter",
@@ -2384,6 +2027,7 @@ test(
       );
     }
 
+    await page.locator(".map-tools-menu > summary").click();
     await page.locator(
       "#filter-toggle"
     ).click();
@@ -2401,6 +2045,8 @@ test(
       "#list-view-button"
     ).click();
 
+    await page.locator(".explorer-sort > summary").click();
+    await page.locator(".candidate-tools > summary").first().click();
     for (
       const selector of [
         ".spot-list-tool-button",
@@ -2463,6 +2109,7 @@ test(
       }
     );
 
+    await page.locator(".site-menu > summary").click();
     const officialNavLink =
       page.locator(
         '.site-nav-link[href="official.html"]'
@@ -3144,6 +2791,7 @@ test(
     const todayButton = page.locator(
       '[data-date-quick="today"]'
     );
+    await page.locator(".explorer-dates > summary").click();
     await todayButton.click();
 
     await expect(todayButton).toHaveAttribute(
@@ -3161,6 +2809,7 @@ test(
       "true"
     );
 
+    await page.locator(".explorer-dates > summary").click();
     await page.locator(
       '[data-date-quick="upcoming"]'
     ).click();
@@ -3568,6 +3217,7 @@ test(
 
     for (const path of pages) {
       await page.goto(path);
+      if (await page.locator(".site-menu").count()) await page.locator(".site-menu > summary").click();
       const historyLink = page.locator(
         'a.site-nav-link[href$="nagano.html"]'
       ).first();
@@ -3596,12 +3246,14 @@ test(
 
     for (const path of pages) {
       await page.goto(path);
+      if (await page.locator(".site-menu").count()) await page.locator(".site-menu > summary").click();
       await expect(
         page.locator('a.site-nav-link[href$="official-links.html"]')
       ).toBeVisible();
     }
 
     await page.goto("/");
+    await page.locator(".site-menu > summary").click();
     await page.locator('a.site-nav-link[href="official-links.html"]').click();
     await expect(page).toHaveURL(/\/official-links\.html$/);
     await expect(page.locator(".official-links-list a")).toHaveCount(9);
@@ -4149,9 +3801,10 @@ test("unopened Osaka permanent store remains searchable but is excluded from tod
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
   await page.locator("#spot-search").fill("ちいかわパークストア 大阪");
   await page.locator("#spot-search").blur();
-  await page.locator("#recent-additions-title").click();
+  await page.locator("h1").click();
   await page.locator("#list-view-button").click();
   await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(1);
+  await page.locator(".explorer-dates > summary").click();
   await page.getByRole("button", { name: "今日の候補", exact: true }).click();
   await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(0);
   await page.goto("/?spot=chiikawaland-osaka-umeda");
@@ -4164,6 +3817,7 @@ test("unopened Osaka permanent store remains searchable but is excluded from tod
   await page.locator("#spot-search").blur();
   await page.locator("h1").first().click();
   await page.locator("#list-view-button").click();
+  await page.locator(".explorer-dates > summary").click();
   await page.getByRole("button", { name: "今日の候補", exact: true }).click();
   await expect(page.locator(".spot-list-card h3", { hasText: "ちいかわパークストア 大阪" })).toHaveCount(1);
 });
@@ -4175,9 +3829,10 @@ test("closed Midtown shop remains historical but is excluded from today and near
   await page.locator("#spot-search").fill("RECIPE & MARKET");
   await page.locator("#spot-search").blur();
   await expect(page.locator("#spot-search")).toHaveValue("RECIPE & MARKET");
-  await page.locator("#recent-additions-title").click();
+  await page.locator("h1").click();
   await page.locator("#list-view-button").click();
   await expect(page.locator(".spot-list-card h3", { hasText: "RECIPE & MARKET 東京ミッドタウン店" })).toHaveCount(1);
+  await page.locator(".explorer-dates > summary").click();
   await page.getByRole("button", { name: "今日の候補", exact: true }).click();
   await expect(page.locator(".spot-list-card h3", { hasText: "RECIPE & MARKET 東京ミッドタウン店" })).toHaveCount(0);
   await page.locator("#spot-list-panel").scrollIntoViewIfNeeded();

@@ -27,6 +27,7 @@ test("recent additions stay compact on mobile and desktop and link to existing d
     expect((await page.locator("#recent-additions").boundingBox()).height).toBeLessThan(210);
     await page.screenshot({ path: `test-results/recent-${name}.png`, fullPage: true });
   }
+  await page.locator(".recent-additions-details summary").click();
   await links.first().click();
   await expect(page).toHaveURL(/\/spot\//);
   await expect(page.getByRole("heading", { name: "ナガノマーケット POP UP SHOP 横浜スカイビル", exact: true })).toBeVisible();
