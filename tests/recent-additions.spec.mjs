@@ -1,6 +1,9 @@
 import { test, expect } from "@playwright/test";
 import { readFile } from "node:fs/promises";
 
+// Listing dates are checked in the site's Japan calendar, including on UTC CI runners.
+test.use({ timezoneId: "Asia/Tokyo" });
+
 test.beforeEach(async ({ page }) => {
   // Same local CDN substitutions used by the existing smoke suite.
   for (const [url, file, contentType] of [
