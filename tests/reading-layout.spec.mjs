@@ -91,6 +91,14 @@ test('200 percent text completes mobile filters to results and original actions'
    for(const sheet of document.styleSheets){try{doubleRules(sheet.cssRules);}catch{/* Cross-origin font declarations do not define local UI sizes. */}}
    document.documentElement.style.fontSize='32px';
   });
+  for(const tab of await page.locator('.catalog-tab,.collaboration-tab').all()){
+   const fits=await tab.evaluate(element=>{
+    const label=element.querySelector('strong');if(!label)return true;
+    const range=document.createRange();range.selectNodeContents(label);const bounds=element.getBoundingClientRect();
+    return [...range.getClientRects()].every(rect=>rect.left>=bounds.left-1&&rect.right<=bounds.right+1);
+   });
+   expect(fits).toBe(true);
+  }
   if(url.includes('official')){
    await page.locator('#current-search').fill('常滑');
    await page.locator('#current-filter-toggle').click();
@@ -98,6 +106,8 @@ test('200 percent text completes mobile filters to results and original actions'
    await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(2);
    await page.locator('#current-groups .spot-card-save-favorite').first().click();
    await expect(page.locator('#current-groups .spot-card-save-favorite').first()).toHaveClass(/is-active/);
+   const save=page.locator('#current-groups .spot-card-save-favorite').first();
+   expect((await save.boundingBox()).width).toBeGreaterThan(250);
   }else{
    await page.locator('[data-filter="search"][data-list="current"]').fill('GU');
    await page.locator('.site-collaboration-options').first().locator(':scope > summary').click();
@@ -114,6 +124,21 @@ test('200 percent text completes mobile filters to results and original actions'
   expect(await title.evaluate(element=>parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThanOrEqual(32);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(360);
   await page.screenshot({path:'node_modules/.cache/web-20261003-compact-final/360-text200-'+(url.includes('official')?'official':'collaborations')+'-operation.png'});
+ }
+});
+
+test('desktop collaboration filters align labels and inputs across three columns',async({page})=>{
+ for(const width of [1024,1440]){
+  await page.setViewportSize({width,height:1000});await page.goto('/collaborations.html');
+  for(const list of ['current','archive']){
+   if(list==='archive')await page.locator('#collaboration-tab-archive').click();
+   const fields=page.locator('[data-list="'+list+'"][data-filter]');
+   const primary=await fields.filter({visible:true}).all();
+   const first=[];for(const field of primary.slice(0,3))first.push(await field.boundingBox());
+   expect(first).toHaveLength(3);
+   expect(Math.max(...first.map(r=>r.y))-Math.min(...first.map(r=>r.y))).toBeLessThan(1);
+   expect(first[0].x).toBeLessThan(first[1].x);expect(first[1].x).toBeLessThan(first[2].x);
+  }
  }
 });
 
