@@ -7,12 +7,12 @@ test('mobile official search stays usable with closed filters and after resizing
   await expect(search).toBeVisible();
   await expect(page.locator('#current-filters')).toBeHidden();
   await search.fill('常滑');
-  await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(2);
+  await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(3);
   await page.setViewportSize({width:1440,height:1000});
   await expect(search).toHaveValue('常滑');
   await expect(search).toBeVisible();
   await search.fill('');
-  await expect(page.locator('#current-groups .official-spot-card')).not.toHaveCount(2);
+  await expect(page.locator('#current-groups .official-spot-card')).not.toHaveCount(3);
 });
 
 test('secondary collaboration filters remain operable and report applied conditions', async ({ page }) => {
