@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20261003-recent-results-2";
+  "chiikatsu-map-v20261003-official-title-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
