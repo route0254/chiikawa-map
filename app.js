@@ -180,7 +180,7 @@ const SOON_ENDING_DAYS =
 
 const SHARE_FILTER_PARAM_KEYS = [
   "q", "pref", "cat", "type", "period", "reservation",
-  "official", "nagano", "evidence", "brand", "soon", "when", "past", "view", "recent"
+  "official", "nagano", "evidence", "brand", "soon", "when", "past", "year", "view", "recent"
 ];
 
 
@@ -1899,6 +1899,15 @@ function focusSpotRecord(
 
   const selectionRequest = options.selectionRequest ?? ++explorerSelectionRequest;
   if(selectionRequest !== explorerSelectionRequest) return;
+  if (options.fromSearch && currentViewMode === "list") {
+    rememberExplorerListReturn();
+    setViewMode("map");
+    // As with a list card, expose and resize the map before opening its detail.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => focusSpotRecord(record, {...options, selectionRequest}));
+    });
+    return;
+  }
   const openRecord =
     () => {
       if(selectionRequest !== explorerSelectionRequest || !recordMatchesFilters(record,getCurrentFilterState())) return;
@@ -1927,10 +1936,17 @@ function focusSpotRecord(
       );
     };
 
-  // A list selection already identifies the spot. Opening its detail must not
+  // A selected result already identifies the spot. Opening its detail must not
   // depend on a cluster animation while the previously hidden map resizes.
-  if (options.fromList) {
+  if (options.fromList || options.fromSearch) {
     openRecord();
+    if(options.fromSearch && typeof spotLayer.zoomToShowLayer === 'function') {
+      const openedRequest=explorerSelectionRequest;
+      spotLayer.zoomToShowLayer(record.marker,()=>{
+        if(openedRequest!==explorerSelectionRequest || selectedRecord!==record)return;
+        record.marker.getElement()?.classList.add('is-selected');scheduleMapLabels();syncExplorerSelection();
+      });
+    }
   } else if (
     typeof spotLayer.zoomToShowLayer ===
     "function"
@@ -2140,6 +2156,7 @@ function renderSearchSuggestions() {
           focusSpotRecord(
             record,
             {
+              fromSearch:true,
               returnFocusTo:
                 spotSearch
             }
@@ -2923,6 +2940,7 @@ let currentViewMode =
 
 
 let recentOnly = false;
+let mapFiltersReady = false;
 let dateQuickMode =
   "";
 
@@ -4689,15 +4707,18 @@ function getCurrentFiltersShareUrl() {
 
 function applySharedGroupParam(
   paramName,
-  inputName
+  inputName,
+  sharedParams = params,
+  resetMissing = false
 ) {
 
-  if (!params.has(paramName)) {
+  if (!sharedParams.has(paramName)) {
+    if(resetMissing)document.querySelectorAll('input[name="' + inputName + '"]').forEach(input=>input.checked=true);
     return;
   }
 
   const raw =
-    params.get(paramName) || "";
+    sharedParams.get(paramName) || "";
 
   const wanted =
     raw === "__none__"
@@ -4718,14 +4739,15 @@ function applySharedGroupParam(
 }
 
 
-function applySharedEvidenceParam() {
+function applySharedEvidenceParam(sharedParams = params, resetMissing = false) {
 
-  if (!params.has("evidence")) {
+  if (!sharedParams.has("evidence")) {
+    if(resetMissing)document.querySelectorAll('input[name="filter-nagano-evidence"]').forEach(input=>input.checked=true);
     return;
   }
 
   const raw =
-    params.get("evidence") || "";
+    sharedParams.get("evidence") || "";
 
   const wanted =
     raw === "__none__"
@@ -4752,15 +4774,15 @@ function applySharedEvidenceParam() {
 }
 
 
-function applySharedFilterState() {
-  recentOnly = params.get("recent") === "1";
+function applySharedFilterState(sharedParams = params, resetMissing = false) {
+  recentOnly = sharedParams.get("recent") === "1";
 
-  if (params.has("q") && spotSearch) {
-    spotSearch.value = params.get("q") || "";
+  if (spotSearch && (resetMissing || sharedParams.has('q'))) {
+    spotSearch.value = sharedParams.get("q") || "";
   }
 
-  if (params.has("pref") && prefectureFilter) {
-    const value = params.get("pref") || "";
+  if (prefectureFilter && (resetMissing || sharedParams.has('pref'))) {
+    const value = sharedParams.get("pref") || "";
     const hasOption =
       Array.from(prefectureFilter.options)
         .some(option => option.value === value);
@@ -4769,19 +4791,19 @@ function applySharedFilterState() {
     }
   }
 
-  applySharedGroupParam("cat", "filter-category");
-  applySharedGroupParam("type", "filter-place");
-  applySharedGroupParam("period", "filter-period");
-  applySharedGroupParam("reservation", "filter-reservation");
-  applySharedGroupParam("official", "filter-official-relation");
-  applySharedGroupParam("nagano", "filter-nagano-relation");
-  applySharedEvidenceParam();
-  applySharedGroupParam("brand", "filter-brand");
+  applySharedGroupParam("cat", "filter-category", sharedParams, resetMissing);
+  applySharedGroupParam("type", "filter-place", sharedParams, resetMissing);
+  applySharedGroupParam("period", "filter-period", sharedParams, resetMissing);
+  applySharedGroupParam("reservation", "filter-reservation", sharedParams, resetMissing);
+  applySharedGroupParam("official", "filter-official-relation", sharedParams, resetMissing);
+  applySharedGroupParam("nagano", "filter-nagano-relation", sharedParams, resetMissing);
+  applySharedEvidenceParam(sharedParams, resetMissing);
+  applySharedGroupParam("brand", "filter-brand", sharedParams, resetMissing);
 
   const sharedDateQuickMode =
-    params.get("when") ||
+    sharedParams.get("when") ||
     (
-      params.get("soon") === "1"
+      sharedParams.get("soon") === "1"
         ? "ending"
         : ""
     );
@@ -4801,17 +4823,19 @@ function applySharedFilterState() {
 
   if (endedFilter) {
     endedFilter.checked =
-      params.get("past") === "1";
+      sharedParams.get("past") === "1";
   }
+
+  if (archiveYearFilter) archiveYearFilter.value = "";
 
   if (
     endedFilter?.checked &&
     archiveYearFilter &&
     /^\d{4}$/.test(
-      params.get("year") || ""
+      sharedParams.get("year") || ""
     )
   ) {
-    const year = params.get("year");
+    const year = sharedParams.get("year");
     const hasOption =
       Array.from(archiveYearFilter.options)
         .some(
@@ -4826,8 +4850,34 @@ function applySharedFilterState() {
 
   syncArchiveYearFilter();
 
-  if (params.get("view") === "list") {
-    currentViewMode = "list";
+  if(resetMissing || sharedParams.has('view'))currentViewMode = sharedParams.get("view") === "list" ? "list" : "map";
+  updateSearchClearButton();refreshDiscovery();
+}
+
+function syncMapFilterUrl() {
+  if (!mapFiltersReady) return;
+  const url = new URL(location.href);
+  const shared = new URL(getCurrentFiltersShareUrl()).searchParams;
+  for (const key of SHARE_FILTER_PARAM_KEYS) {
+    if (shared.has(key)) url.searchParams.set(key, shared.get(key));
+    else url.searchParams.delete(key);
+  }
+  if (url.href !== location.href) history.replaceState(history.state, "", url);
+}
+
+function restoreMapFilterHistory() {
+  if (!mapFiltersReady) return;
+  const sharedParams = new URLSearchParams(location.search);
+  applySharedFilterState(sharedParams,true);
+  setViewMode(currentViewMode);
+  updateSpotFilters();
+  if (endedFilter?.checked && !archiveDataLoaded) {
+    const search = location.search;
+    ensureArchiveDataLoaded().then(() => {
+      if (location.search !== search) return;
+      applySharedFilterState(sharedParams,true);
+      updateSpotFilters();
+    });
   }
 }
 
@@ -4955,6 +5005,7 @@ function focusActiveViewOnMobile() {
 function setViewMode(
   mode
 ) {
+  closeExplorerDisclosures();hideSearchSuggestions();
 
   currentViewMode =
     mode ===
@@ -5005,6 +5056,7 @@ function setViewMode(
     "aria-pressed",
     String(listMode)
   );
+  syncMapFilterUrl();
 
   if (
     !listMode
@@ -5014,8 +5066,9 @@ function setViewMode(
 
     requestAnimationFrame(
       () => {
+        // Preserve the geographic center when exposing or resizing the canvas.
         map.invalidateSize({
-          pan: false,
+          pan: true,
           animate: false
         });
       }
@@ -5361,6 +5414,7 @@ function createSpotListCard(
     () => {
 
       const selectionRequest=++explorerSelectionRequest;
+      rememberExplorerListReturn();
       setViewMode(
         "map"
       );
@@ -7550,7 +7604,7 @@ function showSpotDetail(
 
       map.invalidateSize({
         pan:
-          false,
+          true,
 
         animate:
           false
@@ -8599,16 +8653,14 @@ function getActiveFilterDescriptions() {
 function renderFilterFeedback(
   visibleCount
 ) {
-  if (recentOnly || new URLSearchParams(location.search).has("recent")) {
-    const url = new URL(location.href);
-    url.search = new URL(getCurrentFiltersShareUrl()).search;
-    history.replaceState(history.state, "", url);
-  }
+  syncMapFilterUrl();
   document.querySelectorAll("[data-recent-filter]").forEach(button => {
     button.setAttribute("aria-pressed", String(recentOnly));
   });
   const recentClear = document.getElementById("recent-filter-clear");
   if (recentClear) recentClear.hidden = !recentOnly;
+  if (recentClear) recentClear.remove();
+  if (!recentOnly && recentClear) activeFilterSummary?.append(recentClear);
 
   const brandInputs = Array.from(document.querySelectorAll('input[name="filter-brand"]'));
   const selectedBrands = brandInputs.filter(input => input.checked).length;
@@ -8631,7 +8683,7 @@ function renderFilterFeedback(
   ) {
     activeFilterList.replaceChildren(
       ...descriptions.map(
-        description => {
+        (description, index) => {
 
           const item =
             document.createElement(
@@ -8640,6 +8692,9 @@ function renderFilterFeedback(
 
           item.textContent =
             description;
+          if (recentOnly && index === 0 && recentClear) {
+            item.classList.add('active-filter-recent');item.append(recentClear);
+          }
 
           return item;
         }
@@ -8808,7 +8863,6 @@ const PANEL_FOCUSABLE_SELECTOR =
 function getOpenDialogPanel() {
 
   return [
-    filterPanel,
     savedDataPanel,
     officialHelpPanel,
     naganoHelpPanel,
@@ -8880,7 +8934,8 @@ function trapFocusInPanel(
 }
 
 function setFilterPanelOpen(
-  open
+  open,
+  options = {}
 ) {
 
   if (
@@ -8895,22 +8950,12 @@ function setFilterPanelOpen(
   if (
     open
   ) {
-
-    setSavedDataPanelOpen(
-      false
-    );
-
-    setOfficialHelpPanelOpen(
-      false
-    );
-
-    setNaganoHelpPanelOpen(
-      false
-    );
+    closeExplorerDisclosures({panel:filterPanel});hideSearchSuggestions();
   }
 
 
   const restoreFocus =
+    options.restoreFocus !== false &&
     !open &&
     filterPanel.contains(
       document.activeElement
@@ -8919,11 +8964,6 @@ function setFilterPanelOpen(
 
   filterPanel.hidden =
     !open;
-  if (open) {
-    const top = Math.min(filterToggle.getBoundingClientRect().bottom + 8, Math.max(12, innerHeight - 260));
-    filterPanel.style.top = `${top}px`;
-    filterPanel.style.maxHeight = `calc(100dvh - ${top + 12}px)`;
-  }
 
 
   filterToggle.setAttribute(
@@ -8947,7 +8987,8 @@ function setFilterPanelOpen(
 
 
 function setSavedDataPanelOpen(
-  open
+  open,
+  options = {}
 ) {
 
   if (
@@ -8960,16 +9001,14 @@ function setSavedDataPanelOpen(
   if (
     open
   ) {
-    setFilterPanelOpen(false);
-    setOfficialHelpPanelOpen(false);
-    setNaganoHelpPanelOpen(false);
+    closeExplorerDisclosures({panel:savedDataPanel});hideSearchSuggestions();
     updateFavoriteCount();
     updateVisitedCount();
     updatePlanCount();
-    closeExplorerMenus();
   }
 
   const restoreFocus =
+    options.restoreFocus !== false &&
     !open &&
     savedDataPanel.contains(
       document.activeElement
@@ -9005,7 +9044,8 @@ function setSavedDataPanelOpen(
 
 
 function setOfficialHelpPanelOpen(
-  open
+  open,
+  options = {}
 ) {
 
   if (
@@ -9018,13 +9058,11 @@ function setOfficialHelpPanelOpen(
   if (
     open
   ) {
-    setFilterPanelOpen(false);
-    setSavedDataPanelOpen(false);
-    setNaganoHelpPanelOpen(false);
-    closeExplorerMenus();
+    closeExplorerDisclosures({panel:officialHelpPanel});hideSearchSuggestions();
   }
 
   const restoreFocus =
+    options.restoreFocus !== false &&
     !open &&
     officialHelpPanel.contains(
       document.activeElement
@@ -9052,7 +9090,8 @@ function setOfficialHelpPanelOpen(
 
 
 function setNaganoHelpPanelOpen(
-  open
+  open,
+  options = {}
 ) {
 
   if (
@@ -9065,13 +9104,11 @@ function setNaganoHelpPanelOpen(
   if (
     open
   ) {
-    setFilterPanelOpen(false);
-    setSavedDataPanelOpen(false);
-    setOfficialHelpPanelOpen(false);
-    closeExplorerMenus();
+    closeExplorerDisclosures({panel:naganoHelpPanel});hideSearchSuggestions();
   }
 
   const restoreFocus =
+    options.restoreFocus !== false &&
     !open &&
     naganoHelpPanel.contains(
       document.activeElement
@@ -9414,7 +9451,7 @@ document.addEventListener("click", event => {
   const action = event.target.closest("[data-recent-filter], #recent-filter-clear");
   if (!action) return;
   event.preventDefault();
-  setRecentFilter(action.id !== "recent-filter-clear");
+  setRecentFilter(action.id === "recent-filter-clear" ? false : !recentOnly);
 });
 
 function createAddedDateLabel(spot) {
@@ -9671,6 +9708,7 @@ async function loadSpots() {
     updatePlanCount();
     syncFavoriteFilterButton();
     syncVisitedFilterButton();
+    mapFiltersReady = true;
     setViewMode(
       currentViewMode
     );
@@ -9859,6 +9897,7 @@ spotSearch
         event.key ===
         "Escape"
       ) {
+        event.preventDefault();event.stopPropagation();
         hideSearchSuggestions();
         return;
       }
@@ -9946,8 +9985,7 @@ prefectureFilter
         prefectureFilter.value;
 
       updateSpotFilters();
-      if (document.activeElement === spotSearch) renderSearchSuggestions();
-      else hideSearchSuggestions();
+      hideSearchSuggestions();
       focusMapOnPrefecture(
         prefecture
       );
@@ -10191,9 +10229,14 @@ archiveYearFilter
     "change",
     () => {
       updateSpotFilters();
-      renderSearchSuggestions();
+      hideSearchSuggestions();
     }
   );
+
+document.querySelector('.map-search-bar')?.addEventListener('focusout',event=>{
+  const next=event.relatedTarget;
+  if(next!==spotSearch && !spotSearchSuggestions?.contains(next))hideSearchSuggestions();
+});
 
 
 map.on(
@@ -10536,16 +10579,3 @@ if (appScriptUrl) {
     }
   );
 }
-
-// Dismiss optional menus when returning to the main map controls.
-document.addEventListener("pointerdown", event => {
-  if (getOpenDialogPanel()) return;
-  for (const menu of document.querySelectorAll(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open], .explorer-dates[open], .explorer-sort[open]")) {
-    if (!menu.contains(event.target)) menu.open = false;
-  }
-});
-document.addEventListener("keydown", event => {
-  if (event.key !== "Escape" || event.defaultPrevented) return;
-  const menu = event.target instanceof Element ? event.target.closest(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open], .explorer-dates[open], .explorer-sort[open], .explorer-map-legend[open]") : null;
-  if (menu) { menu.open = false; menu.querySelector("summary")?.focus(); }
-});

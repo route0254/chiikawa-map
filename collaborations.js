@@ -4,7 +4,7 @@ let collaborationAddedDates = {};
 document.addEventListener("click", event => {
   const action = event.target.closest("#collaboration-recent button");
   if (!action) return;
-  listStates.current.filters.recent = action.hasAttribute("data-catalog-recent");
+  listStates.current.filters.recent = action.hasAttribute("data-catalog-recent") ? !listStates.current.filters.recent : false;
   renderList("current");
 });
 

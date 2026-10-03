@@ -4758,7 +4758,7 @@ async function loadSpots() {
   }
 
   setJournalView(
-    params.get("view") ||
+    new URLSearchParams(window.location.search).get("view") ||
     "calendar",
     {
       history: false
