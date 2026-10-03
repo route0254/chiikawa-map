@@ -27,21 +27,21 @@
     "partner": "商船三井さんふらわあ",
     "category": "experience",
     "status": "active",
-    "summary": "船内装飾やフォトスポット、スタンプラリーなどを実施するフェリーコラボです。対象便・内容は公式ページで確認できます。",
-    "areaText": "大阪～別府航路・神戸～大分航路",
+    "summary": "対象4隻で船内フォトラリーやフォトスポット、コラボグッズ販売などを実施するフェリーコラボです。深夜便（かむい／ぴりか）は対象外です。",
+    "areaText": "大阪～志布志（さつま／きりしま）・大洗～苫小牧夕方便（さっぽろ／ふらの）",
     "channels": ["船内"],
     "periods": [
       {
         "label": "コラボ実施期間",
         "startDate": "2026-08-06",
         "endDate": "2026-10-31",
-        "note": "対象便や運航状況は公式情報をご確認ください。"
+        "note": "2026年8月6日～10月31日の出港便が対象です。対象便や運航状況は公式情報をご確認ください。"
       }
     ],
-    "tags": ["映画", "旅行", "スタンプラリー"],
+    "tags": ["映画", "旅行", "フォトラリー"],
     "sourceUrl": "https://www.sunflower.co.jp/lp/chiikawa/",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-10-03"
   },
   {
     "id": "ana-chiikawa-jet-2026",
@@ -49,7 +49,7 @@
     "partner": "ANA",
     "category": "experience",
     "status": "upcoming",
-    "summary": "特別デザイン機「ちいかわジェット」の国内線就航企画です。就航路線や便は公式ページで順次案内されます。",
+    "summary": "特別デザイン機「ちいかわジェット」（ボーイング767-300、機番JA609A）の国内線就航企画です。運航候補路線は公表されていますが、実際の路線は運航状況により変わり、当日まで決まりません。",
     "areaText": "国内線",
     "channels": ["機内", "オンライン"],
     "periods": [
@@ -57,13 +57,13 @@
         "label": "2026年10月末就航予定",
         "startDate": null,
         "endDate": null,
-        "note": "具体的な就航日・運航路線は未発表です。"
+        "note": "2026年10月末就航予定。具体的な就航日は未確定です。運航候補路線と機番JA609Aは公表済みですが、実際の路線は当日の運航状況によります。"
       }
     ],
     "tags": ["旅行", "飛行機", "開催予定"],
     "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-10-03"
   },
   {
     "id": "jr-central-tsutsuurauratabi-2026",
@@ -89,13 +89,13 @@
   },
   {
     "id": "tokyo-metro-escape-2026",
-    "title": "ちいかわ×東京メトロ 謎解きスタンプラリー",
+    "title": "ちいかわ、さがしてます。『映画ちいかわ』東京メトロ脱出ゲーム",
     "partner": "東京メトロ",
     "category": "experience",
     "status": "active",
-    "summary": "東京メトロ沿線を巡る謎解き・スタンプラリー企画です。参加方法や必要な乗車券は公式情報をご確認ください。",
+    "summary": "専用キットを使い、東京メトロ沿線の駅や街を巡って謎を解き、ちいかわ・ハチワレ・うさぎを探す体験型ゲームです。参加方法は公式情報をご確認ください。",
     "areaText": "東京都・東京メトロ沿線",
-    "channels": ["駅・車内"],
+    "channels": ["駅・街"],
     "periods": [
       {
         "label": "開催期間",
@@ -104,10 +104,10 @@
         "note": ""
       }
     ],
-    "tags": ["謎解き", "スタンプラリー", "鉄道"],
+    "tags": ["謎解き", "脱出ゲーム", "鉄道"],
     "sourceUrl": "https://www.tokyometro.jp/news/2026/224766.html",
     "linkedSpotIds": ["collab-tokyo-metro-escape"],
-    "checkedAt": "2026-09-02"
+    "checkedAt": "2026-10-03"
   },
   {
     "id": "tokyo-skytree-chiikawa-2026",
@@ -223,15 +223,15 @@
       },
       {
         "label": "映画デザインボトル発売",
-        "startDate": "2026-09-01",
+        "startDate": null,
         "endDate": null,
-        "note": "9月上旬から順次発売。なくなり次第終了します。"
+        "note": "2026年9月上旬から順次発売。出荷状況により前後し、なくなり次第終了します。"
       }
     ],
     "tags": ["映画", "全国", "飲料", "限定商品"],
     "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-09-15"
+    "checkedAt": "2026-10-03"
   },
   {
     "id": "citen-chiikawa-2026",
@@ -313,10 +313,7 @@
     "status": "active",
     "summary": "ちいかわたちをデザインした東京ばな奈を販売するコラボです。販売場所と取扱日は公式ページで更新されています。",
     "areaText": "東京都内の対象店舗・JR池袋駅・盛岡駅・東京ソラマチほか",
-    "channels": [
-      "店舗",
-      "オンライン"
-    ],
+    "channels": ["店舗", "オンライン"],
     "periods": [
       {
         "label": "販売中",
@@ -343,18 +340,9 @@
         "note": "イーストヤード1F 10番地「空の小町」で開催。"
       }
     ],
-    "tags": [
-      "お菓子",
-      "お土産",
-      "限定商品"
-    ],
+    "tags": ["お菓子", "お土産", "限定商品"],
     "sourceUrl": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
-    "linkedSpotIds": [
-      "collab-tokyobanana-tokyo",
-      "tokyo-banana-popup-ikebukuro-2026-09",
-      "tokyo-banana-popup-morioka-2026-09",
-      "tokyo-banana-popup-solamachi-2026-10"
-    ],
+    "linkedSpotIds": ["collab-tokyobanana-tokyo", "tokyo-banana-popup-ikebukuro-2026-09", "tokyo-banana-popup-morioka-2026-09", "tokyo-banana-popup-solamachi-2026-10"],
     "checkedAt": "2026-10-01"
   },
   {
@@ -450,5 +438,77 @@
     "sourceUrl": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
     "linkedSpotIds": [],
     "checkedAt": "2026-09-15"
+  },
+  {
+    "id": "gu-chiikawa-winter-2026",
+    "title": "GU×ちいかわ 冬のコレクション",
+    "partner": "ジーユー",
+    "category": "collection",
+    "status": "upcoming",
+    "summary": "冬のコラボアイテムを2回に分けて発売予定です。各日、店舗は開店時、オンラインは7:15から販売予定。おひとり様1柄1色2点までです。",
+    "areaText": "ジーユー全店舗・オンラインストア",
+    "channels": ["店舗", "オンライン"],
+    "periods": [
+      {
+        "label": "1st collection 発売予定",
+        "startDate": "2026-11-20",
+        "endDate": null,
+        "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+      },
+      {
+        "label": "2nd collection 発売予定",
+        "startDate": "2026-11-27",
+        "endDate": null,
+        "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+      }
+    ],
+    "tags": ["アパレル", "限定商品"],
+    "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "id": "oxiclean-chiikawa-2026",
+    "title": "オキシクリーン 1500g ちいかわパッケージ",
+    "partner": "グラフィコ",
+    "category": "collection",
+    "status": "while_supplies_last",
+    "summary": "ピンクのちいかわデザインパッケージのオキシクリーン1500gを数量限定で発売。店舗によって取扱い・在庫が異なります。",
+    "areaText": "全国の対象店舗・ECサイト",
+    "channels": ["店舗", "オンライン"],
+    "periods": [
+      {
+        "label": "発売日",
+        "startDate": "2026-10-02",
+        "endDate": null,
+        "note": "数量限定。終了日未発表、店舗により取扱いが異なります。"
+      }
+    ],
+    "tags": ["日用品", "限定商品", "全国"],
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "id": "clasic-chiikawa-scrubs-2026",
+    "title": "クラシコ×ちいかわ Scrub Canvas Club",
+    "partner": "クラシコ",
+    "category": "collection",
+    "status": "needs_review",
+    "summary": "2026年10月1日発売のちいかわスクラブ。実店舗は完売、再入荷時期は未定です。オンラインでは過剰受注が発生し、商品を確保できない注文のキャンセル・返金対応が案内されています。販売状況は公式でご確認ください。",
+    "areaText": "クラシコ実店舗・公式オンラインストア",
+    "channels": ["店舗", "オンライン"],
+    "periods": [
+      {
+        "label": "発売日",
+        "startDate": "2026-10-01",
+        "endDate": null,
+        "note": "実店舗は完売。再入荷予定あり、時期未定。オンライン過剰受注への対応：https://www.clasic.jp/blog/detail?product_id=4189"
+      }
+    ],
+    "tags": ["アパレル", "スクラブ", "販売状況要確認"],
+    "sourceUrl": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-10-03"
   }
 ]
