@@ -20,7 +20,7 @@
     summary.append(ChiikatsuUI.icon("info"), document.createTextNode(
       document.body.classList.contains("nagano-page")
         ? "このページについて"
-        : "この一覧について・掲載件数"
+        : "この一覧の楽しみ方"
     ));
     overview.append(summary, ...sections);
     const cta = main.querySelector(".official-bottom-cta");

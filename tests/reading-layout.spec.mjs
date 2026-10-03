@@ -13,6 +13,38 @@ test.beforeEach(async({page})=>{
 });
 test.afterEach(async({page})=>expect(errors.get(page)).toEqual([]));
 
+test('page destinations and a named date filter stay reachable without opening a utility menu',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ for(const url of ['/','/official.html','/collaborations.html','/nagano.html','/journal.html?view=plan']){
+  await page.goto(url);
+  for(const link of await page.locator('.site-nav-link').all()){
+   await expect(link).toBeVisible();
+   expect(await link.evaluate(el=>{const r=el.getBoundingClientRect();return r.height>=44&&r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight&&el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
+  }
+ }
+ await page.goto('/');await page.locator('.explorer-dates>summary').click();
+ await page.locator('[data-date-quick="today"]').click();
+ await page.locator('#spot-search').fill('原宿');await page.locator('#prefecture-filter').focus();await page.locator('#prefecture-filter').selectOption('東京都');
+ await page.locator('#list-view-button').click();await expect(page.locator('.spot-list-card')).toHaveCount(2);
+ await page.locator('#map-view-button').click();await expect(page.locator('#spot-search')).toHaveValue('原宿');
+ await expect(page.locator('[data-date-quick="today"]')).toHaveAttribute('aria-pressed','true');
+});
+
+test('home to official search to saved plan and back to the map forms a complete mobile route',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/');
+ await page.locator('#spot-search').fill('原宿');await page.locator('#prefecture-filter').selectOption('東京都');
+ await page.locator('.site-nav-link[href="official.html"]').click();
+ await page.locator('#current-search').fill('常滑');await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(3);
+ const first=page.locator('#current-groups .official-spot-card').first();
+ const title=await first.locator('h4').textContent();await first.locator('.spot-card-save-plan').click();
+ await page.locator('.site-nav-link[href="journal.html"]').click();
+ await page.locator('[data-journal-view="plan"]').click();
+ await expect(page.locator('.plan-stop').first()).toContainText(title.trim());
+ await page.locator('.site-nav-link[href="./"]').click();
+ await expect(page.locator('#spot-search')).toBeVisible();await expect(page.locator('#map')).toBeVisible();
+ await expect(page.locator('#spot-search')).toHaveValue('原宿');await expect(page.locator('#prefecture-filter')).toHaveValue('東京都');
+});
+
 test('mobile official search stays usable with closed filters and after resizing', async ({ page }) => {
   await page.setViewportSize({ width:390,height:844 });
   await page.goto('/official.html');

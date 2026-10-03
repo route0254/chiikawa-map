@@ -289,3 +289,40 @@
 .explorer-discovery button { min-height:44px; padding:6px 8px; margin-right:4px; border:1px solid #D8E5E9; border-radius:6px; background:white; color:#17607C; font-size:13px; }
 .home-map.explorer .explorer-map-legend>summary { font-size:12px; flex-wrap:wrap; }
 @media(max-width:799px){.explorer-discovery { display:none; }}
+
+/* Recovery: page links and named search controls stay discoverable. */
+.home-map.explorer { --line:#e5dce8; --selection:#785173; background:#fffaf6; }
+.home-map.explorer .site-header { height:108px; background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); }
+.home-map.explorer .site-header-inner { height:108px; flex-wrap:wrap; align-content:center; row-gap:4px; }
+.home-map.explorer .explorer-navigation { flex-basis:100%; display:flex; justify-content:center; gap:8px; margin:0; padding:0; }
+.home-map.explorer .explorer-navigation .site-nav-link { min-height:44px; padding:6px 12px; font-size:13px; border-radius:999px; background:#fffafc; color:#654763; border:1px solid #e5cddf; }
+.home-map.explorer .explorer-navigation .is-active { background:#fbe2ed; border-color:#cf7ea1; }
+.home-map.explorer .map-card { height:calc(100dvh - 108px); }
+.home-map.explorer .map-extra-actions { top:108px; }
+.home-map.explorer .toolbar-button,.home-map.explorer .view-switch,.home-map.explorer .view-switch-button,.home-map.explorer .explorer-dates summary,.home-map.explorer .spot-search-field,.home-map.explorer #prefecture-filter,.home-map.explorer .spot-list-favorite-button { border-radius:18px; }
+.home-map.explorer .map-search-bar,.home-map.explorer .map-toolbar { background:#fffaf6; }
+.home-map.explorer .spot-list-panel { background:#fffaf6; }
+.home-map.explorer .spot-list-card { border:1px solid #eadce6; border-radius:18px; padding:14px; margin-bottom:10px; background:#fff; }
+.home-map.explorer .recent-additions-details summary { border-radius:999px; background:#fff0cf; color:#715839; }
+@media(min-width:900px) and (max-width:1279px) { .home-map.explorer .spot-detail-panel { top:56px; } }
+@media(max-width:899px) {
+ .home-map.explorer .site-header,.home-map.explorer .site-header-inner { height:56px; }
+ .home-map.explorer .site-header-inner { padding:6px 12px; }
+ .home-map.explorer .site-header h1 { font-size:18px; }
+ .home-map.explorer .site-position { font-size:11px; }
+ .home-map.explorer .map-tools-menu summary { font-size:11px; padding:6px 8px; }
+ .home-map.explorer .explorer-navigation { position:fixed; bottom:0; left:0; right:0; z-index:1500; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; padding:4px 12px calc(4px + env(safe-area-inset-bottom)); background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); border-top:1px solid #e5cddf; }
+ .home-map.explorer .explorer-navigation .site-nav-link { min-width:0; padding:4px; font-size:12px; white-space:normal; line-height:1.4; }
+ .home-map.explorer .map-card { height:calc(100dvh - 156px - env(safe-area-inset-bottom)); }
+ .home-map.explorer .map-toolbar-left { flex-wrap:wrap; }
+ .home-map.explorer .explorer-dates summary { width:auto; padding:8px; }
+ .home-map.explorer .explorer-date-label { display:inline; }
+ .home-map.explorer .toolbar-button,.home-map.explorer .view-switch-button,.home-map.explorer .explorer-dates summary { font-size:13px; }
+ .home-map.explorer .map-toolbar { gap:4px; }
+ .home-map.explorer .recent-additions-expanded { top:54px; }
+ .home-map.explorer .map-extra-actions { top:54px; max-height:calc(100dvh - 156px - env(safe-area-inset-bottom)); }
+}
+
+@media(max-width:359px) { .home-map.explorer .site-header h1 { font-size:15px; } }
+
+@media(max-width:899px) { .home-map.explorer .map-card { height:calc(100dvh - 56px - var(--site-navigation-height,100px)); } }

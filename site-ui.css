@@ -159,3 +159,19 @@
  .reading-page .spot-card-details dd,.reading-page .collaboration-detail-list dd { flex:1 1 12em; min-width:0; }
 }
 @media(prefers-reduced-motion:reduce) { .reading-page * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+
+/* Keep every destination visible, with the map as a stable way back. */
+.reading-page .site-header { background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); }
+.reading-page .site-nav-link { border-radius:999px; background:#fffafc; border-color:#e5cddf; color:#654763; }
+.reading-page .site-nav-link.is-active { background:#fbe2ed; border-color:#cf7ea1; }
+.reading-page .catalog-tab,.reading-page .collaboration-tab,.reading-page .nagano-tabs button { border-radius:18px; }
+.reading-page .catalog-filters,.reading-page .collaboration-filters { background:#fff5f8; border-radius:18px; }
+.reading-page .catalog-map-link,.reading-page .spot-card-save-button,.reading-page .collaboration-official-link { border-radius:999px; }
+@media(max-width:680px) {
+ .reading-page { padding-bottom:calc(100px + env(safe-area-inset-bottom)); }
+ .reading-page .site-nav { position:fixed; bottom:0; left:0; right:0; z-index:1500; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); overflow:visible; gap:4px; padding:4px 12px calc(4px + env(safe-area-inset-bottom)); background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); border-top:1px solid #e5cddf; }
+ .reading-page .site-nav-link { min-width:0; padding:4px; font-size:12px; white-space:normal; justify-content:center; text-align:center; }
+ .reading-page .site-nav-link .ui-icon { width:16px; }
+}
+
+@media(max-width:680px) { .reading-page { padding-bottom:0; } .reading-page main { margin-block:0; } }

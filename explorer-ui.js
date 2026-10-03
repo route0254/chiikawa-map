@@ -236,7 +236,7 @@ function initializeExplorer() {
   document.body.classList.add("explorer");
   document.getElementById("map-view-button").textContent="地図";
   document.getElementById("list-view-button").textContent="一覧";
-  document.getElementById("filter-toggle").textContent="条件";
+  document.getElementById("filter-toggle").textContent="絞り込み";
   document.getElementById("filter-toggle").setAttribute("aria-label","スポットを絞り込む");
   document.querySelector(".spot-detail-kicker").textContent="訪問情報";
   const position=document.createElement('small');position.className='site-position';position.textContent='非公式';document.querySelector('.site-header h1').after(position);
@@ -253,18 +253,18 @@ function initializeExplorer() {
   const summary=document.createElement("summary"); summary.setAttribute('aria-label','開催日');summary.append(explorerIcon('calendar'));const dateLabel=document.createElement('span');dateLabel.className='explorer-date-label';dateLabel.textContent='開催日';summary.append(dateLabel);
   dates.append(summary,document.querySelector(".date-discovery")); toolbar.append(dates);
   const tools=document.querySelector(".map-tools-menu");
-  tools.classList.add("site-menu"); tools.querySelector("summary").textContent="保存・案内";
+  tools.classList.add("site-menu"); tools.querySelector("summary").textContent="保存・使い方";
   const actions=tools.querySelector(".map-extra-actions");
-  actions.append(document.querySelector(".site-menu:not(.map-tools-menu) .site-nav"), document.querySelector(".site-notice"),document.querySelector(".map-legend"), document.querySelector(".home-screen-card"),document.querySelector(".site-note"));
+  const navigation=document.querySelector(".site-menu:not(.map-tools-menu) .site-nav");
+  navigation.classList.add('explorer-navigation');
+  actions.append(document.querySelector(".site-notice"),document.querySelector(".map-legend"), document.querySelector(".home-screen-card"),document.querySelector(".site-note"));
   const savedHeading=document.createElement('h3');savedHeading.className='explorer-menu-heading';savedHeading.textContent='手帳と保存データ';actions.prepend(savedHeading);
-  const guideHeading=document.createElement('h3');guideHeading.className='explorer-menu-heading';guideHeading.textContent='サイト案内';actions.querySelector('.site-nav').before(guideHeading);
   document.querySelector(".site-menu:not(.map-tools-menu)").remove();
   for(const [selector,icon] of [['#favorite-filter-button','bookmark'],['.plan-open-button','plan'],['#visited-filter-button','visit'],['#saved-data-toggle','data'],['#share-filters-button','share'],['#official-help-toggle','info'],['#nagano-help-toggle','info']])ChiikatsuUI.decorateAction(document.querySelector(selector),icon);
-  for(const link of actions.querySelectorAll('.site-nav-link'))ChiikatsuUI.decorateAction(link,link.getAttribute('href')?.includes('journal')?'bookmark':'info');
   for(const [index,icon] of ['bookmark','plan','visit'].entries())ChiikatsuUI.decorateAction(document.querySelectorAll('.saved-data-current > span')[index],icon);
   ChiikatsuUI.decorateAction(document.getElementById('saved-data-export'),'data');
   const header=document.querySelector(".site-header-inner");
-  header.append(document.querySelector("#recent-additions"), tools);
+  header.append(document.querySelector("#recent-additions"), tools, navigation);
   document.getElementById("recent-additions-title").textContent="新着";
   const preview=document.createElement("aside"); preview.id="spot-preview"; preview.className="spot-preview";
   preview.hidden=true; preview.tabIndex=-1; preview.setAttribute("role","region"); preview.setAttribute("aria-labelledby","spot-preview-title");
@@ -287,7 +287,7 @@ function initializeExplorer() {
   const sorting=document.createElement("details"); sorting.className="explorer-sort";
   const sortSummary=document.createElement("summary"); sortSummary.textContent="並び順";
   listTools.before(sorting); sorting.append(sortSummary,listTools);
-  document.querySelector(".spot-list-header h2").textContent="スポット";
+  document.querySelector(".spot-list-header h2").textContent="お出かけ先を見つけよう";
 }
 
 initializeExplorer();

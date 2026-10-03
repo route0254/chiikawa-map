@@ -90,3 +90,14 @@
  .journal-page .journal-hero-stats { gap:4px; }
  .journal-page .journal-hero-stats>div { flex-direction:column; align-items:center; gap:4px; }
 }
+
+.journal-page .site-header { background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); }
+.journal-page .site-nav-link,.journal-page .journal-tab { border-radius:999px; }
+.journal-page .site-nav-link.is-active { background:#fbe2ed; border-color:#cf7ea1; color:#654763; }
+@media(max-width:680px) {
+ .journal-page { padding-bottom:calc(100px + env(safe-area-inset-bottom)); }
+ .journal-page .site-nav { position:fixed; bottom:0; left:0; right:0; z-index:1500; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); overflow:visible; gap:4px; padding:4px 12px calc(4px + env(safe-area-inset-bottom)); background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); border-top:1px solid #e5cddf; }
+ .journal-page .site-nav-link { min-width:0; padding:4px; font-size:12px; white-space:normal; justify-content:center; text-align:center; }
+}
+
+@media(max-width:680px) { .journal-page { padding-bottom:0; } .journal-page .journal-shell { margin-block:0; } }
