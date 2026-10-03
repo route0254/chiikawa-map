@@ -69,15 +69,16 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20261001-1"
+    href="style.css?v=20261002-ui-prototype-7"
   >
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
   <meta name="theme-color" content="#f477a8">
+  <link rel="stylesheet" href="explorer.css?v=20261002-ui-prototype-7">
 </head>
 
 
-<body>
+<body class="home-map">
 
   <a class="skip-link" href="#main-content">本文へ移動</a>
 
@@ -87,27 +88,13 @@
 
     <div class="site-header-inner">
 
-      <div class="site-header-top">
-
-        <span class="site-kicker">
-          CHIIKATSU MAP
-        </span>
-
-        <span class="unofficial-badge">
-          非公式ファンサイト
-        </span>
-
-      </div>
-
-      <h1>
-        ちいかわ推し活（ちい活）MAP
-      </h1>
+      <h1 aria-label="ちいかわ推し活（ちい活）MAP">ちい活MAP</h1>
 
       <p class="site-description">
-        ちいかわ公式関連、ナガノ先生の紹介・訪問先、
-        ファン発の聖地をまとめています。
+        公式・ナガセン・ファン発のスポットを探せます。
       </p>
 
+      <details class="site-menu"><summary>サイト案内</summary>
       <nav class="site-nav" aria-label="サイト内メニュー">
         <a
           class="site-nav-link is-active"
@@ -143,6 +130,7 @@
           公式サイト・SNS
         </a>
       </nav>
+      </details>
 
     </div>
 
@@ -152,23 +140,10 @@
   <!-- NOTICE -->
 
   <div class="site-notice">
-
-    <div class="site-notice-inner">
-
-      <span
-        class="notice-icon"
-        aria-hidden="true"
-      >
-        ⚠
-      </span>
-
+    <details class="site-notice-inner">
+      <summary>非公式まとめ · <span id="data-as-of">2026年10月3日</span>時点 <span class="notice-more">掲載情報のご注意</span></summary>
       <p>
-        <strong>
-          掲載情報は
-          <span id="data-as-of">2026年10月3日</span>
-          時点です。
-        </strong>
-
+        ちいかわ公式関連、ナガノ先生の紹介・訪問先、ファン発の聖地をまとめています。
         ちい活MAPは、ファンが個人で運営する非公式サイトです。
         公式各社とは関係ありません。
         営業時間・入場方法・開催状況などは変更される場合があるため、
@@ -182,23 +157,21 @@
           掲載内容について連絡 ↗
         </a>
       </p>
-
-    </div>
-
+    </details>
   </div>
-
 
   <!-- PAGE -->
 
   <main id="main-content" class="page-shell" tabindex="-1">
 
     <section id="recent-additions" class="recent-additions" aria-labelledby="recent-additions-title" hidden>
-      <div class="recent-additions-heading">
-        <h2 id="recent-additions-title">最近追加した情報</h2>
-        <span id="recent-additions-count"></span>
+<div class="recent-additions-strip">
+        <a id="recent-additions-latest" class="recent-additions-latest"></a>
+        <details class="recent-additions-details">
+          <summary aria-label="最近追加した情報をすべて見る"><span id="recent-additions-title">新着情報</span> <span id="recent-additions-count"></span> ▾</summary>
+          <div class="recent-additions-expanded"><p class="recent-additions-note">NEWは追加から14日間 · 開催日とは異なります</p><ul id="recent-additions-list" class="recent-additions-list"></ul></div>
+        </details>
       </div>
-      <p class="recent-additions-note">追加から14日間のNEW情報 · 日付はサイトへの追加日です</p>
-      <ul id="recent-additions-list" class="recent-additions-list"></ul>
     </section>
 
     <section class="map-card">
@@ -283,7 +256,7 @@
             aria-label="現在地を地図に表示"
           >
             <span aria-hidden="true">◎</span>
-            現在地
+            <span class="location-button-label">現在地</span>
           </button>
 
 
@@ -308,6 +281,9 @@
           </div>
 
 
+          <details class="map-tools-menu"><summary>保存・その他</summary>
+          <div class="map-extra-actions" role="group" aria-label="保存・共有・使い方">
+          <div class="site-header-top"></div>
           <button
             type="button"
             class="toolbar-button favorite-filter-button"
@@ -397,6 +373,13 @@
           </button>
 
 
+          </div>
+          </details>
+
+
+        </div>
+
+
           <span
             id="result-count"
             class="result-count"
@@ -406,9 +389,6 @@
           >
             読み込み中…
           </span>
-
-        </div>
-
 
         <div
           class="map-legend"
@@ -535,7 +515,7 @@
           id="no-results-reset"
           class="no-results-reset"
         >
-          条件をすべて解除
+          絞り込みをリセット
         </button>
       </div>
 
@@ -546,11 +526,7 @@
         class="date-discovery"
         aria-labelledby="date-discovery-title"
       >
-        <div class="date-discovery-copy">
-          <span class="date-discovery-kicker">WHEN TO GO?</span>
-          <strong id="date-discovery-title">開催日から絞り込む</strong>
-          <span>今日、今週末、近日開始、終了間近のスポットを表示します。</span>
-        </div>
+
 
         <div
           class="date-discovery-actions"
@@ -590,9 +566,13 @@
           </a>
         </div>
 
-        <p class="date-discovery-note">
+<details class="date-discovery-help"><summary aria-label="開催日の見方">日付の説明</summary>        <div class="date-discovery-copy">
+          <span class="date-discovery-kicker">WHEN TO GO?</span>
+          <strong id="date-discovery-title">開催日から絞り込む</strong>
+          <span>今日、今週末、近日開始、終了間近のスポットを表示します。</span>
+        </div>        <p class="date-discovery-note">
           営業日・休館日・入店方法は、訪問前に各公式情報をご確認ください。
-        </p>
+        </p></details>
       </section>
 
 
@@ -787,12 +767,15 @@
                   シリーズ・施設
                 </legend>
 
+                <p id="brand-selection-status" class="brand-selection-status" role="status" aria-live="polite"></p>
+
                 <p class="filter-hint">
-                  ちいかわらんどなど、特定のショップ・施設だけを探したいときに使います。
+                  チェックしたシリーズを表示します。すべてONは絞り込みなし、すべてOFFは表示なしです。
                 </p>
 
                 <div
                   id="brand-filter-list"
+                  aria-describedby="brand-selection-status"
                   class="filter-chip-list"
                 ></div>
 
@@ -1628,6 +1611,7 @@
 
       <section
         id="spot-list-panel"
+        tabindex="-1"
         class="spot-list-panel"
         aria-label="スポット一覧"
         hidden
@@ -1713,7 +1697,9 @@
 
 
   <script src="recent-utils.js?v=20261001-1"></script>
-  <script src="app.js?v=20261002-listings-1"></script>
+  <script src="ui-icons.js?v=20261002-ui-prototype-7"></script>
+  <script src="explorer-ui.js?v=20261002-ui-prototype-7"></script>
+  <script src="app.js?v=20261002-ui-prototype-7"></script>
   <script src="pwa.js?v=20260828-1" defer></script>
 
 </body>

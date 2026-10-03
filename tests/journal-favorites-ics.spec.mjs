@@ -106,13 +106,13 @@ test(
 
 test(
   "許可した現在地から近い順に行きたいスポットを並べる",
-  async ({ page }) => {
+  async ({ page, baseURL }) => {
     await page.context()
       .grantPermissions(
         ["geolocation"],
         {
           origin:
-            "http://127.0.0.1:4173"
+            baseURL
         }
       );
     await page.context()

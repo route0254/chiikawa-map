@@ -1897,8 +1897,11 @@ function focusSpotRecord(
     return;
   }
 
+  const selectionRequest = options.selectionRequest ?? ++explorerSelectionRequest;
+  if(selectionRequest !== explorerSelectionRequest) return;
   const openRecord =
     () => {
+      if(selectionRequest !== explorerSelectionRequest || !recordMatchesFilters(record,getCurrentFilterState())) return;
       map.setView(
         [
           record.spot.lat,
@@ -2759,47 +2762,6 @@ function createClusterIcon(
   }
 
 
-  let nameListHtml =
-    "";
-
-
-  if (
-    count <=
-    6
-  ) {
-
-    const names =
-      markers
-        .map(
-          marker =>
-            marker.options
-              .spotName ||
-            "スポット"
-        )
-        .sort(
-          (a, b) =>
-            String(a)
-              .localeCompare(
-                String(b),
-                "ja"
-              )
-        );
-
-
-    nameListHtml =
-      '<div class="cluster-name-list" aria-hidden="true">' +
-      names
-        .map(
-          name =>
-            '<div class="cluster-name-item">' +
-            escapeHtml(name) +
-            "</div>"
-        )
-        .join("") +
-      "</div>";
-  }
-
-
   return L.divIcon({
 
     className:
@@ -2814,7 +2776,6 @@ function createClusterIcon(
       count +
       "</span>" +
       "</div>" +
-      nameListHtml +
       "</div>",
 
     iconSize:
@@ -4971,6 +4932,19 @@ async function shareSpot(
 }
 
 
+function focusActiveViewOnMobile() {
+  if (isWideExplorer()) {
+    (currentViewMode === "list" ? spotListPanel : map.getContainer())?.focus({preventScroll:true});
+    return;
+  }
+  if (!window.matchMedia("(max-width: 899px)").matches) return;
+  const target = currentViewMode === "list" ? spotListPanel : map.getContainer();
+  requestAnimationFrame(() => {
+    target?.focus({ preventScroll: true });
+    target?.scrollIntoView({ block: "start", behavior: "auto" });
+  });
+}
+
 function setViewMode(
   mode
 ) {
@@ -4991,12 +4965,15 @@ function setViewMode(
     mapContent.hidden =
       listMode;
   }
+  document.body.classList.toggle("explorer-list-wide",listMode && isWideExplorer());
+  mapViewButton.textContent=isWideExplorer() ? "地図＋一覧" : "地図";
+  listViewButton.textContent=isWideExplorer() ? "一覧を広く" : "一覧";
 
   if (
     spotListPanel
   ) {
     spotListPanel.hidden =
-      !listMode;
+      !listMode && !isWideExplorer();
   }
 
   mapViewButton?.classList.toggle(
@@ -5023,7 +5000,7 @@ function setViewMode(
     !listMode
   ) {
 
-    spotList?.replaceChildren();
+    if (!document.body.classList.contains("explorer")) spotList?.replaceChildren();
 
     requestAnimationFrame(
       () => {
@@ -5051,6 +5028,7 @@ function createSpotListCard(
 
   card.className =
     "spot-list-card";
+  card.dataset.spotId = spot.id;
 
   if (
     isFavoriteSpot(spot)
@@ -5270,9 +5248,10 @@ function createSpotListCard(
     headingWrap
   );
 
-  header.appendChild(
-    headerActions
-  );
+  const more = document.createElement("details");
+  more.className="candidate-tools";
+  const moreSummary=document.createElement("summary"); moreSummary.textContent="その他の操作";
+  more.append(moreSummary,headerActions);
 
   card.appendChild(
     header
@@ -5365,16 +5344,16 @@ function createSpotListCard(
     "spot-list-open-button";
 
   openButton.textContent =
-    "地図で詳細を見る →";
+    "訪問情報の詳細を見る →";
 
   openButton.addEventListener(
     "click",
     () => {
 
+      const selectionRequest=++explorerSelectionRequest;
       setViewMode(
         "map"
       );
-
       requestAnimationFrame(
         () => {
           requestAnimationFrame(
@@ -5383,7 +5362,8 @@ function createSpotListCard(
                 record,
                 {
                   returnFocusTo:
-                    mapViewButton
+                    openButton,
+                  selectionRequest
                 }
               );
             }
@@ -5393,9 +5373,20 @@ function createSpotListCard(
     }
   );
 
-  card.appendChild(
-    openButton
-  );
+  const footer=createDiv("candidate-footer");
+  footer.append(favoriteButton,more);
+  favoriteButton.textContent=isFavoriteSpot(spot) ? "栞 保存済み" : "栞 保存";
+  card.append(footer,openButton);
+  card.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));
+  const period=createDiv("explorer-period", spot.periodType === "permanent" ? "常設" : `${formatDate(spot.startDate)}〜${formatDate(spot.endDate)}`);
+  period.append(document.createTextNode(" · 入場：" + getReservationLabel(spot.reservationType)));
+  footer.before(period);
+  card.dataset.sourceClass=spot.category === "nagano" ? "nagano-" + getEvidenceLevel(spot) : spot.category;
+  if(isVisitedSpot(spot)) {
+    const visit=visitDetailsBySpotId.get(spot.id);
+    footer.before(createDiv("explorer-visit-stamp", visit?.visitedAt ? formatDate(visit.visitedAt) + " 訪問" : "行った"));
+  }
+  finishExplorerCandidate(card,record,openButton);
 
   return card;
 }
@@ -5413,6 +5404,7 @@ function renderSpotList(
     return;
   }
 
+  const priorScroll = spotListPanel.scrollTop;
   spotList.replaceChildren();
 
   if (
@@ -5481,6 +5473,8 @@ function renderSpotList(
       );
     }
   );
+  spotListPanel.scrollTop=priorScroll;
+  syncExplorerSelection();
 }
 
 
@@ -6851,9 +6845,11 @@ function createSpotDetail(
     );
   }
 
-  container.appendChild(
-    spotActions
-  );
+  const actionDisclosure = document.createElement("details");
+  actionDisclosure.className = "spot-detail-action-menu";
+  const actionSummary = document.createElement("summary");
+  actionSummary.textContent = "♡ 保存・行った・プラン・共有";
+  actionDisclosure.append(actionSummary, spotActions);
 
   const visitDetailsCard =
     createVisitDetailsCard(spot);
@@ -6864,6 +6860,8 @@ function createSpotDetail(
     );
   }
 
+
+  container.appendChild(actionDisclosure);
 
   const tags =
     createDiv(
@@ -7446,6 +7444,22 @@ function createSpotDetail(
   );
 
 
+  // Put the visit facts ahead of optional saving and background evidence.
+  const addedLabel = container.querySelector(".spot-added-date");
+  const factTitle = container.querySelector(".spot-detail-title");
+  let anchor = addedLabel || factTitle;
+  for (const selector of [".spot-period", ".spot-address", ".spot-entry-card"]) {
+    const fact = container.querySelector(selector);
+    if (fact && anchor) { anchor.after(fact); anchor = fact; }
+  }
+  if (anchor) anchor.after(actionDisclosure);
+  const hoursFact=container.querySelector(".spot-hours-card");
+  if(hoursFact) actionDisclosure.after(hoursFact);
+  container.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));
+  const samePlace = createSamePlaceCard(spot);
+  if (samePlace) actionDisclosure.after(samePlace);
+  finishExplorerDetail(container,spot,actionDisclosure);
+
   return container;
 }
 
@@ -7457,6 +7471,8 @@ function showSpotDetail(
   options = {}
 ) {
 
+  explorerSelectionRequest++;
+  if (document.body.classList.contains("explorer")) prepareExplorerDetail(record);
   const returnFocusCandidate =
     options.returnFocusTo ||
     document.activeElement;
@@ -7486,6 +7502,7 @@ function showSpotDetail(
 
   selectedRecord =
     record;
+  scheduleMapLabels();
 
 
   detailBody.replaceChildren(
@@ -7515,6 +7532,7 @@ function showSpotDetail(
   requestAnimationFrame(
     () => {
 
+      if(detailPanel.hidden || selectedRecord !== record) return;
       detailPanel.focus({
         preventScroll: true
       });
@@ -7533,6 +7551,7 @@ function showSpotDetail(
 
   if (
     options.scrollOnMobile &&
+    !document.body.classList.contains("explorer") &&
     window.matchMedia(
       "(max-width: 899px)"
     ).matches
@@ -7569,6 +7588,7 @@ function showSpotDetail(
 function closeSpotDetail(
   options = {}
 ) {
+  if (document.body.classList.contains("explorer")) { closeExplorerDetail(options); return; }
 
   const returnFocusElement =
     detailReturnFocusElement;
@@ -7591,6 +7611,7 @@ function closeSpotDetail(
 
   selectedRecord =
     null;
+  scheduleMapLabels();
 
 
   detailPanel.hidden =
@@ -7803,6 +7824,90 @@ function createDuplicateTooltipLayoutMap(
 }
 
 
+function createSamePlaceCard(spot) {
+  const candidates = spotRecords.filter(record => record.spot.id !== spot.id && getSpotCoordinateKey(record.spot) === getSpotCoordinateKey(spot));
+  if (!candidates.length) return null;
+  const card = createDiv("spot-info-card spot-same-place-card");
+  card.append(createDiv("spot-info-title", `この施設のほかのスポット · ${candidates.length}件`));
+  const list = document.createElement("ul");
+  for (const record of candidates) {
+    const item = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = record.spot.name;
+    button.addEventListener("click", () => showSpotDetail(record, {scrollOnMobile:true, returnFocusTo:button}));
+    item.append(button); list.append(item);
+  }
+  card.append(list); return card;
+}
+
+let mapLabelFrame = null;
+function scheduleMapLabels() {
+  if (mapLabelFrame !== null) return;
+  mapLabelFrame = requestAnimationFrame(() => { mapLabelFrame = null; updateMapLabels(); });
+}
+
+function updateMapLabels() {
+  document.querySelector('.explorer-selection-leader')?.replaceChildren();
+  const mapElement = map.getContainer();
+  const bounds = mapElement.getBoundingClientRect();
+  if (!bounds.width || !bounds.height) return;
+  const labels = [...mapElement.querySelectorAll(".spot-name-label")];
+  const selectedId = selectedRecord?.spot.id;
+  // Count bubbles remain the overview. Names appear only when there is room.
+  const occupied = [...mapElement.querySelectorAll(".cluster-bubble, .leaflet-control"), ...mapContent.querySelectorAll(".explorer-map-legend")].map(el => el.getBoundingClientRect());
+  const overlaps = (a, b) => a.left < b.right + 8 && a.right > b.left - 8 && a.top < b.bottom + 8 && a.bottom > b.top - 8;
+  labels.sort((a,b) => Number(b.dataset.spotId === selectedId) - Number(a.dataset.spotId === selectedId));
+  for (const label of labels) {
+    const selected = label.dataset.spotId === selectedId;
+    label.classList.remove("is-readable", "is-selected-label");
+    label.style.marginLeft = "0px"; label.style.marginTop = "0px";
+    if (selected) {
+      const markerRect = selectedRecord.marker.getElement()?.getBoundingClientRect();
+      if (!markerRect || markerRect.right < bounds.left || markerRect.left > bounds.right || markerRect.bottom < bounds.top || markerRect.top > bounds.bottom) continue;
+    }
+    if (!selected && (map.getZoom() < 14 || label.classList.contains("spot-name-label-duplicate"))) continue;
+    label.classList.add("is-readable");
+    label.classList.toggle("is-selected-label", selected);
+    // Leaflet initially measures hidden tooltips at zero width; re-anchor after revealing.
+    spotRecords.find(record => record.spot.id === label.dataset.spotId)?.marker.getTooltip()?.update();
+    let rect = label.getBoundingClientRect();
+    if (selected) {
+      // Keep the selected name fully inside the map, including near its edges.
+      const dx = Math.max(bounds.left + 8 - rect.left, Math.min(0, bounds.right - 8 - rect.right));
+      const dy = Math.max(bounds.top + 8 - rect.top, Math.min(0, bounds.bottom - 28 - rect.bottom));
+      label.style.marginLeft = dx + "px"; label.style.marginTop = dy + "px";
+      rect = label.getBoundingClientRect();
+      if (occupied.some(other => overlaps(rect, other))) {
+        const positions = [
+          {left:rect.left, top:rect.top - rect.height - 12},
+          {left:rect.left, top:rect.bottom + 12},
+          {left:bounds.left + 8, top:rect.top},
+          {left:bounds.right - 8 - rect.width, top:rect.top}
+        ];
+        const free = positions.find(pos => {
+          const candidate = {...pos, right:pos.left + rect.width, bottom:pos.top + rect.height};
+          return candidate.left >= bounds.left + 8 && candidate.right <= bounds.right - 8 && candidate.top >= bounds.top + 8 && candidate.bottom <= bounds.bottom - 28 && !occupied.some(other => overlaps(candidate,other));
+        });
+        if (free) {
+          label.style.marginLeft = dx + free.left - rect.left + "px";
+          label.style.marginTop = dy + free.top - rect.top + "px";
+          rect = label.getBoundingClientRect();
+        }
+      }
+    }
+    const contained = rect.left >= bounds.left + 7 && rect.right <= bounds.right - 7 && rect.top >= bounds.top + 7 && rect.bottom <= bounds.bottom - 7;
+    if (!contained || (!selected && occupied.some(other => overlaps(rect,other)))) {
+      label.classList.remove("is-readable"); continue;
+    }
+    occupied.push(rect);
+    if(selected)explorerLeader(spotRecords.find(record=>record.spot.id===selectedId),rect,bounds);
+  }
+}
+
+map.on("zoomend moveend resize layeradd", scheduleMapLabels);
+spotLayer.on("animationend spiderfied unspiderfied", scheduleMapLabels);
+
 function createSpotRecord(
   spot,
   tooltipLayout = null
@@ -7935,102 +8040,17 @@ function createSpotRecord(
   );
 
 
-  marker.on(
-    "tooltipopen",
-    () => {
-      const tooltipElement =
-        marker.getTooltip()
-          ?.getElement();
+  marker.on("tooltipopen", scheduleMapLabels);
 
-      tooltipElement
-        ?.setAttribute(
-          "data-spot-id",
-          spot.id
-        );
-
-      if (
-        !tooltipLayout ||
-        !tooltipElement ||
-        tooltipElement.dataset
-          .spotActionBound ===
-          "true"
-      ) {
-        return;
-      }
-
-      tooltipElement.dataset
-        .spotActionBound =
-        "true";
-
-      tooltipElement.setAttribute(
-        "role",
-        "button"
-      );
-
-      tooltipElement.setAttribute(
-        "tabindex",
-        "0"
-      );
-
-      tooltipElement.setAttribute(
-        "aria-label",
-        spot.name +
-        "の詳細を開く"
-      );
-
-      const openFromTooltip =
-        event => {
-          event.preventDefault();
-          event.stopPropagation();
-
-          showSpotDetail(
-            record,
-            {
-              scrollOnMobile:
-                true,
-              returnFocusTo:
-                tooltipElement
-            }
-          );
-        };
-
-      tooltipElement.addEventListener(
-        "click",
-        openFromTooltip
-      );
-
-      tooltipElement.addEventListener(
-        "keydown",
-        event => {
-          if (
-            event.key ===
-              "Enter" ||
-            event.key ===
-              " "
-          ) {
-            openFromTooltip(
-              event
-            );
-          }
-        }
-      );
-    }
-  );
-
+  marker.on("tooltipopen", () => {
+    marker.getTooltip()?.getElement()?.setAttribute("data-spot-id", spot.id);
+  });
 
   marker.on(
     "click",
     () => {
 
-      showSpotDetail(
-        record,
-        {
-          scrollOnMobile:
-            true,
-          returnFocusTo:
-            marker.getElement()
-        }
-      );
+      openSpotPreview(record);
 
     }
   );
@@ -8564,6 +8584,18 @@ function renderFilterFeedback(
   visibleCount
 ) {
 
+  const brandInputs = Array.from(document.querySelectorAll('input[name="filter-brand"]'));
+  const selectedBrands = brandInputs.filter(input => input.checked).length;
+  const brandStatus = document.getElementById("brand-selection-status");
+  if (brandStatus) {
+    const summary = selectedBrands === brandInputs.length
+      ? "すべてのシリーズを表示（絞り込みなし）"
+      : selectedBrands === 0
+        ? "シリーズが未選択のため、表示は0件です"
+        : `${brandInputs.length}シリーズ中${selectedBrands}シリーズを表示`;
+    if (brandStatus.textContent !== summary) brandStatus.textContent = summary;
+  }
+
   const descriptions =
     getActiveFilterDescriptions();
 
@@ -8597,6 +8629,7 @@ function renderFilterFeedback(
       visibleCount !== 0 ||
       spotRecords.length === 0;
   }
+  if(activeFilterReset)activeFilterReset.hidden=visibleCount===0 && spotRecords.length>0;
 }
 
 
@@ -8604,6 +8637,7 @@ function renderFilterFeedback(
 
 function updateSpotFilters() {
 
+  explorerSelectionRequest++;
   updateSearchClearButton();
 
   const filterState =
@@ -8666,6 +8700,7 @@ function updateSpotFilters() {
           requestAnimationFrame(
             () => {
 
+              if(selectedRecord !== record) return;
               record.marker
                 .getElement()
                 ?.classList
@@ -8700,8 +8735,7 @@ function updateSpotFilters() {
     visibleRecords;
 
   if (
-    currentViewMode ===
-    "list"
+    (currentViewMode === "list" || isWideExplorer() || spotList.childElementCount > 0)
   ) {
     renderSpotList(
       getListRecords(
@@ -8735,7 +8769,8 @@ function getOpenDialogPanel() {
     filterPanel,
     savedDataPanel,
     officialHelpPanel,
-    naganoHelpPanel
+    naganoHelpPanel,
+    document.body.classList.contains("explorer") && !isWideExplorer() ? detailPanel : null
   ].find(
     panel =>
       panel &&
@@ -8884,6 +8919,7 @@ function setSavedDataPanelOpen(
     updateFavoriteCount();
     updateVisitedCount();
     updatePlanCount();
+    closeExplorerMenus();
   }
 
   const restoreFocus =
@@ -8916,7 +8952,7 @@ function setSavedDataPanelOpen(
   } else if (
     restoreFocus
   ) {
-    savedDataToggle.focus();
+    focusExplorerMenuTrigger(savedDataToggle);
   }
 }
 
@@ -8938,6 +8974,7 @@ function setOfficialHelpPanelOpen(
     setFilterPanelOpen(false);
     setSavedDataPanelOpen(false);
     setNaganoHelpPanelOpen(false);
+    closeExplorerMenus();
   }
 
   const restoreFocus =
@@ -8962,7 +8999,7 @@ function setOfficialHelpPanelOpen(
   if (open) {
     officialHelpClose?.focus();
   } else if (restoreFocus) {
-    officialHelpToggle.focus();
+    focusExplorerMenuTrigger(officialHelpToggle);
   }
 }
 
@@ -8984,6 +9021,7 @@ function setNaganoHelpPanelOpen(
     setFilterPanelOpen(false);
     setSavedDataPanelOpen(false);
     setOfficialHelpPanelOpen(false);
+    closeExplorerMenus();
   }
 
   const restoreFocus =
@@ -9008,7 +9046,7 @@ function setNaganoHelpPanelOpen(
   if (open) {
     naganoHelpClose?.focus();
   } else if (restoreFocus) {
-    naganoHelpToggle.focus();
+    focusExplorerMenuTrigger(naganoHelpToggle);
   }
 }
 
@@ -9348,8 +9386,17 @@ async function loadRecentAdditions(spots) {
     }
     firstAddedDates = registry.firstAdded;
     const recent = RecentAdditions.selectRecent(spots, firstAddedDates);
+    const latestLink = document.getElementById("recent-additions-latest");
+    if (recent[0]) {
+      latestLink.href = `spot/${encodeURIComponent(recent[0].id)}/`;
+      latestLink.append(createAddedDateLabel(recent[0]));
+      const latestName = document.createElement("span");
+      latestName.className = "recent-addition-name";
+      latestName.textContent = recent[0].name;
+      latestLink.append(latestName);
+    }
     const list = document.getElementById("recent-additions-list");
-    for (const spot of recent.slice(0, 6)) {
+    for (const spot of recent) {
       const item = document.createElement("li");
       const link = document.createElement("a");
       link.href = `spot/${encodeURIComponent(spot.id)}/`;
@@ -9361,7 +9408,7 @@ async function loadRecentAdditions(spots) {
       list.append(item);
     }
     document.getElementById("recent-additions-count").textContent =
-      recent.length > 6 ? `${recent.length}件のうち最新6件` : `${recent.length}件`;
+      `${recent.length}件`;
     document.getElementById("recent-additions").hidden = recent.length === 0;
   } catch (error) {
     // New announcements are optional; map/search must still work when unavailable.
@@ -9816,7 +9863,8 @@ prefectureFilter
         prefectureFilter.value;
 
       updateSpotFilters();
-      renderSearchSuggestions();
+      if (document.activeElement === spotSearch) renderSearchSuggestions();
+      else hideSearchSuggestions();
       focusMapOnPrefecture(
         prefecture
       );
@@ -9865,6 +9913,7 @@ mapViewButton
       setViewMode(
         "map"
       );
+      focusActiveViewOnMobile();
     }
   );
 
@@ -9880,6 +9929,7 @@ listViewButton
         "list"
       );
       updateSpotFilters();
+      focusActiveViewOnMobile();
     }
   );
 
@@ -10403,3 +10453,16 @@ if (appScriptUrl) {
     }
   );
 }
+
+// Dismiss optional menus when returning to the main map controls.
+document.addEventListener("pointerdown", event => {
+  if (getOpenDialogPanel()) return;
+  for (const menu of document.querySelectorAll(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open], .explorer-dates[open], .explorer-sort[open]")) {
+    if (!menu.contains(event.target)) menu.open = false;
+  }
+});
+document.addEventListener("keydown", event => {
+  if (event.key !== "Escape" || event.defaultPrevented) return;
+  const menu = event.target instanceof Element ? event.target.closest(".site-menu[open], .map-tools-menu[open], .recent-additions-details[open], .date-discovery-help[open], .explorer-dates[open], .explorer-sort[open], .explorer-map-legend[open]") : null;
+  if (menu) { menu.open = false; menu.querySelector("summary")?.focus(); }
+});
