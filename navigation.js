@@ -18,7 +18,12 @@
     const navigationHeight=navigation?.getBoundingClientRect().height || 100;
     const contentTop=(main?.getBoundingClientRect().top || 0) + window.scrollY;
     const fixedContentTop=contentTop-(document.body.classList.contains('navigation-flow')?navigationHeight:0);
-    if(!document.body.classList.contains('home-map'))document.body.classList.toggle('navigation-flow', innerWidth<=680 && innerHeight-fixedContentTop-navigationHeight<240);
+    const homeMap=document.body.classList.contains('home-map');
+    if(homeMap){
+      const controlsHeight=['.map-search-bar','.map-toolbar'].reduce((height,selector)=>height+(document.querySelector(selector)?.getBoundingClientRect().height||0),0);
+      const fixedHeaderHeight=(header?.getBoundingClientRect().height||56)-(document.body.classList.contains('navigation-flow')?navigationHeight:0);
+      document.body.classList.toggle('navigation-flow',innerWidth<=899 && (innerHeight-fixedHeaderHeight-controlsHeight-navigationHeight<240 || navigationHeight>innerHeight/4));
+    }else document.body.classList.toggle('navigation-flow', innerWidth<=680 && innerHeight-fixedContentTop-navigationHeight<240);
     document.documentElement.style.setProperty('--site-navigation-height', `${navigationHeight}px`);
     document.documentElement.style.setProperty('--site-header-height', `${header?.getBoundingClientRect().height || 56}px`);
     document.documentElement.style.setProperty('--site-content-top', `${contentTop}px`);
@@ -26,6 +31,7 @@
   const observer=new ResizeObserver(measure);
   if(navigation)observer.observe(navigation);
   if(header)observer.observe(header);
+  for(const selector of ['.map-search-bar','.map-toolbar']){const controls=document.querySelector(selector);if(controls)observer.observe(controls);}
   const notice=document.querySelector('.site-notice');if(notice)observer.observe(notice);
   measure();
   window.addEventListener('resize',measure);

@@ -329,6 +329,11 @@
 @media(max-width:899px) {
  .home-map.explorer .site-header[inert] .explorer-navigation { visibility:hidden; }
  .home-map.explorer .map-content.has-detail .spot-detail-panel { position:fixed; top:var(--site-header-height,56px); bottom:0; z-index:1800; }
+ .home-map.explorer.navigation-flow .explorer-navigation { position:static; width:100%; padding-inline:0; }
+ .home-map.explorer.navigation-flow .map-card { height:auto; overflow:visible; }
+ .home-map.explorer.navigation-flow .spot-list-panel { flex:none; overflow:visible; }
+ .home-map.explorer.navigation-flow .map-content { flex:none; height:60dvh; min-height:320px; }
+ .home-map.explorer.navigation-flow .map-content.has-detail .spot-detail-panel { top:0; }
 }
 
 .home-map.explorer,.journal-page { font-family:"Zen Maru Gothic",system-ui,"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif; }

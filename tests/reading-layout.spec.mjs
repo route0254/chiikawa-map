@@ -107,6 +107,27 @@ test('home to official search to saved plan and back to the map forms a complete
  await expect(page.locator('#spot-search')).toHaveValue('原宿');await expect(page.locator('#prefecture-filter')).toHaveValue('東京都');
 });
 
+test('mobile 200 percent text moves navigation into the page and reaches the last result actions',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/?view=list');await expect(page.locator('.spot-list-card').first()).toBeVisible();
+ await page.evaluate(()=>{const double=rules=>{for(const r of rules){if(r.cssRules)double(r.cssRules);const s=r.style?.getPropertyValue('font-size');if(s&&/^[\d.]+px$/.test(s))r.style.setProperty('font-size',parseFloat(s)*2+'px',r.style.getPropertyPriority('font-size'));}};for(const sheet of document.styleSheets){try{double(sheet.cssRules);}catch{}}document.documentElement.style.fontSize='32px';});
+ await expect(page.locator('body')).toHaveClass(/navigation-flow/);
+ expect(await page.locator('.site-nav').evaluate(el=>getComputedStyle(el).position)).toBe('static');
+ expect(await page.locator('.spot-list-panel').evaluate(el=>getComputedStyle(el).overflowY)).toBe('visible');
+ const last=page.locator('.spot-list-card').last();const id=await last.getAttribute('data-spot-id');
+ for(const selector of ['.spot-list-plan-button','.spot-list-favorite-button']){
+  const action=last.locator(selector);await action.scrollIntoViewIfNeeded();
+  expect(await action.evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
+  await action.click();await expect(action).toHaveAttribute('aria-pressed','true');
+ }
+ expect(await page.locator('.site-nav').evaluate(el=>el.getBoundingClientRect().bottom)).toBeLessThan(0);
+ await last.locator('.candidate-tools>summary').click();await last.locator('.spot-list-visited-button').click();await expect(last.locator('.explorer-visit-stamp')).toHaveText('行った');
+ await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async value=>{window.qaCopiedShare=value;}}}));
+ await last.locator('.candidate-tools>summary').click();await last.locator('.spot-list-share-button').click();expect(await page.evaluate(()=>window.qaCopiedShare)).toContain('/spot/'+id+'/');
+ await last.locator('.spot-list-open-button').click();await expect(page.locator('#spot-detail-panel')).toBeVisible();
+ const detail=await page.locator('#spot-detail-panel').boundingBox();expect(detail.y).toBe(0);expect(detail.height).toBe(844);
+ await page.locator('#detail-close').click();await page.locator('.site-nav-link[href="journal.html"]').click();await page.locator('#plan-tab').click();await expect(page.locator('.plan-stop')).toHaveCount(1);
+});
+
 test('returning through site pages restores the map and private saved filters without changing direct visits',async({page})=>{
  for(const width of [390,1440]){
   await page.setViewportSize({width,height:1000});
