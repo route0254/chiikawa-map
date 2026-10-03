@@ -109,6 +109,104 @@ for (const width of [390, 1180, 1440]) {
   });
 }
 
+for (const width of [390, 1180]) {
+  test(`list to map retains its geographic center and a usable marker after zoom (${width}px)`, async ({ page }) => {
+    await page.setViewportSize({ width, height: width === 1180 ? 757 : 844 });
+    await page.goto('/?q=町田&view=list&recent=1');
+    await expect(page.locator('#result-count')).toHaveText('1件表示');
+    await expect.poll(() => page.evaluate(() => map.getCenter().distanceTo([
+      lastFilteredRecords[0].spot.lat, lastFilteredRecords[0].spot.lng
+    ]))).toBeLessThan(1);
+    const expectCenteredMarker = async () => {
+      await expect.poll(() => page.evaluate(() => {
+        const size = map.getSize();
+        const rect = document.getElementById('map').getBoundingClientRect();
+        return size.x > 0 && size.y > 0 && size.x === rect.width && size.y === rect.height;
+      })).toBe(true);
+      await expect.poll(() => page.evaluate(() => {
+        const spot = lastFilteredRecords[0].spot;
+        const point = map.latLngToContainerPoint([spot.lat, spot.lng]);
+        return point.distanceTo(map.getSize().divideBy(2));
+      })).toBeLessThan(2);
+      const marker = page.locator('.spot-marker');
+      await expect(marker).toHaveCount(1);
+      const pin = await marker.boundingBox();
+      const canvas = await page.locator('#map').boundingBox();
+      expect(pin.x + pin.width / 2).toBeGreaterThan(canvas.x + 16);
+      expect(pin.x + pin.width / 2).toBeLessThan(canvas.x + canvas.width - 16);
+      expect(pin.y + pin.height / 2).toBeGreaterThan(canvas.y + 16);
+      expect(pin.y + pin.height / 2).toBeLessThan(canvas.y + canvas.height - 16);
+    };
+    await page.locator('#map-view-button').click();
+    await expectCenteredMarker();
+    const zoom = await page.evaluate(() => map.getZoom());
+    await page.locator('.leaflet-control-zoom-in').click();
+    await expect.poll(() => page.evaluate(() => map.getZoom())).toBe(zoom + 1);
+    await expectCenteredMarker();
+    await page.locator('#list-view-button').click();
+    await page.locator('#map-view-button').click();
+    await expectCenteredMarker();
+    expect(await page.evaluate(() => map.getZoom())).toBe(zoom + 1);
+    await page.reload();
+    await expect(page.locator('#result-count')).toHaveText('1件表示');
+    await expectCenteredMarker();
+    await page.locator('.spot-marker').click();
+    if (width < 900) {
+      await expect(page.locator('#spot-preview')).toBeVisible();
+      await page.locator('.preview-open').click();
+    }
+    await expect(page.locator('#spot-detail-panel')).toBeVisible();
+    await expect(page.locator('#spot-detail-title')).toContainText('町田');
+    await page.locator('#detail-close').click();
+    await expect(page.locator('#spot-detail-panel')).toBeHidden();
+    await expect(page.locator('#map-view-button')).toHaveAttribute('aria-pressed', 'true');
+    await expectCenteredMarker();
+  });
+
+  for (const method of ['pointer', 'keyboard']) {
+    test(`a ${method} search selection from list opens visible detail and returns to list (${width}px)`, async ({ page }) => {
+      const query = method === 'pointer' ? '常滑' : '原宿';
+      const prefecture = method === 'pointer' ? '愛知県' : '東京都';
+      const errors = [];
+      page.on('pageerror', error => errors.push(error.message));
+      await page.setViewportSize({ width, height: width === 1180 ? 757 : 844 });
+      await page.goto(`/?view=list&pref=${encodeURIComponent(prefecture)}`);
+      await expect(page.locator('.spot-list-card').first()).toBeVisible();
+      const search = page.locator('#spot-search');
+      await search.fill(query);
+      const suggestion = page.locator('.search-suggestion').first();
+      await expect(suggestion).toBeVisible();
+      const selectedName = await suggestion.locator('.search-suggestion-name').textContent();
+      if (method === 'pointer') await suggestion.click();
+      else { await page.keyboard.press('ArrowDown');await page.keyboard.press('Enter'); }
+      const detail = page.locator('#spot-detail-panel');
+      await expect(detail).toBeVisible();
+      await expect(detail).toBeFocused();
+      await expect(page.locator('#spot-detail-title')).toHaveText(selectedName);
+      await expect(page.locator('#map-content')).toBeVisible();
+      await expect(page.locator('#map-view-button')).toHaveAttribute('aria-pressed', 'true');
+      expect(new URL(page.url()).searchParams.has('view')).toBe(false);
+      if (method === 'pointer') await page.locator('#detail-close').click();
+      else await page.keyboard.press('Escape');
+      await expect(detail).toBeHidden();
+      await expect(page.locator('#list-view-button')).toHaveAttribute('aria-pressed', 'true');
+      await expect(page.locator('#map-content')).toBeHidden();
+      await expect(search).toBeFocused();
+      await expect(search).toHaveValue(selectedName);
+      await expect(page.locator('#prefecture-filter')).toHaveValue(prefecture);
+      expect(await page.locator('.explorer-sidebar').evaluate(el => el.inert)).toBe(false);
+      expect(new URL(page.url()).searchParams.get('view')).toBe('list');
+      expect(new URL(page.url()).searchParams.get('q')).toBe(selectedName);
+      await page.reload();
+      await expect(page.locator('.spot-list-card').first()).toBeVisible();
+      await expect(page.locator('#list-view-button')).toHaveAttribute('aria-pressed', 'true');
+      await expect(search).toHaveValue(selectedName);
+      await expect(page.locator('#prefecture-filter')).toHaveValue(prefecture);
+      expect(errors).toEqual([]);
+    });
+  }
+}
+
 test('recent entry points toggle the same AND condition through rapid switches and reload', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/?q=町田&pref=東京都&view=list');

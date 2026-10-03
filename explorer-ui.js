@@ -269,7 +269,7 @@ function closeExplorerDetail(options = {}) {
     setViewMode(returnView);
   }
   document.getElementById("spot-list-panel").scrollTop=explorerReturnScroll;
-  map.invalidateSize({pan:false,animate:false});
+  map.invalidateSize({pan:true,animate:false});
   scheduleMapLabels(); syncExplorerSelection();
   if (options.restoreFocus !== false && !isWideExplorer() && selectedRecord && explorerPreviewRecord?.spot.id === selectedRecord.spot.id) {
     openSpotPreview(selectedRecord);

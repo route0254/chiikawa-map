@@ -1899,6 +1899,15 @@ function focusSpotRecord(
 
   const selectionRequest = options.selectionRequest ?? ++explorerSelectionRequest;
   if(selectionRequest !== explorerSelectionRequest) return;
+  if (options.fromSearch && currentViewMode === "list") {
+    rememberExplorerListReturn();
+    setViewMode("map");
+    // As with a list card, expose and resize the map before opening its detail.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => focusSpotRecord(record, {...options, selectionRequest}));
+    });
+    return;
+  }
   const openRecord =
     () => {
       if(selectionRequest !== explorerSelectionRequest || !recordMatchesFilters(record,getCurrentFilterState())) return;
@@ -5057,8 +5066,9 @@ function setViewMode(
 
     requestAnimationFrame(
       () => {
+        // Preserve the geographic center when exposing or resizing the canvas.
         map.invalidateSize({
-          pan: false,
+          pan: true,
           animate: false
         });
       }
@@ -7594,7 +7604,7 @@ function showSpotDetail(
 
       map.invalidateSize({
         pan:
-          false,
+          true,
 
         animate:
           false
