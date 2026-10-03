@@ -81,6 +81,9 @@ for (const width of [390, 1180, 1440]) {
     const before = await page.evaluate(() => ({ page: scrollY, list: spotListPanel.scrollTop }));
     await open.click();
     await expect(page.locator('#spot-detail-panel')).toBeVisible();
+    const closeLabel = width < 900 ? '一覧に戻る' : '候補に戻る';
+    await expect(page.locator('#detail-close')).toHaveText(closeLabel);
+    await expect(page.locator('#detail-close')).toHaveAccessibleName(closeLabel);
     await page.keyboard.press('Escape');
     await expect(page.locator('#spot-detail-panel')).toBeHidden();
     await expect(page.locator('#list-view-button')).toHaveAttribute('aria-pressed', 'true');
@@ -157,6 +160,9 @@ for (const width of [390, 1180]) {
     }
     await expect(page.locator('#spot-detail-panel')).toBeVisible();
     await expect(page.locator('#spot-detail-title')).toContainText('町田');
+    const closeLabel = width < 900 ? '地図に戻る' : '候補に戻る';
+    await expect(page.locator('#detail-close')).toHaveText(closeLabel);
+    await expect(page.locator('#detail-close')).toHaveAccessibleName(closeLabel);
     await page.locator('#detail-close').click();
     await expect(page.locator('#spot-detail-panel')).toBeHidden();
     await expect(page.locator('#map-view-button')).toHaveAttribute('aria-pressed', 'true');
@@ -186,6 +192,9 @@ for (const width of [390, 1180]) {
       await expect(page.locator('#map-content')).toBeVisible();
       await expect(page.locator('#map-view-button')).toHaveAttribute('aria-pressed', 'true');
       expect(new URL(page.url()).searchParams.has('view')).toBe(false);
+      const closeLabel = width < 900 ? '一覧に戻る' : '候補に戻る';
+      await expect(page.locator('#detail-close')).toHaveText(closeLabel);
+      await expect(page.locator('#detail-close')).toHaveAccessibleName(closeLabel);
       if (method === 'pointer') await page.locator('#detail-close').click();
       else await page.keyboard.press('Escape');
       await expect(detail).toBeHidden();
@@ -272,11 +281,15 @@ test('search Escape preserves the query and suggestions remain selectable by poi
   await search.fill('原宿');await expect(suggestions).toBeVisible();
   await suggestions.locator('.search-suggestion').first().click();
   await expect(page.locator('#spot-detail-panel')).toBeVisible();
+  await expect(page.locator('#detail-close')).toHaveText('地図に戻る');
+  await expect(page.locator('#detail-close')).toHaveAccessibleName('地図に戻る');
   await page.locator('#detail-close').click();
   await search.fill('町田');await expect(suggestions).toBeVisible();
   const selectedName=await suggestions.locator('.search-suggestion-name').first().textContent();
   await page.keyboard.press('ArrowDown');await page.keyboard.press('Enter');
   await expect(page.locator('#spot-detail-panel')).toBeVisible();
+  await expect(page.locator('#detail-close')).toHaveText('地図に戻る');
+  await expect(page.locator('#detail-close')).toHaveAccessibleName('地図に戻る');
   await expect(search).toHaveValue(selectedName);
 });
 

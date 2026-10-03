@@ -225,7 +225,10 @@ function prepareExplorerDetail(record) {
   if(!explorerDetailReturnView)explorerReturnScroll = document.getElementById("spot-list-panel").scrollTop;
   document.getElementById("spot-preview").hidden=true;
   const panel=document.getElementById("spot-detail-panel");
-  document.getElementById("detail-close").textContent=isWideExplorer() ? "候補に戻る" : "地図に戻る";
+  const closeButton=document.getElementById("detail-close");
+  const closeLabel=isWideExplorer() ? "候補に戻る" : explorerDetailReturnView === "list" ? "一覧に戻る" : "地図に戻る";
+  closeButton.textContent=closeLabel;
+  closeButton.setAttribute("aria-label",closeLabel);
   panel.setAttribute("role", isWideExplorer() ? "region" : "dialog");
   if (isWideExplorer()) panel.removeAttribute("aria-modal"); else panel.setAttribute("aria-modal","true");
   document.querySelector(".site-header").inert=!isWideExplorer();
