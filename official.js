@@ -5,7 +5,7 @@ let officialRecentOnly = false;
 document.addEventListener("click", event => {
   const action = event.target.closest("#official-recent button");
   if (!action) return;
-  officialRecentOnly = action.hasAttribute("data-catalog-recent");
+  officialRecentOnly = action.hasAttribute("data-catalog-recent") ? !officialRecentOnly : false;
   handleCurrentFiltersChanged(action);
 });
 

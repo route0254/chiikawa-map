@@ -4,14 +4,39 @@ function isWideExplorer() {
 }
 
 let explorerReturnScroll = 0;
+let explorerDetailReturnView = null;
+let explorerDetailReturnPageScroll = 0;
 let explorerPreviewRecord = null;
 let explorerSheetHistoryActive = false;
 let explorerPendingClose = null;
 let explorerSelectionRequest = 0;
 const explorerWordSegmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ja',{granularity:'word'}):null;
+const EXPLORER_MENU_SELECTOR='.map-tools-menu,.recent-additions-details,.explorer-dates,.explorer-sort,.explorer-map-legend,.date-discovery-help,.candidate-tools,.spot-detail-action-menu,.site-notice-inner';
 
-function closeExplorerMenus() {
-  document.querySelectorAll('.map-tools-menu[open],.recent-additions-details[open],.explorer-dates[open],.explorer-sort[open]').forEach(menu=>menu.open=false);
+function closeExplorerMenus(except = null) {
+  document.querySelectorAll(EXPLORER_MENU_SELECTOR).forEach(menu=>{
+    // A nested disclosure keeps its parent open, while unrelated menus close.
+    const dateParent=menu.matches('.explorer-dates') && except?.closest('#explorer-date-panel');
+    if(menu!==except && !menu.contains(except) && !dateParent) menu.open=false;
+    menu.querySelector(':scope > summary')?.setAttribute('aria-expanded',String(menu.open));
+  });
+  const dates=document.querySelector('.explorer-dates');
+  const datePanel=document.getElementById('explorer-date-panel');
+  if(datePanel)datePanel.hidden=!dates?.open;
+}
+
+function closeExplorerDisclosures({menu = null, panel = null} = {}) {
+  closeExplorerMenus(menu);
+  for(const [id,setOpen] of [['filter-panel',setFilterPanelOpen],['saved-data-panel',setSavedDataPanelOpen],['official-help-panel',setOfficialHelpPanelOpen],['nagano-help-panel',setNaganoHelpPanelOpen]]) {
+    const candidate=document.getElementById(id);
+    if(candidate && candidate!==panel && !candidate.hidden)setOpen(false,{restoreFocus:false});
+  }
+}
+
+function explorerMenuForTarget(target) {
+  if(!(target instanceof Element))return null;
+  if(target.closest('#explorer-date-panel'))return target.closest('.date-discovery-help') || document.querySelector('.explorer-dates');
+  return target.closest(EXPLORER_MENU_SELECTOR);
 }
 
 function focusExplorerMenuTrigger(button) {
@@ -192,11 +217,12 @@ function openSpotPreview(record) {
 }
 
 function prepareExplorerDetail(record) {
+  closeExplorerDisclosures();
   if (!isWideExplorer() && explorerPreviewRecord?.spot.id === record.spot.id && detailPanel.hidden && !explorerSheetHistoryActive) {
     history.pushState({...history.state, explorerSheet:true}, "", location.href);
     explorerSheetHistoryActive=true;
   }
-  explorerReturnScroll = document.getElementById("spot-list-panel").scrollTop;
+  if(!explorerDetailReturnView)explorerReturnScroll = document.getElementById("spot-list-panel").scrollTop;
   document.getElementById("spot-preview").hidden=true;
   const panel=document.getElementById("spot-detail-panel");
   document.getElementById("detail-close").textContent=isWideExplorer() ? "候補に戻る" : "地図に戻る";
@@ -206,6 +232,17 @@ function prepareExplorerDetail(record) {
   document.querySelector(".explorer-sidebar").inert=!isWideExplorer() || matchMedia("(min-width:900px) and (max-width:1279px)").matches;
   document.getElementById("map-wrapper").inert=!isWideExplorer();
   requestAnimationFrame(syncExplorerSelection);
+}
+
+function rememberExplorerListReturn() {
+  explorerDetailReturnView=currentViewMode;
+  explorerReturnScroll=document.getElementById('spot-list-panel').scrollTop;
+  explorerDetailReturnPageScroll=scrollY;
+  explorerPreviewRecord=null;
+  if(!isWideExplorer() && !explorerSheetHistoryActive) {
+    history.pushState({...history.state,explorerSheet:true},'',location.href);
+    explorerSheetHistoryActive=true;
+  }
 }
 
 function closeExplorerDetail(options = {}) {
@@ -227,6 +264,10 @@ function closeExplorerDetail(options = {}) {
     }
   }
   mapContent.classList.remove("has-detail");
+  const returnView=explorerDetailReturnView;explorerDetailReturnView=null;
+  if(options.restoreFocus !== false && returnView) {
+    setViewMode(returnView);
+  }
   document.getElementById("spot-list-panel").scrollTop=explorerReturnScroll;
   map.invalidateSize({pan:false,animate:false});
   scheduleMapLabels(); syncExplorerSelection();
@@ -236,6 +277,14 @@ function closeExplorerDetail(options = {}) {
   } else if (options.restoreFocus !== false) {
     const target = detailReturnFocusElement?.isConnected ? detailReturnFocusElement : selectedRecord?.marker.getElement();
     target?.focus({preventScroll:true});
+  }
+  if(options.restoreFocus !== false && returnView && !isWideExplorer()) {
+    const pageScroll=explorerDetailReturnPageScroll;
+    scrollTo(0,pageScroll);
+    const request=explorerSelectionRequest;
+    requestAnimationFrame(()=>{
+      if(request===explorerSelectionRequest && detailPanel.hidden && currentViewMode===returnView)scrollTo(0,pageScroll);
+    });
   }
 }
 
@@ -256,9 +305,15 @@ function initializeExplorer() {
   for(const node of [...card.children]) if(node !== mapContent) sidebar.append(node);
   card.prepend(sidebar);
   const toolbar=document.querySelector(".map-toolbar-left");
+  const disclosureSlot=document.createElement('div');disclosureSlot.className='explorer-disclosure-slot';
+  document.querySelector('.map-toolbar').after(disclosureSlot);
   const dates=document.createElement("details"); dates.className="explorer-dates";
   const summary=document.createElement("summary"); summary.setAttribute('aria-label','開催日');summary.append(explorerIcon('calendar'));const dateLabel=document.createElement('span');dateLabel.className='explorer-date-label';dateLabel.textContent='開催日';summary.append(dateLabel);
-  dates.append(summary,document.querySelector(".date-discovery")); toolbar.append(dates);
+  const datePanel=document.querySelector('.date-discovery');datePanel.id='explorer-date-panel';datePanel.hidden=true;
+  summary.setAttribute('aria-controls',datePanel.id);summary.setAttribute('aria-expanded','false');
+  dates.append(summary);toolbar.append(dates);
+  const filters=document.getElementById('filter-panel');filters.setAttribute('role','region');filters.removeAttribute('aria-modal');
+  disclosureSlot.append(datePanel,filters);
   const tools=document.querySelector(".map-tools-menu");
   tools.classList.add("site-menu"); tools.querySelector("summary").textContent="保存・使い方";
   const actions=tools.querySelector(".map-extra-actions");
@@ -298,9 +353,12 @@ function initializeExplorer() {
 }
 
 initializeExplorer();
-// Filters belong to both views; the map container is hidden in list mode.
-document.body.append(document.getElementById("filter-panel"));
-document.getElementById("active-filter-summary").append(document.getElementById("recent-filter-clear"));
+// Date and filter controls share one flow slot, before the active conditions.
+const resetConditions=document.getElementById('active-filter-reset');
+resetConditions.textContent='すべて解除';resetConditions.setAttribute('aria-label','すべての検索・絞り込み条件を解除');
+const recentClear=document.getElementById('recent-filter-clear');
+recentClear.textContent='×';recentClear.setAttribute('aria-label','新着条件を解除');recentClear.title='新着条件を解除';
+document.getElementById('active-filter-list').append(recentClear);
 // A concrete starting point for the nationwide desktop view; location permission is optional.
 const discovery=document.createElement('div');
 discovery.className='explorer-discovery';
@@ -318,17 +376,63 @@ const discoveryRegion=document.querySelector('#prefecture-filter');
 const refreshDiscovery=()=>{regionAction.hidden=Boolean(discoveryRegion.value);};
 discoveryRegion.addEventListener('change',refreshDiscovery);refreshDiscovery();
 addEventListener("popstate", () => {
+  closeExplorerDisclosures();hideSearchSuggestions();
   if(explorerSheetHistoryActive) {
     explorerSheetHistoryActive=false;
     const options=explorerPendingClose || {}; explorerPendingClose=null;
     if(options.recordId && selectedRecord?.spot.id !== options.recordId) return;
     closeExplorerDetail({...options,fromHistory:true});
+  } else {
+    restoreMapFilterHistory();
   }
 });
 addEventListener("resize", () => {
+  closeExplorerDisclosures();hideSearchSuggestions();
   setViewMode(currentViewMode); updateSpotFilters();
   if(!detailPanel.hidden) prepareExplorerDetail(selectedRecord);
 });
+
+// Native details remain keyboard/touch controls; a single policy owns their state.
+document.addEventListener('click',event=>{
+  const summary=event.target instanceof Element?event.target.closest('summary'):null;
+  const menu=summary?.parentElement;
+  if(menu?.matches(EXPLORER_MENU_SELECTOR) && !menu.open) {
+    closeExplorerDisclosures({menu});hideSearchSuggestions();
+  }
+},true);
+document.addEventListener('toggle',event=>{
+  const menu=event.target;
+  if(!(menu instanceof Element) || !menu.matches(EXPLORER_MENU_SELECTOR))return;
+  if(menu.open)closeExplorerDisclosures({menu});
+  menu.querySelector(':scope > summary')?.setAttribute('aria-expanded',String(menu.open));
+  if(menu.matches('.explorer-dates'))document.getElementById('explorer-date-panel').hidden=!menu.open;
+},true);
+// Dismiss after the click is delivered: closing a flow panel on pointerdown
+// would move the tapped result/reset button before pointerup.
+document.addEventListener('click',event=>{
+  // Downloads dispatch a synthetic anchor click outside the saved-data dialog.
+  if(!event.isTrusted)return;
+  const target=event.target;
+  const panel=target instanceof Element?target.closest('#filter-panel,#saved-data-panel,#official-help-panel,#nagano-help-panel'):null;
+  const trigger=target instanceof Element?target.closest('#filter-toggle,#saved-data-toggle,#official-help-toggle,#nagano-help-toggle'):null;
+  closeExplorerDisclosures({menu:explorerMenuForTarget(target),panel:panel || (trigger?document.getElementById(trigger.getAttribute('aria-controls')):null)});
+});
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape' || event.defaultPrevented)return;
+  const filter=document.getElementById('filter-panel');
+  if(filter && !filter.hidden) {
+    setFilterPanelOpen(false);document.getElementById('filter-toggle').focus({preventScroll:true});
+    event.preventDefault();event.stopImmediatePropagation();return;
+  }
+  const menus=[...document.querySelectorAll(EXPLORER_MENU_SELECTOR)].filter(menu=>menu.open);
+  if(!menus.length)return;
+  const menu=explorerMenuForTarget(event.target) || menus.at(-1);
+  menu.open=false;
+  if(menu.matches('.explorer-dates'))document.getElementById('explorer-date-panel').hidden=true;
+  menu.querySelector(':scope > summary')?.setAttribute('aria-expanded','false');
+  menu.querySelector(':scope > summary')?.focus({preventScroll:true});
+  event.preventDefault();event.stopImmediatePropagation();
+},true);
 document.addEventListener("keydown", event => {
   if((event.key === "Enter" || event.key === " ") && event.target instanceof Element) {
     const pin=event.target.closest(".spot-marker[data-spot-id]");

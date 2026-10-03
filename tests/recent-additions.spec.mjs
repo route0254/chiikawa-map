@@ -75,6 +75,11 @@ for (const width of [390, 1440]) test(`recent filter preserves both display mode
   await page.locator("#spot-search").fill("町田");
   await expect(page.locator("#result-count")).toHaveText("1件表示");
   await page.locator(".explorer-discovery [data-recent-filter]").click();
+  await expect(page.locator("#result-count")).toHaveText("2件表示");
+  await expect(page.locator("#recent-additions [data-recent-filter]")).toHaveAttribute("aria-pressed", "false");
+  expect(new URL(page.url()).searchParams.has("recent")).toBe(false);
+  await page.locator(".explorer-discovery [data-recent-filter]").click();
+  await expect(page.locator("#result-count")).toHaveText("1件表示");
   await expect(page.locator("#list-view-button")).toHaveAttribute("aria-pressed", "true");
   await expect(page.locator(".recent-additions-details")).not.toHaveAttribute("open", "");
   await page.reload();
@@ -109,6 +114,11 @@ test("official and collaboration pages filter their own additions, retain dates,
   await expect(page.locator("#current-groups .spot-added-date .new-badge")).toHaveCount(13);
   await page.locator("#current-search").fill("町田");
   await expect(page.locator("#current-groups .official-spot-card")).toHaveCount(1);
+  await page.locator("#official-recent [data-catalog-recent]").click();
+  await expect(page.locator("#official-recent [data-catalog-recent]")).toHaveAttribute("aria-pressed", "false");
+  await expect(page.locator("#current-search")).toHaveValue("町田");
+  await expect(page.locator("#current-groups .official-spot-card")).toHaveCount(1);
+  await page.locator("#official-recent [data-catalog-recent]").click();
   await page.reload();
   await expect(page.locator("#current-search")).toHaveValue("町田");
   await expect(page.locator("#official-recent [data-catalog-recent]")).toHaveAttribute("aria-pressed", "true");
@@ -127,6 +137,11 @@ test("official and collaboration pages filter their own additions, retain dates,
   await expect(page.locator('[data-groups="current"] .spot-added-date')).toHaveCount(4);
   await page.locator('[data-filter="search"][data-list="current"]').fill("オキシ");
   await expect(page.locator('[data-groups="current"] .collaboration-card')).toHaveCount(1);
+  await page.locator("#collaboration-recent [data-catalog-recent]").click();
+  await expect(page.locator("#collaboration-recent [data-catalog-recent]")).toHaveAttribute("aria-pressed", "false");
+  await expect(page.locator('[data-filter="search"][data-list="current"]')).toHaveValue("オキシ");
+  expect(new URL(page.url()).searchParams.has("recent")).toBe(false);
+  await page.locator("#collaboration-recent [data-catalog-recent]").click();
   await page.reload();
   await expect(page.locator('[data-filter="search"][data-list="current"]')).toHaveValue("オキシ");
   await expect(page.locator('[data-groups="current"] .collaboration-card')).toHaveCount(1);

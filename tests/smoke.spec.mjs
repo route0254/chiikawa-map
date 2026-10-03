@@ -1351,7 +1351,7 @@ test(
 
 
 test(
-  "各ダイアログのフォーカスを保ち、保存データを専用パネルで操作する",
+  "絞り込みはインラインで操作でき、保存データは専用ダイアログで操作する",
   async ({ page }) => {
     await page.goto("/");
     await waitForSpots(page);
@@ -1370,8 +1370,8 @@ test(
 
     await expect(panel).toBeVisible();
     await expect(panel).toHaveAttribute(
-      "aria-modal",
-      "true"
+      "role",
+      "region"
     );
     await expect(
       page.locator(
@@ -1383,14 +1383,7 @@ test(
       "Shift+Tab"
     );
 
-    expect(
-      await panel.evaluate(
-        element =>
-          element.contains(
-            document.activeElement
-          )
-      )
-    ).toBe(true);
+    await expect(page.locator('.explorer-dates > summary')).toBeFocused();
 
     await page.keyboard.press(
       "Escape"
@@ -1613,6 +1606,7 @@ test(
     ).toMatch(
       /^chiikatsu-map-saved-\d{4}-\d{2}-\d{2}\.json$/
     );
+    await expect(savedPanel).toBeVisible();
 
     await page.keyboard.press(
       "Escape"

@@ -94,8 +94,10 @@ test('page destinations and a named date filter stay reachable without opening a
 
 test('home to official search to saved plan and back to the map forms a complete mobile route',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/');
+ await expect(page.locator('.leaflet-marker-icon').first()).toBeVisible();
  await page.locator('#spot-search').fill('原宿');await page.locator('#prefecture-filter').selectOption('東京都');
  await page.locator('.site-nav-link[href="official.html"]').click();
+ await expect(page.locator('#current-groups .official-spot-card').first()).toBeVisible();
  await page.locator('#current-search').fill('常滑');await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(3);
  const first=page.locator('#current-groups .official-spot-card').first();
  const title=await first.locator('h4').textContent();await first.locator('.spot-card-save-plan').click();
