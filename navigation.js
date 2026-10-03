@@ -1,0 +1,65 @@
+/* Keep a map search when moving between site pages in this tab. */
+(() => {
+  const key = 'chiikawa-map-search-return-v1';
+  const explorationKey = 'chiikawa-map-exploration-return-v1';
+  const pendingKey = 'chiikawa-map-exploration-pending-v1';
+  for(const link of document.querySelectorAll('.site-nav-link')){
+    const href=link.getAttribute('href')||'';
+    const symbol=href.includes('official-links')?'🔗':href.includes('official.html')?'✦':href.includes('collaborations')?'🎀':href.includes('nagano')?'✎':href.includes('journal')?'🌱':'🗺';
+    const label=link.textContent.trim().replace(/^[^\p{L}\p{N}]+/u,'');
+    const icon=document.createElement('span');icon.className='chiikatsu-nav-icon';icon.setAttribute('aria-hidden','true');icon.textContent=symbol;
+    link.replaceChildren(icon,document.createTextNode(label));
+  }
+  const navigation=document.querySelector('.site-nav');
+  const header=document.querySelector('.site-header');
+  const main=document.querySelector('main');
+  if(navigation)document.body.classList.add('with-site-navigation');
+  const measure=()=>{
+    const navigationHeight=navigation?.getBoundingClientRect().height || 100;
+    const contentTop=(main?.getBoundingClientRect().top || 0) + window.scrollY;
+    const fixedContentTop=contentTop-(document.body.classList.contains('navigation-flow')?navigationHeight:0);
+    const homeMap=document.body.classList.contains('home-map');
+    if(homeMap){
+      const controlsHeight=['.map-search-bar','.map-toolbar'].reduce((height,selector)=>height+(document.querySelector(selector)?.getBoundingClientRect().height||0),0);
+      const fixedHeaderHeight=(header?.getBoundingClientRect().height||56)-(document.body.classList.contains('navigation-flow')?navigationHeight:0);
+      document.body.classList.toggle('navigation-flow',innerWidth<=899 && (innerHeight-fixedHeaderHeight-controlsHeight-navigationHeight<240 || navigationHeight>innerHeight/4));
+    }else document.body.classList.toggle('navigation-flow', innerWidth<=680 && innerHeight-fixedContentTop-navigationHeight<240);
+    document.documentElement.style.setProperty('--site-navigation-height', `${navigationHeight}px`);
+    document.documentElement.style.setProperty('--site-header-height', `${header?.getBoundingClientRect().height || 56}px`);
+    document.documentElement.style.setProperty('--site-content-top', `${contentTop}px`);
+  };
+  const observer=new ResizeObserver(measure);
+  if(navigation)observer.observe(navigation);
+  if(header)observer.observe(header);
+  for(const selector of ['.map-search-bar','.map-toolbar']){const controls=document.querySelector(selector);if(controls)observer.observe(controls);}
+  const notice=document.querySelector('.site-notice');if(notice)observer.observe(notice);
+  measure();
+  window.addEventListener('resize',measure);
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('a[href]');
+    if (!link || event.defaultPrevented) return;
+    const target = new URL(link.href, location.href);
+    if (target.origin !== location.origin) return;
+    const home = new URL(document.body.classList.contains('spot-page') ? '../../' : './', location.href);
+    try {
+      if (document.body.classList.contains('home-map')) {
+        if (target.pathname !== home.pathname && typeof getCurrentFiltersShareUrl === 'function') {
+          sessionStorage.setItem(key, new URL(getCurrentFiltersShareUrl()).search);
+          if(typeof getMapExplorationState === 'function')sessionStorage.setItem(explorationKey,JSON.stringify(getMapExplorationState()));
+        }
+      } else if (target.pathname === home.pathname && (link.classList.contains('site-nav-link') || target.searchParams.has('spot'))) {
+        const saved = new URLSearchParams(sessionStorage.getItem(key) || '');
+        for (const [name, value] of saved) if (!target.searchParams.has(name)) target.searchParams.set(name, value);
+        // Private saved filters stay in this tab, never in a shared URL. A
+        // one-use return ticket avoids changing a later direct/shared visit.
+        sessionStorage.removeItem(pendingKey);
+        if(!target.searchParams.has('spot')){
+          const state=JSON.parse(sessionStorage.getItem(explorationKey)||'null');
+          const savedSearch=saved.toString();
+          if(state && target.search===(savedSearch?'?'+savedSearch:''))sessionStorage.setItem(pendingKey,JSON.stringify({...state,search:target.search}));
+        }
+        link.href = target.href;
+      }
+    } catch { /* Navigation remains available when browser storage is disabled. */ }
+  });
+})();

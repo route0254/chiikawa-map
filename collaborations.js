@@ -436,6 +436,7 @@ function renderCard(record) {
       <dl class="collaboration-detail-list">
         <div><dt>期間</dt><dd>${renderPeriods(record.periods)}</dd></div>
         <div><dt>場所</dt><dd>${escapeHtml(record.areaText)}</dd></div>
+        ${record.checkedAt ? `<div><dt>情報確認日</dt><dd>${escapeHtml(formatDate(record.checkedAt))}</dd></div>` : ''}
       </dl>
       <div class="collaboration-tags">${tags.map(tag => `<span class="collaboration-tag">${escapeHtml(tag)}</span>`).join("")}</div>
       <div class="collaboration-card-actions">

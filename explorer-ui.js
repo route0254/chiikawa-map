@@ -54,7 +54,7 @@ function explorerLeader(record,labelRect,mapRect) {
   let svg=document.querySelector('.explorer-selection-leader');
   if(!svg){svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.classList.add('explorer-selection-leader');svg.setAttribute('aria-hidden','true');document.getElementById('map').append(svg);}
   const line=document.createElementNS(svg.namespaceURI,'line');
-  for(const [key,value] of Object.entries({x1:x-mapRect.left,y1:y-mapRect.top,x2:endX-mapRect.left,y2:endY-mapRect.top,stroke:'#17607C','stroke-width':1.5}))line.setAttribute(key,value);
+  for(const [key,value] of Object.entries({x1:x-mapRect.left,y1:y-mapRect.top,x2:endX-mapRect.left,y2:endY-mapRect.top,stroke:'#87536e','stroke-width':1.5}))line.setAttribute(key,value);
   svg.append(line);
 }
 
@@ -85,9 +85,11 @@ function finishExplorerCandidate(card,record,openButton) {
   explorerRestoreActionFocus(card.querySelector('.spot-list-favorite-button'),spot,'.spot-list-favorite-button',true);
   explorerRestoreActionFocus(card.querySelector('.spot-list-visited-button'),spot,'.spot-list-visited-button',true);
   explorerRestoreActionFocus(card.querySelector('.spot-list-plan-button'),spot,'.spot-list-plan-button',true);
-  for(const [selector,icon,label] of [['.spot-list-share-button','share','共有'],['.spot-list-plan-button','plan',isPlanSpot(spot)?'プランに追加済み':'プランに追加']]) {
+  for(const [selector,icon,label] of [['.spot-list-share-button','share','共有'],['.spot-list-plan-button','plan',isPlanSpot(spot)?'プランに追加済み':'今日のプランに追加']]) {
     const button=card.querySelector(selector);if(button){const text=label||button.textContent.replace(/^[^\p{L}\p{N}]+/u,'');button.replaceChildren(explorerIcon(icon),document.createTextNode(text));}
   }
+  card.querySelector('.spot-list-plan-button').setAttribute('aria-pressed',String(isPlanSpot(spot)));
+  card.querySelector('.candidate-tools > summary').textContent='共有・行った！';
 }
 
 function finishExplorerDetail(container,spot,actionDisclosure) {
@@ -100,10 +102,12 @@ function finishExplorerDetail(container,spot,actionDisclosure) {
   const crowd=getCrowdControlLabel(spot.crowdControlType);
   if(crowd)facts.append(createDiv('explorer-entry-attention','特定日の対応：'+crowd+(getCrowdConditionLabel(spot.crowdControlCondition)?'（'+getCrowdConditionLabel(spot.crowdControlCondition)+'）':'')));
   const primary=createDiv('explorer-primary-actions');
-  const save=container.querySelector('.spot-favorite-button'),visited=container.querySelector('.spot-visited-button');
-  explorerSaveButton(save,spot);explorerVisitedButton(visited,spot);primary.append(save,visited);
+  const save=container.querySelector('.spot-favorite-button'),visited=container.querySelector('.spot-visited-button'),plan=container.querySelector('.spot-plan-button');
+  explorerSaveButton(save,spot);explorerVisitedButton(visited,spot);primary.append(plan,save,visited);
   explorerRestoreActionFocus(save,spot,'.spot-favorite-button');explorerRestoreActionFocus(visited,spot,'.spot-visited-button');
-  actionDisclosure.querySelector('summary').textContent='プラン・共有・その他';
+  explorerRestoreActionFocus(plan,spot,'.spot-plan-button');
+  plan.setAttribute('aria-pressed',String(isPlanSpot(spot)));
+  actionDisclosure.querySelector('summary').textContent='共有・訪問メモ・その他';
   let anchor=period||title;
   for(const selector of ['.spot-important-notice','.spot-cancelled-notice']){const notice=container.querySelector(selector);if(notice){anchor.after(notice);anchor=notice;}}
   anchor.after(facts);anchor=facts;
@@ -179,7 +183,10 @@ function openSpotPreview(record) {
   const updateSave = () => explorerSaveButton(save,record.spot);
   updateSave();
   save.addEventListener("click", () => { toggleFavoriteSpot(record.spot); updateSave(); });
-  actions.append(open,save); preview.append(close,category,heading,place,period,entry,actions);
+  const plan=document.createElement('button');plan.type='button';plan.className='preview-plan';
+  const updatePlan=()=>{const saved=isPlanSpot(record.spot);plan.textContent=saved?'✓ プランに追加済み':'＋ 今日のプラン';plan.setAttribute('aria-pressed',String(saved));plan.setAttribute('aria-label',saved?'今日のプランから外す':'今日のプランに追加');};
+  updatePlan();plan.addEventListener('click',()=>{togglePlanSpot(record.spot);updatePlan();});
+  actions.append(open,save,plan); preview.append(close,category,heading,place,period,entry,actions);
   preview.hidden=false; preview.focus({preventScroll:true});
   syncExplorerSelection();
 }
@@ -236,9 +243,9 @@ function initializeExplorer() {
   document.body.classList.add("explorer");
   document.getElementById("map-view-button").textContent="地図";
   document.getElementById("list-view-button").textContent="一覧";
-  document.getElementById("filter-toggle").textContent="条件";
+  document.getElementById("filter-toggle").textContent="絞り込み";
   document.getElementById("filter-toggle").setAttribute("aria-label","スポットを絞り込む");
-  document.querySelector(".spot-detail-kicker").textContent="訪問情報";
+  document.querySelector(".spot-detail-kicker").textContent="お出かけ情報";
   const position=document.createElement('small');position.className='site-position';position.textContent='非公式';document.querySelector('.site-header h1').after(position);
   const searchIcon=document.querySelector('.spot-search-icon');if(searchIcon)searchIcon.replaceChildren(explorerIcon('search'));
   const locationIcon=document.querySelector('#location-button > span:first-child');if(locationIcon)locationIcon.replaceChildren(explorerIcon('location'));
@@ -253,18 +260,18 @@ function initializeExplorer() {
   const summary=document.createElement("summary"); summary.setAttribute('aria-label','開催日');summary.append(explorerIcon('calendar'));const dateLabel=document.createElement('span');dateLabel.className='explorer-date-label';dateLabel.textContent='開催日';summary.append(dateLabel);
   dates.append(summary,document.querySelector(".date-discovery")); toolbar.append(dates);
   const tools=document.querySelector(".map-tools-menu");
-  tools.classList.add("site-menu"); tools.querySelector("summary").textContent="保存・案内";
+  tools.classList.add("site-menu"); tools.querySelector("summary").textContent="保存・使い方";
   const actions=tools.querySelector(".map-extra-actions");
-  actions.append(document.querySelector(".site-menu:not(.map-tools-menu) .site-nav"), document.querySelector(".site-notice"),document.querySelector(".map-legend"), document.querySelector(".home-screen-card"),document.querySelector(".site-note"));
+  const navigation=document.querySelector(".site-menu:not(.map-tools-menu) .site-nav");
+  navigation.classList.add('explorer-navigation');
+  actions.append(document.querySelector(".site-notice"),document.querySelector(".map-legend"), document.querySelector(".home-screen-card"),document.querySelector(".site-note"));
   const savedHeading=document.createElement('h3');savedHeading.className='explorer-menu-heading';savedHeading.textContent='手帳と保存データ';actions.prepend(savedHeading);
-  const guideHeading=document.createElement('h3');guideHeading.className='explorer-menu-heading';guideHeading.textContent='サイト案内';actions.querySelector('.site-nav').before(guideHeading);
   document.querySelector(".site-menu:not(.map-tools-menu)").remove();
   for(const [selector,icon] of [['#favorite-filter-button','bookmark'],['.plan-open-button','plan'],['#visited-filter-button','visit'],['#saved-data-toggle','data'],['#share-filters-button','share'],['#official-help-toggle','info'],['#nagano-help-toggle','info']])ChiikatsuUI.decorateAction(document.querySelector(selector),icon);
-  for(const link of actions.querySelectorAll('.site-nav-link'))ChiikatsuUI.decorateAction(link,link.getAttribute('href')?.includes('journal')?'bookmark':'info');
   for(const [index,icon] of ['bookmark','plan','visit'].entries())ChiikatsuUI.decorateAction(document.querySelectorAll('.saved-data-current > span')[index],icon);
   ChiikatsuUI.decorateAction(document.getElementById('saved-data-export'),'data');
   const header=document.querySelector(".site-header-inner");
-  header.append(document.querySelector("#recent-additions"), tools);
+  header.append(document.querySelector("#recent-additions"), tools, navigation);
   document.getElementById("recent-additions-title").textContent="新着";
   const preview=document.createElement("aside"); preview.id="spot-preview"; preview.className="spot-preview";
   preview.hidden=true; preview.tabIndex=-1; preview.setAttribute("role","region"); preview.setAttribute("aria-labelledby","spot-preview-title");
@@ -287,7 +294,7 @@ function initializeExplorer() {
   const sorting=document.createElement("details"); sorting.className="explorer-sort";
   const sortSummary=document.createElement("summary"); sortSummary.textContent="並び順";
   listTools.before(sorting); sorting.append(sortSummary,listTools);
-  document.querySelector(".spot-list-header h2").textContent="スポット";
+  document.querySelector(".spot-list-header h2").textContent="お出かけ先を見つけよう";
 }
 
 initializeExplorer();

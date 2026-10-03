@@ -1,11 +1,11 @@
 /* Shared reading surfaces; source categories and uncertainty retain their own labels. */
 .reading-page {
-  --reading-ink:#263B46;
-  --reading-muted:#526773;
-  --reading-blue:#17607C;
-  --reading-line:#D8E5E9;
+  --reading-ink:#593e4f;
+  --reading-muted:#705d6c;
+  --reading-blue:#87536e;
+  --reading-line:#e7d6e3;
   color:var(--reading-ink);
-  background:#FFFDF7;
+  background:#fffaf7;
   font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
   line-height:1.6;
 }
@@ -13,7 +13,7 @@
 .reading-page [hidden] { display:none!important; }
 .reading-page .chiikatsu-icon { width:20px; height:20px; flex:none; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; vertical-align:middle; }
 .reading-page .chiikatsu-action { display:inline-flex; align-items:center; gap:6px; }
-.reading-page .site-header { background:#FFFDF7; border-bottom:1px solid var(--reading-line); box-shadow:none; }
+.reading-page .site-header { background:#fffaf7; border-bottom:1px solid var(--reading-line); box-shadow:none; }
 .reading-page .site-header-inner { width:min(1200px,calc(100% - 32px)); padding:12px 0; }
 .reading-page .site-header-top { display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:0; }
 .reading-page .site-kicker { font-size:12px; color:var(--reading-blue); letter-spacing:.1em; }
@@ -22,7 +22,7 @@
 .reading-page .site-description { margin:4px 0 8px; font-size:13px; line-height:1.6; color:var(--reading-muted); }
 .reading-page .site-nav { gap:6px; margin:0; }
 .reading-page .site-nav-link { min-height:44px; padding:7px 10px; font-size:13px; line-height:1.5; color:var(--reading-blue); border:1px solid var(--reading-line); border-radius:8px; box-shadow:none; background:white; }
-.reading-page .site-nav-link.is-active { background:#EAF5FA; border-color:var(--reading-blue); }
+.reading-page .site-nav-link.is-active { background:#fff0f5; border-color:var(--reading-blue); }
 .reading-page .site-notice { font-size:12px; background:#FFF4D7; color:#78501C; }
 .reading-page .site-notice-inner { width:min(1200px,calc(100% - 32px)); padding:8px 0; line-height:1.6; }
 .reading-page .site-notice-inner p { font-size:12px; line-height:1.6; }
@@ -34,8 +34,8 @@
 .reading-page .catalog-heading,.reading-page .collaboration-heading { align-items:center; gap:12px; margin-bottom:12px; }
 .reading-page .catalog-heading h2,.reading-page .collaboration-heading h2 { margin:0; font-size:18px; line-height:1.5; color:var(--reading-ink); }
 .reading-page .catalog-tabs,.reading-page .collaboration-tabs { gap:8px; padding:0; background:transparent; margin-bottom:16px; }
-.reading-page .catalog-tab,.reading-page .collaboration-tab { min-height:52px; padding:10px 12px; border:1px solid var(--reading-line); border-radius:8px; color:var(--reading-ink); background:#FFFDF7; box-shadow:none; }
-.reading-page .catalog-tab.is-active,.reading-page .collaboration-tab.is-active { border-color:var(--reading-blue); background:#EAF5FA; color:var(--reading-blue); }
+.reading-page .catalog-tab,.reading-page .collaboration-tab { min-height:52px; padding:10px 12px; border:1px solid var(--reading-line); border-radius:8px; color:var(--reading-ink); background:#fffaf7; box-shadow:none; }
+.reading-page .catalog-tab.is-active,.reading-page .collaboration-tab.is-active { border-color:var(--reading-blue); background:#fff0f5; color:var(--reading-blue); }
 .reading-page .catalog-tab strong,.reading-page .collaboration-tab strong { font-size:14px; line-height:1.5; }
 .reading-page .catalog-tab small,.reading-page .collaboration-tab small { font-size:12px; line-height:1.5; color:var(--reading-muted); }
 .reading-page .catalog-tab-icon,.reading-page .collaboration-tab>span:first-child { width:24px; height:24px; background:transparent; color:inherit; }
@@ -45,7 +45,7 @@
 .reading-page .panel-intro p,.reading-page .collaboration-panel-intro p { margin:6px 0 0; font-size:14px; line-height:1.6; color:var(--reading-muted); }
 .reading-page .catalog-heading .official-eyebrow,.reading-page .collaboration-heading .collaboration-eyebrow,
 .reading-page .catalog-panel .panel-kicker,.reading-page .collaboration-panel-kicker { display:none; }
-.reading-page .catalog-filters,.reading-page .collaboration-filters { padding:12px; gap:10px; margin-bottom:12px; border:1px solid var(--reading-line); border-radius:8px; background:#EAF5FA; }
+.reading-page .catalog-filters,.reading-page .collaboration-filters { padding:12px; gap:10px; margin-bottom:12px; border:1px solid var(--reading-line); border-radius:8px; background:#fff0f5; }
 .reading-page .catalog-filters label,.reading-page .collaboration-filters label { min-width:0; gap:4px; }
 .reading-page .catalog-filters label>span,.reading-page .collaboration-filters label>span { font-size:13px; color:var(--reading-muted); }
 .reading-page .catalog-filters input,.reading-page .catalog-filters select,.reading-page .collaboration-filters input,.reading-page .collaboration-filters select { width:100%; min-width:0; min-height:44px; font-size:16px; border-color:var(--reading-line); border-radius:6px; }
@@ -64,10 +64,10 @@
 .reading-page .site-extra-filter-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-bottom:10px; }
 .reading-page .site-collaboration-options,.reading-page .site-collaboration-option-fields { display:contents; }
 .reading-page .site-collaboration-options>summary { display:none; }
-.reading-page .catalog-map-link,.reading-page .collaboration-official-link { display:inline-flex; align-items:center; justify-content:center; min-height:44px; width:auto; padding:6px 10px; font-size:13px; line-height:1.5; color:var(--reading-blue); background:#EAF5FA; border:1px solid var(--reading-line); border-radius:6px; box-shadow:none; }
+.reading-page .catalog-map-link,.reading-page .collaboration-official-link { display:inline-flex; align-items:center; justify-content:center; min-height:44px; width:auto; padding:6px 10px; font-size:13px; line-height:1.5; color:var(--reading-blue); background:#fff0f5; border:1px solid var(--reading-line); border-radius:6px; box-shadow:none; }
 .reading-page .catalog-filter-toggle,.reading-page .filter-reset-button,.reading-page .collaboration-reset,
 .reading-page .catalog-share-button,.reading-page .spot-card-action,.reading-page .collaboration-card-action,
-.reading-page .spot-card-save-button { min-height:44px; font-size:13px; line-height:1.5; border-radius:6px; color:var(--reading-blue); background:#EAF5FA; border:1px solid var(--reading-line); box-shadow:none; }
+.reading-page .spot-card-save-button { min-height:44px; font-size:13px; line-height:1.5; border-radius:6px; color:var(--reading-blue); background:#fff0f5; border:1px solid var(--reading-line); box-shadow:none; }
 .reading-page .spot-card-save-favorite.is-active { color:var(--reading-ink); background:#FFE58B; }
 .reading-page .spot-card-save-visited.is-active { color:#377361; background:#EBF6EF; }
 .reading-page .spot-card-save-plan.is-active { color:var(--reading-blue); background:#DCEEF5; }
@@ -79,7 +79,7 @@
 .reading-page .collaboration-status,.reading-page .collaboration-period-label,
 .reading-page .panel-status-summary,.reading-page .spot-group-count { font-size:12px; }
 .reading-page .collaboration-group-icon,.reading-page .collaboration-card-icon,
-.reading-page .spot-group-icon { color:var(--reading-blue); background:#EAF5FA; }
+.reading-page .spot-group-icon { color:var(--reading-blue); background:#fff0f5; }
 .reading-page .spot-card-details dt,.reading-page .collaboration-details dt { font-size:13px; color:var(--reading-muted); }
 .reading-page .spot-card-details dd,.reading-page .collaboration-details dd,
 .reading-page .collaboration-summary,.reading-page .collaboration-period-note { min-width:0; font-size:14px; line-height:1.65; color:var(--reading-ink); overflow-wrap:anywhere; }
@@ -99,20 +99,20 @@
 .reading-page .site-overview>summary { display:flex; align-items:center; gap:8px; min-height:44px; padding:12px; color:var(--reading-blue); font-size:14px; cursor:pointer; }
 .reading-page .site-overview>summary::after { content:'＋'; margin-left:auto; }
 .reading-page .site-overview[open]>summary::after { content:'−'; }
-.reading-page .site-overview>section { margin:0; border:0; border-radius:0; padding:16px; background:#EAF5FA; box-shadow:none; }
+.reading-page .site-overview>section { margin:0; border:0; border-radius:0; padding:16px; background:#fff0f5; box-shadow:none; }
 .reading-page .site-overview .official-hero,.reading-page .site-overview .collaboration-hero { grid-template-columns:1fr; }
 .reading-page .site-overview h2 { font-size:18px; line-height:1.5; color:var(--reading-ink); }
 .reading-page .site-overview p { font-size:14px; line-height:1.65; color:var(--reading-muted); }
 .reading-page .hero-decoration,.reading-page .collaboration-hero-decoration { display:none; }
 .reading-page .hero-stat,.reading-page .collaboration-stat { border-radius:8px; box-shadow:none; background:white; }
-.reading-page .nagano-note { margin:0 0 12px; padding:12px 16px; border:1px solid var(--reading-line); border-radius:8px; background:#EAF5FA; }
+.reading-page .nagano-note { margin:0 0 12px; padding:12px 16px; border:1px solid var(--reading-line); border-radius:8px; background:#fff0f5; }
 .reading-page .nagano-note h2 { font-size:14px; line-height:1.5; color:var(--reading-blue); margin-bottom:4px; }
 .reading-page .nagano-note p { font-size:14px; line-height:1.65; color:var(--reading-muted); }
 .reading-page .nagano-tabs { gap:8px; margin:0 0 12px; padding:0; background:transparent; }
-.reading-page .nagano-profile-mark { background:#EAF5FA; color:var(--reading-blue); border:1px solid var(--reading-line); border-radius:10px; box-shadow:none; }
+.reading-page .nagano-profile-mark { background:#fff0f5; color:var(--reading-blue); border:1px solid var(--reading-line); border-radius:10px; box-shadow:none; }
 .reading-page .nagano-profile-mark .chiikatsu-icon { width:32px; height:32px; }
 .reading-page .nagano-tabs button { min-height:44px; border:1px solid var(--reading-line); border-radius:8px; color:var(--reading-blue); background:white; }
-.reading-page .nagano-tabs button[aria-selected='true'] { border-color:var(--reading-blue); background:#EAF5FA; }
+.reading-page .nagano-tabs button[aria-selected='true'] { border-color:var(--reading-blue); background:#fff0f5; }
 .reading-page :focus-visible { outline:3px solid var(--reading-blue); outline-offset:3px; }
 @media(min-width:681px) {
  .reading-page .collaboration-filters { align-items:start; }
@@ -159,3 +159,29 @@
  .reading-page .spot-card-details dd,.reading-page .collaboration-detail-list dd { flex:1 1 12em; min-width:0; }
 }
 @media(prefers-reduced-motion:reduce) { .reading-page * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+
+/* Keep every destination visible, with the map as a stable way back. */
+.reading-page .site-header { background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); }
+.reading-page .site-nav-link { border-radius:999px; background:#fffafc; border-color:#e5cddf; color:#654763; }
+.reading-page .site-nav-link.is-active { background:#fbe2ed; border-color:#cf7ea1; }
+.reading-page .catalog-tab,.reading-page .collaboration-tab,.reading-page .nagano-tabs button { border-radius:18px; }
+.reading-page .catalog-filters,.reading-page .collaboration-filters { background:#fff5f8; border-radius:18px; }
+.reading-page .catalog-map-link,.reading-page .spot-card-save-button,.reading-page .collaboration-official-link { border-radius:999px; }
+@media(max-width:680px) {
+ .reading-page { padding-bottom:calc(100px + env(safe-area-inset-bottom)); }
+ .reading-page .site-nav { position:fixed; bottom:0; left:0; right:0; z-index:1500; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); overflow:visible; gap:4px; padding:4px 12px calc(4px + env(safe-area-inset-bottom)); background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); border-top:1px solid #e5cddf; }
+ .reading-page .site-nav-link { min-width:0; padding:4px; font-size:12px; white-space:normal; justify-content:center; text-align:center; }
+ .reading-page .site-nav-link .ui-icon { width:16px; }
+}
+
+@media(max-width:680px) { .reading-page { padding-bottom:0; } .reading-page main { margin-block:0; } }
+
+.reading-page { font-family:"Zen Maru Gothic",system-ui,"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif; background:#fffaf7; }
+.reading-page .official-catalog,.reading-page .collaboration-catalog,.reading-page .nagano-tab-panel,.reading-page .official-spot-card,.reading-page .collaboration-card,.reading-page .guide-card,.reading-page .nagano-note { border-radius:20px; }
+.reading-page .catalog-tab.is-active,.reading-page .collaboration-tab.is-active,.reading-page .nagano-tabs button[aria-selected="true"] { background:#fbe2ed; color:#654763; border-color:#cf7ea1; }
+.reading-page .catalog-filter-toggle,.reading-page .site-collaboration-options,.reading-page .catalog-share-button { border-radius:18px; background:#f5effa; color:#654763; border-color:#e7d6e3; }
+.reading-page .spot-card-save-button { background:#fff9e9; color:#654763; border-color:#e7d6e3; }
+.reading-page .spot-card-save-plan { background:#fbe2ed; color:#654763; border-color:#cf7ea1; }
+.reading-page .spot-card-save-plan.is-active { background:#edf7f0; color:#38644c; border-color:#82a88e; }
+.reading-page .spot-card-save-visited { background:#f5effa; }
+.reading-page .spot-group-icon,.reading-page .nagano-profile-mark { background:#f5effa; color:#87536e; border-radius:18px; }

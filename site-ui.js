@@ -3,7 +3,6 @@
   const main = document.querySelector("#main-content");
   if (!main) return;
   const logo=document.querySelector('.site-kicker');if(logo)logo.textContent='ちい活MAP';
-  const profileMark=document.querySelector('.nagano-profile-mark');if(profileMark)profileMark.replaceChildren(ChiikatsuUI.icon('info'));
   const pastLabel=document.querySelector('.catalog-tab[data-view="past"] strong');if(pastLabel)pastLabel.textContent='過去の記録';
   const archiveLabel=document.querySelector('.collaboration-tab[data-list="archive"] strong');if(archiveLabel)archiveLabel.textContent='終了・過去';
 
@@ -20,7 +19,7 @@
     summary.append(ChiikatsuUI.icon("info"), document.createTextNode(
       document.body.classList.contains("nagano-page")
         ? "このページについて"
-        : "この一覧について・掲載件数"
+        : "この一覧の楽しみ方"
     ));
     overview.append(summary, ...sections);
     const cta = main.querySelector(".official-bottom-cta");

@@ -1927,7 +1927,11 @@ function focusSpotRecord(
       );
     };
 
-  if (
+  // A list selection already identifies the spot. Opening its detail must not
+  // depend on a cluster animation while the previously hidden map resizes.
+  if (options.fromList) {
+    openRecord();
+  } else if (
     typeof spotLayer.zoomToShowLayer ===
     "function"
   ) {
@@ -5363,7 +5367,8 @@ function createSpotListCard(
                 {
                   returnFocusTo:
                     openButton,
-                  selectionRequest
+                  selectionRequest,
+                  fromList: true
                 }
               );
             }
@@ -5374,7 +5379,7 @@ function createSpotListCard(
   );
 
   const footer=createDiv("candidate-footer");
-  footer.append(favoriteButton,more);
+  footer.append(planButton,favoriteButton,more);
   favoriteButton.textContent=isFavoriteSpot(spot) ? "栞 保存済み" : "栞 保存";
   card.append(footer,openButton);
   card.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));
@@ -5696,7 +5701,7 @@ function requestUserLocation(
 
       showTransientMapStatus(
         options.successMessage ||
-        "現在地を表示しました。位置情報は保存・送信しません。"
+        "現在地を表示しました。位置情報はサーバーへ送信しません。"
       );
     },
     error => {
@@ -8635,6 +8640,22 @@ function renderFilterFeedback(
 
 // フィルター反映
 
+function getMapExplorationState() {
+  const center=map.getCenter();
+  return {center:[center.lat,center.lng],zoom:map.getZoom(),favoriteOnly,visitedOnly,listWithinMapBounds,listSortMode:listSortMode==='distance'?'default':listSortMode};
+}
+
+function consumeMapExplorationReturn() {
+  try {
+    const key='chiikawa-map-exploration-pending-v1';
+    const state=JSON.parse(sessionStorage.getItem(key)||'null');
+    sessionStorage.removeItem(key);
+    if(!state || SHARED_SPOT_ID || state.search!==location.search)return null;
+    if(!Array.isArray(state.center) || state.center.length!==2 || !state.center.every(Number.isFinite) || Math.abs(state.center[0])>90 || Math.abs(state.center[1])>180 || !Number.isFinite(state.zoom))return null;
+    return state;
+  } catch { return null; }
+}
+
 function updateSpotFilters() {
 
   explorerSelectionRequest++;
@@ -9592,6 +9613,16 @@ async function loadSpots() {
       endedFilter.checked = true;
     }
 
+    const explorationReturn=consumeMapExplorationReturn();
+    if(explorationReturn){
+      favoriteOnly=explorationReturn.favoriteOnly===true;
+      visitedOnly=explorationReturn.visitedOnly===true;
+      listWithinMapBounds=explorationReturn.listWithinMapBounds===true;
+      listSortMode=['default','name','ending'].includes(explorationReturn.listSortMode)?explorationReturn.listSortMode:'default';
+      map.setView(explorationReturn.center,Math.max(0,Math.min(map.getMaxZoom(),explorationReturn.zoom)),{animate:false});
+      syncListControlButtons();
+    }
+
     syncArchiveYearFilter();
 
     updateFavoriteCount();
@@ -9636,6 +9667,17 @@ async function loadSpots() {
         );
       }
 
+    } else if (explorationReturn) {
+      // The navigation and restored view can resize Leaflet after initialization.
+      // Apply the center once the layout has settled, unless another selection
+      // or filter operation has already taken over.
+      const returnRequest=explorerSelectionRequest;
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        if(returnRequest!==explorerSelectionRequest)return;
+        map.invalidateSize({pan:false,animate:false});
+        map.setView(explorationReturn.center,Math.max(0,Math.min(map.getMaxZoom(),explorationReturn.zoom)),{animate:false});
+        if(listWithinMapBounds)updateSpotFilters();
+      }));
     } else {
       // 条件共有URLでは、共有された条件に一致するスポットへ初期表示を合わせる
       if (
@@ -9963,7 +10005,7 @@ listNearbySortButton
       requestUserLocation({
         focusMap: false,
         successMessage:
-          "現在地を使って近い順に並べ替えました。位置情報は保存・送信しません。",
+          "現在地を使って近い順に並べ替えました。位置情報はサーバーへ送信しません。",
         onSuccess: () => {
           listSortMode =
             "distance";

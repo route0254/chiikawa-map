@@ -245,7 +245,7 @@ function createPage(spot) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../style.css?v=20260915-1">
+  <link rel="stylesheet" href="../../style.css?v=20261003-ux-recovery-4">
   <link rel="stylesheet" href="../../spot.css?v=20260915-1">
   <script type="application/ld+json">${escapeJson(createStructuredData(spot))}</script>
 </head>
@@ -285,9 +285,11 @@ ${evidenceBadgeLine}        </div>
 ${importantNotice}          <dl class="spot-page-details">
             ${detailRow("期間", formatPeriod(spot))}
             ${detailRow("営業時間", spot.hoursText)}
+            ${detailRow("営業時間の確認日", spot.hoursCheckedAt)}
             ${detailRow("休業・休館", spot.closedDaysText)}
             ${detailRow("入場方法", entryLabels[spot.defaultEntryType] || spot.entryNote)}
             ${detailRow("入場案内", spot.entryNote)}
+            ${detailRow("入場案内の確認日", spot.entryInfoCheckedAt)}
             ${basisRow}${evidenceRow}
           </dl>
           <p class="spot-page-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。営業時間・開催状況・入場方法は変更される場合があるため、訪問前に必ず公式情報をご確認ください。</p>
@@ -307,6 +309,7 @@ ${importantNotice}          <dl class="spot-page-details">
     <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。 <a href="../../privacy.html">プライバシー</a> ／ <a href="../../terms.html">利用条件・権利表記</a></p>
   </main>
   <script src="../../spot-page.js?v=20260829-1" defer></script>
+  <script src="../../navigation.js?v=20261003-ux-recovery-4" defer></script>
   <script src="../../pwa.js?v=20260828-1" defer></script>
 </body>
 </html>

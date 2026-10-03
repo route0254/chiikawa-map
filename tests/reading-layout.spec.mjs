@@ -13,6 +13,165 @@ test.beforeEach(async({page})=>{
 });
 test.afterEach(async({page})=>expect(errors.get(page)).toEqual([]));
 
+test('one visible planning action connects search results and details to the same saved plan',async({page})=>{
+ for(const width of [390,1440]){
+  await page.setViewportSize({width,height:width===390?844:1000});
+  await page.goto('/?q='+encodeURIComponent('原宿')+'&pref='+encodeURIComponent('東京都')+'&view=list');
+  const card=page.locator('.spot-list-card[data-spot-id="chiikawaland-harajuku"]');
+  const add=card.locator('.spot-list-plan-button');await expect(add).toBeVisible();
+  expect(await add.evaluate(el=>!el.closest('details:not([open])'))).toBe(true);
+  // The primary action must fit its label, rather than retain the old icon-only width.
+  expect(await add.evaluate(el=>el.clientWidth>=200 && el.scrollHeight<=el.clientHeight)).toBe(true);
+  if(await add.getAttribute('aria-pressed')==='true')await add.click();
+  await add.click();await expect(add).toHaveAttribute('aria-pressed','true');await expect(add).toBeFocused();
+  await card.locator('.spot-list-open-button').click();
+  const detailAdd=page.locator('.explorer-primary-actions .spot-plan-button');await expect(detailAdd).toBeVisible();
+  await expect(page.locator('.spot-detail-action-menu')).not.toHaveAttribute('open','');
+  await expect(detailAdd).toHaveAttribute('aria-pressed','true');await detailAdd.click();
+  await expect(detailAdd).toHaveAttribute('aria-pressed','false');await expect(detailAdd).toBeFocused();
+  await detailAdd.click();await expect(detailAdd).toHaveAttribute('aria-pressed','true');
+  await page.locator('#detail-close').click();await page.locator('.site-nav-link[href="journal.html"]').click();
+  await page.locator('#plan-tab').click();await expect(page.locator('.plan-stop')).toContainText('原宿');
+ }
+});
+
+test('planning labels fit sidebar and list cards at normal and 200 percent sizes',async({page})=>{
+ for(const {width,textScale} of [{width:1440,textScale:1},{width:390,textScale:1},{width:720,textScale:1},{width:1440,textScale:2},{width:390,textScale:2}]){
+  await page.setViewportSize({width,height:1000});await page.goto('/'+(width<=720?'?view=list':''));
+  await expect(page.locator('.spot-list-plan-button').first()).toBeVisible();
+  if(textScale===2)await page.evaluate(()=>{
+   const doubleRules=rules=>{for(const rule of rules){if(rule.cssRules)doubleRules(rule.cssRules);const size=rule.style?.getPropertyValue('font-size');if(size&&/^[\d.]+px$/.test(size))rule.style.setProperty('font-size',parseFloat(size)*2+'px',rule.style.getPropertyPriority('font-size'));}};
+   for(const sheet of document.styleSheets){try{doubleRules(sheet.cssRules);}catch{}}
+   document.documentElement.style.fontSize='32px';
+  });
+  const results=await page.locator('.spot-list-card').evaluateAll(cards=>cards.slice(0,3).map(card=>{
+   const button=card.querySelector('.spot-list-plan-button'),footer=card.querySelector('.candidate-footer');
+   const b=button.getBoundingClientRect(),c=card.getBoundingClientRect(),f=footer.getBoundingClientRect();
+   const range=document.createRange();range.selectNodeContents(button);
+   const favorite=card.querySelector('.spot-list-favorite-button'),fb=favorite.getBoundingClientRect(),fr=document.createRange();fr.selectNodeContents(favorite);
+   return {width:b.width,fits:[...range.getClientRects()].every(r=>r.left>=b.left-1&&r.right<=b.right+1&&r.top>=b.top-1&&r.bottom<=b.bottom+1),favoriteFits:[...fr.getClientRects()].every(r=>r.left>=fb.left-1&&r.right<=fb.right+1&&r.top>=fb.top-1&&r.bottom<=fb.bottom+1),contained:b.left>=c.left&&b.right<=c.right&&f.bottom<=c.bottom,overflow:button.scrollHeight>button.clientHeight};
+  }));
+  for(const result of results){expect(result.width).toBeGreaterThan(200);expect(result.fits).toBe(true);expect(result.favoriteFits).toBe(true);expect(result.contained).toBe(true);expect(result.overflow).toBe(false);}
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(width);
+ }
+});
+
+test('navigation retains the same playful symbols across the complete site',async({page})=>{
+ for(const url of ['/','/official.html','/collaborations.html','/nagano.html','/journal.html?view=plan','/official-links.html','/spot/chiikawaland-harajuku/']){
+  await page.goto(url);
+  await expect(page.locator('.chiikatsu-nav-icon')).toHaveText(['🗺','✦','🎀','✎','🌱','🔗']);
+ }
+});
+
+test('a collaboration with a mapped place leads through direct planning to the journal',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/collaborations.html');
+ const card=page.locator('.collaboration-card').filter({hasText:'東京メトロ脱出ゲーム'});
+ await card.locator('.collaboration-card-action.is-map').click();
+ await expect(page.locator('.spot-detail-title')).toBeVisible();
+ const title=(await page.locator('.spot-detail-title').textContent()).trim();
+ await page.locator('.explorer-primary-actions .spot-plan-button').click();
+ await expect(page.locator('.explorer-primary-actions .spot-plan-button')).toHaveAttribute('aria-pressed','true');
+ await page.locator('#detail-close').click();await page.locator('.site-nav-link[href="journal.html"]').click();
+ await page.locator('#plan-tab').click();await expect(page.locator('.plan-stop')).toContainText(title);
+});
+
+test('page destinations and a named date filter stay reachable without opening a utility menu',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ for(const url of ['/','/official.html','/collaborations.html','/nagano.html','/journal.html?view=plan']){
+  await page.goto(url);
+  for(const link of await page.locator('.site-nav-link').all()){
+   await expect(link).toBeVisible();
+   expect(await link.evaluate(el=>{const r=el.getBoundingClientRect();return r.height>=44&&r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight&&el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
+  }
+ }
+ await page.goto('/');await page.locator('.explorer-dates>summary').click();
+ await page.locator('[data-date-quick="today"]').click();
+ await page.locator('#spot-search').fill('原宿');await page.locator('#prefecture-filter').focus();await page.locator('#prefecture-filter').selectOption('東京都');
+ await page.locator('#list-view-button').click();await expect(page.locator('.spot-list-card')).toHaveCount(2);
+ await page.locator('#map-view-button').click();await expect(page.locator('#spot-search')).toHaveValue('原宿');
+ await expect(page.locator('[data-date-quick="today"]')).toHaveAttribute('aria-pressed','true');
+});
+
+test('home to official search to saved plan and back to the map forms a complete mobile route',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/');
+ await page.locator('#spot-search').fill('原宿');await page.locator('#prefecture-filter').selectOption('東京都');
+ await page.locator('.site-nav-link[href="official.html"]').click();
+ await page.locator('#current-search').fill('常滑');await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(3);
+ const first=page.locator('#current-groups .official-spot-card').first();
+ const title=await first.locator('h4').textContent();await first.locator('.spot-card-save-plan').click();
+ await page.locator('.site-nav-link[href="journal.html"]').click();
+ await page.locator('[data-journal-view="plan"]').click();
+ await expect(page.locator('.plan-stop').first()).toContainText(title.trim());
+ await page.locator('.site-nav-link[href="./"]').click();
+ await expect(page.locator('#spot-search')).toBeVisible();await expect(page.locator('#map')).toBeVisible();
+ await expect(page.locator('#spot-search')).toHaveValue('原宿');await expect(page.locator('#prefecture-filter')).toHaveValue('東京都');
+});
+
+test('mobile 200 percent text moves navigation into the page and reaches the last result actions',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/?view=list');await expect(page.locator('.spot-list-card').first()).toBeVisible();
+ await page.evaluate(()=>{const double=rules=>{for(const r of rules){if(r.cssRules)double(r.cssRules);const s=r.style?.getPropertyValue('font-size');if(s&&/^[\d.]+px$/.test(s))r.style.setProperty('font-size',parseFloat(s)*2+'px',r.style.getPropertyPriority('font-size'));}};for(const sheet of document.styleSheets){try{double(sheet.cssRules);}catch{}}document.documentElement.style.fontSize='32px';});
+ await expect(page.locator('body')).toHaveClass(/navigation-flow/);
+ expect(await page.locator('.site-nav').evaluate(el=>getComputedStyle(el).position)).toBe('static');
+ expect(await page.locator('.spot-list-panel').evaluate(el=>getComputedStyle(el).overflowY)).toBe('visible');
+ const last=page.locator('.spot-list-card').last();const id=await last.getAttribute('data-spot-id');
+ for(const selector of ['.spot-list-plan-button','.spot-list-favorite-button']){
+  const action=last.locator(selector);await action.scrollIntoViewIfNeeded();
+  expect(await action.evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
+  await action.click();await expect(action).toHaveAttribute('aria-pressed','true');
+ }
+ expect(await page.locator('.site-nav').evaluate(el=>el.getBoundingClientRect().bottom)).toBeLessThan(0);
+ await last.locator('.candidate-tools>summary').click();await last.locator('.spot-list-visited-button').click();await expect(last.locator('.explorer-visit-stamp')).toHaveText('行った');
+ await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async value=>{window.qaCopiedShare=value;}}}));
+ await last.locator('.candidate-tools>summary').click();await last.locator('.spot-list-share-button').click();expect(await page.evaluate(()=>window.qaCopiedShare)).toContain('/spot/'+id+'/');
+ await last.locator('.spot-list-open-button').click();await expect(page.locator('#spot-detail-panel')).toBeVisible();
+ const detail=await page.locator('#spot-detail-panel').boundingBox();expect(detail.y).toBe(0);expect(detail.height).toBe(844);
+ await page.locator('#detail-close').click();await page.locator('.site-nav-link[href="journal.html"]').click();await page.locator('#plan-tab').click();await expect(page.locator('.plan-stop')).toHaveCount(1);
+});
+
+test('returning through site pages restores the map and private saved filters without changing direct visits',async({page})=>{
+ for(const width of [390,1440]){
+  await page.setViewportSize({width,height:1000});
+  await page.goto('/?q='+encodeURIComponent('原宿')+'&pref='+encodeURIComponent('東京都')+'&view=list');
+  const card=page.locator('.spot-list-card[data-spot-id="chiikawaland-harajuku"]');
+  await expect(card).toBeVisible();
+  if(await card.locator('.spot-list-favorite-button').getAttribute('aria-pressed')!=='true')await card.locator('.spot-list-favorite-button').click();
+  await card.locator('.candidate-tools>summary').click();
+  if(await card.locator('.spot-list-visited-button').getAttribute('aria-pressed')!=='true')await card.locator('.spot-list-visited-button').click();
+  await page.locator('.map-tools-menu>summary').click();await page.locator('#favorite-filter-button').click();await page.locator('#visited-filter-button').click();
+  await page.locator('.map-tools-menu>summary').click();
+  await page.locator('#map-view-button').click();
+  await expect.poll(()=>page.evaluate(()=>map._animatingZoom===true)).toBe(false);
+  await page.evaluate(()=>map.setView([35.672,139.701],16,{animate:false}));
+  await expect.poll(()=>page.evaluate(()=>map.getZoom())).toBe(16);
+  const before=await page.evaluate(()=>({center:[map.getCenter().lat,map.getCenter().lng],zoom:map.getZoom()}));
+  await page.locator('.site-nav-link[href="official.html"]').click();
+  await page.locator('.site-nav-link[href="journal.html"]').click();await page.locator('.site-nav-link[href="./"]').click();
+  await expect(page.locator('#result-count')).toHaveText('1件表示');
+  await expect(page.locator('#favorite-filter-button')).toHaveAttribute('aria-pressed','true');await expect(page.locator('#visited-filter-button')).toHaveAttribute('aria-pressed','true');
+  await expect.poll(()=>page.evaluate(before=>map.project(map.getCenter(),before.zoom).distanceTo(map.project(before.center,before.zoom)),before)).toBeLessThan(1);
+  expect(await page.evaluate(()=>map.getZoom())).toBe(before.zoom);
+  expect(page.url()).not.toMatch(/favorite|visited|center|zoom/);
+  expect(await page.evaluate(()=>sessionStorage.getItem('chiikawa-map-exploration-pending-v1'))).toBeNull();
+  await page.goto('/?q='+encodeURIComponent('常滑')+'&pref='+encodeURIComponent('愛知県'));
+  await expect(page.locator('#spot-search')).toHaveValue('常滑');await expect(page.locator('#prefecture-filter')).toHaveValue('愛知県');
+  await expect(page.locator('#favorite-filter-button')).toHaveAttribute('aria-pressed','false');await expect(page.locator('#visited-filter-button')).toHaveAttribute('aria-pressed','false');
+ }
+});
+
+test('help, empty plan, and footprints lead to the actions their text describes',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/');
+ await page.locator('.map-tools-menu>summary').click();await page.locator('#official-help-toggle').click();
+ await expect(page.locator('#official-help-panel')).toContainText('今日のプランに追加');await expect(page.locator('#official-help-panel')).toContainText('地図位置・ズーム・保存済みの絞り込み');
+ await page.locator('#official-help-close').click();
+ await page.goto('/journal.html?view=plan');
+ await expect(page.locator('#plan-list .plan-empty')).toContainText('地図や公式一覧');await expect(page.locator('#plan-list .plan-empty')).toContainText('行きたい');
+ await page.locator('.journal-about-drawer>summary').click();await expect(page.locator('.journal-hero')).toContainText('クラウド保存は任意');
+ await page.locator('#activity-tab').click();
+ const next=page.locator('.recent-activity-panel a');await expect(next).toHaveText('次のお出かけ先を探す');await next.click();
+ await expect(page.locator('.spot-list-card').first()).toBeVisible();await expect(page.locator('#list-view-button')).toHaveClass(/is-active/);
+ await expect(page.locator('#spot-search')).toHaveValue('');
+});
+
 test('mobile official search stays usable with closed filters and after resizing', async ({ page }) => {
   await page.setViewportSize({ width:390,height:844 });
   await page.goto('/official.html');
