@@ -283,3 +283,9 @@
  .journal-page .journal-view { padding:16px; }
  .journal-page .plan-stop-actions { flex-wrap:wrap; }
 }
+/* Starting points remain in the desktop list, without covering the map or asking for location. */
+.explorer-discovery { margin:0 12px 12px; padding:10px; border:1px solid #D8E5E9; border-radius:8px; background:#EAF5FA; }
+.explorer-discovery p { margin:0 0 8px; font-size:13px; line-height:1.6; color:#526773; }
+.explorer-discovery button { min-height:44px; padding:6px 8px; margin-right:4px; border:1px solid #D8E5E9; border-radius:6px; background:white; color:#17607C; font-size:13px; }
+.home-map.explorer .explorer-map-legend>summary { font-size:12px; flex-wrap:wrap; }
+@media(max-width:799px){.explorer-discovery { display:none; }}

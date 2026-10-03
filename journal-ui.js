@@ -1,5 +1,6 @@
 /* Cosmetic consistency only. No saved-state, navigation or sharing algorithms. */
 (function(){
+  document.querySelector('.site-kicker').textContent='ちい活MAP';
   const main=document.querySelector('.journal-shell');
   const hero=main.querySelector('.journal-hero');
   const about=document.createElement('details');about.className='journal-about-drawer';
@@ -55,6 +56,15 @@
     document.querySelectorAll('.plan-stop-copy strong,.plan-candidate-copy strong').forEach(wrapWords);
   }
   refresh();
+  const nav=document.querySelector('.site-nav');
+  const current=nav.querySelector('.is-active');
+  if(current){
+    current.setAttribute('aria-current','page');
+    const position=()=>requestAnimationFrame(()=>{
+      if(nav.scrollWidth>nav.clientWidth)nav.scrollLeft+=current.getBoundingClientRect().left-nav.getBoundingClientRect().left-4;
+    });
+    position();document.fonts?.ready.then(position);window.addEventListener('resize',position);
+  }
   let pending=false;
   new MutationObserver(()=>{if(pending)return;pending=true;queueMicrotask(()=>{pending=false;refresh();});}).observe(document.querySelector('.journal-shell'),{childList:true,subtree:true});
 })();

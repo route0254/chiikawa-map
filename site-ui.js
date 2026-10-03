@@ -2,6 +2,10 @@
 (function () {
   const main = document.querySelector("#main-content");
   if (!main) return;
+  const logo=document.querySelector('.site-kicker');if(logo)logo.textContent='ちい活MAP';
+  const profileMark=document.querySelector('.nagano-profile-mark');if(profileMark)profileMark.replaceChildren(ChiikatsuUI.icon('info'));
+  const pastLabel=document.querySelector('.catalog-tab[data-view="past"] strong');if(pastLabel)pastLabel.textContent='過去の記録';
+  const archiveLabel=document.querySelector('.collaboration-tab[data-list="archive"] strong');if(archiveLabel)archiveLabel.textContent='終了・過去';
 
   const groups = document.body.classList.contains("official-page")
     ? [".official-hero"]
@@ -39,6 +43,38 @@
         : href.includes("official-links") ? "globe" : "info");
     if (link.classList.contains("is-active")) link.setAttribute("aria-current", "page");
   }
+  keepCurrentNavigationVisible();
+
+  function keepCurrentNavigationVisible() {
+    const nav=document.querySelector('.site-nav');
+    const current=nav?.querySelector('[aria-current="page"]');
+    if(!current)return;
+    const position=()=>requestAnimationFrame(()=>{
+      if(nav.scrollWidth>nav.clientWidth) nav.scrollLeft+=current.getBoundingClientRect().left-nav.getBoundingClientRect().left-4;
+    });
+    position();
+    document.fonts?.ready.then(position);
+    window.addEventListener('resize',position);
+  }
+
+  // Descriptive copy and duplicate navigation remain available in the overview.
+  // On larger screens they retain their original positions.
+  const compactMedia=window.matchMedia('(max-width:680px)');
+  const overview=main.querySelector('.site-overview');
+  const introductions=[...main.querySelectorAll('.catalog-heading,.collaboration-heading,.panel-intro,.collaboration-panel-intro')].map(element=>{
+    const anchor=document.createComment('original introduction position');
+    element.before(anchor);
+    return {element,anchor};
+  });
+  function placeIntroductions(){
+    if(!overview)return;
+    for(const {element,anchor} of introductions){
+      if(compactMedia.matches)overview.append(element);
+      else anchor.after(element);
+    }
+  }
+  placeIntroductions();
+  compactMedia.addEventListener('change',placeIntroductions);
 
   // Keep mobile search available while the existing official filter panel is closed.
   for (const view of ["current", "past"]) {
@@ -60,6 +96,7 @@
 
   // Secondary collaboration controls remain native controls with their original listeners.
   const extraFilters = [];
+  const mobileFilters=[];
   for (const filters of document.querySelectorAll(".collaboration-filters")) {
     const secondary = [...filters.querySelectorAll("label")].filter(label =>
       label.querySelector("[data-filter='channel'],[data-filter='sort']"));
@@ -76,9 +113,27 @@
     details.append(summary, fields);
     filters.insertBefore(details, filters.querySelector("[data-reset]"));
     extraFilters.push({ details, count });
+    const options=document.createElement('details');
+    options.className='site-collaboration-options';
+    const optionsSummary=document.createElement('summary');
+    const optionsCount=document.createElement('span');
+    optionsSummary.append(document.createTextNode('絞り込み・並び順'),optionsCount);
+    const optionFields=document.createElement('div');
+    optionFields.className='site-collaboration-option-fields';
+    optionFields.append(...[...filters.children].filter(element=>element===details || element.matches('label:not(.is-wide)')));
+    options.append(optionsSummary,optionFields);
+    filters.insertBefore(options,filters.querySelector('[data-reset]'));
+    const responsive=()=>{options.open=!compactMedia.matches;};
+    responsive();compactMedia.addEventListener('change',responsive);
+    mobileFilters.push({options,optionsCount});
   }
 
   function decorate() {
+    for(const {options,optionsCount} of mobileFilters){
+      const active=[...options.querySelectorAll('select')].filter(select=>select.value!==select.options[0]?.value).length;
+      const text=active?' '+active+'条件を適用中':'';
+      if(optionsCount.textContent!==text)optionsCount.textContent=text;
+    }
     for (const { details, count } of extraFilters) {
       const active = [...details.querySelectorAll("select")].filter(select =>
         select.value !== select.options[0]?.value).length;
