@@ -1927,7 +1927,11 @@ function focusSpotRecord(
       );
     };
 
-  if (
+  // A list selection already identifies the spot. Opening its detail must not
+  // depend on a cluster animation while the previously hidden map resizes.
+  if (options.fromList) {
+    openRecord();
+  } else if (
     typeof spotLayer.zoomToShowLayer ===
     "function"
   ) {
@@ -5363,7 +5367,8 @@ function createSpotListCard(
                 {
                   returnFocusTo:
                     openButton,
-                  selectionRequest
+                  selectionRequest,
+                  fromList: true
                 }
               );
             }
@@ -5374,7 +5379,7 @@ function createSpotListCard(
   );
 
   const footer=createDiv("candidate-footer");
-  footer.append(favoriteButton,more);
+  footer.append(planButton,favoriteButton,more);
   favoriteButton.textContent=isFavoriteSpot(spot) ? "栞 保存済み" : "栞 保存";
   card.append(footer,openButton);
   card.prepend(createDiv("explorer-classification", explorerCategory(spot) + " · " + getPeriodStatusLabel(getSpotPeriodStatus(spot))));

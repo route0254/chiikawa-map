@@ -9,6 +9,7 @@ function createIcon(name) {
 
 
 function decorateAction(element,name) {
+ if(element?.classList.contains('site-nav-link'))return;
  if(!element || element.querySelector('.chiikatsu-icon'))return;
  const slot=element.querySelector(':scope > [aria-hidden="true"]');
  if(slot)slot.replaceChildren(createIcon(name));

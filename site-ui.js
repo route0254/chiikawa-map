@@ -3,7 +3,6 @@
   const main = document.querySelector("#main-content");
   if (!main) return;
   const logo=document.querySelector('.site-kicker');if(logo)logo.textContent='ちい活MAP';
-  const profileMark=document.querySelector('.nagano-profile-mark');if(profileMark)profileMark.replaceChildren(ChiikatsuUI.icon('info'));
   const pastLabel=document.querySelector('.catalog-tab[data-view="past"] strong');if(pastLabel)pastLabel.textContent='過去の記録';
   const archiveLabel=document.querySelector('.collaboration-tab[data-list="archive"] strong');if(archiveLabel)archiveLabel.textContent='終了・過去';
 

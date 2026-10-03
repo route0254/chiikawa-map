@@ -181,10 +181,13 @@ test("mobile pin preview, save, detail, keyboard and browser back preserve the s
   await expect(pin).toBeVisible(); await pin.click();
   await expect(page.locator('#spot-preview')).toBeVisible();
   const snapshot=await page.evaluate(()=>({center:[map.getCenter().lat,map.getCenter().lng],zoom:map.getZoom(),id:selectedRecord.spot.id}));
+  await expect(page.locator('.preview-plan')).toBeVisible();
+  await page.locator('.preview-plan').click();await expect(page.locator('.preview-plan')).toHaveAttribute('aria-pressed','true');
   await page.locator('.preview-save').click();
   await expect(page.locator('.preview-save')).toHaveAttribute('aria-pressed','true');
   await page.locator('.preview-open').click();
   await expect(page.locator('#spot-detail-panel')).toHaveAttribute('aria-modal','true');
+  await expect(page.locator('.explorer-primary-actions .spot-plan-button')).toHaveAttribute('aria-pressed','true');
   await page.keyboard.press('Tab');
   expect(await page.locator('#spot-detail-panel').evaluate(el=>el.contains(document.activeElement))).toBe(true);
   await page.keyboard.press('Escape');

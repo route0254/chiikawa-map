@@ -4,7 +4,7 @@
   const main=document.querySelector('.journal-shell');
   const hero=main.querySelector('.journal-hero');
   const about=document.createElement('details');about.className='journal-about-drawer';
-  const summary=document.createElement('summary');summary.append(ChiikatsuUI.icon('info'),document.createTextNode('手帳について・保存件数'));
+  const summary=document.createElement('summary');summary.append(ChiikatsuUI.icon('info'),document.createTextNode('手帳の使い方・保存したもの'));
   about.append(summary,hero);main.insertBefore(about,main.querySelector('.home-screen-card'));
   const activity=document.querySelector('#activity-view');
   activity.insertBefore(activity.querySelector('.recent-activity-panel'),activity.querySelector('.activity-summary-card'));

@@ -13,6 +13,47 @@ test.beforeEach(async({page})=>{
 });
 test.afterEach(async({page})=>expect(errors.get(page)).toEqual([]));
 
+test('one visible planning action connects search results and details to the same saved plan',async({page})=>{
+ for(const width of [390,1440]){
+  await page.setViewportSize({width,height:width===390?844:1000});
+  await page.goto('/?q='+encodeURIComponent('原宿')+'&pref='+encodeURIComponent('東京都')+'&view=list');
+  const card=page.locator('.spot-list-card[data-spot-id="chiikawaland-harajuku"]');
+  const add=card.locator('.spot-list-plan-button');await expect(add).toBeVisible();
+  expect(await add.evaluate(el=>!el.closest('details:not([open])'))).toBe(true);
+  // The primary action must fit its label, rather than retain the old icon-only width.
+  expect(await add.evaluate(el=>el.clientWidth>=200 && el.scrollHeight<=el.clientHeight)).toBe(true);
+  if(await add.getAttribute('aria-pressed')==='true')await add.click();
+  await add.click();await expect(add).toHaveAttribute('aria-pressed','true');await expect(add).toBeFocused();
+  await card.locator('.spot-list-open-button').click();
+  const detailAdd=page.locator('.explorer-primary-actions .spot-plan-button');await expect(detailAdd).toBeVisible();
+  await expect(page.locator('.spot-detail-action-menu')).not.toHaveAttribute('open','');
+  await expect(detailAdd).toHaveAttribute('aria-pressed','true');await detailAdd.click();
+  await expect(detailAdd).toHaveAttribute('aria-pressed','false');await expect(detailAdd).toBeFocused();
+  await detailAdd.click();await expect(detailAdd).toHaveAttribute('aria-pressed','true');
+  await page.locator('#detail-close').click();await page.locator('.site-nav-link[href="journal.html"]').click();
+  await page.locator('#plan-tab').click();await expect(page.locator('.plan-stop')).toContainText('原宿');
+ }
+});
+
+test('navigation retains the same playful symbols across the complete site',async({page})=>{
+ for(const url of ['/','/official.html','/collaborations.html','/nagano.html','/journal.html?view=plan','/official-links.html','/spot/chiikawaland-harajuku/']){
+  await page.goto(url);
+  await expect(page.locator('.chiikatsu-nav-icon')).toHaveText(['🗺','✦','🎀','✎','🌱','🔗']);
+ }
+});
+
+test('a collaboration with a mapped place leads through direct planning to the journal',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/collaborations.html');
+ const card=page.locator('.collaboration-card').filter({hasText:'東京メトロ脱出ゲーム'});
+ await card.locator('.collaboration-card-action.is-map').click();
+ await expect(page.locator('.spot-detail-title')).toBeVisible();
+ const title=(await page.locator('.spot-detail-title').textContent()).trim();
+ await page.locator('.explorer-primary-actions .spot-plan-button').click();
+ await expect(page.locator('.explorer-primary-actions .spot-plan-button')).toHaveAttribute('aria-pressed','true');
+ await page.locator('#detail-close').click();await page.locator('.site-nav-link[href="journal.html"]').click();
+ await page.locator('#plan-tab').click();await expect(page.locator('.plan-stop')).toContainText(title);
+});
+
 test('page destinations and a named date filter stay reachable without opening a utility menu',async({page})=>{
  await page.setViewportSize({width:390,height:844});
  for(const url of ['/','/official.html','/collaborations.html','/nagano.html','/journal.html?view=plan']){

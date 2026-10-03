@@ -245,7 +245,7 @@ function createPage(spot) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../style.css?v=20261003-ux-recovery-1">
+  <link rel="stylesheet" href="../../style.css?v=20261003-ux-recovery-2">
   <link rel="stylesheet" href="../../spot.css?v=20260915-1">
   <script type="application/ld+json">${escapeJson(createStructuredData(spot))}</script>
 </head>
@@ -309,7 +309,7 @@ ${importantNotice}          <dl class="spot-page-details">
     <p class="site-note">ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。 <a href="../../privacy.html">プライバシー</a> ／ <a href="../../terms.html">利用条件・権利表記</a></p>
   </main>
   <script src="../../spot-page.js?v=20260829-1" defer></script>
-  <script src="../../navigation.js?v=20261003-ux-recovery-1" defer></script>
+  <script src="../../navigation.js?v=20261003-ux-recovery-2" defer></script>
   <script src="../../pwa.js?v=20260828-1" defer></script>
 </body>
 </html>

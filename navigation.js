@@ -1,6 +1,13 @@
 /* Keep a map search when moving between site pages in this tab. */
 (() => {
   const key = 'chiikawa-map-search-return-v1';
+  for(const link of document.querySelectorAll('.site-nav-link')){
+    const href=link.getAttribute('href')||'';
+    const symbol=href.includes('official-links')?'🔗':href.includes('official.html')?'✦':href.includes('collaborations')?'🎀':href.includes('nagano')?'✎':href.includes('journal')?'🌱':'🗺';
+    const label=link.textContent.trim().replace(/^[^\p{L}\p{N}]+/u,'');
+    const icon=document.createElement('span');icon.className='chiikatsu-nav-icon';icon.setAttribute('aria-hidden','true');icon.textContent=symbol;
+    link.replaceChildren(icon,document.createTextNode(label));
+  }
   const navigation=document.querySelector('.site-nav');
   const header=document.querySelector('.site-header');
   const main=document.querySelector('main');
