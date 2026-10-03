@@ -34,10 +34,14 @@
     },
     renderControl(id, count, active) {
       const control = document.getElementById(id);
+      control.dataset.active = String(active);
+      control.querySelector("[data-catalog-recent]").setAttribute("aria-label", `新着 ${count}件${active ? "（絞り込み中）" : ""}`);
       control.querySelector("[data-catalog-recent]").textContent = `新着 ${count}件`;
       control.querySelector("[data-catalog-recent]").setAttribute("aria-pressed", String(active));
       control.querySelector("[data-catalog-recent-clear]").hidden = !active;
-      control.querySelector("small").textContent = active
+      control.querySelector("small").textContent = control.id === "official-recent"
+        ? count ? "一覧への追加から14日間。開催日・情報確認日とは別です。検索条件と組み合わせて絞り込みできます。" : "14日以内の追加はありません"
+        : active
         ? "新着で絞り込み中 · 検索条件と組み合わせて表示"
         : count ? "一覧への追加から14日間 · 開催日・情報確認日とは別" : "14日以内の追加はありません";
     }

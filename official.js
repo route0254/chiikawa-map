@@ -1584,7 +1584,6 @@ function createSpotCard(
   card.appendChild(badges);
   const addedLabel = RecentUI.label(officialAddedDates[spot.id],
     RecentAdditions.selectRecent([spot], officialAddedDates).length > 0);
-  if (addedLabel) card.appendChild(addedLabel);
 
   card.appendChild(
     createElement(
@@ -1593,6 +1592,7 @@ function createSpotCard(
       spot.name
     )
   );
+  if (addedLabel) card.appendChild(addedLabel);
 
   const saveActions =
     createElement(
@@ -2377,9 +2377,6 @@ function renderCurrentSpots() {
     "current-active-filters",
     "current-filter-chips",
     [
-      { label: state.recent && "最近追加（14日以内）", reset: () => {
-        officialRecentOnly = false; handleCurrentFiltersChanged(currentSearch);
-      } },
       {
         label:
           currentSearch.value.trim() &&

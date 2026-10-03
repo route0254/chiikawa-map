@@ -151,3 +151,28 @@ test("no new dates remains a usable explicit empty filter on every page", async 
     await expect(page.locator(`#${id} [data-catalog-recent-clear]`)).toBeHidden();
   }
 });
+
+
+test("official new results show the first card title before the navigation on mobile and within the desktop viewport", async ({ page }) => {
+  await page.clock.setFixedTime(new Date("2026-10-03T03:00:00Z"));
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: width === 390 ? 844 : 1000 });
+    await page.goto("/official.html?recent=1");
+    await expect(page.locator("#current-groups .official-spot-card")).toHaveCount(13);
+    await expect(page.locator("#current-active-filters")).toBeHidden();
+    await expect(page.locator("#official-recent [data-catalog-recent]")).toHaveAttribute("aria-label", /絞り込み中/);
+    await expect(page.locator("#official-recent [data-catalog-recent-clear]")).toBeVisible();
+    await expect(page.locator("#official-recent small")).toBeHidden();
+    await page.evaluate(() => document.fonts.ready);
+    const position = await page.locator("#current-groups .official-spot-card h4").first().evaluate(el => {
+      const rect = el.getBoundingClientRect();
+      const navigation = document.querySelector(".site-nav").getBoundingClientRect();
+      return { top: rect.top, bottom: rect.bottom, limit: matchMedia("(max-width:899px)").matches ? navigation.top : innerHeight };
+    });
+    expect(position.top).toBeGreaterThanOrEqual(0);
+    expect(position.bottom).toBeLessThan(position.limit - 8);
+    await page.locator("#official-recent .recent-date-help summary").click();
+    await expect(page.locator("#official-recent small")).toBeVisible();
+    await expect(page.locator("#official-recent small")).toContainText("開催日・情報確認日とは別");
+  }
+});
