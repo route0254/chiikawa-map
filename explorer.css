@@ -292,13 +292,13 @@
 
 /* Recovery: page links and named search controls stay discoverable. */
 .home-map.explorer { --line:#e5dce8; --selection:#785173; background:#fffaf6; }
-.home-map.explorer .site-header { height:108px; background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); }
-.home-map.explorer .site-header-inner { height:108px; flex-wrap:wrap; align-content:center; row-gap:4px; }
+.home-map.explorer .site-header { height:auto; min-height:108px; background:linear-gradient(110deg,#fff1f6,#f5f1ff 65%,#fff9df); }
+.home-map.explorer .site-header-inner { height:auto; min-height:108px; flex-wrap:wrap; align-content:center; row-gap:4px; }
 .home-map.explorer .explorer-navigation { flex-basis:100%; display:flex; justify-content:center; gap:8px; margin:0; padding:0; }
 .home-map.explorer .explorer-navigation .site-nav-link { min-height:44px; padding:6px 12px; font-size:13px; border-radius:999px; background:#fffafc; color:#654763; border:1px solid #e5cddf; }
 .home-map.explorer .explorer-navigation .is-active { background:#fbe2ed; border-color:#cf7ea1; }
-.home-map.explorer .map-card { height:calc(100dvh - 108px); }
-.home-map.explorer .map-extra-actions { top:108px; }
+.home-map.explorer .map-card { height:calc(100dvh - var(--site-header-height,108px)); }
+.home-map.explorer .map-extra-actions { top:var(--site-header-height,108px); }
 .home-map.explorer .toolbar-button,.home-map.explorer .view-switch,.home-map.explorer .view-switch-button,.home-map.explorer .explorer-dates summary,.home-map.explorer .spot-search-field,.home-map.explorer #prefecture-filter,.home-map.explorer .spot-list-favorite-button { border-radius:18px; }
 .home-map.explorer .map-search-bar,.home-map.explorer .map-toolbar { background:#fffaf6; }
 .home-map.explorer .spot-list-panel { background:#fffaf6; }
@@ -306,7 +306,7 @@
 .home-map.explorer .recent-additions-details summary { border-radius:999px; background:#fff0cf; color:#715839; }
 @media(min-width:900px) and (max-width:1279px) { .home-map.explorer .spot-detail-panel { top:56px; } }
 @media(max-width:899px) {
- .home-map.explorer .site-header,.home-map.explorer .site-header-inner { height:56px; }
+ .home-map.explorer .site-header,.home-map.explorer .site-header-inner { height:auto; min-height:56px; }
  .home-map.explorer .site-header-inner { padding:6px 12px; }
  .home-map.explorer .site-header h1 { font-size:18px; }
  .home-map.explorer .site-position { font-size:11px; }
@@ -325,10 +325,10 @@
 
 @media(max-width:359px) { .home-map.explorer .site-header h1 { font-size:15px; } }
 
-@media(max-width:899px) { .home-map.explorer .map-card { height:calc(100dvh - 56px - var(--site-navigation-height,100px)); } }
+@media(max-width:899px) { .home-map.explorer .map-card { height:calc(100dvh - var(--site-header-height,56px) - var(--site-navigation-height,100px)); } }
 @media(max-width:899px) {
  .home-map.explorer .site-header[inert] .explorer-navigation { visibility:hidden; }
- .home-map.explorer .map-content.has-detail .spot-detail-panel { position:fixed; top:56px; bottom:0; z-index:1800; }
+ .home-map.explorer .map-content.has-detail .spot-detail-panel { position:fixed; top:var(--site-header-height,56px); bottom:0; z-index:1800; }
 }
 
 .home-map.explorer,.journal-page { font-family:"Zen Maru Gothic",system-ui,"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif; }
@@ -336,6 +336,7 @@
 .home-map.explorer .spot-list-card { padding:12px; }
 .home-map.explorer .spot-list-plan-button { grid-column:1/-1; width:100%; height:auto; min-height:44px; padding:8px 12px; border:1px solid #cf7ea1; border-radius:999px; background:#fbe2ed; color:#654763; font:inherit; font-size:14px; font-weight:700; display:flex; align-items:center; justify-content:center; gap:6px; cursor:pointer; }
 .home-map.explorer .spot-list-plan-button.is-active { background:#edf7f0; border-color:#82a88e; color:#38644c; }
+.home-map.explorer .spot-list-favorite-button { height:auto; line-height:1.4; }
 .home-map.explorer .candidate-tools > summary { justify-content:center; }
 .home-map.explorer .explorer-primary-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
 .home-map.explorer .explorer-primary-actions .spot-plan-button { grid-column:1/-1; border-radius:999px; background:#fbe2ed; color:#654763; border-color:#cf7ea1; }

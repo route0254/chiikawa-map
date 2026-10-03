@@ -1,6 +1,8 @@
 /* Keep a map search when moving between site pages in this tab. */
 (() => {
   const key = 'chiikawa-map-search-return-v1';
+  const explorationKey = 'chiikawa-map-exploration-return-v1';
+  const pendingKey = 'chiikawa-map-exploration-pending-v1';
   for(const link of document.querySelectorAll('.site-nav-link')){
     const href=link.getAttribute('href')||'';
     const symbol=href.includes('official-links')?'🔗':href.includes('official.html')?'✦':href.includes('collaborations')?'🎀':href.includes('nagano')?'✎':href.includes('journal')?'🌱':'🗺';
@@ -37,10 +39,19 @@
       if (document.body.classList.contains('home-map')) {
         if (target.pathname !== home.pathname && typeof getCurrentFiltersShareUrl === 'function') {
           sessionStorage.setItem(key, new URL(getCurrentFiltersShareUrl()).search);
+          if(typeof getMapExplorationState === 'function')sessionStorage.setItem(explorationKey,JSON.stringify(getMapExplorationState()));
         }
       } else if (target.pathname === home.pathname && (link.classList.contains('site-nav-link') || target.searchParams.has('spot'))) {
         const saved = new URLSearchParams(sessionStorage.getItem(key) || '');
         for (const [name, value] of saved) if (!target.searchParams.has(name)) target.searchParams.set(name, value);
+        // Private saved filters stay in this tab, never in a shared URL. A
+        // one-use return ticket avoids changing a later direct/shared visit.
+        sessionStorage.removeItem(pendingKey);
+        if(!target.searchParams.has('spot')){
+          const state=JSON.parse(sessionStorage.getItem(explorationKey)||'null');
+          const savedSearch=saved.toString();
+          if(state && target.search===(savedSearch?'?'+savedSearch:''))sessionStorage.setItem(pendingKey,JSON.stringify({...state,search:target.search}));
+        }
         link.href = target.href;
       }
     } catch { /* Navigation remains available when browser storage is disabled. */ }
