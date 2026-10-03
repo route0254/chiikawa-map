@@ -106,9 +106,11 @@ test("mobile detail appears before the map and its close action restores map vie
   await expect(page.locator(".spot-detail-title")).toContainText("原宿");
   await expect(page.locator("#spot-detail-panel")).toHaveAttribute("role","dialog");
   await expect(page.locator("#spot-detail-panel")).toHaveAttribute("aria-modal","true");
+  await expect(page.locator('.explorer-navigation')).toBeHidden();
   await page.locator("#detail-close").click();
   await expect(page.locator("#spot-detail-panel")).toBeHidden();
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
+  await expect(page.locator('.explorer-navigation')).toBeVisible();
 });
 
 test("overview uses counts, selected labels stay inside the map and detailed labels do not collide", async ({ page }) => {
