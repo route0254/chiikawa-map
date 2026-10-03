@@ -86,7 +86,11 @@ test('200 percent text completes mobile filters to results and original actions'
  await page.setViewportSize({width:360,height:900});
  for(const url of ['/official.html','/collaborations.html']){
   await page.goto(url);
-  await page.evaluate(()=>{const sizes=[...document.querySelectorAll('body *')].map(e=>[e,parseFloat(getComputedStyle(e).fontSize)]);for(const [e,size]of sizes)e.style.fontSize=size*2+'px';});
+  await page.evaluate(()=>{
+   const doubleRules=rules=>{for(const rule of rules){if(rule.cssRules)doubleRules(rule.cssRules);const size=rule.style?.getPropertyValue('font-size');if(size&&/^[\d.]+px$/.test(size))rule.style.setProperty('font-size',parseFloat(size)*2+'px',rule.style.getPropertyPriority('font-size'));}};
+   for(const sheet of document.styleSheets){try{doubleRules(sheet.cssRules);}catch{/* Cross-origin font declarations do not define local UI sizes. */}}
+   document.documentElement.style.fontSize='32px';
+  });
   if(url.includes('official')){
    await page.locator('#current-search').fill('常滑');
    await page.locator('#current-filter-toggle').click();
@@ -106,6 +110,8 @@ test('200 percent text completes mobile filters to results and original actions'
    const popupPromise=page.waitForEvent('popup');await action.click();const popup=await popupPromise;
    await expect(popup).toHaveURL(/^https:/);await popup.close();
   }
+  const title=page.locator(url.includes('official')?'#current-groups .official-spot-card h4':'[data-groups="current"] .collaboration-card h4').first();
+  expect(await title.evaluate(element=>parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThanOrEqual(32);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(360);
   await page.screenshot({path:'node_modules/.cache/web-20261003-compact-final/360-text200-'+(url.includes('official')?'official':'collaborations')+'-operation.png'});
  }
