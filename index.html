@@ -69,16 +69,15 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=20261003-recent-results-2"
+    href="style.css?v=20261004-layout-restore-1"
   >
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
   <meta name="theme-color" content="#f477a8">
-  <link rel="stylesheet" href="explorer.css?v=20261003-explorer-state-1">
 </head>
 
 
-<body class="home-map">
+<body>
 
   <a class="skip-link" href="#main-content">本文へ移動</a>
 
@@ -88,13 +87,27 @@
 
     <div class="site-header-inner">
 
-      <h1 aria-label="ちいかわ推し活（ちい活）MAP">ちい活MAP</h1>
+      <div class="site-header-top">
+
+        <span class="site-kicker">
+          CHIIKATSU MAP
+        </span>
+
+        <span class="unofficial-badge">
+          非公式ファンサイト
+        </span>
+
+      </div>
+
+      <h1>
+        ちいかわ推し活（ちい活）MAP
+      </h1>
 
       <p class="site-description">
-        公式・ナガセン・ファン発のスポットを探せます。
+        ちいかわ公式関連、ナガノ先生の紹介・訪問先、
+        ファン発の聖地をまとめています。
       </p>
 
-      <details class="site-menu"><summary>サイト案内</summary>
       <nav class="site-nav" aria-label="サイト内メニュー">
         <a
           class="site-nav-link is-active"
@@ -130,7 +143,6 @@
           公式サイト・SNS
         </a>
       </nav>
-      </details>
 
     </div>
 
@@ -140,10 +152,23 @@
   <!-- NOTICE -->
 
   <div class="site-notice">
-    <details class="site-notice-inner">
-      <summary>非公式まとめ · <span id="data-as-of">2026年10月3日</span>時点 <span class="notice-more">掲載情報のご注意</span></summary>
+
+    <div class="site-notice-inner">
+
+      <span
+        class="notice-icon"
+        aria-hidden="true"
+      >
+        ⚠
+      </span>
+
       <p>
-        ちいかわ公式関連、ナガノ先生の紹介・訪問先、ファン発の聖地をまとめています。
+        <strong>
+          掲載情報は
+          <span id="data-as-of">2026年10月3日</span>
+          時点です。
+        </strong>
+
         ちい活MAPは、ファンが個人で運営する非公式サイトです。
         公式各社とは関係ありません。
         営業時間・入場方法・開催状況などは変更される場合があるため、
@@ -157,22 +182,23 @@
           掲載内容について連絡 ↗
         </a>
       </p>
-    </details>
+
+    </div>
+
   </div>
+
 
   <!-- PAGE -->
 
   <main id="main-content" class="page-shell" tabindex="-1">
 
     <section id="recent-additions" class="recent-additions" aria-labelledby="recent-additions-title" hidden>
-<div class="recent-additions-strip">
-        <a id="recent-additions-latest" class="recent-additions-latest"></a>
-        <button type="button" class="toolbar-button" data-recent-filter aria-pressed="false"><span id="recent-additions-title">新着</span> <span id="recent-additions-count"></span></button>
-        <details class="recent-additions-details">
-          <summary aria-label="最近追加した情報をすべて見る">▾</summary>
-          <div class="recent-additions-expanded"><p class="recent-additions-note">NEWは追加から14日間 · 開催日とは異なります</p><ul id="recent-additions-list" class="recent-additions-list"></ul></div>
-        </details>
+      <div class="recent-additions-heading">
+        <h2 id="recent-additions-title">最近追加した情報</h2>
+        <span id="recent-additions-count"></span>
       </div>
+      <p class="recent-additions-note">追加から14日間のNEW情報 · 日付はサイトへの追加日です</p>
+      <ul id="recent-additions-list" class="recent-additions-list"></ul>
     </section>
 
     <section class="map-card">
@@ -232,7 +258,6 @@
       <!-- TOOLBAR -->
 
       <div class="map-toolbar">
-        <button id="recent-filter-clear" type="button" class="toolbar-button" hidden>新着の絞り込みを解除 ×</button>
 
         <div class="map-toolbar-left">
 
@@ -258,7 +283,7 @@
             aria-label="現在地を地図に表示"
           >
             <span aria-hidden="true">◎</span>
-            <span class="location-button-label">現在地</span>
+            現在地
           </button>
 
 
@@ -283,9 +308,6 @@
           </div>
 
 
-          <details class="map-tools-menu"><summary>保存・その他</summary>
-          <div class="map-extra-actions" role="group" aria-label="保存・共有・使い方">
-          <div class="site-header-top"></div>
           <button
             type="button"
             class="toolbar-button favorite-filter-button"
@@ -375,13 +397,6 @@
           </button>
 
 
-          </div>
-          </details>
-
-
-        </div>
-
-
           <span
             id="result-count"
             class="result-count"
@@ -391,6 +406,9 @@
           >
             読み込み中…
           </span>
+
+        </div>
+
 
         <div
           class="map-legend"
@@ -517,7 +535,7 @@
           id="no-results-reset"
           class="no-results-reset"
         >
-          絞り込みをリセット
+          条件をすべて解除
         </button>
       </div>
 
@@ -528,7 +546,11 @@
         class="date-discovery"
         aria-labelledby="date-discovery-title"
       >
-
+        <div class="date-discovery-copy">
+          <span class="date-discovery-kicker">WHEN TO GO?</span>
+          <strong id="date-discovery-title">開催日から絞り込む</strong>
+          <span>今日、今週末、近日開始、終了間近のスポットを表示します。</span>
+        </div>
 
         <div
           class="date-discovery-actions"
@@ -568,13 +590,9 @@
           </a>
         </div>
 
-<details class="date-discovery-help"><summary aria-label="開催日の見方">日付の説明</summary>        <div class="date-discovery-copy">
-          <span class="date-discovery-kicker">WHEN TO GO?</span>
-          <strong id="date-discovery-title">開催日から絞り込む</strong>
-          <span>今日、今週末、近日開始、終了間近のスポットを表示します。</span>
-        </div>        <p class="date-discovery-note">
+        <p class="date-discovery-note">
           営業日・休館日・入店方法は、訪問前に各公式情報をご確認ください。
-        </p></details>
+        </p>
       </section>
 
 
@@ -769,15 +787,12 @@
                   シリーズ・施設
                 </legend>
 
-                <p id="brand-selection-status" class="brand-selection-status" role="status" aria-live="polite"></p>
-
                 <p class="filter-hint">
-                  チェックしたシリーズを表示します。すべてONは絞り込みなし、すべてOFFは表示なしです。
+                  ちいかわらんどなど、特定のショップ・施設だけを探したいときに使います。
                 </p>
 
                 <div
                   id="brand-filter-list"
-                  aria-describedby="brand-selection-status"
                   class="filter-chip-list"
                 ></div>
 
@@ -1276,7 +1291,8 @@
                 </p>
 
                 <p>
-                  期間限定スポットは、終了日を過ぎると通常の検索結果から外れます。「絞り込み」で過去のイベントも探せます。
+                  期間限定スポットは、終了日を過ぎると
+                  自動的に地図から非表示になります。
                 </p>
 
               </section>
@@ -1289,13 +1305,12 @@
                   「都道府県」と組み合わせれば、旅行先や近くのエリアだけに絞ることもできます。
                 </p>
                 <p>
-                  現在地ボタン（位置のマーク）で現在地付近へ移動でき、「地図 / 一覧」で表示方法を切り替えられます。「開催日」を開くと、今日・今週末などから探せます。
-                  一覧の「並び順」を開くと、近い順・終了が近い順・名前順や、地図範囲内の絞り込みが使えます。
+                  「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で表示方法を切り替えられます。
+                  一覧では「◎ 近い順」「⌛ 終了が近い順」「あ 名前順」「▣ 地図範囲内」を利用でき、検索・絞り込み条件と組み合わせられます。
                   期間限定スポットは残り日数・開催までの日数も表示し、「⚠ まもなく終了（7日以内）」だけに絞れます。
                   「♡ 行きたい」と「✓ 行った！」はこのブラウザ内に保存され、それぞれ保存済みだけの表示にも対応しています。
-                  保存済みだけを見るときは、上部の「保存・使い方」を開いて「行きたい」「行った！」を選べます。今日のプランや保存データもここから開けます。一覧・ピン・詳細の「今日のプランに追加」から、お出かけ先を直接追加できます。
-                  「🔗 このスポットを共有」は1スポットを直接共有、「保存・使い方」の「条件を共有」は現在の検索・絞り込み状態を共有できます。
-                  位置情報はサーバーへ送信しません。行きたい・行った情報は端末へ保存し、任意のクラウド保存を利用した場合だけ同期します。別ページから地図へ戻ると、検索条件・地図位置・ズーム・保存済みの絞り込みを、このタブ内で引き継ぎます。
+                  「🔗 このスポットを共有」は1スポットを直接共有、「🔗 条件を共有」は現在の検索・絞り込み状態を共有できます。
+                  位置情報はサーバーへ送信しません。行きたい・行った情報は端末へ保存し、任意のクラウド保存を利用した場合だけ同期します。
                 </p>
               </section>
 
@@ -1434,12 +1449,11 @@
                   都道府県や「食べる / 観光・体験 / 買う / 泊まる」「確定 / 推定・高確度 / 要注意候補」の絞り込みと併用できます。
                 </p>
                 <p>
-                  現在地ボタン（位置のマーク）で現在地付近へ移動でき、「地図 / 一覧」で巡礼候補を見比べられます。「開催日」を開くと、今日・今週末などから探せます。
-                  一覧の「並び順」を開くと、近い順・終了が近い順・名前順や、地図範囲内の絞り込みが使えます。
+                  「◎ 現在地」で現在地付近へ移動でき、「地図 / 一覧」で巡礼候補を見比べられます。
+                  一覧では「◎ 近い順」「⌛ 終了が近い順」「あ 名前順」「▣ 地図範囲内」を既存の絞り込みと併用できます。
                   気になる場所は「♡ 行きたい」、訪問済みは「✓ 行った！」として保存でき、それぞれ保存済みだけの表示にも対応しています。
-                  保存済みだけを見るときは、上部の「保存・使い方」を開いて「行きたい」「行った！」を選べます。今日のプランや保存データもここから開けます。一覧・ピン・詳細の「今日のプランに追加」から、お出かけ先を直接追加できます。
-                  「🔗 このスポットを共有」から1スポットを直接共有でき、「保存・使い方」の「条件を共有」では現在の検索・絞り込み状態を共有できます。
-                  行きたい・行った等は端末へ保存され、任意のクラウド保存を利用した場合だけ同期します。条件共有URLには含まれません。別ページから地図へ戻ると、検索条件・地図位置・ズーム・保存済みの絞り込みを、このタブ内で引き継ぎます。
+                  「🔗 このスポットを共有」から1スポットを直接共有でき、「🔗 条件を共有」では現在の検索・絞り込み状態を共有できます。
+                  行きたい・行った等は端末へ保存され、任意のクラウド保存を利用した場合だけ同期します。条件共有URLには含まれません。
                 </p>
               </section>
 
@@ -1614,7 +1628,6 @@
 
       <section
         id="spot-list-panel"
-        tabindex="-1"
         class="spot-list-panel"
         aria-label="スポット一覧"
         hidden
@@ -1699,13 +1712,10 @@
   ></script>
 
 
-  <script src="recent-utils.js?v=20261003-recent-results-1"></script>
-  <script src="ui-icons.js?v=20261003-ux-recovery-4"></script>
-  <script src="explorer-ui.js?v=20261003-explorer-state-1"></script>
-  <script src="app.js?v=20261003-explorer-state-1"></script>
-  <script src="pwa.js?v=20260828-1" defer></script>
+  <script src="recent-utils.js?v=20261004-layout-restore-1"></script>
+  <script src="app.js?v=20261004-layout-restore-1"></script>
+  <script src="pwa.js?v=20261004-layout-restore-1" defer></script>
 
-  <script src="navigation.js?v=20261003-ux-recovery-4" defer></script>
 </body>
 
 </html>

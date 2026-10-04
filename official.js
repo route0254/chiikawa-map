@@ -2,12 +2,6 @@
 
 let officialAddedDates = {};
 let officialRecentOnly = false;
-document.addEventListener("click", event => {
-  const action = event.target.closest("#official-recent button");
-  if (!action) return;
-  officialRecentOnly = action.hasAttribute("data-catalog-recent") ? !officialRecentOnly : false;
-  handleCurrentFiltersChanged(action);
-});
 
 
 const CURRENT_DATA_URL =
@@ -1582,8 +1576,6 @@ function createSpotCard(
   }
 
   card.appendChild(badges);
-  const addedLabel = RecentUI.label(officialAddedDates[spot.id],
-    RecentAdditions.selectRecent([spot], officialAddedDates).length > 0);
 
   card.appendChild(
     createElement(
@@ -1592,7 +1584,6 @@ function createSpotCard(
       spot.name
     )
   );
-  if (addedLabel) card.appendChild(addedLabel);
 
   const saveActions =
     createElement(
@@ -2357,7 +2348,6 @@ function renderCurrentSpots() {
 
   const visibleSpots =
     getCurrentVisibleSpots();
-  RecentUI.renderControl("official-recent", RecentAdditions.selectRecent(visibleSpots, officialAddedDates).length, officialRecentOnly);
 
   const filteredSpots =
     visibleSpots.filter(
@@ -3004,8 +2994,8 @@ function applyCurrentFiltersFromUrl() {
     new URLSearchParams(
       window.location.search
     );
-  officialRecentOnly = params.get("recent") === "1";
 
+  officialRecentOnly = params.get("recent") === "1";
   currentSearch.value =
     params.get("q") || "";
 
@@ -3399,8 +3389,15 @@ async function loadCurrentSpots() {
             CURRENT_DATA_URL
           );
 
-        const registry = await RecentUI.registry();
-        officialAddedDates = registry.firstAdded || {};
+        if (new URLSearchParams(location.search).get("recent") === "1") {
+          await import("./recent-utils.js");
+          try {
+            const response = await fetch("./data/added-dates.json", {cache: "no-store"});
+            if (response.ok) officialAddedDates = (await response.json()).firstAdded || {};
+          } catch (error) {
+            console.warn("掲載追加日を読み込めませんでした。", error);
+          }
+        }
         currentLoaded = true;
 
         populateCurrentSummary();

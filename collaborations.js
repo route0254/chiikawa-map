@@ -1,12 +1,6 @@
 "use strict";
 
 let collaborationAddedDates = {};
-document.addEventListener("click", event => {
-  const action = event.target.closest("#collaboration-recent button");
-  if (!action) return;
-  listStates.current.filters.recent = action.hasAttribute("data-catalog-recent") ? !listStates.current.filters.recent : false;
-  renderList("current");
-});
 
 const dataUrls = {
   current: new URL(
@@ -90,12 +84,18 @@ const listStates = {
   }
 };
 
-const initialRecentParams = new URLSearchParams(location.search);
-for (const key of ["search", "category", "status", "channel", "sort"]) {
-  const value = initialRecentParams.get(key === "search" ? "q" : key);
-  if (value) listStates.current.filters[key] = value;
+function restoreCurrentCollaborationFilters() {
+  const params = new URLSearchParams(location.search);
+  for (const key of ["search", "category", "status", "channel", "sort"]) {
+    listStates.current.filters[key] = params.get(key === "search" ? "q" : key) || (key === "sort" ? "ending" : "");
+  }
+  listStates.current.filters.recent = params.get("recent") === "1";
+  document.querySelectorAll('[data-filter][data-list="current"]').forEach(control => {
+    control.value = listStates.current.filters[control.dataset.filter] || "";
+  });
 }
-listStates.current.filters.recent = initialRecentParams.get("recent") === "1";
+
+restoreCurrentCollaborationFilters();
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -444,7 +444,6 @@ function renderCard(record) {
         <div class="collaboration-card-title-wrap">
           <span class="collaboration-status is-${escapeHtml(record.status)}">${escapeHtml(status)}</span>
           <h4>${escapeHtml(record.title)}</h4>
-          ${RecentUI.label(collaborationAddedDates[record.id], RecentAdditions.isRecentCollaboration(record, collaborationAddedDates))?.outerHTML || ""}
           <p class="collaboration-partner">${escapeHtml(record.partner)}</p>
         </div>
         <span class="collaboration-group-icon" title="${escapeHtml(category.label)}" aria-label="${escapeHtml(category.label)}">${category.icon}</span>
@@ -470,9 +469,7 @@ function renderList(type) {
   if (!state.records) {
     return;
   }
-  if (type === "current") RecentUI.renderControl("collaboration-recent",
-    state.records.filter(record => RecentAdditions.isRecentCollaboration(record, collaborationAddedDates)).length,
-    Boolean(state.filters.recent));
+
   if (type === "current") {
     const url = new URL(location.href);
     for (const key of ["search", "category", "status", "channel", "sort", "recent"]) {
@@ -481,9 +478,8 @@ function renderList(type) {
       if (value && !(key === "sort" && value === "ending")) url.searchParams.set(param, value === true ? "1" : value);
       else url.searchParams.delete(param);
     }
-    history.replaceState(history.state, "", url);
+    if (url.href !== location.href) history.replaceState(history.state, "", url);
   }
-
   const records = filterRecords(type);
   const groupsElement = getListElement(
     type,
@@ -851,13 +847,18 @@ async function loadList(type, force = false) {
       );
     }
 
-    const registry = await RecentUI.registry();
-    collaborationAddedDates = registry.collaborationFirstAdded || {};
+    if (type === "current" && new URLSearchParams(location.search).get("recent") === "1") {
+      await import("./recent-utils.js");
+      try {
+        const response = await fetch("./data/added-dates.json", {cache: "no-store"});
+        if (response.ok) collaborationAddedDates = (await response.json()).collaborationFirstAdded || {};
+      } catch (error) {
+        console.warn("掲載追加日を読み込めませんでした。", error);
+      }
+    }
     state.records = records;
     populateDynamicFilters(type);
-    if (type === "current") document.querySelectorAll('[data-filter][data-list="current"]').forEach(control => {
-      control.value = state.filters[control.dataset.filter] || "";
-    });
+    if (type === "current") restoreCurrentCollaborationFilters();
     renderList(type);
     updateDataAsOf();
 
@@ -1087,6 +1088,11 @@ document.querySelectorAll(
       }
     }
   );
+});
+
+window.addEventListener("popstate", () => {
+  restoreCurrentCollaborationFilters();
+  renderList("current");
 });
 
 loadList("current");
