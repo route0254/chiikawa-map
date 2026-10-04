@@ -10488,6 +10488,13 @@ document.addEventListener(
     }
 
 
+    const extraTools = document.getElementById("map-extra-tools");
+    if (extraTools?.open) {
+      extraTools.open = false;
+      extraTools.querySelector("summary").focus();
+      return;
+    }
+
     if (
       detailPanel &&
       !detailPanel.hidden

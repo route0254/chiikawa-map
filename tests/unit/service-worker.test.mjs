@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 
 const source = readFileSync(new URL('../../service-worker.js', import.meta.url), 'utf8');
+const cacheVersion = source.match(/const CACHE_VERSION\s*=\s*"([^"]+)"/)[1];
 
 function offlineWorker(exactResponse) {
   const listeners = new Map(), fallbackRequests = [], cacheNames = [];
@@ -37,14 +38,16 @@ function offlineWorker(exactResponse) {
 
 test('cold offline versioned scripts and styles use only the current core files', async () => {
   const worker = offlineWorker();
-  for (const file of ['official.js', 'official.css']) {
+  for (const file of ['official.js', 'official.css', 'theme.css']) {
     assert.equal((await worker.request('https://example.test/' + file + '?v=layout-restore')).body, 'current precached file');
   }
   assert.deepEqual(worker.fallbackRequests, [
     {path: '/official.js', ignoreSearch: true},
-    {path: '/official.css', ignoreSearch: true}
+    {path: '/official.css', ignoreSearch: true},
+    {path: '/theme.css', ignoreSearch: true}
   ]);
-  assert.ok(worker.cacheNames.every(name => name === 'chiikatsu-map-v20261004-layout-restore-1-core'));
+  assert.equal(worker.cacheNames.length, 3);
+  assert.ok(worker.cacheNames.every(name => name === `${cacheVersion}-core`));
 });
 
 test('an exactly cached asset wins over the unversioned core fallback', async () => {

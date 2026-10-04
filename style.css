@@ -4113,7 +4113,7 @@ button {
     width: 100%;
   }
 }
-/* Recent additions: a compact horizontal strip above the map on all screens. */
+/* 最近追加した情報の横スクロール一覧。 */
 .recent-additions { margin-bottom: 12px; padding: 12px 14px; border: 1px solid #eadde3; border-radius: 16px; background: #fff; }
 .recent-additions[hidden] { display: none; }
 .recent-additions-heading { display: flex; align-items: baseline; gap: 10px; }
