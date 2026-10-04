@@ -404,6 +404,8 @@ await Promise.all([
     WWW_URL
   ),
   checkPublishedAsset("app.js"),
+  checkPublishedAsset("theme.css"),
+  checkPublishedAsset("assets/site-route.svg"),
   checkPublishedAsset("official.html"),
   checkPublishedAsset("official.css"),
   checkPublishedAsset("official.js"),

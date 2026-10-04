@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20261004-layout-restore-1";
+  "chiikatsu-map-v20261004-design-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -19,6 +19,8 @@ const CORE_FILES = [
   "./terms.html",
   "./offline.html",
   "./style.css",
+  "./theme.css",
+  "./assets/site-route.svg",
   "./official.css",
   "./collaborations.css",
   "./nagano.css",

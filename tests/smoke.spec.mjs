@@ -1407,6 +1407,7 @@ test(
         "#saved-data-panel"
       );
 
+    await page.locator('#map-extra-tools > summary').click();
     await savedToggle.click();
 
     await expect(savedPanel).toBeVisible();
@@ -1698,6 +1699,7 @@ test(
         "限定グッズを購入。次回は午前中に行く。"
     });
 
+    await page.locator('#map-extra-tools > summary').click();
     await page.locator(
       "#saved-data-toggle"
     ).click();
@@ -1832,6 +1834,7 @@ test(
       "限定グッズを購入。次回は午前中に行く。"
     );
 
+    await page.locator('#map-extra-tools > summary').click();
     await page.locator(
       "#saved-data-toggle"
     ).click();
@@ -2371,7 +2374,7 @@ test(
       "#list-view-button",
       "#favorite-filter-button",
       "#visited-filter-button",
-      "#saved-data-toggle"
+      "#map-extra-tools > summary"
     ];
 
     for (
@@ -2383,6 +2386,10 @@ test(
         selector
       );
     }
+
+    await page.locator('#map-extra-tools > summary').click();
+    await expectMinTouchTarget(page, '#saved-data-toggle');
+    await page.locator('#map-extra-tools > summary').click();
 
     await page.locator(
       "#filter-toggle"

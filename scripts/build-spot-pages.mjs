@@ -247,6 +247,7 @@ function createPage(spot) {
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css?v=20261004-layout-restore-1">
   <link rel="stylesheet" href="../../spot.css?v=20260915-1">
+  <link rel="stylesheet" href="../../theme.css?v=20261004-1">
   <script type="application/ld+json">${escapeJson(createStructuredData(spot))}</script>
 </head>
 <body class="spot-page" data-spot-id="${escapeHtml(spot.id)}" data-spot-name="${escapeHtml(spot.name)}">

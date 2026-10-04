@@ -42,6 +42,7 @@ pnpm run check:site
 | パス | 内容 |
 | --- | --- |
 | `index.html` / `style.css` / `app.js` | 地図ページ |
+| `theme.css` | 共通ヘッダー、配色、PC・スマホの表示調整 |
 | `official.html` / `official.css` / `official.js` | 公式スポット一覧 |
 | `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
 | `nagano.html` / `nagano.css` / `nagano.js` | 公開情報と出典からたどる「ナガノ先生の歩み」 |
