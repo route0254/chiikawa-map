@@ -66,6 +66,7 @@ test('mapped collaborations still connect to the existing detail and private pla
 });
 
 test('published catalogue recent URLs retain their AND condition and reset without new controls', async ({page}) => {
+  const currentSpots = JSON.parse(await readFile(new URL('../data/official-spots.json', import.meta.url), 'utf8'));
   await page.goto('/official.html?recent=1');
   await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(13);
   await expect(page.locator('#official-recent')).toHaveCount(0);
@@ -74,7 +75,7 @@ test('published catalogue recent URLs retain their AND condition and reset witho
   await page.reload();await expect(page.locator('#current-search')).toHaveValue('町田');
   await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(1);
   await page.locator('#current-filter-reset').click();
-  await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(79);
+  await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(currentSpots.length);
   expect(new URL(page.url()).searchParams.has('recent')).toBe(false);
   await page.goto('/collaborations.html?recent=1');
   await expect(page.locator('[data-groups="current"] .collaboration-card')).toHaveCount(4);
