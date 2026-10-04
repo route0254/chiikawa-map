@@ -2,17 +2,6 @@ import {
   expect,
   test
 } from "@playwright/test";
-test('saved journal views keep native actions and fit narrow screens with shared icons',async({page})=>{
- await page.setViewportSize({width:390,height:844});await page.goto('/journal.html?view=favorites');
- await expect(page.locator('.favorite-card').first()).toBeVisible();
- await expect(page.locator('.favorite-remove .chiikatsu-icon').first()).toBeVisible();
- expect(await page.locator('#favorites-view').evaluate(el=>getComputedStyle(el).fontFamily)).toContain('system-ui');
- expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
- await page.locator('#plan-tab').click();await expect(page.locator('#plan-view')).toBeVisible();
- await expect(page.locator('.plan-stop-actions .chiikatsu-icon').first()).toBeVisible();
- await page.locator('#activity-tab').click();await expect(page.locator('#activity-view')).toBeVisible();
- expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
-});
 
 test.beforeEach(
   async ({ page }) => {

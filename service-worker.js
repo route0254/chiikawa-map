@@ -1,14 +1,13 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20261003-explorer-state-1";
+  "chiikatsu-map-v20261004-layout-restore-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
   CACHE_VERSION + "-runtime";
 
 const CORE_FILES = [
-  "./navigation.js",
   "./",
   "./index.html",
   "./official.html",
@@ -20,13 +19,6 @@ const CORE_FILES = [
   "./terms.html",
   "./offline.html",
   "./style.css",
-  "./explorer.css",
-  "./explorer-ui.js",
-  "./ui-icons.js",
-  "./journal-ui.js",
-  "./journal-focus.css",
-  "./site-ui.css",
-  "./site-ui.js",
   "./official.css",
   "./collaborations.css",
   "./nagano.css",
@@ -35,7 +27,6 @@ const CORE_FILES = [
   "./legal.css",
   "./app.js",
   "./recent-utils.js",
-  "./recent-ui.js",
   "./data/added-dates.json",
   "./official.js",
   "./collaborations.js",
@@ -134,6 +125,17 @@ async function networkFirst(request) {
   }
 }
 
+async function matchLocalAsset(request, url) {
+  const cached = await caches.match(request);
+  if (cached || !/\.(?:js|css)$/.test(url.pathname)) {
+    return cached;
+  }
+
+  // The current core cache precaches unversioned files; HTML uses versioned URLs.
+  const core = await caches.open(CORE_CACHE);
+  return core.match(url.pathname, { ignoreSearch: true });
+}
+
 self.addEventListener(
   "fetch",
   event => {
@@ -169,7 +171,7 @@ self.addEventListener(
     }
 
     event.respondWith(
-      caches.match(request)
+      matchLocalAsset(request, url)
         .then(cached => {
           if (cached) {
             return cached;
