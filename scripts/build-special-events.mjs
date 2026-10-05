@@ -114,7 +114,7 @@ function createRecord(
     reservationUrl: null,
     defaultEntryType: cancelled
       ? "other"
-      : "walkin",
+      : event.defaultEntryType || "walkin",
     crowdControlType: "other",
     crowdControlCondition:
       "announced",

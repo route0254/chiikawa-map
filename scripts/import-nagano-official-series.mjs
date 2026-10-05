@@ -3,6 +3,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { reconcileNaganoEvent } from "./lib/nagano-event-reconciliation.mjs";
 
 const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -256,15 +257,18 @@ function extractPostalAddress(html) {
     const text = cleanText(match[1]);
     const postalIndex = text.indexOf("〒");
     if (postalIndex < 0) continue;
+    const wrappedPostalAddress = /[（(]\s*$/.test(text.slice(0, postalIndex));
 
     const address = text
       .slice(postalIndex)
       .replace(/^〒\s*\d{3}-?\d{4}\s*/, "")
-      .replace(/^[（(]/, "")
-      .replace(/[）)]$/, "")
+      .replace(/^[（(](.*)[）)]$/, "$1")
       .trim();
 
-    if (/[都道府県]/.test(address)) return address;
+    const unwrappedAddress = wrappedPostalAddress
+      ? address.replace(/[）)]$/, "").trim()
+      : address;
+    if (/[都道府県]/.test(unwrappedAddress)) return unwrappedAddress;
   }
 
   return null;
@@ -439,7 +443,9 @@ async function addCoordinates(events, knownRecords) {
       event.address = baseAddress(known.address);
     }
 
-    const coordinates = known || venueCoordinates[event.venueName] ||
+    const coordinates = Number.isFinite(event.lat) && Number.isFinite(event.lng)
+      ? event
+      : known || venueCoordinates[event.venueName] ||
       (event.address ? await geocodeAddress(event.address) : null);
 
     if (!coordinates || !Number.isFinite(coordinates.lat) || !Number.isFinite(coordinates.lng)) {
@@ -543,6 +549,11 @@ const popupEvents = await buildArticleEvents(indexUrls.popup, "/popupshop/", "po
 const exhibitionEvents = await buildArticleEvents(indexUrls.exhibition, "/naganoten/", "exhibition");
 const aquariumEvents = await buildAquariumEvents();
 const generatedEvents = [...popupEvents, ...exhibitionEvents, ...aquariumEvents];
+const existingEvents = source.series.flatMap(series => series.events);
+const publishedRecords = Object.values(data).flat();
+for (const event of generatedEvents) {
+  Object.assign(event, reconcileNaganoEvent(event, existingEvents, publishedRecords));
+}
 
 const minimumCounts = [
   ["POP UP SHOP", popupEvents.length, 80],
@@ -617,7 +628,7 @@ function comparableEvents(series) {
     venueName: event.venueName,
     address: event.address,
     sourceUrl: event.sourceUrl
-  }));
+  })).sort((left, right) => left.id.localeCompare(right.id));
 }
 
 if (checkMode) {
