@@ -1931,7 +1931,7 @@ test(
 );
 
 
-async function includeArchivedSpotsForLayout(page, ids, excludedIds = []) {
+async function includeArchivedSpotsForLayout(page, ids, excludedIds = [], insertBefore = {}) {
   const [officialSpots, archivedSpots] = await Promise.all(
     ["official-spots.json", "official-events-archive.json"].map(async name =>
       JSON.parse(await readFile(resolve(projectDirectory, "data", name), "utf8"))
@@ -1946,10 +1946,15 @@ async function includeArchivedSpotsForLayout(page, ids, excludedIds = []) {
   const layoutSpots = officialSpots.filter(
     spot => !excludedIds.includes(spot.id)
   );
+  for (const spot of selected) {
+    const anchorIndex = layoutSpots.findIndex(item => item.id === insertBefore[spot.id]);
+    if (anchorIndex < 0) layoutSpots.push(spot);
+    else layoutSpots.splice(anchorIndex, 0, spot);
+  }
 
   await page.route("**/data/official-spots.json", async route => {
     await route.fulfill({
-      body: JSON.stringify([...layoutSpots, ...selected]),
+      body: JSON.stringify(layoutSpots),
       contentType: "application/json",
       status: 200
     });
@@ -1964,10 +1969,13 @@ test(
       "pocket-popup-ikebukuro",
       "nagano-market-popup-2026-09-04-nagoya-p",
       "movie-cafe-shinsaibashi",
-      "popup-2026-09-18-jr-ikebukuro"
+      "popup-2026-09-18-jr-ikebukuro",
+      "ramen-buta-nagoya"
     ], [
       "tokyo-banana-popup-solamachi-2026-10"
-    ]);
+    ], {
+      "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
+    });
     const scenarios = [
       {
         directions: [
@@ -2097,8 +2105,11 @@ test(
   "同一座標の6スポットを展開し、ピンと名称ラベルを分散する",
   async ({ page }) => {
     await includeArchivedSpotsForLayout(page, [
-      "nagano-market-popup-2026-09-04-nagoya-p"
-    ]);
+      "nagano-market-popup-2026-09-04-nagoya-p",
+      "ramen-buta-nagoya"
+    ], [], {
+      "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
+    });
     await page.goto(
       "/?spot=chiikawaland-nagoya"
     );

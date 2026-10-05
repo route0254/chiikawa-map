@@ -121,7 +121,12 @@ test('スマホの主要ページにWCAG AAの違反がない', async ({ page })
     await page.goto(path);
     await expect(page.locator(ready).first()).toBeVisible();
     await showCloudHeader(page);
-    if (path === '/') await page.locator('#map-extra-tools > summary').click();
+    if (path === '/') {
+      await expect(page.locator('#result-count')).toHaveText(/^\d+件表示$/);
+      await page.locator('#map-extra-tools > summary').click();
+      // MarkerClusterのフェード表示が完了してからコントラストを測定する。
+      await expect(page.locator('#map .leaflet-cluster-anim, #map .leaflet-zoom-anim')).toHaveCount(0);
+    }
     const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
     expect(results.violations.map(({ id, nodes }) => ({ id, nodes: nodes.map(node => ({ target: node.target, message: node.failureSummary })) })), name).toEqual([]);
   }
