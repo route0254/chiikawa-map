@@ -13,12 +13,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:13+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:13+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-popup-list",
@@ -30,12 +30,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:13+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:13+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-cafe-list",
@@ -47,12 +47,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T19:00:22+09:00",
+      "lastSuccessfulAt": "2026-10-05T19:00:22+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-exhibition-list",
@@ -64,12 +64,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T19:00:22+09:00",
+      "lastSuccessfulAt": "2026-10-05T19:00:22+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-author-x",
@@ -81,12 +81,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
+      "lastAttemptAt": "2026-10-05T18:57:35+09:00",
       "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
-      "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "lastResult": "access_limited",
+      "resultSummary": "本文を取得できず、新着有無は未確認。前回成功日時を保持し、次回巡回で再確認。",
+      "lastFailure": {
+        "at": "2026-10-05T18:57:35+09:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "本文を取得できず、新着有無は未確認。",
+        "evidenceUrl": "https://x.com/ngnchiikawa"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-author-instagram",
@@ -98,12 +104,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
+      "lastAttemptAt": "2026-10-05T18:57:35+09:00",
       "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
-      "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "lastResult": "access_limited",
+      "resultSummary": "本文を取得できず、新着有無は未確認。前回成功日時を保持し、次回巡回で再確認。",
+      "lastFailure": {
+        "at": "2026-10-05T18:57:35+09:00",
+        "kind": "access_limited",
+        "httpStatus": 429,
+        "detail": "本文を取得できず、新着有無は未確認。",
+        "evidenceUrl": "https://www.instagram.com/ngnchiikawa/"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-publicity-x",
@@ -116,12 +128,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
+      "lastAttemptAt": "2026-10-05T18:57:35+09:00",
       "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
-      "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "lastResult": "access_limited",
+      "resultSummary": "本文を取得できず、新着有無は未確認。前回成功日時を保持し、次回巡回で再確認。",
+      "lastFailure": {
+        "at": "2026-10-05T18:57:35+09:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "本文を取得できず、新着有無は未確認。",
+        "evidenceUrl": "https://x.com/chiikawa_kouhou"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-publicity-instagram",
@@ -134,12 +152,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
+      "lastAttemptAt": "2026-10-05T18:57:35+09:00",
       "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
-      "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "lastResult": "fetch_failed",
+      "resultSummary": "本文を取得できず、新着有無は未確認。前回成功日時を保持し、次回巡回で再確認。",
+      "lastFailure": {
+        "at": "2026-10-05T18:57:35+09:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "本文を取得できず、新着有無は未確認。",
+        "evidenceUrl": "https://www.instagram.com/chiikawa_kouhou/"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "nagano-author-x",
@@ -151,12 +175,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
+      "lastAttemptAt": "2026-10-05T18:57:35+09:00",
       "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
-      "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "lastResult": "access_limited",
+      "resultSummary": "本文を取得できず、新着有無は未確認。前回成功日時を保持し、次回巡回で再確認。",
+      "lastFailure": {
+        "at": "2026-10-05T18:57:35+09:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "本文を取得できず、新着有無は未確認。",
+        "evidenceUrl": "https://x.com/ngntrtr"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "nagano-author-instagram",
@@ -168,12 +198,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
+      "lastAttemptAt": "2026-10-05T18:57:35+09:00",
       "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
-      "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "lastResult": "fetch_failed",
+      "resultSummary": "本文を取得できず、新着有無は未確認。前回成功日時を保持し、次回巡回で再確認。",
+      "lastFailure": {
+        "at": "2026-10-05T18:57:35+09:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "本文を取得できず、新着有無は未確認。",
+        "evidenceUrl": "https://www.instagram.com/ngntrtr11/"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "nagano-popup-list",
@@ -185,12 +221,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:59:38.597+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:59:38.597+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "nagano-aquarium-list",
@@ -202,12 +238,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:59:41.184+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:59:41.184+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "nagano-exhibition-list",
@@ -219,12 +255,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:59:43.132+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:59:43.132+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "mogumogu-fushimi-news",
@@ -236,12 +272,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:24+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:24+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "mogumogu-kawagoe-news",
@@ -253,12 +289,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:24+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:24+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "mogumogu-otaru-news",
@@ -270,12 +306,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:24+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:24+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "chiikawa-park-news",
@@ -287,12 +323,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:24+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:24+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "tokyo-banana-chiikawa",
@@ -305,12 +341,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:24+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:24+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "series-chiikawa-aquarium-2023",
@@ -322,12 +358,12 @@
       ],
       "cadence": "weekly",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:31+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:31+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文を確認。仙台の当初会期に延長の可能性があり、最終会期は保留。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "series-chiikawa-aquarium-2-2023",
@@ -339,12 +375,12 @@
       ],
       "cadence": "weekly",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T18:57:31+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:57:31+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文を確認。主催館別ページで仙台イベント・フォトスポットの2023-06-23〜07-02を確認。ARラリー単体の終了日とその他会場は保留。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
     {
       "id": "series-chiikawa-tokyo-miyage",
@@ -356,12 +392,47 @@
       ],
       "cadence": "weekly",
       "enabled": true,
-      "lastAttemptAt": null,
-      "lastSuccessfulAt": null,
-      "lastResult": "not_checked",
-      "resultSummary": null,
+      "lastAttemptAt": "2026-10-05T19:00:47+09:00",
+      "lastSuccessfulAt": "2026-10-05T19:00:47+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文を確認。羽田T2 Tokyo’s Tokyoの2025-10-17〜2026-01-31を確認。その他会場は保留。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "nagano-official-index",
+      "name": "ナガノ公式総合",
+      "url": "https://nagano-info.jp/",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "nagano"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-05T18:59:36.359+09:00",
+      "lastSuccessfulAt": "2026-10-05T18:59:36.359+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文を確認。今回の確認範囲で新規国内実会場を確認せず。",
+      "lastFailure": null,
+      "note": "総合入口を巡回対象へ登録。個別告知・会場別案内は別途照合する。"
+    },
+    {
+      "id": "tamanohikari-chiikawa-release",
+      "name": "玉乃光酒造 ちいかわ公式発表",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-05T19:02:26+09:00",
+      "lastSuccessfulAt": "2026-10-05T19:02:26+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式発表で10月5日予約開始、11月10日発売を確認。予約開始時刻・受付終了日と国内実店舗での取扱いは未確認。",
+      "lastFailure": null,
+      "note": "商品コラボの一次情報。発売日と予約商品の配送時期を区別する。"
     }
   ]
 }
