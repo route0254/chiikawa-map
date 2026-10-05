@@ -1,0 +1,367 @@
+{
+  "$schema": "./schemas/official-source-ledger.schema.json",
+  "version": 1,
+  "sources": [
+    {
+      "id": "chiikawa-official-index",
+      "name": "ちいかわ公式総合",
+      "url": "https://chiikawa-info.jp/",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-popup-list",
+      "name": "ちいかわ POP UP公式一覧",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-cafe-list",
+      "name": "ちいかわカフェ公式一覧",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-exhibition-list",
+      "name": "ちいかわ展覧会公式一覧",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-author-x",
+      "name": "ちいかわ作者公式X",
+      "url": "https://x.com/ngnchiikawa",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-author-instagram",
+      "name": "ちいかわ作者公式Instagram",
+      "url": "https://www.instagram.com/ngnchiikawa/",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-publicity-x",
+      "name": "ちいかわ公式広報X",
+      "url": "https://x.com/chiikawa_kouhou",
+      "kind": "social",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-publicity-instagram",
+      "name": "ちいかわ公式広報Instagram",
+      "url": "https://www.instagram.com/chiikawa_kouhou/",
+      "kind": "social",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "nagano-author-x",
+      "name": "ナガノ先生公式X",
+      "url": "https://x.com/ngntrtr",
+      "kind": "social",
+      "scope": [
+        "nagano"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "nagano-author-instagram",
+      "name": "ナガノ先生公式Instagram",
+      "url": "https://www.instagram.com/ngntrtr11/",
+      "kind": "social",
+      "scope": [
+        "nagano"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "nagano-popup-list",
+      "name": "ナガノマーケット POP UP公式一覧",
+      "url": "https://nagano-info.jp/pus.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "name": "ナガノの水族館公式一覧",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "name": "ナガノ展公式一覧",
+      "url": "https://nagano-info.jp/museum.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "mogumogu-fushimi-news",
+      "name": "もぐもぐ本舗 京都伏見店公式情報",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "mogumogu-kawagoe-news",
+      "name": "もぐもぐ本舗 川越店公式情報",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "mogumogu-otaru-news",
+      "name": "もぐもぐ本舗 小樽店公式情報",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "chiikawa-park-news",
+      "name": "ちいかわパーク公式",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "name": "東京ばな奈公式ちいかわ情報",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "series-chiikawa-aquarium-2023",
+      "name": "ちいかわ 水族館",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "weekly",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "series-chiikawa-aquarium-2-2023",
+      "name": "ちいかわ 水族館 第二弾",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "weekly",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    },
+    {
+      "id": "series-chiikawa-tokyo-miyage",
+      "name": "ちいかわ 東京みやげ POP UP SHOP",
+      "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "weekly",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。新しい巡回の成功日時は未記録。登録だけで取得成功・新着網羅とは扱わない。"
+    }
+  ]
+}

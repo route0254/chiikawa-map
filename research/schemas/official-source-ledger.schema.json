@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Official source patrol ledger",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "const": "./schemas/official-source-ledger.schema.json"
+    },
+    "version": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "$schema",
+    "version",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "timestamp": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "failure": {
+      "type": "object",
+      "properties": {
+        "at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "kind": {
+          "enum": [
+            "fetch_failed",
+            "parse_failed",
+            "access_limited"
+          ]
+        },
+        "httpStatus": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 100,
+          "maximum": 599
+        },
+        "detail": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "evidenceUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri",
+          "pattern": "^https?://"
+        }
+      },
+      "required": [
+        "at",
+        "kind",
+        "httpStatus",
+        "detail",
+        "evidenceUrl"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "url": {
+          "$ref": "#/$defs/url"
+        },
+        "kind": {
+          "enum": [
+            "official_index",
+            "social",
+            "venue",
+            "series"
+          ]
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "official",
+              "nagano",
+              "collaboration"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "cadence": {
+          "enum": [
+            "morning_evening",
+            "weekly"
+          ]
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "lastAttemptAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "lastSuccessfulAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "lastResult": {
+          "enum": [
+            "not_checked",
+            "success",
+            "fetch_failed",
+            "parse_failed",
+            "access_limited"
+          ]
+        },
+        "resultSummary": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "lastFailure": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/failure"
+            }
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "url",
+        "kind",
+        "scope",
+        "cadence",
+        "enabled",
+        "lastAttemptAt",
+        "lastSuccessfulAt",
+        "lastResult",
+        "resultSummary",
+        "lastFailure",
+        "note"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
