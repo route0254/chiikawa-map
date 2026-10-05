@@ -275,6 +275,18 @@
           "observedAt": "2026-10-05T19:02:26+09:00",
           "summary": "玉乃光酒造の公式発表で10月5日予約開始、11月10日発売を確認。予約開始時刻・受付終了日は未確認。",
           "recordPath": null
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/25",
+          "observedAt": "2026-10-05T10:49:30.887Z",
+          "summary": "コラボ一覧への掲載を確認。既存掲載・ID・追加日を保持し、国内実店舗未確認のため地図スポットは追加していない。",
+          "recordPath": null
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37298681079",
+          "observedAt": "2026-10-05T10:49:30.887Z",
+          "summary": "配信成功と公開URLの内容一致を確認。公開日時は配信処理の完了時刻を記録し、発表・予約・発売の日時とは区別する。",
+          "recordPath": null
         }
       ],
       "existingMatch": {
@@ -285,12 +297,12 @@
       "listingIds": [
         "tamanohikari-chiikawa-dashiwari-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "decision": "国内企業との商品コラボとして掲載対象。国内実店舗は未確認のため地図スポットを追加せず、linkedSpotIdsを空にする。",
-      "nextCheck": "掲載データ・追加日を検査して公開URLの反映を確認し、実際の配信結果で公開日時を記録する。発売日と予約商品の配送時期を混同しない。",
-      "recheckDueAt": "2026-10-06",
-      "publishedAt": null
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-05T10:47:00Z"
     }
   ]
 }
