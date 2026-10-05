@@ -1,0 +1,160 @@
+{
+  "$schema": "./schemas/publication-candidate-ledger.schema.json",
+  "version": 1,
+  "candidates": [
+    {
+      "id": "hold-chiikawa-aquarium-2023",
+      "title": "ちいかわ 水族館",
+      "kind": "history_import",
+      "targetKey": "chiikawa-aquarium-2023",
+      "sourceIds": [
+        "series-chiikawa-aquarium-2023"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": null,
+          "summary": "取扱店舗ごとの終了日がなく、水槽展示会場と商品取扱いのみの会場が混在するため",
+          "recordPath": "research/official-special-series-catalog.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "unchecked",
+        "ids": [],
+        "note": null
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "取扱店舗ごとの終了日がなく、水槽展示会場と商品取扱いのみの会場が混在するため",
+      "nextCheck": "週1回の広い調査で公式の実会場・会場別期間・既存IDを照合し、保留理由が解消したか確認する。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "hold-chiikawa-aquarium-2-2023",
+      "title": "ちいかわ 水族館 第二弾",
+      "kind": "history_import",
+      "targetKey": "chiikawa-aquarium-2-2023",
+      "sourceIds": [
+        "series-chiikawa-aquarium-2-2023"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": null,
+          "summary": "仙台のフォトスポット・ARラリーは確認できるが、会場別終了日がないため",
+          "recordPath": "research/official-special-series-catalog.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "unchecked",
+        "ids": [],
+        "note": null
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "仙台のフォトスポット・ARラリーは確認できるが、会場別終了日がないため",
+      "nextCheck": "週1回の広い調査で公式の実会場・会場別期間・既存IDを照合し、保留理由が解消したか確認する。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "hold-chiikawa-tokyo-miyage",
+      "title": "ちいかわ 東京みやげ POP UP SHOP",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": null,
+          "summary": "既存店舗での商品取扱いが中心で、多くの会場は開始日が確認できないため",
+          "recordPath": "research/official-special-series-catalog.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "unchecked",
+        "ids": [],
+        "note": null
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "既存店舗での商品取扱いが中心で、多くの会場は開始日が確認できないため",
+      "nextCheck": "週1回の広い調査で公式の実会場・会場別期間・既存IDを照合し、保留理由が解消したか確認する。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "fushimi-reservation-2026-10",
+      "title": "京都伏見店 10月10～12日の入店予約",
+      "kind": "reservation_update",
+      "targetKey": "mogumogu-fushimi-reservation-2026-10-10",
+      "sourceIds": [
+        "mogumogu-fushimi-news"
+      ],
+      "officialAnnouncedAt": "2026-10-02",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-10",
+      "eventEndsAt": "2026-10-12",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T20:00:00+09:00",
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
+          "observedAt": "2026-10-05",
+          "summary": "公式告知のタイトル・原寸画像は伏見店、本文冒頭は川越店と記載。タイトルと画像の一致を掲載判断の根拠とした。予約開始は明示された10/10来店日の前日20時から算出。対象期間は予約制適用日で、常設店の開店・閉店日ではない。",
+          "recordPath": "research/fushimi-entry-evidence-2026-10-05.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/22",
+          "observedAt": "2026-10-05",
+          "summary": "PR22の取り込みと同日の配信を確認済み。公開日は既知だが、発見日時と正確な公開時刻は未確認。",
+          "recordPath": null
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-fushimi"
+        ],
+        "note": "既存mogumogu-fushimiへの入場案内更新。同じID・常設扱い・初回追加日を維持。"
+      },
+      "listingIds": [
+        "mogumogu-fushimi"
+      ],
+      "state": "published",
+      "priority": "high",
+      "decision": "一致する公式画像とタイトルの店舗名を採用。本文冒頭の表記矛盾を根拠とともに保存し、原因は確認できないため断定しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-05"
+    }
+  ]
+}

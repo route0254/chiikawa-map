@@ -1,9 +1,12 @@
-# 公式イベント履歴の調査データ
+# 公式情報巡回・掲載判断・イベント履歴の調査データ
 
-過去の国内公式イベントを追加するための作業データです。公開サイトが直接読み込むデータではありません。公開用データは`data/official-events-archive.json`です。
+公式情報源の巡回、期限付き掲載候補・保留、過去の国内公式イベントを扱う調査データです。公開サイトが直接読み込むデータではありません。頻度・期限・指標の方針は`DATA-OPERATIONS.md`を正とします。
 
 ## ファイル
 
+- `official-source-ledger.json`: 公式情報源の朝夕/週次巡回と最終成功・取得失敗。初期URL登録は取得成功の記録ではありません。
+- `publication-candidate-ledger.json`: 発表・発見・開催・発売・予約開始・反映期限・公開、既存ID照合、根拠・保留・次の確認・再確認期限。不明な日時を補完しません。
+- `schemas/*-ledger.schema.json`: 2つの台帳のJSON Schema。`check:operations`で検査し、`report:operations`で既知値だけの指標・期限・相談対象を確認します。
 - `official-history-source.json`: 公式のPOP UP STORE・カフェ・展覧会履歴の確認済みスナップショット
 - `official-history-candidates.json`: 国内・終了済み・登録済みの判定を加えた候補一覧
 - `official-special-events-source.json`: 上記3一覧に含まれない特設ページ系列の確認済み原本
