@@ -23,19 +23,27 @@
           "observedAt": null,
           "summary": "取扱店舗ごとの終了日がなく、水槽展示会場と商品取扱いのみの会場が混在するため",
           "recordPath": "research/official-special-series-catalog.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-05",
+          "summary": "公式本文と掲載データを照合。会場ごとの確認済み事項を分離し、系列全体の未確定会期は保留を維持。",
+          "recordPath": null
         }
       ],
       "existingMatch": {
-        "status": "unchecked",
-        "ids": [],
-        "note": null
+        "status": "matched",
+        "ids": [
+          "chiikawa-aquarium-sendai-2023"
+        ],
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。仙台第一弾は既存コラボ履歴に掲載済み。当初の4/15〜4/23が記録されているが、延長後の最終会期は未確認。"
       },
       "listingIds": [],
       "state": "on_hold",
       "priority": "normal",
       "decision": "取扱店舗ごとの終了日がなく、水槽展示会場と商品取扱いのみの会場が混在するため",
-      "nextCheck": "週1回の広い調査で公式の実会場・会場別期間・既存IDを照合し、保留理由が解消したか確認する。",
-      "recheckDueAt": null,
+      "nextCheck": "仙台の延長案内の公式原文または公式ページの保存記録を確認し、5月7日への延長有無と最終会期を確定する。当初4月23日を最終日としない。商品取扱店を展示イベントと分離する。",
+      "recheckDueAt": "2026-10-12",
       "publishedAt": null
     },
     {
@@ -59,19 +67,31 @@
           "observedAt": null,
           "summary": "仙台のフォトスポット・ARラリーは確認できるが、会場別終了日がないため",
           "recordPath": "research/official-special-series-catalog.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-05",
+          "summary": "公式本文と掲載データを照合。会場ごとの確認済み事項を分離し、系列全体の未確定会期は保留を維持。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.uminomori.jp/umino/2023chiikawa2/index.html",
+          "observedAt": "2026-10-05T19:00:47+09:00",
+          "summary": "仙台イベント全体・フォトスポットの2023-06-23〜07-02を確認。ARラリーは景品がなくなり次第終了。",
+          "recordPath": null
         }
       ],
       "existingMatch": {
-        "status": "unchecked",
+        "status": "new",
         "ids": [],
-        "note": null
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。同じ会期の企画は未掲載。同会場の別企画とは区別する。"
       },
       "listingIds": [],
       "state": "on_hold",
       "priority": "normal",
-      "decision": "仙台のフォトスポット・ARラリーは確認できるが、会場別終了日がないため",
-      "nextCheck": "週1回の広い調査で公式の実会場・会場別期間・既存IDを照合し、保留理由が解消したか確認する。",
-      "recheckDueAt": null,
+      "decision": "仙台イベント・フォトスポットの会期は確認済み。他会場とARラリー単体の終了日は未確定のため系列全体の保留を維持。",
+      "nextCheck": "仙台の会場別候補で住所・座標を確認。他会場の終了日は別途確認し、ARラリー単体の終了日を7月2日と断定しない。",
+      "recheckDueAt": "2026-10-12",
       "publishedAt": null
     },
     {
@@ -95,19 +115,25 @@
           "observedAt": null,
           "summary": "既存店舗での商品取扱いが中心で、多くの会場は開始日が確認できないため",
           "recordPath": "research/official-special-series-catalog.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-05",
+          "summary": "公式本文と掲載データを照合。会場ごとの確認済み事項を分離し、系列全体の未確定会期は保留を維持。",
+          "recordPath": null
         }
       ],
       "existingMatch": {
-        "status": "unchecked",
+        "status": "new",
         "ids": [],
-        "note": null
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。同じ会期の企画は未掲載。同会場の別企画とは区別する。"
       },
       "listingIds": [],
       "state": "on_hold",
       "priority": "normal",
-      "decision": "既存店舗での商品取扱いが中心で、多くの会場は開始日が確認できないため",
-      "nextCheck": "週1回の広い調査で公式の実会場・会場別期間・既存IDを照合し、保留理由が解消したか確認する。",
-      "recheckDueAt": null,
+      "decision": "羽田T2の会期は確認済み。他会場の開始日が未確定のため系列全体の保留を維持。",
+      "nextCheck": "羽田第2ターミナル Tokyo’s Tokyoの会場別候補で住所・座標を確認。その他会場の開始日は公式原文で確認。",
+      "recheckDueAt": "2026-10-12",
       "publishedAt": null
     },
     {
@@ -155,6 +181,116 @@
       "nextCheck": null,
       "recheckDueAt": null,
       "publishedAt": "2026-10-05"
+    },
+    {
+      "id": "history-chiikawa-aquarium-2-sendai-20230623",
+      "title": "ちいかわ水族館 第二弾 仙台イベント・フォトスポット",
+      "kind": "history_import",
+      "targetKey": "chiikawa-aquarium-2-2023:sendai:2023-06-23",
+      "sourceIds": [
+        "series-chiikawa-aquarium-2-2023"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-05",
+      "eventStartsAt": "2023-06-23",
+      "eventEndsAt": "2023-07-02",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://www.uminomori.jp/umino/2023chiikawa2/index.html",
+          "observedAt": "2026-10-05T19:00:47+09:00",
+          "summary": "主催館の公式案内でイベント・フォトスポットの会期を確認。ARラリー単体は景品がなくなり次第終了のため、同じ最終日を適用しない。",
+          "recordPath": null
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。対象会場・会期の組合せは未掲載。同会場の別企画とは区別する。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "会場別の会期を確認済み。正確な住所・座標との照合を終えるまで履歴掲載を保留。",
+      "nextCheck": "会場の公式住所・位置と既存会場情報を照合し、対象会期・名称・URLで重複を再検査して掲載可否を判断する。",
+      "recheckDueAt": "2026-10-12",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+      "title": "ちいかわ 東京みやげ 羽田T2 Tokyo’s Tokyo",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:haneda-t2:2025-10-17",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-05",
+      "eventStartsAt": "2025-10-17",
+      "eventEndsAt": "2026-01-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-05T19:00:47+09:00",
+          "summary": "羽田第2ターミナル Tokyo’s Tokyoの会期を公式案内で確認。羽田第1ターミナルの別企画とは区別する。",
+          "recordPath": null
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。対象会場・会期の組合せは未掲載。同会場の別企画とは区別する。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "会場別の会期を確認済み。正確な住所・座標との照合を終えるまで履歴掲載を保留。",
+      "nextCheck": "会場の公式住所・位置と既存会場情報を照合し、対象会期・名称・URLで重複を再検査して掲載可否を判断する。",
+      "recheckDueAt": "2026-10-12",
+      "publishedAt": null
+    },
+    {
+      "id": "tamanohikari-chiikawa-dashiwari-2026",
+      "title": "玉乃光酒造×ちいかわ 日本酒とお出汁のだし割りセット",
+      "kind": "new_listing",
+      "targetKey": "collaboration:tamanohikari-chiikawa-dashiwari-2026",
+      "sourceIds": [
+        "tamanohikari-chiikawa-release"
+      ],
+      "officialAnnouncedAt": "2026-10-05T10:00:00+09:00",
+      "discoveredAt": "2026-10-05",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-10",
+      "reservationOpensAt": "2026-10-05",
+      "reflectDueAt": "2026-10-05",
+      "evidence": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+          "observedAt": "2026-10-05T19:02:26+09:00",
+          "summary": "玉乃光酒造の公式発表で10月5日予約開始、11月10日発売を確認。予約開始時刻・受付終了日は未確認。",
+          "recordPath": null
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。該当企画なし。"
+      },
+      "listingIds": [
+        "tamanohikari-chiikawa-dashiwari-2026"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "国内企業との商品コラボとして掲載対象。国内実店舗は未確認のため地図スポットを追加せず、linkedSpotIdsを空にする。",
+      "nextCheck": "掲載データ・追加日を検査して公開URLの反映を確認し、実際の配信結果で公開日時を記録する。発売日と予約商品の配送時期を混同しない。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
     }
   ]
 }
