@@ -843,6 +843,12 @@
           "observedAt": "2026-10-06T07:59:55.000+09:00",
           "summary": "別二次サイトは同グループ10/7 20時と記載し不一致。",
           "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HTiNGojaEAAJu0L?format=webp&name=small",
+          "observedAt": "2026-10-06T08:59:35.050Z",
+          "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
         }
       ],
       "existingMatch": {
@@ -887,11 +893,11 @@
         "chiikawaland-koshigaya",
         "chiikawaland-popup-2026-09-11-amu-oita"
       ],
-      "state": "on_hold",
+      "state": "rejected",
       "priority": "high",
-      "decision": "二次情報は10/9入店、10/5・6・7の20時先着という記載がある一方、別サイトは各日が1日後ろ。一次投稿/LINE主催ページ本文を取得できず日付は確定扱いしない。",
-      "nextCheck": "公式X個別投稿、公式LINE予約主催ページ、各公式店舗の入店案内画像を10/6 18時までに再確認。ログイン回避・制限迂回はしない。",
-      "recheckDueAt": "2026-10-06T18:00:00+09:00",
+      "decision": "公式画像で二次情報の日付の矛盾を解消。店舗別の受付日を明確にするため3候補に分けて反映し、この保留は統合終了。",
+      "nextCheck": null,
+      "recheckDueAt": null,
       "publishedAt": null
     },
     {
@@ -951,6 +957,155 @@
       "decision": "変更後時刻を公式本文で確認し、保留を解消。重複作業を避けるため掲載更新は mogumogu-kawagoe-hours-notice-20261017 に統合。営業時間変更自体を否定する判断ではない。",
       "nextCheck": null,
       "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-secondary-20261006-for-20261009",
+      "title": "ちいかわらんど10月9日入店：10月6日20時の条件付き二次先着",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-20261009-secondary-2026-10-06",
+      "sourceIds": [
+        "chiikawaland-reservation-x-20261009",
+        "chiikawaland-entry-image-20261009"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-09",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-06T20:00:00+09:00",
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://pbs.twimg.com/media/HTiNGojaEAAJu0L?format=webp&name=small",
+          "observedAt": "2026-10-06T08:59:35.050Z",
+          "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-nagoya",
+          "chiikawaland-kyoto",
+          "chiikawaland-osaka-umeda",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-kanazawa"
+        ],
+        "note": "現行72件と過去643件を照合。対象は常設16店舗。アミュプラザおおいたPOP UPは対象に含めない。"
+      },
+      "listingIds": [
+        "chiikawaland-nagoya",
+        "chiikawaland-kyoto",
+        "chiikawaland-osaka-umeda",
+        "chiikawaland-shinsaibashi",
+        "chiikawaland-kanazawa"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式画像で受付開始日時と対象時間・範囲を確認。空きが生じた場合のみの条件を明記し、現在の空きを保証しない。既存IDと通常時の入店区分を維持。",
+      "nextCheck": "公開データを照合し、公式の受付変更・中止などの続報を確認する。",
+      "recheckDueAt": "2026-10-06T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-secondary-20261007-for-20261009",
+      "title": "ちいかわらんど10月9日入店：10月7日20時の条件付き二次先着",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-20261009-secondary-2026-10-07",
+      "sourceIds": [
+        "chiikawaland-reservation-x-20261009",
+        "chiikawaland-entry-image-20261009"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-09",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-07T20:00:00+09:00",
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://pbs.twimg.com/media/HTiNGojaEAAJu0L?format=webp&name=small",
+          "observedAt": "2026-10-06T08:59:35.050Z",
+          "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-harajuku",
+          "chiikawaland-tokyo-station",
+          "chiikawaland-solamachi",
+          "chiikawaland-yokohama",
+          "chiikawaland-shinjuku",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya"
+        ],
+        "note": "現行72件と過去643件を照合。対象は常設16店舗。アミュプラザおおいたPOP UPは対象に含めない。"
+      },
+      "listingIds": [
+        "chiikawaland-harajuku",
+        "chiikawaland-tokyo-station",
+        "chiikawaland-solamachi",
+        "chiikawaland-yokohama",
+        "chiikawaland-shinjuku",
+        "chiikawaland-ikebukuro",
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式画像で受付開始日時と対象時間・範囲を確認。空きが生じた場合のみの条件を明記し、現在の空きを保証しない。既存IDと通常時の入店区分を維持。",
+      "nextCheck": "公開データを照合し、公式の受付変更・中止などの続報を確認する。",
+      "recheckDueAt": "2026-10-06T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-secondary-20261005-for-20261009",
+      "title": "ちいかわらんど10月9日入店：10月5日20時の条件付き二次先着",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-20261009-secondary-2026-10-05",
+      "sourceIds": [
+        "chiikawaland-reservation-x-20261009",
+        "chiikawaland-entry-image-20261009"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-09",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-05T20:00:00+09:00",
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://pbs.twimg.com/media/HTiNGojaEAAJu0L?format=webp&name=small",
+          "observedAt": "2026-10-06T08:59:35.050Z",
+          "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sapporo",
+          "chiikawaland-sendai",
+          "chiikawaland-hiroshima",
+          "chiikawaland-fukuoka"
+        ],
+        "note": "現行72件と過去643件を照合。対象は常設16店舗。アミュプラザおおいたPOP UPは対象に含めない。"
+      },
+      "listingIds": [
+        "chiikawaland-sapporo",
+        "chiikawaland-sendai",
+        "chiikawaland-hiroshima",
+        "chiikawaland-fukuoka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式画像で受付開始日時と対象時間・範囲を確認。空きが生じた場合のみの条件を明記し、現在の空きを保証しない。既存IDと通常時の入店区分を維持。",
+      "nextCheck": "公開データを照合し、公式の受付変更・中止などの続報を確認する。",
+      "recheckDueAt": "2026-10-06T19:00:00+09:00",
       "publishedAt": null
     }
   ]
