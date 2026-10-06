@@ -296,5 +296,167 @@
     "nextReviewDueAt": "2026-10-13",
     "scope": "公式総合・系列一覧に加え、店舗・施設・企業の一次告知、終了候補、入場案内、保留と取得失敗を確認。",
     "coverageNote": "確認した情報源の範囲。画像のみの告知や取得制限のあるSNSを含む全情報の網羅を保証しない。"
+  },
+  "publication": {
+    "mergeCommit": "02348d57b2f71a31916e15f32262e7fd71a6208e",
+    "runId": 37439688958,
+    "attempt": 2,
+    "files": [
+      {
+        "file": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "e1974b12d50c3597c815795ea870b82d6cf9d5b90f917733e8ab4f9407d19715",
+        "observedAt": "2026-10-06T09:36:31.703+00:00"
+      },
+      {
+        "file": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "580c740a9d085668395b9fd3b3ca3e3ae49de62d628d7dd06023d91c2633fc53",
+        "observedAt": "2026-10-06T09:36:31.918+00:00"
+      },
+      {
+        "file": "data/site-meta.json",
+        "url": "https://chiikatsu-map.com/data/site-meta.json?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "b6d8d6cb0c8bdffc9c4767cfc547d64357e9d3a4ce66df14681030757bb0649c",
+        "observedAt": "2026-10-06T09:36:31.670+00:00"
+      },
+      {
+        "file": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "b6d22b3eeef1584756458dc6e31536fac3ef1ed4bb45740d94a9fb5d67286f93",
+        "observedAt": "2026-10-06T09:36:31.592+00:00"
+      },
+      {
+        "file": "index.html",
+        "url": "https://chiikatsu-map.com/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "48a784defcb64b8d904f52ec0f46e9644751abc650e47db667f9b4c81079c1c7",
+        "observedAt": "2026-10-06T09:36:39.241+00:00"
+      },
+      {
+        "file": "official.html",
+        "url": "https://chiikatsu-map.com/official.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "8a0118c28f49467774642797920f269192d9a9af41ed2e5b072e8fdf83ca3e04",
+        "observedAt": "2026-10-06T09:36:39.268+00:00"
+      },
+      {
+        "file": "sitemap.xml",
+        "url": "https://chiikatsu-map.com/sitemap.xml?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "b0bc36947756ebd9dca7e3d47f2588db25489580db60d0389ab39a55c7ceaf06",
+        "observedAt": "2026-10-06T09:36:39.270+00:00"
+      },
+      {
+        "file": "spot/chiikawa-bakery-osaka/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-osaka/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "50162af763da529925fc744de3648dcd6a1f54c9fbbaeaee64d45ae9491e0799",
+        "observedAt": "2026-10-06T09:36:39.255+00:00"
+      },
+      {
+        "file": "spot/mogumogu-kawagoe/index.html",
+        "url": "https://chiikatsu-map.com/spot/mogumogu-kawagoe/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "a69c60155eca14d93d444c08cfa531a1e1aab6354403b2a80bf9cb82a1ff8248",
+        "observedAt": "2026-10-06T09:36:47.640+00:00"
+      },
+      {
+        "file": "spot/chiikawa-bakery-tokyo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-tokyo/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "9cba44556e2166f574923c3e2f28d8f5ab9ceaf75bd7522375a87b0397988d42",
+        "observedAt": "2026-10-06T09:36:47.681+00:00"
+      },
+      {
+        "file": "spot/popup-centrair/index.html",
+        "url": "https://chiikatsu-map.com/spot/popup-centrair/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "27d67e18d2b985236974eeadc35e0e160c6aa472835da3421982db6ff3843f2c",
+        "observedAt": "2026-10-06T09:36:47.715+00:00"
+      },
+      {
+        "file": "spot/magical-popup-2026-09-11-kochi-tsutaya/index.html",
+        "url": "https://chiikatsu-map.com/spot/magical-popup-2026-09-11-kochi-tsutaya/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "ddb533c29982db91193a911193f0d4be13f693e6a0b5c221691345e99b96b1ad",
+        "observedAt": "2026-10-06T09:36:47.563+00:00"
+      },
+      {
+        "file": "spot/popup-2026-09-18-aeon-okazaki/index.html",
+        "url": "https://chiikatsu-map.com/spot/popup-2026-09-18-aeon-okazaki/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "34603ded3c22d298ccfdfa7dc80f3734eb83dce2ddb7303724cf02762bc888a6",
+        "observedAt": "2026-10-06T09:36:54.847+00:00"
+      },
+      {
+        "file": "spot/popup-2026-09-18-aeon-wakayama/index.html",
+        "url": "https://chiikatsu-map.com/spot/popup-2026-09-18-aeon-wakayama/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "97dc3add53d9f62a49d52d8b34ec80d6baab43162d57621c3b5a8bca814a2620",
+        "observedAt": "2026-10-06T09:36:54.840+00:00"
+      },
+      {
+        "file": "spot/nagano-market-popup-2026-09-18-a-wakayama/index.html",
+        "url": "https://chiikatsu-map.com/spot/nagano-market-popup-2026-09-18-a-wakayama/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "72619b98753f4650be0a0125a26637714e34b15b74d370464546a4443ed1ca58",
+        "observedAt": "2026-10-06T09:36:54.810+00:00"
+      },
+      {
+        "file": "spot/popup-2026-10-16-fukuoka-mitsukoshi/index.html",
+        "url": "https://chiikatsu-map.com/spot/popup-2026-10-16-fukuoka-mitsukoshi/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "f3915100728a90b33a8ab725af6652c20a23cea53093351ee14a1df90691546b",
+        "observedAt": "2026-10-06T09:36:54.839+00:00"
+      },
+      {
+        "file": "spot/nagano-market-popup-2026-10-09-yokohama-skybuilding/index.html",
+        "url": "https://chiikatsu-map.com/spot/nagano-market-popup-2026-10-09-yokohama-skybuilding/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "0da66ff574d4b142aa78a07e5d7e7feb47fb7b61caa9886f20cc144acf888799",
+        "observedAt": "2026-10-06T09:37:02.166+00:00"
+      },
+      {
+        "file": "spot/chiikawa-park-store-osaka/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-park-store-osaka/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "0fb2caa931b836e23398efbab16556a2dfe5ca18d6563e61fb2d8540d36ce2d2",
+        "observedAt": "2026-10-06T09:37:02.192+00:00"
+      },
+      {
+        "file": "spot/nagano-market-umeda/index.html",
+        "url": "https://chiikatsu-map.com/spot/nagano-market-umeda/index.html?publication=02348d57b2f7",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "bcac744945ae54e088338e09acc5a2ea9ee6f7a57f26094dbb0c5e284f3caf6e",
+        "observedAt": "2026-10-06T09:37:02.149+00:00"
+      }
+    ],
+    "publishedAt": "2026-10-06T09:35:27Z",
+    "verificationCompletedAt": "2026-10-06T09:37:02.192+00:00",
+    "note": "配信step完了時刻と公開ファイル照合の時刻を区別。未公開らんど更新を含まない。"
   }
 }
