@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "reviewDate": "2026-10-06",
+  "recordedAt": "2026-10-06T23:12:36.827Z",
+  "scope": "取得できた公式本文・一覧と既存掲載の比較。全SNS・画像・予約空き・在庫の網羅確認は含まない。",
+  "archiveMove": {
+    "id": "popup-2026-09-24-senboku-takashimaya",
+    "startDate": "2026-09-24",
+    "endDate": "2026-10-06",
+    "lastDayClosesAtLocal": "15:00",
+    "timeZone": "Asia/Tokyo",
+    "sources": [
+      "https://chiikawa-info.jp/p26/pus_snbk/index.html",
+      "https://www.takashimaya.co.jp/senboku/topics/detail.html?category=&id=1985"
+    ],
+    "checkedDateJapan": "2026-10-07"
+  },
+  "previousDeployment": {
+    "runId": 37449524331,
+    "url": "https://github.com/route0254/chiikawa-map/actions/runs/37449524331",
+    "main": "8941ebe28be3a7c732546ddcdede634ab35db0b4",
+    "status": "completed",
+    "conclusion": "success",
+    "deployStepCompletedAt": "2026-10-06T10:25:08Z",
+    "initialPublicEntityConfirmedAt": null,
+    "note": "配信成功と今回の公開観測を区別する。3候補の初回公開確認日時は不明。"
+  },
+  "publicObservations": {
+    "official": {
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "observedAtOriginal": "2026-10-06T22:58:08.142314Z",
+      "ledgerObservedAt": "2026-10-06T22:58:08.142Z"
+    },
+    "collaborations": {
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "observedAtOriginal": "2026-10-06T22:58:20.510001Z",
+      "ledgerObservedAt": "2026-10-06T22:58:20.510Z"
+    }
+  },
+  "observationPrecision": "原観測時刻はマイクロ秒表記のまま保存。台帳observedAtは既存schemaに合わせミリ秒まで切り落として記録し、初回公開日時として使わない。",
+  "nativeBaselineVerification": {
+    "stage": "baseline",
+    "main": "8941ebe28be3a7c732546ddcdede634ab35db0b4",
+    "resourceCount": 3,
+    "results": [
+      {
+        "file": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json?verification=8941ebe28be3",
+        "status": 200,
+        "observedAt": "2026-10-06T23:10:02.993Z",
+        "matchesMain": true,
+        "gitBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235",
+        "expectedBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235",
+        "attempts": [
+          {
+            "file": "data/collaborations-current.json",
+            "url": "https://chiikatsu-map.com/data/collaborations-current.json?verification=8941ebe28be3",
+            "status": 200,
+            "observedAt": "2026-10-06T23:10:02.993Z",
+            "matchesMain": true,
+            "gitBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235",
+            "expectedBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235"
+          }
+        ]
+      },
+      {
+        "file": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json?verification=8941ebe28be3",
+        "status": 200,
+        "observedAt": "2026-10-06T23:10:02.999Z",
+        "matchesMain": true,
+        "gitBlobSHA": "4e1de5147e052284a894f028d2353684ee72505a",
+        "expectedBlobSHA": "4e1de5147e052284a894f028d2353684ee72505a",
+        "attempts": [
+          {
+            "file": "data/official-events-archive.json",
+            "url": "https://chiikatsu-map.com/data/official-events-archive.json?verification=8941ebe28be3",
+            "status": 200,
+            "observedAt": "2026-10-06T23:10:02.999Z",
+            "matchesMain": true,
+            "gitBlobSHA": "4e1de5147e052284a894f028d2353684ee72505a",
+            "expectedBlobSHA": "4e1de5147e052284a894f028d2353684ee72505a"
+          }
+        ]
+      },
+      {
+        "file": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json?verification=8941ebe28be3",
+        "status": 200,
+        "observedAt": "2026-10-06T23:10:02.988Z",
+        "matchesMain": true,
+        "gitBlobSHA": "f03efbc777e1a98b7085e20d8134e689e2dd92f5",
+        "expectedBlobSHA": "f03efbc777e1a98b7085e20d8134e689e2dd92f5",
+        "attempts": [
+          {
+            "file": "data/official-spots.json",
+            "url": "https://chiikatsu-map.com/data/official-spots.json?verification=8941ebe28be3",
+            "status": 200,
+            "observedAt": "2026-10-06T23:10:02.988Z",
+            "matchesMain": true,
+            "gitBlobSHA": "f03efbc777e1a98b7085e20d8134e689e2dd92f5",
+            "expectedBlobSHA": "f03efbc777e1a98b7085e20d8134e689e2dd92f5"
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "firstMatchingObservationAt": "2026-10-06T23:10:02.988Z",
+    "completedAt": "2026-10-06T23:10:03.016Z",
+    "accessDenied": false
+  },
+  "sourceAttempts": [
+    {
+      "id": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "attemptCompletedAt": "2026-10-06T22:56:49Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:57:43Z",
+      "successfulAt": "2026-10-06T22:56:49Z",
+      "summary": "今回取得した公式総合ページ本文・掲載リンクの範囲で既存掲載との対応を確認。確認範囲内で新たな内容差はなく、全個別ページ・画像・SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "attemptCompletedAt": "2026-10-06T22:56:49Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:10Z",
+      "successfulAt": "2026-10-06T22:56:49Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "nagano-official-index",
+      "url": "https://nagano-info.jp/",
+      "attemptCompletedAt": "2026-10-06T22:56:49Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:57:43Z",
+      "successfulAt": "2026-10-06T22:56:49Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "attemptCompletedAt": "2026-10-06T22:56:49Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:10Z",
+      "successfulAt": "2026-10-06T22:56:49Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-cafe-list",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "attemptCompletedAt": "2026-10-06T22:57:29Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:10Z",
+      "successfulAt": "2026-10-06T22:57:29Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "attemptCompletedAt": "2026-10-06T22:57:29Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T10:01:58.730Z",
+      "successfulAt": "2026-10-06T22:57:29Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "attemptCompletedAt": "2026-10-06T22:57:29Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T10:01:58.730Z",
+      "successfulAt": "2026-10-06T22:57:29Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "attemptCompletedAt": "2026-10-06T22:57:29Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T10:01:58.730Z",
+      "successfulAt": "2026-10-06T22:57:29Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "attemptCompletedAt": "2026-10-06T22:57:18Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:59:42Z",
+      "successfulAt": "2026-10-06T22:57:18Z",
+      "summary": "今回取得した公式本文の就航日・初便案内は既存掲載と対応し、確認範囲内で内容差なし。別URLのキャンペーン詳細は今回取得できず、全企画の再検証とはしない。",
+      "failure": null
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "attemptCompletedAt": "2026-10-06T22:57:18Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:53Z",
+      "successfulAt": "2026-10-06T22:57:18Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "attemptCompletedAt": "2026-10-06T22:58:51Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T10:01:34.057Z",
+      "successfulAt": "2026-10-06T22:58:51Z",
+      "summary": "公式企業発表の取得本文は既掲載の予約開始・発売案内と対応し、確認範囲内で内容差なし。公式ECの年齢確認先、在庫、配送予定は確認対象に含めない。",
+      "failure": null
+    },
+    {
+      "id": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:37Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:37Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した店舗ページ本文は既存掲載と対応し、確認範囲内で内容差なし。10月17日の営業時間に関する別記事は取得制限のため未確認。",
+      "failure": null
+    },
+    {
+      "id": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:37Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:58:53Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T10:03:55.940Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した公式本文の土日祝先着予約案内は既存掲載と対応し、確認範囲内で内容差なし。現在の予約空きは未確認。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T09:57:43Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "lucua-south-opening",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "success",
+      "previousSuccessfulAt": "2026-10-06T10:02:57.527Z",
+      "successfulAt": "2026-10-06T22:58:46Z",
+      "summary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "failure": null
+    },
+    {
+      "id": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "attemptCompletedAt": "2026-10-06T22:58:07Z",
+      "result": "access_limited",
+      "previousSuccessfulAt": null,
+      "successfulAt": null,
+      "summary": "HTTP 403で本文を取得できず。今回の新着有無は未確認とし、前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:07Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP 403で本文を取得できず。今回の新着有無は未確認とし、前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://x.com/chiikawa_kouhou"
+      }
+    },
+    {
+      "id": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "attemptCompletedAt": "2026-10-06T22:58:07Z",
+      "result": "access_limited",
+      "previousSuccessfulAt": null,
+      "successfulAt": null,
+      "summary": "HTTP 403で本文を取得できず。今回の新着有無は未確認とし、前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:07Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP 403で本文を取得できず。今回の新着有無は未確認とし、前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://x.com/ngntrtr"
+      }
+    },
+    {
+      "id": "chiikawa-publicity-instagram",
+      "url": "https://www.instagram.com/chiikawa_kouhou/",
+      "attemptCompletedAt": "2026-10-06T22:58:07Z",
+      "result": "fetch_failed",
+      "previousSuccessfulAt": null,
+      "successfulAt": null,
+      "summary": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:07Z",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://www.instagram.com/chiikawa_kouhou/"
+      }
+    },
+    {
+      "id": "nagano-yokohama-entry",
+      "url": "https://nagano-info.jp/popupshop/yokohama/index.html",
+      "attemptCompletedAt": "2026-10-06T22:58:20Z",
+      "result": "fetch_failed",
+      "previousSuccessfulAt": "2026-10-06T08:02:21.752+09:00",
+      "successfulAt": "2026-10-06T08:02:21.752+09:00",
+      "summary": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:20Z",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://nagano-info.jp/popupshop/yokohama/index.html"
+      }
+    },
+    {
+      "id": "fukuoka-sushi-official",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "attemptCompletedAt": "2026-10-06T22:58:20Z",
+      "result": "fetch_failed",
+      "previousSuccessfulAt": "2026-10-06T08:02:01.779+09:00",
+      "successfulAt": "2026-10-06T08:02:01.779+09:00",
+      "summary": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:20Z",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html"
+      }
+    },
+    {
+      "id": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "attemptCompletedAt": "2026-10-06T22:58:46Z",
+      "result": "access_limited",
+      "previousSuccessfulAt": null,
+      "successfulAt": null,
+      "summary": "HTTP 403で本文を取得できず。今回の新着有無は未確認とし、前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:46Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP 403で本文を取得できず。今回の新着有無は未確認とし、前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/"
+      }
+    },
+    {
+      "id": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "attemptCompletedAt": "2026-10-06T22:58:51Z",
+      "result": "fetch_failed",
+      "previousSuccessfulAt": "2026-10-06T10:01:45.041Z",
+      "successfulAt": "2026-10-06T10:01:45.041Z",
+      "summary": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:58:51Z",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "今回の本文取得に失敗。HTTPコードは不明、新着有無は未確認。前回成功時刻と既存掲載の根拠を保持する。",
+        "evidenceUrl": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+      }
+    },
+    {
+      "id": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "attemptCompletedAt": "2026-10-06T22:57:18Z",
+      "result": "parse_failed",
+      "previousSuccessfulAt": "2026-10-06T10:03:55.940Z",
+      "successfulAt": "2026-10-06T10:03:55.940Z",
+      "summary": "公式本文の取得・既存掲載との対応確認は成功。特典配布終了を示す告知画像の内容照合は未完了のため、全内容の確認成功とはしない。前回成功時刻と既存の画像根拠を保持する。",
+      "failure": {
+        "at": "2026-10-06T22:57:18Z",
+        "kind": "parse_failed",
+        "httpStatus": null,
+        "detail": "本文は取得できたが告知画像の再確認ができず、内容照合が一部未完了。画像の取得/解析が未完了となった原因・HTTPコードは不明。",
+        "evidenceUrl": "https://recommend.jr-central.co.jp/tsutsuurauratabi/"
+      }
+    }
+  ],
+  "broadReview": {
+    "completedDate": "2026-10-06",
+    "nextDueDate": "2026-10-13",
+    "note": "情報源台帳の登録範囲を網羅リストとは扱わない。"
+  },
+  "morningRunObservation": {
+    "asOf": "2026-10-06T23:01:00Z",
+    "found": false,
+    "note": "一覧で未発見であることだけを記録し、定期run停止とは断定しない。"
+  },
+  "heldCandidates": [
+    {
+      "id": "hold-chiikawa-aquarium-2023",
+      "recheckDueAt": "2026-10-12"
+    },
+    {
+      "id": "hold-chiikawa-aquarium-2-2023",
+      "recheckDueAt": "2026-10-12"
+    },
+    {
+      "id": "hold-chiikawa-tokyo-miyage",
+      "recheckDueAt": "2026-10-12"
+    },
+    {
+      "id": "history-chiikawa-aquarium-2-sendai-20230623",
+      "recheckDueAt": "2026-10-12"
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+      "recheckDueAt": "2026-10-12"
+    }
+  ],
+  "publicationSynchronization": "今回の修正配信runと初回公開照合結果はその場で別途保存し、記録だけのPRは作成しない。"
+}
