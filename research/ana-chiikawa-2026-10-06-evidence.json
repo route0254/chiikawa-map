@@ -1,0 +1,64 @@
+{
+  "officialAnnouncedAt": "2026-10-06",
+  "discoveredAt": "2026-10-06T09:59:42Z",
+  "evidence": [
+    {
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "observedAt": "2026-10-06T09:59:42Z",
+      "summary": "公式お知らせは10月6日付。10月19日就航予定、ANA661羽田→長崎8:15、ANA664長崎→羽田11:00予定を確認。発表時刻と企画終了日は不明。",
+      "recordPath": "research/ana-chiikawa-2026-10-06-evidence.json"
+    },
+    {
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "observedAt": "2026-10-06T10:01:45.041Z",
+      "summary": "第1弾登録10月19日10時～12月31日23:59、ANAアプリ/AMCログイン/MYキャンペーン登録、搭乗不要。第2弾2月1日～4月30日対象搭乗は事前の第1弾達成、対象運賃、1区間以上、ANAマイル積算が必要。コードシェアはNH便名のみ。",
+      "recordPath": "research/ana-chiikawa-2026-10-06-evidence.json"
+    }
+  ],
+  "listingId": "ana-chiikawa-jet-2026",
+  "flightPlan": {
+    "launchDate": "2026-10-19",
+    "firstFlights": [
+      {
+        "flight": "ANA661",
+        "from": "羽田",
+        "to": "長崎",
+        "departureLocalTime": "08:15",
+        "status": "planned"
+      },
+      {
+        "flight": "ANA664",
+        "from": "長崎",
+        "to": "羽田",
+        "departureLocalTime": "11:00",
+        "status": "planned"
+      }
+    ],
+    "laterRouteNote": "路線固定なし。当日の運航状況により決定。",
+    "endDate": null
+  },
+  "campaign": {
+    "firstRegistrationOpensAt": "2026-10-19T10:00:00+09:00",
+    "firstRegistrationClosesAt": "2026-12-31T23:59:00+09:00",
+    "firstPrizeWinners": 500,
+    "firstRequiresFlight": false,
+    "secondFlightPeriod": {
+      "startDate": "2027-02-01",
+      "endDate": "2027-04-30"
+    },
+    "secondPrizeWinners": 100,
+    "secondRequiresFirstParticipation": true,
+    "requirements": [
+      "ANAアプリのダウンロード・AMC会員ログイン・MYキャンペーン参加登録",
+      "第2弾は対象国内線運賃で1区間以上搭乗しANAへフライトマイルを積算",
+      "コードシェアはANA（NH）便名で予約・搭乗",
+      "賞品送付先は日本国内限定"
+    ]
+  },
+  "unknowns": [
+    "発表時刻",
+    "就航企画の終了日",
+    "当日の実運航・機材変更",
+    "コラボグッズの発売詳細"
+  ]
+}

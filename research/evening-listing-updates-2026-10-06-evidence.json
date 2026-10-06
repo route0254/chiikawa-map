@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-06",
+  "records": [
+    {
+      "candidateId": "chiikawa-yaki-nagoya-weekend-reservation-20261006",
+      "evidence": {
+        "url": "https://www.chiikawa-yaki.com/",
+        "observedAt": "2026-10-06T10:03:55.940Z",
+        "summary": "平日はフリー、土日祝は来店前日午前10時からの先着予約。掲載されている直近日10月10日から、初回受付10月9日10時を公式規則に基づき算出。現在の予約空きは未確認。",
+        "recordPath": "research/evening-listing-updates-2026-10-06-evidence.json"
+      },
+      "officialAnnouncedAt": null
+    },
+    {
+      "candidateId": "jr-central-novelty-distribution-update-20261006",
+      "evidence": {
+        "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+        "observedAt": "2026-10-06T10:03:55.940Z",
+        "summary": "TOKYO Station・梅田HEP FIVEはノベルティと引換証の配布終了。他の欠品時は乗車証明提示で引換証を受領し、案内に従い後日配送を申請。企画全体10月31日までは維持。",
+        "recordPath": "research/evening-listing-updates-2026-10-06-evidence.json"
+      },
+      "officialAnnouncedAt": null
+    }
+  ],
+  "sourceReview": {
+    "completedAt": "2026-10-06T10:06:12.674Z",
+    "updatedSourceIds": [
+      "chiikawa-official-index",
+      "nagano-official-index",
+      "chiikawa-popup-list",
+      "chiikawa-cafe-list",
+      "nagano-popup-list",
+      "chiikawa-exhibition-list",
+      "nagano-exhibition-list",
+      "nagano-aquarium-list",
+      "mogumogu-fushimi-news",
+      "mogumogu-kawagoe-news",
+      "mogumogu-otaru-news",
+      "chiikawa-park-news",
+      "chiikawa-bakery-reservation",
+      "tokyo-banana-chiikawa",
+      "lucua-south-opening",
+      "series-chiikawa-aquarium-2023",
+      "series-chiikawa-aquarium-2-2023",
+      "series-chiikawa-tokyo-miyage",
+      "tamanohikari-chiikawa-release",
+      "nagano-yokohama-entry",
+      "fukuoka-sushi-official",
+      "mogumogu-kawagoe-hours-20261017",
+      "chiikawa-author-x",
+      "chiikawa-publicity-x",
+      "nagano-author-x",
+      "chiikawaland-reservation-x-20261009",
+      "chiikawa-author-instagram",
+      "chiikawa-publicity-instagram",
+      "nagano-author-instagram",
+      "chiikawa-nagano-reservation-line"
+    ],
+    "skipped": [],
+    "coverageNote": "記録した取得本文の範囲。画像のみの告知、公式SNSやアクセス制限で取得できなかった情報の網羅を保証しない。失敗時は過去の成功時刻を保持。"
+  }
+}

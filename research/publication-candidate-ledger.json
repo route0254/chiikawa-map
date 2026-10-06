@@ -1053,6 +1053,12 @@
           "observedAt": "2026-10-06T08:59:35.050Z",
           "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
           "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37445408920",
+          "observedAt": "2026-10-06T09:50:32.375+00:00",
+          "summary": "PR28の配信成功後、16店の個別ページと公開JSON/台帳等22ファイルがHTTP200かつmerge e736280bと完全一致。公開日時は配信step完了時刻を記録。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1073,12 +1079,12 @@
         "chiikawaland-shinsaibashi",
         "chiikawaland-kanazawa"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "公式画像で受付開始日時と対象時間・範囲を確認。空きが生じた場合のみの条件を明記し、現在の空きを保証しない。既存IDと通常時の入店区分を維持。",
-      "nextCheck": "公開データを照合し、公式の受付変更・中止などの続報を確認する。",
-      "recheckDueAt": "2026-10-06T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-06T09:48:17Z"
     },
     {
       "id": "chiikawaland-secondary-20261007-for-20261009",
@@ -1101,6 +1107,12 @@
           "url": "https://pbs.twimg.com/media/HTiNGojaEAAJu0L?format=webp&name=small",
           "observedAt": "2026-10-06T08:59:35.050Z",
           "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37445408920",
+          "observedAt": "2026-10-06T09:50:32.375+00:00",
+          "summary": "PR28の配信成功後、16店の個別ページと公開JSON/台帳等22ファイルがHTTP200かつmerge e736280bと完全一致。公開日時は配信step完了時刻を記録。",
           "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
         }
       ],
@@ -1126,12 +1138,12 @@
         "chiikawaland-ikebukuro",
         "chiikawaland-koshigaya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "公式画像で受付開始日時と対象時間・範囲を確認。空きが生じた場合のみの条件を明記し、現在の空きを保証しない。既存IDと通常時の入店区分を維持。",
-      "nextCheck": "公開データを照合し、公式の受付変更・中止などの続報を確認する。",
-      "recheckDueAt": "2026-10-06T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-06T09:48:17Z"
     },
     {
       "id": "chiikawaland-secondary-20261005-for-20261009",
@@ -1155,6 +1167,12 @@
           "observedAt": "2026-10-06T08:59:35.050Z",
           "summary": "17:50（日本時間）に公式画像で条件を確認。対象日は10月9日。空きが出た場合のみ、4店10月5日、5店10月6日、7店10月7日の各20時に二次先着。TOKYO Station・新宿・池袋は14時まで、他13店は終日。",
           "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37445408920",
+          "observedAt": "2026-10-06T09:50:32.375+00:00",
+          "summary": "PR28の配信成功後、16店の個別ページと公開JSON/台帳等22ファイルがHTTP200かつmerge e736280bと完全一致。公開日時は配信step完了時刻を記録。",
+          "recordPath": "research/chiikawaland-entry-2026-10-09-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1173,11 +1191,138 @@
         "chiikawaland-hiroshima",
         "chiikawaland-fukuoka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "公式画像で受付開始日時と対象時間・範囲を確認。空きが生じた場合のみの条件を明記し、現在の空きを保証しない。既存IDと通常時の入店区分を維持。",
-      "nextCheck": "公開データを照合し、公式の受付変更・中止などの続報を確認する。",
-      "recheckDueAt": "2026-10-06T19:00:00+09:00",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-06T09:48:17Z"
+    },
+    {
+      "id": "ana-chiikawa-first-flight-20261019-update",
+      "title": "ちいかわジェット就航日・初便・就航記念キャンペーン",
+      "kind": "listing_update",
+      "targetKey": "collaboration:ana-chiikawa-jet-2026:october6-update",
+      "sourceIds": [
+        "ana-chiikawa-jet",
+        "ana-chiikawa-campaign"
+      ],
+      "officialAnnouncedAt": "2026-10-06",
+      "discoveredAt": "2026-10-06T09:59:42Z",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+          "observedAt": "2026-10-06T09:59:42Z",
+          "summary": "公式お知らせは10月6日付。10月19日就航予定、ANA661羽田→長崎8:15、ANA664長崎→羽田11:00予定を確認。発表時刻と企画終了日は不明。",
+          "recordPath": "research/ana-chiikawa-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+          "observedAt": "2026-10-06T10:01:45.041Z",
+          "summary": "第1弾登録10月19日10時～12月31日23:59、ANAアプリ/AMCログイン/MYキャンペーン登録、搭乗不要。第2弾2月1日～4月30日対象搭乗は事前の第1弾達成、対象運賃、1区間以上、ANAマイル積算が必要。コードシェアはNH便名のみ。",
+          "recordPath": "research/ana-chiikawa-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "現在コラボ21件・過去52件と公式スポット72件・過去643件を照合。既存ANAコラボ1件を更新し、新規ID・空港ピンを追加しない。"
+      },
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式で確定した日付と予定便を更新。同じ企画のキャンペーン期間を既存periodsへ分離して記載し、条件を省略しない。",
+      "nextCheck": "公開内容を照合。初便やキャンペーンの変更は公式続報を確認する。",
+      "recheckDueAt": "2026-10-19",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-yaki-nagoya-weekend-reservation-20261006",
+      "title": "ちいかわ焼き名古屋 土日祝の先着予約案内",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-yaki-nagoya:entry-or-benefit-20261006",
+      "sourceIds": [
+        "chiikawa-yaki-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06T10:01:58Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T10:00:00+09:00",
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://www.chiikawa-yaki.com/",
+          "observedAt": "2026-10-06T10:03:55.940Z",
+          "summary": "平日はフリー、土日祝は来店前日午前10時からの先着予約。掲載されている直近日10月10日から、初回受付10月9日10時を公式規則に基づき算出。現在の予約空きは未確認。",
+          "recordPath": "research/evening-listing-updates-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-yaki-nagoya"
+        ],
+        "note": "既存ID・名称・公式URLを照合し既存掲載を訂正/補足。新規IDやピンを作成しない。"
+      },
+      "listingIds": [
+        "chiikawa-yaki-nagoya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式本文で確認した条件を既存掲載へ反映。日時不明は推測しない。",
+      "nextCheck": "公開内容と、予約/特典配布状況の公式続報を確認。",
+      "recheckDueAt": "2026-10-09",
+      "publishedAt": null
+    },
+    {
+      "id": "jr-central-novelty-distribution-update-20261006",
+      "title": "JR東海コラボ 2拠点の特典配布終了",
+      "kind": "listing_update",
+      "targetKey": "jr-central-tsutsuurauratabi-2026:entry-or-benefit-20261006",
+      "sourceIds": [
+        "jr-central-tsutsuurauratabi"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06T10:01:58Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-06T10:03:55.940Z",
+          "summary": "TOKYO Station・梅田HEP FIVEはノベルティと引換証の配布終了。他の欠品時は乗車証明提示で引換証を受領し、案内に従い後日配送を申請。企画全体10月31日までは維持。",
+          "recordPath": "research/evening-listing-updates-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "jr-central-tsutsuurauratabi-2026"
+        ],
+        "note": "既存ID・名称・公式URLを照合し既存掲載を訂正/補足。新規IDやピンを作成しない。"
+      },
+      "listingIds": [
+        "jr-central-tsutsuurauratabi-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式本文で確認した条件を既存掲載へ反映。日時不明は推測しない。",
+      "nextCheck": "公開内容と、予約/特典配布状況の公式続報を確認。",
+      "recheckDueAt": "2026-10-09",
       "publishedAt": null
     }
   ]
