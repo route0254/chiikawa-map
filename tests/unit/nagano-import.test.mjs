@@ -33,7 +33,7 @@ test("原本に未掲載の横浜も公開ID・詳細住所・入場区分を保
   assert.equal(result.id, yokohama.id);
   assert.equal(result.address, yokohama.address);
   assert.equal(result.defaultEntryType, "other");
-  assert.equal(result.checkedAt, "2026-10-01");
+  assert.equal(result.checkedAt, yokohama.checkedAt);
 });
 
 test("5つの過去開催の階数・催場情報を短い一般住所で上書きしない", () => {
