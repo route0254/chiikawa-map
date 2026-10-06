@@ -1226,6 +1226,18 @@
           "observedAt": "2026-10-06T10:01:45.041Z",
           "summary": "第1弾登録10月19日10時～12月31日23:59、ANAアプリ/AMCログイン/MYキャンペーン登録、搭乗不要。第2弾2月1日～4月30日対象搭乗は事前の第1弾達成、対象運賃、1区間以上、ANAマイル積算が必要。コードシェアはNH便名のみ。",
           "recordPath": "research/ana-chiikawa-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37449524331",
+          "observedAt": "2026-10-06T22:58:20.510Z",
+          "summary": "既存掲載を含む配信runの成功を確認。deploy step完了は2026-10-06T10:25:08Zだが、当時の初回公開実体確認日時は不明のためpublishedAtはnullを保持する。",
+          "recordPath": "research/daily-review-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-10-06T22:58:20.510Z",
+          "summary": "今回の公開JSONのHTTP 200とmain 8941ebe2のblob一致を確認。既存IDの掲載を確認し再掲載しない。この観測日時を初回公開時刻とは扱わず、原時刻は証拠ファイルに保存する。",
+          "recordPath": "research/daily-review-2026-10-06-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1238,10 +1250,10 @@
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式で確定した日付と予定便を更新。同じ企画のキャンペーン期間を既存periodsへ分離して記載し、条件を省略しない。",
-      "nextCheck": "公開内容を照合。初便やキャンペーンの変更は公式続報を確認する。",
+      "nextCheck": "初便やキャンペーンの変更は公式続報を確認する。",
       "recheckDueAt": "2026-10-19",
       "publishedAt": null
     },
@@ -1266,6 +1278,18 @@
           "observedAt": "2026-10-06T10:03:55.940Z",
           "summary": "平日はフリー、土日祝は来店前日午前10時からの先着予約。掲載されている直近日10月10日から、初回受付10月9日10時を公式規則に基づき算出。現在の予約空きは未確認。",
           "recordPath": "research/evening-listing-updates-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37449524331",
+          "observedAt": "2026-10-06T22:58:08.142Z",
+          "summary": "既存掲載を含む配信runの成功を確認。deploy step完了は2026-10-06T10:25:08Zだが、当時の初回公開実体確認日時は不明のためpublishedAtはnullを保持する。",
+          "recordPath": "research/daily-review-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-06T22:58:08.142Z",
+          "summary": "今回の公開JSONのHTTP 200とmain 8941ebe2のblob一致を確認。既存IDの掲載を確認し再掲載しない。この観測日時を初回公開時刻とは扱わず、原時刻は証拠ファイルに保存する。",
+          "recordPath": "research/daily-review-2026-10-06-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1278,10 +1302,10 @@
       "listingIds": [
         "chiikawa-yaki-nagoya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "公式本文で確認した条件を既存掲載へ反映。日時不明は推測しない。",
-      "nextCheck": "公開内容と、予約/特典配布状況の公式続報を確認。",
+      "nextCheck": "土日祝の予約方法・受付状況について公式続報を確認する。",
       "recheckDueAt": "2026-10-09",
       "publishedAt": null
     },
@@ -1306,6 +1330,18 @@
           "observedAt": "2026-10-06T10:03:55.940Z",
           "summary": "TOKYO Station・梅田HEP FIVEはノベルティと引換証の配布終了。他の欠品時は乗車証明提示で引換証を受領し、案内に従い後日配送を申請。企画全体10月31日までは維持。",
           "recordPath": "research/evening-listing-updates-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37449524331",
+          "observedAt": "2026-10-06T22:58:20.510Z",
+          "summary": "既存掲載を含む配信runの成功を確認。deploy step完了は2026-10-06T10:25:08Zだが、当時の初回公開実体確認日時は不明のためpublishedAtはnullを保持する。",
+          "recordPath": "research/daily-review-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-10-06T22:58:20.510Z",
+          "summary": "今回の公開JSONのHTTP 200とmain 8941ebe2のblob一致を確認。既存IDの掲載を確認し再掲載しない。この観測日時を初回公開時刻とは扱わず、原時刻は証拠ファイルに保存する。",
+          "recordPath": "research/daily-review-2026-10-06-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1318,10 +1354,10 @@
       "listingIds": [
         "jr-central-tsutsuurauratabi-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式本文で確認した条件を既存掲載へ反映。日時不明は推測しない。",
-      "nextCheck": "公開内容と、予約/特典配布状況の公式続報を確認。",
+      "nextCheck": "特典配布・引換証・配送申請について公式本文と告知画像を再確認する。",
       "recheckDueAt": "2026-10-09",
       "publishedAt": null
     }
