@@ -123,11 +123,12 @@ for (const width of [390, 1180, 1440]) {
 
 test('a combined long query survives reload, site navigation and history', async ({page}) => {
   const query = 'ちいかわPOP UP STORE 中部国際空港 第1ターミナル';
-  await page.goto('/?view=list&tileTest=primary-fail');
+  await page.goto('/?view=list&past=1&tileTest=primary-fail');
   await expect(page.locator('.spot-list-card').first()).toBeVisible();
   await page.locator('#spot-search').fill(query);await page.locator('#prefecture-filter').selectOption('愛知県');
   await expect(page.locator('#result-count')).toHaveText('1件表示');
   expect(new URL(page.url()).searchParams.get('q')).toBe(query);
+  expect(new URL(page.url()).searchParams.get('past')).toBe('1');
   expect(new URL(page.url()).searchParams.get('tileTest')).toBe('primary-fail');
   await page.reload();await expect(page.locator('#result-count')).toHaveText('1件表示');
   await page.locator('.site-nav-link[href="official.html"]').click();await page.goBack();
@@ -139,6 +140,7 @@ test('a combined long query survives reload, site navigation and history', async
   await expect(page.locator('#result-count')).toHaveText('2件表示');
   await page.goBack();await expect(page.locator('#spot-search')).toHaveValue(query);
   await expect(page.locator('#prefecture-filter')).toHaveValue('愛知県');
+  expect(new URL(page.url()).searchParams.get('past')).toBe('1');
   await expect(page.locator('#result-count')).toHaveText('1件表示');
   await page.goForward();await expect(page.locator('#spot-search')).toHaveValue('町田');
 });
