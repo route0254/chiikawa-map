@@ -92,8 +92,12 @@ test('published catalogue recent URLs retain their AND condition and reset witho
 
 test('latest information confirmation dates remain visible with the original rendering', async ({page}) => {
   await page.goto('/collaborations.html');
-  const card = page.locator('.collaboration-card').filter({hasText: 'ANA'}).first();
-  await expect(card).toContainText('情報確認日2026/10/3');
+  const collaborations = JSON.parse(await readFile(new URL('../data/collaborations-current.json', import.meta.url), 'utf8'));
+  const ana = collaborations.find(record => record.id === 'ana-chiikawa-jet-2026');
+  expect(ana).toBeTruthy();
+  const card = page.locator('[data-record-id="ana-chiikawa-jet-2026"]');
+  const expectedDate = ana.checkedAt.split('-').map(Number).join('/');
+  await expect(card).toContainText('情報確認日' + expectedDate);
   const spots = JSON.parse(await readFile(new URL('../data/official-spots.json', import.meta.url), 'utf8'));
   for (const [field, label] of [['hoursCheckedAt', '営業時間の確認日'], ['entryInfoCheckedAt', '入場案内の確認日']]) {
     const spot = spots.find(spot => spot[field]);

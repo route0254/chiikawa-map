@@ -148,5 +148,190 @@
       "secondaryOpensAt": "2026-10-05T20:00:00+09:00",
       "condition": "空きが生じた場合のみ。現在の空き状況は未確認。"
     }
-  ]
+  ],
+  "publication": {
+    "mergeCommit": "e736280b5b7fe5f3da41bfce68e5a9cd4b65301b",
+    "runId": 37445408920,
+    "attempt": 1,
+    "files": [
+      {
+        "file": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "bb19b57065b14dd55384c8f02b090f95b1ca47838626e871d66023090a44436d",
+        "observedAt": "2026-10-06T09:49:46.581+00:00"
+      },
+      {
+        "file": "data/site-meta.json",
+        "url": "https://chiikatsu-map.com/data/site-meta.json?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "b6d8d6cb0c8bdffc9c4767cfc547d64357e9d3a4ce66df14681030757bb0649c",
+        "observedAt": "2026-10-06T09:49:46.583+00:00"
+      },
+      {
+        "file": "sitemap.xml",
+        "url": "https://chiikatsu-map.com/sitemap.xml?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "10a15927feb4ae8bc9066b602bad5fa6f43e350a908ee926a9159139a68b8270",
+        "observedAt": "2026-10-06T09:49:46.609+00:00"
+      },
+      {
+        "file": "research/publication-candidate-ledger.json",
+        "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "aa50569589637269b90fc1bff43b76adfc0bbb9ba14e9cdb099aca6e8f2254ec",
+        "observedAt": "2026-10-06T09:49:46.613+00:00"
+      },
+      {
+        "file": "research/listings-2026-10-06-evidence.json",
+        "url": "https://chiikatsu-map.com/research/listings-2026-10-06-evidence.json?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "ce270df6a232d43fb71f766e15c368ded1e341db03c7eae031ddab6114c13825",
+        "observedAt": "2026-10-06T09:49:55.300+00:00"
+      },
+      {
+        "file": "research/chiikawaland-entry-2026-10-09-evidence.json",
+        "url": "https://chiikatsu-map.com/research/chiikawaland-entry-2026-10-09-evidence.json?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "9b1c214c3c75efd419c4971b4ddff241e557a03f1ebf92f71eb0ff50f9057fbe",
+        "observedAt": "2026-10-06T09:49:55.288+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-osaka-umeda/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-osaka-umeda/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "cc597e8a0c3204a81931e0e592a77a8081afc2136e5f8efca07d8c7622bc0e92",
+        "observedAt": "2026-10-06T09:49:55.271+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-harajuku/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-harajuku/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "bb92829a00bdbc8729c1bb5081f63308a4d938765e26f70a8457232f8f813a4b",
+        "observedAt": "2026-10-06T09:49:55.293+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-fukuoka/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-fukuoka/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "a46b2e5eb50b226ff25a7fea9a97415eb0395cbdf8a9c1eda79cba9b4a782343",
+        "observedAt": "2026-10-06T09:50:04.326+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-kyoto/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-kyoto/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "f1e393039e5e510a3f5340776b33a99ddb2f2872b9fc6bd8cf061b0b4370be10",
+        "observedAt": "2026-10-06T09:50:04.323+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-tokyo-station/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-tokyo-station/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "1cb173df68e6a3a6bdfdde00d540e975a3c7f07da8770f59d651ad5b40c0e702",
+        "observedAt": "2026-10-06T09:50:04.336+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-solamachi/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-solamachi/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "35935ef13946acbb5044040c5b1f85eede8c02f6428168aa48fedddd83f35ba8",
+        "observedAt": "2026-10-06T09:50:04.299+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-nagoya/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-nagoya/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "53001cf58bd005f3b93209f4306f2c21f9ee4161edcceb7c13d4e8add1551595",
+        "observedAt": "2026-10-06T09:50:12.430+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-sendai/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-sendai/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "aa7133e06effde10ed82f490225c4a3eb4327b94b5a8321c5462e5ba52e36e5e",
+        "observedAt": "2026-10-06T09:50:12.482+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-sapporo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-sapporo/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "419362685e50c4496fe9be348eaeb40fb6bfd189b73589b513dc97019ff232ef",
+        "observedAt": "2026-10-06T09:50:12.413+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-yokohama/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-yokohama/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "40a3f8cd5dd0ebe23e2f372741c9a191842a496e453f0419c232d48b785ea8fa",
+        "observedAt": "2026-10-06T09:50:12.361+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-hiroshima/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-hiroshima/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "c1e420e8fd85e92c7a6df539e26f75158dedb3a406fefae8d32828f3f3ce1403",
+        "observedAt": "2026-10-06T09:50:23.986+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-shinsaibashi/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-shinsaibashi/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "14e41304ec306b8204841f92ef60d53fe899f848b18d48e136bfe4d2c0681fe4",
+        "observedAt": "2026-10-06T09:50:24.025+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-shinjuku/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-shinjuku/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "fff05c4c4438677f4a1330ab521a1919a9f6a4253e92d96edec9eed5db54a269",
+        "observedAt": "2026-10-06T09:50:24.019+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-kanazawa/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-kanazawa/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "3a474ff8fd49290b08367e9a15bf39ddc9ca6440aaa3a34f1fedb5673aee2f76",
+        "observedAt": "2026-10-06T09:50:24.050+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-ikebukuro/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-ikebukuro/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "90d906f45e17b8b797d8cc0925e5a887f980457b781a956b8ee325860984f2fa",
+        "observedAt": "2026-10-06T09:50:32.375+00:00"
+      },
+      {
+        "file": "spot/chiikawaland-koshigaya/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-koshigaya/index.html?publication=e736280b5b7f",
+        "status": 200,
+        "matchesMain": true,
+        "sha256": "2ec1c0ec0baefadff83a98c252da95146dcb63f0f8e8003005f05cc7daa383d1",
+        "observedAt": "2026-10-06T09:50:32.348+00:00"
+      }
+    ],
+    "publishedAt": "2026-10-06T09:48:17Z",
+    "verificationCompletedAt": "2026-10-06T09:50:32.375+00:00"
+  }
 }
