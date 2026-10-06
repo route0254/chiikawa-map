@@ -289,10 +289,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-05T18:57:24+09:00",
-      "lastSuccessfulAt": "2026-10-05T18:57:24+09:00",
+      "lastAttemptAt": "2026-10-06T08:10:08.490+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:10:08.490+09:00",
       "lastResult": "success",
-      "resultSummary": "公式入口の本文を取得して掲載データと照合。今回の確認範囲で新しい掲載差分を確認せず。画像のみの個別案内およびSNSの網羅確認を含まない。",
+      "resultSummary": "公式店舗とニュース一覧に10月17～18日の営業時間変更告知あり。通常営業時間は9:30～17:30。変更後の時刻は記事本文を取得できず未確認。",
       "lastFailure": null,
       "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
@@ -433,6 +433,228 @@
       "resultSummary": "公式発表で10月5日予約開始、11月10日発売を確認。予約開始時刻・受付終了日と国内実店舗での取扱いは未確認。",
       "lastFailure": null,
       "note": "商品コラボの一次情報。発売日と予約商品の配送時期を区別する。"
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "name": "ちいかわベーカリー 予約案内",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:03:16+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:03:16+09:00",
+      "lastResult": "success",
+      "resultSummary": "東京の15時以降のデジタル整理券、大阪の当面の優先入場券保持者限定を確認。一般店舗案内と記載差があるため具体的な当面の条件を採用。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "venue-popup-centrair",
+      "name": "ちいかわPOP UP STORE 中部国際空港 第1ターミナル",
+      "url": "https://chiikawa-info.jp/p26/pus_cbca/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:45.320+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:45.320+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "venue-popup-2026-09-18-aeon-okazaki",
+      "name": "ちいかわPOP UP STORE イオンモール岡崎",
+      "url": "https://chiikawa-info.jp/p26/pus_aoka/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:46.396+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:46.396+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "venue-popup-2026-09-18-aeon-wakayama",
+      "name": "ちいかわPOP UP STORE イオンモール和歌山",
+      "url": "https://chiikawa-info.jp/p26/pus_awak/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:45.329+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:45.329+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "venue-magical-popup-2026-09-11-kochi-tsutaya",
+      "name": "まじかるちいかわPOP UP STORE 高知 蔦屋書店",
+      "url": "https://chiikawa-info.jp/p26/mg_koch/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:45.729+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:45.729+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "venue-nagano-market-popup-2026-09-18-a-wakayama",
+      "name": "ナガノマーケット POP UP SHOP イオンモール和歌山",
+      "url": "https://nagano-info.jp/popupshop/a_wakayama/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:52.144+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:52.144+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "nagano-yokohama-entry",
+      "name": "ナガノマーケット横浜 入場案内",
+      "url": "https://nagano-info.jp/popupshop/yokohama/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:21.752+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:21.752+09:00",
+      "lastResult": "success",
+      "resultSummary": "10月9～11日にLINE入場整理券が必要。12:30入場分までは前日19時、13時以降は各回1時間前に受付。氏名入力・本人確認・1人1回・30分入替を確認。初回10月8日19時は初日10月9日の前日という公式条件から算出。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "lucua-south-opening",
+      "name": "LUCUA SOUTH 開業・施設入場案内",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:07:26+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:07:26+09:00",
+      "lastResult": "success",
+      "resultSummary": "施設の11月18～23日会員限定プレオープンの第1弾応募は10月9日12時～10月19日24時。WESTER ID登録済LUCUAメンバーズカード会員対象。個別店舗の参加や個店抽選条件は未確認。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "fukuoka-sushi-official",
+      "name": "むちゃうま!!ちいかわ寿司 福岡公式",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:02:01.779+09:00",
+      "lastSuccessfulAt": "2026-10-06T08:02:01.779+09:00",
+      "lastResult": "success",
+      "resultSummary": "福岡三越9階三越ギャラリー、10月16日～11月3日の寿司企画公式案内を確認。施設は従来のPOP UP名を掲載。改称・独立併催・専用入口や会計は確認できない。",
+      "lastFailure": null,
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
+    },
+    {
+      "id": "chiikawaland-reservation-x-20261009",
+      "name": "chiikawaland-reservation-x-20261009",
+      "url": "https://x.com/chiikawa_land/status/2105587976554361322",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T07:59:55+09:00",
+      "lastSuccessfulAt": null,
+      "lastResult": "access_limited",
+      "resultSummary": "公式X個別投稿は本文取得不可。二次サイトで予約日が1日違うため保留。",
+      "lastFailure": {
+        "at": "2026-10-06T07:59:55+09:00",
+        "kind": "access_limited",
+        "httpStatus": null,
+        "detail": "公式X個別投稿は本文取得不可。二次サイトで予約日が1日違うため保留。",
+        "evidenceUrl": "https://x.com/chiikawa_land/status/2105587976554361322"
+      },
+      "note": "未確定案内の再確認対象。取得制限を新着なしとは扱わない。"
+    },
+    {
+      "id": "chiikawa-nagano-reservation-line",
+      "name": "chiikawa-nagano-reservation-line",
+      "url": "https://lin.ee/ZkmtWxk",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:01:55+09:00",
+      "lastSuccessfulAt": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "LINE公式アカウントへのリダイレクト先にwebツールでアクセスできず、予約主催ページ本文未確認。",
+      "lastFailure": {
+        "at": "2026-10-06T08:01:55+09:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "LINE公式アカウントへのリダイレクト先にwebツールでアクセスできず、予約主催ページ本文未確認。",
+        "evidenceUrl": "https://lin.ee/ZkmtWxk"
+      },
+      "note": "未確定案内の再確認対象。取得制限を新着なしとは扱わない。"
+    },
+    {
+      "id": "mogumogu-kawagoe-hours-20261017",
+      "name": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-06T08:22:27.180Z",
+      "lastSuccessfulAt": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "10月6日17:09（日本時間）に公式ページ表示から9:30～19:00への延長を確認。17:22の本文再取得は失敗。成功時の秒単位時刻は不明のためlastSuccessfulAtは補完しない。",
+      "lastFailure": {
+        "at": "2026-10-06T08:22:27.180Z",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "本文再取得でページ取得不可。先に確認した公式本文の内容と取得可否は区別する。",
+        "evidenceUrl": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/"
+      },
+      "note": "未確定案内の再確認対象。取得制限を新着なしとは扱わない。"
     }
   ]
 }

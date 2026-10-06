@@ -303,6 +303,655 @@
       "nextCheck": null,
       "recheckDueAt": null,
       "publishedAt": "2026-10-05T10:47:00Z"
+    },
+    {
+      "id": "bakery-tokyo-entry-20261006",
+      "title": "ちいかわベーカリー 東京 入場案内",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-tokyo",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-06T08:03:16+09:00",
+          "summary": "OPEN～15時は優先入場券保持者を優先。15時以降は当面、公式Xのデジタル整理券で案内し14:50からアクセス可能。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "旧案内を具体的な現行条件で訂正。変更日不明、当面の条件として掲載。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "bakery-osaka-entry-20261006",
+      "title": "ちいかわベーカリー 大阪 入場案内",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-osaka",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-06T08:03:16+09:00",
+          "summary": "ベーカリーは当面、ノベルティ付き優先入場券保持者のみ入場。隣接POP UPはフリー入場。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-osaka"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-osaka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "旧案内を具体的な現行条件で訂正。変更日不明、当面の条件として掲載。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-popup-centrair-20261006",
+      "title": "ちいかわPOP UP STORE 中部国際空港 第1ターミナル 開催終了",
+      "kind": "listing_update",
+      "targetKey": "popup-centrair",
+      "sourceIds": [
+        "venue-popup-centrair"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-09-08",
+      "eventEndsAt": "2026-10-05",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_cbca/index.html",
+          "observedAt": "2026-10-06T08:02:45.320+09:00",
+          "summary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-centrair"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "popup-centrair"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存IDを保持して過去イベントへ移動。会期・所在地・座標・追加日は維持。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-popup-2026-09-18-aeon-okazaki-20261006",
+      "title": "ちいかわPOP UP STORE イオンモール岡崎 開催終了",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-09-18-aeon-okazaki",
+      "sourceIds": [
+        "venue-popup-2026-09-18-aeon-okazaki"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-09-18",
+      "eventEndsAt": "2026-10-05",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoka/index.html",
+          "observedAt": "2026-10-06T08:02:46.396+09:00",
+          "summary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-09-18-aeon-okazaki"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "popup-2026-09-18-aeon-okazaki"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存IDを保持して過去イベントへ移動。会期・所在地・座標・追加日は維持。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-popup-2026-09-18-aeon-wakayama-20261006",
+      "title": "ちいかわPOP UP STORE イオンモール和歌山 開催終了",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-09-18-aeon-wakayama",
+      "sourceIds": [
+        "venue-popup-2026-09-18-aeon-wakayama"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-09-18",
+      "eventEndsAt": "2026-10-05",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_awak/index.html",
+          "observedAt": "2026-10-06T08:02:45.329+09:00",
+          "summary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-09-18-aeon-wakayama"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "popup-2026-09-18-aeon-wakayama"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存IDを保持して過去イベントへ移動。会期・所在地・座標・追加日は維持。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-magical-popup-2026-09-11-kochi-tsutaya-20261006",
+      "title": "まじかるちいかわPOP UP STORE 高知 蔦屋書店 開催終了",
+      "kind": "listing_update",
+      "targetKey": "magical-popup-2026-09-11-kochi-tsutaya",
+      "sourceIds": [
+        "venue-magical-popup-2026-09-11-kochi-tsutaya"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-09-11",
+      "eventEndsAt": "2026-10-05",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/mg_koch/index.html",
+          "observedAt": "2026-10-06T08:02:45.729+09:00",
+          "summary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-popup-2026-09-11-kochi-tsutaya"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "magical-popup-2026-09-11-kochi-tsutaya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存IDを保持して過去イベントへ移動。会期・所在地・座標・追加日は維持。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-nagano-market-popup-2026-09-18-a-wakayama-20261006",
+      "title": "ナガノマーケット POP UP SHOP イオンモール和歌山 開催終了",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-popup-2026-09-18-a-wakayama",
+      "sourceIds": [
+        "venue-nagano-market-popup-2026-09-18-a-wakayama"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-09-18",
+      "eventEndsAt": "2026-10-05",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/a_wakayama/index.html",
+          "observedAt": "2026-10-06T08:02:52.144+09:00",
+          "summary": "公式本文と会期画像で2026年10月5日までの開催を確認。確認時点で延長告知は見つからず、10月6日時点の終了イベントとして移動。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-09-18-a-wakayama"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-09-18-a-wakayama"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存IDを保持して過去イベントへ移動。会期・所在地・座標・追加日は維持。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "nagano-yokohama-reservation-2026-10",
+      "title": "ナガノマーケット横浜スカイビル 10月9～11日の入場整理券",
+      "kind": "reservation_update",
+      "targetKey": "nagano-market-popup-2026-10-09-yokohama-skybuilding",
+      "sourceIds": [
+        "nagano-yokohama-entry"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-11",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-08T19:00:00+09:00",
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/yokohama/index.html",
+          "observedAt": "2026-10-06T08:02:21.752+09:00",
+          "summary": "10月9～11日にLINE入場整理券が必要。12:30入場分までは前日19時、13時以降は各回1時間前に受付。氏名入力・本人確認・1人1回・30分入替を確認。初回10月8日19時は初日10月9日の前日という公式条件から算出。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-10-09-yokohama-skybuilding"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-09-yokohama-skybuilding"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "対象日のみの整理券案内。全会期を予約必須とはしない。",
+      "nextCheck": "公開後に配信内容を照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "lucua-preopen-chiikawa-park-store-osaka-20261006",
+      "title": "ちいかわパークストア 大阪 施設プレオープン補足",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-park-store-osaka",
+      "sourceIds": [
+        "lucua-south-opening"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://www.lucua.jp/special/south-open/",
+          "observedAt": "2026-10-06T08:07:26+09:00",
+          "summary": "施設の11月18～23日会員限定プレオープンの第1弾応募は10月9日12時～10月19日24時。WESTER ID登録済LUCUAメンバーズカード会員対象。個別店舗の参加や個店抽選条件は未確認。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-store-osaka"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "chiikawa-park-store-osaka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "施設の応募情報を個店の確定予約情報と区別して補足。一般開業日11月24日と個店予約開始日時は変更しない。",
+      "nextCheck": "個店のプレオープン参加・入場条件と応募フォームの対象店舗を確認する。",
+      "recheckDueAt": "2026-10-09",
+      "publishedAt": null
+    },
+    {
+      "id": "lucua-preopen-nagano-market-umeda-20261006",
+      "title": "ナガノマーケット UMEDA 施設プレオープン補足",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-umeda",
+      "sourceIds": [
+        "lucua-south-opening"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://www.lucua.jp/special/south-open/",
+          "observedAt": "2026-10-06T08:07:26+09:00",
+          "summary": "施設の11月18～23日会員限定プレオープンの第1弾応募は10月9日12時～10月19日24時。WESTER ID登録済LUCUAメンバーズカード会員対象。個別店舗の参加や個店抽選条件は未確認。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-umeda"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "nagano-market-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "施設の応募情報を個店の確定予約情報と区別して補足。一般開業日11月24日と個店予約開始日時は変更しない。",
+      "nextCheck": "個店のプレオープン参加・入場条件と応募フォームの対象店舗を確認する。",
+      "recheckDueAt": "2026-10-09",
+      "publishedAt": null
+    },
+    {
+      "id": "fukuoka-popup-sushi-related-info-2026-10",
+      "title": "福岡三越POP UPの寿司企画関連告知",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-10-16-fukuoka-mitsukoshi",
+      "sourceIds": [
+        "fukuoka-sushi-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+          "observedAt": "2026-10-06T08:02:01.779+09:00",
+          "summary": "福岡三越9階三越ギャラリー、10月16日～11月3日の寿司企画公式案内を確認。施設は従来のPOP UP名を掲載。改称・独立併催・専用入口や会計は確認できない。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/chiikawa.html",
+          "observedAt": "2026-10-06T08:09:33.166+09:00",
+          "summary": "福岡三越9階三越ギャラリー、10月16日～11月3日の寿司企画公式案内を確認。施設は従来のPOP UP名を掲載。改称・独立併催・専用入口や会計は確認できない。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000483.000027592.html",
+          "observedAt": "2026-10-06T08:09:34.636+09:00",
+          "summary": "福岡三越9階三越ギャラリー、10月16日～11月3日の寿司企画公式案内を確認。施設は従来のPOP UP名を掲載。改称・独立併催・専用入口や会計は確認できない。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+          "observedAt": "2026-10-06T08:02:01.779+09:00",
+          "summary": "福岡三越9階三越ギャラリー、10月16日～11月3日の寿司企画公式案内を確認。施設は従来のPOP UP名を掲載。改称・独立併催・専用入口や会計は確認できない。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-16-fukuoka-mitsukoshi"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "popup-2026-10-16-fukuoka-mitsukoshi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "同会場・同会期の公式案内の存在だけを補足。既存企画名・入場条件を維持し新規ピンは追加しない。",
+      "nextCheck": "施設または主催の続報で企画区分・入場運用の関係を確認。",
+      "recheckDueAt": "2026-10-09",
+      "publishedAt": null
+    },
+    {
+      "id": "mogumogu-kawagoe-hours-notice-20261017",
+      "title": "もぐもぐ本舗川越 営業時間変更の注意",
+      "kind": "listing_update",
+      "targetKey": "mogumogu-kawagoe",
+      "sourceIds": [
+        "mogumogu-kawagoe-news",
+        "mogumogu-kawagoe-hours-20261017"
+      ],
+      "officialAnnouncedAt": "2026-10-02",
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": "2026-10-17",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-06",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+          "observedAt": "2026-10-06T08:10:08.490+09:00",
+          "summary": "公式店舗とニュース一覧に10月17～18日の営業時間変更告知あり。通常営業時間は9:30～17:30。変更後の時刻は記事本文を取得できず未確認。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+          "observedAt": "2026-10-06",
+          "summary": "10月6日17:09（日本時間）に公式本文を確認。川越まつりに伴い10月17～18日は9:30～19:00へ延長、通常9:30～17:30。秒単位の取得時刻は記録がないため日付精度で保持。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-kawagoe"
+        ],
+        "note": "既存ID・会場・期間を現行/過去データと照合。新規IDを作成せず既存掲載を更新。"
+      },
+      "listingIds": [
+        "mogumogu-kawagoe"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式詳細本文で10月17～18日の9:30～19:00を確認。通常9:30～17:30と区別して掲載。",
+      "nextCheck": "公開後に営業時間の表示と公式URLを照合する。",
+      "recheckDueAt": "2026-10-06",
+      "publishedAt": null
+    },
+    {
+      "id": "hold-chiikawaland-entry-20261009",
+      "title": "ちいかわらんど 10/9入店予約の一次確認待ち",
+      "kind": "reservation_update",
+      "targetKey": "hold-chiikawaland-entry-20261009",
+      "sourceIds": [
+        "chiikawaland-reservation-x-20261009",
+        "chiikawa-nagano-reservation-line"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "observedAt": "2026-10-06T07:59:55.000+09:00",
+          "summary": "公式個別投稿は取得不可。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-goods.hateblo.jp/entry/land-reservation",
+          "observedAt": "2026-10-06T08:01:32.485+09:00",
+          "summary": "二次発見元。名古屋・京都・梅田・心斎橋・金沢は10/6 20時との記載。主催原文として採用しない。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.seal-search.com/news/new-item/chiikawa-land-line-lottery-20261009/",
+          "observedAt": "2026-10-06T07:59:55.000+09:00",
+          "summary": "別二次サイトは同グループ10/7 20時と記載し不一致。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda",
+          "chiikawaland-harajuku",
+          "chiikawaland-fukuoka",
+          "chiikawaland-kyoto",
+          "chiikawaland-tokyo-station",
+          "chiikawaland-solamachi",
+          "chiikawaland-nagoya",
+          "chiikawaland-sendai",
+          "chiikawaland-sapporo",
+          "chiikawaland-yokohama",
+          "chiikawaland-hiroshima",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-shinjuku",
+          "chiikawaland-kanazawa",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya",
+          "chiikawaland-popup-2026-09-11-amu-oita"
+        ],
+        "note": "公開official-spots 77件、collaborations-current 21件を2026-10-06朝取得して照合。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda",
+        "chiikawaland-harajuku",
+        "chiikawaland-fukuoka",
+        "chiikawaland-kyoto",
+        "chiikawaland-tokyo-station",
+        "chiikawaland-solamachi",
+        "chiikawaland-nagoya",
+        "chiikawaland-sendai",
+        "chiikawaland-sapporo",
+        "chiikawaland-yokohama",
+        "chiikawaland-hiroshima",
+        "chiikawaland-shinsaibashi",
+        "chiikawaland-shinjuku",
+        "chiikawaland-kanazawa",
+        "chiikawaland-ikebukuro",
+        "chiikawaland-koshigaya",
+        "chiikawaland-popup-2026-09-11-amu-oita"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "二次情報は10/9入店、10/5・6・7の20時先着という記載がある一方、別サイトは各日が1日後ろ。一次投稿/LINE主催ページ本文を取得できず日付は確定扱いしない。",
+      "nextCheck": "公式X個別投稿、公式LINE予約主催ページ、各公式店舗の入店案内画像を10/6 18時までに再確認。ログイン回避・制限迂回はしない。",
+      "recheckDueAt": "2026-10-06T18:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "hold-mogumogu-kawagoe-hours-20261017",
+      "title": "もぐもぐ本舗川越 10/17～18営業時間変更",
+      "kind": "listing_update",
+      "targetKey": "hold-mogumogu-kawagoe-hours-20261017",
+      "sourceIds": [
+        "mogumogu-kawagoe-news",
+        "mogumogu-kawagoe-hours-20261017"
+      ],
+      "officialAnnouncedAt": "2026-10-02",
+      "discoveredAt": "2026-10-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+          "observedAt": "2026-10-06T08:04:36.000+09:00",
+          "summary": "10/17～18営業時間変更見出し。data-srcよりpost-2406を確定。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+          "observedAt": "2026-10-06T08:05:39.000+09:00",
+          "summary": "公式店舗HTMLのdata-srcでURLを確認。webは取得不可、HTTPは403。変更後営業時間は未確認。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-05T23:10:08.490+00:00",
+          "summary": "2026.10.02付、川越店 10月17日～18日 営業時間変更のお知らせの見出しを再確認。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+          "observedAt": "2026-10-06",
+          "summary": "10月6日17:09（日本時間）に公式本文を確認。川越まつりに伴い10月17～18日は9:30～19:00へ延長、通常9:30～17:30。秒単位の取得時刻は記録がないため日付精度で保持。",
+          "recordPath": "research/listings-2026-10-06-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-kawagoe"
+        ],
+        "note": "公開official-spots 77件、collaborations-current 21件を2026-10-06朝取得して照合。"
+      },
+      "listingIds": [
+        "mogumogu-kawagoe"
+      ],
+      "state": "rejected",
+      "priority": "normal",
+      "decision": "変更後時刻を公式本文で確認し、保留を解消。重複作業を避けるため掲載更新は mogumogu-kawagoe-hours-notice-20261017 に統合。営業時間変更自体を否定する判断ではない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": null
     }
   ]
 }
