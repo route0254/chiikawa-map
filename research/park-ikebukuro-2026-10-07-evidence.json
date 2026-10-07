@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "reviewDate": "2026-10-07",
+  "recordedAt": "2026-10-07T10:27:22.407Z",
+  "base": "4ac7edd0f1e517c7743de2fd6229fe382b121fad",
+  "scope": "既存2件の公式告知補足・住所正確性訂正。軽微修正を新着とせず、掲載ID・追加日・件数を保持する。",
+  "park": {
+    "listingId": "chiikawa-park-tokyo",
+    "source": {
+      "url": "https://chiikawapark-tokyo.jp/news/jk6l8r1pd/",
+      "status": 200,
+      "completedAt": "2026-10-07T10:16:45.090Z",
+      "hasGameName": true,
+      "hasFailure": true,
+      "hasPause": true,
+      "hasDate": true
+    },
+    "officialAnnouncedAt": "2026-10-07",
+    "officialAnnouncementPrecision": "date_only",
+    "discoveredAt": "2026-10-07T19:05:23+09:00",
+    "discoverySource": "委任元が確認した発見日時",
+    "reflectDueAt": "2026-10-07",
+    "eventStartsAt": null,
+    "eventEndsAt": null,
+    "nextCheckAt": "2026-10-08T08:00:00+09:00",
+    "changedFields": [
+      "importantNotice"
+    ],
+    "notice": "2026年10月7日の公式案内で、ゲームエリア「くものすキャッチャー」は機器の不具合により休止中です。再開日時は未定のため、最新の公式案内をご確認ください。",
+    "note": "本文で見える日付のみを公式発表日に採用し、CMSの機械的メタデータから発表時刻を補わない。"
+  },
+  "banana": {
+    "listingId": "tokyo-banana-popup-ikebukuro-2026-09",
+    "sources": [
+      {
+        "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+        "status": 200,
+        "completedAt": "2026-10-07T10:21:39.221Z",
+        "hasAddress": true,
+        "hasVenue": true,
+        "hasGate": true,
+        "hasWestSide": true
+      },
+      {
+        "url": "https://prtimes.jp/main/html/rd/p/000002111.000025606.html",
+        "status": 200,
+        "completedAt": "2026-10-07T10:21:39.266Z",
+        "hasAddress": false,
+        "hasVenue": true,
+        "hasGate": false,
+        "hasWestSide": false
+      }
+    ],
+    "officialAnnouncedAt": null,
+    "discoveredAt": "2026-10-07",
+    "correctionType": "accuracy_correction",
+    "changedFields": [
+      "address",
+      "mapUrl"
+    ],
+    "beforeAddress": "東京都豊島区南池袋1-28-2 JR池袋駅（開催場所：イベントステーション池袋南通路）",
+    "afterAddress": "東京都豊島区南池袋1-28-4 JR池袋駅構内南改札外南通路西武側（開催場所：イベントステーション池袋南通路）",
+    "unchangedPeriod": {
+      "startDate": "2026-09-17",
+      "endDate": "2026-10-14",
+      "hoursText": "10:00～21:00（最終日は18:00まで）"
+    },
+    "nextCheckAt": "2026-10-08T08:00:00+09:00",
+    "note": "新しい発表ではなく公式住所との不一致訂正。プレスリリース日時を今回の住所訂正の発表時刻に転用しない。 個別イベントの生成元住所も同期し、地図URLは既存生成規則の会場名と住所から生成する。確認日・他イベント・期間は変更しない。",
+    "canonicalSourcePath": "research/official-special-events-source.json",
+    "canonicalSourceChangedFields": [
+      "address"
+    ]
+  },
+  "baselinePublicVerification": {
+    "stage": "baseline",
+    "main": "4ac7edd0f1e517c7743de2fd6229fe382b121fad",
+    "resourceCount": 3,
+    "results": [
+      {
+        "file": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json?verification=4ac7edd0f1e5",
+        "status": 200,
+        "observedAt": "2026-10-07T10:21:41.947Z",
+        "matchesMain": true,
+        "gitBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e",
+        "expectedBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e",
+        "attempts": [
+          {
+            "file": "data/added-dates.json",
+            "url": "https://chiikatsu-map.com/data/added-dates.json?verification=4ac7edd0f1e5",
+            "status": 200,
+            "observedAt": "2026-10-07T10:21:41.947Z",
+            "matchesMain": true,
+            "gitBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e",
+            "expectedBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e"
+          }
+        ]
+      },
+      {
+        "file": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json?verification=4ac7edd0f1e5",
+        "status": 200,
+        "observedAt": "2026-10-07T10:21:41.951Z",
+        "matchesMain": true,
+        "gitBlobSHA": "db31ad45b0198a959d89be8ade8630f6b69fff71",
+        "expectedBlobSHA": "db31ad45b0198a959d89be8ade8630f6b69fff71",
+        "attempts": [
+          {
+            "file": "data/official-spots.json",
+            "url": "https://chiikatsu-map.com/data/official-spots.json?verification=4ac7edd0f1e5",
+            "status": 200,
+            "observedAt": "2026-10-07T10:21:41.951Z",
+            "matchesMain": true,
+            "gitBlobSHA": "db31ad45b0198a959d89be8ade8630f6b69fff71",
+            "expectedBlobSHA": "db31ad45b0198a959d89be8ade8630f6b69fff71"
+          }
+        ]
+      },
+      {
+        "file": "research/publication-candidate-ledger.json",
+        "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json?verification=4ac7edd0f1e5",
+        "status": 200,
+        "observedAt": "2026-10-07T10:21:41.950Z",
+        "matchesMain": true,
+        "gitBlobSHA": "48f3291be3ac7c347b2d4a9db3b776d3c4f71805",
+        "expectedBlobSHA": "48f3291be3ac7c347b2d4a9db3b776d3c4f71805",
+        "attempts": [
+          {
+            "file": "research/publication-candidate-ledger.json",
+            "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json?verification=4ac7edd0f1e5",
+            "status": 200,
+            "observedAt": "2026-10-07T10:21:41.950Z",
+            "matchesMain": true,
+            "gitBlobSHA": "48f3291be3ac7c347b2d4a9db3b776d3c4f71805",
+            "expectedBlobSHA": "48f3291be3ac7c347b2d4a9db3b776d3c4f71805"
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "firstOfficialDataObservationAt": "2026-10-07T10:21:41.951Z",
+    "completedAt": "2026-10-07T10:21:41.962Z",
+    "accessDenied": false
+  },
+  "publicationRecording": {
+    "initialState": "verifying",
+    "initialPublishedAt": null,
+    "afterPublicVerification": "配信runのdeploy step/job完了と公開JSON実体一致時刻を別々に即時保存。state:publishedと実体確認時刻のpublishedAtは次回通常掲載更新でGit台帳へ同期する。",
+    "recordOnlyPR": false
+  },
+  "preserved": {
+    "officialCount": 71,
+    "oldSourcesExceptVerifiedBanana": true,
+    "oldCandidates": true,
+    "idsAndOtherListingFields": true,
+    "addedDates": true
+  }
+}

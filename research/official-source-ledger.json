@@ -341,10 +341,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-06T22:57:18Z",
-      "lastSuccessfulAt": "2026-10-06T22:57:18Z",
+      "lastAttemptAt": "2026-10-07T10:21:39.221Z",
+      "lastSuccessfulAt": "2026-10-07T10:21:39.221Z",
       "lastResult": "success",
-      "resultSummary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "resultSummary": "取得した公式本文の池袋POP UP SHOP欄で住所1-28-4、南改札外南通路西武側、会場・開催期間・営業時間を確認。住所の正確性を訂正し、新発表とは扱わない。個別画像・予約空き・在庫・全SNSの網羅確認は含まない。",
       "lastFailure": null,
       "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
@@ -764,6 +764,23 @@
         "evidenceUrl": "https://recommend.jr-central.co.jp/tsutsuurauratabi/"
       },
       "note": "今回確認した店舗/案内の範囲のみ更新。変更の発表日時は未確認。"
+    },
+    {
+      "id": "chiikawa-park-kumonosu-notice-20261007",
+      "name": "ちいかわパーク くものすキャッチャー休止の公式案内",
+      "url": "https://chiikawapark-tokyo.jp/news/jk6l8r1pd/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-07T10:16:45.090Z",
+      "lastSuccessfulAt": "2026-10-07T10:16:45.090Z",
+      "lastResult": "success",
+      "resultSummary": "個別告知の本文で2026年10月7日の日付、機器不具合によるゲーム単体の休止、再開見込み未定を確認。施設全体の休業とは扱わない。",
+      "lastFailure": null,
+      "note": "確認対象はこの個別告知。公式トップ・全ニュース・SNSを巡回したという記録ではない。次回は再開の続報を確認する。"
     }
   ]
 }
