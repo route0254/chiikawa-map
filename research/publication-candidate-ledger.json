@@ -1360,6 +1360,92 @@
       "nextCheck": "特典配布・引換証・配送申請について公式本文と告知画像を再確認する。",
       "recheckDueAt": "2026-10-09",
       "publishedAt": null
+    },
+    {
+      "id": "chiikawa-park-kumonosu-pause-20261007",
+      "title": "ちいかわパーク くものすキャッチャー機器不具合による休止",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-park-tokyo:game-kumonosu-catcher:2026-10-07",
+      "sourceIds": [
+        "chiikawa-park-kumonosu-notice-20261007"
+      ],
+      "officialAnnouncedAt": "2026-10-07",
+      "discoveredAt": "2026-10-07T19:05:23+09:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-07",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/jk6l8r1pd/",
+          "observedAt": "2026-10-07T10:16:45.090Z",
+          "summary": "公式本文の日付は2026年10月7日のみ。機器不具合によるゲーム単体の休止と、復旧後の再開・続報待ちを確認。発表時刻・休止開始時刻は推測しない。",
+          "recordPath": "research/park-ikebukuro-2026-10-07-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-tokyo"
+        ],
+        "note": "既存ID・名称・公式URLを照合し既存掲載を修正。新規ID・ピン・追加日は作成しない。"
+      },
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "既存importantNoticeだけに反映。施設の営業日時・入場条件・IDを保持し、施設全体の休業としない。公開検証前のpublishedAtはnull。公開後は実体確認時刻と配信runを即時証跡保存し、次回通常掲載更新でGit台帳へ同期する。",
+      "nextCheck": "2026年10月8日8時（日本時間）に公式の再開続報と、公開後state・publishedAt・証跡のGit台帳同期待ちを確認する。",
+      "recheckDueAt": "2026-10-08T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "tokyo-banana-ikebukuro-address-correction-20261007",
+      "title": "東京ばな奈 池袋POP UP SHOP住所の正確性訂正",
+      "kind": "listing_update",
+      "targetKey": "tokyo-banana-popup-ikebukuro-2026-09:address-correction",
+      "sourceIds": [
+        "tokyo-banana-chiikawa"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-07",
+      "evidence": [
+        {
+          "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+          "observedAt": "2026-10-07T10:21:39.221Z",
+          "summary": "公式本文で南池袋1-28-4・南改札外南通路西武側・イベントステーション池袋南通路を確認。既存掲載の誤った番地を訂正する。住所訂正の新たな公式発表日時は確認していない。",
+          "recordPath": "research/park-ikebukuro-2026-10-07-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000002111.000025606.html",
+          "observedAt": "2026-10-07T10:21:39.266Z",
+          "summary": "発信者の既存プレスリリースで会場・9月17日から10月14日・10時から21時（最終日18時）を照合。プレスリリース日時を新たな住所訂正の発表時刻に転用しない。",
+          "recordPath": "research/park-ikebukuro-2026-10-07-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tokyo-banana-popup-ikebukuro-2026-09"
+        ],
+        "note": "既存ID・名称・公式URLを照合し既存掲載を修正。新規ID・ピン・追加日は作成しない。"
+      },
+      "listingIds": [
+        "tokyo-banana-popup-ikebukuro-2026-09"
+      ],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "住所と外部地図リンクの番地を1-28-4へ訂正。期間・営業時間・緯度経度・入場条件・IDを保持する。公開検証前のpublishedAtはnull。公開後は実体確認時刻と配信runを即時証跡保存し、次回通常掲載更新でGit台帳へ同期する。",
+      "nextCheck": "2026年10月8日8時（日本時間）に訂正住所の公開実体と、公開後state・publishedAt・証跡のGit台帳同期待ちを確認する。",
+      "recheckDueAt": "2026-10-08T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }
