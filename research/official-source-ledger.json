@@ -781,6 +781,95 @@
       "resultSummary": "個別告知の本文で2026年10月7日の日付、機器不具合によるゲーム単体の休止、再開見込み未定を確認。施設全体の休業とは扱わない。",
       "lastFailure": null,
       "note": "確認対象はこの個別告知。公式トップ・全ニュース・SNSを巡回したという記録ではない。次回は再開の続報を確認する。"
+    },
+    {
+      "id": "lucua-south-shop-list",
+      "name": "LUCUA SOUTH公式店舗一覧",
+      "url": "https://www.lucua.jp/floormap/southshop.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-08T10:05:24.026Z",
+      "lastSuccessfulAt": "2026-10-08T10:05:24.026Z",
+      "lastResult": "success",
+      "resultSummary": "取得した店舗一覧で対象2店の10:00～20:00と11月24日開業予定を確認。個店入場条件・プレオープン参加を確定する案内とは扱わない。",
+      "lastFailure": null,
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。"
+    },
+    {
+      "id": "tokyo-skytree-chiikawa-2026",
+      "name": "東京スカイツリーちいかわ特設",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-08T10:05:24.487Z",
+      "lastSuccessfulAt": "2026-10-08T10:05:24.487Z",
+      "lastResult": "success",
+      "resultSummary": "取得した特設本文でカフェ券の必要性・販売予定枚数上限・再販売の場合と、10/8・14・21・22の19:30回のみの映像休止を確認。施設全体の休業とは扱わない。",
+      "lastFailure": null,
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。"
+    },
+    {
+      "id": "chiikawa-christmas-market-official",
+      "name": "ちいかわクリスマスマーケット公式特設",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-08T10:05:24.108Z",
+      "lastSuccessfulAt": "2026-10-08T10:05:24.108Z",
+      "lastResult": "success",
+      "resultSummary": "特設本文で開催期間・先行抽選の期間と当落日を確認。一般発売日の案内は未確認。",
+      "lastFailure": null,
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。"
+    },
+    {
+      "id": "abema-chiikawa-christmas-release-20261008",
+      "name": "ABEMAクリスマスマーケット主催発表",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-08T10:05:24.191Z",
+      "lastSuccessfulAt": "2026-10-08T10:05:24.191Z",
+      "lastResult": "success",
+      "resultSummary": "主催プレス本文で2026年10月8日の日付のみ、豊砂公園で11月24日～12月25日の開催と公式券へのリンクを確認。",
+      "lastFailure": null,
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。"
+    },
+    {
+      "id": "chiikawa-christmas-market-asoview",
+      "name": "クリスマスマーケット公式チケット案内",
+      "url": "https://www.asoview.com/base/165182/",
+      "kind": "venue",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-08T10:05:24.037Z",
+      "lastSuccessfulAt": "2026-10-08T10:05:24.037Z",
+      "lastResult": "success",
+      "resultSummary": "公式チケット案内で住所1-12、営業時間・最終入場枠と公開地図qの座標35.653567,140.029936を確認。",
+      "lastFailure": null,
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。"
     }
   ]
 }
