@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "reviewDate": "2026-10-08",
+  "recordedAt": "2026-10-08T10:13:02.944Z",
+  "base": "729cc3d27062f5e617c298a4a8b4399affef5870",
+  "scope": "新規1企画・既存3スポットの通常掲載更新とPR #31の公開台帳同期。変更した既存項目以外のID・会場・期間・保存互換・追加日を維持する。",
+  "sources": [
+    {
+      "key": "lucua",
+      "url": "https://www.lucua.jp/floormap/southshop.html",
+      "status": 200,
+      "completedAt": "2026-10-08T10:05:24.026Z",
+      "sha256": "c07b87d39184c0f294ac64bfeec26beda1468f1601f9f7053a15ed7cae780fb3",
+      "bodyLength": 141166,
+      "denied": false
+    },
+    {
+      "key": "press",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "status": 200,
+      "completedAt": "2026-10-08T10:05:24.191Z",
+      "sha256": "3897080d5052969aef1a3efeef78bb06821533e9a5894f46917093ab99bb0d7f",
+      "bodyLength": 129859,
+      "denied": false
+    },
+    {
+      "key": "christmas",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "status": 200,
+      "completedAt": "2026-10-08T10:05:24.108Z",
+      "sha256": "142dc214d1ae85f201d97ef009695e5a8cbc6676451019b7640dd9d3ca03872a",
+      "bodyLength": 364444,
+      "denied": false
+    },
+    {
+      "key": "ticket",
+      "url": "https://www.asoview.com/base/165182/",
+      "status": 200,
+      "completedAt": "2026-10-08T10:05:24.037Z",
+      "sha256": "db9186c9be78f1d714e2b6823b60a48a76f29da6075aa2f6558ea8ef6d7e7a90",
+      "bodyLength": 55881,
+      "denied": false
+    },
+    {
+      "key": "skytree",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "status": 200,
+      "completedAt": "2026-10-08T10:05:24.487Z",
+      "sha256": "17dc020a1acae8dc6e44c9e9096602fc795e26f817b2564eb13c2298210243c8",
+      "bodyLength": 286493,
+      "denied": false
+    },
+    {
+      "key": "faq",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "status": 200,
+      "completedAt": "2026-10-08T10:08:48.780Z",
+      "sha256": "7b001d9c1a70d58e20f2499e7d8f1b33497c9d7ab375c6cc5004a794a1e42f1d",
+      "bodyLength": 93681
+    },
+    {
+      "key": "ticket-detail",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "status": 200,
+      "completedAt": "2026-10-08T10:08:48.817Z",
+      "sha256": "f869f98543e5bffc6996e94a231e0c773656c23a694f6bd1745666af8b01ace8",
+      "bodyLength": 67554
+    }
+  ],
+  "duplicationCheck": [
+    {
+      "file": "data/official-spots.json",
+      "count": 71,
+      "matches": [],
+      "sameArea": [
+        {
+          "id": "chiikawa-yaki-makuhari",
+          "address": "千葉県千葉市美浜区豊砂1-1 イオンモール幕張新都心 EKIMAE 2F",
+          "startDate": null,
+          "endDate": null,
+          "lat": 35.648,
+          "lng": 140.034
+        }
+      ]
+    },
+    {
+      "file": "data/official-events-archive.json",
+      "count": 644,
+      "matches": [],
+      "sameArea": [
+        {
+          "id": "popup-2026-06-aeon-makuhari",
+          "address": "千葉県千葉市美浜区豊砂1-1 イオンモール幕張新都心 エキマエモール1F エキマルコート",
+          "startDate": "2026-06-26",
+          "endDate": "2026-07-13",
+          "lat": 35.648,
+          "lng": 140.034
+        },
+        {
+          "id": "popup-2023-08-02-aeon-makuhari-shintoshin",
+          "address": "千葉県千葉市美浜区豊砂1-1 イオンモール幕張新都心（開催場所：イオンモール幕張新都心 ファミリーモール 1F THE CLOCK HOUSE横特設会場）",
+          "startDate": "2023-08-02",
+          "endDate": "2023-08-20",
+          "lat": 35.648,
+          "lng": 140.034
+        },
+        {
+          "id": "popup-2024-09-12-aeon-makuhari-shintoshin",
+          "address": "千葉県千葉市美浜区豊砂1-1 イオンモール幕張新都心（開催場所：イオンモール幕張新都心 1F エキマエコート）",
+          "startDate": "2024-09-12",
+          "endDate": "2024-09-30",
+          "lat": 35.648,
+          "lng": 140.034
+        },
+        {
+          "id": "popup-2025-05-23-aeon-makuhari-shintoshin",
+          "address": "千葉県千葉市美浜区豊砂1-1 イオンモール幕張新都心（開催場所：イオンモール幕張新都心 エキマエモール 1F エキマエコート）",
+          "startDate": "2025-05-23",
+          "endDate": "2025-06-09",
+          "lat": 35.648,
+          "lng": 140.034
+        }
+      ]
+    },
+    {
+      "file": "data/nagano-spots.json",
+      "count": 92,
+      "matches": [],
+      "sameArea": []
+    },
+    {
+      "file": "data/community-spots.json",
+      "count": 2,
+      "matches": [],
+      "sameArea": []
+    },
+    {
+      "file": "data/collaborations-current.json",
+      "count": 21,
+      "matches": [],
+      "sameArea": []
+    },
+    {
+      "file": "data/collaborations-archive.json",
+      "count": 52,
+      "matches": [],
+      "sameArea": []
+    }
+  ],
+  "sourcePrecision": {
+    "christmasAnnouncedAt": "2026-10-08",
+    "discoveredAt": "2026-10-08",
+    "discoveryNote": "委任元のクラウド巡回で日本時間19時ごろ。正確な発見時計は不明。",
+    "existingUpdatesOfficialAnnouncedAt": null,
+    "sourceFetchedAtIsAnnouncementTime": false
+  },
+  "changes": {
+    "lucua": [
+      {
+        "id": "chiikawa-park-store-osaka",
+        "fields": [
+          "hoursText",
+          "hoursInfoUrl",
+          "hoursCheckedAt",
+          "entryNote"
+        ],
+        "hoursText": "10:00～20:00",
+        "openingDateUnchanged": "2026-11-24",
+        "individualAdmissionAndPreopenUnknownPreserved": true
+      },
+      {
+        "id": "nagano-market-umeda",
+        "fields": [
+          "hoursText",
+          "hoursInfoUrl",
+          "hoursCheckedAt",
+          "entryNote"
+        ],
+        "hoursText": "10:00～20:00",
+        "openingDateUnchanged": "2026-11-24",
+        "individualAdmissionAndPreopenUnknownPreserved": true
+      }
+    ],
+    "skytree": {
+      "id": "collab-skytree-2026",
+      "fields": [
+        "entryNote",
+        "entryInfoCheckedAt",
+        "importantNotice"
+      ],
+      "beforeEntry": "展望台の入場には展望台入場券が必要です。コラボカフェの対象メニューは、食事券付き展望台入場券の事前購入が必要な場合があります。1F物販会場は9月24日以降、予約不要のフリー入場です（混雑時は入店規制を行う場合があります）。",
+      "afterEntry": "展望台の入場には展望台入場券が必要です。コラボカフェの対象メニューは、食事券付き展望台入場券の事前購入が必要です。期間中の食事券付き展望台入場券は販売予定枚数の上限に達しています。予告なく販売を再開する場合があるため、最新の販売状況は公式販売ページをご確認ください。1F物販会場は9月24日以降、予約不要のフリー入場です（混雑時は入店規制を行う場合があります）。",
+      "notice": "2026年10月8日・14日・21日・22日は、19:30の映像上映回のみ休止します。上映の最新状況は公式案内をご確認ください。",
+      "oneFAdmissionPreserved": true
+    },
+    "newSpot": {
+      "id": "chiikawa-christmas-market-2026-toyosuna",
+      "name": "ちいかわクリスマスマーケット",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa",
+      "periodType": "limited",
+      "startDate": "2026-11-24",
+      "endDate": "2026-12-25",
+      "hoursText": "11:00～21:00（最終入場枠18:30～19:00）",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://www.asoview.com/base/165182/",
+      "hoursCheckedAt": "2026-10-08",
+      "reservationType": "required",
+      "reservationUrl": "https://www.asoview.com/base/165182/",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "日時指定の有料入場チケットが必要です。販売はアソビュー！のみで、会場窓口での当日券販売はありません。先行抽選は2026年10月15日12:00～10月25日23:59、当落発表は10月30日12:00以降です。一般発売日は未発表です。利用はチケットに記載された入場開始時刻から2時間30分以内です。購入者本人の同行が必要です。スマートフォンは原則必要ですが、同行する4～11歳の子どもチケット利用者は、スマートフォンなしでも購入者と一緒に入場できます（一部体験に制限があります）。",
+      "entryInfoUrl": "https://contents-abema.com/chiikawa-christmas-market/",
+      "entryInfoCheckedAt": "2026-10-08",
+      "lat": 35.653567,
+      "lng": 140.029936,
+      "address": "千葉県千葉市美浜区豊砂1-12 豊砂公園（イオンモール幕張新都心前）",
+      "description": "ABEMA主催の、ちいかわの世界観を楽しむ期間限定クリスマス体験イベントです。豊砂公園でクリスマスツリー、フォトスポット、限定フードやオリジナルグッズを展開します。",
+      "sourceUrl": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%83%E8%91%89%E5%B8%82%E7%BE%8E%E6%B5%9C%E5%8C%BA%E8%B1%8A%E7%A0%821-12%20%E8%B1%8A%E7%A0%82%E5%85%AC%E5%9C%92"
+    },
+    "newCollaboration": {
+      "id": "abema-chiikawa-christmas-market-2026",
+      "title": "ABEMA×ちいかわ クリスマスマーケット",
+      "partner": "ABEMA",
+      "category": "experience",
+      "status": "upcoming",
+      "summary": "豊砂公園でクリスマスツリー、フォトスポット、限定フードやグッズを楽しむ、日時指定有料チケット制の体験イベントです。",
+      "areaText": "千葉県千葉市美浜区・豊砂公園",
+      "channels": [
+        "施設"
+      ],
+      "periods": [
+        {
+          "label": "開催期間",
+          "startDate": "2026-11-24",
+          "endDate": "2026-12-25",
+          "note": "11:00～21:00、最終入場枠18:30～19:00。入場開始時刻から2時間30分以内。"
+        },
+        {
+          "label": "先行抽選受付",
+          "startDate": "2026-10-15",
+          "endDate": "2026-10-25",
+          "note": "10月15日12:00～10月25日23:59。10月30日12:00以降に当落発表。一般発売日は未発表。"
+        }
+      ],
+      "tags": [
+        "クリスマス",
+        "体験イベント",
+        "日時指定チケット"
+      ],
+      "sourceUrl": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "linkedSpotIds": [
+        "chiikawa-christmas-market-2026-toyosuna"
+      ],
+      "checkedAt": "2026-10-08"
+    },
+    "coordinateEvidence": {
+      "url": "https://www.asoview.com/base/165182/",
+      "observedAt": "2026-10-08T10:05:24.037Z",
+      "mapQuery": "35.653567,140.029936",
+      "lat": 35.653567,
+      "lng": 140.029936,
+      "method": "公式チケットページの埋め込み地図qを照合。近隣店舗の座標を流用しない。"
+    }
+  },
+  "previousPublicationSync": {
+    "version": 1,
+    "task": "park-game-notice-and-ikebukuro-address-correction",
+    "sourceCommit": "58ba0f90892cf2faf026d1a38123565ef33e1d5a",
+    "mainCommit": "729cc3d27062f5e617c298a4a8b4399affef5870",
+    "prNumber": 31,
+    "publication": {
+      "deploymentRunId": 37609502738,
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/37609502738",
+      "deployStepCompletedAt": "2026-10-07T10:46:17Z",
+      "deployJobCompletedAt": "2026-10-07T10:46:19Z",
+      "publicOfficialJSONConfirmedAt": "2026-10-07T10:47:24.960Z",
+      "allResourcesConfirmedAt": "2026-10-07T10:47:25.891Z"
+    },
+    "candidatePublicationUpdates": [
+      {
+        "id": "chiikawa-park-kumonosu-pause-20261007",
+        "listingIds": [
+          "chiikawa-park-tokyo"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-07T10:47:24.960Z",
+        "officialAnnouncedAt": "2026-10-07",
+        "discoveredAt": "2026-10-07T19:05:23+09:00",
+        "reflectDueAt": "2026-10-07",
+        "recheckDueAt": "2026-10-08T08:00:00+09:00",
+        "evidence": [
+          {
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/37609502738",
+            "observedAt": "2026-10-07T10:47:25.567Z",
+            "summary": "今回mergeのPages配信成功。deploy stepとjob完了日時は別項目に記録。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/official-spots.json",
+            "observedAt": "2026-10-07T10:47:24.960Z",
+            "summary": "今回版の公開JSON本文とmain blobの一致を初めて確認した時刻。過去の掲載初回公開時刻ではない。"
+          }
+        ]
+      },
+      {
+        "id": "tokyo-banana-ikebukuro-address-correction-20261007",
+        "listingIds": [
+          "tokyo-banana-popup-ikebukuro-2026-09"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-07T10:47:24.960Z",
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-07",
+        "reflectDueAt": "2026-10-07",
+        "recheckDueAt": "2026-10-08T08:00:00+09:00",
+        "evidence": [
+          {
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/37609502738",
+            "observedAt": "2026-10-07T10:47:25.567Z",
+            "summary": "今回mergeのPages配信成功。deploy stepとjob完了日時は別項目に記録。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/official-spots.json",
+            "observedAt": "2026-10-07T10:47:24.960Z",
+            "summary": "今回版の公開JSON本文とmain blobの一致を初めて確認した時刻。過去の掲載初回公開時刻ではない。"
+          }
+        ]
+      }
+    ],
+    "gitLedgerSync": {
+      "status": "synced_in_this_ordinary_listing_update",
+      "originalRecordedAt": "2026-10-07T10:48:40.443Z",
+      "sourceLibraryFileId": "libfile_b6a5d2f2e1c48191aeceabbb5be9e98a"
+    },
+    "recordedAt": "2026-10-07T10:48:40.443Z",
+    "note": "配信step完了10:46:17Z・job完了10:46:19Zと公開実体確認10:47:24.960Zを区別。後日の同期・観測・commit時刻で公開確認時刻を置き換えない。前回のゲーム再開続報の再確認は今回の対象外。"
+  },
+  "baselinePublicVerification": {
+    "stage": "baseline",
+    "main": "729cc3d27062f5e617c298a4a8b4399affef5870",
+    "resourceCount": 4,
+    "results": [
+      {
+        "file": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json?verification=729cc3d27062",
+        "status": 200,
+        "observedAt": "2026-10-08T10:08:50.112Z",
+        "matchesMain": true,
+        "gitBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e",
+        "expectedBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e",
+        "attempts": [
+          {
+            "file": "data/added-dates.json",
+            "url": "https://chiikatsu-map.com/data/added-dates.json?verification=729cc3d27062",
+            "status": 200,
+            "observedAt": "2026-10-08T10:08:50.112Z",
+            "matchesMain": true,
+            "gitBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e",
+            "expectedBlobSHA": "dc67f192e9af10332c2119d04feb051bb141905e"
+          }
+        ]
+      },
+      {
+        "file": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json?verification=729cc3d27062",
+        "status": 200,
+        "observedAt": "2026-10-08T10:08:50.177Z",
+        "matchesMain": true,
+        "gitBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235",
+        "expectedBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235",
+        "attempts": [
+          {
+            "file": "data/collaborations-current.json",
+            "url": "https://chiikatsu-map.com/data/collaborations-current.json?verification=729cc3d27062",
+            "status": 200,
+            "observedAt": "2026-10-08T10:08:50.177Z",
+            "matchesMain": true,
+            "gitBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235",
+            "expectedBlobSHA": "cc6d0725d760334bce7155e1d1cec9f54604b235"
+          }
+        ]
+      },
+      {
+        "file": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json?verification=729cc3d27062",
+        "status": 200,
+        "observedAt": "2026-10-08T10:08:50.178Z",
+        "matchesMain": true,
+        "gitBlobSHA": "7cdb1848c0e9c892d6c56e22cad82a3d881533de",
+        "expectedBlobSHA": "7cdb1848c0e9c892d6c56e22cad82a3d881533de",
+        "attempts": [
+          {
+            "file": "data/official-spots.json",
+            "url": "https://chiikatsu-map.com/data/official-spots.json?verification=729cc3d27062",
+            "status": 200,
+            "observedAt": "2026-10-08T10:08:50.178Z",
+            "matchesMain": true,
+            "gitBlobSHA": "7cdb1848c0e9c892d6c56e22cad82a3d881533de",
+            "expectedBlobSHA": "7cdb1848c0e9c892d6c56e22cad82a3d881533de"
+          }
+        ]
+      },
+      {
+        "file": "research/publication-candidate-ledger.json",
+        "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json?verification=729cc3d27062",
+        "status": 200,
+        "observedAt": "2026-10-08T10:08:50.379Z",
+        "matchesMain": true,
+        "gitBlobSHA": "10d3a8df033a5b279753248a20cbcab18b752238",
+        "expectedBlobSHA": "10d3a8df033a5b279753248a20cbcab18b752238",
+        "attempts": [
+          {
+            "file": "research/publication-candidate-ledger.json",
+            "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json?verification=729cc3d27062",
+            "status": 200,
+            "observedAt": "2026-10-08T10:08:50.379Z",
+            "matchesMain": true,
+            "gitBlobSHA": "10d3a8df033a5b279753248a20cbcab18b752238",
+            "expectedBlobSHA": "10d3a8df033a5b279753248a20cbcab18b752238"
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "firstOfficialDataObservationAt": "2026-10-08T10:08:50.178Z",
+    "completedAt": "2026-10-08T10:08:50.391Z",
+    "accessDenied": false
+  },
+  "publicationRecording": {
+    "initialState": "verifying",
+    "initialPublishedAt": null,
+    "nextCheckAt": "2026-10-09T08:00:00+09:00",
+    "afterVerification": "配信runと公開実体一致時刻を即時保存し次回通常掲載更新でGit台帳へ同期する。記録だけのPRは作らない。"
+  }
+}

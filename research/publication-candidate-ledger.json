@@ -1382,6 +1382,18 @@
           "observedAt": "2026-10-07T10:16:45.090Z",
           "summary": "公式本文の日付は2026年10月7日のみ。機器不具合によるゲーム単体の休止と、復旧後の再開・続報待ちを確認。発表時刻・休止開始時刻は推測しない。",
           "recordPath": "research/park-ikebukuro-2026-10-07-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37609502738",
+          "observedAt": "2026-10-07T10:47:25.567Z",
+          "summary": "今回mergeのPages配信成功。deploy stepとjob完了日時は別項目に記録。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-07T10:47:24.960Z",
+          "summary": "今回版の公開JSON本文とmain blobの一致を初めて確認した時刻。過去の掲載初回公開時刻ではない。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1394,12 +1406,12 @@
       "listingIds": [
         "chiikawa-park-tokyo"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "既存importantNoticeだけに反映。施設の営業日時・入場条件・IDを保持し、施設全体の休業としない。公開検証前のpublishedAtはnull。公開後は実体確認時刻と配信runを即時証跡保存し、次回通常掲載更新でGit台帳へ同期する。",
-      "nextCheck": "2026年10月8日8時（日本時間）に公式の再開続報と、公開後state・publishedAt・証跡のGit台帳同期待ちを確認する。",
+      "decision": "PR #31の公開配信runと公開実体一致の保存済み証拠に基づき、公開stateと実確認時刻のpublishedAtを今回の通常掲載更新で同期。元の発表日・発見日・時刻不明の値は保持する。",
+      "nextCheck": "公式のゲーム再開続報を確認する。今回の更新では再開の続報を確認していない。公開台帳同期は完了。",
       "recheckDueAt": "2026-10-08T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-07T10:47:24.960Z"
     },
     {
       "id": "tokyo-banana-ikebukuro-address-correction-20261007",
@@ -1428,6 +1440,18 @@
           "observedAt": "2026-10-07T10:21:39.266Z",
           "summary": "発信者の既存プレスリリースで会場・9月17日から10月14日・10時から21時（最終日18時）を照合。プレスリリース日時を新たな住所訂正の発表時刻に転用しない。",
           "recordPath": "research/park-ikebukuro-2026-10-07-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/37609502738",
+          "observedAt": "2026-10-07T10:47:25.567Z",
+          "summary": "今回mergeのPages配信成功。deploy stepとjob完了日時は別項目に記録。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-07T10:47:24.960Z",
+          "summary": "今回版の公開JSON本文とmain blobの一致を初めて確認した時刻。過去の掲載初回公開時刻ではない。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
         }
       ],
       "existingMatch": {
@@ -1440,11 +1464,196 @@
       "listingIds": [
         "tokyo-banana-popup-ikebukuro-2026-09"
       ],
+      "state": "published",
+      "priority": "normal",
+      "decision": "PR #31の公開配信runと公開実体一致の保存済み証拠に基づき、公開stateと実確認時刻のpublishedAtを今回の通常掲載更新で同期。元の発表日・発見日・時刻不明の値は保持する。",
+      "nextCheck": "住所に続報があれば公式掲載と照合する。今回の更新でPR #31の公開台帳同期は完了。",
+      "recheckDueAt": "2026-10-08T08:00:00+09:00",
+      "publishedAt": "2026-10-07T10:47:24.960Z"
+    },
+    {
+      "id": "lucua-hours-chiikawa-park-store-osaka-20261008",
+      "title": "ちいかわパークストア 大阪 営業時間の公式値反映",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-park-store-osaka:hours:2026-10-08",
+      "sourceIds": [
+        "lucua-south-shop-list"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-08",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-08",
+      "evidence": [
+        {
+          "url": "https://www.lucua.jp/floormap/southshop.html",
+          "observedAt": "2026-10-08T10:05:24.026Z",
+          "summary": "対象店舗ごとの10:00～20:00を確認し、未発表表示と営業時間の続報待ちだけを訂正。個店入場条件・プレオープン未確認は保持。告知時刻は不明。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-store-osaka"
+        ],
+        "note": "既存ID・名称・公式URLを照合した通常掲載修正。ID・追加日を保持する。"
+      },
+      "listingIds": [
+        "chiikawa-park-store-osaka"
+      ],
       "state": "verifying",
       "priority": "normal",
-      "decision": "住所と外部地図リンクの番地を1-28-4へ訂正。期間・営業時間・緯度経度・入場条件・IDを保持する。公開検証前のpublishedAtはnull。公開後は実体確認時刻と配信runを即時証跡保存し、次回通常掲載更新でGit台帳へ同期する。",
-      "nextCheck": "2026年10月8日8時（日本時間）に訂正住所の公開実体と、公開後state・publishedAt・証跡のGit台帳同期待ちを確認する。",
-      "recheckDueAt": "2026-10-08T08:00:00+09:00",
+      "decision": "確認できた公式本文だけを反映。公開確認前のpublishedAtはnull。公開後は配信runと実体確認時刻を即時保存し、次回通常掲載更新でGit台帳へ同期する。",
+      "nextCheck": "10月9日8時（日本時間）に公式続報と公開後台帳の同期待ちを確認する。",
+      "recheckDueAt": "2026-10-09T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "lucua-hours-nagano-market-umeda-20261008",
+      "title": "ナガノマーケット UMEDA 営業時間の公式値反映",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-umeda:hours:2026-10-08",
+      "sourceIds": [
+        "lucua-south-shop-list"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-08",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-08",
+      "evidence": [
+        {
+          "url": "https://www.lucua.jp/floormap/southshop.html",
+          "observedAt": "2026-10-08T10:05:24.026Z",
+          "summary": "対象店舗ごとの10:00～20:00を確認し、未発表表示と営業時間の続報待ちだけを訂正。個店入場条件・プレオープン未確認は保持。告知時刻は不明。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-umeda"
+        ],
+        "note": "既存ID・名称・公式URLを照合した通常掲載修正。ID・追加日を保持する。"
+      },
+      "listingIds": [
+        "nagano-market-umeda"
+      ],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "確認できた公式本文だけを反映。公開確認前のpublishedAtはnull。公開後は配信runと実体確認時刻を即時保存し、次回通常掲載更新でGit台帳へ同期する。",
+      "nextCheck": "10月9日8時（日本時間）に公式続報と公開後台帳の同期待ちを確認する。",
+      "recheckDueAt": "2026-10-09T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "skytree-cafe-sale-and-screening-20261008",
+      "title": "スカイツリー カフェ券販売状況・19:30特定回休止",
+      "kind": "listing_update",
+      "targetKey": "collab-skytree-2026:entry-and-screening:2026-10-08",
+      "sourceIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-08",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-08",
+      "evidence": [
+        {
+          "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+          "observedAt": "2026-10-08T10:05:24.487Z",
+          "summary": "食事券付き券の事前購入が必要、期間中の販売上限到達、予告なく再販売の場合ありを確認。10/8・14・21・22の19:30回のみ休止。1F予約不要を保持。今回の本文確認時刻は告知時刻ではない。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "collab-skytree-2026"
+        ],
+        "note": "既存ID・名称・公式URLを照合した通常掲載修正。ID・追加日を保持する。"
+      },
+      "listingIds": [
+        "collab-skytree-2026"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認できた公式本文だけを反映。公開確認前のpublishedAtはnull。公開後は配信runと実体確認時刻を即時保存し、次回通常掲載更新でGit台帳へ同期する。",
+      "nextCheck": "10月9日8時（日本時間）に公式続報と公開後台帳の同期待ちを確認する。",
+      "recheckDueAt": "2026-10-09T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-christmas-market-2026-toyosuna-new",
+      "title": "ちいかわクリスマスマーケット 豊砂公園",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-christmas-market-2026-toyosuna:2026-11-24",
+      "sourceIds": [
+        "chiikawa-christmas-market-official",
+        "abema-chiikawa-christmas-release-20261008",
+        "chiikawa-christmas-market-asoview"
+      ],
+      "officialAnnouncedAt": "2026-10-08",
+      "discoveredAt": "2026-10-08",
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-12-25",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-15T12:00:00+09:00",
+      "reflectDueAt": "2026-10-08",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+          "observedAt": "2026-10-08T10:05:24.191Z",
+          "summary": "10/8の日付のみで主催発表。11/24～12/25に豊砂公園で開催。クラウド巡回の発見は10/8日本時間19時ごろと幅があるためdiscoveredAtは日付のみとし時刻を捏造しない。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        },
+        {
+          "url": "https://contents-abema.com/chiikawa-christmas-market/",
+          "observedAt": "2026-10-08T10:05:24.108Z",
+          "summary": "先行抽選10/15 12:00～10/25 23:59、当落10/30 12:00以降。一般発売日は未発表。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        },
+        {
+          "url": "https://www.asoview.com/base/165182/",
+          "observedAt": "2026-10-08T10:05:24.037Z",
+          "summary": "住所豊砂1-12、11:00～21:00・最終入場枠18:30～19:00と地図qの座標を確認。APIキー等は記録しない。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        },
+        {
+          "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+          "observedAt": "2026-10-08T10:08:48.780Z",
+          "summary": "チケット記載の入場開始時刻から2時間30分以内、購入者本人同行、窓口当日券なし、スマホ原則必要を確認。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        },
+        {
+          "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+          "observedAt": "2026-10-08T10:08:48.817Z",
+          "summary": "4～11歳の子どもチケットの同行者はスマホなしでも購入者と一緒に入場可能。一部体験に制限がある例外を保持。",
+          "recordPath": "research/oct8-listing-updates-2026-10-08-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "全公開スポット・企画JSONを名称・公式URL・会場・会期で照合し重複なし。同会場周辺の屋内店舗とは番地・会場・会期が異なる。"
+      },
+      "listingIds": [
+        "chiikawa-christmas-market-2026-toyosuna",
+        "abema-chiikawa-christmas-market-2026"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認できた公式本文だけを反映。公開確認前のpublishedAtはnull。公開後は配信runと実体確認時刻を即時保存し、次回通常掲載更新でGit台帳へ同期する。",
+      "nextCheck": "10月9日8時（日本時間）に公式続報・一般発売日と公開後台帳の同期待ちを確認する。",
+      "recheckDueAt": "2026-10-09T08:00:00+09:00",
       "publishedAt": null
     }
   ]

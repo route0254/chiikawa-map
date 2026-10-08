@@ -282,6 +282,17 @@
       "sourceUrls": [
         "https://chiikawa.toho-movie.jp/news/page/n_260713.html"
       ]
+    },
+    {
+      "key": "chiikawa-christmas-market-2026",
+      "label": "ちいかわクリスマスマーケット",
+      "status": "excluded",
+      "reason": "公式スポットJSONに個別の体験イベントとして掲載し、コラボ一覧から同じ会場IDへリンクする。日時指定有料券の予約URLと固有の入場条件を既存schemaで保持するため、汎用の期間限定店舗系列原本の生成対象外とする。",
+      "sourceUrls": [
+        "https://www.cyberagent.co.jp/news/detail/id=33894",
+        "https://contents-abema.com/chiikawa-christmas-market/",
+        "https://www.asoview.com/base/165182/"
+      ]
     }
   ]
 }
