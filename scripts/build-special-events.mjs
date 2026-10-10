@@ -111,7 +111,7 @@ function createRecord(
     reservationType:
       event.reservationType ||
       "unknown",
-    reservationUrl: null,
+    reservationUrl: event.reservationUrl || null,
     defaultEntryType: cancelled
       ? "other"
       : event.defaultEntryType || "walkin",
@@ -123,8 +123,8 @@ function createRecord(
       : event.entryNote || (archive
         ? `開催当時の入店方法は公式イベントページで案内されていました。${endLabel}で終了済みです。`
         : "入店方法・販売方法は公式イベントページをご確認ください。"),
-    entryInfoUrl: event.sourceUrl,
-    entryInfoCheckedAt: checkedAt,
+    entryInfoUrl: event.entryInfoUrl || event.sourceUrl,
+    entryInfoCheckedAt: event.entryInfoCheckedAt || checkedAt,
     lat: event.lat,
     lng: event.lng,
     address: venueAddress,

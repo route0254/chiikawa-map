@@ -1,0 +1,571 @@
+{
+  "recordedAt": "2026-10-10T09:49:52.114Z",
+  "base": "9d9db24ac9dd5c36da5509d68d14c3bc20c05fe4",
+  "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
+  "suppliedFacts": {
+    "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
+    "sameDayDiscoveredAt": "2026-10-10",
+    "sameDayOfficialReadAtDisplay": "2026-10-10 18:37 JST (seconds not supplied)",
+    "sameDayExpiresAt": "2026-10-10T20:00:00+09:00",
+    "sameDay": [
+      {
+        "id": "chiikawaland-sendai",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108804009247269063",
+        "officialAnnouncedAt": "2026-10-10T15:17:10+09:00",
+        "hoursUrl": "https://sendai.parco.jp/shop/detail/?cd=028288",
+        "closesAt": "20:00"
+      },
+      {
+        "id": "chiikawaland-popup-2026-09-11-amu-oita",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108795650897039562",
+        "officialAnnouncedAt": "2026-10-10T14:43:57+09:00",
+        "hoursUrl": "https://www.jroitacity.jp/information/hours/",
+        "closesAt": "20:00"
+      },
+      {
+        "id": "chiikawaland-nagoya",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108792098568945878",
+        "officialAnnouncedAt": "2026-10-10T14:29:50+09:00",
+        "hoursUrl": null,
+        "closesAt": "20:00"
+      }
+    ],
+    "fukuoka": {
+      "id": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+      "sourceUrl": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10",
+      "officialReadAt": "2026-10-10T18:37:20+09:00",
+      "quote": "10月16日(金)の入店は混雑が予想されるため、入場整理券を配布いたします",
+      "methodAndOpeningTimeUnknown": true,
+      "nextCheck": "2026-10-11T08:00:00+09:00"
+    },
+    "hiraoka": {
+      "suggestedSpot": {
+        "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+        "name": "ちいかわ むちゃフォトパーティ!! イオンモール札幌平岡",
+        "category": "official",
+        "placeType": "spot",
+        "relationType": "event",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-25",
+        "hoursText": "撮影会11:00・13:00・15:00／ARラリー10:00～16:00（各日）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "写真撮影券は各日先着150組（各回50組、1組1枚）、ARラリー景品引換券は各日先着300人（1人1枚）です。各日9:00からフードテラス出入口で2種の券を同じ列で先着配布し、残券がある場合は10:00以降、1F ワンズテラス前で配布します。撮影会の参加回は選択可能で、各回30分前から会場開放、戻った方から案内します。1組の撮影時間は30秒。ARラリーは景品引換券がなくても参加可能です。",
+        "entryInfoUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "entryInfoCheckedAt": "2026-10-10",
+        "lat": 42.9976401,
+        "lng": 141.4588505,
+        "address": "北海道札幌市清田区平岡3条5丁目3-1 イオンモール札幌平岡（開催場所：1F ワンズテラス前／ARラリー：1F センターコート周辺）",
+        "description": "ちいかわ・ハチワレの写真撮影会と、館内4か所のARポイントを巡るスマートフォンのスタンプラリーを楽しむ2日間のファミリーイベントです。",
+        "sourceUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E6%9C%AD%E5%B9%8C%E5%B9%B3%E5%B2%A1%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%B8%85%E7%94%B0%E5%8C%BA%E5%B9%B3%E5%B2%A13%E6%9D%A15%E4%B8%81%E7%9B%AE3-1",
+        "importantNotice": "撮影券とARラリー景品引換券は各日9:00からフードテラス出入口で配布。10:00以降に残券がある場合は1F ワンズテラス前で配布します。"
+      },
+      "source": {
+        "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
+        "name": "イオンモール札幌平岡 むちゃフォトパーティ 10/24–25",
+        "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "kind": "venue",
+        "scope": [
+          "official"
+        ],
+        "cadence": "morning_evening",
+        "enabled": true,
+        "lastAttemptAt": "2026-10-10T09:38:55Z",
+        "lastSuccessfulAt": "2026-10-10T09:38:55Z",
+        "lastResult": "success",
+        "resultSummary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。親の一次情報取得を受領。",
+        "lastFailure": null,
+        "note": "公式発表日時は不明。参加費は不明で無料と推定しない。"
+      },
+      "candidateId": "new-muchaphoto-sapporo-hiraoka-20261024",
+      "discoveredAt": "2026-10-10T09:37:21Z",
+      "observedAt": "2026-10-10T09:38:55Z",
+      "coordinates": {
+        "officialAccessUrl": "https://sapporohiraoka.aeonmallhokkaido.com/static-pages/access",
+        "officialMapLink": "https://goo.gl/maps/nvD5W3gjCN6Xz6C99",
+        "lat": 42.9976401,
+        "lng": 141.4588505,
+        "method": "親が公式外部Google MapsリンクのリダイレクトURL placeマーカー !3d42.9976401!4d141.4588505 を取得。地図本文は取得失敗、iframe viewport中心値は採用しない。",
+        "crosscheckUrl": "https://mapfan.com/spots/SCQQA%2CJ%2CHT",
+        "crosscheckLat": 42.996932,
+        "crosscheckLng": 141.4584536
+      },
+      "unknowns": [
+        "公式発表日時",
+        "参加費"
+      ]
+    },
+    "sameDayFirstObservedBy": "2026-10-10T18:35:54+09:00"
+  },
+  "lakeFacts": {
+    "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
+    "suggestedSpot": {
+      "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+      "name": "ちいかわ むちゃフォトパーティ!! イオンレイクタウンmori",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa",
+      "periodType": "limited",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hoursText": "撮影会11:00・13:00・15:00（各回20～30分）／ARラリー10:00～16:00（最終受付15:30）",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "hoursCheckedAt": "2026-10-10",
+      "reservationType": "not_available",
+      "reservationUrl": null,
+      "defaultEntryType": "other",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "announced",
+      "entryNote": "参加無料。撮影会参加券は当日9:30から1F J1入口（屋外）で全3回分を先着配布します（各回50組、計150枚、1組1枚、1枚で4人まで）。参加回を選べ、代表者だけの整列が可能です。券に記載の開催時刻を過ぎると無効です。ARラリー景品引換券も同じ列・時間で配布し、景品は500人分。10:00以降に残券がある場合は1F 木の広場で配布します。ARラリーには自分のスマートフォンが必要で、景品引換券がなくてもラリーには参加できます。深夜・早朝からの待機は禁止です。",
+      "entryInfoUrl": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "entryInfoCheckedAt": "2026-10-10",
+      "lat": 35.8779,
+      "lng": 139.8269,
+      "address": "埼玉県越谷市レイクタウン3丁目1番地1 イオンレイクタウンmori（開催場所：1F 木の広場）",
+      "description": "ちいかわ・ハチワレ・うさぎの写真撮影会と、館内ARポイントを巡るスマートフォンのスタンプラリーを楽しむ1日限定の無料ファミリーイベントです。",
+      "sourceUrl": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%AC%E3%82%A4%E3%82%AF%E3%82%BF%E3%82%A6%E3%83%B3mori%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%B6%8A%E8%B0%B7%E5%B8%82%E3%83%AC%E3%82%A4%E3%82%AF%E3%82%BF%E3%82%A6%E3%83%B33%E4%B8%81%E7%9B%AE1%E7%95%AA%E5%9C%B01",
+      "importantNotice": "撮影会参加券とARラリー景品引換券は当日9:30から1F J1入口（屋外）で先着配布。撮影券1枚で4人まで。深夜・早朝からの待機は禁止です。"
+    },
+    "source": {
+      "id": "venue-muchaphoto-laketown-mori-20261012",
+      "name": "イオンレイクタウンmori むちゃフォトパーティ 10/12",
+      "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-10T09:41:50Z",
+      "lastSuccessfulAt": "2026-10-10T09:41:50Z",
+      "lastResult": "success",
+      "resultSummary": "施設一次情報で10/12無料撮影会・ARラリー、9:30 J1屋外先着券、1枚4名・AR景品500名を確認。親の一次情報取得を受領。",
+      "lastFailure": null,
+      "note": "公式ページ2026/10/09更新は初回発表日とは限らないため、officialAnnouncedAtはnull。"
+    },
+    "candidateId": "new-muchaphoto-laketown-mori-20261012",
+    "discoveredAt": "2026-10-10T09:41:50Z",
+    "observedAt": "2026-10-10T09:41:50Z",
+    "officialUpdatedAt": "2026-10-09",
+    "coordinateEvidence": {
+      "method": "同じmori施設の既存点を再利用。公式住所が一致。",
+      "existingIds": [
+        "chiikawaland-koshigaya",
+        "popup-2022-08-09-aeon-laketown-mori",
+        "popup-2023-01-07-aeon-laketown-mori"
+      ],
+      "lat": 35.8779,
+      "lng": 139.8269
+    },
+    "unknowns": [
+      "初回公式発表日時"
+    ]
+  },
+  "nativeReads": [
+    {
+      "url": "https://x.com/chiikawa_land/status/2108804009247269063",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.231Z",
+      "completedAt": "2026-10-10T09:45:18.346Z",
+      "finalUrl": "https://x.com/chiikawa_land/status/2108804009247269063",
+      "bytes": 121460,
+      "containsNumberedTicket": true,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://x.com/chiikawa_land/status/2108795650897039562",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.291Z",
+      "completedAt": "2026-10-10T09:45:18.246Z",
+      "finalUrl": "https://x.com/chiikawa_land/status/2108795650897039562",
+      "bytes": 101908,
+      "containsNumberedTicket": true,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://x.com/chiikawa_land/status/2108792098568945878",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.292Z",
+      "completedAt": "2026-10-10T09:45:18.343Z",
+      "finalUrl": "https://x.com/chiikawa_land/status/2108792098568945878",
+      "bytes": 128481,
+      "containsNumberedTicket": true,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://sendai.parco.jp/shop/detail/?cd=028288",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.293Z",
+      "completedAt": "2026-10-10T09:45:17.476Z",
+      "finalUrl": "https://sendai.parco.jp/shop/detail/?cd=028288",
+      "bytes": 26463,
+      "containsNumberedTicket": false,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": true
+    },
+    {
+      "url": "https://www.jroitacity.jp/information/hours/",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.294Z",
+      "completedAt": "2026-10-10T09:45:17.647Z",
+      "finalUrl": "https://www.jroitacity.jp/information/hours/",
+      "bytes": 37739,
+      "containsNumberedTicket": false,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": true
+    },
+    {
+      "url": "https://chiikawa-info.jp/chiikawaland/nagoya/",
+      "status": 403,
+      "startedAt": "2026-10-10T09:45:17.295Z",
+      "completedAt": "2026-10-10T09:45:17.382Z",
+      "finalUrl": "https://chiikawa-info.jp/chiikawaland/nagoya/",
+      "bytes": 5509,
+      "containsNumberedTicket": false,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.295Z",
+      "completedAt": "2026-10-10T09:45:17.385Z",
+      "finalUrl": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "bytes": 51445,
+      "containsNumberedTicket": true,
+      "containsOct16": true,
+      "containsHiraoka": false,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.296Z",
+      "completedAt": "2026-10-10T09:45:17.510Z",
+      "finalUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "bytes": 24461,
+      "containsNumberedTicket": false,
+      "containsOct16": false,
+      "containsHiraoka": true,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/static-pages/access",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.298Z",
+      "completedAt": "2026-10-10T09:45:17.506Z",
+      "finalUrl": "https://sapporohiraoka.aeonmallhokkaido.com/static-pages/access",
+      "bytes": 30217,
+      "containsNumberedTicket": false,
+      "containsOct16": false,
+      "containsHiraoka": false,
+      "containsClosing20": false
+    },
+    {
+      "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "status": 200,
+      "startedAt": "2026-10-10T09:49:51.569Z",
+      "completedAt": "2026-10-10T09:49:52.073Z",
+      "bytes": 124247,
+      "containsFree": true,
+      "containsJ1": true,
+      "containsTicketTime": true
+    }
+  ],
+  "sameDayAppliedBefore20": true,
+  "expiresAt": "2026-10-10T20:00:00+09:00",
+  "newIds": [
+    "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+    "chiikawa-muchaphoto-aeon-laketown-mori-2026"
+  ],
+  "updatedIds": [
+    "chiikawaland-sendai",
+    "chiikawaland-popup-2026-09-11-amu-oita",
+    "chiikawaland-nagoya",
+    "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+    "magical-popup-2026-10-02-sapporo-apia"
+  ],
+  "morningSyncedCandidateIds": [
+    "popup-2026-10-23-ebina-marui",
+    "popup-2026-10-23-aeon-parkplace-oita",
+    "nagano-market-popup-2026-10-23-ebina-marui-new",
+    "chiikawa-workshop-lalaport-kashiwanoha-2026-new",
+    "chiikawa-muchaphoto-ario-kakogawa-2026-new",
+    "chiikawa-sushi-2026-10-22-yokohama-skybuilding-new",
+    "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-new",
+    "ramen-buta-ikebukuro-november-2026-booking",
+    "ramen-buta-shibuya-november-2026-booking",
+    "ramen-buta-shinsaibashi-november-2026-booking",
+    "lucua-store-preopen-lottery-chiikawa-park-store-osaka-20261009",
+    "lucua-store-preopen-lottery-nagano-market-umeda-20261009",
+    "chiikawaland-oct9-notice-retirement-20261010",
+    "archive-jr-sendai-20261010",
+    "chiikawaland-shinsaibashi-entry-20261010",
+    "chiikawaland-umeda-entry-20261010",
+    "chiikawaland-nagoya-entry-20261010",
+    "chiikawaland-koshigaya-entry-20261010"
+  ],
+  "duplicateChecks": [
+    {
+      "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "file": "data/official-spots.json",
+      "count": 78,
+      "within75m": [],
+      "decision": "同ID、同会場名・日程、75m以内の既存催事一致なし。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "file": "data/official-events-archive.json",
+      "count": 645,
+      "within75m": [],
+      "decision": "同ID、同会場名・日程、75m以内の既存催事一致なし。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "file": "data/nagano-spots.json",
+      "count": 92,
+      "within75m": [],
+      "decision": "同ID、同会場名・日程、75m以内の既存催事一致なし。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "file": "data/collaborations-current.json",
+      "count": 22,
+      "within75m": [],
+      "decision": "同ID、同会場名・日程、75m以内の既存催事一致なし。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+      "file": "data/official-spots.json",
+      "count": 78,
+      "within75m": [
+        {
+          "id": "chiikawaland-koshigaya",
+          "name": "ちいかわらんど 越谷レイクタウン店",
+          "startDate": "2026-06-19",
+          "endDate": null,
+          "distanceMeters": 0
+        }
+      ],
+      "decision": "同施設の常設らんど・過去POPUPとは日程・企画が異なる単日撮影会。別IDとして追加。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+      "file": "data/official-events-archive.json",
+      "count": 645,
+      "within75m": [
+        {
+          "id": "popup-2022-08-09-aeon-laketown-mori",
+          "name": "ちいかわPOP UP STORE イオンレイクタウン",
+          "startDate": "2022-08-09",
+          "endDate": "2022-08-21",
+          "distanceMeters": 0
+        },
+        {
+          "id": "popup-2023-01-07-aeon-laketown-mori",
+          "name": "ちいかわPOP UP STORE イオンレイクタウンmori",
+          "startDate": "2023-01-07",
+          "endDate": "2023-01-22",
+          "distanceMeters": 0
+        }
+      ],
+      "decision": "同施設の常設らんど・過去POPUPとは日程・企画が異なる単日撮影会。別IDとして追加。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+      "file": "data/nagano-spots.json",
+      "count": 92,
+      "within75m": [],
+      "decision": "同施設の常設らんど・過去POPUPとは日程・企画が異なる単日撮影会。別IDとして追加。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+      "file": "data/collaborations-current.json",
+      "count": 22,
+      "within75m": [],
+      "decision": "同施設の常設らんど・過去POPUPとは日程・企画が異なる単日撮影会。別IDとして追加。"
+    }
+  ],
+  "normalizations": [
+    "提供mapUrlのHTML表記&amp;をJSON用の&へ正規化。",
+    "親の提案recordPathを、元PCで実作成したこの根拠ファイルへ統一。"
+  ],
+  "unknownsPreserved": [
+    "札幌平岡参加費",
+    "新規2催事の初回公式発表日時",
+    "福岡ナガノ10/16券の配布方法・受付開始日時"
+  ],
+  "fukuokaHoursVerified": true,
+  "after20Action": "閉店後の次確認で当日3件を撤去する。20時後に公開開始となる場合は当日警告を公開データへ新設しない。",
+  "scheduledAutomationCreated": false,
+  "discoveryCorrection": {
+    "correctedAt": "2026-10-10T09:52:10.103Z",
+    "sameDayDiscoveredAt": "2026-10-10",
+    "firstObservedBy": "2026-10-10T18:35:54+09:00",
+    "supersededValue": "2026-10-10T18:35:21.612+09:00",
+    "reason": "親の調査側最終記録では発見時計を取得完了と同一視できないため、日付のみを採用。"
+  },
+  "magicalFacts": {
+    "candidateId": "magical-sapporo-october-2026-confirmed-booking",
+    "id": "magical-popup-2026-10-02-sapporo-apia",
+    "newAnnouncementSinceMorning": false,
+    "discoveredAt": "2026-10-10T18:44:01.632+09:00",
+    "officialAnnouncedAt": "2026-10-09T18:00:05+09:00",
+    "officialAnnouncedAtEarlierRange": "2026-10-02T18:05:42+09:00",
+    "sourceUrls": [
+      "https://x.com/kiddyevent/status/2108482622984790066",
+      "https://x.com/kiddyevent/status/2105947318931620157",
+      "https://livepocket.jp/p/aqthq",
+      "https://livepocket.jp/e/2jqcp",
+      "https://livepocket.jp/e/nl0nj"
+    ],
+    "sourceChain": "ちいかわ公式ホーム→magical_s.html→公式札幌会場ページ→kiddyevent公式X・公式promoter aqthq",
+    "proposedPatch": {
+      "defaultEntryType": "other",
+      "crowdControlType": "numbered_ticket",
+      "reservationUrl": "https://livepocket.jp/p/aqthq",
+      "entryNote": "2026年10月6～20日は終日10:00～20:00、LivePocketでの事前先着予約制です。各来店日の前日18:00から受付し、1人1日1枚まで申し込めます。入場時は申込者本人の公的身分証明書とQRチケットが必要で、氏名・生年月日は本人確認書類と同じ内容で登録してください。チケットの譲渡はできません。予約は希望商品の購入を保証しません。10月21日以降の入店方法・最新の空き状況は公式案内をご確認ください。",
+      "importantNotice": "2026年10月6～20日は終日事前予約制。各来店日の前日18:00からLivePocketで先着受付します。",
+      "entryInfoUrl": "https://x.com/kiddyevent/status/2108482622984790066",
+      "entryInfoCheckedAt": "2026-10-10"
+    },
+    "reservationOpensAt": "2026-10-13T18:00:00+09:00",
+    "reservationSchedules": [
+      {
+        "visitDates": "2026-10-06/2026-10-13",
+        "firstOpensAt": "2026-10-05T18:00:00+09:00",
+        "rule": "各来店日前日18時JST"
+      },
+      {
+        "visitDates": "2026-10-14/2026-10-20",
+        "firstOpensAt": "2026-10-13T18:00:00+09:00",
+        "rule": "各来店日前日18時JST"
+      }
+    ],
+    "liveTicketObservation": {
+      "at": "2026-10-10T09:45:03.133Z",
+      "url": "https://livepocket.jp/e/2jqcp",
+      "visitDate": "2026-10-11",
+      "scheduledOpening": "2026-10-10T18:00:00+09:00",
+      "result": "調査側で販売中・一部完売を観測。残枠を保証せず、受付開始と現在の可用性を分ける。",
+      "closing": "2026-10-11T19:45:00+09:00"
+    },
+    "doNotChange": [
+      "id",
+      "startDate",
+      "endDate",
+      "hoursText",
+      "firstAdded",
+      "reservationType"
+    ],
+    "reservationTypeMustRemain": "unknown",
+    "nextCheck": "2026-10-11T08:00:00+09:00",
+    "evidenceProvenance": "親が個別公式投稿・画像・LivePocket本文をブラウザで確認。別環境の証拠ファイルの同一パスは仮定せず、受領した本文・時計・条件を元PCの根拠ファイルへ保存する。"
+  },
+  "magicalBefore": {
+    "id": "magical-popup-2026-10-02-sapporo-apia",
+    "name": "まじかるちいかわ キデイランド POP UP SHOP 札幌",
+    "category": "official",
+    "placeType": "shop",
+    "relationType": "popup",
+    "brand": "magical_chiikawa",
+    "periodType": "limited",
+    "startDate": "2026-10-02",
+    "endDate": "2026-11-03",
+    "hoursText": "10:00～20:00",
+    "closedDaysText": null,
+    "hoursInfoUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+    "hoursCheckedAt": "2026-09-23",
+    "reservationType": "unknown",
+    "reservationUrl": null,
+    "defaultEntryType": "walkin",
+    "crowdControlType": "other",
+    "crowdControlCondition": "announced",
+    "entryNote": "混雑緩和のため入店予約受付が予定されています。予約方法などの詳細は公式案内をご確認ください。",
+    "entryInfoUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+    "entryInfoCheckedAt": "2026-09-23",
+    "lat": 43.067524,
+    "lng": 141.351089,
+    "address": "北海道札幌市中央区北5条西3・4丁目 札幌アピア（開催場所：キデイランド POP UP SHOP）",
+    "description": "札幌アピアで開催される期間限定のまじかるちいかわPOP UP STOREです。",
+    "sourceUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E3%82%A2%E3%83%94%E3%82%A2%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%975%E6%9D%A1%E8%A5%BF3%E3%83%BB4%E4%B8%81%E7%9B%AE%20%E6%9C%AD%E5%B9%8C%E3%82%A2%E3%83%94%E3%82%A2"
+  },
+  "magicalNativeReads": [
+    {
+      "url": "https://x.com/kiddyevent/status/2108482622984790066",
+      "status": 200,
+      "completedAt": "2026-10-10T09:52:11.084Z",
+      "startedAt": "2026-10-10T09:52:10.110Z",
+      "bytes": 107248,
+      "containsLivePocket": false,
+      "containsApplication": false
+    },
+    {
+      "url": "https://x.com/kiddyevent/status/2105947318931620157",
+      "status": 200,
+      "completedAt": "2026-10-10T09:52:11.181Z",
+      "startedAt": "2026-10-10T09:52:10.170Z",
+      "bytes": 119719,
+      "containsLivePocket": false,
+      "containsApplication": false
+    },
+    {
+      "url": "https://livepocket.jp/p/aqthq",
+      "status": 200,
+      "completedAt": "2026-10-10T09:52:10.446Z",
+      "startedAt": "2026-10-10T09:52:10.172Z",
+      "bytes": 68714,
+      "containsLivePocket": true,
+      "containsApplication": false
+    },
+    {
+      "url": "https://livepocket.jp/e/2jqcp",
+      "status": 200,
+      "completedAt": "2026-10-10T09:52:10.421Z",
+      "startedAt": "2026-10-10T09:52:10.173Z",
+      "bytes": 116154,
+      "containsLivePocket": true,
+      "containsApplication": true
+    },
+    {
+      "url": "https://livepocket.jp/e/nl0nj",
+      "status": 200,
+      "completedAt": "2026-10-10T09:52:10.372Z",
+      "startedAt": "2026-10-10T09:52:10.173Z",
+      "bytes": 81009,
+      "containsLivePocket": true,
+      "containsApplication": true
+    }
+  ],
+  "generatorCompatibility": "既存schemaのreservationUrl/entryInfoUrl/entryInfoCheckedAtを会場原本の個別値から再生成できるよう3行だけ透過。指定がない既存会場は従来値を保持。",
+  "fukuokaDiscoveryCorrection": {
+    "correctedAt": "2026-10-10T10:01:01.553Z",
+    "discoveredAt": "2026-10-10",
+    "supersededValue": "2026-10-10T18:37:20+09:00",
+    "reason": "親の最終記録でHTTP取得時計と初回発見時計を区別。公式取得時計・発表日時nullは保持。"
+  }
+}
