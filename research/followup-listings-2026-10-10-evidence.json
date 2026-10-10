@@ -3,7 +3,7 @@
   "reviewDate": "2026-10-10",
   "recordedAt": "2026-10-09T23:55:13.782Z",
   "base": "5d362cace1a829588618a12b6aab00fccf0abb74",
-  "scope": "未反映の新規7件、全文確認済みの既存13件の入場・予約案内、仙台終了1件の履歴移動、PR #32台帳4件の実時刻同期。今回ローカル反映・検査・コミットまで、push/PR/merge/公開なし。",
+  "scope": "未掲載の新規7件、既存21件の入場・予約案内、終了1件の履歴移動、PR #32台帳4件の実公開記録同期。前回6396a53に続いて不足資料8店舗だけを追加反映・ローカル追加コミット。push/PR/merge/公開なし。",
   "changes": {
     "added": [
       {
@@ -274,6 +274,78 @@
       },
       {
         "id": "chiikawaland-ikebukuro",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-shinsaibashi",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-osaka-umeda",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-nagoya",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-koshigaya",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-harajuku",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-fukuoka",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-kyoto",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-tokyo-station",
         "fields": [
           "entryNote",
           "importantNotice",
@@ -634,7 +706,7 @@
     "status": "synced_in_this_local_listing_update",
     "note": "実時刻は元の保存済み証拠を保持。今回のpublic一致観測日はpublishedAtの置換に使わない。"
   },
-  "remainingInputBlock": "受領した候補文の中央部分は8475 tokens truncatedで省略。10/10当日4店の新入場案内と、全文未受領の既存修正は未反映。欠けた対象・条件を推測しない。",
+  "remainingInputBlock": null,
   "nativeOfficialPageLimitation": {
     "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
     "result": "HTTP403 in previous Windows GET",
@@ -648,5 +720,537 @@
       "result": "http_error"
     },
     "note": "過去の記録は取得開始時のobservedAtであり完了時計は未知。特設本文の成功として情報源台帳に転用せず、実見した画像の正確な確認時計だけを登録した。今回の同ドメイン再取得・別環境迂回はしない。"
+  },
+  "followup": {
+    "baseCommit": "6396a53cc27b7d1596e8f1cbd2a2da46cdaabfa9",
+    "reviewedAt": "2026-10-10T00:31:04.334Z",
+    "sourceCandidateId": "chiikawaland-expired-20261009-and-today-20261010",
+    "sameDayReplacements": [
+      {
+        "id": "chiikawaland-shinsaibashi",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108545950562341205",
+        "firstObservedBy": "2026-10-10T07:32:23+09:00",
+        "validOn": "2026-10-10",
+        "imageSummary": "10/10 9:00配布開始、心斎橋PARCO1F心斎橋筋中央口側の星印、時間前整列禁止、1人1枚・代理不可、当日の指定時間のみ有効、なくなり次第終了を画像で確認。残数や配布終了の現在状況は未確認。"
+      },
+      {
+        "id": "chiikawaland-osaka-umeda",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108538190495944723",
+        "firstObservedBy": "2026-10-10T07:32:23+09:00",
+        "validOn": "2026-10-10",
+        "imageSummary": "10/10開店前の列は阪急三番街南館B1F。全員揃って整列、Whityうめだ手前で折り返し・同エリア不可、徹夜不可、10:00開店時順次案内、混雑時の整理券可能性と運営変更を画像で確認。"
+      },
+      {
+        "id": "chiikawaland-nagoya",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108527995556389315",
+        "firstObservedBy": "2026-10-10T07:32:23+09:00",
+        "validOn": "2026-10-10",
+        "imageSummary": "公式画像で西館1F正面入口（大津通り側）を先頭、全員整列・離脱時並び直し・後からの合流禁止、徹夜禁止、9:50以降は開店後直接店頭、整理券の可能性、1入店1会計を確認。10/10対象は親の公式投稿確認に基づく。"
+      },
+      {
+        "id": "chiikawaland-koshigaya",
+        "sourceUrl": "https://x.com/chiikawa_land/status/2108478678615400639",
+        "firstObservedBy": "2026-10-09T18:34:00+09:00",
+        "validOn": "2026-10-10",
+        "imageSummary": "画像でmori3F立体駐車場P3入口前の星印、早朝深夜の整列・座り込み禁止、混雑時の整理券を確認。対象10/10、開店前P2エレベーター、全員揃って整列、運営変更は親が確認した公式投稿本文・再送全文に基づく。"
+      }
+    ],
+    "expiredOnlyApplied": [
+      "chiikawaland-harajuku",
+      "chiikawaland-fukuoka",
+      "chiikawaland-kyoto",
+      "chiikawaland-tokyo-station"
+    ],
+    "duplicateRetirementsSkipped": [
+      "chiikawaland-solamachi",
+      "chiikawaland-sendai",
+      "chiikawaland-sapporo",
+      "chiikawaland-yokohama",
+      "chiikawaland-hiroshima",
+      "chiikawaland-shinjuku",
+      "chiikawaland-kanazawa",
+      "chiikawaland-ikebukuro"
+    ],
+    "changes": [
+      {
+        "id": "chiikawaland-shinsaibashi",
+        "kind": "same_day_entry_guidance",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。対象エリアへの入店チケットで、15分ごとの入替制です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月6日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月6日20:00から二次先着受付。対象エリアへの入店チケットで、15分ごとの入替制です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "2026年10月10日の入店整理券は9:00配布開始と案内されています。開始時刻はすでに経過しており、現在の配布状況・残数は未確認です。配布場所は心斎橋PARCO 1階・公式図の心斎橋筋中央口側の星印です。時間前の整列は禁止、整理券は1人1枚で代理・代表者による受取りはできません。なくなり次第配布終了し、券に記載された当日の時間帯のみ有効です。最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月10日の入店整理券は9:00配布開始の案内で、開始時刻は経過しています。残数・配布終了の状況は未確認です。整理券は当日の指定時間帯のみ有効です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2108545950562341205",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ],
+        "validOn": "2026-10-10"
+      },
+      {
+        "id": "chiikawaland-osaka-umeda",
+        "kind": "same_day_entry_guidance",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。店舗全体が入店制限の対象です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月6日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月6日20:00から二次先着受付。店舗全体が入店制限の対象です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "2026年10月10日の公式の開店前整列案内では、阪急三番街 南館地下1階の図示された列先頭から、グループ全員が揃ってから整列します。Whityうめだ手前で折り返し、Whityうめだエリアでは整列できません。徹夜での整列は禁止です。公式では10:00開店時に順次案内し、混雑時は入場整理券を配布する場合があると案内されています。運営方法が変更される場合があります。開店後の入店条件・現在の待機列や整理券の状況は最新の公式案内をご確認ください。",
+          "importantNotice": "10月10日の開店前整列は阪急三番街 南館地下1階の公式図の列へ。Whityうめだエリアでの整列は禁止です。混雑時は整理券の可能性があります。現在の入店状況は公式案内をご確認ください。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2108538190495944723",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ],
+        "validOn": "2026-10-10"
+      },
+      {
+        "id": "chiikawaland-nagoya",
+        "kind": "same_day_entry_guidance",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。対象エリアへの入店チケットで、15分ごとの入替制です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月6日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月6日20:00から二次先着受付。対象エリアへの入店チケットで、15分ごとの入替制です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "2026年10月10日の公式の開店前整列案内では、名古屋PARCO 西館1階正面入口（大津通り側）を先頭に、図示された列へグループ全員が揃ってから整列します。途中で離脱した場合は並び直しとなり、後からの合流や徹夜の整列はできません。9:50以降は開店後に直接店頭へお越しください。状況に応じて整理券を配布する場合があります。1回の入店につき会計は1回までです。現在の整理券や入店状況は最新の公式案内をご確認ください。",
+          "importantNotice": "10月10日の開店前整列案内では、9:50以降は開店後に直接店頭へ。状況に応じて整理券が配布される場合があります。現在の配布・入店状況は未確認です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2108527995556389315",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ],
+        "validOn": "2026-10-10"
+      },
+      {
+        "id": "chiikawaland-koshigaya",
+        "kind": "same_day_entry_guidance",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。店舗全体が入店制限の対象です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月7日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月7日20:00から二次先着受付。店舗全体が入店制限の対象です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "2026年10月10日の公式の整列案内は、イオンレイクタウンmori 3階立体駐車場P3入口前の図示された星印が対象です。開店前はP2立体駐車場エレベーターを利用し、グループ全員が揃ってから整列してください。早朝・深夜の整列や座り込みは禁止です。混雑時は入場整理券を配布する場合があり、運営方法が変更される場合があります。現在の入店条件・整理券の状況は最新の公式案内をご確認ください。",
+          "importantNotice": "10月10日の整列案内はmori 3階立体駐車場P3入口前の公式図の星印へ。早朝・深夜の整列や座り込みは禁止です。混雑時は整理券の可能性があります。最新状況は公式案内をご確認ください。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2108478678615400639",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ],
+        "validOn": "2026-10-10"
+      },
+      {
+        "id": "chiikawaland-harajuku",
+        "kind": "expired_notice_retirement",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。対象エリアへの入店チケットで、15分ごとの入替制です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月7日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月7日20:00から二次先着受付。対象エリアへの入店チケットで、15分ごとの入替制です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "importantNotice": null,
+          "entryInfoUrl": "https://x.com/chiikawa_land",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-fukuoka",
+        "kind": "expired_notice_retirement",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。対象エリアへの入店チケットで、15分ごとの入替制です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月5日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月5日20:00から二次先着受付。対象エリアへの入店チケットで、15分ごとの入替制です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "importantNotice": null,
+          "entryInfoUrl": "https://x.com/chiikawa_land",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-kyoto",
+        "kind": "expired_notice_retirement",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は終日事前入店予約の対象です。対象エリアへの入店チケットで、15分ごとの入替制です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月6日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は終日事前入店予約の対象。空きが生じた場合のみ10月6日20:00から二次先着受付。対象エリアへの入店チケットで、15分ごとの入替制です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "importantNotice": null,
+          "entryInfoUrl": "https://x.com/chiikawa_land",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-tokyo-station",
+        "kind": "expired_notice_retirement",
+        "before": {
+          "entryNote": "通常時は直接入店できますが、2026年10月9日は14:00まで事前入店予約の対象です。対象エリアへの入店チケットで、15分ごとの入替制です。一次抽選の受付は終了しています。空きが生じた場合のみ、公式LINEで二次先着受付を10月7日20:00から開始します。申込みは1人1日1回限りです。空き状況と最新の入店条件は公式案内をご確認ください。",
+          "importantNotice": "10月9日は14:00まで事前入店予約の対象。空きが生じた場合のみ10月7日20:00から二次先着受付。対象エリアへの入店チケットで、15分ごとの入替制です。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2105587976554361322",
+          "entryInfoCheckedAt": "2026-10-06"
+        },
+        "after": {
+          "entryNote": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "importantNotice": null,
+          "entryInfoUrl": "https://x.com/chiikawa_land",
+          "entryInfoCheckedAt": "2026-10-10"
+        },
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      }
+    ],
+    "imageObservations": [
+      {
+        "key": "shinsaibashi",
+        "url": "https://pbs.twimg.com/media/HUMPXYlbEAI80rf?format=webp&name=large",
+        "status": 200,
+        "startedAt": "2026-10-10T00:28:35.209Z",
+        "completedAt": "2026-10-10T00:28:35.311Z",
+        "contentType": "image/webp",
+        "bytes": 205258,
+        "sha256": "3d82c9f6c1fa7fc03fe73d77554d4fc8dae7cf6f629428f631412f8b400e3f4f",
+        "result": "success",
+        "localEvidenceFile": "official-shinsaibashi.webp"
+      },
+      {
+        "key": "umeda",
+        "url": "https://pbs.twimg.com/media/HUMITj1bsAA2--b?format=webp&name=large",
+        "status": 200,
+        "startedAt": "2026-10-10T00:28:35.312Z",
+        "completedAt": "2026-10-10T00:28:35.385Z",
+        "contentType": "image/webp",
+        "bytes": 208238,
+        "sha256": "adfc5d78b6239c1b0a88be9220e1e578a45b22ac014070a93f3f5344e0da0617",
+        "result": "success",
+        "localEvidenceFile": "official-umeda.webp"
+      },
+      {
+        "key": "nagoya",
+        "url": "https://pbs.twimg.com/media/HUL_CTsaEAAW5R7?format=webp&name=large",
+        "status": 200,
+        "startedAt": "2026-10-10T00:28:35.386Z",
+        "completedAt": "2026-10-10T00:28:35.405Z",
+        "contentType": "image/webp",
+        "bytes": 235276,
+        "sha256": "4a0e85ee8e7ab80acc0b0d32ce13367da3020cdd54096ece677efc2055e246f2",
+        "result": "success",
+        "localEvidenceFile": "official-nagoya.webp"
+      },
+      {
+        "key": "koshigaya",
+        "url": "https://pbs.twimg.com/media/HULSIhNbwAAnf5R?format=webp&name=large",
+        "status": 200,
+        "startedAt": "2026-10-10T00:28:35.406Z",
+        "completedAt": "2026-10-10T00:28:35.418Z",
+        "contentType": "image/webp",
+        "bytes": 59916,
+        "sha256": "e9a019832ba17a71cd7e62196859d35273c11815d5e2224a1b3edab0dd1fbad4",
+        "result": "success",
+        "localEvidenceFile": "official-koshigaya.webp"
+      }
+    ],
+    "whitespaceBaselineComparison": {
+      "generatorUnchangedSincePublicBase": true,
+      "generatorSHA256": "f01a380c35a02b1473ca1ddcef7c34c3dc81bd3d69ad6237d52d63861f2b2c0d",
+      "baselineReference": "spot/popup-2026-10-09-machida-modi/index.html",
+      "baselineReferenceCommit": "5d362cace1a829588618a12b6aab00fccf0abb74",
+      "verified": [
+        {
+          "id": "popup-2026-10-23-ebina-marui",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        },
+        {
+          "id": "popup-2026-10-23-aeon-parkplace-oita",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        },
+        {
+          "id": "nagano-market-popup-2026-10-23-ebina-marui",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        },
+        {
+          "id": "chiikawa-workshop-lalaport-kashiwanoha-2026",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        },
+        {
+          "id": "chiikawa-muchaphoto-ario-kakogawa-2026",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        },
+        {
+          "id": "chiikawa-sushi-2026-10-22-yokohama-skybuilding",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        },
+        {
+          "id": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town",
+          "lines": [
+            56,
+            69,
+            73
+          ],
+          "exactBaselineBlankBytesMatch": true,
+          "baselineBlankLines": [
+            56,
+            68,
+            72
+          ]
+        }
+      ],
+      "total": 21,
+      "newDefects": 0
+    },
+    "receivedCandidateCoverage": [
+      {
+        "group": "新規掲載",
+        "count": 7,
+        "status": "前回の公式本文・画像・会場座標との照合で回収済み"
+      },
+      {
+        "group": "ラーメン豚11月案内",
+        "count": 3,
+        "status": "前回の公式予約本文の実取得で回収済み"
+      },
+      {
+        "group": "LUCUA個店プレオープン",
+        "count": 2,
+        "status": "前回の施設本文と親の6公開フォーム確認で回収済み"
+      },
+      {
+        "group": "ちいかわらんど当日案内",
+        "count": 4,
+        "status": "今回の資料1全文と公式画像実取得で欠け解消"
+      },
+      {
+        "group": "ちいかわらんど期限切れ案内撤去",
+        "count": 12,
+        "status": "今回の資料2全文と照合。前回8件は重複除外、今回4件"
+      },
+      {
+        "group": "仙台終了イベント",
+        "count": 1,
+        "status": "前回の確定終了日・公式画像で回収済み"
+      }
+    ],
+    "knownRemainingMissingItems": [],
+    "coverageLimit": "特定できる受信欠けはすべて照合済み。元の省略部分に名称すら届いていない別候補があったかは、候補総一覧がないため網羅性を断定しない。",
+    "alreadyPublicBranches": [
+      {
+        "number": 32,
+        "title": "クリスマスマーケット新規掲載・LUCUA営業時間・スカイツリー入場案内を更新",
+        "branch": "updates/oct8-hours-christmas-skytree-20261008",
+        "head": "a4e8150d0a89e046f11decb3f8096ef81d36bfbd",
+        "merge": "5d362cace1a829588618a12b6aab00fccf0abb74",
+        "mergedAt": "2026-10-08T10:28:42Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 31,
+        "title": "ちいかわパークのゲーム休止案内と池袋POP UP SHOP住所を訂正",
+        "branch": "updates/park-notice-ikebukuro-address-20261007",
+        "head": "58ba0f90892cf2faf026d1a38123565ef33e1d5a",
+        "merge": "729cc3d27062f5e617c298a4a8b4399affef5870",
+        "mergedAt": "2026-10-07T10:45:27Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 30,
+        "title": "泉北POP UPを履歴化し、公開済み候補と巡回記録を整合",
+        "branch": "updates/archive-senboku-ledgers-20261006",
+        "head": "589cc8129e8627049781c778fa164ed3f1a3decf",
+        "merge": "4ac7edd0f1e517c7743de2fd6229fe382b121fad",
+        "mergedAt": "2026-10-06T23:28:01Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 29,
+        "title": "data: ANA就航日・名古屋の入店案内などを更新",
+        "branch": "updates/ana-flight-date-20261006",
+        "head": "4c6beb9d90435d5b9a91ff7390398cda64c65edb",
+        "merge": "8941ebe28be3a7c732546ddcdede634ab35db0b4",
+        "mergedAt": "2026-10-06T10:23:59Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 28,
+        "title": "data: 10月9日のちいかわらんど入店予約を案内",
+        "branch": "updates/land-entry-20261009",
+        "head": "de1dd9cd48a48d021e2089f824ce9bdf3a428e9b",
+        "merge": "e736280b5b7fe5f3da41bfce68e5a9cd4b65301b",
+        "mergedAt": "2026-10-06T09:47:37Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 27,
+        "title": "data: 10月6日の入場案内と終了イベントを更新",
+        "branch": "updates/listing-entry-20261006",
+        "head": "25d0d08052b8303ecf2e8dfc84235e12cec7dfd0",
+        "merge": "02348d57b2f71a31916e15f32262e7fd71a6208e",
+        "mergedAt": "2026-10-06T08:58:02Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 25,
+        "title": "玉乃光酒造の商品コラボと巡回台帳を更新",
+        "branch": "updates/tamanohikari-collaboration-20261005",
+        "head": "98e563797b50a9e67c679d75d3704897f58fe0da",
+        "merge": "afac31693bcf59c5e245e21a6db49d58da76ef49",
+        "mergedAt": "2026-10-05T10:46:11Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 22,
+        "title": "data: 京都伏見店の10月10～12日入店予約を案内",
+        "branch": "codex/fushimi-reservations-20261005",
+        "head": "515ac312290d41a0764b782aa63933f63fd9f755",
+        "merge": "d9909e4a1f9c103818d8a6d32aa205315ddbb7c7",
+        "mergedAt": "2026-10-05T06:37:58Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 21,
+        "title": "fix: ナガノ公式イベントの既存IDと会場情報を保持",
+        "branch": "codex/nagano-import-stable-ids-20261005",
+        "head": "0863486f1941ef608e5420e130ce4da1cacfedea",
+        "merge": "c9abda6a579d8f45e9cd8e40a0bb4a8803ad81cd",
+        "mergedAt": "2026-10-05T05:26:20Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 20,
+        "title": "10月4日終了の3イベントを履歴へ移動",
+        "branch": "codex/archive-ended-20261005",
+        "head": "3a75aa1b026dbf89a3b9d262a904c71114ed63b5",
+        "merge": "f11312ab25a97c1443471572007452171b7812bc",
+        "mergedAt": "2026-10-05T00:50:30Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      },
+      {
+        "number": 19,
+        "title": "ちいプラ展示1件とベーカリー3店舗の周年案内を掲載",
+        "branch": "codex/data-chiipla-bakery-20261004",
+        "head": "e81e4d04b9d83c35dab97bab123e712f10bdfc3f",
+        "merge": "ec285fb1e1a9c5aec75d7df65f258f0a1cb82936",
+        "mergedAt": "2026-10-04T04:38:15Z",
+        "handled": "mainに反映済みの内容をそのまま保持。後日の新しい案内だけを更新"
+      }
+    ],
+    "noPublication": {
+      "pushed": false,
+      "prCreated": false,
+      "merged": false,
+      "published": false
+    }
   }
 }
