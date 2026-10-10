@@ -569,10 +569,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-06T22:58:46Z",
-      "lastSuccessfulAt": "2026-10-06T22:58:46Z",
+      "lastAttemptAt": "2026-10-09T23:48:36.389Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:36.389Z",
       "lastResult": "success",
-      "resultSummary": "今回取得した公式本文・一覧の範囲で既存掲載との対応を確認し、確認範囲内で新たな内容差なし。個別画像・予約空き・在庫・全SNSの網羅確認を意味しない。",
+      "resultSummary": "施設本文のプレオープン日程と11/24以降のフロア条件を確認。対象2店の個別抽選は委任元の6日分フォーム定義の確認による。",
       "lastFailure": null,
       "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
     },
@@ -870,6 +870,193 @@
       "resultSummary": "公式チケット案内で住所1-12、営業時間・最終入場枠と公開地図qの座標35.653567,140.029936を確認。",
       "lastFailure": null,
       "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。"
+    },
+    {
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "name": "ちいかわPOP UP STORE 海老名マルイ 公式個別案内",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-10T07:33:00+09:00",
+      "lastSuccessfulAt": "2026-10-10T07:33:00+09:00",
+      "lastResult": "success",
+      "resultSummary": "委任元クラウドで公式案内を確認。会期・会場・営業時間と対象日の整理券条件を確認。受付方法・開始日時は未発表。",
+      "lastFailure": null,
+      "note": "委任元の一次情報確認記録。Windows環境ではchiikawa-info.jpの過去の403を迂回せず、新しい個別URLを独自取得したとは記録しない。"
+    },
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "name": "ちいかわPOP UP STORE イオンパークプレイス大分店 公式個別案内",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-10T07:33:25+09:00",
+      "lastSuccessfulAt": "2026-10-10T07:33:25+09:00",
+      "lastResult": "success",
+      "resultSummary": "委任元クラウドで公式案内を確認。会期・会場・営業時間と対象日の整理券条件を確認。受付方法・開始日時は未発表。",
+      "lastFailure": null,
+      "note": "委任元の一次情報確認記録。Windows環境ではchiikawa-info.jpの過去の403を迂回せず、新しい個別URLを独自取得したとは記録しない。"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "name": "ナガノマーケット POP UP SHOP 海老名マルイ 公式案内",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-10T07:33:15+09:00",
+      "lastSuccessfulAt": "2026-10-10T07:33:15+09:00",
+      "lastResult": "success",
+      "resultSummary": "委任元クラウドで公式個別案内を確認。5F会場、会期・営業時間、10/23整理券。受付方法と時計は未発表。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "name": "ちいかわ わーくしょっぷのじかん ビニペタ工作 ららぽーと柏の葉 公式案内",
+      "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T23:48:35.077Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:35.077Z",
+      "lastResult": "success",
+      "resultSummary": "Windowsの通常GETで10/12ちいかわ単日・5回各20人・各回30分・1500円税込合算可の当日レシートを確認。他キャラクターの10/10・11やInstagram条件を混ぜない。ページ10/1更新を初回発表日としない。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "name": "ちいかわ むちゃフォトパーティ!! アリオ加古川 公式案内",
+      "url": "https://kakogawa.ario.jp/event/3200004379/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T23:48:36.287Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:36.287Z",
+      "lastResult": "success",
+      "resultSummary": "Windowsの主催本文で10/17、9時券150枚、撮影3回、AR10〜17時・16:30受付終了・300人を確認。列の入口は委任元の公式案内画像10/9 18:35:26実見による。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-official",
+      "name": "ちいかわ むちゃフォトパーティ!! トキハわさだタウン（撮影会・ARラリー） 公式案内",
+      "url": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T23:48:37.422Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:37.422Z",
+      "lastResult": "success",
+      "resultSummary": "Windowsの主催本文で10/6付、10/10・11の撮影時刻と150枚の撮影券、別のAR景品券300人分・券終了後も参加可を再確認。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "ramen-buta-ikebukuro-reservation-official",
+      "name": "ちいかわラーメン 豚 池袋PARCO 予約案内",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T23:48:36.324Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:36.324Z",
+      "lastResult": "success",
+      "resultSummary": "11/1～30分は10/16正午から無料QR整理券を先着受付。店舗自体の会期ではなく予約対象日。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "ramen-buta-shibuya-reservation-official",
+      "name": "ちいかわラーメン 豚 渋谷PARCO 予約案内",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T23:48:36.334Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:36.334Z",
+      "lastResult": "success",
+      "resultSummary": "11/1～30分は10/16正午から無料QR整理券を先着受付。店舗自体の会期ではなく予約対象日。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-reservation-official",
+      "name": "ちいかわラーメン 豚 心斎橋PARCO 予約案内",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T23:48:36.346Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:36.346Z",
+      "lastResult": "success",
+      "resultSummary": "11/1～30分は10/16正午から無料QR整理券を先着受付。店舗自体の会期ではなく予約対象日。",
+      "lastFailure": null,
+      "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
+    },
+    {
+      "id": "chiikawa-sushi-yokohama-main-image",
+      "name": "横浜ちいかわ寿司 開催案内画像",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/main.jpg",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T07:34:46+09:00",
+      "lastSuccessfulAt": "2026-10-09T07:34:46+09:00",
+      "lastResult": "success",
+      "resultSummary": "委任元で画像を実見。10/22～11/1、横浜スカイビル8階、11:00～19:00を確認。",
+      "lastFailure": null,
+      "note": "成功したURLはこの公式画像。特設本文の取得成功時刻として転用しない。画像ファイル名から発表日を推定しない。"
+    },
+    {
+      "id": "chiikawa-sushi-yokohama-entry-image",
+      "name": "横浜ちいかわ寿司 整理券案内画像",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-09T07:34:52+09:00",
+      "lastSuccessfulAt": "2026-10-09T07:34:52+09:00",
+      "lastResult": "success",
+      "resultSummary": "委任元で画像を実見。10/22～25の整理券対象と公式X続報待ち。受付開始日時は不明。",
+      "lastFailure": null,
+      "note": "成功したURLはこの公式画像。特設本文の取得成功時刻として転用しない。画像ファイル名から発表日を推定しない。"
     }
   ]
 }

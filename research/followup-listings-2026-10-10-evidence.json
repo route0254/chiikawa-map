@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "reviewDate": "2026-10-10",
+  "recordedAt": "2026-10-09T23:55:13.782Z",
+  "base": "5d362cace1a829588618a12b6aab00fccf0abb74",
+  "scope": "未反映の新規7件、全文確認済みの既存13件の入場・予約案内、仙台終了1件の履歴移動、PR #32台帳4件の実時刻同期。今回ローカル反映・検査・コミットまで、push/PR/merge/公開なし。",
+  "changes": {
+    "added": [
+      {
+        "id": "popup-2026-10-23-ebina-marui",
+        "name": "ちいかわPOP UP STORE 海老名マルイ",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "popup",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-29",
+        "hoursText": "10:30～19:00",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+        "entryInfoCheckedAt": "2026-10-10",
+        "lat": 35.452777,
+        "lng": 139.393392,
+        "address": "神奈川県海老名市中央1-6-1 海老名マルイ 5F イベントスペース",
+        "description": "開催記念グッズや新商品などを販売する期間限定ショップです。",
+        "sourceUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+        "importantNotice": "10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8FPOP%20UP%20STORE%20%E6%B5%B7%E8%80%81%E5%90%8D%E3%83%9E%E3%83%AB%E3%82%A4%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%B5%B7%E8%80%81%E5%90%8D%E5%B8%82%E4%B8%AD%E5%A4%AE1-6-1%20%E6%B5%B7%E8%80%81%E5%90%8D%E3%83%9E%E3%83%AB%E3%82%A4%205F%20%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9"
+      },
+      {
+        "id": "popup-2026-10-23-aeon-parkplace-oita",
+        "name": "ちいかわPOP UP STORE イオンパークプレイス大分店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "popup",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-08",
+        "hoursText": "10:00～19:00（最終日18:00閉場）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "entryInfoCheckedAt": "2026-10-10",
+        "lat": 33.1951459,
+        "lng": 131.6563326,
+        "address": "大分県大分市公園通り西2丁目1番 イオンパークプレイス大分店 サニーウォーク1階 レプシィム前",
+        "description": "開催記念グッズや新商品などを販売する期間限定ショップです。",
+        "sourceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "importantNotice": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8FPOP%20UP%20STORE%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E5%A4%A7%E5%88%86%E5%BA%97%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E5%85%AC%E5%9C%92%E9%80%9A%E3%82%8A%E8%A5%BF2%E4%B8%81%E7%9B%AE1%E7%95%AA%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E5%A4%A7%E5%88%86%E5%BA%97%20%E3%82%B5%E3%83%8B%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF1%E9%9A%8E%20%E3%83%AC%E3%83%97%E3%82%B7%E3%82%A3%E3%83%A0%E5%89%8D"
+      },
+      {
+        "id": "nagano-market-popup-2026-10-23-ebina-marui",
+        "name": "ナガノマーケット POP UP SHOP 海老名マルイ",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-29",
+        "venueName": "海老名マルイ",
+        "venueSpace": "5F イベントスペース",
+        "address": "神奈川県海老名市中央1-6-1 海老名マルイ",
+        "lat": 35.452777,
+        "lng": 139.393392,
+        "sourceUrl": "https://nagano-info.jp/popupshop/ebina/index.html",
+        "hoursText": "10:30～19:00",
+        "reservationType": "unknown",
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "10月23日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ナガノマーケットショップ）をご確認ください。混雑時は会場の案内に従ってください。営業時間より早めに入店を締め切る場合があります。",
+        "checkedAt": "2026-10-10",
+        "importantNotice": "10月23日は入場整理券の配布対象です。受付方法・開始日時は公式続報をご確認ください。"
+      },
+      {
+        "id": "chiikawa-workshop-lalaport-kashiwanoha-2026",
+        "name": "ちいかわ わーくしょっぷのじかん ビニペタ工作 ららぽーと柏の葉",
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "venueName": "ららぽーと柏の葉",
+        "venueSpace": "本館2F クリスタルコート",
+        "address": "千葉県柏市若柴175 ららぽーと柏の葉",
+        "lat": 35.8936688,
+        "lng": 139.9510486,
+        "sourceUrl": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+        "hoursText": "11:30・13:00・14:00・15:00・16:00（各回約30分）",
+        "reservationType": "required",
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "当日10:00から本館2Fクリスタルコートで希望回の整理券を配布します。各回20人、合計100人。参加には、ららぽーと柏の葉館内店舗での当日お買い上げ1,500円（税込・合算可）以上のレシート提示が必要です。選べるデザインは3種類で、数量・キャラクターに限りがあります。",
+        "description": "絵具を使ってちいかわのビニペタを作るワークショップです。",
+        "checkedAt": "2026-10-10",
+        "importantNotice": "整理券は10月12日10:00から会場で配布。参加には当日の館内購入レシート1,500円（税込・合算可）以上が必要です。"
+      },
+      {
+        "id": "chiikawa-muchaphoto-ario-kakogawa-2026",
+        "name": "ちいかわ むちゃフォトパーティ!! アリオ加古川",
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "venueName": "アリオ加古川",
+        "venueSpace": "屋外ルーフガーデン",
+        "address": "兵庫県加古川市別府町緑町2 アリオ加古川",
+        "lat": 34.728249,
+        "lng": 134.84967,
+        "sourceUrl": "https://kakogawa.ario.jp/event/3200004379/",
+        "hoursText": "撮影会11:00・13:00・15:00／ARラリー10:00～17:00（新規受付16:30まで）",
+        "reservationType": "required",
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "参加無料。撮影会には当日9:00から屋外ルーフガーデンで配布するイベント参加券が必要です。各回50組、全3回分合計150枚、1組1枚まで。参加時間は選べますが、案内は券の番号順ではなく会場に戻った順です。ARラリーは先着300人で、自分のスマートフォンが必要です。景品引換券も9:00から同じ場所で配布します（雨天時も同場所）。混雑状況で券の配布時間が前後する場合があります。開店前はルーフガーデン側入口にお並びください。",
+        "description": "ちいかわ・ハチワレ・ラッコの写真撮影会と、スマートフォンで参加するARラリーのファミリーイベントです。",
+        "checkedAt": "2026-10-10",
+        "importantNotice": "撮影会参加券とARラリー景品引換券は当日9:00から屋外ルーフガーデンで配布。混雑状況で配布時間が前後する場合があります。"
+      },
+      {
+        "id": "chiikawa-sushi-2026-10-22-yokohama-skybuilding",
+        "name": "むちゃうま!!ちいかわ寿司 POP UP STORE 横浜スカイビル",
+        "startDate": "2026-10-22",
+        "endDate": "2026-11-01",
+        "venueName": "横浜スカイビル",
+        "venueSpace": "8階 イベントスペース by マルイ",
+        "address": "神奈川県横浜市西区高島2-19-12 横浜スカイビル",
+        "lat": 35.4646,
+        "lng": 139.6222,
+        "sourceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+        "hoursText": "11:00～19:00",
+        "reservationType": "unknown",
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "10月22～25日は入場整理券の配布が予定されています。申込方法などの詳細は公式X（@chiikawa_popup）で案内予定です。整理券の受付開始日時は未発表です。対象日以外の入店方法も最新の公式案内をご確認ください。",
+        "checkedAt": "2026-10-09",
+        "importantNotice": "10月22～25日は入場整理券の対象日です。受付開始日時は未発表です。"
+      },
+      {
+        "id": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town",
+        "name": "ちいかわ むちゃフォトパーティ!! トキハわさだタウン（撮影会・ARラリー）",
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-11",
+        "venueName": "トキハわさだタウン",
+        "venueSpace": "フェスタ広場（撮影会）／2街区1F 中央通り7丁目 特設会場（ARラリー受付・ゴール）",
+        "address": "大分県大分市大字玉沢字楠本755-1 トキハわさだタウン",
+        "lat": 33.1884716,
+        "lng": 131.5817969,
+        "sourceUrl": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545",
+        "hoursText": "撮影会11:00～11:30・13:00～13:30・15:00～15:30／ARラリー11:00～16:00（各日）",
+        "reservationType": "not_available",
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "参加無料。撮影会は各日10:00からフェスタ広場で全3回分の「撮影会参加券」を先着配布します（各回50組、計150枚）。1組1枚、最大5人まで、券に記載の参加時刻までに来場が必要です。ARラリーの「景品引換券」は撮影会参加券とは別で、各日10:00から同広場で先着配布します（スマートフォン1台につき1枚、景品は各日先着300人）。ARラリーには自分のスマートフォンが必要で、景品引換券の配布終了後もラリーに参加できます。受付・ゴールは2街区1F 中央通り7丁目 特設会場です。",
+        "description": "トキハわさだタウンで、ちいかわ・ハチワレ・うさぎの写真撮影会と館内ARラリーを楽しむ2日間の無料イベントです。",
+        "checkedAt": "2026-10-10",
+        "importantNotice": "撮影会参加券とAR景品引換券は各日10:00からフェスタ広場で別々に配布します。ARは景品券終了後も参加できます。"
+      }
+    ],
+    "updated": [
+      {
+        "id": "ramen-buta-ikebukuro",
+        "fields": [
+          "entryNote",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "ramen-buta-shibuya",
+        "fields": [
+          "entryNote",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "ramen-buta-shinsaibashi",
+        "fields": [
+          "entryNote",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawa-park-store-osaka",
+        "fields": [
+          "entryNote",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "nagano-market-umeda",
+        "fields": [
+          "entryNote",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-solamachi",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-sendai",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-sapporo",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-yokohama",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-hiroshima",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-shinjuku",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-kanazawa",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      },
+      {
+        "id": "chiikawaland-ikebukuro",
+        "fields": [
+          "entryNote",
+          "importantNotice",
+          "entryInfoUrl",
+          "entryInfoCheckedAt"
+        ]
+      }
+    ],
+    "archived": [
+      {
+        "id": "popup-2026-10-01-jr-sendai",
+        "endDate": "2026-10-09",
+        "fields": [
+          "eventStatus",
+          "hoursText",
+          "hoursCheckedAt",
+          "entryNote",
+          "description"
+        ],
+        "idUnchanged": true
+      }
+    ]
+  },
+  "duplicationCheck": [
+    {
+      "file": "data/official-spots.json",
+      "count": 72,
+      "newIdMatches": []
+    },
+    {
+      "file": "data/official-events-archive.json",
+      "count": 644,
+      "newIdMatches": []
+    },
+    {
+      "file": "data/collaborations-current.json",
+      "count": 22,
+      "newIdMatches": []
+    },
+    {
+      "file": "data/collaborations-archive.json",
+      "count": 52,
+      "newIdMatches": []
+    },
+    {
+      "file": "data/nagano-spots.json",
+      "count": 92,
+      "newIdMatches": []
+    },
+    {
+      "file": "data/community-spots.json",
+      "count": 2,
+      "newIdMatches": []
+    }
+  ],
+  "sources": [
+    {
+      "key": "marui",
+      "url": "https://www.0101.co.jp/082/access/",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:35.342Z",
+      "result": "success",
+      "bodyLength": 29471,
+      "sha256": "66b9339405700e9d777858252dcc1e91b81da8dd6a5527e16b53ee8c4d22aa25"
+    },
+    {
+      "key": "marui-constant",
+      "url": "https://www.0101.co.jp/assets/js/v1/stores/constant.js?date=20261002180010",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:35.365Z",
+      "result": "success",
+      "bodyLength": 71631,
+      "sha256": "7ac368bbfa2bf086f82954953a3df2bd58dfdc9a9e64ac685f5dbedf5f90dcbb"
+    },
+    {
+      "key": "oita-venue",
+      "url": "https://tenpo.aeon-kyushu.info/detail/parkplace-oita/",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:36.206Z",
+      "result": "success",
+      "bodyLength": 215900,
+      "sha256": "ded80d147002f95a02374c067e08a7c0936a2a35ca0c4f887cc9c5b073216a6f"
+    },
+    {
+      "key": "kashiwa",
+      "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:35.077Z",
+      "result": "success",
+      "bodyLength": 66045,
+      "sha256": "0f3ec2cbd6220ca17efdac8db16b8fae3b05dc167a772c30ba01d89193604d19"
+    },
+    {
+      "key": "kakogawa",
+      "url": "https://kakogawa.ario.jp/event/3200004379/",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:36.287Z",
+      "result": "success",
+      "bodyLength": 65005,
+      "sha256": "69d83ef9a78edc71fc9ada0873578a516bdf4d33205e3265c34c5f38d75c259b"
+    },
+    {
+      "key": "ramen-ikebukuro",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:36.324Z",
+      "result": "success",
+      "bodyLength": 35341,
+      "sha256": "2f42ea571a725c485c8cc3f05c43bf645673d0b31d89b826d3f7f392837c9afa"
+    },
+    {
+      "key": "ramen-shibuya",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:36.334Z",
+      "result": "success",
+      "bodyLength": 35731,
+      "sha256": "49f5bbec4c362b891ec85102afb58369e74375d734dbbbb60a5156b31dd3777f"
+    },
+    {
+      "key": "ramen-shinsaibashi",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:36.346Z",
+      "result": "success",
+      "bodyLength": 35775,
+      "sha256": "a61a31624cec90a8ef20db598296648fad94e0e3f47926ff84ab371590ccaa36"
+    },
+    {
+      "key": "lucua",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:36.389Z",
+      "result": "success",
+      "bodyLength": 140799,
+      "sha256": "63222bc8cf4770dd1f2e756852a5d44aedf85042891da4a55b1d882fbd00f647"
+    },
+    {
+      "key": "tokiwa",
+      "url": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545",
+      "status": 200,
+      "completedAt": "2026-10-09T23:48:37.422Z",
+      "result": "success",
+      "bodyLength": 62046,
+      "sha256": "4f2db8308c748a8880b932df175270cb72dbae2b9842e394cd7ef7562f8eb55f"
+    }
+  ],
+  "delegatedSourceObservations": [
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "observedAt": "2026-10-10T07:33:00+09:00",
+      "environment": "parent cloud",
+      "summary": "10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "observedAt": "2026-10-10T07:33:25+09:00",
+      "environment": "parent cloud",
+      "summary": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。"
+    },
+    {
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "observedAt": "2026-10-10T07:33:15+09:00",
+      "summary": "委任元クラウドで公式個別案内を確認。5F会場、会期・営業時間、10/23整理券。受付方法と時計は未発表。",
+      "environment": "parent cloud"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "observedAt": "2026-10-09T07:34:46+09:00",
+      "summary": "委任元の公式開催画像実見で会期・8階会場・11〜19時。整理券画像は10/9 07:34:52に実見し対象10/22〜25・受付時計未発表。公式Xの10/8付は日付のみ。Windowsの過去403を迂回して取得しない。",
+      "environment": "parent cloud"
+    }
+  ],
+  "baselinePublicVerification": {
+    "main": "5d362cace1a829588618a12b6aab00fccf0abb74",
+    "results": [
+      {
+        "file": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json?verification=5d362cace1a8",
+        "status": 200,
+        "observedAt": "2026-10-09T23:46:22.657Z",
+        "matchesMain": true,
+        "bodySHA256": "ecca21fd59583ba76a96ee3be549ca68de781d7eb39e2b51254163b63b92f184",
+        "expectedSHA256": "ecca21fd59583ba76a96ee3be549ca68de781d7eb39e2b51254163b63b92f184"
+      },
+      {
+        "file": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json?verification=5d362cace1a8",
+        "status": 200,
+        "observedAt": "2026-10-09T23:46:22.900Z",
+        "matchesMain": true,
+        "bodySHA256": "97620c07c6eeda5f13986b298d6a3de5de8d05d93f902120f1f0ebbb24da7fae",
+        "expectedSHA256": "97620c07c6eeda5f13986b298d6a3de5de8d05d93f902120f1f0ebbb24da7fae"
+      },
+      {
+        "file": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json?verification=5d362cace1a8",
+        "status": 200,
+        "observedAt": "2026-10-09T23:46:22.960Z",
+        "matchesMain": true,
+        "bodySHA256": "9fc7c1e29059245741b7cdb40883862577c9cfa0535d71eabf7c6c94d4912a56",
+        "expectedSHA256": "9fc7c1e29059245741b7cdb40883862577c9cfa0535d71eabf7c6c94d4912a56"
+      },
+      {
+        "file": "data/nagano-spots.json",
+        "url": "https://chiikatsu-map.com/data/nagano-spots.json?verification=5d362cace1a8",
+        "status": 200,
+        "observedAt": "2026-10-09T23:46:23.014Z",
+        "matchesMain": true,
+        "bodySHA256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "expectedSHA256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614"
+      },
+      {
+        "file": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json?verification=5d362cace1a8",
+        "status": 200,
+        "observedAt": "2026-10-09T23:46:23.066Z",
+        "matchesMain": true,
+        "bodySHA256": "9df08c0ad0191d7c723239a8d2cba1d9f4d071eb3eff14c1aab5044da69d3ad1",
+        "expectedSHA256": "9df08c0ad0191d7c723239a8d2cba1d9f4d071eb3eff14c1aab5044da69d3ad1"
+      },
+      {
+        "file": "research/publication-candidate-ledger.json",
+        "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json?verification=5d362cace1a8",
+        "status": 200,
+        "observedAt": "2026-10-09T23:46:23.315Z",
+        "matchesMain": true,
+        "bodySHA256": "42aff65d38cf2fbd66fec2852670fa133f3dfe301b68fbb6ecafe8e7f3303ce5",
+        "expectedSHA256": "42aff65d38cf2fbd66fec2852670fa133f3dfe301b68fbb6ecafe8e7f3303ce5"
+      }
+    ]
+  },
+  "publication": {
+    "pushed": false,
+    "published": false,
+    "publishedAt": null
+  },
+  "generatorChange": "既存スポットschemaのcrowdControlType・crowdControlCondition・importantNoticeを個別原本から引き継ぐ。未指定時の従来出力を保持。UI/スキーマ/権限変更なし。",
+  "previousPublicationSync": {
+    "sourceCommit": "a4e8150d0a89e046f11decb3f8096ef81d36bfbd",
+    "mainCommit": "5d362cace1a829588618a12b6aab00fccf0abb74",
+    "prNumber": 32,
+    "publication": {
+      "deploymentRunId": 37763722390,
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/37763722390",
+      "deployStepCompletedAt": "2026-10-08T10:29:27Z",
+      "deployJobCompletedAt": "2026-10-08T10:29:29Z",
+      "publicOfficialJSONConfirmedAt": "2026-10-08T10:31:19.684Z",
+      "publicCollaborationJSONConfirmedAt": "2026-10-08T10:31:19.736Z",
+      "allResourcesConfirmedAt": "2026-10-08T10:31:21.158Z"
+    },
+    "candidatePublicationUpdates": [
+      {
+        "id": "lucua-hours-chiikawa-park-store-osaka-20261008",
+        "listingIds": [
+          "chiikawa-park-store-osaka"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-08T10:31:19.684Z",
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-08",
+        "reflectDueAt": "2026-10-08",
+        "recheckDueAt": "2026-10-09T08:00:00+09:00",
+        "evidence": [
+          {
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/37763722390",
+            "observedAt": "2026-10-08T10:31:21.135Z",
+            "summary": "今回mergeのPages配信成功。deploy step/job完了は公開JSON確認時計と分けて記録。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/official-spots.json",
+            "observedAt": "2026-10-08T10:31:19.684Z",
+            "summary": "今回版の公開JSONとmainの本文blob一致を初めて確認。過去の掲載初回公開時刻ではない。"
+          }
+        ]
+      },
+      {
+        "id": "lucua-hours-nagano-market-umeda-20261008",
+        "listingIds": [
+          "nagano-market-umeda"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-08T10:31:19.684Z",
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-08",
+        "reflectDueAt": "2026-10-08",
+        "recheckDueAt": "2026-10-09T08:00:00+09:00",
+        "evidence": [
+          {
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/37763722390",
+            "observedAt": "2026-10-08T10:31:21.135Z",
+            "summary": "今回mergeのPages配信成功。deploy step/job完了は公開JSON確認時計と分けて記録。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/official-spots.json",
+            "observedAt": "2026-10-08T10:31:19.684Z",
+            "summary": "今回版の公開JSONとmainの本文blob一致を初めて確認。過去の掲載初回公開時刻ではない。"
+          }
+        ]
+      },
+      {
+        "id": "skytree-cafe-sale-and-screening-20261008",
+        "listingIds": [
+          "collab-skytree-2026"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-08T10:31:19.684Z",
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-08",
+        "reflectDueAt": "2026-10-08",
+        "recheckDueAt": "2026-10-09T08:00:00+09:00",
+        "evidence": [
+          {
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/37763722390",
+            "observedAt": "2026-10-08T10:31:21.135Z",
+            "summary": "今回mergeのPages配信成功。deploy step/job完了は公開JSON確認時計と分けて記録。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/official-spots.json",
+            "observedAt": "2026-10-08T10:31:19.684Z",
+            "summary": "今回版の公開JSONとmainの本文blob一致を初めて確認。過去の掲載初回公開時刻ではない。"
+          }
+        ]
+      },
+      {
+        "id": "chiikawa-christmas-market-2026-toyosuna-new",
+        "listingIds": [
+          "chiikawa-christmas-market-2026-toyosuna",
+          "abema-chiikawa-christmas-market-2026"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-08T10:31:19.736Z",
+        "officialAnnouncedAt": "2026-10-08",
+        "discoveredAt": "2026-10-08",
+        "reflectDueAt": "2026-10-08",
+        "recheckDueAt": "2026-10-09T08:00:00+09:00",
+        "evidence": [
+          {
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/37763722390",
+            "observedAt": "2026-10-08T10:31:21.135Z",
+            "summary": "今回mergeのPages配信成功。deploy step/job完了は公開JSON確認時計と分けて記録。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/official-spots.json",
+            "observedAt": "2026-10-08T10:31:19.684Z",
+            "summary": "今回版の公開JSONとmainの本文blob一致を初めて確認。過去の掲載初回公開時刻ではない。"
+          },
+          {
+            "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+            "observedAt": "2026-10-08T10:31:19.736Z",
+            "summary": "新規企画が既存schemaで会場IDへリンクし、公開コラボJSONとmainの本文blob一致を確認。"
+          }
+        ]
+      }
+    ],
+    "originalRecordedAt": "2026-10-08T10:32:07.816Z",
+    "sourceLibraryFileId": "libfile_9db2cdb615388191b6de8d60170d65ac",
+    "status": "synced_in_this_local_listing_update",
+    "note": "実時刻は元の保存済み証拠を保持。今回のpublic一致観測日はpublishedAtの置換に使わない。"
+  },
+  "remainingInputBlock": "受領した候補文の中央部分は8475 tokens truncatedで省略。10/10当日4店の新入場案内と、全文未受領の既存修正は未反映。欠けた対象・条件を推測しない。",
+  "nativeOfficialPageLimitation": {
+    "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+    "result": "HTTP403 in previous Windows GET",
+    "observation": {
+      "key": "sushi-page",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "observedAt": "2026-10-08T22:41:51.792Z",
+      "status": 403,
+      "type": "text/html; charset=UTF-8",
+      "bytes": 5579,
+      "result": "http_error"
+    },
+    "note": "過去の記録は取得開始時のobservedAtであり完了時計は未知。特設本文の成功として情報源台帳に転用せず、実見した画像の正確な確認時計だけを登録した。今回の同ドメイン再取得・別環境迂回はしない。"
+  }
+}
