@@ -221,7 +221,7 @@
           "chiikawaland-sendai"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       },
       {
         "id": "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261010",
@@ -229,7 +229,7 @@
           "chiikawaland-popup-2026-09-11-amu-oita"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       },
       {
         "id": "chiikawaland-nagoya-tickets-ended-20261010",
@@ -237,7 +237,7 @@
           "chiikawaland-nagoya"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       },
       {
         "id": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-entry-20261010",
@@ -245,7 +245,7 @@
           "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       },
       {
         "id": "new-muchaphoto-sapporo-hiraoka-20261024",
@@ -253,7 +253,7 @@
           "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       },
       {
         "id": "new-muchaphoto-laketown-mori-20261012",
@@ -261,7 +261,7 @@
           "chiikawa-muchaphoto-aeon-laketown-mori-2026"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       },
       {
         "id": "magical-sapporo-october-2026-confirmed-booking",
@@ -269,10 +269,10 @@
           "magical-popup-2026-10-02-sapporo-apia"
         ],
         "state": "published",
-        "publishedAt": "2026-10-10T10:23:54.968Z"
+        "publishedAt": "2026-10-10T10:20:46Z"
       }
     ],
-    "nextNormalListingPr": "TOHO7会場の通常掲載PRへ同期。記録だけの連続PRは作らない。"
+    "nextNormalListingPr": "2026年10月11日の通常掲載修正PRに同梱。初回サイト一致時刻は変更せず、候補publishedAtをdeploy job完了時刻へ訂正。"
   },
   "handoff": {
     "after": "2026-10-10T20:00:00+09:00",
@@ -283,5 +283,7 @@
     ],
     "action": "次の通常巡回で10/10の当日注意表示を外し、10/11以降の公式案内を確認する。",
     "automationScheduled": false
-  }
+  },
+  "actualPublishedAt": "2026-10-10T10:20:46Z",
+  "actualPublishedAtBasis": "成功したGitHub Pages deploy job completed_at。deploy step完了・公開サイト一致観測・報告日時を別に保持。"
 }

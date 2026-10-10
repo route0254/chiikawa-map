@@ -1,0 +1,366 @@
+{
+  "recordedAt": "2026-10-10T23:24:08.424Z",
+  "pr": 35,
+  "prUrl": "https://github.com/route0254/chiikawa-map/pull/35",
+  "base": "8d891b1f035b4305e480c46e14842ced854c8787",
+  "sourceHead": "457faef51b8204c5639c3115f0185ee6e1112bdc",
+  "mergeSha": "0668333ddaca43ed818da7bbe6b00dbb267e0dcd",
+  "mergeTree": "14cee9c1e4b4861fe990dad2473ed06b7f3eab37",
+  "mergedAt": "2026-10-10T10:43:51Z",
+  "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+  "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+  "actualPublishedAt": "2026-10-10T10:44:38Z",
+  "actualPublishedAtBasis": "成功したGitHub Pages deploy job completed_at。deploy step完了・公開サイト一致観測・報告日時を別に保持。",
+  "firstPublicMatchAt": "2026-10-10T10:45:56.711Z",
+  "checks": [
+    {
+      "id": 38045919520,
+      "name": "Validate spot data",
+      "path": ".github/workflows/validate-data.yml",
+      "head": "0668333ddaca43ed818da7bbe6b00dbb267e0dcd",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342280137,
+      "createdAt": "2026-10-10T10:43:53Z",
+      "updatedAt": "2026-10-10T10:44:07Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38045919520"
+    },
+    {
+      "id": 38045919164,
+      "name": "pages build and deployment",
+      "path": "dynamic/pages/pages-build-deployment",
+      "head": "0668333ddaca43ed818da7bbe6b00dbb267e0dcd",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 340583706,
+      "createdAt": "2026-10-10T10:43:53Z",
+      "updatedAt": "2026-10-10T10:44:39Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38045919164"
+    },
+    {
+      "id": 38045919529,
+      "name": "Test site",
+      "path": ".github/workflows/test-site.yml",
+      "head": "0668333ddaca43ed818da7bbe6b00dbb267e0dcd",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342550527,
+      "createdAt": "2026-10-10T10:43:53Z",
+      "updatedAt": "2026-10-10T10:47:57Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38045919529"
+    }
+  ],
+  "public": {
+    "matching": 30,
+    "total": 30,
+    "dataFilesMatching": 10,
+    "dataFilesTotal": 10,
+    "files": [
+      {
+        "path": "data/added-dates.json",
+        "sha256": "8f059f2c9cccc4ac09299f1d8ce2b9e28c20fbd304789422d4e924fca9ac35d7",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.059Z"
+      },
+      {
+        "path": "data/collaborations-archive.json",
+        "sha256": "3f16b7039bac64e696cefe9196f1a64a25a63374549a3e439d881e6e83544116",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.062Z"
+      },
+      {
+        "path": "data/collaborations-current.json",
+        "sha256": "9fc7c1e29059245741b7cdb40883862577c9cfa0535d71eabf7c6c94d4912a56",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.061Z"
+      },
+      {
+        "path": "data/community-spots.json",
+        "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.046Z"
+      },
+      {
+        "path": "data/nagano-history.json",
+        "sha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.062Z"
+      },
+      {
+        "path": "data/nagano-spots.json",
+        "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.067Z"
+      },
+      {
+        "path": "data/nagano-unlocated-mentions.json",
+        "sha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.043Z"
+      },
+      {
+        "path": "data/official-events-archive.json",
+        "sha256": "f5941350cd484384495426dea7d88fb8f67c72a24485b5892008727ad0e94686",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.072Z"
+      },
+      {
+        "path": "data/official-spots.json",
+        "sha256": "2d57df0f6e843b8c48281187cac0b7588f8f9b814f8c81d6265b63c3afffb9dc",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.266Z"
+      },
+      {
+        "path": "data/site-meta.json",
+        "sha256": "92f8c9caa8df4e16b33f59475219988e4e921894407c416a5797d61e56de24ce",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.274Z"
+      },
+      {
+        "path": "sitemap.xml",
+        "sha256": "dd2df104da1d44026d78373a38b56682701bc810461776e17451a23b87593bdd",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.279Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-hibiya-20261016/index.html",
+        "sha256": "2d7799bf9505e31c70d34d7723863b7e2e45ea0f53fb6de499fe3a5cac0936b4",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.265Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-ikebukuro-20261016/index.html",
+        "sha256": "db3ce1694cc355ed61b2d4674b693bce9bdcfdd648b9208ed409303dd13ccb26",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.290Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-nagoya-sakae-20261016/index.html",
+        "sha256": "1180b6e3440e38af9e22c726f7709875086b088bb63d9158994f6789e1006595",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.261Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-shinjuku-20261016/index.html",
+        "sha256": "e6aa617ff6c5c4498016f20fc8b900e2ecc0c18978d06ef1de12c1493f32c286",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.250Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-susukino-20261016/index.html",
+        "sha256": "49e77472707a6d0541736156dd4ea400db2f2431c9881a9ac48323463d6a8993",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.264Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-tenjin-solaria-20261016/index.html",
+        "sha256": "b20753042e9556335931f7a1fea4fde96d461ae0150b607a8fbd63e540f41e9a",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.482Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-umeda-20261016/index.html",
+        "sha256": "4b60e30d186c94174d8712a68018912568dd495b65896fd344bdd67b119ba519",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.466Z"
+      },
+      {
+        "path": "spot/chiikawa-muchaphoto-aeon-laketown-mori-2026/index.html",
+        "sha256": "f80e17fe65326a6881426e6bae6300ca1571c20bb201b4b7c61c229cab6614b7",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.488Z"
+      },
+      {
+        "path": "spot/chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026/index.html",
+        "sha256": "1e9c27ac2aeebcb863a889264f119fe447eb79647f198e9cd864eb4a45705e4c",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.478Z"
+      },
+      {
+        "path": "spot/chiikawaland-nagoya/index.html",
+        "sha256": "a400dddedf7c4fe7129c7016083a5b9aa5b51be1810c926f3f72caa00a0aeaef",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.479Z"
+      },
+      {
+        "path": "spot/chiikawaland-popup-2026-09-11-amu-oita/index.html",
+        "sha256": "90d02391a16205cfedbd9c2b191f6aebbd2bdc81d93639f2693d07bd1ca95486",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.486Z"
+      },
+      {
+        "path": "spot/chiikawaland-sendai/index.html",
+        "sha256": "f441b90dc9e95758d2cd4d2fda29b9ee6644d98133e7aeb4a2a6614b131d9f15",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.465Z"
+      },
+      {
+        "path": "spot/magical-popup-2026-10-02-sapporo-apia/index.html",
+        "sha256": "5a70bb01b04d5a085ee40d23d999e1b22208e9893434e4248e87794133176e7e",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.481Z"
+      },
+      {
+        "path": "spot/nagano-market-popup-2026-10-16-fukuoka-mitsukoshi/index.html",
+        "sha256": "0f2bcf8eca9ec172da2281058cf1f0adf4ce131eb32649b478378dd70d3a4d51",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.673Z"
+      },
+      {
+        "path": "index.html",
+        "sha256": "d7a205f9471130c1c0fa61a4bbed4bafe35334d283594cad2b23434a112ab4eb",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.691Z"
+      },
+      {
+        "path": "official.html",
+        "sha256": "d5dabf968f6d8ebee64eb7bd8d6a1d5688a970884650fecfb0dc372442f9873d",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.679Z"
+      },
+      {
+        "path": "app.js",
+        "sha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "path": "recent-utils.js",
+        "sha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.674Z"
+      },
+      {
+        "path": "service-worker.js",
+        "sha256": "ae681c5e9680c2336d1adfd5b3484dcfc216d5067a52bc4d6748d6c5b7382f4c",
+        "status": 200,
+        "observedAt": "2026-10-10T10:45:56.681Z"
+      }
+    ]
+  },
+  "tests": {
+    "check": 0,
+    "unit": 55,
+    "smoke": 101,
+    "links": 0,
+    "qaScreens": 14
+  },
+  "counts": {
+    "newListings": 7,
+    "entryUpdates": 0,
+    "archived": 0
+  },
+  "libraryEvidence": {
+    "fileId": "libfile_19a96400bf2081919d90abc6c3378d8d",
+    "version": 1
+  },
+  "ledgerSync": {
+    "candidateSync": [
+      {
+        "id": "chiikawa-penlight-screening-toho-umeda-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-umeda-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-nagoya-sakae-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-nagoya-sakae-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-ikebukuro-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-ikebukuro-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-hibiya-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-hibiya-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-shinjuku-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-shinjuku-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-tenjin-solaria-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-tenjin-solaria-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-susukino-20261016-new",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-susukino-20261016"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-10T10:44:38Z",
+        "publicationPr": 35,
+        "deployStepCompletedAt": "2026-10-10T10:44:37Z",
+        "deployJobCompletedAt": "2026-10-10T10:44:38Z",
+        "siteMatchConfirmedAt": "2026-10-10T10:45:56.711Z"
+      }
+    ],
+    "policy": "次の通常掲載修正に同梱。記録だけの連続PRを作らない。"
+  }
+}
