@@ -115,9 +115,9 @@ function createRecord(
     defaultEntryType: cancelled
       ? "other"
       : event.defaultEntryType || "walkin",
-    crowdControlType: "other",
+    crowdControlType: event.crowdControlType || "other",
     crowdControlCondition:
-      "announced",
+      event.crowdControlCondition || "announced",
     entryNote: cancelled
       ? "開催予定でしたが中止となり、実際には開催されませんでした。"
       : event.entryNote || (archive
@@ -138,6 +138,10 @@ function createRecord(
       `${event.venueName} ${event.address}`
     )
   };
+
+  if (event.importantNotice) {
+    record.importantNotice = event.importantNotice;
+  }
 
   if (archive) {
     record.eventStatus =
