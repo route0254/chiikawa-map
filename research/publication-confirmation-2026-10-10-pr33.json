@@ -1,0 +1,487 @@
+{
+  "pr": 33,
+  "url": "https://github.com/route0254/chiikawa-map/pull/33",
+  "sourceCommit": "a32cac5fc2e614916f911f0e8d9a2082ae3cfa76",
+  "mergeCommit": "9d9db24ac9dd5c36da5509d68d14c3bc20c05fe4",
+  "deployRunId": 38017912712,
+  "deployRunUrl": "https://github.com/route0254/chiikawa-map/actions/runs/38017912712",
+  "deployStepCompletedAt": "2026-10-10T02:42:37Z",
+  "deployJobCompletedAt": "2026-10-10T02:42:38Z",
+  "firstConfirmedPublicMatchAt": "2026-10-10T02:44:10.255Z",
+  "filesMatching": 45,
+  "dataFilesMatching": 10,
+  "unitTests": 55,
+  "uiSmoke": 101,
+  "ci": [
+    {
+      "id": 38017912577,
+      "name": "Validate spot data",
+      "path": ".github/workflows/validate-data.yml",
+      "head": "9d9db24ac9dd5c36da5509d68d14c3bc20c05fe4",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342280137,
+      "createdAt": "2026-10-10T02:42:00Z",
+      "updatedAt": "2026-10-10T02:42:11Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38017912577"
+    },
+    {
+      "id": 38017912712,
+      "name": "pages build and deployment",
+      "path": "dynamic/pages/pages-build-deployment",
+      "head": "9d9db24ac9dd5c36da5509d68d14c3bc20c05fe4",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 340583706,
+      "createdAt": "2026-10-10T02:42:00Z",
+      "updatedAt": "2026-10-10T02:42:39Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38017912712"
+    },
+    {
+      "id": 38017912583,
+      "name": "Test site",
+      "path": ".github/workflows/test-site.yml",
+      "head": "9d9db24ac9dd5c36da5509d68d14c3bc20c05fe4",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342550527,
+      "createdAt": "2026-10-10T02:42:00Z",
+      "updatedAt": "2026-10-10T02:46:09Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38017912583"
+    }
+  ],
+  "publicFiles": [
+    {
+      "path": "data/added-dates.json",
+      "url": "https://chiikatsu-map.com/data/added-dates.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.237Z",
+      "expectedSha256": "f638cdf4acc71504fee439d0a3d5a32173cca9c3e83c20ecbb6563a65749fa31",
+      "receivedSha256": "f638cdf4acc71504fee439d0a3d5a32173cca9c3e83c20ecbb6563a65749fa31",
+      "same": true
+    },
+    {
+      "path": "data/collaborations-archive.json",
+      "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.075Z",
+      "expectedSha256": "3f16b7039bac64e696cefe9196f1a64a25a63374549a3e439d881e6e83544116",
+      "receivedSha256": "3f16b7039bac64e696cefe9196f1a64a25a63374549a3e439d881e6e83544116",
+      "same": true
+    },
+    {
+      "path": "data/collaborations-current.json",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.074Z",
+      "expectedSha256": "9fc7c1e29059245741b7cdb40883862577c9cfa0535d71eabf7c6c94d4912a56",
+      "receivedSha256": "9fc7c1e29059245741b7cdb40883862577c9cfa0535d71eabf7c6c94d4912a56",
+      "same": true
+    },
+    {
+      "path": "data/community-spots.json",
+      "url": "https://chiikatsu-map.com/data/community-spots.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.072Z",
+      "expectedSha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+      "receivedSha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+      "same": true
+    },
+    {
+      "path": "data/nagano-history.json",
+      "url": "https://chiikatsu-map.com/data/nagano-history.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.244Z",
+      "expectedSha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+      "receivedSha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+      "same": true
+    },
+    {
+      "path": "data/nagano-spots.json",
+      "url": "https://chiikatsu-map.com/data/nagano-spots.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.079Z",
+      "expectedSha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+      "receivedSha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+      "same": true
+    },
+    {
+      "path": "data/nagano-unlocated-mentions.json",
+      "url": "https://chiikatsu-map.com/data/nagano-unlocated-mentions.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.070Z",
+      "expectedSha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+      "receivedSha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+      "same": true
+    },
+    {
+      "path": "data/official-events-archive.json",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.084Z",
+      "expectedSha256": "f5941350cd484384495426dea7d88fb8f67c72a24485b5892008727ad0e94686",
+      "receivedSha256": "f5941350cd484384495426dea7d88fb8f67c72a24485b5892008727ad0e94686",
+      "same": true
+    },
+    {
+      "path": "data/official-spots.json",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.258Z",
+      "expectedSha256": "f5d00eee17adcebf1df348648d3d87792f79ca22dc41fa7f1eccb225174eae17",
+      "receivedSha256": "f5d00eee17adcebf1df348648d3d87792f79ca22dc41fa7f1eccb225174eae17",
+      "same": true
+    },
+    {
+      "path": "data/site-meta.json",
+      "url": "https://chiikatsu-map.com/data/site-meta.json",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.433Z",
+      "expectedSha256": "6be449c749d8e9f65c2ad2eb25ddf180c52f9762e8c1b2445af3400771cfca5c",
+      "receivedSha256": "6be449c749d8e9f65c2ad2eb25ddf180c52f9762e8c1b2445af3400771cfca5c",
+      "same": true
+    },
+    {
+      "path": "index.html",
+      "url": "https://chiikatsu-map.com/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.256Z",
+      "expectedSha256": "d7a205f9471130c1c0fa61a4bbed4bafe35334d283594cad2b23434a112ab4eb",
+      "receivedSha256": "d7a205f9471130c1c0fa61a4bbed4bafe35334d283594cad2b23434a112ab4eb",
+      "same": true
+    },
+    {
+      "path": "official.html",
+      "url": "https://chiikatsu-map.com/official.html",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.258Z",
+      "expectedSha256": "d5dabf968f6d8ebee64eb7bd8d6a1d5688a970884650fecfb0dc372442f9873d",
+      "receivedSha256": "d5dabf968f6d8ebee64eb7bd8d6a1d5688a970884650fecfb0dc372442f9873d",
+      "same": true
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://chiikatsu-map.com/sitemap.xml",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.253Z",
+      "expectedSha256": "9421461cce535c565626a0d9d25b9d6e99dd3aac784bf7eed43787fda9ac24e3",
+      "receivedSha256": "9421461cce535c565626a0d9d25b9d6e99dd3aac784bf7eed43787fda9ac24e3",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.436Z",
+      "expectedSha256": "553ec6995889df6ec38dc1d6b5f748b52430276cfc460076f741b62286d073a5",
+      "receivedSha256": "553ec6995889df6ec38dc1d6b5f748b52430276cfc460076f741b62286d073a5",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawa-muchaphoto-ario-kakogawa-2026/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-muchaphoto-ario-kakogawa-2026/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.472Z",
+      "expectedSha256": "963f4377ee9bf8c448c3bc0cee7970cc7c7ffe16081d0f6bb8030f866e79298b",
+      "receivedSha256": "963f4377ee9bf8c448c3bc0cee7970cc7c7ffe16081d0f6bb8030f866e79298b",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawa-park-store-osaka/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-park-store-osaka/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.441Z",
+      "expectedSha256": "e2069dbd5928657885778f4e76dfc8fa49a5f13eec0fb3856946ca7332f1d105",
+      "receivedSha256": "e2069dbd5928657885778f4e76dfc8fa49a5f13eec0fb3856946ca7332f1d105",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawa-sushi-2026-10-22-yokohama-skybuilding/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-sushi-2026-10-22-yokohama-skybuilding/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.660Z",
+      "expectedSha256": "68af8c2226384b1669ef53be838ab4f897efd229e5eecac804e380bbd1248ea8",
+      "receivedSha256": "68af8c2226384b1669ef53be838ab4f897efd229e5eecac804e380bbd1248ea8",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawa-workshop-lalaport-kashiwanoha-2026/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-workshop-lalaport-kashiwanoha-2026/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.648Z",
+      "expectedSha256": "08bf352260f3496b0f384754367debd604d5abde429047d1ac1286fdad5d6c98",
+      "receivedSha256": "08bf352260f3496b0f384754367debd604d5abde429047d1ac1286fdad5d6c98",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-fukuoka/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-fukuoka/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.662Z",
+      "expectedSha256": "dfdc831230b02a9e77c123970f806200bf865a39ff972a5cac809bd54f5a70a4",
+      "receivedSha256": "dfdc831230b02a9e77c123970f806200bf865a39ff972a5cac809bd54f5a70a4",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-harajuku/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-harajuku/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.652Z",
+      "expectedSha256": "6cae54782fdffb8bd98cf97e732037f2fa10b590199f99fe7d9bab8eba117fb5",
+      "receivedSha256": "6cae54782fdffb8bd98cf97e732037f2fa10b590199f99fe7d9bab8eba117fb5",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-hiroshima/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-hiroshima/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.679Z",
+      "expectedSha256": "9f248c706e3840e4fc2cc5d0c7c35ab1aec21222e97968e0af350e7ecabd0388",
+      "receivedSha256": "9f248c706e3840e4fc2cc5d0c7c35ab1aec21222e97968e0af350e7ecabd0388",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-ikebukuro/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-ikebukuro/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.645Z",
+      "expectedSha256": "499f1e6ebea426ac56cfe719cce185c144717003ccb23e7922a136b4a6364b9c",
+      "receivedSha256": "499f1e6ebea426ac56cfe719cce185c144717003ccb23e7922a136b4a6364b9c",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-kanazawa/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-kanazawa/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.653Z",
+      "expectedSha256": "e71730e2886348512ae581eef7bd4cc346966db3961a61afa4a21dcc07aa0c6c",
+      "receivedSha256": "e71730e2886348512ae581eef7bd4cc346966db3961a61afa4a21dcc07aa0c6c",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-koshigaya/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-koshigaya/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.658Z",
+      "expectedSha256": "994cef514ae48ec1cf2568b0b84e20c02ea41a26dd73de3e6790e2762bacfeda",
+      "receivedSha256": "994cef514ae48ec1cf2568b0b84e20c02ea41a26dd73de3e6790e2762bacfeda",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-kyoto/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-kyoto/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.874Z",
+      "expectedSha256": "0225d813b0a8da27310473bbc71c41991e5674c548b89d719dbb81b0abadee12",
+      "receivedSha256": "0225d813b0a8da27310473bbc71c41991e5674c548b89d719dbb81b0abadee12",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-nagoya/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-nagoya/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.867Z",
+      "expectedSha256": "d2f85495454dcbdab75faf52777fb498effc0a98b2a7a109765061d72c108f1d",
+      "receivedSha256": "d2f85495454dcbdab75faf52777fb498effc0a98b2a7a109765061d72c108f1d",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-osaka-umeda/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-osaka-umeda/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.690Z",
+      "expectedSha256": "36a19949edfd0b8fe1962707db886f180959b2ef3dfe72def64632f02f0c9ce3",
+      "receivedSha256": "36a19949edfd0b8fe1962707db886f180959b2ef3dfe72def64632f02f0c9ce3",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-sapporo/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-sapporo/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.856Z",
+      "expectedSha256": "c68f90873acc33d746e1e0568331d669c5178ab992991e08ceec2015f28b846e",
+      "receivedSha256": "c68f90873acc33d746e1e0568331d669c5178ab992991e08ceec2015f28b846e",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-sendai/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-sendai/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.852Z",
+      "expectedSha256": "d822ba5d12d05ef67997f5d96de45d693a73435883b40974fd852df616197527",
+      "receivedSha256": "d822ba5d12d05ef67997f5d96de45d693a73435883b40974fd852df616197527",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-shinjuku/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-shinjuku/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.866Z",
+      "expectedSha256": "95c385e44b668a720a585a890e88efd7484f4d51b2aed251a20b83501dfefafa",
+      "receivedSha256": "95c385e44b668a720a585a890e88efd7484f4d51b2aed251a20b83501dfefafa",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-shinsaibashi/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-shinsaibashi/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.853Z",
+      "expectedSha256": "da508bf539119094169cb8561cfe03f197920f9aab0ad40eec76f21973dbf681",
+      "receivedSha256": "da508bf539119094169cb8561cfe03f197920f9aab0ad40eec76f21973dbf681",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-solamachi/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-solamachi/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:09.873Z",
+      "expectedSha256": "4bfd385573dab3bc6e49fd84e69ca18a9946d24af269be79a36db37cbd4e9dc4",
+      "receivedSha256": "4bfd385573dab3bc6e49fd84e69ca18a9946d24af269be79a36db37cbd4e9dc4",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-tokyo-station/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-tokyo-station/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.053Z",
+      "expectedSha256": "02b324163699f10eb3978f86304cda1512ff31824e6f37a6078f6a21f626dbdc",
+      "receivedSha256": "02b324163699f10eb3978f86304cda1512ff31824e6f37a6078f6a21f626dbdc",
+      "same": true
+    },
+    {
+      "path": "spot/chiikawaland-yokohama/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-yokohama/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.053Z",
+      "expectedSha256": "c4f0ba15fb7da53f329a5af19f1be9cd138cd7be9e8055f7a71217680e8f0f83",
+      "receivedSha256": "c4f0ba15fb7da53f329a5af19f1be9cd138cd7be9e8055f7a71217680e8f0f83",
+      "same": true
+    },
+    {
+      "path": "spot/nagano-market-popup-2026-10-23-ebina-marui/index.html",
+      "url": "https://chiikatsu-map.com/spot/nagano-market-popup-2026-10-23-ebina-marui/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.062Z",
+      "expectedSha256": "e20bba7e606d36fcea2bc1980701f5fd6c6f9d354111bc5e35ba33e2b97ee027",
+      "receivedSha256": "e20bba7e606d36fcea2bc1980701f5fd6c6f9d354111bc5e35ba33e2b97ee027",
+      "same": true
+    },
+    {
+      "path": "spot/nagano-market-umeda/index.html",
+      "url": "https://chiikatsu-map.com/spot/nagano-market-umeda/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.049Z",
+      "expectedSha256": "f41eb6a1a22ef5752515e49526d3333550c75f27302c2bb6daf3f8786d61058f",
+      "receivedSha256": "f41eb6a1a22ef5752515e49526d3333550c75f27302c2bb6daf3f8786d61058f",
+      "same": true
+    },
+    {
+      "path": "spot/popup-2026-10-01-jr-sendai/index.html",
+      "url": "https://chiikatsu-map.com/spot/popup-2026-10-01-jr-sendai/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.062Z",
+      "expectedSha256": "da732dd3d4d2c4d2a6cd337db925c8bdbe287fbb93141600a58854c263e5628a",
+      "receivedSha256": "da732dd3d4d2c4d2a6cd337db925c8bdbe287fbb93141600a58854c263e5628a",
+      "same": true
+    },
+    {
+      "path": "spot/popup-2026-10-23-aeon-parkplace-oita/index.html",
+      "url": "https://chiikatsu-map.com/spot/popup-2026-10-23-aeon-parkplace-oita/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.048Z",
+      "expectedSha256": "722fa3e47e22ad9b1f6cf8ad6fd3249a3c40512b54f25703872514af1dcded17",
+      "receivedSha256": "722fa3e47e22ad9b1f6cf8ad6fd3249a3c40512b54f25703872514af1dcded17",
+      "same": true
+    },
+    {
+      "path": "spot/popup-2026-10-23-ebina-marui/index.html",
+      "url": "https://chiikatsu-map.com/spot/popup-2026-10-23-ebina-marui/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.055Z",
+      "expectedSha256": "2ebd2b2c1db8c12933d8ae5d5ad360154238ee5fb12c88feb91f0588a7d3058c",
+      "receivedSha256": "2ebd2b2c1db8c12933d8ae5d5ad360154238ee5fb12c88feb91f0588a7d3058c",
+      "same": true
+    },
+    {
+      "path": "spot/ramen-buta-ikebukuro/index.html",
+      "url": "https://chiikatsu-map.com/spot/ramen-buta-ikebukuro/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.059Z",
+      "expectedSha256": "dcdc7961c9e6d29671d7556254069cc19064f803096af94199dc936d2c2e2903",
+      "receivedSha256": "dcdc7961c9e6d29671d7556254069cc19064f803096af94199dc936d2c2e2903",
+      "same": true
+    },
+    {
+      "path": "spot/ramen-buta-shibuya/index.html",
+      "url": "https://chiikatsu-map.com/spot/ramen-buta-shibuya/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.237Z",
+      "expectedSha256": "8267e5c35fcb0e98aabaa3188eeb2f19e82a889b6be52951d1c9b6ea70cc9042",
+      "receivedSha256": "8267e5c35fcb0e98aabaa3188eeb2f19e82a889b6be52951d1c9b6ea70cc9042",
+      "same": true
+    },
+    {
+      "path": "spot/ramen-buta-shinsaibashi/index.html",
+      "url": "https://chiikatsu-map.com/spot/ramen-buta-shinsaibashi/",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.248Z",
+      "expectedSha256": "af8a5d56c10fb28aacd2565cc105ec9914bfb91321f0ee9b2c749fc2caee9112",
+      "receivedSha256": "af8a5d56c10fb28aacd2565cc105ec9914bfb91321f0ee9b2c749fc2caee9112",
+      "same": true
+    },
+    {
+      "path": "app.js",
+      "url": "https://chiikatsu-map.com/app.js",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.076Z",
+      "expectedSha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+      "receivedSha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+      "same": true
+    },
+    {
+      "path": "recent-utils.js",
+      "url": "https://chiikatsu-map.com/recent-utils.js",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.255Z",
+      "expectedSha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+      "receivedSha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+      "same": true
+    },
+    {
+      "path": "service-worker.js",
+      "url": "https://chiikatsu-map.com/service-worker.js",
+      "status": 200,
+      "completedAt": "2026-10-10T02:44:10.070Z",
+      "expectedSha256": "ae681c5e9680c2336d1adfd5b3484dcfc216d5067a52bc4d6748d6c5b7382f4c",
+      "receivedSha256": "ae681c5e9680c2336d1adfd5b3484dcfc216d5067a52bc4d6748d6c5b7382f4c",
+      "same": true
+    }
+  ],
+  "syncedCandidateIds": [
+    "popup-2026-10-23-ebina-marui",
+    "popup-2026-10-23-aeon-parkplace-oita",
+    "nagano-market-popup-2026-10-23-ebina-marui-new",
+    "chiikawa-workshop-lalaport-kashiwanoha-2026-new",
+    "chiikawa-muchaphoto-ario-kakogawa-2026-new",
+    "chiikawa-sushi-2026-10-22-yokohama-skybuilding-new",
+    "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-new",
+    "ramen-buta-ikebukuro-november-2026-booking",
+    "ramen-buta-shibuya-november-2026-booking",
+    "ramen-buta-shinsaibashi-november-2026-booking",
+    "lucua-store-preopen-lottery-chiikawa-park-store-osaka-20261009",
+    "lucua-store-preopen-lottery-nagano-market-umeda-20261009",
+    "chiikawaland-oct9-notice-retirement-20261010",
+    "archive-jr-sendai-20261010",
+    "chiikawaland-shinsaibashi-entry-20261010",
+    "chiikawaland-umeda-entry-20261010",
+    "chiikawaland-nagoya-entry-20261010",
+    "chiikawaland-koshigaya-entry-20261010"
+  ],
+  "note": "保存済み朝の実配信と初回公開一致を夕方の通常更新へ同期。発表・発見・追加日を変更せず、同期時刻でpublishedAtを置き換えない。"
+}

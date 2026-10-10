@@ -1737,6 +1737,12 @@
           "observedAt": "2026-10-09T23:48:35.342Z",
           "summary": "このWindows環境の通常GETで公式会場名・住所・会場点の座標を照合。地図の中心や駐車場の点は使用しない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -1747,12 +1753,12 @@
       "listingIds": [
         "popup-2026-10-23-ebina-marui"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "ローカル掲載案を検査してコミットする今回の作業。今回push/PR/merge/公開は行わず、公開日時はnullを保持する。",
-      "nextCheck": "10月10日19時に公式の整理券方法・受付開始日時の続報と、未公開のローカル掲載案を確認する。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "ローカル掲載案を検査してコミットする今回の作業。今回push/PR/merge/公開は行わず、公開日時はnullを保持する。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "popup-2026-10-23-aeon-parkplace-oita",
@@ -1781,6 +1787,12 @@
           "observedAt": "2026-10-09T23:48:36.206Z",
           "summary": "このWindows環境の通常GETで公式会場名・住所・会場点の座標を照合。地図の中心や駐車場の点は使用しない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -1791,12 +1803,12 @@
       "listingIds": [
         "popup-2026-10-23-aeon-parkplace-oita"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "ローカル掲載案を検査してコミットする今回の作業。今回push/PR/merge/公開は行わず、公開日時はnullを保持する。",
-      "nextCheck": "10月10日19時に公式の整理券方法・受付開始日時の続報と、未公開のローカル掲載案を確認する。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "ローカル掲載案を検査してコミットする今回の作業。今回push/PR/merge/公開は行わず、公開日時はnullを保持する。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "nagano-market-popup-2026-10-23-ebina-marui-new",
@@ -1819,6 +1831,12 @@
           "observedAt": "2026-10-10T07:33:15+09:00",
           "summary": "委任元クラウドで公式個別案内を確認。5F会場、会期・営業時間、10/23整理券。受付方法と時計は未発表。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -1829,12 +1847,12 @@
       "listingIds": [
         "nagano-market-popup-2026-10-23-ebina-marui"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式の開催・参加券続報と未公開のローカル掲載案を確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawa-workshop-lalaport-kashiwanoha-2026-new",
@@ -1863,6 +1881,12 @@
           "observedAt": "2026-10-10T07:36:40+09:00",
           "summary": "委任元で公式アクセスの若柴175と公式短縮地図の実会場マーカー35.8936688,139.9510486を照合。地図本文取得失敗後のアクセスは行わない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -1873,12 +1897,12 @@
       "listingIds": [
         "chiikawa-workshop-lalaport-kashiwanoha-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式の開催・参加券続報と未公開のローカル掲載案を確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawa-muchaphoto-ario-kakogawa-2026-new",
@@ -1901,6 +1925,12 @@
           "observedAt": "2026-10-09T23:48:36.287Z",
           "summary": "Windowsの主催本文で10/17、9時券150枚、撮影3回、AR10〜17時・16:30受付終了・300人を確認。列の入口は委任元の公式案内画像10/9 18:35:26実見による。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -1911,12 +1941,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-ario-kakogawa-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式の開催・参加券続報と未公開のローカル掲載案を確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawa-sushi-2026-10-22-yokohama-skybuilding-new",
@@ -1958,6 +1988,12 @@
           "observedAt": "2026-10-09",
           "summary": "委任元で公式Xの10/8付を確認。表示時刻の時区は不明。画像ファイル名から発表日を求めない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -1968,12 +2004,12 @@
       "listingIds": [
         "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式の開催・参加券続報と未公開のローカル掲載案を確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-new",
@@ -1996,6 +2032,12 @@
           "observedAt": "2026-10-09T23:48:37.422Z",
           "summary": "Windowsの主催本文で10/6付、10/10・11の撮影時刻と150枚の撮影券、別のAR景品券300人分・券終了後も参加可を再確認。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2006,12 +2048,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式の開催・参加券続報と未公開のローカル掲載案を確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "ramen-buta-ikebukuro-november-2026-booking",
@@ -2034,6 +2076,12 @@
           "observedAt": "2026-10-09T23:48:36.324Z",
           "summary": "対象11/1～30・受付10/16正午・無料QR・各日2日前・最大2枚・本人確認を確認。初回発見日時は不明のまま。予約対象日を店舗startDate/endDateへ代入しない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2046,12 +2094,12 @@
       "listingIds": [
         "ramen-buta-ikebukuro"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時と10月16日受付前に公式予約条件を再確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "ramen-buta-shibuya-november-2026-booking",
@@ -2074,6 +2122,12 @@
           "observedAt": "2026-10-09T23:48:36.334Z",
           "summary": "対象11/1～30・受付10/16正午・無料QR・各日2日前・最大2枚・本人確認を確認。初回発見日時は不明のまま。予約対象日を店舗startDate/endDateへ代入しない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2086,12 +2140,12 @@
       "listingIds": [
         "ramen-buta-shibuya"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時と10月16日受付前に公式予約条件を再確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "ramen-buta-shinsaibashi-november-2026-booking",
@@ -2114,6 +2168,12 @@
           "observedAt": "2026-10-09T23:48:36.346Z",
           "summary": "対象11/1～30・受付10/16正午・無料QR・各日2日前・最大2枚・本人確認を確認。初回発見日時は不明のまま。予約対象日を店舗startDate/endDateへ代入しない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2126,12 +2186,12 @@
       "listingIds": [
         "ramen-buta-shinsaibashi"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時と10月16日受付前に公式予約条件を再確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "lucua-store-preopen-lottery-chiikawa-park-store-osaka-20261009",
@@ -2190,6 +2250,12 @@
           "observedAt": "2026-10-09T09:31:09.593Z",
           "summary": "委任元の当該日の公開フォーム定義で対象店舗の選択肢と第3希望まで・会員限定・23:59締切を確認。原記録の小数秒はミリ秒までに精度を落として保存。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2202,12 +2268,12 @@
       "listingIds": [
         "chiikawa-park-store-osaka"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式開業・入場続報を確認。プレオープン対象日と11/24の店舗開業日を区別。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "lucua-store-preopen-lottery-nagano-market-umeda-20261009",
@@ -2266,6 +2332,12 @@
           "observedAt": "2026-10-09T09:31:09.593Z",
           "summary": "委任元の当該日の公開フォーム定義で対象店舗の選択肢と第3希望まで・会員限定・23:59締切を確認。原記録の小数秒はミリ秒までに精度を落として保存。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2278,12 +2350,12 @@
       "listingIds": [
         "nagano-market-umeda"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に公式開業・入場続報を確認。プレオープン対象日と11/24の店舗開業日を区別。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawaland-oct9-notice-retirement-20261010",
@@ -2312,6 +2384,12 @@
           "observedAt": "2026-10-10",
           "summary": "再送全文12店舗と現状を照合し、期限が10/9である旧予約案内のみ撤去。新着や自由入店の確認とは扱わない。Xプロフィールの以前の403記録は保持し、現在取得成功と偽らない。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2346,12 +2424,12 @@
         "chiikawaland-kyoto",
         "chiikawaland-tokyo-station"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "通常巡回で新たな対象日の案内を確認。当日4店舗の条件は別候補で管理。",
-      "recheckDueAt": "2026-10-10T18:30:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "archive-jr-sendai-20261010",
@@ -2374,6 +2452,12 @@
           "observedAt": "2026-10-09",
           "summary": "委任元の公式画像実見で最終日10/9・17時閉場。10/10は終了翌日であり同じIDでarchiveへ移動。画像確認の秒は不明、日付のみ。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2386,12 +2470,12 @@
       "listingIds": [
         "popup-2026-10-01-jr-sendai"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。",
-      "nextCheck": "10月10日19時に履歴の共有URL・保存互換と公式の延長案内有無を確認。",
-      "recheckDueAt": "2026-10-10T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawaland-shinsaibashi-entry-20261010",
@@ -2420,6 +2504,12 @@
           "observedAt": "2026-10-10T00:28:35.311Z",
           "summary": "10/10 9:00配布開始、心斎橋PARCO1F心斎橋筋中央口側の星印、時間前整列禁止、1人1枚・代理不可、当日の指定時間のみ有効、なくなり次第終了を画像で確認。残数や配布終了の現在状況は未確認。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2432,12 +2522,12 @@
       "listingIds": [
         "chiikawaland-shinsaibashi"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。",
-      "nextCheck": "10/10 18:30に最新公式案内を確認し、10/11には延長確認がなければ当日限定案内を撤去。親の公開前にも配布・整列状況を確認。",
-      "recheckDueAt": "2026-10-10T18:30:00+09:00",
-      "publishedAt": null
+      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawaland-umeda-entry-20261010",
@@ -2466,6 +2556,12 @@
           "observedAt": "2026-10-10T00:28:35.385Z",
           "summary": "10/10開店前の列は阪急三番街南館B1F。全員揃って整列、Whityうめだ手前で折り返し・同エリア不可、徹夜不可、10:00開店時順次案内、混雑時の整理券可能性と運営変更を画像で確認。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2478,12 +2574,12 @@
       "listingIds": [
         "chiikawaland-osaka-umeda"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。",
-      "nextCheck": "10/10 18:30に最新公式案内を確認し、10/11には延長確認がなければ当日限定案内を撤去。親の公開前にも配布・整列状況を確認。",
-      "recheckDueAt": "2026-10-10T18:30:00+09:00",
-      "publishedAt": null
+      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawaland-nagoya-entry-20261010",
@@ -2512,6 +2608,12 @@
           "observedAt": "2026-10-10T00:28:35.405Z",
           "summary": "公式画像で西館1F正面入口（大津通り側）を先頭、全員整列・離脱時並び直し・後からの合流禁止、徹夜禁止、9:50以降は開店後直接店頭、整理券の可能性、1入店1会計を確認。10/10対象は親の公式投稿確認に基づく。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2524,12 +2626,12 @@
       "listingIds": [
         "chiikawaland-nagoya"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。",
-      "nextCheck": "10/10 18:30に最新公式案内を確認し、10/11には延長確認がなければ当日限定案内を撤去。親の公開前にも配布・整列状況を確認。",
-      "recheckDueAt": "2026-10-10T18:30:00+09:00",
-      "publishedAt": null
+      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
       "id": "chiikawaland-koshigaya-entry-20261010",
@@ -2558,6 +2660,12 @@
           "observedAt": "2026-10-10T00:28:35.418Z",
           "summary": "画像でmori3F立体駐車場P3入口前の星印、早朝深夜の整列・座り込み禁止、混雑時の整理券を確認。対象10/10、開店前P2エレベーター、全員揃って整列、運営変更は親が確認した公式投稿本文・再送全文に基づく。",
           "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
         }
       ],
       "existingMatch": {
@@ -2570,11 +2678,291 @@
       "listingIds": [
         "chiikawaland-koshigaya"
       ],
+      "state": "published",
+      "priority": "high",
+      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。",
+      "nextCheck": "通常巡回で新たな公式条件を確認する。保存した朝の初回公開日時を維持する。10月10日限定条件は20時以降・翌日の次確認で撤去対象として扱い、自由入場を推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
+    },
+    {
+      "id": "chiikawaland-sendai-tickets-ended-20261010",
+      "title": "ちいかわらんど 仙台パルコ店 10月10日整理券終了",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-sendai",
+      "sourceIds": [
+        "social-chiikawaland-sendai-tickets-ended-20261010"
+      ],
+      "officialAnnouncedAt": "2026-10-10T15:17:10+09:00",
+      "discoveredAt": "2026-10-10",
+      "eventStartsAt": "2026-10-10",
+      "eventEndsAt": "2026-10-10T20:00:00+09:00",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2108804009247269063",
+          "observedAt": "2026-10-10T09:45:18.346Z",
+          "summary": "公式が10月10日分の整理券配布終了・当日フリー入場なしと案内。翌日以降の制限は推測しない。 初回観測上限18:35:54 JSTは発見の確定時計ではなく、discoveredAtは日付のみ。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sendai"
+        ],
+        "note": "既存IDへ当該条件だけ更新。住所・会期・通常入場条件・追加日を保持。"
+      },
+      "listingIds": [
+        "chiikawaland-sendai"
+      ],
       "state": "verifying",
       "priority": "high",
-      "decision": "当日限定の案内をローカル反映して追加コミットまで。公開操作なし、publishedAtはnull。開始済み時刻や未確認の残数を現在利用可能とは表現しない。",
-      "nextCheck": "10/10 18:30に最新公式案内を確認し、10/11には延長確認がなければ当日限定案内を撤去。親の公開前にも配布・整列状況を確認。",
-      "recheckDueAt": "2026-10-10T18:30:00+09:00",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "nextCheck": "20時に当日条件が終了した後の次確認で、この当日告知を撤去。翌日の自由入場は推定せず最新公式案内へ戻す。",
+      "recheckDueAt": "2026-10-10T20:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261010",
+      "title": "ちいかわらんど POP UP SHOP アミュプラザおおいた 10月10日整理券終了",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-popup-2026-09-11-amu-oita",
+      "sourceIds": [
+        "social-chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261010"
+      ],
+      "officialAnnouncedAt": "2026-10-10T14:43:57+09:00",
+      "discoveredAt": "2026-10-10",
+      "eventStartsAt": "2026-10-10",
+      "eventEndsAt": "2026-10-10T20:00:00+09:00",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2108795650897039562",
+          "observedAt": "2026-10-10T09:45:18.246Z",
+          "summary": "公式が10月10日分の整理券配布終了・当日フリー入場なしと案内。翌日以降の制限は推測しない。 初回観測上限18:35:54 JSTは発見の確定時計ではなく、discoveredAtは日付のみ。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-popup-2026-09-11-amu-oita"
+        ],
+        "note": "既存IDへ当該条件だけ更新。住所・会期・通常入場条件・追加日を保持。"
+      },
+      "listingIds": [
+        "chiikawaland-popup-2026-09-11-amu-oita"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "nextCheck": "20時に当日条件が終了した後の次確認で、この当日告知を撤去。翌日の自由入場は推定せず最新公式案内へ戻す。",
+      "recheckDueAt": "2026-10-10T20:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-nagoya-tickets-ended-20261010",
+      "title": "ちいかわらんど 名古屋パルコ店 10月10日整理券終了",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-nagoya",
+      "sourceIds": [
+        "social-chiikawaland-nagoya-tickets-ended-20261010"
+      ],
+      "officialAnnouncedAt": "2026-10-10T14:29:50+09:00",
+      "discoveredAt": "2026-10-10",
+      "eventStartsAt": "2026-10-10",
+      "eventEndsAt": "2026-10-10T20:00:00+09:00",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2108792098568945878",
+          "observedAt": "2026-10-10T09:45:18.343Z",
+          "summary": "公式が10月10日分の整理券配布終了・当日フリー入場なしと案内。翌日以降の制限は推測しない。 初回観測上限18:35:54 JSTは発見の確定時計ではなく、discoveredAtは日付のみ。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-nagoya"
+        ],
+        "note": "既存IDへ当該条件だけ更新。住所・会期・通常入場条件・追加日を保持。"
+      },
+      "listingIds": [
+        "chiikawaland-nagoya"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "nextCheck": "20時に当日条件が終了した後の次確認で、この当日告知を撤去。翌日の自由入場は推定せず最新公式案内へ戻す。",
+      "recheckDueAt": "2026-10-10T20:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-entry-20261010",
+      "title": "ナガノマーケット POP UP SHOP 福岡三越 10月16日入場整理券",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+      "sourceIds": [
+        "venue-nagano-fukuoka-entry-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-16",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+          "observedAt": "2026-10-10T09:45:17.385Z",
+          "summary": "公式本文で10/16入場整理券を確認。開始方法・時刻は未知。ちいかわ福岡三越やLINE条件を流用しない。 発見日は日付のみとし、18:37:20のHTTP取得時計を発見の確定時計に代用しない。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
+        ],
+        "note": "既存IDへ当該条件だけ更新。住所・会期・通常入場条件・追加日を保持。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "nextCheck": "10月11日朝に公式X・会場原本の配布方法、受付開始日時を再確認。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-muchaphoto-sapporo-hiraoka-20261024",
+      "title": "ちいかわ むちゃフォトパーティ!! イオンモール札幌平岡",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "sourceIds": [
+        "venue-muchaphoto-sapporo-hiraoka-20261024"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10T09:37:21Z",
+      "eventStartsAt": "2026-10-24",
+      "eventEndsAt": "2026-10-25",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+          "observedAt": "2026-10-10T09:45:17.510Z",
+          "summary": "公式本文で10/24–25・各日9時の2種券を確認。参加費・発表日時は不明。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "同一ID・会期・75m以内の一致なし。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "nextCheck": "通常の検査・公開実体確認。10月11日朝と開催当日の主催条件を再確認。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-muchaphoto-laketown-mori-20261012",
+      "title": "ちいかわ むちゃフォトパーティ!! イオンレイクタウンmori",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+      "sourceIds": [
+        "venue-muchaphoto-laketown-mori-20261012"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10T09:41:50Z",
+      "eventStartsAt": "2026-10-12",
+      "eventEndsAt": "2026-10-12",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+          "observedAt": "2026-10-10T09:49:52.073Z",
+          "summary": "10/9ページ更新と初回発表を区別。10/12無料催事、J1屋外9:30券配布、1枚4人とAR500人を確認。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "同施設の既存常設・2022/2023 POPUPとは別の10/12撮影会。kaze映画企画とも別。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-laketown-mori-2026"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "nextCheck": "通常の検査・公開実体確認。10月11日朝と開催当日の主催条件を再確認。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "magical-sapporo-october-2026-confirmed-booking",
+      "title": "まじかる札幌10月6–20日の先着予約条件を補完",
+      "kind": "reservation_update",
+      "targetKey": "magical-popup-2026-10-02-sapporo-apia-entry-october-2026",
+      "sourceIds": [
+        "magical-sapporo-october-2026-source-1",
+        "magical-sapporo-october-2026-source-2",
+        "magical-sapporo-october-2026-source-3",
+        "magical-sapporo-october-2026-source-4",
+        "magical-sapporo-october-2026-source-5"
+      ],
+      "officialAnnouncedAt": "2026-10-09T18:00:05+09:00",
+      "discoveredAt": "2026-10-10T18:44:01.632+09:00",
+      "eventStartsAt": "2026-10-06",
+      "eventEndsAt": "2026-10-20",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-13T18:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://x.com/kiddyevent/status/2108482622984790066",
+          "observedAt": "2026-10-10T09:45:03.133Z",
+          "summary": "親が公式個別投稿・画像・公式LivePocket本文を確認。10/6–20終日先着事前予約、前日18時、本人確認・譲渡不可。10/11受付は既に開始したが残枠は保証しない。古い発表を今回新着として扱わない。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-popup-2026-10-02-sapporo-apia"
+        ],
+        "note": "既存札幌APIA10/2–11/3の同一催事。ID・会期・営業時間・追加日・全会期reservationType unknownを維持。"
+      },
+      "listingIds": [
+        "magical-popup-2026-10-02-sapporo-apia"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "既存予約条件の補完を今回の通常掲載更新へ同梱。10/21以降の条件は未確認。",
+      "nextCheck": "10月11日朝に10月21日以降の入店条件と公式更新を確認。現在の残枠は推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
       "publishedAt": null
     }
   ]
