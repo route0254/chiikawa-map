@@ -1,0 +1,287 @@
+{
+  "recordedAt": "2026-10-10T10:25:34.005Z",
+  "pr": 34,
+  "prUrl": "https://github.com/route0254/chiikawa-map/pull/34",
+  "base": "9d9db24ac9dd5c36da5509d68d14c3bc20c05fe4",
+  "sourceHead": "f9b7ef652bf3aaf96f5740fcd1115e9cfb736f22",
+  "mergeSha": "8d891b1f035b4305e480c46e14842ced854c8787",
+  "mergeTree": "4303f793a02ca78ba101067b0b1197550d54fd62",
+  "mergedAt": "2026-10-10T10:19:54Z",
+  "deployStepCompletedAt": "2026-10-10T10:20:44Z",
+  "deployJobCompletedAt": "2026-10-10T10:20:46Z",
+  "firstPublicMatchAt": "2026-10-10T10:23:54.968Z",
+  "checks": [
+    {
+      "id": 38044523059,
+      "name": "pages build and deployment",
+      "path": "dynamic/pages/pages-build-deployment",
+      "head": "8d891b1f035b4305e480c46e14842ced854c8787",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 340583706,
+      "createdAt": "2026-10-10T10:19:56Z",
+      "updatedAt": "2026-10-10T10:20:47Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38044523059"
+    },
+    {
+      "id": 38044523156,
+      "name": "Validate spot data",
+      "path": ".github/workflows/validate-data.yml",
+      "head": "8d891b1f035b4305e480c46e14842ced854c8787",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342280137,
+      "createdAt": "2026-10-10T10:19:56Z",
+      "updatedAt": "2026-10-10T10:20:08Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38044523156"
+    },
+    {
+      "id": 38044523145,
+      "name": "Test site",
+      "path": ".github/workflows/test-site.yml",
+      "head": "8d891b1f035b4305e480c46e14842ced854c8787",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342550527,
+      "createdAt": "2026-10-10T10:19:56Z",
+      "updatedAt": "2026-10-10T10:23:42Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38044523145"
+    }
+  ],
+  "public": {
+    "matching": 23,
+    "total": 23,
+    "dataFilesMatching": 10,
+    "dataFilesTotal": 10,
+    "files": [
+      {
+        "path": "data/added-dates.json",
+        "sha256": "0c27aedf854a97e1edcf9c70fae4cd172c61dd834a5829d18c7ef6fa12b09e12",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.508Z"
+      },
+      {
+        "path": "data/collaborations-archive.json",
+        "sha256": "3f16b7039bac64e696cefe9196f1a64a25a63374549a3e439d881e6e83544116",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.510Z"
+      },
+      {
+        "path": "data/collaborations-current.json",
+        "sha256": "9fc7c1e29059245741b7cdb40883862577c9cfa0535d71eabf7c6c94d4912a56",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.529Z"
+      },
+      {
+        "path": "data/community-spots.json",
+        "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.504Z"
+      },
+      {
+        "path": "data/nagano-history.json",
+        "sha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.506Z"
+      },
+      {
+        "path": "data/nagano-spots.json",
+        "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.526Z"
+      },
+      {
+        "path": "data/nagano-unlocated-mentions.json",
+        "sha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.511Z"
+      },
+      {
+        "path": "data/official-events-archive.json",
+        "sha256": "f5941350cd484384495426dea7d88fb8f67c72a24485b5892008727ad0e94686",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.535Z"
+      },
+      {
+        "path": "data/official-spots.json",
+        "sha256": "6927b0453f28ac6a7a0a77c29f6da128b468bd8079f4b8d3103509a2d039d4e9",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.719Z"
+      },
+      {
+        "path": "data/site-meta.json",
+        "sha256": "742aee045ea4b7bea34172470e83eda920e283dd003194e5419ee33717100f85",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.749Z"
+      },
+      {
+        "path": "sitemap.xml",
+        "sha256": "0458807d1e0034de9f2218aed3b9f458c990aef681d70383f9f4789b409d5274",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.734Z"
+      },
+      {
+        "path": "spot/chiikawa-muchaphoto-aeon-laketown-mori-2026/index.html",
+        "sha256": "f80e17fe65326a6881426e6bae6300ca1571c20bb201b4b7c61c229cab6614b7",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.755Z"
+      },
+      {
+        "path": "spot/chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026/index.html",
+        "sha256": "1e9c27ac2aeebcb863a889264f119fe447eb79647f198e9cd864eb4a45705e4c",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.741Z"
+      },
+      {
+        "path": "spot/chiikawaland-nagoya/index.html",
+        "sha256": "a400dddedf7c4fe7129c7016083a5b9aa5b51be1810c926f3f72caa00a0aeaef",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.751Z"
+      },
+      {
+        "path": "spot/chiikawaland-popup-2026-09-11-amu-oita/index.html",
+        "sha256": "90d02391a16205cfedbd9c2b191f6aebbd2bdc81d93639f2693d07bd1ca95486",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.732Z"
+      },
+      {
+        "path": "spot/chiikawaland-sendai/index.html",
+        "sha256": "f441b90dc9e95758d2cd4d2fda29b9ee6644d98133e7aeb4a2a6614b131d9f15",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.725Z"
+      },
+      {
+        "path": "spot/magical-popup-2026-10-02-sapporo-apia/index.html",
+        "sha256": "5a70bb01b04d5a085ee40d23d999e1b22208e9893434e4248e87794133176e7e",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.932Z"
+      },
+      {
+        "path": "spot/nagano-market-popup-2026-10-16-fukuoka-mitsukoshi/index.html",
+        "sha256": "0f2bcf8eca9ec172da2281058cf1f0adf4ce131eb32649b478378dd70d3a4d51",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.948Z"
+      },
+      {
+        "path": "index.html",
+        "sha256": "d7a205f9471130c1c0fa61a4bbed4bafe35334d283594cad2b23434a112ab4eb",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.959Z"
+      },
+      {
+        "path": "official.html",
+        "sha256": "d5dabf968f6d8ebee64eb7bd8d6a1d5688a970884650fecfb0dc372442f9873d",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.957Z"
+      },
+      {
+        "path": "app.js",
+        "sha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.954Z"
+      },
+      {
+        "path": "recent-utils.js",
+        "sha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.947Z"
+      },
+      {
+        "path": "service-worker.js",
+        "sha256": "ae681c5e9680c2336d1adfd5b3484dcfc216d5067a52bc4d6748d6c5b7382f4c",
+        "status": 200,
+        "observedAt": "2026-10-10T10:23:54.967Z"
+      }
+    ]
+  },
+  "tests": {
+    "check": 0,
+    "unit": 55,
+    "smoke": 101,
+    "links": 0,
+    "qaScreens": 14
+  },
+  "counts": {
+    "newListings": 2,
+    "entryUpdates": 5,
+    "archived": 0
+  },
+  "sameDayNoticesPublishedBefore20": true,
+  "ledgerSync": {
+    "candidateSync": [
+      {
+        "id": "chiikawaland-sendai-tickets-ended-20261010",
+        "listingIds": [
+          "chiikawaland-sendai"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      },
+      {
+        "id": "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261010",
+        "listingIds": [
+          "chiikawaland-popup-2026-09-11-amu-oita"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      },
+      {
+        "id": "chiikawaland-nagoya-tickets-ended-20261010",
+        "listingIds": [
+          "chiikawaland-nagoya"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      },
+      {
+        "id": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-entry-20261010",
+        "listingIds": [
+          "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      },
+      {
+        "id": "new-muchaphoto-sapporo-hiraoka-20261024",
+        "listingIds": [
+          "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      },
+      {
+        "id": "new-muchaphoto-laketown-mori-20261012",
+        "listingIds": [
+          "chiikawa-muchaphoto-aeon-laketown-mori-2026"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      },
+      {
+        "id": "magical-sapporo-october-2026-confirmed-booking",
+        "listingIds": [
+          "magical-popup-2026-10-02-sapporo-apia"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-10T10:23:54.968Z"
+      }
+    ],
+    "nextNormalListingPr": "TOHO7会場の通常掲載PRへ同期。記録だけの連続PRは作らない。"
+  },
+  "handoff": {
+    "after": "2026-10-10T20:00:00+09:00",
+    "ids": [
+      "chiikawaland-sendai",
+      "chiikawaland-popup-2026-09-11-amu-oita",
+      "chiikawaland-nagoya"
+    ],
+    "action": "次の通常巡回で10/10の当日注意表示を外し、10/11以降の公式案内を確認する。",
+    "automationScheduled": false
+  }
+}

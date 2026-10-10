@@ -2706,6 +2706,12 @@
           "observedAt": "2026-10-10T09:45:18.346Z",
           "summary": "公式が10月10日分の整理券配布終了・当日フリー入場なしと案内。翌日以降の制限は推測しない。 初回観測上限18:35:54 JSTは発見の確定時計ではなく、discoveredAtは日付のみ。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2718,12 +2724,12 @@
       "listingIds": [
         "chiikawaland-sendai"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
-      "nextCheck": "20時に当日条件が終了した後の次確認で、この当日告知を撤去。翌日の自由入場は推定せず最新公式案内へ戻す。",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。 PR34で通常公開済み。",
+      "nextCheck": "次の通常巡回で10/10の当日注意表示を外し、10/11以降の公式案内を確認する。",
       "recheckDueAt": "2026-10-10T20:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T10:23:54.968Z"
     },
     {
       "id": "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261010",
@@ -2746,6 +2752,12 @@
           "observedAt": "2026-10-10T09:45:18.246Z",
           "summary": "公式が10月10日分の整理券配布終了・当日フリー入場なしと案内。翌日以降の制限は推測しない。 初回観測上限18:35:54 JSTは発見の確定時計ではなく、discoveredAtは日付のみ。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2758,12 +2770,12 @@
       "listingIds": [
         "chiikawaland-popup-2026-09-11-amu-oita"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
-      "nextCheck": "20時に当日条件が終了した後の次確認で、この当日告知を撤去。翌日の自由入場は推定せず最新公式案内へ戻す。",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。 PR34で通常公開済み。",
+      "nextCheck": "次の通常巡回で10/10の当日注意表示を外し、10/11以降の公式案内を確認する。",
       "recheckDueAt": "2026-10-10T20:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T10:23:54.968Z"
     },
     {
       "id": "chiikawaland-nagoya-tickets-ended-20261010",
@@ -2786,6 +2798,12 @@
           "observedAt": "2026-10-10T09:45:18.343Z",
           "summary": "公式が10月10日分の整理券配布終了・当日フリー入場なしと案内。翌日以降の制限は推測しない。 初回観測上限18:35:54 JSTは発見の確定時計ではなく、discoveredAtは日付のみ。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2798,12 +2816,12 @@
       "listingIds": [
         "chiikawaland-nagoya"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
-      "nextCheck": "20時に当日条件が終了した後の次確認で、この当日告知を撤去。翌日の自由入場は推定せず最新公式案内へ戻す。",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。 PR34で通常公開済み。",
+      "nextCheck": "次の通常巡回で10/10の当日注意表示を外し、10/11以降の公式案内を確認する。",
       "recheckDueAt": "2026-10-10T20:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T10:23:54.968Z"
     },
     {
       "id": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-entry-20261010",
@@ -2826,6 +2844,12 @@
           "observedAt": "2026-10-10T09:45:17.385Z",
           "summary": "公式本文で10/16入場整理券を確認。開始方法・時刻は未知。ちいかわ福岡三越やLINE条件を流用しない。 発見日は日付のみとし、18:37:20のHTTP取得時計を発見の確定時計に代用しない。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2838,12 +2862,12 @@
       "listingIds": [
         "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。 PR34で通常公開済み。",
       "nextCheck": "10月11日朝に公式X・会場原本の配布方法、受付開始日時を再確認。",
       "recheckDueAt": "2026-10-11T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T10:23:54.968Z"
     },
     {
       "id": "new-muchaphoto-sapporo-hiraoka-20261024",
@@ -2866,6 +2890,12 @@
           "observedAt": "2026-10-10T09:45:17.510Z",
           "summary": "公式本文で10/24–25・各日9時の2種券を確認。参加費・発表日時は不明。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2876,12 +2906,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。 PR34で通常公開済み。",
       "nextCheck": "通常の検査・公開実体確認。10月11日朝と開催当日の主催条件を再確認。",
       "recheckDueAt": "2026-10-11T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T10:23:54.968Z"
     },
     {
       "id": "new-muchaphoto-laketown-mori-20261012",
@@ -2904,6 +2934,12 @@
           "observedAt": "2026-10-10T09:49:52.073Z",
           "summary": "10/9ページ更新と初回発表を区別。10/12無料催事、J1屋外9:30券配布、1枚4人とAR500人を確認。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2914,12 +2950,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-aeon-laketown-mori-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
-      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。",
+      "decision": "確認済み通常掲載更新。実際の公開照合前はpublishedAtをnullで保持。 PR34で通常公開済み。",
       "nextCheck": "通常の検査・公開実体確認。10月11日朝と開催当日の主催条件を再確認。",
       "recheckDueAt": "2026-10-11T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T10:23:54.968Z"
     },
     {
       "id": "magical-sapporo-october-2026-confirmed-booking",
@@ -2946,6 +2982,12 @@
           "observedAt": "2026-10-10T09:45:03.133Z",
           "summary": "親が公式個別投稿・画像・公式LivePocket本文を確認。10/6–20終日先着事前予約、前日18時、本人確認・譲渡不可。10/11受付は既に開始したが残枠は保証しない。古い発表を今回新着として扱わない。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/34",
+          "observedAt": "2026-10-10T10:23:54.968Z",
+          "summary": "PR34の実Pagesデプロイ成功と全10データJSON・23配信ファイルの一致を確認。正規Git blobと照合した実測の初回一致時刻を保存。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr34.json"
         }
       ],
       "existingMatch": {
@@ -2958,10 +3000,276 @@
       "listingIds": [
         "magical-popup-2026-10-02-sapporo-apia"
       ],
+      "state": "published",
+      "priority": "high",
+      "decision": "既存予約条件の補完を今回の通常掲載更新へ同梱。10/21以降の条件は未確認。 PR34で通常公開済み。",
+      "nextCheck": "10月11日朝に10月21日以降の入店条件と公式更新を確認。現在の残枠は推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": "2026-10-10T10:23:54.968Z"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-umeda-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 梅田",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-umeda-20261016",
+      "sourceIds": [
+        "toho-umeda-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.148Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公式・終了済み・コラボ・ナガノ・コミュニティの6データで同名TOHO・同URL・75m以内の既存重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-umeda-20261016"
+      ],
       "state": "verifying",
       "priority": "high",
-      "decision": "既存予約条件の補完を今回の通常掲載更新へ同梱。10/21以降の条件は未確認。",
-      "nextCheck": "10月11日朝に10月21日以降の入店条件と公式更新を確認。現在の残枠は推定しない。",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-nagoya-sakae-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 名古屋栄",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-nagoya-sakae-20261016",
+      "sourceIds": [
+        "toho-nagoya-sakae-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.085Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公式・終了済み・コラボ・ナガノ・コミュニティの6データで同名TOHO・同URL・75m以内の既存重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-nagoya-sakae-20261016"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-ikebukuro-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 池袋",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-ikebukuro-20261016",
+      "sourceIds": [
+        "toho-ikebukuro-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.180Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公式・終了済み・コラボ・ナガノ・コミュニティの6データで同名TOHO・同URL・75m以内の既存重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-ikebukuro-20261016"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-hibiya-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 日比谷",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-hibiya-20261016",
+      "sourceIds": [
+        "toho-hibiya-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.202Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "同建物2Fの天寅は別の飲食店。上映は3日ともscreen9/theaterCd0811、東京ミッドタウン日比谷4F。ほかの5データを含め同イベント・URLなし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-hibiya-20261016"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-shinjuku-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 新宿",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-shinjuku-20261016",
+      "sourceIds": [
+        "toho-shinjuku-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.248Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公式・終了済み・コラボ・ナガノ・コミュニティの6データで同名TOHO・同URL・75m以内の既存重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-shinjuku-20261016"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-tenjin-solaria-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 天神・ソラリア館",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-tenjin-solaria-20261016",
+      "sourceIds": [
+        "toho-tenjin-solaria-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.244Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公式・終了済み・コラボ・ナガノ・コミュニティの6データで同名TOHO・同URL・75m以内の既存重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-tenjin-solaria-20261016"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
+      "recheckDueAt": "2026-10-11T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-susukino-20261016-new",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ すすきの",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-susukino-20261016",
+      "sourceIds": [
+        "toho-susukino-penlight-20261016"
+      ],
+      "officialAnnouncedAt": "2026-10-01",
+      "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+      "eventStartsAt": "2026-10-16T19:00:00+09:00",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-10T10:15:53.360Z",
+          "summary": "公式本文の3日間限定上映と発売開始・入場条件を確認。現在の残席は保証しない。公式アクセスの住所と地図マーカーの根拠は証拠ファイルに記録。",
+          "recordPath": "research/toho-penlight-screenings-2026-10-10-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公式・終了済み・コラボ・ナガノ・コミュニティの6データで同名TOHO・同URL・75m以内の既存重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-susukino-20261016"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "通常の新規公式イベント掲載として別PRで検査。実配信照合前はpublishedAtをnullに保持。",
+      "nextCheck": "10月11日朝に公式更新・上映会場を再確認。座席の空きは推定しない。",
       "recheckDueAt": "2026-10-11T08:00:00+09:00",
       "publishedAt": null
     }

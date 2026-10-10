@@ -1,0 +1,373 @@
+{
+  "recordedAt": "2026-10-10T10:28:56.524Z",
+  "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
+  "scope": "TOHO公式の3日間限定・自動制御ペンライト演出付き応援上映7会場。通常上映全館へ拡張しない。",
+  "officialAnnouncedAt": "2026-10-01",
+  "discoveredAt": "2026-10-10T18:37:58.858+09:00",
+  "eventStartsAt": "2026-10-16T19:00:00+09:00",
+  "eventEndsAt": "2026-10-18",
+  "reservationOpensAt": "2026-10-09T00:00:00+09:00",
+  "parentEventObservedAt": "2026-10-10T18:42:54.659+09:00",
+  "unknowns": [
+    "現在の残席",
+    "一部住所本文の元取得時計"
+  ],
+  "venues": [
+    {
+      "key": "umeda",
+      "code": "037",
+      "label": "梅田",
+      "lat": 34.70331958171439,
+      "lng": 135.50001049384838,
+      "address": "大阪府大阪市北区角田町7-10 HEP NAVIO 8F（本館）",
+      "extraNote": "大阪府では、終映が19:00を過ぎる回に16歳未満の方が保護者同伴なしで入場することはできません。別館は休館中のため、本館の上映案内をご確認ください。",
+      "coordinateBasis": "公式theater_list.json 037 LAT/LNG。本館を選択、別館休館中。",
+      "coordinateObservedAt": "2026-10-10T09:49:34Z"
+    },
+    {
+      "key": "nagoya-sakae",
+      "code": "091",
+      "label": "名古屋栄",
+      "lat": 35.1693698,
+      "lng": 136.907751,
+      "address": "愛知県名古屋市中区錦3丁目25-1 ザ・ランドマーク名古屋栄5F",
+      "extraNote": null,
+      "coordinateBasis": "公式アクセス印刷Maps短縮リンク展開先 !8m2!3d/!4d placeマーカー。iframe中心は使わない。",
+      "coordinateObservedAt": "2026-10-10T09:49:34Z"
+    },
+    {
+      "key": "ikebukuro",
+      "code": "084",
+      "label": "池袋",
+      "lat": 35.7324251,
+      "lng": 139.7153486,
+      "address": "東京都豊島区東池袋1-18-1 Hareza Tower内",
+      "extraNote": null,
+      "coordinateBasis": "公式アクセス印刷Mapsリンク !8m2!3d35.7324251!4d139.7153486。公式住所本文の正確な取得時刻は未記録。",
+      "coordinateObservedAt": null
+    },
+    {
+      "key": "hibiya",
+      "code": "081",
+      "label": "日比谷",
+      "lat": 35.6737436,
+      "lng": 139.7591762,
+      "address": "東京都千代田区有楽町1-1-2 東京ミッドタウン日比谷4F",
+      "extraNote": "チケットに記載されたスクリーンと建物をご確認ください。",
+      "coordinateBasis": "親が10/16–18全3回のscreen9/theaterCd0811を確認し東京ミッドタウン日比谷4Fと確定。公式アクセス埋込マーカー35.6737436,139.7591762。",
+      "coordinateObservedAt": "2026-10-10T09:49:50Z",
+      "nearbyKnown": {
+        "id": "nagano-tentora-hibiya",
+        "name": "天ぷら 天寅 東京ミッドタウン日比谷店",
+        "distanceMeters": 51.2,
+        "dataset": "nagano-spots"
+      }
+    },
+    {
+      "key": "shinjuku",
+      "code": "076",
+      "label": "新宿",
+      "lat": 35.6954153,
+      "lng": 139.7020545,
+      "address": "東京都新宿区歌舞伎町1-19-1 新宿東宝ビル3F",
+      "extraNote": null,
+      "coordinateBasis": "公式アクセス印刷Mapsリンク !8m2!3d35.6954153!4d139.7020545。公式住所本文の正確な取得時刻は未記録。",
+      "coordinateObservedAt": null
+    },
+    {
+      "key": "tenjin-solaria",
+      "code": "056",
+      "label": "天神・ソラリア館",
+      "lat": 33.5890297,
+      "lng": 130.3990942,
+      "address": "福岡県福岡市中央区天神2-2-43 ソラリアプラザ7F",
+      "extraNote": null,
+      "coordinateBasis": "公式アクセス印刷Mapsリンク !8m2!3d33.5890297!4d130.3990942。公式住所本文の正確な取得時刻は未記録。",
+      "coordinateObservedAt": null
+    },
+    {
+      "key": "susukino",
+      "code": "089",
+      "label": "すすきの",
+      "lat": 43.0551326,
+      "lng": 141.352701,
+      "address": "北海道札幌市中央区南4条西4丁目1-1 COCONO SUSUKINO 5F",
+      "extraNote": null,
+      "coordinateBasis": "公式アクセス印刷Maps短縮リンク展開先 !8m2!3d/!4d placeマーカー。",
+      "coordinateObservedAt": "2026-10-10T09:49:34Z"
+    }
+  ],
+  "nativeSources": [
+    {
+      "key": "umeda",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:52.833Z",
+      "completedAt": "2026-10-10T10:15:53.148Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "02df3b38b9e9a8f2eb10a3b697d48abb05ec56ea2a566cb2e3d470434938d18a",
+      "title": "TOHOシネマズ 梅田：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "umeda",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/037/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/037/access.html",
+      "startedAt": "2026-10-10T10:15:52.881Z",
+      "completedAt": "2026-10-10T10:15:53.087Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "b7d7123cc2956152acac4232d03c4b4768e89b55db338955106dbe6d30cf9b33",
+      "title": "TOHOシネマズ 梅田：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    },
+    {
+      "key": "nagoya-sakae",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:52.882Z",
+      "completedAt": "2026-10-10T10:15:53.085Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "86f7b6bf1e5077e614127d1bf56f026c684328115a3d5566fdac609f5c5a1c19",
+      "title": "TOHOシネマズ 名古屋栄：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "nagoya-sakae",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/091/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/091/access.html",
+      "startedAt": "2026-10-10T10:15:52.882Z",
+      "completedAt": "2026-10-10T10:15:53.082Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "aa7645b7f6b4f8e0af1056278081f1ba750d2b372744f2cea7b2658c70942009",
+      "title": "TOHOシネマズ 名古屋栄：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    },
+    {
+      "key": "ikebukuro",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:53.148Z",
+      "completedAt": "2026-10-10T10:15:53.180Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "07a619def5707c7a97fc4d694fdb29044fe69ef549a3847c0ba33e25b8542e56",
+      "title": "TOHOシネマズ 池袋：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "ikebukuro",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/084/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/084/access.html",
+      "startedAt": "2026-10-10T10:15:53.148Z",
+      "completedAt": "2026-10-10T10:15:53.203Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "af66c5da3fb506061a0656ae4bb174bc2591d8d6658782015e524ca2fe561782",
+      "title": "TOHOシネマズ 池袋：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    },
+    {
+      "key": "hibiya",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:53.149Z",
+      "completedAt": "2026-10-10T10:15:53.202Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "6c9e26dc98979e9f48a540846ae0d5552bdff07e64af2f19fa11eec428059b4d",
+      "title": "TOHOシネマズ 日比谷：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "hibiya",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/081/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/081/access.html",
+      "startedAt": "2026-10-10T10:15:53.149Z",
+      "completedAt": "2026-10-10T10:15:53.187Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "de0b5d584d0a886aa2bf71dddb30b0c1db795fc69099858753b6fce1e73e1599",
+      "title": "TOHOシネマズ 日比谷：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    },
+    {
+      "key": "shinjuku",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:53.203Z",
+      "completedAt": "2026-10-10T10:15:53.248Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "f61eb0c502386ac5875dd1ea75114f50a28a95c23db3861fe085ad6fcaae1bf9",
+      "title": "TOHOシネマズ 新宿：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "shinjuku",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/076/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/076/access.html",
+      "startedAt": "2026-10-10T10:15:53.204Z",
+      "completedAt": "2026-10-10T10:15:53.249Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "6d47f51728e72b54f7142af1eca3b7008a809cd23655d2ec8e200e13dd2422d2",
+      "title": "TOHOシネマズ 新宿：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    },
+    {
+      "key": "tenjin-solaria",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:53.204Z",
+      "completedAt": "2026-10-10T10:15:53.244Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "4426d1f52b7ac9e5c1ad02f3fdc8711a99e37cfe540f47d62651a104c4c88a2a",
+      "title": "TOHOシネマズ 天神・ソラリア館：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "tenjin-solaria",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/056/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/056/access.html",
+      "startedAt": "2026-10-10T10:15:53.204Z",
+      "completedAt": "2026-10-10T10:15:53.246Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "6f2429beb28b293054f7bd301e1bab1f9e57de96fee19aacaccf3b1b45314e9f",
+      "title": "TOHOシネマズ 天神・ソラリア館：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    },
+    {
+      "key": "susukino",
+      "kind": "event",
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "startedAt": "2026-10-10T10:15:53.249Z",
+      "completedAt": "2026-10-10T10:15:53.360Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "3426e35126254f9c8bca5940068eb5f55b5b9e6836915a5bca881fec461a62dd",
+      "title": "TOHOシネマズすすきの：TOHOシネマズ7劇場にて『映画ちいかわ 人魚の島のひみつ』自動制御ペンライト演出付き なんとかなれーッ！応援上映　開催決定！！ || TOHOシネマズ",
+      "eventConfirmed": true
+    },
+    {
+      "key": "susukino",
+      "kind": "access",
+      "url": "https://www.tohotheater.jp/theater/089/access.html",
+      "finalUrl": "https://www.tohotheater.jp/theater/089/access.html",
+      "startedAt": "2026-10-10T10:15:53.250Z",
+      "completedAt": "2026-10-10T10:15:53.318Z",
+      "status": 200,
+      "charset": "shift_jis",
+      "sha256": "3e6419877e7ea4dce52e7e7d4e1c217394dfbba005dd51e45eb8a889ac8e3189",
+      "title": "TOHOシネマズすすきの：アクセス || TOHOシネマズ",
+      "eventConfirmed": null
+    }
+  ],
+  "duplicateReview": {
+    "checkedAt": "2026-10-10T10:27:40.113Z",
+    "thresholdMeters": 75,
+    "datasets": [
+      "official-spots",
+      "official-events-archive",
+      "collaborations-current",
+      "collaborations-archive",
+      "nagano-spots",
+      "community-spots"
+    ],
+    "results": [
+      {
+        "key": "umeda",
+        "nearby": [],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      },
+      {
+        "key": "nagoya-sakae",
+        "nearby": [],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      },
+      {
+        "key": "ikebukuro",
+        "nearby": [],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      },
+      {
+        "key": "hibiya",
+        "nearby": [
+          {
+            "id": "nagano-tentora-hibiya",
+            "name": "天ぷら 天寅 東京ミッドタウン日比谷店",
+            "dataset": "nagano-spots",
+            "distanceMeters": 51.2,
+            "startDate": null,
+            "endDate": null,
+            "address": "東京都千代田区有楽町1-1-2 東京ミッドタウン日比谷2F",
+            "placeType": "food",
+            "relationType": "visited"
+          }
+        ],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      },
+      {
+        "key": "shinjuku",
+        "nearby": [],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      },
+      {
+        "key": "tenjin-solaria",
+        "nearby": [],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      },
+      {
+        "key": "susukino",
+        "nearby": [],
+        "exactUrlMatches": [],
+        "tohoNameMatches": []
+      }
+    ]
+  },
+  "hibiyaVenueReview": {
+    "screens": "10/16–18すべてscreen9/theaterCd0811",
+    "building": "東京ミッドタウン日比谷4F",
+    "observedAt": "2026-10-10T09:49:50Z",
+    "nearbyDecision": "同建物2Fの天寅は飲食店で別掲載。距離51.2mのみで同一視しない。"
+  },
+  "sameDayNoticeHandoff": {
+    "after": "2026-10-10T20:00:00+09:00",
+    "ids": [
+      "chiikawaland-sendai",
+      "chiikawaland-popup-2026-09-11-amu-oita",
+      "chiikawaland-nagoya"
+    ],
+    "action": "次の通常巡回で10/10の当日注意表示を外し、10/11以降の公式案内を確認する。",
+    "automationScheduled": false
+  },
+  "notes": [
+    "取得時刻を発表時刻・発見時刻へ流用しない。日付のみの10/1発表に時刻を捏造しない。",
+    "座標は公式placeマーカーまたは公式劇場データ。地図iframe中心を使わない。",
+    "通常全国上映の劇場を一括追加しない。分類・schema・UIの追加変更なし。"
+  ]
+}
