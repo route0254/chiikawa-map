@@ -1,0 +1,599 @@
+{
+  "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
+  "source": "受信された依頼本文末尾のcorporateSourceObservations・個別らんど4件・公式SNSの観測。本文中央の未受信分は追加しない。",
+  "recordedAt": "2026-10-11T23:48:01.601Z",
+  "observations": [
+    {
+      "proposedId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "attemptAt": "2026-10-12T08:08:44+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "10/6告知・10/19初便時刻と路線非固定が現行と一致。グッズComing Soon。残席/当日運航未確認。",
+      "normalizedSourceId": "ana-chiikawa-jet",
+      "previousLastSuccessfulAt": "2026-10-11T08:03:51+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:08:44+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "attemptAt": "2026-10-12T08:08:44+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "第1弾10/19 10:00～12/31 23:59、第2弾2027/2/1～4/30、参加条件・国内送付が現行一致。",
+      "normalizedSourceId": "ana-chiikawa-campaign",
+      "previousLastSuccessfulAt": "2026-10-11T08:03:58+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:08:44+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "attemptAt": "2026-10-12T08:08:44+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "10/31まで、TOKYO Station・梅田HEP FIVEのノベルティ/引換証終了、他店欠品時配送案内が現行一致。画像全件と個店フォームの実見未完了。部分確認。",
+      "normalizedSourceId": "jr-central-tsutsuurauratabi",
+      "previousLastSuccessfulAt": "2026-10-06T10:03:55.940Z",
+      "lastSuccessfulAt": "2026-10-06T10:03:55.940Z",
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "attemptAt": "2026-10-12T08:08:44+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "11/24～12/25、11～21時・最終18:30～19:00、10/15正午～25日23:59抽選、10/30正午以降当落が現行一致。一般発売日未発表。",
+      "normalizedSourceId": "chiikawa-christmas-market-official",
+      "previousLastSuccessfulAt": "2026-10-11T08:05:25.804+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:08:44+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "attemptAt": "2026-10-12T08:09:41+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "池袋9/17～10/14・10～21時最終18時、盛岡9/18～30を再確認。ソラマチ不掲載は削除根拠にしない。",
+      "normalizedSourceId": "tokyo-banana-chiikawa",
+      "previousLastSuccessfulAt": "2026-10-11T08:05:04+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:09:41+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "attemptAt": "2026-10-12T08:09:41+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "10/8・14・21・22の19:30上映なし、カフェ券上限・再開可能性、9/24物販フリーと最終20:45が現行一致。",
+      "normalizedSourceId": "tokyo-skytree-chiikawa-2026",
+      "previousLastSuccessfulAt": "2026-10-11T08:05:23.899+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:09:41+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "seven-eleven-christmas-campaign-2026",
+      "url": "https://www.sej.co.jp/cmp/cck2609/",
+      "attemptAt": "2026-10-12T08:09:41+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "店頭12/19～1/15、7NOW1/6～1/15応募を確認、現行一致。",
+      "normalizedSourceId": "seven-eleven-christmas-campaign-2026",
+      "previousLastSuccessfulAt": "2026-10-11T08:07:19.728+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:09:41+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "10/5 10時告知、予約10/5・11/10発売。予約開始時刻/終了日未記載、現行維持。",
+      "normalizedSourceId": "tamanohikari-chiikawa-release",
+      "previousLastSuccessfulAt": "2026-10-11T08:07:08.513+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "画像alt/本文で対象4隻・深夜便対象外を照合。画像主体で全告知画像を実見しておらず新着網羅としない。",
+      "normalizedSourceId": "corporate-sunflower-chiikawa",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "実店舗完売、再入荷予定あり時期未定、オンライン過剰受注が現行一致。",
+      "normalizedSourceId": "corporate-chiikawa-glasses",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "11/20・11/27各7:15/店頭開店、1柄1色2点まで一致。",
+      "normalizedSourceId": "corporate-gu-chiikawa-faq",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "7/13～9/30レシート対象・購入後1週間以内投稿。賞品応募期限はアプリ要項のみで未確定。",
+      "normalizedSourceId": "corporate-kadokawa-chiikawa-topics",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "一次キャンペーン本文でも9/30 23:59購入対象と購入後1週間以内投稿。賞品応募期限はアプリ要項へ案内、本文に具体日なし。",
+      "normalizedSourceId": "corporate-yomeruba-chiikawa-campaign",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "9月上旬順次、出荷で前後、全24種・なくなり次第終了。現行一致。在庫未確認。",
+      "normalizedSourceId": "corporate-chiikawa-release-846",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "9/15順次CITEN全店EC/らんど/Talking、台湾別扱い。現行国内企画一致。在庫未確認。",
+      "normalizedSourceId": "corporate-citen-chiikawa-release",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "7/15正午オンライン・7/22店頭、現行一致。在庫/全SNS未確認。",
+      "normalizedSourceId": "corporate-merry-jenny-chiikawa",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "7/10映画デザイン乾電池発売・店舗/劇場/通販、現行一致。在庫未確認。",
+      "normalizedSourceId": "corporate-panasonic-chiikawa",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "6/6 10時～なくなり次第、現行一致。取得テキストのcrawlは3か月前で最新在庫/変更保証なし。",
+      "normalizedSourceId": "corporate-donki-chiikawa-sl6",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "申込継続・一般会員特典、ニュース先頭2025/2/21。新たな期間限定会場告知は取得範囲になし。",
+      "normalizedSourceId": "corporate-epos-chiikawa-card",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "10/2数量限定発売の原発表を確認。現行一致。在庫未確認。",
+      "normalizedSourceId": "corporate-chiikawa-release-322",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "7/24～11/3開催の原発表を確認。現行一致。キット在庫未確認。",
+      "normalizedSourceId": "corporate-tokyo-metro-chiikawa",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "lucua-south-opening",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "11/18～23プレオープン、抽選10/9正午～19日24時、10/30午後発表・招待時間30分。現行一致。フォーム個店条件は今回未再取得。",
+      "normalizedSourceId": "lucua-south-opening",
+      "previousLastSuccessfulAt": "2026-10-09T23:48:36.389Z",
+      "lastSuccessfulAt": "2026-10-09T23:48:36.389Z",
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "lucua-south-shop-list",
+      "url": "https://www.lucua.jp/floormap/southshop.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "ちいかわパークストア/ナガノマーケット営業時間10～20時・掲載店舗継続。",
+      "normalizedSourceId": "lucua-south-shop-list",
+      "previousLastSuccessfulAt": "2026-10-08T10:05:24.026Z",
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "ケーキ2種販売を確認。個別締切は別商品カテゴリ本文も確認。",
+      "normalizedSourceId": "corporate-seven-eleven-christmas-products",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "ちいかわかまくら受取12/19～23は店頭12/16・7NOW12/17 10:29、24～25は店頭12/19・7NOW12/20 10:29。現行期限範囲一致。",
+      "normalizedSourceId": "corporate-seven-eleven-christmas-signature",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "ちいかわふわふわも同じ予約締切/受取期間、現行一致。",
+      "normalizedSourceId": "corporate-seven-eleven-christmas-character",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "attemptAt": "2026-10-12T08:11:05+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "ソラマチ10/1～14・イースト1F10番地空の小町、企業公式原発表を確認、現行維持。",
+      "normalizedSourceId": "corporate-tokyo-banana-solamachi-release",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:05+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "attemptAt": "2026-10-12T08:10:58+09:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "web本文取得失敗、一覧リンクから403、直接HTTPも403。配布期限未再確認、前回成功値維持。",
+      "normalizedSourceId": "corporate-aeon-chiikawa-news-954",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "attemptAt": "2026-10-12T08:10:45+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "公式一覧に9/24告知継続。個別本文の配布期限未確認。",
+      "normalizedSourceId": "corporate-aeon-chiikawa-news-index",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "attemptAt": "2026-10-12T08:11:13+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "web取得失敗後に直接HTTP200と本文抽出成功。10/1発売時過剰受注・確保不可注文キャンセル返金を再確認、現行一致。",
+      "normalizedSourceId": "corporate-chiikawa-glasses-orders",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:13+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "attemptAt": "2026-10-12T08:11:13+09:00",
+      "result": "success",
+      "httpStatus": null,
+      "summary": "web取得失敗後に直接HTTP200と本文抽出成功。UT7/17・スウェット7/24、再入荷未定と現行一致。",
+      "normalizedSourceId": "corporate-uniqlo-chiikawa-faq",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-12T08:11:13+09:00",
+      "failureRetainsSuccess": null
+    },
+    {
+      "proposedId": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "attemptAt": "2026-10-12T08:11:30+09:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "本文取得失敗。新着なし扱い禁止。元の最終成功日時保持。",
+      "normalizedSourceId": "chiikawa-publicity-x",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "attemptAt": "2026-10-12T08:11:30+09:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "本文取得失敗。新着なし扱い禁止。元の最終成功日時保持。",
+      "normalizedSourceId": "chiikawa-author-x",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "attemptAt": "2026-10-12T08:11:30+09:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "本文取得失敗。新着なし扱い禁止。元の最終成功日時保持。",
+      "normalizedSourceId": "nagano-author-x",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "chiikawa-publicity-instagram",
+      "url": "https://www.instagram.com/chiikawa_kouhou/",
+      "attemptAt": "2026-10-12T08:11:30+09:00",
+      "result": "fetch_failed",
+      "httpStatus": null,
+      "summary": "本文取得失敗。新着なし扱い禁止。元の最終成功日時保持。",
+      "normalizedSourceId": "chiikawa-publicity-instagram",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "chiikawa-author-instagram",
+      "url": "https://www.instagram.com/ngnchiikawa/",
+      "attemptAt": "2026-10-12T08:11:30+09:00",
+      "result": "access_limited",
+      "httpStatus": 429,
+      "summary": "本文取得失敗。新着なし扱い禁止。元の最終成功日時保持。",
+      "normalizedSourceId": "chiikawa-author-instagram",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "nagano-author-instagram",
+      "url": "https://www.instagram.com/ngntrtr11/",
+      "attemptAt": "2026-10-12T08:11:30+09:00",
+      "result": "access_limited",
+      "httpStatus": null,
+      "summary": "本文取得失敗。新着なし扱い禁止。元の最終成功日時保持。",
+      "normalizedSourceId": "nagano-author-instagram",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "individual-chiikawaland-kanazawa",
+      "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "attemptAt": "2026-10-12T08:11:07+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "個別公式ページの抽出本文が画像一覧中心。画像本文と最新SNSを十分読めず、最新の入店条件を確認済みとしない。",
+      "normalizedSourceId": "individual-chiikawaland-kanazawa",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "individual-chiikawaland-ikebukuro",
+      "url": "https://chiikawa-info.jp/chiikawaland/ikebukuro/",
+      "attemptAt": "2026-10-12T08:11:07+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "個別公式ページの抽出本文が画像一覧中心。画像本文と最新SNSを十分読めず、最新の入店条件を確認済みとしない。",
+      "normalizedSourceId": "individual-chiikawaland-ikebukuro",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "individual-chiikawaland-koshigaya",
+      "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "attemptAt": "2026-10-12T08:11:07+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "個別公式ページの抽出本文が画像一覧中心。画像本文と最新SNSを十分読めず、最新の入店条件を確認済みとしない。",
+      "normalizedSourceId": "individual-chiikawaland-koshigaya",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    },
+    {
+      "proposedId": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+      "attemptAt": "2026-10-12T08:11:07+09:00",
+      "result": "parse_failed",
+      "httpStatus": null,
+      "summary": "個別公式ページの抽出本文が画像一覧中心。仙台/大分の主要画像の追加取得も403。最新の入店告知を確認済みとしない。",
+      "normalizedSourceId": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "previousLastSuccessfulAt": null,
+      "lastSuccessfulAt": null,
+      "failureRetainsSuccess": true
+    }
+  ],
+  "allPatrolObservationsReceived": false,
+  "normalizedPartialResult": "parse_failed",
+  "broadReviewLastRun": "2026-10-06",
+  "broadReviewNextDue": "2026-10-13",
+  "coverageRate": null,
+  "latency": null,
+  "failedHistoricalAttempts": [
+    {
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://www.uminomori.jp/umino/2023chiikawa2/index.html",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://www.uminomori.jp/umino/inquiry/",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://www.uminomori.jp/umino/2023chiikawa/index.html",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://x.com/sendaiuminomori/status/1648465751152672772",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Ftwitter.com%2Fsendaiuminomori%2Fstatus%2F1648465751152672772",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://platinumaps.jp/maps/haneda?focus=spot-353023&culture=ja",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    },
+    {
+      "url": "https://platinumaps.jp/d/haneda?culture=ja",
+      "individualResponseObservedAt": null,
+      "observedWithin": {
+        "from": "2026-10-11T23:07:23Z",
+        "through": "2026-10-11T23:17:28Z"
+      },
+      "note": "親の保存記録は個別レスポンス時刻なし。失敗種別は依頼の該当行を参照。primarySources部分は未受信のため、後続の成功を含む最終結果は判断せずこの作業窓から台帳時刻を捏造しない。"
+    }
+  ],
+  "rawHtmlPublished": false,
+  "normalPatrolRerunOnPc": false
+}
