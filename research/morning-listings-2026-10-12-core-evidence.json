@@ -1,0 +1,319 @@
+{
+  "recordedAt": "2026-10-11T23:28:59.337Z",
+  "baseCommit": "69141158488b443a5d731a6cc8380c1d568afe5f",
+  "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
+  "source": "親のクラウド一次調査の自己完結仕様。PCで通常巡回を再実行しない。",
+  "providedFacts": [
+    {
+      "id": "chiikawaland-sendai",
+      "candidateId": "sendai-expired-entry-notice-20261012",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-sendai:expired-notice:2026-10-11",
+      "fields": {
+        "importantNotice": {
+          "before": "2026年10月11日分の入場整理券は配布終了しました。同日のフリー入場はありません。10月12日以降の入店方法は最新の公式案内をご確認ください。",
+          "after": null
+        },
+        "entryNote": {
+          "before": "2026年10月11日分の入場整理券は配布終了しました。同日のフリー入場はありません。10月12日以降の入店方法は最新の公式案内をご確認ください。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "after": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。"
+        },
+        "reservationType": {
+          "before": "not_available",
+          "after": "unknown"
+        }
+      },
+      "url": "https://x.com/chiikawa_land/status/2109188717298716751",
+      "sourceId": "social-chiikawaland-sendai-tickets-ended-20261011",
+      "sourceResult": "fetch_failed",
+      "observedAt": "2026-10-12T08:11:07+09:00",
+      "firstObservedAt": null,
+      "officialAnnouncedAt": "2026-10-11",
+      "reflectDueAt": "2026-10-12",
+      "priority": "high",
+      "summary": "10月11日限定の前回成功情報の対象日が終了。10月12日以降へ終了注意を持ち越さず、当日の入店条件は推定しない。公式X本文の再取得失敗のため確認日は10月11日のまま保持。"
+    },
+    {
+      "id": "chiikawaland-popup-2026-09-11-amu-oita",
+      "candidateId": "oita-expired-entry-notice-20261012",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-popup-2026-09-11-amu-oita:expired-notice:2026-10-11",
+      "fields": {
+        "importantNotice": {
+          "before": "2026年10月11日分の入場整理券は配布終了しました。同日のフリー入場はありません。10月12日以降の入店方法は最新の公式案内をご確認ください。",
+          "after": null
+        },
+        "entryNote": {
+          "before": "2026年10月11日分の入場整理券は配布終了しました。同日のフリー入場はありません。10月12日以降の入店方法は最新の公式案内をご確認ください。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "after": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。"
+        }
+      },
+      "url": "https://x.com/chiikawa_land/status/2109163038804939187",
+      "sourceId": "social-chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261011",
+      "sourceResult": "fetch_failed",
+      "observedAt": "2026-10-12T08:11:07+09:00",
+      "firstObservedAt": null,
+      "officialAnnouncedAt": "2026-10-11",
+      "reflectDueAt": "2026-10-12",
+      "priority": "high",
+      "summary": "10月11日限定の前回成功情報の対象日が終了。10月12日以降へ終了注意を持ち越さず、当日の入店条件は推定しない。公式X本文の再取得失敗のため確認日は10月11日のまま保持。"
+    },
+    {
+      "id": "chiikawa-bakery-tokyo",
+      "candidateId": "bakery-october-priority-soldout-tokyo-20261012",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-tokyo:priority-tickets:2026-10",
+      "fields": {
+        "entryNote": {
+          "before": "OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。",
+          "after": "2026年10月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。"
+        },
+        "entryInfoCheckedAt": {
+          "before": "2026-10-06",
+          "after": "2026-10-12"
+        }
+      },
+      "url": "https://chiikawabakery.jp/reservation/",
+      "sourceId": "chiikawa-bakery-reservation",
+      "sourceResult": "success",
+      "observedAt": "2026-10-12T08:11:07+09:00",
+      "firstObservedAt": "2026-10-11T08:03:54+09:00",
+      "officialAnnouncedAt": null,
+      "reflectDueAt": "2026-10-12T11:00:00+09:00",
+      "priority": "high",
+      "summary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は昨日の親巡回の観測を保持。"
+    },
+    {
+      "id": "chiikawa-bakery-osaka",
+      "candidateId": "bakery-october-priority-soldout-osaka-20261012",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-osaka:priority-tickets:2026-10",
+      "fields": {
+        "entryNote": {
+          "before": "当面の間、ベーカリーへの入場はノベルティ付き優先入場券（1,000円分のお買物券付き）をお持ちの方のみです。隣接するOSAKA POP UP SHOPはフリー入場です。混雑時に入場制限を行う場合があり、待機列形成は11:00からです。物販の会計はキャッシュレスのみです。",
+          "after": "2026年10月分の優先入場券は完売しています。当面の間、ベーカリーへの入場はノベルティ付き優先入場券（1,000円分のお買物券付き）をお持ちの方のみです。隣接するOSAKA POP UP SHOPはフリー入場です。混雑時に入場制限を行う場合があり、待機列形成は11:00からです。物販の会計はキャッシュレスのみです。"
+        },
+        "entryInfoCheckedAt": {
+          "before": "2026-10-06",
+          "after": "2026-10-12"
+        }
+      },
+      "url": "https://chiikawabakery.jp/reservation/",
+      "sourceId": "chiikawa-bakery-reservation",
+      "sourceResult": "success",
+      "observedAt": "2026-10-12T08:11:07+09:00",
+      "firstObservedAt": "2026-10-11T08:03:54+09:00",
+      "officialAnnouncedAt": null,
+      "reflectDueAt": "2026-10-12T11:00:00+09:00",
+      "priority": "high",
+      "summary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は昨日の親巡回の観測を保持。"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-09-yokohama-skybuilding",
+      "candidateId": "nagano-yokohama-expired-entry-20261012",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-popup-2026-10-09-yokohama-skybuilding:expired-entry:2026-10-11",
+      "fields": {
+        "entryNote": {
+          "before": "10月9～11日はLINE入場整理券が必要です。開店11:00～12:30入場分は前日19:00に全枠一斉受付（初回10月8日19:00）、13:00以降の入場分は各回1時間前から受付。申込時は本人確認書類と同じ表記の氏名入力、入場時は本人確認書類の提示が必要です。対象日程は1人1回限り、30分ごとの完全入替制。状況により途中からフリー入場となる場合があります。最新の公式案内をご確認ください。",
+          "after": "10月9～11日の入場整理券対象期間は終了しました。10月12日以降の入場方法は最新の公式案内をご確認ください。混雑時は会場の案内に従ってください。入場規制や早めの入店締切、営業時間の変更となる場合があります。"
+        },
+        "entryInfoCheckedAt": {
+          "before": "2026-10-06",
+          "after": "2026-10-12"
+        }
+      },
+      "url": "https://nagano-info.jp/popupshop/yokohama/index.html",
+      "sourceId": "nagano-yokohama-entry",
+      "sourceResult": "success",
+      "observedAt": "2026-10-12T08:09:29+09:00",
+      "firstObservedAt": "2026-10-12T08:09:29+09:00",
+      "officialAnnouncedAt": null,
+      "reservationOpensAt": "2026-10-08T19:00:00+09:00",
+      "reflectDueAt": "2026-10-12",
+      "priority": "normal",
+      "summary": "整理券対象は10/9～11。終了した申込詳細を整理し、10/12以降の自由入場は推定しない。defaultEntryTypeと開催期間10/9～19を維持。初回受付時刻は対象初日と前日19時の公式規則から算出。"
+    },
+    {
+      "id": "popup-2026-10-09-machida-modi",
+      "candidateId": "machida-modi-entry-details-20261012",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-10-09-machida-modi",
+      "fields": {
+        "entryNote": {
+          "before": "入店方法・整理券の有無は公式イベントページや会場の最新案内をご確認ください。",
+          "after": "10月9～12日はLINEアプリを使った入場整理券の対象日です。開店10:30～12:30の入場枠は各来店日の前日19:00から、13:00以降の枠は各回1時間前から受付します。10:30～11:00枠の整理券をお持ちの方は当日10:20までに町田モディ2F店頭へお並びください。10:20以降に来店した場合は開店後に4Fイベントスペースの会場前へ直接お越しください。整理券は入場開始から1時間で無効です。申込時は本人確認書類と同じ表記の氏名入力、入場時は本人確認書類の提示が必要です。対象期間中は1人1回限り、30分ごとの完全入替制、1枚につき1人・1会計です。譲渡・転売・スクリーンショットでの入店はできません。状況により途中からフリー入場となる場合があります。商品の購入は保証されません。10月13日以降の入場方法は最新の公式案内をご確認ください。"
+        },
+        "entryInfoUrl": {
+          "before": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+          "after": "https://x.com/chiikawa_popup/status/2107692808480162153"
+        },
+        "entryInfoCheckedAt": {
+          "before": "2026-10-01",
+          "after": "2026-10-12"
+        },
+        "crowdControlType": {
+          "before": "other",
+          "after": "numbered_ticket"
+        },
+        "importantNotice": {
+          "before": null,
+          "after": "10月9～12日はLINE入場整理券の対象です。10:30～11:00枠は当日10:20までに町田モディ2F店頭へお並びください。本人確認書類が必要です。"
+        }
+      },
+      "url": "https://x.com/chiikawa_popup/status/2107692808480162153",
+      "sourceId": "venue-machida-modi-entry-20261007",
+      "sourceKind": "social",
+      "sourceResult": "success",
+      "observedAt": "2026-10-12T08:14:59+09:00",
+      "firstObservedAt": "2026-10-12T08:11:25+09:00",
+      "officialAnnouncedAt": "2026-10-07T13:41:39+09:00",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-12",
+      "reservationOpensAt": "2026-10-08T19:00:00+09:00",
+      "reflectDueAt": "2026-10-12T10:20:00+09:00",
+      "priority": "high",
+      "nextCheck": "10月12日夜または10月13日朝に整理券対象期間終了の条件を整理し、10月13日以降の新運用を一次確認する。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00",
+      "summary": "公式本文・画像で条件を確認済み。10:20より前は2F店頭集合、遅れた場合は開店後4F会場。開催会期10/9～11/1を変えない。対象10/9～12の入場条件だけ補完し、自由入場・残券は推定しない。"
+    },
+    {
+      "id": "chiikawa-park-tokyo",
+      "candidateId": "park-ticket-sale-rule-completeness-20261012",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-park-tokyo:ticket-sale-rule:2026-10-12",
+      "fields": {
+        "entryNote": {
+          "before": "入場にはチケットが必要です。販売はアソビュー！で先着順。予定枚数に達し次第終了します。",
+          "after": "入場にはチケットが必要です。販売はアソビュー！で先着順。予定枚数に達し次第終了します。 毎月15日12:00から2か月先の1日～末日分を販売します。15日が土日祝の場合は直前の平日に繰り上げます。"
+        },
+        "entryInfoUrl": {
+          "before": "https://chiikawapark-tokyo.jp/",
+          "after": "https://chiikawapark-tokyo.jp/ticket/"
+        },
+        "entryInfoCheckedAt": {
+          "before": "2026-08-24",
+          "after": "2026-10-12"
+        }
+      },
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "sourceId": "chiikawa-park-ticket",
+      "sourceResult": "success",
+      "observedAt": "2026-10-12T08:11:07+09:00",
+      "firstObservedAt": null,
+      "officialAnnouncedAt": null,
+      "reflectDueAt": "2026-10-15T12:00:00+09:00",
+      "priority": "normal",
+      "summary": "公式ticketページの既存販売規則を補足。新発表とせず、12月分販売日の算出による断定は追記しない。"
+    },
+    {
+      "id": "chiikawa-restaurant-ikebukuro",
+      "candidateId": "restaurant-reservation-completeness-20261012",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-restaurant-ikebukuro:reservation:2026-09-26:2026-11-20",
+      "fields": {
+        "entryNote": {
+          "before": "カフェは事前予約優先です。予約枠の状況により当日席の案内が行われる場合があります。最新情報をご確認ください。",
+          "after": "カフェは事前予約優先です。予約枠の状況により当日席の案内が行われる場合があります。最新情報をご確認ください。 2026年9月26日～11月20日分のお食事券付き予約整理券は、2026年9月6日12:00からローソンチケットで先着販売（各来店日の2日前まで、抽選販売なし）。売り切れた日時は当日席がありません。11月21日以降の販売予定は後日案内です。"
+        },
+        "entryInfoUrl": {
+          "before": "https://cafe.parco.jp/event/information/chiikawarestaurant_tokyo?area=029439",
+          "after": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439"
+        },
+        "entryInfoCheckedAt": {
+          "before": "2026-08-24",
+          "after": "2026-10-12"
+        }
+      },
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "sourceId": "chiikawa-restaurant-reservation",
+      "sourceResult": "success",
+      "observedAt": "2026-10-12T08:11:07+09:00",
+      "firstObservedAt": null,
+      "officialAnnouncedAt": null,
+      "eventStartsAt": "2026-09-26",
+      "eventEndsAt": "2026-11-20",
+      "reservationOpensAt": "2026-09-06T12:00:00+09:00",
+      "reflectDueAt": "2026-10-12",
+      "priority": "normal",
+      "summary": "公式予約本文の既存販売規則と対象期間を補完。売切日時に当日席はなく、11月21日以降の販売予定は後日案内。"
+    }
+  ],
+  "machidaExtraEvidence": [
+    {
+      "url": "https://x.com/chiikawa_popup/status/2107782212997595483",
+      "observedAt": "2026-10-12T08:14:44+09:00",
+      "summary": "公式oEmbed HTTP200で著者chiikawa_popup、10:30～11時枠は10:20まで2F集合、遅れた方は開店後4F会場へ直接来店する条件を確認。"
+    },
+    {
+      "url": "https://cdn.syndication.twimg.com/tweet-result?id=2107692808480162153&lang=ja&token=0",
+      "observedAt": "2026-10-12T08:16:00+09:00",
+      "summary": "X公式配信JSON HTTP200で著者・投稿ID・created_at・media_url_httpsと当該投稿photo/1との関係を確認。"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HUAHcC6b0AAiR8V?format=webp&name=large",
+      "observedAt": "2026-10-12T08:16:56+09:00",
+      "summary": "公式CDN webpを08:16:34にHTTP200で取得し08:16:56に実読。13時以降は各回1時間前、有効1時間、本人確認、30分入替、1人1回、1枚1人1会計、譲渡禁止、状況次第のフリー入場を確認。"
+    }
+  ],
+  "archiveMove": {
+    "id": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town",
+    "candidateId": "archive-wasada-20261012",
+    "url": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545",
+    "sourceId": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-official",
+    "officialAnnouncedAt": "2026-10-06",
+    "discoveredAt": "2026-10-12T08:08:16+09:00",
+    "observedAt": "2026-10-12T08:08:16+09:00",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-11",
+    "summary": "施設公式本文に10/10・10/11開催を明記。JST10/12のため終了扱いとし、同一IDで過去へ移動する。10/12終了の別イベント7件は現行に維持。"
+  },
+  "schemaNormalization": {
+    "archive_listing": "listing_update",
+    "ready_for_review": "verifying",
+    "ready": "verifying"
+  },
+  "periodRules": {
+    "machidaListing": [
+      "2026-10-09",
+      "2026-11-01"
+    ],
+    "machidaTicketDays": [
+      "2026-10-09",
+      "2026-10-12"
+    ],
+    "todaysSevenPreserved": [
+      "popup-yonago",
+      "chiikawaland-popup-2026-09-11-amu-oita",
+      "popup-2026-09-26-aeon-niihama",
+      "bakery-popup-2026-10-01-okinawa-ryubo",
+      "chiikawa-muchaphoto-aeon-fujiidera-2026",
+      "chiikawa-workshop-lalaport-kashiwanoha-2026",
+      "chiikawa-muchaphoto-aeon-laketown-mori-2026"
+    ]
+  },
+  "previousPublication": {
+    "pr": 37,
+    "actualPublishedAt": "2026-10-11T10:29:06Z",
+    "deployStepCompletedAt": "2026-10-11T10:29:04Z",
+    "firstPublicMatchAt": "2026-10-11T10:30:12.713Z",
+    "proofPath": "research/publication-confirmation-2026-10-11-pr37.json",
+    "syncedCandidateIds": [
+      "chiikawaland-sendai-tickets-ended-20261011",
+      "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261011"
+    ]
+  },
+  "completeObservationListPending": true,
+  "remainingSpecificationRequired": {
+    "routine": 2,
+    "history": 3,
+    "completeCloudObservationList": true
+  },
+  "coverageRate": null,
+  "latency": null,
+  "broadReviewLastRun": "2026-10-06",
+  "broadReviewNextDue": "2026-10-13",
+  "rawHtmlPublished": false,
+  "receivedTailObservationsPath": "research/morning-source-observations-2026-10-12.json",
+  "receivedTailObservationCount": 41
+}

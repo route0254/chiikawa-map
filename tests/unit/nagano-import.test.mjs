@@ -34,6 +34,7 @@ test("原本に未掲載の横浜も公開ID・詳細住所・入場区分を保
   assert.equal(result.address, yokohama.address);
   assert.equal(result.defaultEntryType, "other");
   assert.equal(result.checkedAt, yokohama.checkedAt);
+  assert.equal(result.entryInfoCheckedAt, yokohama.entryInfoCheckedAt);
 });
 
 test("5つの過去開催の階数・催場情報を短い一般住所で上書きしない", () => {

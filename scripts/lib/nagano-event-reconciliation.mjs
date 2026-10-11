@@ -29,7 +29,8 @@ function sourceEventFromPublished(record, venueName) {
     lat: record.lat, lng: record.lng, hoursText: record.hoursText,
     entryNote: record.entryNote, defaultEntryType: record.defaultEntryType
   };
-  if (record.hoursCheckedAt === record.entryInfoCheckedAt) event.checkedAt = record.hoursCheckedAt;
+  if (record.hoursCheckedAt) event.checkedAt = record.hoursCheckedAt;
+  if (record.entryInfoCheckedAt !== record.hoursCheckedAt) event.entryInfoCheckedAt = record.entryInfoCheckedAt;
   if (record.eventStatus) event.eventStatus = record.eventStatus;
   return event;
 }

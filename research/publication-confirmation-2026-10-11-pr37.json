@@ -1,0 +1,300 @@
+{
+  "recordedAt": "2026-10-11T10:33:38.842Z",
+  "pr": 37,
+  "prUrl": "https://github.com/route0254/chiikawa-map/pull/37",
+  "base": "d82b67e9360205c4ae9e39c988065d1a4452de19",
+  "sourceHead": "89032f4d202d232110431bae0eb554118d587703",
+  "mergeSha": "69141158488b443a5d731a6cc8380c1d568afe5f",
+  "mergeTree": "6fe41415d9a3b834041df5e930f3a1ef6c347ffe",
+  "mergedAt": "2026-10-11T10:28:11Z",
+  "actualPublishedAt": "2026-10-11T10:29:06Z",
+  "actualPublishedAtBasis": "Successful Pages deploy job completed_at, independently proven together with the exact published files. Distinct from deploy step, first site match and report timestamp.",
+  "deployStepCompletedAt": "2026-10-11T10:29:04Z",
+  "deployJobCompletedAt": "2026-10-11T10:29:06Z",
+  "firstPublicMatchAt": "2026-10-11T10:30:12.713Z",
+  "checks": [
+    {
+      "id": 38132055879,
+      "name": "Validate spot data",
+      "path": ".github/workflows/validate-data.yml",
+      "head": "69141158488b443a5d731a6cc8380c1d568afe5f",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342280137,
+      "createdAt": "2026-10-11T10:28:13Z",
+      "updatedAt": "2026-10-11T10:28:23Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38132055879"
+    },
+    {
+      "id": 38132055715,
+      "name": "pages build and deployment",
+      "path": "dynamic/pages/pages-build-deployment",
+      "head": "69141158488b443a5d731a6cc8380c1d568afe5f",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 340583706,
+      "createdAt": "2026-10-11T10:28:13Z",
+      "updatedAt": "2026-10-11T10:29:06Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38132055715"
+    },
+    {
+      "id": 38132055906,
+      "name": "Test site",
+      "path": ".github/workflows/test-site.yml",
+      "head": "69141158488b443a5d731a6cc8380c1d568afe5f",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342550527,
+      "createdAt": "2026-10-11T10:28:13Z",
+      "updatedAt": "2026-10-11T10:32:22Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38132055906"
+    }
+  ],
+  "allMainChecksSuccessful": true,
+  "public": {
+    "matching": 21,
+    "total": 21,
+    "dataFilesMatching": 10,
+    "dataFilesTotal": 10,
+    "observedData": {
+      "officialCount": 87,
+      "archiveCount": 645,
+      "collaborationCount": 22,
+      "additionDatesCount": 826,
+      "firstAddedUnchanged": true,
+      "newIdsVerified": [],
+      "updatedOfficialIdsVerified": [
+        "chiikawaland-sendai",
+        "chiikawaland-popup-2026-09-11-amu-oita"
+      ],
+      "updatedCollaborationIdsVerified": []
+    },
+    "files": [
+      {
+        "path": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json",
+        "sha256": "8f059f2c9cccc4ac09299f1d8ce2b9e28c20fbd304789422d4e924fca9ac35d7",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.323Z"
+      },
+      {
+        "path": "data/collaborations-archive.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+        "sha256": "3f16b7039bac64e696cefe9196f1a64a25a63374549a3e439d881e6e83544116",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.319Z"
+      },
+      {
+        "path": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+        "sha256": "fc7ba14cc64253c758e7232578b5045b2655bdab1d7e305e03e88eea1c926918",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.317Z"
+      },
+      {
+        "path": "data/community-spots.json",
+        "url": "https://chiikatsu-map.com/data/community-spots.json",
+        "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.314Z"
+      },
+      {
+        "path": "data/nagano-history.json",
+        "url": "https://chiikatsu-map.com/data/nagano-history.json",
+        "sha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.316Z"
+      },
+      {
+        "path": "data/nagano-spots.json",
+        "url": "https://chiikatsu-map.com/data/nagano-spots.json",
+        "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.325Z"
+      },
+      {
+        "path": "data/nagano-unlocated-mentions.json",
+        "url": "https://chiikatsu-map.com/data/nagano-unlocated-mentions.json",
+        "sha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.315Z"
+      },
+      {
+        "path": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+        "sha256": "f5941350cd484384495426dea7d88fb8f67c72a24485b5892008727ad0e94686",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.330Z"
+      },
+      {
+        "path": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "sha256": "e69e4010a8833809c6321df49c11356648d8f7ea533e958a346f64e1a3e0cfa7",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.349Z"
+      },
+      {
+        "path": "data/site-meta.json",
+        "url": "https://chiikatsu-map.com/data/site-meta.json",
+        "sha256": "d6c7c1b1e73075d9c5a9df30258b56c9e74f29c148651888074ebcab2a61cba3",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.343Z"
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://chiikatsu-map.com/sitemap.xml",
+        "sha256": "9979468b34fcee274864f4dc8ee957f7e8fe257f9f3d0636ad73bd7217bb4faf",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.341Z"
+      },
+      {
+        "path": "spot/chiikawaland-popup-2026-09-11-amu-oita/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-popup-2026-09-11-amu-oita/",
+        "sha256": "aaeabcec7b6066e36572a91cf333fcb627d0932fad91705bbb6042f3e46b785a",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.521Z"
+      },
+      {
+        "path": "spot/chiikawaland-sendai/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-sendai/",
+        "sha256": "12f8b026d8e76cd3a3df67b54ecedaff6f8347cd0b379665c47cac90ea1d0d62",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.510Z"
+      },
+      {
+        "path": "index.html",
+        "url": "https://chiikatsu-map.com/",
+        "sha256": "854dc09e2a35b3ec1701c73a2ab99f7b1b1e69b451d280b54362aed859dcdd34",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.347Z"
+      },
+      {
+        "path": "official.html",
+        "url": "https://chiikatsu-map.com/official.html",
+        "sha256": "95535072cb5365a8ddab0d50e67015438332fa88bedc3dc58c10c6da6fa13711",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.347Z"
+      },
+      {
+        "path": "collaborations.html",
+        "url": "https://chiikatsu-map.com/collaborations.html",
+        "sha256": "e2c8a88fdfc6d8b6bb88051ce80d274592410628889f5f8e349efa64043d23ed",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.344Z"
+      },
+      {
+        "path": "app.js",
+        "url": "https://chiikatsu-map.com/app.js",
+        "sha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.537Z"
+      },
+      {
+        "path": "recent-utils.js",
+        "url": "https://chiikatsu-map.com/recent-utils.js",
+        "sha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.532Z"
+      },
+      {
+        "path": "collaborations.js",
+        "url": "https://chiikatsu-map.com/collaborations.js",
+        "sha256": "47dfe88ae7a632582cb77a2ccb626b839e29265f4630e7d8e380b608838d70af",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.535Z"
+      },
+      {
+        "path": "spot-page.js",
+        "url": "https://chiikatsu-map.com/spot-page.js",
+        "sha256": "7ef07104745596c222577c083a12d7f89235be480039cc9603fdb96d480981cf",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.712Z"
+      },
+      {
+        "path": "service-worker.js",
+        "url": "https://chiikatsu-map.com/service-worker.js",
+        "sha256": "ae681c5e9680c2336d1adfd5b3484dcfc216d5067a52bc4d6748d6c5b7382f4c",
+        "status": 200,
+        "observedAt": "2026-10-11T10:30:12.531Z"
+      }
+    ]
+  },
+  "tests": {
+    "check": 0,
+    "unit": 55,
+    "smoke": 101,
+    "links": 0,
+    "linkTargets": 2,
+    "qaScreens": 4
+  },
+  "counts": {
+    "newListings": 0,
+    "entryUpdates": 2,
+    "collaborationUpdates": 0,
+    "archived": 0,
+    "sourceUpdates": 2,
+    "sourceObservations": 2
+  },
+  "publishedBeforeShopClose": true,
+  "noticeExpiry": {
+    "limitedTo": "2026-10-11",
+    "recheckDueAt": "2026-10-12T08:00:00+09:00",
+    "ids": [
+      "chiikawaland-sendai",
+      "chiikawaland-popup-2026-09-11-amu-oita"
+    ],
+    "action": "10月11日の整理券注意を整理し、一般混雑案内は残す。10月12日のフリー入場は推定しない。"
+  },
+  "ledgerSync": {
+    "pending": true,
+    "candidateSync": [
+      {
+        "id": "chiikawaland-sendai-tickets-ended-20261011",
+        "listingIds": [
+          "chiikawaland-sendai"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T10:29:06Z",
+        "publicationPr": 37,
+        "sourceHead": "89032f4d202d232110431bae0eb554118d587703",
+        "mergeSha": "69141158488b443a5d731a6cc8380c1d568afe5f",
+        "deployStepCompletedAt": "2026-10-11T10:29:04Z",
+        "deployJobCompletedAt": "2026-10-11T10:29:06Z",
+        "siteMatchConfirmedAt": "2026-10-11T10:30:12.713Z"
+      },
+      {
+        "id": "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261011",
+        "listingIds": [
+          "chiikawaland-popup-2026-09-11-amu-oita"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T10:29:06Z",
+        "publicationPr": 37,
+        "sourceHead": "89032f4d202d232110431bae0eb554118d587703",
+        "mergeSha": "69141158488b443a5d731a6cc8380c1d568afe5f",
+        "deployStepCompletedAt": "2026-10-11T10:29:04Z",
+        "deployJobCompletedAt": "2026-10-11T10:29:06Z",
+        "siteMatchConfirmedAt": "2026-10-11T10:30:12.713Z"
+      }
+    ],
+    "nextNormalListingPr": "次の通常掲載更新へ同梱する。元の発表・発見・予定時刻を保持し、今回の実際の公開時刻を使う。記録だけの連続PRは作らない。"
+  },
+  "followup": {
+    "normalPatrol": "2026-10-12T08:00:00+09:00",
+    "historyHeldFive": "2026-10-12",
+    "broadReviewLast": "2026-10-06",
+    "broadReviewNext": "2026-10-13",
+    "sourceFailuresNotNoNew": true,
+    "scheduledRunsManuallyRerun": 0
+  }
+}
