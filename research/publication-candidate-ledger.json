@@ -3378,6 +3378,12 @@
           "observedAt": null,
           "summary": "保存済み10月10日限定の公式案内と対象日の終了を根拠に当日注意を撤去。10月11日のSNS本文はアクセス制限・取得失敗で未確認。確認日を進めず、最新案内リンクと一般の混雑時注意を保持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3390,12 +3396,12 @@
       "listingIds": [
         "chiikawaland-osaka-umeda"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "chiikawaland-nagoya-oct10-notice-retirement-20261011",
@@ -3418,6 +3424,12 @@
           "observedAt": null,
           "summary": "保存済み10月10日限定の公式案内と対象日の終了を根拠に当日注意を撤去。10月11日のSNS本文はアクセス制限・取得失敗で未確認。確認日を進めず、最新案内リンクと一般の混雑時注意を保持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3430,12 +3442,12 @@
       "listingIds": [
         "chiikawaland-nagoya"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "chiikawaland-sendai-oct10-notice-retirement-20261011",
@@ -3458,6 +3470,12 @@
           "observedAt": null,
           "summary": "保存済み10月10日限定の公式案内と対象日の終了を根拠に当日注意を撤去。10月11日のSNS本文はアクセス制限・取得失敗で未確認。確認日を進めず、最新案内リンクと一般の混雑時注意を保持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3470,12 +3488,12 @@
       "listingIds": [
         "chiikawaland-sendai"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "chiikawaland-shinsaibashi-oct10-notice-retirement-20261011",
@@ -3498,6 +3516,12 @@
           "observedAt": null,
           "summary": "保存済み10月10日限定の公式案内と対象日の終了を根拠に当日注意を撤去。10月11日のSNS本文はアクセス制限・取得失敗で未確認。確認日を進めず、最新案内リンクと一般の混雑時注意を保持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3510,12 +3534,12 @@
       "listingIds": [
         "chiikawaland-shinsaibashi"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "chiikawaland-koshigaya-oct10-notice-retirement-20261011",
@@ -3538,6 +3562,12 @@
           "observedAt": null,
           "summary": "保存済み10月10日限定の公式案内と対象日の終了を根拠に当日注意を撤去。10月11日のSNS本文はアクセス制限・取得失敗で未確認。確認日を進めず、最新案内リンクと一般の混雑時注意を保持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3550,12 +3580,12 @@
       "listingIds": [
         "chiikawaland-koshigaya"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "chiikawaland-popup-2026-09-11-amu-oita-oct10-notice-retirement-20261011",
@@ -3578,6 +3608,12 @@
           "observedAt": null,
           "summary": "保存済み10月10日限定の公式案内と対象日の終了を根拠に当日注意を撤去。10月11日のSNS本文はアクセス制限・取得失敗で未確認。確認日を進めず、最新案内リンクと一般の混雑時注意を保持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3590,12 +3626,12 @@
       "listingIds": [
         "chiikawaland-popup-2026-09-11-amu-oita"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "nagano-fukuoka-entry-details-20261011",
@@ -3618,6 +3654,12 @@
           "observedAt": "2026-10-11T08:06:59.422+09:00",
           "summary": "施設公式のナガノ10月16日対象LINE整理券、前日19時受付と当日各回1時間前受付・本人確認・完全入替条件を補完。ちいかわ/寿司10月16～18の条件とは分離。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3630,12 +3672,12 @@
       "listingIds": [
         "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月11日19時に最新公式条件と取得失敗を再確認。今日の残券・自由入場は推定しない。",
       "recheckDueAt": "2026-10-11T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-10T23:40:30Z"
     },
     {
       "id": "seven-eleven-christmas-entry-periods-20261011",
@@ -3658,6 +3700,12 @@
           "observedAt": "2026-10-11T08:07:19.728+09:00",
           "summary": "店頭購入分の12月19日～1月15日応募と、7NOW購入分の1月6日～15日応募を区分。登録締切12月28日・ポイント付与1月6日・7NOWデリバリー対象外を明記。予約締切・受取期間は維持。",
           "recordPath": "research/listing-updates-2026-10-11-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/36",
+          "observedAt": "2026-10-10T23:41:18.754Z",
+          "summary": "PR36の対象commitと成功したPages deploy job、公開実体26ファイル一致を保存済み。実公開は2026-10-11 08:40:30 JST、step完了08:40:28、初回サイト一致08:41:18.754を別に保持。報告・今回同期時刻を公開時刻へ流用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-11-pr36.json"
         }
       ],
       "existingMatch": {
@@ -3670,11 +3718,91 @@
       "listingIds": [
         "seven-eleven-christmas-chiikawa-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "decision": "通常掲載修正としてデータ反映・検査・配信照合を実施。実公開確認前のpublishedAtはnull。",
+      "decision": "朝のPR36を実公開確認済みとして同期。元の発見日・発表日を保持し、publishedAtは元のdeploy job完了時刻。",
       "nextCheck": "10月13日の広いレビューで応募条件・登録期間を確認。その他の巡回は10月11日19時。",
       "recheckDueAt": "2026-10-13",
+      "publishedAt": "2026-10-10T23:40:30Z"
+    },
+    {
+      "id": "chiikawaland-sendai-tickets-ended-20261011",
+      "title": "ちいかわらんど 仙台パルコ店 10月11日分整理券配布終了",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-sendai",
+      "sourceIds": [
+        "social-chiikawaland-sendai-tickets-ended-20261011"
+      ],
+      "officialAnnouncedAt": "2026-10-11T16:45:51+09:00",
+      "discoveredAt": "2026-10-11T10:01:22Z",
+      "eventStartsAt": "2026-10-11",
+      "eventEndsAt": "2026-10-11",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-11T20:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2109188717298716751",
+          "observedAt": "2026-10-11T10:01:22Z",
+          "summary": "クラウドで確認済みの公式投稿。10月11日分配布終了・同日のフリー入場なし。物販20時までのため優先反映。翌日へ制限を一般化しない。",
+          "recordPath": "research/entry-notices-evening-2026-10-11-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sendai"
+        ],
+        "note": "既存IDを照合済み。既存会期・住所・営業時間・通常入場分類を維持する掲載修正。"
+      },
+      "listingIds": [
+        "chiikawaland-sendai"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "提供済みの公式根拠に基づき通常掲載修正として検査・PR・公開照合まで進める。公開実体確認前のpublishedAtはnull。",
+      "nextCheck": "10月12日朝、10月11日限定のentryNote/importantNoticeを整理して一般混雑案内を残す。最新の入場案内を確認し、10月12日の自由入場・整理券配布を推定しない。",
+      "recheckDueAt": "2026-10-12T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261011",
+      "title": "ちいかわらんど POP UP SHOP アミュプラザおおいた 10月11日分整理券配布終了",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-popup-2026-09-11-amu-oita",
+      "sourceIds": [
+        "social-chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261011"
+      ],
+      "officialAnnouncedAt": "2026-10-11T15:03:49+09:00",
+      "discoveredAt": "2026-10-11T10:01:22Z",
+      "eventStartsAt": "2026-10-11",
+      "eventEndsAt": "2026-10-11",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-11T20:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2109163038804939187",
+          "observedAt": "2026-10-11T10:01:22Z",
+          "summary": "クラウドで確認済みの公式投稿。10月11日分配布終了・同日のフリー入場なし。物販20時までのため優先反映。翌日へ制限を一般化しない。",
+          "recordPath": "research/entry-notices-evening-2026-10-11-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-popup-2026-09-11-amu-oita"
+        ],
+        "note": "既存IDを照合済み。既存会期・住所・営業時間・通常入場分類を維持する掲載修正。"
+      },
+      "listingIds": [
+        "chiikawaland-popup-2026-09-11-amu-oita"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "提供済みの公式根拠に基づき通常掲載修正として検査・PR・公開照合まで進める。公開実体確認前のpublishedAtはnull。",
+      "nextCheck": "10月12日朝、10月11日限定のentryNote/importantNoticeを整理して一般混雑案内を残す。最新の入場案内を確認し、10月12日の自由入場・整理券配布を推定しない。",
+      "recheckDueAt": "2026-10-12T08:00:00+09:00",
       "publishedAt": null
     }
   ]
