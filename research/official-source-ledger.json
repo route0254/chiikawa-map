@@ -444,10 +444,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-11T08:03:54+09:00",
-      "lastSuccessfulAt": "2026-10-11T08:03:54+09:00",
+      "lastAttemptAt": "2026-10-12T08:11:07+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:11:07+09:00",
       "lastResult": "success",
-      "resultSummary": "東京OPEN～15時優先・15時以降デジタル整理券14:50アクセス、大阪当面優先券保有者のみ、隣接POPUPフリー。既掲載条件と整合。東京/大阪とも9・10月優先券完売と本文明記。完売の初回発表日不明。",
+      "resultSummary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は昨日の親巡回の観測を保持。",
       "lastFailure": null,
       "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
     },
@@ -546,17 +546,11 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-11T08:06:42+09:00",
-      "lastSuccessfulAt": "2026-10-06T08:02:21.752+09:00",
-      "lastResult": "fetch_failed",
-      "resultSummary": "web内部取得失敗。既掲載10/9～11限定条件は本日まだ有効なので維持。10/12朝は期間終了整理を確認。",
-      "lastFailure": {
-        "at": "2026-10-11T08:06:42+09:00",
-        "kind": "fetch_failed",
-        "httpStatus": null,
-        "detail": "web内部取得失敗。既掲載10/9～11限定条件は本日まだ有効なので維持。10/12朝は期間終了整理を確認。",
-        "evidenceUrl": "https://nagano-info.jp/popupshop/yokohama/index.html"
-      },
+      "lastAttemptAt": "2026-10-12T08:09:29+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:09:29+09:00",
+      "lastResult": "success",
+      "resultSummary": "整理券対象は10/9～11。終了した申込詳細を整理し、10/12以降の自由入場は推定しない。defaultEntryTypeと開催期間10/9～19を維持。初回受付時刻は対象初日と前日19時の公式規則から算出。",
+      "lastFailure": null,
       "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。"
     },
     {
@@ -984,10 +978,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-11T08:05:27.554+09:00",
-      "lastSuccessfulAt": "2026-10-11T08:05:27.554+09:00",
+      "lastAttemptAt": "2026-10-12T08:08:16+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:08:16+09:00",
       "lastResult": "success",
-      "resultSummary": "（取得本文、クロール表示2日前）。10/6付、10/10～11・撮影3回各50組・10時配布、AR11～16時・景品各日300人・券なし参加可は既存と一致。今朝の現地券の残数や最新SNSは未確認。",
+      "resultSummary": "施設公式本文に10/10・10/11開催を明記。JST10/12のため終了扱いとし、同一IDで過去へ移動する。10/12終了の別イベント7件は現行に維持。",
       "lastFailure": null,
       "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
     },
@@ -1566,11 +1560,17 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-11T10:01:22Z",
+      "lastAttemptAt": "2026-10-12T08:11:07+09:00",
       "lastSuccessfulAt": "2026-10-11T10:01:22Z",
-      "lastResult": "success",
-      "resultSummary": "クラウドの提供済み公式本文観測。10月11日分の整理券配布終了・当日のフリー入場なしを確認。10月12日の条件へ一般化せず、現在の残券や翌日の入場方法を推定しない。HTTP statusは提供されていない。",
-      "lastFailure": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "10月11日限定の前回成功情報の対象日が終了。10月12日以降へ終了注意を持ち越さず、当日の入店条件は推定しない。公式X本文の再取得失敗のため確認日は10月11日のまま保持。",
+      "lastFailure": {
+        "at": "2026-10-12T08:11:07+09:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "10月11日限定の前回成功情報の対象日が終了。10月12日以降へ終了注意を持ち越さず、当日の入店条件は推定しない。公式X本文の再取得失敗のため確認日は10月11日のまま保持。",
+        "evidenceUrl": "https://x.com/chiikawa_land/status/2109188717298716751"
+      },
       "note": "今回確認済みの投稿だけを登録。PCで通常巡回を再実施しない。翌朝は日付限定注意の整理と最新公式案内を確認。"
     },
     {
@@ -1583,12 +1583,86 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-11T10:01:22Z",
+      "lastAttemptAt": "2026-10-12T08:11:07+09:00",
       "lastSuccessfulAt": "2026-10-11T10:01:22Z",
-      "lastResult": "success",
-      "resultSummary": "クラウドの提供済み公式本文観測。10月11日分の整理券配布終了・当日のフリー入場なしを確認。10月12日の条件へ一般化せず、現在の残券や翌日の入場方法を推定しない。HTTP statusは提供されていない。",
-      "lastFailure": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "10月11日限定の前回成功情報の対象日が終了。10月12日以降へ終了注意を持ち越さず、当日の入店条件は推定しない。公式X本文の再取得失敗のため確認日は10月11日のまま保持。",
+      "lastFailure": {
+        "at": "2026-10-12T08:11:07+09:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "10月11日限定の前回成功情報の対象日が終了。10月12日以降へ終了注意を持ち越さず、当日の入店条件は推定しない。公式X本文の再取得失敗のため確認日は10月11日のまま保持。",
+        "evidenceUrl": "https://x.com/chiikawa_land/status/2109163038804939187"
+      },
       "note": "今回確認済みの投稿だけを登録。PCで通常巡回を再実施しない。翌朝は日付限定注意の整理と最新公式案内を確認。"
+    },
+    {
+      "id": "venue-machida-modi-entry-20261007",
+      "name": "ちいかわPOP UP STORE 町田モディ 公式入場案内",
+      "url": "https://x.com/chiikawa_popup/status/2107692808480162153",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T08:14:59+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:14:59+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文・画像で条件を確認済み。10:20より前は2F店頭集合、遅れた場合は開店後4F会場。開催会期10/9～11/1を変えない。対象10/9～12の入場条件だけ補完し、自由入場・残券は推定しない。",
+      "lastFailure": null,
+      "note": "10/12朝の親クラウド調査で提供された個別一次情報。PCの通常巡回を重複実施せず観測根拠を取り込む。"
+    },
+    {
+      "id": "venue-machida-modi-assembly-20261007",
+      "name": "町田モディ 朝枠集合案内 公式X",
+      "url": "https://x.com/chiikawa_popup/status/2107782212997595483",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T08:14:44+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:14:44+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式oEmbed HTTP200で著者chiikawa_popup、10:30～11時枠は10:20まで2F集合、遅れた方は開店後4F会場へ直接来店する条件を確認。",
+      "lastFailure": null,
+      "note": "10/12朝の親クラウド調査で提供された個別一次情報。PCの通常巡回を重複実施せず観測根拠を取り込む。"
+    },
+    {
+      "id": "chiikawa-park-ticket",
+      "name": "ちいかわパーク 公式入場案内",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T08:11:07+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:11:07+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式ticketページの既存販売規則を補足。新発表とせず、12月分販売日の算出による断定は追記しない。",
+      "lastFailure": null,
+      "note": "10/12朝の親クラウド調査で提供された個別一次情報。PCの通常巡回を重複実施せず観測根拠を取り込む。"
+    },
+    {
+      "id": "chiikawa-restaurant-reservation",
+      "name": "ちいかわレストラン 池袋PARCO店 公式入場案内",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T08:11:07+09:00",
+      "lastSuccessfulAt": "2026-10-12T08:11:07+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式予約本文の既存販売規則と対象期間を補完。売切日時に当日席はなく、11月21日以降の販売予定は後日案内。",
+      "lastFailure": null,
+      "note": "10/12朝の親クラウド調査で提供された個別一次情報。PCの通常巡回を重複実施せず観測根拠を取り込む。"
     }
   ]
 }
