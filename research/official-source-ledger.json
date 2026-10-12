@@ -1713,10 +1713,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T08:10:45+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "lastAttemptAt": "2026-10-12T10:10:27.841Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:27.841Z",
       "lastResult": "success",
-      "resultSummary": "7/13～9/30レシート対象・購入後1週間以内投稿。賞品応募期限はアプリ要項のみで未確定。",
+      "resultSummary": "10/12朝の初回発見を維持。9/30購入対象・購入後1週間以内投稿は過去形へ。賞品応募終了は未確定。夕方成功は19:03頃で秒不明。 原PCの本文確認成功。",
       "lastFailure": null,
       "note": "親の10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
     },
@@ -1730,10 +1730,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T08:10:45+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:10:45+09:00",
+      "lastAttemptAt": "2026-10-12T10:10:27.942Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:27.942Z",
       "lastResult": "success",
-      "resultSummary": "一次キャンペーン本文でも9/30 23:59購入対象と購入後1週間以内投稿。賞品応募期限はアプリ要項へ案内、本文に具体日なし。",
+      "resultSummary": "10/12朝の初回発見を維持。9/30購入対象・購入後1週間以内投稿は過去形へ。賞品応募終了は未確定。夕方成功は19:03頃で秒不明。 原PCの本文確認成功。",
       "lastFailure": null,
       "note": "親の10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
     },
@@ -2071,15 +2071,15 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T08:11:07+09:00",
+      "lastAttemptAt": "2026-10-12T10:15:29.157Z",
       "lastSuccessfulAt": null,
-      "lastResult": "parse_failed",
+      "lastResult": "access_limited",
       "resultSummary": "個別公式ページの抽出本文が画像一覧中心。画像本文と最新SNSを十分読めず、最新の入店条件を確認済みとしない。",
       "lastFailure": {
-        "at": "2026-10-12T08:11:07+09:00",
-        "kind": "parse_failed",
-        "httpStatus": null,
-        "detail": "個別公式ページの抽出本文が画像一覧中心。画像本文と最新SNSを十分読めず、最新の入店条件を確認済みとしない。",
+        "at": "2026-10-12T10:15:29.157Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "原PCの個別ページ取得は403。前回成功時刻と既存掲載を保持。今回の当日条件は別の公式X本文で確認。",
         "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/koshigaya/"
       },
       "note": "親の10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
@@ -3828,6 +3828,244 @@
       "resultSummary": "T2中心35.5510216,139.7886114は建物上。店舗個別点や屋内階は地図だけで特定しない。 取得経路: read-only public URL retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。 確認範囲: http_200。",
       "lastFailure": null,
       "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+    },
+    {
+      "id": "social-chiikawaland-sendai-tickets-ended-20261012",
+      "name": "chiikawaland-sendai 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawa_land/status/2109566403972120885",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:27.968Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:27.968Z",
+      "lastResult": "success",
+      "resultSummary": "整理券配布終了、18:40頃からフリー入場の予定。実施確認はなく再制限の可能性。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "restaurant-ikebukuro-entry-20261012-official",
+      "name": "chiikawa-restaurant-ikebukuro 10/12夕方の一次根拠",
+      "url": "https://x.com/THEGUEST_ikb/status/2109263799345704997",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:27.975Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:27.975Z",
+      "lastResult": "success",
+      "resultSummary": "10/12カフェ事前予約満席・当日券なし・整理券所持者のみ。グッズはフリー入場だが混雑時待機列。クラウド成功は19:03頃で秒不明。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "bakery-laforet-entry-20261012-official",
+      "name": "chiikawa-bakery-shop-laforet 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawabakery/status/2109433874279215365",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:27.999Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:27.999Z",
+      "lastResult": "success",
+      "resultSummary": "10/12は整理券入場。開店前10時ラフォーレ入口、開店後店頭発行。クラウド成功は19:03頃で秒不明。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "social-chiikawaland-koshigaya-tickets-ended-20261012",
+      "name": "chiikawaland-koshigaya 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawa_land/status/2109584471783862409",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:27.973Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:27.973Z",
+      "lastResult": "success",
+      "resultSummary": "10/12整理券配布終了、本日はフリー入場案内なし。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "social-chiikawaland-shinsaibashi-tickets-ended-20261012",
+      "name": "chiikawaland-shinsaibashi 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawa_land/status/2109559278566850980",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:28.052Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:28.052Z",
+      "lastResult": "success",
+      "resultSummary": "10/12整理券配布終了、本日はフリー入場案内なし。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "social-chiikawaland-solamachi-tickets-ended-20261012",
+      "name": "chiikawaland-solamachi 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawa_land/status/2109536324046954652",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:28.001Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:28.001Z",
+      "lastResult": "success",
+      "resultSummary": "10/12整理券配布終了、本日はフリー入場案内なし。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "tamanohikari-chiikawa-shop-details",
+      "name": "tamanohikari-chiikawa-dashiwari-2026 10/12夕方の一次根拠",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:10:29.129Z",
+      "lastSuccessfulAt": "2026-10-12T10:10:29.129Z",
+      "lastResult": "success",
+      "resultSummary": "新規注文分は2027年中配送、具体時期未定。注文画面の日付で配送・発送日指定不可。元企画候補の発見日時は保持。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "ramen-buta-shibuya-entry-20261012-official",
+      "name": "ramen-buta-shibuya 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawaramenSB/status/2107042968708534521",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.508Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.508Z",
+      "lastResult": "success",
+      "resultSummary": "10/12事前予約満席、当日券なし、予約済みの方のみ。11月の恒常QR条件維持。公式発表時刻不明は日付のみ。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-20261012-official",
+      "name": "ramen-buta-shinsaibashi 10/12夕方の一次根拠",
+      "url": "https://x.com/chiikawaramenSH/status/2109452455541104807",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.574Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.574Z",
+      "lastResult": "success",
+      "resultSummary": "10/12事前予約満席、当日券なし、予約済みの方のみ。11月の恒常QR条件維持。公式発表時刻不明は日付のみ。 原PCの本文確認成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "hours-image-chiikawa-baby-2026-10-02-aomori-elm",
+      "name": "chiikawa-baby-2026-10-02-aomori-elm 10/12夕方の一次根拠",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/img/main.jpg?a2",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.189Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.189Z",
+      "lastResult": "success",
+      "resultSummary": "公式告知画像の営業時間を委任元が実読。発表日時不明。 原PCの画像取得成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "hours-image-popup-2026-10-02-aomori-elm",
+      "name": "popup-2026-10-02-aomori-elm 10/12夕方の一次根拠",
+      "url": "https://chiikawa-info.jp/p26/pus_aomr/img/main_v10.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.269Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.269Z",
+      "lastResult": "success",
+      "resultSummary": "公式告知画像の営業時間を委任元が実読。発表日時不明。 原PCの画像取得成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "hours-image-popup-2026-10-02-aeon-saga-yamato",
+      "name": "popup-2026-10-02-aeon-saga-yamato 10/12夕方の一次根拠",
+      "url": "https://chiikawa-info.jp/p26/pus_asag/img/main_v10.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.175Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.175Z",
+      "lastResult": "success",
+      "resultSummary": "公式告知画像の営業時間を委任元が実読。発表日時不明。 原PCの画像取得成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "hours-image-popup-2026-09-26-aeon-niihama",
+      "name": "popup-2026-09-26-aeon-niihama 10/12夕方の一次根拠",
+      "url": "https://chiikawa-info.jp/p26/pus_anhm/img/main_v10.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.167Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.167Z",
+      "lastResult": "success",
+      "resultSummary": "公式告知画像の営業時間を委任元が実読。発表日時不明。 原PCの画像取得成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "hours-image-popup-naha",
+      "name": "popup-naha 10/12夕方の一次根拠",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/img/main_v11.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T10:15:29.267Z",
+      "lastSuccessfulAt": "2026-10-12T10:15:29.267Z",
+      "lastResult": "success",
+      "resultSummary": "公式告知画像の営業時間を委任元が実読。発表日時不明。 原PCの画像取得成功。",
+      "lastFailure": null,
+      "note": "委任元の本文・画像実読と原PCの取得を別記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
     }
   ]
 }
