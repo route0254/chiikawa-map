@@ -1,0 +1,504 @@
+{
+  "recordedAt": "2026-10-12T00:01:16.909Z",
+  "pr": 39,
+  "prUrl": "https://github.com/route0254/chiikawa-map/pull/39",
+  "base": "69141158488b443a5d731a6cc8380c1d568afe5f",
+  "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+  "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+  "mergeTree": "10c5d18fe0b1b41a414595854e805139b35f292d",
+  "mergedAt": "2026-10-11T23:55:09Z",
+  "actualPublishedAt": "2026-10-11T23:56:02Z",
+  "actualPublishedAtBasis": "Successful Pages deploy job completed_at, independently matched to exact published Git blobs; distinct from step completion, first site match and report time.",
+  "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+  "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+  "firstPublicMatchAt": "2026-10-11T23:57:50.431Z",
+  "checks": [
+    {
+      "id": 38186063030,
+      "name": "Validate spot data",
+      "path": ".github/workflows/validate-data.yml",
+      "head": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342280137,
+      "createdAt": "2026-10-11T23:55:12Z",
+      "updatedAt": "2026-10-11T23:55:25Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38186063030"
+    },
+    {
+      "id": 38186062838,
+      "name": "pages build and deployment",
+      "path": "dynamic/pages/pages-build-deployment",
+      "head": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 340583706,
+      "createdAt": "2026-10-11T23:55:12Z",
+      "updatedAt": "2026-10-11T23:56:03Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38186062838"
+    },
+    {
+      "id": 38186063016,
+      "name": "Test site",
+      "path": ".github/workflows/test-site.yml",
+      "head": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "attempt": 1,
+      "workflowId": 342550527,
+      "createdAt": "2026-10-11T23:55:12Z",
+      "updatedAt": "2026-10-11T23:59:16Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/38186063016"
+    }
+  ],
+  "allMainChecksSuccessful": true,
+  "public": {
+    "matching": 28,
+    "total": 28,
+    "dataFilesMatching": 10,
+    "dataFilesTotal": 10,
+    "observedData": {
+      "officialCount": 86,
+      "archiveCount": 646,
+      "collaborationCount": 22,
+      "collaborationArchiveCount": 52,
+      "additionDatesCount": 826,
+      "newIdsVerified": [],
+      "updatedOfficialIdsVerified": [
+        "chiikawaland-sendai",
+        "chiikawaland-popup-2026-09-11-amu-oita",
+        "chiikawa-bakery-tokyo",
+        "chiikawa-bakery-osaka",
+        "nagano-market-popup-2026-10-09-yokohama-skybuilding",
+        "popup-2026-10-09-machida-modi",
+        "chiikawa-park-tokyo",
+        "chiikawa-restaurant-ikebukuro"
+      ],
+      "movedArchiveIdsVerified": [
+        "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town"
+      ],
+      "endingTodayPreserved": 7,
+      "duplicateIds": 0,
+      "allTenDataFilesDeepEqual": true
+    },
+    "files": [
+      {
+        "path": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json",
+        "sha256": "8f059f2c9cccc4ac09299f1d8ce2b9e28c20fbd304789422d4e924fca9ac35d7",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.764Z"
+      },
+      {
+        "path": "data/collaborations-archive.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+        "sha256": "3f16b7039bac64e696cefe9196f1a64a25a63374549a3e439d881e6e83544116",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.763Z"
+      },
+      {
+        "path": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+        "sha256": "fc7ba14cc64253c758e7232578b5045b2655bdab1d7e305e03e88eea1c926918",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.767Z"
+      },
+      {
+        "path": "data/community-spots.json",
+        "url": "https://chiikatsu-map.com/data/community-spots.json",
+        "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.760Z"
+      },
+      {
+        "path": "data/nagano-history.json",
+        "url": "https://chiikatsu-map.com/data/nagano-history.json",
+        "sha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.788Z"
+      },
+      {
+        "path": "data/nagano-spots.json",
+        "url": "https://chiikatsu-map.com/data/nagano-spots.json",
+        "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.780Z"
+      },
+      {
+        "path": "data/nagano-unlocated-mentions.json",
+        "url": "https://chiikatsu-map.com/data/nagano-unlocated-mentions.json",
+        "sha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.771Z"
+      },
+      {
+        "path": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+        "sha256": "13841e97c4bb37bd060de5b948bb6938958454a3d4ef53878bb5f1b582dc13f1",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.792Z"
+      },
+      {
+        "path": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "sha256": "7c6ecbee9f2bbb2b1ec37bb3cd22418b60931a3aa3aca1437133a5a60f6aee2c",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.972Z"
+      },
+      {
+        "path": "data/site-meta.json",
+        "url": "https://chiikatsu-map.com/data/site-meta.json",
+        "sha256": "dfff980e2f10b3c8757a8bc129febf7477503a054ca10b4d3ce894dc2b0ba510",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.976Z"
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://chiikatsu-map.com/sitemap.xml",
+        "sha256": "c0e170e77d828f41f62e17f79a37b058463e0d43f683190079803803a7f5dbe1",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.007Z"
+      },
+      {
+        "path": "spot/chiikawa-bakery-osaka/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-osaka/",
+        "sha256": "6e394747100ab53a41926fc7a19234156cf114e12100d6aaedb3ab8f49f64881",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.984Z"
+      },
+      {
+        "path": "spot/chiikawa-bakery-tokyo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-tokyo/",
+        "sha256": "0db88f39f72161ca08aad77671f6c1f503b49803fdd7c368f3b866cfa97d292d",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.000Z"
+      },
+      {
+        "path": "spot/chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town/",
+        "sha256": "1e49da56dca582dddf4d80b9f291685f6031f98e6b4afd2b73126f9f59ec4851",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.001Z"
+      },
+      {
+        "path": "spot/chiikawa-park-tokyo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-park-tokyo/",
+        "sha256": "f57722fd3c007a811749b9b71f189e8d0561307958fd7ddfc5a71f9c94acb479",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.979Z"
+      },
+      {
+        "path": "spot/chiikawa-restaurant-ikebukuro/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-restaurant-ikebukuro/",
+        "sha256": "28990a6cbdd547c0bc499dd25ab9f374019817c0da700feb099cc98da2bfb9c8",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:49.983Z"
+      },
+      {
+        "path": "spot/chiikawaland-popup-2026-09-11-amu-oita/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-popup-2026-09-11-amu-oita/",
+        "sha256": "8fd8fdc3f0a3ea0d20ef26aae171e43d58e6542956099f45fce245a3f5d2a951",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.198Z"
+      },
+      {
+        "path": "spot/chiikawaland-sendai/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-sendai/",
+        "sha256": "470e39b8d08a73e0ceddb0bf47cf22b09a9bc1abd043a9e23c5cf1c0d5c2afb9",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.189Z"
+      },
+      {
+        "path": "spot/nagano-market-popup-2026-10-09-yokohama-skybuilding/index.html",
+        "url": "https://chiikatsu-map.com/spot/nagano-market-popup-2026-10-09-yokohama-skybuilding/",
+        "sha256": "f5274d016a2b7f2595ee2598f0fbf1b54949a2767f63941dfe758335f282d1d8",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.220Z"
+      },
+      {
+        "path": "spot/popup-2026-10-09-machida-modi/index.html",
+        "url": "https://chiikatsu-map.com/spot/popup-2026-10-09-machida-modi/",
+        "sha256": "2c65af520d40b9f4e70f9a5d84a9b6857563438fe032b8b237c3d4a818ad8e7a",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.187Z"
+      },
+      {
+        "path": "index.html",
+        "url": "https://chiikatsu-map.com/",
+        "sha256": "0899e2be4e6c48439dab07f6d7f6b609c116b64d70aa904dc63112ff596f5a80",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.212Z"
+      },
+      {
+        "path": "official.html",
+        "url": "https://chiikatsu-map.com/official.html",
+        "sha256": "dc4fa268b8c3c8c292730d9ffea77a3dd9b875c679da56b54f20f49ee4fb6d3e",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.199Z"
+      },
+      {
+        "path": "collaborations.html",
+        "url": "https://chiikatsu-map.com/collaborations.html",
+        "sha256": "e2c8a88fdfc6d8b6bb88051ce80d274592410628889f5f8e349efa64043d23ed",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.200Z"
+      },
+      {
+        "path": "app.js",
+        "url": "https://chiikatsu-map.com/app.js",
+        "sha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.219Z"
+      },
+      {
+        "path": "recent-utils.js",
+        "url": "https://chiikatsu-map.com/recent-utils.js",
+        "sha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.407Z"
+      },
+      {
+        "path": "collaborations.js",
+        "url": "https://chiikatsu-map.com/collaborations.js",
+        "sha256": "47dfe88ae7a632582cb77a2ccb626b839e29265f4630e7d8e380b608838d70af",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.402Z"
+      },
+      {
+        "path": "spot-page.js",
+        "url": "https://chiikatsu-map.com/spot-page.js",
+        "sha256": "7ef07104745596c222577c083a12d7f89235be480039cc9603fdb96d480981cf",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "path": "service-worker.js",
+        "url": "https://chiikatsu-map.com/service-worker.js",
+        "sha256": "ae681c5e9680c2336d1adfd5b3484dcfc216d5067a52bc4d6748d6c5b7382f4c",
+        "status": 200,
+        "observedAt": "2026-10-11T23:57:50.409Z"
+      }
+    ]
+  },
+  "tests": {
+    "check": 0,
+    "unit": 55,
+    "smoke": 101,
+    "links": 0,
+    "linkTargets": 816,
+    "linkWarnings": 443,
+    "linkBroken": 0,
+    "qaScreens": 18
+  },
+  "counts": {
+    "newListings": 0,
+    "currentUpdates": 8,
+    "archived": 1,
+    "collaborationUpdates": 0,
+    "publishedListingRecords": 9,
+    "originallyRequestedRecords": 14
+  },
+  "receivedTailSourceObservations": {
+    "completedAt": "2026-10-11T23:48:01.605Z",
+    "passed": true,
+    "observations": 41,
+    "successful": 27,
+    "failedOrPartial": 14,
+    "newlyAddedSources": 25,
+    "previousSuccessfulDatesPreserved": true,
+    "evidencePath": "research/morning-source-observations-2026-10-12.json"
+  },
+  "sourceChanges": {
+    "changed": 50,
+    "newSources": 29
+  },
+  "changedIds": [
+    "chiikawaland-sendai",
+    "chiikawaland-popup-2026-09-11-amu-oita",
+    "chiikawa-bakery-tokyo",
+    "chiikawa-bakery-osaka",
+    "nagano-market-popup-2026-10-09-yokohama-skybuilding",
+    "popup-2026-10-09-machida-modi",
+    "chiikawa-park-tokyo",
+    "chiikawa-restaurant-ikebukuro",
+    "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town"
+  ],
+  "priorityTarget": {
+    "machidaBeforeAssembly": true,
+    "editorialTarget": "2026-10-12T10:20:00+09:00",
+    "officialCondition": "10:30〜11:00枠は10:20までに2F店頭集合。10:20以降は開店後4F会場前へ直接来店。"
+  },
+  "ledgerSync": {
+    "pending": true,
+    "corrections": [
+      {
+        "id": "sendai-expired-entry-notice-20261012",
+        "listingIds": [
+          "chiikawaland-sendai"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "oita-expired-entry-notice-20261012",
+        "listingIds": [
+          "chiikawaland-popup-2026-09-11-amu-oita"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "bakery-october-priority-soldout-tokyo-20261012",
+        "listingIds": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "bakery-october-priority-soldout-osaka-20261012",
+        "listingIds": [
+          "chiikawa-bakery-osaka"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "nagano-yokohama-expired-entry-20261012",
+        "listingIds": [
+          "nagano-market-popup-2026-10-09-yokohama-skybuilding"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "machida-modi-entry-details-20261012",
+        "listingIds": [
+          "popup-2026-10-09-machida-modi"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "park-ticket-sale-rule-completeness-20261012",
+        "listingIds": [
+          "chiikawa-park-tokyo"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "restaurant-reservation-completeness-20261012",
+        "listingIds": [
+          "chiikawa-restaurant-ikebukuro"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      },
+      {
+        "id": "archive-wasada-20261012",
+        "listingIds": [
+          "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town"
+        ],
+        "previousState": "verifying",
+        "previousPublishedAt": null,
+        "state": "published",
+        "publishedAt": "2026-10-11T23:56:02Z",
+        "publicationPr": 39,
+        "sourceHead": "411c22de9bd59e424286d4d1f6627f625d37faa5",
+        "mergeSha": "9c45e12887fff7328b3e7eeb055d71a56f114840",
+        "deployStepCompletedAt": "2026-10-11T23:56:00Z",
+        "deployJobCompletedAt": "2026-10-11T23:56:02Z",
+        "siteMatchConfirmedAt": "2026-10-11T23:57:50.431Z"
+      }
+    ],
+    "nextAction": "次の通常掲載更新で今回の実公開時刻を候補へ同期する。記録だけのPRを連鎖作成しない。"
+  },
+  "receivedScopeComplete": true,
+  "entireRequestedScopeComplete": false,
+  "remainingBlockers": [
+    {
+      "kind": "truncated_delegation_specification",
+      "records": 5,
+      "details": "通常補完の残り2件・履歴確定3件の変更値とID、完全な情報源観測/保留更新仕様が未受信。推測で公開せず、親へ分割再送を依頼。"
+    }
+  ],
+  "followup": {
+    "machidaRecheckDueAt": "2026-10-13T08:00:00+09:00",
+    "historyHolds": 5,
+    "broadReviewLastRun": "2026-10-06",
+    "broadReviewNextDue": "2026-10-13",
+    "sourceFailuresAreNotNoNew": true,
+    "scheduledRunsManuallyRerun": 0
+  },
+  "libraryUpload": false
+}

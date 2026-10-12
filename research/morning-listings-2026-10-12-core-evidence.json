@@ -303,11 +303,11 @@
       "chiikawaland-popup-2026-09-11-amu-oita-tickets-ended-20261011"
     ]
   },
-  "completeObservationListPending": true,
+  "completeObservationListPending": false,
   "remainingSpecificationRequired": {
-    "routine": 2,
-    "history": 3,
-    "completeCloudObservationList": true
+    "routine": 0,
+    "history": 0,
+    "completeCloudObservationList": false
   },
   "coverageRate": null,
   "latency": null,
@@ -315,5 +315,8 @@
   "broadReviewNextDue": "2026-10-13",
   "rawHtmlPublished": false,
   "receivedTailObservationsPath": "research/morning-source-observations-2026-10-12.json",
-  "receivedTailObservationCount": 41
+  "receivedTailObservationCount": 41,
+  "remainingSpecificationRequiredResolvedBy": "research/morning-remainder-2026-10-12-evidence.json",
+  "receivedRemainderObservationCount": 109,
+  "allPatrolObservationsReceived": true
 }
