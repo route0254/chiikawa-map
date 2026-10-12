@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-09-15",
-  "statusAsOf": "2026-10-12",
+  "statusAsOf": "2026-10-13",
   "series": [
     {
       "key": "chiikawaland-popup",
@@ -3091,6 +3091,27 @@
           "description": "2026年10月11日で終了した、トキハわさだタウンのちいかわ・ハチワレ・うさぎの写真撮影会と館内ARラリーの無料イベントです。",
           "checkedAt": "2026-10-10",
           "importantNotice": "撮影会参加券とAR景品引換券は各日10:00からフェスタ広場で別々に配布します。ARは景品券終了後も参加できます。"
+        },
+        {
+          "id": "chiikawa-muchaphoto-aeon-shinrifu-2026",
+          "name": "ちいかわ むちゃフォトパーティ!! イオンモール新利府",
+          "startDate": "2026-11-22",
+          "endDate": "2026-11-22",
+          "venueName": "イオンモール新利府",
+          "venueSpace": "南館1F ライブスクエア",
+          "address": "宮城県宮城郡利府町新中道3-1-1 イオンモール新利府",
+          "lat": 38.328,
+          "lng": 140.972,
+          "sourceUrl": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+          "hoursText": "撮影会11:00・13:00・15:00（各回20～30分）／ARラリー10:00～16:00（最終受付15:30）",
+          "reservationType": "not_available",
+          "defaultEntryType": "other",
+          "crowdControlType": "numbered_ticket",
+          "crowdControlCondition": "announced",
+          "entryNote": "参加無料。撮影会には当日9:30からB2 南館ライブスクエア入口（館外）で配布する撮影会参加券が必要です。各回50組、全3回合計150枚、1組1枚まで。参加回を選べますが、券に記載の開催時間を過ぎると無効です。ARラリー景品交換チケットも同じ列・時間に配布し、景品は先着300人分です。10:00以降に残券がある場合は南館1F ライブスクエアで配布します。ARラリーには自分のスマートフォンが必要で、景品交換チケットがなくてもラリーには参加できます。",
+          "description": "ちいかわ・ハチワレ・うさぎ（パジャマver.）の写真撮影会と、館内ARポイントを巡るスマートフォンのラリーを楽しむ1日限定の無料イベントです。",
+          "checkedAt": "2026-10-13",
+          "importantNotice": "撮影会参加券とAR景品交換チケットは当日9:30からB2 南館ライブスクエア入口（館外）で配布。撮影会は各回50組、AR景品は先着300人分です。"
         }
       ]
     },
@@ -3114,6 +3135,39 @@
           "lng": 139.759964,
           "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/n_260713.html",
           "hoursText": "開催時の施設営業時間に準ずる"
+        }
+      ]
+    },
+    {
+      "key": "jr-central-chiikawa-movie-2026",
+      "label": "JR東海×映画ちいかわ リニア・鉄道館コラボ",
+      "brand": "chiikawa_movie",
+      "placeType": "spot",
+      "relationType": "collaboration",
+      "checkedAt": "2026-10-13",
+      "events": [
+        {
+          "id": "jr-central-linear-railway-museum-2026",
+          "name": "JR東海×映画ちいかわ リニア・鉄道館コラボ",
+          "startDate": "2026-07-08",
+          "endDate": "2026-10-31",
+          "venueName": "リニア・鉄道館",
+          "venueSpace": "1階各所",
+          "address": "愛知県名古屋市港区金城ふ頭3-2-2",
+          "lat": 35.0488735,
+          "lng": 136.8512061,
+          "sourceUrl": "https://museum.jr-central.co.jp/event/",
+          "hoursText": "10:00～17:30（最終入館17:00）",
+          "closedDaysText": "毎週火曜日（祝日の場合は翌日）。2026年10月は6日・13日・20日・27日が休館です。臨時変更は公式開館カレンダーをご確認ください。",
+          "hoursInfoUrl": "https://museum.jr-central.co.jp/facilities/index.html",
+          "reservationType": "optional",
+          "reservationUrl": "https://webket.jp/pc/ticket/index?fc=00272&ac=0501",
+          "defaultEntryType": "ticket_required",
+          "crowdControlType": "none",
+          "crowdControlCondition": "none",
+          "entryNote": "館内展示の見学には入館券が必要です。通常入館料は大人1,200円、小中高生500円、幼児（3歳以上未就学児）200円。フォトスポットとコラボジオラマは入館料のみで楽しめます。日付指定のオンライン入館券も販売しています。乗車特典の引換は別条件のためJR東海のキャンペーン案内をご確認ください。",
+          "description": "映画公開を記念したJR東海コラボ。1階の入館受付・シンボル展示・イベント広場・車両展示エリア・収蔵車両エリアにフォトスポットが登場し、鉄道ジオラマにも、ちいかわたちが登場します。",
+          "checkedAt": "2026-10-13"
         }
       ]
     }

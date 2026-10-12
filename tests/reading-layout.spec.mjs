@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
+import RecentAdditions from '../recent-utils.js';
 
 test.use({timezoneId: 'Asia/Tokyo'});
 test.beforeEach(async ({page}) => {
@@ -68,8 +69,12 @@ test('mapped collaborations still connect to the existing detail and private pla
 test('published catalogue recent URLs retain their AND condition and reset without new controls', async ({page}) => {
   const currentSpots = JSON.parse(await readFile(new URL('../data/official-spots.json', import.meta.url), 'utf8'));
   const currentCollaborations = JSON.parse(await readFile(new URL('../data/collaborations-current.json', import.meta.url), 'utf8'));
+  const addedDates = JSON.parse(await readFile(new URL('../data/added-dates.json', import.meta.url), 'utf8'));
+  const today = '2026-10-03';
+  const recentSpots = RecentAdditions.selectRecent(currentSpots, addedDates.firstAdded, today);
+  const recentCollaborations = currentCollaborations.filter(record => RecentAdditions.isRecentCollaboration(record, addedDates.collaborationFirstAdded, today));
   await page.goto('/official.html?recent=1');
-  await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(13);
+  await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(recentSpots.length);
   await expect(page.locator('#official-recent')).toHaveCount(0);
   await page.locator('#current-search').fill('町田');
   await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(1);
@@ -79,7 +84,7 @@ test('published catalogue recent URLs retain their AND condition and reset witho
   await expect(page.locator('#current-groups .official-spot-card')).toHaveCount(currentSpots.length);
   expect(new URL(page.url()).searchParams.has('recent')).toBe(false);
   await page.goto('/collaborations.html?recent=1');
-  await expect(page.locator('[data-groups="current"] .collaboration-card')).toHaveCount(4);
+  await expect(page.locator('[data-groups="current"] .collaboration-card')).toHaveCount(recentCollaborations.length);
   await expect(page.locator('#collaboration-recent')).toHaveCount(0);
   await page.locator('[data-filter="search"][data-list="current"]').fill('オキシ');
   await expect(page.locator('[data-groups="current"] .collaboration-card')).toHaveCount(1);
