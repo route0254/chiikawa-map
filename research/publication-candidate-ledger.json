@@ -5262,6 +5262,138 @@
       "nextCheck": "10/13 08時、公式画像と最終日の営業時間を確認。本日終了の現行データは本日は移動しない。",
       "recheckDueAt": "2026-10-13T08:00:00+09:00",
       "publishedAt": null
+    },
+    {
+      "id": "hold-popup-yonago-final-hours-20261012",
+      "title": "米子POP UP STORE 最終閉場の公式案内矛盾",
+      "kind": "listing_update",
+      "targetKey": "popup-yonago:final-hours:2026-10-12",
+      "sourceIds": [
+        "series-observed-db594c9ad917",
+        "venue-yonago-tenmaya-event-calendar"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-12T19:09:05+09:00",
+      "eventStartsAt": "2026-09-18",
+      "eventEndsAt": "2026-10-12",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+          "observedAt": "2026-10-12T19:05:58+09:00",
+          "summary": "画像には2026.9.18～10.12、10～19:30、最終日は16時閉場。画像公開日時不明。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+          "observedAt": "2026-10-12T19:09:05+09:00",
+          "summary": "施設は9/18～10/12、最終日は17時閉場、1階しんまち広場。会期一致、時刻矛盾。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-yonago"
+        ],
+        "note": "同会場・会期一致、営業時間のみ16時/17時矛盾。"
+      },
+      "listingIds": [
+        "popup-yonago"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "閉場時刻の追加は保留。現在のhoursText・会期・IDを維持。本日は終了済みへ移動しない。問い合わせなし。",
+      "nextCheck": "10/13朝に公式画像・施設案内の矛盾解消を確認。10/12終了は確定しており翌日のarchive判断と時刻確定を分ける。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "jr-central-linear-railway-museum-2026-venue-review",
+      "title": "JR東海×映画ちいかわ リニア・鉄道館会場",
+      "kind": "new_listing",
+      "targetKey": "jr-central-tsutsuurauratabi-2026:linear-railway-museum:2026-07-08",
+      "sourceIds": [
+        "jr-central-tsutsuurauratabi",
+        "jr-central-railway-museum-event"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-12",
+      "eventStartsAt": "2026-07-08",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13T08:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-12T19:00:00+09:00",
+          "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/event/",
+          "observedAt": "2026-10-12T19:10:06+09:00",
+          "summary": "7/8～10/31、1階受付・シンボル展示・広場・車両展示・収蔵車両のフォトスポット、1階鉄道ジオラマ。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/",
+          "observedAt": "2026-10-12T19:10:06+09:00",
+          "summary": "所在地 名古屋市港区金城ふ頭3-2-2。住所ピン・開館カレンダー確認未完了。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開4JSONを名称・URL・会場で照合。コラボ企画のみ掲載、linkedSpotIds空。KITTEのベーカリーやPOPUPと混同しない。新スポットID未発行。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "国内実会場の新規掲載候補として検証中。会場条件と座標未確認で未掲載。明朝判定。",
+      "nextCheck": "営業時間・入場条件・休業日・建物・フロア・住所・座標・近隣データを照合。料金・開館と既存座標の有無を確認。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+      "title": "JR東海×映画ちいかわ KITTE大阪巨大バルーン",
+      "kind": "new_listing",
+      "targetKey": "jr-central-tsutsuurauratabi-2026:kitte-osaka-balloon:2026-07-08",
+      "sourceIds": [
+        "jr-central-tsutsuurauratabi"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-12",
+      "eventStartsAt": "2026-07-08",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13T08:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-12T19:00:00+09:00",
+          "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開4JSONを名称・URL・会場で照合。コラボ企画のみ掲載、linkedSpotIds空。KITTEのベーカリーやPOPUPと混同しない。新スポットID未発行。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "国内実会場の新規掲載候補として検証中。会場条件と座標未確認で未掲載。明朝判定。",
+      "nextCheck": "営業時間・入場条件・休業日・建物・フロア・住所・座標・近隣データを照合。KITTE公式の実施フロア・撮影可能時間を確認。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

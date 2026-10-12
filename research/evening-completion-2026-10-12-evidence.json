@@ -1,0 +1,4135 @@
+{
+  "checkedAt": "2026-10-12T10:27:36.835Z",
+  "baselineMain": "938519386aa914182f3d9d2437345d3bf706d81b",
+  "sourceObservationCount": 268,
+  "uniqueSourceUrlCount": 261,
+  "newListingCandidateCount": 2,
+  "newListingConfirmedForImmediatePublication": 0,
+  "unresolvedCandidateEvidence": [
+    {
+      "id": "hold-popup-yonago-final-hours-20261012",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+          "observedAt": "2026-10-12T19:05:58+09:00",
+          "summary": "画像には2026.9.18～10.12、10～19:30、最終日は16時閉場。画像公開日時不明。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+          "observedAt": "2026-10-12T19:09:05+09:00",
+          "summary": "施設は9/18～10/12、最終日は17時閉場、1階しんまち広場。会期一致、時刻矛盾。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        }
+      ],
+      "decision": "閉場時刻の追加は保留。現在のhoursText・会期・IDを維持。本日は終了済みへ移動しない。問い合わせなし。",
+      "nextCheck": "10/13朝に公式画像・施設案内の矛盾解消を確認。10/12終了は確定しており翌日のarchive判断と時刻確定を分ける。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00"
+    },
+    {
+      "id": "jr-central-linear-railway-museum-2026-venue-review",
+      "evidence": [
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-12T19:00:00+09:00",
+          "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/event/",
+          "observedAt": "2026-10-12T19:10:06+09:00",
+          "summary": "7/8～10/31、1階受付・シンボル展示・広場・車両展示・収蔵車両のフォトスポット、1階鉄道ジオラマ。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/",
+          "observedAt": "2026-10-12T19:10:06+09:00",
+          "summary": "所在地 名古屋市港区金城ふ頭3-2-2。住所ピン・開館カレンダー確認未完了。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        }
+      ],
+      "decision": "国内実会場の新規掲載候補として検証中。会場条件と座標未確認で未掲載。明朝判定。",
+      "nextCheck": "営業時間・入場条件・休業日・建物・フロア・住所・座標・近隣データを照合。料金・開館と既存座標の有無を確認。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00"
+    },
+    {
+      "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+      "evidence": [
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-12T19:00:00+09:00",
+          "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        }
+      ],
+      "decision": "国内実会場の新規掲載候補として検証中。会場条件と座標未確認で未掲載。明朝判定。",
+      "nextCheck": "営業時間・入場条件・休業日・建物・フロア・住所・座標・近隣データを照合。KITTE公式の実施フロア・撮影可能時間を確認。",
+      "recheckDueAt": "2026-10-13T08:00:00+09:00"
+    }
+  ],
+  "morningPublicationTimes": [
+    {
+      "candidateId": "restaurant-okinawa-reservation-completeness-20261012",
+      "publishedAtToStore": null,
+      "timestampPatchWithdrawn": true,
+      "independentPublicConfirmationAt": "2026-10-12T01:45:58.755245Z",
+      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalPcLogVerifiedByThisResearch": false,
+      "deploymentCompletedAt": "2026-10-12T01:28:52Z",
+      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+    },
+    {
+      "candidateId": "fukuoka-popup-coevent-details-20261012",
+      "publishedAtToStore": null,
+      "timestampPatchWithdrawn": true,
+      "independentPublicConfirmationAt": "2026-10-12T01:45:58.755245Z",
+      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalPcLogVerifiedByThisResearch": false,
+      "deploymentCompletedAt": "2026-10-12T01:28:52Z",
+      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+    },
+    {
+      "candidateId": "history-chiikawa-aquarium-sendai-extension-20261012",
+      "publishedAtToStore": null,
+      "timestampPatchWithdrawn": true,
+      "independentPublicConfirmationAt": "2026-10-12T01:45:58.685797Z",
+      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalPcLogVerifiedByThisResearch": false,
+      "deploymentCompletedAt": "2026-10-12T01:28:52Z",
+      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+    },
+    {
+      "candidateId": "history-nagano-aquarium-sendai-position-20261012",
+      "publishedAtToStore": null,
+      "timestampPatchWithdrawn": true,
+      "independentPublicConfirmationAt": "2026-10-12T01:45:58.674342Z",
+      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalPcLogVerifiedByThisResearch": false,
+      "deploymentCompletedAt": "2026-10-12T01:28:52Z",
+      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+    },
+    {
+      "candidateId": "history-chiikawa-aquarium-2-sendai-20230623",
+      "publishedAtToStore": null,
+      "timestampPatchWithdrawn": true,
+      "independentPublicConfirmationAt": "2026-10-12T01:45:58.674342Z",
+      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalPcLogVerifiedByThisResearch": false,
+      "deploymentCompletedAt": "2026-10-12T01:28:52Z",
+      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+    }
+  ],
+  "laterIndependentPublicVerification": {
+    "path": "pr40-public-verification.json",
+    "note": "10:45:58は親独立照合。初回公開確認の根拠には採用しない。元クラウド側のファイル名であり原PCに存在すると仮定しない。"
+  },
+  "socialCompletion": {
+    "checkedAt": "2026-10-12T10:22:46.406Z",
+    "completionResult": "総合6プロフィール確認。X3は限定表示本文、Instagram3はログイン画面のみで制限継続。",
+    "scopeOwnership": "重点4件は同じクラウド調査内で補完。親に未実施作業を転嫁しない。"
+  },
+  "sendaiKoshigayaCutoffResolved": [
+    {
+      "sourceId": "facility-hours-chiikawaland-sendai",
+      "url": "https://sendai.parco.jp/shop/detail/?cd=028288",
+      "lastAttemptAt": "2026-10-12T19:12:15+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:12:15+09:00",
+      "lastResult": "success",
+      "resultSummary": "仙台PARCO1/8F物販、施設10～20時・個店例外なし。当日注意の有効期限のみ、hoursText変更指示ではない。",
+      "lastFailure": null,
+      "use": "本日限定注意の初回掲示上限のみ。hoursText変更指示ではない。"
+    },
+    {
+      "sourceId": "facility-hours-chiikawaland-koshigaya",
+      "url": "https://laketown.aeonmall.jp/shop/e7aedd6e-7dfa-4cac-bb73-a18ba6b1999d",
+      "lastAttemptAt": "2026-10-12T19:12:15+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:12:15+09:00",
+      "lastResult": "success",
+      "resultSummary": "個店ページに10～21時。当日注意の有効期限のみ、hoursText変更指示ではない。",
+      "lastFailure": null,
+      "use": "本日限定注意の初回掲示上限のみ。hoursText変更指示ではない。"
+    }
+  ],
+  "sourceTimestampCorrections": [],
+  "intakeVerification": {
+    "verifiedAt": "2026-10-12T10:49:15.924Z",
+    "expectedParts": 17,
+    "receivedParts": 17,
+    "expectedRows": 261,
+    "receivedRows": 258,
+    "parts": [
+      {
+        "part": 1,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 2,
+        "declared": 16,
+        "received": 13
+      },
+      {
+        "part": 3,
+        "declared": 13,
+        "received": 13
+      },
+      {
+        "part": 4,
+        "declared": 16,
+        "received": 16
+      },
+      {
+        "part": 5,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 6,
+        "declared": 18,
+        "received": 18
+      },
+      {
+        "part": 7,
+        "declared": 16,
+        "received": 16
+      },
+      {
+        "part": 8,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 9,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 10,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 11,
+        "declared": 13,
+        "received": 13
+      },
+      {
+        "part": 12,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 13,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 14,
+        "declared": 17,
+        "received": 17
+      },
+      {
+        "part": 15,
+        "declared": 16,
+        "received": 16
+      },
+      {
+        "part": 16,
+        "declared": 15,
+        "received": 15
+      },
+      {
+        "part": 17,
+        "declared": 2,
+        "received": 2
+      }
+    ],
+    "discrepancies": [
+      {
+        "part": 2,
+        "declared": 16,
+        "received": 13
+      }
+    ],
+    "candidateRows": 3,
+    "evidenceParts": 1,
+    "originalPcLogsVerified": true,
+    "pr40ProofPath": "research/publication-confirmation-2026-10-12-pr40.json",
+    "preservedPublishedAt": "2026-10-12T01:28:52Z",
+    "preservedFirstPublicMatchAt": "2026-10-12T01:32:47.165Z"
+  },
+  "sourceObservations": [
+    {
+      "part": 1,
+      "id": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "at": "2026-10-12T19:00:38+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "at": "2026-10-12T19:00:39+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "chiikawa-cafe-list",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "at": "2026-10-12T19:00:38+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "at": "2026-10-12T19:00:39+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "at": "2026-10-12T19:00:46+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "at": "2026-10-12T19:00:46+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "at": "2026-10-12T19:00:45+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "nagano-official-index",
+      "url": "https://nagano-info.jp/",
+      "at": "2026-10-12T19:00:46+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "nagano-yokohama-entry",
+      "url": "https://nagano-info.jp/popupshop/yokohama/index.html",
+      "at": "2026-10-12T19:00:54+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "fukuoka-sushi-official",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 1,
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "at": "2026-10-12T19:21:00+09:00",
+      "code": "priority_html",
+      "summary": "個別HTML・画像リンクを再取得。参照画像URLは先に実読した画像と同じ。最新SNS全件・画像再実読は保証しない。"
+    },
+    {
+      "part": 1,
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 1,
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "at": "2026-10-12T19:00:54+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+      "at": "2026-10-12T19:00:59+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "url": "https://kakogawa.ario.jp/event/3200004379/",
+      "at": "2026-10-12T19:00:57+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "venue-nagano-fukuoka-entry-20261016",
+      "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "at": "2026-10-12T19:01:02+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 1,
+      "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "at": "2026-10-12T19:00:58+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "venue-muchaphoto-laketown-mori-20261012",
+      "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "at": "2026-10-12T19:01:02+09:00",
+      "code": "http406",
+      "summary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。"
+    },
+    {
+      "part": 2,
+      "id": "magical-sapporo-october-2026-source-3",
+      "url": "https://livepocket.jp/p/aqthq",
+      "at": "2026-10-12T19:21:09+09:00",
+      "code": "livepocket_list",
+      "summary": "券一覧9件（10/12～20）を本文再確認。10/21以降は一覧に表示なし。未実施・不要とは推定せず残枠も保証しない。"
+    },
+    {
+      "part": 2,
+      "id": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "url": "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/chiikawa.html",
+      "at": "2026-10-12T19:01:03+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-71b2d641d1",
+      "url": "https://chiikawa-info.jp/mck_cafe.html",
+      "at": "2026-10-12T19:01:09+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-82d181891d",
+      "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+      "at": "2026-10-12T19:01:09+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-978ffe9215",
+      "url": "https://chiikawa-info.jp/p26/ck_tokyo/index.html",
+      "at": "2026-10-12T19:01:09+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-9fdf5778d7",
+      "url": "https://chiikawa-info.jp/ckbaby.html",
+      "at": "2026-10-12T19:01:09+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-5932274e7e",
+      "url": "https://chiikawa-info.jp/ck_pocket.html",
+      "at": "2026-10-12T19:01:17+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-8759f68d56",
+      "url": "https://chiikawa-info.jp/p25/ck_sanrio/index.html",
+      "at": "2026-10-12T19:01:17+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "at": "2026-10-12T19:21:00+09:00",
+      "code": "priority_html",
+      "summary": "個別HTML・画像リンクを再取得。参照画像URLは先に実読した画像と同じ。最新SNS全件・画像再実読は保証しない。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "at": "2026-10-12T19:21:00+09:00",
+      "code": "priority_html",
+      "summary": "個別HTML・画像リンクを再取得。参照画像URLは先に実読した画像と同じ。最新SNS全件・画像再実読は保証しない。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-18ba673ff0",
+      "url": "https://chiikawa-info.jp/p26/ck_baby2/index.html",
+      "at": "2026-10-12T19:01:23+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 2,
+      "id": "observed-chiikawa-info-jp-c1f1b175b2",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/index.html",
+      "at": "2026-10-12T19:01:31+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "at": "2026-10-12T19:01:31+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "at": "2026-10-12T19:01:31+09:00",
+      "code": "unread_page",
+      "summary": "本文・画像リンクのみ取得。画像本文実読不足は未解消。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "at": "2026-10-12T19:21:00+09:00",
+      "code": "priority_html",
+      "summary": "個別HTML・画像リンクを再取得。参照画像URLは先に実読した画像と同じ。最新SNS全件・画像再実読は保証しない。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "url": "https://chiikawa-info.jp/p26/pus_mito/index.html",
+      "at": "2026-10-12T19:01:38+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-2db8c290c8",
+      "url": "https://chiikawa-info.jp/p26/pus_tuda/index.html",
+      "at": "2026-10-12T19:01:38+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-64a1504949",
+      "url": "https://chiikawa-info.jp/p26/pus_aomr/index.html",
+      "at": "2026-10-12T19:01:39+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-f722193f40",
+      "url": "https://chiikawa-info.jp/p26/pus_asag/index.html",
+      "at": "2026-10-12T19:01:39+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-1a31b404e0",
+      "url": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+      "at": "2026-10-12T19:01:46+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-8226b16185",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/index.html",
+      "at": "2026-10-12T19:01:46+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-chiikawa-info-jp-916f92e32b",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/index.html",
+      "at": "2026-10-12T19:01:46+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 3,
+      "id": "observed-fujiidera-sc-aeonmall-jp-cb3a0e7abc",
+      "url": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+      "at": "2026-10-12T19:01:44+09:00",
+      "code": "http406",
+      "summary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。"
+    },
+    {
+      "part": 3,
+      "id": "observed-ota-aeonmall-jp-1553585041",
+      "url": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f",
+      "at": "2026-10-12T19:01:48+09:00",
+      "code": "http406",
+      "summary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。"
+    },
+    {
+      "part": 3,
+      "id": "observed-natori-aeonmall-jp-4e157b2b3f",
+      "url": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f",
+      "at": "2026-10-12T19:01:53+09:00",
+      "code": "http406",
+      "summary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。"
+    },
+    {
+      "part": 4,
+      "id": "observed-tokoname-aeonmall-jp-c4e3a8aa6e",
+      "url": "https://tokoname.aeonmall.jp/event/1174de63-719b-42ed-8d91-7b2785b637bf",
+      "at": "2026-10-12T19:01:54+09:00",
+      "code": "http406",
+      "summary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。"
+    },
+    {
+      "part": 4,
+      "id": "observed-www-granduo-jp-2bf7507178",
+      "url": "https://www.granduo.jp/tachikawa/events/events-26889/",
+      "at": "2026-10-12T19:01:54+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 4,
+      "id": "observed-cafe-parco-jp-8bf4370b23",
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "at": "2026-10-12T19:01:54+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 4,
+      "id": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "url": "https://chiikawa-info.jp/magical_s.html",
+      "at": "2026-10-12T19:02:01+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 4,
+      "id": "observed-chiikawa-info-jp-a442c90398",
+      "url": "https://chiikawa-info.jp/p25/ck_mlb/index.html",
+      "at": "2026-10-12T19:02:01+09:00",
+      "code": "html",
+      "summary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。"
+    },
+    {
+      "part": 4,
+      "id": "observed-chiikawa-info-jp-59c77d83bc",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/index.html",
+      "at": "2026-10-12T19:02:01+09:00",
+      "code": "html_images",
+      "summary": "公式HTMLと関連開催・入場画像を実読して補完。HTML取得と画像実読は別記録。新規会場・会期は確認せず、米子の閉場時刻は保留。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-7ca8a147e078",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/img/main_9.jpg",
+      "at": "2026-10-12T19:05:11+09:00",
+      "code": "sapporo_old_image",
+      "summary": "まじかる札幌の開催概要と初期整理券対象日を画素実読。古い10/2～5の画像で新しいLivePocket10/6～20を上書きしない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-62d8a5a45a8a",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/img/oshirase_btn2.jpg",
+      "at": "2026-10-12T19:03:48+09:00",
+      "code": "image_unread200",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-5315c848c326",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/img/item_shime.jpg",
+      "at": "2026-10-12T19:03:48+09:00",
+      "code": "image_unread200",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-5b92b963a972",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/img/livepocket261002.jpg?a2",
+      "at": "2026-10-12T19:05:11+09:00",
+      "code": "old_entry_images",
+      "summary": "画像を実読。ポケット掲載5会場は終了済み。Baby初日条件から追加変更なし。札幌初期画像を新しい券一覧より優先しない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-047be1f2f67c",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/img/main.jpg",
+      "at": "2026-10-12T19:03:56+09:00",
+      "code": "image_unread200",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-b7fd693bb936",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/img/ck_tenpo.jpg",
+      "at": "2026-10-12T19:05:11+09:00",
+      "code": "old_entry_images",
+      "summary": "画像を実読。ポケット掲載5会場は終了済み。Baby初日条件から追加変更なし。札幌初期画像を新しい券一覧より優先しない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-be6acc0dca22",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/img/tenpozaiko.jpg",
+      "at": "2026-10-12T19:05:11+09:00",
+      "code": "old_entry_images",
+      "summary": "画像を実読。ポケット掲載5会場は終了済み。Baby初日条件から追加変更なし。札幌初期画像を新しい券一覧より優先しない。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-c73988320445",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/img/item_shime_pkt.jpg",
+      "at": "2026-10-12T19:03:57+09:00",
+      "code": "image_unread200",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。"
+    },
+    {
+      "part": 4,
+      "id": "hours-image-chiikawa-baby-2026-10-02-aomori-elm",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/img/main.jpg?a2",
+      "at": "2026-10-12T19:05:11+09:00",
+      "code": "baby_hours",
+      "summary": "青森ELM Babyの10/2～19、営業時間10～19時・最終18時を実読。現行20時閉場を修正対象。発表日時不明。"
+    },
+    {
+      "part": 4,
+      "id": "series-observed-38d30a222e3a",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/img/moushikomi_260404.jpg",
+      "at": "2026-10-12T19:05:11+09:00",
+      "code": "old_entry_images",
+      "summary": "画像を実読。ポケット掲載5会場は終了済み。Baby初日条件から追加変更なし。札幌初期画像を新しい券一覧より優先しない。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-f7473c788d24",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/img/item_shime.jpg",
+      "at": "2026-10-12T19:04:04+09:00",
+      "code": "image_unread200",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-8a5ff02d06dc",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/img/oshirase_tenpo.jpg",
+      "at": "2026-10-12T19:04:05+09:00",
+      "code": "image_unread200",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。"
+    },
+    {
+      "part": 5,
+      "id": "toho-umeda-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "toho-nagoya-sakae-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "toho-ikebukuro-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "toho-hibiya-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "toho-shinjuku-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "toho-tenjin-solaria-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "toho-susukino-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "at": "2026-10-12T19:09:57+09:00",
+      "code": "toho",
+      "summary": "7劇場を各URLで個別確認。10/16 19時、10/17・18 16時。PC販売10/9 0時、窓口開館時、会員先行なし・3日同時販売。cp932本文再解読で掲載値と一致。残席未確認。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-1b373d2f31ca",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_261007.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-eba4986577ac",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_260209_02.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-89e47d6cadb5",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_260209_03.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-606fc28515a8",
+      "url": "https://chiikawa-info.jp/p26/pus_mito/img/main_v11.jpg?a2",
+      "at": "2026-10-12T19:05:58+09:00",
+      "code": "event_images",
+      "summary": "会期・会場・営業時間を画素実読。ELM・佐賀・新居浜・那覇の具体的訂正は今回指定15件に記録。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-5733ec538b7c",
+      "url": "https://chiikawa-info.jp/p26/pus_mito/img/moushikomi_260213.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-5b209f15905a",
+      "url": "https://chiikawa-info.jp/p26/pus_tuda/img/main_v10.jpg",
+      "at": "2026-10-12T19:05:58+09:00",
+      "code": "event_images",
+      "summary": "会期・会場・営業時間を画素実読。ELM・佐賀・新居浜・那覇の具体的訂正は今回指定15件に記録。"
+    },
+    {
+      "part": 5,
+      "id": "series-observed-c32f9e53e0bd",
+      "url": "https://chiikawa-info.jp/p26/pus_tuda/img/moushikomi_260213.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 5,
+      "id": "hours-image-popup-2026-10-02-aomori-elm",
+      "url": "https://chiikawa-info.jp/p26/pus_aomr/img/main_v10.jpg",
+      "at": "2026-10-12T19:05:58+09:00",
+      "code": "event_images",
+      "summary": "会期・会場・営業時間を画素実読。ELM・佐賀・新居浜・那覇の具体的訂正は今回指定15件に記録。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-17dc41ef2440",
+      "url": "https://chiikawa-info.jp/p26/pus_aomr/img/moushikomi_260213.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "hours-image-popup-2026-10-02-aeon-saga-yamato",
+      "url": "https://chiikawa-info.jp/p26/pus_asag/img/main_v10.jpg",
+      "at": "2026-10-12T19:05:58+09:00",
+      "code": "event_images",
+      "summary": "会期・会場・営業時間を画素実読。ELM・佐賀・新居浜・那覇の具体的訂正は今回指定15件に記録。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-8791fb196b6f",
+      "url": "https://chiikawa-info.jp/p26/pus_asag/img/moushikomi_260213.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "hours-image-popup-2026-09-26-aeon-niihama",
+      "url": "https://chiikawa-info.jp/p26/pus_anhm/img/main_v10.jpg",
+      "at": "2026-10-12T19:05:58+09:00",
+      "code": "event_images",
+      "summary": "会期・会場・営業時間を画素実読。ELM・佐賀・新居浜・那覇の具体的訂正は今回指定15件に記録。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-c7f9422165a4",
+      "url": "https://chiikawa-info.jp/p26/pus_anhm/img/moushikomi_260213.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-db594c9ad917",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-b816a44d2412",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/moushikomi_260924.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-b57343981374",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/moushikomi_260209_02.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-5a44e329b31e",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/moushikomi_260209_03.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "hours-image-popup-naha",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/img/main_v11.jpg",
+      "at": "2026-10-12T19:05:58+09:00",
+      "code": "event_images",
+      "summary": "会期・会場・営業時間を画素実読。ELM・佐賀・新居浜・那覇の具体的訂正は今回指定15件に記録。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-8d1a671c91b5",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/img/moushikomi_260924.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-19ee0abac3e1",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/img/moushikomi_260209_02.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-b855afa10b6d",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/img/moushikomi_260209_03.jpg",
+      "at": "2026-10-12T19:08:25+09:00",
+      "code": "entry_images",
+      "summary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-30cdd2aa304a",
+      "url": "https://livepocket.jp/e/8s-n5",
+      "at": "2026-10-12T19:04:31+09:00",
+      "code": "livepocket_items",
+      "summary": "10/13と10/20の券本文確認。無料先着・前日18時・1日1回・QRと身分証・15分グループ。10/21以降は未確認。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-778c9be5bb5d",
+      "url": "https://livepocket.jp/e/piq9x",
+      "at": "2026-10-12T19:04:31+09:00",
+      "code": "livepocket_items",
+      "summary": "10/13と10/20の券本文確認。無料先着・前日18時・1日1回・QRと身分証・15分グループ。10/21以降は未確認。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-36efc30af4c9",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/img/main_v10.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-ff7b305de26f",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/img/moushikomi_260929.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 6,
+      "id": "series-observed-7f73032488c1",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/img/osrs.jpg",
+      "at": "2026-10-12T19:02:24+09:00",
+      "code": "image_unread",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。HTTP結果は不明。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-a3aeebd7523d",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/img/main_v10.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-aa168cf8876f",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/img/moushikomi_260929.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-40695a88fb9b",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/img/osrs.jpg",
+      "at": "2026-10-12T19:02:23+09:00",
+      "code": "image_unread",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。HTTP結果は不明。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-c57a222599f5",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/main.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-370ff0fde700",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/moushikomi_261008.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "chiikawa-sushi-yokohama-main-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/main.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "chiikawa-sushi-yokohama-entry-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-76edd15726fa",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/main_v10.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-3e66b0e48de6",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/moushikomi_261002.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-bb270feb118e",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/osrs.jpg",
+      "at": "2026-10-12T19:02:39+09:00",
+      "code": "image_unread",
+      "summary": "画像ファイル取得のみ。画素実読未完了で画像内更新有無を判定しない。HTTP結果は不明。"
+    },
+    {
+      "part": 7,
+      "id": "series-observed-b4d46e42bd55",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/main_v10.jpg",
+      "at": "2026-10-12T19:13:26+09:00",
+      "code": "read_images",
+      "summary": "会場・会期・営業時間または対象入場日を実読して既存掲載と照合。米子の最終日閉場だけ施設案内と不一致。"
+    },
+    {
+      "part": 7,
+      "id": "venue-yonago-tenmaya-event-calendar",
+      "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+      "at": "2026-10-12T19:09:05+09:00",
+      "code": "yonago",
+      "summary": "9/18～10/12、1階しんまち広場は画像と一致。施設の最終17時閉場と公式画像の16時閉場が矛盾。会期は変更せず時刻を保留。"
+    },
+    {
+      "part": 7,
+      "id": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "at": "2026-10-12T18:58:40+09:00",
+      "code": "mogumogu_news",
+      "summary": "店舗本文・最新NEWS確認。通常9:30～17:30、予約は10/2既存告知。川越に10/17～18時間変更見出し。朝以降の新規会場告知なし。"
+    },
+    {
+      "part": 7,
+      "id": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "at": "2026-10-12T18:58:40+09:00",
+      "code": "mogumogu_news",
+      "summary": "店舗本文・最新NEWS確認。通常9:30～17:30、予約は10/2既存告知。川越に10/17～18時間変更見出し。朝以降の新規会場告知なし。"
+    },
+    {
+      "part": 7,
+      "id": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "at": "2026-10-12T18:58:40+09:00",
+      "code": "mogumogu_news",
+      "summary": "店舗本文・最新NEWS確認。通常9:30～17:30、予約は10/2既存告知。川越に10/17～18時間変更見出し。朝以降の新規会場告知なし。"
+    },
+    {
+      "part": 7,
+      "id": "mogumogu-fushimi-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "mogumogu_fushimi",
+      "summary": "朝未取得だった伏見予約本文をHTTP200で確認。10/10～12終日予約、各前日20時LINE先着、30km制限・本人端末・1人1日1回。本文店名も伏見で既存一致。"
+    },
+    {
+      "part": 8,
+      "id": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "mogumogu_kawagoe",
+      "summary": "川越10/10～12・17～18終日予約、前日20時LINE先着・30km制限・本人端末を再確認。既存一致。"
+    },
+    {
+      "part": 8,
+      "id": "mogumogu-otaru-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "mogumogu_otaru",
+      "summary": "小樽10/10～12終日予約、前日20時LINE先着・30km制限・本人端末。ベビーカステラは自由入場予定・混雑時制限で既存一致。"
+    },
+    {
+      "part": 8,
+      "id": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "at": "2026-10-12T19:06:11+09:00",
+      "code": "kawagoe_blocked",
+      "summary": "個別本文はweb取得不可・HTTP403。店舗見出しのみ。既存10/17～18 9:30～19:00を本日再検証済みとせず維持。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "bakery_reservation",
+      "summary": "東京・大阪9/10月優先券完売。東京15時以降は当面14:50発行デジタル整理券、大阪は当面優先券所持者のみ、POPUP一般自由入場。予約画像2点は取得失敗で全画像確認ではない。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "bakery_news",
+      "summary": "一覧の最新は9/28ちいぽけカード。取得範囲に朝以降の入場・時間変更なし。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-bakery-topics",
+      "url": "https://chiikawabakery.jp/topics/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "bakery_topics",
+      "summary": "9/28PHOTOBOOTH・2周年、9/18沖縄POPUPが最新。取得範囲に朝以降の新会場・日程変更なし。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "park_home",
+      "summary": "10/12販売終了商品リスト追加。10～19時・最終17:40は既存一致。対象日を抽出できない当日券完売は固定JSONに記載しない。"
+    },
+    {
+      "part": 8,
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "park_news",
+      "summary": "10/12販売終了商品、次は10/7くものす休止。取得範囲に再開・新入場条件の告知なし。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "at": "2026-10-12T18:59:41+09:00",
+      "code": "park_ticket",
+      "summary": "毎月15日12時に2か月先1日～末日を先着、土日祝なら直前平日の一般ルール。朝公開値と一致。"
+    },
+    {
+      "part": 8,
+      "id": "evening-chiikawapark-tokyo-jp-news-62d-8modez",
+      "url": "https://chiikawapark-tokyo.jp/news/62d_8modez/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "park_stock",
+      "summary": "10/12 17時時点の商品販売終了一覧。恒常入場変更・新会場ではなく商品欠品は地図に追記しない。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-park-kumonosu-notice-20261007",
+      "url": "https://chiikawapark-tokyo.jp/news/jk6l8r1pd/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "park_kumonosu",
+      "summary": "10/7機器不具合による休止本文再確認。再開日時はなく既存注意維持。"
+    },
+    {
+      "part": 8,
+      "id": "chiikawa-bakery-2nd-anniversary",
+      "url": "https://chiikawabakery.jp/topics/20260928/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "bakery_anniversary",
+      "summary": "2周年10/15開始、10/29ランチボックス、東京・ラフォーレ・大阪・大阪POPUP対象。既掲載で新発表に数えない。"
+    },
+    {
+      "part": 8,
+      "id": "evening-chiikawabakery-jp-topics-20260918",
+      "url": "https://chiikawabakery.jp/topics/20260918/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "bakery_okinawa",
+      "summary": "リウボウ6階10/1～12、最終17時閉場。終了日当日なので現行、10/13以降同一IDでarchive候補。"
+    },
+    {
+      "part": 8,
+      "id": "evening-chiikawabakery-jp-20260609-news",
+      "url": "https://chiikawabakery.jp/20260609_news/",
+      "at": "2026-10-12T18:59:55+09:00",
+      "code": "bakery_old_news",
+      "summary": "6/9のJapanticket切替と7月対象の過去日程。11月の新販売告知と混同しない。"
+    },
+    {
+      "part": 8,
+      "id": "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-tokyo-jpg",
+      "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_tokyo.jpg",
+      "at": "2026-10-12T19:00:30+09:00",
+      "code": "bakery_image_blocked",
+      "summary": "予約ページの現行画像URLは発見。画像bytesはHTTP403、webも画像本文を返さず日程未確認。"
+    },
+    {
+      "part": 8,
+      "id": "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-osaka-jpg",
+      "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_osaka.jpg",
+      "at": "2026-10-12T19:00:30+09:00",
+      "code": "bakery_image_blocked",
+      "summary": "予約ページの現行画像URLは発見。画像bytesはHTTP403、webも画像本文を返さず日程未確認。"
+    },
+    {
+      "part": 8,
+      "id": "evening-e-japanticket-com-shops-chiikawabakery-products-14064",
+      "url": "https://e.japanticket.com/shops/chiikawabakery/products/14064/",
+      "at": "2026-10-12T19:06:11+09:00",
+      "code": "bakery_ticket_blocked",
+      "summary": "公式予約ページのリンク先は403。11/12月の選択日・販売状況未確認。"
+    },
+    {
+      "part": 9,
+      "id": "evening-e-japanticket-com-shops-chiikawabakery-osaka-products-13995",
+      "url": "https://e.japanticket.com/shops/chiikawabakery_OSAKA/products/13995/",
+      "at": "2026-10-12T19:06:11+09:00",
+      "code": "bakery_ticket_blocked",
+      "summary": "公式予約ページのリンク先は403。11/12月の選択日・販売状況未確認。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-bakery-information",
+      "url": "https://chiikawabakery.jp/information/",
+      "at": "2026-10-12T19:02:52+09:00",
+      "code": "bakery_info",
+      "summary": "店舗本文で11～20時・最終19:30確認。恒常入場・取扱区分の変更なし。当日X条件は別記録。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-bakery-information-osaka",
+      "url": "https://chiikawabakery.jp/information-osaka/",
+      "at": "2026-10-12T19:02:52+09:00",
+      "code": "bakery_info",
+      "summary": "店舗本文で11～20時・最終19:30確認。恒常入場・取扱区分の変更なし。当日X条件は別記録。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-bakery-information-popup-01",
+      "url": "https://chiikawabakery.jp/information-popup_01/",
+      "at": "2026-10-12T19:02:52+09:00",
+      "code": "bakery_info",
+      "summary": "店舗本文で11～20時・最終19:30確認。恒常入場・取扱区分の変更なし。当日X条件は別記録。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "at": "2026-10-12T19:00:51+09:00",
+      "code": "restaurant_tokyo",
+      "summary": "池袋9/26～11/20、ローチケ先着・各2日前まで・満席は当日席なしを本文確認。朝掲載一致。今回画像の新規実見なし。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "at": "2026-10-12T19:00:51+09:00",
+      "code": "restaurant_okinawa",
+      "summary": "沖縄10/17～12/11、ローチケ先着・各2日前まで・満席は当日席なしを本文確認。朝掲載一致。今回画像の新規実見なし。"
+    },
+    {
+      "part": 9,
+      "id": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "at": "2026-10-12T19:01:36+09:00",
+      "code": "ramen_reservation",
+      "summary": "HTTP全文で11/1～30分は10/16 12時先着、各2日前まで・最大2枚・QRと本人確認を再確認。web抽出の下部欠落をHTTP原本で補完。"
+    },
+    {
+      "part": 9,
+      "id": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "at": "2026-10-12T19:01:36+09:00",
+      "code": "ramen_reservation",
+      "summary": "HTTP全文で11/1～30分は10/16 12時先着、各2日前まで・最大2枚・QRと本人確認を再確認。web抽出の下部欠落をHTTP原本で補完。"
+    },
+    {
+      "part": 9,
+      "id": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "at": "2026-10-12T19:01:36+09:00",
+      "code": "ramen_reservation",
+      "summary": "HTTP全文で11/1～30分は10/16 12時先着、各2日前まで・最大2枚・QRと本人確認を再確認。web抽出の下部欠落をHTTP原本で補完。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-restaurant-tokyo-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_tokyo?area=029439",
+      "at": "2026-10-12T19:01:36+09:00",
+      "code": "restaurant_info",
+      "summary": "営業時間を本文確認しJSONと一致。画像NEWSの一部未実読で全企画確認扱いにしない。"
+    },
+    {
+      "part": 9,
+      "id": "chiikawa-restaurant-okinawa-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_okinawa?area=030528",
+      "at": "2026-10-12T19:01:36+09:00",
+      "code": "restaurant_info",
+      "summary": "営業時間を本文確認しJSONと一致。画像NEWSの一部未実読で全企画確認扱いにしない。"
+    },
+    {
+      "part": 9,
+      "id": "evening-www-asoview-com-channel-tickets-9u0kjjjngr",
+      "url": "https://www.asoview.com/channel/tickets/9u0KJJjNgr/",
+      "at": "2026-10-12T19:01:36+09:00",
+      "code": "asoview_shell",
+      "summary": "HTTP200のJavaScriptシェルのみ。販売カレンダー・12月個別告知・当日在庫未取得。"
+    },
+    {
+      "part": 9,
+      "id": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "at": "2026-10-12T19:03:54+09:00",
+      "code": "park_x",
+      "summary": "10/12の10/16エコバッグ2種、販売終了・欠品案内。ハロウィーン9/25～10/31。取得範囲に再開・12月券個別告知なし。"
+    },
+    {
+      "part": 9,
+      "id": "evening-www-chiikawamogumogu-jp",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "at": "2026-10-12T19:03:56+09:00",
+      "code": "mogumogu_x",
+      "summary": "取得範囲は10/2予約・時間と10/11欠品・再入荷。朝以降の新規入場条件なし。全投稿網羅ではない。"
+    },
+    {
+      "part": 9,
+      "id": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-ikebukuro-area-029688",
+      "url": "https://cafe.parco.jp/event/information/chiikawaramenbuta_ikebukuro?area=029688",
+      "at": "2026-10-12T19:03:55+09:00",
+      "code": "ramen_info",
+      "summary": "所在地・営業時間・既存ピンクげんまい等を確認。新しい閉店・時間変更なし。"
+    },
+    {
+      "part": 9,
+      "id": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-shibuya-area-029979",
+      "url": "https://cafe.parco.jp/event/information/chiikawaramenbuta_shibuya?area=029979",
+      "at": "2026-10-12T19:03:54+09:00",
+      "code": "ramen_info",
+      "summary": "所在地・営業時間・既存ピンクげんまい等を確認。新しい閉店・時間変更なし。"
+    },
+    {
+      "part": 9,
+      "id": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-shinsaibashi-area-029689",
+      "url": "https://cafe.parco.jp/event/information/chiikawaramenbuta_shinsaibashi?area=029689",
+      "at": "2026-10-12T19:03:54+09:00",
+      "code": "ramen_info",
+      "summary": "所在地・営業時間・既存ピンクげんまい等を確認。新しい閉店・時間変更なし。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "at": "2026-10-12T19:06:20+09:00",
+      "code": "mogumogu_x",
+      "summary": "取得範囲は10/2予約・時間と10/11欠品・再入荷。朝以降の新規入場条件なし。全投稿網羅ではない。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawaramensp",
+      "url": "https://x.com/chiikawaramenSP",
+      "at": "2026-10-12T19:06:20+09:00",
+      "code": "ramen_sp_x",
+      "summary": "10/9の11月予約10/16 12時、10/7黒烏龍茶欠品と押印先変更。入場条件は朝掲載と同じ。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawaramensb",
+      "url": "https://x.com/chiikawaramenSB",
+      "at": "2026-10-12T19:06:21+09:00",
+      "code": "ramen_sb_x",
+      "summary": "10/9の11月予約のほか、10/5告知の10/12まで満席・当日券なしを確認。当日補完候補。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawaramensh",
+      "url": "https://x.com/chiikawaramenSH",
+      "at": "2026-10-12T19:06:20+09:00",
+      "code": "ramen_sh_x",
+      "summary": "10/12予約満席・予約客のみ。10/11限定告知は繰り越さない。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "at": "2026-10-12T19:02:28+09:00",
+      "code": "bakery_x",
+      "summary": "固定2周年と最新4投稿（10/12在庫・東京整理券・原宿整理券）。全投稿網羅ではなく当日条件を個別一次照合。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawabakeryc",
+      "url": "https://x.com/chiikawabakeryC",
+      "at": "2026-10-12T19:02:27+09:00",
+      "code": "bakery_c_x",
+      "summary": "沖縄10/12朝整理券から12:30自由入場へ。17時閉場後なので当日注意の新掲示を見送る。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawayaki",
+      "url": "https://x.com/chiikawayaki",
+      "at": "2026-10-12T19:02:28+09:00",
+      "code": "yaki_x",
+      "summary": "10/5名古屋土日祝予約固定と10/8～9の表示範囲。追加入場変更なし。全履歴網羅ではない。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-chiikawarestoki",
+      "url": "https://x.com/chiikawarestOKI",
+      "at": "2026-10-12T19:02:29+09:00",
+      "code": "restaurant_oki_x",
+      "summary": "10/12朝に一部当日券あり。最新残席保証ではなく固定JSONに残席を記載しない。10/9デザートは既存企画の追加商品。"
+    },
+    {
+      "part": 10,
+      "id": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "at": "2026-10-12T19:02:29+09:00",
+      "code": "restaurant_ikb_x",
+      "summary": "10/11告知の10/12カフェ満席・当日券なし、ショップ自由入場。個別本文で当日限定候補。"
+    },
+    {
+      "part": 10,
+      "id": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "at": "2026-10-12T18:59:18+09:00",
+      "code": "yaki",
+      "summary": "名古屋平日自由、土日祝前日10時先着・10/10～12リンク。幕張・横浜自由。10/12～18週替りはメニュー差替えで新会場なし。"
+    },
+    {
+      "part": 10,
+      "id": "bakery-laforet-entry-20261012-official",
+      "url": "https://x.com/chiikawabakery/status/2109433874279215365",
+      "at": "2026-10-12T19:03:54+09:00",
+      "code": "bakery_day",
+      "summary": "10/12整理券入場、開店前10時ラフォーレ入口・開店後店頭発行。翌日延長しない。"
+    },
+    {
+      "part": 10,
+      "id": "restaurant-ikebukuro-entry-20261012-official",
+      "url": "https://x.com/THEGUEST_ikb/status/2109263799345704997",
+      "at": "2026-10-12T19:03:56+09:00",
+      "code": "restaurant_day",
+      "summary": "10/12カフェ満席・当日券なし・整理券所持者のみ。グッズ自由、混雑時待機列。翌日条件は公式参照。"
+    },
+    {
+      "part": 10,
+      "id": "ramen-buta-shibuya-entry-20261012-official",
+      "url": "https://x.com/chiikawaramenSB/status/2107042968708534521",
+      "at": "2026-10-12T19:06:54+09:00",
+      "code": "ramen_day",
+      "summary": "10/12予約満席・当日券なし・予約済みのみ。翌日へ延長しない。"
+    },
+    {
+      "part": 10,
+      "id": "ramen-buta-shinsaibashi-entry-20261012-official",
+      "url": "https://x.com/chiikawaramenSH/status/2109452455541104807",
+      "at": "2026-10-12T19:06:50+09:00",
+      "code": "ramen_day",
+      "summary": "10/12予約満席・当日券なし・予約済みのみ。翌日へ延長しない。"
+    },
+    {
+      "part": 10,
+      "id": "individual-chiikawaland-osaka-umeda",
+      "url": "https://chiikawa-info.jp/chiikawaland/osaka/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 10,
+      "id": "individual-chiikawaland-harajuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/harajuku/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 10,
+      "id": "individual-chiikawaland-fukuoka",
+      "url": "https://chiikawa-info.jp/chiikawaland/fukuoka/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-kyoto",
+      "url": "https://chiikawa-info.jp/chiikawaland/kyoto/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-tokyo-station",
+      "url": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-solamachi",
+      "url": "https://chiikawa-info.jp/chiikawaland/solamachi/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-nagoya",
+      "url": "https://chiikawa-info.jp/chiikawaland/nagoya/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-sendai",
+      "url": "https://chiikawa-info.jp/chiikawaland/sendai/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-sapporo",
+      "url": "https://chiikawa-info.jp/chiikawaland/sapporo/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-yokohama",
+      "url": "https://chiikawa-info.jp/chiikawaland/yokohama/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-hiroshima",
+      "url": "https://chiikawa-info.jp/chiikawaland/hiroshima/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-shinsaibashi",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinsaibashi/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-shinjuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinjuku/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-kanazawa",
+      "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-ikebukuro",
+      "url": "https://chiikawa-info.jp/chiikawaland/ikebukuro/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 11,
+      "id": "individual-chiikawaland-koshigaya",
+      "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 12,
+      "id": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "land_unread",
+      "summary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。"
+    },
+    {
+      "part": 12,
+      "id": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "at": "2026-10-12T10:02:15.178Z",
+      "code": "nagano_store",
+      "summary": "店舗本文・一般入店案内と営業時間は既存一致。日別予約は公式X参照。10/16・23商品発売を新予約日程と判断しない。"
+    },
+    {
+      "part": 12,
+      "id": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "at": "2026-10-12T10:02:15.197Z",
+      "code": "nagano_store",
+      "summary": "店舗本文・一般入店案内と営業時間は既存一致。日別予約は公式X参照。10/16・23商品発売を新予約日程と判断しない。"
+    },
+    {
+      "part": 12,
+      "id": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "at": "2026-10-12T10:02:15.109Z",
+      "code": "nagano_store",
+      "summary": "店舗本文・一般入店案内と営業時間は既存一致。日別予約は公式X参照。10/16・23商品発売を新予約日程と判断しない。"
+    },
+    {
+      "part": 12,
+      "id": "nagano-market-entry-general",
+      "url": "https://nagano-info.jp/tenpo_nm/goannai.html",
+      "at": "2026-10-12T18:59:52+09:00",
+      "code": "nagano_general",
+      "summary": "混雑時オンライン整理券の場合あり、対象日は公式Xの一般案内。10/12や次回日程は本文にない。"
+    },
+    {
+      "part": 12,
+      "id": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "at": "2026-10-12T19:00:50+09:00",
+      "code": "nagano_x",
+      "summary": "表示最新5投稿は10/11～9、再入荷・既掲載POPUP。3常設店の本日変更は取得範囲にない。全投稿網羅・自由入場保証ではない。"
+    },
+    {
+      "part": 12,
+      "id": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "at": "2026-10-12T19:01:20+09:00",
+      "code": "land_x",
+      "summary": "最新表示範囲で仙台当日告知発見。補助ミラーで候補発見後、追加3店は公式個別URLで一次再確認。全店全投稿網羅ではない。"
+    },
+    {
+      "part": 12,
+      "id": "chiikawaland-store-list",
+      "url": "https://chiikawa-info.jp/ck_land.html",
+      "at": "2026-10-12T19:03:06+09:00",
+      "code": "land_list",
+      "summary": "16常設店と大分POPUP照合、新会場なし。大分9/11～10/12は本日現行維持。"
+    },
+    {
+      "part": 12,
+      "id": "social-chiikawaland-sendai-tickets-ended-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109566403972120885",
+      "at": "2026-10-12T19:02:13+09:00",
+      "code": "sendai_day",
+      "summary": "10/12整理券終了、18:40頃フリー入場予定・混雑時再制限。実施確認ではない。公式本文details.created_at_msはクラウド証拠で確認。"
+    },
+    {
+      "part": 12,
+      "id": "social-chiikawaland-koshigaya-tickets-ended-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109584471783862409",
+      "at": "2026-10-12T10:04:37.954Z",
+      "code": "land_day",
+      "summary": "10/12整理券配布終了、本日フリー入場案内なし。翌日へ持ち越さない。"
+    },
+    {
+      "part": 12,
+      "id": "social-chiikawaland-shinsaibashi-tickets-ended-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109559278566850980",
+      "at": "2026-10-12T10:04:37.783Z",
+      "code": "land_day",
+      "summary": "10/12整理券配布終了、本日フリー入場案内なし。翌日へ持ち越さない。"
+    },
+    {
+      "part": 12,
+      "id": "social-chiikawaland-solamachi-tickets-ended-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109536324046954652",
+      "at": "2026-10-12T10:04:37.813Z",
+      "code": "land_day",
+      "summary": "10/12整理券配布終了、本日フリー入場案内なし。翌日へ持ち越さない。"
+    },
+    {
+      "part": 12,
+      "id": "venue-sapporo-parco-hours",
+      "url": "https://sapporo.parco.jp/info/",
+      "at": "2026-10-12T19:03:06+09:00",
+      "code": "sapporo_hours",
+      "summary": "物販10～20時。らんど・ナガノ札幌の既存値一致。"
+    },
+    {
+      "part": 12,
+      "id": "venue-shinsaibashi-parco-hours",
+      "url": "https://shinsaibashi.parco.jp/info/",
+      "at": "2026-10-12T19:03:06+09:00",
+      "code": "shinsaibashi_hours",
+      "summary": "物販・サービス10～20時。らんど・ナガノ心斎橋の既存値一致。"
+    },
+    {
+      "part": 12,
+      "id": "venue-marronnier-access",
+      "url": "https://www.marronniergate.com/access",
+      "at": "2026-10-12T19:03:06+09:00",
+      "code": "marronnier",
+      "summary": "住所・アクセス本文取得。営業時間はこのページ未確認で個別公式11～21時を保持。"
+    },
+    {
+      "part": 12,
+      "id": "venue-amu-oita-chiikawaland",
+      "url": "https://www.jroitacity.jp/newsevent/detail/?cd=000404",
+      "at": "2026-10-12T19:03:06+09:00",
+      "code": "oita_venue",
+      "summary": "9/11～10/12、2Fニコアンド横、施設時間に準ずる。掲載9/3。案内画像2点取得・目視確認。"
+    },
+    {
+      "part": 12,
+      "id": "nagano-market-entry-id-image",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/img/osrs_250417.jpg",
+      "at": "2026-10-12T19:02:21+09:00",
+      "code": "nagano_id_image",
+      "summary": "予約氏名・本人確認の一般案内画像を目視確認。対象日追加なし。"
+    },
+    {
+      "part": 13,
+      "id": "chiikawaland-sendai-main-image",
+      "url": "https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2=",
+      "at": "2026-10-12T19:02:08+09:00",
+      "code": "image403",
+      "summary": "HTTP403で画像実体取得不能。実読済みとしない。"
+    },
+    {
+      "part": 13,
+      "id": "facility-sapporo-instagram",
+      "url": "https://www.instagram.com/parco_sapporo_official/",
+      "at": "2026-10-12T19:05:49+09:00",
+      "code": "ig_failure",
+      "summary": "施設リンクのInstagram本文取得失敗。新着なし扱いにしない。"
+    },
+    {
+      "part": 13,
+      "id": "facility-shinsaibashi-instagram",
+      "url": "https://www.instagram.com/parco_shinsaibashi_official/",
+      "at": "2026-10-12T19:06:11+09:00",
+      "code": "ig_failure",
+      "summary": "施設リンクのInstagram本文取得失敗。新着なし扱いにしない。"
+    },
+    {
+      "part": 13,
+      "id": "facility-marronnier-instagram-embedded",
+      "url": "https://www.instagram.com/reel/DW8gZJmj_II/?utm_campaign=loading&utm_source=ig_embed",
+      "at": "2026-10-12T19:06:11+09:00",
+      "code": "ig_failure",
+      "summary": "施設リンクのInstagram本文取得失敗。新着なし扱いにしない。"
+    },
+    {
+      "part": 13,
+      "id": "social-land-oita-tickets-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109433873298055344",
+      "at": "2026-10-12T10:07:41.063Z",
+      "code": "oita_day",
+      "summary": "公式本文・画像で10/12は1人1枚整理券、10時以降2F店頭配布。夕方残券・配布終了・自由入場は未確認。本日現行。"
+    },
+    {
+      "part": 13,
+      "id": "social-land-umeda-entry-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109256006031315235",
+      "at": "2026-10-12T10:07:41.210Z",
+      "code": "land_morning",
+      "summary": "10/12開店前整列位置・混雑時整理券の本文と画像。夕方は朝の対象時間経過。"
+    },
+    {
+      "part": 13,
+      "id": "social-land-kanazawa-entry-20261012",
+      "url": "https://x.com/chiikawa_land/status/2109242216942358667",
+      "at": "2026-10-12T10:07:40.551Z",
+      "code": "land_morning",
+      "summary": "10/12開店前整列位置・混雑時整理券の本文と画像。夕方は朝の対象時間経過。"
+    },
+    {
+      "part": 13,
+      "id": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "at": "2026-10-12T18:59:54+09:00",
+      "code": "banana",
+      "summary": "池袋9/17～10/14、10～21時・最終18時、盛岡9/18～30は一致。ソラマチは別主催発表で確認し一覧不掲載を終了根拠にしない。"
+    },
+    {
+      "part": 13,
+      "id": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "at": "2026-10-12T18:59:51+09:00",
+      "code": "tamanohikari_release",
+      "summary": "10/5 10時原発表・予約10/5・発売11/10一致。原発表だけでは配送条件が不足し10/7の公式商品ページ案内を別取得。"
+    },
+    {
+      "part": 13,
+      "id": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "at": "2026-10-12T18:59:52+09:00",
+      "code": "ana",
+      "summary": "10/19初便 羽田→長崎ANA661 8:15・長崎→羽田ANA664 11時予定。以降非固定・当日まで未確定で一致。グッズComing Soon。"
+    },
+    {
+      "part": 13,
+      "id": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "at": "2026-10-12T18:59:52+09:00",
+      "code": "ana_campaign",
+      "summary": "第1弾10/19 10時～12/31 23:59、第2弾2027/2/1～4/30、アプリ・AMC・登録・搭乗条件・国内配送一致。"
+    },
+    {
+      "part": 13,
+      "id": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "at": "2026-10-12T19:00:00+09:00",
+      "code": "jr",
+      "summary": "7/8～10/31、東京駅・梅田HEP FIVEのノベルティ/引換証終了、欠品時後日配送は一致。第1弾7/8～8/31、第2弾9/1～10/31を日付画像実見。実会場2件は別検証中。"
+    },
+    {
+      "part": 13,
+      "id": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "at": "2026-10-12T18:59:53+09:00",
+      "code": "skytree",
+      "summary": "10/8・14・21・22 19:30映像なし、券上限・予告なし再開可能性、9/24以降物販自由・最終20:45一致。"
+    },
+    {
+      "part": 13,
+      "id": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "at": "2026-10-12T18:59:54+09:00",
+      "code": "christmas",
+      "summary": "11/24～12/25、11～21時・最終枠18:30～19時、抽選10/15 12時～25日23:59・当落10/30 12時以降一致。受付72時間以内。一般発売日新記載なし。"
+    },
+    {
+      "part": 13,
+      "id": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "at": "2026-10-12T18:59:54+09:00",
+      "code": "christmas_release",
+      "summary": "主催10/8発表、豊砂公園11/24～12/25。既掲載で重複追加不要。"
+    },
+    {
+      "part": 13,
+      "id": "chiikawa-christmas-market-asoview",
+      "url": "https://www.asoview.com/base/165182/",
+      "at": "2026-10-12T18:59:57+09:00",
+      "code": "christmas_asoview",
+      "summary": "住所・11～21時・最終枠18:30～19時一致。販売実行や空枠未確認。"
+    },
+    {
+      "part": 13,
+      "id": "seven-eleven-christmas-campaign-2026",
+      "url": "https://www.sej.co.jp/cmp/cck2609/",
+      "at": "2026-10-12T18:59:58+09:00",
+      "code": "seven_campaign",
+      "summary": "店頭応募12/19～2027/1/15、登録12/28まで。7NOW応募1/6～15、番号登録12/28、ポイント1/6付与・デリバリー対象外一致。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "at": "2026-10-12T19:08:57+09:00",
+      "code": "sunflower",
+      "summary": "8/6～10/31出港・4隻・深夜便対象外を画像実見。問合せ不可・予約後日配送なし・購入制限・予約開始を画像/altで確認。矛盾する変更なし。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "at": "2026-10-12T18:59:58+09:00",
+      "code": "glasses",
+      "summary": "実店舗完売・再入荷時期未定、オンライン過剰受注の案内は一致。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "at": "2026-10-12T19:00:00+09:00",
+      "code": "gu",
+      "summary": "11/20・27オンライン7:15・店舗開店、1柄1色2点。全店舗/オンライン、初日ORDER & PICK停止のFAQ本文と主要条件一致。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "at": "2026-10-12T19:00:02+09:00",
+      "code": "kadokawa",
+      "summary": "対象購入7/13～9/30・購入後1週間以内投稿を再確認。賞品期限はアプリ要項。現在形が残り過去形修正対象。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "at": "2026-10-12T19:00:02+09:00",
+      "code": "yomeruba",
+      "summary": "対象購入9/30 23:59まで・投稿は購入後1週間以内。賞品期限は別で具体日不明、過去形の裏付け。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "at": "2026-10-12T19:00:10+09:00",
+      "code": "release846",
+      "summary": "9月上旬順次ボトル24種全国発売、出荷前後・なくなり次第。原告知と一致、在庫未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "at": "2026-10-12T19:00:10+09:00",
+      "code": "citen",
+      "summary": "9/15順次発売、CITEN全店舗・EC・らんど・Talkingで一致。台湾は国内掲載外、在庫未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "at": "2026-10-12T19:00:04+09:00",
+      "code": "merryjenny",
+      "summary": "7/15正午WEB先行・7/22店舗原発表一致。現在庫・全SNS未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "at": "2026-10-12T19:00:03+09:00",
+      "code": "panasonic",
+      "summary": "7/10発売、マーケット・らんど・映画POPUP・劇場など原発表一致。現在庫未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "at": "2026-10-12T19:00:07+09:00",
+      "code": "donki",
+      "summary": "6/6 10時からなくなり次第、初日ランダム整理券の原発表一致。現在庫未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "at": "2026-10-12T19:00:05+09:00",
+      "code": "epos",
+      "summary": "申込継続・2026/2/16開始利用額特典本文確認。取得範囲に新会場なし。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "at": "2026-10-12T19:00:10+09:00",
+      "code": "release322",
+      "summary": "オキシクリーン1500g、10/2数量限定発売の原発表一致。在庫未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "at": "2026-10-12T19:00:11+09:00",
+      "code": "metro",
+      "summary": "原発表7/3・開催7/24～11/3一致。PDFでキット2週間プレイ期間。特設は空本文/403で最新在庫・申込未確認。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "at": "2026-10-12T19:00:12+09:00",
+      "code": "seven_products",
+      "summary": "クリスマスケーキ2種の予約継続。商品締切は個別本文照合。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "at": "2026-10-12T19:00:11+09:00",
+      "code": "seven_signature",
+      "summary": "12/19～23受取は店頭12/16・7NOW12/17 10:29、12/24～25は店頭12/19・7NOW12/20 10:29。現行期限一致。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "at": "2026-10-12T19:00:11+09:00",
+      "code": "seven_character",
+      "summary": "2種とも受取・締切はsignature一致、数量限定。"
+    },
+    {
+      "part": 14,
+      "id": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "at": "2026-10-12T19:00:10+09:00",
+      "code": "banana_solamachi",
+      "summary": "グレープストーン主催、10/1～14、イースト1F10番地空の小町10～22時一致。"
+    },
+    {
+      "part": 15,
+      "id": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "at": "2026-10-12T19:00:18+09:00",
+      "code": "aeon403",
+      "summary": "個別web失敗・HTTP403、無料配布期限再確認不能。前回成功を保持。"
+    },
+    {
+      "part": 15,
+      "id": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "at": "2026-10-12T19:00:18+09:00",
+      "code": "aeon_index403",
+      "summary": "HTTP403。2日前クロールの9/24告知を当日成功に置き換えず、個別期限未確認。"
+    },
+    {
+      "part": 15,
+      "id": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "at": "2026-10-12T19:00:16+09:00",
+      "code": "glasses_orders",
+      "summary": "10/1過剰受注告知。確保不能分キャンセル返金、ユーザー特別操作不要。現行一致。"
+    },
+    {
+      "part": 15,
+      "id": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "at": "2026-10-12T19:00:15+09:00",
+      "code": "uniqlo",
+      "summary": "web失敗後HTTP200で本文。UT7/17・スウェット7/24、再入荷未定一致。在庫未確認。"
+    },
+    {
+      "part": 15,
+      "id": "metro-event-details",
+      "url": "https://escape.id/chiikawa/",
+      "at": "2026-10-12T19:03:19+09:00",
+      "code": "metro403",
+      "summary": "web iframeのみ・HTTP403。最新在庫・申込再確認不可。"
+    },
+    {
+      "part": 15,
+      "id": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "at": "2026-10-12T19:03:18+09:00",
+      "code": "tamanohikari_delivery",
+      "summary": "10/7 14時の公式案内：新規注文は2027年中予定・具体時期未定、配送日/発送時期指定不可。11/10発売日と分離。"
+    },
+    {
+      "part": 15,
+      "id": "christmas-faq",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "at": "2026-10-12T19:03:19+09:00",
+      "code": "christmas_faq",
+      "summary": "アソビューのみ・窓口券なし・購入者同行・2時間30分・スマホ原則・4～11歳同行例外一致。"
+    },
+    {
+      "part": 15,
+      "id": "christmas-ticket-details",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "at": "2026-10-12T19:03:19+09:00",
+      "code": "christmas_ticket",
+      "summary": "スマホ原則と子ども例外、2時間30分再入場・全員揃って入場・15分前列形成の主要条件一致。"
+    },
+    {
+      "part": 15,
+      "id": "hobby-show-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000074.000168561.html",
+      "at": "2026-10-12T19:03:20+09:00",
+      "code": "hobby",
+      "summary": "10/3～4一般公開のブース、既存archive同ID一致。新規重複不要、商品受注のみは対象外。"
+    },
+    {
+      "part": 15,
+      "id": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "at": "2026-10-12T19:10:06+09:00",
+      "code": "jr_museum",
+      "summary": "施設イベント一覧で7/8～10/31、フォトスポットと1F鉄道ジオラマ確認。開館カレンダー・料金・座標未完了。"
+    },
+    {
+      "part": 15,
+      "id": "jr-central-railway-museum-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "at": "2026-10-12T19:10:06+09:00",
+      "code": "jr_museum_home",
+      "summary": "所在地 名古屋市港区金城ふ頭3-2-2。ピン照合は未完了。"
+    },
+    {
+      "part": 15,
+      "id": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "at": "2026-10-12T19:10:06+09:00",
+      "code": "kitte",
+      "summary": "施設トップイベント一覧確認。巨大バルーンのフロア・時間未完了、存在と7/8～10/31はJR公式根拠。"
+    },
+    {
+      "part": 15,
+      "id": "priority-four-1b6f0ffdf6c9",
+      "url": "https://x.com/chiikawa_popup",
+      "at": "2026-10-12T19:20:52+09:00",
+      "code": "popup_x",
+      "summary": "表示5投稿は10/9の海老名・町田など。横浜10/22～25/海老名10/23～25の申込や町田10/13以降の続報不存在を断定しない。"
+    },
+    {
+      "part": 15,
+      "id": "priority-four-9660f8c42df7",
+      "url": "https://x.com/kiddyevent",
+      "at": "2026-10-12T19:20:52+09:00",
+      "code": "kiddy_x",
+      "summary": "10/9付10/14～20・10/2付10/6～13予約を表示範囲で確認。10/21以降未確認、全投稿網羅ではない。"
+    },
+    {
+      "part": 15,
+      "id": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "at": "2026-10-12T10:21:00.825Z",
+      "code": "author_x",
+      "summary": "表示5投稿10/11～10/3の創作漫画キャプションを確認。イベント変更本文なし、漫画画像未読・全投稿網羅なし。web失敗後通常GETで部分回復。"
+    },
+    {
+      "part": 15,
+      "id": "chiikawa-author-instagram",
+      "url": "https://www.instagram.com/ngnchiikawa/",
+      "at": "2026-10-12T10:20:58.051Z",
+      "code": "author_ig",
+      "summary": "HTTP200は未ログイン画面・見出しのみ、投稿本文/画像未取得。web429。新着なしにせず最終成功保持。"
+    },
+    {
+      "part": 16,
+      "id": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "at": "2026-10-12T10:21:00.361Z",
+      "code": "publicity_x",
+      "summary": "表示5投稿10/9～8で加古川10/17 11/13/15時とクリスマスは既掲載一致。単体商品・国外ハワイは対象外。全投稿網羅なし。"
+    },
+    {
+      "part": 16,
+      "id": "chiikawa-publicity-instagram",
+      "url": "https://www.instagram.com/chiikawa_kouhou/",
+      "at": "2026-10-12T10:20:58.153Z",
+      "code": "publicity_ig",
+      "summary": "HTTP200は未ログイン画面・見出しのみ。投稿本文/画像未取得、web失敗。新着なしにせず最終成功保持。"
+    },
+    {
+      "part": 16,
+      "id": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "at": "2026-10-12T10:21:00.529Z",
+      "code": "nagano_author_x",
+      "summary": "表示5投稿と引用1、9/20～8/1の創作・既存映画特典。新会場・変更未確定、画像未読・全投稿網羅なし。"
+    },
+    {
+      "part": 16,
+      "id": "nagano-author-instagram",
+      "url": "https://www.instagram.com/ngntrtr11/",
+      "at": "2026-10-12T10:20:58.126Z",
+      "code": "nagano_ig",
+      "summary": "HTTP200は未ログイン画面・見出しのみ。投稿本文/画像未取得、web失敗。新着なしにせず最終成功保持。"
+    },
+    {
+      "part": 16,
+      "id": "magical-sapporo-october-2026-source-1",
+      "url": "https://x.com/kiddyevent/status/2108482622984790066",
+      "at": "2026-10-12T19:21:58+09:00",
+      "code": "sapporo_ticket1",
+      "summary": "10/9公式個別本文で10/14～20 LivePocket事前予約、既存10/6～20一致。10/21以降なし。"
+    },
+    {
+      "part": 16,
+      "id": "magical-sapporo-october-2026-source-2",
+      "url": "https://x.com/kiddyevent/status/2105947318931620157",
+      "at": "2026-10-12T19:21:58+09:00",
+      "code": "sapporo_ticket2",
+      "summary": "10/2公式本文で10/6～13予約と以降状況次第制限・当アカウント参照。10/21以降具体条件なし。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-af588a9cde97",
+      "url": "https://x.com/chiikawa_popup/status/2108503282918609095",
+      "at": "2026-10-12T19:21:58+09:00",
+      "code": "ebina_x",
+      "summary": "10/9開催本文、10/23～11/29・5F。申込日時・方式の具体続報は本文になし。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-887fb5bf1160",
+      "url": "https://x.com/chiikawa_popup/status/2108359152175350083",
+      "at": "2026-10-12T19:21:58+09:00",
+      "code": "machida_x",
+      "summary": "10/9開幕本文、10/9～11/1・4F。10/13以降入場条件なし、利用者返信は根拠外。"
+    },
+    {
+      "part": 16,
+      "id": "venue-machida-modi-entry-20261007",
+      "url": "https://x.com/chiikawa_popup/status/2107692808480162153",
+      "at": "2026-10-12T19:22:07+09:00",
+      "code": "machida_day",
+      "summary": "10/7整理券本文、10/9～12のみ・前日19時/当日1時間前・1人1回・有効1時間。朝一致、翌日条件を推定しない。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-6ac755210b91",
+      "url": "https://www.0101.co.jp/082/event/detail.html?article_seq=145297&article_type=sto",
+      "at": "2026-10-12T19:22:03+09:00",
+      "code": "marui_shell",
+      "summary": "HTTP200は外枠のみ、動的イベント本文抽出不可。検索キャッシュを最新続報根拠にしない。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-4aef46d8752c",
+      "url": "https://www.0101.co.jp/723/event/detail.html?article_seq=145260&article_type=sto",
+      "at": "2026-10-12T19:22:03+09:00",
+      "code": "marui_shell",
+      "summary": "HTTP200は外枠のみ、動的イベント本文抽出不可。検索キャッシュを最新続報根拠にしない。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-fdd3d3eaa690",
+      "url": "https://x.com/marui_kanagawa",
+      "at": "2026-10-12T19:22:42+09:00",
+      "code": "marui_x_old",
+      "summary": "プロフィール5投稿は10/3～9/29別企画。対象再投稿・最新全投稿未取得で重点続報成功としない。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-58aa287d619b",
+      "url": "https://x.com/marui_limited_a",
+      "at": "2026-10-12T19:22:42+09:00",
+      "code": "machida_x_old",
+      "summary": "プロフィール5投稿は10/11～7別企画。町田続報の確認成功としない。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-0253a73d1f4f",
+      "url": "https://x.com/Juice_inc_event",
+      "at": "2026-10-12T19:22:42+09:00",
+      "code": "juice_x_old",
+      "summary": "プロフィール5投稿は10/9品切れ。重点4件入場続報・最新全投稿未取得。"
+    },
+    {
+      "part": 16,
+      "id": "priority-four-15ba3b8a6d40",
+      "url": "https://x.com/chiikawa_popup/status/2108125932070551800",
+      "at": "2026-10-12T19:22:53+09:00",
+      "code": "yokohama_x",
+      "summary": "10/8開催本文、10/22～11/1・8F。10/22～25申込日時・方式の続報は本文になし。"
+    },
+    {
+      "part": 17,
+      "id": "facility-hours-chiikawaland-sendai",
+      "url": "https://sendai.parco.jp/shop/detail/?cd=028288",
+      "at": "2026-10-12T19:12:15+09:00",
+      "code": "sendai_cutoff",
+      "summary": "仙台PARCO1/8F物販、施設10～20時・個店例外なし。当日注意の有効期限のみ、hoursText変更指示ではない。"
+    },
+    {
+      "part": 17,
+      "id": "facility-hours-chiikawaland-koshigaya",
+      "url": "https://laketown.aeonmall.jp/shop/e7aedd6e-7dfa-4cac-bb73-a18ba6b1999d",
+      "at": "2026-10-12T19:12:15+09:00",
+      "code": "koshigaya_cutoff",
+      "summary": "個店ページに10～21時。当日注意の有効期限のみ、hoursText変更指示ではない。"
+    }
+  ],
+  "upserts": [
+    {
+      "receivedId": "chiikawa-official-index",
+      "retainedId": "chiikawa-official-index",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-popup-list",
+      "retainedId": "chiikawa-popup-list",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-cafe-list",
+      "retainedId": "chiikawa-cafe-list",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-exhibition-list",
+      "retainedId": "chiikawa-exhibition-list",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-popup-list",
+      "retainedId": "nagano-popup-list",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-aquarium-list",
+      "retainedId": "nagano-aquarium-list",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-exhibition-list",
+      "retainedId": "nagano-exhibition-list",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-official-index",
+      "retainedId": "nagano-official-index",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-yokohama-entry",
+      "retainedId": "nagano-yokohama-entry",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "fukuoka-sushi-official",
+      "retainedId": "fukuoka-sushi-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "popup-2026-10-23-ebina-marui-official",
+      "retainedId": "popup-2026-10-23-ebina-marui-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "retainedId": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "retainedId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "retainedId": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "retainedId": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-nagano-fukuoka-entry-20261016",
+      "retainedId": "venue-nagano-fukuoka-entry-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "retainedId": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-muchaphoto-laketown-mori-20261012",
+      "retainedId": "venue-muchaphoto-laketown-mori-20261012",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "magical-sapporo-october-2026-source-3",
+      "retainedId": "magical-sapporo-october-2026-source-3",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "retainedId": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-71b2d641d1",
+      "retainedId": "observed-chiikawa-info-jp-71b2d641d1",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-82d181891d",
+      "retainedId": "observed-chiikawa-info-jp-82d181891d",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-978ffe9215",
+      "retainedId": "observed-chiikawa-info-jp-978ffe9215",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-9fdf5778d7",
+      "retainedId": "observed-chiikawa-info-jp-9fdf5778d7",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-5932274e7e",
+      "retainedId": "observed-chiikawa-info-jp-5932274e7e",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-8759f68d56",
+      "retainedId": "observed-chiikawa-info-jp-8759f68d56",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-b434b2c58a",
+      "retainedId": "observed-chiikawa-info-jp-b434b2c58a",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-425af290b1",
+      "retainedId": "observed-chiikawa-info-jp-425af290b1",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-18ba673ff0",
+      "retainedId": "observed-chiikawa-info-jp-18ba673ff0",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-c1f1b175b2",
+      "retainedId": "observed-chiikawa-info-jp-c1f1b175b2",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-d5be927094",
+      "retainedId": "observed-chiikawa-info-jp-d5be927094",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-ee275504ea",
+      "retainedId": "observed-chiikawa-info-jp-ee275504ea",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "retainedId": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "retainedId": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-2db8c290c8",
+      "retainedId": "observed-chiikawa-info-jp-2db8c290c8",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-64a1504949",
+      "retainedId": "observed-chiikawa-info-jp-64a1504949",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-f722193f40",
+      "retainedId": "observed-chiikawa-info-jp-f722193f40",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-1a31b404e0",
+      "retainedId": "observed-chiikawa-info-jp-1a31b404e0",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-8226b16185",
+      "retainedId": "observed-chiikawa-info-jp-8226b16185",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-916f92e32b",
+      "retainedId": "observed-chiikawa-info-jp-916f92e32b",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-fujiidera-sc-aeonmall-jp-cb3a0e7abc",
+      "retainedId": "observed-fujiidera-sc-aeonmall-jp-cb3a0e7abc",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-ota-aeonmall-jp-1553585041",
+      "retainedId": "observed-ota-aeonmall-jp-1553585041",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-natori-aeonmall-jp-4e157b2b3f",
+      "retainedId": "observed-natori-aeonmall-jp-4e157b2b3f",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-tokoname-aeonmall-jp-c4e3a8aa6e",
+      "retainedId": "observed-tokoname-aeonmall-jp-c4e3a8aa6e",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-www-granduo-jp-2bf7507178",
+      "retainedId": "observed-www-granduo-jp-2bf7507178",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-cafe-parco-jp-8bf4370b23",
+      "retainedId": "observed-cafe-parco-jp-8bf4370b23",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "retainedId": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-a442c90398",
+      "retainedId": "observed-chiikawa-info-jp-a442c90398",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "observed-chiikawa-info-jp-59c77d83bc",
+      "retainedId": "observed-chiikawa-info-jp-59c77d83bc",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-7ca8a147e078",
+      "retainedId": "series-observed-7ca8a147e078",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-62d8a5a45a8a",
+      "retainedId": "series-observed-62d8a5a45a8a",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-5315c848c326",
+      "retainedId": "series-observed-5315c848c326",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-5b92b963a972",
+      "retainedId": "series-observed-5b92b963a972",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-047be1f2f67c",
+      "retainedId": "series-observed-047be1f2f67c",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-b7fd693bb936",
+      "retainedId": "series-observed-b7fd693bb936",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-be6acc0dca22",
+      "retainedId": "series-observed-be6acc0dca22",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-c73988320445",
+      "retainedId": "series-observed-c73988320445",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "hours-image-chiikawa-baby-2026-10-02-aomori-elm",
+      "retainedId": "hours-image-chiikawa-baby-2026-10-02-aomori-elm",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "series-observed-38d30a222e3a",
+      "retainedId": "series-observed-38d30a222e3a",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-f7473c788d24",
+      "retainedId": "series-observed-f7473c788d24",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-8a5ff02d06dc",
+      "retainedId": "series-observed-8a5ff02d06dc",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-umeda-penlight-20261016",
+      "retainedId": "toho-umeda-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-nagoya-sakae-penlight-20261016",
+      "retainedId": "toho-nagoya-sakae-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-ikebukuro-penlight-20261016",
+      "retainedId": "toho-ikebukuro-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-hibiya-penlight-20261016",
+      "retainedId": "toho-hibiya-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-shinjuku-penlight-20261016",
+      "retainedId": "toho-shinjuku-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-tenjin-solaria-penlight-20261016",
+      "retainedId": "toho-tenjin-solaria-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "toho-susukino-penlight-20261016",
+      "retainedId": "toho-susukino-penlight-20261016",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-1b373d2f31ca",
+      "retainedId": "series-observed-1b373d2f31ca",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-eba4986577ac",
+      "retainedId": "series-observed-eba4986577ac",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-89e47d6cadb5",
+      "retainedId": "series-observed-89e47d6cadb5",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-606fc28515a8",
+      "retainedId": "series-observed-606fc28515a8",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-5733ec538b7c",
+      "retainedId": "series-observed-5733ec538b7c",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-5b209f15905a",
+      "retainedId": "series-observed-5b209f15905a",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-c32f9e53e0bd",
+      "retainedId": "series-observed-c32f9e53e0bd",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "hours-image-popup-2026-10-02-aomori-elm",
+      "retainedId": "hours-image-popup-2026-10-02-aomori-elm",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "series-observed-17dc41ef2440",
+      "retainedId": "series-observed-17dc41ef2440",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "hours-image-popup-2026-10-02-aeon-saga-yamato",
+      "retainedId": "hours-image-popup-2026-10-02-aeon-saga-yamato",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "series-observed-8791fb196b6f",
+      "retainedId": "series-observed-8791fb196b6f",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "hours-image-popup-2026-09-26-aeon-niihama",
+      "retainedId": "hours-image-popup-2026-09-26-aeon-niihama",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "series-observed-c7f9422165a4",
+      "retainedId": "series-observed-c7f9422165a4",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-db594c9ad917",
+      "retainedId": "series-observed-db594c9ad917",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-b816a44d2412",
+      "retainedId": "series-observed-b816a44d2412",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-b57343981374",
+      "retainedId": "series-observed-b57343981374",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-5a44e329b31e",
+      "retainedId": "series-observed-5a44e329b31e",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "hours-image-popup-naha",
+      "retainedId": "hours-image-popup-naha",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "series-observed-8d1a671c91b5",
+      "retainedId": "series-observed-8d1a671c91b5",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-19ee0abac3e1",
+      "retainedId": "series-observed-19ee0abac3e1",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-b855afa10b6d",
+      "retainedId": "series-observed-b855afa10b6d",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-30cdd2aa304a",
+      "retainedId": "series-observed-30cdd2aa304a",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-778c9be5bb5d",
+      "retainedId": "series-observed-778c9be5bb5d",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-36efc30af4c9",
+      "retainedId": "series-observed-36efc30af4c9",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-ff7b305de26f",
+      "retainedId": "series-observed-ff7b305de26f",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-7f73032488c1",
+      "retainedId": "series-observed-7f73032488c1",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-a3aeebd7523d",
+      "retainedId": "series-observed-a3aeebd7523d",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-aa168cf8876f",
+      "retainedId": "series-observed-aa168cf8876f",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-40695a88fb9b",
+      "retainedId": "series-observed-40695a88fb9b",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-c57a222599f5",
+      "retainedId": "series-observed-c57a222599f5",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-370ff0fde700",
+      "retainedId": "series-observed-370ff0fde700",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-sushi-yokohama-main-image",
+      "retainedId": "chiikawa-sushi-yokohama-main-image",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-sushi-yokohama-entry-image",
+      "retainedId": "chiikawa-sushi-yokohama-entry-image",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-76edd15726fa",
+      "retainedId": "series-observed-76edd15726fa",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-3e66b0e48de6",
+      "retainedId": "series-observed-3e66b0e48de6",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-bb270feb118e",
+      "retainedId": "series-observed-bb270feb118e",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "series-observed-b4d46e42bd55",
+      "retainedId": "series-observed-b4d46e42bd55",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-yonago-tenmaya-event-calendar",
+      "retainedId": "venue-yonago-tenmaya-event-calendar",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-fushimi-news",
+      "retainedId": "mogumogu-fushimi-news",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-kawagoe-news",
+      "retainedId": "mogumogu-kawagoe-news",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-otaru-news",
+      "retainedId": "mogumogu-otaru-news",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-fushimi-reservation-20261010",
+      "retainedId": "mogumogu-fushimi-reservation-20261010",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-kawagoe-reservation-20261010",
+      "retainedId": "mogumogu-kawagoe-reservation-20261010",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-otaru-reservation-20261010",
+      "retainedId": "mogumogu-otaru-reservation-20261010",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "mogumogu-kawagoe-hours-20261017",
+      "retainedId": "mogumogu-kawagoe-hours-20261017",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-reservation",
+      "retainedId": "chiikawa-bakery-reservation",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-news",
+      "retainedId": "chiikawa-bakery-news",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-topics",
+      "retainedId": "chiikawa-bakery-topics",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-park-news",
+      "retainedId": "chiikawa-park-news",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-chiikawapark-tokyo-jp-news",
+      "retainedId": "evening-chiikawapark-tokyo-jp-news",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-park-ticket",
+      "retainedId": "chiikawa-park-ticket",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-chiikawapark-tokyo-jp-news-62d-8modez",
+      "retainedId": "evening-chiikawapark-tokyo-jp-news-62d-8modez",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-park-kumonosu-notice-20261007",
+      "retainedId": "chiikawa-park-kumonosu-notice-20261007",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-2nd-anniversary",
+      "retainedId": "chiikawa-bakery-2nd-anniversary",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-chiikawabakery-jp-topics-20260918",
+      "retainedId": "evening-chiikawabakery-jp-topics-20260918",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-chiikawabakery-jp-20260609-news",
+      "retainedId": "evening-chiikawabakery-jp-20260609-news",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-tokyo-jpg",
+      "retainedId": "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-tokyo-jpg",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-osaka-jpg",
+      "retainedId": "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-osaka-jpg",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-e-japanticket-com-shops-chiikawabakery-products-14064",
+      "retainedId": "evening-e-japanticket-com-shops-chiikawabakery-products-14064",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-e-japanticket-com-shops-chiikawabakery-osaka-products-13995",
+      "retainedId": "evening-e-japanticket-com-shops-chiikawabakery-osaka-products-13995",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-information",
+      "retainedId": "chiikawa-bakery-information",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-information-osaka",
+      "retainedId": "chiikawa-bakery-information-osaka",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-bakery-information-popup-01",
+      "retainedId": "chiikawa-bakery-information-popup-01",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-restaurant-reservation",
+      "retainedId": "chiikawa-restaurant-reservation",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-restaurant-okinawa-reservation",
+      "retainedId": "chiikawa-restaurant-okinawa-reservation",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "ramen-buta-ikebukuro-reservation-official",
+      "retainedId": "ramen-buta-ikebukuro-reservation-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "ramen-buta-shibuya-reservation-official",
+      "retainedId": "ramen-buta-shibuya-reservation-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "ramen-buta-shinsaibashi-reservation-official",
+      "retainedId": "ramen-buta-shinsaibashi-reservation-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-restaurant-tokyo-information",
+      "retainedId": "chiikawa-restaurant-tokyo-information",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-restaurant-okinawa-information",
+      "retainedId": "chiikawa-restaurant-okinawa-information",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-www-asoview-com-channel-tickets-9u0kjjjngr",
+      "retainedId": "evening-www-asoview-com-channel-tickets-9u0kjjjngr",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawa-parkjp",
+      "retainedId": "evening-x-com-chiikawa-parkjp",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-www-chiikawamogumogu-jp",
+      "retainedId": "evening-www-chiikawamogumogu-jp",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-ikebukuro-area-029688",
+      "retainedId": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-ikebukuro-area-029688",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-shibuya-area-029979",
+      "retainedId": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-shibuya-area-029979",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-shinsaibashi-area-029689",
+      "retainedId": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-shinsaibashi-area-029689",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawamgmg",
+      "retainedId": "evening-x-com-chiikawamgmg",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawaramensp",
+      "retainedId": "evening-x-com-chiikawaramensp",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawaramensb",
+      "retainedId": "evening-x-com-chiikawaramensb",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawaramensh",
+      "retainedId": "evening-x-com-chiikawaramensh",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawabakery",
+      "retainedId": "evening-x-com-chiikawabakery",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawabakeryc",
+      "retainedId": "evening-x-com-chiikawabakeryc",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawayaki",
+      "retainedId": "evening-x-com-chiikawayaki",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-chiikawarestoki",
+      "retainedId": "evening-x-com-chiikawarestoki",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "evening-x-com-theguest-ikb",
+      "retainedId": "evening-x-com-theguest-ikb",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-yaki-official",
+      "retainedId": "chiikawa-yaki-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "bakery-laforet-entry-20261012-official",
+      "retainedId": "bakery-laforet-entry-20261012-official",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "restaurant-ikebukuro-entry-20261012-official",
+      "retainedId": "restaurant-ikebukuro-entry-20261012-official",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "ramen-buta-shibuya-entry-20261012-official",
+      "retainedId": "ramen-buta-shibuya-entry-20261012-official",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "ramen-buta-shinsaibashi-entry-20261012-official",
+      "retainedId": "ramen-buta-shinsaibashi-entry-20261012-official",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "individual-chiikawaland-osaka-umeda",
+      "retainedId": "individual-chiikawaland-osaka-umeda",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-harajuku",
+      "retainedId": "individual-chiikawaland-harajuku",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-fukuoka",
+      "retainedId": "individual-chiikawaland-fukuoka",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-kyoto",
+      "retainedId": "individual-chiikawaland-kyoto",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-tokyo-station",
+      "retainedId": "individual-chiikawaland-tokyo-station",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-solamachi",
+      "retainedId": "individual-chiikawaland-solamachi",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-nagoya",
+      "retainedId": "individual-chiikawaland-nagoya",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-sendai",
+      "retainedId": "individual-chiikawaland-sendai",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-sapporo",
+      "retainedId": "individual-chiikawaland-sapporo",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-yokohama",
+      "retainedId": "individual-chiikawaland-yokohama",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-hiroshima",
+      "retainedId": "individual-chiikawaland-hiroshima",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-shinsaibashi",
+      "retainedId": "individual-chiikawaland-shinsaibashi",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-shinjuku",
+      "retainedId": "individual-chiikawaland-shinjuku",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-kanazawa",
+      "retainedId": "individual-chiikawaland-kanazawa",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-ikebukuro",
+      "retainedId": "individual-chiikawaland-ikebukuro",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "individual-chiikawaland-koshigaya",
+      "retainedId": "individual-chiikawaland-koshigaya",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "retainedId": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-ginza-official",
+      "retainedId": "nagano-market-ginza-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-shinsaibashi-official",
+      "retainedId": "nagano-market-shinsaibashi-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-sapporo-official",
+      "retainedId": "nagano-market-sapporo-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-entry-general",
+      "retainedId": "nagano-market-entry-general",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-shop-x",
+      "retainedId": "nagano-market-shop-x",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawaland-entry-updates-x",
+      "retainedId": "chiikawaland-entry-updates-x",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawaland-store-list",
+      "retainedId": "chiikawaland-store-list",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "social-chiikawaland-sendai-tickets-ended-20261012",
+      "retainedId": "social-chiikawaland-sendai-tickets-ended-20261012",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "social-chiikawaland-koshigaya-tickets-ended-20261012",
+      "retainedId": "social-chiikawaland-koshigaya-tickets-ended-20261012",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "social-chiikawaland-shinsaibashi-tickets-ended-20261012",
+      "retainedId": "social-chiikawaland-shinsaibashi-tickets-ended-20261012",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "social-chiikawaland-solamachi-tickets-ended-20261012",
+      "retainedId": "social-chiikawaland-solamachi-tickets-ended-20261012",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "venue-sapporo-parco-hours",
+      "retainedId": "venue-sapporo-parco-hours",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-shinsaibashi-parco-hours",
+      "retainedId": "venue-shinsaibashi-parco-hours",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-marronnier-access",
+      "retainedId": "venue-marronnier-access",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-amu-oita-chiikawaland",
+      "retainedId": "venue-amu-oita-chiikawaland",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-market-entry-id-image",
+      "retainedId": "nagano-market-entry-id-image",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawaland-sendai-main-image",
+      "retainedId": "chiikawaland-sendai-main-image",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "facility-sapporo-instagram",
+      "retainedId": "facility-sapporo-instagram",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "facility-shinsaibashi-instagram",
+      "retainedId": "facility-shinsaibashi-instagram",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "facility-marronnier-instagram-embedded",
+      "retainedId": "facility-marronnier-instagram-embedded",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "social-land-oita-tickets-20261012",
+      "retainedId": "social-land-oita-tickets-20261012",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "social-land-umeda-entry-20261012",
+      "retainedId": "social-land-umeda-entry-20261012",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "social-land-kanazawa-entry-20261012",
+      "retainedId": "social-land-kanazawa-entry-20261012",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "tokyo-banana-chiikawa",
+      "retainedId": "tokyo-banana-chiikawa",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "tamanohikari-chiikawa-release",
+      "retainedId": "tamanohikari-chiikawa-release",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "ana-chiikawa-jet",
+      "retainedId": "ana-chiikawa-jet",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "ana-chiikawa-campaign",
+      "retainedId": "ana-chiikawa-campaign",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "jr-central-tsutsuurauratabi",
+      "retainedId": "jr-central-tsutsuurauratabi",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "tokyo-skytree-chiikawa-2026",
+      "retainedId": "tokyo-skytree-chiikawa-2026",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-christmas-market-official",
+      "retainedId": "chiikawa-christmas-market-official",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "abema-chiikawa-christmas-release-20261008",
+      "retainedId": "abema-chiikawa-christmas-release-20261008",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-christmas-market-asoview",
+      "retainedId": "chiikawa-christmas-market-asoview",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "seven-eleven-christmas-campaign-2026",
+      "retainedId": "seven-eleven-christmas-campaign-2026",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-sunflower-chiikawa",
+      "retainedId": "corporate-sunflower-chiikawa",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-chiikawa-glasses",
+      "retainedId": "corporate-chiikawa-glasses",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-gu-chiikawa-faq",
+      "retainedId": "corporate-gu-chiikawa-faq",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-kadokawa-chiikawa-topics",
+      "retainedId": "corporate-kadokawa-chiikawa-topics",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "corporate-yomeruba-chiikawa-campaign",
+      "retainedId": "corporate-yomeruba-chiikawa-campaign",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "corporate-chiikawa-release-846",
+      "retainedId": "corporate-chiikawa-release-846",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-citen-chiikawa-release",
+      "retainedId": "corporate-citen-chiikawa-release",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-merry-jenny-chiikawa",
+      "retainedId": "corporate-merry-jenny-chiikawa",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-panasonic-chiikawa",
+      "retainedId": "corporate-panasonic-chiikawa",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-donki-chiikawa-sl6",
+      "retainedId": "corporate-donki-chiikawa-sl6",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-epos-chiikawa-card",
+      "retainedId": "corporate-epos-chiikawa-card",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-chiikawa-release-322",
+      "retainedId": "corporate-chiikawa-release-322",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-tokyo-metro-chiikawa",
+      "retainedId": "corporate-tokyo-metro-chiikawa",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-seven-eleven-christmas-products",
+      "retainedId": "corporate-seven-eleven-christmas-products",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-seven-eleven-christmas-signature",
+      "retainedId": "corporate-seven-eleven-christmas-signature",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-seven-eleven-christmas-character",
+      "retainedId": "corporate-seven-eleven-christmas-character",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-tokyo-banana-solamachi-release",
+      "retainedId": "corporate-tokyo-banana-solamachi-release",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-aeon-chiikawa-news-954",
+      "retainedId": "corporate-aeon-chiikawa-news-954",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-aeon-chiikawa-news-index",
+      "retainedId": "corporate-aeon-chiikawa-news-index",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-chiikawa-glasses-orders",
+      "retainedId": "corporate-chiikawa-glasses-orders",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "corporate-uniqlo-chiikawa-faq",
+      "retainedId": "corporate-uniqlo-chiikawa-faq",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "metro-event-details",
+      "retainedId": "metro-event-details",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "tamanohikari-chiikawa-shop-details",
+      "retainedId": "tamanohikari-chiikawa-shop-details",
+      "added": false,
+      "newerObservationApplied": false,
+      "olderObservationPreservedSeparately": true
+    },
+    {
+      "receivedId": "christmas-faq",
+      "retainedId": "christmas-faq",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "christmas-ticket-details",
+      "retainedId": "christmas-ticket-details",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "hobby-show-release",
+      "retainedId": "hobby-show-release",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "jr-central-railway-museum-event",
+      "retainedId": "jr-central-railway-museum-event",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "jr-central-railway-museum-home",
+      "retainedId": "jr-central-railway-museum-home",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "kitte-osaka-home",
+      "retainedId": "kitte-osaka-home",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-1b6f0ffdf6c9",
+      "retainedId": "priority-four-1b6f0ffdf6c9",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-9660f8c42df7",
+      "retainedId": "priority-four-9660f8c42df7",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-author-x",
+      "retainedId": "chiikawa-author-x",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-author-instagram",
+      "retainedId": "chiikawa-author-instagram",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-publicity-x",
+      "retainedId": "chiikawa-publicity-x",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "chiikawa-publicity-instagram",
+      "retainedId": "chiikawa-publicity-instagram",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-author-x",
+      "retainedId": "nagano-author-x",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "nagano-author-instagram",
+      "retainedId": "nagano-author-instagram",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "magical-sapporo-october-2026-source-1",
+      "retainedId": "magical-sapporo-october-2026-source-1",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "magical-sapporo-october-2026-source-2",
+      "retainedId": "magical-sapporo-october-2026-source-2",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-af588a9cde97",
+      "retainedId": "priority-four-af588a9cde97",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-887fb5bf1160",
+      "retainedId": "priority-four-887fb5bf1160",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "venue-machida-modi-entry-20261007",
+      "retainedId": "venue-machida-modi-entry-20261007",
+      "added": false,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-6ac755210b91",
+      "retainedId": "priority-four-6ac755210b91",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-4aef46d8752c",
+      "retainedId": "priority-four-4aef46d8752c",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-fdd3d3eaa690",
+      "retainedId": "priority-four-fdd3d3eaa690",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-58aa287d619b",
+      "retainedId": "priority-four-58aa287d619b",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-0253a73d1f4f",
+      "retainedId": "priority-four-0253a73d1f4f",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "priority-four-15ba3b8a6d40",
+      "retainedId": "priority-four-15ba3b8a6d40",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "facility-hours-chiikawaland-sendai",
+      "retainedId": "facility-hours-chiikawaland-sendai",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    },
+    {
+      "receivedId": "facility-hours-chiikawaland-koshigaya",
+      "retainedId": "facility-hours-chiikawaland-koshigaya",
+      "added": true,
+      "newerObservationApplied": true,
+      "olderObservationPreservedSeparately": false
+    }
+  ]
+}
