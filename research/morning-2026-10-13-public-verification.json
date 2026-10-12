@@ -1,0 +1,18 @@
+{
+  "baseCommit":"cc299b2791c08218b21803665c34f5c75309fc09",
+  "observer":"Parent cloud research; morning re-observation, not publication of the October 13 changes",
+  "observations":[
+    {"url":"https://chiikatsu-map.com/data/official-spots.json","status":200,"observedAt":"2026-10-12T22:49:38.474684+00:00","count":86},
+    {"url":"https://chiikatsu-map.com/data/official-events-archive.json","status":200,"observedAt":"2026-10-12T22:49:46.026498+00:00","count":647},
+    {"url":"https://chiikatsu-map.com/data/collaborations-current.json","status":200,"observedAt":"2026-10-12T22:49:51.672296+00:00","count":22},
+    {"url":"https://chiikatsu-map.com/data/collaborations-archive.json","status":200,"observedAt":"2026-10-12T22:49:58.851837+00:00","count":52},
+    {"url":"https://chiikatsu-map.com/data/site-meta.json","status":200,"observedAt":"2026-10-12T22:50:06.097684+00:00","count":2}
+  ],
+  "files":[
+    {"file":"official-spots.json","blobSha":"c8cd13bcbee644ace4e5632e1b0798c0bcd27d25","count":86,"matchesPriorVerifiedCommit":true},
+    {"file":"official-events-archive.json","blobSha":"3243c19f2875e36d3f5987d1a5e7b5a10f51ecea","count":647,"matchesPriorVerifiedCommit":true},
+    {"file":"collaborations-current.json","blobSha":"5c16bebde0e09824730121262802c4a34de4e00b","count":22,"matchesPriorVerifiedCommit":true},
+    {"file":"collaborations-archive.json","blobSha":"6b647fa49a1a9fd6f4d8539f3359bbadcb92fe9a","count":52,"matchesPriorVerifiedCommit":true}
+  ],
+  "pr41InitialPublication":{"deployCompletedAt":"2026-10-12T19:57:59+09:00","firstPublicMatchAt":"2026-10-12T19:58:08.610+09:00","firstPublicMatchSource":"Parent handoff; preserved, not replaced by today re-observation"}
+}

@@ -30,10 +30,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:00:39+09:00",
-      "lastSuccessfulAt": "2026-10-12T19:00:39+09:00",
+      "lastAttemptAt": "2026-10-13T07:49:26+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:49:26+09:00",
       "lastResult": "success",
-      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。 クラウドの提供済み観測。",
+      "resultSummary": "一覧と個別タイトルで9/26～10/12。前日確認の営業時間を維持。",
       "lastFailure": null,
       "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。"
     },
@@ -938,10 +938,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:00:59+09:00",
-      "lastSuccessfulAt": "2026-10-12T19:00:59+09:00",
+      "lastAttemptAt": "2026-10-13T07:51:24+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:51:24+09:00",
       "lastResult": "success",
-      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像・埋込SNSの実読を推定しない。関連する実読画像は別情報源。 クラウドの提供済み観測。",
+      "resultSummary": "10/12、11:30～16時5回各20人、当日1500円レシート、10時券配布。",
       "lastFailure": null,
       "note": "確認した一次根拠のみ記録。委任元の実見・本文確認とWindowsの取得は調査記録で区別し、確認時計から初回発表日時を補わない。"
     },
@@ -1257,10 +1257,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:01:02+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:08:16+09:00",
-      "lastResult": "fetch_failed",
-      "resultSummary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。 クラウドの提供済み観測。",
+      "lastAttemptAt": "2026-10-13T07:49:26+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:49:26+09:00",
+      "lastResult": "success",
+      "resultSummary": "10/12単日、撮影11/13/15時・AR10～16時最終15:30、9:30券配布。",
       "lastFailure": {
         "at": "2026-10-12T19:01:02+09:00",
         "kind": "fetch_failed",
@@ -2106,15 +2106,15 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:00:50+09:00",
+      "lastAttemptAt": "2026-10-13T07:49:13+09:00",
       "lastSuccessfulAt": null,
       "lastResult": "parse_failed",
-      "resultSummary": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。 クラウドの提供済み観測。",
+      "resultSummary": "個別タイトルで会期を確認。画像主体の入場条件全体は未実読。終了日確認と全条件の解析成功を分ける。",
       "lastFailure": {
-        "at": "2026-10-12T19:00:50+09:00",
+        "at": "2026-10-13T07:49:13+09:00",
         "kind": "parse_failed",
         "httpStatus": null,
-        "detail": "個別ページ本文は画像リンク中心。入場条件の画像本文は未実読。仙台画像の追加HTTP取得は403。掲載確認日を一律更新しない。",
+        "detail": "個別タイトルで会期を確認。画像主体の入場条件全体は未実読。終了日確認と全条件の解析成功を分ける。",
         "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/oita/index.html"
       },
       "note": "親の10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
@@ -2887,10 +2887,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T08:08:38+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:08:38+09:00",
+      "lastAttemptAt": "2026-10-12T19:01:17+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:01:17+09:00",
       "lastResult": "success",
-      "resultSummary": "公式HTML本文の表示された範囲を確認。画像・埋込SNSの内容確認は別扱い。 確認範囲: provided_html_text_scope。",
+      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像や埋込SNSを読んだと推定せず、関連する実読画像は別source記録。",
       "lastFailure": null,
       "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
     },
@@ -2904,10 +2904,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T08:08:38+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:08:38+09:00",
+      "lastAttemptAt": "2026-10-12T19:01:17+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:01:17+09:00",
       "lastResult": "success",
-      "resultSummary": "公式HTML本文の表示された範囲を確認。画像・埋込SNSの内容確認は別扱い。 確認範囲: provided_html_text_scope。",
+      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像や埋込SNSを読んだと推定せず、関連する実読画像は別source記録。",
       "lastFailure": null,
       "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
     },
@@ -2921,10 +2921,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T08:08:38+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:08:38+09:00",
+      "lastAttemptAt": "2026-10-12T19:01:23+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:01:23+09:00",
       "lastResult": "success",
-      "resultSummary": "公式HTML本文の表示された範囲を確認。画像・埋込SNSの内容確認は別扱い。 確認範囲: provided_html_text_scope。",
+      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像や埋込SNSを読んだと推定せず、関連する実読画像は別source記録。",
       "lastFailure": null,
       "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
     },
@@ -3277,10 +3277,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:01:44+09:00",
-      "lastSuccessfulAt": "2026-10-12T08:10:08+09:00",
-      "lastResult": "fetch_failed",
-      "resultSummary": "HTTP Error 406: Not Acceptable。前回成功時刻を保持。 クラウドの提供済み観測。",
+      "lastAttemptAt": "2026-10-13T07:49:26+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:49:26+09:00",
+      "lastResult": "success",
+      "resultSummary": "10/12単日、撮影11/14/16時・AR10～17時、2Fイオンホール。",
       "lastFailure": {
         "at": "2026-10-12T19:01:44+09:00",
         "kind": "fetch_failed",
@@ -4336,10 +4336,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:08:25+09:00",
-      "lastSuccessfulAt": "2026-10-12T19:08:25+09:00",
+      "lastAttemptAt": "2026-10-13T07:58:30+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:58:30+09:00",
       "lastResult": "success",
-      "resultSummary": "入場案内画像を実読。町田10/9～12は朝公開値と一致。他の初日・過去発売日の案内を新しい入場規則として追加しない。 クラウドの提供済み観測。",
+      "resultSummary": "公式画像の入場対象10/9～12だけ終了。開催10/9～11/1は継続、以後のフリー入場を推定しない。",
       "lastFailure": null,
       "note": "2026-10-12クラウドの確認材料。HTML取得・画像実読・表示SNS範囲を区別する。元クラウドのローカル画像パスを原PCの同名パスと仮定しない。"
     },
@@ -4932,10 +4932,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T18:59:55+09:00",
-      "lastSuccessfulAt": "2026-10-12T18:59:55+09:00",
+      "lastAttemptAt": "2026-10-13T07:51:24+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:51:24+09:00",
       "lastResult": "success",
-      "resultSummary": "リウボウ6階10/1～12、最終17時閉場。終了日当日なので現行、10/13以降同一IDでarchive候補。 クラウドの提供済み観測。",
+      "resultSummary": "本文で10/1～12、6階、最終17時閉場と券条件。",
       "lastFailure": null,
       "note": "2026-10-12クラウドの確認材料。HTML取得・画像実読・表示SNS範囲を区別する。元クラウドのローカル画像パスを原PCの同名パスと仮定しない。"
     },
@@ -5412,29 +5412,6 @@
       "note": "2026-10-12クラウドの確認材料。HTML取得・画像実読・表示SNS範囲を区別する。元クラウドのローカル画像パスを原PCの同名パスと仮定しない。"
     },
     {
-      "id": "chiikawaland-sendai-main-image",
-      "name": "夕方一次情報 https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2=",
-      "url": "https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2=",
-      "kind": "venue",
-      "scope": [
-        "official"
-      ],
-      "cadence": "morning_evening",
-      "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:02:08+09:00",
-      "lastSuccessfulAt": null,
-      "lastResult": "access_limited",
-      "resultSummary": "HTTP403で画像実体取得不能。実読済みとしない。 クラウドの提供済み観測。",
-      "lastFailure": {
-        "at": "2026-10-12T19:02:08+09:00",
-        "kind": "access_limited",
-        "httpStatus": 403,
-        "detail": "HTTP403で画像実体取得不能。実読済みとしない。",
-        "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2="
-      },
-      "note": "2026-10-12クラウドの確認材料。HTML取得・画像実読・表示SNS範囲を区別する。元クラウドのローカル画像パスを原PCの同名パスと仮定しない。"
-    },
-    {
       "id": "facility-sapporo-instagram",
       "name": "夕方一次情報 https://www.instagram.com/parco_sapporo_official/",
       "url": "https://www.instagram.com/parco_sapporo_official/",
@@ -5640,10 +5617,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-12T19:10:06+09:00",
-      "lastSuccessfulAt": "2026-10-12T19:10:06+09:00",
+      "lastAttemptAt": "2026-10-12T22:49:42.866+00:00",
+      "lastSuccessfulAt": "2026-10-12T22:49:42.866+00:00",
       "lastResult": "success",
-      "resultSummary": "施設イベント一覧で7/8～10/31、フォトスポットと1F鉄道ジオラマ確認。開館カレンダー・料金・座標未完了。 クラウドの提供済み観測。",
+      "resultSummary": "7/8～10/31、館内5エリアのフォトスポットとジオラマ、入館料のみ。",
       "lastFailure": null,
       "note": "2026-10-12クラウドの確認材料。HTML取得・画像実読・表示SNS範囲を区別する。元クラウドのローカル画像パスを原PCの同名パスと仮定しない。"
     },
@@ -5928,6 +5905,284 @@
       "resultSummary": "個店ページに10～21時。当日注意の有効期限のみ、hoursText変更指示ではない。 クラウドの提供済み観測。",
       "lastFailure": null,
       "note": "2026-10-12クラウドの確認材料。HTML取得・画像実読・表示SNS範囲を区別する。元クラウドのローカル画像パスを原PCの同名パスと仮定しない。"
+    },
+    {
+      "id": "morning-www-chiikawamogumogu-jp-2025-10-30-post-1330",
+      "name": "10/13一次根拠 https://www.chiikawamogumogu.jp/2025/10/30/post-1330/",
+      "url": "https://www.chiikawamogumogu.jp/2025/10/30/post-1330/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "morning-x-com-theguest-ikb-status-2109626136611246165",
+      "name": "10/13一次根拠 https://x.com/THEGUEST_ikb/status/2109626136611246165",
+      "url": "https://x.com/THEGUEST_ikb/status/2109626136611246165",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:53:20+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:53:20+09:00",
+      "lastResult": "success",
+      "resultSummary": "新しい公式10/13当日告知で満席・当日券なしを確認。10/12告知を単純延長しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "morning-x-com-chiikawabakery-status-2109592416093380725",
+      "name": "10/13一次根拠 https://x.com/chiikawabakery/status/2109592416093380725",
+      "url": "https://x.com/chiikawabakery/status/2109592416093380725",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:53:18+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:53:18+09:00",
+      "lastResult": "success",
+      "resultSummary": "新しい10/13当日告知で10時入口・開店後店頭の配券を確認。事前予約開始時刻にしない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "store-image-707c22021330",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/chiikawaland/fukuoka/img/main_bn.jpg",
+      "url": "https://chiikawa-info.jp/chiikawaland/fukuoka/img/main_bn.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "chiikawaland-sendai-main-image",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2",
+      "url": "https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": {
+        "at": "2026-10-12T19:02:08+09:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP403で画像実体取得不能。実読済みとしない。",
+        "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2="
+      },
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。 公式HTMLの画像src ?a2を確認し旧?a2=から正規URLへ訂正。"
+    },
+    {
+      "id": "store-image-ee5df5545862",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/chiikawaland/yokohama/img/main_bn06.jpg?p2",
+      "url": "https://chiikawa-info.jp/chiikawaland/yokohama/img/main_bn06.jpg?p2",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "store-image-10c6d88f238e",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/chiikawaland/hiroshima/img/main_bn06.jpg?p2",
+      "url": "https://chiikawa-info.jp/chiikawaland/hiroshima/img/main_bn06.jpg?p2",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "store-image-247cb9daec88",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/chiikawaland/kanazawa/img/main_bn.jpg?a2",
+      "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/img/main_bn.jpg?a2",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "store-image-40c82fbb7186",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/chiikawaland/koshigaya/img/main_bn_y.jpg",
+      "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/img/main_bn_y.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "store-image-8484ef3698d5",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/magical_store/shinjuku/img/main_3.jpg",
+      "url": "https://chiikawa-info.jp/magical_store/shinjuku/img/main_3.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "store-image-903bc89caaea",
+      "name": "10/13一次根拠 https://chiikawa-info.jp/magical_store/umeda/img/main_4.jpg",
+      "url": "https://chiikawa-info.jp/magical_store/umeda/img/main_4.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:55:45+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:55:45+09:00",
+      "lastResult": "success",
+      "resultSummary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "venue-muchaphoto-shinrifu-20261122",
+      "name": "10/13一次根拠 https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:52:33+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:52:33+09:00",
+      "lastResult": "success",
+      "resultSummary": "新利府11/22単日、9:30館外配券・撮影3回各50組・AR300人。既存同施設座標再利用。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "jr-central-railway-museum-facilities",
+      "name": "10/13一次根拠 https://museum.jr-central.co.jp/facilities/index.html",
+      "url": "https://museum.jr-central.co.jp/facilities/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T22:51:01.583+00:00",
+      "lastSuccessfulAt": "2026-10-12T22:51:01.583+00:00",
+      "lastResult": "success",
+      "resultSummary": "10～17:30/最終17時、入館料1200/500/200円。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "jr-central-railway-museum-calendar-2026",
+      "name": "10/13一次根拠 https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T22:51:36.482+00:00",
+      "lastSuccessfulAt": "2026-10-12T22:51:36.482+00:00",
+      "lastResult": "success",
+      "resultSummary": "カレンダーをクラウドが画像実見、10月6/13/20/27休館。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "corporate-minum-chiikawa-release",
+      "name": "10/13一次根拠 https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T22:50:59.327Z",
+      "lastSuccessfulAt": "2026-10-12T22:50:59.327Z",
+      "lastResult": "success",
+      "resultSummary": "9月下旬順次、国内コスメコラボ5種。正確発売日・終了日不明、EC後日。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
+    },
+    {
+      "id": "suntory-receipt-campaign-official-2026",
+      "name": "10/13一次根拠 https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T22:50:59.142Z",
+      "lastSuccessfulAt": "2026-10-12T22:50:59.142Z",
+      "lastResult": "success",
+      "resultSummary": "購入7/16～8/31、投稿7/16 9時～9/1 23:59、応募7/16 9時～9/8 23:59。応募終了とボトル販売を区別。",
+      "lastFailure": null,
+      "note": "クラウドの提供済み実読範囲を保存。画像・SNS・残席の全件確認とは扱わない。原PCに同じクラウドパスがあると仮定しない。"
     }
   ]
 }

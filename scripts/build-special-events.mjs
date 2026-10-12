@@ -105,8 +105,8 @@ function createRecord(
       : archive
         ? event.hoursText || "開催時の会場営業時間に準ずる"
         : event.hoursText || "会場営業時間に準ずる",
-    closedDaysText: null,
-    hoursInfoUrl: event.sourceUrl,
+    closedDaysText: event.closedDaysText || null,
+    hoursInfoUrl: event.hoursInfoUrl || event.sourceUrl,
     hoursCheckedAt: checkedAt,
     reservationType:
       event.reservationType ||

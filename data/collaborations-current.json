@@ -157,7 +157,9 @@
       "限定グッズ"
     ],
     "sourceUrl": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
-    "linkedSpotIds": [],
+    "linkedSpotIds": [
+      "jr-central-linear-railway-museum-2026"
+    ],
     "checkedAt": "2026-10-06"
   },
   {
@@ -329,15 +331,21 @@
     "periods": [
       {
         "label": "レシート有効期間",
-        "startDate": "2026-07-14",
+        "startDate": "2026-07-16",
         "endDate": "2026-08-31",
-        "note": "終了済み"
+        "note": "終了済み。対象商品の購入日が7月16日～8月31日のレシートが対象でした。"
       },
       {
-        "label": "応募期限",
-        "startDate": "2026-07-14",
+        "label": "レシートアップロード期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-09-01",
+        "note": "終了済み。7月16日9:00～9月1日23:59。"
+      },
+      {
+        "label": "応募受付期間",
+        "startDate": "2026-07-16",
         "endDate": "2026-09-08",
-        "note": "終了済み"
+        "note": "終了済み。7月16日9:00～9月8日23:59。詳細：https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/"
       },
       {
         "label": "映画デザインボトル発売",
@@ -354,7 +362,7 @@
     ],
     "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
     "linkedSpotIds": [],
-    "checkedAt": "2026-10-03"
+    "checkedAt": "2026-10-13"
   },
   {
     "id": "citen-chiikawa-2026",
@@ -745,5 +753,33 @@
       "chiikawa-christmas-market-2026-toyosuna"
     ],
     "checkedAt": "2026-10-08"
+  },
+  {
+    "id": "minum-chiikawa-grip-liner-2026",
+    "title": "minum×ちいかわ ぷにゅグリップライナー",
+    "partner": "minum（株式会社pool／yutori）",
+    "category": "collection",
+    "status": "active",
+    "summary": "ちいかわ限定デザインのチャーム付きアイライナー全5種を展開するコスメコラボです。2026年9月下旬から全国のドラッグストア・バラエティショップ・ちいかわらんどで順次発売。店舗ごとに発売時期・取扱い・在庫が異なります。",
+    "areaText": "全国の対象ドラッグストア・バラエティショップ・ちいかわらんど",
+    "channels": [
+      "店舗"
+    ],
+    "periods": [
+      {
+        "label": "順次発売",
+        "startDate": null,
+        "endDate": null,
+        "note": "2026年9月下旬より順次発売。店舗により発売時期が異なり、一部取扱いのない店舗があります。具体的な発売日・終了日は未発表。EC販売は詳細が決まり次第の案内です。"
+      }
+    ],
+    "tags": [
+      "コスメ",
+      "限定デザイン",
+      "商品コラボ"
+    ],
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-10-13"
   }
 ]

@@ -1,0 +1,61 @@
+{
+  "receivedAt": "2026-10-12T11:17:12.500Z",
+  "sourceUpserts": [
+    {
+      "id": "observed-chiikawa-info-jp-f14e0e6fed",
+      "name": "むちゃうま!!ちいかわ寿司 ｜ スパイラルキュート",
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T19:01:17+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:01:17+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像や埋込SNSを読んだと推定せず、関連する実読画像は別source記録。",
+      "lastFailure": null,
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-fb3fce6c45",
+      "name": "ちいかわ てんし♡あくま ｜ スパイラルキュート",
+      "url": "https://chiikawa-info.jp/tenshi_akuma.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T19:01:17+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:01:17+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像や埋込SNSを読んだと推定せず、関連する実読画像は別source記録。",
+      "lastFailure": null,
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-9ec22af2cf",
+      "name": "ちいかわワクワクゆうえんち ｜ スパイラルキュート",
+      "url": "https://chiikawa-info.jp/wakuwaku.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-12T19:01:23+09:00",
+      "lastSuccessfulAt": "2026-10-12T19:01:23+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式HTMLの本文・掲載リンク範囲を確認。画像や埋込SNSを読んだと推定せず、関連する実読画像は別source記録。",
+      "lastFailure": null,
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+    }
+  ],
+  "expectedParts": 17,
+  "totalReceivedRows": 261,
+  "originallyPublishedRows": 258,
+  "sourceRowsNowSynced": 3,
+  "unknownValuesNotInvented": true
+}
