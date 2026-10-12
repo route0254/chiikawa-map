@@ -316,6 +316,17 @@ ${importantNotice}          <dl class="spot-page-details">
 `;
 }
 
+async function createPageContent(spot, path) {
+  const content = createPage(spot);
+  try {
+    const existing = await readFile(path, "utf8");
+    if (existing.replaceAll("\r\n", "\n") === content) return content;
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+  return content.replace(/^[\t ]+$/gm, "");
+}
+
 function createSitemap() {
   const urls = [
     { loc: `${siteOrigin}/`, priority: "1.0", lastmod: pageLastModified },
@@ -379,7 +390,8 @@ if (writeMode) {
     }
     const directory = resolve(outputRoot, spot.id);
     await mkdir(directory, { recursive: true });
-    await writeFile(resolve(directory, "index.html"), createPage(spot), "utf8");
+    const path = resolve(directory, "index.html");
+    await writeFile(path, await createPageContent(spot, path), "utf8");
   }
 
   await writeFile(manifestPath, expectedManifest, "utf8");
@@ -400,7 +412,8 @@ if (checkMode) {
   await expectFile(manifestPath, expectedManifest);
   await expectFile(resolve(root, "sitemap.xml"), expectedSitemap);
   for (const spot of spots) {
-    await expectFile(resolve(outputRoot, spot.id, "index.html"), createPage(spot));
+    const path = resolve(outputRoot, spot.id, "index.html");
+    await expectFile(path, await createPageContent(spot, path));
   }
 
   if (mismatches.length) {
