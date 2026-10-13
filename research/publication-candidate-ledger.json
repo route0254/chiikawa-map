@@ -7791,6 +7791,18 @@
           "observedAt": "2026-10-13T07:55:08+09:00",
           "summary": "JSシェルのみでカレンダー解析できず。未確認を新着なしへ変えない。",
           "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawapark-tokyo.jp/ticket/",
+          "observedAt": "2026-10-13T22:30:29+09:00",
+          "summary": "22:30:29の復旧後新観測。毎月15日12時に2か月先分、15日が土日祝なら直前平日という一般規則を再確認。12月個別販売日時の明示はこの本文では確認できない。",
+          "recordPath": "research/park-calendar-evening-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.asoview.com/channel/tickets/9u0KJJjNgr/",
+          "observedAt": "2026-10-13T22:49:46+09:00",
+          "summary": "22:49:46の新観測。HTTP200だが抽出本文は「チケット購入」のみで、2026年12月販売カレンダーは解析できない。web読取もiframeのみ。個別販売日時は未確定で、一般規則との差異/矛盾が存在するとは確認していない。",
+          "recordPath": "research/park-calendar-evening-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -7805,9 +7817,9 @@
       ],
       "state": "on_hold",
       "priority": "high",
-      "decision": "既存の一般販売規則を維持。10/15は72h内のため優先確認を継続するが、未確認の日程を新発表とせずreservationOpensAtはnull。",
-      "nextCheck": "公式SNSの個別告知またはアソビュー公開カレンダーで2026年12月分を確認する。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
+      "decision": "一般販売規則は既に掲載済みのまま維持。19時の再確認で個別告知/カレンダー照合は解消せず、その後の環境再作成と資料復旧に伴い、19時の再確認期限の更新が遅れた。22:30公式本文再読でも個別日時の明示は確認できず、22:49アソビューはJSシェルのみで再び解析不可。日程の矛盾や12月券販売開始を確認したとは扱わずreservationOpensAtはnull。元の10/13反映目標を保持して遅延を記録する。",
+      "nextCheck": "10/14 08:00 JSTに公式ticket・公式NEWS/公式Xの12月個別販売告知と、同じアソビュー公開カレンダーを確認する。既知の一般規則で計算される10/15 12:00との差異の有無を、12月分と明示された一次情報で照合する。カレンダーを読めない場合は解析失敗・最終成功を保持して掲載判断者へ個別報告し、公開DATAやreservationOpensAtを推定で変更しない。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
       "publishedAt": null
     },
     {
