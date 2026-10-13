@@ -1,0 +1,1028 @@
+{
+  "task": "2026-10-13 夕常設店巡回の部分復元",
+  "recoveredAt": "2026-10-13T22:36:03+09:00",
+  "baselineCommit": "ca2af44bf9d39e6b1dcff22d94794c50fe76ee86",
+  "publicationPerformed": false,
+  "externalMutationPerformed": false,
+  "recoveryStatus": "partial",
+  "originalReportCompletedAt": "2026-10-13T19:11:50+09:00",
+  "originalReportedAggregate": {
+    "registeredSourceUpserts": 83,
+    "observedUrls": 129,
+    "readyCandidates": 4,
+    "onHoldCandidates": 1,
+    "provenance": "19時調査完了時のツール出力/親通知に残る集計。個別全行の再現ではない。"
+  },
+  "originalKnownObservations": [
+    {
+      "sourceId": "chiikawa-park-christmas-2026",
+      "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+      "observedAt": "2026-10-13T18:59:52+09:00",
+      "httpStatus": 200,
+      "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "chiikawa-park-christmas-2026-pr",
+      "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+      "observedAt": "2026-10-13T19:02:18+09:00",
+      "httpStatus": 200,
+      "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "ramen-shinsaibashi-entry-20261013",
+      "url": "https://x.com/chiikawaramenSH/status/2109813214284550315",
+      "observedAt": "2026-10-13T19:02:32+09:00",
+      "httpStatus": 200,
+      "summary": "10/13火は予約満席で予約済み客のみ。公式投稿本文と10月13日火の写真で当日券配布なし。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "bakery-cardigan-delay-20261013",
+      "url": "https://x.com/chiikawabakery/status/2109841554735083791",
+      "observedAt": "2026-10-13T19:02:33+09:00",
+      "httpStatus": 200,
+      "summary": "ニットカーディガン パンなみんなを配送遅延で10/15から10/16発売へ変更。単品商品でマップ未掲示のため公開変更対象外。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "observedAt": "2026-10-13T19:02:32+09:00",
+      "httpStatus": 200,
+      "summary": "プロフィール可視範囲は名古屋再入荷、池袋/京都/横浜の2027年カレンダー入荷など。新入場条件はその範囲で見当たらず、全SNSの不存在とは扱わない。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "observedAt": "2026-10-13T19:07:41+09:00",
+      "httpStatus": 404,
+      "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-store-news",
+      "url": "https://www.chiikawamogumogu.jp/store/kawagoe/",
+      "observedAt": "2026-10-13T19:07:41+09:00",
+      "httpStatus": 200,
+      "summary": "店舗カテゴリーは9/18秋新商品等の商品ニュース。代替予約告知は確認できず。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "yaki-nagoya-reservation-20261017",
+      "url": "https://www.chiikawa-yaki.com/app-nagoya/schedules-nagoya/2026-10-17",
+      "observedAt": "2026-10-13T19:02:25+09:00",
+      "httpStatus": 403,
+      "summary": "個別予約ページ403。枠状況未確認。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    },
+    {
+      "sourceId": "yaki-nagoya-reservation-20261018",
+      "url": "https://www.chiikawa-yaki.com/app-nagoya/schedules-nagoya/2026-10-18",
+      "observedAt": "2026-10-13T19:02:32+09:00",
+      "httpStatus": 403,
+      "summary": "個別予約ページ403。枠状況未確認。",
+      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "originalRawFileRecovered": false
+    }
+  ],
+  "morningKawagoeEvidence": {
+    "sourceId": "mogumogu-kawagoe-reservation-20261010",
+    "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+    "observedAt": "2026-10-13T07:52:03+09:00",
+    "httpStatus": 200,
+    "result": "success",
+    "summary": "本文再確認。川越10/10〜12・17〜18終日予約、前日20時LINE先着、30km制限、本人端末等。今後の17〜18条件は保持。",
+    "sha256": "07cb26f1292ac8140581930b5717b6811c32de4f67acfb81d74578c9577e7bb0",
+    "localEvidence": "evidence/6e8d1822f4e1ce.html",
+    "title": "川越店 入店予約についてのお知らせ |  ちいかわもぐもぐ本舗",
+    "method": "ordinary_direct_https_get",
+    "coverage": "page_body",
+    "originalRawFileRecovered": false
+  },
+  "recoveryObservations": [
+    {
+      "sourceId": "chiikawa-park-christmas-2026",
+      "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+      "localEvidence": "evidence/b62d7edea3e3fd.html",
+      "sha256": "5edcfa6e99a5f1c55a3440b7afd9ec867266a24971708d3263a652a694ad357f",
+      "title": "「ちいかわパーク」がクリスマス仕様に🎄11月20日(金)より開催✨ | ちいかわパーク",
+      "images": [
+        {
+          "src": "https://chiikawapark-tokyo.jp/images/logo/logo_chiikawa.png",
+          "alt": "Chiikawa Park"
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/images/top/icon_x.png",
+          "alt": "X"
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/クリスマス1013.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/101302.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/101303.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/101304.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/anoko.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/mafu.JPG",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/cms/images/news/ステッカー.jpg",
+          "alt": ""
+        }
+      ],
+      "textPath": "evidence/b62d7edea3e3fd.txt",
+      "textChars": 1984,
+      "attemptCompletedAt": "2026-10-13T22:30:20+09:00"
+    },
+    {
+      "sourceId": "chiikawa-park-christmas-2026-pr",
+      "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+      "localEvidence": "evidence/b2acf5f3d01abe.html",
+      "sha256": "19de3afb154c2b5c02835270ac6f71355ac1770d202df8b01aad04a281b2f27d",
+      "title": "「ちいかわパーク」がクリスマス仕様に！11月20日(金)より期間限定の装飾や特別グリーティングを開催 | 株式会社Juiceのプレスリリース",
+      "images": [
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-f393456c69e115d1953dce64c080800e-1080x1080.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-becb2cb99bc4225a91e2b9756aaf256b-1615x1014.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-0e73c129413081cd117a8ce3060fd39e-1603x981.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-82205770ea82913a095327c37d485b4d-1448x1086.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-74de11d5e85276422842bac3ac2336c2-1479x1064.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-dfa854dbe78a7ab1ee437fb6382cd28d-1536x1024.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-f143e29da2a3b7130868b8ea8aa20708-1521x1034.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-0460cfc9646fe890063050b2ae00bc32-1999x1283.png?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-c1ba086e99e13cefa88b2f91eff7f415-1800x2700.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-9775b8933ebced3a6bcad37062ab42c1-1800x2700.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-f58b80ce9eaef27866a6dc8f7e25dfc5-1800x2700.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-868eb123be5f3fb8c8eacc28767b770d-1800x2700.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-3459a42c4aff33d2b41c2f3992289633-1920x1080.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+          "alt": null
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-f393456c69e115d1953dce64c080800e-1080x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-0460cfc9646fe890063050b2ae00bc32-1999x1283.png?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-c1ba086e99e13cefa88b2f91eff7f415-1800x2700.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-f58b80ce9eaef27866a6dc8f7e25dfc5-1800x2700.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-868eb123be5f3fb8c8eacc28767b770d-1800x2700.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-9775b8933ebced3a6bcad37062ab42c1-1800x2700.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-becb2cb99bc4225a91e2b9756aaf256b-1615x1014.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-0e73c129413081cd117a8ce3060fd39e-1603x981.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-82205770ea82913a095327c37d485b4d-1448x1086.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-74de11d5e85276422842bac3ac2336c2-1479x1064.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-dfa854dbe78a7ab1ee437fb6382cd28d-1536x1024.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-f143e29da2a3b7130868b8ea8aa20708-1521x1034.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prcdn.freetls.fastly.net/release_image/74811/144/74811-144-3459a42c4aff33d2b41c2f3992289633-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=720&height=480",
+          "alt": ""
+        },
+        {
+          "src": "https://prtimes.jp/data/corp/74811/tmp-e52f9e865241b8e9d4e9798a0efb0365-8544679ccc4ebcea88e2291d28742a1c.jpg?auto=avif",
+          "alt": ""
+        }
+      ],
+      "textPath": "evidence/b2acf5f3d01abe.txt",
+      "textChars": 4420,
+      "attemptCompletedAt": "2026-10-13T22:30:22+09:00"
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://chiikawabakery.jp/reservation/",
+      "localEvidence": "evidence/3a1a4550396943.html",
+      "sha256": "3df3bc751e28917d1c2540e8b48c0c5cc1ca1b0f9a24a4809db86f0b7b5971b1",
+      "title": "Reservation | ちいかわベーカリー",
+      "images": [
+        {
+          "src": "https://chiikawabakery.jp/wp-content/themes/chikawacafe/assets/images/logo-chiikawacafe_01.png",
+          "alt": "CHIIKAWA BAKERY"
+        },
+        {
+          "src": "https://chiikawabakery.jp/wp-content/themes/chikawacafe/assets/images/frame_07.png",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_tokyo.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_osaka.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawabakery.jp/wp-content/uploads/2026/09/0824ckb_tokuten_comp_2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://chiikawabakery.jp/wp-content/themes/chikawacafe/assets/images/footer_logo.png",
+          "alt": "© LTR Inc."
+        }
+      ],
+      "textPath": "evidence/3a1a4550396943.txt",
+      "textChars": 1575,
+      "attemptCompletedAt": "2026-10-13T22:30:22+09:00"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "localEvidence": "evidence/8b5bfa6c14e9cd.html",
+      "sha256": "e45ca50f726d4af0cacce83a29cd2ba29390f1766c1f00a1a306e1ad075c21e0",
+      "title": "ちいかわもぐもぐ本舗 川越店 | ちいかわもぐもぐ本舗",
+      "images": [
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/11/hero-logo-character-1.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/11/hero-logo-text-1.png",
+          "alt": "ちいかわもぐもぐ本舗"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/12/1.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/12/2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/12/3.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/12/4.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/sections-intro-img-01-left.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/sections-intro-img-01-right.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/11/sections-intro-img-02-1.png",
+          "alt": "店舗イメージ"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/common/images/navigation/nav-text-news.svg",
+          "alt": "NEWS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/common/images/navigation/nav-text-goods.svg",
+          "alt": "GOODS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/common/images/navigation/nav-text-sns.svg",
+          "alt": "SNS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/common/images/navigation/nav-text-access.svg",
+          "alt": "ACCESS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/backgrounds/backgrounds-section-divider.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/section-title-news.png",
+          "alt": "NEWS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/01/ちいかわもぐもぐ本舗-川越店オープン告知画像公式HP-ヘッダー_アートボード-1-scaled.jpg",
+          "alt": "川越店 10月17日～18日 営業時間変更のお知らせ"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/07/2026年夏のノベルティ_公式HP用画像.jpg",
+          "alt": "【配布終了】8/20　追記：京都伏見店・川越店 夏の特別ノベルティプレゼント！"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/04/ちいハチお誕生日ノベルティ告知公式HP用画像.jpg",
+          "alt": "【配布終了】[5/16追記]ちいかわ・ハチワレ お誕生日記念ノベルティステッカー プレゼント！(5月1日～)"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/01/ノベルティ告知_公式HP用画像ヘッダー.jpg",
+          "alt": "【配布終了】川越店 1周年記念 お買い上げ特典ノベルティプレゼント！(3月16日更新)"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/12/ちいかわ2026うさぎBDノベルティSNS告知公式HP用.jpg",
+          "alt": "【配布終了】全店 うさぎ お誕生日記念ノベルティステッカー プレゼント！(1月22日～)"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/07/公式HP新着情報画像_共通.jpg",
+          "alt": "公式サイト 店舗別情報ぺージ開設のお知らせ"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/section-title-goods.png",
+          "alt": "GOODS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/08/1サムネイル画像.jpg",
+          "alt": "2026/9/18(金)川越店 秋の新商品コレクション"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/07/1.川越LPサムネイル.jpg",
+          "alt": "8/7(金) 川越店 夏の新商品コレクション"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/04/【川越】1.サムネイル・トップ画像.jpg",
+          "alt": "4/24(金) 川越店 春の新商品コレクション"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/02/川越1-1.jpg",
+          "alt": "2/20(金) 川越店1周年記念アイテムコレクション"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/11/ちりめん_サムネイル-500×300.jpg",
+          "alt": "12/13(土) ちりめん素材の和風マスコットが登場！"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/11/周年川越_サムネイル-1.jpg",
+          "alt": "11/14(金)ちいかわもぐもぐ本舗 周年記念アイテムコレクション"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/section-title-sns.png",
+          "alt": "SNS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/backgrounds/sns-divider-left.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/backgrounds/sns-divider-right.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/backgrounds/backgrounds-section-divider.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/section-title-access.png",
+          "alt": "ACCESS"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/sections-access-map.png",
+          "alt": "アクセスマップ"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/section-title-other-shops.svg",
+          "alt": "他のお店の情報を見る"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/sections/other-shops-link-fushimi.svg",
+          "alt": "伏見店 FUSHIMI"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/fushimi/images/sections/other-shops-link-kawagoe.svg",
+          "alt": "川越店 KAWAGOE"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/common/images/common/other-shops-link-otaru.svg",
+          "alt": "小樽店 OTARU"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/fushimi/images/sections/other-shops-link-online.svg",
+          "alt": "オンラインストア ONLINE STORE"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/common/images/common/other-shops-link-castella.svg",
+          "alt": "ちいかわベビーカステラ CHIIKAWA BABY CASTELLA"
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/themes/chiikawa/store-lp/kawagoe/images/pagetop/pagetop-pc.png",
+          "alt": "TOP"
+        }
+      ],
+      "textPath": "evidence/8b5bfa6c14e9cd.txt",
+      "textChars": 1203,
+      "attemptCompletedAt": "2026-10-13T22:30:25+09:00"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "attemptCompletedAt": "2026-10-13T22:30:25+09:00"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "localEvidence": "evidence/e4721c9ec95ef0.html",
+      "sha256": "cab7588b9e1f50e42bb86b8edb20159f056e549b8513f1771798e5cf9124f480",
+      "title": "川越店 10月17日～18日 営業時間変更のお知らせ |  ちいかわもぐもぐ本舗",
+      "images": [
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2025/01/ちいかわもぐもぐ本舗-川越店オープン告知画像公式HP-ヘッダー_アートボード-1-scaled.jpg",
+          "alt": null
+        },
+        {
+          "src": "https://www.chiikawamogumogu.jp/prod/wp-content/uploads/2026/09/川越まつり_営業時間変更告知-300x300.jpg",
+          "alt": ""
+        }
+      ],
+      "textPath": "evidence/e4721c9ec95ef0.txt",
+      "textChars": 299,
+      "attemptCompletedAt": "2026-10-13T22:30:25+09:00"
+    },
+    {
+      "sourceId": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "observationPhase": "recovery_after_22_28_JST",
+      "method": "ordinary_direct_https_get",
+      "httpStatus": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://chiikawapark-tokyo.jp/ticket/",
+      "localEvidence": "evidence/20ae597aa0b3b6.html",
+      "sha256": "0a7cd9489f55ca2872c8f545790e450af6a315149564a7e0707d0a8eb72c2b7c",
+      "title": "チケット情報 | ちいかわパーク",
+      "images": [
+        {
+          "src": "https://chiikawapark-tokyo.jp/images/logo/logo_chiikawa.png",
+          "alt": "Chiikawa Park"
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/images/top/icon_x.png",
+          "alt": "X"
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/images/ticket/title_ticket_03.png",
+          "alt": "チケット情報"
+        },
+        {
+          "src": "https://chiikawapark-tokyo.jp/images/ticket/bnr_ticket-application_09.png",
+          "alt": "チケットはこちら"
+        }
+      ],
+      "textPath": "evidence/20ae597aa0b3b6.txt",
+      "textChars": 1861,
+      "attemptCompletedAt": "2026-10-13T22:30:29+09:00"
+    }
+  ],
+  "patches": [
+    {
+      "id": "chiikawa-park-tokyo",
+      "existingMatch": "chiikawa-park-tokyo",
+      "state": "ready",
+      "before": {
+        "hoursText": "10:00～19:00（最終入場17:40／2026年9月1日から）",
+        "hoursInfoUrl": "https://chiikawapark-tokyo.jp/",
+        "hoursCheckedAt": "2026-09-04"
+      },
+      "after": {
+        "hoursText": "10:00～19:00（最終入場17:40）。2026年12月1～30日は10:00～20:00（最終入場18:20）、12月31日は10:00～18:00（最終入場16:00）。",
+        "hoursInfoUrl": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+        "hoursCheckedAt": "2026-10-13"
+      },
+      "sourceUrls": [
+        "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+        "https://prtimes.jp/main/html/rd/p/000000144.000074811.html"
+      ],
+      "reason": "会話で確認済み、親がSHAで回収した成功blobの完成文を使用。復旧後再取得の一次情報とも照合。",
+      "reflectDueAt": "2026-10-13"
+    },
+    {
+      "id": "chiikawa-bakery-osaka",
+      "existingMatch": "chiikawa-bakery-osaka",
+      "state": "ready",
+      "before": {
+        "entryNote": "2026年10月分の優先入場券は完売しています。当面の間、ベーカリーへの入場はノベルティ付き優先入場券（1,000円分のお買物券付き）をお持ちの方のみです。隣接するOSAKA POP UP SHOPはフリー入場です。混雑時に入場制限を行う場合があり、待機列形成は11:00からです。物販の会計はキャッシュレスのみです。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://chiikawabakery.jp/reservation/",
+        "entryInfoCheckedAt": "2026-10-13"
+      },
+      "after": {
+        "entryNote": "2026年10月・11月・12月分の優先入場券は完売しています。当面の間、ベーカリーへの入場はノベルティ付き優先入場券（1,000円分のお買物券付き）をお持ちの方のみです。隣接するOSAKA POP UP SHOPはフリー入場です。混雑時に入場制限を行う場合があり、待機列形成は11:00からです。物販の会計はキャッシュレスのみです。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。最新の案内は公式予約ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://chiikawabakery.jp/reservation/",
+        "entryInfoCheckedAt": "2026-10-13"
+      },
+      "sourceUrls": [
+        "https://chiikawabakery.jp/reservation/"
+      ],
+      "reason": "会話で確認済み、親がSHAで回収した成功blobの完成文を使用。復旧後再取得の一次情報とも照合。",
+      "reflectDueAt": "2026-10-13"
+    },
+    {
+      "id": "mogumogu-kawagoe",
+      "existingMatch": "mogumogu-kawagoe",
+      "state": "ready",
+      "before": {
+        "entryNote": "通常案内はフリー入場ですが、2026年10月17～18日は終日予約制（前日先着）。公式LINEで各日前夜20:00から受付します。申し込みには店舗半径30km以内で位置情報をオンにする必要があります。入店時は申し込んだ携帯端末とデジタルチケットが必要で、スクリーンショット・印刷・遠隔操作による提示は不可。原則1人1枚・1日1回。指定期間外の入場制限は公式の追加告知をご確認ください。",
+        "entryInfoUrl": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+        "entryInfoCheckedAt": "2026-10-13",
+        "importantNotice": "2026年10月17～18日は終日入店予約制。10月17～18日の営業時間は9:30～19:00です（通常9:30～17:30）。"
+      },
+      "after": {
+        "entryNote": "2026年10月13日朝の公式案内では、10月17～18日は終日予約制（各日前夜20:00から公式LINEで先着受付）です。10月13日夕方に当該予約案内記事が閲覧できなくなったため、最新の予約実施・入場条件を公式店舗案内で再確認してください。予約が撤回されたことや自由入場への変更は確認していません。 通常案内はフリー入場ですが、2026年10月17～18日は終日予約制（前日先着）。公式LINEで各日前夜20:00から受付します。申し込みには店舗半径30km以内で位置情報をオンにする必要があります。入店時は申し込んだ携帯端末とデジタルチケットが必要で、スクリーンショット・印刷・遠隔操作による提示は不可。原則1人1枚・1日1回。指定期間外の入場制限は公式の追加告知をご確認ください。",
+        "entryInfoUrl": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+        "entryInfoCheckedAt": "2026-10-13",
+        "importantNotice": "10月17～18日の入店予約案内は10月13日朝に確認済みですが、夕方に告知記事が閲覧不可となっています。最新の公式案内をご確認ください。10月17～18日の営業時間9:30～19:00の別告知は継続しています。"
+      },
+      "sourceUrls": [
+        "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+        "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+        "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/"
+      ],
+      "reason": "会話で確認済み、親がSHAで回収した成功blobの完成文を使用。復旧後再取得の一次情報とも照合。",
+      "reflectDueAt": "2026-10-13"
+    }
+  ],
+  "specialEventChange": {
+    "seriesKey": "chiikawa-park-seasonal-2026",
+    "operation": "append_event",
+    "event": {
+      "id": "chiikawa-park-christmas-2026",
+      "name": "ちいかわパーク クリスマス期間限定企画",
+      "startDate": "2026-11-20",
+      "endDate": "2026-12-25",
+      "address": "東京都豊島区東池袋3-3-5 サンシャインシティ アネックス B1F・1F",
+      "lat": 35.7308,
+      "lng": 139.7196,
+      "sourceUrl": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+      "hoursText": "11月20～30日10:00～19:00（最終入場17:40）、12月1～25日10:00～20:00（最終入場18:20）",
+      "reservationType": "required",
+      "reservationUrl": "https://chiikawapark-tokyo.jp/ticket/",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "ちいかわパークの入場チケットが必要です。アソビュー！で先着販売し、予定枚数に達し次第終了します。完売した時間帯の当日券販売はありません。チケットは毎月15日12:00から2か月先の1日～末日分を販売し、15日が土日祝の場合は直前の平日に繰り上げます。グリーティングの開催日時・登場キャラクター・内容は変更や中止となる場合があります。",
+      "description": "クリスマスをイメージした装飾と、限定衣装のちいかわたちによる特別グリーティングを実施予定です。11月24日から新商品を発売予定。パーク内で撮影した写真・動画に指定ハッシュタグを付けて対象SNSへ投稿し、その投稿画面をキャストに提示するとオリジナルステッカーをランダムで1枚受け取れるキャンペーンも予定されています（全3種、なくなり次第終了、詳細は後日案内）。",
+      "venueName": "ちいかわパーク",
+      "checkedAt": "2026-10-13"
+    },
+    "catalogOperation": {
+      "key": "chiikawa-park-seasonal-2026",
+      "appendSourceUrls": [
+        "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/"
+      ]
+    },
+    "notes": "イベントcheckedAtのみ更新。既存季節系列・ハロウィーンの日付を一括更新しない。住所/座標は既存会場から再利用。"
+  },
+  "candidates": [
+    {
+      "id": "chiikawa-park-christmas-2026-new",
+      "title": "ちいかわパーク クリスマス期間限定企画",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-park-christmas-2026-new",
+      "sourceIds": [
+        "chiikawa-park-christmas-2026",
+        "chiikawa-park-christmas-2026-pr"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-20",
+      "eventEndsAt": "2026-12-25",
+      "releaseAt": "2026-11-24",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+          "observedAt": "2026-10-13T18:59:52+09:00",
+          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+          "observedAt": "2026-10-13T19:02:18+09:00",
+          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "クリスマス開催回は未登録。既存常設とハロウィーンとは別開催として季節原本へ追加。"
+      },
+      "listingIds": [
+        "chiikawa-park-christmas-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式・運営会社PRの会期と会場が一致。系列原本へ新イベント追加。SNS特典は園内撮影写真/動画・指定ハッシュタグの条件を明記。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-park-december-hours-20261013",
+      "title": "ちいかわパーク 12月特別営業時間",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-park-december-hours-20261013",
+      "sourceIds": [
+        "chiikawa-park-christmas-2026",
+        "chiikawa-park-christmas-2026-pr"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-12-01",
+      "eventEndsAt": "2026-12-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+          "observedAt": "2026-10-13T18:59:52+09:00",
+          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+          "observedAt": "2026-10-13T19:02:18+09:00",
+          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-tokyo"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "既存施設の12/1～30と12/31の営業時間/最終入場の公式明記値を反映。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-bakery-osaka-nov-dec-soldout-20261013",
+      "title": "ちいかわベーカリー大阪 11・12月優先券完売",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-osaka-nov-dec-soldout-20261013",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-01",
+      "eventEndsAt": "2026-12-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-13T22:30:22+09:00",
+          "summary": "22:30復旧後の新観測。大阪10・11・12月優先券完売、東京9・10月完売の記載を確認。大阪のみ更新し東京へ拡張しない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-osaka"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-osaka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "大阪予約ページの完売対象が11・12月へ拡張。東京条件とは分離。19時元取得の秒は未復元。復旧後22:30:22の再取得成功を別記する。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-20261013",
+      "title": "ちいかわラーメン豚心斎橋 10月13日当日券なし",
+      "kind": "reservation_update",
+      "targetKey": "ramen-buta-shinsaibashi-entry-20261013",
+      "sourceIds": [
+        "ramen-shinsaibashi-entry-20261013"
+      ],
+      "officialAnnouncedAt": "2026-10-13T10:07:23+09:00",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-10-13",
+      "eventEndsAt": "2026-10-13",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawaramenSH/status/2109813214284550315",
+          "observedAt": "2026-10-13T19:02:32+09:00",
+          "summary": "10/13火は予約満席で予約済み客のみ。公式投稿本文と10月13日火の写真で当日券配布なし。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "rejected",
+      "priority": "high",
+      "decision": "当日案内は未公開のまま最終入店22:00を経過。通常営業終了は23:00であり、22:28時点に営業終了済みとは記録しない。新規当日追加を除外し、朝mainの通常案内へ戻す。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "mogumogu-kawagoe-reservation-source-unavailable-20261013",
+      "title": "もぐもぐ川越 10月17～18予約根拠ページが取得不能",
+      "kind": "reservation_update",
+      "targetKey": "mogumogu-kawagoe-reservation-source-unavailable-20261013",
+      "sourceIds": [
+        "mogumogu-kawagoe-reservation-20261010",
+        "mogumogu-kawagoe-news"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-10-17",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-16T20:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T07:52:03+09:00",
+          "summary": "本文再確認。川越10/10〜12・17〜18終日予約、前日20時LINE先着、30km制限、本人端末等。今後の17〜18条件は保持。 復旧済みmorning転送資料の確認済みhash・時刻を使用。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T19:07:41+09:00",
+          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後の新観測。10/17～18営業時間延長記事は掲載、旧予約告知の見出しなし。旧予約告知404のみで予約撤回とは扱わない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後もHTTP404。朝7:52:03の成功記録は復旧済みmorning転送資料で保持。予約撤回・自由入場とは推定しない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-kawagoe"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "mogumogu-kawagoe"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "朝原告知と既存予約条件を保持し、夕/復旧後の404から撤回を推定しない。公開注意文追加と予約実施の再確認は別候補で管理。",
+      "nextCheck": "10/14朝に公式店舗NEWS/LINE/SNSを優先確認。既知の次回受付10/16 20時までに代替根拠・撤回有無を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "mogumogu-kawagoe-source-availability-notice-20261013",
+      "title": "もぐもぐ川越 予約告知閲覧不可の注意",
+      "kind": "listing_update",
+      "targetKey": "mogumogu-kawagoe:source-availability-notice:2026-10-13",
+      "sourceIds": [
+        "mogumogu-kawagoe-reservation-20261010",
+        "mogumogu-kawagoe-news",
+        "mogumogu-kawagoe-hours-20261017"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T19:07:41+09:00",
+          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後の新観測。10/17～18営業時間延長記事は掲載、旧予約告知の見出しなし。旧予約告知404のみで予約撤回とは扱わない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後の新観測。川越まつりに伴う10/17・18 9:30～19:00、通常9:30～17:30を再確認。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-kawagoe"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "mogumogu-kawagoe"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "予約条件を撤回せず朝確認・夕原告知404の注意を追記。entryInfoUrlを公式店舗NEWSへ差替え。完成文は親がSHAで回収した公開用blobを採用。予約実施再確認のon_hold候補を保持。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    }
+  ],
+  "excludedExpired": {
+    "id": "ramen-buta-shinsaibashi",
+    "state": "rejected",
+    "reason": "当日案内は未公開のまま最終入店22:00を経過。通常営業終了は23:00であり、22:28時点に営業終了済みとは記録しない。新規当日追加を除外し、朝mainの通常案内へ戻す。",
+    "fieldsToRestore": {
+      "entryNote": "通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+      "importantNotice": null,
+      "entryInfoUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "entryInfoCheckedAt": "2026-10-13"
+    },
+    "sourceUrl": "https://x.com/chiikawaramenSH/status/2109813214284550315"
+  },
+  "missing": [
+    "元83源の全upsert行・全129URLの時刻/結果/hashを復元できていない。ここに復元できた行以外の既存台帳を一括更新しない。",
+    "元夕HTML・画像・diffファイル本体は失われ未復元。会話に残る実読要約のみ復元。evidence/の新ファイルは22時30分台の再取得である。",
+    "大阪予約ページの19時台の正確な取得完了秒は未復元。観測日2026-10-13と完売差分のみ確実。",
+    "夕の公式画像31点の全byte比較表、Xの全投稿抽出JSONは未復元。確認できない項目を新着なし/成功扱いしない。"
+  ],
+  "preservedImageReadSummaries": [
+    {
+      "url": "https://pbs.twimg.com/media/HUeP72Ua8AAqOUk?format=webp&name=large",
+      "readDate": "2026-10-13",
+      "summary": "元巡回で画像実読。10月13日火と、本日は事前予約で定員のため当日券配布なしを確認。画像原本は復元していない。"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HUeYgi6aoAEKDQy?format=webp&name=large",
+      "readDate": "2026-10-13",
+      "summary": "カーディガン製品画像を元巡回で実読。延期日は画像になく投稿本文で確認。"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HUf5cMJbMAARsb2?format=webp&name=large",
+      "readDate": "2026-10-13",
+      "summary": "公式Xの赤いチェック柄Chiikawa Park TOKYOビジュアルを元巡回で実読。日付時刻文字はなく、会期根拠は公式本文/PR。"
+    }
+  ],
+  "recordOnly": [
+    {
+      "title": "ベーカリーカーディガン発売延期",
+      "url": "https://x.com/chiikawabakery/status/2109841554735083791",
+      "officialAnnouncedAt": "2026-10-13T12:00:00+09:00",
+      "previousReleaseAt": "2026-10-15",
+      "releaseAt": "2026-10-16",
+      "reason": "単品発売情報を地図には掲載していない。企画全体10/15開始を延期しない。"
+    },
+    {
+      "title": "LUCUAプレオープン対象フロア",
+      "summary": "元夕本文差分で対象フロア10～13Fから11～13Fへ。11/24以降の入場案内は10～13Fのまま。掲載2店は11Fなので公開変更なし。",
+      "observedAt": "2026-10-13",
+      "exactFetchTimeRecovered": false
+    }
+  ],
+  "nextCheck": "2026-10-14T08:00:00+09:00",
+  "validation": {
+    "requiredFields": "passed",
+    "sourceReferences": "passed",
+    "duplicateIdsUrls": "none",
+    "jsonSyntax": "passed",
+    "fullRepositoryValidation": "parent responsible",
+    "sourceSchema": "passed",
+    "candidateSchema": "passed"
+  }
+}

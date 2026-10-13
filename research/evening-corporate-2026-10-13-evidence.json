@@ -1,0 +1,658 @@
+{
+  "reviewDate": "2026-10-13",
+  "completedAt": "2026-10-13T10:12:16.711+00:00",
+  "recoveredAt": "2026-10-13T13:35:00.160+00:00",
+  "baseMain": "ca2af44bf9d39e6b1dcff22d94794c50fe76ee86",
+  "recoveryStatement": "2026-10-13夜の環境再作成で元成果消失。親から復旧依頼後、元の会話・ツール呼出し/出力・実読画像要約から復元。最新原台帳の元メタデータを保持。今回の復旧では外部出典を再取得せず、新しい22時台観測はない。",
+  "observations": [
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "key": "tamanohikari-chiikawa-dashiwari-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "fetchedAt": "2026-10-13T09:59:11.030+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "10/5予約開始・11/10発売予定。朝から主要本文一致。配送重要案内は公式ECを併読。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "tamanohikari-chiikawa-dashiwari-2026.html"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "key": "waon-point-chiikawa-line-emoji-2026",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "fetchedAt": "2026-10-13T09:59:10.935+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 403,
+      "result": "access_limited",
+      "summary": "HTTP403。web.openも403で個別本文再取得不能。10/21終了表記を推測変更せず、最終成功日時を保持。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": null
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "key": "sunflower-movie-chiikawa-2026",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "fetchedAt": "2026-10-13T09:59:10.721+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "画像本体実読：8/6～10/31、さつま/きりしま/さっぽろ/ふらの4隻、深夜便対象外。予約は大阪～志布志3か月前、大洗～苫小牧2か月前の営業日。朝の画像未実見を解消。運航・空室在庫未検証。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "sunflower-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "key": "ana-chiikawa-jet-2026",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "fetchedAt": "2026-10-13T09:59:10.753+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "10/19初便ANA661羽田8:15→長崎、ANA664長崎11:00→羽田の予定と路線非固定。朝主要本文・現行案内一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "ana-chiikawa-jet-2026.html"
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "key": "jr-central-tsutsuurauratabi-2026",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "fetchedAt": "2026-10-13T09:59:13.562+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ・引換証配布終了、他所欠品時の後日配送方式は現行一致。KITTE公式バルーン画像内に固有フロア・撮影時間・料金の明記なし。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "jr-central-tsutsuurauratabi-2026.html"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "key": "tokyo-metro-escape-2026",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "fetchedAt": "2026-10-13T09:59:12.723+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "東京メトロ原発表の7/24～11/3を再確認。ゲーム特設・配送キットの別取得は403/本文解析失敗、最新運営条件や在庫未確認。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "tokyo-metro-escape-2026.html"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "key": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "fetchedAt": "2026-10-13T09:59:12.053+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "特設本文・10月PDF・上映/点灯画像実読。10/14・21・22の19:30上映のみ休止、カフェ食事券上限到達/再販売可能、1F9/24以降予約不要は現行一致。個別販売フォーム403/空解析で残席未確認。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "tokyo-skytree-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "key": "seven-eleven-christmas-chiikawa-2026",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "fetchedAt": "2026-10-13T09:59:14.337+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "9/14予約開始、受取12/19～25、受取日/方法により締切12/16～20、予定数終了。朝主要本文一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "seven-eleven-christmas-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "key": "suntory-movie-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "fetchedAt": "2026-10-13T09:59:18.602+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "デザインボトル24種・9月上旬順次・数量限定。朝レシート期間訂正は最新main反映済み。ボトル販売終了未確認、status維持。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "suntory-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "key": "citen-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "fetchedAt": "2026-10-13T09:59:18.135+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "国内9/15発売・数量限定。海外販売は対象外。朝から本文一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "citen-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "key": "merry-jenny-chiikawa-2026",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "fetchedAt": "2026-10-13T09:59:17.495+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "オンライン7/15・店舗7/22発売と対象店案内。朝本文一致、現在在庫・全店完売を推定しない。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "merry-jenny-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "key": "panasonic-energy-movie-chiikawa-2026",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "fetchedAt": "2026-10-13T09:59:19.283+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "映画デザイン乾電池7/10数量限定発売。朝本文一致、現在在庫未検証。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "panasonic-energy-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "tokyo-banana-chiikawa",
+      "key": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "fetchedAt": "2026-10-13T09:59:17.963+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "池袋9/17～10/14、10～21時・最終18時、南池袋1-28-4を実本文確認。盛岡9/30終了は既存履歴。新しい催事告知を確認せず。HTMLコメント内旧催事は新規情報にしない。ソラマチは別発表元確認。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "tokyo-banana-chiikawa.html"
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "key": "donquijote-chiikawa-2026",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "fetchedAt": "2026-10-13T09:59:17.803+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "6/6発売・なくなり次第終了・対象店案内。朝本文一致、現在在庫未確認。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "donquijote-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "key": "chiikawa-epos-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "fetchedAt": "2026-10-13T09:59:18.507+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "cp932原本文再読。申込継続と2/16開始年間利用特典。会員登録・契約操作なし。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "chiikawa-epos-card.html"
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "key": "kadokawa-chiikawa-book-fair-2026-summer",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "fetchedAt": "2026-10-13T09:59:18.990+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "7/13～9/30購入、購入後1週間以内投稿。賞品応募終了日時はWeb本文明記なし。needs_review維持。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "kadokawa-chiikawa-book-fair-2026-summer.html"
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "key": "uniqlo-movie-chiikawa-2026",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "fetchedAt": "2026-10-13T09:59:23.421+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "UT7/17・スウェット7/24、再入荷未定のFAQ。朝本文一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "uniqlo-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "key": "gu-chiikawa-winter-2026",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "fetchedAt": "2026-10-13T09:59:24.334+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "11/20・11/27、オンライン7:15/店舗開店時、全店、1柄1色2点。朝との差は関連FAQリンクのみ。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "gu-chiikawa-winter-2026.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "key": "oxiclean-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "fetchedAt": "2026-10-13T09:59:22.017+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "10/2発売・1500gちいかわパッケージ数量限定。現行一致、現在在庫未確認。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "oxiclean-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "key": "clasic-chiikawa-scrubs-2026",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "fetchedAt": "2026-10-13T09:59:23.863+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "実店舗予定数完売、再入荷予定だが時期未定、10/1オンライン過剰受注案内。朝から記事件数以外の主要本文一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "clasic-chiikawa-scrubs-2026.html"
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "key": "minum-chiikawa-grip-liner-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "fetchedAt": "2026-10-13T09:59:22.163+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "9月下旬順次・国内コスメコラボ5種・EC発売日後日。9/18発表は既知、正確発売日/終了日不明維持。朝追加IDと一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "minum-chiikawa-grip-liner-2026.html"
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "key": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "fetchedAt": "2026-10-13T09:59:27.282+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "第1弾10/19 10時～12/31 23:59、ANAアプリ/AMCログイン/参加登録・搭乗不要。第2弾2/1～4/30搭乗条件・国内送付は現行一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "ana-chiikawa-campaign.html"
+    },
+    {
+      "sourceId": "corporate-yomeruba-chiikawa-campaign",
+      "key": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "fetchedAt": "2026-10-13T09:59:23.196+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "購入9/30 23:59まで・購入後1週間以内投稿。賞品応募期限の別記なし、保留継続。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "corporate-yomeruba-chiikawa-campaign.html"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-signature",
+      "key": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "fetchedAt": "2026-10-13T09:59:26.709+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "公式クリスマス商品・予約案内取得成功、ちいかわ条件の変更を確認せず。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "corporate-seven-eleven-christmas-signature.html"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-character",
+      "key": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "fetchedAt": "2026-10-13T09:59:25.825+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "公式キャラクターケーキ2種・予約案内取得成功、ちいかわ条件の変更を確認せず。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "corporate-seven-eleven-christmas-character.html"
+    },
+    {
+      "sourceId": "corporate-tokyo-banana-solamachi-release",
+      "key": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "fetchedAt": "2026-10-13T09:59:27.281+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "発信者原本で10/1～10/14、イーストヤード1F10番地空の小町、10～22時。終了当日10/14はcurrent。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "corporate-tokyo-banana-solamachi-release.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses-orders",
+      "key": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "fetchedAt": "2026-10-13T09:59:29.374+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "10/1アクセス集中・過剰受注のお詫び原本。再入荷時期は別公式で未定、現行一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "corporate-chiikawa-glasses-orders.html"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "key": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "fetchedAt": "2026-10-13T09:59:28.516+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "10/7重要案内：新規注文2027年中・具体時期未定・日付選択しても配送/発送指定不可。朝本文・10/12公開訂正と一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "tamanohikari-chiikawa-shop-details.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "key": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "fetchedAt": "2026-10-13T09:59:28.149+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "7/8～10/31、1F各所フォトスポット/ジオラマ、入館料のみ。朝追加スポット一致。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "jr-central-railway-museum-event.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-home",
+      "key": "jr-central-railway-museum-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "fetchedAt": "2026-10-13T09:59:28.140+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "館ホーム朝本文一致。10/13休館は朝の開館PDF実読と最新mainを再利用、夕方PDF再取得なし。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "jr-central-railway-museum-home.html"
+    },
+    {
+      "sourceId": "kitte-osaka-home",
+      "key": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "fetchedAt": "2026-10-13T09:59:30.838+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "施設ホーム差分は革財布店等のみ。バルーン固有フロア/撮影時間/料金を確定できず、一般営業時間流用なし。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "kitte-osaka-home.html"
+    },
+    {
+      "sourceId": "suntory-receipt-campaign-official-2026",
+      "key": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "fetchedAt": "2026-10-13T09:59:34.998+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "購入7/16～8/31、投稿7/16 9時～9/1 23:59、応募7/16 9時～9/8 23:59。朝訂正main一致。同URL別sourceを作らず既存ID再用。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "suntory-receipt-campaign-official-2026.html"
+    },
+    {
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "key": "prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "fetchedAt": "2026-10-13T09:59:33.076+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "朝以降新着3件：Juiceパーク18時、アプリボットちいぽけ5会場13:17、GPSまじかるEC限定ぬいぐるみ18時。前2件委譲、最後は一般商品対象外。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "prtimes-chiikawa-index.html"
+    },
+    {
+      "sourceId": "kitte-osaka-event-news",
+      "key": "kitte-events",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "fetchedAt": "2026-10-13T09:59:30.868+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "イベント/ニュース一覧再読、バルーン固有案内なし。一般営業時間/X応募期限を展示時間に使わない。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "kitte-events.html"
+    },
+    {
+      "sourceId": "corporate-minum-official-store",
+      "key": "minum-home",
+      "url": "https://minum-cosme.com/",
+      "fetchedAt": "2026-10-13T09:59:34.759+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "公式ECトップ再確認。新発売日時確定なし、現行未発表表記維持。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "minum-home.html"
+    },
+    {
+      "sourceId": "corporate-magical-gororin-release-20261013",
+      "key": "magical-stuffed-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000078.000168561.html",
+      "fetchedAt": "2026-10-13T10:01:46.599+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "summary": "10/13 18時発表、受注10/13 18時～10/20正午、2027年2月下旬順次発送。公式EC限定一般キャラクター商品、実会場/企業別コラボなし。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": "magical-stuffed-release.html"
+    },
+    {
+      "sourceId": "metro-event-details",
+      "key": "metro-game",
+      "url": "https://escape.id/chiikawa/",
+      "fetchedAt": "2026-10-13T10:01:46.769+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 403,
+      "result": "access_limited",
+      "summary": "HTTP403。web.openもGTM iframeのみ、最新本文/運営条件解析不能。新着なしとは扱わない。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": null
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-escape-delivery-kit",
+      "key": "metro-delivery-kit",
+      "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+      "fetchedAt": "2026-10-13T10:01:46.789+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 403,
+      "result": "access_limited",
+      "summary": "HTTP403。検索には古いプレイ期間が表示、最新在庫確認に採用せず。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": null
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-october-cafe-ticket",
+      "key": "skytree-cafe-ticket-oct",
+      "url": "https://official-ticket.tokyo-skytree.jp/ja/product/prod_agpns3pcmj5jtclqwthf2jvyeu",
+      "fetchedAt": "2026-10-13T10:01:51.885+00:00",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "httpStatus": 403,
+      "result": "access_limited",
+      "summary": "HTTP403。web.open空本文で残席解析不能。特設本文の上限到達/再販売可能以上を判断しない。",
+      "rawArtifactRestored": false,
+      "originalLocalArtifact": null
+    }
+  ],
+  "imageReads": [
+    {
+      "artifact": "sunflower-img_main.jpg",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "8/6～10/31",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "sunflower-img_a02.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "対象4隻、深夜便対象外",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "sunflower-img_f11.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "予約開始：大阪～志布志3か月前/大洗～苫小牧2か月前の営業日、日祝は翌営業日",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "sunflower-img_f12.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "在庫問合せ回答不可、商品予約/後日配送なし、ショップ営業時間内のみ",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "sunflower-img_g03.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "フォトラリー達成で御船印、シートは案内所付近",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "sunflower-img_g04.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "御船印デザイン",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "sunflower-img_j04.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "公式アカウントフォロー・対象写真/ハッシュタグ。独立応募期限は未採用",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "skytree-theater-schedule.webp",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "10月18時/18:45/19:30/20:15/21時。本文で10/14・21・22 19:30休止",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "skytree-lighting-schedule01.webp",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "10月点灯3/10/17/24",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "skytree-lighting-schedule02.webp",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "10/17・24は17:45～24時",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "skytree-hours-october.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "公式PDF2ページ目実読。10/13以降平日展望台10～22、土日9～22、最終21時。1F平日10～21/土日9～21、最終20:45。",
+      "binaryRestored": false
+    },
+    {
+      "artifact": "jr-balloon.png",
+      "observedAt": "2026-10-13T10:12:16.711+00:00",
+      "summary": "画像内に展示固有フロア名/時間/料金記載なし",
+      "binaryRestored": false
+    }
+  ],
+  "morningComparison": {
+    "comparedPages": 28,
+    "identicalNormalizedTextPages": 22,
+    "source": "元ツール出力で計数確認。残る6頁差分はKITTEトップ/イベント一覧、GU関連FAQリンク、minumフォロワー数、クラシコ記事数、PR TIMES新着3件。個々の比較JSON/原HTMLは未復元。"
+  },
+  "newAnnouncements": [
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+      "fetchedAt": "2026-10-13T10:01:46.607+00:00",
+      "officialAnnouncedAt": "2026-10-13T18:00:00+09:00",
+      "eventStartsAt": "2026-11-20",
+      "eventEndsAt": "2026-12-25",
+      "releaseAt": "2026-11-24",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "state": "delegated_to_store_worker",
+      "summary": "Juice発表：クリスマス装飾/限定衣装グリーティング/SNS特典。12/1～30は10～20時、12/31は10～18時。パーク担当へ委譲、企業コラボ二重登録不要。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
+      "fetchedAt": "2026-10-13T10:01:46.607+00:00",
+      "officialAnnouncedAt": "2026-10-13T13:17:00+09:00",
+      "eventStartsAt": "2026-10-24",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": "2026-10-24T11:00:00+09:00",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "state": "delegated_to_series_worker",
+      "summary": "一般商品発売だけでなく5会場POP UPあり。系列担当へ委譲。仙台10～21時対特設画像10～19時の矛盾を保存。企業コラボ二重登録不要。"
+    }
+  ],
+  "sendaiVenueSeed": {
+    "venueName": "イオンモール仙台上杉",
+    "venueSpace": "1階 あまみやコート",
+    "address": "宮城県仙台市青葉区堤通雨宮町1-1 イオンモール仙台上杉",
+    "lat": 38.276336,
+    "lng": 140.872124,
+    "startDate": "2026-11-03",
+    "endDate": "2026-11-23",
+    "hoursText": null,
+    "hoursConflict": {
+      "pressRelease": "10:00〜21:00（最終日17:00閉場）",
+      "seriesImageReportedBySeriesWorker": "10:00〜19:00（最終日17:00閉場）",
+      "decision": "イベント固有営業時間の一次資料が矛盾。施設一般時間で上書きしない。掲載責任者/系列担当判断へ。"
+    },
+    "officialAnnouncedAt": "2026-10-13T13:17:00+09:00",
+    "discoveredAt": null,
+    "existingVenueMatch": {
+      "id": "pocket-popup-sendai",
+      "lat": 38.278,
+      "lng": 140.8727,
+      "address": "宮城県仙台市青葉区 イオンモール仙台上杉 2F ずんだコート",
+      "note": "同一施設の過去回だが会場異なる。旧座標は公式点から約192m北、OSMモールbbox外。新回へ旧ID/日程/座標を流用しない。"
+    },
+    "coordinateEvidence": [
+      {
+        "url": "https://sendaikamisugi.aeonmall.com/static-pages/access",
+        "summary": "原HTMLにconst sendaiKamisugi={lat:38.276336,lng:140.872124};。イオンモール仙台上杉のラベルを持つAdvancedMarkerElement.positionに同変数使用。施設マーカーを確認。住所は堤通雨宮町1-1。",
+        "originalLocalArtifact": "sendai-access.html",
+        "rawArtifactRestored": false,
+        "fetchedAt": null
+      },
+      {
+        "url": "https://maps.app.goo.gl/fgJ16wahNfwNWzmGA",
+        "summary": "公式Googlemapリンクを読取り解決。イオンモール仙台上杉Place座標38.2760185,140.8719336。公式JS点から約39m、同一モール内。",
+        "originalLocalArtifact": "sendai-official-googlemap.html",
+        "rawArtifactRestored": false,
+        "fetchedAt": null
+      },
+      {
+        "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E4%BB%99%E5%8F%B0%E4%B8%8A%E6%9D%89&limit=3",
+        "summary": "施設名/住所一致shop=mall way1365973649、bbox[38.2753732,38.2769946,140.8716335,140.8732315]内に公式JSマーカー。返ったbicycle_rental nodeは不採用。",
+        "originalLocalArtifact": "sendai-geocode-osm.json",
+        "rawArtifactRestored": false,
+        "fetchedAt": null
+      }
+    ],
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
+    "observedAt": null,
+    "scope": "元の住所/会場/座標seedをツール出力から再構成。元seedの正確な生成日時は会話に残らずnull。新観測ではない。",
+    "recoveredAt": "2026-10-13T13:35:00.160+00:00"
+  },
+  "readyPublicChanges": [],
+  "unrestored": [
+    "元HTML・画像・PDFのバイナリ",
+    "元fetches.jsonの全試行および全hash。39 sourceの確実な時刻/結果のみobservationsへ復元",
+    "仙台access/公式Googlemap/Nominatim取得完了の正確な日時",
+    "元sendai seed生成日時",
+    "一部Web検索/フォールバック試行の正確な完了時刻"
+  ],
+  "nextChecks": [
+    {
+      "target": "東京ばな奈池袋/ソラマチ",
+      "at": "2026-10-14T08:00:00+09:00",
+      "reason": "10/14最終日。池袋18時/ソラマチ22時、当日はcurrent。10/15以降公式確認して既存ID移動。"
+    },
+    {
+      "target": "ANA",
+      "at": "2026-10-14T08:00:00+09:00",
+      "reason": "10/19初便・10時登録開始の続報確認。元夕方時点72h外。"
+    },
+    {
+      "target": "KITTE/KADOKAWA/WAON/メトロ/スカイツリー販売",
+      "at": "2026-10-14T08:00:00+09:00",
+      "reason": "未確定/取得失敗を再確認。新着なし扱い禁止。"
+    }
+  ]
+}

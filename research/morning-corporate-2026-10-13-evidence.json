@@ -1,0 +1,684 @@
+{
+  "reviewCompletedAt": "2026-10-12T22:57:28Z",
+  "scope": "Corporate/publisher/venue weekly supplement; primary official pages and cached source snapshots only; no PC or repository operations.",
+  "observations": [
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:49:45.509962+00:00",
+      "httpStatus": 200,
+      "summary": "JR東海本文で2店のノベルティ/引換証終了と他拠点欠品時配送を現行一致確認。KITTE7/8～10/31・5m級バルーン。展示固有時間/料金/フロアは本文に明記なし。",
+      "artifact": "jr-campaign.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:49:42.866545+00:00",
+      "httpStatus": 200,
+      "summary": "7/8～10/31、館内1F各所フォトスポットと鉄道ジオラマ。特段表記のないイベントは入館料のみ。掲載案の条件を本文確定。",
+      "artifact": "jr-event.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:49:42.821543+00:00",
+      "httpStatus": 200,
+      "summary": "施設所在地 金城ふ頭3-2-2を本文確認。動的なお知らせ全件の確認は別扱い。",
+      "artifact": "jr-home.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-access",
+      "url": "https://museum.jr-central.co.jp/access/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:49:42.894197+00:00",
+      "httpStatus": 200,
+      "summary": "金城ふ頭駅徒歩約2分、専用駐車場なしを本文確認。",
+      "artifact": "jr-access.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-facilities",
+      "url": "https://museum.jr-central.co.jp/facilities/index.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:51:01.583866+00:00",
+      "httpStatus": 200,
+      "summary": "10:00～17:30・最終17:00・火曜休館。入館大人1200円/小中高500円/3歳以上幼児200円。",
+      "artifact": "jr-facilities.html"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-calendar-2026",
+      "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:51:36.482860+00:00",
+      "httpStatus": 200,
+      "summary": "2026年度PDFを画像実見。10月6/13/20/27が休館。本日10/13も休館。",
+      "artifact": "jr-calendar.pdf"
+    },
+    {
+      "sourceId": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:49:45.232826+00:00",
+      "httpStatus": 200,
+      "summary": "施設公式ホーム本文で所在地・最新イベント一覧を確認。バルーン固有の時間/場所/料金告知は確認できず。",
+      "artifact": "kitte-home.html"
+    },
+    {
+      "sourceId": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:50:59.061484+00:00",
+      "httpStatus": 200,
+      "summary": "一覧全5件（イベント4、ニュース1）を本文確認。バルーン単独記事はこの一覧にない。企画終了や未開催の証拠とは扱わない。",
+      "artifact": "kitte-events.html"
+    },
+    {
+      "sourceId": "kitte-osaka-facility-hours",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:50:58.944543+00:00",
+      "httpStatus": 200,
+      "summary": "一般1F営業時間11:00～20:00とインフォメーション時間を確認。展示時間/撮影可能時間への流用はしない。",
+      "artifact": "kitte-hours.html"
+    },
+    {
+      "sourceId": "kitte-osaka-facility-access",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:51:43.293463+00:00",
+      "httpStatus": 200,
+      "summary": "公式所在地大阪市北区梅田3-2-2と埋込地図34.7006219,135.4941733を確認。既存ベーカリーの同一建物座標と一致。",
+      "artifact": "kitte-access2.html"
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:50:59.327978+00:00",
+      "httpStatus": 200,
+      "summary": "発表元yutori原本で9/18 10:00発表、9月下旬より国内ドラッグストア等・ちいかわらんどで順次販売の企業コラボを確認。具体日・終了日未発表。",
+      "artifact": "minum-release.html"
+    },
+    {
+      "sourceId": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:51:50.004840+00:00",
+      "httpStatus": 200,
+      "summary": "公式ECトップを確認。ちいかわコラボのEC発売告知/専用商品は確認できず、EC販売開始済みとはしない。",
+      "artifact": "minum-home.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:50:59.548988+00:00",
+      "httpStatus": 200,
+      "summary": "発表元サントリー原本で全24種ボトル9月上旬順次・なくなり次第終了を確認。全店在庫/企画終了は未確認。",
+      "artifact": "suntory-release.html"
+    },
+    {
+      "sourceId": "corporate-suntory-movie-chiikawa-receipt-campaign",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:50:59.142433+00:00",
+      "httpStatus": 200,
+      "summary": "公式本文で購入7/16～8/31、投稿7/16 9:00～9/1 23:59、応募7/16 9:00～9/8 23:59。現行7/14開始は要訂正。終了告知確認。",
+      "artifact": "suntory-campaign.html"
+    },
+    {
+      "sourceId": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:51:03.109850+00:00",
+      "httpStatus": 200,
+      "summary": "児童書トピックスの10/9までの表示分を確認。ちいかわあいうえお10/2は一般新刊として対象外。",
+      "artifact": "kadokawa-topics.html"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:46.470776+00:00",
+      "httpStatus": 200,
+      "summary": "玉乃光発表元原本で10/5予約・11/10発売を確認。配送条件は商品ページが優先。",
+      "artifact": "tamanohikari-chiikawa-dashiwari-2026.html"
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:45.983980+00:00",
+      "httpStatus": 200,
+      "summary": "10/19就航、ANA661羽田8:15/ANA664長崎11:00初便、機番JA609A、以後路線不定を本文確認。現行主要条件一致。",
+      "artifact": "ana-chiikawa-jet-2026.html"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:46.932460+00:00",
+      "httpStatus": 200,
+      "summary": "予約FAQで9/14開始・受取日/方法別12/16～20締切・12/19～25受取を確認。現行主要条件一致。",
+      "artifact": "seven-eleven-christmas-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:46.398950+00:00",
+      "httpStatus": 200,
+      "summary": "発表元原本9/15国内順次・CITEN/ちいかわらんど/Talkingの6型。台湾10月発売は国内対象外。在庫は未確認。",
+      "artifact": "citen-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:52.195015+00:00",
+      "httpStatus": 200,
+      "summary": "公式7/15記事で同日12時web先行・7/22店舗発売を確認。現在在庫/全店終了は未確認。",
+      "artifact": "merry-jenny-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:52.448366+00:00",
+      "httpStatus": 200,
+      "summary": "7/10発売の映画デザインアルカリ電池、ちいかわマーケット/らんど等を発表元原本確認。在庫は未確認。",
+      "artifact": "panasonic-energy-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:50.123850+00:00",
+      "httpStatus": 200,
+      "summary": "6/6発売～なくなり次第終了と取扱店の案内を本文確認。現時点在庫/全店終了は未確認。",
+      "artifact": "donquijote-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:52.284373+00:00",
+      "httpStatus": 200,
+      "summary": "原HTMLをcp932で再読し申込継続・2026/2/16開始年間利用特典の本文確認。契約手続きは一切行っていない。",
+      "artifact": "chiikawa-epos-card.html"
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:51.317858+00:00",
+      "httpStatus": 200,
+      "summary": "7/13～9/30購入・1週間以内投稿を本文再確認。賞品応募終了日はWeb本文に明記なくneeds_review維持。",
+      "artifact": "kadokawa-chiikawa-book-fair-2026-summer.html"
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:51.576959+00:00",
+      "httpStatus": 200,
+      "summary": "UT7/17・スウェット7/24、再入荷未定FAQを本文確認。現時点在庫は未確認。",
+      "artifact": "uniqlo-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:53.010508+00:00",
+      "httpStatus": 200,
+      "summary": "11/20・11/27、web7:15/店舗開店時、全店、1柄1色2点の本文確認。現行主要条件一致。",
+      "artifact": "gu-chiikawa-winter-2026.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:50.642584+00:00",
+      "httpStatus": 200,
+      "summary": "発表元原本で10/2・1500gちいかわパッケージ数量限定を確認。現在在庫は未確認。",
+      "artifact": "oxiclean-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:55.253225+00:00",
+      "httpStatus": 200,
+      "summary": "実店舗完売・再入荷予定だが時期未定・オンライン過剰受注10/1告知を本文確認。現行主要条件一致。",
+      "artifact": "clasic-chiikawa-scrubs-2026.html"
+    },
+    {
+      "sourceId": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:56.729583+00:00",
+      "httpStatus": 200,
+      "summary": "主催発表元で10/8発表、11/24～12/25豊砂公園を再確認。先行チケット等の個別販売状況は別担当範囲。",
+      "artifact": "abema-chiikawa-christmas-market-2026.html"
+    },
+    {
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:54.997840+00:00",
+      "httpStatus": 200,
+      "summary": "企業配信一覧の9/25～10/10表示分を確認し前回広域10/6以降を見直し。10/8クリスマス既知、10/9光るパジャマ・雑誌は一般商品。定期登録外minumを個別原本から補完。",
+      "artifact": "prtimes-chiikawa-index.html"
+    },
+    {
+      "sourceId": "corporate-bandai-chiikawa-phone-campaign",
+      "url": "https://toy.bandai.co.jp/ja/topics/01_21085/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:59.502544+00:00",
+      "httpStatus": 200,
+      "summary": "10/31ちいかわフォン購入特典、なくなり次第・1会計1枚を本文確認。通常キャラクター玩具の販促として企業別コラボ/会場公開対象外と判断。",
+      "artifact": "bandai-phone-campaign.html"
+    },
+    {
+      "sourceId": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:57.723358+00:00",
+      "httpStatus": 200,
+      "summary": "購入対象7/13 0:00～9/30 23:59・購入後1週間以内投稿。賞品応募終了日を示さず保留継続。",
+      "artifact": "kadokawa-yomeruba.html"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:57.117286+00:00",
+      "httpStatus": 200,
+      "summary": "10/7重要案内のこれからの注文は2027年中・具体時期未定・指定不可を確認。夕方修正済みと一致。",
+      "artifact": "tamanohikari-shop.html"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:46.496141+00:00",
+      "httpStatus": 403,
+      "summary": "HTTP403で個別本文を再取得できず。無料配布10/21期限の再確認未了。前回成功時刻を保持。",
+      "artifact": null
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:45.254500+00:00",
+      "httpStatus": 200,
+      "summary": "HTTP200本文/画像altで4隻・深夜便対象外・予約開始条件を確認。ただし期間・注意書きの画像本体を今回実見しておらずページ全体再確認完了としない。",
+      "artifact": "sunflower-movie-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:46.362516+00:00",
+      "httpStatus": 200,
+      "summary": "HTTP200本文で10/14・21・22の19:30上映休止と1F9/24以降予約不要を現行一致確認。チケット在庫と画像告知全体は未確認のため部分確認。",
+      "artifact": "tokyo-skytree-chiikawa-2026.html"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "fetchedAt": "2026-10-12T22:52:44.636519+00:00",
+      "httpStatus": 200,
+      "summary": "原発表本文で7/24～11/3開催一致。個別ゲーム特設/キット在庫の再確認未了のため最新運営条件全体は未確認。",
+      "artifact": "tokyo-metro-escape-2026.html"
+    },
+    {
+      "url": "https://www.nagoya-info.jp/spot/detail/16/",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "httpStatus": 403,
+      "summary": "HTTP直取得403。webの本文は閲覧でき営業時間/住所/料金を補強したがiframeのmap取得は失敗。検索スニペットのみから精密ピンを作らない。"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=%E3%83%AA%E3%83%8B%E3%82%A2%E3%83%BB%E9%89%84%E9%81%93%E9%A4%A8%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82&limit=3",
+      "observedAt": "2026-10-12T22:57:28Z",
+      "summary": "Nominatim館名一致のmuseum way247172485を取得し35.0488735,136.8512061採用。GSI番地代表点は建物からずれるため不採用。",
+      "artifact": "jr-geocode-osm.json"
+    }
+  ],
+  "fetches": [
+    {
+      "key": "jr-campaign",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "finalUrl": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "status": 200,
+      "at": "2026-10-12T22:49:45.509962+00:00",
+      "bytes": 54112
+    },
+    {
+      "key": "jr-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "finalUrl": "https://museum.jr-central.co.jp/event/",
+      "status": 200,
+      "at": "2026-10-12T22:49:42.866545+00:00",
+      "bytes": 220938
+    },
+    {
+      "key": "jr-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "finalUrl": "https://museum.jr-central.co.jp/",
+      "status": 200,
+      "at": "2026-10-12T22:49:42.821543+00:00",
+      "bytes": 34721
+    },
+    {
+      "key": "jr-fees",
+      "url": "https://museum.jr-central.co.jp/ticket/",
+      "error": "HTTP Error 404: Not Found",
+      "at": "2026-10-12T22:49:43.043802+00:00"
+    },
+    {
+      "key": "jr-access",
+      "url": "https://museum.jr-central.co.jp/access/",
+      "finalUrl": "https://museum.jr-central.co.jp/access/",
+      "status": 200,
+      "at": "2026-10-12T22:49:42.894197+00:00",
+      "bytes": 7931
+    },
+    {
+      "key": "kitte-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "finalUrl": "https://osaka.jp-kitte.jp/",
+      "status": 200,
+      "at": "2026-10-12T22:49:45.232826+00:00",
+      "bytes": 88603
+    },
+    {
+      "key": "kitte-access",
+      "url": "https://osaka.jp-kitte.jp/access/",
+      "error": "HTTP Error 404: Not Found",
+      "at": "2026-10-12T22:49:45.234109+00:00"
+    },
+    {
+      "key": "kitte-news",
+      "url": "https://osaka.jp-kitte.jp/event/",
+      "error": "HTTP Error 404: 404",
+      "at": "2026-10-12T22:49:45.168475+00:00"
+    },
+    {
+      "key": "jr-facilities",
+      "url": "https://museum.jr-central.co.jp/facilities/index.html",
+      "finalUrl": "https://museum.jr-central.co.jp/facilities/index.html",
+      "status": 200,
+      "at": "2026-10-12T22:51:01.583866+00:00",
+      "bytes": 13145
+    },
+    {
+      "key": "kitte-events",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "finalUrl": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "status": 200,
+      "at": "2026-10-12T22:50:59.061484+00:00",
+      "bytes": 39406
+    },
+    {
+      "key": "kitte-hours",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+      "finalUrl": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+      "status": 200,
+      "at": "2026-10-12T22:50:58.944543+00:00",
+      "bytes": 36278
+    },
+    {
+      "key": "kitte-floor",
+      "url": "https://osaka.jp-kitte.jp/shop/floor/floor.jsp",
+      "finalUrl": "https://osaka.jp-kitte.jp/shop/floor/floor.jsp",
+      "status": 200,
+      "at": "2026-10-12T22:50:59.012839+00:00",
+      "bytes": 37798
+    },
+    {
+      "key": "minum-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "status": 200,
+      "at": "2026-10-12T22:50:59.327978+00:00",
+      "bytes": 256466
+    },
+    {
+      "key": "suntory-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "status": 200,
+      "at": "2026-10-12T22:50:59.548988+00:00",
+      "bytes": 264082
+    },
+    {
+      "key": "suntory-campaign",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "finalUrl": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "status": 200,
+      "at": "2026-10-12T22:50:59.142433+00:00",
+      "bytes": 23477
+    },
+    {
+      "key": "kadokawa-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "finalUrl": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "status": 200,
+      "at": "2026-10-12T22:51:03.109850+00:00",
+      "bytes": 137265
+    },
+    {
+      "key": "jr-calendar",
+      "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "status": 200,
+      "at": "2026-10-12T22:51:36.482860+00:00",
+      "bytes": 65904
+    },
+    {
+      "key": "kitte-access2",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+      "status": 200,
+      "at": "2026-10-12T22:51:43.293463+00:00",
+      "bytes": 32919
+    },
+    {
+      "key": "minum-home",
+      "url": "https://minum-cosme.com/",
+      "status": 200,
+      "at": "2026-10-12T22:51:50.004840+00:00",
+      "bytes": 202475
+    },
+    {
+      "key": "tamanohikari-chiikawa-dashiwari-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:46.470776+00:00",
+      "bytes": 255834
+    },
+    {
+      "key": "waon-point-chiikawa-line-emoji-2026",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "error": "HTTP Error 403: Forbidden",
+      "at": "2026-10-12T22:52:46.496141+00:00"
+    },
+    {
+      "key": "sunflower-movie-chiikawa-2026",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "finalUrl": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "status": 200,
+      "at": "2026-10-12T22:52:45.254500+00:00",
+      "bytes": 15374
+    },
+    {
+      "key": "ana-chiikawa-jet-2026",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "finalUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "status": 200,
+      "at": "2026-10-12T22:52:45.983980+00:00",
+      "bytes": 573497
+    },
+    {
+      "key": "tokyo-metro-escape-2026",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "finalUrl": "https://www.tokyometro.jp/news/2026/224766.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:44.636519+00:00",
+      "bytes": 35916
+    },
+    {
+      "key": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "finalUrl": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "status": 200,
+      "at": "2026-10-12T22:52:46.362516+00:00",
+      "bytes": 304663
+    },
+    {
+      "key": "seven-eleven-christmas-chiikawa-2026",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "finalUrl": "https://www.sej.co.jp/products/christmas.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:46.932460+00:00",
+      "bytes": 178301
+    },
+    {
+      "key": "citen-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:46.398950+00:00",
+      "bytes": 281490
+    },
+    {
+      "key": "merry-jenny-chiikawa-2026",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "finalUrl": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "status": 200,
+      "at": "2026-10-12T22:52:52.195015+00:00",
+      "bytes": 37793
+    },
+    {
+      "key": "panasonic-energy-movie-chiikawa-2026",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "finalUrl": "https://news.panasonic.com/jp/topics/206785",
+      "status": 200,
+      "at": "2026-10-12T22:52:52.448366+00:00",
+      "bytes": 132200
+    },
+    {
+      "key": "donquijote-chiikawa-2026",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "finalUrl": "https://www.donki.com/products/chiikawa_sl6/",
+      "status": 200,
+      "at": "2026-10-12T22:52:50.123850+00:00",
+      "bytes": 68005
+    },
+    {
+      "key": "chiikawa-epos-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "finalUrl": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:52.284373+00:00",
+      "bytes": 38854
+    },
+    {
+      "key": "kadokawa-chiikawa-book-fair-2026-summer",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "finalUrl": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:51.317858+00:00",
+      "bytes": 47064
+    },
+    {
+      "key": "uniqlo-movie-chiikawa-2026",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "finalUrl": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "status": 200,
+      "at": "2026-10-12T22:52:51.576959+00:00",
+      "bytes": 257960
+    },
+    {
+      "key": "gu-chiikawa-winter-2026",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "finalUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "status": 200,
+      "at": "2026-10-12T22:52:53.010508+00:00",
+      "bytes": 229040
+    },
+    {
+      "key": "oxiclean-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:50.642584+00:00",
+      "bytes": 258279
+    },
+    {
+      "key": "clasic-chiikawa-scrubs-2026",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "finalUrl": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "status": 200,
+      "at": "2026-10-12T22:52:55.253225+00:00",
+      "bytes": 314947
+    },
+    {
+      "key": "abema-chiikawa-christmas-market-2026",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "finalUrl": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "status": 200,
+      "at": "2026-10-12T22:52:56.729583+00:00",
+      "bytes": 142271
+    },
+    {
+      "key": "prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "finalUrl": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "status": 200,
+      "at": "2026-10-12T22:52:54.997840+00:00",
+      "bytes": 197451
+    },
+    {
+      "key": "bandai-phone-campaign",
+      "url": "https://toy.bandai.co.jp/ja/topics/01_21085/",
+      "finalUrl": "https://toy.bandai.co.jp/ja/topics/01_21085/",
+      "status": 200,
+      "at": "2026-10-12T22:52:59.502544+00:00",
+      "bytes": 51013
+    },
+    {
+      "key": "kadokawa-yomeruba",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "finalUrl": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "status": 200,
+      "at": "2026-10-12T22:52:57.723358+00:00",
+      "bytes": 63168
+    },
+    {
+      "key": "tamanohikari-shop",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "finalUrl": "https://ec.tamanohikari.co.jp/products/cds",
+      "status": 200,
+      "at": "2026-10-12T22:52:57.117286+00:00",
+      "bytes": 702492
+    },
+    {
+      "key": "jr-geocode-gsi",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E6%B8%AF%E5%8C%BA%E9%87%91%E5%9F%8E%E3%81%B5%E9%A0%AD3%E4%B8%81%E7%9B%AE2%E7%95%AA2%E5%8F%B7",
+      "status": 200,
+      "at": "2026-10-12T22:53:09.566564+00:00",
+      "bytes": 185
+    },
+    {
+      "key": "jr-geocode-osm",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=%E3%83%AA%E3%83%8B%E3%82%A2%E3%83%BB%E9%89%84%E9%81%93%E9%A4%A8%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82&limit=3",
+      "status": 200,
+      "at": "2026-10-12T22:54:48.351372+00:00",
+      "bytes": 516
+    }
+  ]
+}

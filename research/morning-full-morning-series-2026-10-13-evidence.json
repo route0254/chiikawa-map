@@ -1,0 +1,1009 @@
+{
+  "checkedAt": "2026-10-13",
+  "researchOnly": true,
+  "endingSeven": {
+    "statusAsOf": "2026-10-13",
+    "readOnlyResearch": true,
+    "safeToArchiveIds": [
+      "popup-yonago",
+      "chiikawaland-popup-2026-09-11-amu-oita",
+      "popup-2026-09-26-aeon-niihama",
+      "bakery-popup-2026-10-01-okinawa-ryubo",
+      "chiikawa-muchaphoto-aeon-fujiidera-2026",
+      "chiikawa-workshop-lalaport-kashiwanoha-2026",
+      "chiikawa-muchaphoto-aeon-laketown-mori-2026"
+    ],
+    "managedIds": [
+      "chiikawaland-popup-2026-09-11-amu-oita",
+      "bakery-popup-2026-10-01-okinawa-ryubo",
+      "chiikawa-muchaphoto-aeon-fujiidera-2026",
+      "chiikawa-workshop-lalaport-kashiwanoha-2026"
+    ],
+    "directArchiveIds": [
+      "popup-yonago",
+      "popup-2026-09-26-aeon-niihama",
+      "chiikawa-muchaphoto-aeon-laketown-mori-2026"
+    ],
+    "instructions": [
+      "Before writing, verify exact current/archived ID presence in the latest source commit.",
+      "Set research/official-special-events-source.json statusAsOf to 2026-10-13, keeping global checkedAt and unrelated checkedAt fields unchanged. Run build:special-events preview then import:special-events.",
+      "The four managed records must be moved by import, not archive:ended.",
+      "Use archive:ended --today=2026-10-13 --ids=<three direct IDs> --confirm-official --write for the three non-managed IDs.",
+      "Keep Yonago conflicting 16:00/17:00 closing time unresolved; do not choose either or alter its published hours. End date is consistently 10/12.",
+      "Preserve all IDs, first discovery/publication dates, and official announcement values. No new listing is created.",
+      "Optional event-level checkedAt 2026-10-13 only for Okinawa, Fujiidera and Kashiwanoha where hours/entry body was read; do not bulk-refresh confirmation dates.",
+      "Run build:spot-pages, check, smoke and verify seven IDs exist only in archive, then public same-ID paths after deployment."
+    ],
+    "items": [
+      {
+        "id": "popup-yonago",
+        "managedSeriesKey": null,
+        "operation": "archive-ended-same-id",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://chiikawa-info.jp/pus.html",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "shortQuote": "2026年9月18日(金)～10月12日(月)",
+          "observation": "一覧本文で米子天満屋1階しんまち広場・会期を確認。最終16時/17時の競合は未解消。両方が10/12で一致し、日付経過による移動を妨げない。",
+          "evidenceFile": "web-endings-read.json"
+        },
+        "sourceIds": [
+          "chiikawa-popup-list",
+          "series-observed-db594c9ad917",
+          "venue-yonago-tenmaya-event-calendar"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "popup-yonago",
+          "name": "ちいかわPOP UP STORE 米子天満屋",
+          "category": "official",
+          "placeType": "shop",
+          "relationType": "popup",
+          "brand": "chiikawa",
+          "periodType": "limited",
+          "startDate": "2026-09-18",
+          "endDate": "2026-10-12",
+          "hoursText": "会場の営業時間に準ずる",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://chiikawa-info.jp/pus.html",
+          "hoursCheckedAt": "2026-08-24",
+          "reservationType": "unknown",
+          "reservationUrl": null,
+          "defaultEntryType": "walkin",
+          "crowdControlType": "numbered_ticket",
+          "crowdControlCondition": "announced",
+          "entryNote": "混雑時は整理券配布や入場制限が行われる場合があります。最新の会場案内をご確認ください。",
+          "entryInfoUrl": "https://chiikawa-info.jp/pus.html",
+          "entryInfoCheckedAt": "2026-08-24",
+          "lat": 35.433,
+          "lng": 133.331,
+          "address": "鳥取県米子市西福原2-1-10 米子天満屋 1F しんまち広場",
+          "description": "全国各地で開催される期間限定の「ちいかわPOP UP STORE」です。",
+          "sourceUrl": "https://chiikawa-info.jp/pus.html",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8FPOP%20UP%20STORE%20%E7%B1%B3%E5%AD%90%E5%A4%A9%E6%BA%80%E5%B1%8B"
+        },
+        "additionalEvidence": [
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "retrievedAt": "2026-10-12T22:55:10.128Z",
+            "observedAt": "2026-10-13T07:55:31+09:00",
+            "summary": "画像は9/18～10/12、最終16時閉場のまま。施設本文は17時のため時刻は保留。",
+            "evidenceFile": "yonago-image.jpg"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-13T07:54:48+09:00",
+            "summary": "施設本文9/18～10/12・最終午後5時閉場を再確認。",
+            "evidenceFile": "web-yonago-popup-x.json"
+          }
+        ]
+      },
+      {
+        "id": "chiikawaland-popup-2026-09-11-amu-oita",
+        "managedSeriesKey": "chiikawaland-popup",
+        "operation": "advance-source-status-and-import",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+          "observedAt": "2026-10-13T07:49:13+09:00",
+          "shortQuote": "ちいかわらんど POP UP SHOP アミュプラザおおいた(2026/9/11(金)～10/12(月祝))",
+          "observation": "公式個別ページタイトルで会期を確認。画像主体本文の全入場条件は実読していないため、hours/entry確認日は更新しない。メイン画像は追加HTTP取得403で別途失敗記録。",
+          "evidenceFile": "web-ending-pages-initial.json"
+        },
+        "sourceIds": [
+          "individual-chiikawaland-popup-2026-09-11-amu-oita",
+          "chiikawaland-store-list",
+          "series-morning-96561d81af19"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "chiikawaland-popup-2026-09-11-amu-oita",
+          "name": "ちいかわらんど POP UP SHOP アミュプラザおおいた",
+          "category": "official",
+          "placeType": "shop",
+          "relationType": "popup",
+          "brand": "chiikawaland",
+          "periodType": "limited",
+          "startDate": "2026-09-11",
+          "endDate": "2026-10-12",
+          "hoursText": "会場営業時間に準ずる",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+          "hoursCheckedAt": "2026-09-04",
+          "reservationType": "unknown",
+          "reservationUrl": null,
+          "defaultEntryType": "walkin",
+          "crowdControlType": "other",
+          "crowdControlCondition": "announced",
+          "entryNote": "混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "entryInfoUrl": "https://x.com/chiikawa_land/status/2109163038804939187",
+          "entryInfoCheckedAt": "2026-10-11",
+          "lat": 33.233311,
+          "lng": 131.606415,
+          "address": "大分県大分市要町1-14 アミュプラザおおいた（開催場所：2階 特設会場）",
+          "description": "アミュプラザおおいたで開催される期間限定のちいかわらんど POP UP SHOPです。",
+          "sourceUrl": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E3%81%8A%E3%81%8A%E3%81%84%E3%81%9F%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E8%A6%81%E7%94%BA1-14%20%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E3%81%8A%E3%81%8A%E3%81%84%E3%81%9F"
+        },
+        "additionalEvidence": [
+          {
+            "url": "https://chiikawa-info.jp/ck_land.html",
+            "observedAt": "2026-10-13T07:52:33+09:00",
+            "summary": "公式らんど一覧の本文でも9/11～10/12、2階特設を確認。",
+            "evidenceFile": "web-shinrifu-and-priority-body.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/chiikawaland/oita/img/main_tel.jpg",
+            "retrievedAt": "2026-10-12T22:55:37.402Z",
+            "observedAt": "2026-10-13T07:56:02+09:00",
+            "summary": "メイン画像取得後に実読。9/11～10/12・10～20時・アミュおおいた2F特設・住所一致。最初の403は失敗履歴として残す。入場画像群全体を確認したとは扱わない。",
+            "evidenceFile": "oita-main.jpg"
+          }
+        ]
+      },
+      {
+        "id": "popup-2026-09-26-aeon-niihama",
+        "managedSeriesKey": null,
+        "operation": "archive-ended-same-id",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://chiikawa-info.jp/pus.html",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "shortQuote": "2026年9月26日(土)～10月12日(月祝)",
+          "observation": "一覧本文と個別公式タイトルで会期確認。既存の前日確認営業時間を保持する。",
+          "evidenceFile": "web-endings-read.json"
+        },
+        "sourceIds": [
+          "chiikawa-popup-list"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "popup-2026-09-26-aeon-niihama",
+          "name": "ちいかわPOP UP STORE イオンモール新居浜",
+          "category": "official",
+          "placeType": "shop",
+          "relationType": "popup",
+          "brand": "chiikawa",
+          "periodType": "limited",
+          "startDate": "2026-09-26",
+          "endDate": "2026-10-12",
+          "hoursText": "10:00～19:00（最終日は18:00閉場）",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+          "hoursCheckedAt": "2026-10-12",
+          "reservationType": "unknown",
+          "reservationUrl": null,
+          "defaultEntryType": "walkin",
+          "crowdControlType": "other",
+          "crowdControlCondition": "announced",
+          "entryNote": "入店方法・販売方法は公式イベントページをご確認ください。",
+          "entryInfoUrl": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+          "entryInfoCheckedAt": "2026-09-14",
+          "lat": 33.954357,
+          "lng": 133.270233,
+          "address": "愛媛県新居浜市前田町8-8 イオンモール新居浜（開催場所：1F サウスコート）",
+          "description": "イオンモール新居浜で開催される期間限定のちいかわPOP UP STOREです。",
+          "sourceUrl": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E6%96%B0%E5%B1%85%E6%B5%9C%20%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%96%B0%E5%B1%85%E6%B5%9C%E5%B8%82%E5%89%8D%E7%94%B0%E7%94%BA8-8"
+        }
+      },
+      {
+        "id": "bakery-popup-2026-10-01-okinawa-ryubo",
+        "managedSeriesKey": "chiikawa-bakery-popup-2026",
+        "operation": "advance-source-status-and-import",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://chiikawabakery.jp/topics/20260918/",
+          "observedAt": "2026-10-13T07:51:24+09:00",
+          "shortQuote": "2026年10月1日（木）～ 10月12日（月）",
+          "observation": "本文で会期とデパートリウボウ6階、最終10/12 17時閉場、整理券条件を確認。",
+          "evidenceFile": "web-ending-body-bakery-kashiwa.json"
+        },
+        "sourceIds": [
+          "evening-chiikawabakery-jp-topics-20260918"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "bakery-popup-2026-10-01-okinawa-ryubo",
+          "name": "ちいかわベーカリー OKINAWA POP UP SHOP",
+          "category": "official",
+          "placeType": "shop",
+          "relationType": "popup",
+          "brand": "chiikawa_bakery",
+          "periodType": "limited",
+          "startDate": "2026-10-01",
+          "endDate": "2026-10-12",
+          "hoursText": "10:00～20:00（最終日は17:00まで）",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://chiikawabakery.jp/topics/20260918/",
+          "hoursCheckedAt": "2026-09-18",
+          "reservationType": "not_available",
+          "reservationUrl": null,
+          "defaultEntryType": "walkin",
+          "crowdControlType": "other",
+          "crowdControlCondition": "announced",
+          "entryNote": "10月1日はデジタル整理券で案内されます。以降も混雑状況によりデジタル整理券となる場合があります。",
+          "entryInfoUrl": "https://chiikawabakery.jp/topics/20260918/",
+          "entryInfoCheckedAt": "2026-09-18",
+          "lat": 26.213209,
+          "lng": 127.678604,
+          "address": "沖縄県那覇市久茂地1-1-1 デパートリウボウ（開催場所：6階 イベントスペース）",
+          "description": "デパートリウボウで開催される期間限定のちいかわベーカリー POP UP SHOPです。",
+          "sourceUrl": "https://chiikawabakery.jp/topics/20260918/",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%87%E3%83%91%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A6%E3%83%9C%E3%82%A6%20%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E4%B9%85%E8%8C%82%E5%9C%B01-1-1%20%E3%83%87%E3%83%91%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A6%E3%83%9C%E3%82%A6"
+        }
+      },
+      {
+        "id": "chiikawa-muchaphoto-aeon-fujiidera-2026",
+        "managedSeriesKey": "chiikawa-family-events-2026-09",
+        "operation": "advance-source-status-and-import",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "shortQuote": "日程 2026/10/12 (月)",
+          "observation": "施設本文で1日開催、撮影11時/14時/16時、AR10～17時、会場2Fイオンホールを確認。現行データの主要条件と一致。",
+          "evidenceFile": "web-endings-read.json"
+        },
+        "sourceIds": [
+          "observed-fujiidera-sc-aeonmall-jp-cb3a0e7abc"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "chiikawa-muchaphoto-aeon-fujiidera-2026",
+          "name": "ちいかわ むちゃフォトパーティ!! イオン藤井寺ショッピングセンター",
+          "category": "official",
+          "placeType": "spot",
+          "relationType": "event",
+          "brand": "chiikawa",
+          "periodType": "limited",
+          "startDate": "2026-10-12",
+          "endDate": "2026-10-12",
+          "hoursText": "撮影会11:00～11:30・14:00～14:30・16:00～16:30／ARラリー10:00～17:00",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+          "hoursCheckedAt": "2026-10-02",
+          "reservationType": "required",
+          "reservationUrl": null,
+          "defaultEntryType": "walkin",
+          "crowdControlType": "other",
+          "crowdControlCondition": "announced",
+          "entryNote": "参加無料。撮影会は各回50組、当日9:30から1F ウェルカムひろば（館外）で全3回分の参加券を先着配布。1組1枚、予定数に達し次第終了。ARラリーの景品引換券（先着300名）も同時配布し、景品券配布終了後もARラリーに参加可能です。配布時間は混雑により前後する場合があります。",
+          "entryInfoUrl": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+          "entryInfoCheckedAt": "2026-10-02",
+          "lat": 34.574172,
+          "lng": 135.591503,
+          "address": "大阪府藤井寺市岡2-10-11 イオン藤井寺ショッピングセンター（開催場所：2F イオンホール）",
+          "description": "イオン藤井寺ショッピングセンターで開催される期間限定のちいかわ ファミリーイベントです。",
+          "sourceUrl": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E8%97%A4%E4%BA%95%E5%AF%BA%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%97%A4%E4%BA%95%E5%AF%BA%E5%B8%82%E5%B2%A12-10-11%20%E3%82%A4%E3%82%AA%E3%83%B3%E8%97%A4%E4%BA%95%E5%AF%BA%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+        }
+      },
+      {
+        "id": "chiikawa-workshop-lalaport-kashiwanoha-2026",
+        "managedSeriesKey": "chiikawa-family-events-2026-09",
+        "operation": "advance-source-status-and-import",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+          "observedAt": "2026-10-13T07:51:24+09:00",
+          "shortQuote": "ちいかわ わーくしょっぷのじかん ビニペタ工作／10/12(月・祝)",
+          "observation": "施設本文でちいかわ開催10/12、11:30～16:00の5回、各20人、当日1500円税込合算可、整理券10時・本館2Fクリスタルコート確認。",
+          "evidenceFile": "web-ending-body-bakery-kashiwa.json"
+        },
+        "sourceIds": [
+          "chiikawa-workshop-lalaport-kashiwanoha-2026-official"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "chiikawa-workshop-lalaport-kashiwanoha-2026",
+          "name": "ちいかわ わーくしょっぷのじかん ビニペタ工作 ららぽーと柏の葉",
+          "category": "official",
+          "placeType": "spot",
+          "relationType": "event",
+          "brand": "chiikawa",
+          "periodType": "limited",
+          "startDate": "2026-10-12",
+          "endDate": "2026-10-12",
+          "hoursText": "11:30・13:00・14:00・15:00・16:00（各回約30分）",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+          "hoursCheckedAt": "2026-10-10",
+          "reservationType": "required",
+          "reservationUrl": null,
+          "defaultEntryType": "walkin",
+          "crowdControlType": "numbered_ticket",
+          "crowdControlCondition": "announced",
+          "entryNote": "当日10:00から本館2Fクリスタルコートで希望回の整理券を配布します。各回20人、合計100人。参加には、ららぽーと柏の葉館内店舗での当日お買い上げ1,500円（税込・合算可）以上のレシート提示が必要です。選べるデザインは3種類で、数量・キャラクターに限りがあります。",
+          "entryInfoUrl": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+          "entryInfoCheckedAt": "2026-10-10",
+          "lat": 35.8936688,
+          "lng": 139.9510486,
+          "address": "千葉県柏市若柴175 ららぽーと柏の葉（開催場所：本館2F クリスタルコート）",
+          "description": "絵具を使ってちいかわのビニペタを作るワークショップです。",
+          "sourceUrl": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%89%E3%82%89%E3%81%BD%E3%83%BC%E3%81%A8%E6%9F%8F%E3%81%AE%E8%91%89%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%9F%8F%E5%B8%82%E8%8B%A5%E6%9F%B4175%20%E3%82%89%E3%82%89%E3%81%BD%E3%83%BC%E3%81%A8%E6%9F%8F%E3%81%AE%E8%91%89",
+          "importantNotice": "整理券は10月12日10:00から会場で配布。参加には当日の館内購入レシート1,500円（税込・合算可）以上が必要です。"
+        }
+      },
+      {
+        "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+        "managedSeriesKey": null,
+        "operation": "archive-ended-same-id",
+        "verifiedEndDate": "2026-10-12",
+        "evidence": {
+          "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "shortQuote": "日程 2026/10/12 (月)",
+          "observation": "施設本文で1日開催、撮影11/13/15時、AR10～16時最終15:30、1F木の広場・9:30券配布を確認。現行の主要条件と一致。",
+          "evidenceFile": "web-endings-read.json"
+        },
+        "sourceIds": [
+          "venue-muchaphoto-laketown-mori-20261012"
+        ],
+        "keepId": true,
+        "eventStatus": "held",
+        "originalRecord": {
+          "id": "chiikawa-muchaphoto-aeon-laketown-mori-2026",
+          "name": "ちいかわ むちゃフォトパーティ!! イオンレイクタウンmori",
+          "category": "official",
+          "placeType": "spot",
+          "relationType": "event",
+          "brand": "chiikawa",
+          "periodType": "limited",
+          "startDate": "2026-10-12",
+          "endDate": "2026-10-12",
+          "hoursText": "撮影会11:00・13:00・15:00（各回20～30分）／ARラリー10:00～16:00（最終受付15:30）",
+          "closedDaysText": null,
+          "hoursInfoUrl": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+          "hoursCheckedAt": "2026-10-10",
+          "reservationType": "not_available",
+          "reservationUrl": null,
+          "defaultEntryType": "other",
+          "crowdControlType": "numbered_ticket",
+          "crowdControlCondition": "announced",
+          "entryNote": "参加無料。撮影会参加券は当日9:30から1F J1入口（屋外）で全3回分を先着配布します（各回50組、計150枚、1組1枚、1枚で4人まで）。参加回を選べ、代表者だけの整列が可能です。券に記載の開催時刻を過ぎると無効です。ARラリー景品引換券も同じ列・時間で配布し、景品は500人分。10:00以降に残券がある場合は1F 木の広場で配布します。ARラリーには自分のスマートフォンが必要で、景品引換券がなくてもラリーには参加できます。深夜・早朝からの待機は禁止です。",
+          "entryInfoUrl": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+          "entryInfoCheckedAt": "2026-10-10",
+          "lat": 35.8779,
+          "lng": 139.8269,
+          "address": "埼玉県越谷市レイクタウン3丁目1番地1 イオンレイクタウンmori（開催場所：1F 木の広場）",
+          "description": "ちいかわ・ハチワレ・うさぎの写真撮影会と、館内ARポイントを巡るスマートフォンのスタンプラリーを楽しむ1日限定の無料ファミリーイベントです。",
+          "sourceUrl": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%AC%E3%82%A4%E3%82%AF%E3%82%BF%E3%82%A6%E3%83%B3mori%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%B6%8A%E8%B0%B7%E5%B8%82%E3%83%AC%E3%82%A4%E3%82%AF%E3%82%BF%E3%82%A6%E3%83%B33%E4%B8%81%E7%9B%AE1%E7%95%AA%E5%9C%B01",
+          "importantNotice": "撮影会参加券とARラリー景品引換券は当日9:30から1F J1入口（屋外）で先着配布。撮影券1枚で4人まで。深夜・早朝からの待機は禁止です。"
+        }
+      }
+    ],
+    "limits": [
+      "An official end-label is not present on every page. This decision is based on confirmed final dates before 2026-10-13, not inference from page disappearance.",
+      "Oita main-image first direct fetch received HTTP403; later normal HTTPS retrieval succeeded and image was read. Full entrance-condition image set is still not verified."
+    ]
+  },
+  "newListing": {
+    "readOnlyResearch": true,
+    "operation": "add-managed-event-and-import",
+    "targetSeriesKey": "chiikawa-family-events-2026-09",
+    "sourceEvent": {
+      "id": "chiikawa-muchaphoto-aeon-shinrifu-2026",
+      "name": "ちいかわ むちゃフォトパーティ!! イオンモール新利府",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "venueName": "イオンモール新利府",
+      "venueSpace": "南館1F ライブスクエア",
+      "address": "宮城県宮城郡利府町新中道3-1-1 イオンモール新利府",
+      "lat": 38.328,
+      "lng": 140.972,
+      "sourceUrl": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "hoursText": "撮影会11:00・13:00・15:00（各回20～30分）／ARラリー10:00～16:00（最終受付15:30）",
+      "reservationType": "not_available",
+      "defaultEntryType": "other",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "announced",
+      "entryNote": "参加無料。撮影会には当日9:30からB2 南館ライブスクエア入口（館外）で配布する撮影会参加券が必要です。各回50組、全3回合計150枚、1組1枚まで。参加回を選べますが、券に記載の開催時間を過ぎると無効です。ARラリー景品交換チケットも同じ列・時間に配布し、景品は先着300人分です。10:00以降に残券がある場合は南館1F ライブスクエアで配布します。ARラリーには自分のスマートフォンが必要で、景品交換チケットがなくてもラリーには参加できます。",
+      "description": "ちいかわ・ハチワレ・うさぎ（パジャマver.）の写真撮影会と、館内ARポイントを巡るスマートフォンのラリーを楽しむ1日限定の無料イベントです。",
+      "checkedAt": "2026-10-13",
+      "importantNotice": "撮影会参加券とAR景品交換チケットは当日9:30からB2 南館ライブスクエア入口（館外）で配布。撮影会は各回50組、AR景品は先着300人分です。"
+    },
+    "sourceLedgerUpsert": {
+      "id": "venue-muchaphoto-shinrifu-20261122",
+      "name": "イオンモール新利府 むちゃフォトパーティ 11/22",
+      "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-13T07:52:33+09:00",
+      "lastSuccessfulAt": "2026-10-13T07:52:33+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文で11/22単日、南館1Fライブスクエア、撮影11/13/15時、9:30 B2入口券配布とAR10～16時/300名を確認。",
+      "lastFailure": null,
+      "note": "10/8更新は初回発表日時とは限らない。公式画像・埋込SNS全体の確認を推定しない。"
+    },
+    "candidateLedgerUpsert": {
+      "id": "new-muchaphoto-shinrifu-20261122",
+      "title": "ちいかわ むちゃフォトパーティ!! イオンモール新利府",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-muchaphoto-aeon-shinrifu-2026",
+      "sourceIds": [
+        "venue-muchaphoto-shinrifu-20261122"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13T07:52:21+09:00",
+      "eventStartsAt": "2026-11-22",
+      "eventEndsAt": "2026-11-22",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+          "observedAt": "2026-10-13T07:52:33+09:00",
+          "summary": "公式本文で会場、11/22単日、撮影/AR時間、9:30館外配布、定員・景品条件を確認。10/8更新を初回発表に置き換えない。",
+          "recordPath": "research/morning-series-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "現行・archive全件・系列原本・候補台帳を照合し11/22回なし。同施設既存の過去POPUP/映画POPUPとは期間・企画が異なる。座標はmovie-popup-shinrifuの既存値を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-shinrifu-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "一次情報で国内実会場・1日開催・参加条件を確認。短期イベントにつき当日反映目標。原本ファミリー系列へ追加してimportする。",
+      "nextCheck": "公開時に同一IDの配信を確認し、10/13夕方に公式条件変更を再確認。",
+      "recheckDueAt": "2026-10-13T19:00:00+09:00",
+      "publishedAt": null
+    },
+    "evidenceFile": "web-shinrifu-and-priority-body.json",
+    "matchCheck": {
+      "currentCount": 86,
+      "archiveCount": 647,
+      "sameId": false,
+      "sameVenueSameDates": false,
+      "sameUrl": false,
+      "coordinateReusedFrom": "movie-popup-shinrifu",
+      "coordinatePrecision": "existing venue seed; not newly geocoded"
+    },
+    "instructions": [
+      "Copy actual evidence into the chosen persistent research path and update candidate evidence recordPath accordingly.",
+      "Keep officialAnnouncedAt null; only page updated date 2026-10-08 is known.",
+      "Use this actual discovery time; do not backfill discovery to page update, current date midnight, or repository commit time.",
+      "Do not treat 9:30 on-site ticket distribution as an advance reservation opening.",
+      "Preview/import source event, then normal build/check/smoke and public verification. Mark published only from actual deployment/content verification."
+    ]
+  },
+  "machidaUpdate": {
+    "operation": "update-existing-public-listing",
+    "managedSeriesKey": null,
+    "id": "popup-2026-10-09-machida-modi",
+    "fieldUpdates": {
+      "entryNote": "10月9～12日のLINE入場整理券の対象期間は終了しました。10月13日以降の入場方法は、公式の最新案内をご確認ください。混雑時は会場の案内に従ってください。",
+      "importantNotice": "10月9～12日のLINE入場整理券対象期間は終了しています。10月13日以降の入場方法は公式の最新案内をご確認ください。",
+      "crowdControlType": "other",
+      "entryInfoCheckedAt": "2026-10-13"
+    },
+    "candidateLedgerUpsert": {
+      "id": "update-machida-expired-entry-period-20261013",
+      "title": "町田モディ 10/9～12入場整理券期間の終了表記",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-10-09-machida-modi:entry-period-ended:2026-10-13",
+      "sourceIds": [
+        "series-observed-1b373d2f31ca"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13T07:56:19+09:00",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-11-01",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_261007.jpg",
+          "observedAt": "2026-10-13T07:58:30+09:00",
+          "summary": "公式画像が示すLINE入場対象10/9～12を再確認。対象期間経過を明記し、10/13以降の規則を推定しない。",
+          "recordPath": "research/morning-series-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-09-machida-modi"
+        ],
+        "note": "同じ町田モディ10/9～11/1の既存公開ID。短期の入場条件期間だけ終了しておりイベント終了と混同しない。"
+      },
+      "listingIds": [
+        "popup-2026-10-09-machida-modi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "期間経過の整合修正。イベント会期/IDは保持し、10/13以降にフリー入場と推定せず公式確認を案内。",
+      "nextCheck": "公開時の内容一致を確認し10/13夕方に公式X/施設の当日入場続報を再確認。",
+      "recheckDueAt": "2026-10-13T19:00:00+09:00",
+      "publishedAt": null
+    },
+    "evidence": [
+      "machida.html",
+      "machida-moushikomi_261007.jpg",
+      "popup-x-full-texts.json"
+    ],
+    "keepUnchanged": [
+      "id",
+      "startDate",
+      "endDate",
+      "hoursText",
+      "hoursCheckedAt",
+      "entryInfoUrl",
+      "defaultEntryType",
+      "reservationType"
+    ],
+    "limitations": [
+      "A free-entry rule for 10/13 onward has not been confirmed.",
+      "X profile exposed only five posts; no-new-posts conclusion is not warranted.",
+      "This is an expired-period display correction, not a newly announced entry policy."
+    ]
+  },
+  "yonagoHold": {
+    "id": "hold-popup-yonago-final-hours-20261012",
+    "title": "米子POP UP STORE 最終閉場の公式案内矛盾",
+    "kind": "listing_update",
+    "targetKey": "popup-yonago:final-hours:2026-10-12",
+    "sourceIds": [
+      "series-observed-db594c9ad917",
+      "venue-yonago-tenmaya-event-calendar"
+    ],
+    "officialAnnouncedAt": null,
+    "discoveredAt": "2026-10-12T19:09:05+09:00",
+    "eventStartsAt": "2026-09-18",
+    "eventEndsAt": "2026-10-12",
+    "releaseAt": null,
+    "reservationOpensAt": null,
+    "reflectDueAt": null,
+    "evidence": [
+      {
+        "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+        "observedAt": "2026-10-12T19:05:58+09:00",
+        "summary": "画像には2026.9.18～10.12、10～19:30、最終日は16時閉場。画像公開日時不明。",
+        "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+      },
+      {
+        "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+        "observedAt": "2026-10-12T19:09:05+09:00",
+        "summary": "施設は9/18～10/12、最終日は17時閉場、1階しんまち広場。会期一致、時刻矛盾。",
+        "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+      },
+      {
+        "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+        "observedAt": "2026-10-13T07:55:31+09:00",
+        "summary": "今朝取得画像を実読し最終16時閉場を再確認。",
+        "recordPath": "research/morning-series-2026-10-13-evidence.json"
+      },
+      {
+        "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+        "observedAt": "2026-10-13T07:54:48+09:00",
+        "summary": "施設本文は最終17時のまま。10/12最終日については画像と一致。",
+        "recordPath": "research/morning-series-2026-10-13-evidence.json"
+      }
+    ],
+    "existingMatch": {
+      "status": "matched",
+      "ids": [
+        "popup-yonago"
+      ],
+      "note": "同会場・会期一致、営業時間のみ16時/17時矛盾。"
+    },
+    "listingIds": [
+      "popup-yonago"
+    ],
+    "state": "on_hold",
+    "priority": "high",
+    "decision": "米子の終了日10/12は公式で一致し、10/13に同一IDでarchive移動可能。最終閉場16時/17時は今朝も矛盾し時刻追加を引き続き保留。現在のhoursTextを維持し、問い合わせなし。",
+    "nextCheck": "10/13夕方の通常巡回で公式画像と施設案内の修正有無を再確認。終了履歴移動の公開確認と閉場時刻の保留を分ける。",
+    "recheckDueAt": "2026-10-13T19:00:00+09:00",
+    "publishedAt": null
+  },
+  "sourceObservations": [
+    {
+      "sourceId": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "observedAt": "2026-10-13T07:54:05+09:00",
+      "result": "success",
+      "summary": "公式総合の系列リンクを確認。クリスマスマーケット等は既存台帳と一致。新利府は総合にない施設側告知として別途発見。画像や埋込SNSを網羅確認したとは扱わない。",
+      "evidenceFile": "web-discovery-wide2.json"
+    },
+    {
+      "sourceId": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "observedAt": "2026-10-13T07:49:26+09:00",
+      "result": "success",
+      "summary": "一覧本文で米子・新居浜10/12最終日を再確認。最新は海老名/大分10/23、常滑/福岡10/16で既掲載。台湾会場を国内新規として追加しない。",
+      "evidenceFile": "web-endings-read.json"
+    },
+    {
+      "sourceId": "chiikawaland-store-list",
+      "url": "https://chiikawa-info.jp/ck_land.html",
+      "observedAt": "2026-10-13T07:52:33+09:00",
+      "result": "success",
+      "summary": "16常設店と大分POPUPを照合。大分9/11～10/12、2階特設会場を本文確認。新しい国内常設会場は一覧範囲では確認せず。",
+      "evidenceFile": "web-shinrifu-and-priority-body.json"
+    },
+    {
+      "sourceId": "evening-chiikawabakery-jp-topics-20260918",
+      "url": "https://chiikawabakery.jp/topics/20260918/",
+      "observedAt": "2026-10-13T07:51:24+09:00",
+      "result": "success",
+      "summary": "沖縄10/1～12、デパートリウボウ6階、最終17時と整理券条件を本文で再確認。10/13時点のarchive移動可能。",
+      "evidenceFile": "web-ending-body-bakery-kashiwa.json"
+    },
+    {
+      "sourceId": "observed-fujiidera-sc-aeonmall-jp-cb3a0e7abc",
+      "url": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+      "observedAt": "2026-10-13T07:49:26+09:00",
+      "result": "success",
+      "summary": "10/12単日、撮影11/14/16時、AR10～17時、会場・9:30券配布を本文確認。終了移動可能。",
+      "evidenceFile": "web-endings-read.json"
+    },
+    {
+      "sourceId": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+      "observedAt": "2026-10-13T07:51:24+09:00",
+      "result": "success",
+      "summary": "ちいかわは10/12単日、5回各20名、当日1500円税込合算可、10時券配布を本文確認。終了移動可能。",
+      "evidenceFile": "web-ending-body-bakery-kashiwa.json"
+    },
+    {
+      "sourceId": "venue-muchaphoto-laketown-mori-20261012",
+      "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+      "observedAt": "2026-10-13T07:49:26+09:00",
+      "result": "success",
+      "summary": "10/12単日、1F木の広場、撮影3回、AR10～16時、9:30 J1館外券配布を本文確認。終了移動可能。",
+      "evidenceFile": "web-endings-read.json"
+    },
+    {
+      "sourceId": "venue-yonago-tenmaya-event-calendar",
+      "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+      "observedAt": "2026-10-13T07:54:48+09:00",
+      "result": "success",
+      "summary": "米子9/18～10/12・最終17時の施設本文を再確認。画像の16時と依然競合、時刻保留のまま終了日経過によるarchive可。",
+      "evidenceFile": "web-yonago-popup-x.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-978ffe9215",
+      "url": "https://chiikawa-info.jp/p26/ck_tokyo/index.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "取扱店本文は新宿/東京駅/ソラマチ/原宿と羽田2店舗。既存取扱店・系列の範囲で新会場確認せず。告知画像群は全実読していない。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-9fdf5778d7",
+      "url": "https://chiikawa-info.jp/ckbaby.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "青森ELM10/2～19と既存過去会場を確認。新会場・期間変更を取得本文では確認せず。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-5932274e7e",
+      "url": "https://chiikawa-info.jp/ck_pocket.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "第3弾・札幌mini9/18～10/4等の系列一覧を確認。新会場は取得本文では確認せず。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-8759f68d56",
+      "url": "https://chiikawa-info.jp/p25/ck_sanrio/index.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "国内4会場は2025/12～2026/2の既存回、常設取扱店と海外を区別。新会場は取得本文では確認せず。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-f14e0e6fed",
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "横浜10/22～11/1、福岡10/16～11/3を再確認。福岡は既存popupの同時開催記述があり重複新規にしない。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-fb3fce6c45",
+      "url": "https://chiikawa-info.jp/tenshi_akuma.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "既存の2023年5会場を確認。新しい国内回は一覧本文では確認せず。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-9ec22af2cf",
+      "url": "https://chiikawa-info.jp/wakuwaku.html",
+      "observedAt": "2026-10-13T07:49:51+09:00",
+      "result": "success",
+      "summary": "既存の2022～2023年6会場を確認。新しい国内回は一覧本文では確認せず。",
+      "evidenceFile": "web-series-group1.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-71b2d641d1",
+      "url": "https://chiikawa-info.jp/mck_cafe.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "心斎橋9/28まで・渋谷9/14までの既存映画カフェ2件。新規会場・延長は本文で確認せず。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-82d181891d",
+      "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "国内映画POPUPと撮影回の本文一覧を再確認。夏～9月の既存範囲で新しい開催を確認せず。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-a442c90398",
+      "url": "https://chiikawa-info.jp/p25/ck_mlb/index.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "2025年物販と当時のサンシャイン/スカイツリー取扱案内。2026年の新企画と扱わない。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "series-chiikawa-aquarium-2-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "6施設の物販/有料入館/売場移動の区別を再確認。施設別終了日はこの本文では追加確定できず既存保留を維持。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "series-chiikawa-aquarium-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "初回水族館の取扱施設とカプセルトイのみの別を再確認。各施設の終了日を一律推定せず既存保留を維持。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "2021～2022年9件の既存展覧会・POPUP一覧。新規回は本文で確認せず。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "url": "https://chiikawa-info.jp/magical_s.html",
+      "observedAt": "2026-10-13T07:50:10+09:00",
+      "result": "success",
+      "summary": "札幌10/2～11/3・立川9/30～11/8、常設3店を本文確認。既存範囲で新会場なし。",
+      "evidenceFile": "web-series-group2.json"
+    },
+    {
+      "sourceId": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "url": "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/chiikawa.html",
+      "observedAt": "2026-10-13T07:52:21+09:00",
+      "result": "success",
+      "summary": "公式本文でちいかわ/寿司10/16～18対象・前日19時/午後枠1時間前、ナガノ10/16のみを再確認。初回受付10/15 19時は72時間内、現行データと一致。",
+      "evidenceFile": "web-priority-venues.json"
+    },
+    {
+      "sourceId": "series-morning-a256af50b509",
+      "url": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "observedAt": "2026-10-13T07:52:33+09:00",
+      "result": "success",
+      "summary": "10/16～11/3・10～19時最終18時、初日9:30 A2入口配布を本文確認。現行と一致。",
+      "evidenceFile": "web-shinrifu-and-priority-body.json"
+    },
+    {
+      "sourceId": "observed-tokoname-aeonmall-jp-c4e3a8aa6e",
+      "url": "https://tokoname.aeonmall.jp/event/1174de63-719b-42ed-8d91-7b2785b637bf",
+      "observedAt": "2026-10-13T07:52:33+09:00",
+      "result": "success",
+      "summary": "10/18撮影3回、各50組、9:30頃A2配布・1枚5人までを本文確認。現行と一致。",
+      "evidenceFile": "web-shinrifu-and-priority-body.json"
+    },
+    {
+      "sourceId": "series-morning-5780a8dc2b70",
+      "url": "https://shinrifu.aeonmall.jp/event",
+      "observedAt": "2026-10-13T07:52:21+09:00",
+      "result": "success",
+      "summary": "施設一覧から11/22むちゃフォトを実際に発見、個別詳細へ進み確認。更新日を発見日に置換しない。",
+      "evidenceFile": "web-priority-venues.json"
+    },
+    {
+      "sourceId": "venue-muchaphoto-shinrifu-20261122",
+      "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "observedAt": "2026-10-13T07:52:33+09:00",
+      "result": "success",
+      "summary": "新規11/22単日・南館1Fライブスクエア、撮影11/13/15時、9:30 B2館外配布、AR10～16時景品300人を本文で確認。86現行+647archive+原本+候補に同回なし。",
+      "evidenceFile": "web-shinrifu-and-priority-body.json"
+    },
+    {
+      "sourceId": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "url": "https://kakogawa.ario.jp/event/3200004379/",
+      "observedAt": "2026-10-13T07:55:13+09:00",
+      "result": "success",
+      "summary": "10/17屋外、撮影11/13/15時・券9時、AR10～17時/新規16:30まで・300名で現行一致。並び位置の画像自体は今回全実読していない。",
+      "evidenceFile": "web-family-upcoming.json"
+    },
+    {
+      "sourceId": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "observedAt": "2026-10-13T07:55:13+09:00",
+      "result": "success",
+      "summary": "10/24～25・各日券9時フードテラス、写真50組x3回、AR300名・10～16時、ワンズテラス前で現行主要条件一致。",
+      "evidenceFile": "web-family-upcoming.json"
+    },
+    {
+      "sourceId": "observed-ota-aeonmall-jp-1553585041",
+      "url": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f",
+      "observedAt": "2026-10-13T07:55:13+09:00",
+      "result": "success",
+      "summary": "10/24単日・券9:30 G1階東入口、撮影3回/各50組、AR10～16時/300名で現行主要条件一致。",
+      "evidenceFile": "web-family-upcoming.json"
+    },
+    {
+      "sourceId": "observed-natori-aeonmall-jp-4e157b2b3f",
+      "url": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f",
+      "observedAt": "2026-10-13T07:55:13+09:00",
+      "result": "success",
+      "summary": "11/7単日・5A隣館外/雨天5A前、撮影3回・券9:30、AR10～16時/300名で現行主要条件一致。",
+      "evidenceFile": "web-family-upcoming.json"
+    },
+    {
+      "sourceId": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+      "observedAt": "2026-10-13T07:49:13+09:00",
+      "result": "parse_failed",
+      "summary": "ページタイトルの会期とHTMLリンクを取得。画像中心で入場条件画像全体は未実読。別途実読済み画像や施設本文の証拠と分け、ページ全体の解析成功にしない。",
+      "evidenceFile": "web-ending-pages-initial.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-1a31b404e0",
+      "url": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+      "observedAt": "2026-10-13T07:49:13+09:00",
+      "result": "parse_failed",
+      "summary": "ページタイトルの会期とHTMLリンクを取得。画像中心で入場条件画像全体は未実読。別途実読済み画像や施設本文の証拠と分け、ページ全体の解析成功にしない。",
+      "evidenceFile": "web-ending-pages-initial.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-d5be927094",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "observedAt": "2026-10-13T07:52:09+09:00",
+      "result": "parse_failed",
+      "summary": "ページタイトルの会期とHTMLリンクを取得。画像中心で入場条件画像全体は未実読。別途実読済み画像や施設本文の証拠と分け、ページ全体の解析成功にしない。",
+      "evidenceFile": "web-priority-and-facility-discovery.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-ee275504ea",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "observedAt": "2026-10-13T07:52:09+09:00",
+      "result": "parse_failed",
+      "summary": "ページタイトルの会期とHTMLリンクを取得。画像中心で入場条件画像全体は未実読。別途実読済み画像や施設本文の証拠と分け、ページ全体の解析成功にしない。",
+      "evidenceFile": "web-priority-and-facility-discovery.json"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-b434b2c58a",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "observedAt": "2026-10-13T07:52:09+09:00",
+      "result": "parse_failed",
+      "summary": "ページタイトルの会期とHTMLリンクを取得。画像中心で入場条件画像全体は未実読。別途実読済み画像や施設本文の証拠と分け、ページ全体の解析成功にしない。",
+      "evidenceFile": "web-priority-and-facility-discovery.json"
+    },
+    {
+      "sourceId": "series-observed-db594c9ad917",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+      "observedAt": "2026-10-13T07:55:31+09:00",
+      "result": "success",
+      "summary": "取得画像を実読。9/18～10/12、10～19:30、最終16時。施設17時との競合は未解消。",
+      "evidenceFile": "yonago-image.jpg"
+    },
+    {
+      "sourceId": "series-morning-96561d81af19",
+      "url": "https://chiikawa-info.jp/chiikawaland/oita/img/main_tel.jpg",
+      "observedAt": "2026-10-13T07:56:02+09:00",
+      "result": "success",
+      "summary": "通常HTTP GETの初回403後、通常HTTPS取得成功した画像を実読。9/11～10/12、10～20時、アミュ2F特設・住所一致。",
+      "evidenceFile": "oita-main.jpg"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-entry-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "observedAt": "2026-10-13T07:56:02+09:00",
+      "result": "success",
+      "summary": "web取得不成功後、HTTP200取得した画像を実読。10/22～25は整理券、詳細随時告知の記述で受付開始日時なし。新しい受付日時を確認したとは扱わない。",
+      "evidenceFile": "sushi-entry.jpg"
+    },
+    {
+      "sourceId": "priority-four-1b6f0ffdf6c9",
+      "url": "https://x.com/chiikawa_popup",
+      "observedAt": "2026-10-13T07:55:55+09:00",
+      "result": "success",
+      "summary": "web403後に通常HTTPSでHTTP200。表示5投稿本文を解析実読、海老名/大分10/23告知と町田/津田沼10/9・町田欠品。横浜寿司の受付や町田10/13以降の案内を表示範囲では確認せず。全投稿や画像の不存在とは扱わない。",
+      "evidenceFile": "popup-x-full-texts.json"
+    },
+    {
+      "sourceId": "series-morning-9cb1896ed309",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_260213.jpg",
+      "observedAt": "2026-10-13T07:58:30+09:00",
+      "result": "success",
+      "summary": "公式個別ページから辿った入場画像を実読。対象10/9～12、本人確認、前日19時/各回1時間前等は既掲載の過去期間と一致。10/13以降を対象とする新告知はこの画像にない。",
+      "evidenceFile": "machida-moushikomi_260213.jpg"
+    },
+    {
+      "sourceId": "series-observed-1b373d2f31ca",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_261007.jpg",
+      "observedAt": "2026-10-13T07:58:30+09:00",
+      "result": "success",
+      "summary": "公式個別ページから辿った入場画像を実読。対象10/9～12、本人確認、前日19時/各回1時間前等は既掲載の過去期間と一致。10/13以降を対象とする新告知はこの画像にない。",
+      "evidenceFile": "machida-moushikomi_261007.jpg"
+    },
+    {
+      "sourceId": "series-observed-eba4986577ac",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_260209_02.jpg",
+      "observedAt": "2026-10-13T07:58:30+09:00",
+      "result": "success",
+      "summary": "公式個別ページから辿った入場画像を実読。対象10/9～12、本人確認、前日19時/各回1時間前等は既掲載の過去期間と一致。10/13以降を対象とする新告知はこの画像にない。",
+      "evidenceFile": "machida-moushikomi_260209_02.jpg"
+    },
+    {
+      "sourceId": "series-observed-89e47d6cadb5",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_260209_03.jpg",
+      "observedAt": "2026-10-13T07:58:30+09:00",
+      "result": "success",
+      "summary": "公式個別ページから辿った入場画像を実読。対象10/9～12、本人確認、前日19時/各回1時間前等は既掲載の過去期間と一致。10/13以降を対象とする新告知はこの画像にない。",
+      "evidenceFile": "machida-moushikomi_260209_03.jpg"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "observedAt": "2026-10-13T07:58:30+09:00",
+      "result": "success",
+      "summary": "公式HTMLと入場案内4画像を実読。対象は10/9～12で期間経過。10/13以降の詳細は未確認のまま、過去対象日を現行条件に見せないよう記述修正を提案。商品画像群は確認対象外。",
+      "evidenceFile": "machida.html"
+    }
+  ],
+  "originalLocalDirectory": "/workspace/shared/map-morning-20261013/series",
+  "publicationState": "No repository or site writes by this worker. Candidate upserts remain ready pending parent publication evidence.",
+  "limits": [
+    "Official-index and series pages were read at HTML/text/link level; not every merchandise image or embedded social feed was read.",
+    "Oita and other image-centric individual pages retain parse_failed for unverified entry-image sets, although directly read supporting images are separately successful.",
+    "X profile returned only five display posts after web403 then normal HTTPS200; no complete-feed claim.",
+    "Yonago closing hour remains 16:00 in image versus 17:00 in facility text.",
+    "Sushi Yokohama entry image still gives 10/22–25 ticketed dates and later announcement; no newly verified opening timestamp.",
+    "New Shinrifu discovery is 10/13, page updated 10/8 is not claimed as announcement date."
+  ]
+}
