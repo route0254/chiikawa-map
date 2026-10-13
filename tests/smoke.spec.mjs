@@ -1972,7 +1972,10 @@ test(
       "popup-2026-09-18-jr-ikebukuro",
       "ramen-buta-nagoya"
     ], [
-      "tokyo-banana-popup-solamachi-2026-10"
+      "tokyo-banana-popup-solamachi-2026-10",
+      // この合成fixtureは過去2件を加えた6件の配置を検証する。
+      // 現行全件（新POPUPを含む）は別の非モック検査で検証する。
+      "chiikawa-pocket-2026-11-13-nagoya-parco"
     ], {
       "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
     });
@@ -2107,7 +2110,9 @@ test(
     await includeArchivedSpotsForLayout(page, [
       "nagano-market-popup-2026-09-04-nagoya-p",
       "ramen-buta-nagoya"
-    ], [], {
+    ], [
+      "chiikawa-pocket-2026-11-13-nagoya-parco"
+    ], {
       "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
     });
     await page.goto(
@@ -2360,6 +2365,43 @@ test(
           overlapHeight
         ).toBe(0);
       }
+    }
+  }
+);
+
+
+test(
+  "名古屋PARCOの現在掲載全件で名称ラベルが重ならず全件を開ける",
+  async ({ page }) => {
+    const officialSpots = JSON.parse(await readFile(
+      resolve(projectDirectory, "data", "official-spots.json"), "utf8"
+    ));
+    const anchor = officialSpots.find(spot => spot.id === "chiikawaland-nagoya");
+    expect(anchor).toBeTruthy();
+    const currentGroup = officialSpots.filter(
+      spot => spot.lat === anchor.lat && spot.lng === anchor.lng
+    );
+    expect(currentGroup.length).toBeGreaterThan(1);
+
+    // 公開データをそのまま読み、過去イベントの追加や現行件数の削減をしない。
+    await page.goto("/?spot=" + anchor.id);
+    await waitForSpots(page);
+    await page.waitForTimeout(700);
+
+    const audit = await getDuplicateLayoutAudit(
+      page, currentGroup.map(spot => spot.id)
+    );
+    expect(audit.outward).toBe(true);
+    expect(audit.labelOverlaps).toEqual([]);
+    expect(audit.lineCrossings).toEqual([]);
+
+    for (const spot of currentGroup) {
+      await page.locator(
+        `.spot-name-label-duplicate[data-spot-id="${spot.id}"]`
+      ).click();
+      await expect(page.locator("#spot-detail-title")).toHaveText(spot.name);
+      await page.locator(`.spot-marker[data-spot-id="${spot.id}"]`).click();
+      await expect(page.locator("#spot-detail-title")).toHaveText(spot.name);
     }
   }
 );

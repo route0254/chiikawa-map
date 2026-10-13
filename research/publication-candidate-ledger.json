@@ -47,6 +47,24 @@
           "observedAt": "2026-10-11T23:16:34.113Z",
           "summary": "Official SNS公式SNSがtwitter.com/sendaiuminomoriへリンクする。",
           "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+          "observedAt": "2026-10-12T22:56:07.550Z",
+          "summary": "NIFREL公式4/8告知を追加回収。2023/4/15からショップ内販売、入館料不要。販売終了日は本文にない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "仙台以外は取扱店舗。大洗・マリホ・海響館は4/29からカプセルトイのみ。全館の最終日や展示実施を一括で確定しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-13T10:00:30.979Z",
+          "summary": "仙台水槽展示と商品取扱店舗を区別。大洗・マリホ・海響館は4/29カプセルトイのみ。仙台以外の最終日新確定なし。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -60,8 +78,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "仙台第一弾延長後終期2023-05-07を公式Xで確定。既存コラボ履歴のendDate修正が可能。 残課題: 仙台以外は商品取扱店。各会場の取扱終了日/展示範囲は未確認。系列全体を単一会期イベントにしない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。",
-      "nextCheck": "施設ごとの販売終了告知または公式保存資料がある時に確認。仙台5/7延長の再調査は不要。",
-      "recheckDueAt": "2026-10-13",
+      "nextCheck": "次の週次レビューで会場別開始/終期・物販と展示範囲の未確定事項を再確認。朝の確定会場候補は系列holdと分離する。",
+      "recheckDueAt": "2026-10-20",
       "publishedAt": null
     },
     {
@@ -115,6 +133,36 @@
           "observedAt": "2026-10-11T23:16:34.905Z",
           "summary": "2023/6/23からミュージアムショップ販売。販売終了日なし。",
           "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "第二弾のサンシャインは7月中旬以降アクアポケット継続販売予定。他館全体の終期なし。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/Juice_inc_/status/1673273628052566017",
+          "observedAt": "2026-10-12T22:56:58.428Z",
+          "summary": "主催事業者Juiceの6/26投稿を通常GET取得。サンシャインアネックスB1で水族館・通常POPUP・ナガノマーケットの同時開催、フォトスポットを案内。終了日なし。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://mitte-x-img.istsw.jp/kanko-toshima/file/calendar/202307.pdf",
+          "observedAt": "2026-10-13",
+          "summary": "観光協会系カレンダーPDFの本文にサンシャインアネックスB1「ちいかわ水族館」第2弾7/17まで。ただし配信元の公式リンク来歴と会場主催原本を未確定。特設会場の終期候補に限り、アクアポケット物販終期へ流用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+          "observedAt": "2026-10-12T22:57:51.803Z",
+          "summary": "Juice公式投稿から会場原本URLを回収したが、web取得不可・通常GET403。本文未取得。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-13T10:00:30.979Z",
+          "summary": "仙台フォトスポット・ARラリー、サンシャイン7月中旬以降アクアポケット継続予定を再確認。施設別物販終期やAR単体終期の新確定なし。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -128,8 +176,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "仙台のイベント・フォトスポット会期、住所、施設ピンの根拠を揃えた。NIFREL・海響館の6/23物販開始も一次確認。 残課題: 仙台以外の終了日、およびARラリー単体の実終了日は不明。サンシャインの売場移行と物販継続を区別。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。",
-      "nextCheck": "他館の終了告知を個別確認。仙台独立候補の履歴化を系列全体の確定待ちにしない。",
-      "recheckDueAt": "2026-10-13",
+      "nextCheck": "次の週次レビューで会場別開始/終期・物販と展示範囲の未確定事項を再確認。朝の確定会場候補は系列holdと分離する。",
+      "recheckDueAt": "2026-10-20",
       "publishedAt": null
     },
     {
@@ -201,6 +249,60 @@
           "observedAt": "2026-10-12T08:16:04+09:00",
           "summary": "T2中心35.5510216,139.7886114は建物上。店舗個別点や屋内階は地図だけで特定しない。",
           "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880148052314374631",
+          "observedAt": "2026-10-12T22:56:08.077Z",
+          "summary": "公式1/17告知：銀座三越本館8階JapanDutyFreeGINZA、当初2025/1/24〜3/31。翌同日訂正投稿で開始曜日を金曜へ修正。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880181772903981470",
+          "observedAt": "2026-10-12T22:57:52.473Z",
+          "summary": "公式訂正を個別取得。2025/1/24(金)〜3/31(月)。現行特設の終期10/28までとの関係は延長/別回を未確定。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1915693328689226033",
+          "observedAt": "2026-10-12T22:57:54.069Z",
+          "summary": "公式4/25告知の個別原文で0%IKEBUKURO、2025/5/9〜6/9を確認。現行特設の6/9終了と一致。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1958454039005565233",
+          "observedAt": "2026-10-12T22:57:00.103Z",
+          "summary": "公式8/21告知の個別原文で北千住マルイ2Fカレンダリウム、2025/9/4〜9/15を確認。現行特設の9/15終了と一致。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.0101.co.jp/084/access/?from=01_pc_st084_top_gnav-access",
+          "observedAt": "2026-10-13",
+          "summary": "北千住マルイ公式アクセスの東京都足立区千住3-92を本文確認。既存同館アーカイブ2件の施設座標35.7494,139.805を既存方針どおり再利用。2F屋内の精密座標とは扱わない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13T10:00:30.979Z",
+          "summary": "本文の会場別終了表記は朝と同じ。羽田T2は2025/10/17～2026/1/31、北千住9/15、池袋0%6/9等。開始日を一覧タイトルから推定しない。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -212,8 +314,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "羽田T2の会期と住所・店舗位置階を確定。 残課題: その他各会場の開始日/開催回の区別。一覧タイトルの2024-12-26を全店舗に適用しない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。",
-      "nextCheck": "店舗別一次資料から開始日と開催回を確定。",
-      "recheckDueAt": "2026-10-13",
+      "nextCheck": "次の週次レビューで会場別開始/終期・物販と展示範囲の未確定事項を再確認。朝の確定会場候補は系列holdと分離する。",
+      "recheckDueAt": "2026-10-20",
       "publishedAt": null
     },
     {
@@ -407,6 +509,18 @@
           "observedAt": "2026-10-12T08:16:04+09:00",
           "summary": "T2中心35.5510216,139.7886114は建物上。店舗個別点や屋内階は地図だけで特定しない。",
           "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+          "observedAt": "2026-10-12T22:54:12.559Z",
+          "summary": "羽田T2 3Fマーケットプレイス・保安検査前を再確認。公式埋込JSONのlatitude/longitudeはnull、map_link_id1741、area_number17。現在10:00〜17:00を過去会期の営業時間へ代用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -417,9 +531,9 @@
       "listingIds": [],
       "state": "on_hold",
       "priority": "normal",
-      "decision": " 残課題: 店舗座標は未取得。T2施設代表点採用は親の掲載判断待ち。店舗精密座標へ読み替えない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。",
-      "nextCheck": "10/13広域レビュー時に既存マップ方針とT2代表位置の扱いを確認。施設代表点採用が認められれば、場所注記付きで履歴へ追加。",
-      "recheckDueAt": "2026-10-13",
+      "decision": "10/13再確認でも店舗精密座標は公式JSONでnull。会期2025/10/17〜2026/1/31・T2 3Fマーケットプレイスは維持。既知T2代表点の採用は親の掲載判断待ち。2024/12/26発売回と統合しない。",
+      "nextCheck": "掲載責任者がT2施設代表点35.5510216,139.7886114と位置注記の採用可否を判断。認められれば精密店舗点でないことを明記して独立履歴へ。未決なら10/20に再確認。",
+      "recheckDueAt": "2026-10-20",
       "publishedAt": null
     },
     {
@@ -4688,6 +4802,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -4740,6 +4860,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -4832,6 +4958,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -4884,6 +5016,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -4936,6 +5074,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -4995,6 +5139,24 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+          "observedAt": "2026-10-13T10:12:16.711+00:00",
+          "summary": "7/13～9/30購入、購入後1週間以内投稿。賞品応募終了日時はWeb本文明記なし。needs_review維持。",
+          "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+          "observedAt": "2026-10-13T10:12:16.711+00:00",
+          "summary": "購入9/30 23:59まで・購入後1週間以内投稿。賞品応募期限の別記なし、保留継続。",
+          "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -5048,6 +5210,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5100,6 +5268,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5152,6 +5326,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5204,6 +5384,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5256,6 +5442,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5308,6 +5500,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5360,6 +5558,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5412,6 +5616,12 @@
           "observedAt": "2026-10-13T07:50:06+09:00",
           "summary": "クラウドの朝再観測4JSONは既存main blobと一致。これは新しい修正の公開完了ではない。",
           "recordPath": "research/morning-2026-10-13-public-verification.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38239519321",
+          "observedAt": "2026-10-13T07:50:06+09:00",
+          "summary": "cc299b2791c08218b21803665c34f5c75309fc09のPages成功、deploy完了10/12 19:57:59+09:00。初回公開一致19:58:08.610+09:00は親引継ぎ値。朝の公開4JSONは同commit blobと完全一致。",
+          "recordPath": "research/morning-full-morning-2026-10-13-public-verification.json"
         }
       ],
       "existingMatch": {
@@ -5459,6 +5669,24 @@
           "observedAt": "2026-10-12T19:09:05+09:00",
           "summary": "施設は9/18～10/12、最終日は17時閉場、1階しんまち広場。会期一致、時刻矛盾。",
           "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+          "observedAt": "2026-10-13T07:55:31+09:00",
+          "summary": "今朝取得画像を実読し最終16時閉場を再確認。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+          "observedAt": "2026-10-13T07:54:48+09:00",
+          "summary": "施設本文は最終17時のまま。10/12最終日については画像と一致。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+          "observedAt": "2026-10-13T10:02:59+00:00",
+          "summary": "夕方取得の施設一覧はちいかわ開催名をカレンダーに残すが終了回詳細本文が消えた。16時/17時の矛盾解消に必要な新根拠はない。10/12終了・同一IDarchiveは既に朝反映済み。元夕巡回の保持済み観察を復元したもの。",
+          "recordPath": "research/evening-series-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -5474,19 +5702,21 @@
       "state": "on_hold",
       "priority": "high",
       "decision": "閉場時刻の追加は保留。現在のhoursText・会期・IDを維持。本日は終了済みへ移動しない。問い合わせなし。",
-      "nextCheck": "10/13朝に公式画像・施設案内の矛盾解消を確認。10/12終了は確定しており翌日のarchive判断と時刻確定を分ける。",
-      "recheckDueAt": "2026-10-13T08:00:00+09:00",
+      "nextCheck": "公式の訂正または当時の主催/施設保存資料が得られた際に最終閉場時刻を確認。既に終了移動済みなので公開状態を戻さない。",
+      "recheckDueAt": "2026-10-20",
       "publishedAt": null
     },
     {
       "id": "jr-central-linear-railway-museum-2026-venue-review",
-      "title": "jr-central-linear-railway-museum-2026-venue-review",
+      "title": "JR東海×映画ちいかわ リニア・鉄道館会場",
       "kind": "new_listing",
       "targetKey": "jr-central-tsutsuurauratabi-2026:linear-railway-museum:2026-07-08",
       "sourceIds": [
         "jr-central-railway-museum-event",
         "jr-central-railway-museum-facilities",
-        "jr-central-railway-museum-calendar-2026"
+        "jr-central-railway-museum-calendar-2026",
+        "jr-central-tsutsuurauratabi",
+        "jr-central-railway-museum-access"
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12",
@@ -5494,7 +5724,7 @@
       "eventEndsAt": "2026-10-31",
       "releaseAt": null,
       "reservationOpensAt": null,
-      "reflectDueAt": "2026-10-13",
+      "reflectDueAt": "2026-10-13T08:00:00+09:00",
       "evidence": [
         {
           "url": "https://museum.jr-central.co.jp/event/",
@@ -5519,24 +5749,70 @@
           "observedAt": "2026-10-12T22:51:36.482+00:00",
           "summary": "施設条件と建物座標確認済みでreadyへ。10/13は休館。KITTE大阪は未解決のまま。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-12T19:00:00+09:00",
+          "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/event/",
+          "observedAt": "2026-10-12T19:10:06+09:00",
+          "summary": "7/8～10/31、1階受付・シンボル展示・広場・車両展示・収蔵車両のフォトスポット、1階鉄道ジオラマ。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/",
+          "observedAt": "2026-10-12T19:10:06+09:00",
+          "summary": "所在地 名古屋市港区金城ふ頭3-2-2。住所ピン・開館カレンダー確認未完了。",
+          "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/event/",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "7/8～10/31、館内1F各所フォトスポットと鉄道ジオラマ。特段表記のないイベントは入館料のみ。掲載案の条件を本文確定。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/facilities/index.html",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "10:00～17:30・最終17:00・火曜休館。入館大人1200円/小中高500円/3歳以上幼児200円。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "2026年度PDFを画像実見。10月6/13/20/27が休館。本日10/13も休館。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://museum.jr-central.co.jp/access/",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "金城ふ頭駅徒歩約2分、専用駐車場なしを本文確認。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
-        "status": "matched",
-        "ids": [
-          "jr-central-linear-railway-museum-2026"
-        ],
-        "note": "追加前の公開JSON・原本・候補を照合し同一開催回の重複なし。今回準備済みのローカル掲載IDを照合。公開は未完了。 公開全JSON・原本で同名会場同一開催回なし。Nominatim建物way247172485のクラウド照合35.0488735,136.8512061。GSI番地代表点は不採用、原PCの追加測位なし。"
+        "status": "new",
+        "ids": [],
+        "note": "current/PR41公開archive館名・URL・開催回一致なし。75m以内0件。Nominatim建物way247172485を採用。"
       },
       "listingIds": [
         "jr-central-linear-railway-museum-2026"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "施設条件と建物座標確認済みでreadyへ。10/13は休館。KITTE大阪は未解決のまま。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "期間/館内会場/料金/開館/建物座標が確定。新スポットを追加し既存JRコラボへリンク。10/13休館を明記。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
@@ -5544,7 +5820,10 @@
       "kind": "new_listing",
       "targetKey": "jr-central-tsutsuurauratabi-2026:kitte-osaka-balloon:2026-07-08",
       "sourceIds": [
-        "jr-central-tsutsuurauratabi"
+        "jr-central-tsutsuurauratabi",
+        "kitte-osaka-event-index",
+        "kitte-osaka-facility-hours",
+        "kitte-osaka-facility-access"
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12",
@@ -5559,6 +5838,48 @@
           "observedAt": "2026-10-12T19:00:00+09:00",
           "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
           "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "JR東海本文で2店のノベルティ/引換証終了と他拠点欠品時配送を現行一致確認。KITTE7/8～10/31・5m級バルーン。展示固有時間/料金/フロアは本文に明記なし。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "一覧全5件（イベント4、ニュース1）を本文確認。バルーン単独記事はこの一覧にない。企画終了や未開催の証拠とは扱わない。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "一般1F営業時間11:00～20:00とインフォメーション時間を確認。展示時間/撮影可能時間への流用はしない。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "公式所在地大阪市北区梅田3-2-2と埋込地図34.7006219,135.4941733を確認。既存ベーカリーの同一建物座標と一致。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-13T10:12:16.711+00:00",
+          "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ・引換証配布終了、他所欠品時の後日配送方式は現行一致。KITTE公式バルーン画像内に固有フロア・撮影時間・料金の明記なし。",
+          "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://osaka.jp-kitte.jp/",
+          "observedAt": "2026-10-13T10:12:16.711+00:00",
+          "summary": "施設ホーム差分は革財布店等のみ。バルーン固有フロア/撮影時間/料金を確定できず、一般営業時間流用なし。",
+          "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+          "observedAt": "2026-10-13T10:12:16.711+00:00",
+          "summary": "イベント/ニュース一覧再読、バルーン固有案内なし。一般営業時間/X応募期限を展示時間に使わない。",
+          "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
         }
       ],
       "existingMatch": {
@@ -5569,21 +5890,21 @@
       "listingIds": [],
       "state": "verifying",
       "priority": "normal",
-      "decision": "国内実会場の新規掲載候補として検証中。会場条件と座標未確認で未掲載。明朝判定。",
-      "nextCheck": "営業時間・入場条件・休業日・建物・フロア・住所・座標・近隣データを照合。KITTE公式の実施フロア・撮影可能時間を確認。",
-      "recheckDueAt": "2026-10-13T08:00:00+09:00",
+      "decision": "会期・施設は確認済みだが、展示固有フロア・撮影可能時間・料金の一次明記が未解決。公式バルーン写真だけから推測せずverifyingを維持。反映目標超過を隠さない。",
+      "nextCheck": "10/14朝、JR/施設の一次告知に展示固有フロア・撮影可能時間・料金の追記があるか確認。一般1F営業時間やX応募23:59を流用しない。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
       "publishedAt": null
     },
     {
       "id": "ramen-buta-shibuya-expired-entry-cleanup-20261013",
-      "title": "morning-20261013-ramen-buta-shibuya-expired-notice",
-      "kind": "listing_update",
+      "title": "ちいかわラーメン 豚 渋谷PARCO 期限経過の入場案内整理",
+      "kind": "reservation_update",
       "targetKey": "ramen-buta-shibuya:expired_notice:2026-10-13",
       "sourceIds": [
         "ramen-buta-shibuya-reservation-official"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:51:57+09:00",
       "eventStartsAt": null,
       "eventEndsAt": null,
       "releaseAt": null,
@@ -5595,6 +5916,18 @@
           "observedAt": null,
           "summary": "昨日限定満席案内を除去し、再確認済みの通常予約条件を保持。11月QR条件を変更しない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+          "observedAt": "2026-10-13T07:51:57+09:00",
+          "summary": "11/1〜30分10/16 12時LivePocket先着、各2日前まで、最大2枚、QRと本人確認等を本文全体で再確認。既存と一致。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5602,28 +5935,28 @@
         "ids": [
           "ramen-buta-shibuya"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "ramen-buta-shibuya"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "昨日限定満席案内を除去し、再確認済みの通常予約条件を保持。11月QR条件を変更しない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "2026-10-12当日だけの満席・当日券なし案内は対象日終了。10/13の空き状況は断定せず、今朝再確認した公式の通常予約条件へ復帰。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "ramen-buta-shinsaibashi-expired-entry-cleanup-20261013",
-      "title": "morning-20261013-ramen-buta-shinsaibashi-expired-notice",
-      "kind": "listing_update",
+      "title": "ちいかわラーメン 豚 心斎橋PARCO 期限経過の入場案内整理",
+      "kind": "reservation_update",
       "targetKey": "ramen-buta-shinsaibashi:expired_notice:2026-10-13",
       "sourceIds": [
         "ramen-buta-shinsaibashi-reservation-official"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:51:57+09:00",
       "eventStartsAt": null,
       "eventEndsAt": null,
       "releaseAt": null,
@@ -5635,6 +5968,18 @@
           "observedAt": null,
           "summary": "昨日限定満席案内を除去し、再確認済みの通常予約条件を保持。11月QR条件を変更しない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+          "observedAt": "2026-10-13T07:51:57+09:00",
+          "summary": "11/1〜30分10/16 12時LivePocket先着、各2日前まで、最大2枚、QRと本人確認等を本文全体で再確認。既存と一致。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5642,28 +5987,29 @@
         "ids": [
           "ramen-buta-shinsaibashi"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "ramen-buta-shinsaibashi"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "昨日限定満席案内を除去し、再確認済みの通常予約条件を保持。11月QR条件を変更しない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "2026-10-12当日だけの満席・当日券なし案内は対象日終了。10/13の空き状況は断定せず、今朝再確認した公式の通常予約条件へ復帰。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "mogumogu-fushimi-expired-entry-cleanup-20261013",
-      "title": "morning-20261013-mogumogu-fushimi-expired-period",
-      "kind": "listing_update",
+      "title": "ちいかわもぐもぐ本舗 京都伏見店 期限経過の入場案内整理",
+      "kind": "reservation_update",
       "targetKey": "mogumogu-fushimi:expired_period:2026-10-13",
       "sourceIds": [
-        "morning-www-chiikawamogumogu-jp-2025-10-30-post-1330"
+        "morning-www-chiikawamogumogu-jp-2025-10-30-post-1330",
+        "mogumogu-fushimi-reservation-20261010"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:52:04+09:00",
       "eventStartsAt": null,
       "eventEndsAt": null,
       "releaseAt": null,
@@ -5675,6 +6021,24 @@
           "observedAt": null,
           "summary": "確認した恒常案内はフリー入店、混雑時の制限可能性。本日入場可否は保証しない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
+          "observedAt": "2026-10-13T07:52:04+09:00",
+          "summary": "本文再確認。伏見10/10〜12終日予約、前日20時LINE先着、30km制限、本人端末等。対象日終了なので当日注意解除。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2025/10/30/post-1330/",
+          "observedAt": "2026-10-13T07:55:04+09:00",
+          "summary": "店舗ページ現行リンクの通常入店案内。京都伏見・川越は通常フリー入店、混雑時は入店制限/整理券、事前予約が発生する場合公式SNS等で告知。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5682,28 +6046,28 @@
         "ids": [
           "mogumogu-fushimi"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "mogumogu-fushimi"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "確認した恒常案内はフリー入店、混雑時の制限可能性。本日入場可否は保証しない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "対象期間終了の10/10〜12案内を整理し、未確認の本日入場可否を断定しない。既存IDを維持。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "mogumogu-otaru-expired-entry-cleanup-20261013",
-      "title": "morning-20261013-mogumogu-otaru-expired-period",
-      "kind": "listing_update",
+      "title": "ちいかわもぐもぐ本舗 小樽店 期限経過の入場案内整理",
+      "kind": "reservation_update",
       "targetKey": "mogumogu-otaru:expired_period:2026-10-13",
       "sourceIds": [
         "mogumogu-otaru-reservation-20261010"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:52:04+09:00",
       "eventStartsAt": null,
       "eventEndsAt": null,
       "releaseAt": null,
@@ -5715,6 +6079,18 @@
           "observedAt": null,
           "summary": "10/10～12予約期間終了。今日の入場可否は補わない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+          "observedAt": "2026-10-13T07:52:04+09:00",
+          "summary": "本文再確認。小樽10/10〜12終日予約、ベビーカステラ自由入場予定（混雑時制限）。対象日終了、次の当日可否は未確認。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5722,28 +6098,28 @@
         "ids": [
           "mogumogu-otaru"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "mogumogu-otaru"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "10/10～12予約期間終了。今日の入場可否は補わない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "対象期間終了の10/10〜12案内を整理し、未確認の本日入場可否を断定しない。既存IDを維持。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "mogumogu-kawagoe-expired-entry-cleanup-20261013",
-      "title": "morning-20261013-mogumogu-kawagoe-expired-period",
-      "kind": "listing_update",
+      "title": "ちいかわもぐもぐ本舗 川越店 期限経過の入場案内整理",
+      "kind": "reservation_update",
       "targetKey": "mogumogu-kawagoe:expired_period:2026-10-13",
       "sourceIds": [
         "mogumogu-kawagoe-reservation-20261010"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:52:03+09:00",
       "eventStartsAt": null,
       "eventEndsAt": null,
       "releaseAt": null,
@@ -5755,6 +6131,18 @@
           "observedAt": null,
           "summary": "10/10～12を除き、確認済み10/17～18予約・9:30～19時を保持。時間変更個別本文の前回403は今回解消。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T07:52:03+09:00",
+          "summary": "本文再確認。川越10/10〜12・17〜18終日予約、前日20時LINE先着、30km制限、本人端末等。今後の17〜18条件は保持。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5762,28 +6150,28 @@
         "ids": [
           "mogumogu-kawagoe"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "mogumogu-kawagoe"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "10/10～12を除き、確認済み10/17～18予約・9:30～19時を保持。時間変更個別本文の前回403は今回解消。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "対象期間終了の10/10〜12案内を整理し、未確認の本日入場可否を断定しない。既存IDを維持。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "chiikawa-yaki-nagoya-expired-entry-cleanup-20261013",
-      "title": "morning-20261013-chiikawa-yaki-nagoya-expired-period",
-      "kind": "listing_update",
+      "title": "ちいかわ焼き 名古屋PARCO店 期限経過の入場案内整理",
+      "kind": "reservation_update",
       "targetKey": "chiikawa-yaki-nagoya:expired_period:2026-10-13",
       "sourceIds": [
         "chiikawa-yaki-official"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:51:57+09:00",
       "eventStartsAt": null,
       "eventEndsAt": null,
       "releaseAt": null,
@@ -5795,6 +6183,18 @@
           "observedAt": null,
           "summary": "終了した予約対象日だけ整理。平日・土日祝と混雑予想日の一般ルールを確認。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawa-yaki.com/",
+          "observedAt": "2026-10-13T07:51:57+09:00",
+          "summary": "3店本文確認。名古屋平日自由、土日祝前日10時先着、混雑時は平日も予約の場合あり。古い10/10〜12リンク文整理。幕張10〜21・横浜10:30〜21の自由入場維持。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5802,21 +6202,21 @@
         "ids": [
           "chiikawa-yaki-nagoya"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "chiikawa-yaki-nagoya"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "終了した予約対象日だけ整理。平日・土日祝と混雑予想日の一般ルールを確認。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "対象期間終了の10/10〜12案内を整理し、未確認の本日入場可否を断定しない。既存IDを維持。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "chiikawa-restaurant-ikebukuro-entry-20261013",
-      "title": "morning-20261013-chiikawa-restaurant-ikebukuro-day-notice",
+      "title": "ちいかわレストラン 池袋PARCO店 10/13当日入場案内",
       "kind": "reservation_update",
       "targetKey": "chiikawa-restaurant-ikebukuro:day_notice:2026-10-13",
       "sourceIds": [
@@ -5835,6 +6235,18 @@
           "observedAt": "2026-10-13T07:53:20+09:00",
           "summary": "新しい公式10/13当日告知で満席・当日券なしを確認。10/12告知を単純延長しない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/THEGUEST_ikb/status/2109626136611246165",
+          "observedAt": "2026-10-13T07:53:20+09:00",
+          "summary": "10/12 21:44発表の10/13案内。カフェ予約満席/当日券なし、併設物販自由・混雑時待機列。新しい当日注意候補。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5842,21 +6254,21 @@
         "ids": [
           "chiikawa-restaurant-ikebukuro"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "chiikawa-restaurant-ikebukuro"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "新しい公式10/13当日告知で満席・当日券なしを確認。10/12告知を単純延長しない。",
-      "nextCheck": "10/13夕方に最新公式条件を確認、10/14朝に10/13限定文を除去。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "前夜の公式個別投稿が10/13当日条件を確定。10/12条件の単純延長ではない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "chiikawa-bakery-shop-laforet-entry-20261013",
-      "title": "morning-20261013-chiikawa-bakery-shop-laforet-day-notice",
+      "title": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿 10/13当日入場案内",
       "kind": "reservation_update",
       "targetKey": "chiikawa-bakery-shop-laforet:day_notice:2026-10-13",
       "sourceIds": [
@@ -5875,6 +6287,18 @@
           "observedAt": "2026-10-13T07:53:18+09:00",
           "summary": "新しい10/13当日告知で10時入口・開店後店頭の配券を確認。事前予約開始時刻にしない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawabakery/status/2109592416093380725",
+          "observedAt": "2026-10-13T07:53:18+09:00",
+          "summary": "10/12 19:30発表の明日=10/13案内。原宿物販10時ラフォーレエントランス整理券、開店後店頭。新しい当日注意候補。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5882,21 +6306,21 @@
         "ids": [
           "chiikawa-bakery-shop-laforet"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "新しい10/13当日告知で10時入口・開店後店頭の配券を確認。事前予約開始時刻にしない。",
-      "nextCheck": "10/13夕方に最新公式条件を確認、10/14朝に10/13限定文を除去。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "前夜の公式個別投稿が10/13当日条件を確定。10/12条件の単純延長ではない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "update-machida-expired-entry-period-20261013",
-      "title": "update-machida-expired-entry-period-20261013",
+      "title": "町田モディ 10/9～12入場整理券期間の終了表記",
       "kind": "listing_update",
       "targetKey": "popup-2026-10-09-machida-modi:expired_entry_period:2026-10-13",
       "sourceIds": [
@@ -5904,8 +6328,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-13T07:56:19+09:00",
-      "eventStartsAt": null,
-      "eventEndsAt": null,
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-11-01",
       "releaseAt": null,
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-13",
@@ -5915,6 +6339,18 @@
           "observedAt": "2026-10-13T07:58:30+09:00",
           "summary": "公式画像の入場対象10/9～12だけ終了。開催10/9～11/1は継続、以後のフリー入場を推定しない。",
           "recordPath": "research/morning-machida-entry-period-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_matd/img/moushikomi_261007.jpg",
+          "observedAt": "2026-10-13T07:58:30+09:00",
+          "summary": "公式画像が示すLINE入場対象10/9～12を再確認。対象期間経過を明記し、10/13以降の規則を推定しない。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5922,25 +6358,26 @@
         "ids": [
           "popup-2026-10-09-machida-modi"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "同じ町田モディ10/9～11/1の既存公開ID。短期の入場条件期間だけ終了しておりイベント終了と混同しない。"
       },
       "listingIds": [
         "popup-2026-10-09-machida-modi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式画像の入場対象10/9～12だけ終了。開催10/9～11/1は継続、以後のフリー入場を推定しない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "期間経過の整合修正。イベント会期/IDは保持し、10/13以降にフリー入場と推定せず公式確認を案内。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "chiikawa-bakery-tokyo-nov-dec-2026-schedule",
-      "title": "morning-20261013-chiikawa-bakery-tokyo-reservation-detail",
+      "title": "ちいかわベーカリー 11/12月優先券案内",
       "kind": "reservation_update",
       "targetKey": "chiikawa-bakery-tokyo:reservation_detail:2026-10-13",
       "sourceIds": [
-        "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-tokyo-jpg"
+        "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-tokyo-jpg",
+        "chiikawa-bakery-reservation"
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-13T07:55:05+09:00",
@@ -5961,6 +6398,24 @@
           "observedAt": "2026-10-13",
           "summary": "公式予約ページの現行画像をクラウドがHTTP200で実読。11/1～12/31分を10/7 17時から。販売ページ403は未解消で空き・選択可能日を保証しない。大阪X本文は11/1～11/30で画像と不一致を保持。",
           "recordPath": "research/morning-bakery-reservations-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_tokyo.jpg",
+          "observedAt": "2026-10-13T07:55:05+09:00",
+          "summary": "前回403から回復し画像を実読。対象2026/11/1〜12/31、販売10/7 17時〜、2027/1/1以降は後日案内。予約ページ現行リンク。実際の残席は未確認。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-13T07:51:52+09:00",
+          "summary": "東京/大阪10月優先券完売、東京15時以降14:50発行デジタル整理券、大阪当面優先券保有者のみ、物販通常自由。現行11/12月画像2枚は別途取得して実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -5968,25 +6423,26 @@
         "ids": [
           "chiikawa-bakery-tokyo"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "chiikawa-bakery-tokyo"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "公式予約ページの現行画像をクラウドがHTTP200で実読。11/1～12/31分を10/7 17時から。販売ページ403は未解消で空き・選択可能日を保証しない。大阪X本文は11/1～11/30で画像と不一致を保持。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "現在の公式予約ページに掲出された販売対象を出典明示で補完。販売画面自体の在庫/12月選択可否は保証しない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "chiikawa-bakery-osaka-nov-dec-2026-schedule",
-      "title": "morning-20261013-chiikawa-bakery-osaka-reservation-detail",
+      "title": "ちいかわベーカリー OSAKA 11/12月優先券案内",
       "kind": "reservation_update",
       "targetKey": "chiikawa-bakery-osaka:reservation_detail:2026-10-13",
       "sourceIds": [
-        "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-osaka-jpg"
+        "evening-chiikawabakery-jp-wp-content-uploads-2026-10-1006ckb-schedule-osaka-jpg",
+        "chiikawa-bakery-reservation"
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-13T07:55:05+09:00",
@@ -6007,6 +6463,24 @@
           "observedAt": "2026-10-13",
           "summary": "公式予約ページの現行画像をクラウドがHTTP200で実読。11/1～12/31分を10/7 17時から。販売ページ403は未解消で空き・選択可能日を保証しない。大阪X本文は11/1～11/30で画像と不一致を保持。",
           "recordPath": "research/morning-bakery-reservations-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_osaka.jpg",
+          "observedAt": "2026-10-13T07:55:05+09:00",
+          "summary": "前回403から回復し画像を実読。対象2026/11/1〜12/31、販売10/7 17時〜、2027/1/1以降は後日案内。予約ページ現行リンク。実際の残席は未確認。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-13T07:51:52+09:00",
+          "summary": "東京/大阪10月優先券完売、東京15時以降14:50発行デジタル整理券、大阪当面優先券保有者のみ、物販通常自由。現行11/12月画像2枚は別途取得して実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6014,28 +6488,30 @@
         "ids": [
           "chiikawa-bakery-osaka"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行official-spots.jsonを既存ID・店舗・対象日で照合。既存IDを維持する更新。"
       },
       "listingIds": [
         "chiikawa-bakery-osaka"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "公式予約ページの現行画像をクラウドがHTTP200で実読。11/1～12/31分を10/7 17時から。販売ページ403は未解消で空き・選択可能日を保証しない。大阪X本文は11/1～11/30で画像と不一致を保持。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "OSAKA公式X 10/6本文には対象11/1〜11/30とあり予約ページ画像11/1〜12/31と差異。現行公式予約ページの画像を案内元として明示し、実際の購入可能日は断定しない。新しい発表として扱わない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-popup-yonago-20261013",
-      "title": "archive-popup-yonago-20261013",
+      "title": "ちいかわPOP UP STORE 米子天満屋 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "popup-yonago:archive:2026-10-13",
       "sourceIds": [
-        "chiikawa-popup-list"
+        "chiikawa-popup-list",
+        "series-observed-db594c9ad917",
+        "venue-yonago-tenmaya-event-calendar"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:26+09:00",
       "eventStartsAt": "2026-09-18",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6047,6 +6523,30 @@
           "observedAt": "2026-10-13T07:49:26+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。米子会期9/18～10/12は一覧と施設が一致。最終16時/17時矛盾は未解消。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/pus.html",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "summary": "一覧本文で米子天満屋1階しんまち広場・会期を確認。最終16時/17時の競合は未解消。両方が10/12で一致し、日付経過による移動を妨げない。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+          "observedAt": "2026-10-13T07:55:31+09:00",
+          "summary": "画像は9/18～10/12、最終16時閉場のまま。施設本文は17時のため時刻は保留。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+          "observedAt": "2026-10-13T07:54:48+09:00",
+          "summary": "施設本文9/18～10/12・最終午後5時閉場を再確認。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6054,28 +6554,30 @@
         "ids": [
           "popup-yonago"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "popup-yonago"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。米子会期9/18～10/12は一覧と施設が一致。最終16時/17時矛盾は未解消。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。非原本管理なのでarchive:endedを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-chiikawaland-popup-2026-09-11-amu-oita-20261013",
-      "title": "archive-chiikawaland-popup-2026-09-11-amu-oita-20261013",
+      "title": "ちいかわらんど POP UP SHOP アミュプラザおおいた 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "chiikawaland-popup-2026-09-11-amu-oita:archive:2026-10-13",
       "sourceIds": [
-        "individual-chiikawaland-popup-2026-09-11-amu-oita"
+        "individual-chiikawaland-popup-2026-09-11-amu-oita",
+        "chiikawaland-store-list",
+        "series-morning-96561d81af19"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:13+09:00",
       "eventStartsAt": "2026-09-11",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6087,6 +6589,30 @@
           "observedAt": "2026-10-13T07:49:13+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。個別タイトルで9/11～10/12。画像主体の全入場条件未実読、追加画像403。確認日を進めない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+          "observedAt": "2026-10-13T07:49:13+09:00",
+          "summary": "公式個別ページタイトルで会期を確認。画像主体本文の全入場条件は実読していないため、hours/entry確認日は更新しない。メイン画像は追加HTTP取得403で別途失敗記録。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/ck_land.html",
+          "observedAt": "2026-10-13T07:52:33+09:00",
+          "summary": "公式らんど一覧の本文でも9/11～10/12、2階特設を確認。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/oita/img/main_tel.jpg",
+          "observedAt": "2026-10-13T07:56:02+09:00",
+          "summary": "メイン画像取得後に実読。9/11～10/12・10～20時・アミュおおいた2F特設・住所一致。最初の403は失敗履歴として残す。入場画像群全体を確認したとは扱わない。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6094,28 +6620,28 @@
         "ids": [
           "chiikawaland-popup-2026-09-11-amu-oita"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "chiikawaland-popup-2026-09-11-amu-oita"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。個別タイトルで9/11～10/12。画像主体の全入場条件未実読、追加画像403。確認日を進めない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。原本管理なのでstatusAsOf更新とimportを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-popup-2026-09-26-aeon-niihama-20261013",
-      "title": "archive-popup-2026-09-26-aeon-niihama-20261013",
+      "title": "ちいかわPOP UP STORE イオンモール新居浜 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "popup-2026-09-26-aeon-niihama:archive:2026-10-13",
       "sourceIds": [
         "chiikawa-popup-list"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:26+09:00",
       "eventStartsAt": "2026-09-26",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6127,6 +6653,18 @@
           "observedAt": "2026-10-13T07:49:26+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。一覧と個別タイトルで9/26～10/12。前日確認の営業時間を維持。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/pus.html",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "summary": "一覧本文と個別公式タイトルで会期確認。既存の前日確認営業時間を保持する。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6134,28 +6672,28 @@
         "ids": [
           "popup-2026-09-26-aeon-niihama"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "popup-2026-09-26-aeon-niihama"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。一覧と個別タイトルで9/26～10/12。前日確認の営業時間を維持。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。非原本管理なのでarchive:endedを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-bakery-popup-2026-10-01-okinawa-ryubo-20261013",
-      "title": "archive-bakery-popup-2026-10-01-okinawa-ryubo-20261013",
+      "title": "ちいかわベーカリー OKINAWA POP UP SHOP 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "bakery-popup-2026-10-01-okinawa-ryubo:archive:2026-10-13",
       "sourceIds": [
         "evening-chiikawabakery-jp-topics-20260918"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:13+09:00",
       "eventStartsAt": "2026-10-01",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6167,6 +6705,18 @@
           "observedAt": "2026-10-13T07:51:24+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。本文で10/1～12、6階、最終17時閉場と券条件。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/topics/20260918/",
+          "observedAt": "2026-10-13T07:51:24+09:00",
+          "summary": "本文で会期とデパートリウボウ6階、最終10/12 17時閉場、整理券条件を確認。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6174,28 +6724,28 @@
         "ids": [
           "bakery-popup-2026-10-01-okinawa-ryubo"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "bakery-popup-2026-10-01-okinawa-ryubo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。本文で10/1～12、6階、最終17時閉場と券条件。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。原本管理なのでstatusAsOf更新とimportを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-chiikawa-muchaphoto-aeon-fujiidera-2026-20261013",
-      "title": "archive-chiikawa-muchaphoto-aeon-fujiidera-2026-20261013",
+      "title": "ちいかわ むちゃフォトパーティ!! イオン藤井寺ショッピングセンター 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "chiikawa-muchaphoto-aeon-fujiidera-2026:archive:2026-10-13",
       "sourceIds": [
         "observed-fujiidera-sc-aeonmall-jp-cb3a0e7abc"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:26+09:00",
       "eventStartsAt": "2026-10-12",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6207,6 +6757,18 @@
           "observedAt": "2026-10-13T07:49:26+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。10/12単日、撮影11/14/16時・AR10～17時、2Fイオンホール。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://fujiidera-sc.aeonmall.jp/event/3dfea39c-7fb7-4f51-8b2b-67318f3e4e03",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "summary": "施設本文で1日開催、撮影11時/14時/16時、AR10～17時、会場2Fイオンホールを確認。現行データの主要条件と一致。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6214,28 +6776,28 @@
         "ids": [
           "chiikawa-muchaphoto-aeon-fujiidera-2026"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "chiikawa-muchaphoto-aeon-fujiidera-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。10/12単日、撮影11/14/16時・AR10～17時、2Fイオンホール。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。原本管理なのでstatusAsOf更新とimportを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-chiikawa-workshop-lalaport-kashiwanoha-2026-20261013",
-      "title": "archive-chiikawa-workshop-lalaport-kashiwanoha-2026-20261013",
+      "title": "ちいかわ わーくしょっぷのじかん ビニペタ工作 ららぽーと柏の葉 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "chiikawa-workshop-lalaport-kashiwanoha-2026:archive:2026-10-13",
       "sourceIds": [
         "chiikawa-workshop-lalaport-kashiwanoha-2026-official"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:13+09:00",
       "eventStartsAt": "2026-10-12",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6247,6 +6809,18 @@
           "observedAt": "2026-10-13T07:51:24+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。10/12、11:30～16時5回各20人、当日1500円レシート、10時券配布。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+          "observedAt": "2026-10-13T07:51:24+09:00",
+          "summary": "施設本文でちいかわ開催10/12、11:30～16:00の5回、各20人、当日1500円税込合算可、整理券10時・本館2Fクリスタルコート確認。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6254,28 +6828,28 @@
         "ids": [
           "chiikawa-workshop-lalaport-kashiwanoha-2026"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "chiikawa-workshop-lalaport-kashiwanoha-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。10/12、11:30～16時5回各20人、当日1500円レシート、10時券配布。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。原本管理なのでstatusAsOf更新とimportを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "archive-chiikawa-muchaphoto-aeon-laketown-mori-2026-20261013",
-      "title": "archive-chiikawa-muchaphoto-aeon-laketown-mori-2026-20261013",
+      "title": "ちいかわ むちゃフォトパーティ!! イオンレイクタウンmori 10/12終了の履歴移動",
       "kind": "listing_update",
       "targetKey": "chiikawa-muchaphoto-aeon-laketown-mori-2026:archive:2026-10-13",
       "sourceIds": [
         "venue-muchaphoto-laketown-mori-20261012"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-13T07:49:26+09:00",
       "eventStartsAt": "2026-10-12",
       "eventEndsAt": "2026-10-12",
       "releaseAt": null,
@@ -6287,6 +6861,18 @@
           "observedAt": "2026-10-13T07:49:26+09:00",
           "summary": "公式終了日経過で同一IDをarchiveへ移動。10/12単日、撮影11/13/15時・AR10～16時最終15:30、9:30券配布。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://laketown.aeonmall.jp/event/05b39716-2ac7-4407-b616-3503eb3180ad",
+          "observedAt": "2026-10-13T07:49:26+09:00",
+          "summary": "施設本文で1日開催、撮影11/13/15時、AR10～16時最終15:30、1F木の広場・9:30券配布を確認。現行の主要条件と一致。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6294,21 +6880,21 @@
         "ids": [
           "chiikawa-muchaphoto-aeon-laketown-mori-2026"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "現行掲載ID・会場・会期一致。日付経過に伴う同一IDのarchive移動で新規イベントではない。"
       },
       "listingIds": [
         "chiikawa-muchaphoto-aeon-laketown-mori-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "公式終了日経過で同一IDをarchiveへ移動。10/12単日、撮影11/13/15時・AR10～16時最終15:30、9:30券配布。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "10/12最終日を一次確認し、10/13基準で終了履歴へ同一IDのまま移動可能。非原本管理なのでarchive:endedを使用。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "new-muchaphoto-shinrifu-20261122",
-      "title": "new-muchaphoto-shinrifu-20261122",
+      "title": "ちいかわ むちゃフォトパーティ!! イオンモール新利府",
       "kind": "new_listing",
       "targetKey": "chiikawa-muchaphoto-aeon-shinrifu-2026",
       "sourceIds": [
@@ -6327,32 +6913,43 @@
           "observedAt": "2026-10-13T07:52:33+09:00",
           "summary": "国内実会場の単日イベントを原本管理で追加。発表初日不明、10/8更新で補わない。9:30配券は事前予約ではない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+          "observedAt": "2026-10-13T07:52:33+09:00",
+          "summary": "公式本文で会場、11/22単日、撮影/AR時間、9:30館外配布、定員・景品条件を確認。10/8更新を初回発表に置き換えない。",
+          "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
-        "status": "matched",
-        "ids": [
-          "chiikawa-muchaphoto-aeon-shinrifu-2026"
-        ],
-        "note": "追加前の公開JSON・原本・候補を照合し同一開催回の重複なし。今回準備済みのローカル掲載IDを照合。公開は未完了。 全公開JSON・原本・候補のID/会場/会期/URL重複なし。movie-popup-shinrifuの既存座標を再利用、今回測位なし。"
+        "status": "new",
+        "ids": [],
+        "note": "現行・archive全件・系列原本・候補台帳を照合し11/22回なし。同施設既存の過去POPUP/映画POPUPとは期間・企画が異なる。座標はmovie-popup-shinrifuの既存値を再利用。"
       },
       "listingIds": [
         "chiikawa-muchaphoto-aeon-shinrifu-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "国内実会場の単日イベントを原本管理で追加。発表初日不明、10/8更新で補わない。9:30配券は事前予約ではない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "一次情報で国内実会場・1日開催・参加条件を確認。短期イベントにつき当日反映目標。原本ファミリー系列へ追加してimportする。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "minum-chiikawa-grip-liner-2026-review",
-      "title": "new-minum-chiikawa-grip-liner-2026",
+      "title": "minum×ちいかわ 第1弾コスメコラボ",
       "kind": "new_listing",
       "targetKey": "minum-chiikawa-grip-liner-2026",
       "sourceIds": [
-        "corporate-minum-chiikawa-release"
+        "corporate-minum-chiikawa-release",
+        "corporate-minum-official-shop"
       ],
       "officialAnnouncedAt": "2026-09-18T10:00:00+09:00",
       "discoveredAt": "2026-10-13",
@@ -6373,32 +6970,49 @@
           "observedAt": "2026-10-12T22:50:59.327Z",
           "summary": "正式な企業コスメコラボとしてコラボ欄だけに新規掲載。正確発売日・終了日・EC開始はnullを維持。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "発表元yutori原本で9/18 10:00発表、9月下旬より国内ドラッグストア等・ちいかわらんどで順次販売の企業コラボを確認。具体日・終了日未発表。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://minum-cosme.com/",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "公式ECトップを確認。ちいかわコラボのEC発売告知/専用商品は確認できず、EC販売開始済みとはしない。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
-        "status": "matched",
-        "ids": [
-          "minum-chiikawa-grip-liner-2026"
-        ],
-        "note": "追加前の公開JSON・原本・候補を照合し同一開催回の重複なし。今回準備済みのローカル掲載IDを照合。公開は未完了。 全4公開JSONをID・minum/ミニュム/ぷにゅ・公式URLで照合。重複なし。地図スポットなし。"
+        "status": "new",
+        "ids": [],
+        "note": "PR41公開4JSONのID・minum/ミニュム/ぷにゅ・URL照合で重複なし。"
       },
       "listingIds": [
         "minum-chiikawa-grip-liner-2026"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "正式な企業コスメコラボとしてコラボ欄だけに新規掲載。正確発売日・終了日・EC開始はnullを維持。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "企業自身が発表した化粧品ブランドコラボとして対象。9月下旬を具体日に推定せずreleaseAt・period.startDateはnull。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "suntory-movie-chiikawa-receipt-start-correction-20261013",
-      "title": "update-suntory-receipt-start-20261013",
+      "title": "サントリー映画ちいかわ レシート開始日の訂正",
       "kind": "listing_update",
       "targetKey": "suntory-movie-chiikawa-2026:receipt-dates:2026-10-13",
       "sourceIds": [
-        "suntory-receipt-campaign-official-2026"
+        "suntory-receipt-campaign-official-2026",
+        "corporate-chiikawa-release-846"
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-13",
@@ -6419,6 +7033,24 @@
           "observedAt": "2026-10-12T22:50:59.142Z",
           "summary": "誤記7/14を公式7/16へ訂正しアップロード期限も明示。ボトル販売終了は未確認、while_supplies_lastを維持。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "公式本文で購入7/16～8/31、投稿7/16 9:00～9/1 23:59、応募7/16 9:00～9/8 23:59。現行7/14開始は要訂正。終了告知確認。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+          "observedAt": "2026-10-12T22:57:28Z",
+          "summary": "発表元サントリー原本で全24種ボトル9月上旬順次・なくなり次第終了を確認。全店在庫/企画終了は未確認。",
+          "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6426,17 +7058,17 @@
         "ids": [
           "suntory-movie-chiikawa-2026"
         ],
-        "note": "最新mainの既存ID・指定before値を照合。既存ID・会期・位置・追加日を保持。"
+        "note": "current/archive既存ID一致。7/14を公式7/16へ訂正し投稿期限を明記。"
       },
       "listingIds": [
         "suntory-movie-chiikawa-2026"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "誤記7/14を公式7/16へ訂正しアップロード期限も明示。ボトル販売終了は未確認、while_supplies_lastを維持。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "既存期間訂正のみ。ボトル販売は数量限定継続として終了を推定しない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "link-jr-central-museum-20261013",
@@ -6459,6 +7091,12 @@
           "observedAt": "2026-10-12T22:49:42.866+00:00",
           "summary": "既存コラボに確認済み実会場IDだけ追記。KITTE大阪の未確認ピンは追加しない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6471,12 +7109,12 @@
       "listingIds": [
         "jr-central-tsutsuurauratabi-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既存コラボに確認済み実会場IDだけ追記。KITTE大阪の未確認ピンは追加しない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "decision": "既存コラボに確認済み実会場IDだけ追記。KITTE大阪の未確認ピンは追加しない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "land-magical-explicit-hours-20261013",
@@ -6596,6 +7234,60 @@
           "observedAt": "2026-10-13T07:55:45+09:00",
           "summary": "クラウドが公式店舗情報画像を取得して画素実読。数字のみ補完。入場確認日・札幌の階数は変更しない。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/fukuoka/img/main_bn.jpg",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "chiikawaland-fukuoka 福岡PARCOの営業時間に準ずる → 10:00～20:30。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/sendai/img/main_bn_8.jpg?a2",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "chiikawaland-sendai 仙台PARCOの営業時間に準ずる → 10:00～20:00。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/yokohama/img/main_bn06.jpg?p2",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "chiikawaland-yokohama 横浜スカイビルの営業時間に準ずる → 10:30～20:30。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/hiroshima/img/main_bn06.jpg?p2",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "chiikawaland-hiroshima 広島PARCOの営業時間に準ずる → 10:00～20:30。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/img/main_bn.jpg?a2",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "chiikawaland-kanazawa 金沢フォーラスの営業時間に準ずる → 10:00～20:00。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/img/main_bn_y.jpg",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "chiikawaland-koshigaya イオンレイクタウンmoriの営業時間に準ずる → 10:00～21:00。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/magical_store/shinjuku/img/main_3.jpg",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "magical-shinjuku 新宿マルイの営業時間に準ずる → 11:00～20:00。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/magical_store/umeda/img/main_4.jpg",
+          "observedAt": "2026-10-13T07:55:45+09:00",
+          "summary": "magical-umeda HEP FIVEの営業時間に準ずる → 11:00～21:00。公式店舗画像を実読。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6610,7 +7302,7 @@
           "magical-shinjuku",
           "magical-umeda"
         ],
-        "note": "最新mainと指定before値を各既存IDで照合。既存ID・会期・位置・追加日を保持。"
+        "note": "2026-10-13朝取得のofficial-spots既存ID/名称/公式URLと照合。ID再発行なし。"
       },
       "listingIds": [
         "chiikawaland-fukuoka",
@@ -6622,12 +7314,12 @@
         "magical-shinjuku",
         "magical-umeda"
       ],
-      "state": "ready",
-      "priority": "high",
-      "decision": "公式店舗情報画像を実読し数値営業時間を補足。営業時間改定日や入場条件は推定しない。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
-      "publishedAt": null
+      "state": "published",
+      "priority": "normal",
+      "decision": "当日限定変更ではなく、公式現行画像の数値営業時間へ補足。開業日/営業時間改定日/入場条件の推定をしない。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
     },
     {
       "id": "land-oct12-notice-retirement-20261013",
@@ -6642,8 +7334,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-13",
-      "eventStartsAt": null,
-      "eventEndsAt": null,
+      "eventStartsAt": "2026-10-12",
+      "eventEndsAt": "2026-10-12",
       "releaseAt": null,
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-13",
@@ -6671,6 +7363,36 @@
           "observedAt": null,
           "summary": "10/12限定案内を除去。10/13の配券・自由入場は未確認、確認日10/12を維持。",
           "recordPath": "research/morning-listings-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_land/status/2109536324046954652",
+          "observedAt": "2026-10-13T07:50:49+09:00",
+          "summary": "chiikawaland-solamachiの現行掲載と前夕公式投稿が明示した対象日10/12を照合。日付を越えたため期限切れ文のみ解除。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_land/status/2109566403972120885",
+          "observedAt": "2026-10-13T07:50:49+09:00",
+          "summary": "chiikawaland-sendaiの現行掲載と前夕公式投稿が明示した対象日10/12を照合。日付を越えたため期限切れ文のみ解除。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_land/status/2109559278566850980",
+          "observedAt": "2026-10-13T07:50:49+09:00",
+          "summary": "chiikawaland-shinsaibashiの現行掲載と前夕公式投稿が明示した対象日10/12を照合。日付を越えたため期限切れ文のみ解除。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_land/status/2109584471783862409",
+          "observedAt": "2026-10-13T07:50:49+09:00",
+          "summary": "chiikawaland-koshigayaの現行掲載と前夕公式投稿が明示した対象日10/12を照合。日付を越えたため期限切れ文のみ解除。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+          "observedAt": "2026-10-13T08:48:08.247+09:00",
+          "summary": "08:42:34の配信完了後、08:47:45～08:48:08に4公開JSONと対象commitの完全一致を独立確認。PC初回一致時刻は不明。",
+          "recordPath": "research/publication-confirmation-2026-10-13-pr42.json"
         }
       ],
       "existingMatch": {
@@ -6681,7 +7403,7 @@
           "chiikawaland-shinsaibashi",
           "chiikawaland-koshigaya"
         ],
-        "note": "最新mainと指定before値を各既存IDで照合。既存ID・会期・位置・追加日を保持。"
+        "note": "2026-10-13朝取得のofficial-spots既存ID/名称/公式URLと照合。ID再発行なし。"
       },
       "listingIds": [
         "chiikawaland-solamachi",
@@ -6689,11 +7411,1086 @@
         "chiikawaland-shinsaibashi",
         "chiikawaland-koshigaya"
       ],
+      "state": "published",
+      "priority": "high",
+      "decision": "明記された10/12限定の案内だけ解除。一般入場案内を復帰し、10/13の自由入場や配券開始を推定しない。確認日は10/12維持。 PR42の実配信完了と公開実体一致に基づき公開状態を同期。",
+      "nextCheck": "次の定期巡回で公式の会期・入場条件変更を確認する。",
+      "recheckDueAt": "2026-10-14",
+      "publishedAt": "2026-10-13T08:42:34+09:00"
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-ginza-20250124",
+      "title": "ちいかわ 東京みやげ 銀座三越",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:ginza-mitsukoshi:2025-01-24",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2025-01-17",
+      "discoveredAt": "2026-10-12T22:56:08.077Z",
+      "eventStartsAt": "2025-01-24",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880148052314374631",
+          "observedAt": "2026-10-12T22:56:08.077Z",
+          "summary": "公式1/17告知：銀座三越本館8階JapanDutyFreeGINZA、当初2025/1/24〜3/31。翌同日訂正投稿で開始曜日を金曜へ修正。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880181772903981470",
+          "observedAt": "2026-10-12T22:57:52.473Z",
+          "summary": "公式訂正を個別取得。2025/1/24(金)〜3/31(月)。現行特設の終期10/28までとの関係は延長/別回を未確定。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "公式初回会期は1/24〜3/31、現行特設の終了は10/28。連続延長か別回かの経緯未詳につき終期を単一値で確定しない。住所/座標も未照合。",
+      "nextCheck": "3/31以降の公式延長告知と開催回を確認し、店舗/施設住所・位置を一次照合。曜日誤記は同日訂正済み。",
+      "recheckDueAt": "2026-10-20",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t1-20241226",
+      "title": "ちいかわ 東京みやげ 羽田T1童心 初回",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:haneda-t1:2024-12-26",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2024-12-18",
+      "discoveredAt": "2026-10-12T22:53:59.100Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2024-12-26",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "初回12/26発売は一次確認。初回終期/継続・延長経緯と施設位置は未確定。現行2026/1/31を無条件で初回終期へ結合しない。",
+      "nextCheck": "初回開催原図と延長/再開催告知、T1童心の住所/施設位置を確認。",
+      "recheckDueAt": "2026-10-20",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t2-20241226",
+      "title": "ちいかわ 東京みやげ 羽田T2 Tokyo’s Tokyo 初回",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:haneda-t2:2024-12-26",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2024-12-18",
+      "discoveredAt": "2026-10-12T22:53:59.100Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2024-12-26",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+          "observedAt": "2026-10-12T22:54:12.559Z",
+          "summary": "羽田T2 3Fマーケットプレイス・保安検査前を再確認。公式埋込JSONのlatitude/longitudeはnull、map_link_id1741、area_number17。現在10:00〜17:00を過去会期の営業時間へ代用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "初回12/26発売は一次確認。2025/10/17からの既存候補と別回。初回終期と会期起点・店舗位置は未確定。",
+      "nextCheck": "初回原図で開催開始/終了と延長の有無を確認。2025/10/17回へまとめない。",
+      "recheckDueAt": "2026-10-20",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-ikebukuro-20250509",
+      "title": "ちいかわ 東京みやげ 0%IKEBUKURO",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:0percent-ikebukuro:2025-05-09",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2025-04-25",
+      "discoveredAt": "2026-10-12T22:57:54.069Z",
+      "eventStartsAt": "2025-05-09",
+      "eventEndsAt": "2025-06-09",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1915693328689226033",
+          "observedAt": "2026-10-12T22:57:54.069Z",
+          "summary": "公式4/25告知の個別原文で0%IKEBUKURO、2025/5/9〜6/9を確認。現行特設の6/9終了と一致。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "公式Xと特設で会期一致。池袋PARCO本館6Fの住所/位置は一次資料での再照合が残る。",
+      "nextCheck": "施設または主催公式で0%IKEBUKUROの階・住所を照合し、既存施設座標を検証してreadyへ。",
+      "recheckDueAt": "2026-10-20",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+      "title": "ちいかわ 東京みやげ 紀伊國屋書店新宿本店",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:kinokuniya-shinjuku:2025-01-17",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2024-12-18",
+      "discoveredAt": "2026-10-12T22:53:59.100Z",
+      "eventStartsAt": null,
+      "eventEndsAt": "2025-01-30",
+      "releaseAt": "2025-01-17",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "公式は1/17発売、現行特設は1/30終了。イベント開始としての1/17、住所/座標の一次照合を残す。発売日を会期に機械変換しない。",
+      "nextCheck": "公式店舗告知または原図で開催開始日を確認。住所/座標の一次照合後にreadyを判断。",
+      "recheckDueAt": "2026-10-20",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-kitasenju-20250904",
+      "title": "ちいかわ 東京みやげ 北千住マルイ",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:kitasenju-marui:2025-09-04",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2025-08-21",
+      "discoveredAt": "2026-10-12T22:57:00.103Z",
+      "eventStartsAt": "2025-09-04",
+      "eventEndsAt": "2025-09-15",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1958454039005565233",
+          "observedAt": "2026-10-12T22:57:00.103Z",
+          "summary": "公式8/21告知の個別原文で北千住マルイ2Fカレンダリウム、2025/9/4〜9/15を確認。現行特設の9/15終了と一致。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.0101.co.jp/084/access/?from=01_pc_st084_top_gnav-access",
+          "observedAt": "2026-10-13",
+          "summary": "北千住マルイ公式アクセスの東京都足立区千住3-92を本文確認。既存同館アーカイブ2件の施設座標35.7494,139.805を既存方針どおり再利用。2F屋内の精密座標とは扱わない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-tokyo-miyage-2025-09-04-kitasenju-marui"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-tokyo-miyage-2025-09-04-kitasenju-marui"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式告知の会期・2Fカレンダリウム・公式住所と同館既存座標を確認。系列全体のholdを維持し、単独の確定開催回を独立archiveへ追加。当時の営業時間・入場方法はunknownのまま。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "hold-land-sapporo-floor-conflict-20261013",
+      "title": "札幌らんどの公式間フロア不一致を再確認",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-sapporo-floor-conflict",
+      "sourceIds": [
+        "store-observed-962735a1f4b5",
+        "store-image-8954b374c8cf"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/chiikawaland/sapporo/img/main_bn05_2.jpg?p2",
+          "observedAt": "2026-10-13T07:53:10+09:00",
+          "summary": "ブランド公式店舗情報画像に札幌パルコ本館地下1階表記。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://sapporo.parco.jp/shop/detail/?cd=028451",
+          "observedAt": "2026-10-13T07:55:17+09:00",
+          "summary": "施設の個店ページとフロアマップは本館B2F。現行掲載もB2F。営業時間10–20は両者一致。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sapporo"
+        ],
+        "note": "2026-10-13朝取得のofficial-spots既存ID/名称/公式URLと照合。ID再発行なし。"
+      },
+      "listingIds": [
+        "chiikawaland-sapporo"
+      ],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "公式施設の個店ページ・フロアマップが現行掲載B2Fを支持。ブランド画像だけで住所変更/移転を断定しない。住所は現状維持。",
+      "nextCheck": "次回週次に両公式のフロア表記を再確認。新しい移転告知があれば優先検証。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "park-december-2026-ticket-calendar-verification",
+      "title": "ちいかわパーク 2026年12月分チケット個別販売案内照合",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-park-tokyo:ticket-calendar:2026-12",
+      "sourceIds": [
+        "chiikawa-park-ticket",
+        "evening-www-asoview-com-channel-tickets-9u0kjjjngr"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-12T18:59:41+09:00",
+      "eventStartsAt": "2026-12-01",
+      "eventEndsAt": "2026-12-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/ticket/",
+          "observedAt": "2026-10-13T07:51:59+09:00",
+          "summary": "毎月15日12時に2か月先を先着販売。一般規則なら12月分は10/15 12時となる計算だが、2026年12月個別告知は未確認。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.asoview.com/channel/tickets/9u0KJJjNgr/",
+          "observedAt": "2026-10-13T07:55:08+09:00",
+          "summary": "JSシェルのみでカレンダー解析できず。未確認を新着なしへ変えない。",
+          "recordPath": "research/morning-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawapark-tokyo.jp/ticket/",
+          "observedAt": "2026-10-13T22:30:29+09:00",
+          "summary": "22:30:29の復旧後新観測。毎月15日12時に2か月先分、15日が土日祝なら直前平日という一般規則を再確認。12月個別販売日時の明示はこの本文では確認できない。",
+          "recordPath": "research/park-calendar-evening-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.asoview.com/channel/tickets/9u0KJJjNgr/",
+          "observedAt": "2026-10-13T22:49:46+09:00",
+          "summary": "22:49:46の新観測。HTTP200だが抽出本文は「チケット購入」のみで、2026年12月販売カレンダーは解析できない。web読取もiframeのみ。個別販売日時は未確定で、一般規則との差異/矛盾が存在するとは確認していない。",
+          "recordPath": "research/park-calendar-evening-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-tokyo"
+        ],
+        "note": "一般規則は既に掲載済み。個別日程補完の照合のみ。"
+      },
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "一般販売規則は既に掲載済みのまま維持。19時の再確認で個別告知/カレンダー照合は解消せず、その後の環境再作成と資料復旧に伴い、19時の再確認期限の更新が遅れた。22:30公式本文再読でも個別日時の明示は確認できず、22:49アソビューはJSシェルのみで再び解析不可。日程の矛盾や12月券販売開始を確認したとは扱わずreservationOpensAtはnull。元の10/13反映目標を保持して遅延を記録する。",
+      "nextCheck": "10/14 08:00 JSTに公式ticket・公式NEWS/公式Xの12月個別販売告知と、同じアソビュー公開カレンダーを確認する。既知の一般規則で計算される10/15 12:00との差異の有無を、12月分と明示された一次情報で照合する。カレンダーを読めない場合は解析失敗・最終成功を保持して掲載判断者へ個別報告し、公開DATAやreservationOpensAtを推定で変更しない。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "magical-chiikawa-gororin-20261013-out-of-scope",
+      "title": "まじかるちいかわ ごろりん抱きぬいぐるみEC限定受注",
+      "kind": "new_listing",
+      "targetKey": "general-goods:magical-chiikawa-gororin:2026-10-13",
+      "sourceIds": [
+        "corporate-magical-gororin-release-20261013"
+      ],
+      "officialAnnouncedAt": "2026-10-13T18:00:00+09:00",
+      "discoveredAt": "2026-10-13T10:01:46.599+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-13T18:00:00+09:00",
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000078.000168561.html",
+          "observedAt": "2026-10-13T10:12:16.711+00:00",
+          "summary": "10/13 18時発表、受注10/13 18時～10/20正午、2027年2月下旬順次発送。公式EC限定一般キャラクター商品、実会場/企業別コラボなし。",
+          "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "current/archive公式スポット・コラボと台帳を照合。実会場のないEC限定一般キャラクター商品として掲載対象外。"
+      },
+      "listingIds": [],
+      "state": "rejected",
+      "priority": "normal",
+      "decision": "受注開始が当日でも一般商品は地図・企業別コラボ公開対象外。EC受付終了10/20正午、発送2027年2月下旬は調査記録のみ。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-park-christmas-2026-new",
+      "title": "ちいかわパーク クリスマス期間限定企画",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-park-christmas-2026-new",
+      "sourceIds": [
+        "chiikawa-park-christmas-2026",
+        "chiikawa-park-christmas-2026-pr"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-20",
+      "eventEndsAt": "2026-12-25",
+      "releaseAt": "2026-11-24",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+          "observedAt": "2026-10-13T18:59:52+09:00",
+          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+          "observedAt": "2026-10-13T19:02:18+09:00",
+          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-christmas-2026"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-park-christmas-2026"
+      ],
       "state": "ready",
       "priority": "high",
-      "decision": "10/12限定の文だけ除去。10/13の自由入場・配券は推定せず、入場案内確認日は10/12を維持。",
-      "nextCheck": "公開内容一致と10/13夕方の公式変更を確認。未確認の入場状態・残席を推定しない。",
-      "recheckDueAt": "2026-10-13T19:00:00+09:00",
+      "decision": "公式・運営会社PRの会期と会場が一致。系列原本へ新イベント追加。SNS特典は園内撮影写真/動画・指定ハッシュタグの条件を明記。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-park-december-hours-20261013",
+      "title": "ちいかわパーク 12月特別営業時間",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-park-december-hours-20261013",
+      "sourceIds": [
+        "chiikawa-park-christmas-2026",
+        "chiikawa-park-christmas-2026-pr"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-12-01",
+      "eventEndsAt": "2026-12-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+          "observedAt": "2026-10-13T18:59:52+09:00",
+          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+          "observedAt": "2026-10-13T19:02:18+09:00",
+          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-tokyo"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "既存施設の12/1～30と12/31の営業時間/最終入場の公式明記値を反映。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-bakery-osaka-nov-dec-soldout-20261013",
+      "title": "ちいかわベーカリー大阪 11・12月優先券完売",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-osaka-nov-dec-soldout-20261013",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-01",
+      "eventEndsAt": "2026-12-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-13T22:30:22+09:00",
+          "summary": "22:30復旧後の新観測。大阪10・11・12月優先券完売、東京9・10月完売の記載を確認。大阪のみ更新し東京へ拡張しない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-osaka"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-osaka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "大阪予約ページの完売対象が11・12月へ拡張。東京条件とは分離。19時元取得の秒は未復元。復旧後22:30:22の再取得成功を別記する。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-20261013",
+      "title": "ちいかわラーメン豚心斎橋 10月13日当日券なし",
+      "kind": "reservation_update",
+      "targetKey": "ramen-buta-shinsaibashi-entry-20261013",
+      "sourceIds": [
+        "ramen-shinsaibashi-entry-20261013"
+      ],
+      "officialAnnouncedAt": "2026-10-13T10:07:23+09:00",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-10-13",
+      "eventEndsAt": "2026-10-13",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawaramenSH/status/2109813214284550315",
+          "observedAt": "2026-10-13T19:02:32+09:00",
+          "summary": "10/13火は予約満席で予約済み客のみ。公式投稿本文と10月13日火の写真で当日券配布なし。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "rejected",
+      "priority": "high",
+      "decision": "当日案内は未公開のまま最終入店22:00を経過。通常営業終了は23:00であり、22:28時点に営業終了済みとは記録しない。新規当日追加を除外し、朝mainの通常案内へ戻す。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "mogumogu-kawagoe-reservation-source-unavailable-20261013",
+      "title": "もぐもぐ川越 10月17～18予約根拠ページが取得不能",
+      "kind": "reservation_update",
+      "targetKey": "mogumogu-kawagoe-reservation-source-unavailable-20261013",
+      "sourceIds": [
+        "mogumogu-kawagoe-reservation-20261010",
+        "mogumogu-kawagoe-news"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-10-17",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-16T20:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T07:52:03+09:00",
+          "summary": "本文再確認。川越10/10〜12・17〜18終日予約、前日20時LINE先着、30km制限、本人端末等。今後の17〜18条件は保持。 復旧済みmorning転送資料の確認済みhash・時刻を使用。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T19:07:41+09:00",
+          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後の新観測。10/17～18営業時間延長記事は掲載、旧予約告知の見出しなし。旧予約告知404のみで予約撤回とは扱わない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後もHTTP404。朝7:52:03の成功記録は復旧済みmorning転送資料で保持。予約撤回・自由入場とは推定しない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-kawagoe"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "mogumogu-kawagoe"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "朝原告知と既存予約条件を保持し、夕/復旧後の404から撤回を推定しない。公開注意文追加と予約実施の再確認は別候補で管理。",
+      "nextCheck": "10/14朝に公式店舗NEWS/LINE/SNSを優先確認。既知の次回受付10/16 20時までに代替根拠・撤回有無を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "mogumogu-kawagoe-source-availability-notice-20261013",
+      "title": "もぐもぐ川越 予約告知閲覧不可の注意",
+      "kind": "listing_update",
+      "targetKey": "mogumogu-kawagoe:source-availability-notice:2026-10-13",
+      "sourceIds": [
+        "mogumogu-kawagoe-reservation-20261010",
+        "mogumogu-kawagoe-news",
+        "mogumogu-kawagoe-hours-20261017"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-13T19:07:41+09:00",
+          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後の新観測。10/17～18営業時間延長記事は掲載、旧予約告知の見出しなし。旧予約告知404のみで予約撤回とは扱わない。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+          "observedAt": "2026-10-13T22:30:25+09:00",
+          "summary": "22:30復旧後の新観測。川越まつりに伴う10/17・18 9:30～19:00、通常9:30～17:30を再確認。",
+          "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-kawagoe"
+        ],
+        "note": "同一既存IDを原本と照合。"
+      },
+      "listingIds": [
+        "mogumogu-kawagoe"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "予約条件を撤回せず朝確認・夕原告知404の注意を追記。entryInfoUrlを公式店舗NEWSへ差替え。完成文は親がSHAで回収した公開用blobを採用。予約実施再確認のon_hold候補を保持。",
+      "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-chiikawa-pocket-2026-10-24-ikebukuro-parco",
+      "title": "ちいかわぽけっと POP UP STORE 池袋PARCO 第4弾",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-pocket-fourth-2026:ikebukuro-parco:2026-10-24",
+      "sourceIds": [
+        "chiikawa-pocket-fourth-2026-release",
+        "chiikawa-pocket-fourth-2026-detail",
+        "chiikawa-pocket-fourth-2026-entry-tokyo"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-10-24",
+      "eventEndsAt": "2026-11-23",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T19:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-13T10:01:29.614Z",
+          "summary": "池袋PARCO 本館6F 0% IKEBUKURO、2026-10-24～2026-11-23、公式リリース営業時間11:00～21:00。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+          "observedAt": "2026-10-13T10:01:41.983Z",
+          "summary": "初回HTML・GETでは入場画像未実読。後の会場別画像成功と区別し、初回失敗を取り消さない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_tokyo_261024.jpg",
+          "observedAt": "2026-10-13T10:07:45+00:00",
+          "summary": "2026-10-24～2026-10-25はLINEアプリ入場整理券制。開店～13:30入場分は各来店日前日19時、14:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。 初回予約日時は公式対象初日と前日19時から算出。発表日時ではない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-10-24-ikebukuro-parco"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-10-24-ikebukuro-parco"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "会期・会場・対象日のLINE入場条件を一次確認。全会期はreservationType unknown/defaultEntryType otherとし対象外を推定しない。親の検査・公開確認へ進める。 本候補の実配信完了・初回公開実体照合日時は本担当で未確認のためpublishedAt:nullを保持。復元・統合時刻を公開日時へ流用しない。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-chiikawa-pocket-2026-10-30-tennoji-mio",
+      "title": "ちいかわぽけっと POP UP STORE 天王寺ミオ 第4弾",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-pocket-fourth-2026:tennoji-mio:2026-10-30",
+      "sourceIds": [
+        "chiikawa-pocket-fourth-2026-release",
+        "chiikawa-pocket-fourth-2026-detail",
+        "chiikawa-pocket-fourth-2026-entry-osaka"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-10-30",
+      "eventEndsAt": "2026-11-15",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-29T19:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-13T10:01:29.614Z",
+          "summary": "天王寺ミオ 本館6F ミオラボ、2026-10-30～2026-11-15、公式リリース営業時間10:30～20:30。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+          "observedAt": "2026-10-13T10:01:41.983Z",
+          "summary": "初回HTML・GETでは入場画像未実読。後の会場別画像成功と区別し、初回失敗を取り消さない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_osaka_261024.jpg",
+          "observedAt": "2026-10-13T10:07:45+00:00",
+          "summary": "2026-10-30～2026-11-01はLINEアプリ入場整理券制。開店～13:00入場分は各来店日前日19時、13:30以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。 初回予約日時は公式対象初日と前日19時から算出。発表日時ではない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-10-30-tennoji-mio"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-10-30-tennoji-mio"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "会期・会場・対象日のLINE入場条件を一次確認。全会期はreservationType unknown/defaultEntryType otherとし対象外を推定しない。親の検査・公開確認へ進める。 本候補の実配信完了・初回公開実体照合日時は本担当で未確認のためpublishedAt:nullを保持。復元・統合時刻を公開日時へ流用しない。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi",
+      "title": "ちいかわぽけっと POP UP STORE イオンモール仙台上杉 第4弾",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-pocket-fourth-2026:aeonmall-sendai-kamisugi:2026-11-03",
+      "sourceIds": [
+        "chiikawa-pocket-fourth-2026-release",
+        "chiikawa-pocket-fourth-2026-detail",
+        "chiikawa-pocket-fourth-2026-entry-sendai"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-23",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-02T19:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-13T10:01:29.614Z",
+          "summary": "イオンモール仙台上杉 1階 あまみやコート、2026-11-03～2026-11-23、公式リリース営業時間10:00～21:00（最終17時）。特設画像19時と不一致。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+          "observedAt": "2026-10-13T10:01:41.983Z",
+          "summary": "初回HTML・GETでは入場画像未実読。後の会場別画像成功と区別し、初回失敗を取り消さない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+          "observedAt": "2026-10-13T10:07:45+00:00",
+          "summary": "2026-11-03はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。 初回予約日時は公式対象初日と前日19時から算出。発表日時ではない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://sendaikamisugi.aeonmall.com/static-pages/access",
+          "observedAt": "2026-10-13T10:03:24.801Z",
+          "summary": "公式住所は堤通雨宮町1-1。HTMLのsendaiKamisugi変数をAdvancedMarkerElement.positionへ指定。施設点38.276336,140.872124。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/ck_tenpo_3.jpg",
+          "observedAt": "2026-10-13",
+          "summary": "会場画像10～19時・最終17時と公式プレス10～21時・最終17時の矛盾を保持。本担当も画像実読。最初の正確な画像実読完了時計は独立記録を確認できないため日付だけ。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "会期・会場・公式施設座標・LINE対象日/受付条件は一次根拠で確定。通常日の閉場19時/21時の相違を本文と重要注意へ併記して掲載し、時刻の確定は独立保留へ分離。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-chiikawa-pocket-2026-11-06-fukuoka-parco",
+      "title": "ちいかわぽけっと POP UP STORE 福岡PARCO 第4弾",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-pocket-fourth-2026:fukuoka-parco:2026-11-06",
+      "sourceIds": [
+        "chiikawa-pocket-fourth-2026-release",
+        "chiikawa-pocket-fourth-2026-detail",
+        "chiikawa-pocket-fourth-2026-entry-fukuoka"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-06",
+      "eventEndsAt": "2026-11-23",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-05T19:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-13T10:01:29.614Z",
+          "summary": "福岡PARCO 本館B1F EVENT SPACE、2026-11-06～2026-11-23、公式リリース営業時間10:00～20:30（最終日17:00閉場）。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+          "observedAt": "2026-10-13T10:01:41.983Z",
+          "summary": "初回HTML・GETでは入場画像未実読。後の会場別画像成功と区別し、初回失敗を取り消さない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_fukuoka_261024.jpg",
+          "observedAt": "2026-10-13T10:07:45+00:00",
+          "summary": "2026-11-06～2026-11-08はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。 初回予約日時は公式対象初日と前日19時から算出。発表日時ではない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-11-06-fukuoka-parco"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-11-06-fukuoka-parco"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "会期・会場・対象日のLINE入場条件を一次確認。全会期はreservationType unknown/defaultEntryType otherとし対象外を推定しない。親の検査・公開確認へ進める。 本候補の実配信完了・初回公開実体照合日時は本担当で未確認のためpublishedAt:nullを保持。復元・統合時刻を公開日時へ流用しない。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-chiikawa-pocket-2026-11-13-nagoya-parco",
+      "title": "ちいかわぽけっと POP UP STORE 名古屋PARCO 第4弾",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-pocket-fourth-2026:nagoya-parco:2026-11-13",
+      "sourceIds": [
+        "chiikawa-pocket-fourth-2026-release",
+        "chiikawa-pocket-fourth-2026-detail",
+        "chiikawa-pocket-fourth-2026-entry-nagoya"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-13",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-12T19:00:00+09:00",
+      "reflectDueAt": "2026-10-13",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-13T10:01:29.614Z",
+          "summary": "名古屋PARCO 西館5F イベントスペース、2026-11-13～2026-11-29、公式リリース営業時間10:00～20:00（最終日17:00閉場）。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+          "observedAt": "2026-10-13T10:01:41.983Z",
+          "summary": "初回HTML・GETでは入場画像未実読。後の会場別画像成功と区別し、初回失敗を取り消さない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_nagoya_261024.jpg",
+          "observedAt": "2026-10-13T10:07:45+00:00",
+          "summary": "2026-11-13～2026-11-15はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。 初回予約日時は公式対象初日と前日19時から算出。発表日時ではない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-11-13-nagoya-parco"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-11-13-nagoya-parco"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "会期・会場・対象日のLINE入場条件を一次確認。全会期はreservationType unknown/defaultEntryType otherとし対象外を推定しない。親の検査・公開確認へ進める。 本候補の実配信完了・初回公開実体照合日時は本担当で未確認のためpublishedAt:nullを保持。復元・統合時刻を公開日時へ流用しない。",
+      "nextCheck": "検査・配信後に公開JSONと個別ページの一致、実配信完了日時を記録する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "hold-pocket-sendai-hours-conflict-20261013",
+      "title": "ちいかわぽけっと仙台上杉 通常日の閉場19時/21時相違",
+      "kind": "listing_update",
+      "targetKey": "pocket-sendai-kamisugi-20261103:hours-conflict",
+      "sourceIds": [
+        "chiikawa-pocket-fourth-2026-release",
+        "chiikawa-pocket-fourth-2026-detail",
+        "chiikawa-pocket-fourth-2026-entry-sendai"
+      ],
+      "officialAnnouncedAt": "2026-10-13",
+      "discoveredAt": "2026-10-13",
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-14",
+      "evidence": [
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-13T10:01:29.614Z",
+          "summary": "イオンモール仙台上杉 1階 あまみやコート、2026-11-03～2026-11-23、公式リリース営業時間10:00～21:00（最終17時）。特設画像19時と不一致。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+          "observedAt": "2026-10-13T10:01:41.983Z",
+          "summary": "初回HTML・GETでは入場画像未実読。後の会場別画像成功と区別し、初回失敗を取り消さない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+          "observedAt": "2026-10-13T10:07:45+00:00",
+          "summary": "2026-11-03はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。 初回予約日時は公式対象初日と前日19時から算出。発表日時ではない。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://sendaikamisugi.aeonmall.com/static-pages/access",
+          "observedAt": "2026-10-13T10:03:24.801Z",
+          "summary": "公式住所は堤通雨宮町1-1。HTMLのsendaiKamisugi変数をAdvancedMarkerElement.positionへ指定。施設点38.276336,140.872124。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/ck_tenpo_3.jpg",
+          "observedAt": "2026-10-13",
+          "summary": "会場画像10～19時・最終17時と公式プレス10～21時・最終17時の矛盾を保持。本担当も画像実読。最初の正確な画像実読完了時計は独立記録を確認できないため日付だけ。",
+          "recordPath": "research/evening-held-legacy-2026-10-13-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
+        ],
+        "note": "追加前に同一開催回の重複なしを確認。予定した新規IDを今回作業ツリーへ追加して照合。既存別開催回IDを保持。実公開はまだ未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
+      ],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "公式特設会場画像は19時、主催者リリースは21時。開始10時と最終日17時は一致。施設の一般営業時間から推定せず、公開本文では両表記を明示する。",
+      "nextCheck": "10/14朝に公式特設・主催者記事・施設イベント欄の訂正や補足を確認する。",
+      "recheckDueAt": "2026-10-14T08:00:00+09:00",
       "publishedAt": null
     }
   ]

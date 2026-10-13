@@ -1,0 +1,33 @@
+{
+  "commit": "ca2af44bf9d39e6b1dcff22d94794c50fe76ee86",
+  "deploymentRun": "https://github.com/route0254/chiikawa-map/actions/runs/38323481312",
+  "deploymentCompletedAt": "2026-10-13T08:42:34+09:00",
+  "firstPublicMatchKnown": false,
+  "independentPublicMatches": [
+    {
+      "name": "official-spots.json",
+      "observedAt": "2026-10-13T08:47:45.373+09:00",
+      "expectedGitBlobSha": "4b607fa468d26db2b0ee17efbdf59be720c0a013",
+      "exactGitMatch": true
+    },
+    {
+      "name": "official-events-archive.json",
+      "observedAt": "2026-10-13T08:47:53.304+09:00",
+      "expectedGitBlobSha": "fc3e87574f1d2df20ed656cd883ef6024693988c",
+      "exactGitMatch": true
+    },
+    {
+      "name": "collaborations-current.json",
+      "observedAt": "2026-10-13T08:48:00.993+09:00",
+      "expectedGitBlobSha": "255efa9477de3c2cc2ff678e39854ded22803830",
+      "exactGitMatch": true
+    },
+    {
+      "name": "collaborations-archive.json",
+      "observedAt": "2026-10-13T08:48:08.247+09:00",
+      "expectedGitBlobSha": "6b647fa49a1a9fd6f4d8539f3359bbadcb92fe9a",
+      "exactGitMatch": true
+    }
+  ],
+  "note": "朝の実配信と独立公開照合の保存結果から復元。PCの初回一致時刻は不明。今回の台帳同期/復元時刻で公開時刻を置換しない。"
+}

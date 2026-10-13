@@ -1,0 +1,65 @@
+{
+  "task": "パーク12月券の個別販売カレンダー保留 最終運用確認",
+  "reviewedAt": "2026-10-13T22:50:43+09:00",
+  "candidateId": "park-december-2026-ticket-calendar-verification",
+  "previousRecheckDueAt": "2026-10-13T19:00:00+09:00",
+  "newRecheckDueAt": "2026-10-14T08:00:00+09:00",
+  "status": "on_hold",
+  "finding": "確認された日程矛盾ではなく、一般規則と12月個別販売カレンダーをまだ照合できないことが保留点。",
+  "delayReason": "一般販売規則は既に掲載済みのまま維持。19時の再確認で個別告知/カレンダー照合は解消せず、その後の環境再作成と資料復旧に伴い、19時の再確認期限の更新が遅れた。22:30公式本文再読でも個別日時の明示は確認できず、22:49アソビューはJSシェルのみで再び解析不可。日程の矛盾や12月券販売開始を確認したとは扱わずreservationOpensAtはnull。元の10/13反映目標を保持して遅延を記録する。",
+  "preservedFields": {
+    "officialAnnouncedAt": null,
+    "discoveredAt": "2026-10-12T18:59:41+09:00",
+    "reservationOpensAt": null,
+    "reflectDueAt": "2026-10-13",
+    "publishedAt": null
+  },
+  "ticketRecoveryObservation": {
+    "sourceId": "chiikawa-park-ticket",
+    "url": "https://chiikawapark-tokyo.jp/ticket/",
+    "observationPhase": "recovery_after_22_28_JST",
+    "method": "ordinary_direct_https_get",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "finalUrl": "https://chiikawapark-tokyo.jp/ticket/",
+    "localEvidence": "evidence/20ae597aa0b3b6.html",
+    "sha256": "0a7cd9489f55ca2872c8f545790e450af6a315149564a7e0707d0a8eb72c2b7c",
+    "title": "チケット情報 | ちいかわパーク",
+    "images": [
+      {
+        "src": "https://chiikawapark-tokyo.jp/images/logo/logo_chiikawa.png",
+        "alt": "Chiikawa Park"
+      },
+      {
+        "src": "https://chiikawapark-tokyo.jp/images/top/icon_x.png",
+        "alt": "X"
+      },
+      {
+        "src": "https://chiikawapark-tokyo.jp/images/ticket/title_ticket_03.png",
+        "alt": "チケット情報"
+      },
+      {
+        "src": "https://chiikawapark-tokyo.jp/images/ticket/bnr_ticket-application_09.png",
+        "alt": "チケットはこちら"
+      }
+    ],
+    "textPath": "evidence/20ae597aa0b3b6.txt",
+    "textChars": 1861,
+    "attemptCompletedAt": "2026-10-13T22:30:29+09:00"
+  },
+  "asoviewNewObservation": {
+    "url": "https://www.asoview.com/channel/tickets/9u0KJJjNgr/",
+    "phase": "new_observation_at_final_operations_review",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "localEvidence": "evidence/park-asoview-final-review.html",
+    "sha256": "6da1cd97d6aaa6f69b05816fbb66c4dc7dded6b00b51c34c6e45476380a809c8",
+    "title": "チケット購入",
+    "textPath": "evidence/park-asoview-final-review.txt",
+    "text": "チケット購入",
+    "attemptCompletedAt": "2026-10-13T22:49:46+09:00"
+  },
+  "nextCheck": "10/14 08:00 JSTに公式ticket・公式NEWS/公式Xの12月個別販売告知と、同じアソビュー公開カレンダーを確認する。既知の一般規則で計算される10/15 12:00との差異の有無を、12月分と明示された一次情報で照合する。カレンダーを読めない場合は解析失敗・最終成功を保持して掲載判断者へ個別報告し、公開DATAやreservationOpensAtを推定で変更しない。",
+  "publicDataChanged": false,
+  "validation": "candidate and source schema passed"
+}

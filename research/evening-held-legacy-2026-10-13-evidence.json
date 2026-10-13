@@ -1,0 +1,444 @@
+{
+  "checkedDate": "2026-10-13",
+  "scope": "Recovered historical/held series and pocket fourth-wave evidence",
+  "recovery": {
+    "method": "Retained task conversation, tool outputs and functions.store values; read recovered current-main ledgers for ID and chronology preservation.",
+    "externalRetrievalPerformed": false,
+    "rawHtmlOrImageRecreated": false,
+    "originalShaPolicy": "Unknown original response/image hashes are null; artifact recovery timestamps are not source observation timestamps.",
+    "sendaiHoldCanonicalFields": "Parent retained exact 19:20 review output supplied during recovery; canonical targetKey and decision restored."
+  },
+  "observations": [
+    {
+      "sourceId": "observed-chiikawa-info-jp-fb3fce6c45",
+      "url": "https://chiikawa-info.jp/tenshi_akuma.html",
+      "observedAt": "2026-10-13T10:00:51.617Z",
+      "result": "success",
+      "summary": "本文5会場の2023年会期・会場を系列原本と照合し一致。新会場表示なし。 本文の範囲のみ成功。画像・埋込SNSの全実読ではない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-9ec22af2cf",
+      "url": "https://chiikawa-info.jp/wakuwaku.html",
+      "observedAt": "2026-10-13T10:00:51.617Z",
+      "result": "success",
+      "summary": "本文6会場の2022～23年会期・会場を系列原本と照合し一致。新会場表示なし。 本文の範囲のみ成功。画像・埋込SNSの全実読ではない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-8759f68d56",
+      "url": "https://chiikawa-info.jp/p25/ck_sanrio/index.html",
+      "observedAt": "2026-10-13T10:00:51.617Z",
+      "result": "success",
+      "summary": "本文の国内4会場・会期を原本と照合し一致。海外3会場は国内掲載対象外。 本文の範囲のみ成功。画像・埋込SNSの全実読ではない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-0a98af221d1b",
+      "url": "https://chiikawa-info.jp/p25/ck_baby/index.html",
+      "observedAt": "2026-10-13T10:00:51.617Z",
+      "result": "parse_failed",
+      "summary": "タイトル2025/9/5～11/5と画像リンクを取得。画像中心で個別会場・入場条件未実読。全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-08a3f5f8c71b",
+      "url": "https://chiikawa-info.jp/p22/chiikawa_camp/index.html",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "タイトル2022/4/28～5/8、8会場営業時間本文を取得。会場個別会期を含む画像は未実読。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-8b9d66824d89",
+      "url": "https://chiikawa-info.jp/p22/magical/index.html",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "タイトル2022/8/19～9/1と画像リンクを取得。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-ffaad21694e4",
+      "url": "https://chiikawa-info.jp/p23/cho-magical/",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "タイトル東京駅・大阪梅田2023/9/8～と画像リンクを取得。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-432e74545cde",
+      "url": "https://chiikawa-info.jp/p22/kankou_station/index.html",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "タイトル2022/2/11～2/24と画像リンクを取得。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-f11bb8f04c99",
+      "url": "https://chiikawa-info.jp/heroaca_chiikawa.html",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "画像リンクのみ取得。会期・会場画像未実読。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-ada5c3a7ab47",
+      "url": "https://chiikawa-info.jp/ck_minishop/index.html",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "タイトル2023/8/2～2024/5/8、ロフト21店舗と画像リンクを取得。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-99c587e0fa2a",
+      "url": "https://chiikawa-info.jp/p21/t_o/index.html",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "parse_failed",
+      "summary": "2021年2月東京・大阪のタイトルと画像1リンクを取得。 画像中心で全ページ成功や新着なしと扱わない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-9e2f42134020",
+      "url": "https://art.parco.jp/shinsaibashi/detail/?id=897",
+      "observedAt": "2026-10-13T10:01:16.637Z",
+      "result": "success",
+      "summary": "公式本文で2021/12/23～2022/1/5、心斎橋PARCO B1F、10～21時、12/31と最終18時、元日休館、1/2 9:30開場を再確認。原本会期一致。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-chiikawa-aquarium-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "observedAt": "2026-10-13T10:00:30.979Z",
+      "result": "success",
+      "summary": "仙台水槽展示と商品取扱店舗を区別。大洗・マリホ・海響館は4/29カプセルトイのみ。仙台以外の最終日新確定なし。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-chiikawa-aquarium-2-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "observedAt": "2026-10-13T10:00:30.979Z",
+      "result": "success",
+      "summary": "仙台フォトスポット・ARラリー、サンシャイン7月中旬以降アクアポケット継続予定を再確認。施設別物販終期やAR単体終期の新確定なし。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-chiikawa-tokyo-miyage",
+      "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+      "observedAt": "2026-10-13T10:00:30.979Z",
+      "result": "success",
+      "summary": "本文の会場別終了表記は朝と同じ。羽田T2は2025/10/17～2026/1/31、北千住9/15、池袋0%6/9等。開始日を一覧タイトルから推定しない。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-bf11798db5e0",
+      "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+      "observedAt": "2026-10-13T10:03:17.763Z",
+      "result": "success",
+      "summary": "施設本文で4/15物販開始・入館料不要を再確認。販売終了日の本文記載なし。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "series-observed-d80209040d41",
+      "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+      "observedAt": "2026-10-13T10:03:17.763Z",
+      "result": "fetch_failed",
+      "summary": "web.open internal errorで会場原本未取得。特設売場終期とアクアポケット販売終了を確定しない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-5932274e7e",
+      "url": "https://chiikawa-info.jp/ck_pocket.html",
+      "observedAt": "2026-10-13T10:01:41.983Z",
+      "result": "success",
+      "summary": "一覧本文に第4弾2026/10/24～。第3弾以前と札幌miniは終了表示。朝7:49:51JSTの一覧観測には第4弾なし。画像・埋込SNSの全実読ではない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-release",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+      "observedAt": "2026-10-13T10:01:29.614Z",
+      "result": "success",
+      "summary": "通常GET HTTP200の一次本文を実読。10/13発表、第4弾国内5会場の日程・階・営業時間確認。検索取得全文と一致。web.open別経路失敗は別に保持。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-detail",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+      "observedAt": "2026-10-13T10:01:41.983Z",
+      "result": "fetch_failed",
+      "summary": "初回web本文はタイトル10/24～11/29と画像リンクのみ。通常GET403、再web.open internal error。後の会場別画像成功は別sourceで記録。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-entry-tokyo",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_tokyo_261024.jpg",
+      "observedAt": "2026-10-13T10:07:45+00:00",
+      "result": "success",
+      "summary": "親担当が会場別画像を実読。2026-10-24～2026-10-25はLINEアプリ入場整理券制。開店～13:30入場分は各来店日前日19時、14:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-entry-osaka",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_osaka_261024.jpg",
+      "observedAt": "2026-10-13T10:07:45+00:00",
+      "result": "success",
+      "summary": "親担当が会場別画像を実読。2026-10-30～2026-11-01はLINEアプリ入場整理券制。開店～13:00入場分は各来店日前日19時、13:30以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-entry-sendai",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+      "observedAt": "2026-10-13T10:07:45+00:00",
+      "result": "success",
+      "summary": "親担当が会場別画像を実読。2026-11-03はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-entry-fukuoka",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_fukuoka_261024.jpg",
+      "observedAt": "2026-10-13T10:07:45+00:00",
+      "result": "success",
+      "summary": "親担当が会場別画像を実読。2026-11-06～2026-11-08はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-entry-nagoya",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_nagoya_261024.jpg",
+      "observedAt": "2026-10-13T10:07:45+00:00",
+      "result": "success",
+      "summary": "親担当が会場別画像を実読。2026-11-13～2026-11-15はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    },
+    {
+      "sourceId": "historical-nifrel-aquarium-second-2023",
+      "url": "https://www.nifrel.jp/eventnews/2023/06/623nifrelnifrel.html",
+      "observedAt": "2026-10-13T10:07:08.466Z",
+      "result": "fetch_failed",
+      "summary": "web.click UnexpectedStatusCode。今回本文未取得。朝の確認済み6/23開始を否定も上書きもしない。",
+      "provenance": "Retained conversation/tool result; no new external retrieval during recovery.",
+      "originalRawSha256": null
+    }
+  ],
+  "newPocket4": {
+    "officialAnnouncedAt": "2026-10-13",
+    "discoveredAt": "2026-10-13",
+    "discoveryTimestampLimitation": "First search result read approximately 09:59 UTC; exact completion clock was not saved. First exactly retained ordinary-GET success at10:01:29.614Z does not replace discovery time.",
+    "officialRelease": {
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+      "httpStatus": 200,
+      "completedAt": "2026-10-13T10:01:29.614Z",
+      "sha256": null,
+      "rawHtmlRecovered": false
+    },
+    "prTimes": {
+      "url": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
+      "httpStatus": 200,
+      "completedAt": "2026-10-13T10:01:46.607Z",
+      "bytes": 285324,
+      "sha256": "d1d04c5ed6f5852cfee42aeca9837240e88c187d84f431c65fe5196a96ccca67",
+      "hashProvenance": "Exact parent corporate fetches.json output retained in this conversation; original bytes not recovered here.",
+      "visibleDate": "2026年10月13日 13時17分",
+      "rawDatePublished": "2026-10-13 13:17:23",
+      "timezoneExplicit": false,
+      "storedMoment": "2026-10-13"
+    },
+    "facts": [
+      {
+        "id": "chiikawa-pocket-2026-10-24-ikebukuro-parco",
+        "startDate": "2026-10-24",
+        "endDate": "2026-11-23",
+        "venueName": "池袋PARCO",
+        "venueSpace": "本館6F 0% IKEBUKURO",
+        "address": "東京都豊島区南池袋1-28-2 池袋PARCO",
+        "lat": 35.7295,
+        "lng": 139.7109,
+        "hoursText": "11:00～21:00",
+        "oldVenueRecordId": "chiikawa-pocket-2026-01-16-ikebukuro-parco"
+      },
+      {
+        "id": "chiikawa-pocket-2026-10-30-tennoji-mio",
+        "startDate": "2026-10-30",
+        "endDate": "2026-11-15",
+        "venueName": "天王寺ミオ",
+        "venueSpace": "本館6F ミオラボ",
+        "address": "大阪府大阪市天王寺区悲田院町10-39 天王寺ミオ",
+        "lat": 34.6464,
+        "lng": 135.5143,
+        "hoursText": "10:30～20:30",
+        "oldVenueRecordId": "pocket-popup-osaka"
+      },
+      {
+        "id": "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi",
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-23",
+        "venueName": "イオンモール仙台上杉",
+        "venueSpace": "1階 あまみやコート",
+        "address": "宮城県仙台市青葉区堤通雨宮町1-1 イオンモール仙台上杉",
+        "lat": 38.276336,
+        "lng": 140.872124,
+        "hoursText": "10:00開場。終了時刻は公式案内で19:00／21:00の表記が分かれています。最終日は17:00閉場。来場前に最新の公式案内をご確認ください。",
+        "oldVenueRecordId": "pocket-popup-sendai"
+      },
+      {
+        "id": "chiikawa-pocket-2026-11-06-fukuoka-parco",
+        "startDate": "2026-11-06",
+        "endDate": "2026-11-23",
+        "venueName": "福岡PARCO",
+        "venueSpace": "本館B1F EVENT SPACE",
+        "address": "福岡県福岡市中央区天神2-11-1 福岡PARCO",
+        "lat": 33.5902,
+        "lng": 130.3984,
+        "hoursText": "10:00～20:30（最終日17:00閉場）",
+        "oldVenueRecordId": "chiikawa-pocket-2026-04-29-fukuoka-parco"
+      },
+      {
+        "id": "chiikawa-pocket-2026-11-13-nagoya-parco",
+        "startDate": "2026-11-13",
+        "endDate": "2026-11-29",
+        "venueName": "名古屋PARCO",
+        "venueSpace": "西館5F イベントスペース",
+        "address": "愛知県名古屋市中区栄3-29-1 名古屋PARCO",
+        "lat": 35.1636,
+        "lng": 136.9074,
+        "hoursText": "10:00～20:00（最終日17:00閉場）",
+        "oldVenueRecordId": "chiikawa-pocket-2026-05-16-nagoya-parco"
+      }
+    ],
+    "imageReadCompletedAt": "2026-10-13T10:07:45+00:00",
+    "entryEvidence": [
+      {
+        "city": "tokyo",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/tokyo.html",
+        "imageUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_tokyo_261024.jpg",
+        "targetStartsAt": "2026-10-24",
+        "targetEndsAt": "2026-10-25",
+        "reservationOpensAt": "2026-10-23T19:00:00+09:00",
+        "reservationOpensAtDerivation": "公式対象初日と前日19時から算出。",
+        "earlySlotsThrough": "13:30",
+        "laterSlotsFrom": "14:00",
+        "reservationUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "summary": "2026-10-24～2026-10-25はLINEアプリ入場整理券制。開店～13:30入場分は各来店日前日19時、14:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。"
+      },
+      {
+        "city": "osaka",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/osaka.html",
+        "imageUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_osaka_261024.jpg",
+        "targetStartsAt": "2026-10-30",
+        "targetEndsAt": "2026-11-01",
+        "reservationOpensAt": "2026-10-29T19:00:00+09:00",
+        "reservationOpensAtDerivation": "公式対象初日と前日19時から算出。",
+        "earlySlotsThrough": "13:00",
+        "laterSlotsFrom": "13:30",
+        "reservationUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "summary": "2026-10-30～2026-11-01はLINEアプリ入場整理券制。開店～13:00入場分は各来店日前日19時、13:30以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。"
+      },
+      {
+        "city": "sendai",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html",
+        "imageUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+        "targetStartsAt": "2026-11-03",
+        "targetEndsAt": "2026-11-03",
+        "reservationOpensAt": "2026-11-02T19:00:00+09:00",
+        "reservationOpensAtDerivation": "公式対象初日と前日19時から算出。",
+        "earlySlotsThrough": "12:30",
+        "laterSlotsFrom": "13:00",
+        "reservationUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "summary": "2026-11-03はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。"
+      },
+      {
+        "city": "fukuoka",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/fukuoka.html",
+        "imageUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_fukuoka_261024.jpg",
+        "targetStartsAt": "2026-11-06",
+        "targetEndsAt": "2026-11-08",
+        "reservationOpensAt": "2026-11-05T19:00:00+09:00",
+        "reservationOpensAtDerivation": "公式対象初日と前日19時から算出。",
+        "earlySlotsThrough": "12:30",
+        "laterSlotsFrom": "13:00",
+        "reservationUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "summary": "2026-11-06～2026-11-08はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。"
+      },
+      {
+        "city": "nagoya",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/nagoya.html",
+        "imageUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_nagoya_261024.jpg",
+        "targetStartsAt": "2026-11-13",
+        "targetEndsAt": "2026-11-15",
+        "reservationOpensAt": "2026-11-12T19:00:00+09:00",
+        "reservationOpensAtDerivation": "公式対象初日と前日19時から算出。",
+        "earlySlotsThrough": "12:30",
+        "laterSlotsFrom": "13:00",
+        "reservationUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "summary": "2026-11-13～2026-11-15はLINEアプリ入場整理券制。開店～12:30入場分は各来店日前日19時、13:00以降は各回1時間前受付。位置情報オン・距離制限なし。この対象期間を通じ1人1回、30分完全入替、1枚1人1会計、開始1時間後失効。本人確認書類と同じ氏名で申込み、指定原本を提示。譲渡・転売・スクリーンショット入場不可。小学生以下・介助者は同伴可、同伴者の個数制限商品購入不可。途中フリー入場へ変更する場合がある。対象外日や残枠を推測せず、商品購入を保証しない。"
+      }
+    ],
+    "hoursConflict": {
+      "city": "sendai",
+      "specialPageImageHours": "10:00～19:00（最終日17:00）",
+      "pressReleaseHours": "10:00～21:00（最終日17:00）",
+      "imageUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/ck_tenpo_3.jpg",
+      "pressReleaseUrl": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
+      "decision": "両時刻注記で新規ready。時間相違だけhold-pocket-sendai-hours-conflict-20261013 on_hold。"
+    }
+  },
+  "historicalHolds": {
+    "policy": "3系列hold維持。未確定終期を推測しない。初回発見・発表・公開はcurrent-mainを保持。",
+    "kitasenjuAssessment": "朝の公式Xは2025/9/4～9/15、北千住マルイ2Fカレンダリウム。住所千住3-92、既存同館施設点35.7494,139.805。予定ID chiikawa-tokyo-miyage-2025-09-04-kitasenju-maruiで独立archive追加可能。系列hold維持。当時の営業時間・入場は未確認。",
+    "kitasenjuSources": [
+      "https://x.com/chiikawa_kouhou/status/1958454039005565233",
+      "https://chiikawa-info.jp/p24/tokyo_miyage/index.html"
+    ]
+  },
+  "additionalFailedAttempts": [
+    {
+      "url": "https://x.com/chiikawa_kouhou/status/1958454039005565233",
+      "at": "2026-10-13T10:03:17.763Z",
+      "result": "access_limited",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://x.com/chiikawa_kouhou/status/1915693328689226033",
+      "at": "2026-10-13T10:03:17.763Z",
+      "result": "access_limited",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
+      "at": "2026-10-13T10:07:27.458Z",
+      "result": "fetch_failed",
+      "httpStatus": null
+    }
+  ],
+  "limits": [
+    "26情報源は15success/8parse_failed/3fetch_failed。本文successも画像全読を意味しない。",
+    "元HTML/TXT/JPG/元ファイルSHAの大半は未復元。保持store4件のみ原値を別保存。",
+    "3既存holdの全置換ファイルは回収current-mainを基礎とする再構成。並行更新との合流ではpatchを優先。",
+    "旧成果の北千住独立全レコードや朝raw資料は本担当では復元していない。",
+    "NIFREL第二弾は親の元19:13:30出力に一致する historical-nifrel-aquarium-second-2023 を復元。mainに同URLのhistory-nifrel2-retailが別途あるため、元成功記録を消さず親側で統合の扱いを決める。"
+  ]
+}
