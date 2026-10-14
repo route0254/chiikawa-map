@@ -2,143 +2,34 @@
 
 ちいかわ公式関連スポット、ナガノ先生が紹介・訪問した場所、ファン発の聖地を探せる非公式マップです。
 
-公開URL: <https://chiikatsu-map.com/>
+**サイトはこちら: <https://chiikatsu-map.com/>**
 
-## 主な機能
+## できること
 
-- 地図・一覧・検索・都道府県・カテゴリによるスポット検索
-- 開催中・開催予定・終了済みの公式スポット一覧
-- 開催中・開催予定と過去の企業・施設コラボ一覧
-- ナガノ先生関連スポットの根拠と確度表示
-- 公式・ナガノ先生関連とは区別した、ファン発の聖地
-- 「行きたい」「行った！」「今日のプラン」「訪問日・メモ」の端末保存
-- 行きたい一覧（現在地からの距離順を含む）、イベントカレンダー、今日のプランのカレンダー登録
-- 訪問記録の集計、共有画像の作成
-- Googleログインを使った任意のクラウド同期
-- スポット個別ページ、共有URL、PWA対応
+- 地図・一覧から、キーワード・都道府県・カテゴリでスポットを探す
+- 開催中・開催予定・終了済みの公式スポットや、企業・施設コラボを見る
+- ナガノ先生関連スポットの出典や確度を確認する
+- 「行きたい」「行った！」「今日のプラン」、訪問日・メモを保存する
+- イベントカレンダーや訪問記録を見たり、共有画像を作ったりする
 
-## ローカル開発
+## 使い方
 
-Node.js 22とpnpm 11を使用します。
+地図のピンや一覧からスポットを選ぶと、開催期間・営業時間・入場方法・公式情報へのリンクを確認できます。お出かけ先を探すときは検索や絞り込みを利用してください。
 
-```bash
-pnpm install
-pnpm exec playwright install chromium
-```
+「行きたい」や訪問記録は、ログインなしで利用中のブラウザに保存できます。Googleログインによるクラウド同期は任意です。データの取り扱いは[プライバシーポリシー](https://chiikatsu-map.com/privacy.html)をご確認ください。
 
-主な確認コマンド:
-
-```bash
-pnpm run check
-pnpm run test:smoke
-pnpm run check:links
-pnpm run check:site
-```
-
-`pnpm run check:links`は外部サイトへ接続します。`pnpm run check:site`は公開中のサイトを検査します。
-
-## 構成
-
-| パス | 内容 |
-| --- | --- |
-| `index.html` / `style.css` / `app.js` | 地図ページ |
-| `theme.css` | 共通ヘッダー、配色、PC・スマホの表示調整 |
-| `official.html` / `official.css` / `official.js` | 公式スポット一覧 |
-| `collaborations.html` / `collaborations.css` / `collaborations.js` | コラボ一覧 |
-| `nagano.html` / `nagano.css` / `nagano.js` | 公開情報と出典からたどる「ナガノ先生の歩み」 |
-| `journal.html` / `journal.css` / `journal.js` | 行きたい一覧、カレンダー、プラン、訪問記録 |
-| `official-links.html` / `official-links.css` | ちいかわ・ナガノ先生の公式サイトとSNSへのリンク |
-| `privacy.html` / `terms.html` / `legal.css` | プライバシー、利用条件、権利表記 |
-| `data/official-spots.json` | 現在・今後の公式スポット |
-| `data/official-events-archive.json` | 終了・開催中止となった公式イベント |
-| `data/collaborations-current.json` | 開催中・開催予定の企業・施設コラボ |
-| `data/collaborations-archive.json` | 確認できた過去の企業・施設コラボ |
-| `data/nagano-spots.json` | ナガノ先生関連スポット |
-| `data/nagano-history.json` | 公開情報から整理したナガノ先生のプロフィール・歩み・創作テーマ |
-| `data/nagano-unlocated-mentions.json` | 店舗を特定できないナガノ先生関連情報 |
-| `data/community-spots.json` | ファン発の聖地 |
-| `spot/` | JSONから生成するスポット個別ページ |
-| `cloud-sync-*.js` / `firebase-config.json` | Firebase Authentication、Firestore同期、GA4 |
-| `scripts/` | データ検証、掲載件数・個別ページ生成、調査用スクリプト |
-| `research/` | 過去イベント調査の作業データ |
-| `tests/` | 単体テスト、PlaywrightのUI・アクセシビリティテスト |
-| `LICENSE` | ソースコード・文章・編集済みデータの利用条件 |
-
-データ更新の手順と掲載基準は[DATA-OPERATIONS.md](DATA-OPERATIONS.md)、今後の課題は[ROADMAP.md](ROADMAP.md)にまとめています。Firebaseの設定は[docs/cloud-sync-setup.md](docs/cloud-sync-setup.md)を参照してください。
-
-## データを変更する場合
-
-スポットJSONを変更したら、個別ページとサイトマップを再生成してから検証します。
-
-```bash
-pnpm run build:spot-pages
-pnpm run check
-pnpm run test:smoke
-```
-
-URLを変更した場合は`pnpm run check:links`も実行します。`spot/`配下の生成物は直接編集せず、`scripts/build-spot-pages.mjs`、`spot.css`、`spot-page.js`を変更してください。
-
-掲載件数と確認日は、各データの確認日から`data/site-meta.json`へ生成します。データ構造と許容値は`scripts/validate-data.mjs`が検証します。
-
-## 保存データ
-
-ログインなしの場合、記録はブラウザの`localStorage`に保存されます。主なキーは次のとおりです。
-
-- `chiikawa-map-favorites-v1`: 行きたい
-- `chiikawa-map-visited-v1`: 行った！
-- `chiikawa-map-plan-v1`: 今日のプラン
-- `chiikawa-map-visit-details-v1`: 訪問日・メモ
-
-Googleログインを使う場合だけFirestoreへ同期します。「行きたい」「行った！」「訪問日・メモ」はスポット単位で統合し、同じスポットの競合は更新時刻が新しい操作を優先します。「今日のプラン」は最後に編集したリスト全体を採用します。
-
-JSONの書き出し・追加統合読み込みにも対応しています。同期仕様と確認項目は[docs/cloud-sync-setup.md](docs/cloud-sync-setup.md)に記載しています。
-
-## 互換性
-
-画面構成と見た目は、一連のWeb改善前の `876bb1e` を基準にしています。掲載データ・追加日台帳・情報確認日・保存形式は現行のものを維持します。改善後に作成された検索・絞り込み共有URLも引き続き読み込めます。
-
-- 既存スポットの`id`は変更・再利用しない
-- JSONの既存フィールドを削除・改名しない
-- `localStorage`のキー名と保存形式を変更しない
-- `?spot=<id>`など既存の共有URLを維持する
-- 現在データから過去データへ移す場合も同じ`id`を使う
-- `CNAME`の`chiikatsu-map.com`を維持する
-
-互換性を変更する場合は、移行処理を含む別作業として扱います。
-
-## 公開と自動チェック
-
-GitHub Pagesは`main`ブランチのルートを公開します。`main`へのプッシュ後に自動でデプロイされます。
-
-GitHub Actionsでは次を実行します。
-
-- プッシュ時: JavaScript・JSON・生成物・主要UIの検証
-- 毎日0時30分（日本時間）: データ検証と終了済み候補の確認
-- 毎日0時45分（日本時間）: HTTPS、転送、canonical、OGP、公開ファイルの確認
-- 毎週月曜日6時41分（日本時間）: 公式情報リンクの確認
-
-Actionsは異常を通知しますが、データの自動修正は行いません。
-
-## テスト用URL
-
-- 通常: <https://chiikatsu-map.com/>
-- OSM障害テスト: <https://chiikatsu-map.com/?tileTest=osm-fail>
-- 全背景地図障害テスト: <https://chiikatsu-map.com/?tileTest=all-fail>
-
-## 注意
+## 掲載情報について
 
 ちい活MAPは、ファンが個人で運営する非公式サイトです。公式各社とは関係ありません。
 
 営業時間、入場方法、予約条件、開催状況は変更される場合があります。訪問前に各公式情報を確認してください。作品名、キャラクター名、企業名などの権利は各権利者に帰属します。
 
+サイトの利用にあたっては[利用条件・権利表記](https://chiikatsu-map.com/terms.html)もご確認ください。
+
+## 連絡先
+
+掲載内容の修正・追加や、サイトの不具合については[GitHub Issues](https://github.com/route0254/chiikawa-map/issues/new)からお知らせください。
+
 ## ライセンス
 
 本リポジトリはソースを公開していますが、オープンソースではありません。GitHub上での閲覧・フォークおよびサイトへの通常のリンク共有を除き、コード、独自文章、デザイン、編集済みデータの複製・再配布・別サイトへの転用は許諾していません。詳細は[LICENSE](LICENSE)を確認してください。
-
-## 新着・追加日の運用
-
-地図と公式スポットの追加日は data/added-dates.json の firstAdded、コラボの一覧追加日は collaborationFirstAdded で管理します。NEWは日本時間で追加当日から14日間です。開催日・情報確認日とは別で、既存項目の軽微更新では日付を変更しません。地図の新着は地図・一覧の現在モードと検索条件を維持して絞り込み、recent=1 を共有・復帰状態に含めます。公式・コラボもそれぞれの掲載記録で絞り込みます。
-
-今後は通常どおりデータ更新後に npm run build:spot-pages を実行すれば、新規IDの追加日を自動登録します。過去データ・終了済み・中止の初回取り込みは null、移動・再掲載も既存の日付を保持します。npm run check は未登録ID・不正な日付を検出します。既存の不明な日付を開催日や確認日から埋めないでください。既存スポットは基準 d6cd781 を使い、2026-10-01追加6件を保持しています。
-
-コラボの初期台帳では初回カタログ導入分と過去記録を null に保ち、後続の導入日をGitの初出コミットで確認しました。根拠SHAは collaborationDateEvidence に記録しています。2026-09-25のWAON、2026-10-03のGU・オキシクリーン・クラシコが2026-10-03時点の新着4件です。ANAなどの確認日の更新は新着扱いしません。新規の過去記録を現行一覧に入れる場合、期間情報と状態を正しく設定してください。
