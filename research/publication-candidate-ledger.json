@@ -5922,6 +5922,12 @@
           "observedAt": "2026-10-13T23:04:57.062+00:00",
           "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
           "recordPath": null
+        },
+        {
+          "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+          "observedAt": "2026-10-14T09:59:46.467+00:00",
+          "summary": "公式イベント一覧取得。ちいかわバルーンの追加条件を確認せず。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
         }
       ],
       "existingMatch": {
@@ -5933,8 +5939,8 @@
       "state": "verifying",
       "priority": "normal",
       "decision": "会期・施設は確認済みだが、展示固有フロア・撮影可能時間・料金の一次明記が未解決。公式バルーン写真だけから推測せずverifyingを維持。反映目標超過を隠さない。",
-      "nextCheck": "10/14夕方、JR/施設一次告知に展示固有フロア・撮影時間・料金の追記があるか確認。一般営業時間やX応募23:59を流用しない。",
-      "recheckDueAt": "2026-10-14T19:00:00+09:00",
+      "nextCheck": "JR・施設一次告知に展示固有フロア・撮影時間・料金の追記があるか再確認。一般営業時間や応募締切を流用しない。",
+      "recheckDueAt": "2026-10-15T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -7831,21 +7837,22 @@
     },
     {
       "id": "park-december-2026-ticket-calendar-verification",
-      "title": "ちいかわパーク 2026年12月分チケット個別販売案内照合",
-      "kind": "reservation_update",
+      "title": "ちいかわパーク 12月分チケット10月15日正午先着発売",
+      "kind": "listing_update",
       "targetKey": "chiikawa-park-tokyo:ticket-calendar:2026-12",
       "sourceIds": [
         "chiikawa-park-ticket",
         "evening-www-asoview-com-channel-tickets-9u0kjjjngr",
-        "evening-chiikawapark-tokyo-jp-news"
+        "evening-chiikawapark-tokyo-jp-news",
+        "chiikawa-park-december-ticket-x-20261014"
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12T18:59:41+09:00",
       "eventStartsAt": "2026-12-01",
       "eventEndsAt": "2026-12-31",
       "releaseAt": null,
-      "reservationOpensAt": null,
-      "reflectDueAt": "2026-10-13",
+      "reservationOpensAt": "2026-10-15T12:00:00+09:00",
+      "reflectDueAt": "2026-10-14",
       "evidence": [
         {
           "url": "https://chiikawapark-tokyo.jp/ticket/",
@@ -7876,23 +7883,31 @@
           "observedAt": "2026-10-13T23:08:58Z",
           "summary": "ブラウザーで2026年12月カレンダーを実読。1～31日すべて横棒、凡例は販売なし。12月個別販売開始日時の明記はなし。完売・休園・中止を意味すると推定しない。",
           "recordPath": null
+        },
+        {
+          "url": "https://x.com/chiikawa_parkjp/status/2110203943280361912",
+          "observedAt": "2026-10-14T10:01:43+00:00",
+          "summary": "公式個別X本文は10/15(木)12:00より12月末までのチケットを先着販売開始と明記。12月営業時間は既掲載と一致。表示投稿日時は3:00 AM · Oct 14, 2026だがタイムゾーンを明示していないため発表日は日付のみ保存。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
         }
       ],
       "existingMatch": {
         "status": "matched",
         "ids": [
-          "chiikawa-park-tokyo"
+          "chiikawa-park-tokyo",
+          "chiikawa-park-christmas-2026"
         ],
-        "note": "一般規則は既に掲載済み。個別日程補完の照合のみ。"
+        "note": "既存常設とクリスマス回の入場説明を補足する。新規ピン・ID不要。"
       },
       "listingIds": [
-        "chiikawa-park-tokyo"
+        "chiikawa-park-tokyo",
+        "chiikawa-park-christmas-2026"
       ],
-      "state": "on_hold",
+      "state": "ready",
       "priority": "high",
-      "decision": "10/14朝、ブラウザーで12月カレンダーの実読に成功し、全日「販売なし」を確認。12月個別販売開始日時は未掲出で、一般規則から算出する10/15 12時を確定値へ転記しない。保留はカレンダー解析失敗から個別販売開始日時未確定へ更新。元10/13反映目標と初回発見を保持する。",
-      "nextCheck": "10/14 19:00 JSTに公式ticket/NEWS/公式Xと同じ正規アソビューカレンダーを再確認。12月明示の個別販売日時または販売開始後の実表示で照合。販売なしを完売・休園・中止としない。",
-      "recheckDueAt": "2026-10-14T19:00:00+09:00",
+      "decision": "72時間以内の発売。一般規則からの推定ではなく、12月分公式告知の確定日時を補足する。 既存保留の初回発見日を維持。12月分の具体的発売日時は10/14の個別公式告知で確定。反映目標10/14は今回の確定告知に対応。",
+      "nextCheck": "公開ページと公開JSONで12月分10/15正午先着発売の反映を照合。",
+      "recheckDueAt": "2026-10-15T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -8199,6 +8214,12 @@
           "observedAt": "2026-10-13T23:06:13+00:00",
           "summary": "通常HTTPS GETはHTTP 403で失敗。web抽出の成功/失敗とは別記録し、未取得を新着なしと扱わない。",
           "recordPath": null
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+          "observedAt": "2026-10-14T09:59:55+00:00",
+          "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
         }
       ],
       "existingMatch": {
@@ -8214,8 +8235,8 @@
       "state": "on_hold",
       "priority": "high",
       "decision": "10/14朝も旧予約告知はweb読取404、通常GET403。公式店舗NEWSは10/17～18営業時間延長を維持し、現行リンク範囲に代替予約告知は確認できない。公式X一般ページ403、LINEの当該公開導線は現行店舗HTMLから確認できず。10/13朝の既知予約条件を保持し、撤回・自由入場と推定しない。",
-      "nextCheck": "10/14 19:00 JSTに公式店舗NEWS/公式Xと公開予約導線を再確認。既知の10/16 20時受付までに10/17～18の代替告知または変更の明示を確認する。",
-      "recheckDueAt": "2026-10-14T19:00:00+09:00",
+      "nextCheck": "予約原本の取得を再確認。取得制限を理由に既確認の予約条件を撤回しない。",
+      "recheckDueAt": "2026-10-15",
       "publishedAt": null
     },
     {
@@ -8699,6 +8720,18 @@
           "observedAt": "2026-10-13T23:14:00.823+00:00",
           "summary": "仙台入場画像実読。11/3対象、開店〜12:30分は前日19時、13時以降は各1時間前。位置情報オン・距離制限なし、1人1回・本人確認・30分完全入替・1枚1人1会計、開始1時間後失効。既存一致。",
           "recordPath": null
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/ck_tenpo_3.jpg",
+          "observedAt": "2026-10-14T10:01:31+00:00",
+          "summary": "5会場の日程・営業時間は既掲載と一致。仙台は10〜19時、最終17時。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
+        },
+        {
+          "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+          "observedAt": "2026-10-14T10:02:46.602Z",
+          "summary": "取得本文666行に仙台10:00～21:00（最終17時）。公式会場表の19時と矛盾が継続。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
         }
       ],
       "existingMatch": {
@@ -8714,8 +8747,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "10/14朝も公式特設会場画像19時と主催CyberAgent記事21時の相違が継続。会期11/3〜23、開始10時と最終日17時は一致。施設の取得イベント一覧には個別訂正を確認できず、一般営業時間から推定しない。既存の併記方針と独立holdを維持。",
-      "nextCheck": "10/14夕に特設会場画像・主催者本文・施設イベント一覧の訂正や新しい個別告知を再確認する。時刻が確定するまで19時/21時を片方へ統一しない。",
-      "recheckDueAt": "2026-10-14T19:00:00+09:00",
+      "nextCheck": "公式会場表19時と主催発表21時の不一致について、会場側の営業時間訂正を再確認。",
+      "recheckDueAt": "2026-10-15",
       "publishedAt": null
     },
     {
@@ -8816,6 +8849,94 @@
       "nextCheck": "掲載内容は公開確認済み。今朝の詳細調査と公開確認を含む台帳差分は現時点ではローカル/保存物のみで保持し、公開台帳への同期は追加の公開判断後に行う。次回通常巡回で公式条件の変更を確認。",
       "recheckDueAt": "2026-10-14T19:00:00+09:00",
       "publishedAt": "2026-10-13T23:43:29+00:00"
+    },
+    {
+      "id": "skytree-purchase-limits-20261016",
+      "title": "スカイツリー 10/16購入制限終了",
+      "kind": "listing_update",
+      "targetKey": "skytree-purchase-limits-20261016",
+      "sourceIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-14T18:59:32+09:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-14",
+      "evidence": [
+        {
+          "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+          "observedAt": "2026-10-14T09:59:32.582+00:00",
+          "summary": "10/16より1F購入点数・回数制限、星型マグネット購入回数制限終了の未反映条件を確認。10/14・21・22の19:30上映休止、カフェ食事券上限到達/再販売可能も維持。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "collab-skytree-2026"
+        ],
+        "note": "既存掲載IDの案内更新。"
+      },
+      "listingIds": [
+        "collab-skytree-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "2026年10月16日から、1F物販会場の購入点数・購入回数制限と、星型マグネットの購入回数制限が終了します。",
+      "nextCheck": "公開ページと公開JSONで確定した案内の反映を照合。",
+      "recheckDueAt": "2026-10-15T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "magical-umeda-hep-closure-20261015",
+      "title": "HEP FIVE 10/15休館に伴う梅田店休業",
+      "kind": "listing_update",
+      "targetKey": "magical-umeda-hep-closure-20261015",
+      "sourceIds": [
+        "hep-five-official-home",
+        "hep-five-official-closure-20261015",
+        "jr-central-tsutsuurauratabi"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-14T19:00:59+09:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-14",
+      "evidence": [
+        {
+          "url": "https://www.hepfive.jp/",
+          "observedAt": "2026-10-14T10:01:03.951+00:00",
+          "summary": "施設公式トップに「次の休館日は10月15日（木）」、通常ショップ11～21時。webタイムアウトだが直接HTTP取得成功。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
+        },
+        {
+          "url": "https://www.hepfive.jp/lp/uruwashi_hepfive/index.html",
+          "observedAt": "2026-10-14T10:01:02.331+00:00",
+          "summary": "施設公式別催事注意事項に10/15休館。JR東海の同案内と一致。",
+          "recordPath": "research/evening-listings-2026-10-14-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-umeda"
+        ],
+        "note": "既存掲載IDの案内更新。"
+      },
+      "listingIds": [
+        "magical-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "入居施設の営業日に準ずる。2026年10月15日（木）はHEP FIVE休館のため休業です。",
+      "nextCheck": "公開ページと公開JSONで確定した案内の反映を照合。",
+      "recheckDueAt": "2026-10-15T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

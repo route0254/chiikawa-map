@@ -1,0 +1,1186 @@
+{
+  "reviewDate": "2026-10-14",
+  "scope": "公式掲載情報の夕方確認",
+  "observations": [
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "observedAt": "2026-10-14T09:59:29.923+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/5予約・11/10発売の発表維持。EC別確認。"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "observedAt": "2026-10-14T10:00:36+00:00",
+      "result": "success",
+      "httpStatus": 403,
+      "summary": "HTTP403後、web本文取得で復旧。9/24～10/21配布・取得後180日利用を確認。友だち追加必要。"
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "observedAt": "2026-10-14T09:59:31.396+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "summary": "HTTP200だがローカル本文27文字・画像中心。webの画像代替テキストでは対象4隻・深夜便対象外、予約開始月数を確認。画像本体の今回再実見なし、開催期間の最新判定は保留。"
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "observedAt": "2026-10-14T09:59:31.536+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/19就航開始維持。現在運航/予約在庫は検査対象外。"
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "observedAt": "2026-10-14T09:59:31.778+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "TOKYO Station/HEP FIVEノベルティ・引換証配布終了維持。HEP FIVE10/15休館を確認し施設原本と照合。"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "observedAt": "2026-10-14T09:59:32.121+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式発表取得。最新運営条件は特設と別管理。"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "observedAt": "2026-10-14T09:59:32.582+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/16より1F購入点数・回数制限、星型マグネット購入回数制限終了の未反映条件を確認。10/14・21・22の19:30上映休止、カフェ食事券上限到達/再販売可能も維持。"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "observedAt": "2026-10-14T09:59:32.610+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "observedAt": "2026-10-14T09:59:29.913+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "observedAt": "2026-10-14T09:59:29.924+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "observedAt": "2026-10-14T09:59:31.506+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "observedAt": "2026-10-14T09:59:29.920+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "observedAt": "2026-10-14T09:59:38.524+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "池袋9/17～10/14・10～21時/最終18時。終了当日current維持。盛岡9/30終了はarchive掲載済。"
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "observedAt": "2026-10-14T09:59:37.720+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "observedAt": "2026-10-14T09:59:38.628+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "observedAt": "2026-10-14T09:59:35.665+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "レシート9/30まで、賞品の応募締切は独立表記を確認できず。needs_review維持。"
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "observedAt": "2026-10-14T09:59:39.148+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "observedAt": "2026-10-14T09:59:38.253+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "11/20・11/27、オンライン7:15/店舗開店時の予定維持。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "observedAt": "2026-10-14T09:59:35.750+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "observedAt": "2026-10-14T09:59:37.163+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "実店舗完売・再入荷時期未定・過剰受注対応案内を確認。needs_review維持。"
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "observedAt": "2026-10-14T09:59:35.840+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "9月下旬順次・対象全国店舗とEC後日案内。新しい確定発売日なし。"
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "observedAt": "2026-10-14T09:59:37.530+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "第1弾10/19 10:00～12/31 23:59、第2弾2/1～4/30の条件維持。"
+    },
+    {
+      "sourceId": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "observedAt": "2026-10-14T09:59:37.073+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "購入対象7/13～9/30、購入後1週間以内投稿。賞品の応募締切未解決。"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "observedAt": "2026-10-14T09:59:38.862+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "observedAt": "2026-10-14T09:59:39.412+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "observedAt": "2026-10-14T09:59:39.485+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/1～10/14・10～22時、イーストヤード1F10番地「空の小町」。終了当日current維持。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "observedAt": "2026-10-14T09:59:42.953+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/1過剰受注対応の公式案内を取得。"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "observedAt": "2026-10-14T09:59:41.716+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "新規注文2027年中予定・具体時期未定・配送発送日指定不可の重要案内維持。"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "observedAt": "2026-10-14T09:59:41.346+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式コラボ7/8～10/31・1F各所、既存スポットと一致。"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "observedAt": "2026-10-14T09:59:40.937+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "トップ取得。画像カレンダーの今回再実見は未実施。"
+    },
+    {
+      "sourceId": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "observedAt": "2026-10-14T09:59:46.469+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式トップ取得。ちいかわバルーンの具体条件を本文から追加確認せず。"
+    },
+    {
+      "sourceId": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "observedAt": "2026-10-14T09:59:46.924+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式本文取得。主要開催/発売情報で新規訂正を確認せず。在庫は未確認。"
+    },
+    {
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "observedAt": "2026-10-14T09:59:39.691+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/13パーククリスマス・まじかるぬいぐるみ・ちいぽけ第4弾等。新規の対象企業コラボ発表をこの取得範囲で確認せず。"
+    },
+    {
+      "sourceId": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "observedAt": "2026-10-14T09:59:46.467+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式イベント一覧取得。ちいかわバルーンの追加条件を確認せず。"
+    },
+    {
+      "sourceId": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "observedAt": "2026-10-14T09:59:45.435+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式トップ取得、ちいかわEC確定発売日を確認できず。"
+    },
+    {
+      "sourceId": "corporate-magical-gororin-release-20261013",
+      "url": "https://prtimes.jp/main/html/rd/p/000000078.000168561.html",
+      "observedAt": "2026-10-14T09:59:46.857+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/13 18時～10/20正午の一般公式商品受注。地図/コラボ新規対象外。"
+    },
+    {
+      "sourceId": "metro-event-details",
+      "url": "https://escape.id/chiikawa/",
+      "observedAt": "2026-10-14T09:59:46.539+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "HTTP403。web本文も1行で解析不能、最新運営情報を新着なしとしない。"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-escape-delivery-kit",
+      "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+      "observedAt": "2026-10-14T10:00:36+00:00",
+      "result": "success",
+      "httpStatus": 403,
+      "summary": "HTTP403後web本文取得成功。11/3最終20時、配送は原則翌日/土日祝なし。10/16～10/29と10/23～11/3プレイ枠が商品選択に掲載、販売在庫は未確認。"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-october-cafe-ticket",
+      "url": "https://official-ticket.tokyo-skytree.jp/ja/product/prod_agpns3pcmj5jtclqwthf2jvyeu",
+      "observedAt": "2026-10-14T09:59:46.566+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "HTTP403、実際の販売残席不明。特設上限到達案内を維持。"
+    },
+    {
+      "sourceId": "observed-cafe-parco-jp-8bf4370b23",
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "observedAt": "2026-10-14T09:59:47.053+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "名古屋9/4～11/16継続、ノベルティ終了表記を確認。系列担当と重複のため新規提案なし。"
+    },
+    {
+      "sourceId": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "observedAt": "2026-10-14T09:59:48.081+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "主催企業の11/24～12/25豊砂公園開催発表と既存掲載一致。"
+    },
+    {
+      "sourceId": "hep-five-official-home",
+      "url": "https://www.hepfive.jp/",
+      "observedAt": "2026-10-14T10:01:03.951+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "施設公式トップに「次の休館日は10月15日（木）」、通常ショップ11～21時。webタイムアウトだが直接HTTP取得成功。"
+    },
+    {
+      "sourceId": "hep-five-official-closure-20261015",
+      "url": "https://www.hepfive.jp/lp/uruwashi_hepfive/index.html",
+      "observedAt": "2026-10-14T10:01:02.331+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "施設公式別催事注意事項に10/15休館。JR東海の同案内と一致。"
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "observedAt": "2026-10-14T10:01:01.496+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/15正午～10/25 23:59先行抽選・10/30正午以降当落、一般発売日未発表を再確認。"
+    },
+    {
+      "sourceId": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "observedAt": "2026-10-14T10:00:29.337+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "総合の最新ぽけっと第4弾10/24と既掲載系列一致。新国内会場を確認せず。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "observedAt": "2026-10-14T10:00:29.645+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "国内最新は海老名・大分10/23、常滑・福岡10/16で既掲載一致。台湾対象外。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "chiikawa-cafe-list",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "observedAt": "2026-10-14T10:00:29.375+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "池袋・沖縄常設、期間限定は終了履歴。新国内会期なし。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "observedAt": "2026-10-14T10:00:29.331+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "2021〜2022終了回一覧。新会期なし。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "observedAt": "2026-10-14T10:00:29.135+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "国内最新は海老名10/23、横浜10/9、福岡10/16。既掲載一致。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "observedAt": "2026-10-14T10:00:29.136+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "東武宇都宮2025/8/1〜12が最新本文。マリンワールド終期依然空欄。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "observedAt": "2026-10-14T10:00:28.837+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "タオル美術館2024/4/20〜9/3先頭の終了回一覧。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "nagano-official-index",
+      "url": "https://nagano-info.jp/",
+      "observedAt": "2026-10-14T10:00:28.780+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "国内常設3店と既掲載系列。海外ソウル・台北は対象外。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-9fdf5778d7",
+      "url": "https://chiikawa-info.jp/ckbaby.html",
+      "observedAt": "2026-10-14T10:00:31.795+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "最新国内青森ELM10/2〜19。既掲載一致。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-5932274e7e",
+      "url": "https://chiikawa-info.jp/ck_pocket.html",
+      "observedAt": "2026-10-14T10:00:31.794+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "第4弾10/24、札幌mini10/4終了。既掲載一致。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-f14e0e6fed",
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "observedAt": "2026-10-14T10:00:32.156+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "横浜10/22〜11/1、福岡10/16〜11/3。既掲載一致。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-fb3fce6c45",
+      "url": "https://chiikawa-info.jp/tenshi_akuma.html",
+      "observedAt": "2026-10-14T10:00:32.162+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "2023年終了回一覧。新会期なし。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-9ec22af2cf",
+      "url": "https://chiikawa-info.jp/wakuwaku.html",
+      "observedAt": "2026-10-14T10:00:31.844+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "2022〜2023年終了回一覧。新会期なし。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-d5be927094",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "observedAt": "2026-10-14T10:00:32.149+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "タイトル会期10/16〜11/3。入場画像は別記録。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-ee275504ea",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "observedAt": "2026-10-14T10:00:31.841+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "タイトル会期10/16〜11/3。入場画像は別記録。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-detail",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+      "observedAt": "2026-10-14T10:00:32.138+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "タイトル会期10/24〜11/29、画像主体。会場表画像を別途実読。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "venue-nagano-fukuoka-entry-20261016",
+      "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "observedAt": "2026-10-14T10:00:37.054+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/16〜11/3、10〜19時/最終17時。初日LINE午前枠10/15 19時、午後1時間前、本人確認。既掲載一致。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "morning-series14-21a381168566",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html",
+      "observedAt": "2026-10-14T10:00:34.695+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "タイトル会期11/3〜23、画像主体。入場画像を別途実読。 本文とリンクのみ。画像・SNS全網羅ではない。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "observedAt": "2026-10-14T09:59:46+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "店舗本文を確認。通常9:30～17:30。川越10/17～18営業時間変更の案内導線あり。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "observedAt": "2026-10-14T09:59:46+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "店舗本文を確認。通常9:30～17:30。川越10/17～18営業時間変更の案内導線あり。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "observedAt": "2026-10-14T09:59:45+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "店舗本文を確認。通常9:30～17:30。川越10/17～18営業時間変更の案内導線あり。"
+    },
+    {
+      "sourceId": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "observedAt": "2026-10-14T09:59:43+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "observedAt": "2026-10-14T09:59:45+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "lucua-south-opening",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "observedAt": "2026-10-14T09:59:45+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "observedAt": "2026-10-14T09:59:46+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "observedAt": "2026-10-14T09:59:45+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawa-park-kumonosu-notice-20261007",
+      "url": "https://chiikawapark-tokyo.jp/news/jk6l8r1pd/",
+      "observedAt": "2026-10-14T09:59:49+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "lucua-south-shop-list",
+      "url": "https://www.lucua.jp/floormap/southshop.html",
+      "observedAt": "2026-10-14T09:59:50+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "observedAt": "2026-10-14T09:59:51+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "observedAt": "2026-10-14T09:59:51+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "observedAt": "2026-10-14T09:59:51+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "observedAt": "2026-10-14T09:59:49+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "observedAt": "2026-10-14T09:59:51+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "池袋9/26～11/20分9/6正午先着、11/21以降後日。沖縄10/17～12/11分9/13正午先着、12/12以降後日。公式予約本文と現行画像2枚を取得・実読し既存一致。新たな72時間内受付発表なし。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-kanazawa",
+      "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "observedAt": "2026-10-14T09:59:50+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-ikebukuro",
+      "url": "https://chiikawa-info.jp/chiikawaland/ikebukuro/",
+      "observedAt": "2026-10-14T09:59:50+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-koshigaya",
+      "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "observedAt": "2026-10-14T09:59:50+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+      "observedAt": "2026-10-14T09:59:54+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "observedAt": "2026-10-14T09:59:55+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-information",
+      "url": "https://chiikawabakery.jp/information/",
+      "observedAt": "2026-10-14T09:59:54+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-information-osaka",
+      "url": "https://chiikawabakery.jp/information-osaka/",
+      "observedAt": "2026-10-14T09:59:54+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-information-popup-01",
+      "url": "https://chiikawabakery.jp/information-popup_01/",
+      "observedAt": "2026-10-14T09:59:54+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "observedAt": "2026-10-14T09:59:54+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-topics",
+      "url": "https://chiikawabakery.jp/topics/",
+      "observedAt": "2026-10-14T09:59:54+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-tokyo-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_tokyo?area=029439",
+      "observedAt": "2026-10-14T09:59:55+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_okinawa?area=030528",
+      "observedAt": "2026-10-14T09:59:55+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "observedAt": "2026-10-14T09:59:55+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "池袋9/26～11/20分9/6正午先着、11/21以降後日。沖縄10/17～12/11分9/13正午先着、12/12以降後日。公式予約本文と現行画像2枚を取得・実読し既存一致。新たな72時間内受付発表なし。"
+    },
+    {
+      "sourceId": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "observedAt": "2026-10-14T10:00:00+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "心斎橋/銀座/札幌の公式店舗本文取得。新商品10/16・23の案内はあるが新入場予約日時の明記は取得本文にない。X表示5投稿は10/11～9。全投稿と画像を網羅せず、自由入場とは推定しない。"
+    },
+    {
+      "sourceId": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "observedAt": "2026-10-14T10:00:00+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "心斎橋/銀座/札幌の公式店舗本文取得。新商品10/16・23の案内はあるが新入場予約日時の明記は取得本文にない。X表示5投稿は10/11～9。全投稿と画像を網羅せず、自由入場とは推定しない。"
+    },
+    {
+      "sourceId": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "observedAt": "2026-10-14T10:00:00+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "心斎橋/銀座/札幌の公式店舗本文取得。新商品10/16・23の案内はあるが新入場予約日時の明記は取得本文にない。X表示5投稿は10/11～9。全投稿と画像を網羅せず、自由入場とは推定しない。"
+    },
+    {
+      "sourceId": "nagano-market-entry-general",
+      "url": "https://nagano-info.jp/tenpo_nm/goannai.html",
+      "observedAt": "2026-10-14T09:59:59+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-osaka-umeda",
+      "url": "https://chiikawa-info.jp/chiikawaland/osaka/",
+      "observedAt": "2026-10-14T09:59:59+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-harajuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/harajuku/",
+      "observedAt": "2026-10-14T09:59:59+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-fukuoka",
+      "url": "https://chiikawa-info.jp/chiikawaland/fukuoka/",
+      "observedAt": "2026-10-14T09:59:59+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-kyoto",
+      "url": "https://chiikawa-info.jp/chiikawaland/kyoto/",
+      "observedAt": "2026-10-14T09:59:59+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-tokyo-station",
+      "url": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-solamachi",
+      "url": "https://chiikawa-info.jp/chiikawaland/solamachi/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-nagoya",
+      "url": "https://chiikawa-info.jp/chiikawaland/nagoya/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-sendai",
+      "url": "https://chiikawa-info.jp/chiikawaland/sendai/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-sapporo",
+      "url": "https://chiikawa-info.jp/chiikawaland/sapporo/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-yokohama",
+      "url": "https://chiikawa-info.jp/chiikawaland/yokohama/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-hiroshima",
+      "url": "https://chiikawa-info.jp/chiikawaland/hiroshima/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-shinsaibashi",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinsaibashi/",
+      "observedAt": "2026-10-14T10:00:03+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-chiikawaland-shinjuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinjuku/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "evening-chiikawapark-tokyo-jp-news",
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "evening-www-chiikawamogumogu-jp",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawaland-store-list",
+      "url": "https://chiikawa-info.jp/ck_land.html",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "morning-www-chiikawamogumogu-jp-2025-10-30-post-1330",
+      "url": "https://www.chiikawamogumogu.jp/2025/10/30/post-1330/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-magical-nagoya",
+      "url": "https://chiikawa-info.jp/magical_store/nagoya/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-magical-shinjuku",
+      "url": "https://chiikawa-info.jp/magical_store/shinjuku/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "individual-magical-umeda",
+      "url": "https://chiikawa-info.jp/magical_store/umeda/",
+      "observedAt": "2026-10-14T10:00:07+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "chiikawa-park-christmas-2026",
+      "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+      "observedAt": "2026-10-14T10:00:11+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-store-news",
+      "url": "https://www.chiikawamogumogu.jp/store/kawagoe/",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "park-december-hours",
+      "url": "https://chiikawapark-tokyo.jp/news/30wzkm6wj1d/",
+      "observedAt": "2026-10-14T10:00:11+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakeryc",
+      "url": "https://x.com/chiikawabakeryC",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "表示5投稿本文は入荷・ノベルティ終了案内。全投稿・画像は未確認。"
+    },
+    {
+      "sourceId": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "表示5投稿本文は10/11～9の範囲。全投稿・画像は未確認。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "observedAt": "2026-10-14T10:00:12+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "表示投稿本文から12月分チケット告知を発見。個別投稿を別途確認。全投稿・画像は未確認。"
+    },
+    {
+      "sourceId": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "observedAt": "2026-10-14T10:00:19+00:00",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "summary": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。"
+    },
+    {
+      "sourceId": "baby-castella-otaru-official",
+      "url": "https://www.chiikawamogumogu.jp/stores/castella/",
+      "observedAt": "2026-10-14T10:00:19+00:00",
+      "result": "fetched_unreviewed",
+      "httpStatus": 200,
+      "summary": "HTTP200の取得を確認したが、この記録では掲載条件の本文・画像の確認完了を確定できない。"
+    },
+    {
+      "sourceId": "chiikawa-park-december-ticket-x-20261014",
+      "url": "https://x.com/chiikawa_parkjp/status/2110203943280361912",
+      "observedAt": "2026-10-14T10:01:43+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "公式個別X本文は10/15(木)12:00より12月末までのチケットを先着販売開始と明記。12月営業時間は既掲載と一致。表示投稿日時は3:00 AM · Oct 14, 2026だがタイムゾーンを明示していないため発表日は日付のみ保存。"
+    },
+    {
+      "sourceId": "bakery-tokyo-entry-20261014",
+      "url": "https://x.com/chiikawabakery/status/2110173752629592549",
+      "observedAt": "2026-10-14T10:01:43+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/14東京14:50からデジタル整理券、呼出15分以内。ラフォーレ10時エントランス・開店後店頭発券を公式個別X確認。19時時点の受付継続/残枠は未確認のため新しい公開当日注記は追加せず証拠のみ。"
+    },
+    {
+      "sourceId": "bakery-laforet-entry-20261014",
+      "url": "https://x.com/chiikawabakery/status/2110173746137084262",
+      "observedAt": "2026-10-14T10:01:43+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/14東京14:50からデジタル整理券、呼出15分以内。ラフォーレ10時エントランス・開店後店頭発券を公式個別X確認。19時時点の受付継続/残枠は未確認のため新しい公開当日注記は追加せず証拠のみ。"
+    },
+    {
+      "sourceId": "series-observed-3e66b0e48de6",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/moushikomi_261002.jpg",
+      "observedAt": "2026-10-14T10:01:31+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/16は開店前の並び状況により当日整理券配布の場合あり。施設側の9:30配布案内を否定する訂正ではない。"
+    },
+    {
+      "sourceId": "morning-series14-f79ead37ffb0",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/moushikomi_261013.jpg",
+      "observedAt": "2026-10-14T10:01:31+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "10/16〜18対象。午前は前日19時、午後は各回1時間前。距離制限なし、本人確認・期間1回・30分入替。既掲載一致。"
+    },
+    {
+      "sourceId": "series-evening-fa03631901c8",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/ck_tenpo_3.jpg",
+      "observedAt": "2026-10-14T10:01:31+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "5会場の日程・営業時間は既掲載と一致。仙台は10〜19時、最終17時。"
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-entry-sendai",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+      "observedAt": "2026-10-14T10:00:05+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "11/3対象。午前枠は11/2 19時、午後1時間前。距離制限なし。既掲載一致。"
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-release",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33903",
+      "observedAt": "2026-10-14T10:02:46.602Z",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "取得本文666行に仙台10:00～21:00（最終17時）。公式会場表の19時と矛盾が継続。"
+    }
+  ],
+  "imageObservations": [
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/main_v10.jpg",
+      "observedAt": "2026-10-14T10:01:03.038+00:00",
+      "result": "downloaded_not_read",
+      "sha256": "5b91b78d70c67aa3f2815ffb6065b14b23a6c332a4e71106374e42568d9e6c3c"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/moushikomi_261002.jpg",
+      "observedAt": "2026-10-14T10:01:02.951+00:00",
+      "readAt": "2026-10-14T10:01:31+00:00",
+      "result": "success",
+      "summary": "10/16は開店前の並び状況により当日整理券配布の場合あり。施設側の9:30配布案内を否定する訂正ではない。",
+      "sha256": "b1d82d08534ea1ebeddfd654a24b44c653ecd0d1daa3f63b13c18a19d534094b"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/main_v10.jpg",
+      "observedAt": "2026-10-14T10:01:02.459+00:00",
+      "result": "downloaded_not_read",
+      "sha256": "807023ffb4eee24801bccd50721cff2c322c29ca837330489192e12db350b5e4"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/moushikomi_261013.jpg",
+      "observedAt": "2026-10-14T10:01:02.414+00:00",
+      "readAt": "2026-10-14T10:01:31+00:00",
+      "result": "success",
+      "summary": "10/16〜18対象。午前は前日19時、午後は各回1時間前。距離制限なし、本人確認・期間1回・30分入替。既掲載一致。",
+      "sha256": "703388eb46b19ef0fd69f92131d3721d2182d1b157a6dbca9c39bbcd90605253"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/moushikomi_260209_02.jpg",
+      "observedAt": "2026-10-14T10:01:02.424+00:00",
+      "result": "downloaded_not_read",
+      "sha256": "86c5ad14f48a2f5992f555434ddb8a8d0073b369be2729a68c8cef5d9cf759db"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/moushikomi_260209_03.jpg",
+      "observedAt": "2026-10-14T10:01:02.418+00:00",
+      "result": "downloaded_not_read",
+      "sha256": "0e6f2ebe209b6b9286e538cbaddf00df527bb5a234146ef310655660540b7bda"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/main_2.jpg",
+      "observedAt": "2026-10-14T10:01:02.457+00:00",
+      "result": "downloaded_not_read",
+      "sha256": "2627f1ff7c421ad7840a6aa89fa4b7861669b306dbc0bd64e7a045fcc08cba30"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/ck_tenpo_3.jpg",
+      "observedAt": "2026-10-14T10:01:02.457+00:00",
+      "readAt": "2026-10-14T10:01:31+00:00",
+      "result": "success",
+      "summary": "5会場の日程・営業時間は既掲載と一致。仙台は10〜19時、最終17時。",
+      "sha256": "0504378b880e6ea45800eb37fbfa5e379206c896e35b334c4fe6eec62a39b728"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/nyuten_01.jpg",
+      "observedAt": "2026-10-14T10:01:05.539+00:00",
+      "result": "downloaded_not_read",
+      "sha256": "da97798024bad644f0318cd116a3683a2707ae9347f25f1fe8f941865aab2eec"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+      "observedAt": "2026-10-14T09:59:53.701+00:00",
+      "readAt": "2026-10-14T10:00:05+00:00",
+      "result": "success",
+      "summary": "11/3対象。午前枠は11/2 19時、午後1時間前。距離制限なし。既掲載一致。"
+    },
+    {
+      "url": "https://cms-cafe-parco.sc-concierge.jp/cmsR5/parco/cafe/images/store/storage/planning_cname_20260828155030.png",
+      "observedAt": "2026-10-14T10:02:04.413+00:00",
+      "result": "success"
+    },
+    {
+      "url": "https://cms-cafe-parco.sc-concierge.jp/cmsR5/parco/cafe/images/store/storage/planning_cname_20260908090125.png",
+      "observedAt": "2026-10-14T10:02:08.499+00:00",
+      "result": "success"
+    }
+  ],
+  "changes": [
+    {
+      "listingIds": [
+        "chiikawa-park-tokyo",
+        "chiikawa-park-christmas-2026"
+      ],
+      "summary": "72時間以内の発売。一般規則からの推定ではなく、12月分公式告知の確定日時を補足する。",
+      "url": "https://x.com/chiikawa_parkjp/status/2110203943280361912"
+    },
+    {
+      "listingIds": [
+        "collab-skytree-2026"
+      ],
+      "summary": "2026年10月16日から、1F物販会場の購入点数・購入回数制限と、星型マグネットの購入回数制限が終了します。",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/"
+    },
+    {
+      "listingIds": [
+        "magical-umeda"
+      ],
+      "summary": "入居施設の営業日に準ずる。2026年10月15日（木）はHEP FIVE休館のため休業です。",
+      "url": "https://www.hepfive.jp/"
+    }
+  ],
+  "limitations": [
+    "取得本文・明示した確認済み画像の範囲。全SNS投稿・在庫・残席の網羅確認ではない。",
+    "取得制限・本文確認未完了は成功扱いせず、前回成功日時を保持。",
+    "仙台営業時間の公式間不一致は継続。"
+  ]
+}
