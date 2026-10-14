@@ -15,6 +15,17 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("recent additions stay compact on mobile and desktop and link to existing detail pages", async ({ page }) => {
+  // Restore this fixed-date layout fixture when its October additions move to history.
+  const [current, archive, registry] = await Promise.all(
+    ["official-spots.json", "official-events-archive.json", "added-dates.json"].map(async name =>
+      JSON.parse(await readFile(new URL(`../data/${name}`, import.meta.url), "utf8"))
+    )
+  );
+  const spots = [...current, ...archive.filter(spot => registry.firstAdded[spot.id] === "2026-10-01")];
+  expect(new Set(spots.map(spot => spot.id)).size).toBe(spots.length);
+  await page.route("**/data/official-spots.json", route => route.fulfill({
+    contentType: "application/json", body: JSON.stringify(spots)
+  }));
   await page.clock.setFixedTime(new Date("2026-10-01T03:00:00Z"));
   await page.goto("/");
   const links = page.locator("#recent-additions-list a");

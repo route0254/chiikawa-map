@@ -26,7 +26,11 @@ test("updates, archival moves and reintroductions retain original dates; histori
 });
 
 test("exactly the six October additions are new, independently of event dates", () => {
-  const spots = JSON.parse(readFileSync(new URL("../../data/official-spots.json", import.meta.url)));
+  // The fixed-date assertion must retain listings that have since been archived.
+  const spots = ["official-spots.json", "official-events-archive.json"].flatMap(name =>
+    JSON.parse(readFileSync(new URL(`../../data/${name}`, import.meta.url)))
+  );
+  assert.equal(new Set(spots.map(spot => spot.id)).size, spots.length);
   const registry = JSON.parse(readFileSync(new URL("../../data/added-dates.json", import.meta.url)));
   const result = recent.selectRecent(spots, registry.firstAdded, "2026-10-01");
   assert.equal(result.length, 6);
