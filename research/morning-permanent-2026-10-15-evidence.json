@@ -1,0 +1,388 @@
+{
+  "observations": [
+    {
+      "checkedAt": "2026-10-15",
+      "source": "https://x.com/chiikawabakery/status/2110317192109601197",
+      "observedAt": "2026-10-14T23:11:27+00:00",
+      "finding": "ちいかわベーカリー ポップアップショップ（ラフォーレ原宿）は2026年10月15日のフリー入場を整理券で案内。10:00からラフォーレ原宿エントランスで発行、開店後は店頭。",
+      "targetId": "chiikawa-bakery-shop-laforet",
+      "verification": {
+        "pageTitleAndBodyRead": true,
+        "renderedPageVisuallyRead": true,
+        "attachedNoticeImage": false,
+        "dateBasis": "08:10 JSTの公式アカウント一覧で対象投稿は12h前、個別投稿は2026年10月14日表示、本文の明日から10/15を特定。表示3:30のタイムゾーンは未確認なので正確な投稿時刻は採用しない。",
+        "storeBasis": "本文にポップアップショップ、ラフォーレ原宿エントランス、ハッシュタグにもラフォーレ原宿を明記。東京ベーカリー本体と区別。",
+        "imageNote": "投稿には添付告知画像がなく、カメラ文字は本文の絵文字。画像実読の代わりに投稿画面そのものを目視し、文字内容を照合。"
+      },
+      "nextChecks": [
+        "10/15夕に配券終了等の続報を確認",
+        "10/16朝に10/15当日注記を除き通常公式案内へ戻す"
+      ],
+      "limitations": [
+        "整理券の現在残数・発行済み枚数は未確認",
+        "予約開始時刻ではなく当日配券開始時刻"
+      ]
+    },
+    {
+      "checkedAt": "2026-10-15",
+      "source": "https://x.com/THEGUEST_ikb/status/2110350345125994909",
+      "observedAt": "2026-10-14T23:12:43+00:00",
+      "imageSource": "https://pbs.twimg.com/media/HUl4Z7nakAA5wGi?format=webp&name=large",
+      "imageObservedAt": "2026-10-14T23:13:00+00:00",
+      "targetId": "chiikawa-restaurant-ikebukuro",
+      "finding": "2026年10月15日のカフェは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。併設のグッズショップはフリー入場ですが、混雑時は待機列を形成する場合があります。",
+      "verification": {
+        "postBodyRead": true,
+        "attachedImageVisuallyRead": true,
+        "imageDate": "10月15日 木曜日",
+        "imageConditions": "通常席・BOX席とも全表示枠が×",
+        "officialAnnouncedAt": "2026-10-14",
+        "exactAnnouncementTime": null
+      },
+      "nextChecks": [
+        "10/15夕の続報確認",
+        "10/16朝に当日注意を除去して通常公式案内へ復帰"
+      ]
+    }
+  ],
+  "routineObservations": [
+    {
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "observedAt": "2026-10-14T23:07:11+00:00",
+      "summary": "通常9:30～17:30、NEWSは10/17～18営業時間記事が先頭。現行HTMLリンクにも旧予約記事/新しい代替予約記事なし。",
+      "method": "web+direct_html",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "observedAt": "2026-10-14T23:09:35+00:00",
+      "summary": "webは404、直接GET403、クラウドブラウザもページが見つからない表示。予約撤回とは推測せず前回成功を保持。",
+      "method": "web+direct_http+cloud_browser",
+      "result": "fetch_failed",
+      "httpStatus": 404,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "observedAt": "2026-10-14T23:09:52+00:00",
+      "summary": "クラウドブラウザ本文で10/17～18の営業時間9:30～19:00、通常9:30～17:30を再確認。既掲載一致。直接GET403とは分離。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "observedAt": "2026-10-14T23:08:00+00:00",
+      "summary": "先頭2026/10/2の川越10/17～18時間変更。確認範囲に代替予約/撤回は記載なし。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "observedAt": "2026-10-14T23:08:00+00:00",
+      "summary": "本文9:30～17:30。入店一般案内への導線あり。新しい日時限定の入店条件を表示範囲に確認せず。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "observedAt": "2026-10-14T23:08:00+00:00",
+      "summary": "本文9:30～17:30。表示NEWSはノベルティ/開業案内で、新しい日時限定の入店条件を表示範囲に確認せず。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/2025/10/30/post-1330/",
+      "observedAt": "2026-10-14T23:08:25+00:00",
+      "summary": "伏見・川越の一般条件はフリー、混雑時整理券/入店制限。川越10/17～18の既確認例外をこの一般案内だけで撤回しない。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawamgmg",
+      "observedAt": "2026-10-14T23:09:13+00:00",
+      "summary": "クラウドブラウザの表示5投稿は10/15再入荷と欠品。川越予約の撤回/変更は表示範囲で未確認。ログインなしの範囲に限定。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "observedAt": "2026-10-14T23:08:50+00:00",
+      "summary": "東京9・10月優先券完売、15時以降デジタル整理券14:50アクセス。大阪10～12月完売・優先券所持者のみ、隣接物販フリー。既掲載一致。",
+      "method": "web+cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/news/",
+      "observedAt": "2026-10-14T23:06:57+00:00",
+      "summary": "最新9/28ちいぽけカード配布。表示一覧に新しい予約/営業時間記事なし。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/topics/",
+      "observedAt": "2026-10-14T23:06:57+00:00",
+      "summary": "最新9/28フォトブース・2周年。既知の10/15開始企画を確認、別担当の系列と分離。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/information/",
+      "observedAt": "2026-10-14T23:08:25+00:00",
+      "summary": "東京11～20時・最終19:30、優先券一般案内。既掲載一致。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/information-osaka/",
+      "observedAt": "2026-10-14T23:08:25+00:00",
+      "summary": "大阪11～20時・最終19:30、優先券一般案内。既掲載一致。入場対象は予約ページの現行制限を優先。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/information-popup_01/",
+      "observedAt": "2026-10-14T23:08:25+00:00",
+      "summary": "ラフォーレ11～20時・最終19:30、一般条件はフリー/指定日予約や整理券の場合あり。10/15例外は公式個別投稿で別記。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_tokyo.jpg",
+      "observedAt": "2026-10-14T23:09:00+00:00",
+      "summary": "画像実読。11/1～12/31分10/7 17時販売、2027/1以降は後日。東京OPEN～15時優先・以降デジタル整理券。直接GET403でもブラウザ表示成功。",
+      "method": "cloud_browser_image",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/1006ckb_schedule_osaka.jpg",
+      "observedAt": "2026-10-14T23:09:13+00:00",
+      "summary": "画像実読。11/1～12/31分10/7 17時販売、2027/1以降は後日。既掲載一致。直接GET403でもブラウザ表示成功。",
+      "method": "cloud_browser_image",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawabakery",
+      "observedAt": "2026-10-14T23:10:19+00:00",
+      "summary": "固定2周年と表示最新4投稿を確認。ラフォーレ10/15整理券の新告知を発見。商品在庫投稿は掲載対象外。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawabakeryO",
+      "observedAt": "2026-10-14T23:10:51+00:00",
+      "summary": "固定と表示最新4投稿の範囲。10/15再入荷・10/14在庫情報を確認、日時限定の新入場条件は確認せず。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "observedAt": "2026-10-14T23:06:57+00:00",
+      "summary": "最新10/14の12月時間変更は既掲載。10/7くものす休止を維持、表示一覧に再開記事なし。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/news/jk6l8r1pd/",
+      "observedAt": "2026-10-14T23:08:00+00:00",
+      "summary": "くものすキャッチャー休止・復旧後再開予定を本文再確認。再開日時は未定で既掲載維持。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawa_parkjp",
+      "observedAt": "2026-10-14T23:10:19+00:00",
+      "summary": "固定ハロウィンと最新4投稿。12月時間/10/15正午チケットは既掲載一致、商品欠品/終了は入場条件対象外。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawa-yaki.com/",
+      "observedAt": "2026-10-14T23:06:57+00:00",
+      "summary": "名古屋平日フリー/土日祝前日10時予約、10/17・18のリンクあり。横浜/幕張フリー、時間も既掲載一致。残枠は未確認。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://www.chiikawa-yaki.com/app-nagoya/schedules-nagoya/2026-10-17",
+      "observedAt": "2026-10-14T23:10:09+00:00",
+      "summary": "webキャッシュ不取得・直接403、ブラウザも403このページは現在ご利用いただけません。リンク存在を予約開始/残枠成功とは扱わない。",
+      "method": "cloud_browser",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "key": "chiikawa-yaki-nagoya-20261017-reservation"
+    },
+    {
+      "url": "https://www.chiikawa-yaki.com/app-nagoya/schedules-nagoya/2026-10-18",
+      "observedAt": "2026-10-14T23:08:07+00:00",
+      "summary": "webキャッシュ不取得・直接GET403。公式トップの10/18リンクと一般前日10時条件は確認したが残枠は未確認。",
+      "method": "web+direct_http",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "key": "chiikawa-yaki-nagoya-20261018-reservation"
+    },
+    {
+      "url": "https://x.com/chiikawayaki",
+      "observedAt": "2026-10-14T23:09:52+00:00",
+      "summary": "固定10/5の名古屋土日祝予約・10/8案内を確認。既掲載一致。商品入荷投稿は入場条件対象外。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "observedAt": "2026-10-14T23:08:07+00:00",
+      "summary": "直接HTMLで11/1～30分を10/16 12時LivePocket先着、各2日前まで、最大2枚を再確認。池袋11～14時予約優先/14時以降予約不要、他2店事前予約優先。web抽出は日程部分が欠落していたため直接本文と分離。既掲載一致。",
+      "method": "direct_html",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "observedAt": "2026-10-14T23:08:07+00:00",
+      "summary": "直接HTMLで11/1～30分を10/16 12時LivePocket先着、各2日前まで、最大2枚を再確認。池袋11～14時予約優先/14時以降予約不要、他2店事前予約優先。web抽出は日程部分が欠落していたため直接本文と分離。既掲載一致。",
+      "method": "direct_html",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "observedAt": "2026-10-14T23:08:07+00:00",
+      "summary": "直接HTMLで11/1～30分を10/16 12時LivePocket先着、各2日前まで、最大2枚を再確認。池袋11～14時予約優先/14時以降予約不要、他2店事前予約優先。web抽出は日程部分が欠落していたため直接本文と分離。既掲載一致。",
+      "method": "direct_html",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "observedAt": "2026-10-14T23:07:11+00:00",
+      "summary": "予約優先、完売時間帯は当日席なし、併設物販予約不要/混雑時別整理券。対象期間は東京9/26～11/20、沖縄10/17～12/11。販売詳細画像は別実読。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "observedAt": "2026-10-14T23:07:11+00:00",
+      "summary": "予約優先、完売時間帯は当日席なし、併設物販予約不要/混雑時別整理券。対象期間は東京9/26～11/20、沖縄10/17～12/11。販売詳細画像は別実読。",
+      "method": "web",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cms-cafe-parco.sc-concierge.jp/cmsR5/parco/cafe/images/store/storage/planning_cname_20260828155030.png",
+      "observedAt": "2026-10-14T23:08:25+00:00",
+      "summary": "画像実読。東京9/26～11/20、9/6正午先着・各2日前まで・抽選なし。11/21以降は後日。",
+      "method": "downloaded_image",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://cms-cafe-parco.sc-concierge.jp/cmsR5/parco/cafe/images/store/storage/planning_cname_20260908090125.png",
+      "observedAt": "2026-10-14T23:08:25+00:00",
+      "summary": "画像実読。沖縄10/17～12/11、9/13正午先着・各2日前まで・抽選なし。12/12以降は後日。",
+      "method": "downloaded_image",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/THEGUEST_ikb",
+      "observedAt": "2026-10-14T23:12:34+00:00",
+      "summary": "表示固定と最新4投稿。10/15当日券なしの新告知を発見、個別本文/画像で別途検証。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawarestOKI",
+      "observedAt": "2026-10-14T23:12:34+00:00",
+      "summary": "表示固定と最新4投稿。最新当日席案内は10/14対象で期限経過。10/15の空席を推定しない。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawaramenSP",
+      "observedAt": "2026-10-14T23:13:38+00:00",
+      "summary": "表示5投稿で11月分10/16正午受付一致。閉店済み名古屋のスタンプ案内等は新入場条件なし。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawaramenSB",
+      "observedAt": "2026-10-14T23:13:56+00:00",
+      "summary": "表示5投稿で11月分10/16正午受付一致。10/12まで満席の旧投稿を10/15へ延長しない。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    },
+    {
+      "url": "https://x.com/chiikawaramenSH",
+      "observedAt": "2026-10-14T23:13:56+00:00",
+      "summary": "表示5投稿の最新満席案内は10/14対象。10/15当日券なしを推定せず既掲載通常条件を維持。",
+      "method": "cloud_browser",
+      "result": "success",
+      "httpStatus": null,
+      "key": null
+    }
+  ],
+  "limitations": [
+    "クラウドのみ。SNSはログインなしの表示された固定/最新投稿に限定し、全履歴や全返信の網羅ではない。",
+    "全グッズ在庫の検査ではない。当日入場条件は対象日のみ。",
+    "一部直接HTTP取得失敗はブラウザ成功と分け、予約原本の失敗は前回成功を保持。"
+  ]
+}
