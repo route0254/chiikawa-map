@@ -1,0 +1,720 @@
+{
+  "reviewDate": "2026-10-15",
+  "completedAt": "2026-10-14T23:13:01.542+00:00",
+  "baselineCommit": "9b3811878e42396bb9f8da47179c869e39d08999",
+  "scope": "企業・施設の公式告知、既存コラボ、直近72時間の受付予定の朝確認。",
+  "weeklyReview": {
+    "lastVerifiedDate": "2026-10-13",
+    "evidence": "research/morning-corporate-2026-10-13-evidence.json",
+    "decision": "7日未満のため定例範囲で確認。"
+  },
+  "observations": [
+    {
+      "sourceId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "observedAt": "2026-10-14T23:07:01.946+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "池袋9/17～10/14の期間表示を再確認。10/15時点で会期延長の案内なし、既に過去へ整理済み。本文で新催事を確認せず。既知終了を新変更として登録しない。",
+      "sha256": "33cd765449a6e4a28a0498d6b66310158eba5fe7596e556022a94ae04bcadeb5"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "observedAt": "2026-10-14T23:07:00.272+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/5予約開始・11/10発売予定は既存一致。新規注文配送時期は公式ECの重要案内を優先し別記。",
+      "sha256": "de038f58a3913b1b86676660645807f52264b68e57e7d3c7a0f115c2434d098b"
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "observedAt": "2026-10-14T23:06:59.381+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/19初便ANA661羽田8:15→長崎、ANA664長崎11:00→羽田の予定。路線非固定・当日まで運航路線未確定は既存一致。運航実施を保証しない。",
+      "sha256": "bced4a7d9cb7e88b98b6ab98eef960622934328bd8c37de6f8001a44fc24681f"
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "observedAt": "2026-10-14T23:07:00.114+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "第1弾参加登録10/19 10時～12/31 23:59、アプリ/AMCログインと登録・搭乗不要。第2弾対象搭乗2027/2/1～4/30、事後登録5/14 23:59。既存主要条件一致。",
+      "sha256": "a1ba4eaec482f30a99ab64c439525fe210ae16d02522a750d8f7b4a285fb3efd"
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "observedAt": "2026-10-14T23:07:02.255+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ及び引換証配布終了、他所欠品時の後日配送方式は既存一致。KITTEバルーン固有フロア・撮影時間・料金は本文/画像で確定せず。",
+      "sha256": "581bc5a43b58f40a71fb5efd9ab2c883ae7540867ce0eca05a309f0507587306"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "observedAt": "2026-10-14T23:07:02.475+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/16から1F購入点数・回数制限と星型マグネット購入回数制限終了を再確認。前夕PR47掲載済みの既知案内。10/21・22の19:30上映休止、カフェ券上限到達/再販売可能案内も維持。残席未確認。",
+      "sha256": "987b6b6704c1d7a744379eaaa09a70f1640caab6e3d053a44391b5476dacb10d"
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "observedAt": "2026-10-14T23:07:00.079+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "本日10/15 12:00～10/25 23:59先行抽選、10/30 12:00以降当落を再確認。開催11/24～12/25、11～21時、最終入場枠18:30～19:00。一般発売日と中旬公開予定の注意事項に新確定情報なし。受付開始前の観測で受付稼働を保証しない。",
+      "sha256": "142dc214d1ae85f201d97ef009695e5a8cbc6676451019b7640dd9d3ca03872a"
+    },
+    {
+      "sourceId": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "observedAt": "2026-10-14T23:07:03.163+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/8主催発表、豊砂公園11/24～12/25、先行抽選10/15 12時開始。既存企画/スポットと一致、重複候補不要。",
+      "sha256": "7f09960c60c05281e594d9d02fa7381850922cb3ce702a7dab42fce2b18ca8fd"
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-asoview",
+      "url": "https://www.asoview.com/base/165182/",
+      "observedAt": "2026-10-14T23:07:02.834+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "豊砂1-12、11～21時・最終入場枠18:30～19:00を確認。個別販売実行や残枠を確認したとは扱わない。",
+      "sha256": "caf3f2e8b5a02806406be219ea7a099c3696826ec18fc007e2c490a218a19d4a"
+    },
+    {
+      "sourceId": "toho-umeda-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.715+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "4c757d89aa5bd48159813e84c8487b9aef465531c58460ec641abfc27fa09938"
+    },
+    {
+      "sourceId": "toho-nagoya-sakae-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.780+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "29208a42c591283899f64512856fd6accb7a11d889c97e7eadc4bf8395aa04ab"
+    },
+    {
+      "sourceId": "toho-ikebukuro-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.728+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "100f5db290341808c71a5999925d3b859f5386d97332f9604ec51fb2b4556372"
+    },
+    {
+      "sourceId": "toho-hibiya-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.788+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "b4f75d1ffa82cee07aa7a831138110ae9fe5a9e064e18e140ea4538a7e4c49c0"
+    },
+    {
+      "sourceId": "toho-shinjuku-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.787+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "fb7e5947229ce28b0d572cf2e0aa0ce7bf868500df3b55d0834fe2b2dfbedc38"
+    },
+    {
+      "sourceId": "toho-tenjin-solaria-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.658+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "cda466ffad712cc12a2e27ec09e449e4a56a44f1eeff43152409880981c87f83"
+    },
+    {
+      "sourceId": "toho-susukino-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "observedAt": "2026-10-14T23:07:04.666+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "sha256": "9293fc753405802ddb55b5a7e8ada8a3da833ec393799f04af53475c6d0da2ef"
+    },
+    {
+      "sourceId": "seven-eleven-christmas-campaign-2026",
+      "url": "https://www.sej.co.jp/cmp/cck2609/",
+      "observedAt": "2026-10-14T23:07:07.698+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "店頭応募12/19～2027/1/15、シリアル12/28まで。7NOW応募1/6～15、番号登録12/28・ポイント1/6付与・デリバリー対象外は既存一致。",
+      "sha256": "b19ee306b1225730d4064377d28cb3bde53f81d83fbbadaa2919111f0b4e9419"
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "observedAt": "2026-10-14T23:10:05+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET and image review",
+      "httpStatus": 200,
+      "summary": "主ページ画像主体。主画像・対象船案内・予約開始案内を再取得して実読、前朝ファイルと同一バイト。8/6～10/31、対象4隻・深夜便対象外、予約は大阪～志布志3か月前/大洗～苫小牧2か月前の営業日という既存条件一致。空室未確認。",
+      "sha256": "75ef15f551ff4943dd03c67964826aee14e2a863f072484d2eaeae030e747ed5"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "observedAt": "2026-10-14T23:07:11.667+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "クラシコ実店舗は予定数量完売。再入荷予定だが時期未定、10/1過剰受注について別記事参照。現行needs_reviewと一致。記事表示の2037年は販売終了日へ流用しない。",
+      "sha256": "d4788c1b45cdaed111f0dd64aab5d7329505165eaef535197786fbb692764ae7"
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "observedAt": "2026-10-14T23:07:11.635+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "11/20・11/27、各日オンライン7:15/店舗開店時、全店・1柄1色2点。既存掲載と一致。",
+      "sha256": "34b7fe8fc8776155f3f66c1fc0bfff7a15eb876c8836da6851b21f93d70e09e2"
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "observedAt": "2026-10-14T23:07:10.837+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "7/13～9/30購入、購入後1週間以内レシート投稿。賞品への応募期限はWeb本文に明記なし。needs_review維持。アプリ未読。",
+      "sha256": "6d9ffe2d8d8aded25fe3acea9e574119ed879008f70d78eb31e04b5c79b0bc69"
+    },
+    {
+      "sourceId": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "observedAt": "2026-10-14T23:07:11.622+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "9/30まで購入・購入後1週間以内投稿、ポイントで賞品応募。賞品応募締切日時は別記なし、needs_review維持。",
+      "sha256": "8613c582155ec01d61d322023a2ef3407a9eb83fded23f15d721acccd81aad30"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "observedAt": "2026-10-14T23:07:10.487+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "映画デザインボトル24種を9月上旬順次数量限定発売、なくなり次第終了。現行一致。レシート企画終了とボトル販売終了を混同せず。",
+      "sha256": "62c748f02b24756696e1a99b902b7749e68ca7fb1c9cb27db70b7ed0a736061d"
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "observedAt": "2026-10-14T23:07:10.298+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "9/15から国内店舗/EC等で順次発売、6型。国内発売条件既存一致。海外10月分を国内新規にしない。各店現在在庫は未確認。",
+      "sha256": "a6adb7481ba34165e0090ff94040e1a14b54d7f1b31b8984205c2fb55655a3c1"
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "observedAt": "2026-10-14T23:07:12.240+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "7/15 12時web先行・7/22店舗発売。既存案内一致、本文に全店販売終了や再入荷の新確定告知なし。在庫保証なし。",
+      "sha256": "a4a55e04a54729b4ba90f8d1b0a7184c654850320bc00d511f6dcc4f7b9e227f"
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "observedAt": "2026-10-14T23:07:15.902+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "7/3発表、7/10限定乾電池発売。元記事の販売案内一致。本文自体が発表時情報と明示し現在在庫未検証。",
+      "sha256": "3e2f78c47aedbc3196d781fb826af5240dd57d9d627b13db9f90a53f410ef97a"
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "observedAt": "2026-10-14T23:07:17.292+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "6/6 10時～なくなり次第終了の既存企画。初日整理券条件を今の入店条件へ流用しない。在庫未確認。",
+      "sha256": "153778d068ad654b516581884888a5180554a7a22f4cecc5eee5d6398760162a"
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "observedAt": "2026-10-14T23:07:15.886+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "cp932で本文取得。継続カード案内と2/16開始年間利用特典を確認。終了発表なし。会員登録・契約・申込操作なし。",
+      "sha256": "424b70a3697181fddbcfdd4389615366614c83ff34d5fd6bad1ce3558fa3bf42"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "observedAt": "2026-10-14T23:07:15.756+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/2数量限定オキシクリーン1500gちいかわパッケージ発売。現行条件一致、全店販売終了は未確認。",
+      "sha256": "204310726f8b7c3cac3523dc492cb5179e89bf7b6ad5ae16a98cd857fcc4d349"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "observedAt": "2026-10-14T23:07:16.617+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "東京メトロ一次発表7/24～11/3を再確認。ゲーム特設/配送キットは取得制限で最新運営・在庫を確認できず。",
+      "sha256": "fb2efa088267a291741988cd9b6d66de36186fd869dc73a3bfe31af615f9ab8a"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "observedAt": "2026-10-14T23:07:17.559+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "9/14予約開始・受取12/19～25、受取日/店頭か7NOWかにより締切12/16～20。予定数到達で終了、既存一致。",
+      "sha256": "b189c990a95b9bae2028d0537ea0d3fc41b70e60e93a4473381d56558cc2fd24"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "observedAt": "2026-10-14T23:07:17.215+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "ちいかわなかよしクリスマスかまくらの予約案内・キャンペーン対象を再確認。主要期間はトップを参照。",
+      "sha256": "e9dda4debb4a5be7c6bdaeb41c6bbe4d456bcf63100d57ec0ba1a8eb8a280ed5"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "observedAt": "2026-10-14T23:07:17.247+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "ちいかわケーキ2種の案内を確認。主要期間/応募条件はトップ/キャンペーンを参照。商品単位在庫は未検証。",
+      "sha256": "d68d700d8bddb4d8fdbd405d760a9893c7da3d481c10ea3968c7aab95349e839"
+    },
+    {
+      "sourceId": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "observedAt": "2026-10-14T23:07:19.751+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "東京ソラマチ空の小町10/1～10/14、10～22時の公式発表を再確認。過去へ整理済みで重複移動しない。",
+      "sha256": "5df905f3c559c697d8655385831a92c7d1f6758d5bd807940dd9704834611e9b"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "observedAt": "2026-10-14T23:09:05+00:00",
+      "result": "success",
+      "method": "web text retrieval after direct HTTP403",
+      "httpStatus": null,
+      "summary": "直接取得403後、web本文で9/24～10/21配布、友だち追加・国内端末・取得後180日を再確認。既存一致。",
+      "sha256": "4c5884754f76d50385c52ef763e8a626b271851f16d557844efedad66c3c757a"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "observedAt": "2026-10-14T23:09:05+00:00",
+      "result": "success",
+      "method": "web text retrieval after direct HTTP403",
+      "httpStatus": null,
+      "summary": "直接取得403後、webでニュース一覧本文を確認。最新表示は9/24のちいかわLINE絵文字、日次対象の追加告知を確認せず。全ニュース不存在の保証ではない。",
+      "sha256": "4c5884754f76d50385c52ef763e8a626b271851f16d557844efedad66c3c757a"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "observedAt": "2026-10-14T23:07:22.904+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/1過剰受注のRA3/RA4、確保不能注文はキャンセル/返金、対象者へ個別案内。現行記載一致。個別注文状況は未確認。",
+      "sha256": "df3115f10e7bacaa454fad05e6f7d6f391c1f7cec9066843def819a0ed71dd8e"
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "observedAt": "2026-10-14T23:07:22.732+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "UT7/17・スウェット7/24発売、再入荷未定の案内。既存主要条件一致。",
+      "sha256": "a6521b1c34f4bc42b2184273c5de08a820cad053ced8bc18526d7b4ba25c3c61"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "observedAt": "2026-10-14T23:07:22.927+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "重要案内は新規注文2027年中配送予定・具体時期未定、注文画面の日付選択でも配送/発送指定不可。11/10発売と配送を分離。既存掲載一致。",
+      "sha256": "c3235159d8b69eed730a12190a0890cb3af0f758755c5181c478c43cc9423385"
+    },
+    {
+      "sourceId": "metro-event-details",
+      "url": "https://escape.id/chiikawa/",
+      "observedAt": "2026-10-14T23:07:22.994+00:00",
+      "result": "access_limited",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 403,
+      "summary": "直接取得403。webはiframeのみで本文解析不能。前回成功時刻を保持し新着なしとは扱わない。",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "sourceId": "christmas-faq",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "observedAt": "2026-10-14T23:07:22.765+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "日時指定/2時間30分/再入場不可/購入者本人同行・分配等を確認。一般発売日の新記載なし。",
+      "sha256": "7b001d9c1a70d58e20f2499e7d8f1b33497c9d7ab375c6cc5004a794a1e42f1d"
+    },
+    {
+      "sourceId": "christmas-ticket-details",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "observedAt": "2026-10-14T23:07:22.789+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "スマホ必須、当日確認書類、指定開始から2時間30分、キャンセル日時変更不可、ゲーム1種類1回等の入場案内を確認。予約/購入操作なし。",
+      "sha256": "f869f98543e5bffc6996e94a231e0c773656c23a694f6bd1745666af8b01ace8"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "observedAt": "2026-10-14T23:07:24.523+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "7/8～10/31のちいかわジオラマ・館内フォトスポットを本文確認。特段表記なしは入館料のみ、既存スポットに反映済みの内容と一致。",
+      "sha256": "0e6c7ea4c28920c642afb92af4da8e7a1c12c0a8af5a54f70869e3117c23d491"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "observedAt": "2026-10-14T23:07:24.909+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "施設公式トップの所在地・施設案内を確認。ちいかわ会場の新しい終了・変更告知は表示本文にない。",
+      "sha256": "da30757c68f1b66e3f8bd47408996ad9bea3c95bcd380710bb49857f7a0a7c06"
+    },
+    {
+      "sourceId": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "observedAt": "2026-10-14T23:07:27.207+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "ホームの新着は読書雑貨・カカオティエ等。ちいかわバルーン固有フロア・撮影時間・料金の追加一次情報は確認せず。",
+      "sha256": "768a1a550cf43b4fee4e3ba7e49b3a35ac37fa3bf7d6a87089c35bbefd7889e1"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-facilities",
+      "url": "https://museum.jr-central.co.jp/facilities/index.html",
+      "observedAt": "2026-10-14T23:07:24.442+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "一般営業時間10～17:30、最終入館30分前、入館料・火曜定休の案内を確認。個別カレンダーは別結果。",
+      "sha256": "84d269db148961427de0b1219bac1986b069f85d0973c2edb0f829cc0715af47"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-calendar-2026",
+      "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "observedAt": "2026-10-14T23:09:39.955+00:00",
+      "result": "fetch_failed",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 404,
+      "summary": "初回取得はPDFバイナリをテキストとして誤解析したため成功にしない。正規PDF再取得はHTTP404。前回成功時刻を保持し、カレンダー変更や休館日なしとは結論しない。",
+      "sha256": "cb925f8ed6e748aff1529682222c8052da4084bdd733d8956c98a60d8992a48a"
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "observedAt": "2026-10-14T23:07:27.937+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "9/18発表、9月下旬から順次・限定デザイン5種、店により時期/取扱い差、ECは詳細後日。新たな確定発売日・終期なし。",
+      "sha256": "f5cb8c72ec453d28769fedab88947c69e064fffdc88a338de8bc7090469a16d4"
+    },
+    {
+      "sourceId": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "observedAt": "2026-10-14T23:07:27.244+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "有効購入7/16～8/31、アップロード7/16 9時～9/1 23:59、応募7/16 9時～9/8 23:59。PR42修正後データと一致。",
+      "sha256": "2f83e1c3008d9f09d5a8f97162ccb9f1611807184d96150345666e85f75cfd58"
+    },
+    {
+      "sourceId": "corporate-bandai-chiikawa-phone-campaign",
+      "url": "https://toy.bandai.co.jp/ja/topics/01_21085/",
+      "observedAt": "2026-10-14T23:07:27.682+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "8/26告知の一般玩具購入特典10/31～数量終了、対象商品/ステッカー特典を再確認。既存の日次判断どおり一般商品単独展開のため新コラボ掲載対象にしない。",
+      "sha256": "be59ad8bf4c63ce30df0477b4d43e601c0b95395a8cdd4caa50b9ff05b75eb5f"
+    },
+    {
+      "sourceId": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "observedAt": "2026-10-14T23:07:28.084+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "表示最新記事は10/9。ちいかわ関連は10/2あいうえお絵本の一般書籍発売、日次の新規対象企画なし。全記事/全グッズ網羅ではない。",
+      "sha256": "ecdc20d296ecf863e8a659741c3905ac26103d589e89836193b5730885941bcf"
+    },
+    {
+      "sourceId": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "observedAt": "2026-10-14T23:07:28.471+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "公式通販トップの表示商品群を確認。同名に近いチャーム付きライナーは通常商品の可能性があるため、ちいかわコラボEC開始の根拠にはしない。",
+      "sha256": "e0af8b61eba24ed64d261811c0632c2041adaff321e448bc58788fd4c6563aaf"
+    },
+    {
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "observedAt": "2026-10-14T23:07:27.394+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "2721件の表示先頭を確認。前朝比の追加1件は10/14の秋アニメ需要予測レポートであり、ちいかわの新規開催・企業コラボ告知ではない。10/13のパーク・まじかるぬいぐるみ・ぽけっとは既知。表示範囲外の不存在は保証しない。",
+      "sha256": "49b5318da1f8f7073ef40f1bcc16b9d78a39cec92ac327eca91e7d68c37cd7a5"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-access",
+      "url": "https://museum.jr-central.co.jp/access/",
+      "observedAt": "2026-10-14T23:07:28.276+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "公式所在地名古屋市港区金城ふ頭3-2-2とあおなみ線金城ふ頭駅アクセスを再確認。",
+      "sha256": "90950f461e7cc30f8670d32e4aef866cf1e0713020dce0ba9fc3d555d14b680d"
+    },
+    {
+      "sourceId": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "observedAt": "2026-10-14T23:07:31.505+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "イベント4件/ニュース1件の表示を再読。巨大バルーン単独案内は表示一覧になく、フロア・撮影時間・料金未解決。未開催や終了とは解釈しない。",
+      "sha256": "eeabfc705edd5f07fe7609998b3b11ed45edae91a8bb353e2b06db9b12661f1f"
+    },
+    {
+      "sourceId": "kitte-osaka-facility-access",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+      "observedAt": "2026-10-14T23:07:31.563+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "所在地大阪市北区梅田3-2-2を再確認。既存同一建物の根拠と一致。展示固有案内ではない。",
+      "sha256": "7bc546779b9e7f9d716150cd741c7aafb8af191b5a7609581de2273541deaa08"
+    },
+    {
+      "sourceId": "kitte-osaka-facility-hours",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+      "observedAt": "2026-10-14T23:07:31.554+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+      "sha256": "dbe8a3b77738f39f207943fb3b65aa530a1697d873226af8852f24789b6fcdea"
+    },
+    {
+      "sourceId": "corporate-magical-gororin-release-20261013",
+      "url": "https://prtimes.jp/main/html/rd/p/000000078.000168561.html",
+      "observedAt": "2026-10-14T23:07:31.750+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/13 18時～10/20正午受注、2027年2月下旬頃発送予定の一般ぬいぐるみ3種。会場・企業コラボ追加に該当せず昨日の対象外判断を維持。",
+      "sha256": "c81e22c11bcee5b7f4d8d4cd754e4d1bcf6c99fb53ba01c949f3c17bfe999f02"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-escape-delivery-kit",
+      "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+      "observedAt": "2026-10-14T23:09:05+00:00",
+      "result": "success",
+      "method": "web text retrieval after direct HTTP403",
+      "httpStatus": null,
+      "summary": "直接取得403後、web本文を確認。10/9～22、10/16～29、10/23～11/3プレイ用の配送キット表示と各順次発送日を確認。会期7/24～11/3・最終日20時を再確認。在庫・決済実行は未確認。",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "observedAt": "2026-10-14T23:09:23.117+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "特設本文に10月末まで受付予定、新規・アップグレード先着99,000名/既存会員抽選1,000名、年会費3,000円。先着上限到達の終了表示は確認せず。応募導線はあるが遷移先の動的本文は読めず、受付稼働や残数は保証しない。",
+      "sha256": "83110b6944be769be1b5671ddbd0def9c26e85028e059aaad20dc28c4815db0a"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-theater-notice",
+      "url": "https://www.tohotheater.jp/campaign/tohoone-chiikawa.html",
+      "observedAt": "2026-10-14T23:09:21.791+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "TOHOシネマズ公式がキャンペーン実施中、7/17 00:00～10/31 23:59を明記。上限に達した場合の早期終了注意はあるが、既に終了した表示はない。",
+      "sha256": "ef1a047f27582371d368467c48e70e202d1d13fd289fc5d1cfccb6767574dc62"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000027.000054370.html",
+      "observedAt": "2026-10-14T23:09:22.695+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "東宝公式PRの発表は7/17 12時。新規先着・既存抽選の両方が10/31 23:59まで受付。元登録出典と現在の企画期間一致、past分類の根拠なし。",
+      "sha256": "6ec8cfd144af84507a6beb00fcea8b9737d8073524ddfd6e5a83aaa4d0ec5dd1"
+    },
+    {
+      "sourceId": "toho-baby-club-index",
+      "url": "https://www.tohotheater.jp/service/baby_club_theater/index.html",
+      "observedAt": "2026-10-14T23:09:21.762+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "10/15にすすきの・錦糸町・新居浜・ららぽーと福岡で映画ちいかわのベイビークラブ上映を確認。通常の定例映画館サービスとして今回の限定イベント掲載へは広げない。",
+      "sha256": "810b2eeab3a2d9d9d3d0717ef9a02dbeb9b3df8e0c8f435ee03caa1a0692b84a"
+    },
+    {
+      "sourceId": "toho-fukuoka-events",
+      "url": "https://www.tohotheater.jp/theater/087/info/event/",
+      "observedAt": "2026-10-14T23:09:21.812+00:00",
+      "result": "success",
+      "method": "cloud normal HTTPS GET",
+      "httpStatus": 200,
+      "summary": "ららぽーと福岡のベイビークラブ連日企画に10/23・26の13時ちいかわ上映を確認。通常の映画館サービスで、企業コラボや限定応援上映とは別に記録し公開追加しない。",
+      "sha256": "294fa18ea90512dba96383f170af4ccf3bba2b29579b3a2f43c7f3d3fda16d91"
+    }
+  ],
+  "imageObservations": [
+    {
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_main.jpg",
+      "status": 200,
+      "observedAt": "2026-10-14T23:09:40.590+00:00",
+      "sha256": "9874b9ec45c9dfbe88aeb49b31140f7cbae0364359df4179f5bb0e3cdea82459",
+      "sameBytesAs20261014": true
+    },
+    {
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_a02.png",
+      "status": 200,
+      "observedAt": "2026-10-14T23:09:40.230+00:00",
+      "sha256": "b80962e9decdc2d8817be9cb28daf5398b3486a711c6fa139dbf08577a9246b6",
+      "sameBytesAs20261014": true
+    },
+    {
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_f11.png",
+      "status": 200,
+      "observedAt": "2026-10-14T23:09:39.999+00:00",
+      "sha256": "c5ef37b565f33d61271f548321432a975d1335c7abc3de41642b3b9b8d861fbf",
+      "sameBytesAs20261014": true
+    },
+    {
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/assets/img/main/contents/theater/schedule.webp",
+      "status": 200,
+      "observedAt": "2026-10-14T23:09:39.464+00:00",
+      "sha256": "57362541be8a53a6543f33e8dbb07f089df503a87a986407e213e343d598f15c",
+      "sameBytesAs20261014": true
+    },
+    {
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+      "status": 200,
+      "observedAt": "2026-10-14T23:09:37.991+00:00",
+      "sha256": "b38078c2b409408fcd85a91b4ab9f1a38472915bb7c60b3eee629a3fd14f6dd2",
+      "sameBytesAs20261014": true
+    },
+    {
+      "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "error": "HTTP Error 404: Not Found",
+      "observedAt": "2026-10-14T23:09:39.955+00:00"
+    }
+  ],
+  "newAnnouncements": [],
+  "readyListingChanges": [
+    "toho-one-current-status-correction-20261015"
+  ],
+  "heldCandidates": [
+    "jr-central-kitte-osaka-balloon-2026-venue-review"
+  ],
+  "next72Hours": [
+    {
+      "title": "ちいかわクリスマスマーケット先行抽選",
+      "opensAt": "2026-10-15T12:00:00+09:00",
+      "alreadyListed": true
+    },
+    {
+      "title": "TOHO7劇場ペンライト応援上映",
+      "startsAt": "2026-10-16T19:00:00+09:00",
+      "alreadyListed": true,
+      "ticketSalesOpenedAt": "2026-10-09T00:00:00+09:00"
+    }
+  ],
+  "limitations": [
+    "本文・選択画像・通常検索で確認した範囲のみ。全SNS、現在在庫、残席、KADOKAWAアプリ要項の網羅確認ではない。",
+    "メトロ特設本文は取得/解析失敗。リニア・鉄道館カレンダー再取得は404。前回成功時刻を保持。",
+    "KITTE大阪の固有フロア・撮影時間・料金は一次情報で確定せず。"
+  ]
+}

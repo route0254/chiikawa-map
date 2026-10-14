@@ -1,0 +1,54 @@
+{
+  "reviewDate": "2026-10-15",
+  "completedAt": "2026-10-14T23:13:01.542+00:00",
+  "listingId": "toho-one-movie-chiikawa-2026",
+  "changeType": "existing_status_correction",
+  "sources": [
+    {
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "observedAt": "2026-10-14T23:09:23.117+00:00",
+      "summary": "特設本文に10月末まで受付予定、新規・アップグレード先着99,000名/既存会員抽選1,000名、年会費3,000円。先着上限到達の終了表示は確認せず。応募導線はあるが遷移先の動的本文は読めず、受付稼働や残数は保証しない。"
+    },
+    {
+      "url": "https://www.tohotheater.jp/campaign/tohoone-chiikawa.html",
+      "observedAt": "2026-10-14T23:09:21.791+00:00",
+      "summary": "TOHOシネマズ公式がキャンペーン実施中、7/17 00:00～10/31 23:59を明記。上限に達した場合の早期終了注意はあるが、既に終了した表示はない。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000027.000054370.html",
+      "observedAt": "2026-10-14T23:09:22.695+00:00",
+      "summary": "東宝公式PRの発表は7/17 12時。新規先着・既存抽選の両方が10/31 23:59まで受付。元登録出典と現在の企画期間一致、past分類の根拠なし。"
+    }
+  ],
+  "sourceRanges": [
+    {
+      "url": "https://www.tohotheater.jp/campaign/tohoone-chiikawa.html",
+      "section": "キャンペーン期間",
+      "excerpt": "2026年7月17日（金）00：00～2026年10月31日（土）23：59"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000027.000054370.html",
+      "section": "既存会員のエントリー期間・受付期間",
+      "summary": "両区分とも2026年10月31日23:59まで。7月17日12時発表。"
+    },
+    {
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "section": "SCHEDULEおよび注意事項",
+      "summary": "10月末受付終了予定、先着上限到達時は終了。既存会員の応募導線が現存。"
+    }
+  ],
+  "initialClassification": {
+    "commit": "1b053287663a1275abbdffc7ed2e792d59dc478b",
+    "url": "https://github.com/route0254/chiikawa-map/commit/1b053287663a1275abbdffc7ed2e792d59dc478b",
+    "commitTitle": "Add collaboration catalog",
+    "initialStatus": "past",
+    "initialEndDate": null,
+    "comparison": "9/2初回追加のレコードと今回訂正前レコードが一致。後日終了確認による移動は確認できない。"
+  },
+  "conclusion": "開催中の企画として同じIDをcurrentへ移し、10/31の受付終期と先着分の早期終了条件を明記する。",
+  "limitations": [
+    "公開案内の確認であり、先着枠の残数・ログイン後の申込稼働は確認していない。",
+    "明示的な早期終了・上限到達告知は確認した公式3ページと検索結果では見つからなかった。"
+  ],
+  "publishedAt": null
+}
