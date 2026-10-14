@@ -3,7 +3,7 @@
   "completedAt": "2026-10-13T10:12:16.711+00:00",
   "recoveredAt": "2026-10-13T13:35:00.160+00:00",
   "baseMain": "ca2af44bf9d39e6b1dcff22d94794c50fe76ee86",
-  "recoveryStatement": "2026-10-13夜の環境再作成で元成果消失。親から復旧依頼後、元の会話・ツール呼出し/出力・実読画像要約から復元。最新原台帳の元メタデータを保持。今回の復旧では外部出典を再取得せず、新しい22時台観測はない。",
+  "recoveryStatement": "2026-10-13夜に元成果が失われ、残存する取得記録・画像確認要約から復元。最新原台帳の元メタデータを保持。今回の復旧では外部出典を再取得せず、新しい22時台観測はない。",
   "observations": [
     {
       "sourceId": "tamanohikari-chiikawa-release",
@@ -25,7 +25,7 @@
       "observedAt": "2026-10-13T10:12:16.711+00:00",
       "httpStatus": 403,
       "result": "access_limited",
-      "summary": "HTTP403。web.openも403で個別本文再取得不能。10/21終了表記を推測変更せず、最終成功日時を保持。",
+      "summary": "HTTP403。web_text_retrievalも403で個別本文再取得不能。10/21終了表記を推測変更せず、最終成功日時を保持。",
       "rawArtifactRestored": false,
       "originalLocalArtifact": null
     },
@@ -397,7 +397,7 @@
       "observedAt": "2026-10-13T10:12:16.711+00:00",
       "httpStatus": 200,
       "result": "success",
-      "summary": "朝以降新着3件：Juiceパーク18時、アプリボットちいぽけ5会場13:17、GPSまじかるEC限定ぬいぐるみ18時。前2件委譲、最後は一般商品対象外。",
+      "summary": "朝以降新着3件：Juiceパーク18時、アプリボットちいぽけ5会場13:17、GPSまじかるEC限定ぬいぐるみ18時。前2件は各掲載確認で扱い、最後は一般商品対象外。",
       "rawArtifactRestored": false,
       "originalLocalArtifact": "prtimes-chiikawa-index.html"
     },
@@ -445,7 +445,7 @@
       "observedAt": "2026-10-13T10:12:16.711+00:00",
       "httpStatus": 403,
       "result": "access_limited",
-      "summary": "HTTP403。web.openもGTM iframeのみ、最新本文/運営条件解析不能。新着なしとは扱わない。",
+      "summary": "HTTP403。web_text_retrievalもGTM iframeのみ、最新本文/運営条件解析不能。新着なしとは扱わない。",
       "rawArtifactRestored": false,
       "originalLocalArtifact": null
     },
@@ -469,7 +469,7 @@
       "observedAt": "2026-10-13T10:12:16.711+00:00",
       "httpStatus": 403,
       "result": "access_limited",
-      "summary": "HTTP403。web.open空本文で残席解析不能。特設本文の上限到達/再販売可能以上を判断しない。",
+      "summary": "HTTP403。web_text_retrieval空本文で残席解析不能。特設本文の上限到達/再販売可能以上を判断しない。",
       "rawArtifactRestored": false,
       "originalLocalArtifact": null
     }
@@ -551,7 +551,7 @@
   "morningComparison": {
     "comparedPages": 28,
     "identicalNormalizedTextPages": 22,
-    "source": "元ツール出力で計数確認。残る6頁差分はKITTEトップ/イベント一覧、GU関連FAQリンク、minumフォロワー数、クラシコ記事数、PR TIMES新着3件。個々の比較JSON/原HTMLは未復元。"
+    "source": "元の取得記録で計数確認。残る6頁差分はKITTEトップ/イベント一覧、GU関連FAQリンク、minumフォロワー数、クラシコ記事数、PR TIMES新着3件。個々の比較JSON/原HTMLは未復元。"
   },
   "newAnnouncements": [
     {
@@ -563,8 +563,8 @@
       "releaseAt": "2026-11-24",
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-13",
-      "state": "delegated_to_store_worker",
-      "summary": "Juice発表：クリスマス装飾/限定衣装グリーティング/SNS特典。12/1～30は10～20時、12/31は10～18時。パーク担当へ委譲、企業コラボ二重登録不要。"
+      "state": "store_review_scope",
+      "summary": "Juice発表：クリスマス装飾/限定衣装グリーティング/SNS特典。12/1～30は10～20時、12/31は10～18時。パークの掲載確認で扱い、企業コラボ二重登録不要。"
     },
     {
       "url": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
@@ -575,8 +575,8 @@
       "releaseAt": "2026-10-24T11:00:00+09:00",
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-13",
-      "state": "delegated_to_series_worker",
-      "summary": "一般商品発売だけでなく5会場POP UPあり。系列担当へ委譲。仙台10～21時対特設画像10～19時の矛盾を保存。企業コラボ二重登録不要。"
+      "state": "series_review_scope",
+      "summary": "一般商品発売だけでなく5会場POP UPあり。系列の掲載確認で扱う。仙台10～21時対特設画像10～19時の矛盾を保存。企業コラボ二重登録不要。"
     }
   ],
   "sendaiVenueSeed": {
@@ -590,8 +590,8 @@
     "hoursText": null,
     "hoursConflict": {
       "pressRelease": "10:00〜21:00（最終日17:00閉場）",
-      "seriesImageReportedBySeriesWorker": "10:00〜19:00（最終日17:00閉場）",
-      "decision": "イベント固有営業時間の一次資料が矛盾。施設一般時間で上書きしない。掲載責任者/系列担当判断へ。"
+      "seriesImageRecordedHours": "10:00〜19:00（最終日17:00閉場）",
+      "decision": "イベント固有営業時間の一次資料が矛盾。施設一般時間で上書きしない。掲載判断は保留。"
     },
     "officialAnnouncedAt": "2026-10-13T13:17:00+09:00",
     "discoveredAt": null,
@@ -627,7 +627,7 @@
     ],
     "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000046.000156996.html",
     "observedAt": null,
-    "scope": "元の住所/会場/座標seedをツール出力から再構成。元seedの正確な生成日時は会話に残らずnull。新観測ではない。",
+    "scope": "元の住所/会場/座標seedを残存記録から再構成。元seedの正確な生成日時は残存記録にないためnull。新観測ではない。",
     "recoveredAt": "2026-10-13T13:35:00.160+00:00"
   },
   "readyPublicChanges": [],

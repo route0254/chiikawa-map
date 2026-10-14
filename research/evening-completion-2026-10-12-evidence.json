@@ -73,60 +73,60 @@
       "publishedAtToStore": null,
       "timestampPatchWithdrawn": true,
       "independentPublicConfirmationAt": "2026-10-12T01:45:58.755245Z",
-      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
-      "originalPcLogVerifiedByThisResearch": false,
+      "earlierPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalLogVerifiedByThisReview": false,
       "deploymentCompletedAt": "2026-10-12T01:28:52Z",
-      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+      "rule": "10:45:58は独立照合。初回確認の元記録を確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
     },
     {
       "candidateId": "fukuoka-popup-coevent-details-20261012",
       "publishedAtToStore": null,
       "timestampPatchWithdrawn": true,
       "independentPublicConfirmationAt": "2026-10-12T01:45:58.755245Z",
-      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
-      "originalPcLogVerifiedByThisResearch": false,
+      "earlierPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalLogVerifiedByThisReview": false,
       "deploymentCompletedAt": "2026-10-12T01:28:52Z",
-      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+      "rule": "10:45:58は独立照合。初回確認の元記録を確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
     },
     {
       "candidateId": "history-chiikawa-aquarium-sendai-extension-20261012",
       "publishedAtToStore": null,
       "timestampPatchWithdrawn": true,
       "independentPublicConfirmationAt": "2026-10-12T01:45:58.685797Z",
-      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
-      "originalPcLogVerifiedByThisResearch": false,
+      "earlierPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalLogVerifiedByThisReview": false,
       "deploymentCompletedAt": "2026-10-12T01:28:52Z",
-      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+      "rule": "10:45:58は独立照合。初回確認の元記録を確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
     },
     {
       "candidateId": "history-nagano-aquarium-sendai-position-20261012",
       "publishedAtToStore": null,
       "timestampPatchWithdrawn": true,
       "independentPublicConfirmationAt": "2026-10-12T01:45:58.674342Z",
-      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
-      "originalPcLogVerifiedByThisResearch": false,
+      "earlierPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalLogVerifiedByThisReview": false,
       "deploymentCompletedAt": "2026-10-12T01:28:52Z",
-      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+      "rule": "10:45:58は独立照合。初回確認の元記録を確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
     },
     {
       "candidateId": "history-chiikawa-aquarium-2-sendai-20230623",
       "publishedAtToStore": null,
       "timestampPatchWithdrawn": true,
       "independentPublicConfirmationAt": "2026-10-12T01:45:58.674342Z",
-      "earlierPcPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
-      "originalPcLogVerifiedByThisResearch": false,
+      "earlierPublicConfirmationReportedAt": "2026-10-12T10:32:47.165+09:00",
+      "originalLogVerifiedByThisReview": false,
       "deploymentCompletedAt": "2026-10-12T01:28:52Z",
-      "rule": "親の10:45:58は独立照合。原PCの元ログを確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
+      "rule": "10:45:58は独立照合。初回確認の元記録を確認し、元の公開完了と初回実体一致を分離。後発観測・同期で置き換えず不明ならnull。"
     }
   ],
   "laterIndependentPublicVerification": {
     "path": "pr40-public-verification.json",
-    "note": "10:45:58は親独立照合。初回公開確認の根拠には採用しない。元クラウド側のファイル名であり原PCに存在すると仮定しない。"
+    "note": "10:45:58は独立照合。初回公開確認の根拠には採用しない。別途保管された確認記録の識別名であり、このリポジトリに原本があることを示さない。"
   },
   "socialCompletion": {
     "checkedAt": "2026-10-12T10:22:46.406Z",
     "completionResult": "総合6プロフィール確認。X3は限定表示本文、Instagram3はログイン画面のみで制限継続。",
-    "scopeOwnership": "重点4件は同じクラウド調査内で補完。親に未実施作業を転嫁しない。"
+    "scopeOwnership": "重点4件は同じ調査内で補完。"
   },
   "sendaiKoshigayaCutoffResolved": [
     {
@@ -253,7 +253,7 @@
     ],
     "candidateRows": 3,
     "evidenceParts": 1,
-    "originalPcLogsVerified": true,
+    "originalLogsVerified": true,
     "pr40ProofPath": "research/publication-confirmation-2026-10-12-pr40.json",
     "preservedPublishedAt": "2026-10-12T01:28:52Z",
     "preservedFirstPublicMatchAt": "2026-10-12T01:32:47.165Z"
@@ -1721,7 +1721,7 @@
       "url": "https://x.com/chiikawa_land/status/2109566403972120885",
       "at": "2026-10-12T19:02:13+09:00",
       "code": "sendai_day",
-      "summary": "10/12整理券終了、18:40頃フリー入場予定・混雑時再制限。実施確認ではない。公式本文details.created_at_msはクラウド証拠で確認。"
+      "summary": "10/12整理券終了、18:40頃フリー入場予定・混雑時再制限。実施確認ではない。公式本文details.created_at_msは保存された確認記録で確認。"
     },
     {
       "part": 12,

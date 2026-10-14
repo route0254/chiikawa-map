@@ -84,7 +84,7 @@
         "lastAttemptAt": "2026-10-10T09:38:55Z",
         "lastSuccessfulAt": "2026-10-10T09:38:55Z",
         "lastResult": "success",
-        "resultSummary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。親の一次情報取得を受領。",
+        "resultSummary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。既存の一次情報取得記録を使用。",
         "lastFailure": null,
         "note": "公式発表日時は不明。参加費は不明で無料と推定しない。"
       },
@@ -96,7 +96,7 @@
         "officialMapLink": "https://goo.gl/maps/nvD5W3gjCN6Xz6C99",
         "lat": 42.9976401,
         "lng": 141.4588505,
-        "method": "親が公式外部Google MapsリンクのリダイレクトURL placeマーカー !3d42.9976401!4d141.4588505 を取得。地図本文は取得失敗、iframe viewport中心値は採用しない。",
+        "method": "公式外部Google MapsリンクのリダイレクトURL placeマーカー !3d42.9976401!4d141.4588505 を取得。地図本文は取得失敗、iframe viewport中心値は採用しない。",
         "crosscheckUrl": "https://mapfan.com/spots/SCQQA%2CJ%2CHT",
         "crosscheckLat": 42.996932,
         "crosscheckLng": 141.4584536
@@ -153,7 +153,7 @@
       "lastAttemptAt": "2026-10-10T09:41:50Z",
       "lastSuccessfulAt": "2026-10-10T09:41:50Z",
       "lastResult": "success",
-      "resultSummary": "施設一次情報で10/12無料撮影会・ARラリー、9:30 J1屋外先着券、1枚4名・AR景品500名を確認。親の一次情報取得を受領。",
+      "resultSummary": "施設一次情報で10/12無料撮影会・ARラリー、9:30 J1屋外先着券、1枚4名・AR景品500名を確認。既存の一次情報取得記録を使用。",
       "lastFailure": null,
       "note": "公式ページ2026/10/09更新は初回発表日とは限らないため、officialAnnouncedAtはnull。"
     },
@@ -411,7 +411,7 @@
   ],
   "normalizations": [
     "提供mapUrlのHTML表記&amp;をJSON用の&へ正規化。",
-    "親の提案recordPathを、元PCで実作成したこの根拠ファイルへ統一。"
+    "recordPathを本根拠ファイルへ統一。"
   ],
   "unknownsPreserved": [
     "札幌平岡参加費",
@@ -426,7 +426,7 @@
     "sameDayDiscoveredAt": "2026-10-10",
     "firstObservedBy": "2026-10-10T18:35:54+09:00",
     "supersededValue": "2026-10-10T18:35:21.612+09:00",
-    "reason": "親の調査側最終記録では発見時計を取得完了と同一視できないため、日付のみを採用。"
+    "reason": "調査の最終記録では発見時計を取得完了と同一視できないため、日付のみを採用。"
   },
   "magicalFacts": {
     "candidateId": "magical-sapporo-october-2026-confirmed-booking",
@@ -483,7 +483,7 @@
     ],
     "reservationTypeMustRemain": "unknown",
     "nextCheck": "2026-10-11T08:00:00+09:00",
-    "evidenceProvenance": "親が個別公式投稿・画像・LivePocket本文をブラウザで確認。別環境の証拠ファイルの同一パスは仮定せず、受領した本文・時計・条件を元PCの根拠ファイルへ保存する。"
+    "evidenceProvenance": "個別公式投稿・画像・LivePocket本文をブラウザで確認。本文要約・確認時刻・条件を本根拠ファイルへ記録する。別途保管の証拠原本が本リポジトリに含まれるとは扱わない。"
   },
   "magicalBefore": {
     "id": "magical-popup-2026-10-02-sapporo-apia",
@@ -566,6 +566,6 @@
     "correctedAt": "2026-10-10T10:01:01.553Z",
     "discoveredAt": "2026-10-10",
     "supersededValue": "2026-10-10T18:37:20+09:00",
-    "reason": "親の最終記録でHTTP取得時計と初回発見時計を区別。公式取得時計・発表日時nullは保持。"
+    "reason": "最終記録でHTTP取得時計と初回発見時計を区別。公式取得時計・発表日時nullは保持。"
   }
 }

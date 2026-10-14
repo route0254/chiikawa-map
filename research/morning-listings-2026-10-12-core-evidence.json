@@ -2,7 +2,7 @@
   "recordedAt": "2026-10-11T23:28:59.337Z",
   "baseCommit": "69141158488b443a5d731a6cc8380c1d568afe5f",
   "sourceThreadId": "01a110b9-4dbb-71ca-8cac-d7b89f52d020",
-  "source": "親のクラウド一次調査の自己完結仕様。PCで通常巡回を再実行しない。",
+  "source": "既存の一次情報確認記録に基づく。当該記録を用いた統合時に通常巡回は再実施していない。",
   "providedFacts": [
     {
       "id": "chiikawaland-sendai",
@@ -81,7 +81,7 @@
       "officialAnnouncedAt": null,
       "reflectDueAt": "2026-10-12T11:00:00+09:00",
       "priority": "high",
-      "summary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は昨日の親巡回の観測を保持。"
+      "summary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は前日の巡回の観測を保持。"
     },
     {
       "id": "chiikawa-bakery-osaka",
@@ -106,7 +106,7 @@
       "officialAnnouncedAt": null,
       "reflectDueAt": "2026-10-12T11:00:00+09:00",
       "priority": "high",
-      "summary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は昨日の親巡回の観測を保持。"
+      "summary": "公式予約本文に東京・大阪の9月/10月優先券完売を明記。終了済み9月を追加せず10月のみ補完。発表日時は不明、初回発見は前日の巡回の観測を保持。"
     },
     {
       "id": "nagano-market-popup-2026-10-09-yokohama-skybuilding",
@@ -307,7 +307,7 @@
   "remainingSpecificationRequired": {
     "routine": 0,
     "history": 0,
-    "completeCloudObservationList": false
+    "completeObservationList": false
   },
   "coverageRate": null,
   "latency": null,

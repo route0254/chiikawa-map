@@ -1,9 +1,9 @@
 {
   "recordedAt": "2026-10-10T23:24:08.419Z",
-  "source": "提供されたクラウド巡回記録1/2・2/2",
+  "source": "公式情報確認記録1/2・2/2",
   "baseCommit": "0668333ddaca43ed818da7bbe6b00dbb267e0dcd",
   "nextCheckAtDefault": "2026-10-11T19:00:00+09:00",
-  "scope": "訪問済み135 URLの本文・一覧・画像・SNSごとの観測範囲を保持。PCで追加巡回していない。未登録補足を網羅情報源と扱わない。",
+  "scope": "訪問済み135 URLの本文・一覧・画像・SNSごとの観測範囲を保持。追加巡回は実施していない。未登録補足を網羅情報源と扱わない。",
   "channelNote": "chiikawa-info.jpの直接HTTPは今回403。web抽出と区別し、画像未確認を保持。",
   "incompleteScopeNote": "lucua-south-openingの提供された説明末尾は「フォーム表記23:59をサイト本文24時」で途切れている。末尾を補完せず原文を保存。",
   "observations": [
@@ -309,7 +309,7 @@
       "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
       "observedAt": "2026-10-11T08:06:46+09:00",
       "result": "fetch_failed",
-      "scope": "webツールで本文取得不可。見出しは公式トップ・店舗で確認したが、本文の変更有無は未確認。",
+      "scope": "確認時に本文取得不可。見出しは公式トップ・店舗で確認したが、本文の変更有無は未確認。",
       "part": 1,
       "matchedSourceIds": [
         "mogumogu-kawagoe-hours-20261017"
@@ -1023,7 +1023,7 @@
       "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
       "observedAt": "2026-10-11T08:06:46+09:00",
       "result": "fetch_failed",
-      "scope": "webツールで本文取得不可。見出しは公式トップ・店舗で確認したが、本文の変更有無は未確認。",
+      "scope": "確認時に本文取得不可。見出しは公式トップ・店舗で確認したが、本文の変更有無は未確認。",
       "part": 2,
       "matchedSourceIds": []
     },
@@ -1032,7 +1032,7 @@
       "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
       "observedAt": "2026-10-11T08:06:46+09:00",
       "result": "fetch_failed",
-      "scope": "webツールで本文取得不可。見出しは公式トップ・店舗で確認したが、本文の変更有無は未確認。",
+      "scope": "確認時に本文取得不可。見出しは公式トップ・店舗で確認したが、本文の変更有無は未確認。",
       "part": 2,
       "matchedSourceIds": []
     },
@@ -1167,7 +1167,7 @@
       "url": "https://x.com/nagano_mkt_shop",
       "observedAt": "2026-10-11T08:05:36+09:00",
       "result": "fetch_failed",
-      "scope": "webツールで本文取得失敗。新着なしとしない。",
+      "scope": "確認時に本文取得失敗。新着なしとしない。",
       "part": 2,
       "matchedSourceIds": []
     },

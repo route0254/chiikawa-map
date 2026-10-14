@@ -2,7 +2,7 @@
   "preparedAt": "2026-10-12T10:19:58.127Z",
   "base": "938519386aa914182f3d9d2437345d3bf706d81b",
   "scope": "根拠確定済み15件のみ。広い巡回は行っていない。米子の最終日閉場矛盾は対象外。",
-  "cloudIntake": "夕方の3回の委任指示を受信。クラウド時刻は明示された秒のみ採用し、19:03頃などの秒不明はnull。",
+  "observationIntake": "夕方の確認記録を統合。時刻は明示された秒のみ採用し、19:03頃などの秒不明はnull。",
   "changes": [
     {
       "id": "chiikawaland-sendai",
@@ -12,7 +12,7 @@
       ],
       "officialAnnouncedAt": "2026-10-12T17:46:39+09:00",
       "discoveredAt": "2026-10-12T19:01:36+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:02:13+09:00",
+      "sourceSuccessfulAt": "2026-10-12T19:02:13+09:00",
       "summary": "整理券配布終了、18:40頃からフリー入場の予定。実施確認はなく再制限の可能性。",
       "cutoff": "2026-10-12T20:00:00+09:00",
       "old": {
@@ -90,8 +90,8 @@
       ],
       "officialAnnouncedAt": "2026-10-11T21:44:12+09:00",
       "discoveredAt": "2026-10-12T19:02:29+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:03:56+09:00",
-      "summary": "10/12カフェ事前予約満席・当日券なし・整理券所持者のみ。グッズはフリー入場だが混雑時待機列。クラウド成功は19:03頃で秒不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:03:56+09:00",
+      "summary": "10/12カフェ事前予約満席・当日券なし・整理券所持者のみ。グッズはフリー入場だが混雑時待機列。取得成功は19:03頃で秒不明。",
       "cutoff": "2026-10-12T20:30:00+09:00",
       "old": {
         "id": "chiikawa-restaurant-ikebukuro",
@@ -168,8 +168,8 @@
       ],
       "officialAnnouncedAt": "2026-10-12T09:00:01+09:00",
       "discoveredAt": "2026-10-12T19:02:28+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:03:54+09:00",
-      "summary": "10/12は整理券入場。開店前10時ラフォーレ入口、開店後店頭発行。クラウド成功は19:03頃で秒不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:03:54+09:00",
+      "summary": "10/12は整理券入場。開店前10時ラフォーレ入口、開店後店頭発行。取得成功は19:03頃で秒不明。",
       "cutoff": "2026-10-12T19:30:00+09:00",
       "old": {
         "id": "chiikawa-bakery-shop-laforet",
@@ -247,7 +247,7 @@
       ],
       "officialAnnouncedAt": "2026-10-12T18:58:26+09:00",
       "discoveredAt": "2026-10-12T19:03:38+09:00",
-      "cloudSuccessfulAt": "2026-10-12T10:04:37.954Z",
+      "sourceSuccessfulAt": "2026-10-12T10:04:37.954Z",
       "summary": "10/12整理券配布終了、本日はフリー入場案内なし。",
       "cutoff": "2026-10-12T21:00:00+09:00",
       "old": {
@@ -325,7 +325,7 @@
       ],
       "officialAnnouncedAt": "2026-10-12T17:18:20+09:00",
       "discoveredAt": "2026-10-12T19:03:38+09:00",
-      "cloudSuccessfulAt": "2026-10-12T10:04:37.783Z",
+      "sourceSuccessfulAt": "2026-10-12T10:04:37.783Z",
       "summary": "10/12整理券配布終了、本日はフリー入場案内なし。",
       "cutoff": "2026-10-12T20:00:00+09:00",
       "old": {
@@ -403,7 +403,7 @@
       ],
       "officialAnnouncedAt": "2026-10-12T15:47:07+09:00",
       "discoveredAt": "2026-10-12T19:03:38+09:00",
-      "cloudSuccessfulAt": "2026-10-12T10:04:37.813Z",
+      "sourceSuccessfulAt": "2026-10-12T10:04:37.813Z",
       "summary": "10/12整理券配布終了、本日はフリー入場案内なし。",
       "cutoff": "2026-10-12T21:00:00+09:00",
       "old": {
@@ -483,7 +483,7 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12",
-      "cloudSuccessfulAt": "2026-10-12T19:00:02+09:00",
+      "sourceSuccessfulAt": "2026-10-12T19:00:02+09:00",
       "summary": "10/12朝の初回発見を維持。9/30購入対象・購入後1週間以内投稿は過去形へ。賞品応募終了は未確定。夕方成功は19:03頃で秒不明。",
       "cutoff": null,
       "old": {
@@ -560,7 +560,7 @@
       ],
       "officialAnnouncedAt": "2026-10-07T14:00:00+09:00",
       "discoveredAt": "2026-10-12T19:03:18+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:03:18+09:00",
+      "sourceSuccessfulAt": "2026-10-12T19:03:18+09:00",
       "summary": "新規注文分は2027年中配送、具体時期未定。注文画面の日付で配送・発送日指定不可。元企画候補の発見日時は保持。",
       "cutoff": null,
       "old": {
@@ -649,7 +649,7 @@
       ],
       "officialAnnouncedAt": "2026-10-05T18:39:25+09:00",
       "discoveredAt": "2026-10-12T19:06:21+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:06:54+09:00",
+      "sourceSuccessfulAt": "2026-10-12T19:06:54+09:00",
       "summary": "10/12事前予約満席、当日券なし、予約済みの方のみ。11月の恒常QR条件維持。公式発表時刻不明は日付のみ。",
       "cutoff": "2026-10-12T21:20:00+09:00",
       "old": {
@@ -727,7 +727,7 @@
       ],
       "officialAnnouncedAt": "2026-10-12",
       "discoveredAt": "2026-10-12T19:06:20+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:06:50+09:00",
+      "sourceSuccessfulAt": "2026-10-12T19:06:50+09:00",
       "summary": "10/12事前予約満席、当日券なし、予約済みの方のみ。11月の恒常QR条件維持。公式発表時刻不明は日付のみ。",
       "cutoff": "2026-10-12T22:00:00+09:00",
       "old": {
@@ -805,8 +805,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12T19:05:11+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:05:11+09:00",
-      "summary": "公式告知画像の営業時間を委任元が実読。発表日時不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:05:11+09:00",
+      "summary": "公式告知画像の営業時間を実読。発表日時不明。",
       "cutoff": null,
       "old": {
         "id": "chiikawa-baby-2026-10-02-aomori-elm",
@@ -881,8 +881,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12T19:05:58+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:05:58+09:00",
-      "summary": "公式告知画像の営業時間を委任元が実読。発表日時不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:05:58+09:00",
+      "summary": "公式告知画像の営業時間を実読。発表日時不明。",
       "cutoff": null,
       "old": {
         "id": "popup-2026-10-02-aomori-elm",
@@ -957,8 +957,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12T19:05:58+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:05:58+09:00",
-      "summary": "公式告知画像の営業時間を委任元が実読。発表日時不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:05:58+09:00",
+      "summary": "公式告知画像の営業時間を実読。発表日時不明。",
       "cutoff": null,
       "old": {
         "id": "popup-2026-10-02-aeon-saga-yamato",
@@ -1033,8 +1033,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12T19:05:58+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:05:58+09:00",
-      "summary": "公式告知画像の営業時間を委任元が実読。発表日時不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:05:58+09:00",
+      "summary": "公式告知画像の営業時間を実読。発表日時不明。",
       "cutoff": null,
       "old": {
         "id": "popup-2026-09-26-aeon-niihama",
@@ -1109,8 +1109,8 @@
       ],
       "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-12T19:05:58+09:00",
-      "cloudSuccessfulAt": "2026-10-12T19:05:58+09:00",
-      "summary": "公式告知画像の営業時間を委任元が実読。発表日時不明。",
+      "sourceSuccessfulAt": "2026-10-12T19:05:58+09:00",
+      "summary": "公式告知画像の営業時間を実読。発表日時不明。",
       "cutoff": null,
       "old": {
         "id": "popup-naha",

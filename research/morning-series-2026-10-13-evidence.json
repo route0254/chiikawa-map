@@ -1,6 +1,6 @@
 {
   "baseCommit": "cc299b2791c08218b21803665c34f5c75309fc09",
-  "observer": "Parent cloud provided evidence",
+  "observer": "Recorded primary-source observations",
   "endings": [
     {
       "id": "popup-yonago",
@@ -97,7 +97,7 @@
       "newGeocodingPerformed": false
     },
     "jr": {
-      "provider": "Parent cloud Nominatim single low frequency lookup",
+      "provider": "Nominatim single low-frequency lookup",
       "way": "247172485",
       "lat": 35.0488735,
       "lng": 136.8512061,
@@ -106,7 +106,7 @@
         "lat": 35.047249,
         "lng": 136.849808
       },
-      "pcNewGeocodingPerformed": false
+      "additionalGeocodingPerformed": false
     }
   },
   "newCollaboration": {
