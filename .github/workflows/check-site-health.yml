@@ -2,7 +2,7 @@ name: Check public site health
 
 on:
   schedule:
-    - cron: "17 7 * * *"
+    - cron: "45 0 * * *"
       timezone: "Asia/Tokyo"
   workflow_dispatch:
 

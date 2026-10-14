@@ -36,7 +36,7 @@ on:
       - "sitemap.xml"
       - ".github/workflows/validate-data.yml"
   schedule:
-    - cron: "23 6 * * *"
+    - cron: "30 0 * * *"
       timezone: "Asia/Tokyo"
   workflow_dispatch:
 
