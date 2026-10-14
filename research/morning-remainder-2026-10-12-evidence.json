@@ -118,7 +118,7 @@
     "id": "chiikawa-restaurant-ikebukuro",
     "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
     "announcementDate": "2026-09-02",
-    "imageReadByCloud": true,
+    "imageRead": true,
     "action": "PR39 coreのofficialAnnouncedAt=nullに、ページ上の告知日が確認できた根拠を追記する。掲載entryNoteは再変更不要。"
   },
   "collaborationExtension": {
@@ -167,7 +167,7 @@
           "startedAt": "2026-10-11T23:16:29.510Z",
           "endedAt": "2026-10-11T23:16:33.836Z",
           "fetchStatus": "text_available",
-          "method": "web.open",
+          "method": "web_text_retrieval",
           "evidenceFile": "holds-evidence/source-read-log.json"
         }
       },
@@ -196,7 +196,7 @@
           "startedAt": "2026-10-11T23:16:29.510Z",
           "endedAt": "2026-10-11T23:16:34.113Z",
           "fetchStatus": "text_available",
-          "method": "web.open",
+          "method": "web_text_retrieval",
           "evidenceFile": "holds-evidence/source-read-log.json"
         }
       }
@@ -271,7 +271,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:33.836Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -300,7 +300,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:34.113Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -312,7 +312,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:32.038Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -326,7 +326,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:31.805Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -338,7 +338,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:36.646Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -409,7 +409,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:35.024Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -421,7 +421,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:31.438Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -433,7 +433,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:32.323Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -457,7 +457,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:33.173Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -482,7 +482,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:33.072Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -510,7 +510,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:31.512Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -522,7 +522,7 @@
         "startedAt": "2026-10-11T23:16:29.510Z",
         "endedAt": "2026-10-11T23:16:34.905Z",
         "fetchStatus": "text_available",
-        "method": "web.open",
+        "method": "web_text_retrieval",
         "evidenceFile": "holds-evidence/source-read-log.json"
       }
     },
@@ -624,7 +624,7 @@
           "haneda-floor-mapping"
         ]
       },
-      "remaining": "店舗座標は未取得。T2施設代表点採用は親の掲載判断待ち。店舗精密座標へ読み替えない。",
+      "remaining": "店舗座標は未取得。T2施設代表点採用は掲載判断が未確定。店舗精密座標へ読み替えない。",
       "discoveredAt": "2026-10-05",
       "stateRecommendation": "on_hold",
       "nextCheck": "10/13広域レビュー時に既存マップ方針とT2代表位置の扱いを確認。施設代表点採用が認められれば、場所注記付きで履歴へ追加。"
@@ -683,7 +683,7 @@
     },
     {
       "url": "https://www.uminomori.jp/umino/2023chiikawa/index.html",
-      "method": "web.open",
+      "method": "web_text_retrieval",
       "fetchStatus": "fetch_error",
       "observedWithin": {
         "from": "2026-10-11T23:07:23Z",
@@ -693,7 +693,7 @@
     },
     {
       "url": "https://x.com/sendaiuminomori/status/1648465751152672772",
-      "method": "web.open",
+      "method": "web_text_retrieval",
       "fetchStatus": "cache_miss",
       "observedWithin": {
         "from": "2026-10-11T23:07:23Z",
@@ -703,7 +703,7 @@
     },
     {
       "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Ftwitter.com%2Fsendaiuminomori%2Fstatus%2F1648465751152672772",
-      "method": "web.open",
+      "method": "web_text_retrieval",
       "fetchStatus": "tool_inaccessible",
       "observedWithin": {
         "from": "2026-10-11T23:07:23Z",
@@ -794,7 +794,7 @@
       "previousLastSuccessfulAt": null,
       "coverage": "unavailable",
       "summary": "店舗一覧の見出しから10/10–12予約案内は確認。個別本文の本日の再確認はできなかった。既存内容は変更しない。",
-      "failure": "web tool not accessible; direct public HTTP 403"
+      "failure": "Content retrieval unavailable; direct public HTTP returned 403"
     },
     {
       "number": 5,
@@ -818,7 +818,7 @@
       "previousLastSuccessfulAt": null,
       "coverage": "unavailable",
       "summary": "店舗一覧に10/17–18営業時間変更の見出しあり。個別本文の本日の再確認はできなかった。既存9:30–19:00を再確認済み扱いにしない。",
-      "failure": "web tool not accessible; direct public HTTP 403",
+      "failure": "Content retrieval unavailable; direct public HTTP returned 403",
       "existingSourceId": "mogumogu-kawagoe-hours-20261017",
       "currentLedgerLastSuccessfulAt": null,
       "currentLedgerLastAttemptAt": "2026-10-11T08:06:46+09:00"
@@ -3338,7 +3338,7 @@
       "previousLastSuccessfulAt": "2026-10-11T08:06:07.133+09:00",
       "lastSuccessfulAt": "2026-10-12T00:27:22.528Z",
       "coverage": "targeted_official_html_body",
-      "summary": "受信観測74は日比谷081のURLと新宿既存IDが不一致だったため、既存の新宿076公式本文を個別再取得。新宿・ペンライト応援上映の公式案内を確認。元の提供時刻へ差し替えず、PCの実取得時刻を記録。",
+      "summary": "既存観測74は日比谷081のURLと新宿既存IDが不一致だったため、既存の新宿076公式本文を個別再取得。新宿・ペンライト応援上映の公式案内を確認。既存の観測時刻へ差し替えず、個別再取得の実時刻を記録。",
       "failedSuccessRetained": null
     },
     {
@@ -3350,7 +3350,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:33.836Z",
       "coverage": "text_available",
-      "summary": "当初会期2023/4/15〜4/23。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "当初会期2023/4/15〜4/23。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3374,7 +3374,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:34.113Z",
       "coverage": "text_available",
-      "summary": "Official SNS公式SNSがtwitter.com/sendaiuminomoriへリンクする。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "Official SNS公式SNSがtwitter.com/sendaiuminomoriへリンクする。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3386,7 +3386,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:32.038Z",
       "coverage": "text_available",
-      "summary": "イベント全体・フォトスポット2023/6/23〜7/2、フォトスポットは1階エントランス。ARラリーは6/23から景品がなくなり次第終了。AR単体の実終了日を7/2と断定しない。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "イベント全体・フォトスポット2023/6/23〜7/2、フォトスポットは1階エントランス。ARラリーは6/23から景品がなくなり次第終了。AR単体の実終了日を7/2と断定しない。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3398,7 +3398,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:31.805Z",
       "coverage": "text_available",
-      "summary": "2023年の会期・限定ショップ9:00〜17:30、2階海獣ひろば、入館券必要・追加料金不要、混雑時整理券、フォトスポットとAR条件を確認。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "2023年の会期・限定ショップ9:00〜17:30、2階海獣ひろば、入館券必要・追加料金不要、混雑時整理券、フォトスポットとAR条件を確認。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3410,7 +3410,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:36.646Z",
       "coverage": "text_available",
-      "summary": "〒983-0013 宮城県仙台市宮城野区中野4丁目6番地。Googleマップ埋め込み先は施設ID0x5f898897e1fb47e3:0x52cd635d24b06064。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "〒983-0013 宮城県仙台市宮城野区中野4丁目6番地。Googleマップ埋め込み先は施設ID0x5f898897e1fb47e3:0x52cd635d24b06064。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3458,7 +3458,7 @@
       "previousLastSuccessfulAt": "2026-10-06T10:01:34.057Z",
       "lastSuccessfulAt": "2026-10-11T23:16:35.024Z",
       "coverage": "text_available",
-      "summary": "仙台のみ水槽展示。他は商品取扱店舗。系列タイトルの当初4/15〜4/23を全会場最終会期とみなせない。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "仙台のみ水槽展示。他は商品取扱店舗。系列タイトルの当初4/15〜4/23を全会場最終会期とみなせない。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3470,7 +3470,7 @@
       "previousLastSuccessfulAt": "2026-10-06T10:01:34.057Z",
       "lastSuccessfulAt": "2026-10-11T23:16:31.438Z",
       "coverage": "text_available",
-      "summary": "仙台のフォトスポット・ARラリー記載。各取扱店舗の終期は一括確定できない。サンシャインは7月中旬以降アクアポケット継続販売予定。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "仙台のフォトスポット・ARラリー記載。各取扱店舗の終期は一括確定できない。サンシャインは7月中旬以降アクアポケット継続販売予定。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3482,7 +3482,7 @@
       "previousLastSuccessfulAt": "2026-10-06T10:01:34.057Z",
       "lastSuccessfulAt": "2026-10-11T23:16:32.323Z",
       "coverage": "text_available",
-      "summary": "羽田T2 Tokyo’s Tokyoは2025/10/17〜2026/1/31。T1童心・T3 Edo食賓館とは別。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "羽田T2 Tokyo’s Tokyoは2025/10/17〜2026/1/31。T1童心・T3 Edo食賓館とは別。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3506,7 +3506,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:33.173Z",
       "coverage": "text_available",
-      "summary": "公式施設案内で東京都大田区羽田空港3-4-2を確認。階・店舗は別公式ページ。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "公式施設案内で東京都大田区羽田空港3-4-2を確認。階・店舗は別公式ページ。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3530,7 +3530,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:33.072Z",
       "coverage": "text_available",
-      "summary": "当該店舗選択公式フロアガイドURL。第三者地図表示の座標取得は403で不可。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "当該店舗選択公式フロアガイドURL。第三者地図表示の座標取得は403で不可。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3554,7 +3554,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:31.512Z",
       "coverage": "text_available",
-      "summary": "6/23からミュージアムショップ販売、入館料不要。販売終了日なし。イベント展示と同一扱いにしない。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "6/23からミュージアムショップ販売、入館料不要。販売終了日なし。イベント展示と同一扱いにしない。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3566,7 +3566,7 @@
       "previousLastSuccessfulAt": null,
       "lastSuccessfulAt": "2026-10-11T23:16:34.905Z",
       "coverage": "text_available",
-      "summary": "2023/6/23からミュージアムショップ販売。販売終了日なし。 取得経路: web.open。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
+      "summary": "2023/6/23からミュージアムショップ販売。販売終了日なし。 取得経路: web_text_retrieval。別経路403/失敗の記録は日時幅付きで残し、全経路成功としない。",
       "failedSuccessRetained": null
     },
     {
@@ -3590,7 +3590,7 @@
       "previousLastSuccessfulAt": "2026-10-12T08:15:02+09:00",
       "lastSuccessfulAt": "2026-10-12T00:27:22.512Z",
       "coverage": "gsi_tile_visually_inspected",
-      "summary": "施設代表点のタイルをPCで取得・目視確認。正門の厳密座標とは主張しない。",
+      "summary": "施設代表点のタイルを取得・目視確認。正門の厳密座標とは主張しない。",
       "failedSuccessRetained": null
     },
     {
@@ -3602,7 +3602,7 @@
       "previousLastSuccessfulAt": "2026-10-12T08:14:53+09:00",
       "lastSuccessfulAt": "2026-10-12T00:27:22.540Z",
       "coverage": "gsi_tile_visually_inspected",
-      "summary": "旧座標のタイルをPCで取得・目視確認。旧点は施設南西の道路側。",
+      "summary": "旧座標のタイルを取得・目視確認。旧点は施設南西の道路側。",
       "failedSuccessRetained": null
     }
   ],
@@ -3612,10 +3612,10 @@
       "providedSourceId": "toho-shinjuku-penlight-20261016",
       "providedUrl": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
       "registeredUrl": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
-      "action": "提供観測を別施設へ転用せず保持。既存の新宿076をPCで個別実読し、実取得時刻を別に記録。"
+      "action": "提供観測を別施設へ転用せず保持。既存の新宿076を個別実読し、実取得時刻を別に記録。"
     }
   ],
-  "targetedPcVerification": [
+  "targetedVerification": [
     {
       "id": "toho-shinjuku-penlight-20261016",
       "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
@@ -3680,7 +3680,7 @@
     },
     "facilityRepresentativePoint": true,
     "exactEntranceClaim": false,
-    "tilesViewedOnPc": true
+    "tilesViewed": true
   },
   "pr39Sync": {
     "proofPath": "research/publication-confirmation-2026-10-12-pr39.json",

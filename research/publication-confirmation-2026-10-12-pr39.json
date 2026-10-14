@@ -487,9 +487,9 @@
   "entireRequestedScopeComplete": false,
   "remainingBlockers": [
     {
-      "kind": "truncated_delegation_specification",
+      "kind": "incomplete_observation_record",
       "records": 5,
-      "details": "通常補完の残り2件・履歴確定3件の変更値とID、完全な情報源観測/保留更新仕様が未受信。推測で公開せず、親へ分割再送を依頼。"
+      "details": "通常補完の残り2件・履歴確定3件について、変更値・ID・完全な情報源観測/保留更新記録が未回収のため公開を保留した。"
     }
   ],
   "followup": {

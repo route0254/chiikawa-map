@@ -1,0 +1,454 @@
+{
+  "observedAt": "2026-10-13T23:44:30.073Z",
+  "merge": {
+    "sha": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+    "merged": true,
+    "message": "Pull Request successfully merged"
+  },
+  "pr": {
+    "url": "https://github.com/route0254/chiikawa-map/pull/43",
+    "number": 43,
+    "state": "closed",
+    "merged": true,
+    "base": "main",
+    "base_sha": "ca2af44bf9d39e6b1dcff22d94794c50fe76ee86",
+    "head": "updates/evening-listings-20261013",
+    "head_sha": "805317f4f9e2b226f5b0d6aa532fa228b34f12c7",
+    "merge_commit_sha": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+    "created_at": "2026-10-13T13:47:00Z",
+    "updated_at": "2026-10-13T23:42:13Z",
+    "closed_at": "2026-10-13T23:42:13Z",
+    "merged_at": "2026-10-13T23:42:12Z"
+  },
+  "mainSha": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+  "mergeTree": "3857099fd0bb221d5ed5f6a01fa4296611c11810",
+  "pages": {
+    "id": 38485845130,
+    "head_sha": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/38485845130"
+  },
+  "pagesJobs": [
+    {
+      "id": 115599176383,
+      "name": "build",
+      "started_at": "2026-10-13T23:42:19Z",
+      "completed_at": "2026-10-13T23:42:43Z",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "started_at": "2026-10-13T23:42:19Z",
+          "completed_at": "2026-10-13T23:42:21Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Pull ghcr.io/actions/jekyll-build-pages:v1.0.13",
+          "started_at": "2026-10-13T23:42:21Z",
+          "completed_at": "2026-10-13T23:42:34Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Checkout",
+          "started_at": "2026-10-13T23:42:34Z",
+          "completed_at": "2026-10-13T23:42:36Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build with Jekyll",
+          "started_at": "2026-10-13T23:42:36Z",
+          "completed_at": "2026-10-13T23:42:39Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload artifact",
+          "started_at": "2026-10-13T23:42:39Z",
+          "completed_at": "2026-10-13T23:42:41Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Checkout",
+          "started_at": "2026-10-13T23:42:41Z",
+          "completed_at": "2026-10-13T23:42:41Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "started_at": "2026-10-13T23:42:41Z",
+          "completed_at": "2026-10-13T23:42:41Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 115599327046,
+      "name": "deploy",
+      "started_at": "2026-10-13T23:42:48Z",
+      "completed_at": "2026-10-13T23:43:00Z",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "started_at": "2026-10-13T23:42:49Z",
+          "completed_at": "2026-10-13T23:42:50Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Deploy to GitHub Pages",
+          "started_at": "2026-10-13T23:42:50Z",
+          "completed_at": "2026-10-13T23:42:58Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "started_at": "2026-10-13T23:42:58Z",
+          "completed_at": "2026-10-13T23:42:58Z",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 115599327082,
+      "name": "report-build-status",
+      "started_at": "2026-10-13T23:42:46Z",
+      "completed_at": "2026-10-13T23:42:50Z",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "started_at": "2026-10-13T23:42:47Z",
+          "completed_at": "2026-10-13T23:42:47Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Report Build Status",
+          "started_at": "2026-10-13T23:42:48Z",
+          "completed_at": "2026-10-13T23:42:48Z",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "started_at": "2026-10-13T23:42:48Z",
+          "completed_at": "2026-10-13T23:42:48Z",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "prUi": {
+    "id": 38485225365,
+    "head": "805317f4f9e2b226f5b0d6aa532fa228b34f12c7",
+    "conclusion": "success",
+    "updatedAt": "2026-10-13T23:40:32Z",
+    "summary": "101 passed, one flaky passed on retry"
+  },
+  "firstPublicDataVerifiedAt": "2026-10-13T23:43:29+00:00",
+  "all23FilesVerifiedBy": "2026-10-13T23:43:50+00:00",
+  "publicContentComparison": {
+    "mergeCommit": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+    "expectedHead": "805317f4f9e2b226f5b0d6aa532fa228b34f12c7",
+    "completedAt": "2026-10-13T23:43:50+00:00",
+    "allExpectedContentMatched": true,
+    "observations": [
+      {
+        "path": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:29+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "d28c2cf7f8b0ea62686527a94cceb69e3d9538c789ee411ddb747f6bbc2440c7",
+        "expectedSha256": "d28c2cf7f8b0ea62686527a94cceb69e3d9538c789ee411ddb747f6bbc2440c7",
+        "bytes": 169206,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "list",
+        "recordCount": 87
+      },
+      {
+        "path": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:29+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "fb20e60c1cdeb5952b4af61c5374aad8b1f4c51ebaec3a49e769d464c2d04828",
+        "expectedSha256": "fb20e60c1cdeb5952b4af61c5374aad8b1f4c51ebaec3a49e769d464c2d04828",
+        "bytes": 1078877,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "list",
+        "recordCount": 655
+      },
+      {
+        "path": "data/nagano-spots.json",
+        "url": "https://chiikatsu-map.com/data/nagano-spots.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:28+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "expectedSha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "bytes": 178578,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "list",
+        "recordCount": 92
+      },
+      {
+        "path": "data/community-spots.json",
+        "url": "https://chiikatsu-map.com/data/community-spots.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:28+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "expectedSha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "bytes": 3948,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "list",
+        "recordCount": 2
+      },
+      {
+        "path": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:28+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "530c19c4dc6d139b6f3fa3704836318fc92f5d4a61fa7c0afaf7d88c307898bb",
+        "expectedSha256": "530c19c4dc6d139b6f3fa3704836318fc92f5d4a61fa7c0afaf7d88c307898bb",
+        "bytes": 28845,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "list",
+        "recordCount": 23
+      },
+      {
+        "path": "data/collaborations-archive.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:34+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "9564031ecd9e1813f65fd85d8c26b855d4ed557a0ede91646c8ca6ca25d9aa92",
+        "expectedSha256": "9564031ecd9e1813f65fd85d8c26b855d4ed557a0ede91646c8ca6ca25d9aa92",
+        "bytes": 43857,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "list",
+        "recordCount": 52
+      },
+      {
+        "path": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:34+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "c7320d56d3f1508bc2801b4fd2a00a1559c61c10c37b1cac7d758a1d11c3c4a7",
+        "expectedSha256": "c7320d56d3f1508bc2801b4fd2a00a1559c61c10c37b1cac7d758a1d11c3c4a7",
+        "bytes": 42756,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "dict",
+        "recordCount": null
+      },
+      {
+        "path": "data/site-meta.json",
+        "url": "https://chiikatsu-map.com/data/site-meta.json",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:34+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "1d79cfd0cb6f1e7a24cf9711c13afb89511651001b622d4b9a27cd1e30a363ff",
+        "expectedSha256": "1d79cfd0cb6f1e7a24cf9711c13afb89511651001b622d4b9a27cd1e30a363ff",
+        "bytes": 180,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT",
+        "jsonType": "dict",
+        "recordCount": null
+      },
+      {
+        "path": "index.html",
+        "url": "https://chiikatsu-map.com/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:34+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "eb548ff0a5d7b5ee85c8cd7127e6fec9067a817917d136099bef326b8b819dbb",
+        "expectedSha256": "eb548ff0a5d7b5ee85c8cd7127e6fec9067a817917d136099bef326b8b819dbb",
+        "bytes": 56563,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "official.html",
+        "url": "https://chiikatsu-map.com/official.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:34+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "df5e79cc63232d4c0fbe874ba7ef7155ac5e11b5d788e18f4fee48ba7660d917",
+        "expectedSha256": "df5e79cc63232d4c0fbe874ba7ef7155ac5e11b5d788e18f4fee48ba7660d917",
+        "bytes": 32527,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://chiikatsu-map.com/sitemap.xml",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:38+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "b400310f053747566674140bd2974b86d8f4938a4f4f71bbd07304b39fdd4c84",
+        "expectedSha256": "b400310f053747566674140bd2974b86d8f4938a4f4f71bbd07304b39fdd4c84",
+        "bytes": 35967,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-park-christmas-2026/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-park-christmas-2026/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:38+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "8f9e5a285ab19ccbacc2ec739d211c8600e27c7113910282d457ad997ec91216",
+        "expectedSha256": "8f9e5a285ab19ccbacc2ec739d211c8600e27c7113910282d457ad997ec91216",
+        "bytes": 9870,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-pocket-2026-10-24-ikebukuro-parco/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-10-24-ikebukuro-parco/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:38+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "2cc0b982f263229d7db560375a175ba1ed71d5d7af413639d03221fbb248bcbe",
+        "expectedSha256": "2cc0b982f263229d7db560375a175ba1ed71d5d7af413639d03221fbb248bcbe",
+        "bytes": 9211,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-pocket-2026-10-30-tennoji-mio/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-10-30-tennoji-mio/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:38+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "cd19e2f4fd8fa8ba01422bf50e492d5bf2159e5dad458ba2c729cc7da989e485",
+        "expectedSha256": "cd19e2f4fd8fa8ba01422bf50e492d5bf2159e5dad458ba2c729cc7da989e485",
+        "bytes": 9379,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:38+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "282f00e089f47493a6c92c4062c1f05aa10b6bb2adf3dbade9e597e91e9dc4ea",
+        "expectedSha256": "282f00e089f47493a6c92c4062c1f05aa10b6bb2adf3dbade9e597e91e9dc4ea",
+        "bytes": 9969,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-pocket-2026-11-06-fukuoka-parco/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-11-06-fukuoka-parco/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:46+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "f5dbaadd4de482c383f99049d221e5ab52aa10157a5a562e3a35e035429da816",
+        "expectedSha256": "f5dbaadd4de482c383f99049d221e5ab52aa10157a5a562e3a35e035429da816",
+        "bytes": 9266,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-pocket-2026-11-13-nagoya-parco/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-11-13-nagoya-parco/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:46+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "951a17f9d969ca5577a3c577288cc42be77962b3ba6195cdcc85220bdce8b9de",
+        "expectedSha256": "951a17f9d969ca5577a3c577288cc42be77962b3ba6195cdcc85220bdce8b9de",
+        "bytes": 9342,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-tokyo-miyage-2025-09-04-kitasenju-marui/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-tokyo-miyage-2025-09-04-kitasenju-marui/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:46+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "6947548621fbccf006117b1f282c1ab9ccc662f9ca6cee6e8ea95d489cee6428",
+        "expectedSha256": "6947548621fbccf006117b1f282c1ab9ccc662f9ca6cee6e8ea95d489cee6428",
+        "bytes": 8380,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-park-tokyo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-park-tokyo/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:46+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "fcd8ffab872e1e87ab5bf83be53e91ba02f04c8b20c1194c44e5c466b9fa94b5",
+        "expectedSha256": "fcd8ffab872e1e87ab5bf83be53e91ba02f04c8b20c1194c44e5c466b9fa94b5",
+        "bytes": 9248,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-bakery-osaka/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-osaka/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:46+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "2b3b1b82728dc65fac243103e31d4b1916900c0cc303b4919967e82e44c1cc11",
+        "expectedSha256": "2b3b1b82728dc65fac243103e31d4b1916900c0cc303b4919967e82e44c1cc11",
+        "bytes": 9511,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/mogumogu-kawagoe/index.html",
+        "url": "https://chiikatsu-map.com/spot/mogumogu-kawagoe/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:50+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "d8efb45dc647694b93ff6d071efb1697078e17ab9e28bbada9b0f64f8473441b",
+        "expectedSha256": "d8efb45dc647694b93ff6d071efb1697078e17ab9e28bbada9b0f64f8473441b",
+        "bytes": 8674,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-bakery-shop-laforet/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-shop-laforet/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:50+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "9eed8774a4ea0af2b0880b17e36b7cb4c89447d8830567f64e40bce1cc17d381",
+        "expectedSha256": "9eed8774a4ea0af2b0880b17e36b7cb4c89447d8830567f64e40bce1cc17d381",
+        "bytes": 9671,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      },
+      {
+        "path": "spot/chiikawa-restaurant-ikebukuro/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-restaurant-ikebukuro/index.html",
+        "httpStatus": 200,
+        "observedAt": "2026-10-13T23:43:50+00:00",
+        "matchesExpectedBytes": true,
+        "sha256": "8f3f671903b64db2c69be60fa730a785a8241efe9f2c3820972d997842b52e8d",
+        "expectedSha256": "8f3f671903b64db2c69be60fa730a785a8241efe9f2c3820972d997842b52e8d",
+        "bytes": 8040,
+        "lastModified": "Tue, 13 Oct 2026 23:42:53 GMT"
+      }
+    ]
+  },
+  "publicHealth": "passed",
+  "ledgerPublicationStatus": "10/14の掲載更新時には同日朝の追加調査記録と公開状態の台帳同期は含まれなかった。",
+  "mainPostMergeUi": {
+    "id": 38485845207,
+    "name": "Test site",
+    "head_sha": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-13T23:42:15Z",
+    "updated_at": "2026-10-13T23:46:18Z",
+    "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/38485845207",
+    "summary": "102 passed (3.3m); no flaky tests reported"
+  },
+  "mainPostMergeData": {
+    "id": 38485845204,
+    "name": "Validate spot data",
+    "head_sha": "3b35f78e2e810d13ab77cef6117653bc72a177fa",
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-13T23:42:15Z",
+    "updated_at": "2026-10-13T23:42:26Z",
+    "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/38485845204"
+  },
+  "publishedAtBasis": "公式JSONが期待する公開内容と初めて一致した2026-10-13T23:43:29Zを採用。Pages配信ステップ完了2026-10-13T23:42:58Zとは区別する。"
+}

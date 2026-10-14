@@ -493,30 +493,30 @@
       "sha256": "4f2db8308c748a8880b932df175270cb72dbae2b9842e394cd7ef7562f8eb55f"
     }
   ],
-  "delegatedSourceObservations": [
+  "supplementalSourceObservations": [
     {
       "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
       "observedAt": "2026-10-10T07:33:00+09:00",
-      "environment": "parent cloud",
+      "environment": "separate observation record",
       "summary": "10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。"
     },
     {
       "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
       "observedAt": "2026-10-10T07:33:25+09:00",
-      "environment": "parent cloud",
+      "environment": "separate observation record",
       "summary": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。"
     },
     {
       "url": "https://nagano-info.jp/popupshop/ebina/index.html",
       "observedAt": "2026-10-10T07:33:15+09:00",
-      "summary": "委任元クラウドで公式個別案内を確認。5F会場、会期・営業時間、10/23整理券。受付方法と時計は未発表。",
-      "environment": "parent cloud"
+      "summary": "先行調査で公式個別案内を確認。5F会場、会期・営業時間、10/23整理券。受付方法と時計は未発表。",
+      "environment": "separate observation record"
     },
     {
       "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
       "observedAt": "2026-10-09T07:34:46+09:00",
-      "summary": "委任元の公式開催画像実見で会期・8階会場・11〜19時。整理券画像は10/9 07:34:52に実見し対象10/22〜25・受付時計未発表。公式Xの10/8付は日付のみ。Windowsの過去403を迂回して取得しない。",
-      "environment": "parent cloud"
+      "summary": "公式開催画像の実見で会期・8階会場・11〜19時。整理券画像は10/9 07:34:52に実見し対象10/22〜25・受付時計未発表。公式Xの10/8付は日付のみ。過去にHTTP403となった取得経路は再試行していない。",
+      "environment": "separate observation record"
     }
   ],
   "baselinePublicVerification": {
@@ -745,14 +745,14 @@
         "sourceUrl": "https://x.com/chiikawa_land/status/2108527995556389315",
         "firstObservedBy": "2026-10-10T07:32:23+09:00",
         "validOn": "2026-10-10",
-        "imageSummary": "公式画像で西館1F正面入口（大津通り側）を先頭、全員整列・離脱時並び直し・後からの合流禁止、徹夜禁止、9:50以降は開店後直接店頭、整理券の可能性、1入店1会計を確認。10/10対象は親の公式投稿確認に基づく。"
+        "imageSummary": "公式画像で西館1F正面入口（大津通り側）を先頭、全員整列・離脱時並び直し・後からの合流禁止、徹夜禁止、9:50以降は開店後直接店頭、整理券の可能性、1入店1会計を確認。10/10対象は公式投稿の確認記録に基づく。"
       },
       {
         "id": "chiikawaland-koshigaya",
         "sourceUrl": "https://x.com/chiikawa_land/status/2108478678615400639",
         "firstObservedBy": "2026-10-09T18:34:00+09:00",
         "validOn": "2026-10-10",
-        "imageSummary": "画像でmori3F立体駐車場P3入口前の星印、早朝深夜の整列・座り込み禁止、混雑時の整理券を確認。対象10/10、開店前P2エレベーター、全員揃って整列、運営変更は親が確認した公式投稿本文・再送全文に基づく。"
+        "imageSummary": "画像でmori3F立体駐車場P3入口前の星印、早朝深夜の整列・座り込み禁止、混雑時の整理券を確認。対象10/10、開店前P2エレベーター、全員揃って整列、運営変更は確認済みの公式投稿本文に基づく。"
       }
     ],
     "expiredOnlyApplied": [
@@ -1125,7 +1125,7 @@
       {
         "group": "LUCUA個店プレオープン",
         "count": 2,
-        "status": "前回の施設本文と親の6公開フォーム確認で回収済み"
+        "status": "前回の施設本文と6公開フォームの確認で回収済み"
       },
       {
         "group": "ちいかわらんど当日案内",
@@ -1144,7 +1144,7 @@
       }
     ],
     "knownRemainingMissingItems": [],
-    "coverageLimit": "特定できる受信欠けはすべて照合済み。元の省略部分に名称すら届いていない別候補があったかは、候補総一覧がないため網羅性を断定しない。",
+    "coverageLimit": "特定できる記録の欠落はすべて照合済み。元の省略部分に名称のない別候補があったかは、候補総一覧がないため網羅性を断定しない。",
     "alreadyPublicBranches": [
       {
         "number": 32,
@@ -1212,7 +1212,6 @@
       {
         "number": 22,
         "title": "data: 京都伏見店の10月10～12日入店予約を案内",
-        "branch": "codex/fushimi-reservations-20261005",
         "head": "515ac312290d41a0764b782aa63933f63fd9f755",
         "merge": "d9909e4a1f9c103818d8a6d32aa205315ddbb7c7",
         "mergedAt": "2026-10-05T06:37:58Z",
@@ -1221,7 +1220,6 @@
       {
         "number": 21,
         "title": "fix: ナガノ公式イベントの既存IDと会場情報を保持",
-        "branch": "codex/nagano-import-stable-ids-20261005",
         "head": "0863486f1941ef608e5420e130ce4da1cacfedea",
         "merge": "c9abda6a579d8f45e9cd8e40a0bb4a8803ad81cd",
         "mergedAt": "2026-10-05T05:26:20Z",
@@ -1230,7 +1228,6 @@
       {
         "number": 20,
         "title": "10月4日終了の3イベントを履歴へ移動",
-        "branch": "codex/archive-ended-20261005",
         "head": "3a75aa1b026dbf89a3b9d262a904c71114ed63b5",
         "merge": "f11312ab25a97c1443471572007452171b7812bc",
         "mergedAt": "2026-10-05T00:50:30Z",
@@ -1239,7 +1236,6 @@
       {
         "number": 19,
         "title": "ちいプラ展示1件とベーカリー3店舗の周年案内を掲載",
-        "branch": "codex/data-chiipla-bakery-20261004",
         "head": "e81e4d04b9d83c35dab97bab123e712f10bdfc3f",
         "merge": "ec285fb1e1a9c5aec75d7df65f258f0a1cb82936",
         "mergedAt": "2026-10-04T04:38:15Z",

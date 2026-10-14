@@ -11,7 +11,7 @@
     "observedUrls": 129,
     "readyCandidates": 4,
     "onHoldCandidates": 1,
-    "provenance": "19時調査完了時のツール出力/親通知に残る集計。個別全行の再現ではない。"
+    "provenance": "19時調査完了時の残存記録の集計。個別全行の再現ではない。"
   },
   "originalKnownObservations": [
     {
@@ -20,7 +20,7 @@
       "observedAt": "2026-10-13T18:59:52+09:00",
       "httpStatus": 200,
       "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -29,7 +29,7 @@
       "observedAt": "2026-10-13T19:02:18+09:00",
       "httpStatus": 200,
       "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -38,7 +38,7 @@
       "observedAt": "2026-10-13T19:02:32+09:00",
       "httpStatus": 200,
       "summary": "10/13火は予約満席で予約済み客のみ。公式投稿本文と10月13日火の写真で当日券配布なし。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -47,7 +47,7 @@
       "observedAt": "2026-10-13T19:02:33+09:00",
       "httpStatus": 200,
       "summary": "ニットカーディガン パンなみんなを配送遅延で10/15から10/16発売へ変更。単品商品でマップ未掲示のため公開変更対象外。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -56,7 +56,7 @@
       "observedAt": "2026-10-13T19:02:32+09:00",
       "httpStatus": 200,
       "summary": "プロフィール可視範囲は名古屋再入荷、池袋/京都/横浜の2027年カレンダー入荷など。新入場条件はその範囲で見当たらず、全SNSの不存在とは扱わない。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -65,7 +65,7 @@
       "observedAt": "2026-10-13T19:07:41+09:00",
       "httpStatus": 404,
       "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -74,7 +74,7 @@
       "observedAt": "2026-10-13T19:07:41+09:00",
       "httpStatus": 200,
       "summary": "店舗カテゴリーは9/18秋新商品等の商品ニュース。代替予約告知は確認できず。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -83,7 +83,7 @@
       "observedAt": "2026-10-13T19:02:25+09:00",
       "httpStatus": 403,
       "summary": "個別予約ページ403。枠状況未確認。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     },
     {
@@ -92,7 +92,7 @@
       "observedAt": "2026-10-13T19:02:32+09:00",
       "httpStatus": 403,
       "summary": "個別予約ページ403。枠状況未確認。",
-      "phase": "original_evening_observation_restored_from_tool_transcript",
+      "phase": "original_evening_observation_restored_from_observation_record",
       "originalRawFileRecovered": false
     }
   ],
@@ -598,7 +598,7 @@
         "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
         "https://prtimes.jp/main/html/rd/p/000000144.000074811.html"
       ],
-      "reason": "会話で確認済み、親がSHAで回収した成功blobの完成文を使用。復旧後再取得の一次情報とも照合。",
+      "reason": "SHA一致で回収した既存blobの完成文を使用。復旧後再取得の一次情報とも照合。",
       "reflectDueAt": "2026-10-13"
     },
     {
@@ -618,7 +618,7 @@
       "sourceUrls": [
         "https://chiikawabakery.jp/reservation/"
       ],
-      "reason": "会話で確認済み、親がSHAで回収した成功blobの完成文を使用。復旧後再取得の一次情報とも照合。",
+      "reason": "SHA一致で回収した既存blobの完成文を使用。復旧後再取得の一次情報とも照合。",
       "reflectDueAt": "2026-10-13"
     },
     {
@@ -642,7 +642,7 @@
         "https://www.chiikawamogumogu.jp/stores/kawagoe/",
         "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/"
       ],
-      "reason": "会話で確認済み、親がSHAで回収した成功blobの完成文を使用。復旧後再取得の一次情報とも照合。",
+      "reason": "SHA一致で回収した既存blobの完成文を使用。復旧後再取得の一次情報とも照合。",
       "reflectDueAt": "2026-10-13"
     }
   ],
@@ -698,13 +698,13 @@
         {
           "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
           "observedAt": "2026-10-13T18:59:52+09:00",
-          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         },
         {
           "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
           "observedAt": "2026-10-13T19:02:18+09:00",
-          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         }
       ],
@@ -743,13 +743,13 @@
         {
           "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
           "observedAt": "2026-10-13T18:59:52+09:00",
-          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "公式記事で11/20～12/25、11/24新商品、12月時間と最終入場を確認。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         },
         {
           "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
           "observedAt": "2026-10-13T19:02:18+09:00",
-          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "運営会社Juiceの公式PR。開催期間・住所・12月営業時間が公式記事と一致。表示発表日時10/13 18時、HTML datePublished 2026-10-13 18:00:02、dateModified18:10:32（時差未記載）。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         }
       ],
@@ -829,7 +829,7 @@
         {
           "url": "https://x.com/chiikawaramenSH/status/2109813214284550315",
           "observedAt": "2026-10-13T19:02:32+09:00",
-          "summary": "10/13火は予約満席で予約済み客のみ。公式投稿本文と10月13日火の写真で当日券配布なし。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "10/13火は予約満席で予約済み客のみ。公式投稿本文と10月13日火の写真で当日券配布なし。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         }
       ],
@@ -876,7 +876,7 @@
         {
           "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
           "observedAt": "2026-10-13T19:07:41+09:00",
-          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         },
         {
@@ -930,7 +930,7 @@
         {
           "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
           "observedAt": "2026-10-13T19:07:41+09:00",
-          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を会話のツール結果から復元。元HTML/画像は未復元。",
+          "summary": "朝200だった予約告知は夕404。再試行でも404。取消やフリー入場を意味すると断定しない。 元観測の時刻・本文要約を残存する観測記録から復元。元HTML/画像は未復元。",
           "recordPath": "research/evening-permanent-2026-10-13-evidence.json"
         },
         {
@@ -958,7 +958,7 @@
       ],
       "state": "ready",
       "priority": "high",
-      "decision": "予約条件を撤回せず朝確認・夕原告知404の注意を追記。entryInfoUrlを公式店舗NEWSへ差替え。完成文は親がSHAで回収した公開用blobを採用。予約実施再確認のon_hold候補を保持。",
+      "decision": "予約条件を撤回せず朝確認・夕原告知404の注意を追記。entryInfoUrlを公式店舗NEWSへ差替え。完成文はSHA一致で回収した公開用blobを採用。予約実施再確認のon_hold候補を保持。",
       "nextCheck": "公開実体一致と10/14朝の公式変更を確認。",
       "recheckDueAt": "2026-10-14T08:00:00+09:00",
       "publishedAt": null
@@ -978,7 +978,7 @@
   },
   "missing": [
     "元83源の全upsert行・全129URLの時刻/結果/hashを復元できていない。ここに復元できた行以外の既存台帳を一括更新しない。",
-    "元夕HTML・画像・diffファイル本体は失われ未復元。会話に残る実読要約のみ復元。evidence/の新ファイルは22時30分台の再取得である。",
+    "元夕HTML・画像・diffファイル本体は失われ未復元。残存する実読要約のみ復元。evidence/の新ファイルは22時30分台の再取得である。",
     "大阪予約ページの19時台の正確な取得完了秒は未復元。観測日2026-10-13と完売差分のみ確実。",
     "夕の公式画像31点の全byte比較表、Xの全投稿抽出JSONは未復元。確認できない項目を新着なし/成功扱いしない。"
   ],
@@ -1021,7 +1021,7 @@
     "sourceReferences": "passed",
     "duplicateIdsUrls": "none",
     "jsonSyntax": "passed",
-    "fullRepositoryValidation": "parent responsible",
+    "fullRepositoryValidation": "not established by this record; separate repository validation required",
     "sourceSchema": "passed",
     "candidateSchema": "passed"
   }
