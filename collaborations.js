@@ -156,7 +156,7 @@ function formatDate(value, includeYear = true) {
 
   return new Intl.DateTimeFormat(
     "ja-JP",
-    options
+    { ...options, timeZone: "Asia/Tokyo" }
   ).format(date);
 }
 
@@ -167,6 +167,7 @@ function formatCheckedDate(value) {
     ? new Intl.DateTimeFormat(
         "ja-JP",
         {
+          timeZone: "Asia/Tokyo",
           year: "numeric",
           month: "long",
           day: "numeric"
