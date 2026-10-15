@@ -1,0 +1,551 @@
+{
+  "auditDate": "2026-10-15",
+  "audit": "evening",
+  "scope": "企業コラボ・会場公式/日次新着。週次広域再構築は10/13実施済みで今回は未実施。",
+  "baselineCommit": "a6274ee",
+  "sourceCount": 64,
+  "listingPatchCount": 2,
+  "observations": [
+    {
+      "sourceId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "attemptCompletedAt": "2026-10-15T10:12:26.404Z",
+      "result": "success",
+      "summary": "池袋9/17～10/14の期間表示を再確認。10/15時点で会期延長の案内なし、既に過去へ整理済み。本文で新催事を確認せず。既知終了を新変更として登録しない。",
+      "rawEvidenceFile": "tokyo-banana-chiikawa.json"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "attemptCompletedAt": "2026-10-15T10:12:24.566Z",
+      "result": "success",
+      "summary": "10/5予約開始・11/10発売予定は既存一致。新規注文配送時期は公式ECの重要案内を優先し別記。",
+      "rawEvidenceFile": "tamanohikari-chiikawa-release.json"
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "attemptCompletedAt": "2026-10-15T10:12:24.197Z",
+      "result": "success",
+      "summary": "10/15グッズ更新告知を確認。第1弾10/23、対象4店10/23～25入店には10/16 11時開始の先着予約が必須。初便/登録キャンペーンの既存条件は保持。同ID掲載更新を提案。詳細は全日空商事発表とA-styleの別観測を参照。",
+      "rawEvidenceFile": "ana-chiikawa-jet.json"
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "attemptCompletedAt": "2026-10-15T10:12:24.331Z",
+      "result": "success",
+      "summary": "第1弾参加登録10/19 10時～12/31 23:59、アプリ/AMCログインと登録・搭乗不要。第2弾対象搭乗2027/2/1～4/30、事後登録5/14 23:59。既存主要条件一致。",
+      "rawEvidenceFile": "ana-chiikawa-campaign.json"
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "attemptCompletedAt": "2026-10-15T10:12:24.901Z",
+      "result": "success",
+      "summary": "7/8～10/31、TOKYO Station/HEP FIVE配布終了等は既存一致。KITTEバルーンの本文は会期と場所のみでフロア・撮影時間・料金未確定。原画像URL取得は試みたが今回画像実見できず、画像確認済みとは扱わない。",
+      "rawEvidenceFile": "jr-central-tsutsuurauratabi.json"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "attemptCompletedAt": "2026-10-15T10:12:24.147Z",
+      "result": "success",
+      "summary": "10/16から1F購入点数・回数制限と星型マグネット購入回数制限終了を再確認。前夕PR47掲載済みの既知案内。10/21・22の19:30上映休止、カフェ券上限到達/再販売可能案内も維持。残席未確認。",
+      "rawEvidenceFile": "tokyo-skytree-chiikawa-2026.json"
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "attemptCompletedAt": "2026-10-15T10:12:25.029Z",
+      "result": "success",
+      "summary": "先行抽選10/15 12時～10/25 23:59、当落10/30 12時。既存会期・営業時間と一致。抽選チケット個別ページへのリンクを確認。予約・決済・残枠は確認せず。FAQ/利用案内に再入場条件等の明確な記載があり既存スポットの入場案内へ追記提案。",
+      "rawEvidenceFile": "chiikawa-christmas-market-official.json"
+    },
+    {
+      "sourceId": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "attemptCompletedAt": "2026-10-15T10:12:24.435Z",
+      "result": "success",
+      "summary": "10/8主催発表、豊砂公園11/24～12/25、先行抽選10/15 12時開始。既存企画/スポットと一致、重複候補不要。",
+      "rawEvidenceFile": "abema-chiikawa-christmas-release-20261008.json"
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-asoview",
+      "url": "https://www.asoview.com/base/165182/",
+      "attemptCompletedAt": "2026-10-15T10:12:25.713Z",
+      "result": "success",
+      "summary": "豊砂1-12、11～21時・最終入場枠18:30～19:00を確認。個別販売実行や残枠を確認したとは扱わない。",
+      "rawEvidenceFile": "chiikawa-christmas-market-asoview.json"
+    },
+    {
+      "sourceId": "toho-umeda-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:25.101Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-umeda-penlight-20261016.json"
+    },
+    {
+      "sourceId": "toho-nagoya-sakae-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:23.974Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-nagoya-sakae-penlight-20261016.json"
+    },
+    {
+      "sourceId": "toho-ikebukuro-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:29.273Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-ikebukuro-penlight-20261016.json"
+    },
+    {
+      "sourceId": "toho-hibiya-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:24.985Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-hibiya-penlight-20261016.json"
+    },
+    {
+      "sourceId": "toho-shinjuku-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:24.077Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-shinjuku-penlight-20261016.json"
+    },
+    {
+      "sourceId": "toho-tenjin-solaria-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:23.909Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-tenjin-solaria-penlight-20261016.json"
+    },
+    {
+      "sourceId": "toho-susukino-penlight-20261016",
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "attemptCompletedAt": "2026-10-15T10:12:23.800Z",
+      "result": "success",
+      "summary": "個別劇場本文で10/16 19時・10/17と18の16時、Web10/9 0時一斉販売・早期購入対象外を確認。既存会場案内と一致。上映は明日から、残席は未確認。",
+      "rawEvidenceFile": "toho-susukino-penlight-20261016.json"
+    },
+    {
+      "sourceId": "seven-eleven-christmas-campaign-2026",
+      "url": "https://www.sej.co.jp/cmp/cck2609/",
+      "attemptCompletedAt": "2026-10-15T10:12:24.897Z",
+      "result": "success",
+      "summary": "店頭応募12/19～2027/1/15、シリアル12/28まで。7NOW応募1/6～15、番号登録12/28・ポイント1/6付与・デリバリー対象外は既存一致。",
+      "rawEvidenceFile": "seven-eleven-christmas-campaign-2026.json"
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "attemptCompletedAt": "2026-10-15T10:06:29.227Z",
+      "result": "parse_failed",
+      "summary": "本文画像代替の4船・深夜便対象外・予約案内のみ部分確認。主会期が画像主体で今回原画像を実見していないため全面再確認とせず前回成功時刻保持。",
+      "rawEvidenceFile": "corporate-sunflower-chiikawa.json"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "attemptCompletedAt": "2026-10-15T10:06:29.137Z",
+      "result": "success",
+      "summary": "クラシコ実店舗は予定数量完売。再入荷予定だが時期未定、10/1過剰受注について別記事参照。現行needs_reviewと一致。記事表示の2037年は販売終了日へ流用しない。",
+      "rawEvidenceFile": "corporate-chiikawa-glasses.json"
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "attemptCompletedAt": "2026-10-15T10:06:30.518Z",
+      "result": "success",
+      "summary": "11/20・11/27、各日オンライン7:15/店舗開店時、全店・1柄1色2点。既存掲載と一致。",
+      "rawEvidenceFile": "corporate-gu-chiikawa-faq.json"
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "attemptCompletedAt": "2026-10-15T10:06:30.062Z",
+      "result": "success",
+      "summary": "7/13～9/30購入、購入後1週間以内レシート投稿。賞品への応募期限はWeb本文に明記なし。needs_review維持。アプリ未読。",
+      "rawEvidenceFile": "corporate-kadokawa-chiikawa-topics.json"
+    },
+    {
+      "sourceId": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "attemptCompletedAt": "2026-10-15T10:06:29.488Z",
+      "result": "success",
+      "summary": "9/30まで購入・購入後1週間以内投稿、ポイントで賞品応募。賞品応募締切日時は別記なし、needs_review維持。",
+      "rawEvidenceFile": "corporate-yomeruba-chiikawa-campaign.json"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "attemptCompletedAt": "2026-10-15T10:06:33.297Z",
+      "result": "success",
+      "summary": "映画デザインボトル24種を9月上旬順次数量限定発売、なくなり次第終了。現行一致。レシート企画終了とボトル販売終了を混同せず。",
+      "rawEvidenceFile": "corporate-chiikawa-release-846.json"
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "attemptCompletedAt": "2026-10-15T10:06:29.517Z",
+      "result": "success",
+      "summary": "9/15から国内店舗/EC等で順次発売、6型。国内発売条件既存一致。海外10月分を国内新規にしない。各店現在在庫は未確認。",
+      "rawEvidenceFile": "corporate-citen-chiikawa-release.json"
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "attemptCompletedAt": "2026-10-15T10:06:29.505Z",
+      "result": "success",
+      "summary": "7/15 12時web先行・7/22店舗発売。既存案内一致、本文に全店販売終了や再入荷の新確定告知なし。在庫保証なし。",
+      "rawEvidenceFile": "corporate-merry-jenny-chiikawa.json"
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "attemptCompletedAt": "2026-10-15T10:06:29.296Z",
+      "result": "success",
+      "summary": "7/3発表、7/10限定乾電池発売。元記事の販売案内一致。本文自体が発表時情報と明示し現在在庫未検証。",
+      "rawEvidenceFile": "corporate-panasonic-chiikawa.json"
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "attemptCompletedAt": "2026-10-15T10:06:31.031Z",
+      "result": "success",
+      "summary": "6/6 10時～なくなり次第終了の既存企画。初日整理券条件を今の入店条件へ流用しない。在庫未確認。",
+      "rawEvidenceFile": "corporate-donki-chiikawa-sl6.json"
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "attemptCompletedAt": "2026-10-15T10:06:29.991Z",
+      "result": "success",
+      "summary": "web取得本文で継続カード案内と年間利用特典を確認。新しい終了発表は表示範囲で確認せず。会員登録・契約・申込操作なし。",
+      "rawEvidenceFile": "corporate-epos-chiikawa-card.json"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "attemptCompletedAt": "2026-10-15T10:06:30.830Z",
+      "result": "success",
+      "summary": "10/2数量限定オキシクリーン1500gちいかわパッケージ発売。現行条件一致、全店販売終了は未確認。",
+      "rawEvidenceFile": "corporate-chiikawa-release-322.json"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "attemptCompletedAt": "2026-10-15T10:06:29.663Z",
+      "result": "success",
+      "summary": "一次発表の7/24～11/3は既存一致。特設はiframeのみで本文未確認。配送キットは別ページで本文取得できたが在庫は未確認。",
+      "rawEvidenceFile": "corporate-tokyo-metro-chiikawa.json"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "attemptCompletedAt": "2026-10-15T10:10:59.054Z",
+      "result": "success",
+      "summary": "9/14予約開始・受取12/19～25、受取日/店頭か7NOWかにより締切12/16～20。予定数到達で終了、既存一致。",
+      "rawEvidenceFile": "corporate-seven-eleven-christmas-products.json"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "attemptCompletedAt": "2026-10-15T10:10:58.972Z",
+      "result": "success",
+      "summary": "ちいかわなかよしクリスマスかまくらの予約案内・キャンペーン対象を再確認。主要期間はトップを参照。",
+      "rawEvidenceFile": "corporate-seven-eleven-christmas-signature.json"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "attemptCompletedAt": "2026-10-15T10:10:58.505Z",
+      "result": "success",
+      "summary": "ちいかわケーキ2種の案内を確認。主要期間/応募条件はトップ/キャンペーンを参照。商品単位在庫は未検証。",
+      "rawEvidenceFile": "corporate-seven-eleven-christmas-character.json"
+    },
+    {
+      "sourceId": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "attemptCompletedAt": "2026-10-15T10:10:59.369Z",
+      "result": "success",
+      "summary": "東京ソラマチ空の小町10/1～10/14、10～22時の公式発表を再確認。過去へ整理済みで重複移動しない。",
+      "rawEvidenceFile": "corporate-tokyo-banana-solamachi-release.json"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.964Z",
+      "result": "success",
+      "summary": "web本文で9/24～10/21配布、友だち追加・国内端末・取得後180日の条件を再確認。既存一致。",
+      "rawEvidenceFile": "corporate-aeon-chiikawa-news-954.json"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.852Z",
+      "result": "success",
+      "summary": "webニュース一覧で最新表示は9/24のちいかわLINE絵文字。表示範囲に追加対象告知なし。全ニュース不存在の保証ではない。",
+      "rawEvidenceFile": "corporate-aeon-chiikawa-news-index.json"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "attemptCompletedAt": "2026-10-15T10:11:00.745Z",
+      "result": "success",
+      "summary": "10/1過剰受注のRA3/RA4、確保不能注文はキャンセル/返金、対象者へ個別案内。現行記載一致。個別注文状況は未確認。",
+      "rawEvidenceFile": "corporate-chiikawa-glasses-orders.json"
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.480Z",
+      "result": "access_limited",
+      "summary": "web openがInternal Error/URLアクセス不可。今回は発売・再入荷条件を再確認できず、前回成功時刻を保持。",
+      "rawEvidenceFile": "corporate-uniqlo-chiikawa-faq.json"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "attemptCompletedAt": "2026-10-15T10:11:00.559Z",
+      "result": "parse_failed",
+      "summary": "商品ページは取得できたが長いナビゲーション主体で今回取得範囲に重要配送案内が含まれず。find2027も一致なしで最新配送時期を確認できないため、朝の2027年中配送記録を今回成功へ流用しない。",
+      "rawEvidenceFile": "tamanohikari-chiikawa-shop-details.json"
+    },
+    {
+      "sourceId": "metro-event-details",
+      "url": "https://escape.id/chiikawa/",
+      "attemptCompletedAt": "2026-10-15T10:10:58.522Z",
+      "result": "parse_failed",
+      "summary": "web応答はiframeのみで本文解析不能。公式メトロ告知と配送キットは別確認。新着なしとせず前回成功時刻保持。",
+      "rawEvidenceFile": "metro-event-details.json"
+    },
+    {
+      "sourceId": "christmas-faq",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.231Z",
+      "result": "success",
+      "summary": "利用時間内（指定入場開始から2時間30分以内）は再入場可能と明記。朝の調査メモの再入場不可を改める。ただし公開済みスポットに不可の記載はなく、公開案内は条件補足として更新する。一般発売日は新確定なし。",
+      "rawEvidenceFile": "christmas-faq.json"
+    },
+    {
+      "sourceId": "christmas-ticket-details",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "attemptCompletedAt": "2026-10-15T10:11:00.890Z",
+      "result": "success",
+      "summary": "再入場は指定入場開始から2時間30分以内に可能。待機列は入場枠15分前、購入者と同行者全員集合で整列。スマホ/子ども例外、日時変更不可など既存条件も確認。入場案内の明確化を提案。",
+      "rawEvidenceFile": "christmas-ticket-details.json"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.925Z",
+      "result": "parse_failed",
+      "summary": "イベント目次のJR東海×映画ちいかわを確認したが長い本文取得範囲が該当詳細まで届かず、今回詳細条件の再確認は未完了。主催特設の会期は別確認。",
+      "rawEvidenceFile": "jr-central-railway-museum-event.json"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-home",
+      "url": "https://museum.jr-central.co.jp/",
+      "attemptCompletedAt": "2026-10-15T10:11:01.527Z",
+      "result": "success",
+      "summary": "施設公式トップの所在地・施設案内を確認。ちいかわ会場の新しい終了・変更告知は表示本文にない。",
+      "rawEvidenceFile": "jr-central-railway-museum-home.json"
+    },
+    {
+      "sourceId": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "attemptCompletedAt": "2026-10-15T10:11:00.654Z",
+      "result": "success",
+      "summary": "ホームの新着は読書雑貨・カカオティエ等。ちいかわバルーン固有フロア・撮影時間・料金の追加一次情報は確認せず。",
+      "rawEvidenceFile": "kitte-osaka-home.json"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-facilities",
+      "url": "https://museum.jr-central.co.jp/facilities/index.html",
+      "attemptCompletedAt": "2026-10-15T10:10:58.727Z",
+      "result": "success",
+      "summary": "一般営業時間10～17:30、最終入館30分前、入館料・火曜定休の案内を確認。個別カレンダーは別結果。",
+      "rawEvidenceFile": "jr-central-railway-museum-facilities.json"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-calendar-2026",
+      "url": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+      "attemptCompletedAt": "2026-10-15T10:10:58.484Z",
+      "result": "parse_failed",
+      "summary": "今回は公式PDF1ページを取得できたが色分け休館カレンダーを画像実見できず、個々の休館日は解析未完了。朝の404と区別し前回成功時刻保持。",
+      "rawEvidenceFile": "jr-central-railway-museum-calendar-2026.json"
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "attemptCompletedAt": "2026-10-15T10:11:00.802Z",
+      "result": "success",
+      "summary": "9/18発表、9月下旬から順次・限定デザイン5種、店により時期/取扱い差、ECは詳細後日。新たな確定発売日・終期なし。",
+      "rawEvidenceFile": "corporate-minum-chiikawa-release.json"
+    },
+    {
+      "sourceId": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "attemptCompletedAt": "2026-10-15T10:11:01.864Z",
+      "result": "success",
+      "summary": "有効購入7/16～8/31、アップロード7/16 9時～9/1 23:59、応募7/16 9時～9/8 23:59。PR42修正後データと一致。",
+      "rawEvidenceFile": "suntory-receipt-campaign-official-2026.json"
+    },
+    {
+      "sourceId": "corporate-bandai-chiikawa-phone-campaign",
+      "url": "https://toy.bandai.co.jp/ja/topics/01_21085/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.480Z",
+      "result": "success",
+      "summary": "8/26告知の一般玩具購入特典10/31～数量終了、対象商品/ステッカー特典を再確認。既存の日次判断どおり一般商品単独展開のため新コラボ掲載対象にしない。",
+      "rawEvidenceFile": "corporate-bandai-chiikawa-phone-campaign.json"
+    },
+    {
+      "sourceId": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "attemptCompletedAt": "2026-10-15T10:11:00.342Z",
+      "result": "parse_failed",
+      "summary": "長いナビゲーション主体の取得範囲で最新記事本文の全件比較未完了。表示の過去クロール時刻にも留意し新着なしとは扱わない。",
+      "rawEvidenceFile": "corporate-kadokawa-childrens-topics.json"
+    },
+    {
+      "sourceId": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "attemptCompletedAt": "2026-10-15T10:11:00.166Z",
+      "result": "success",
+      "summary": "公式通販トップの表示商品群を確認。同名に近いチャーム付きライナーは通常商品の可能性があるため、ちいかわコラボEC開始の根拠にはしない。",
+      "rawEvidenceFile": "corporate-minum-official-shop.json"
+    },
+    {
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "attemptCompletedAt": "2026-10-15T10:10:59.718Z",
+      "result": "success",
+      "summary": "表示先頭は10/14記事・2721件で、10/15 ANA新発表が一覧表示に反映されていない。新着なしの判定には利用しない。別の最新検索とANA公式更新から当日発表を検出。一般玩具/プライズを新コラボとして追加しない。",
+      "rawEvidenceFile": "corporate-prtimes-chiikawa-index.json"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-access",
+      "url": "https://museum.jr-central.co.jp/access/",
+      "attemptCompletedAt": "2026-10-15T10:10:58.728Z",
+      "result": "success",
+      "summary": "公式所在地名古屋市港区金城ふ頭3-2-2とあおなみ線金城ふ頭駅アクセスを再確認。",
+      "rawEvidenceFile": "jr-central-railway-museum-access.json"
+    },
+    {
+      "sourceId": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "attemptCompletedAt": "2026-10-15T10:11:00.621Z",
+      "result": "success",
+      "summary": "イベント4件/ニュース1件の表示を再読。巨大バルーン単独案内は表示一覧になく、フロア・撮影時間・料金未解決。未開催や終了とは解釈しない。",
+      "rawEvidenceFile": "kitte-osaka-event-index.json"
+    },
+    {
+      "sourceId": "kitte-osaka-facility-access",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+      "attemptCompletedAt": "2026-10-15T10:10:59.608Z",
+      "result": "success",
+      "summary": "所在地大阪市北区梅田3-2-2を再確認。既存同一建物の根拠と一致。展示固有案内ではない。",
+      "rawEvidenceFile": "kitte-osaka-facility-access.json"
+    },
+    {
+      "sourceId": "kitte-osaka-facility-hours",
+      "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+      "attemptCompletedAt": "2026-10-15T10:10:59.619Z",
+      "result": "success",
+      "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+      "rawEvidenceFile": "kitte-osaka-facility-hours.json"
+    },
+    {
+      "sourceId": "corporate-magical-gororin-release-20261013",
+      "url": "https://prtimes.jp/main/html/rd/p/000000078.000168561.html",
+      "attemptCompletedAt": "2026-10-15T10:10:58.712Z",
+      "result": "success",
+      "summary": "10/13 18時～10/20正午受注、2027年2月下旬頃発送予定の一般ぬいぐるみ3種。会場・企業コラボ追加に該当せず昨日の対象外判断を維持。",
+      "rawEvidenceFile": "corporate-magical-gororin-release-20261013.json"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-escape-delivery-kit",
+      "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+      "attemptCompletedAt": "2026-10-15T10:11:01.185Z",
+      "result": "success",
+      "summary": "本文を取得し10/9～22、10/16～29、10/23～11/3用の配送キットと順次発送案内を確認。会期7/24～11/3、最終日20時は既存一致。在庫/決済稼働は未確認。",
+      "rawEvidenceFile": "corporate-tokyo-metro-escape-delivery-kit.json"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "attemptCompletedAt": "2026-10-15T10:10:59.145Z",
+      "result": "success",
+      "summary": "特設本文に10月末まで受付予定、新規・アップグレード先着99,000名/既存会員抽選1,000名、年会費3,000円。先着上限到達の終了表示は確認せず。応募導線はあるが遷移先の動的本文は読めず、受付稼働や残数は保証しない。",
+      "rawEvidenceFile": "corporate-toho-one-chiikawa-campaign.json"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-theater-notice",
+      "url": "https://www.tohotheater.jp/campaign/tohoone-chiikawa.html",
+      "attemptCompletedAt": "2026-10-15T10:11:00.658Z",
+      "result": "success",
+      "summary": "TOHOシネマズ公式がキャンペーン実施中、7/17 00:00～10/31 23:59を明記。上限に達した場合の早期終了注意はあるが、既に終了した表示はない。",
+      "rawEvidenceFile": "corporate-toho-one-chiikawa-theater-notice.json"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000027.000054370.html",
+      "attemptCompletedAt": "2026-10-15T10:10:59.464Z",
+      "result": "success",
+      "summary": "東宝公式PRの発表は7/17 12時。新規先着・既存抽選の両方が10/31 23:59まで受付。元登録出典と現在の企画期間一致、past分類の根拠なし。",
+      "rawEvidenceFile": "corporate-toho-one-chiikawa-release.json"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-release-20261015",
+      "url": "https://prtimes.jp/main/html/rd/p/000000018.000035055.html",
+      "attemptCompletedAt": "2026-10-15T10:03:43Z",
+      "result": "success",
+      "summary": "全日空商事10/15 11時発表。10/23第1弾発売、4店10/23～25は10/16 11時開始の先着入店予約制。羽田B1専用店舗は10/23～2027年3月末予定で日付未確定。既存ANA企画に追記。",
+      "rawEvidenceFile": "ana-release-and-details.json"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "attemptCompletedAt": "2026-10-15T10:03:08Z",
+      "result": "access_limited",
+      "summary": "検索結果の公式本文で千歳ロビー・羽田B1フロアギフト・福岡国内ロビー・那覇ロビー1号の4店舗、10/16 11時予約開始、EC10/23 10時と購入上限を確認。直接openは403のためアクセス成功扱いしない。予約実行/在庫は未確認。",
+      "rawEvidenceFile": "ana-release-and-details.json"
+    }
+  ],
+  "methodLimitations": [
+    "検索キャッシュの更新時刻は当日取得成功と同一でない。PR TIMES一覧は当日ANA発表を欠くため新着検索で補完。",
+    "KITTE原画像の実見未完了。PDFカレンダー色分けや画像主体のさんふらわあ会期を再確認済みとは扱わない。",
+    "通常グッズ/プライズは企業コラボ/開催として新規登録しない。",
+    "TOHO ONE朝訂正のready候補は親の公開同期を上書きしないため今回upsert対象から除外。公式3源は会期10/31までの継続を再確認。"
+  ],
+  "supplementalObservations": [
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "attemptCompletedAt": "2026-10-15T10:21:28Z",
+      "result": "success",
+      "summary": "行600以降を明示して再取得し重要案内を読了。新規注文は2027年中配送予定で具体時期未定、日付指定不可。11/10発売と配送を分離する既存掲載に一致。先のparse_failedを後続成功で解消。"
+    },
+    {
+      "sourceId": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "attemptCompletedAt": "2026-10-15T10:21:28Z",
+      "result": "success",
+      "summary": "行800付近の一覧本文を取得。表示最新10/9、ちいかわ関連10/2あいうえお一般書籍は対象外。表示範囲に追加対象企画なし。5日前クロール表示のため他の新着検索で補完、全新着不存在は保証しない。"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "attemptCompletedAt": "2026-10-15T10:21:36Z",
+      "result": "success",
+      "summary": "行900付近を再取得し7/8～10/31、1Fフォトスポットとジオラマ、入館受付ノベルティ引換の本文を読了。既存条件に一致。先のparse_failedを後続成功で解消。"
+    }
+  ]
+}
