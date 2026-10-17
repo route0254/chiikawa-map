@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-10-17T12:38:49+00:00",
+  "observations": [
+    {
+      "path": "data/official-spots.json",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "checkedAt": "2026-10-17T12:38:42+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "ded553748f70febae2bfc16ea3203805d73659f9e0210084bf26f00cccd59fb4",
+      "expectedSha256": "ded553748f70febae2bfc16ea3203805d73659f9e0210084bf26f00cccd59fb4"
+    },
+    {
+      "path": "data/collaborations-current.json",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "checkedAt": "2026-10-17T12:38:42+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "91ca5dd73016c9c920230515291cb9f65fb23c0f64425cc733ea15d274f53a6f",
+      "expectedSha256": "91ca5dd73016c9c920230515291cb9f65fb23c0f64425cc733ea15d274f53a6f"
+    },
+    {
+      "path": "data/official-events-archive.json",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "checkedAt": "2026-10-17T12:38:42+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "e98c8cc95e903f4146464545b9eb9ec16853c4f6feb2f48c7aefe24dcd2cdf05",
+      "expectedSha256": "e98c8cc95e903f4146464545b9eb9ec16853c4f6feb2f48c7aefe24dcd2cdf05"
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://chiikatsu-map.com/sitemap.xml",
+      "checkedAt": "2026-10-17T12:38:42+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "f2fd2fbda203c68961929d981a4127053afc17c7b32eb118e0ede0045e8eecea",
+      "expectedSha256": "f2fd2fbda203c68961929d981a4127053afc17c7b32eb118e0ede0045e8eecea"
+    },
+    {
+      "path": "spot/chiikawa-bakery-shop-laforet/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-shop-laforet/index.html",
+      "checkedAt": "2026-10-17T12:38:42+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "07e3be14e20fc58147083802d0b74ab5ef0ff4e612554c1622245e803314009d",
+      "expectedSha256": "07e3be14e20fc58147083802d0b74ab5ef0ff4e612554c1622245e803314009d"
+    },
+    {
+      "path": "spot/chiikawa-restaurant-ikebukuro/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-restaurant-ikebukuro/index.html",
+      "checkedAt": "2026-10-17T12:38:46+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "9706c2960e5278fd8c0496c86c0122fec960ec6cec88d228ee5e6ce832d880f9",
+      "expectedSha256": "9706c2960e5278fd8c0496c86c0122fec960ec6cec88d228ee5e6ce832d880f9"
+    },
+    {
+      "path": "spot/chiikawaland-koshigaya/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-koshigaya/index.html",
+      "checkedAt": "2026-10-17T12:38:46+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "ebaa064bf53f08088bc37fae1ad208269427abb9c9f4639d0732c6940fc47904",
+      "expectedSha256": "ebaa064bf53f08088bc37fae1ad208269427abb9c9f4639d0732c6940fc47904"
+    },
+    {
+      "path": "spot/chiikawaland-tokyo-station/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawaland-tokyo-station/index.html",
+      "checkedAt": "2026-10-17T12:38:46+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "968cc19bf90b6922a198690a54a2e6841bd089df8cbd2126cc44400c56b0b02b",
+      "expectedSha256": "968cc19bf90b6922a198690a54a2e6841bd089df8cbd2126cc44400c56b0b02b"
+    },
+    {
+      "path": "spot/mogumogu-fushimi/index.html",
+      "url": "https://chiikatsu-map.com/spot/mogumogu-fushimi/index.html",
+      "checkedAt": "2026-10-17T12:38:46+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "e02eb76d878aeb6598eb40c71090730763d456e5b342571fa7116a9f16ffb4f6",
+      "expectedSha256": "e02eb76d878aeb6598eb40c71090730763d456e5b342571fa7116a9f16ffb4f6"
+    },
+    {
+      "path": "spot/ramen-buta-shinsaibashi/index.html",
+      "url": "https://chiikatsu-map.com/spot/ramen-buta-shinsaibashi/index.html",
+      "checkedAt": "2026-10-17T12:38:46+00:00",
+      "result": "success",
+      "matches": true,
+      "sha256": "3564718ac1ee316e00e1c4b67e417cd8556ccdb6a276b3264f6b0cd498d02954",
+      "expectedSha256": "3564718ac1ee316e00e1c4b67e417cd8556ccdb6a276b3264f6b0cd498d02954"
+    }
+  ],
+  "allMatch": true,
+  "firstPublishedAt": null,
+  "notice": "確認時刻は公開開始時刻ではない。取り込みと一致確認が同じ日本日付内なら公開日は日付精度で確定できる。",
+  "commit": "68307c5e69289132e200b6e4aea0c559ec784292",
+  "pullRequest": "https://github.com/route0254/chiikawa-map/pull/54",
+  "publishedDate": "2026-10-17",
+  "dateEvidence": "取り込みと全対象一致確認が同一日本日付内。初回配信の正確な時刻は不明。",
+  "prTests": {
+    "unitPassed": 58,
+    "uiPassed": 105,
+    "testRun": "https://github.com/route0254/chiikawa-map/actions/runs/39032970907"
+  }
+}
