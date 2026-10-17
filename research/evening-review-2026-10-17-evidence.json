@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-10-17T12:29:48+00:00",
+  "scope": "公式情報の夕方確認。新たな全量巡回の実施を意味しない。",
+  "recovery": {
+    "reason": "作業環境の置換により未保存の詳細観測ファイルが失われたため、保存済みGit blobの台帳から記録を復元。原HTTP応答や失われた全観測を復元したとは扱わない。",
+    "candidateLedgerBlob": "79300ab5e60251b47c01ebd4e1d3d210d581d00a",
+    "sourceLedgerBlob": "cdac2202c96980dd19b2770fcdf1804d3bfbf885"
+  },
+  "recoveredCandidateEvidence": [
+    {
+      "candidateId": "hold-popup-yonago-final-hours-20261012",
+      "evidence": {
+        "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "通常取得の現行施設本文では終了回詳細がなく、Web検索取得は5日前の旧本文。新しい訂正根拠にはできない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "hold-pocket-sendai-hours-conflict-20261013",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "popup-2026-10-30-aeon-kurashiki-listing",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "popup-2026-10-30-aeon-kasukabe-listing",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "chiikawa-photo-2026-11-14-aeon-kurashiki-listing",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "chiikawa-bakery-osaka-expired-notice-20261017",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "chiikawa-bakery-shop-laforet-expired-notice-20261017",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "chiikawa-restaurant-ikebukuro-expired-notice-20261017",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "ramen-buta-shinsaibashi-expired-notice-20261017",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "skytree-purchase-scope-20261017",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    },
+    {
+      "candidateId": "mogumogu-fushimi-entry-20261017",
+      "evidence": {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "observedAt": "2026-10-17T10:08:31+00:00",
+        "summary": "公開JSONと候補の対象ID・掲載内容を照合し反映済みを確認。初回配信開始の正確な日時は不明のためpublishedAtはnullを維持。今回の照合時刻を初回公開時刻にしない。",
+        "recordPath": "research/evening-review-2026-10-17-evidence.json"
+      }
+    }
+  ],
+  "freshPublicObservations": [
+    {
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "observedAt": "2026-10-17T12:29:36+00:00",
+      "result": "success",
+      "sha256": "1f61d295e7eb0c9946adc989c48a28a6c2a2f2dcc385d9144a6067d3e4be8e73",
+      "count": 88,
+      "expiredOfficialBeforeToday": []
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "observedAt": "2026-10-17T12:29:41+00:00",
+      "result": "success",
+      "sha256": "e98c8cc95e903f4146464545b9eb9ec16853c4f6feb2f48c7aefe24dcd2cdf05",
+      "count": 657,
+      "expiredOfficialBeforeToday": []
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "observedAt": "2026-10-17T12:29:45+00:00",
+      "result": "success",
+      "sha256": "b7d49985d2aa34d407da8ea3d498665b3189517a379edcab1fca23e290d59437",
+      "count": 24,
+      "expiredOfficialBeforeToday": []
+    }
+  ],
+  "weeklyReview": {
+    "lastVerifiedDate": "2026-10-13",
+    "evidence": "research/morning-corporate-2026-10-15-evidence.json",
+    "decision": "7日未満。今回は週次広範囲調査の完了日を更新しない。"
+  },
+  "firstPublicationTime": "正確な初回公開日時が不明な候補はnullを保持。確認報告時刻は代入しない。"
+}
