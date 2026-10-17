@@ -1,0 +1,182 @@
+{
+  "auditDate": "2026-10-17",
+  "audit": "evening",
+  "recoveryNote": "元のクラウド作業環境が置換され、当日19時台の原HTML・画像・証拠ファイルは失われた。このファイルは21時29分台のANA2ソース再取得と、GitHubから復元された既存ソース台帳に残る他企業の19時台記録を区別して再構成した。元の発見日時・発表日時・公開日時は今回の再取得時刻で置き換えない。",
+  "scope": "fresh ANA A-style FAQ and RESERVA full notice only; recovered summaries for other corporate checks",
+  "freshObservationCount": 2,
+  "freshObservations": [
+    {
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "method": "ordinary_public_GET",
+      "attemptedAt": "2026-10-17T12:29:31.360+00:00",
+      "observedAt": "2026-10-17T12:29:36.320+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "sha256": "4faada9c81dd93fef8ebaff4aa2b8749e9225dbfbb2e0491e7422fa263932f58",
+      "provenance": "fresh_refetch_after_workspace_replacement",
+      "facts": {
+        "ecSaleStartsAt": "2026-10-23T10:00:00+09:00",
+        "internationalPreorderStartsAt": "2026-10-23T00:00:00+09:00",
+        "reservationRequiredVisitDates": [
+          "2026-10-23",
+          "2026-10-24",
+          "2026-10-25"
+        ],
+        "reservationRequiredStores": [
+          "千歳ロビー店",
+          "羽田B1フロアギフト店",
+          "福岡国内ロビー店",
+          "那覇ロビー1号店"
+        ]
+      },
+      "summary": "最新FAQはEC10/23 10:00、国際線機内プリオーダー同日00:00と明記。両方10:00だった元掲載の訂正根拠を再確認。",
+      "officialReservationLink": "https://reserva.be/ana_chiikawa/",
+      "failureOnOtherRoute": {
+        "method": "web direct open",
+        "result": "fetch_failed",
+        "observedAtMinute": "2026-10-17T12:29Z",
+        "detail": "URL not accessible。通常GET本文成功とは区別。"
+      }
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-reservation-full-20261016",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "observedAt": "2026-10-17T12:29:39.427Z",
+      "result": "success",
+      "method": "web public news index then click verified notice link",
+      "provenance": "fresh_refetch_after_workspace_replacement",
+      "officialLinkProvenance": [
+        {
+          "from": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+          "to": "https://reserva.be/ana_chiikawa/",
+          "verifiedBy": "fresh A-style HTML href"
+        },
+        {
+          "from": "https://reserva.be/ana_chiikawa/news",
+          "to": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+          "verifiedBy": "fresh web news index link 満枠のお知らせ"
+        }
+      ],
+      "officialAnnouncedAt": "2026-10-16T19:00:00+09:00",
+      "title": "満枠のお知らせ",
+      "summary": "10/23〜25の来店予約が満枠になったとの10/16 19時発表を再確認。キャンセルが発生すれば予約ページへ枠を自動反映すると明記。現在のキャンセル枠の有無・残数は検査していない。",
+      "currentAvailability": "not_checked",
+      "failedAttempts": [
+        {
+          "attemptedAt": "2026-10-17T12:29:31.361+00:00",
+          "observedAt": "2026-10-17T12:29:36.198+00:00",
+          "method": "ordinary_public_GET",
+          "result": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden"
+        },
+        {
+          "method": "web direct open",
+          "result": "fetch_failed",
+          "observedAtMinute": "2026-10-17T12:29Z",
+          "detail": "URL not accessible。公開news一覧からのweb clickは後に成功。"
+        }
+      ]
+    }
+  ],
+  "recoveredSourceEvidence": {
+    "path": "research/official-source-ledger.json",
+    "sha256": "186f66688722079d979eeea3d06d1c9941976fc4f17d00e1aaaa8df49004985a",
+    "provenance": "parent restored this tracked file from GitHub; read locally during recovery",
+    "observations": [
+      {
+        "sourceId": "jr-central-tsutsuurauratabi",
+        "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:07:15.389+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:07:15.389+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "7/8～10/31、TOKYO Station/梅田HEP FIVE配布終了、他所欠品時の引換証・後日配送は現行一致。KITTE巨大バルーン会期は一致、本文に固有フロア・撮影可能時間・料金なし。"
+      },
+      {
+        "sourceId": "tokyo-skytree-chiikawa-2026",
+        "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:07:17.455+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:07:17.455+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "10/31まで。カフェ食事券付き券は販売上限到達/予告なく再開の場合あり。10/8・14・21・22の19:30回のみ上映しない。現行掲載と一致、残席は未確認。"
+      },
+      {
+        "sourceId": "chiikawa-christmas-market-official",
+        "url": "https://contents-abema.com/chiikawa-christmas-market/",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:07:18.052+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:07:18.052+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "11/24～12/25、11～21時、最終入場18:30～19:00、先行抽選10/15 12時～10/25 23:59、当落10/30 12時以降は現行一致。一般発売日の確定記載なし。抽選操作や販売稼働は未確認。"
+      },
+      {
+        "sourceId": "kitte-osaka-home",
+        "url": "https://osaka.jp-kitte.jp/",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:07:20.089+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:07:20.089+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "施設トップ取得。バルーン固有フロア/時間/料金の案内を確認できず。ベーカリー3階を混同しない。"
+      },
+      {
+        "sourceId": "corporate-prtimes-chiikawa-index",
+        "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:07:21.333+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:07:21.333+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "2730件、先頭は10/17ワッツ新店、10/16日経/ワッツ。10/15ANA、福岡三越、10/13パーク/ちいぽけ等既知告知。新規独立コラボ候補は表示範囲で未検出。新着全量不存在は保証しない。"
+      },
+      {
+        "sourceId": "kitte-osaka-event-index",
+        "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:07:20.117+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:07:20.117+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "イベント4件/ニュース1件。10/17～18フェリー6社イベント等で巨大バルーン単独記事なし。未開催/終了の根拠にはしない。"
+      },
+      {
+        "sourceId": "jr-kitte-balloon-official-image",
+        "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+        "provenance": "recovered_from_restored_official_source_ledger_not_refetched",
+        "originalObservedAt": "2026-10-17T10:08:57.409+00:00",
+        "originalLastAttemptAt": "2026-10-17T10:08:57.409+00:00",
+        "originalResult": "success",
+        "recoveredSummary": "公式原画像を取得・目視。館内巨大バルーンの写真のみでフロア名・撮影時間・料金の記載なし。写真からフロア推定せず保留継続。"
+      }
+    ]
+  },
+  "publicationDecision": {
+    "targetId": "ana-chiikawa-jet-2026",
+    "reservationChange": "10/16 19:00満枠発表とキャンセル時自動再表示を併記し、企画終了・現在絶対に空きなしとはしない。",
+    "preorderCorrection": "10/23国際線機内プリオーダー00:00、EC10:00を区分。",
+    "newIndependentListing": false,
+    "scopeChange": false
+  },
+  "limitations": [
+    "新鮮な再調査はANAの2ソースのみ。他企業7ソースは復元台帳の当初記録であり再取得ではない。",
+    "元19時台の原HTML・画像は復元できていないため、復元台帳の観測日時を維持して出典を明示。",
+    "予約操作、ログイン、在庫や現在残枠の検査は実施していない。",
+    "KITTEの固有フロア・撮影時間・料金は元の確認でも未確定で保留。今回は再調査していない。"
+  ],
+  "reconstructedAt": "2026-10-17T12:30:43.764+00:00",
+  "recoveredHoldDecision": {
+    "candidateId": "jr-central-kitte-osaka-balloon-2026-venue-review",
+    "provenance": "recovered from restored official-source-ledger and earlier task report; not newly reverified",
+    "freshRecheck": false,
+    "state": "verifying",
+    "unresolvedFields": [
+      "展示固有フロア",
+      "撮影可能時間",
+      "料金"
+    ],
+    "summary": "元19時台のJR本文・KITTE施設本文と公式画像目視では、バルーン固有のフロア・撮影時間・料金を確定できなかったため保留を維持。元画像は環境置換で失われ、今回は取得・目視を再実施していない。一般施設営業時間やX応募期限を展示時間に流用しない。",
+    "recoveredImageObservedAt": "2026-10-17T10:08:57.409+00:00",
+    "recoveredImageUrl": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+    "recoveredImageObservation": "館内巨大バルーンの写真のみでフロア名・撮影時間・料金の記載なし。"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "recordType": "fresh_reverification_after_workspace_replacement",
+  "scope": "Six official individual X posts; cloud read-only; no PC or GitHub writes.",
+  "generatedAt": "2026-10-17T12:29:34.315978+00:00",
+  "observations": [
+    {
+      "id": "mogumogu-fushimi-tickets-ended-20261017",
+      "url": "https://x.com/chiikawamgmg/status/2111356819461587185",
+      "recoveredPriorObservation": {
+        "observedAt": "2026-10-17T10:07:01.793706+00:00",
+        "summary": "10/17京都伏見店の整理券配布終了、入場制限継続、翌日以降も状況により制限する場合あり。",
+        "provenance": "以前の作業報告・会話記録から復元。消失した当時のローカルHTMLを今回復旧したものではない。"
+      },
+      "freshObservation": {
+        "attemptedAt": "2026-10-17T12:29:27.004210+00:00",
+        "method": "direct_https_get",
+        "httpStatus": 200,
+        "result": "success",
+        "finalUrl": "https://x.com/chiikawamgmg/status/2111356819461587185",
+        "imageUrls": [],
+        "imageScope": "URLs extracted only. No image download or image-content verification in this recovery pass.",
+        "observedAt": "2026-10-17T12:29:32.823263+00:00",
+        "displayedPublicationText": "7:21 AM · Oct 17, 2026",
+        "publicationTimeZone": "not established; do not infer UTC/JST from the displayed clock",
+        "summary": "公式個別投稿の表示本文を新規取得して実読。京都伏見店10/17分の入場整理券配布終了、制限継続、翌日以降も状況により制限する場合があることを再確認。翌日分の具体的入場制を確定しない。",
+        "verifiedScope": "個別公式投稿の本文・アカウント・表示日付。画像内条件、後続投稿、全投稿一覧、現時点空きは未確認。",
+        "postBodySha256": "b0d961b3c790eb4b68b66c80b28f46b807803dd527bd69de3ae65c3752acb098"
+      },
+      "recoveredPriorFailures": []
+    },
+    {
+      "id": "chiikawaland-koshigaya-entry-20261018",
+      "url": "https://x.com/chiikawa_land/status/2111388111838315001",
+      "recoveredPriorObservation": {
+        "observedAt": "2026-10-17T10:07:01.523534+00:00",
+        "summary": "10/18越谷店の整列案内。開店前3F P3へはP2立体駐車場エレベーター、全員集合、混雑時整理券、運営変更可能性。画像の星印具体位置は未確認。",
+        "provenance": "以前の作業報告・会話記録から復元。消失した当時のローカルHTMLを今回復旧したものではない。"
+      },
+      "freshObservation": {
+        "attemptedAt": "2026-10-17T12:29:27.004999+00:00",
+        "method": "direct_https_get",
+        "httpStatus": 200,
+        "result": "success",
+        "finalUrl": "https://x.com/chiikawa_land/status/2111388111838315001",
+        "imageUrls": [
+          "https://pbs.twimg.com/media/HU0oTCmawAAg-de?format=webp&name=large"
+        ],
+        "imageScope": "URLs extracted only. No image download or image-content verification in this recovery pass.",
+        "observedAt": "2026-10-17T12:29:33.140870+00:00",
+        "displayedPublicationText": "9:25 AM · Oct 17, 2026",
+        "publicationTimeZone": "not established; do not infer UTC/JST from the displayed clock",
+        "summary": "公式個別投稿の表示本文を新規取得して実読。対象10/18、公式画像の★から整列、開店前3階P3入口へはP2立体駐車場エレベーター利用、全員集合後整列、混雑時整理券・運営方法変更の可能性を再確認。画像内★の具体位置は今回も未確認。",
+        "verifiedScope": "個別公式投稿の本文・アカウント・表示日付。画像内条件、後続投稿、全投稿一覧、現時点空きは未確認。",
+        "postBodySha256": "1da9f0a2db3db3c82d327af142da5f809eb5d67096e6876dccaad35c8bcd6db6"
+      },
+      "recoveredPriorFailures": [
+        {
+          "url": "https://pbs.twimg.com/media/HU0oTCmawAAg-de?format=webp&name=large",
+          "observedAt": "2026-10-17T10:07:43+00:00",
+          "timePrecision": "second",
+          "method": "direct_https_get",
+          "httpStatus": 403,
+          "result": "access_limited",
+          "summary": "以前の作業報告から復元した添付画像GET失敗。今回の画像再試行ではなく、本文取得成功を画像成功へ拡張しない。"
+        }
+      ]
+    },
+    {
+      "id": "chiikawaland-tokyo-station-entry-ended-20261017",
+      "url": "https://x.com/chiikawa_land/status/2111394345081565629",
+      "recoveredPriorObservation": {
+        "observedAt": "2026-10-17T10:07:00.660074+00:00",
+        "summary": "10/17 TOKYO Stationは投稿時点で並んでいる客を最後に本日の入店受付終了。",
+        "provenance": "以前の作業報告・会話記録から復元。消失した当時のローカルHTMLを今回復旧したものではない。"
+      },
+      "freshObservation": {
+        "attemptedAt": "2026-10-17T12:29:27.005589+00:00",
+        "method": "direct_https_get",
+        "httpStatus": 200,
+        "result": "success",
+        "finalUrl": "https://x.com/chiikawa_land/status/2111394345081565629",
+        "imageUrls": [],
+        "imageScope": "URLs extracted only. No image download or image-content verification in this recovery pass.",
+        "observedAt": "2026-10-17T12:29:34.315797+00:00",
+        "displayedPublicationText": "9:50 AM · Oct 17, 2026",
+        "publicationTimeZone": "not established; do not infer UTC/JST from the displayed clock",
+        "summary": "公式個別投稿の本文・表示日付10/17を新規取得して実読。TOKYO Stationは投稿時点で並んでいる客を最後に本日の入店受付終了。10/18以降へ延長しない。",
+        "verifiedScope": "個別公式投稿の本文・アカウント・表示日付。画像内条件、後続投稿、全投稿一覧、現時点空きは未確認。",
+        "postBodySha256": "a8804468d79831cb54683a9f19bf83606afcde779ac1898b64202c0b356388a3"
+      },
+      "recoveredPriorFailures": []
+    },
+    {
+      "id": "bakery-laforet-tickets-ended-20261017",
+      "url": "https://x.com/chiikawabakery/status/2111358378031321434",
+      "recoveredPriorObservation": {
+        "observedAt": "2026-10-17T10:07:00.466381+00:00",
+        "summary": "10/17ラフォーレ原宿ちいかわベーカリーPOP UPの整理券配布終了。",
+        "provenance": "以前の作業報告・会話記録から復元。消失した当時のローカルHTMLを今回復旧したものではない。"
+      },
+      "freshObservation": {
+        "attemptedAt": "2026-10-17T12:29:27.005981+00:00",
+        "method": "direct_https_get",
+        "httpStatus": 200,
+        "result": "success",
+        "finalUrl": "https://x.com/chiikawabakery/status/2111358378031321434",
+        "imageUrls": [],
+        "imageScope": "URLs extracted only. No image download or image-content verification in this recovery pass.",
+        "observedAt": "2026-10-17T12:29:32.669393+00:00",
+        "displayedPublicationText": "7:27 AM · Oct 17, 2026",
+        "publicationTimeZone": "not established; do not infer UTC/JST from the displayed clock",
+        "summary": "公式個別投稿の本文・ラフォーレ原宿ハッシュタグ・表示日付10/17を新規取得して実読。本日の整理券配布終了を再確認。翌日以降へ延長しない。",
+        "verifiedScope": "個別公式投稿の本文・アカウント・表示日付。画像内条件、後続投稿、全投稿一覧、現時点空きは未確認。",
+        "postBodySha256": "1db469f1ca271c097ec22583f1d94f0616988ca2a306dfb31a22bd094282c2fd"
+      },
+      "recoveredPriorFailures": []
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-20261017",
+      "url": "https://x.com/chiikawaramenSH/status/2111270631736250533",
+      "recoveredPriorObservation": {
+        "observedAt": "2026-10-17T10:07:00.751432+00:00",
+        "summary": "10/17心斎橋は事前予約満席で予約客のみ。写真未読。",
+        "provenance": "以前の作業報告・会話記録から復元。消失した当時のローカルHTMLを今回復旧したものではない。"
+      },
+      "freshObservation": {
+        "attemptedAt": "2026-10-17T12:29:27.006389+00:00",
+        "method": "direct_https_get",
+        "httpStatus": 200,
+        "result": "success",
+        "finalUrl": "https://x.com/chiikawaramenSH/status/2111270631736250533",
+        "imageUrls": [
+          "https://pbs.twimg.com/media/HUy9cpCbwAALU41?format=webp&name=large"
+        ],
+        "imageScope": "URLs extracted only. No image download or image-content verification in this recovery pass.",
+        "observedAt": "2026-10-17T12:29:33.405513+00:00",
+        "displayedPublicationText": "1:38 AM · Oct 17, 2026",
+        "publicationTimeZone": "not established; do not infer UTC/JST from the displayed clock",
+        "summary": "公式個別投稿の表示本文を新規取得して実読。10/17心斎橋は事前予約満席で予約客のみ。添付写真の内容は今回未確認。翌日以降へ延長しない。",
+        "verifiedScope": "個別公式投稿の本文・アカウント・表示日付。画像内条件、後続投稿、全投稿一覧、現時点空きは未確認。",
+        "postBodySha256": "ed6da2b1168967563d6aa1436ff3b729e22fd384913c527beae5bcbd72bd2d83"
+      },
+      "recoveredPriorFailures": [
+        {
+          "url": "https://pbs.twimg.com/media/HUy9cpCbwAALU41?format=webp&name=large",
+          "observedAt": "2026-10-17T10:07:43+00:00",
+          "timePrecision": "second",
+          "method": "direct_https_get",
+          "httpStatus": 403,
+          "result": "access_limited",
+          "summary": "以前の作業報告から復元した添付画像GET失敗。今回の画像再試行ではなく、本文取得成功を画像成功へ拡張しない。"
+        }
+      ]
+    },
+    {
+      "id": "chiikawa-restaurant-ikebukuro-entry-20261017",
+      "url": "https://x.com/THEGUEST_ikb/status/2111088960844001617",
+      "recoveredPriorObservation": {
+        "observedAt": "2026-10-17T10:07:01.838897+00:00",
+        "summary": "10/17池袋は事前予約満席で当日券なし、整理券客のみ。写真未読。",
+        "provenance": "以前の作業報告・会話記録から復元。消失した当時のローカルHTMLを今回復旧したものではない。"
+      },
+      "freshObservation": {
+        "attemptedAt": "2026-10-17T12:29:27.006857+00:00",
+        "method": "direct_https_get",
+        "httpStatus": 200,
+        "result": "success",
+        "finalUrl": "https://x.com/THEGUEST_ikb/status/2111088960844001617",
+        "imageUrls": [
+          "https://pbs.twimg.com/media/HUwYNyQaYAAzLDb?format=webp&name=large"
+        ],
+        "imageScope": "URLs extracted only. No image download or image-content verification in this recovery pass.",
+        "observedAt": "2026-10-17T12:29:33.984256+00:00",
+        "displayedPublicationText": "1:36 PM · Oct 16, 2026",
+        "publicationTimeZone": "not established; do not infer UTC/JST from the displayed clock",
+        "summary": "公式個別投稿の表示本文を新規取得して実読。10/17池袋は事前予約満席、当日券なし、整理券保有者のみ。表示投稿日10/16と本文の明日10/17が整合。グッズ店フリーは投稿時点の情報で、現在の状態を意味しない。",
+        "verifiedScope": "個別公式投稿の本文・アカウント・表示日付。画像内条件、後続投稿、全投稿一覧、現時点空きは未確認。",
+        "postBodySha256": "f7659aec8932a4b5730029af02e0ab3e9805e037ba73f3bc72650e410cf6b968"
+      },
+      "recoveredPriorFailures": [
+        {
+          "url": "https://pbs.twimg.com/media/HUwYNyQaYAAzLDb?format=webp&name=large",
+          "observedAt": "2026-10-17T10:07:43+00:00",
+          "timePrecision": "second",
+          "method": "direct_https_get",
+          "httpStatus": 403,
+          "result": "access_limited",
+          "summary": "以前の作業報告から復元した添付画像GET失敗。今回の画像再試行ではなく、本文取得成功を画像成功へ拡張しない。"
+        }
+      ]
+    }
+  ],
+  "freshVerificationCompletedAt": "2026-10-17T12:30:06.782485+00:00",
+  "freshFailures": [],
+  "limitations": [
+    "本文6件は新規取得・実読に成功。過去観測を今回時刻へ置換していない。",
+    "画像は今回は再取得しておらず、URLの抽出のみ。過去の403を別項目として保存。",
+    "指定6投稿のみの再検証であり、同アカウントの新着全量・訂正続報の網羅ではない。",
+    "10/17当日限定の条件は翌日以降に適用しない。"
+  ]
+}
