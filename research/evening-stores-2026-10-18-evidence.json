@@ -1,0 +1,558 @@
+{
+  "checkedAt": "2026-10-18T10:01:24.048484+00:00",
+  "baseline": "10/18 morning PR56 applied main snapshot",
+  "sourceObservations": [
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "attemptedAt": "2026-10-18T09:59:58.575239+00:00",
+      "fetchedAt": "2026-10-18T10:00:05.257037+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "attemptedAt": "2026-10-18T09:59:58.575800+00:00",
+      "fetchedAt": "2026-10-18T10:00:03.341572+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "attemptedAt": "2026-10-18T09:59:58.576351+00:00",
+      "fetchedAt": "2026-10-18T10:00:03.534652+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "attemptedAt": "2026-10-18T09:59:58.576854+00:00",
+      "fetchedAt": "2026-10-18T10:00:04.569090+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "attemptedAt": "2026-10-18T09:59:58.579371+00:00",
+      "fetchedAt": "2026-10-18T10:00:04.397256+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawarestoki",
+      "url": "https://x.com/chiikawarestOKI",
+      "attemptedAt": "2026-10-18T09:59:58.579989+00:00",
+      "fetchedAt": "2026-10-18T10:00:04.202107+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensp",
+      "url": "https://x.com/chiikawaramenSP",
+      "attemptedAt": "2026-10-18T09:59:58.580526+00:00",
+      "fetchedAt": "2026-10-18T10:00:03.815303+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensb",
+      "url": "https://x.com/chiikawaramenSB",
+      "attemptedAt": "2026-10-18T10:00:03.341644+00:00",
+      "fetchedAt": "2026-10-18T10:00:10.858532+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensh",
+      "url": "https://x.com/chiikawaramenSH",
+      "attemptedAt": "2026-10-18T10:00:03.534718+00:00",
+      "fetchedAt": "2026-10-18T10:00:09.523445+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": null,
+      "coverage": "未ログインプロフィール表示5投稿前後。全投稿・画像内容は未網羅。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "attemptedAt": "2026-10-18T10:00:03.815384+00:00",
+      "fetchedAt": null,
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": "HTTP Error 403: Forbidden",
+      "coverage": "取得失敗。内容の変更なしとは扱わない。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "attemptedAt": "2026-10-18T10:00:04.202177+00:00",
+      "fetchedAt": null,
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": "HTTP Error 403: Forbidden",
+      "coverage": "取得失敗。内容の変更なしとは扱わない。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
+      "attemptedAt": "2026-10-18T10:00:04.397316+00:00",
+      "fetchedAt": null,
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": "HTTP Error 403: Forbidden",
+      "coverage": "取得失敗。内容の変更なしとは扱わない。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "attemptedAt": "2026-10-18T10:00:04.569165+00:00",
+      "fetchedAt": null,
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "method": "direct_https_urllib",
+      "evidenceFile": "direct-fetches.json",
+      "error": "HTTP Error 403: Forbidden",
+      "coverage": "取得失敗。内容の変更なしとは扱わない。"
+    },
+    {
+      "sourceId": null,
+      "url": "https://x.com/chiikawamgmg/status/2111710869075751102",
+      "attemptedAt": "2026-10-18T10:00:30.938092+00:00",
+      "fetchedAt": "2026-10-18T10:00:35.898948+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "post-fetches.json",
+      "error": null,
+      "coverage": "個別投稿本文。画像内容は未確認。"
+    },
+    {
+      "sourceId": null,
+      "url": "https://x.com/chiikawamgmg/status/2111607024144543972",
+      "attemptedAt": "2026-10-18T10:00:30.938955+00:00",
+      "fetchedAt": "2026-10-18T10:00:35.987450+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "post-fetches.json",
+      "error": null,
+      "coverage": "個別投稿本文。画像内容は未確認。"
+    },
+    {
+      "sourceId": null,
+      "url": "https://x.com/chiikawabakery/status/2111714913752395992",
+      "attemptedAt": "2026-10-18T10:00:30.939649+00:00",
+      "fetchedAt": "2026-10-18T10:00:36.625328+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "post-fetches.json",
+      "error": null,
+      "coverage": "個別投稿本文。画像内容は未確認。"
+    },
+    {
+      "sourceId": null,
+      "url": "https://x.com/chiikawaramenSH/status/2111629053698638153",
+      "attemptedAt": "2026-10-18T10:00:30.940042+00:00",
+      "fetchedAt": "2026-10-18T10:00:36.506466+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "post-fetches.json",
+      "error": null,
+      "coverage": "個別投稿本文。画像内容は未確認。"
+    },
+    {
+      "sourceId": null,
+      "url": "https://x.com/chiikawarestOKI/status/2111624385954291832",
+      "attemptedAt": "2026-10-18T10:00:30.940766+00:00",
+      "fetchedAt": "2026-10-18T10:00:36.084318+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "method": "direct_https_urllib",
+      "evidenceFile": "post-fetches.json",
+      "error": null,
+      "coverage": "個別投稿本文。画像内容は未確認。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "attemptedAt": "2026-10-18T09:58:53Z",
+      "fetchedAt": "2026-10-18T09:58:53Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "東京9・10月完売、15時以降デジタル整理券（14:50発行）。大阪10〜12月完売・優先券保有者のみ。既存一致。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "attemptedAt": "2026-10-18T09:59:03Z",
+      "fetchedAt": "2026-10-18T09:59:03Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "NEWS先頭9/28。読取範囲で朝以降の入場変更なし。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "attemptedAt": "2026-10-18T09:59:03Z",
+      "fetchedAt": "2026-10-18T09:59:03Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "先頭は10/2川越店10/17〜18営業時間変更。新規会場情報なし。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "nagano-market-entry-general",
+      "url": "https://nagano-info.jp/tenpo_nm/goannai.html",
+      "attemptedAt": "2026-10-18T09:59:03Z",
+      "fetchedAt": "2026-10-18T09:59:03Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "新商品発売時にオンライン整理券を配布する場合あり。対象日は公式X告知。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "attemptedAt": "2026-10-18T09:59:03Z",
+      "fetchedAt": "2026-10-18T09:59:03Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "9/26〜11/20販売期間。予約優先、完売日時は当日席なし。既存一致。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "attemptedAt": "2026-10-18T09:59:03Z",
+      "fetchedAt": "2026-10-18T09:59:03Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "10/17〜12/11販売期間。事前残席がある時に当日券。既存一致。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "attemptedAt": "2026-10-18T09:59:20Z",
+      "fetchedAt": "2026-10-18T09:59:20Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "池袋11〜14時予約優先・以降予約不要。渋谷・心斎橋予約優先。LivePocket先着2日前まで、既存条件一致。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "attemptedAt": "2026-10-18T09:59:20Z",
+      "fetchedAt": "2026-10-18T09:59:20Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "池袋11〜14時予約優先・以降予約不要。渋谷・心斎橋予約優先。LivePocket先着2日前まで、既存条件一致。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "attemptedAt": "2026-10-18T09:59:20Z",
+      "fetchedAt": "2026-10-18T09:59:20Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "池袋11〜14時予約優先・以降予約不要。渋谷・心斎橋予約優先。LivePocket先着2日前まで、既存条件一致。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "attemptedAt": "2026-10-18T09:59:27Z",
+      "fetchedAt": "2026-10-18T09:59:27Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "通常営業時間9:30〜17:30を本文確認。店舗表示NEWSを実読。川越の10/17〜18特別営業時間見出しは維持。個別新条件はSNS別記。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "attemptedAt": "2026-10-18T09:59:27Z",
+      "fetchedAt": "2026-10-18T09:59:27Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "通常営業時間9:30〜17:30を本文確認。店舗表示NEWSを実読。川越の10/17〜18特別営業時間見出しは維持。個別新条件はSNS別記。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "attemptedAt": "2026-10-18T09:59:27Z",
+      "fetchedAt": "2026-10-18T09:59:27Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "通常営業時間9:30〜17:30を本文確認。店舗表示NEWSを実読。川越の10/17〜18特別営業時間見出しは維持。個別新条件はSNS別記。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "fetchedAt": "2026-10-18T09:59:31Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "店舗情報・入場予約の公式X案内・本人確認・10/2ノベルティ・10/23商品を本文で確認。新たな対象日条件は本文未掲載。クロール鮮度は心斎橋昨日、銀座今日、札幌先週のため当日完全確認とは扱わない。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "fetchedAt": "2026-10-18T09:59:31Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "店舗情報・入場予約の公式X案内・本人確認・10/2ノベルティ・10/23商品を本文で確認。新たな対象日条件は本文未掲載。クロール鮮度は心斎橋昨日、銀座今日、札幌先週のため当日完全確認とは扱わない。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "fetchedAt": "2026-10-18T09:59:31Z",
+      "result": "success",
+      "httpStatus": null,
+      "method": "web_open_body",
+      "summary": "店舗情報・入場予約の公式X案内・本人確認・10/2ノベルティ・10/23商品を本文で確認。新たな対象日条件は本文未掲載。クロール鮮度は心斎橋昨日、銀座今日、札幌先週のため当日完全確認とは扱わない。",
+      "coverage": "返却本文表示範囲。HTTP実ステータスは返却なし。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "attemptedAt": "2026-10-18T09:58:53Z",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "method": "web_open",
+      "summary": "web取得403。通常HTTPSの取得とは別試行として記録。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "attemptedAt": "2026-10-18T09:58:53Z",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "method": "web_open",
+      "summary": "web取得403。通常HTTPSの取得とは別試行として記録。"
+    },
+    {
+      "sourceId": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "attemptedAt": "2026-10-18T09:58:53Z",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "method": "web_open",
+      "summary": "web取得403。通常HTTPSの取得とは別試行として記録。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "result": "fetch_failed",
+      "httpStatus": null,
+      "method": "web_open",
+      "summary": "Internal Error。本文未取得。変更なしとは扱わない。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "result": "fetch_failed",
+      "httpStatus": null,
+      "method": "web_open",
+      "summary": "Internal Error。本文未取得。変更なしとは扱わない。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "result": "fetch_failed",
+      "httpStatus": null,
+      "method": "web_open",
+      "summary": "Internal Error。本文未取得。変更なしとは扱わない。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "attemptedAt": "2026-10-18T09:59:31Z",
+      "result": "fetch_failed",
+      "httpStatus": null,
+      "method": "web_open",
+      "summary": "Internal Error。本文未取得。変更なしとは扱わない。"
+    }
+  ],
+  "newProjects": [],
+  "conditionChanges": [
+    {
+      "existingId": "mogumogu-fushimi",
+      "changeType": "existing_entry_condition",
+      "sourceUrl": "https://x.com/chiikawamgmg/status/2111710869075751102",
+      "effectiveDate": "2026-10-18",
+      "oldEntryNote": "2026年10月17日分の入場整理券は配布終了し、入場制限を継続する公式案内が出ていました。翌日以降も混雑状況により入場制限を行う場合があります。来店前に最新の公式案内をご確認ください。 この10月17日限定の案内の対象日は終了しています。10月18日の当日状況は未確認です。 通常案内はフリー入店です。混雑状況によっては急遽の入店制限や整理券対応を行う場合があります。最新の入店方法は公式HP・公式SNSをご確認ください。",
+      "proposedFields": {
+        "entryNote": "2026年10月18日分の入場整理券は配布終了し、入場制限を継続する公式案内が出ています。翌日以降も混雑状況に応じて入場制限を行う場合があります。通常案内はフリー入店ですが、来店前に最新の公式HP・公式SNSをご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawamgmg/status/2111710869075751102",
+        "entryInfoCheckedAt": "2026-10-18"
+      },
+      "reason": "10/17の古い日限定案内・10/18未確認を置換。店舗の通常営業は17:30までなので、公開時に閉店後でも日付付き当日告知として扱い、将来日へ一般化しない。",
+      "confirmedBy": "post-fetches.json",
+      "notNewProject": true
+    },
+    {
+      "existingId": "chiikawa-bakery-shop-laforet",
+      "changeType": "existing_entry_condition",
+      "sourceUrl": "https://x.com/chiikawabakery/status/2111714913752395992",
+      "effectiveDate": "2026-10-18",
+      "oldEntryNote": "2026年10月18日は整理券による入場です。10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+      "proposedFields": {
+        "entryNote": "2026年10月18日分の整理券は配布終了しています。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2111714913752395992",
+        "entryInfoCheckedAt": "2026-10-18"
+      },
+      "reason": "朝の10:00整理券配布開始案内を同日配布終了へ更新。翌日に継続適用しない。",
+      "confirmedBy": "post-fetches.json",
+      "notNewProject": true
+    },
+    {
+      "existingId": "ramen-buta-shinsaibashi",
+      "changeType": "existing_entry_condition",
+      "sourceUrl": "https://x.com/chiikawaramenSH/status/2111629053698638153",
+      "effectiveDate": "2026-10-18",
+      "oldEntryNote": "2026年10月17日は事前予約で満席のため、予約をお持ちの方のみの案内でした。 この10月17日限定の案内の対象日は終了しています。10月18日の当日状況は未確認です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+      "proposedFields": {
+        "entryNote": "2026年10月18日は事前予約で満席のため、予約をお持ちの方のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2111629053698638153",
+        "entryInfoCheckedAt": "2026-10-18"
+      },
+      "reason": "10/17限定案内・10/18未確認を置換。一般予約案内は維持。",
+      "confirmedBy": "post-fetches.json",
+      "notNewProject": true
+    }
+  ],
+  "reconfirmations": [
+    {
+      "existingId": "chiikawa-restaurant-ikebukuro",
+      "sourceUrl": "https://x.com/THEGUEST_ikb/status/2111638641382695423",
+      "summary": "10/18開店投稿でも予約者のみ。朝掲載と一致。グッズ自由入場は投稿時点。現在の行列は未確認。"
+    },
+    {
+      "existingId": "chiikawa-restaurant-okinawa",
+      "sourceUrl": "https://x.com/chiikawarestOKI/status/2111624385954291832",
+      "summary": "10/18開店投稿で一部当日券あり。朝の前日予告と一致。19時の残席を保証しないため現在空きありと断定しない。"
+    }
+  ],
+  "scopeNotes": [
+    "共有repoは変更していない。",
+    "朝13件を再追加しない。",
+    "10/18当日終了イベントは移動しない。",
+    "プロフィール表示範囲だけでは朝以降全投稿の網羅とはしない。"
+  ],
+  "individualPostEvidence": [
+    {
+      "url": "https://x.com/chiikawamgmg/status/2111710869075751102",
+      "attemptedAt": "2026-10-18T10:00:30.938092+00:00",
+      "fetchedAt": "2026-10-18T10:00:35.898948+00:00",
+      "status": "success",
+      "httpStatus": 200,
+      "text": "ちいかわもぐもぐ本舗 on X: \"ちいかわもぐもぐ本舗京都伏見店\n[10/18本日分の入場整理券配布終了]\n本日はたくさんのお客様のご来店を賜り誠にありがとうございます。\n安全面を考慮し現在、入場制限を継続しております。\nまた、本日分の入場整理券の配布は終了いたしました。\n明日以降も、状況に応じて入場制限を実施する場合がございます。ご理解の程よろしくお願いいたします。\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわもぐもぐ本舗 on X: \"ちいかわもぐもぐ本舗京都伏見店\n[10/18本日分の入場整理券配布終了]\n本日はたくさんのお客様のご来店を賜り誠にありがとうございます。\n安全面を考慮し現在、入場制限を継続しております。\nまた、本日分の入場整理券の配布は終了いたしました。\n明日以降も、状況に応じて入場制限を実施する場合がございます。ご理解の程よろしくお願いいたします。\"\nちいかわもぐもぐ本舗\n@chiikawamgmg\nShow translation\nちいかわもぐもぐ本舗京都伏見店\n[10/18本日分の入場整理券配布終了]\n本日はたくさんのお客様のご来店を賜り誠にありがとうございます。\n安全面を考慮し現在、入場制限を継続しております。\nまた、本日分の入場整理券の配布は終了いたしました。\n明日以降も、状況に応じて入場制限を実施する場合がございます。ご理解の程よろしくお願いいたします。\n6:47 AM · Oct 18, 2026\n·\n18.8K\nViews\n1\n30\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわもぐもぐ本舗\n@\nchiikawamgmg\nFollow\n「ちいかわもぐもぐ本舗」の商品情報やイベントなどの情報をお知らせするアカウントです。 お問い合わせはオフィシャルサイトのお問い合わせフォームからお願いいたします。\nchiikawamogumogu.jp/contact/\n※当店はグッズショップ［常設店］です。飲食店ではございません。\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわもぐもぐ本舗\n@chiikawamgmg\nShow translation\nちいかわもぐもぐ本舗京都伏見店\n[10/18本日分の入場整理券配布終了]\n本日はたくさんのお客様のご来店を賜り誠にありがとうございます。\n安全面を考慮し現在、入場制限を継続しております。\nまた、本日分の入場整理券の配布は終了いたしました。\n明日以降も、状況に応じて入場制限を実施する場合がございます。ご理解の程よろしくお願いいたします。\n6:47 AM · Oct 18, 2026\n·\n18.8K\nViews\n1\n30"
+    },
+    {
+      "url": "https://x.com/chiikawamgmg/status/2111607024144543972",
+      "attemptedAt": "2026-10-18T10:00:30.938955+00:00",
+      "fetchedAt": "2026-10-18T10:00:35.987450+00:00",
+      "status": "success",
+      "httpStatus": 200,
+      "text": "ちいかわもぐもぐ本舗 on X: \"［ちいかわもぐもぐ本舗　京都伏見店整理券による入場制限のお知らせ］\n10/18 本日、たくさんのお客様にご来店いただいておりますため、安全面を考慮し、整理券による、入場制限を実施させていただきます。  店頭のスタッフの指示にご協力いただきますようお願い申し上げます。\n #ちいかわもぐもぐ本舗 #京都伏見\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわもぐもぐ本舗 on X: \"［ちいかわもぐもぐ本舗　京都伏見店整理券による入場制限のお知らせ］\n10/18 本日、たくさんのお客様にご来店いただいておりますため、安全面を考慮し、整理券による、入場制限を実施させていただきます。  店頭のスタッフの指示にご協力いただきますようお願い申し上げます。\n #ちいかわもぐもぐ本舗 #京都伏見\"\nちいかわもぐもぐ本舗\n@chiikawamgmg\nShow translation\n［ちいかわもぐもぐ本舗　京都伏見店整理券による入場制限のお知らせ］\n10/18 本日、たくさんのお客様にご来店いただいておりますため、安全面を考慮し、整理券による、入場制限を実施させていただきます。  店頭のスタッフの指示にご協力いただきますようお願い申し上げます。\n#ちいかわもぐもぐ本舗\n#京都伏見\n11:55 PM · Oct 17, 2026\n·\n28.9K\nViews\n5\n65\n3\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわもぐもぐ本舗\n@\nchiikawamgmg\nFollow\n「ちいかわもぐもぐ本舗」の商品情報やイベントなどの情報をお知らせするアカウントです。 お問い合わせはオフィシャルサイトのお問い合わせフォームからお願いいたします。\nchiikawamogumogu.jp/contact/\n※当店はグッズショップ［常設店］です。飲食店ではございません。\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわもぐもぐ本舗\n@chiikawamgmg\nShow translation\n［ちいかわもぐもぐ本舗　京都伏見店整理券による入場制限のお知らせ］\n10/18 本日、たくさんのお客様にご来店いただいておりますため、安全面を考慮し、整理券による、入場制限を実施させていただきます。  店頭のスタッフの指示にご協力いただきますようお願い申し上げます。\n#ちいかわもぐもぐ本舗\n#京都伏見\n11:55 PM · Oct 17, 2026\n·\n28.9K\nViews\n5\n65\n3"
+    },
+    {
+      "url": "https://x.com/chiikawabakery/status/2111714913752395992",
+      "attemptedAt": "2026-10-18T10:00:30.939649+00:00",
+      "fetchedAt": "2026-10-18T10:00:36.625328+00:00",
+      "status": "success",
+      "httpStatus": 200,
+      "text": "ちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】 on X: \"【ちいかわベーカリー ポップアップショップ🍞】  \n本日の整理券は配布終了いたしました。    \n\n#ちいかわベーカリーポップアップショップ #ラフォーレ原宿\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】 on X: \"【ちいかわベーカリー ポップアップショップ🍞】  \n本日の整理券は配布終了いたしました。    \n\n#ちいかわベーカリーポップアップショップ #ラフォーレ原宿\"\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】\n@chiikawabakery\nShow translation\n【ちいかわベーカリー ポップアップショップ🍞】  \n本日の整理券は配布終了いたしました。\n#ちいかわベーカリーポップアップショップ\n#ラフォーレ原宿\n7:04 AM · Oct 18, 2026\n·\n20.8K\nViews\n2\n26\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】\n@\nchiikawabakery\nFollow\n『ちいかわベーカリー』および『ちいかわベーカリーPOP UP SHOP』の公式アカウントです。店舗の最新ニュースをお届けします🍞✨\n⚠個別の問い合わせにはお答えできません。\nお問い合わせは公式サイトのフォームよりお願いいたします。\n企画・運営／(株)エルティーアール\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】\n@chiikawabakery\nShow translation\n【ちいかわベーカリー ポップアップショップ🍞】  \n本日の整理券は配布終了いたしました。\n#ちいかわベーカリーポップアップショップ\n#ラフォーレ原宿\n7:04 AM · Oct 18, 2026\n·\n20.8K\nViews\n2\n26"
+    },
+    {
+      "url": "https://x.com/chiikawaramenSH/status/2111629053698638153",
+      "attemptedAt": "2026-10-18T10:00:30.940042+00:00",
+      "fetchedAt": "2026-10-18T10:00:36.506466+00:00",
+      "status": "success",
+      "httpStatus": 200,
+      "text": "ちいかわラーメン豚 心斎橋 on X: \"10/18（日）\n\n本日は事前ご予約で満席のためご予約いただいてるお客様のみのご案内となります。\n\nご来店を予定されていたお客様には大変申し訳ございませんが、\nご理解のほど、よろしくお願いいたします。\n\n#ちいかわラーメン豚\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわラーメン豚 心斎橋 on X: \"10/18（日）\n\n本日は事前ご予約で満席のためご予約いただいてるお客様のみのご案内となります。\n\nご来店を予定されていたお客様には大変申し訳ございませんが、\nご理解のほど、よろしくお願いいたします。\n\n#ちいかわラーメン豚\"\nちいかわラーメン豚 心斎橋\n@chiikawaramenSH\nShow translation\n10/18（日）\n\n本日は事前ご予約で満席のためご予約いただいてるお客様のみのご案内となります。\n\nご来店を予定されていたお客様には大変申し訳ございませんが、\nご理解のほど、よろしくお願いいたします。\n#ちいかわラーメン豚\n1:22 AM · Oct 18, 2026\n·\n5,906\nViews\n2\n31\n1\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわラーメン豚 心斎橋\n@\nchiikawaramenSH\nFollow\nイラストレーター ナガノによる人気作品『ちいかわ』に登場する“話題のラーメン屋さん”をイメージした「ちいかわラーメン 豚」心斎橋PARCOに期間限定オープン！渋谷、池袋、名古屋、広島の各PARCOでも好評営業中。営業時間11:00-23:00（最終ご入店22:00）\n※DM・リプライのご質問等へは返信いたしかねます\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわラーメン豚 心斎橋\n@chiikawaramenSH\nShow translation\n10/18（日）\n\n本日は事前ご予約で満席のためご予約いただいてるお客様のみのご案内となります。\n\nご来店を予定されていたお客様には大変申し訳ございませんが、\nご理解のほど、よろしくお願いいたします。\n#ちいかわラーメン豚\n1:22 AM · Oct 18, 2026\n·\n5,906\nViews\n2\n31\n1"
+    },
+    {
+      "url": "https://x.com/chiikawarestOKI/status/2111624385954291832",
+      "attemptedAt": "2026-10-18T10:00:30.940766+00:00",
+      "fetchedAt": "2026-10-18T10:00:36.084318+00:00",
+      "status": "success",
+      "httpStatus": 200,
+      "text": "ちいかわレストラン 沖縄PARCO CITY店 on X: \"#ちいかわレストラン 沖縄PARCO CITY店🌺\n\n本日もOPENいたしました！\n弊店はカフェご利用は事前予約優先制となっております。\n10/18（日）のカフェは一部、当日券がございます！\n\n🍹テイクアウトドリンクのご注文は、予約不要です。混雑時は整理券配布を行う場合がございます。\n\n🛍️グッズショップはフリー入場です。混雑時には待機列を形成する場合がございます。\n\n▼HP\nhttps://t.co/9HQXm8ZWgw\n\n#ちいかわ #沖縄 #コラボカフェ\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわレストラン 沖縄PARCO CITY店 on X: \"#ちいかわレストラン 沖縄PARCO CITY店🌺\n\n本日もOPENいたしました！\n弊店はカフェご利用は事前予約優先制となっております。\n10/18（日）のカフェは一部、当日券がございます！\n\n🍹テイクアウトドリンクのご注文は、予約不要です。混雑時は整理券配布を行う場合がございます。\n\n🛍️グッズショップはフリー入場です。混雑時には待機列を形成する場合がございます。\n\n▼HP\nhttps://t.co/9HQXm8ZWgw\n\n#ちいかわ #沖縄 #コラボカフェ\"\nちいかわレストラン 沖縄PARCO CITY店\n@chiikawarestOKI\nShow translation\n#ちいかわレストラン\n沖縄PARCO CITY店🌺\n\n本日もOPENいたしました！\n弊店はカフェご利用は事前予約優先制となっております。\n10/18（日）のカフェは一部、当日券がございます！\n\n🍹テイクアウトドリンクのご注文は、予約不要です。混雑時は整理券配布を行う場合がございます。\n\n🛍️グッズショップはフリー入場です。混雑時には待機列を形成する場合がございます。\n\n▼HP\ncafe.parco.jp/event/informat…\n#ちいかわ\n#沖縄\n#コラボカフェ\n1:04 AM · Oct 18, 2026\n·\n2,066\nViews\n3\n9\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわレストラン 沖縄PARCO CITY店\n@\nchiikawarestOKI\nFollow\n「ちいかわレストラン 沖縄PARCO CITY店」の公式アカウントです。\nメニューやグッズなどの最新情報を発信！ぜひチェックしてください✨\nOPEN:10:00～22:00 （FOOD L.O.21:00、DRINK L.O.21:30）\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわレストラン 沖縄PARCO CITY店\n@chiikawarestOKI\nShow translation\n#ちいかわレストラン\n沖縄PARCO CITY店🌺\n\n本日もOPENいたしました！\n弊店はカフェご利用は事前予約優先制となっております。\n10/18（日）のカフェは一部、当日券がございます！\n\n🍹テイクアウトドリンクのご注文は、予約不要です。混雑時は整理券配布を行う場合がございます。\n\n🛍️グッズショップはフリー入場です。混雑時には待機列を形成する場合がございます。\n\n▼HP\ncafe.parco.jp/event/informat…\n#ちいかわ\n#沖縄\n#コラボカフェ\n1:04 AM · Oct 18, 2026\n·\n2,066\nViews\n3\n9"
+    }
+  ]
+}

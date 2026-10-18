@@ -1,0 +1,1176 @@
+{
+  "auditDate": "2026-10-18",
+  "timezone": "Asia/Tokyo",
+  "completedAt": "2026-10-18T10:02:43.397349+00:00",
+  "scope": "企業公式・コラボ条件。クラウド公開読取のみ。",
+  "observations": [
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "startedAt": "2026-10-18T09:59:32.842878+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 8752,
+      "evidenceSha256": "581bc5a43b58f40a71fb5efd9ab2c883ae7540867ce0eca05a309f0507587306",
+      "bodyFile": "jr-central-tsutsuurauratabi.txt",
+      "completedAt": "2026-10-18T09:59:40.340431+00:00",
+      "existingIds": [
+        "jr-central-tsutsuurauratabi-2026"
+      ],
+      "candidateIds": [
+        "jr-central-novelty-distribution-update-20261006",
+        "jr-central-linear-railway-museum-2026-venue-review",
+        "jr-central-kitte-osaka-balloon-2026-venue-review",
+        "magical-umeda-hep-closure-20261015"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。7/8～10/31、TOKYO Station/梅田HEP FIVEノベルティ・引換証配布終了、他所欠品時の引換証/後日配送は既存一致。KITTEバルーン固有のフロア・撮影可能時間・料金の確定記載なし。"
+    },
+    {
+      "sourceId": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "startedAt": "2026-10-18T09:59:32.843562+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1311,
+      "evidenceSha256": "70b7cba87d8eef66b0469d2a574d186d37663b2bdc63ece64b58510993812a83",
+      "bodyFile": "kitte-osaka-event-index.txt",
+      "completedAt": "2026-10-18T09:59:39.371272+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "jr-central-kitte-osaka-balloon-2026-venue-review"
+      ],
+      "summary": "10/17～18フェリー6社イベントを掲載。JRバルーンの個別階・時間・料金の根拠は未発見。"
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "startedAt": "2026-10-18T09:59:32.843945+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "parse_failed",
+      "bodyCharacters": 27,
+      "evidenceSha256": "75ef15f551ff4943dd03c67964826aee14e2a863f072484d2eaeae030e747ed5",
+      "bodyFile": "corporate-sunflower-chiikawa.txt",
+      "completedAt": "2026-10-18T09:59:40.567380+00:00",
+      "existingIds": [
+        "sunflower-movie-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。公式HTMLとaltで対象4隻・深夜便対象外を確認。会期は主画像を目視し8/6～10/31と再確認。全画像/運航/空席は網羅していない。"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "startedAt": "2026-10-18T09:59:32.844359+00:00",
+      "method": "public_url_get",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "detail": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-10-18T09:59:38.602169+00:00",
+      "existingIds": [
+        "waon-point-chiikawa-line-emoji-2026"
+      ],
+      "candidateIds": [],
+      "summary": "本文確認未完了。新着なしと扱わない。"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "startedAt": "2026-10-18T09:59:32.844956+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 15094,
+      "evidenceSha256": "40485a4849d8da389ce5e9d331d5dd1d7b88307c2f870f0b75b95ccae38d915a",
+      "bodyFile": "tamanohikari-chiikawa-shop-details.txt",
+      "completedAt": "2026-10-18T09:59:40.016862+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "tamanohikari-dashiwari-delivery-20261007"
+      ],
+      "summary": "新規注文2027年中お届け予定・具体時期未定、日付/発送時期指定不可。11/10発売日と発送予定を区別。既存一致。"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "startedAt": "2026-10-18T09:59:32.845818+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6108,
+      "evidenceSha256": "5224ce398b0ee7ad47632a567abc4b8c4aed9ce0cc353b1abf4a2485a157c9ec",
+      "bodyFile": "ana-chiikawa-goods-astyle.txt",
+      "completedAt": "2026-10-18T09:59:39.369554+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "ana-chiikawa-goods-reservations-20261015",
+        "ana-chiikawa-reservations-full-20261016",
+        "ana-chiikawa-preorder-time-correction-20261017"
+      ],
+      "summary": "10/23 EC10時・国際線プリオーダー00時、4店舗23～25日完全予約制、各商品2点/BOX1点、26日以降制限終了。既知公開条件に一致。"
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "startedAt": "2026-10-18T09:59:32.847004+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 5177,
+      "evidenceSha256": "6eced870e54f106512456f66b3cbd16f3b8016217d5a550e7e9ea1743c1cb80b",
+      "bodyFile": "ana-chiikawa-jet.txt",
+      "completedAt": "2026-10-18T09:59:39.368429+00:00",
+      "existingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "candidateIds": [
+        "ana-chiikawa-first-flight-20261019-update",
+        "ana-chiikawa-goods-reservations-20261015"
+      ],
+      "summary": "10/19初便ANA661 8:15・ANA664 11:00予定。最新NEWS10/15。既存一致。"
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "startedAt": "2026-10-18T09:59:32.848004+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6122,
+      "evidenceSha256": "215cef551870dfeffebae5768e43283b9ddeb5cb2aa658acb1df2debf19c54c2",
+      "bodyFile": "ana-chiikawa-campaign.txt",
+      "completedAt": "2026-10-18T09:59:39.386684+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "ana-chiikawa-first-flight-20261019-update"
+      ],
+      "summary": "第1弾登録10/19 10時開始予定を維持。現在受付開始前。"
+    },
+    {
+      "sourceId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "startedAt": "2026-10-18T09:59:32.848444+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3435,
+      "evidenceSha256": "33cd765449a6e4a28a0498d6b66310158eba5fe7596e556022a94ae04bcadeb5",
+      "bodyFile": "tokyo-banana-chiikawa.txt",
+      "completedAt": "2026-10-18T09:59:40.333764+00:00",
+      "existingIds": [
+        "tokyo-banana-chiikawa"
+      ],
+      "candidateIds": [
+        "tokyo-banana-ikebukuro-address-correction-20261007"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。池袋9/17～10/14、盛岡9/18～9/30の終了済み催事を確認。新会場・延長の掲載は取得本文範囲で未検出。終了済み条件を新着に数えない。"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "startedAt": "2026-10-18T09:59:32.859428+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 8780,
+      "evidenceSha256": "ae723a6a8921735a366640246b2121bfdda210827a650a557cb5815fb297ddda",
+      "bodyFile": "tokyo-skytree-chiikawa-2026.txt",
+      "completedAt": "2026-10-18T09:59:41.584615+00:00",
+      "existingIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "candidateIds": [
+        "skytree-cafe-sale-and-screening-20261008",
+        "skytree-purchase-limits-20261016",
+        "skytree-purchase-scope-20261017"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。10/31まで、10/21・22の19:30回休止、1Fフリー入場、10/16からイベントオリジナルグッズ制限終了/他商品一部制限は既存一致。食事券の再販売可能条件は保持、実販売残席未確認。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "startedAt": "2026-10-18T09:59:38.602234+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6242,
+      "evidenceSha256": "11ba9fcb9371c397e7bff11f90e474186b7f83d06dfc73c5939abd8a1cf93cd8",
+      "bodyFile": "corporate-chiikawa-glasses.txt",
+      "completedAt": "2026-10-18T09:59:44.368152+00:00",
+      "existingIds": [
+        "clasic-chiikawa-scrubs-2026"
+      ],
+      "candidateIds": [],
+      "summary": "店舗完売、再入荷予定あり時期未定、オンライン過剰受注対応継続。2037年自動表示を会期にしない。"
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "startedAt": "2026-10-18T09:59:39.368624+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3482,
+      "evidenceSha256": "027a10fd89ad0835a56186b33c7609e8cb1005ff6788fc92411632b6dd7b275d",
+      "bodyFile": "tamanohikari-chiikawa-release.txt",
+      "completedAt": "2026-10-18T09:59:45.101431+00:00",
+      "existingIds": [
+        "tamanohikari-chiikawa-dashiwari-2026"
+      ],
+      "candidateIds": [
+        "tamanohikari-chiikawa-dashiwari-2026",
+        "tamanohikari-dashiwari-delivery-20261007"
+      ],
+      "summary": "本文取得成功。確認は掲載箇所の範囲のみで全画像・在庫・全リンクは未確認。"
+    },
+    {
+      "sourceId": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "startedAt": "2026-10-18T09:59:39.369584+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 7313,
+      "evidenceSha256": "41185dd125234d4c4b394b3444d489921706d2342a0814809634b4d77a2cd2e6",
+      "bodyFile": "abema-chiikawa-christmas-release-20261008.txt",
+      "completedAt": "2026-10-18T09:59:45.854053+00:00",
+      "existingIds": [
+        "abema-chiikawa-christmas-market-2026"
+      ],
+      "candidateIds": [
+        "chiikawa-christmas-market-2026-toyosuna-new"
+      ],
+      "summary": "本文取得成功。確認は掲載箇所の範囲のみで全画像・在庫・全リンクは未確認。"
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "startedAt": "2026-10-18T09:59:39.371291+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4335,
+      "evidenceSha256": "74a24c0f5fbe49fe587f5fc22ad9264712416056bcc1b52d4301e0494b3f387d",
+      "bodyFile": "corporate-gu-chiikawa-faq.txt",
+      "completedAt": "2026-10-18T09:59:45.097729+00:00",
+      "existingIds": [
+        "gu-chiikawa-winter-2026"
+      ],
+      "candidateIds": [],
+      "summary": "11/20・27のEC7:15/店舗開店時、1柄1色2点の既存予定一致。"
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "startedAt": "2026-10-18T09:59:39.386782+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3449,
+      "evidenceSha256": "d61489517a815ecaecaa9da10c37437f4486d73014868222b77ef7ada6ad12dd",
+      "bodyFile": "corporate-kadokawa-chiikawa-topics.txt",
+      "completedAt": "2026-10-18T09:59:45.459668+00:00",
+      "existingIds": [
+        "kadokawa-chiikawa-book-fair-2026-summer"
+      ],
+      "candidateIds": [
+        "kadokawa-book-fair-2026-receipt-past-tense"
+      ],
+      "summary": "7/13～9/30対象購入。独立の賞品応募締切未確認。"
+    },
+    {
+      "sourceId": "corporate-yomeruba-chiikawa-campaign",
+      "url": "https://yomeruba.com/campaign/present/entry-185442.html",
+      "startedAt": "2026-10-18T09:59:40.016988+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3336,
+      "evidenceSha256": "206da6b8628a067ec81f89726e7e56df71014df5671f30a6ec2fddf7e7cd7d37",
+      "bodyFile": "corporate-yomeruba-chiikawa-campaign.txt",
+      "completedAt": "2026-10-18T09:59:45.463788+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "kadokawa-book-fair-2026-receipt-past-tense"
+      ],
+      "summary": "対象購入7/13～9/30・購入後1週間以内レシート投稿。賞品応募の独立締切は不明。needs_review維持。"
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "startedAt": "2026-10-18T09:59:40.333801+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4567,
+      "evidenceSha256": "288462158b78693f57a831ec1badd4807da6189d4172f5e32b35808ed1363ab8",
+      "bodyFile": "corporate-donki-chiikawa-sl6.txt",
+      "completedAt": "2026-10-18T09:59:45.612277+00:00",
+      "existingIds": [
+        "donquijote-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "summary": "6/6～なくなり次第終了の既存企画。初日整理券条件を現在に流用しない。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "startedAt": "2026-10-18T09:59:40.340481+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3415,
+      "evidenceSha256": "59b9e57644e8e6e35a2e7ef10a03d2154dcbed329acee70f7787397ebb9f28a5",
+      "bodyFile": "corporate-chiikawa-release-322.txt",
+      "completedAt": "2026-10-18T09:59:44.647878+00:00",
+      "existingIds": [
+        "oxiclean-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "summary": "オキシクリーン10/2数量限定発売の既存企画。"
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "startedAt": "2026-10-18T09:59:40.567445+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3608,
+      "evidenceSha256": "095c0522a7e3f91bb57ada02bed2fd1e9718e3f9346346112d0475045d6ef53c",
+      "bodyFile": "corporate-citen-chiikawa-release.txt",
+      "completedAt": "2026-10-18T09:59:44.371769+00:00",
+      "existingIds": [
+        "citen-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "summary": "9/15より順次発売。台湾10月予定は具体日未確定。既存企画。"
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "startedAt": "2026-10-18T09:59:41.584667+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 5716,
+      "evidenceSha256": "8c3a8430a9aa41329359ef469637da3fe2f83c81012c85da14432788d40b2e65",
+      "bodyFile": "corporate-panasonic-chiikawa.txt",
+      "completedAt": "2026-10-18T09:59:45.749565+00:00",
+      "existingIds": [
+        "panasonic-energy-movie-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "7/10乾電池発売の既存告知。新条件未検出。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "startedAt": "2026-10-18T09:59:44.368235+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3704,
+      "evidenceSha256": "e13caff12518d67875a687113376c419bb2674c9e3bde85b7493aed169305aae",
+      "bodyFile": "corporate-chiikawa-release-846.txt",
+      "completedAt": "2026-10-18T09:59:48.029179+00:00",
+      "existingIds": [
+        "suntory-movie-chiikawa-2026"
+      ],
+      "candidateIds": [
+        "suntory-movie-chiikawa-receipt-start-correction-20261013"
+      ],
+      "summary": "全24種ボトル9月上旬順次・数量限定、既存企画。"
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "startedAt": "2026-10-18T09:59:44.371794+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "parse_failed",
+      "bodyCharacters": 7938,
+      "evidenceSha256": "72f6756dc4b7626a7c513db7f1adfb2ede926b362c771e9bbedd7a268170acda",
+      "bodyFile": "corporate-epos-chiikawa-card.txt",
+      "completedAt": "2026-10-18T09:59:48.507450+00:00",
+      "existingIds": [
+        "chiikawa-epos-card"
+      ],
+      "candidateIds": [],
+      "detail": "UTF-8誤デコードによる文字化け。後続web取得で本文確認。",
+      "summary": "本文確認未完了。新着なしと扱わない。"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "startedAt": "2026-10-18T09:59:44.647921+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1890,
+      "evidenceSha256": "fb2efa088267a291741988cd9b6d66de36186fd869dc73a3bfe31af615f9ab8a",
+      "bodyFile": "corporate-tokyo-metro-chiikawa.txt",
+      "completedAt": "2026-10-18T09:59:49.946986+00:00",
+      "existingIds": [
+        "tokyo-metro-escape-2026"
+      ],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。公式メトロ7/3告知は7/24～11/3の開催を維持。特設本文の解析失敗とは分離し、イベント中止等を推定しない。"
+    },
+    {
+      "sourceId": "corporate-tokyo-banana-solamachi-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000002148.000025606.html",
+      "startedAt": "2026-10-18T09:59:45.097768+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4202,
+      "evidenceSha256": "b50731ac048afdde01a407b922fcba55795d464a2a2d375f21260cdfc9eaab97",
+      "bodyFile": "corporate-tokyo-banana-solamachi-release.txt",
+      "completedAt": "2026-10-18T09:59:47.975258+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "本文取得成功。確認は掲載箇所の範囲のみで全画像・在庫・全リンクは未確認。"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-character",
+      "url": "https://www.sej.co.jp/products/christmas/character",
+      "startedAt": "2026-10-18T09:59:45.101473+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 8959,
+      "evidenceSha256": "eb5f024447ce6b02f9b8067141f36285a00fcffbc6b3777ddd63bfece7383724",
+      "bodyFile": "corporate-seven-eleven-christmas-character.txt",
+      "completedAt": "2026-10-18T09:59:49.767461+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "ケーキ予約締切は受取日・方式別12/16～20。既存範囲と一致。"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-signature",
+      "url": "https://www.sej.co.jp/products/christmas/signature",
+      "startedAt": "2026-10-18T09:59:45.459706+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6306,
+      "evidenceSha256": "006100f19c9654ce176fc3ad3a5712a4747d28d7c9bf681cad32fda8d7730d01",
+      "bodyFile": "corporate-seven-eleven-christmas-signature.txt",
+      "completedAt": "2026-10-18T09:59:49.912379+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "ケーキ予約締切は受取日・方式別12/16～20。既存範囲と一致。"
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "startedAt": "2026-10-18T09:59:45.463816+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 11123,
+      "evidenceSha256": "cd940ed44e30d39612955f4de13895727c2e6e789164f3d1db7b68c2e87ede2d",
+      "bodyFile": "corporate-seven-eleven-christmas-products.txt",
+      "completedAt": "2026-10-18T09:59:50.216389+00:00",
+      "existingIds": [
+        "seven-eleven-christmas-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "summary": "クリスマス2026予約案内を取得。新企画追加根拠なし。"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "startedAt": "2026-10-18T09:59:45.612316+00:00",
+      "method": "public_url_get",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "detail": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-10-18T09:59:49.870841+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "本文確認未完了。新着なしと扱わない。"
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "startedAt": "2026-10-18T09:59:45.749600+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6140,
+      "evidenceSha256": "2686258a78f24e93c5a1540288513cdf3cb9a98e2803b4e99c2232cd72a3f8a6",
+      "bodyFile": "corporate-chiikawa-glasses-orders.txt",
+      "completedAt": "2026-10-18T09:59:51.552390+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "過剰受注により商品確保できない対象注文のキャンセル/返金、個別メール案内。既存対応と一致。"
+    },
+    {
+      "sourceId": "observed-cafe-parco-jp-8bf4370b23",
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "startedAt": "2026-10-18T09:59:45.854111+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1743,
+      "evidenceSha256": "a400b1ab917c94ccee93ced882527fd730a2bf8f80e5d220790cb73764858eb8",
+      "bodyFile": "observed-cafe-parco-jp-8bf4370b23.txt",
+      "completedAt": "2026-10-18T09:59:50.347708+00:00",
+      "existingIds": [
+        "movie-chiikawa-cafe-2026"
+      ],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "名古屋9/4～11/16・10～20時/L.O.19時。名古屋限定リニューアル記念ステッカー配布終了を確認。現行データに配布中との誤記なし。任意補足候補。"
+    },
+    {
+      "sourceId": "kitte-osaka-home",
+      "url": "https://osaka.jp-kitte.jp/",
+      "startedAt": "2026-10-18T09:59:47.975298+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3526,
+      "evidenceSha256": "8913109a937a328acced489f4805382be49dcc6ee9393379073f974bb37da9c0",
+      "bodyFile": "kitte-osaka-home.txt",
+      "completedAt": "2026-10-18T09:59:52.336806+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "施設トップ取得。JRバルーン固有条件の根拠未発見。"
+    },
+    {
+      "sourceId": "metro-event-details",
+      "url": "https://escape.id/chiikawa/",
+      "startedAt": "2026-10-18T09:59:48.029277+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "parse_failed",
+      "bodyCharacters": 18,
+      "evidenceSha256": "48d599b2f3b6cc06c370d448315a1f0bce75c002509735b450227596924f2524",
+      "bodyFile": "metro-event-details.txt",
+      "completedAt": "2026-10-18T09:59:52.355961+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "HTTP200だがiframeのみ。web代替でも本文取得できず。未解消。"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "startedAt": "2026-10-18T09:59:48.507499+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 17225,
+      "evidenceSha256": "0e6c7ea4c28920c642afb92af4da8e7a1c12c0a8af5a54f70869e3117c23d491",
+      "bodyFile": "jr-central-railway-museum-event.txt",
+      "completedAt": "2026-10-18T09:59:54.737479+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "jr-central-linear-railway-museum-2026-venue-review",
+        "link-jr-central-museum-20261013"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。ちいかわ企画7/8～10/31、フォトスポットとジオラマは1F、入館受付でノベルティ引換の既存条件を再確認。ほかの館内イベント日程を混同しない。"
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "startedAt": "2026-10-18T09:59:49.767507+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4628,
+      "evidenceSha256": "fc27355bf671378df0e23280cc59cf7c5a9854a226b0b358e5edb73ad97ac200",
+      "bodyFile": "corporate-uniqlo-chiikawa-faq.txt",
+      "completedAt": "2026-10-18T09:59:54.140709+00:00",
+      "existingIds": [
+        "uniqlo-movie-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "summary": "UT7/17、スウェット7/24発売の既存企画。再入荷は現時点未定。"
+    },
+    {
+      "sourceId": "corporate-magical-gororin-release-20261013",
+      "url": "https://prtimes.jp/main/html/rd/p/000000078.000168561.html",
+      "startedAt": "2026-10-18T09:59:49.870883+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3685,
+      "evidenceSha256": "73fab83e9058113a6d140bd2060d8c8c2de0ebd9766c1ebd3c6e38cff60ed6cb",
+      "bodyFile": "corporate-magical-gororin-release-20261013.txt",
+      "completedAt": "2026-10-18T09:59:54.014766+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "magical-chiikawa-gororin-20261013-out-of-scope"
+      ],
+      "summary": "本文取得成功。確認は掲載箇所の範囲のみで全画像・在庫・全リンクは未確認。"
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "startedAt": "2026-10-18T09:59:49.912418+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3738,
+      "evidenceSha256": "9eecedac39c3cd2805beee737367e3ab95fe24ea21378dd04b01f511011a647a",
+      "bodyFile": "corporate-minum-chiikawa-release.txt",
+      "completedAt": "2026-10-18T09:59:54.014272+00:00",
+      "existingIds": [
+        "minum-chiikawa-grip-liner-2026"
+      ],
+      "candidateIds": [
+        "minum-chiikawa-grip-liner-2026-review"
+      ],
+      "summary": "9月下旬順次発売、取扱/時期店舗差あり。新しい具体日・終了日なし。"
+    },
+    {
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "startedAt": "2026-10-18T09:59:49.947045+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4903,
+      "evidenceSha256": "e89bf25f168aae4a985ab28fe2f9c8924c3073f6ef5ad5f6926164176afe0177",
+      "bodyFile": "corporate-prtimes-chiikawa-index.txt",
+      "completedAt": "2026-10-18T09:59:54.103081+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "2731件、先頭10/18出雲・10/17岩見沢ワッツ新店。新しい独立ちいかわ企画を表示一覧で特定せず。全ページ網羅せず。"
+    },
+    {
+      "sourceId": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "startedAt": "2026-10-18T09:59:50.216442+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1843,
+      "evidenceSha256": "829cae7d13ea0c338122f85fdc2cfc34e35958b598c5e5fd62bba5eb2866ef9b",
+      "bodyFile": "corporate-minum-official-shop.txt",
+      "completedAt": "2026-10-18T09:59:54.201347+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "minum-chiikawa-grip-liner-2026-review"
+      ],
+      "summary": "公開ショップ本文で新しいちいかわ発売条件を特定せず。全商品在庫未確認。"
+    },
+    {
+      "sourceId": "corporate-bandai-chiikawa-phone-campaign",
+      "url": "https://toy.bandai.co.jp/ja/topics/01_21085/",
+      "startedAt": "2026-10-18T09:59:50.347745+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 17443,
+      "evidenceSha256": "be59ad8bf4c63ce30df0477b4d43e601c0b95395a8cdd4caa50b9ff05b75eb5f",
+      "bodyFile": "corporate-bandai-chiikawa-phone-campaign.txt",
+      "completedAt": "2026-10-18T09:59:56.456692+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "10/31購入特典開始・なくなり次第終了。既知の一般商品キャンペーンで追加対象外。"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "startedAt": "2026-10-18T09:59:51.552445+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3763,
+      "evidenceSha256": "83110b6944be769be1b5671ddbd0def9c26e85028e059aaad20dc28c4815db0a",
+      "bodyFile": "corporate-toho-one-chiikawa-campaign.txt",
+      "completedAt": "2026-10-18T09:59:55.753999+00:00",
+      "existingIds": [
+        "toho-one-movie-chiikawa-2026"
+      ],
+      "candidateIds": [
+        "toho-one-current-status-correction-20261015"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "先着99,000・既存会員抽選1,000。先着上限で一部終了との条件、実際の上限到達告知ではない。既存active維持。"
+    },
+    {
+      "sourceId": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "startedAt": "2026-10-18T09:59:52.336865+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 7198,
+      "evidenceSha256": "9830bfe53774c2916c31b6930ae96507fbe137b3b73e6c1044efbca97a097bec",
+      "bodyFile": "corporate-kadokawa-childrens-topics.txt",
+      "completedAt": "2026-10-18T09:59:56.396605+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "一覧先頭10/15。10/2ちいかわあいうえおは通常書籍。新コラボ未発見。"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-theater-notice",
+      "url": "https://www.tohotheater.jp/campaign/tohoone-chiikawa.html",
+      "startedAt": "2026-10-18T09:59:52.356012+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3157,
+      "evidenceSha256": "ef1a047f27582371d368467c48e70e202d1d13fd289fc5d1cfccb6767574dc62",
+      "bodyFile": "corporate-toho-one-chiikawa-theater-notice.txt",
+      "completedAt": "2026-10-18T09:59:56.092476+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "toho-one-current-status-correction-20261015"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "既存TOHO-ONE映画企画案内。新規企画ではない。"
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-escape-delivery-kit",
+      "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+      "startedAt": "2026-10-18T09:59:54.014313+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1969,
+      "evidenceSha256": "acf5c9f1dfa3df440e5a3151d1bcfd711289b2f762845d1f353e1ab17e8051e3",
+      "bodyFile": "corporate-tokyo-metro-escape-delivery-kit.txt",
+      "completedAt": "2026-10-18T10:00:00.518435+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "10/23～11/3プレイ分は10/19以降順次発送。発送日を予約開始にしない。11/3最終日20時まで。"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000027.000054370.html",
+      "startedAt": "2026-10-18T09:59:54.014783+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4207,
+      "evidenceSha256": "1b65ed2b095fa8b01ce2b56e5189ff5e24fbd77c52f8783bf7521bd458bde1b5",
+      "bodyFile": "corporate-toho-one-chiikawa-release.txt",
+      "completedAt": "2026-10-18T10:00:01.640334+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "toho-one-current-status-correction-20261015"
+      ],
+      "summary": "本文取得成功。確認は掲載箇所の範囲のみで全画像・在庫・全リンクは未確認。"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-release-20261015",
+      "url": "https://prtimes.jp/main/html/rd/p/000000018.000035055.html",
+      "startedAt": "2026-10-18T09:59:54.103122+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 5397,
+      "evidenceSha256": "faeebb8062718b28ba86ece8241d5856a1b091b28338895e4e7542be3da4e9dd",
+      "bodyFile": "ana-chiikawa-goods-release-20261015.txt",
+      "completedAt": "2026-10-18T10:00:01.549668+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "ana-chiikawa-goods-reservations-20261015"
+      ],
+      "summary": "本文取得成功。確認は掲載箇所の範囲のみで全画像・在庫・全リンクは未確認。"
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "startedAt": "2026-10-18T09:59:54.140749+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1559,
+      "evidenceSha256": "a4a55e04a54729b4ba90f8d1b0a7184c654850320bc00d511f6dcc4f7b9e227f",
+      "bodyFile": "corporate-merry-jenny-chiikawa.txt",
+      "completedAt": "2026-10-18T09:59:59.240510+00:00",
+      "existingIds": [
+        "merry-jenny-chiikawa-2026"
+      ],
+      "candidateIds": [],
+      "summary": "7/15正午WEB先行・7/22店舗発売の既存告知。実在庫未確認。"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "startedAt": "2026-10-18T09:59:54.201389+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6108,
+      "evidenceSha256": "1a4e61ef8542fc14f6405bbf75feb298c7c0132e12c5b2755d9b159679959abe",
+      "bodyFile": "ana-chiikawa-goods-astyle.txt",
+      "completedAt": "2026-10-18T09:59:58.491647+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "ana-chiikawa-goods-reservations-20261015",
+        "ana-chiikawa-reservations-full-20261016",
+        "ana-chiikawa-preorder-time-correction-20261017"
+      ],
+      "summary": "10/23 EC10時・国際線プリオーダー00時、4店舗23～25日完全予約制、各商品2点/BOX1点、26日以降制限終了。既知公開条件に一致。"
+    },
+    {
+      "sourceId": "ana-festa-chiikawa-inquiry-20261016",
+      "url": "https://www.anafesta.com/notice/2026/10/79105/",
+      "startedAt": "2026-10-18T09:59:54.737533+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 1448,
+      "evidenceSha256": "0e661e1b41b5676185bd996dee2bd96bca676b97245fe34a5d3ff31a4529f47b",
+      "bodyFile": "ana-festa-chiikawa-inquiry-20261016.txt",
+      "completedAt": "2026-10-18T09:59:59.845489+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。10/16問い合わせ案内を確認。販売・在庫等は専用案内へ誘導する既知記事で、新しい発売日変更なし。"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-reservation",
+      "url": "https://reserva.be/ana_chiikawa",
+      "startedAt": "2026-10-18T09:59:55.754035+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 433,
+      "evidenceSha256": "46b49a1ad3d27939221e82b1faced8648b08bb2fcede3c5f38a4732748fdbdb5",
+      "bodyFile": "ana-chiikawa-goods-reservation.txt",
+      "completedAt": "2026-10-18T10:00:00.936876+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。公式予約トップのお知らせは満枠・購入注意・FAQ（いずれも10/16）。対象4店への予約導線を確認。現在のキャンセル枠/残数は操作せず未確認。"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-reservation-full-20261016",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "startedAt": "2026-10-18T09:59:56.092510+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 367,
+      "evidenceSha256": "f30f929d6469f5461eeba5cc7e06ea825ba3230793d05b51e35b48fa681fe383",
+      "bodyFile": "ana-chiikawa-goods-reservation-full-20261016.txt",
+      "completedAt": "2026-10-18T10:00:00.524399+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "ana-chiikawa-reservations-full-20261016"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。10/16 19時満枠発表とキャンセル発生時の枠自動反映を再確認。10/17公開済み案内に一致。現在絶対に空きがないとは主張しない。"
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-reservation-faq",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "startedAt": "2026-10-18T09:59:56.396645+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 619,
+      "evidenceSha256": "c25e82016860138441419a5eeb0e78708e386435712330543cb88073eb7acba6",
+      "bodyFile": "ana-chiikawa-goods-reservation-faq.txt",
+      "completedAt": "2026-10-18T09:59:59.798650+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "10/16 FAQ:3歳以上は予約1名扱い、変更/取消は予約メールから。新日程なし。"
+    },
+    {
+      "sourceId": "corporate-spiralcute-news-index",
+      "url": "https://spiralcute.com/news/",
+      "startedAt": "2026-10-18T09:59:56.456745+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3443,
+      "evidenceSha256": "c1b951ca617added9c9dd6d947c9c31b791dd84ccce45ee07b45b2f0b74b69b3",
+      "bodyFile": "corporate-spiralcute-news-index.txt",
+      "completedAt": "2026-10-18T10:00:01.648117+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。権利元公式ニュース先頭は9/24ファンレター窓口変更/事務所移転。表示範囲で10月の新規掲載対象企画を検出せず。"
+    },
+    {
+      "sourceId": "corporate-grayparkaservice-home",
+      "url": "https://grayparkaservice.com/",
+      "startedAt": "2026-10-18T09:59:58.491685+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 928,
+      "evidenceSha256": "e7b33329a75f597b25eba5aa4366ee96876a6af30ab4ffcdb3a4b80c57c4474d",
+      "bodyFile": "corporate-grayparkaservice-home.txt",
+      "completedAt": "2026-10-18T10:00:03.092996+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "NEWS先頭9/24事務所移転・プライバシー改定。表示範囲で新企画なし。"
+    },
+    {
+      "sourceId": "corporate-marumiya-potage-release-20261001",
+      "url": "https://prtimes.jp/main/html/rd/p/000001092.000010538.html",
+      "startedAt": "2026-10-18T09:59:59.240624+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 2271,
+      "evidenceSha256": "c338b3ceea50217f8d29f3c67f98a7761f8505a4a209dd32a3fa45f2d2d12f3f",
+      "bodyFile": "corporate-marumiya-potage-release-20261001.txt",
+      "completedAt": "2026-10-18T10:00:01.585252+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "marumiya-chiikawa-potage-20261022-out-of-scope"
+      ],
+      "summary": "10/1発表、10/22～2/28期間限定食品。朝確認済み一般商品対象外判断を維持。"
+    },
+    {
+      "sourceId": "corporate-grayparkaservice-news-index",
+      "url": "https://grayparkaservice.com/blogs/info",
+      "startedAt": "2026-10-18T09:59:59.798687+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 817,
+      "evidenceSha256": "d6b86c936fb643216f129c54de8d331f81c294484d8dd33bfd910ec3458ae2c9",
+      "bodyFile": "corporate-grayparkaservice-news-index.txt",
+      "completedAt": "2026-10-18T10:00:02.777388+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "NEWS先頭9/24事務所移転・プライバシー改定。表示範囲で新企画なし。"
+    },
+    {
+      "sourceId": "corporate-bandai-light-pajamas-release-20261009",
+      "url": "https://prtimes.jp/main/html/rd/p/000001022.000055569.html",
+      "startedAt": "2026-10-18T09:59:59.845528+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 3419,
+      "evidenceSha256": "23cdad822778634b8d81520a8de9f18cc5f7cec3171bd1f9ec011db60e0adab5",
+      "bodyFile": "corporate-bandai-light-pajamas-release-20261009.txt",
+      "completedAt": "2026-10-18T10:00:01.641278+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "bandai-chiikawa-light-pajamas-202611-out-of-scope"
+      ],
+      "summary": "10/9予約開始・11月上旬発売予定、一般ライセンス衣料対象外判断維持。"
+    },
+    {
+      "sourceId": "seven-eleven-christmas-campaign-2026",
+      "url": "https://www.sej.co.jp/cmp/cck2609/",
+      "startedAt": "2026-10-18T10:00:00.518488+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 8262,
+      "evidenceSha256": "d3ef3c28bb78464a62b8909eef743773c4061a90a9760789a6ee3ff2a05e94a9",
+      "bodyFile": "seven-eleven-christmas-campaign-2026.txt",
+      "completedAt": "2026-10-18T10:00:08.998958+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "seven-eleven-christmas-entry-periods-20261011"
+      ],
+      "summary": "店頭シリアル12/19～28/応募～1/15、7NOW注文番号～12/28/ポイント1/6/応募1/6～15の既存条件一致。"
+    },
+    {
+      "sourceId": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "startedAt": "2026-10-18T10:00:00.524428+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 2099,
+      "evidenceSha256": "2f83e1c3008d9f09d5a8f97162ccb9f1611807184d96150345666e85f75cfd58",
+      "bodyFile": "suntory-receipt-campaign-official-2026.txt",
+      "completedAt": "2026-10-18T10:00:05.233328+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "suntory-movie-chiikawa-receipt-start-correction-20261013"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。有効購入7/16～8/31、アップロード～9/1 23:59、応募～9/8 23:59の終了済み日程に一致。現在の限定ボトル販売と混同しない。"
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "startedAt": "2026-10-18T10:00:00.936915+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 2716,
+      "evidenceSha256": "3c02dd4e0773cd0c721989fa31ccb63c96bfa98810d5566b67ddbefd86fdfb5e",
+      "bodyFile": "chiikawa-christmas-market-official.txt",
+      "completedAt": "2026-10-18T10:00:05.603557+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "chiikawa-christmas-market-2026-toyosuna-new"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。11/24～12/25、先行抽選10/15正午～10/25 23:59、結果10/30正午以降は既存一致。一般発売の確定日時なし。"
+    },
+    {
+      "sourceId": "christmas-faq",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "startedAt": "2026-10-18T10:00:01.549708+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 6227,
+      "evidenceSha256": "a36a1270c89aed26d856ddf0447b1e3ce9e33d33c400558dc4ecc2e6352179d5",
+      "bodyFile": "christmas-faq.txt",
+      "completedAt": "2026-10-18T10:00:05.594544+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "chiikawa-christmas-market-entry-clarification-20261015"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。購入者同行・スマホ原則必要・利用開始から2時間30分内の再入場可は既存条件一致。実際の抽選申込みは行っていない。"
+    },
+    {
+      "sourceId": "christmas-ticket-details",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "startedAt": "2026-10-18T10:00:01.585288+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 4964,
+      "evidenceSha256": "1c110590d850398415d63beee0b96b565e18299f991b50f0390664f75ae3eb89",
+      "bodyFile": "christmas-ticket-details.txt",
+      "completedAt": "2026-10-18T10:00:06.251969+00:00",
+      "existingIds": [],
+      "candidateIds": [
+        "chiikawa-christmas-market-entry-clarification-20261015"
+      ],
+      "identicalToMorningEvidence": true,
+      "summary": "朝の取得HTMLとSHA256一致。2時間30分利用・時間内再入場、指定入場時間前の待機禁止等の既存条件を確認。"
+    },
+    {
+      "sourceId": "corporate-sunflower-photorally-details",
+      "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+      "startedAt": "2026-10-18T10:00:01.640386+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 2322,
+      "evidenceSha256": "f6bde861f34448544f2f09a257438e2f7862785974975dea8fd74d74ca43a4d8",
+      "bodyFile": "corporate-sunflower-photorally-details.txt",
+      "completedAt": "2026-10-18T10:00:06.206188+00:00",
+      "existingIds": [],
+      "candidateIds": [],
+      "summary": "夕方便さっぽろ/ふらの8/6～10/31出港便の船内ラリー。既存一致。"
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "completedAt": "2026-10-18T10:02:34.730569+00:00",
+      "method": "web_read",
+      "result": "success",
+      "summary": "9/24～10/21絵文字配布・DL後180日。既存一致。webクロール表示3日前で鮮度限界あり。",
+      "existingIds": [
+        "waon-point-chiikawa-line-emoji-2026"
+      ]
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "completedAt": "2026-10-18T10:02:34.730569+00:00",
+      "method": "web_read",
+      "result": "success",
+      "summary": "一覧先頭9/24絵文字。webクロール表示4日前で鮮度限界あり。",
+      "existingIds": []
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "completedAt": "2026-10-18T10:02:34.730569+00:00",
+      "method": "web_read",
+      "result": "success",
+      "summary": "画像altで対象4隻と深夜便対象外を確認。全画像は今回未目視。",
+      "existingIds": [
+        "sunflower-movie-chiikawa-2026"
+      ]
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "completedAt": "2026-10-18T10:02:34.730569+00:00",
+      "method": "web_read",
+      "result": "success",
+      "summary": "web本文成功。NEWS先頭2025/2/21、2026/2/16開始の年間利用特典は既存継続企画。",
+      "existingIds": [
+        "chiikawa-epos-card"
+      ]
+    },
+    {
+      "sourceId": "corporate-watts-hamayama-20261018",
+      "url": "https://prtimes.jp/main/html/rd/p/000000412.000084599.html",
+      "startedAt": "2026-10-18T10:01:30.019658+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 2885,
+      "evidenceSha256": "ca3f3f00fc47226c0f45e2251003c63ed7ed052094265009a88613ad25698b69",
+      "bodyFile": "corporate-watts-hamayama-20261018.txt",
+      "completedAt": "2026-10-18T10:01:36.614608+00:00",
+      "existingIds": [],
+      "summary": "一般100円ショップ新店案内。ちいかわはおすすめ商品のミニティッシュ言及のみ。独立コラボ企画・公式専門店ではなく対象外。",
+      "classification": "out_of_scope"
+    },
+    {
+      "sourceId": "corporate-watts-iwamizawa-20261017",
+      "url": "https://prtimes.jp/main/html/rd/p/000000410.000084599.html",
+      "startedAt": "2026-10-18T10:01:36.614653+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "bodyCharacters": 2863,
+      "evidenceSha256": "e63bd2cd815d5544dca19e0bd6077d65ea5928643d3b917837272689f0a9ea8e",
+      "bodyFile": "corporate-watts-iwamizawa-20261017.txt",
+      "completedAt": "2026-10-18T10:01:39.851906+00:00",
+      "existingIds": [],
+      "summary": "一般100円ショップ新店案内。ちいかわはおすすめ商品のミニティッシュ言及のみ。独立コラボ企画・公式専門店ではなく対象外。",
+      "classification": "out_of_scope"
+    }
+  ],
+  "publicChanges": [],
+  "optionalSupplements": [
+    {
+      "existingId": "movie-cafe-nagoya",
+      "classification": "optional_existing_information_supplement",
+      "officialAnnouncedAt": null,
+      "summary": "名古屋限定リニューアル記念ノベルティステッカーは配布終了。現行掲載に配布中の誤記なし。",
+      "sourceUrl": "https://cafe.parco.jp/event/information/chiikawamovie_cafe"
+    }
+  ],
+  "summary": [
+    "新しい掲載対象の企業コラボ企画・必須の条件修正を確認せず。",
+    "ANA既知条件の重複登録は不要。",
+    "メトロ特設本文解析は未解消。AEONはweb回収したがクロール鮮度に限界。",
+    "全画像・全検索ページ・会員情報・実在庫は未網羅。"
+  ],
+  "limitations": [
+    "文字本文/選択箇所の確認。取得成功は全要素の目視・網羅を意味しない。",
+    "一覧検索の件数増加は新規企画の証拠ではない。"
+  ],
+  "counts": {
+    "urlsAttempted": 64,
+    "observations": 68,
+    "newEligiblePlans": 0,
+    "requiredPublicChanges": 0,
+    "optionalSupplements": 1
+  },
+  "recordPath": "research/evening-corporate-2026-10-18-evidence.json"
+}
