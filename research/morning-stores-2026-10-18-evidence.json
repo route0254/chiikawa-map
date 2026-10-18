@@ -1,0 +1,1391 @@
+{
+  "runDate": "2026-10-18",
+  "completedAt": "2026-10-17T23:19:02.851Z",
+  "sourceAttempts": [
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "completedAt": "2026-10-17T23:06:33.272Z",
+      "result": "access_limited",
+      "method": "web",
+      "httpStatus": 403,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "completedAt": "2026-10-17T23:06:33.272Z",
+      "result": "access_limited",
+      "method": "web",
+      "httpStatus": 403,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "completedAt": "2026-10-17T23:06:33.272Z",
+      "result": "access_limited",
+      "method": "web",
+      "httpStatus": 403,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "completedAt": "2026-10-17T23:06:33.272Z",
+      "result": "access_limited",
+      "method": "web",
+      "httpStatus": 403,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "completedAt": "2026-10-17T23:06:56.318Z",
+      "result": "access_limited",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "completedAt": "2026-10-17T23:06:56.318Z",
+      "result": "fetch_failed",
+      "method": "web",
+      "httpStatus": 404,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "completedAt": "2026-10-17T23:06:56.318Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-yaki-nagoya-20261018-reservation",
+      "url": "https://www.chiikawa-yaki.com/app-nagoya/schedules-nagoya/2026-10-18",
+      "completedAt": "2026-10-17T23:06:56.318Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-dd2adc8413eb",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626",
+      "completedAt": "2026-10-17T23:07:19.778Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18(日)対象。整理券9:20〜9:50、イーストヤード1階12番地ソラミ坂広場入口前。9:50以後は10:00開店後に店頭配布。全員集合・途中合流不可、夜間早朝整列不可、1人1日1枚・再発行なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-0d01aa844731",
+      "url": "https://x.com/chiikawa_land/status/2111428766354612313",
+      "completedAt": "2026-10-17T23:07:19.778Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18対象。阪急三番街南館B1Fの図示列、10:00開店。全員揃って整列、Whityうめだ手前折返し・同エリア整列不可、徹夜不可、混雑時整理券・運用変更あり。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "completedAt": "2026-10-17T23:07:19.778Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "completedAt": "2026-10-17T23:07:19.778Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "completedAt": "2026-10-17T23:07:39.675Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "completedAt": "2026-10-17T23:07:39.675Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "completedAt": "2026-10-17T23:07:39.675Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "completedAt": "2026-10-17T23:07:39.675Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensh",
+      "url": "https://x.com/chiikawaramenSH",
+      "completedAt": "2026-10-17T23:07:39.675Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "最新表示は10/17満席。10/18満席や自由入場へ持ち越さない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "completedAt": "2026-10-17T23:08:12.712Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "10/18東京デジタル整理券・ラフォーレ整理券の前夜告知を検出。ハロウィン限定BOX配布終了も表示。全投稿・全商品画像網羅なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "parse_failed",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "parse_failed",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "parse_failed",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-dd2adc8413eb",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626",
+      "completedAt": "2026-10-17T23:08:26.038Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18(日)対象。整理券9:20〜9:50、イーストヤード1階12番地ソラミ坂広場入口前。9:50以後は10:00開店後に店頭配布。全員集合・途中合流不可、夜間早朝整列不可、1人1日1枚・再発行なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-2b79a3ebde6e",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626/photo/1",
+      "completedAt": "2026-10-17T23:08:35.222Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "画像リンク操作がDOMエラー。画像内容未取得。後続のスクリーンショット確認とは分離。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-dd2adc8413eb",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626",
+      "completedAt": "2026-10-17T23:08:45.252Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18(日)対象。整理券9:20〜9:50、イーストヤード1階12番地ソラミ坂広場入口前。9:50以後は10:00開店後に店頭配布。全員集合・途中合流不可、夜間早朝整列不可、1人1日1枚・再発行なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-dd2adc8413eb",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626",
+      "completedAt": "2026-10-17T23:08:47Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18(日)対象。整理券9:20〜9:50、イーストヤード1階12番地ソラミ坂広場入口前。9:50以後は10:00開店後に店頭配布。全員集合・途中合流不可、夜間早朝整列不可、1人1日1枚・再発行なし。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "morning-store-20261018-0d01aa844731",
+      "url": "https://x.com/chiikawa_land/status/2111428766354612313",
+      "completedAt": "2026-10-17T23:09:12.251Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18対象。阪急三番街南館B1Fの図示列、10:00開店。全員揃って整列、Whityうめだ手前折返し・同エリア整列不可、徹夜不可、混雑時整理券・運用変更あり。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-0d01aa844731",
+      "url": "https://x.com/chiikawa_land/status/2111428766354612313",
+      "completedAt": "2026-10-17T23:09:30Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "本文・画像とも10/18対象。阪急三番街南館B1Fの図示列、10:00開店。全員揃って整列、Whityうめだ手前折返し・同エリア整列不可、徹夜不可、混雑時整理券・運用変更あり。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "10/18東京デジタル整理券・ラフォーレ整理券の前夜告知を検出。ハロウィン限定BOX配布終了も表示。全投稿・全商品画像網羅なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "固定と表示4投稿は商品・在庫関連。新たな10/18入場条件は表示範囲にない。今日の自由入場・残枠の保証ではない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "表示5投稿は10/17商品在庫と伏見10/17整理券配布終了。10/18伏見の制限を推定しない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "10/18事前予約満席・当日券なしの前夜公式告知を確認。グッズ店フリーという文言は投稿時点の状態。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensp",
+      "url": "https://x.com/chiikawaramenSP",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "表示先頭10/9投稿で11/1〜30予約10/16正午受付、各2日前までを確認。既掲載と一致、現在の枠は未確認。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensb",
+      "url": "https://x.com/chiikawaramenSB",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "表示先頭10/9投稿で11/1〜30予約10/16正午受付、各2日前までを確認。10/12まで満席という過去告知を10/18へ適用しない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawarestoki",
+      "url": "https://x.com/chiikawarestOKI",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "10/18当日券ありの前夜公式投稿を確認。○△対象枠、予定枚数で終了。現在の残席は未確認。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawayaki",
+      "url": "https://x.com/chiikawayaki",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "10/17名古屋予約システム不具合と同日復旧の両投稿、10/29〜11/3事前予約を確認。10/18の個別予約ページには受付中枠がある。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "固定ハロウィーン会期と表示4商品投稿を確認。新しい入場変更は表示範囲にない。全投稿網羅なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "表示5投稿のうち10/24〜25札幌平岡・10/24太田の撮影会告知あり。一般商品告知は新会場に数えない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "表示5投稿は10/16・15・13・12・11。短い本文のみ確認し、漫画画像は本巡回未読。新会場告知の全量確認とはしない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "表示5投稿は9/20・8/26・8/17・8/14・8/1。本文のみ、画像全量未確認。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-14efec499dd8",
+      "url": "https://x.com/chiikawabakery/status/2111434458608153023",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-075d8ae443e9",
+      "url": "https://x.com/chiikawabakery/status/2111411915033296909",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-03662b608de7",
+      "url": "https://x.com/THEGUEST_ikb/status/2111441585204556156",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "web取得制限後にクラウドブラウザ本文成功。10/17・18は川越まつりに伴い9:30〜19:00。既掲載時間と一致。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "fetch_failed",
+      "method": "cloud_browser",
+      "httpStatus": 404,
+      "summary": "公式のページ未検出画面を確認。記事本文未取得。予約撤回・自由入場とは判定しない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-park-kumonosu-resumption-20261015",
+      "url": "https://chiikawapark-tokyo.jp/news/xy90fx6i74j/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "fukuoka-sushi-official",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-8725208989a2",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/index.html",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "fetch_failed",
+      "method": "web",
+      "httpStatus": 400,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-author-instagram",
+      "url": "https://www.instagram.com/ngnchiikawa/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。",
+      "coverage": "プロフィール・投稿リンクのみ。新着の全量確認ではない。"
+    },
+    {
+      "sourceId": "chiikawa-publicity-instagram",
+      "url": "https://www.instagram.com/chiikawa_kouhou/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。",
+      "coverage": "プロフィール・投稿リンクのみ。新着の全量確認ではない。"
+    },
+    {
+      "sourceId": "nagano-author-instagram",
+      "url": "https://www.instagram.com/ngntrtr11/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。",
+      "coverage": "プロフィール・投稿リンクのみ。新着の全量確認ではない。"
+    },
+    {
+      "sourceId": "morning-store-20261018-f4f9588b87b5",
+      "url": "https://www.instagram.com/chiikawamgmg/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。",
+      "coverage": "プロフィール・投稿リンクのみ。新着の全量確認ではない。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-20261023-official",
+      "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "webタイムアウト後にクラウドブラウザ成功。通常9:30〜17:30と表示NEWS確認。10/18当日制限の確定情報は得られていない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-a4c88bdd040c",
+      "url": "https://x.com/chiikawarestOKI/status/2111436882265694618",
+      "completedAt": "2026-10-17T23:11:13.392Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "画像は10/18日曜日当日席。○△対象の枠に当日券、店頭申込・予定数終了。通常席○は15:30、16:30、17:00、17:30、18:30、19:00、19:30、20:00、20:30。4名BOX△は15:30、19:30。6名BOX○は10:05、15:00、18:00、19:30、△は13:30、14:00、16:00、16:30、17:00、18:30、19:00、20:30。前夜告知の状態であり現在残席の保証なし。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-a4c88bdd040c",
+      "url": "https://x.com/chiikawarestOKI/status/2111436882265694618",
+      "completedAt": "2026-10-17T23:11:33Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "画像は10/18日曜日当日席。○△対象の枠に当日券、店頭申込・予定数終了。通常席○は15:30、16:30、17:00、17:30、18:30、19:00、19:30、20:00、20:30。4名BOX△は15:30、19:30。6名BOX○は10:05、15:00、18:00、19:30、△は13:30、14:00、16:00、16:30、17:00、18:30、19:00、20:30。前夜告知の状態であり現在残席の保証なし。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-entry-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "completedAt": "2026-10-17T23:11:50.421Z",
+      "result": "access_limited",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web取得失敗。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "series-observed-c57a222599f5",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/main.jpg",
+      "completedAt": "2026-10-17T23:11:50.421Z",
+      "result": "parse_failed",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-series14-abd8141a0ea7",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/moushikomi_261013.jpg",
+      "completedAt": "2026-10-17T23:11:50.421Z",
+      "result": "parse_failed",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-main-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/main.jpg",
+      "completedAt": "2026-10-17T23:11:50.421Z",
+      "result": "parse_failed",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-20261023-image",
+      "url": "https://pbs.twimg.com/media/HUqCpFpbIAA7brQ?format=webp&name=large",
+      "completedAt": "2026-10-17T23:12:05.862Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "10/23入店の公式画像を再実読。抽選10/16 10:00〜10/18 23:59、10/19中結果。空き発生時のみ二次先着。札幌・仙台・広島・福岡10/19 20時、名古屋・京都・梅田・心斎橋・金沢10/20 20時、原宿・東京駅・ソラマチ・横浜・新宿・池袋・越谷10/21 20時。既掲載と一致。",
+      "coverage": "画像実読"
+    },
+    {
+      "sourceId": "chiikawaland-entry-20261023-image",
+      "url": "https://pbs.twimg.com/media/HUqCpFpbIAA7brQ?format=webp&name=large",
+      "completedAt": "2026-10-17T23:12:09Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "10/23入店の公式画像を再実読。抽選10/16 10:00〜10/18 23:59、10/19中結果。空き発生時のみ二次先着。札幌・仙台・広島・福岡10/19 20時、名古屋・京都・梅田・心斎橋・金沢10/20 20時、原宿・東京駅・ソラマチ・横浜・新宿・池袋・越谷10/21 20時。既掲載と一致。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "morning-store-20261018-37cf64d68d5b",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eVNpDHD0/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-8d8ea2aede60",
+      "url": "https://www.instagram.com/chiikawa_kouhou/p/DeOdxkGSlTG/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-94d255e8c684",
+      "url": "https://www.instagram.com/ngnchiikawa/p/DQCabRxgaVi/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-34e047ee4fdb",
+      "url": "https://www.instagram.com/ngntrtr11/p/DH_Euyszkht/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-series14-abd8141a0ea7",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/moushikomi_261013.jpg",
+      "completedAt": "2026-10-17T23:12:57.930Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "画像実読。福岡寿司10/16〜18は入場整理券・本人確認。開店〜12:30は前日19時、13時以後各回1時間前。距離制限なし、券の入場開始時刻から1時間有効。既掲載と一致。",
+      "coverage": "画像実読"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-entry-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "completedAt": "2026-10-17T23:13:00.680Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "画像実読。横浜寿司10/22〜25は入場整理券を配布。具体的配布時刻などはこの画像では案内されていない。既掲載と一致。",
+      "coverage": "画像実読"
+    },
+    {
+      "sourceId": "morning-series14-abd8141a0ea7",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/moushikomi_261013.jpg",
+      "completedAt": "2026-10-17T23:13:02Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "画像実読。福岡寿司10/16〜18は入場整理券・本人確認。開店〜12:30は前日19時、13時以後各回1時間前。距離制限なし、券の入場開始時刻から1時間有効。既掲載と一致。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-entry-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "completedAt": "2026-10-17T23:13:02Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "画像実読。横浜寿司10/22〜25は入場整理券を配布。具体的配布時刻などはこの画像では案内されていない。既掲載と一致。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "morning-store-20261018-a5ac3248e5d3",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eN_mDBNZ/",
+      "completedAt": "2026-10-17T23:13:18.247Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-5e9a942cb900",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eLC1jKoZ/",
+      "completedAt": "2026-10-17T23:13:18.247Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公式Instagramの10/1投稿本文と画像を実読。10/10〜12、10/17〜18は公式LINE事前先着予約が必要。各来店日前日20時開始、店の半径30km以内・位置情報オン、数に限りあり。1人1枚・1日1回。旧Web記事の復旧ではなく別の現存する公式根拠。現在のLINE残枠や当日運用は未確認。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-918df9ebf6c7",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eCgrjDnA/",
+      "completedAt": "2026-10-17T23:13:18.247Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-5e9a942cb900",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eLC1jKoZ/",
+      "completedAt": "2026-10-17T23:13:47.289Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公式Instagramの10/1投稿本文と画像を実読。10/10〜12、10/17〜18は公式LINE事前先着予約が必要。各来店日前日20時開始、店の半径30km以内・位置情報オン、数に限りあり。1人1枚・1日1回。旧Web記事の復旧ではなく別の現存する公式根拠。現在のLINE残枠や当日運用は未確認。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-5e9a942cb900",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eLC1jKoZ/",
+      "completedAt": "2026-10-17T23:13:51Z",
+      "result": "success",
+      "method": "cloud_browser_image",
+      "httpStatus": null,
+      "summary": "公式Instagramの10/1投稿本文と画像を実読。10/10〜12、10/17〜18は公式LINE事前先着予約が必要。各来店日前日20時開始、店の半径30km以内・位置情報オン、数に限りあり。1人1枚・1日1回。旧Web記事の復旧ではなく別の現存する公式根拠。現在のLINE残枠や当日運用は未確認。",
+      "coverage": "本文と対象画像実読。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "completedAt": "2026-10-17T23:14:02.010Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "本文内指定語の検索は一致なし。予約取消・新着なしの根拠にはしない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "completedAt": "2026-10-17T23:14:02.010Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "本文内指定語の検索は一致なし。予約取消・新着なしの根拠にはしない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "completedAt": "2026-10-17T23:14:02.010Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "本文内指定語の検索は一致なし。予約取消・新着なしの根拠にはしない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "completedAt": "2026-10-17T23:14:02.010Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "本文内指定語の検索は一致なし。予約取消・新着なしの根拠にはしない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "completedAt": "2026-10-17T23:14:11.084Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "completedAt": "2026-10-17T23:14:11.084Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "completedAt": "2026-10-17T23:14:11.084Z",
+      "result": "success",
+      "method": "web",
+      "httpStatus": null,
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "completedAt": "2026-10-17T23:19:01.223Z",
+      "result": "parse_failed",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "completedAt": "2026-10-17T23:19:01.223Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "completedAt": "2026-10-17T23:19:01.223Z",
+      "result": "success",
+      "method": "cloud_browser",
+      "httpStatus": null,
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。",
+      "coverage": "表示範囲のみ。全投稿・全画像の網羅なし。"
+    }
+  ],
+  "visualObservations": [
+    {
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626",
+      "observedAt": "2026-10-17T23:08:47Z",
+      "summary": "本文・画像とも10/18(日)対象。整理券9:20〜9:50、イーストヤード1階12番地ソラミ坂広場入口前。9:50以後は10:00開店後に店頭配布。全員集合・途中合流不可、夜間早朝整列不可、1人1日1枚・再発行なし。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://x.com/chiikawa_land/status/2111428766354612313",
+      "observedAt": "2026-10-17T23:09:30Z",
+      "summary": "本文・画像とも10/18対象。阪急三番街南館B1Fの図示列、10:00開店。全員揃って整列、Whityうめだ手前折返し・同エリア整列不可、徹夜不可、混雑時整理券・運用変更あり。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://x.com/chiikawarestOKI/status/2111436882265694618",
+      "observedAt": "2026-10-17T23:11:33Z",
+      "summary": "画像は10/18日曜日当日席。○△対象の枠に当日券、店頭申込・予定数終了。通常席○は15:30、16:30、17:00、17:30、18:30、19:00、19:30、20:00、20:30。4名BOX△は15:30、19:30。6名BOX○は10:05、15:00、18:00、19:30、△は13:30、14:00、16:00、16:30、17:00、18:30、19:00、20:30。前夜告知の状態であり現在残席の保証なし。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HUqCpFpbIAA7brQ?format=webp&name=large",
+      "observedAt": "2026-10-17T23:12:09Z",
+      "summary": "10/23入店の公式画像を再実読。抽選10/16 10:00〜10/18 23:59、10/19中結果。空き発生時のみ二次先着。札幌・仙台・広島・福岡10/19 20時、名古屋・京都・梅田・心斎橋・金沢10/20 20時、原宿・東京駅・ソラマチ・横浜・新宿・池袋・越谷10/21 20時。既掲載と一致。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/moushikomi_261013.jpg",
+      "observedAt": "2026-10-17T23:13:02Z",
+      "summary": "画像実読。福岡寿司10/16〜18は入場整理券・本人確認。開店〜12:30は前日19時、13時以後各回1時間前。距離制限なし、券の入場開始時刻から1時間有効。既掲載と一致。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "observedAt": "2026-10-17T23:13:02Z",
+      "summary": "画像実読。横浜寿司10/22〜25は入場整理券を配布。具体的配布時刻などはこの画像では案内されていない。既掲載と一致。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eLC1jKoZ/",
+      "observedAt": "2026-10-17T23:13:51Z",
+      "summary": "公式Instagramの10/1投稿本文と画像を実読。10/10〜12、10/17〜18は公式LINE事前先着予約が必要。各来店日前日20時開始、店の半径30km以内・位置情報オン、数に限りあり。1人1枚・1日1回。旧Web記事の復旧ではなく別の現存する公式根拠。現在のLINE残枠や当日運用は未確認。",
+      "recordPath": "research/morning-stores-2026-10-18-evidence.json"
+    }
+  ],
+  "sourceObservations": [
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "completedAt": "2026-10-17T23:14:11.084Z",
+      "result": "success",
+      "summary": "公式本文で予約優先・各2日前までのQR整理券条件を再確認。池袋のみ11〜14時予約優先・14時以後予約不要、混雑時店頭整理券。取得本文には受付スケジュール後日公開との一般文言も残るため、11月受付日は既存確認済み根拠を保持する。現在残枠未確認。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "completedAt": "2026-10-17T23:14:11.084Z",
+      "result": "success",
+      "summary": "公式本文で予約優先・各2日前までのQR整理券条件を再確認。池袋のみ11〜14時予約優先・14時以後予約不要、混雑時店頭整理券。取得本文には受付スケジュール後日公開との一般文言も残るため、11月受付日は既存確認済み根拠を保持する。現在残枠未確認。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "completedAt": "2026-10-17T23:14:11.084Z",
+      "result": "success",
+      "summary": "公式本文で予約優先・各2日前までのQR整理券条件を再確認。池袋のみ11〜14時予約優先・14時以後予約不要、混雑時店頭整理券。取得本文には受付スケジュール後日公開との一般文言も残るため、11月受付日は既存確認済み根拠を保持する。現在残枠未確認。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "success",
+      "summary": "公式本文で池袋9/26〜11/20・沖縄10/17〜12/11対象と、予約優先・売切日時の当日席なし・各2日前までを確認。画像内の販売日時は今回は未実読。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "success",
+      "summary": "公式本文で池袋9/26〜11/20・沖縄10/17〜12/11対象と、予約優先・売切日時の当日席なし・各2日前までを確認。画像内の販売日時は今回は未実読。"
+    },
+    {
+      "sourceId": "series-observed-c57a222599f5",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/main.jpg",
+      "completedAt": "2026-10-17T23:11:50.421Z",
+      "result": "parse_failed",
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。"
+    },
+    {
+      "sourceId": "morning-series14-abd8141a0ea7",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/img/moushikomi_261013.jpg",
+      "completedAt": "2026-10-17T23:13:02Z",
+      "result": "success",
+      "summary": "画像実読。福岡寿司10/16〜18は入場整理券・本人確認。開店〜12:30は前日19時、13時以後各回1時間前。距離制限なし、券の入場開始時刻から1時間有効。既掲載と一致。"
+    },
+    {
+      "sourceId": "fukuoka-sushi-official",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-main-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/main.jpg",
+      "completedAt": "2026-10-17T23:11:50.421Z",
+      "result": "parse_failed",
+      "summary": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。"
+    },
+    {
+      "sourceId": "chiikawa-sushi-yokohama-entry-image",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261008.jpg",
+      "completedAt": "2026-10-17T23:13:02Z",
+      "result": "success",
+      "summary": "画像実読。横浜寿司10/22〜25は入場整理券を配布。具体的配布時刻などはこの画像では案内されていない。既掲載と一致。"
+    },
+    {
+      "sourceId": "morning-store-20261018-8725208989a2",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/index.html",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "summary": "web本文の表示範囲を取得。画像内容・動的な空き枠は別途確認が必要。"
+    },
+    {
+      "sourceId": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "completedAt": "2026-10-17T23:19:01.223Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "chiikawa-yaki-nagoya-20261018-reservation",
+      "url": "https://www.chiikawa-yaki.com/app-nagoya/schedules-nagoya/2026-10-18",
+      "completedAt": "2026-10-17T23:06:56.318Z",
+      "result": "success",
+      "summary": "10/18予約ページの表示では12:30、12:45、13:15〜13:45、15:15〜15:45、16:15〜19:45に先着予約受付中。その他表示枠は受付停止中。取得時点の状態で保証なし。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "summary": "表示先頭9/28ノベルティ告知。予約販売スケジュールの新しい本文告知は表示範囲にない。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "completedAt": "2026-10-17T23:08:15.298Z",
+      "result": "success",
+      "summary": "東京9〜10月優先券完売・15時以降14:50デジタル整理券、大阪10〜12月完売・券保有者のみ、併設POP UP通常フリー。既掲載と一致。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "summary": "web取得制限後にクラウドブラウザ本文成功。10/17・18は川越まつりに伴い9:30〜19:00。既掲載時間と一致。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "fetch_failed",
+      "summary": "web404、クラウドブラウザもページ未検出。旧Web記事は復旧していない。別の公式Instagram投稿で対象期間の予約告知を現在も確認可能。"
+    },
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "summary": "webタイムアウト後にクラウドブラウザ成功。通常9:30〜17:30と表示NEWS確認。10/18当日制限の確定情報は得られていない。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "completedAt": "2026-10-17T23:19:01.223Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "summary": "通常9:30〜17:30と表示NEWSを確認。新しい日付別入場案内は表示範囲にない。"
+    },
+    {
+      "sourceId": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "completedAt": "2026-10-17T23:06:56.318Z",
+      "result": "success",
+      "summary": "10〜19時・最終17:40、最新ニュース10/14。完売表示に対象日がないため10/18完売の新規告知にしない。"
+    },
+    {
+      "sourceId": "chiikawa-park-kumonosu-resumption-20261015",
+      "url": "https://chiikawapark-tokyo.jp/news/xy90fx6i74j/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "summary": "10/14付本文でくものすキャッチャー10/15再開を確認。既掲載と一致。"
+    },
+    {
+      "sourceId": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "completedAt": "2026-10-17T23:10:24.109Z",
+      "result": "success",
+      "summary": "毎月15日正午に2か月先月の1日〜末日分、土日祝時は直前平日、先着順を再確認。既掲載と一致。"
+    },
+    {
+      "sourceId": "chiikawa-publicity-instagram",
+      "url": "https://www.instagram.com/chiikawa_kouhou/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。"
+    },
+    {
+      "sourceId": "morning-store-20261018-8d8ea2aede60",
+      "url": "https://www.instagram.com/chiikawa_kouhou/p/DeOdxkGSlTG/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "morning-store-20261018-f4f9588b87b5",
+      "url": "https://www.instagram.com/chiikawamgmg/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。"
+    },
+    {
+      "sourceId": "morning-store-20261018-918df9ebf6c7",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eCgrjDnA/",
+      "completedAt": "2026-10-17T23:13:18.247Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "morning-store-20261018-5e9a942cb900",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eLC1jKoZ/",
+      "completedAt": "2026-10-17T23:13:51Z",
+      "result": "success",
+      "summary": "公式Instagramの10/1投稿本文と画像を実読。10/10〜12、10/17〜18は公式LINE事前先着予約が必要。各来店日前日20時開始、店の半径30km以内・位置情報オン、数に限りあり。1人1枚・1日1回。旧Web記事の復旧ではなく別の現存する公式根拠。現在のLINE残枠や当日運用は未確認。"
+    },
+    {
+      "sourceId": "morning-store-20261018-a5ac3248e5d3",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eN_mDBNZ/",
+      "completedAt": "2026-10-17T23:13:18.247Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "morning-store-20261018-37cf64d68d5b",
+      "url": "https://www.instagram.com/chiikawamgmg/p/Dd-eVNpDHD0/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "chiikawa-author-instagram",
+      "url": "https://www.instagram.com/ngnchiikawa/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。"
+    },
+    {
+      "sourceId": "morning-store-20261018-94d255e8c684",
+      "url": "https://www.instagram.com/ngnchiikawa/p/DQCabRxgaVi/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "nagano-author-instagram",
+      "url": "https://www.instagram.com/ngntrtr11/",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "summary": "公開プロフィールと表示12投稿のリンクを確認。投稿本文と日時はこの一覧だけでは未確認。"
+    },
+    {
+      "sourceId": "morning-store-20261018-34e047ee4fdb",
+      "url": "https://www.instagram.com/ngntrtr11/p/DH_Euyszkht/",
+      "completedAt": "2026-10-17T23:12:40.103Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-20261023-image",
+      "url": "https://pbs.twimg.com/media/HUqCpFpbIAA7brQ?format=webp&name=large",
+      "completedAt": "2026-10-17T23:12:09Z",
+      "result": "success",
+      "summary": "10/23入店の公式画像を再実読。抽選10/16 10:00〜10/18 23:59、10/19中結果。空き発生時のみ二次先着。札幌・仙台・広島・福岡10/19 20時、名古屋・京都・梅田・心斎橋・金沢10/20 20時、原宿・東京駅・ソラマチ・横浜・新宿・池袋・越谷10/21 20時。既掲載と一致。"
+    },
+    {
+      "sourceId": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "表示5投稿のうち10/24〜25札幌平岡・10/24太田の撮影会告知あり。一般商品告知は新会場に数えない。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "completedAt": "2026-10-17T23:19:01.223Z",
+      "result": "parse_failed",
+      "summary": "固定10/23予約と最新表示4投稿を確認。10/18梅田整列・ソラマチ9:20整理券は未掲載、10/17池袋受付終了は対象日終了。全店舗網羅なし。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-20261023-official",
+      "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+      "completedAt": "2026-10-17T23:11:03.838Z",
+      "result": "success",
+      "summary": "公開本文の表示範囲を実読。詳細はsourceObservationsで記録。"
+    },
+    {
+      "sourceId": "morning-store-20261018-dd2adc8413eb",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626",
+      "completedAt": "2026-10-17T23:08:47Z",
+      "result": "success",
+      "summary": "2026年10月18日は9:20～9:50に入店整理券を配布します。待機場所はイーストヤード1階12番地ソラミ坂広場入口前です。9:50以降は10:00開店後に店頭で配布します。グループは全員揃ってから整列し、途中合流・夜間早朝の整列はできません。整理券は1人1日1枚で、再発行はありません。"
+    },
+    {
+      "sourceId": "morning-store-20261018-2b79a3ebde6e",
+      "url": "https://x.com/chiikawa_land/status/2111419833481146626/photo/1",
+      "completedAt": "2026-10-17T23:08:35.222Z",
+      "result": "parse_failed",
+      "summary": "画像リンク操作がDOMエラー。画像内容未取得。後続のスクリーンショット確認とは分離。"
+    },
+    {
+      "sourceId": "morning-store-20261018-0d01aa844731",
+      "url": "https://x.com/chiikawa_land/status/2111428766354612313",
+      "completedAt": "2026-10-17T23:09:30Z",
+      "result": "success",
+      "summary": "2026年10月18日開店前は、阪急三番街南館地下1階の公式案内図の場所から、全員揃って整列してください。列はWhityうめだの手前で折り返し、同エリアでは並べません。徹夜の整列はできません。10:00開店時から順次案内し、混雑時は入場整理券を配布する場合があります。状況により運営方法が変わる場合があります。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "固定ハロウィーン会期と表示4商品投稿を確認。新しい入場変更は表示範囲にない。全投稿網羅なし。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "10/18東京デジタル整理券・ラフォーレ整理券の前夜告知を検出。ハロウィン限定BOX配布終了も表示。全投稿・全商品画像網羅なし。"
+    },
+    {
+      "sourceId": "morning-store-20261018-075d8ae443e9",
+      "url": "https://x.com/chiikawabakery/status/2111411915033296909",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "summary": "2026年10月18日は整理券による入場です。10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1人1日1回です。"
+    },
+    {
+      "sourceId": "morning-store-20261018-14efec499dd8",
+      "url": "https://x.com/chiikawabakery/status/2111434458608153023",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "summary": "2026年10月18日の15:00以降の入場はデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出し後15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "固定と表示4投稿は商品・在庫関連。新たな10/18入場条件は表示範囲にない。今日の自由入場・残枠の保証ではない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "表示5投稿は10/17商品在庫と伏見10/17整理券配布終了。10/18伏見の制限を推定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensb",
+      "url": "https://x.com/chiikawaramenSB",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "表示先頭10/9投稿で11/1〜30予約10/16正午受付、各2日前までを確認。10/12まで満席という過去告知を10/18へ適用しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensh",
+      "url": "https://x.com/chiikawaramenSH",
+      "completedAt": "2026-10-17T23:07:39.675Z",
+      "result": "success",
+      "summary": "最新表示は10/17満席。10/18満席や自由入場へ持ち越さない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensp",
+      "url": "https://x.com/chiikawaramenSP",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "表示先頭10/9投稿で11/1〜30予約10/16正午受付、各2日前までを確認。既掲載と一致、現在の枠は未確認。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawarestoki",
+      "url": "https://x.com/chiikawarestOKI",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "10/18当日券ありの前夜公式投稿を確認。○△対象枠、予定枚数で終了。現在の残席は未確認。"
+    },
+    {
+      "sourceId": "morning-store-20261018-a4c88bdd040c",
+      "url": "https://x.com/chiikawarestOKI/status/2111436882265694618",
+      "completedAt": "2026-10-17T23:11:33Z",
+      "result": "success",
+      "summary": "2026年10月17日の公式告知では、10月18日は案内画像の○・△の時間枠で当日券を用意するとされています。希望される方は店頭スタッフへお声がけください。予定枚数に達し次第終了し、現在の残席は未確認です。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawayaki",
+      "url": "https://x.com/chiikawayaki",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "10/17名古屋予約システム不具合と同日復旧の両投稿、10/29〜11/3事前予約を確認。10/18の個別予約ページには受付中枠がある。"
+    },
+    {
+      "sourceId": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "表示5投稿は10/16・15・13・12・11。短い本文のみ確認し、漫画画像は本巡回未読。新会場告知の全量確認とはしない。"
+    },
+    {
+      "sourceId": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "表示5投稿は9/20・8/26・8/17・8/14・8/1。本文のみ、画像全量未確認。"
+    },
+    {
+      "sourceId": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "completedAt": "2026-10-17T23:09:33.516Z",
+      "result": "success",
+      "summary": "10/18事前予約満席・当日券なしの前夜公式告知を確認。グッズ店フリーという文言は投稿時点の状態。"
+    },
+    {
+      "sourceId": "morning-store-20261018-03662b608de7",
+      "url": "https://x.com/THEGUEST_ikb/status/2111441585204556156",
+      "completedAt": "2026-10-17T23:10:09.794Z",
+      "result": "success",
+      "summary": "2026年10月18日は事前予約で満席のため、当日券の用意はありません。レストランは予約整理券をお持ちの方のみの案内です。"
+    }
+  ],
+  "importantExistingDeadlines": [
+    {
+      "target": "chiikawaland-entry-20261023",
+      "deadlineAt": "2026-10-18T23:59:00+09:00",
+      "meaning": "10/23入店抽選の応募締切。既掲載。"
+    },
+    {
+      "target": "chiikawaland-entry-20261023",
+      "opensAt": "2026-10-19T20:00:00+09:00",
+      "meaning": "空き発生時のみ札幌・仙台・広島・福岡の二次先着。既掲載。"
+    },
+    {
+      "target": "chiikawaland-entry-20261023",
+      "opensAt": "2026-10-20T20:00:00+09:00",
+      "meaning": "空き発生時のみ名古屋・京都・梅田・心斎橋・金沢の二次先着。既掲載。"
+    }
+  ],
+  "limitations": [
+    "公式Xは未ログインで表示された各5投稿のみで、全店舗・全投稿の網羅ではない。",
+    "Instagramはプロフィール上の12リンクと選んだ公開投稿本文・川越予約画像を確認。全投稿・動画は網羅していない。",
+    "現在のLINEや有料予約サイトの残枠は確認していない。",
+    "新しい10/18入場案内は確認済みの6店舗のみ。10/17限定案内は翌日へ適用しない。",
+    "川越の旧Web予約記事は404継続。公式Instagram10/1投稿の発見を記事復旧と扱わない。"
+  ],
+  "summary": {
+    "newDatedEntryNotices": 6,
+    "alternateOfficialReservationSource": 1,
+    "expiredNoticeContextProposals": 3,
+    "newVenueIds": 0
+  }
+}
