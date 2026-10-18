@@ -1,0 +1,212 @@
+{
+  "checkedAt": "2026-10-17T23:35:42.686+00:00",
+  "outcome": "safe_url_only_repair",
+  "proposedChange": {
+    "id": "mogumogu-otaru",
+    "candidateId": "mogumogu-otaru-entry-link-repair-20261018",
+    "fields": {
+      "entryInfoUrl": "https://www.chiikawamogumogu.jp/stores/otaru/"
+    },
+    "before": {
+      "entryInfoUrl": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/"
+    },
+    "evidence": [
+      {
+        "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+        "observedAt": "2026-10-17T23:33:34.505+00:00",
+        "summary": "実GETがHTTP 404。旧10/10～12記事を再取得できない。検索索引に旧本文は残るがライブ成功とは扱わず、撤回・自由入場・新たな予約条件を推定しない。",
+        "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+      },
+      {
+        "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+        "observedAt": "2026-10-17T23:34:15.752+00:00",
+        "summary": "実GET HTTP 200、gzip展開後の本文で小樽店の名称・住所・9:30～17:30・新着情報への案内を確認。現在の入店条件は本文にない。旧記事に代えて現行公式案内への導線として使用できる。",
+        "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+      },
+      {
+        "url": "https://www.chiikawamogumogu.jp/otaru/",
+        "observedAt": "2026-10-17T23:34:18.932+00:00",
+        "summary": "実GET HTTP 200、表示記事は8/9の配布終了ノベルティと6/12の開店グッズ案内。旧10/10～12記事は表示一覧にない。新しい入店条件は確認できず、撤回等は推定しない。",
+        "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "observedAt": "2026-10-17T23:33:34.505+00:00",
+      "summary": "実GETがHTTP 404。旧10/10～12記事を再取得できない。検索索引に旧本文は残るがライブ成功とは扱わず、撤回・自由入場・新たな予約条件を推定しない。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "observedAt": "2026-10-17T23:34:15.752+00:00",
+      "summary": "実GET HTTP 200、gzip展開後の本文で小樽店の名称・住所・9:30～17:30・新着情報への案内を確認。現在の入店条件は本文にない。旧記事に代えて現行公式案内への導線として使用できる。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "observedAt": "2026-10-17T23:34:18.932+00:00",
+      "summary": "実GET HTTP 200、表示記事は8/9の配布終了ノベルティと6/12の開店グッズ案内。旧10/10～12記事は表示一覧にない。新しい入店条件は確認できず、撤回等は推定しない。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "observedAt": "2026-10-17T23:33:44.291+00:00",
+      "summary": "実GET HTTP 200。表示最新記事は10/2公表の川越10/17～18営業時間変更。小樽の新たな入店条件は表示範囲で確認できない。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/",
+      "observedAt": "2026-10-17T23:34:22.007+00:00",
+      "summary": "実GET HTTP 200、公式TOP本文確認。埋込Xは10/10～11の在庫投稿が中心で最新タイムラインの網羅とは扱わない。小樽の新たな入店条件は確認できない。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://x.com/chiikawamgmg",
+      "observedAt": "2026-10-17T23:34:25.311+00:00",
+      "summary": "実GET HTTP 200で表示5投稿の本文抜粋を確認。小樽は在庫・再入荷2件、入場整理券終了は伏見10/17の投稿。小樽の新たな入場条件はこの表示範囲で確認できず、投稿全量・省略本文は未確認。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    },
+    {
+      "url": "https://www.instagram.com/chiikawamgmg/",
+      "observedAt": "2026-10-17T23:34:28.484+00:00",
+      "summary": "実GET HTTP 200だがタイトル・ログイン/フッターのみで投稿本文を確認できない。直前の成功観測を保持し、今回を新着なしとは扱わない。",
+      "recordPath": "research/morning-otaru-2026-10-18-evidence.json"
+    }
+  ],
+  "unknowns": {
+    "currentAdmissionMethod": null,
+    "newAdmissionPolicyAnnouncedAt": null,
+    "reasonOldArticleReturns404": null
+  },
+  "restrictions": "No user computer, GitHub mutation or publication. Current admission conditions remain unresolved.",
+  "fetchObservations": [
+    {
+      "label": "entry-404",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "attemptedAt": "2026-10-17T23:33:28.809182+00:00",
+      "status": 404,
+      "finalUrl": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "checkedAt": "2026-10-17T23:33:34.505657+00:00",
+      "title": "ページが見つかりませんでした |  ちいかわもぐもぐ本舗"
+    },
+    {
+      "label": "store",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "attemptedAt": "2026-10-17T23:33:34.507981+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "checkedAt": "2026-10-17T23:33:37.663942+00:00",
+      "title": null,
+      "parseResult": "parse_failed",
+      "note": "Initial body was gzip bytes inadvertently decoded as text; transport status only. Re-fetched with decompression below."
+    },
+    {
+      "label": "otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "attemptedAt": "2026-10-17T23:33:37.665449+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/otaru/",
+      "checkedAt": "2026-10-17T23:33:40.880093+00:00",
+      "title": null,
+      "parseResult": "parse_failed",
+      "note": "Initial body was gzip bytes inadvertently decoded as text; transport status only. Re-fetched with decompression below."
+    },
+    {
+      "label": "news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "attemptedAt": "2026-10-17T23:33:40.881327+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/news/",
+      "checkedAt": "2026-10-17T23:33:44.291485+00:00",
+      "title": "news |  ちいかわもぐもぐ本舗"
+    },
+    {
+      "label": "home",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "attemptedAt": "2026-10-17T23:33:44.294073+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/",
+      "checkedAt": "2026-10-17T23:33:47.894441+00:00",
+      "title": null,
+      "parseResult": "parse_failed",
+      "note": "Initial body was gzip bytes inadvertently decoded as text; transport status only. Re-fetched with decompression below."
+    },
+    {
+      "label": "store",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "attemptedAt": "2026-10-17T23:34:11.791+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "checkedAt": "2026-10-17T23:34:15.752+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": "gzip",
+      "title": "ちいかわもぐもぐ本舗 小樽店 | ちいかわもぐもぐ本舗",
+      "parseResult": "success"
+    },
+    {
+      "label": "otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "attemptedAt": "2026-10-17T23:34:15.756+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/otaru/",
+      "checkedAt": "2026-10-17T23:34:18.932+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": "gzip",
+      "title": "小樽店 |  ちいかわもぐもぐ本舗",
+      "parseResult": "success"
+    },
+    {
+      "label": "home",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "attemptedAt": "2026-10-17T23:34:18.936+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawamogumogu.jp/",
+      "checkedAt": "2026-10-17T23:34:22.007+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": "gzip",
+      "title": " ちいかわもぐもぐ本舗",
+      "parseResult": "success"
+    },
+    {
+      "label": "x",
+      "url": "https://x.com/chiikawamgmg",
+      "attemptedAt": "2026-10-17T23:34:22.024+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/chiikawamgmg",
+      "checkedAt": "2026-10-17T23:34:25.311+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": null,
+      "title": "ちいかわもぐもぐ本舗 (@chiikawamgmg) / X",
+      "parseResult": "success",
+      "contentVerification": "success: five visible post excerpts, including two Otaru stock posts and Fushimi 10/17 entry-ticket closure; truncation and timeline limits retained."
+    },
+    {
+      "label": "instagram",
+      "url": "https://www.instagram.com/chiikawamgmg/",
+      "attemptedAt": "2026-10-17T23:34:25.321+00:00",
+      "status": 200,
+      "finalUrl": "https://www.instagram.com/chiikawamgmg/",
+      "checkedAt": "2026-10-17T23:34:28.484+00:00",
+      "contentType": "text/html; charset=\"utf-8\"",
+      "contentEncoding": null,
+      "title": "ちいかわもぐもぐ本舗 (&#064;chiikawamgmg) • Instagram photos and videos",
+      "parseResult": "success",
+      "contentVerification": "parse_failed: HTML title and login/footer only; no current post text confirmed."
+    }
+  ],
+  "searchIndexCaveat": "Web search still returned the old article content with a recent crawl timestamp; web open failed and direct live GET returned404. Search cache is historical context only, never current live success.",
+  "targetSetProof": "target-set-proof.json",
+  "preserved": {
+    "listingId": "mogumogu-otaru",
+    "entryNote": "2026年10月10～12日の終日入店予約制の対象期間は終了しました。現在の入店方法は店舗の公式案内をご確認ください。新たに入場制限を行う場合は公式HP・公式SNSで告知されます。",
+    "entryInfoCheckedAt": "2026-10-13",
+    "reservationType": "unknown",
+    "defaultEntryType": "other",
+    "crowdControlType": "numbered_ticket",
+    "crowdControlCondition": "announced",
+    "oldPublishedCandidateId": "mogumogu-otaru-expired-entry-cleanup-20261013"
+  },
+  "publishedAt": null
+}
