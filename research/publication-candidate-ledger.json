@@ -1552,9 +1552,9 @@
       ],
       "state": "published",
       "priority": "normal",
-      "decision": "公式で確定した日付と予定便を更新。同じ企画のキャンペーン期間を既存periodsへ分離して記載し、条件を省略しない。 10/18朝: 初便予定とキャンペーン開始日時は既存一致。次72時間内だが今はまだ開始前。",
-      "nextCheck": "10/19朝に公式の予定変更の有無、10:00以降にキャンペーン開始案内を確認。",
-      "recheckDueAt": "2026-10-19T08:00:00.000+09:00",
+      "decision": "公式で確定した日付と予定便を更新。同じ企画のキャンペーン期間を既存periodsへ分離して記載し、条件を省略しない。 10/18朝: 初便予定とキャンペーン開始日時は既存一致。次72時間内だが今はまだ開始前。 初便指定2便の実運航を19:06公式照会で確認。公式初便案内との対応付け。",
+      "nextCheck": "次回定時に公式の案内変更を確認。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
       "publishedAt": null
     },
     {
@@ -2048,9 +2048,9 @@
       ],
       "state": "published",
       "priority": "high",
-      "decision": "PR #32の保存済み実配信・公開JSON初回照合の実時刻で同期。今回のローカル更新や後日観測の時計で置き換えない。",
-      "nextCheck": "一般発売日と利用案内の追加変更を確認。今回確認した再入場/整列条件は別のlisting_update候補へ分離。抽選稼働や残枠は未確認。",
-      "recheckDueAt": "2026-10-16T08:00:00+09:00",
+      "decision": "PR #32の保存済み実配信・公開JSON初回照合の実時刻で同期。今回のローカル更新や後日観測の時計で置き換えない。 特設・FAQ・券面本文は今朝と一致。先行抽選10/25締切・当落10/30、一般発売日未確定は維持。",
+      "nextCheck": "10/20朝に一般発売日など新発表を確認。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
       "publishedAt": "2026-10-08T10:31:19.736Z"
     },
     {
@@ -5286,9 +5286,9 @@
       ],
       "state": "published",
       "priority": "high",
-      "decision": "PR41の実deploy job完了19:57:59 JSTと最初の公開実体一致19:58:08.610 JSTで公開済みを同期。朝再観測や同期時計へ置き換えない。",
-      "nextCheck": "公式Webの賞品応募期限追記を確認。アプリ要項未読なので購入期限から賞品応募終了を推測しない。",
-      "recheckDueAt": "2026-10-16T08:00:00+09:00",
+      "decision": "PR41の実deploy job完了19:57:59 JSTと最初の公開実体一致19:58:08.610 JSTで公開済みを同期。朝再観測や同期時計へ置き換えない。 公式2本文は今朝一致。独立した賞品応募期限はなお未確認。対象購入期限から推定しない。",
+      "nextCheck": "10/20朝に公式公開Webの応募期限追記を確認。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
       "publishedAt": "2026-10-12T10:57:59Z"
     },
     {
@@ -6155,9 +6155,9 @@
       "listingIds": [],
       "state": "verifying",
       "priority": "normal",
-      "decision": "10月18日朝、公式主催・会場本文と原画像の目視でも、KITTEバルーン固有のフロア・撮影可能時間・料金は未確定。会場一般営業時間から展示時間を推定しない。既存コラボ案内は保持し、新スポットは追加しない。既存reflectDueAt超過と不明値nullを維持する。過去の未取得・未読状況は各証拠記録に保存する。",
-      "nextCheck": "次回の公式主催・施設更新で展示固有情報を確認。推測でフロア・時間・料金を補わない。",
-      "recheckDueAt": "2026-10-18T19:00:00.000+09:00",
+      "decision": "10月18日朝、公式主催・会場本文と原画像の目視でも、KITTEバルーン固有のフロア・撮影可能時間・料金は未確定。会場一般営業時間から展示時間を推定しない。既存コラボ案内は保持し、新スポットは追加しない。既存reflectDueAt超過と不明値nullを維持する。過去の未取得・未読状況は各証拠記録に保存する。 10/19夕、主催本文と施設トップ/イベント一覧の表示範囲に展示固有フロア・時間・料金の追加根拠なし。一般営業時間から推定しない。今朝の画像目視を今夕の再確認と書き換えない。",
+      "nextCheck": "10/20朝に主催/施設の展示固有案内を再確認。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
       "publishedAt": null
     },
     {
@@ -11739,6 +11739,12 @@
           "observedAt": "2026-10-18T22:05:19Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11751,12 +11757,12 @@
       "listingIds": [
         "chiikawa-photo-2026-10-18-aeon-tokoname"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-umeda-20261016-20261019",
@@ -11779,6 +11785,12 @@
           "observedAt": "2026-10-18T22:06:41Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11791,12 +11803,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-umeda-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-nagoya-sakae-20261016-20261019",
@@ -11819,6 +11831,12 @@
           "observedAt": "2026-10-18T22:06:41Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11831,12 +11849,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-nagoya-sakae-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-ikebukuro-20261016-20261019",
@@ -11859,6 +11877,12 @@
           "observedAt": "2026-10-18T22:06:41Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11871,12 +11895,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-ikebukuro-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-hibiya-20261016-20261019",
@@ -11899,6 +11923,12 @@
           "observedAt": "2026-10-18T22:06:41Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11911,12 +11941,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-hibiya-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-shinjuku-20261016-20261019",
@@ -11939,6 +11969,12 @@
           "observedAt": "2026-10-18T22:06:41Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11951,12 +11987,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-shinjuku-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-tenjin-solaria-20261016-20261019",
@@ -11979,6 +12015,12 @@
           "observedAt": "2026-10-18T22:06:41Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -11991,12 +12033,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-tenjin-solaria-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "archive-chiikawa-penlight-screening-toho-susukino-20261016-20261019",
@@ -12019,6 +12061,12 @@
           "observedAt": "2026-10-18T22:05:19Z",
           "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
           "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:14.034+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12031,12 +12079,12 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-susukino-20261016"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
-      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
-      "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-19T12:17:14.034+09:00"
     },
     {
       "id": "chiikawa-restaurant-ikebukuro-entry-20261019",
@@ -12065,6 +12113,12 @@
           "observedAt": "2026-10-19T12:03:16+09:00",
           "summary": "当日のOPEN投稿で予約整理券保有者のみを再確認。朝の当日券なし案内を覆す変更なし。",
           "recordPath": "research/noon-refresh-restaurants-20261019-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12077,12 +12131,12 @@
       "listingIds": [
         "chiikawa-restaurant-ikebukuro"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
+      "decision": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に当日変更、10/20朝に対象日終了を確認。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawa-restaurant-okinawa-entry-20261019",
@@ -12105,6 +12159,12 @@
           "observedAt": "2026-10-18T23:43:54.660+00:00",
           "summary": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12117,12 +12177,12 @@
       "listingIds": [
         "chiikawa-restaurant-okinawa"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
+      "decision": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に当日変更、10/20朝に対象日終了を確認。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-osaka-umeda-lottery-ended-20261019",
@@ -12145,6 +12205,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12157,12 +12223,12 @@
       "listingIds": [
         "chiikawaland-osaka-umeda"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-harajuku-lottery-ended-20261019",
@@ -12185,6 +12251,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12197,12 +12269,12 @@
       "listingIds": [
         "chiikawaland-harajuku"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-fukuoka-lottery-ended-20261019",
@@ -12225,6 +12297,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12237,12 +12315,12 @@
       "listingIds": [
         "chiikawaland-fukuoka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-kyoto-lottery-ended-20261019",
@@ -12265,6 +12343,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12277,12 +12361,12 @@
       "listingIds": [
         "chiikawaland-kyoto"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-tokyo-station-lottery-ended-20261019",
@@ -12305,6 +12389,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12317,12 +12407,12 @@
       "listingIds": [
         "chiikawaland-tokyo-station"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-solamachi-lottery-ended-20261019",
@@ -12345,6 +12435,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12357,12 +12453,12 @@
       "listingIds": [
         "chiikawaland-solamachi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-nagoya-lottery-ended-20261019",
@@ -12385,6 +12481,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12397,12 +12499,12 @@
       "listingIds": [
         "chiikawaland-nagoya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-sendai-lottery-ended-20261019",
@@ -12425,6 +12527,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12437,12 +12545,12 @@
       "listingIds": [
         "chiikawaland-sendai"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-sapporo-lottery-ended-20261019",
@@ -12465,6 +12573,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12477,12 +12591,12 @@
       "listingIds": [
         "chiikawaland-sapporo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-yokohama-lottery-ended-20261019",
@@ -12505,6 +12619,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12517,12 +12637,12 @@
       "listingIds": [
         "chiikawaland-yokohama"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-hiroshima-lottery-ended-20261019",
@@ -12545,6 +12665,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12557,12 +12683,12 @@
       "listingIds": [
         "chiikawaland-hiroshima"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-shinsaibashi-lottery-ended-20261019",
@@ -12585,6 +12711,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12597,12 +12729,12 @@
       "listingIds": [
         "chiikawaland-shinsaibashi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-shinjuku-lottery-ended-20261019",
@@ -12625,6 +12757,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12637,12 +12775,12 @@
       "listingIds": [
         "chiikawaland-shinjuku"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-kanazawa-lottery-ended-20261019",
@@ -12665,6 +12803,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12677,12 +12821,12 @@
       "listingIds": [
         "chiikawaland-kanazawa"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-ikebukuro-lottery-ended-20261019",
@@ -12705,6 +12849,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12717,12 +12867,12 @@
       "listingIds": [
         "chiikawaland-ikebukuro"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "chiikawaland-koshigaya-lottery-ended-20261019",
@@ -12745,6 +12895,12 @@
           "observedAt": "2026-10-18T23:44:49.000+00:00",
           "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
           "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.930+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12757,12 +12913,12 @@
       "listingIds": [
         "chiikawaland-koshigaya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。",
       "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
       "recheckDueAt": "2026-10-19T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-19T12:17:13.930+09:00"
     },
     {
       "id": "ana-chiikawa-launch-day-status-20261019",
@@ -12798,6 +12954,12 @@
           "observedAt": "2026-10-19T03:03:00.895+00:00",
           "summary": "正午再確認でも公式予定表記は同じ。登録入口の取得成功と実際の受付稼働を区別しupcomingを維持。",
           "recordPath": "research/noon-refresh-ana-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/60",
+          "observedAt": "2026-10-19T12:17:13.906+09:00",
+          "summary": "対象commit 84e5d0f44c6b372b0c48c55a6ae5919d3f2fb92a の公開JSON実体一致を確認。初回確認日時を保持。",
+          "recordPath": "research/publication-confirmation-2026-10-19-pr60.json"
         }
       ],
       "existingMatch": {
@@ -12810,11 +12972,362 @@
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
+      "state": "published",
+      "priority": "high",
+      "decision": "本文・期間ラベルを公式開始日と登録期間の表記に整理。実運航・登録機能稼働が未確認のため、開催中への分類変更は保留して既存upcomingを維持。 PR60の公開JSON初回一致記録に基づき公開済みへ同期。同期時刻を初回公開時刻へ代用しない。 ANA公式初便指定便2便の出発/到着済を公式運航検索で確認。active判断は公式案内日到達と初便指定便の運航に基づく。運航APIには機番/塗装がなく、ちいかわジェット実機の投入確定ではない。公開文にも実機未確認を明記。キャンペーン受付受理は未検証。",
+      "nextCheck": "次回定時に登録案内・運航予定・物販条件変更を確認。登録操作はしない。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
+      "publishedAt": "2026-10-19T12:17:13.906+09:00"
+    },
+    {
+      "id": "magical-popup-2026-10-02-sapporo-apia-entry-evening-20261019",
+      "title": "まじかる札幌の事前先着予約対象を11月3日まで延長",
+      "kind": "reservation_update",
+      "targetKey": "magical-popup-2026-10-02-sapporo-apia:entry-evening:2026-10-19",
+      "sourceIds": [
+        "evening-store-20261019-5ed5d9887e69",
+        "magical-sapporo-october-2026-source-3",
+        "evening-store-20261019-23844cd2e90b",
+        "evening-store-20261019-e23d63e5f4f2"
+      ],
+      "officialAnnouncedAt": "2026-10-19T09:00:17+00:00",
+      "discoveredAt": "2026-10-19T10:00:20.529+00:00",
+      "eventStartsAt": "2026-10-21",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-20T18:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/kiddyevent/status/2112106550055883189",
+          "observedAt": "2026-10-19T10:01:20.013+00:00",
+          "summary": "10/19 18:00:17 JSTの公式個別投稿と告知画像を確認。10/21～11/3終日10～20時の先着予約・各前日18時・1人1日1枚・本人確認を画像で確認。全14日分のLivePocket券面本文を読み、無料・前日18時・同一人同一日1時間帯・身分証とQR・譲渡不可を確認。既知10/6～20の期間に連続する延長で、会期11/3を延長する意味ではない。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://livepocket.jp/p/aqthq",
+          "observedAt": "2026-10-19T10:00:12.740+00:00",
+          "summary": "公式根拠の本文を再確認。詳細は同一確認記録を参照。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://livepocket.jp/e/1nnib",
+          "observedAt": "2026-10-19T10:01:36.272+00:00",
+          "summary": "公式根拠の本文を再確認。詳細は同一確認記録を参照。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://livepocket.jp/e/rrpuh",
+          "observedAt": "2026-10-19T10:01:33.236+00:00",
+          "summary": "公式根拠の本文を再確認。詳細は同一確認記録を参照。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-popup-2026-10-02-sapporo-apia"
+        ],
+        "note": "現在公開の既存IDと照合。新店舗追加なし。既存会期・住所・通常条件を維持。"
+      },
+      "listingIds": [
+        "magical-popup-2026-10-02-sapporo-apia"
+      ],
       "state": "ready",
       "priority": "high",
-      "decision": "本文・期間ラベルを公式開始日と登録期間の表記に整理。実運航・登録機能稼働が未確認のため、開催中への分類変更は保留して既存upcomingを維持。",
-      "nextCheck": "公式の開始後案内・初便報告・登録入口の更新を再確認。",
-      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "decision": "一次公式本文・告知画像と現行掲載を照合済み。通常掲載情報の確定差分として検査後に公開する。公開完了日時は配信実体を確認後に記録する。",
+      "nextCheck": "10月20日朝に当日情報の期限経過と公式続報を確認。札幌10/21分は10月20日18時受付開始。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-bakery-tokyo-entry-evening-20261019",
+      "title": "ちいかわベーカリー東京 10月19日のデジタル整理券案内",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-tokyo:entry-evening:2026-10-19",
+      "sourceIds": [
+        "evening-store-20261019-d683d7c47924",
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": "2026-10-19T01:00:00+00:00",
+      "discoveredAt": "2026-10-19T10:00:16.504+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-10-19",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-19T14:50:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2111985682688168331",
+          "observedAt": "2026-10-19T10:01:16.929+00:00",
+          "summary": "10/19 10:00 JSTの公式本文で当日のフリー入場をデジタル整理券で案内、14:50発券・呼び出し後15分以内・超過キャンセル・呼び出し前集合禁止を確認。添付画像は東京店限定と明記。予約ページの15時以降デジタル整理券条件と照合。10/18の先頭案内だけを10/19へ更新。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-19T10:00:08.985+00:00",
+          "summary": "公式根拠の本文を再確認。詳細は同一確認記録を参照。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "現在公開の既存IDと照合。新店舗追加なし。既存会期・住所・通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "一次公式本文・告知画像と現行掲載を照合済み。通常掲載情報の確定差分として検査後に公開する。公開完了日時は配信実体を確認後に記録する。",
+      "nextCheck": "10月20日朝に当日案内の対象日経過と公式続報を確認。一般条件と対象日限定情報を区別する。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-evening-20261019",
+      "title": "ちいかわラーメン豚心斎橋 10月19日満席・予約者限定",
+      "kind": "reservation_update",
+      "targetKey": "ramen-buta-shinsaibashi:entry-evening:2026-10-19",
+      "sourceIds": [
+        "evening-store-20261019-49f6e40f4687"
+      ],
+      "officialAnnouncedAt": "2026-10-19T02:00:46+00:00",
+      "discoveredAt": "2026-10-19T10:00:17.070+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-10-19",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawaramenSH/status/2112000974579798072",
+          "observedAt": "2026-10-19T10:01:13.254+00:00",
+          "summary": "10/19 11:00:46 JSTの公式本文で事前予約満席・予約者のみ案内を確認。現地告知の添付画像も10/19(月)と当日券配布なしを確認。一般の事前予約優先制と11月予約の既知案内はそのまま維持。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "現在公開の既存IDと照合。新店舗追加なし。既存会期・住所・通常条件を維持。"
+      },
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "一次公式本文・告知画像と現行掲載を照合済み。通常掲載情報の確定差分として検査後に公開する。公開完了日時は配信実体を確認後に記録する。",
+      "nextCheck": "10月20日朝に当日案内の対象日経過と公式続報を確認。一般条件と対象日限定情報を区別する。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-park-game-prize-20261101",
+      "title": "ちいかわパーク 11月1日からのゲーム成功景品変更予告",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-park-tokyo:game-prize:2026-11-01",
+      "sourceIds": [
+        "evening-store-20261019-f7aff0bc83b1"
+      ],
+      "officialAnnouncedAt": "2026-10-19T03:00:02+00:00",
+      "discoveredAt": "2026-10-19T10:00:16.323+00:00",
+      "eventStartsAt": "2026-11-01",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_parkjp/status/2112015890116186473",
+          "observedAt": "2026-10-19T10:01:10.205+00:00",
+          "summary": "10/19 12時JSTの公式個別本文と添付画像を確認。11/1からゲーム成功景品をダイカットクッション3種へ変更。数量限定、なくなり次第終了。同告知に両ゲーム回数無制限の案内もあるが、毎回の並び直しと1回700円が必要。参加賞は変更なし。",
+          "recordPath": "research/evening-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-tokyo"
+        ],
+        "note": "既存chiikawa-park-tokyoの説明末尾に追記。現在の再開notice・チケット・入場条件は維持し新規イベントは作らない。"
+      },
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "一次公式本文・告知画像と現行掲載を照合済み。通常掲載情報の確定差分として検査後に公開する。公開完了日時は配信実体を確認後に記録する。",
+      "nextCheck": "11月1日の新景品開始とその後の終了/条件変更を公式で確認。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "ana-astyle-waiting-room-20261023-update",
+      "title": "ANAコラボ A-style仮想待合室と販売先条件の追加",
+      "kind": "listing_update",
+      "targetKey": "ana-chiikawa-jet-2026:astyle-waiting-room-20261023",
+      "sourceIds": [
+        "ana-chiikawa-goods-astyle",
+        "ana-astyle-waiting-room-20261023"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": "2026-10-19T10:02:19.617+00:00",
+      "eventStartsAt": "2026-10-23T09:30:00.000+09:00",
+      "eventEndsAt": null,
+      "releaseAt": "2026-10-23T10:00:00.000+09:00",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "既存ANA企画の販売条件を更新。国際線プリオーダー00時は既掲載で新変更に数えない。"
+      },
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "10/15付の待合室詳細を10/19版FAQで新規観測。発表日と発見日を分け、ランダム事前待機/以後先着、10分/30分制限、在庫保証なしを記載。国内線機内10時と海外転送禁止等も同IDへ補足。",
+      "nextCheck": "次回定時に公式販売条件の追加変更を確認。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
+      "publishedAt": null,
+      "evidence": [
+        {
+          "url": "https://www.astyle.jp/astyle/news/696/",
+          "observedAt": "2026-10-19T10:02:19.617+00:00",
+          "summary": "10/15付公式告知。10/23 9:30～9:59待機者は10:00ランダム順、以降はその後の先着順。案内から10分以内入場、利用約30分で並び直し・カート無効の可能性。在庫確保なし。",
+          "recordPath": "research/evening-series-corporate-2026-10-19-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "movie-chiikawa-seventh-bonus-20261024-scope-review",
+      "title": "映画ちいかわ 入場者特典第7弾と第6弾配布終了",
+      "kind": "new_listing",
+      "targetKey": "movie-normal-screening-bonus:2026-10-24",
+      "sourceIds": [
+        "movie-seventh-bonus-official-20261019",
+        "movie-seventh-bonus-official-x-20261019"
+      ],
+      "officialAnnouncedAt": "2026-10-19",
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-24",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開現行/履歴4JSONと候補229件を名称・URL・入場者特典・第6/7弾で照合し対応なし。TOHO-ONE会員特典や10/18終了応援上映とは別企画。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "公式特典ページから内容と開始日、第6弾残数分10/23終了まで確定。ただし通常映画鑑賞特典単独を既存の企業・施設コラボ掲載対象と扱う根拠が弱く、新カテゴリや全国劇場ピンは追加しない。開催終了日の延長や別会員企画への追記もしない。",
+      "nextCheck": "10/20朝に上映館側の対象・企画位置づけと既存掲載基準内の扱いを再確認。通常鑑賞特典のみなら対象外記録とし、範囲拡張は独断で行わない。",
+      "recheckDueAt": "2026-10-20T08:00:00.000+09:00",
+      "publishedAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/specialitem.html",
+          "observedAt": "2026-10-19T10:02:18.997+00:00",
+          "summary": "第7弾10/24開始、全4種ランダム1枚、在庫限り。同一上映回1人1枚、通常/IMAX/4DX共通。第6弾は残数がある館でも10/23まで。",
+          "recordPath": "research/evening-series-corporate-2026-10-19-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "kodansha-autumn-manga-20261019-scope-exclusion",
+      "title": "講談社 秋のマンガまつり2026 わたしの1コマ",
+      "kind": "new_listing",
+      "targetKey": "general-reading-promotion:kodansha-autumn-20261019",
+      "sourceIds": [
+        "corporate-kodansha-autumn-manga-20261019",
+        "corporate-kodansha-autumn-manga-official"
+      ],
+      "officialAnnouncedAt": "2026-10-19T10:00:00.000+09:00",
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-11-01",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "現行/履歴コラボ、公式スポット、候補台帳に対応なし。KADOKAWAの別ブックフェアに接合しない。"
+      },
+      "listingIds": [],
+      "state": "rejected",
+      "priority": "normal",
+      "decision": "ちいかわの確認できる参加は電子書店の一般書籍無料/試読増量。紙書籍購入特典16作品には含まれず、独立した施設コラボ/イベントではない。クリネックスとの作品採用を本文から確認できず、同作品コラボと推定しない。",
+      "nextCheck": null,
+      "recheckDueAt": null,
+      "publishedAt": null,
+      "evidence": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000009059.000001719.html",
+          "observedAt": "2026-10-19T10:02:18.661+00:00",
+          "summary": "企業発表にちいかわの電子書店第1弾10/19～11/1を記載。紙の特典対象16作品にちいかわなし。",
+          "recordPath": "research/evening-series-corporate-2026-10-19-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "ana-official-first-flight-status-evening-20261019",
+      "title": "ANA初便指定便の運航実績に伴う就航期間表示の更新",
+      "kind": "listing_update",
+      "targetKey": "ana-chiikawa-jet-2026:official-flight-status:2026-10-19",
+      "sourceIds": [
+        "ana-chiikawa-jet",
+        "ana-flight-661-20261019",
+        "ana-flight-664-20261019"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19T10:06:48.445+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://afs.ana.co.jp/fli/api/FlightStatus?jsoncallback=FlightStatus&airline=NH&site=DOM&lang=JA&channel=PC&sn.requestDate=20261019&sn.flightNumber=661&sn.isArrived=D",
+          "observedAt": "2026-10-19T10:06:48.445+00:00",
+          "summary": "公式便名検索成功。ANA 661は10/19 08:26出発済・10:13到着済、機材76P。実機番号JA609Aの項目はない。",
+          "recordPath": "research/evening-series-corporate-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://afs.ana.co.jp/fli/api/FlightStatus?jsoncallback=FlightStatus&airline=NH&site=DOM&lang=JA&channel=PC&sn.requestDate=20261019&sn.flightNumber=664&sn.isArrived=D",
+          "observedAt": "2026-10-19T10:06:52.039+00:00",
+          "summary": "公式便名検索成功。ANA 664は10/19 11:09出発済・12:48到着済、機材76P。実機番号JA609Aの項目はない。",
+          "recordPath": "research/evening-series-corporate-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "既存企画の期間区分と就航日説明を更新。新しい会場・企画IDなし。"
+      },
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式案内の就航開始日到達と初便指定2便の運航確認に基づき企画をactiveへ。APIに機番や塗装の情報がないため、特別塗装機の実投入を確定する根拠とはしない。公開本文でも確認範囲を明記。登録フォーム受理は未検証。",
+      "nextCheck": "次回10月20日朝に公式案内・登録期間・販売条件を再確認。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00",
       "publishedAt": null
     }
   ]

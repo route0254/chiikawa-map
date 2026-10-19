@@ -1,0 +1,23 @@
+{
+  "observations": [
+    {
+      "sourceId": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "lastSuccessfulAtBefore": "2026-10-17T23:13:48.018Z",
+      "status": 200,
+      "result": "parse_failed",
+      "completedAt": "2026-10-19T10:01:03.718843+00:00",
+      "observation": "公開プロフィールと過去投稿のみ取得。最新時系列フィードは確認できず、新着なしとは判定しない。"
+    },
+    {
+      "sourceId": "nagano-author-instagram",
+      "url": "https://www.instagram.com/ngntrtr11/",
+      "lastSuccessfulAtBefore": "2026-10-17T23:11:03.838Z",
+      "status": 200,
+      "result": "parse_failed",
+      "completedAt": "2026-10-19T10:01:02.518345+00:00",
+      "observation": "HTTP200だがログイン画面・言語選択等だけで投稿本文は取得できず、新着なしとは判定しない。"
+    }
+  ],
+  "nextCheck": "次回10/20朝巡回で公式最新投稿取得を再確認。今回未取得範囲を新着なしとしない。"
+}
