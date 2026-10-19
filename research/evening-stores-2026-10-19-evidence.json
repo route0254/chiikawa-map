@@ -1,0 +1,1042 @@
+{
+  "checkedAt": "2026-10-19T10:06:23.990+00:00",
+  "asOfDateJST": "2026-10-19",
+  "scope": "10/19 19時JST夕方。公式常設店・飲食店・らんど・まじかるの当日/近期限入場条件。クラウドHTTPSとweb検索のみ。",
+  "baseline": {
+    "commit": "6f2a9098b5509ee2599d50ef328003ca80ba614d",
+    "officialSpotsCount": 79,
+    "publicDatasets": [
+      "data/official-spots.json",
+      "data/official-events-archive.json",
+      "data/collaborations-current.json"
+    ],
+    "note": "2026-10-19 18:59 JSTに現公開3JSONと原本の完全一致を確認。"
+  },
+  "newProjects": [],
+  "newOfficialConditionUpdates": [
+    {
+      "existingId": "magical-popup-2026-10-02-sapporo-apia",
+      "kind": "reservation_update",
+      "state": "ready",
+      "oldFields": {
+        "entryNote": "2026年10月6～20日は終日10:00～20:00、LivePocketでの事前先着予約制です。各来店日の前日18:00から受付し、1人1日1枚まで申し込めます。入場時は申込者本人の公的身分証明書とQRチケットが必要で、氏名・生年月日は本人確認書類と同じ内容で登録してください。チケットの譲渡はできません。予約は希望商品の購入を保証しません。10月21日以降の入店方法・最新の空き状況は公式案内をご確認ください。",
+        "importantNotice": "2026年10月6～20日は終日事前予約制。各来店日の前日18:00からLivePocketで先着受付します。",
+        "entryInfoUrl": "https://x.com/kiddyevent/status/2108482622984790066",
+        "entryInfoCheckedAt": "2026-10-10"
+      },
+      "proposedFields": {
+        "entryNote": "2026年10月6日～11月3日は終日10:00～20:00、LivePocketでの事前先着予約制です。各来店日の前日18:00から無料で受付し、1人1日1枚まで申し込めます。入場時は申込者本人の公的身分証明書とQRチケットが必要で、氏名・生年月日は本人確認書類と同じ内容で登録してください。チケットの譲渡はできません。予約は希望商品の購入を保証しません。10月21日分は10月20日18:00から受付予定です。最新の空き状況は公式予約ページをご確認ください。",
+        "importantNotice": "2026年10月21日～11月3日も終日事前予約制です。各来店日の前日18:00からLivePocketで無料の先着受付を行います。10月21日分は10月20日18:00開始予定です。",
+        "entryInfoUrl": "https://x.com/kiddyevent/status/2112106550055883189",
+        "entryInfoCheckedAt": "2026-10-19"
+      },
+      "sourceUrl": "https://x.com/kiddyevent/status/2112106550055883189",
+      "sourceUrls": [
+        "https://x.com/kiddyevent/status/2112106550055883189",
+        "https://livepocket.jp/p/aqthq",
+        "https://livepocket.jp/e/1nnib",
+        "https://livepocket.jp/e/rrpuh"
+      ],
+      "officialAnnouncedAt": "2026-10-19T09:00:17+00:00",
+      "discoveredAt": "2026-10-19T10:00:20.529+00:00",
+      "eventStartsAt": "2026-10-21",
+      "eventEndsAt": "2026-11-03",
+      "reservationOpensAt": "2026-10-20T18:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "publishedAt": null,
+      "existingCandidateMatches": [],
+      "evidenceSummary": "10/19 18:00:17 JSTの公式個別投稿と告知画像を確認。10/21～11/3終日10～20時の先着予約・各前日18時・1人1日1枚・本人確認を画像で確認。全14日分のLivePocket券面本文を読み、無料・前日18時・同一人同一日1時間帯・身分証とQR・譲渡不可を確認。既知10/6～20の期間に連続する延長で、会期11/3を延長する意味ではない。",
+      "nextCheck": "10月20日朝に当日情報の期限経過と公式続報を確認。札幌10/21分は10月20日18時受付開始。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00"
+    },
+    {
+      "existingId": "chiikawa-bakery-tokyo",
+      "kind": "reservation_update",
+      "state": "ready",
+      "oldFields": {
+        "entryNote": "2026年10月18日の15:00以降の入場はデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出し後15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。 2026年10月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "importantNotice": "2026年10月18日の15:00以降の入場はデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出し後15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2111434458608153023",
+        "entryInfoCheckedAt": "2026-10-18"
+      },
+      "proposedFields": {
+        "entryNote": "2026年10月19日の15:00以降の入場はデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出し後15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。 2026年10月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "importantNotice": "2026年10月19日の15:00以降の入場はデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出し後15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2111985682688168331",
+        "entryInfoCheckedAt": "2026-10-19"
+      },
+      "sourceUrl": "https://x.com/chiikawabakery/status/2111985682688168331",
+      "sourceUrls": [
+        "https://x.com/chiikawabakery/status/2111985682688168331",
+        "https://chiikawabakery.jp/reservation/"
+      ],
+      "officialAnnouncedAt": "2026-10-19T01:00:00+00:00",
+      "discoveredAt": "2026-10-19T10:00:16.504+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-10-19",
+      "reservationOpensAt": "2026-10-19T14:50:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "publishedAt": null,
+      "existingCandidateMatches": [],
+      "evidenceSummary": "10/19 10:00 JSTの公式本文で当日のフリー入場をデジタル整理券で案内、14:50発券・呼び出し後15分以内・超過キャンセル・呼び出し前集合禁止を確認。添付画像は東京店限定と明記。予約ページの15時以降デジタル整理券条件と照合。10/18の先頭案内だけを10/19へ更新。",
+      "nextCheck": "10月20日朝に対象日経過と公式続報を確認。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00"
+    },
+    {
+      "existingId": "ramen-buta-shinsaibashi",
+      "kind": "reservation_update",
+      "state": "ready",
+      "oldFields": {
+        "entryNote": "2026年10月18日は事前予約で満席のため、予約をお持ちの方のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "importantNotice": "2026年10月18日は事前予約で満席のため、予約をお持ちの方のみの案内です。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2111629053698638153",
+        "entryInfoCheckedAt": "2026-10-18"
+      },
+      "proposedFields": {
+        "entryNote": "2026年10月19日は事前予約で満席のため、予約をお持ちの方のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "importantNotice": "2026年10月19日は事前予約で満席のため、予約をお持ちの方のみの案内です。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2112000974579798072",
+        "entryInfoCheckedAt": "2026-10-19"
+      },
+      "sourceUrl": "https://x.com/chiikawaramenSH/status/2112000974579798072",
+      "sourceUrls": [
+        "https://x.com/chiikawaramenSH/status/2112000974579798072"
+      ],
+      "officialAnnouncedAt": "2026-10-19T02:00:46+00:00",
+      "discoveredAt": "2026-10-19T10:00:17.070+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-10-19",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "publishedAt": null,
+      "existingCandidateMatches": [],
+      "evidenceSummary": "10/19 11:00:46 JSTの公式本文で事前予約満席・予約者のみ案内を確認。現地告知の添付画像も10/19(月)と当日券配布なしを確認。一般の事前予約優先制と11月予約の既知案内はそのまま維持。",
+      "nextCheck": "10月20日朝に対象日経過と公式続報を確認。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00"
+    },
+    {
+      "existingId": "chiikawa-park-tokyo",
+      "kind": "listing_update",
+      "state": "ready",
+      "oldFields": {
+        "description": "ちいかわの世界に入り込める大型体験型施設です。映画関連キャラクターの期間限定グリーティングは、2026年8月27日の公式案内で9月18日までの延長予定が発表されていました。当時の案内では登場キャラクターはランダムで、同時登場は2キャラクターまでとされていました。現在の登場内容は最新の公式案内をご確認ください。"
+      },
+      "proposedFields": {
+        "description": "ちいかわの世界に入り込める大型体験型施設です。映画関連キャラクターの期間限定グリーティングは、2026年8月27日の公式案内で9月18日までの延長予定が発表されていました。当時の案内では登場キャラクターはランダムで、同時登場は2キャラクターまでとされていました。現在の登場内容は最新の公式案内をご確認ください。 2026年11月1日から、ゲームエリアの成功景品がちいかわ・ハチワレ・うさぎのダイカットクッションに変わる予定です。数量限定で、なくなり次第終了します。10月19日の公式案内では「ミートボールころがし」「くものすキャッチャー」はプレイ回数無制限ですが、1回ごとに並び直しと700円の支払いが必要です。参加賞の景品は変更ありません。"
+      },
+      "sourceUrl": "https://x.com/chiikawa_parkjp/status/2112015890116186473",
+      "sourceUrls": [
+        "https://x.com/chiikawa_parkjp/status/2112015890116186473"
+      ],
+      "officialAnnouncedAt": "2026-10-19T03:00:02+00:00",
+      "discoveredAt": "2026-10-19T10:00:16.323+00:00",
+      "eventStartsAt": "2026-11-01",
+      "eventEndsAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01",
+      "publishedAt": null,
+      "existingCandidateMatches": [],
+      "evidenceSummary": "10/19 12時JSTの公式個別本文と添付画像を確認。11/1からゲーム成功景品をダイカットクッション3種へ変更。数量限定、なくなり次第終了。現行の両ゲーム回数無制限も告知されているが、毎回の並び直しと1回700円が必要。参加賞は変更なし。",
+      "nextCheck": "11月1日の新景品開始とその後の終了/条件変更を公式で確認。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00"
+    }
+  ],
+  "reconfirmations": [
+    {
+      "kind": "reconfirmed_active",
+      "existingIds": [
+        "chiikawa-restaurant-ikebukuro"
+      ],
+      "sourceUrl": "https://x.com/THEGUEST_ikb/status/2112000856870752478",
+      "summary": "10/19当日営業投稿を再確認。レストラン整理券保有者のみ・グッズは投稿時フリー入場。今朝公開の当日券なしを裏付けるが既存条件変更なし。",
+      "eventEndsAt": "2026-10-19",
+      "proposedChange": null
+    },
+    {
+      "kind": "reconfirmed_active",
+      "existingIds": [
+        "chiikawa-restaurant-okinawa"
+      ],
+      "sourceUrl": "https://x.com/chiikawarestOKI/status/2111817453554856016",
+      "summary": "10/19分当日券の既知投稿を再確認。予定枚数で終了。最新残席は未確認。対象日当日のため案内を維持。",
+      "eventEndsAt": "2026-10-19",
+      "proposedChange": null
+    },
+    {
+      "kind": "verified_sale_started",
+      "existingIds": [
+        "magical-popup-2026-10-02-sapporo-apia"
+      ],
+      "sourceUrl": "https://livepocket.jp/e/8s-n5",
+      "observedAt": "2026-10-19T10:01:36.266+00:00",
+      "reservationOpensAt": "2026-10-19T18:00:00+09:00",
+      "reservationClosesAt": "2026-10-20T19:45:00+09:00",
+      "summary": "10/20分の先着受付について19:01取得時に販売中表示を実確認。残枠の固定的な公開はせず、前日18時条件を維持する。",
+      "proposedChange": null
+    },
+    {
+      "kind": "conditional_schedule_unverified",
+      "existingIds": [
+        "chiikawaland-sapporo",
+        "chiikawaland-sendai",
+        "chiikawaland-hiroshima",
+        "chiikawaland-fukuoka"
+      ],
+      "sourceUrl": "https://x.com/chiikawa_land/status/2110643022991892767",
+      "officialAnnouncedAt": "2026-10-15T08:04:45+00:00",
+      "reservationOpensAt": "2026-10-19T20:00:00+09:00",
+      "summary": "10/23分は空きが生じた店舗のみ10/19 20時二次先着の既知条件。19時確認では開始前、公式X表示範囲に対象店確定の新告知はなし。LINE公開入口のみで予約内の空き・実施可否を未確認。",
+      "proposedChange": null,
+      "nextCheck": "10/19 20時以降、公式公開案内で二次実施・空き店の発表があれば確認。LINE内部を未確認のまま受付中と断定しない。",
+      "recheckDueAt": "2026-10-19T20:00:00+09:00"
+    },
+    {
+      "kind": "deadline_reconfirmed",
+      "existingIds": [
+        "chiikawa-park-store-osaka",
+        "nagano-market-umeda"
+      ],
+      "sourceUrl": "https://www.lucua.jp/special/south-open/",
+      "summary": "主ページは第1弾10/9 12時～10/19 24時、11/18～23プレオープン、10/30午後当選発表を引き続き明記。応募フォームはLoadingのみで再確認できず、前回成功の23:59表記と店舗別対象条件を維持。",
+      "reservationClosesAt": "2026-10-19T23:59:00+09:00",
+      "reservationClosesAtBasis": "既存応募フォーム表記。主ページは10/19 24時と表記。",
+      "proposedChange": null,
+      "nextCheck": "10/20朝に期限経過を確認。応募締切を開催終了と混同しない。",
+      "recheckDueAt": "2026-10-20T08:00:00+09:00"
+    }
+  ],
+  "additionalOfficialNotice": {
+    "kind": "existing_venue_game_update",
+    "existingId": "chiikawa-park-tokyo",
+    "sourceUrl": "https://x.com/chiikawa_parkjp/status/2112015890116186473",
+    "officialAnnouncedAt": "2026-10-19T03:00:02+00:00",
+    "discoveredAt": "2026-10-19T10:00:16.323+00:00",
+    "eventStartsAt": "2026-11-01",
+    "eventEndsAt": null,
+    "summary": "11/1から成功景品をダイカットクッション3種へ変更。数量限定でなくなり次第終了。同告知は両ゲーム回数無制限・毎回並び直し・1回700円を案内するが、回数条件の適用開始日は別途明記されていない。既存施設descriptionへ追記。",
+    "proposedChange": "既存descriptionへの追記案をnewOfficialConditionUpdatesに含める。"
+  },
+  "duplicateChecks": [
+    {
+      "existingId": "magical-popup-2026-10-02-sapporo-apia",
+      "matchingPublishedRecords": {
+        "data/official-spots.json": [
+          "magical-popup-2026-10-02-sapporo-apia"
+        ],
+        "data/nagano-spots.json": [],
+        "data/collaborations-current.json": []
+      },
+      "candidateSourceUrlMatches": [],
+      "newListing": false
+    },
+    {
+      "existingId": "chiikawa-bakery-tokyo",
+      "matchingPublishedRecords": {
+        "data/official-spots.json": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "data/nagano-spots.json": [],
+        "data/collaborations-current.json": []
+      },
+      "candidateSourceUrlMatches": [],
+      "newListing": false
+    },
+    {
+      "existingId": "ramen-buta-shinsaibashi",
+      "matchingPublishedRecords": {
+        "data/official-spots.json": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "data/nagano-spots.json": [],
+        "data/collaborations-current.json": []
+      },
+      "candidateSourceUrlMatches": [],
+      "newListing": false
+    },
+    {
+      "existingId": "chiikawa-park-tokyo",
+      "matchingPublishedRecords": {
+        "data/official-spots.json": [
+          "chiikawa-park-tokyo"
+        ],
+        "data/nagano-spots.json": [],
+        "data/collaborations-current.json": []
+      },
+      "candidateSourceUrlMatches": [],
+      "newListing": false
+    }
+  ],
+  "imageObservations": [
+    {
+      "sourceUrl": "https://x.com/kiddyevent/status/2112106550055883189",
+      "imageUrl": "https://pbs.twimg.com/media/HU-1tnRaMAAgrjJ?format=webp&name=large",
+      "observedAt": "2026-10-19T10:02:30.702770+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 138808,
+      "visualReading": "10/21～11/3終日10～20時、各日前日18時、先着、1人1日1枚、公的身分証、譲渡不可。",
+      "visuallyVerifiedAt": "2026-10-19T10:06:23.990+00:00"
+    },
+    {
+      "sourceUrl": "https://x.com/chiikawaramenSH/status/2112000974579798072",
+      "imageUrl": "https://pbs.twimg.com/media/HU9VsMnbsAA3rNp?format=webp&name=large",
+      "observedAt": "2026-10-19T10:02:33.626834+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 282728,
+      "visualReading": "10/19(月)の現地当日券看板。事前予約定員につき当日券配布なし。",
+      "visuallyVerifiedAt": "2026-10-19T10:06:23.990+00:00"
+    },
+    {
+      "sourceUrl": "https://x.com/chiikawabakery/status/2111985682688168331",
+      "imageUrl": "https://pbs.twimg.com/media/HU6SLJ1bQAAIgQE?format=webp&name=large",
+      "observedAt": "2026-10-19T10:02:37.550957+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 42892,
+      "visualReading": "デジタル整理券は東京店のみと明示。",
+      "visuallyVerifiedAt": "2026-10-19T10:06:23.990+00:00"
+    },
+    {
+      "sourceUrl": "https://x.com/chiikawa_parkjp/status/2112015890116186473",
+      "imageUrl": "https://pbs.twimg.com/media/HU9bgk5bwAA--JP?format=webp&name=large",
+      "observedAt": "2026-10-19T10:02:40.494884+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 102284,
+      "visualReading": "11/1新景品投稿のクッション3種と参加賞画像。入場方法の変更とは扱わない。",
+      "visuallyVerifiedAt": "2026-10-19T10:06:23.990+00:00"
+    }
+  ],
+  "sourceObservations": [
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "attemptedAt": "2026-10-19T10:00:02.731+00:00",
+      "completedAt": "2026-10-19T10:00:08.526+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.526+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "attemptedAt": "2026-10-19T10:00:02.732+00:00",
+      "completedAt": "2026-10-19T10:00:08.610+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.610+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "attemptedAt": "2026-10-19T10:00:02.732+00:00",
+      "completedAt": "2026-10-19T10:00:09.052+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:09.052+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "attemptedAt": "2026-10-19T10:00:02.733+00:00",
+      "completedAt": "2026-10-19T10:00:08.985+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.985+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "lucua-south-opening",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "attemptedAt": "2026-10-19T10:00:02.734+00:00",
+      "completedAt": "2026-10-19T10:00:08.695+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.695+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "attemptedAt": "2026-10-19T10:00:02.735+00:00",
+      "completedAt": "2026-10-19T10:00:10.846+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:10.846+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "lucua-south-shop-list",
+      "url": "https://www.lucua.jp/floormap/southshop.html",
+      "attemptedAt": "2026-10-19T10:00:02.736+00:00",
+      "completedAt": "2026-10-19T10:00:09.705+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:09.705+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "attemptedAt": "2026-10-19T10:00:02.738+00:00",
+      "completedAt": "2026-10-19T10:00:08.425+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.425+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "attemptedAt": "2026-10-19T10:00:02.742+00:00",
+      "completedAt": "2026-10-19T10:00:08.429+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.429+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "attemptedAt": "2026-10-19T10:00:02.742+00:00",
+      "completedAt": "2026-10-19T10:00:08.410+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:08.410+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "magical-sapporo-october-2026-source-1",
+      "url": "https://x.com/kiddyevent/status/2108482622984790066",
+      "attemptedAt": "2026-10-19T10:00:08.410+00:00",
+      "completedAt": "2026-10-19T10:00:11.629+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:01:20.639+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "magical-sapporo-october-2026-source-3",
+      "url": "https://livepocket.jp/p/aqthq",
+      "attemptedAt": "2026-10-19T10:00:08.425+00:00",
+      "completedAt": "2026-10-19T10:00:12.740+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.740+00:00",
+      "resultSummary": "主催一覧は開催予定16件。10/21～11/3の14日分は販売前、10/19・20は販売中表示。入口だけでなく14日分の券面本文を別に確認。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "attemptedAt": "2026-10-19T10:00:08.429+00:00",
+      "completedAt": "2026-10-19T10:00:12.655+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.655+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "attemptedAt": "2026-10-19T10:00:08.526+00:00",
+      "completedAt": "2026-10-19T10:00:12.357+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.357+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "attemptedAt": "2026-10-19T10:00:08.610+00:00",
+      "completedAt": "2026-10-19T10:00:13.165+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:13.165+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-information",
+      "url": "https://chiikawabakery.jp/information/",
+      "attemptedAt": "2026-10-19T10:00:08.695+00:00",
+      "completedAt": "2026-10-19T10:00:12.451+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.451+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-information-osaka",
+      "url": "https://chiikawabakery.jp/information-osaka/",
+      "attemptedAt": "2026-10-19T10:00:08.985+00:00",
+      "completedAt": "2026-10-19T10:00:12.220+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.219+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-information-popup-01",
+      "url": "https://chiikawabakery.jp/information-popup_01/",
+      "attemptedAt": "2026-10-19T10:00:09.052+00:00",
+      "completedAt": "2026-10-19T10:00:12.502+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.502+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "attemptedAt": "2026-10-19T10:00:09.705+00:00",
+      "completedAt": "2026-10-19T10:00:12.426+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:12.426+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "attemptedAt": "2026-10-19T10:00:10.847+00:00",
+      "completedAt": "2026-10-19T10:00:13.199+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:13.199+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "nagano-market-entry-general",
+      "url": "https://nagano-info.jp/tenpo_nm/goannai.html",
+      "attemptedAt": "2026-10-19T10:00:11.629+00:00",
+      "completedAt": "2026-10-19T10:00:16.616+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:16.616+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "attemptedAt": "2026-10-19T10:00:12.220+00:00",
+      "completedAt": "2026-10-19T10:00:17.670+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:17.670+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "attemptedAt": "2026-10-19T10:00:12.357+00:00",
+      "completedAt": "2026-10-19T10:00:16.323+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:16.323+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "attemptedAt": "2026-10-19T10:00:12.426+00:00",
+      "completedAt": "2026-10-19T10:00:16.493+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:16.493+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensp",
+      "url": "https://x.com/chiikawaramenSP",
+      "attemptedAt": "2026-10-19T10:00:12.451+00:00",
+      "completedAt": "2026-10-19T10:00:16.479+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:16.479+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensb",
+      "url": "https://x.com/chiikawaramenSB",
+      "attemptedAt": "2026-10-19T10:00:12.503+00:00",
+      "completedAt": "2026-10-19T10:00:17.094+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:17.094+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawaramensh",
+      "url": "https://x.com/chiikawaramenSH",
+      "attemptedAt": "2026-10-19T10:00:12.655+00:00",
+      "completedAt": "2026-10-19T10:00:17.070+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:17.070+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "attemptedAt": "2026-10-19T10:00:12.740+00:00",
+      "completedAt": "2026-10-19T10:00:16.504+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:16.504+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakeryc",
+      "url": "https://x.com/chiikawabakeryC",
+      "attemptedAt": "2026-10-19T10:00:13.165+00:00",
+      "completedAt": "2026-10-19T10:00:16.362+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:16.362+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawayaki",
+      "url": "https://x.com/chiikawayaki",
+      "attemptedAt": "2026-10-19T10:00:13.199+00:00",
+      "completedAt": "2026-10-19T10:00:17.104+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:17.104+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-chiikawarestoki",
+      "url": "https://x.com/chiikawarestOKI",
+      "attemptedAt": "2026-10-19T10:00:16.323+00:00",
+      "completedAt": "2026-10-19T10:00:20.664+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:20.664+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "attemptedAt": "2026-10-19T10:00:16.363+00:00",
+      "completedAt": "2026-10-19T10:00:20.651+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:20.650+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "priority-four-9660f8c42df7",
+      "url": "https://x.com/kiddyevent",
+      "attemptedAt": "2026-10-19T10:00:16.479+00:00",
+      "completedAt": "2026-10-19T10:00:20.529+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:20.529+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "magical-store-entry-updates-x",
+      "url": "https://x.com/magi_chiikawa",
+      "attemptedAt": "2026-10-19T10:00:16.493+00:00",
+      "completedAt": "2026-10-19T10:00:20.642+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:20.642+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "attemptedAt": "2026-10-19T10:00:16.504+00:00",
+      "completedAt": "2026-10-19T10:00:22.247+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:22.247+00:00",
+      "resultSummary": "公式プロフィールに表示された最新4～5投稿と固定投稿を確認。全投稿の網羅ではなく、未表示投稿の変更なしは判定しない。"
+    },
+    {
+      "sourceId": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "attemptedAt": "2026-10-19T10:00:16.616+00:00",
+      "completedAt": "2026-10-19T10:00:22.719+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:22.719+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawaland-entry-20261023-official",
+      "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+      "attemptedAt": "2026-10-19T10:00:17.070+00:00",
+      "completedAt": "2026-10-19T10:00:22.465+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:00:22.464+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "evening-store-20261017-88d3c54d6233",
+      "url": "https://x.com/chiikawamgmg/with_replies",
+      "attemptedAt": "2026-10-19T10:00:17.094+00:00",
+      "completedAt": "2026-10-19T10:00:26.296+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "morning-store-20261019-5f6e62de1916",
+      "url": "https://forms.cloud.microsoft/r/pN19YTLZSA",
+      "attemptedAt": "2026-10-19T10:00:17.104+00:00",
+      "completedAt": "2026-10-19T10:00:26.423+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-425af290b1",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "attemptedAt": "2026-10-19T10:00:17.670+00:00",
+      "completedAt": "2026-10-19T10:00:21.923+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-15T10:03:02+00:00",
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "individual-magical-shinjuku",
+      "url": "https://chiikawa-info.jp/magical_store/shinjuku/",
+      "attemptedAt": "2026-10-19T10:00:20.529+00:00",
+      "completedAt": "2026-10-19T10:00:22.011+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-15T10:20:36.502Z",
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "individual-magical-umeda",
+      "url": "https://chiikawa-info.jp/magical_store/umeda/",
+      "attemptedAt": "2026-10-19T10:00:20.642+00:00",
+      "completedAt": "2026-10-19T10:00:23.664+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-15T10:20:37.993Z",
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "individual-magical-nagoya",
+      "url": "https://chiikawa-info.jp/magical_store/nagoya/",
+      "attemptedAt": "2026-10-19T10:00:20.651+00:00",
+      "completedAt": "2026-10-19T10:00:23.666+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-15T10:20:39.063Z",
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-e23d63e5f4f2",
+      "url": "https://livepocket.jp/e/rrpuh",
+      "attemptedAt": "2026-10-19T10:01:29.152+00:00",
+      "completedAt": "2026-10-19T10:01:33.236+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-45f0befdf684",
+      "url": "https://livepocket.jp/e/pimdi",
+      "attemptedAt": "2026-10-19T10:01:29.153+00:00",
+      "completedAt": "2026-10-19T10:01:33.387+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-b81fd78a8de6",
+      "url": "https://livepocket.jp/e/vrf88",
+      "attemptedAt": "2026-10-19T10:01:29.153+00:00",
+      "completedAt": "2026-10-19T10:01:33.197+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-b036d9310f47",
+      "url": "https://livepocket.jp/e/7m74_",
+      "attemptedAt": "2026-10-19T10:01:29.154+00:00",
+      "completedAt": "2026-10-19T10:01:33.440+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-2a0e304d48d4",
+      "url": "https://livepocket.jp/e/15-9_",
+      "attemptedAt": "2026-10-19T10:01:29.155+00:00",
+      "completedAt": "2026-10-19T10:01:33.630+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-01629322816f",
+      "url": "https://livepocket.jp/e/itset",
+      "attemptedAt": "2026-10-19T10:01:29.156+00:00",
+      "completedAt": "2026-10-19T10:01:33.536+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-78f6fdb3d92e",
+      "url": "https://livepocket.jp/e/oi2_a",
+      "attemptedAt": "2026-10-19T10:01:29.157+00:00",
+      "completedAt": "2026-10-19T10:01:33.246+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-708cc15032ea",
+      "url": "https://livepocket.jp/e/3sr9x",
+      "attemptedAt": "2026-10-19T10:01:29.158+00:00",
+      "completedAt": "2026-10-19T10:01:34.119+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-51d84b8db974",
+      "url": "https://livepocket.jp/e/t_tyd",
+      "attemptedAt": "2026-10-19T10:01:29.159+00:00",
+      "completedAt": "2026-10-19T10:01:33.890+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-0ba0e7c2c085",
+      "url": "https://livepocket.jp/e/md1fl",
+      "attemptedAt": "2026-10-19T10:01:29.160+00:00",
+      "completedAt": "2026-10-19T10:01:33.252+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-47ab1d5722c5",
+      "url": "https://livepocket.jp/e/sh44v",
+      "attemptedAt": "2026-10-19T10:01:33.197+00:00",
+      "completedAt": "2026-10-19T10:01:36.192+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-236e3efbf1bc",
+      "url": "https://livepocket.jp/e/difbt",
+      "attemptedAt": "2026-10-19T10:01:33.236+00:00",
+      "completedAt": "2026-10-19T10:01:36.221+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-f5fc136723b8",
+      "url": "https://livepocket.jp/e/96ktx",
+      "attemptedAt": "2026-10-19T10:01:33.246+00:00",
+      "completedAt": "2026-10-19T10:01:36.220+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-23844cd2e90b",
+      "url": "https://livepocket.jp/e/1nnib",
+      "attemptedAt": "2026-10-19T10:01:33.252+00:00",
+      "completedAt": "2026-10-19T10:01:36.272+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式LivePocket個別券面の開催日・営業時間・申込方式・本人確認・譲渡条件の本文を確認。10/21以降は販売前のため残枠/販売中とは判定しない。"
+    },
+    {
+      "sourceId": "series-observed-30cdd2aa304a",
+      "url": "https://livepocket.jp/e/8s-n5",
+      "attemptedAt": "2026-10-19T10:01:33.387+00:00",
+      "completedAt": "2026-10-19T10:01:36.266+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:01:36.266+00:00",
+      "resultSummary": "10/20分券面を19:01 JSTに再確認。先着、受付10/19 18:00～10/20 19:45、販売中表示。個別在庫数/申込完了を保証しない。"
+    },
+    {
+      "sourceId": "morning-20261019-4768929c1924",
+      "url": "https://livepocket.jp/e/wsjxt",
+      "attemptedAt": "2026-10-19T10:01:33.440+00:00",
+      "completedAt": "2026-10-19T10:01:36.526+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:01:36.526+00:00",
+      "resultSummary": "10/19分券面の受付10/18 18:00～10/19 19:45と販売中表示を確認。過去時間枠にも販売中の静的表示があり、当日残枠を保証しない。"
+    },
+    {
+      "sourceId": "chiikawa-nagano-reservation-line",
+      "url": "https://lin.ee/ZkmtWxk",
+      "attemptedAt": "2026-10-19T10:01:33.536+00:00",
+      "completedAt": "2026-10-19T10:01:49.231+00:00",
+      "result": "access_limited",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-17T00:42:44.286+00:00",
+      "resultSummary": "LINE公式アカウントの公開入口のみ表示。抽選結果・二次対象店・予約受付/残枠の内部画面は未取得。二次実施や空きを断定しない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-ad9598bf34e8",
+      "url": "https://x.com/chiikawayaki/status/2112106489074901354",
+      "attemptedAt": "2026-10-19T10:01:33.630+00:00",
+      "completedAt": "2026-10-19T10:01:39.039+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "store-observed-629ee1d1c3e3",
+      "url": "https://x.com/chiikawa_land/with_replies",
+      "attemptedAt": "2026-10-19T10:01:33.890+00:00",
+      "completedAt": "2026-10-19T10:01:41.648+00:00",
+      "result": "parse_failed",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "HTML取得は成功したが本文がLoadingのみ、X共通入口のみ、または画像中心で本文条件が取れず。今回の入場条件の成功確認として扱わない。"
+    },
+    {
+      "sourceId": "evening-store-20261019-f7aff0bc83b1",
+      "url": "https://x.com/chiikawa_parkjp/status/2112015890116186473",
+      "attemptedAt": "2026-10-19T10:01:06.757+00:00",
+      "completedAt": "2026-10-19T10:01:10.205+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "evening-store-20261019-49f6e40f4687",
+      "url": "https://x.com/chiikawaramenSH/status/2112000974579798072",
+      "attemptedAt": "2026-10-19T10:01:10.845+00:00",
+      "completedAt": "2026-10-19T10:01:13.254+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "evening-store-20261019-d683d7c47924",
+      "url": "https://x.com/chiikawabakery/status/2111985682688168331",
+      "attemptedAt": "2026-10-19T10:01:13.292+00:00",
+      "completedAt": "2026-10-19T10:01:16.929+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "morning-store-20261019-50e592101ea3",
+      "url": "https://x.com/chiikawarestOKI/status/2111817453554856016",
+      "attemptedAt": "2026-10-19T10:01:13.367+00:00",
+      "completedAt": "2026-10-19T10:01:18.681+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:01:18.681+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "chiikawa-restaurant-ikebukuro-open-20261019",
+      "url": "https://x.com/THEGUEST_ikb/status/2112000856870752478",
+      "attemptedAt": "2026-10-19T10:01:16.955+00:00",
+      "completedAt": "2026-10-19T10:01:20.056+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:01:20.055+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "morning-store-20261019-07cab2568367",
+      "url": "https://x.com/THEGUEST_ikb/status/2111808548594434404",
+      "attemptedAt": "2026-10-19T10:01:16.990+00:00",
+      "completedAt": "2026-10-19T10:01:20.265+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": "2026-10-19T10:01:20.264+00:00",
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    },
+    {
+      "sourceId": "evening-store-20261019-5ed5d9887e69",
+      "url": "https://x.com/kiddyevent/status/2112106550055883189",
+      "attemptedAt": "2026-10-19T10:01:17.814+00:00",
+      "completedAt": "2026-10-19T10:01:20.013+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "lastSuccessfulAtBefore": null,
+      "resultSummary": "公式本文を再取得して表示内容を確認。今回の変更/再確認の範囲は確認記録を参照。"
+    }
+  ],
+  "limitations": [
+    "Xプロフィール表示は最新4～5投稿と固定投稿で全量ではない。未表示を変更なしと推定しない。",
+    "まじかる各店の公式ページは画像中心。新札幌告知画像を別途実視認したが常設3店の既存画像は今回未読。",
+    "LINE公式入口から当落/二次対象店/残枠を確認できない。19時は二次予定20時前。",
+    "LUCUA応募フォームLoadingのみ。前回成功値と失敗を分けて保存。",
+    "ベーカリーラフォーレ・もぐもぐ伏見/川越・らんどの旧10/18限定記述は10/19新条件と扱わない。公開は今回の入場条件確定差分3件とパークdescription追記1件のみ提案。",
+    "WebツールではX2プロフィール403、LivePocketはJS確認画面。別の通常HTTPS取得では公式本文を確認できたためルートごとに記録。",
+    "初回画像取得でUser-Agent未指定の403があった。通常User-Agent指定の再取得で4画像成功し視認。"
+  ],
+  "webToolAttempts": [
+    {
+      "url": "https://x.com/chiikawa_land",
+      "result": "fetch_failed",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://x.com/kiddyevent",
+      "result": "fetch_failed",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://livepocket.jp/p/aqthq",
+      "result": "access_limited",
+      "detail": "JavaScript disabled/robot verification表示。"
+    },
+    {
+      "url": "https://www.lucua.jp/special/south-open/",
+      "result": "success",
+      "summary": "10/19 24時締切本文を確認。"
+    }
+  ],
+  "counts": {
+    "publicationProposals": 4,
+    "newProjects": 0,
+    "sourceUpserts": 69,
+    "candidateUpserts": 4,
+    "visuallyVerifiedImages": 4
+  },
+  "nextCheck": "10/19 20時以降にらんど二次受付の公式案内を確認。10/20朝に対象日経過とLUCUA締切経過、同日18時に札幌10/21券の先着開始を確認。"
+}
