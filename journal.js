@@ -2134,21 +2134,6 @@ function renderCalendar() {
       );
     }
 
-    button.setAttribute(
-      "aria-label",
-      formatDateJapanese(date) +
-      "、" +
-      (
-        eventGroups.length
-          ? eventGroups.map(
-              group =>
-                group.label +
-                group.count +
-                "件"
-            ).join("、")
-          : "イベントなし"
-      )
-    );
     button.appendChild(
       createElement(
         "span",
@@ -2238,6 +2223,24 @@ function renderCalendar() {
 
       button.appendChild(meta);
     }
+
+    // Keep every visible label in order for speech input, then add context.
+    const hiddenGroupLabels =
+      eventGroups.slice(3).map(
+        group =>
+          group.label +
+          group.count +
+          "件"
+      );
+    button.setAttribute(
+      "aria-label",
+      [
+        button.textContent,
+        formatDateJapanese(date),
+        ...hiddenGroupLabels,
+        ...(!events.length ? ["イベントなし"] : [])
+      ].join("、")
+    );
 
     button.addEventListener(
       "click",
@@ -2721,8 +2724,7 @@ function createPlanStop(
     getSpotPageUrl(spot);
   detailLink.setAttribute(
     "aria-label",
-    spot.name +
-    "の詳しい情報を見る"
+    "詳細: " + spot.name
   );
   actions.appendChild(detailLink);
 
