@@ -1,0 +1,113 @@
+{
+  "subject": "ANA ちいかわジェット・就航記念キャンペーン 昼再確認",
+  "existingId": "ana-chiikawa-jet-2026",
+  "createdAt": "2026-10-19T03:06:21+00:00",
+  "observedWindowJst": {
+    "start": "2026-10-19T12:02:51.759+09:00",
+    "end": "2026-10-19T12:03:33.643+09:00"
+  },
+  "scope": "ANA公開ページ3件の匿名読取のみ。ログイン、データ入力、登録送信なし。",
+  "observations": [
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "startedAt": "2026-10-19T03:02:51.759+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "textSha256": "3f5f40ee0303b0a920bbc7a7c4e07f2c5c48086abb6cbacd40e252c2e18994f3",
+      "bodyCharacters": 5248,
+      "responseUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "completedAt": "2026-10-19T03:03:01.072+00:00",
+      "rawStringIdenticalToMorningBeforeLineEndingNormalization": false,
+      "lineEndingNormalizedTextIdenticalToMorning": true,
+      "comparisonNote": "改行コードを正規化した抽出本文は朝の保存本文と同一。raw comparisonのfalseを内容変更と扱わない。"
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "startedAt": "2026-10-19T03:02:51.759+00:00",
+      "method": "public_url_get",
+      "httpStatus": 200,
+      "result": "success",
+      "textSha256": "6c846f827863de70677cc364d99678636231161e935628e831922185b6af5537",
+      "bodyCharacters": 6193,
+      "responseUrl": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "completedAt": "2026-10-19T03:03:00.895+00:00",
+      "rawStringIdenticalToMorningBeforeLineEndingNormalization": false,
+      "lineEndingNormalizedTextIdenticalToMorning": true,
+      "comparisonNote": "改行コードを正規化した抽出本文は朝の保存本文と同一。raw comparisonのfalseを内容変更と扱わない。"
+    },
+    {
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/registration.html",
+      "startedAt": "2026-10-19T03:03:27.422+00:00",
+      "method": "anonymous_read_only_get",
+      "httpStatus": 200,
+      "responseUrl": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/registration.html",
+      "result": "success",
+      "bodyCharacters": 4089,
+      "sha256": "a1c0353fcb13a435807e350fee265ac3a864b4ff9105b0b79ab0c7427823c24d",
+      "completedAt": "2026-10-19T03:03:33.643+00:00"
+    }
+  ],
+  "verifiedFacts": [
+    {
+      "kind": "announced_launch_date",
+      "value": "2026-10-19",
+      "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "note": "公式案内の日付。実運航したことの確認ではない。"
+    },
+    {
+      "kind": "announced_first_flights",
+      "value": [
+        {
+          "flight": "ANA661",
+          "route": "羽田→長崎",
+          "departureTimeJst": "08:15",
+          "date": "2026-10-19",
+          "qualification": "予定"
+        },
+        {
+          "flight": "ANA664",
+          "route": "長崎→羽田",
+          "departureTimeJst": "11:00",
+          "date": "2026-10-19",
+          "qualification": "予定"
+        }
+      ],
+      "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/"
+    },
+    {
+      "kind": "announced_phase1_registration_period",
+      "start": "2026-10-19T10:00:00+09:00",
+      "end": "2026-12-31T23:59:00+09:00",
+      "sourceUrl": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "note": "朝から存在する期間表示。時計経過・同じ表示だけで受付開始済みと判定しない。"
+    },
+    {
+      "kind": "public_registration_entry_readable",
+      "value": true,
+      "sourceUrl": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/registration.html",
+      "note": "HTTP200。キャンペーン名、会員番号入力欄、参加登録ボタンを含むHTMLが取得できた。明示的な受付中表示・登録完了は未確認。朝はこの入口を取得していないため新設・新公開とは判定できない。"
+    }
+  ],
+  "unverified": {
+    "actualFlightExecution": null,
+    "registrationLive": null,
+    "registrationSubmission": false
+  },
+  "interpretationLimits": [
+    "登録入口の公開HTMLは受付システムが登録を受理することを証明しない。",
+    "登録入口HTMLに入力内容に不備がありますという文言が含まれるが、送信を行っていないため、実際の入力エラーや受付失敗の証拠にはしない。",
+    "就航特設・キャンペーンの改行正規化後の抽出本文に朝からの変更はない。実運航の事後報告は今回取得本文では確認できない。",
+    "実運航・受付稼働が未確認という記述は確認範囲の説明であり、未運航・受付停止との断定ではない。",
+    "物販・ANA FESTA予約条件は朝の証拠を引き継ぐ。昼は在庫・残枠を再確認していない。"
+  ],
+  "statusDecision": {
+    "recommendedStatus": "upcoming",
+    "reason": "activeはサイト上で開催中と表示される。今回の証拠は予定日・参加登録期間・公開フォームの存在にとどまるため、activeへの変更を確定しない。",
+    "activeLabel": "開催中",
+    "upcomingLabel": "開催予定"
+  },
+  "nextCheck": "次の公式再確認で実施報告・明示的な受付状態を確認し、開催中への分類変更を再判断する。"
+}

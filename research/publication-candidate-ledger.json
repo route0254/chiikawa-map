@@ -11601,6 +11601,12 @@
           "observedAt": "2026-10-18T10:00:35.898+00:00",
           "summary": "2026年10月18日分の入場整理券は配布終了し、入場制限を継続する公式案内が出ています。",
           "recordPath": "research/evening-stores-2026-10-18-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/57",
+          "observedAt": "2026-10-18T21:09:49.689+09:00",
+          "summary": "10月18日夕方の公開JSON初回一致記録を保全・同期。配信完了と実体照合時刻を分離。",
+          "recordPath": "research/publication-confirmation-2026-10-18-pr57.json"
         }
       ],
       "existingMatch": {
@@ -11613,12 +11619,12 @@
       "listingIds": [
         "mogumogu-fushimi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "10/17の古い日限定案内・10/18未確認を置換。店舗の通常営業は17:30までなので、公開時に閉店後でも日付付き当日告知として扱い、将来日へ一般化しない。",
+      "decision": "10/17の古い日限定案内・10/18未確認を置換。店舗の通常営業は17:30までなので、公開時に閉店後でも日付付き当日告知として扱い、将来日へ一般化しない。 PR57の公開JSON初回一致記録に基づき公開済みへ同期。同期日の時刻を初回公開時刻へ置き換えない。",
       "nextCheck": "公開検査・反映後、10/19朝に当日案内の対象日経過を確認。",
       "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-18T21:09:49.689+09:00"
     },
     {
       "id": "chiikawa-bakery-shop-laforet-entry-evening-20261018",
@@ -11641,6 +11647,12 @@
           "observedAt": "2026-10-18T10:00:36.625+00:00",
           "summary": "2026年10月18日分の整理券は配布終了しています。",
           "recordPath": "research/evening-stores-2026-10-18-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/57",
+          "observedAt": "2026-10-18T21:09:49.689+09:00",
+          "summary": "10月18日夕方の公開JSON初回一致記録を保全・同期。配信完了と実体照合時刻を分離。",
+          "recordPath": "research/publication-confirmation-2026-10-18-pr57.json"
         }
       ],
       "existingMatch": {
@@ -11653,12 +11665,12 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "朝の10:00整理券配布開始案内を同日配布終了へ更新。翌日に継続適用しない。",
+      "decision": "朝の10:00整理券配布開始案内を同日配布終了へ更新。翌日に継続適用しない。 PR57の公開JSON初回一致記録に基づき公開済みへ同期。同期日の時刻を初回公開時刻へ置き換えない。",
       "nextCheck": "公開検査・反映後、10/19朝に当日案内の対象日経過を確認。",
       "recheckDueAt": "2026-10-19T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-18T21:09:49.689+09:00"
     },
     {
       "id": "ramen-buta-shinsaibashi-entry-evening-20261018",
@@ -11681,6 +11693,12 @@
           "observedAt": "2026-10-18T10:00:36.506+00:00",
           "summary": "2026年10月18日は事前予約で満席のため、予約をお持ちの方のみの案内です。",
           "recordPath": "research/evening-stores-2026-10-18-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/57",
+          "observedAt": "2026-10-18T21:09:49.689+09:00",
+          "summary": "10月18日夕方の公開JSON初回一致記録を保全・同期。配信完了と実体照合時刻を分離。",
+          "recordPath": "research/publication-confirmation-2026-10-18-pr57.json"
         }
       ],
       "existingMatch": {
@@ -11693,11 +11711,1110 @@
       "listingIds": [
         "ramen-buta-shinsaibashi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "10/17限定案内・10/18未確認を置換。一般予約案内は維持。",
+      "decision": "10/17限定案内・10/18未確認を置換。一般予約案内は維持。 PR57の公開JSON初回一致記録に基づき公開済みへ同期。同期日の時刻を初回公開時刻へ置き換えない。",
       "nextCheck": "公開検査・反映後、10/19朝に当日案内の対象日経過を確認。",
       "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": "2026-10-18T21:09:49.689+09:00"
+    },
+    {
+      "id": "archive-chiikawa-photo-2026-10-18-aeon-tokoname-20261019",
+      "title": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール常滑 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-photo-2026-10-18-aeon-tokoname-20261019",
+      "sourceIds": [
+        "observed-tokoname-aeonmall-jp-c4e3a8aa6e"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-18",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://tokoname.aeonmall.jp/event/1174de63-719b-42ed-8d91-7b2785b637bf",
+          "observedAt": "2026-10-18T22:05:19Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-photo-2026-10-18-aeon-tokoname"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-photo-2026-10-18-aeon-tokoname"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-umeda-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 梅田 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-umeda-20261016-20261019",
+      "sourceIds": [
+        "toho-umeda-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:06:41Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-umeda-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-umeda-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-nagoya-sakae-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 名古屋栄 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-nagoya-sakae-20261016-20261019",
+      "sourceIds": [
+        "toho-nagoya-sakae-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:06:41Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-nagoya-sakae-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-nagoya-sakae-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-ikebukuro-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 池袋 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-ikebukuro-20261016-20261019",
+      "sourceIds": [
+        "toho-ikebukuro-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:06:41Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-ikebukuro-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-ikebukuro-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-hibiya-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 日比谷 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-hibiya-20261016-20261019",
+      "sourceIds": [
+        "toho-hibiya-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:06:41Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-hibiya-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-hibiya-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-shinjuku-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 新宿 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-shinjuku-20261016-20261019",
+      "sourceIds": [
+        "toho-shinjuku-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:06:41Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-shinjuku-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-shinjuku-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-tenjin-solaria-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 天神・ソラリア館 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-tenjin-solaria-20261016-20261019",
+      "sourceIds": [
+        "toho-tenjin-solaria-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:06:41Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-tenjin-solaria-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-tenjin-solaria-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-penlight-screening-toho-susukino-20261016-20261019",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ すすきの 掲載日程終了の履歴移動",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-penlight-screening-toho-susukino-20261016-20261019",
+      "sourceIds": [
+        "toho-susukino-penlight-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-19",
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-10-18",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+          "observedAt": "2026-10-18T22:05:19Z",
+          "summary": "公式掲載日程は10月18日まで。現在の個別URL404と公式抽出済み日程の根拠を区別。延長・中止は確認範囲で見当たらず。",
+          "recordPath": "research/archive-ended-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-susukino-20261016"
+        ],
+        "note": "main 565f28cの既存IDを維持。新規作成なし。10月19日終了の4件は現行に残す。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-susukino-20261016"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "掲載日程終了を公式根拠と照合し、既存IDのまま履歴へ移動。公開実体確認待ち。",
+      "nextCheck": "PRの検査・公開配信後、現行/履歴JSONと詳細ページの実体を照合する。",
+      "recheckDueAt": "2026-10-19T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-restaurant-ikebukuro-entry-20261019",
+      "title": "ちいかわレストラン 池袋PARCO店 10月19日入場案内更新",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-restaurant-ikebukuro-entry-20261019",
+      "sourceIds": [
+        "morning-store-20261019-07cab2568367"
+      ],
+      "officialAnnouncedAt": "2026-10-18",
+      "discoveredAt": "2026-10-18T23:42:27.111+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-10-19",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/THEGUEST_ikb/status/2111808548594434404",
+          "observedAt": "2026-10-18T23:43:54.651+00:00",
+          "summary": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://x.com/THEGUEST_ikb/status/2112000856870752478",
+          "observedAt": "2026-10-19T12:03:16+09:00",
+          "summary": "当日のOPEN投稿で予約整理券保有者のみを再確認。朝の当日券なし案内を覆す変更なし。",
+          "recordPath": "research/noon-refresh-restaurants-20261019-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-restaurant-ikebukuro"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawa-restaurant-ikebukuro"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
+      "nextCheck": "10/19夕方に当日変更、10/20朝に対象日終了を確認。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-entry-20261019",
+      "title": "ちいかわレストラン 沖縄PARCO CITY店 10月19日入場案内更新",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-restaurant-okinawa-entry-20261019",
+      "sourceIds": [
+        "morning-store-20261019-50e592101ea3"
+      ],
+      "officialAnnouncedAt": "2026-10-18",
+      "discoveredAt": "2026-10-18T23:42:26.532+00:00",
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": "2026-10-19",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawarestOKI/status/2111817453554856016",
+          "observedAt": "2026-10-18T23:43:54.660+00:00",
+          "summary": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-restaurant-okinawa"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawa-restaurant-okinawa"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/19を明記した新規公式案内で10/18の先頭案内のみ置換。通常予約条件を保持。",
+      "nextCheck": "10/19夕方に当日変更、10/20朝に対象日終了を確認。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-osaka-umeda-lottery-ended-20261019",
+      "title": "ちいかわらんど 大阪梅田店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-osaka-umeda-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-20T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-harajuku-lottery-ended-20261019",
+      "title": "ちいかわらんど 原宿店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-harajuku-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-harajuku"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-harajuku"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-fukuoka-lottery-ended-20261019",
+      "title": "ちいかわらんど 福岡パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-fukuoka-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-19T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-fukuoka"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-fukuoka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-kyoto-lottery-ended-20261019",
+      "title": "ちいかわらんど 京都四条河原町店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-kyoto-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-20T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-kyoto"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-kyoto"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-tokyo-station-lottery-ended-20261019",
+      "title": "ちいかわらんど TOKYO Station 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-tokyo-station-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-tokyo-station"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-tokyo-station"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-solamachi-lottery-ended-20261019",
+      "title": "ちいかわらんど 東京スカイツリータウン・ソラマチ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-solamachi-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-solamachi"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-solamachi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-nagoya-lottery-ended-20261019",
+      "title": "ちいかわらんど 名古屋パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-nagoya-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-20T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-nagoya"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-nagoya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-sendai-lottery-ended-20261019",
+      "title": "ちいかわらんど 仙台パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-sendai-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-19T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sendai"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-sendai"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-sapporo-lottery-ended-20261019",
+      "title": "ちいかわらんど 札幌パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-sapporo-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-19T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sapporo"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-sapporo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-yokohama-lottery-ended-20261019",
+      "title": "ちいかわらんど 横浜店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-yokohama-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-yokohama"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-yokohama"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-hiroshima-lottery-ended-20261019",
+      "title": "ちいかわらんど 広島パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-hiroshima-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-19T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-hiroshima"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-hiroshima"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-shinsaibashi-lottery-ended-20261019",
+      "title": "ちいかわらんど 心斎橋パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-shinsaibashi-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-20T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-shinsaibashi"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-shinjuku-lottery-ended-20261019",
+      "title": "ちいかわらんど 新宿店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-shinjuku-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-shinjuku"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-shinjuku"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-kanazawa-lottery-ended-20261019",
+      "title": "ちいかわらんど 金沢フォーラス店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-kanazawa-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-20T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-kanazawa"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-kanazawa"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-ikebukuro-lottery-ended-20261019",
+      "title": "ちいかわらんど 池袋パルコ店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-ikebukuro-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-ikebukuro"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-ikebukuro"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawaland-koshigaya-lottery-ended-20261019",
+      "title": "ちいかわらんど 越谷レイクタウン店 10月19日入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawaland-koshigaya-lottery-ended-20261019",
+      "sourceIds": [
+        "chiikawaland-entry-20261023-official"
+      ],
+      "officialAnnouncedAt": "2026-10-15",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T20:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "observedAt": "2026-10-18T23:44:49.000+00:00",
+          "summary": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+          "recordPath": "research/morning-stores-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-koshigaya"
+        ],
+        "note": "公開main565f28cと朝の公式根拠を照合。既存ID/通常条件を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既知の抽選期限経過と、72時間内の条件付き二次先着を明示する案。ほかの10/18限定記述はこの確定差分では変更しない。10/19の入店規制を推測しない。",
+      "nextCheck": "10/19夕方に公式X・LINEの当落案内と二次先着実施情報を確認。空きや実施の有無は推定しない。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "ana-chiikawa-launch-day-status-20261019",
+      "title": "ANAちいかわジェット 公式開始日当日の表示更新",
+      "kind": "listing_update",
+      "targetKey": "ana-chiikawa-launch-day-status-20261019",
+      "sourceIds": [
+        "ana-chiikawa-jet",
+        "ana-chiikawa-campaign"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-19",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-19T10:00:00+09:00",
+      "reflectDueAt": "2026-10-19",
+      "evidence": [
+        {
+          "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+          "observedAt": "2026-10-19",
+          "summary": "公式開始日10月19日と第1弾参加登録期間を照合。実運航・登録機能稼働・予約空席は確認していない。",
+          "recordPath": "research/morning-corporate-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+          "observedAt": "2026-10-19",
+          "summary": "公式開始日10月19日と第1弾参加登録期間を照合。実運航・登録機能稼働・予約空席は確認していない。",
+          "recordPath": "research/morning-corporate-2026-10-19-evidence.json"
+        },
+        {
+          "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+          "observedAt": "2026-10-19T03:03:00.895+00:00",
+          "summary": "正午再確認でも公式予定表記は同じ。登録入口の取得成功と実際の受付稼働を区別しupcomingを維持。",
+          "recordPath": "research/noon-refresh-ana-2026-10-19-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "既存コラボIDを維持。新規スポットピンは追加しない。"
+      },
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "本文・期間ラベルを公式開始日と登録期間の表記に整理。実運航・登録機能稼働が未確認のため、開催中への分類変更は保留して既存upcomingを維持。",
+      "nextCheck": "公式の開始後案内・初便報告・登録入口の更新を再確認。",
+      "recheckDueAt": "2026-10-19T19:00:00+09:00",
       "publishedAt": null
     }
   ]
