@@ -1,0 +1,142 @@
+{
+  "dateJST": "2026-10-19",
+  "repository": "route0254/chiikawa-map",
+  "pr": {
+    "number": 62,
+    "url": "https://github.com/route0254/chiikawa-map/pull/62",
+    "headSha": "323d148a62de06fa6feefa8d64d761b79b064377",
+    "mergeSha": "6500f6b7686a32214d65a4f9051daa63967d02fc"
+  },
+  "pagesRun": {
+    "id": 39245223033,
+    "conclusion": "success"
+  },
+  "publicFiles": [
+    {
+      "path": "data/official-spots.json",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "status": 200,
+      "sha256": "37b8f8a87e910ae397dff0406d39eeb8cd6503e3a2d83d1916e81efe3e07f53c",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:06.127099+09:00"
+    },
+    {
+      "path": "data/official-events-archive.json",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "status": 200,
+      "sha256": "57f802ae3a6c24e0675ba6470fa0ba60746c20b7e368d4b71d527f8443418a1e",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:06.215186+09:00"
+    },
+    {
+      "path": "data/collaborations-current.json",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "status": 200,
+      "sha256": "757137d34fe98055feda0d3bfb31375bd5d6338099ed3954ff71a60d68b17893",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:06.106628+09:00"
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://chiikatsu-map.com/sitemap.xml",
+      "status": 200,
+      "sha256": "6ec63dd7a3f08405871e7153f18ec1e9a57b3aed9c3ddb147ab9c91be3d221eb",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:06.126922+09:00"
+    },
+    {
+      "path": "spot/chiikawa-bakery-tokyo/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-tokyo/index.html",
+      "status": 200,
+      "sha256": "f96469662387506e5b2b1008d845555736ce338dc3f5a0c86006a4f5194f2799",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:09.178669+09:00"
+    },
+    {
+      "path": "spot/chiikawa-park-tokyo/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-park-tokyo/index.html",
+      "status": 200,
+      "sha256": "83e722c5b3331851349545c950b8209e01c51b5bf956a0508f9e8de8c55a5f13",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:09.262846+09:00"
+    },
+    {
+      "path": "spot/magical-popup-2026-10-02-sapporo-apia/index.html",
+      "url": "https://chiikatsu-map.com/spot/magical-popup-2026-10-02-sapporo-apia/index.html",
+      "status": 200,
+      "sha256": "d3ffe4fa40ec0478f87700d545390e9282caac6ea1e0ededb11125e351dae5ec",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:09.106869+09:00"
+    },
+    {
+      "path": "spot/ramen-buta-shinsaibashi/index.html",
+      "url": "https://chiikatsu-map.com/spot/ramen-buta-shinsaibashi/index.html",
+      "status": 200,
+      "sha256": "9fc3463473e4114c4218c9a233aebd3526cb4eddca55dc829a064914cc3ded76",
+      "matchesPreparedUpdate": true,
+      "observedAt": "2026-10-19T20:34:09.106968+09:00"
+    }
+  ],
+  "candidatePublicationUpdates": [
+    {
+      "id": "magical-popup-2026-10-02-sapporo-apia-entry-evening-20261019",
+      "listingIds": [
+        "magical-popup-2026-10-02-sapporo-apia"
+      ],
+      "state": "published",
+      "publishedAt": "2026-10-19T20:34:06.127099+09:00",
+      "publicFile": "data/official-spots.json",
+      "sha256": "37b8f8a87e910ae397dff0406d39eeb8cd6503e3a2d83d1916e81efe3e07f53c"
+    },
+    {
+      "id": "chiikawa-bakery-tokyo-entry-evening-20261019",
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "published",
+      "publishedAt": "2026-10-19T20:34:06.127099+09:00",
+      "publicFile": "data/official-spots.json",
+      "sha256": "37b8f8a87e910ae397dff0406d39eeb8cd6503e3a2d83d1916e81efe3e07f53c"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-evening-20261019",
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "published",
+      "publishedAt": "2026-10-19T20:34:06.127099+09:00",
+      "publicFile": "data/official-spots.json",
+      "sha256": "37b8f8a87e910ae397dff0406d39eeb8cd6503e3a2d83d1916e81efe3e07f53c"
+    },
+    {
+      "id": "chiikawa-park-game-prize-20261101",
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "published",
+      "publishedAt": "2026-10-19T20:34:06.127099+09:00",
+      "publicFile": "data/official-spots.json",
+      "sha256": "37b8f8a87e910ae397dff0406d39eeb8cd6503e3a2d83d1916e81efe3e07f53c"
+    },
+    {
+      "id": "ana-astyle-waiting-room-20261023-update",
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "published",
+      "publishedAt": "2026-10-19T20:34:06.106628+09:00",
+      "publicFile": "data/collaborations-current.json",
+      "sha256": "757137d34fe98055feda0d3bfb31375bd5d6338099ed3954ff71a60d68b17893"
+    },
+    {
+      "id": "ana-official-first-flight-status-evening-20261019",
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "published",
+      "publishedAt": "2026-10-19T20:34:06.106628+09:00",
+      "publicFile": "data/collaborations-current.json",
+      "sha256": "757137d34fe98055feda0d3bfb31375bd5d6338099ed3954ff71a60d68b17893"
+    }
+  ]
+}
