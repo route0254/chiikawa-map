@@ -1,0 +1,720 @@
+{
+  "createdAt": "2026-10-20T23:32:20.954Z",
+  "base": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+  "packetIntegrity": {
+    "bytes": 203354,
+    "sha256": "3016baa8fcd6dcf925f750bfe521e8e041d4c121c7a94b520ddada51bed06329",
+    "recordPath": "research/morning-review-2026-10-21-evidence.json"
+  },
+  "sourceAliases": {},
+  "precisionPolicy": "The unchanged packet retains every exact received timestamp. Existing ledger schema accepts milliseconds only; affected ledger/evidence timestamps truncate excess sub-millisecond digits without inventing seconds or rounding. No schema changes.",
+  "precisionReductions": [
+    {
+      "location": "sourceCreates.morning-hold21-0f0711dec7d6.lastAttemptAt",
+      "original": "2026-10-20T23:01:23.843942+00:00",
+      "ledgerValue": "2026-10-20T23:01:23.843+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-0f0711dec7d6.lastSuccessfulAt",
+      "original": "2026-10-20T23:01:23.843942+00:00",
+      "ledgerValue": "2026-10-20T23:01:23.843+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-1199c39e7497.lastAttemptAt",
+      "original": "2026-10-20T23:01:22.792672+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.792+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-1199c39e7497.lastSuccessfulAt",
+      "original": "2026-10-20T23:01:22.792672+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.792+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-8ff50c60279f.lastAttemptAt",
+      "original": "2026-10-20T23:01:22.129183+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.129+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-8ff50c60279f.lastSuccessfulAt",
+      "original": "2026-10-20T23:01:22.129183+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.129+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-bff6d553f3c6.lastAttemptAt",
+      "original": "2026-10-20T23:01:22.305276+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.305+00:00"
+    },
+    {
+      "location": "sourceCreates.morning-hold21-bff6d553f3c6.lastSuccessfulAt",
+      "original": "2026-10-20T23:01:22.305276+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.305+00:00"
+    },
+    {
+      "location": "sourcePatches.venue-aeon-tsuchiura-muchaphoto-20261128.lastAttemptAt",
+      "original": "2026-10-20T23:01:23.368904+00:00",
+      "ledgerValue": "2026-10-20T23:01:23.368+00:00"
+    },
+    {
+      "location": "sourcePatches.venue-aeon-tsuchiura-muchaphoto-20261128.lastSuccessfulAt",
+      "original": "2026-10-20T23:01:23.368904+00:00",
+      "ledgerValue": "2026-10-20T23:01:23.368+00:00"
+    },
+    {
+      "location": "candidateUpserts.chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura-new.evidence.1.observedAt",
+      "original": "2026-10-20T23:01:23.368904+00:00",
+      "ledgerValue": "2026-10-20T23:01:23.368+00:00"
+    },
+    {
+      "location": "candidateUpserts.chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura-new.evidence.2.observedAt",
+      "original": "2026-10-20T23:01:23.843942+00:00",
+      "ledgerValue": "2026-10-20T23:01:23.843+00:00"
+    },
+    {
+      "location": "candidateUpserts.chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura-new.evidence.3.observedAt",
+      "original": "2026-10-20T23:01:22.792672+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.792+00:00"
+    },
+    {
+      "location": "candidateUpserts.movie-cafe-nagoya-last-order-conflict-20261020.evidence.4.observedAt",
+      "original": "2026-10-20T23:01:22.144825+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.144+00:00"
+    },
+    {
+      "location": "candidateUpserts.movie-cafe-nagoya-last-order-conflict-20261020.evidence.5.observedAt",
+      "original": "2026-10-20T23:01:22.129183+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.129+00:00"
+    },
+    {
+      "location": "candidateUpserts.movie-cafe-nagoya-last-order-conflict-20261020.evidence.6.observedAt",
+      "original": "2026-10-20T23:01:22.305276+00:00",
+      "ledgerValue": "2026-10-20T23:01:22.305+00:00"
+    }
+  ],
+  "pr64": {
+    "originalReceipt": {
+      "sourceMain": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+      "publishedAt": "2026-10-20T11:14:34Z",
+      "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+      "corrections": [
+        {
+          "id": "chiikawa-photo-2026-11-03-aeon-kasukabe-new",
+          "listingIds": [
+            "chiikawa-photo-2026-11-03-aeon-kasukabe"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "popup-aeon-kasukabe-ticket-details-20261020",
+          "listingIds": [
+            "popup-2026-10-30-aeon-kasukabe"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "ana-first-flight-airframe-confirmed-20261020",
+          "listingIds": [
+            "ana-chiikawa-jet-2026"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "chiikawa-muchaphoto-opsia-misumi-2026-new",
+          "listingIds": [
+            "chiikawa-muchaphoto-opsia-misumi-2026"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "chiikawa-park-movie-greeting-return-20261101",
+          "listingIds": [
+            "chiikawa-park-tokyo"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "history-chiikawa-tokyo-miyage-ikebukuro-20250509",
+          "listingIds": [
+            "chiikawa-tokyo-miyage-2025-05-09-zero-percent-ikebukuro"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "yokohama-sushi-entry-full-period-20261020",
+          "listingIds": [
+            "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "fukuoka-popup-entry-full-period-20261020",
+          "listingIds": [
+            "popup-2026-10-16-fukuoka-mitsukoshi"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "chiikawa-workshop-2026-11-23-aeon-kofu-showa-new",
+          "listingIds": [
+            "chiikawa-workshop-2026-11-23-aeon-kofu-showa"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        },
+        {
+          "id": "movie-cafe-nagoya-reservation-url-20261020",
+          "listingIds": [
+            "movie-cafe-nagoya"
+          ],
+          "state": "published",
+          "publishedAt": "2026-10-20T11:14:34Z",
+          "firstPublicMatchAt": "2026-10-20T11:16:34.950Z",
+          "pr": 64,
+          "prUrl": "https://github.com/route0254/chiikawa-map/pull/64",
+          "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+          "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+          "pagesRun": 39413451820
+        }
+      ]
+    },
+    "deploymentEvidence": {
+      "expectedHead": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+      "pagesRun": 39413451820,
+      "pagesUrl": "https://github.com/route0254/chiikawa-map/actions/runs/39413451820",
+      "deployJobId": 118596786738,
+      "deployStepCompletedAt": "2026-10-20T11:14:33Z",
+      "deployJobCompletedAt": "2026-10-20T11:14:34Z",
+      "actualPublishedAt": "2026-10-20T11:14:34Z",
+      "publishedAtBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately"
+    },
+    "firstPublicMatch": {
+      "observedAt": "2026-10-20T11:16:34.950Z",
+      "mergeSha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+      "sourceHead": "0303230623750f48645f16f01f8a727db53253cf",
+      "allMatch": true,
+      "matching": 28,
+      "total": 28,
+      "dataFilesMatching": 10,
+      "resources": [
+        {
+          "path": "data/added-dates.json",
+          "url": "https://chiikatsu-map.com/data/added-dates.json",
+          "sha256": "046e8d2e1d4a10e2574e20fa58feef3cf8b44296f58485585a8e6da90ce54cb5",
+          "bytes": 43178,
+          "startedAt": "2026-10-20T11:16:33.201Z",
+          "completedAt": "2026-10-20T11:16:33.560Z",
+          "status": 200,
+          "actualSha256": "046e8d2e1d4a10e2574e20fa58feef3cf8b44296f58485585a8e6da90ce54cb5",
+          "match": true
+        },
+        {
+          "path": "data/collaborations-archive.json",
+          "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+          "sha256": "4e1cad0f7d6ec5c2cb2c3245d94d13e9d6b83158902d607fdb1ba8008475afcc",
+          "bytes": 43048,
+          "startedAt": "2026-10-20T11:16:33.232Z",
+          "completedAt": "2026-10-20T11:16:33.468Z",
+          "status": 200,
+          "actualSha256": "4e1cad0f7d6ec5c2cb2c3245d94d13e9d6b83158902d607fdb1ba8008475afcc",
+          "match": true
+        },
+        {
+          "path": "data/collaborations-current.json",
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "sha256": "3c15a8df5ce504c12258b159e688b19ec413079d65df22b72863b351996b0135",
+          "bytes": 33704,
+          "startedAt": "2026-10-20T11:16:33.233Z",
+          "completedAt": "2026-10-20T11:16:33.467Z",
+          "status": 200,
+          "actualSha256": "3c15a8df5ce504c12258b159e688b19ec413079d65df22b72863b351996b0135",
+          "match": true
+        },
+        {
+          "path": "data/community-spots.json",
+          "url": "https://chiikatsu-map.com/data/community-spots.json",
+          "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+          "bytes": 3948,
+          "startedAt": "2026-10-20T11:16:33.234Z",
+          "completedAt": "2026-10-20T11:16:33.465Z",
+          "status": 200,
+          "actualSha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+          "match": true
+        },
+        {
+          "path": "data/nagano-history.json",
+          "url": "https://chiikatsu-map.com/data/nagano-history.json",
+          "sha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+          "bytes": 25361,
+          "startedAt": "2026-10-20T11:16:33.234Z",
+          "completedAt": "2026-10-20T11:16:33.581Z",
+          "status": 200,
+          "actualSha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+          "match": true
+        },
+        {
+          "path": "data/nagano-spots.json",
+          "url": "https://chiikatsu-map.com/data/nagano-spots.json",
+          "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+          "bytes": 178578,
+          "startedAt": "2026-10-20T11:16:33.235Z",
+          "completedAt": "2026-10-20T11:16:33.472Z",
+          "status": 200,
+          "actualSha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+          "match": true
+        },
+        {
+          "path": "data/nagano-unlocated-mentions.json",
+          "url": "https://chiikatsu-map.com/data/nagano-unlocated-mentions.json",
+          "sha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+          "bytes": 1653,
+          "startedAt": "2026-10-20T11:16:33.581Z",
+          "completedAt": "2026-10-20T11:16:33.831Z",
+          "status": 200,
+          "actualSha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+          "match": true
+        },
+        {
+          "path": "data/official-events-archive.json",
+          "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+          "sha256": "638bbb753ea3d4260cb4d2f2af32534772f7960620587c1762cf89b6096538f3",
+          "bytes": 1114485,
+          "startedAt": "2026-10-20T11:16:33.581Z",
+          "completedAt": "2026-10-20T11:16:33.795Z",
+          "status": 200,
+          "actualSha256": "638bbb753ea3d4260cb4d2f2af32534772f7960620587c1762cf89b6096538f3",
+          "match": true
+        },
+        {
+          "path": "data/official-spots.json",
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "sha256": "b0bd17bf677963b3a8b05041e1f46af16c86a19dd913b9df10fb380b39fe06f7",
+          "bytes": 169419,
+          "startedAt": "2026-10-20T11:16:33.581Z",
+          "completedAt": "2026-10-20T11:16:33.762Z",
+          "status": 200,
+          "actualSha256": "b0bd17bf677963b3a8b05041e1f46af16c86a19dd913b9df10fb380b39fe06f7",
+          "match": true
+        },
+        {
+          "path": "data/site-meta.json",
+          "url": "https://chiikatsu-map.com/data/site-meta.json",
+          "sha256": "03e02fbe533fece83fa8b0ab1bdd3f61cfadd831fa8cd960757c4154331af494",
+          "bytes": 180,
+          "startedAt": "2026-10-20T11:16:33.582Z",
+          "completedAt": "2026-10-20T11:16:33.788Z",
+          "status": 200,
+          "actualSha256": "03e02fbe533fece83fa8b0ab1bdd3f61cfadd831fa8cd960757c4154331af494",
+          "match": true
+        },
+        {
+          "path": "spot/chiikawa-muchaphoto-opsia-misumi-2026/index.html",
+          "url": "https://chiikatsu-map.com/spot/chiikawa-muchaphoto-opsia-misumi-2026/",
+          "sha256": "7c1ca5b96b450e5a610e0b04744179d0c5ca0d57886b80149486df301275d120",
+          "bytes": 9201,
+          "startedAt": "2026-10-20T11:16:33.582Z",
+          "completedAt": "2026-10-20T11:16:33.805Z",
+          "status": 200,
+          "actualSha256": "7c1ca5b96b450e5a610e0b04744179d0c5ca0d57886b80149486df301275d120",
+          "match": true
+        },
+        {
+          "path": "spot/chiikawa-park-tokyo/index.html",
+          "url": "https://chiikatsu-map.com/spot/chiikawa-park-tokyo/",
+          "sha256": "441e35f3c0c034483a002788231118c455db5ce1b1165dc93c9d823831dd1ea7",
+          "bytes": 10338,
+          "startedAt": "2026-10-20T11:16:33.582Z",
+          "completedAt": "2026-10-20T11:16:33.782Z",
+          "status": 200,
+          "actualSha256": "441e35f3c0c034483a002788231118c455db5ce1b1165dc93c9d823831dd1ea7",
+          "match": true
+        },
+        {
+          "path": "spot/chiikawa-photo-2026-11-03-aeon-kasukabe/index.html",
+          "url": "https://chiikatsu-map.com/spot/chiikawa-photo-2026-11-03-aeon-kasukabe/",
+          "sha256": "9571ace185ec95d4516c131f7bb72a28b13eadb4d15cef7da4ec8cbf4a73c849",
+          "bytes": 9461,
+          "startedAt": "2026-10-20T11:16:33.831Z",
+          "completedAt": "2026-10-20T11:16:34.044Z",
+          "status": 200,
+          "actualSha256": "9571ace185ec95d4516c131f7bb72a28b13eadb4d15cef7da4ec8cbf4a73c849",
+          "match": true
+        },
+        {
+          "path": "spot/chiikawa-sushi-2026-10-22-yokohama-skybuilding/index.html",
+          "url": "https://chiikatsu-map.com/spot/chiikawa-sushi-2026-10-22-yokohama-skybuilding/",
+          "sha256": "c889d08224b2e6044f5a6b6374200d4449cffc9989d1c12ce2de26a6fbd8a705",
+          "bytes": 9841,
+          "startedAt": "2026-10-20T11:16:33.831Z",
+          "completedAt": "2026-10-20T11:16:34.006Z",
+          "status": 200,
+          "actualSha256": "c889d08224b2e6044f5a6b6374200d4449cffc9989d1c12ce2de26a6fbd8a705",
+          "match": true
+        },
+        {
+          "path": "spot/chiikawa-tokyo-miyage-2025-05-09-zero-percent-ikebukuro/index.html",
+          "url": "https://chiikatsu-map.com/spot/chiikawa-tokyo-miyage-2025-05-09-zero-percent-ikebukuro/",
+          "sha256": "e00a92f8119d9dfebff30fa43d56cc5e5c93108041844de75c62363744832a6c",
+          "bytes": 8618,
+          "startedAt": "2026-10-20T11:16:33.831Z",
+          "completedAt": "2026-10-20T11:16:34.062Z",
+          "status": 200,
+          "actualSha256": "e00a92f8119d9dfebff30fa43d56cc5e5c93108041844de75c62363744832a6c",
+          "match": true
+        },
+        {
+          "path": "spot/chiikawa-workshop-2026-11-23-aeon-kofu-showa/index.html",
+          "url": "https://chiikatsu-map.com/spot/chiikawa-workshop-2026-11-23-aeon-kofu-showa/",
+          "sha256": "4d8e27f6e18d20c501e3a247720ed57ff5faa6afceb9a057c453e2957439ff5e",
+          "bytes": 9154,
+          "startedAt": "2026-10-20T11:16:33.831Z",
+          "completedAt": "2026-10-20T11:16:34.009Z",
+          "status": 200,
+          "actualSha256": "4d8e27f6e18d20c501e3a247720ed57ff5faa6afceb9a057c453e2957439ff5e",
+          "match": true
+        },
+        {
+          "path": "spot/movie-cafe-nagoya/index.html",
+          "url": "https://chiikatsu-map.com/spot/movie-cafe-nagoya/",
+          "sha256": "c3f4d848494de4c62bde1a01456090d942986d452e414fce53d9d17b56820bc1",
+          "bytes": 8328,
+          "startedAt": "2026-10-20T11:16:33.831Z",
+          "completedAt": "2026-10-20T11:16:34.021Z",
+          "status": 200,
+          "actualSha256": "c3f4d848494de4c62bde1a01456090d942986d452e414fce53d9d17b56820bc1",
+          "match": true
+        },
+        {
+          "path": "spot/popup-2026-10-16-fukuoka-mitsukoshi/index.html",
+          "url": "https://chiikatsu-map.com/spot/popup-2026-10-16-fukuoka-mitsukoshi/",
+          "sha256": "bda15e339bef3503c890a9ee804302729e4b7a8dfb504df74ede3fa05081862d",
+          "bytes": 9997,
+          "startedAt": "2026-10-20T11:16:33.831Z",
+          "completedAt": "2026-10-20T11:16:34.036Z",
+          "status": 200,
+          "actualSha256": "bda15e339bef3503c890a9ee804302729e4b7a8dfb504df74ede3fa05081862d",
+          "match": true
+        },
+        {
+          "path": "spot/popup-2026-10-30-aeon-kasukabe/index.html",
+          "url": "https://chiikatsu-map.com/spot/popup-2026-10-30-aeon-kasukabe/",
+          "sha256": "e418056f8578cbda8ecf1c77a86a04ca42db2d75b14195ec728ffd6276996d35",
+          "bytes": 8338,
+          "startedAt": "2026-10-20T11:16:34.062Z",
+          "completedAt": "2026-10-20T11:16:34.244Z",
+          "status": 200,
+          "actualSha256": "e418056f8578cbda8ecf1c77a86a04ca42db2d75b14195ec728ffd6276996d35",
+          "match": true
+        },
+        {
+          "path": "sitemap.xml",
+          "url": "https://chiikatsu-map.com/sitemap.xml",
+          "sha256": "bec6a6f30d56bf847fefeeacee6279914a0aab3d6de36c35dace766ec9c2c3b6",
+          "bytes": 34061,
+          "startedAt": "2026-10-20T11:16:34.062Z",
+          "completedAt": "2026-10-20T11:16:34.249Z",
+          "status": 200,
+          "actualSha256": "bec6a6f30d56bf847fefeeacee6279914a0aab3d6de36c35dace766ec9c2c3b6",
+          "match": true
+        },
+        {
+          "path": "index.html",
+          "url": "https://chiikatsu-map.com/",
+          "sha256": "a50b4b653d43aa2b76fef7ba03330caa452fadb9af3404119e363094164e4cc7",
+          "bytes": 56563,
+          "startedAt": "2026-10-20T11:16:34.062Z",
+          "completedAt": "2026-10-20T11:16:34.293Z",
+          "status": 200,
+          "actualSha256": "a50b4b653d43aa2b76fef7ba03330caa452fadb9af3404119e363094164e4cc7",
+          "match": true
+        },
+        {
+          "path": "official.html",
+          "url": "https://chiikatsu-map.com/official.html",
+          "sha256": "fc2f9fbb3f7ee7b4a6eccccbce64021eade8b7ad4cc06842251a78fc8936dbbc",
+          "bytes": 32527,
+          "startedAt": "2026-10-20T11:16:34.062Z",
+          "completedAt": "2026-10-20T11:16:34.261Z",
+          "status": 200,
+          "actualSha256": "fc2f9fbb3f7ee7b4a6eccccbce64021eade8b7ad4cc06842251a78fc8936dbbc",
+          "match": true
+        },
+        {
+          "path": "collaborations.html",
+          "url": "https://chiikatsu-map.com/collaborations.html",
+          "sha256": "e2c8a88fdfc6d8b6bb88051ce80d274592410628889f5f8e349efa64043d23ed",
+          "bytes": 21822,
+          "startedAt": "2026-10-20T11:16:34.062Z",
+          "completedAt": "2026-10-20T11:16:34.269Z",
+          "status": 200,
+          "actualSha256": "e2c8a88fdfc6d8b6bb88051ce80d274592410628889f5f8e349efa64043d23ed",
+          "match": true
+        },
+        {
+          "path": "app.js",
+          "url": "https://chiikatsu-map.com/app.js",
+          "sha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+          "bytes": 162291,
+          "startedAt": "2026-10-20T11:16:34.062Z",
+          "completedAt": "2026-10-20T11:16:34.583Z",
+          "status": 200,
+          "actualSha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+          "match": true
+        },
+        {
+          "path": "recent-utils.js",
+          "url": "https://chiikatsu-map.com/recent-utils.js",
+          "sha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+          "bytes": 1820,
+          "startedAt": "2026-10-20T11:16:34.583Z",
+          "completedAt": "2026-10-20T11:16:34.758Z",
+          "status": 200,
+          "actualSha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+          "match": true
+        },
+        {
+          "path": "collaborations.js",
+          "url": "https://chiikatsu-map.com/collaborations.js",
+          "sha256": "df7a9a389794b9feb608026c438b64b3e80be1e9cc68366181cdfd1e1d003138",
+          "bytes": 24429,
+          "startedAt": "2026-10-20T11:16:34.584Z",
+          "completedAt": "2026-10-20T11:16:34.798Z",
+          "status": 200,
+          "actualSha256": "df7a9a389794b9feb608026c438b64b3e80be1e9cc68366181cdfd1e1d003138",
+          "match": true
+        },
+        {
+          "path": "spot-page.js",
+          "url": "https://chiikatsu-map.com/spot-page.js",
+          "sha256": "7ef07104745596c222577c083a12d7f89235be480039cc9603fdb96d480981cf",
+          "bytes": 4307,
+          "startedAt": "2026-10-20T11:16:34.584Z",
+          "completedAt": "2026-10-20T11:16:34.780Z",
+          "status": 200,
+          "actualSha256": "7ef07104745596c222577c083a12d7f89235be480039cc9603fdb96d480981cf",
+          "match": true
+        },
+        {
+          "path": "service-worker.js",
+          "url": "https://chiikatsu-map.com/service-worker.js",
+          "sha256": "a3604d9c5b9bf13ba996c2f64b0f85f128e0d90e1b4939bbd9629bd10da5f367",
+          "bytes": 4178,
+          "startedAt": "2026-10-20T11:16:34.584Z",
+          "completedAt": "2026-10-20T11:16:34.950Z",
+          "status": 200,
+          "actualSha256": "a3604d9c5b9bf13ba996c2f64b0f85f128e0d90e1b4939bbd9629bd10da5f367",
+          "match": true
+        }
+      ],
+      "observedData": {
+        "official": 78,
+        "archive": 671,
+        "collaborations": 24,
+        "collaborationsArchive": 51,
+        "allSpots": 843,
+        "listingRecords": 10,
+        "jsonDeepEqual": 10,
+        "oldSpotAdditionDatesPreserved": 839,
+        "historyAdditionDateNull": true
+      }
+    },
+    "synchronization": [
+      {
+        "id": "chiikawa-photo-2026-11-03-aeon-kasukabe-new",
+        "listingIds": [
+          "chiikawa-photo-2026-11-03-aeon-kasukabe"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "popup-aeon-kasukabe-ticket-details-20261020",
+        "listingIds": [
+          "popup-2026-10-30-aeon-kasukabe"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "ana-first-flight-airframe-confirmed-20261020",
+        "listingIds": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "chiikawa-muchaphoto-opsia-misumi-2026-new",
+        "listingIds": [
+          "chiikawa-muchaphoto-opsia-misumi-2026"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "chiikawa-park-movie-greeting-return-20261101",
+        "listingIds": [
+          "chiikawa-park-tokyo"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "history-chiikawa-tokyo-miyage-ikebukuro-20250509",
+        "listingIds": [
+          "chiikawa-tokyo-miyage-2025-05-09-zero-percent-ikebukuro"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "yokohama-sushi-entry-full-period-20261020",
+        "listingIds": [
+          "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "fukuoka-popup-entry-full-period-20261020",
+        "listingIds": [
+          "popup-2026-10-16-fukuoka-mitsukoshi"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "chiikawa-workshop-2026-11-23-aeon-kofu-showa-new",
+        "listingIds": [
+          "chiikawa-workshop-2026-11-23-aeon-kofu-showa"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      },
+      {
+        "id": "movie-cafe-nagoya-reservation-url-20261020",
+        "listingIds": [
+          "movie-cafe-nagoya"
+        ],
+        "publishedAt": "2026-10-20T11:16:34.950Z",
+        "originalReceiptPublishedAt": "2026-10-20T11:14:34Z",
+        "originalReceiptBasis": "GitHub Pages deploy job completed_at; first matching public bytes recorded separately",
+        "firstPublicMatchAt": "2026-10-20T11:16:34.950Z"
+      }
+    ],
+    "publishedAtBasis": "First saved content match, not deployment job completion or this synchronization time."
+  },
+  "newPublicRecord": {
+    "id": "chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura",
+    "mapUrlPolicy": "Existing special-events importer generates its standard Google Maps query URL. The official short map link and representative coordinates remain in the unchanged supplied evidence; no exact indoor point claimed."
+  },
+  "publicationPending": {
+    "candidateIds": [
+      "chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura-new",
+      "movie-cafe-nagoya-last-order-conflict-20261020",
+      "bakery-laforet-entry-20261021",
+      "bakery-osaka-popup-badge-ended-20261020",
+      "ana-first-flight-summary-consistency-20261021"
+    ],
+    "statePolicy": "Prepared new listing stays verifying until public verification; matched updates ready; all publishedAt values null until recorded public evidence and next normal PR sync."
+  },
+  "reviewScope": "No additional broad source patrol. Complete supplied packet is preserved; HTML/SNS/image limitations and failed retrievals remain evidence, not exhaustive no-change proof.",
+  "sourceKindMappings": [
+    {
+      "id": "kodansha-cocreco-sealbooks-20261020",
+      "original": "corporate",
+      "ledgerValue": "venue",
+      "basis": "Existing schema has no corporate enum; follows existing corporate-kodansha source records with kind venue. Exact incoming classification retained in original packet."
+    },
+    {
+      "id": "toshocard-chiikawa-limited-edition2026",
+      "original": "corporate",
+      "ledgerValue": "venue",
+      "basis": "Existing schema has no corporate enum; follows existing corporate-kodansha source records with kind venue. Exact incoming classification retained in original packet."
+    },
+    {
+      "id": "toshocard-news-index",
+      "original": "corporate",
+      "ledgerValue": "venue",
+      "basis": "Existing schema has no corporate enum; follows existing corporate-kodansha source records with kind venue. Exact incoming classification retained in original packet."
+    }
+  ]
+}
