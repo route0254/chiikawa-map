@@ -1,0 +1,59 @@
+{
+  "observedAt": "2026-10-19T22:02:49.965+00:00",
+  "archiveAsOfDateJST": "2026-10-20",
+  "scope": "Four events scheduled through 2026-10-19; expiry-based archive only.",
+  "conclusion": "Official page titles and official text retain October 19 end dates. No extension announcement found in the bounded official pages/list and site-specific searches.",
+  "limitations": [
+    "chiikawa-info direct HTTPS GET returned 403; official web extraction was readable, not represented as fresh HTTP 200.",
+    "POP UP page images were not visually revalidated. Dates are corroborated by official POP UP list text.",
+    "No extension found is limited to checked pages and queries; actual event operation was not observed."
+  ],
+  "officialList": "https://chiikawa-info.jp/pus.html",
+  "searchQueries": [
+    "site:chiikawa-info.jp 青森ELM 延長 2026",
+    "site:chiikawa-info.jp 佐賀大和 延長 2026",
+    "site:nagano-info.jp 横浜 延長 2026"
+  ],
+  "events": [
+    {
+      "id": "popup-2026-10-02-aomori-elm",
+      "url": "https://chiikawa-info.jp/p26/pus_aomr/index.html",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-19",
+      "observedAt": "2026-10-19T22:02:49.965+00:00",
+      "method": "web official-page title/text extraction; official POP UP list corroboration for POP UP STORE",
+      "directHttpStatus": 403,
+      "summary": "公式ページの会期表記で2026年10月19日終期を再確認。日本時間10月20日のため既存IDのまま過去へ移動。"
+    },
+    {
+      "id": "popup-2026-10-02-aeon-saga-yamato",
+      "url": "https://chiikawa-info.jp/p26/pus_asag/index.html",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-19",
+      "observedAt": "2026-10-19T22:02:49.965+00:00",
+      "method": "web official-page title/text extraction; official POP UP list corroboration for POP UP STORE",
+      "directHttpStatus": 403,
+      "summary": "公式ページの会期表記で2026年10月19日終期を再確認。日本時間10月20日のため既存IDのまま過去へ移動。"
+    },
+    {
+      "id": "chiikawa-baby-2026-10-02-aomori-elm",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/index.html",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-19",
+      "observedAt": "2026-10-19T22:02:49.965+00:00",
+      "method": "web official-page title/text extraction; official POP UP list corroboration for POP UP STORE",
+      "directHttpStatus": 403,
+      "summary": "公式ページの会期表記で2026年10月19日終期を再確認。日本時間10月20日のため既存IDのまま過去へ移動。"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-09-yokohama-skybuilding",
+      "url": "https://nagano-info.jp/popupshop/yokohama/index.html",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-19",
+      "observedAt": "2026-10-19T22:02:49.965+00:00",
+      "method": "web official-page title/text extraction; official POP UP list corroboration for POP UP STORE",
+      "directHttpStatus": 200,
+      "summary": "公式ページの会期表記で2026年10月19日終期を再確認。日本時間10月20日のため既存IDのまま過去へ移動。"
+    }
+  ]
+}
