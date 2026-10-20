@@ -2672,56 +2672,30 @@ test(
       "#current-filter-reset"
     ).click();
 
+    // The last current Chiikawa Baby venue ended on October 19.
     await expect(
-      page.locator(
-        '#current-brand option[value="chiikawa_baby"]'
-      )
-    ).toHaveText(
-      /^Chiikawa Baby（1）$/
-    );
-
-    await page.locator(
-      "#current-brand"
-    ).selectOption(
-      "chiikawa_baby"
-    );
-
-    await expect(
-      page.locator(
-        "#current-result-summary"
-      )
-    ).toHaveText("1件を表示しています。");
-
-    await expect(
-      page.locator(
-        "#current-groups .official-spot-card"
-      )
-    ).toHaveCount(1);
-
-    await expect(
-      page.locator(
-        "#current-groups .official-spot-card h4"
-      ).filter({
-        hasText:
-          "羽田空港第1ターミナル"
-      })
+      page.locator('#current-brand option[value="chiikawa_baby"]')
     ).toHaveCount(0);
 
     await expect(
-      page.locator(
-        "#current-groups .official-spot-card h4"
-      ).filter({
-        hasText: "青森ELM"
-      })
-    ).toHaveCount(1);
-
-    await expect(
-      page.locator(
-        "#current-groups .official-spot-card h4"
-      ).filter({
-        hasText: "JR大宮駅"
+      page.locator("#current-groups .official-spot-card h4").filter({
+        hasText: "Chiikawa Baby"
       })
     ).toHaveCount(0);
+
+    const babyArchiveResponse = await page.request.get(
+      "/data/official-events-archive.json"
+    );
+    expect(babyArchiveResponse.ok()).toBe(true);
+    const babyArchive = await babyArchiveResponse.json();
+    expect(babyArchive).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        id: "chiikawa-baby-2026-10-02-aomori-elm",
+        brand: "chiikawa_baby",
+        endDate: "2026-10-19",
+        eventStatus: "held"
+      })
+    ]));
 
     await page.locator(
       "#current-filter-reset"
