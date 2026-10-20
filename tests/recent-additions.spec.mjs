@@ -60,6 +60,7 @@ test("expired or unavailable announcements do not block map and search", async (
   await page.goto("/");
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
   await expect(page.locator("#recent-additions")).toBeHidden();
-  await page.locator("#spot-search").fill("町田");
-  await expect(page.locator("#spot-search-suggestions")).toContainText("町田モディ");
+  // Use a permanent place: this clock can be later than an October POP UP's closing date.
+  await page.locator("#spot-search").fill("ちいかわらんど 原宿店");
+  await expect(page.locator("#spot-search-suggestions")).toContainText("ちいかわらんど 原宿店");
 });
