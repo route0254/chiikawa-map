@@ -1,0 +1,2510 @@
+{
+  "checkedAt": "2026-10-21T10:05:40Z",
+  "sourceObservations": [
+    {
+      "sourceId": "chiikawa-bakery-information-osaka",
+      "url": "https://chiikawabakery.jp/information-osaka/",
+      "lastAttemptAt": "2026-10-21T09:58:24.399+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:24.399+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-bakery-information-osaka.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "01ab6b36d55d13dac69fd9c39799a7761988433d0ef8ae1bb5bb295899266a09",
+      "textLength": 2746
+    },
+    {
+      "sourceId": "chiikawa-bakery-information-popup-01",
+      "url": "https://chiikawabakery.jp/information-popup_01/",
+      "lastAttemptAt": "2026-10-21T09:58:24.462+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:24.462+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-bakery-information-popup-01.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "af44590e20b23c80d5bf61e145992eaca5c2c37161bd79ccea8d0787522ad0e0",
+      "textLength": 1985
+    },
+    {
+      "sourceId": "individual-chiikawaland-osaka-umeda",
+      "url": "https://chiikawa-info.jp/chiikawaland/osaka/",
+      "lastAttemptAt": "2026-10-21T09:58:26.456+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:26.456+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-osaka-umeda.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "68272914b879ee24efc9135f51500ebf019a6df9c1a78ee42928077bc98c63b6",
+      "textLength": 53
+    },
+    {
+      "sourceId": "individual-chiikawaland-harajuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/harajuku/",
+      "lastAttemptAt": "2026-10-21T09:58:26.434+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:26.434+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-harajuku.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "f8c32176936ba9a9a40c32b7994351bfbb862f7917750b9f951cbf55377198ca",
+      "textLength": 51
+    },
+    {
+      "sourceId": "individual-chiikawaland-fukuoka",
+      "url": "https://chiikawa-info.jp/chiikawaland/fukuoka/",
+      "lastAttemptAt": "2026-10-21T09:58:26.426+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:26.426+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-fukuoka.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "62f271cf95620e12ceb9483fd99215ea704a2851a5d613971a75f15fddcbc6eb",
+      "textLength": 55
+    },
+    {
+      "sourceId": "individual-chiikawaland-kyoto",
+      "url": "https://chiikawa-info.jp/chiikawaland/kyoto/",
+      "lastAttemptAt": "2026-10-21T09:58:26.453+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:26.453+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-kyoto.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "222f90e7ece3a097b50860a01b4a0297942f6e4ac023f95b9b7045f531e8b4cf",
+      "textLength": 57
+    },
+    {
+      "sourceId": "individual-chiikawaland-tokyo-station",
+      "url": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+      "lastAttemptAt": "2026-10-21T09:58:26.465+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:26.465+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-tokyo-station.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "56f9b54271a2e421d19818c689c4f773ea35337a4f4413b533725aa52136753a",
+      "textLength": 62
+    },
+    {
+      "sourceId": "individual-chiikawaland-solamachi",
+      "url": "https://chiikawa-info.jp/chiikawaland/solamachi/",
+      "lastAttemptAt": "2026-10-21T09:58:26.448+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:26.448+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-solamachi.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "5846a808a65ea652c78880dfb13aebf197dbb7d45588164a0097df1b85cef4be",
+      "textLength": 68
+    },
+    {
+      "sourceId": "individual-chiikawaland-nagoya",
+      "url": "https://chiikawa-info.jp/chiikawaland/nagoya/",
+      "lastAttemptAt": "2026-10-21T09:58:29.857+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:29.857+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-nagoya.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "b3f5732ea93298e80cfc8b87d3c910e4255bde297057f98db13ec8314559220f",
+      "textLength": 56
+    },
+    {
+      "sourceId": "individual-chiikawaland-sendai",
+      "url": "https://chiikawa-info.jp/chiikawaland/sendai/",
+      "lastAttemptAt": "2026-10-21T09:58:29.851+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:29.851+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-sendai.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "efddc54e0d35cac03510a224920f063876fabada37af0e68c4ef0f182627aece",
+      "textLength": 55
+    },
+    {
+      "sourceId": "individual-chiikawaland-sapporo",
+      "url": "https://chiikawa-info.jp/chiikawaland/sapporo/",
+      "lastAttemptAt": "2026-10-21T09:58:29.818+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:29.818+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-sapporo.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "cf3d56df6b677ad66d769684bdd74fa2c5800bbe4fde12c01363a8d826be42b1",
+      "textLength": 55
+    },
+    {
+      "sourceId": "individual-chiikawaland-yokohama",
+      "url": "https://chiikawa-info.jp/chiikawaland/yokohama/",
+      "lastAttemptAt": "2026-10-21T09:58:29.838+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:29.838+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-yokohama.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "8685be99028cf853e29315b79a4caa6009263175954fde35e97a4454befa800f",
+      "textLength": 52
+    },
+    {
+      "sourceId": "individual-chiikawaland-hiroshima",
+      "url": "https://chiikawa-info.jp/chiikawaland/hiroshima/",
+      "lastAttemptAt": "2026-10-21T09:58:29.826+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:29.826+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-hiroshima.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "4a235c414f94e8b5b2341e077d37d8c9f0207dfebc9046b890a439f32a227348",
+      "textLength": 56
+    },
+    {
+      "sourceId": "individual-chiikawaland-shinsaibashi",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinsaibashi/",
+      "lastAttemptAt": "2026-10-21T09:58:29.838+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:29.838+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-shinsaibashi.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "f7629189b74e20f41d4b2c62ba9617bbb1aff71761126c308cd78f28c50f6190",
+      "textLength": 55
+    },
+    {
+      "sourceId": "individual-chiikawaland-shinjuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinjuku/",
+      "lastAttemptAt": "2026-10-21T09:58:34.274+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:34.274+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-shinjuku.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "85dcd095918757405114516e23c096ee8c729ff5ec3cd1cd0553c29d8e151cce",
+      "textLength": 52
+    },
+    {
+      "sourceId": "individual-chiikawaland-kanazawa",
+      "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "lastAttemptAt": "2026-10-21T09:58:34.297+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:34.297+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-kanazawa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "cabadc074eeceebf1d57db81ed6d2994403d98cc4b12dc2dd5f24e23dd89c456",
+      "textLength": 58
+    },
+    {
+      "sourceId": "individual-chiikawaland-ikebukuro",
+      "url": "https://chiikawa-info.jp/chiikawaland/ikebukuro/",
+      "lastAttemptAt": "2026-10-21T09:58:34.292+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:34.292+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-ikebukuro.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a984a10013e254fe7d9ff64e7430d609ab2493378b6cffe96b41b73074199c2b",
+      "textLength": 54
+    },
+    {
+      "sourceId": "individual-chiikawaland-koshigaya",
+      "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "lastAttemptAt": "2026-10-21T09:58:34.281+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:34.281+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-chiikawaland-koshigaya.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "2d774c6599907610ff238448bad2423ea52381cd079dc5ce8706f646ab32cea0",
+      "textLength": 58
+    },
+    {
+      "sourceId": "individual-magical-shinjuku",
+      "url": "https://chiikawa-info.jp/magical_store/shinjuku/",
+      "lastAttemptAt": "2026-10-21T09:58:34.251+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:34.251+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-magical-shinjuku.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "6d9bad0f2ae21f454f76d83e475b16d16ccddc696a572bc4d0e550c7a63e66d9",
+      "textLength": 80
+    },
+    {
+      "sourceId": "individual-magical-umeda",
+      "url": "https://chiikawa-info.jp/magical_store/umeda/",
+      "lastAttemptAt": "2026-10-21T09:58:34.246+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:34.246+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-magical-umeda.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "afb967ae2daabccf5d7f8ec6c252221fc19395a99b932dd94598b00d6d3bb0ef",
+      "textLength": 86
+    },
+    {
+      "sourceId": "individual-magical-nagoya",
+      "url": "https://chiikawa-info.jp/magical_store/nagoya/",
+      "lastAttemptAt": "2026-10-21T09:58:39.169+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:39.169+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/individual-magical-nagoya.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "0e180717a23b575662f8c7c7326442ed6e07b215ea7e1c8fb2113b5817c64ee8",
+      "textLength": 81
+    },
+    {
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "lastAttemptAt": "2026-10-21T09:58:40.534+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:40.534+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/mogumogu-fushimi-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "053a289fa4d30b040fe4971a5093fb115590f21ce31be3530ed58f208ba836e4",
+      "textLength": 7837
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "lastAttemptAt": "2026-10-21T09:58:40.706+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:40.706+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/mogumogu-kawagoe-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "8ece155270b07f3a6789fa3f9a0861c96085fb44d7cda9676086c9b8ab63974d",
+      "textLength": 8120
+    },
+    {
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "lastAttemptAt": "2026-10-21T09:58:40.666+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:40.666+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/mogumogu-otaru-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "cc0305571fc861e1d60b654724fc68504f1adb25cd0eacf528b2f69be37294e6",
+      "textLength": 7802
+    },
+    {
+      "sourceId": "baby-castella-otaru-official",
+      "url": "https://www.chiikawamogumogu.jp/stores/castella/",
+      "lastAttemptAt": "2026-10-21T09:58:40.557+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:40.557+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/baby-castella-otaru-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "fe0a65e3a57e7c7d2c63c23d6d9ca4b68c3c5314ba1db569d373b43bfc2264fb",
+      "textLength": 8071
+    },
+    {
+      "sourceId": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "lastAttemptAt": "2026-10-21T09:58:39.498+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:39.498+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-park-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "6c23c9e6bfe4265eb1bc89b72a978e2c31cb04a60efa6a1a898fd22f10ee55c6",
+      "textLength": 711
+    },
+    {
+      "sourceId": "chiikawa-restaurant-tokyo-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_tokyo?area=029439",
+      "lastAttemptAt": "2026-10-21T09:58:44.307+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:44.307+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-restaurant-tokyo-information.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "1cc5735805f4fa19acb0515f91d8ec142b49cf451851fa010bf380a1edbc8dbc",
+      "textLength": 745
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_okinawa?area=030528",
+      "lastAttemptAt": "2026-10-21T09:58:44.406+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:44.406+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-restaurant-okinawa-information.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "2e1284d27911db9d719c589386cbf98fa6be3c3733521047ddc6707452192799",
+      "textLength": 698
+    },
+    {
+      "sourceId": "morning-existing21-2cb24f2734c6",
+      "url": "https://chiikawabakery.jp/",
+      "lastAttemptAt": "2026-10-21T09:58:46.054+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:46.054+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-2cb24f2734c6.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "3aa936821d55d76b8530ac283d6c1e172490c0ac78c946ebd11d56c85d952b8f",
+      "textLength": 2127
+    },
+    {
+      "sourceId": "morning-existing21-d767e5e5e602",
+      "url": "https://cafe.parco.jp/event/chiikawaramenbuta_ikebukuro?area=029688",
+      "lastAttemptAt": "2026-10-21T09:58:44.502+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:44.502+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-d767e5e5e602.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "2a2fc693984918e23fed10bd9078bd4b73211d0a020bdbce47423ab51d70ee01",
+      "textLength": 1562
+    },
+    {
+      "sourceId": "morning-existing21-7844c218d757",
+      "url": "https://cafe.parco.jp/event/chiikawaramenbuta_shibuya?area=029979",
+      "lastAttemptAt": "2026-10-21T09:58:44.462+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:44.462+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-7844c218d757.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "441b6df22b7f467fa014e8770908264866c3521b735482ff3f0826177abafa84",
+      "textLength": 1547
+    },
+    {
+      "sourceId": "morning-existing21-776f5622a7a9",
+      "url": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+      "lastAttemptAt": "2026-10-21T09:58:44.210+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:44.210+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-776f5622a7a9.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a1e24751b14f032b727dbd7eaacee5d747d3e62379045542c572c52de4e2dc08",
+      "textLength": 1543
+    },
+    {
+      "sourceId": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "lastAttemptAt": "2026-10-21T09:58:49.915+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:49.915+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-yaki-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "afa1ab81022714530f5030ff38831c4eba551bdeaaa9bf1ace316642fd245484",
+      "textLength": 2480
+    },
+    {
+      "sourceId": "morning-series18-bcc6d96d4eaa",
+      "url": "https://chiikawa-info.jp/s_fes.html",
+      "lastAttemptAt": "2026-10-21T09:58:48.114+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:48.114+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-series18-bcc6d96d4eaa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "efdd6d593ba12bbf2b957ddb9c0d0b7ed8a8e44a18f2fa7d5d8ee2cfed257cdc",
+      "textLength": 1768
+    },
+    {
+      "sourceId": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "lastAttemptAt": "2026-10-21T09:58:50.334+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:50.334+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-shinsaibashi-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a4e178132b296735f34c728148672f09459b66cf25b14ee572559dd000f66e0b",
+      "textLength": 7804
+    },
+    {
+      "sourceId": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "lastAttemptAt": "2026-10-21T09:58:50.287+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:50.287+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-ginza-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "965d54270dc5de12c651a0d23da231a21ae28efecd3671900511205127bb0a89",
+      "textLength": 7732
+    },
+    {
+      "sourceId": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "lastAttemptAt": "2026-10-21T09:58:50.146+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:50.146+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-sapporo-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "1451627f0f28025e6732a9bae0d3e08da71b28e24a2a48b7c2f08114faf8b29b",
+      "textLength": 7729
+    },
+    {
+      "sourceId": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "lastAttemptAt": "2026-10-21T09:58:48.301+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:48.301+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-popup-list.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "73d96352c4836f0a5a3f748759091234695422bff1df7473138bef52798d2587",
+      "textLength": 28744
+    },
+    {
+      "sourceId": "observed-cafe-parco-jp-8bf4370b23",
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "lastAttemptAt": "2026-10-21T09:58:51.682+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:51.682+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-cafe-parco-jp-8bf4370b23.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "d9a0b5c9d486c340bb12dd7af63b971b170aaebffd3493ec2a567ee91ff14371",
+      "textLength": 1709
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "lastAttemptAt": "2026-10-21T09:58:54.854+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:54.854+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/tokyo-skytree-chiikawa-2026.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a18b72cf8c8dd635317688e40fb877638db6b91a764b8937043ac51bdf7cce8e",
+      "textLength": 8757
+    },
+    {
+      "sourceId": "corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "lastAttemptAt": "2026-10-21T09:58:56.454+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:56.454+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-tokyo-metro-chiikawa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "5d2ea271ca647e806ed221732d4927241c73cec7547ec5d4e806cc4edbde5678",
+      "textLength": 1890
+    },
+    {
+      "sourceId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "lastAttemptAt": "2026-10-21T09:58:56.566+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:56.566+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/tokyo-banana-chiikawa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "926af97571ad4f35b542062493b2ded653bffe90f0873118f56b2b1fc11d3195",
+      "textLength": 1567
+    },
+    {
+      "sourceId": "morning-existing21-0d23c0b7657f",
+      "url": "https://chiikawapark-tokyo.jp/news/9lofnm5f5wy/",
+      "lastAttemptAt": "2026-10-21T09:58:57.178+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:57.178+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-0d23c0b7657f.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "0a19662835fa09a93e7623b4a931b818ebb4ac8402f52f38cf86ea80efd14cc7",
+      "textLength": 1805
+    },
+    {
+      "sourceId": "observed-www-granduo-jp-2bf7507178",
+      "url": "https://www.granduo.jp/tachikawa/events/events-26889/",
+      "lastAttemptAt": "2026-10-21T09:58:56.594+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:56.594+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-www-granduo-jp-2bf7507178.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "0ea6b54a7641baef9c77c1028ec10ae06c96ff52c0ead51be20c0e696a62a9b5",
+      "textLength": 1327
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-425af290b1",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "lastAttemptAt": "2026-10-21T09:58:56.258+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:56.258+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-425af290b1.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "729faa5ce93b0685c51bca99b83006a4a9e408575b43e24b052755448c56981f",
+      "textLength": 79
+    },
+    {
+      "sourceId": "venue-nagano-fukuoka-entry-20261016",
+      "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:00.711+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:00.711+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-nagano-fukuoka-entry-20261016.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "df8d175808783d911b584cbb0bed5db8899d1112b3ac2510b9f6b2ab086f1015",
+      "textLength": 4740
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "lastAttemptAt": "2026-10-21T09:58:59.186+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:59.186+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-4fc9bffa0f.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "2ebfa617594612afbbb20c4dbd9dbb48e3f5b14d2b38f77caa26eea48684a5bc",
+      "textLength": 70
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "url": "https://chiikawa-info.jp/p26/pus_mito/index.html",
+      "lastAttemptAt": "2026-10-21T09:58:59.187+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:59.187+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-f5e27e8bd8.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "7510e4c94a29d4b6a330b24a72d7d1a961f96f4215c08c50a68e30bfa6467905",
+      "textLength": 76
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-2db8c290c8",
+      "url": "https://chiikawa-info.jp/p26/pus_tuda/index.html",
+      "lastAttemptAt": "2026-10-21T09:58:59.146+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:59.146+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-2db8c290c8.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "b404739859a80f5fbd2b37612cdc7f25be8148d1a0207e8c36e1737228ca183b",
+      "textLength": 75
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-ee275504ea",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "lastAttemptAt": "2026-10-21T09:58:59.138+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:59.138+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-ee275504ea.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "7c547a52ed6ac2c4264d7d2cc2ec80bc66146139f8dc8fad9f7c03d2ab9d4e38",
+      "textLength": 71
+    },
+    {
+      "sourceId": "lucua-south-opening",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "lastAttemptAt": "2026-10-21T09:59:03.331+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:03.331+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/lucua-south-opening.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "cb71979abfc5504c461b48f6f3599f917721df2fe95bbdf1892cfbd0e25b16ef",
+      "textLength": 6213
+    },
+    {
+      "sourceId": "observed-ota-aeonmall-jp-1553585041",
+      "url": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f",
+      "lastAttemptAt": "2026-10-21T09:59:03.924+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:03.924+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-ota-aeonmall-jp-1553585041.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "335ffb1aeb514d6d38a71fa46f383ed78e7fb5a96274d1fb7e063f741ff4ab5d",
+      "textLength": 1784
+    },
+    {
+      "sourceId": "observed-natori-aeonmall-jp-4e157b2b3f",
+      "url": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f",
+      "lastAttemptAt": "2026-10-21T09:59:06.090+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:06.090+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-natori-aeonmall-jp-4e157b2b3f.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "228eb86e273ea33a86f34db06e403629ec67f8773cfe8b63b396cfb85f001b13",
+      "textLength": 1743
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-d5be927094",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:03.463+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:03.463+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-d5be927094.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "87f46faa88cb33d4d70de79f290816ea1e9ad5e6595a81cebadd2b25757df085",
+      "textLength": 75
+    },
+    {
+      "sourceId": "abema-chiikawa-christmas-release-20261008",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "lastAttemptAt": "2026-10-21T09:59:07.383+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:07.383+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/abema-chiikawa-christmas-release-20261008.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "c360bfa30918f2ce277761901b30a53a7b77b6d0e182d63fa272caf1c02e9c55",
+      "textLength": 7299
+    },
+    {
+      "sourceId": "popup-2026-10-23-ebina-marui-official",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:03.422+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:03.422+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/popup-2026-10-23-ebina-marui-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "43e5eae316d0faa8f7bf349e0ba46ef77a8a34743ec678638600c34087eb544a",
+      "textLength": 73
+    },
+    {
+      "sourceId": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:06.030+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:06.030+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/popup-2026-10-23-aeon-parkplace-oita-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "52c47131ca443b8962e257c02088d3ed10d77b897ea700e086d50ac44d5d0ebb",
+      "textLength": 79
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-b434b2c58a",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "lastAttemptAt": "2026-10-21T09:59:06.046+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:06.046+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-b434b2c58a.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "2d992f769a4eb2082db6f3d7b1bedfda21852c578f26f9f4eb31a3c29bdff341",
+      "textLength": 83
+    },
+    {
+      "sourceId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:21.850+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:21.850+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-popup-2026-10-23-ebina-marui-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "147b687c6f497cc93184aae1900425cf0aa92db1fc9aa390b06a8e52032258a3",
+      "textLength": 2935
+    },
+    {
+      "sourceId": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "lastAttemptAt": "2026-10-21T09:59:12.838+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:12.838+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-muchaphoto-sapporo-hiraoka-20261024.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a27d2e5f199c17404cc68cc574c3a9d7a98988861d5dd3436c06ca67cb59f875",
+      "textLength": 1469
+    },
+    {
+      "sourceId": "venue-muchaphoto-shinrifu-20261122",
+      "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "lastAttemptAt": "2026-10-21T09:59:17.290+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:17.290+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-muchaphoto-shinrifu-20261122.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "c6a4c5c152e214622a591a2cd51ae835ea789aed8aafeeab26ada2c364ff563f",
+      "textLength": 1721
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "lastAttemptAt": "2026-10-21T09:59:17.205+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:17.205+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/jr-central-railway-museum-event.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "7045d0e51c2a4b463d388ef429e8709c07df409d77ffdd6a7e6008c721ca0a62",
+      "textLength": 17273
+    },
+    {
+      "sourceId": "chiikawa-park-christmas-2026",
+      "url": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/",
+      "lastAttemptAt": "2026-10-21T09:59:17.962+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:17.962+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-park-christmas-2026.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "bab2407e1c6447cb978fdcf88e4cde06200de79832d6d7b223406ba97ea24809",
+      "textLength": 2070
+    },
+    {
+      "sourceId": "chiikawa-pocket-fourth-2026-detail",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:20.234+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:20.234+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-pocket-fourth-2026-detail.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "390cdc34fa466962b8ad77aed5b1d2b385b74d096f582754de4df976d3847db7",
+      "textLength": 124
+    },
+    {
+      "sourceId": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "lastAttemptAt": "2026-10-21T09:59:24.042+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:24.042+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/official-observation-bcf4bed6d585.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "01b10fb6b0eaf12c5d57ad3bc09fa3f25d9e4737b3f415a83fc4b160a8481de8",
+      "textLength": 1715
+    },
+    {
+      "sourceId": "official-observation-c13c6c2b72db",
+      "url": "https://chiikawa-info.jp/p26/pus_aksk/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:20.200+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:20.200+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/official-observation-c13c6c2b72db.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "b7b5a1531100cc217bc7034fb89a168514b9ff83dd65cd11fae558c057dcc51b",
+      "textLength": 76
+    },
+    {
+      "sourceId": "official-observation-88c0160fff16",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "lastAttemptAt": "2026-10-21T09:59:23.002+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:23.002+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/official-observation-88c0160fff16.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "cdfb3c382e48c3fea491f88513b05981e7cb4914fc30258538c7cd724f97db8f",
+      "textLength": 1493
+    },
+    {
+      "sourceId": "venue-aeon-kasukabe-photoshoot-20261103",
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "lastAttemptAt": "2026-10-21T09:59:22.110+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:22.110+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-aeon-kasukabe-photoshoot-20261103.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "34736709949d7345e75b94bc6f4de7ef1c769c759f43ddcbc85a0823087a56eb",
+      "textLength": 1379
+    },
+    {
+      "sourceId": "venue-opsia-misumi-muchaphoto-20261122",
+      "url": "https://www.opsia.jp/137234/",
+      "lastAttemptAt": "2026-10-21T09:59:25.342+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:25.342+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-opsia-misumi-muchaphoto-20261122.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "f43073395c47192af1fdd6349d84e54d45cccff3786934a34e0ce393c75f3ba7",
+      "textLength": 2082
+    },
+    {
+      "sourceId": "venue-aeon-kofu-showa-workshop-20261123",
+      "url": "https://kofushowa.aeonmall.jp/event/006db774-cf06-472a-bfce-0e4baf8312ce",
+      "lastAttemptAt": "2026-10-21T09:59:26.134+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:26.134+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-aeon-kofu-showa-workshop-20261123.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "eaca1603114a42c1212cb61239825a7d0e8b6156b362d8fed9b9561710c12a6f",
+      "textLength": 1246
+    },
+    {
+      "sourceId": "morning-hold21-41a846041bb4",
+      "url": "https://www.aeon.jp/sc/tsuchiura/event/",
+      "lastAttemptAt": "2026-10-21T09:59:56.867+00:00",
+      "httpStatus": 0,
+      "lastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-20T23:02:24+00:00",
+      "lastFailure": {
+        "at": "2026-10-21T09:59:56.867+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 0,
+        "detail": "curl: (28) Operation timed out after 35002 milliseconds with 0 bytes received\n",
+        "evidenceUrl": "https://www.aeon.jp/sc/tsuchiura/event/"
+      },
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-hold21-41a846041bb4.html",
+      "resultSummary": "Fetch failed; do not infer no change."
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "lastAttemptAt": "2026-10-21T09:59:26.202+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:26.202+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/tamanohikari-chiikawa-release.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "7d37da866fa84b282943b0dd48a5c7bb16dc8218d1e170b9f6bb0890954dbe3b",
+      "textLength": 3482
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "lastAttemptAt": "2026-10-21T09:59:26.557+00:00",
+      "httpStatus": 403,
+      "lastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+      "lastFailure": {
+        "at": "2026-10-21T09:59:26.557+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 403,
+        "detail": "non-200 HTTP",
+        "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
+      },
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-aeon-chiikawa-news-954.html",
+      "resultSummary": "Fetch failed; do not infer no change."
+    },
+    {
+      "sourceId": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "lastAttemptAt": "2026-10-21T09:59:27.445+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:27.445+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-sunflower-chiikawa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "afe432af51dc49850f0d82922cf42c7be81d791ee132bfa90a1b529631c5c51a",
+      "textLength": 27
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "lastAttemptAt": "2026-10-21T09:59:36.819+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:36.819+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ana-chiikawa-jet.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "458c091674cc0d97d80e0be5fdcd700c8fabfb0bdfe405b98e3e6969a8c89dc2",
+      "textLength": 5315
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "lastAttemptAt": "2026-10-21T09:59:33.375+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:33.375+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/jr-central-tsutsuurauratabi.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "23bdb7ccdc668d8c92f6dfa99e73bc72082d2565a74f9ee18fcd3447155bc3c6",
+      "textLength": 8752
+    },
+    {
+      "sourceId": "corporate-seven-eleven-christmas-products",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "lastAttemptAt": "2026-10-21T09:59:35.114+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:35.114+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-seven-eleven-christmas-products.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "9199a910d7c5810bf291691fa8906e44c29744fe49b04a6a1e1fa3bf22759f57",
+      "textLength": 11045
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-846",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "lastAttemptAt": "2026-10-21T09:59:35.698+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:35.698+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-chiikawa-release-846.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "051837f9ff8936865b2d065e3511c9aef6528d26a9be16683db44256f70cc883",
+      "textLength": 3704
+    },
+    {
+      "sourceId": "corporate-citen-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "lastAttemptAt": "2026-10-21T09:59:35.434+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:35.434+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-citen-chiikawa-release.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "f67a5fa82eab2d7124265c1ed56601e9d63701c6b24cf57b662dab9c25d23ffd",
+      "textLength": 3608
+    },
+    {
+      "sourceId": "corporate-merry-jenny-chiikawa",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "lastAttemptAt": "2026-10-21T09:59:38.288+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:38.288+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-merry-jenny-chiikawa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "ffe9891eb074935d07d9e6c505655146c988c05c89bf07576a2783f5530ff46d",
+      "textLength": 1416
+    },
+    {
+      "sourceId": "corporate-panasonic-chiikawa",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "lastAttemptAt": "2026-10-21T09:59:41.426+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:41.426+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-panasonic-chiikawa.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "28f2384ff8476ec7262671b2a16f33963c0fb6d33db86b897a483de483a32d1c",
+      "textLength": 5664
+    },
+    {
+      "sourceId": "corporate-donki-chiikawa-sl6",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "lastAttemptAt": "2026-10-21T09:59:41.261+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:41.261+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-donki-chiikawa-sl6.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "361b78b0e3bc41cd4c60c7f110a297899857c06d67ee304c3fb290ead2ab0705",
+      "textLength": 3539
+    },
+    {
+      "sourceId": "corporate-epos-chiikawa-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:41.274+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:41.274+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-epos-chiikawa-card.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "87ef7803705e9007265bf6e6cac32fe4e376cbef6d91a5bbb18f218e56f00173",
+      "textLength": 7938
+    },
+    {
+      "sourceId": "corporate-kadokawa-chiikawa-topics",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "lastAttemptAt": "2026-10-21T09:59:41.494+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:41.494+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-kadokawa-chiikawa-topics.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "1669241afe27484557265369cfe62662cc7a7759bb40572a65fc91b1d5ddf37c",
+      "textLength": 3449
+    },
+    {
+      "sourceId": "corporate-uniqlo-chiikawa-faq",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "lastAttemptAt": "2026-10-21T09:59:42.743+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:42.743+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-uniqlo-chiikawa-faq.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "9560404b1d7e472a08a65910aed633d909e32ba98f822a9633e4998268513532",
+      "textLength": 4628
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "lastAttemptAt": "2026-10-21T09:59:45.121+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:45.121+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-gu-chiikawa-faq.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "f65183386fed19596eb90da691f8757e885f292e792de401d03f91e42c50a39e",
+      "textLength": 4335
+    },
+    {
+      "sourceId": "corporate-chiikawa-release-322",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "lastAttemptAt": "2026-10-21T09:59:44.714+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:44.714+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-chiikawa-release-322.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "2451c2e3ce8a5c83e7002917408e66e663a49ab3da6e54998e1bf7019acc8d12",
+      "textLength": 3415
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "lastAttemptAt": "2026-10-21T09:59:44.782+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:44.782+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-chiikawa-glasses.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "9632f4199b36734a922fab46c88bfdcee7be6f247b03f337b1ec2a224a589db3",
+      "textLength": 8827
+    },
+    {
+      "sourceId": "corporate-minum-chiikawa-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "lastAttemptAt": "2026-10-21T09:59:45.266+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:45.266+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-minum-chiikawa-release.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "34a70214718838a0bd7c3a135d912f4dabbd73b3f7e39fd4137069d9d8733668",
+      "textLength": 3738
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "lastAttemptAt": "2026-10-21T09:59:46.802+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:46.802+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-toho-one-chiikawa-campaign.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "75c7aaf5dc58c00ae8ef215e2b8e60df7c5acb681a51b954df1d3024c67f4e28",
+      "textLength": 3763
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "lastAttemptAt": "2026-10-21T09:59:47.562+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:47.562+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-bakery-reservation.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "aa3f9a62587b9d5320cfa385a46ccafb1fe1b7b2224d2c90619292e4057a0b41",
+      "textLength": 1587
+    },
+    {
+      "sourceId": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "lastAttemptAt": "2026-10-21T09:59:48.506+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:48.506+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-park-ticket.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "c2b4adc2a589723ed5507e2f344630dff9bce69b6408004bb3810472eb88338f",
+      "textLength": 1959
+    },
+    {
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "lastAttemptAt": "2026-10-21T09:59:47.355+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:47.355+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-bakery-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "6ea2cd661aadccd906e569c776add077c74a9ae2a91c847b94a404111fe8f63c",
+      "textLength": 1021
+    },
+    {
+      "sourceId": "chiikawa-bakery-topics",
+      "url": "https://chiikawabakery.jp/topics/",
+      "lastAttemptAt": "2026-10-21T09:59:47.370+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:47.370+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-bakery-topics.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "af75310a2927e8366726d843ddfd2cdae9110553280c94a5bd958dfa2662d133",
+      "textLength": 813
+    },
+    {
+      "sourceId": "evening-chiikawapark-tokyo-jp-news",
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "lastAttemptAt": "2026-10-21T09:59:48.546+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:48.546+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-chiikawapark-tokyo-jp-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "0d868e28bf3ada1ae61f6747d79731bd58ff418a16a797854be1f5f3fffd8784",
+      "textLength": 1937
+    },
+    {
+      "sourceId": "christmas-faq",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "lastAttemptAt": "2026-10-21T09:59:50.655+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:50.655+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/christmas-faq.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "ee79ce481bc36d14c63dae80fcefb1f38d7c4278e3240bd36ca663639f6eb556",
+      "textLength": 6238
+    },
+    {
+      "sourceId": "christmas-ticket-details",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "lastAttemptAt": "2026-10-21T09:59:50.663+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:50.663+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/christmas-ticket-details.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a658468c71ed632816d3d8abd7ddbbc8c21db5c5529a9cfde17b4746aa452938",
+      "textLength": 4966
+    },
+    {
+      "sourceId": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "lastAttemptAt": "2026-10-21T09:59:52.404+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.404+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-https-www-chiikawamogumogu-jp-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "65a89942bca732836d11596c3c639da3f4e69323d34995b28418feadda276539",
+      "textLength": 5334
+    },
+    {
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "lastAttemptAt": "2026-10-21T09:59:52.253+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.253+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-x-com-chiikawabakery.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "e9b62895c06114c8ebb7d5c1aa6d6bcf40250c05e40f036c7300d668efbd60f1",
+      "textLength": 1706
+    },
+    {
+      "sourceId": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "lastAttemptAt": "2026-10-21T09:59:52.278+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.278+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-x-com-chiikawabakeryo.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "38c590dc2b117d1905ccba6017e781ba1577b3831116d86f45acb2b3f25e2f8e",
+      "textLength": 1703
+    },
+    {
+      "sourceId": "priority-four-1b6f0ffdf6c9",
+      "url": "https://x.com/chiikawa_popup",
+      "lastAttemptAt": "2026-10-21T09:59:52.220+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.220+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/priority-four-1b6f0ffdf6c9.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "6105f71fd907d20efbaeefb7b56a40604b23b3c8d9fa50184368b22cc6997ae3",
+      "textLength": 1642
+    },
+    {
+      "sourceId": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "lastAttemptAt": "2026-10-21T09:59:52.292+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.292+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-shop-x.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "299448927c86d66d2e2b111019170e30eeb7f0b3dec606a7405b5599e6ef186f",
+      "textLength": 1504
+    },
+    {
+      "sourceId": "priority-four-9660f8c42df7",
+      "url": "https://x.com/kiddyevent",
+      "lastAttemptAt": "2026-10-21T09:59:55.764+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:55.764+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/priority-four-9660f8c42df7.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "c5bddccfd779c9dd8427bc5380c1c91303b5c67e30855782ac9b7189b82363b9",
+      "textLength": 1785
+    },
+    {
+      "sourceId": "morning-store-20261020-6d00bae52cd2",
+      "url": "https://www.chiikawamogumogu.jp/store/fushimi/",
+      "lastAttemptAt": "2026-10-21T09:59:56.570+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:56.570+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-store-20261020-6d00bae52cd2.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "6198afbe7ac194a20493ccceb1131e6f3b0d381f726da33579d8801b2ef1ce76",
+      "textLength": 457
+    },
+    {
+      "sourceId": "mogumogu-kawagoe-store-news",
+      "url": "https://www.chiikawamogumogu.jp/store/kawagoe/",
+      "lastAttemptAt": "2026-10-21T09:59:57.758+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:57.758+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/mogumogu-kawagoe-store-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "c2a9918bc05ce9022275cdffe2469cc3e79635ee96c9597d98b523792b2a1c42",
+      "textLength": 454
+    },
+    {
+      "sourceId": "mogumogu-otaru-category-news",
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "lastAttemptAt": "2026-10-21T09:59:56.400+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:56.400+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/mogumogu-otaru-category-news.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "74e1167e1919bc3cb0f9e01634c4c594e2916b523a7cef64f01e3f8ba159e05d",
+      "textLength": 322
+    },
+    {
+      "sourceId": "morning-existing21-57b4602a613a",
+      "url": "https://x.com/chiikawabakery/status/2112491082730922438",
+      "lastAttemptAt": "2026-10-21T09:58:37.166+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.166+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-57b4602a613a.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "5cc1b4a6fb2b69f04468ce0c0263a16da05ba0b8570d12f21994bfadd2528d36",
+      "textLength": 1589
+    },
+    {
+      "sourceId": "morning-existing21-4e56f60737d0",
+      "url": "https://x.com/chiikawabakeryO/status/2112504905273618836",
+      "lastAttemptAt": "2026-10-21T09:58:37.098+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.098+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-4e56f60737d0.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "082c006bdf7579967e4dab7d8166f273f9a9f251e5bcdf355a229a6081527110",
+      "textLength": 1264
+    },
+    {
+      "sourceId": "ana-first-flight-airframe-confirmed-20261020",
+      "url": "https://x.com/ANA_travel_info/status/2112461317730640199",
+      "lastAttemptAt": "2026-10-21T09:58:37.783+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.783+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ana-first-flight-airframe-confirmed-20261020.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "be812034972aba16ba03401d37ddc874fff4206b33dbcc4c1dc72973ef135251",
+      "textLength": 1822
+    },
+    {
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "lastAttemptAt": "2026-10-21T09:58:37.235+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.235+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawaland-entry-updates-x.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "f394dbb1b5fe5ee250856c2cb1910884e85ca9eade6a31e60e672883035350ea",
+      "textLength": 1676
+    },
+    {
+      "sourceId": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "lastAttemptAt": "2026-10-21T09:58:37.209+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.209+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-x-com-chiikawa-parkjp.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "7f9b0c4187f7e3797de6d39df23010fb625d0d248f4bfd9819f4dd13ee48f7db",
+      "textLength": 1639
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-reservation-full-20261016",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "lastAttemptAt": "2026-10-21T09:58:38.722+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:38.722+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ana-chiikawa-goods-reservation-full-20261016.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "e7d9e6afcf2117ea65267ee025bb6aa41df919b0f2a8833d5eff272d09dcab5a",
+      "textLength": 367
+    },
+    {
+      "sourceId": "ana-astyle-waiting-room-20261023",
+      "url": "https://www.astyle.jp/astyle/news/696/",
+      "lastAttemptAt": "2026-10-21T09:58:42.563+00:00",
+      "httpStatus": 403,
+      "lastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-20T10:02:32.563+00:00",
+      "lastFailure": {
+        "at": "2026-10-21T09:58:42.563+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 403,
+        "detail": "non-200 HTTP",
+        "evidenceUrl": "https://www.astyle.jp/astyle/news/696/"
+      },
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ana-astyle-waiting-room-20261023.html",
+      "resultSummary": "Fetch failed; do not infer no change."
+    },
+    {
+      "sourceId": "morning-existing21-4fdf328cdc02",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "lastAttemptAt": "2026-10-21T09:58:42.406+00:00",
+      "httpStatus": 403,
+      "lastResult": "fetch_failed",
+      "lastSuccessfulAt": null,
+      "lastFailure": {
+        "at": "2026-10-21T09:58:42.406+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 403,
+        "detail": "non-200 HTTP",
+        "evidenceUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/"
+      },
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/morning-existing21-4fdf328cdc02.html",
+      "resultSummary": "Fetch failed; do not infer no change."
+    },
+    {
+      "sourceId": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "lastAttemptAt": "2026-10-21T09:58:42.851+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:42.851+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/tamanohikari-chiikawa-shop-details.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "db8b3063c444e9828805f20b5ec9bd5a0d7ab97e555ab0f7ba675cc451628288",
+      "textLength": 30152
+    },
+    {
+      "sourceId": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "lastAttemptAt": "2026-10-21T09:58:44.369+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:44.369+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/corporate-chiikawa-glasses-orders.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "4816d66475ee49d7f2f25179ed7a5b3ac0ecd49310cc09af08d32765ec2abdb0",
+      "textLength": 8725
+    },
+    {
+      "sourceId": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "lastAttemptAt": "2026-10-21T09:58:42.681+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:42.681+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-restaurant-reservation.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "c86c283bfd8f944c38427daf6b5235394d97a17b81d3a4aab9e9fd4772844ec8",
+      "textLength": 4253
+    },
+    {
+      "sourceId": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "lastAttemptAt": "2026-10-21T09:58:42.658+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:42.658+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-restaurant-okinawa-reservation.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "bd95e1a068931e3aa0dbbc92ad1e70283a175eb4298c7d3634f5a78868abc841",
+      "textLength": 4347
+    },
+    {
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "lastAttemptAt": "2026-10-21T09:58:47.666+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:47.666+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ramen-buta-ikebukuro-reservation-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "d742ad2295b1ff9320d55b149776ebc38251183a6feb94b315be5c075969d13b",
+      "textLength": 6365
+    },
+    {
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "lastAttemptAt": "2026-10-21T09:58:47.990+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:47.990+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ramen-buta-shibuya-reservation-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "3d73a8dc057c541cde17f7237a7e881aa8761ffc44d20f364333b85763bf2c04",
+      "textLength": 6506
+    },
+    {
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "lastAttemptAt": "2026-10-21T09:58:47.970+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:47.970+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/ramen-buta-shinsaibashi-reservation-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "47202ccb5e8703aa91fdd12c31ebc65aed787d41a048b21b7aac674866e6933e",
+      "textLength": 6520
+    },
+    {
+      "sourceId": "venue-yonago-tenmaya-event-calendar",
+      "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+      "lastAttemptAt": "2026-10-21T09:58:49.179+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:58:49.179+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-yonago-tenmaya-event-calendar.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "6162c1e0731c295cf1df9b2846f0cd8e9707280c763a094c667a1791fdc47dd5",
+      "textLength": 2597
+    },
+    {
+      "sourceId": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "url": "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/chiikawa.html",
+      "lastAttemptAt": "2026-10-21T09:59:34.368+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:34.368+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/venue-fukuoka-mitsukoshi-popup-entry-20261016.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "d260e15fe4c640b752e961ffb3eb2f99a7342ff6c273e573703ac210773bc403",
+      "textLength": 6318
+    },
+    {
+      "sourceId": "evening-existing21-1b8230d1a37f",
+      "url": "https://www.0101.co.jp/082/",
+      "lastAttemptAt": "2026-10-21T09:59:35.923+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:35.923+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-existing21-1b8230d1a37f.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "049130215764c03e4e2fe77549ef556fbe529d22429e2dbcddcd6731af7a380d",
+      "textLength": 2657
+    },
+    {
+      "sourceId": "evening-existing21-d9434ce2241e",
+      "url": "https://shop.parkplace-oita.com/event/",
+      "lastAttemptAt": "2026-10-21T09:59:41.745+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:41.745+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-existing21-d9434ce2241e.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "1e52668679308e123d005efa41a1fa172de0bdfb1808fbd065f3fd5a9324a801",
+      "textLength": 2515
+    },
+    {
+      "sourceId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "lastAttemptAt": "2026-10-21T09:59:36.267+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T09:59:36.267+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-popup-2026-10-23-ebina-marui-official.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "147b687c6f497cc93184aae1900425cf0aa92db1fc9aa390b06a8e52032258a3",
+      "textLength": 2935
+    },
+    {
+      "sourceId": "evening-existing21-d0fa0a0e4e4a",
+      "url": "https://x.com/chiikawa_land/status/2112833332971208997",
+      "lastAttemptAt": "2026-10-21T10:00:17.050+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T10:00:17.050+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-existing21-d0fa0a0e4e4a.html",
+      "text": "ちいかわらんど【公式】 on X: \"🎪#ちいかわらんど\n\n【ご案内】\n\n10月23日(金)より、当面の間、\nちいかわらんどでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：ちいかわらんど内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわらんど【公式】 on X: \"🎪#ちいかわらんど\n\n【ご案内】\n\n10月23日(金)より、当面の間、\nちいかわらんどでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：ちいかわらんど内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\"\nちいかわらんど【公式】\n@chiikawa_land\nShow translation\n🎪\n#ちいかわらんど\n【ご案内】\n\n10月23日(金)より、当面の間、\nちいかわらんどでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：ちいかわらんど内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\n9:08 AM · Oct 21, 2026\n·\n255.6K\nViews\n1.3K\n4.2K\n344\nOnly some accounts can reply.\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわらんど【公式】\n@\nchiikawa_land\nFollow\n『ちいかわらんど』の【限定商品】【先行商品】【イベント】などの情報をお届けします♬(個別のお問い合わせはX(旧Twitter)ではお返事出来兼ねますのでご了承ください)※在庫状況やお問い合わせは各店舗までお願いいたします。\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわらんど【公式】\n@chiikawa_land\nShow translation\n🎪\n#ちいかわらんど\n【ご案内】\n\n10月23日(金)より、当面の間、\nちいかわらんどでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：ちいかわらんど内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\n9:08 AM · Oct 21, 2026\n·\n255.6K\nViews\n1.3K\n4.2K\n344\nOnly some accounts can reply.",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "338d993dfe18d1c11eae4f83cd45f88f2590eabb2a1a0e4c376e6af492c08e87",
+      "textLength": 1587
+    },
+    {
+      "sourceId": "magical-store-entry-updates-x",
+      "url": "https://x.com/magi_chiikawa",
+      "lastAttemptAt": "2026-10-21T10:00:17.155+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T10:00:17.155+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/magical-store-entry-updates-x.html",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "dcf4802d6b9c8324b13cf2b2095fa6077c82ee9e86ca8edf10289f1b540ab9c9",
+      "textLength": 1463
+    },
+    {
+      "sourceId": "evening-existing21-11a18a96a91d",
+      "url": "https://x.com/magi_chiikawa/status/2112833528962613390",
+      "lastAttemptAt": "2026-10-21T10:02:20.364+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T10:02:20.364+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-existing21-11a18a96a91d.html",
+      "text": "まじかるちいかわストア【公式】 on X: \"🎀#まじかるちいかわストア\n\n【ご案内】\n\n10月23日(金)より、当面の間、\nまじかるちいかわストアでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：まじかるちいかわストア内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\" / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nまじかるちいかわストア【公式】 on X: \"🎀#まじかるちいかわストア\n\n【ご案内】\n\n10月23日(金)より、当面の間、\nまじかるちいかわストアでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：まじかるちいかわストア内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\"\nまじかるちいかわストア【公式】\n@magi_chiikawa\nShow translation\n🎀\n#まじかるちいかわストア\n【ご案内】\n\n10月23日(金)より、当面の間、\nまじかるちいかわストアでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：まじかるちいかわストア内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\n9:09 AM · Oct 21, 2026\n·\n36.1K\nViews\n122\n407\n26\nOnly some accounts can reply.\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nまじかるちいかわストア【公式】\n@\nmagi_chiikawa\nFollow\n『まじかるちいかわストア』の情報をお届けします♬(個別のお問い合わせはお返事出来兼ねますのでご了承ください)※在庫状況やお問い合わせは店舗までお願いいたします。\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nまじかるちいかわストア【公式】\n@magi_chiikawa\nShow translation\n🎀\n#まじかるちいかわストア\n【ご案内】\n\n10月23日(金)より、当面の間、\nまじかるちいかわストアでのお取扱い商品を対象に\n購入制限を設けさせていただく事となりました。\n\n対象商品：まじかるちいかわストア内の全商品\n個数制限：1会計につき各1点まで\n　　　　　シークレット商品は、1会計につき各1BOXまで\n※状況により変動する場合がございます\n\nお客様には大変ご迷惑をおかけいたしますが、\n何卒ご理解とご協力の程、お願い申し上げます。\n9:09 AM · Oct 21, 2026\n·\n36.1K\nViews\n122\n407\n26\nOnly some accounts can reply.",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "5e732cad04dd8c79cfa9ec08f0c7bb9bed2ee3023cef8ed2c6f734c28dbe9b57",
+      "textLength": 1616
+    },
+    {
+      "sourceId": "evening-existing21-18210ef289a0",
+      "url": "https://x.com/chiikawabakery/status/2112710460600414305",
+      "lastAttemptAt": "2026-10-21T10:03:01.466+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T10:03:01.466+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-existing21-18210ef289a0.html",
+      "text": "ちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】 on X: \"【ちいかわベーカリー🍞】\n本日のフリー入場は混雑のためデジタル整理券にてご案内いたします。\n\n👀整理券は14：50より発行可能です\n\n⏰ デジタル整理券お呼び出しから15分以内に店頭にお越しくださいますようお願いいたします。\n　　それ以前のお集まりはご遠慮ください。\n　　15分過ぎてしまうとキャンセルとなりますので、予めご了承ください。\n\n🚶 周りのお客様のご迷惑になりますので、店舗前での立ち止まりはご遠慮ください。\n\n※東京店でのみ実施\n【整理券URL】https://t.co/XLS1RSY3q8… / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】 on X: \"【ちいかわベーカリー🍞】\n本日のフリー入場は混雑のためデジタル整理券にてご案内いたします。\n\n👀整理券は14：50より発行可能です\n\n⏰ デジタル整理券お呼び出しから15分以内に店頭にお越しくださいますようお願いいたします。\n　　それ以前のお集まりはご遠慮ください。\n　　15分過ぎてしまうとキャンセルとなりますので、予めご了承ください。\n\n🚶 周りのお客様のご迷惑になりますので、店舗前での立ち止まりはご遠慮ください。\n\n※東京店でのみ実施\n【整理券URL】https://t.co/XLS1RSY3q8\n\n#ちいかわベーカリー\"\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】\n@chiikawabakery\nShow translation\n【ちいかわベーカリー🍞】\n本日のフリー入場は混雑のためデジタル整理券にてご案内いたします。\n\n👀整理券は14：50より発行可能です\n\n⏰ デジタル整理券お呼び出しから15分以内に店頭にお越しくださいますようお願いいたします。\n　　それ以前のお集まりはご遠慮ください。\n　　15分過ぎてしまうとキャンセルとなりますので、予めご了承ください。\n\n🚶 周りのお客様のご迷惑になりますので、店舗前での立ち止まりはご遠慮ください。\n\n※東京店でのみ実施\n【整理券URL】\nairwait.jp/WCSP/storeDeta…\n#ちいかわベーカリー\n1:00 AM · Oct 21, 2026\n·\n26.3K\nViews\n11\n70\n46\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】\n@\nchiikawabakery\nFollow\n『ちいかわベーカリー』および『ちいかわベーカリーPOP UP SHOP』の公式アカウントです。店舗の最新ニュースをお届けします🍞✨\n⚠個別の問い合わせにはお答えできません。\nお問い合わせは公式サイトのフォームよりお願いいたします。\n企画・運営／(株)エルティーアール\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】\n@chiikawabakery\nShow translation\n【ちいかわベーカリー🍞】\n本日のフリー入場は混雑のためデジタル整理券にてご案内いたします。\n\n👀整理券は14：50より発行可能です\n\n⏰ デジタル整理券お呼び出しから15分以内に店頭にお越しくださいますようお願いいたします。\n　　それ以前のお集まりはご遠慮ください。\n　　15分過ぎてしまうとキャンセルとなりますので、予めご了承ください。\n\n🚶 周りのお客様のご迷惑になりますので、店舗前での立ち止まりはご遠慮ください。\n\n※東京店でのみ実施\n【整理券URL】\nairwait.jp/WCSP/storeDeta…\n#ちいかわベーカリー\n1:00 AM · Oct 21, 2026\n·\n26.3K\nViews\n11\n70\n46",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "fa57f11bc33a97c6c388a99528c7b1ada1c069bdab4ea1966fcaf80f1668e206",
+      "textLength": 1877
+    },
+    {
+      "sourceId": "evening-existing21-a26bd7dd047c",
+      "url": "https://x.com/chiikawa_popup/status/2112738998435315994",
+      "lastAttemptAt": "2026-10-21T10:04:30.297+00:00",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "lastSuccessfulAt": "2026-10-21T10:04:30.297+00:00",
+      "lastFailure": null,
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/evening-existing21-a26bd7dd047c.html",
+      "text": "ちいかわPOP UP STORE公式 on X: \"『ちいかわPOP UP STORE』\n神奈川県にて、10/23(金)より開催♫\n\n📢10/23(金)～10/25(日)\nLINE上で取得できる入場整理券を配布いたします。\n上記日程はお1人さま1回限りのご入場となります。\n\n🌱申込み受付開始時間\n・12:30入場までの整理券\n　前日19:00 受付開始\n・13:00入場からの整理券\n　各回1時間前に受付開始\n\n🕒有効期限\n取得した整理券の入場開始時刻より1時間　\n\n🎟️整理券のお申込みはこちら\n　https://t.co/IfpJsQw2n3\n\n💫会場\n　海老名マルイ 5Fイベント… / X\nPost\nLog in\nSign up\nPost\nLog in\nSign up\nちいかわPOP UP STORE公式 on X: \"『ちいかわPOP UP STORE』\n神奈川県にて、10/23(金)より開催♫\n\n📢10/23(金)～10/25(日)\nLINE上で取得できる入場整理券を配布いたします。\n上記日程はお1人さま1回限りのご入場となります。\n\n🌱申込み受付開始時間\n・12:30入場までの整理券\n　前日19:00 受付開始\n・13:00入場からの整理券\n　各回1時間前に受付開始\n\n🕒有効期限\n取得した整理券の入場開始時刻より1時間　\n\n🎟️整理券のお申込みはこちら\n　https://t.co/IfpJsQw2n3\n\n💫会場\n　海老名マルイ 5Fイベントスペース\n\n💫開催期間\n　2026年10月23日(金)～11月29日(日)\n\n🔍詳しくはこちら\n　https://t.co/nvs0OtsSjo\n\n#ちいかわ\"\nちいかわPOP UP STORE公式\n@chiikawa_popup\nShow translation\n『ちいかわPOP UP STORE』\n神奈川県にて、10/23(金)より開催♫\n\n📢10/23(金)～10/25(日)\nLINE上で取得できる入場整理券を配布いたします。\n上記日程はお1人さま1回限りのご入場となります。\n\n🌱申込み受付開始時間\n・12:30入場までの整理券\n　前日19:00 受付開始\n・13:00入場からの整理券\n　各回1時間前に受付開始\n\n🕒有効期限\n取得した整理券の入場開始時刻より1時間　\n\n🎟️整理券のお申込みはこちら\npage.line.me/786sasix?oat_c…\n💫会場\n　海老名マルイ 5Fイベントスペース\n\n💫開催期間\n　2026年10月23日(金)～11月29日(日)\n\n🔍詳しくはこちら\nchiikawa-info.jp/p26/pus_ebmr/\n#ちいかわ\n2:53 AM · Oct 21, 2026\n·\n17.6K\nViews\n8\n70\n53\nLog in or sign up for X\nSee what’s happening and join the conversation\nContinue with phone\nContinue with Apple\nContinue with Google\nor\nLog in with username or email\nRelevant people\nちいかわPOP UP STORE公式\n@\nchiikawa_popup\nFollow\n「ちいかわ」のPOP UP STOREの最新情報をお届けいたします✨\n(個別でのお問い合わせはお返事できかねますのでご了承ください)\nTrending now\nTerms\n·\nPrivacy\n·\nCookies\n·\nAccessibility\n·\nAds Info\n·\nMore\n© 2026 X Corp.\nちいかわPOP UP STORE公式\n@chiikawa_popup\nOct 9\n＼ちいかわ POP UP STORE／\n\n『ちいかわ POP UP STORE』\n神奈川県での開催が決定しました！\n\n💫会場\n　海老名マルイ 5Fイベントスペース\n\n💫開催期間\n　2026年10月23日(金)～11月29日(日)\n\n🔍詳しくはこちら\nchiikawa-info.jp/p26/pus_ebmr/\n#ちいかわ\n8\n368\n2.3K\n338K\nちいかわPOP UP STORE公式\n@chiikawa_popup\nShow translation\n『ちいかわPOP UP STORE』\n神奈川県にて、10/23(金)より開催♫\n\n📢10/23(金)～10/25(日)\nLINE上で取得できる入場整理券を配布いたします。\n上記日程はお1人さま1回限りのご入場となります。\n\n🌱申込み受付開始時間\n・12:30入場までの整理券\n　前日19:00 受付開始\n・13:00入場からの整理券\n　各回1時間前に受付開始\n\n🕒有効期限\n取得した整理券の入場開始時刻より1時間　\n\n🎟️整理券のお申込みはこちら\npage.line.me/786sasix?oat_c…\n💫会場\n　海老名マルイ 5Fイベントスペース\n\n💫開催期間\n　2026年10月23日(金)～11月29日(日)\n\n🔍詳しくはこちら\nchiikawa-info.jp/p26/pus_ebmr/\n#ちいかわ\n2:53 AM · Oct 21, 2026\n·\n17.6K\nViews\n8\n70\n53",
+      "resultSummary": "HTML/text retrieved; image-only notices and completeness need separate review.",
+      "textSha256": "a01e3de161450db8defb39cf70ec7c5b9d796e76229b16523063d1a00bb85d83",
+      "textLength": 2218
+    }
+  ],
+  "imageObservations": [
+    {
+      "sourceId": "image-f90c01419e47",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/moushikomi_261020.jpg",
+      "parentSourceId": "observed-chiikawa-info-jp-ee275504ea",
+      "lastAttemptAt": "2026-10-21T10:00:28.986+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-ee275504ea-priority.jpg",
+      "sha256": "9254ad584a03b202fd424ce571daa226f6132743ceca83094b48c5a91b50b456"
+    },
+    {
+      "sourceId": "image-ff7b305de26f",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/img/moushikomi_260929.jpg",
+      "parentSourceId": "popup-2026-10-23-ebina-marui-official",
+      "lastAttemptAt": "2026-10-21T10:00:28.831+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/popup-2026-10-23-ebina-marui-official-priority.jpg",
+      "sha256": "c3353a5b7ec952a6d16098a91c1383a2853f78ffac81350945803af040863d01"
+    },
+    {
+      "sourceId": "image-aa168cf8876f",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/img/moushikomi_260929.jpg",
+      "parentSourceId": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "lastAttemptAt": "2026-10-21T10:00:28.391+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/popup-2026-10-23-aeon-parkplace-oita-official-priority.jpg",
+      "sha256": "3109141391c50f897a06c7be6686deb41e3f2632ce06e42c11c4a7979e5222c0"
+    },
+    {
+      "sourceId": "image-cf2b0961be04",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/img/moushikomi_261020.jpg",
+      "parentSourceId": "observed-chiikawa-info-jp-b434b2c58a",
+      "lastAttemptAt": "2026-10-21T10:00:28.962+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/observed-chiikawa-info-jp-b434b2c58a-priority.jpg",
+      "sha256": "5d33d6188d0fbb1499783940b11ba338d28da108b5535e71d0b0e6beb3aa185a"
+    },
+    {
+      "sourceId": "image-a78e49c7d15c",
+      "url": "https://nagano-info.jp/popupshop/ebina/img/main1400_2.jpg",
+      "parentSourceId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "lastAttemptAt": "2026-10-21T10:00:29.342+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/nagano-market-popup-2026-10-23-ebina-marui-official-priority.jpg",
+      "sha256": "65ba20f2c4718dd9b11145137a193ca1961e252cf459b4ff9f801be83b276fae"
+    },
+    {
+      "sourceId": "image-954d8be49bc0",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/nyuten_tokyo.jpg",
+      "parentSourceId": "chiikawa-pocket-fourth-2026-detail",
+      "lastAttemptAt": "2026-10-21T10:00:28.861+00:00",
+      "httpStatus": 200,
+      "result": "success",
+      "snapshot": "/workspace/scratch/8b51c8de19bc/map-evening-20261021-existing/chiikawa-pocket-fourth-2026-detail-priority.jpg",
+      "sha256": "fe63cff4c65029326bd4c241864d371f16274eb6ec0f2815b1285bfefd24b160"
+    }
+  ],
+  "listingChanges": [
+    {
+      "existingId": "chiikawaland-osaka-umeda",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-harajuku",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-fukuoka",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-kyoto",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-tokyo-station",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-solamachi",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-nagoya",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-sendai",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-sapporo",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-yokohama",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-hiroshima",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-shinsaibashi",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-shinjuku",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-kanazawa",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-ikebukuro",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawaland-koshigaya",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_land/status/2112833332971208997"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "magical-shinjuku",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "「まじかるちいかわ」テーマの常設オフィシャルショップです。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/magi_chiikawa/status/2112833528962613390"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "magical-umeda",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "「まじかるちいかわ」テーマの常設オフィシャルショップです。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/magi_chiikawa/status/2112833528962613390"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "magical-nagoya",
+      "file": "data/official-spots.json",
+      "reason": "10/21公式発表の10/23開始購入制限が未掲載",
+      "set": {
+        "description": "「まじかるちいかわ」テーマの常設オフィシャルショップです。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。"
+      },
+      "evidenceUrls": [
+        "https://x.com/magi_chiikawa/status/2112833528962613390"
+      ],
+      "preserveFields": [
+        "entryNote",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "importantNotice",
+        "reservationType",
+        "reservationUrl"
+      ],
+      "scopeNote": "常設店のみ。POP UP STOREへ拡張しない。"
+    },
+    {
+      "existingId": "chiikawa-bakery-tokyo",
+      "file": "data/official-spots.json",
+      "reason": "10/21当日告知を確認、旧10/20日付と根拠を更新。条件は同一。",
+      "set": {
+        "entryNote": "2026年10月21日の公式告知では、東京店のフリー入場はデジタル整理券で案内します。整理券は当日14:50から発行予定で、呼出しから15分以内に来店しないとキャンセルになります。現在の発行状況・残枠は未確認です。 2026年10月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "importantNotice": "2026年10月21日の公式告知では、東京店のフリー入場はデジタル整理券で案内します。整理券は当日14:50から発行予定で、呼出しから15分以内に来店しないとキャンセルになります。現在の発行状況・残枠は未確認です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2112710460600414305",
+        "entryInfoCheckedAt": "2026-10-21"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawabakery/status/2112710460600414305"
+      ]
+    },
+    {
+      "existingId": "popup-2026-10-23-ebina-marui",
+      "file": "data/official-spots.json",
+      "reason": "配布詳細保留を公式10/21告知で解消",
+      "set": {
+        "reservationType": "required",
+        "reservationUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "defaultEntryType": "reservation_required",
+        "entryNote": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "importantNotice": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "entryInfoUrl": "https://x.com/chiikawa_popup/status/2112738998435315994",
+        "entryInfoCheckedAt": "2026-10-21"
+      },
+      "evidenceUrls": [
+        "https://x.com/chiikawa_popup/status/2112738998435315994"
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "id": "popup-2026-10-23-ebina-marui",
+      "title": "ちいかわPOP UP STORE 海老名マルイ",
+      "kind": "new_listing",
+      "targetKey": "popup-2026-10-23-ebina-marui",
+      "sourceIds": [
+        "popup-2026-10-23-ebina-marui-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10T07:31:27+09:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+          "observedAt": "2026-10-10T07:33:00+09:00",
+          "summary": "保存済みの公式案内確認記録。10:30～19:00。10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。初回発表日時は不明。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://www.0101.co.jp/082/access/",
+          "observedAt": "2026-10-09T23:48:35.342Z",
+          "summary": "このWindows環境の通常GETで公式会場名・住所・会場点の座標を照合。地図の中心や駐車場の点は使用しない。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+          "observedAt": "2026-10-19T22:58:29.400+00:00",
+          "summary": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+          "observedAt": "2026-10-19T23:01:00.345+00:00",
+          "summary": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+          "observedAt": "2026-10-20T23:03:05.329+00:00",
+          "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
+          "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_popup/status/2112738998435315994",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "現行/過去の公式・ナガノ・コミュニティ・コラボをID・名称・公式URL・会場・会期で照合。重複なし。通常物販POP UPのためコラボには追加しない。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-ebina-marui"
+      ],
+      "state": "published",
+      "priority": "high",
+      "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
+      "nextCheck": "10/21発表のLINE条件更新候補を公開確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
+    },
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita",
+      "title": "ちいかわPOP UP STORE イオンパークプレイス大分店",
+      "kind": "new_listing",
+      "targetKey": "popup-2026-10-23-aeon-parkplace-oita",
+      "sourceIds": [
+        "popup-2026-10-23-aeon-parkplace-oita-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10T07:31:27+09:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-08",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-10T07:33:25+09:00",
+          "summary": "保存済みの公式案内確認記録。10:00～19:00（最終日18:00閉場）。10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。初回発表日時は不明。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://tenpo.aeon-kyushu.info/detail/parkplace-oita/",
+          "observedAt": "2026-10-09T23:48:36.206Z",
+          "summary": "このWindows環境の通常GETで公式会場名・住所・会場点の座標を照合。地図の中心や駐車場の点は使用しない。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-19T22:58:29.104+00:00",
+          "summary": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-19T23:01:03.472+00:00",
+          "summary": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-20T23:03:05.302+00:00",
+          "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
+          "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "現行/過去の公式・ナガノ・コミュニティ・コラボをID・名称・公式URL・会場・会期で照合。重複なし。通常物販POP UPのためコラボには追加しない。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-aeon-parkplace-oita"
+      ],
+      "state": "published",
+      "priority": "high",
+      "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
+      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-new",
+      "title": "ナガノマーケット POP UP SHOP 海老名マルイ",
+      "kind": "new_listing",
+      "targetKey": "nagano-market-popup-2026-10-23-ebina-marui-new",
+      "sourceIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10T07:31:49+09:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-10T07:33:15+09:00",
+          "summary": "公式個別案内の確認記録あり。5F会場、会期・営業時間、10/23整理券。受付方法と時計は未発表。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-19T22:58:31.309+00:00",
+          "summary": "Normalized HTML text matches prior evening; image contents are not covered unless separately reviewed.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-19T23:01:07.440+00:00",
+          "summary": "Normalized HTML text matches prior evening; image contents are not covered unless separately reviewed.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-20T23:03:11.035+00:00",
+          "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
+          "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "ID・名称・URL・会場・会期で現行/過去の全掲載を照合。重複なし。通常掲載として既存スキーマを使い、コラボには重複追加しない。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui"
+      ],
+      "state": "published",
+      "priority": "high",
+      "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
+      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
+    },
+    {
+      "id": "update-nagano-ebina-entry-dates-20261015",
+      "title": "ナガノマーケット海老名 入場整理券対象を10/23〜25へ更新",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-popup-2026-10-23-ebina-marui:entry-dates-20261023-20261025",
+      "sourceIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-14T23:08:12+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-15",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-14T23:10:47+00:00",
+          "summary": "公式個別ページの表示本文を実読。入場整理券の対象日は10/23〜10/25。現行掲載と系列原本の10/23のみから対象期間を拡大。会期10/23〜11/29・海老名マルイ5F・10:30〜19:00は維持。詳細リンク先は公式Xプロフィールで、取得できた5投稿内に受付方法・開始日時の確定案内なし。受付日時や自由入場を推定しない。",
+          "recordPath": "research/morning-series-2026-10-15-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-14T23:28:21.804+00:00",
+          "summary": "PR49 merge commit a6274ee35dc0ec5fff72ad30a703a7a39441c39e のPages配信後、公開JSONと検査済み内容がバイト一致。初回公開実体確認時刻を保存。",
+          "recordPath": null
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-15",
+          "summary": "本文は10/23〜25の入場整理券を案内。会期10/23〜11/29、海老名マルイ5F、10:30〜19時。朝に確認済みの対象日拡大から追加変更なし。詳細リンクは公式Xプロフィールで、取得できた投稿内に申込方法・開始日時の確定案内なし。",
+          "recordPath": "research/evening-series-2026-10-15-evidence.json"
+        },
+        {
+          "url": "https://x.com/nagano_mkt_shop",
+          "observedAt": "2026-10-15T10:03:12.201Z",
+          "summary": "未ログイン表示5投稿を確認。先頭は10/15のぬいぐるみくじ入荷案内、10/9海老名・横浜の既知告知を含む。海老名告知画像は会期・会場・営業時間一致。申込方法・開始時刻の新たな確定案内は表示範囲で確認できず。",
+          "recordPath": "research/evening-series-2026-10-15-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-19T22:58:31.309+00:00",
+          "summary": "Normalized HTML text matches prior evening; image contents are not covered unless separately reviewed.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-19T23:01:07.440+00:00",
+          "summary": "Normalized HTML text matches prior evening; image contents are not covered unless separately reviewed.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-20T23:03:11.035+00:00",
+          "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
+          "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-10-23-ebina-marui"
+        ],
+        "note": "現行official-spots・official-events-archive・collaborations-currentをID/名称/公式URL/会場/会期で照合。現行同IDへの更新。通常物販POP UPなのでコラボ新規登録なし。海老名のちいかわPOP UPは別ブランド企画として維持。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui"
+      ],
+      "state": "published",
+      "priority": "normal",
+      "decision": "一次本文で対象期間拡大を確認。既存IDと対象外日のunknown区分を維持し、entryNote/importantNoticeのみ10/23〜25へ更新。系列原本の個別checkedAtを更新して生成する。発表日時・受付開始日時は不明のためnull。公開前のためpublishedAtはnull。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
+      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": "2026-10-14T23:28:21.804+00:00"
+    }
+  ],
+  "coverageLimits": [
+    "Xプロフィール可視4～5投稿は全件ではない。海老名は検索補完から公式個別投稿を取得して新条件を確認。",
+    "画像主体全ページの全画像を確認したわけではない。海老名/大分入場主要画像・ナガノ海老名メイン画像実読。",
+    "土浦一覧タイムアウト、AEON法人ニュースとAstyle2URL403、Sunflower JS shell。以前成功時刻は保持。",
+    "WAON10/21終了当日は現行保持。公式403のため変更無しと断定しない。",
+    "大分/ナガノ海老名の詳細は引き続き不明、10/22朝再確認。"
+  ]
+}

@@ -2163,7 +2163,7 @@
       "eventStartsAt": "2026-10-23",
       "eventEndsAt": "2026-11-29",
       "releaseAt": null,
-      "reservationOpensAt": null,
+      "reservationOpensAt": "2026-10-22T19:00:00+09:00",
       "reflectDueAt": "2026-10-10",
       "evidence": [
         {
@@ -2201,6 +2201,12 @@
           "observedAt": "2026-10-20T23:03:05.329+00:00",
           "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_popup/status/2112738998435315994",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -2214,8 +2220,8 @@
       "state": "published",
       "priority": "high",
       "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/21夕に公式個別ページ・公式Xと開催施設の告知で整理券配布場所、時刻、方式を優先再確認。受付開始時刻は未確認のまま保持。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
+      "nextCheck": "10/21発表のLINE条件更新候補を公開確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
       "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
@@ -2269,6 +2275,12 @@
           "observedAt": "2026-10-20T23:03:05.302+00:00",
           "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -2282,8 +2294,8 @@
       "state": "published",
       "priority": "high",
       "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/21夕に公式個別ページ・公式Xと開催施設の告知で整理券配布場所、時刻、方式を優先再確認。受付開始時刻は未確認のまま保持。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
+      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
       "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
@@ -2331,6 +2343,12 @@
           "observedAt": "2026-10-20T23:03:11.035+00:00",
           "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -2344,8 +2362,8 @@
       "state": "published",
       "priority": "high",
       "decision": "検査後にローカルコミットする未公開の掲載案。今回push/PR/merge/公開は行わず、publishedAtはnullを保持。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/21夕に公式個別ページ・公式Xと開催施設の告知で整理券配布場所、時刻、方式を優先再確認。受付開始時刻は未確認のまま保持。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
+      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
       "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
@@ -9699,6 +9717,12 @@
           "observedAt": "2026-10-20T23:03:11.035+00:00",
           "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -9714,8 +9738,8 @@
       "state": "published",
       "priority": "normal",
       "decision": "一次本文で対象期間拡大を確認。既存IDと対象外日のunknown区分を維持し、entryNote/importantNoticeのみ10/23〜25へ更新。系列原本の個別checkedAtを更新して生成する。発表日時・受付開始日時は不明のためnull。公開前のためpublishedAtはnull。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/21夕に公式個別ページ・公式Xと開催施設の告知で整理券配布場所、時刻、方式を優先再確認。受付開始時刻は未確認のまま保持。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
+      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
       "publishedAt": "2026-10-14T23:28:21.804+00:00"
     },
     {
@@ -13958,7 +13982,7 @@
         "chiikawa-bakery-information-popup-01",
         "store-reverified-chiikawa-bakery-shop-laforet-20261020"
       ],
-      "officialAnnouncedAt": "2026-10-20T10:00:01+09:00",
+      "officialAnnouncedAt": "2026-10-19T20:13:04+09:00",
       "discoveredAt": "2026-10-19T22:58:56.376+00:00",
       "eventStartsAt": "2026-10-20",
       "eventEndsAt": "2026-10-20",
@@ -13989,6 +14013,12 @@
           "observedAt": "2026-10-20T09:59:07.425+00:00",
           "summary": "PR63/main 982a84639b51b7a8aa128562938df60a73685a9fの公開JSONと内容一致を確認した記録。初回の厳密公開時刻は不明であり、この後日観測の日時をpublishedAtへ補完しない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawabakery/status/2112139965811572956",
+          "observedAt": "2026-10-21T10:01:01.725+00:00",
+          "summary": "初発見根拠の公式投稿HTML article:published_time=2026-10-19T11:13:04.000Zを再取得して確認。後続10/20投稿時刻で上書きされていた発表日を初発見根拠へ戻す。 後続投稿の発表日時 2026-10-20T10:00:01+09:00 は既存evidenceの当日条件再確認と関連付けて保持。discoveredAtは変更しない。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -14110,7 +14140,7 @@
         "evening-x-com-chiikawabakery",
         "store-reverified-chiikawa-bakery-tokyo-20261020"
       ],
-      "officialAnnouncedAt": "2026-10-20T10:00:00+09:00",
+      "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-19T22:58:47.401+00:00",
       "eventStartsAt": "2026-10-20",
       "eventEndsAt": "2026-10-20",
@@ -14141,6 +14171,12 @@
           "observedAt": "2026-10-20T09:59:07.425+00:00",
           "summary": "PR63/main 982a84639b51b7a8aa128562938df60a73685a9fの公開JSONと内容一致を確認した記録。初回の厳密公開時刻は不明であり、この後日観測の日時をpublishedAtへ補完しない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-21T10:01:01.725+00:00",
+          "summary": "初発見は前日限定文の経過確認であり、後続10/20投稿の発表日時はその初発見を示さない。元作業の公式発表日時は不明のためnullに戻す。 後続投稿の発表日時 2026-10-20T10:00:00+09:00 は既存evidenceの当日条件再確認と関連付けて保持。discoveredAtは変更しない。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -14170,7 +14206,7 @@
         "evening-x-com-chiikawaramensh",
         "store-reverified-ramen-buta-shinsaibashi-20261020"
       ],
-      "officialAnnouncedAt": "2026-10-20T10:28:56+09:00",
+      "officialAnnouncedAt": null,
       "discoveredAt": "2026-10-19T22:58:48.230+00:00",
       "eventStartsAt": "2026-10-20",
       "eventEndsAt": "2026-10-20",
@@ -14201,6 +14237,12 @@
           "observedAt": "2026-10-20T09:59:07.425+00:00",
           "summary": "PR63/main 982a84639b51b7a8aa128562938df60a73685a9fの公開JSONと内容一致を確認した記録。初回の厳密公開時刻は不明であり、この後日観測の日時をpublishedAtへ補完しない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+          "observedAt": "2026-10-21T10:01:01.725+00:00",
+          "summary": "初発見は前日限定文の経過確認であり、後続10/20投稿の発表日時はその初発見を示さない。元作業の公式発表日時は不明のためnullに戻す。 後続投稿の発表日時 2026-10-20T10:28:56+09:00 は既存evidenceの当日条件再確認と関連付けて保持。discoveredAtは変更しない。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
         }
       ],
       "existingMatch": {
@@ -14943,9 +14985,9 @@
       "releaseAt": null,
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-20",
-      "state": "verifying",
+      "state": "published",
       "priority": "normal",
-      "publishedAt": null,
+      "publishedAt": "2026-10-20T23:46:04.754Z",
       "id": "chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura-new",
       "title": "ちいかわ むちゃフォトパーティ!! イオンモール土浦",
       "kind": "new_listing",
@@ -14986,6 +15028,18 @@
           "observedAt": "2026-10-20T23:02:27+00:00",
           "summary": "公式リンク先はイオンモール土浦の施設地点。Google place !3d36.0800028!4d140.1808262を確認。JSON-LD点から約24m、施設代表点として採用し屋内花火ひろばの厳密座標とは主張しない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/65",
+          "observedAt": "2026-10-20T23:46:04.754Z",
+          "summary": "PR65 source c17d477782a95b69229016b4f5a0cc59d8a17384 / main 875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4 / Pages run 39516939426。保存済み公開28ファイルの初回一致に基づき公開状態を同期。配信job完了 2026-10-20T23:44:58Z と初回公開一致 2026-10-20T23:46:04.754Z を区別。",
+          "recordPath": "research/evening-review-2026-10-21-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -14997,8 +15051,8 @@
         "chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura"
       ],
       "decision": "座標未確認の保留を解消。公式施設の構造化座標と公式リンク先施設地点、国内住所が整合。公式一覧JSONに公開フラグtrueの本文あり。個別詳細データと告知画像はtimeoutのため未視認。公開出典は閲覧可能な公式イベント一覧を使い、本文の一次根拠JSONを証拠に保存する。個別HTML内の404文はVueのエラー時表示テンプレートであり、現在404確定としない。",
-      "nextCheck": "掲載内容を今回の通常更新へ適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、公開状態・publishedAtはその証跡に基づき次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "movie-cafe-nagoya-reservation-url-20261020",
@@ -15133,6 +15187,18 @@
           "observedAt": "2026-10-20T23:03:23+00:00",
           "summary": "施設公式店情報は西館8F・同住所・同電話を確認。営業時間欄は全館10～20時で店固有L.O.なし。施設頁だけではL.O.差の解消根拠にしない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/65",
+          "observedAt": "2026-10-20T23:46:04.754Z",
+          "summary": "PR65 source c17d477782a95b69229016b4f5a0cc59d8a17384 / main 875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4 / Pages run 39516939426。保存済み公開28ファイルの初回一致に基づき公開状態を同期。配信job完了 2026-10-20T23:44:58Z と初回公開一致 2026-10-20T23:46:04.754Z を区別。",
+          "recordPath": "research/evening-review-2026-10-21-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -15145,12 +15211,12 @@
       "listingIds": [
         "movie-cafe-nagoya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "会場固有の現行案内、総合の名古屋area表示、運営者の名古屋開催公式リリースの3資料が一致するため、既存IDの営業時間表示を会場案内ベースで修正する案。これは根拠の優先順位に基づく掲載判断であり、公式総合との不一致が消えたとは扱わない。変更日・初回変更発表日は未確認のためnullを維持し、新発表や本日変更とは表現しない。",
-      "nextCheck": "掲載内容を今回の通常更新へ適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、公開状態・publishedAtはその証跡に基づき次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-20T23:46:04.754Z"
     },
     {
       "id": "bakery-laforet-entry-20261021",
@@ -15173,6 +15239,18 @@
           "observedAt": "2026-10-20T23:04:42.154+00:00",
           "summary": "10/20の公式個別投稿が「明日」の入場整理券を案内。10/21 10:00からラフォーレ原宿エントランス、開店後は店頭、1人1日1回。HTML article:published_timeは2026-10-20T10:28:16.000Z（19:28:16 JST）。現地整理券配布でありオンライン予約開始ではない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/65",
+          "observedAt": "2026-10-20T23:46:04.754Z",
+          "summary": "PR65 source c17d477782a95b69229016b4f5a0cc59d8a17384 / main 875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4 / Pages run 39516939426。保存済み公開28ファイルの初回一致に基づき公開状態を同期。配信job完了 2026-10-20T23:44:58Z と初回公開一致 2026-10-20T23:46:04.754Z を区別。",
+          "recordPath": "research/evening-review-2026-10-21-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -15185,12 +15263,12 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "10/20の公式個別投稿が「明日」の入場整理券を案内。10/21 10:00からラフォーレ原宿エントランス、開店後は店頭、1人1日1回。HTML article:published_timeは2026-10-20T10:28:16.000Z（19:28:16 JST）。現地整理券配布でありオンライン予約開始ではない。",
-      "nextCheck": "掲載内容を今回の通常更新へ適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、公開状態・publishedAtはその証跡に基づき次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-20T23:46:04.754Z"
     },
     {
       "id": "bakery-osaka-popup-badge-ended-20261020",
@@ -15213,6 +15291,18 @@
           "observedAt": "2026-10-20T23:04:42.505+00:00",
           "summary": "公式OSAKAアカウント個別投稿でOSAKA POP UP SHOPの2周年オリジナルマット缶バッジ配布終了を確認。終了の正確な時刻は不明。HTML article:published_timeは2026-10-20T11:23:12.000Z。店舗・企画全体・ベーカリー本体・他特典の終了に拡張しない。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/65",
+          "observedAt": "2026-10-20T23:46:04.754Z",
+          "summary": "PR65 source c17d477782a95b69229016b4f5a0cc59d8a17384 / main 875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4 / Pages run 39516939426。保存済み公開28ファイルの初回一致に基づき公開状態を同期。配信job完了 2026-10-20T23:44:58Z と初回公開一致 2026-10-20T23:46:04.754Z を区別。",
+          "recordPath": "research/evening-review-2026-10-21-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -15225,12 +15315,12 @@
       "listingIds": [
         "chiikawa-bakery-osaka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式OSAKAアカウント個別投稿でOSAKA POP UP SHOPの2周年オリジナルマット缶バッジ配布終了を確認。終了の正確な時刻は不明。HTML article:published_timeは2026-10-20T11:23:12.000Z。店舗・企画全体・ベーカリー本体・他特典の終了に拡張しない。",
-      "nextCheck": "掲載内容を今回の通常更新へ適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、公開状態・publishedAtはその証跡に基づき次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-20T23:46:04.754Z"
     },
     {
       "id": "ana-first-flight-summary-consistency-20261021",
@@ -15253,6 +15343,18 @@
           "observedAt": "2026-10-20T23:04:42.245+00:00",
           "summary": "公開periodはNH661=JA609Aを確定済みだがsummaryに「機番・特別塗装機の使用までは確認できません」が残る。ANA公式個別投稿を再取得し初便NH661=JA609Aを再確認したため要約だけ整合。NH664の機材未確認は維持。発表日はHTML article:published_timeで2026-10-20T08:30:00.000Zと新たに確認。",
           "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/65",
+          "observedAt": "2026-10-20T23:46:04.754Z",
+          "summary": "PR65 source c17d477782a95b69229016b4f5a0cc59d8a17384 / main 875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4 / Pages run 39516939426。保存済み公開28ファイルの初回一致に基づき公開状態を同期。配信job完了 2026-10-20T23:44:58Z と初回公開一致 2026-10-20T23:46:04.754Z を区別。",
+          "recordPath": "research/evening-review-2026-10-21-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -15265,12 +15367,12 @@
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公開periodはNH661=JA609Aを確定済みだがsummaryに「機番・特別塗装機の使用までは確認できません」が残る。ANA公式個別投稿を再取得し初便NH661=JA609Aを再確認したため要約だけ整合。NH664の機材未確認は維持。発表日はHTML article:published_timeで2026-10-20T08:30:00.000Zと新たに確認。",
-      "nextCheck": "掲載内容を今回の通常更新へ適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、公開状態・publishedAtはその証跡に基づき次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-21T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-20T23:46:04.754Z"
     },
     {
       "id": "toshocard-chiikawa-20261022-scope-review",
@@ -15314,6 +15416,1148 @@
       "decision": "通常のキャラクターデザイン商品販売で、国内体験会場/別企業ブランドとの企画として新たな参加内容なし。DATA-OPERATIONSの一般商品除外に沿い掲載対象外と判断する提案。",
       "nextCheck": "通常商品以外の会場イベントや新しい企画が公式発表された場合のみ再評価。",
       "recheckDueAt": null
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-susukino-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ すすきの",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-susukino-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-susukino-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-susukino-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-sendai-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 仙台",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-sendai-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-sendai-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://www.tohotheater.jp/theater/078/access.html",
+          "observedAt": "2026-10-21T10:02:10.244+00:00",
+          "summary": "宮城県仙台市青葉区中央3-7-5 仙台パルコ2 6F。劇場の代表位置",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-hibiya-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 日比谷",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-hibiya-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-hibiya-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-hibiya-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-shinjuku-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 新宿",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-shinjuku-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-shinjuku-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-shinjuku-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-ikebukuro-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 池袋",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-ikebukuro-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-ikebukuro-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-ikebukuro-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-shibuya-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 渋谷",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-shibuya-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-shibuya-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://www.tohotheater.jp/theater/043/access.html",
+          "observedAt": "2026-10-21T10:02:10.244+00:00",
+          "summary": "東京都渋谷区道玄坂2-6-17。劇場の代表位置",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-tjoy-yokohama-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 T・ジョイ横浜",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-tjoy-yokohama-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-tjoy-yokohama-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://tjoy.jp/t-joy_yokohama/access",
+          "observedAt": "2026-10-21T10:02:10.244+00:00",
+          "summary": "神奈川県横浜市西区南幸一丁目1番1号 JR横浜タワー8階。入居施設JR横浜タワーの代表位置（公式が掲載する地図）",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-nagoya-sakae-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 名古屋栄",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-nagoya-sakae-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-nagoya-sakae-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-nagoya-sakae-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-umeda-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 梅田",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-umeda-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-umeda-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-umeda-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-namba-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ なんば",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-namba-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-namba-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://www.tohotheater.jp/theater/032/access.html",
+          "observedAt": "2026-10-21T10:02:10.244+00:00",
+          "summary": "大阪府大阪市中央区難波3-8-9（本館）。本館の施設代表位置。上映スクリーンは未特定。券面・上映スケジュールを確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-hiroshima-wald11-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 広島バルト11",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-hiroshima-wald11-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-hiroshima-wald11-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://tjoy.jp/hiroshima_wald11/access",
+          "observedAt": "2026-10-21T10:02:10.244+00:00",
+          "summary": "広島県安芸郡府中町大須2-1-1 イオンモール広島府中4F。劇場の代表位置",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-tenjin-solaria-20261030",
+      "title": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 天神・ソラリア館",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-cheer-screening-toho-tenjin-solaria-20261030",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-10-30T19:00:00+09:00",
+      "eventEndsAt": "2026-10-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-23T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-tenjin-solaria-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-cheer-screening-toho-tenjin-solaria-20261030"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-susukino-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ すすきの",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-susukino-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-susukino-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-susukino-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-hibiya-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 日比谷",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-hibiya-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-hibiya-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-hibiya-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-shinjuku-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 新宿",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-shinjuku-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-shinjuku-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-shinjuku-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-ikebukuro-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 池袋",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-ikebukuro-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-ikebukuro-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-ikebukuro-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 名古屋栄",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-nagoya-sakae-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-nagoya-sakae-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-umeda-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 梅田",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-umeda-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-umeda-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-umeda-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 天神・ソラリア館",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+      "sourceIds": [
+        "movie-news-index",
+        "movie-cheer-third",
+        "movie-official-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.278+00:00",
+      "eventStartsAt": "2026-11-06T19:00:00+09:00",
+      "eventEndsAt": "2026-11-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-30T00:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一日程・会場なし。旧10/16〜18ペンライト上映は別回。所在地は同一会場の履歴ID chiikawa-penlight-screening-toho-tenjin-solaria-20261016 を再利用。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-tenjin-solaria-20261106"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-10-21T09:59:28.186+00:00",
+          "summary": "第3回。通常12館10/30 19時、10/23 0時発売。ペンライト7館11/6 19時、10/30 0時発売。詳細冒頭9/17はニュース一覧10/21と矛盾するため発表日は一覧基準・時刻不明。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/",
+          "observedAt": "2026-10-21T09:59:28.428+00:00",
+          "summary": "ニュース一覧で本企画2026.10.21を確認。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+    },
+    {
+      "id": "fujicolor-chiikawa-newyear-2027-scope-review",
+      "title": "フジカラーの年賀状2027 ちいかわデザイン",
+      "kind": "new_listing",
+      "targetKey": "fujicolor-chiikawa-newyear-2027",
+      "sourceIds": [
+        "chiikawa-publicity-x",
+        "fujicolor-chiikawa-2027",
+        "fujicolor-chiikawa-2027-x"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:58:06.229+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-10-21",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONに同一企画なし。掲載対象外判定のため追加しない。"
+      },
+      "listingIds": [],
+      "state": "rejected",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/2112816158026125402",
+          "observedAt": "2026-10-21T09:59:34.546+00:00",
+          "summary": "10/21発売、写真あり4柄・写真なし1柄。写真店等と公式通販で注文。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://www.postcard.jp/character/chiikawa/",
+          "observedAt": "2026-10-21T09:59:34.546+00:00",
+          "summary": "2027年賀状のキャラクターデザイン印刷商品。",
+          "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        }
+      ],
+      "decision": "通常のデザイン商品/印刷サービスであり、独立した実会場企画・飲食/体験コラボを確認できないため対象外。",
+      "nextCheck": "新たな実会場イベント・特別体験キャンペーンが発表された場合に再判定。",
+      "recheckDueAt": null
+    },
+    {
+      "id": "update-land-purchase-limit-20261023",
+      "title": "ちいかわらんど全店購入制限",
+      "kind": "listing_update",
+      "targetKey": "update-land-purchase-limit-20261023",
+      "sourceIds": [
+        "evening-existing21-d0fa0a0e4e4a"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T19:00:17+09:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2112833332971208997",
+          "observedAt": "2026-10-21T10:00:17.050+00:00",
+          "summary": "終了日不明。公式Xの表示時刻のタイムゾーンを断定せず発表日は日精度。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda",
+          "chiikawaland-harajuku",
+          "chiikawaland-fukuoka",
+          "chiikawaland-kyoto",
+          "chiikawaland-tokyo-station",
+          "chiikawaland-solamachi",
+          "chiikawaland-nagoya",
+          "chiikawaland-sendai",
+          "chiikawaland-sapporo",
+          "chiikawaland-yokohama",
+          "chiikawaland-hiroshima",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-shinjuku",
+          "chiikawaland-kanazawa",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya"
+        ],
+        "note": "現行公開official-spots・archive・collaborationsを同一ID/企画/会場で照合。新規重複登録せず既存更新。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda",
+        "chiikawaland-harajuku",
+        "chiikawaland-fukuoka",
+        "chiikawaland-kyoto",
+        "chiikawaland-tokyo-station",
+        "chiikawaland-solamachi",
+        "chiikawaland-nagoya",
+        "chiikawaland-sendai",
+        "chiikawaland-sapporo",
+        "chiikawaland-yokohama",
+        "chiikawaland-hiroshima",
+        "chiikawaland-shinsaibashi",
+        "chiikawaland-shinjuku",
+        "chiikawaland-kanazawa",
+        "chiikawaland-ikebukuro",
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存入場条件を保持し、常設ちいかわらんど16店のdescriptionへ購入制限だけを追記して検査・公開照合する。期間限定POP UPへは拡張しない。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-magical-purchase-limit-20261023",
+      "title": "まじかるちいかわ常設店購入制限",
+      "kind": "listing_update",
+      "targetKey": "update-magical-purchase-limit-20261023",
+      "sourceIds": [
+        "evening-existing21-11a18a96a91d"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T19:00:17+09:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/magi_chiikawa/status/2112833528962613390",
+          "observedAt": "2026-10-21T10:02:20.364+00:00",
+          "summary": "終了日不明。公式Xの表示時刻のタイムゾーンを断定せず発表日は日精度。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-shinjuku",
+          "magical-umeda",
+          "magical-nagoya"
+        ],
+        "note": "現行公開official-spots・archive・collaborationsを同一ID/企画/会場で照合。新規重複登録せず既存更新。"
+      },
+      "listingIds": [
+        "magical-shinjuku",
+        "magical-umeda",
+        "magical-nagoya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存入場条件を保持し、まじかるちいかわ常設3店のdescriptionへ購入制限だけを追記して検査・公開照合する。期間限定POP UPへは拡張しない。",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-tokyo-bakery-entry-20261021",
+      "title": "update-tokyo-bakery-entry-20261021",
+      "kind": "reservation_update",
+      "targetKey": "update-tokyo-bakery-entry-20261021",
+      "sourceIds": [
+        "evening-existing21-18210ef289a0"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T09:59:52.253+00:00",
+      "eventStartsAt": "2026-10-21",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-21T14:50:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2112710460600414305",
+          "observedAt": "2026-10-21T10:03:01.466+00:00",
+          "summary": "当日の現在残枠/受付継続は未確認。14:50は公表された発行時刻で実受付確認時刻ではない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "現行公開official-spots・archive・collaborationsを同一ID/企画/会場で照合。新規重複登録せず既存更新。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "古い日付の当日整理券案内を更新し継続入場ルールを保持",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-ebina-line-entry-20261021",
+      "title": "update-ebina-line-entry-20261021",
+      "kind": "reservation_update",
+      "targetKey": "update-ebina-line-entry-20261021",
+      "sourceIds": [
+        "evening-existing21-a26bd7dd047c"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-21T10:04:30.297+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+      "reflectDueAt": "2026-10-21T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_popup/status/2112738998435315994",
+          "observedAt": "2026-10-21T10:04:30.297+00:00",
+          "summary": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-23-ebina-marui"
+        ],
+        "note": "現行公開official-spots・archive・collaborationsを同一ID/企画/会場で照合。新規重複登録せず既存更新。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-ebina-marui"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "LINE入場条件を掲載し受付開始前に公開確認",
+      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
+      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }
