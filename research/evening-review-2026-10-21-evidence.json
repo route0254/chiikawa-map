@@ -1,0 +1,773 @@
+{
+  "checkedAt": "2026-10-21T10:01:54.182+00:00",
+  "baseCommit": "875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4",
+  "candidatePatches": [
+    {
+      "id": "chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura-new",
+      "state": "published",
+      "publishedAt": "2026-10-21T08:46:04.754+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "movie-cafe-nagoya-last-order-conflict-20261020",
+      "state": "published",
+      "publishedAt": "2026-10-21T08:46:04.754+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "bakery-laforet-entry-20261021",
+      "state": "published",
+      "publishedAt": "2026-10-21T08:46:04.754+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "bakery-osaka-popup-badge-ended-20261020",
+      "state": "published",
+      "publishedAt": "2026-10-21T08:46:04.754+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "ana-first-flight-summary-consistency-20261021",
+      "state": "published",
+      "publishedAt": "2026-10-21T08:46:04.754+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+          "observedAt": "2026-10-21T08:46:04.754+09:00",
+          "summary": "PR65 main 875ae96c の公開実体一致を最初に確認した時刻。配信成功や完了報告の時刻とは区別。今夕も公開JSONに既存IDを確認。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "chiikawa-bakery-shop-laforet-entry-20261020",
+      "officialAnnouncedAt": "2026-10-19T20:13:04+09:00",
+      "evidenceAppend": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2112139965811572956",
+          "observedAt": "2026-10-21T10:01:01.725+00:00",
+          "summary": "初発見根拠の公式投稿HTML article:published_time=2026-10-19T11:13:04.000Zを再取得して確認。後続10/20投稿時刻で上書きされていた発表日を初発見根拠へ戻す。 後続投稿の発表日時 2026-10-20T10:00:01+09:00 は既存evidenceの当日条件再確認と関連付けて保持。discoveredAtは変更しない。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "chiikawa-bakery-tokyo-expired-notice-20261020",
+      "officialAnnouncedAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-21T10:01:01.725+00:00",
+          "summary": "初発見は前日限定文の経過確認であり、後続10/20投稿の発表日時はその初発見を示さない。元作業の公式発表日時は不明のためnullに戻す。 後続投稿の発表日時 2026-10-20T10:00:00+09:00 は既存evidenceの当日条件再確認と関連付けて保持。discoveredAtは変更しない。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-expired-notice-20261020",
+      "officialAnnouncedAt": null,
+      "evidenceAppend": [
+        {
+          "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+          "observedAt": "2026-10-21T10:01:01.725+00:00",
+          "summary": "初発見は前日限定文の経過確認であり、後続10/20投稿の発表日時はその初発見を示さない。元作業の公式発表日時は不明のためnullに戻す。 後続投稿の発表日時 2026-10-20T10:28:56+09:00 は既存evidenceの当日条件再確認と関連付けて保持。discoveredAtは変更しない。",
+          "recordPath": "research/evening-review-2026-10-21-evidence.json"
+        }
+      ]
+    }
+  ],
+  "sourceUpserts": [
+    {
+      "id": "observed-tokoname-aeonmall-jp-c4e3a8aa6e",
+      "name": "イベント｜ちいかわ＆ハチワレ＆うさぎ 写真撮影会｜ イオンモール常滑",
+      "url": "https://tokoname.aeonmall.jp/event/1174de63-719b-42ed-8d91-7b2785b637bf",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:08.002+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:07:50Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:08.002+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://tokoname.aeonmall.jp/event/1174de63-719b-42ed-8d91-7b2785b637bf"
+      },
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+    },
+    {
+      "id": "toho-umeda-penlight-20261016",
+      "name": "TOHOシネマズ 梅田 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:07.161+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.743Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:07.161+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    },
+    {
+      "id": "toho-nagoya-sakae-penlight-20261016",
+      "name": "TOHOシネマズ 名古屋栄 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:07.163+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.847Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:07.163+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    },
+    {
+      "id": "toho-ikebukuro-penlight-20261016",
+      "name": "TOHOシネマズ 池袋 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:07.165+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.958Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:07.165+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    },
+    {
+      "id": "toho-hibiya-penlight-20261016",
+      "name": "TOHOシネマズ 日比谷 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:12.468+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.902Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:12.468+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    },
+    {
+      "id": "toho-shinjuku-penlight-20261016",
+      "name": "TOHOシネマズ 新宿 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:12.424+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.901Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:12.424+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    },
+    {
+      "id": "toho-tenjin-solaria-penlight-20261016",
+      "name": "TOHOシネマズ 天神・ソラリア館 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:12.423+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.788Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:12.423+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    },
+    {
+      "id": "toho-susukino-penlight-20261016",
+      "name": "TOHOシネマズ すすきの 10月16–18日ペンライト応援上映",
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-21T10:01:12.432+00:00",
+      "lastSuccessfulAt": "2026-10-17T23:09:50.719Z",
+      "lastResult": "fetch_failed",
+      "resultSummary": "履歴出典URLを再確認してHTTP404。現行掲載にはなく履歴8件の出典。後続同workflow成功なし。出典は削除・トップURL置換しない。",
+      "lastFailure": {
+        "at": "2026-10-21T10:01:12.432+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP Error 404: Not Found",
+        "evidenceUrl": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html"
+      },
+      "note": "10/1の古い公式発表を10/10に追加確認。通常上映の映画館全般には対象を広げない。残席は未確認。"
+    }
+  ],
+  "ci": {
+    "latestByWorkflow": {
+      "340583706": {
+        "id": 39516939426,
+        "name": "pages build and deployment",
+        "workflow_id": 340583706,
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939426",
+        "created_at": "2026-10-20T23:44:12Z",
+        "updated_at": "2026-10-20T23:44:59Z"
+      },
+      "342280137": {
+        "id": 39516939335,
+        "name": "Validate spot data",
+        "workflow_id": 342280137,
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939335",
+        "created_at": "2026-10-20T23:44:12Z",
+        "updated_at": "2026-10-20T23:44:25Z"
+      },
+      "342550527": {
+        "id": 39516939351,
+        "name": "Test site",
+        "workflow_id": 342550527,
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "875ae96c165dba2ea85a2f3af0dc65ddbe2e69e4",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39516939351",
+        "created_at": "2026-10-20T23:44:12Z",
+        "updated_at": "2026-10-20T23:48:45Z"
+      },
+      "342736379": {
+        "id": 39177400589,
+        "name": "Check external links",
+        "workflow_id": 342736379,
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "565f28cc7ea947dd2fa04cc7b5996df684aabb63",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39177400589",
+        "created_at": "2026-10-18T23:38:59Z",
+        "updated_at": "2026-10-18T23:41:19Z"
+      },
+      "342809520": {
+        "id": 39484513342,
+        "name": "Check public site health",
+        "workflow_id": 342809520,
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "d7e18672d9fe01734d4e80969da35e8dd91c1500",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39484513342",
+        "created_at": "2026-10-20T19:33:46Z",
+        "updated_at": "2026-10-20T19:34:02Z"
+      },
+      "347200571": {
+        "id": 39195706120,
+        "name": "npm_and_yarn in / for @playwright/test - Update #1635373972",
+        "workflow_id": 347200571,
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "6f2a9098b5509ee2599d50ef328003ca80ba614d",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39195706120",
+        "created_at": "2026-10-19T03:39:13Z",
+        "updated_at": "2026-10-19T03:39:59Z"
+      }
+    },
+    "scannedRuns": 100,
+    "historicalLinkFailureUnresolved": true
+  },
+  "historicalLinkRecheck": [
+    {
+      "url": "https://tokoname.aeonmall.jp/event/1174de63-719b-42ed-8d91-7b2785b637bf",
+      "checkedAt": "2026-10-21T10:01:08.002+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-photo-2026-10-18-aeon-tokoname"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:01.825+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/037/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:07.161+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-umeda-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:01.826+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/091/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:07.163+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-nagoya-sakae-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:01.826+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/084/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:07.165+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-ikebukuro-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:01.829+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/081/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:12.468+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-hibiya-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:07.161+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/076/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:12.424+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-shinjuku-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:07.163+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/056/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:12.423+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-tenjin-solaria-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:07.165+00:00"
+    },
+    {
+      "url": "https://www.tohotheater.jp/theater/089/info/event/chiikawa-penlightouen10161718.html",
+      "checkedAt": "2026-10-21T10:01:12.432+00:00",
+      "httpStatus": 404,
+      "error": "HTTP Error 404: Not Found",
+      "archivedIds": [
+        "chiikawa-penlight-screening-toho-susukino-20261016"
+      ],
+      "currentIds": [],
+      "attemptStartedAt": "2026-10-21T10:01:08.002+00:00"
+    }
+  ],
+  "metricsAfterPatches": {
+    "checkedAt": "2026-10-21T10:01:13.904Z",
+    "allRecordedMetrics": {
+      "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+      "preStartPublication": {
+        "eligible": 35,
+        "known": 29,
+        "before": 27,
+        "notBefore": 2,
+        "unpublishedAfterStart": 1,
+        "unknown": 6,
+        "rate": 0.9310344827586207
+      },
+      "announcedToDiscovered": {
+        "elapsedHours": {
+          "samples": 26,
+          "mean": 23.23727376068376,
+          "min": 0.08666666666666667,
+          "max": 168.4488888888889
+        },
+        "japanCalendarDays": {
+          "samples": 104,
+          "mean": 49.85576923076923,
+          "min": 0,
+          "max": 1214
+        },
+        "unknownPairs": 165,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 243
+      },
+      "discoveredToPublished": {
+        "elapsedHours": {
+          "samples": 102,
+          "mean": 4.640060610021786,
+          "min": 0.2632788888888889,
+          "max": 180.31135583333332
+        },
+        "japanCalendarDays": {
+          "samples": 189,
+          "mean": 0.2222222222222222,
+          "min": 0,
+          "max": 7
+        },
+        "unknownPairs": 58,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 145
+      },
+      "announcedToPublished": {
+        "elapsedHours": {
+          "samples": 28,
+          "mean": 1166.5103555158732,
+          "min": 0.9925,
+          "max": 29303.481111111112
+        },
+        "japanCalendarDays": {
+          "samples": 106,
+          "mean": 36.34905660377358,
+          "min": 0,
+          "max": 1273
+        },
+        "unknownPairs": 141,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 219
+      }
+    },
+    "newListingMetrics": {
+      "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+      "preStartPublication": {
+        "eligible": 35,
+        "known": 29,
+        "before": 27,
+        "notBefore": 2,
+        "unpublishedAfterStart": 1,
+        "unknown": 6,
+        "rate": 0.9310344827586207
+      },
+      "announcedToDiscovered": {
+        "elapsedHours": {
+          "samples": 0,
+          "mean": null,
+          "min": null,
+          "max": null
+        },
+        "japanCalendarDays": {
+          "samples": 20,
+          "mean": 5,
+          "min": 0,
+          "max": 25
+        },
+        "unknownPairs": 15,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 35
+      },
+      "discoveredToPublished": {
+        "elapsedHours": {
+          "samples": 19,
+          "mean": 3.2081744590643275,
+          "min": 0.6488888888888888,
+          "max": 17.201181944444443
+        },
+        "japanCalendarDays": {
+          "samples": 31,
+          "mean": 0.3548387096774194,
+          "min": 0,
+          "max": 1
+        },
+        "unknownPairs": 3,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 15
+      },
+      "announcedToPublished": {
+        "elapsedHours": {
+          "samples": 2,
+          "mean": 304.2463888888889,
+          "min": 9.783333333333333,
+          "max": 598.7094444444444
+        },
+        "japanCalendarDays": {
+          "samples": 20,
+          "mean": 5.45,
+          "min": 0,
+          "max": 25
+        },
+        "unknownPairs": 14,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 32
+      }
+    },
+    "newListingReservation": {
+      "before": 8,
+      "notBefore": 8,
+      "unknown": 1
+    },
+    "queue": {
+      "sources": {
+        "registered": 628,
+        "enabled": 605,
+        "withoutRecordedAttempt": 0,
+        "latestSuccess": 484,
+        "latestFailure": 144
+      },
+      "pending": [
+        {
+          "id": "hold-chiikawa-aquarium-2023",
+          "state": "on_hold",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "原告知に具体的な会場別終了日が見つかった場合のみ独立候補化。既確認の開始日や会場一覧だけで完了扱いしない。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "hold-chiikawa-aquarium-2-2023",
+          "state": "on_hold",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "施設・主催一次告知で臨時売場終期を確認できるまで保留。物販継続と売場会期を区別。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "hold-chiikawa-tokyo-miyage",
+          "state": "on_hold",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "子候補の新確定情報と本人判断の結論のみ反映し、系列全体の完全解消とはしない。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+          "state": "on_hold",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "同日個別相談で建物代表ピン採用の可否を確定する。未回答は承認扱いせず保留継続。",
+          "recheckDueAt": "2026-10-20",
+          "recheckOverdue": true,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "hold-popup-yonago-final-hours-20261012",
+          "state": "on_hold",
+          "priority": "high",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "公式の訂正または当時の主催/施設保存資料が得られた際に最終閉場時刻を確認。既に終了移動済みなので公開状態を戻さない。",
+          "recheckDueAt": "2026-10-20",
+          "recheckOverdue": true,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": true
+        },
+        {
+          "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+          "state": "verifying",
+          "priority": "normal",
+          "reflectDueAt": "2026-10-13T08:00:00.000+09:00",
+          "reflectOverdue": true,
+          "nextCheck": "同日個別相談で、現状のコラボ案内のみ維持するか、未確認項目を明示した施設代表ピンを許容するか方針を決める。確認前に新スポット追加しない。",
+          "recheckDueAt": "2026-10-20T19:00:00+09:00",
+          "recheckOverdue": true,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "history-chiikawa-tokyo-miyage-ginza-20250124",
+          "state": "verifying",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "公式延長原文で初回から10/28までを同一開催回と確定できるまで保留。二次記事だけで結合しない。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "history-chiikawa-tokyo-miyage-haneda-t1-20241226",
+          "state": "verifying",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "history-chiikawa-tokyo-miyage-haneda-t2-20241226",
+          "state": "verifying",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        },
+        {
+          "id": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+          "state": "verifying",
+          "priority": "normal",
+          "reflectDueAt": null,
+          "reflectOverdue": null,
+          "nextCheck": "開催開始日と明記された原告知・原図が得られるまで保留。店舗住所・位置の再探索は不要。",
+          "recheckDueAt": "2026-10-27",
+          "recheckOverdue": false,
+          "sameDayTarget": {
+            "targetDate": null,
+            "reasons": []
+          },
+          "needsIndividualConsultation": false
+        }
+      ]
+    },
+    "validation": {
+      "errors": [],
+      "warnings": [
+        "candidate hold-popup-yonago-final-hours-20261012: important hold needs individual consultation with the publication owner"
+      ]
+    },
+    "validationScope": "Six public datasets; relation validation only. Schema and recordPath existence must be checked after merging evidence file in publication work."
+  },
+  "notes": [
+    "publishedAt朝5件は親の朝公開一致実測08:46:04.754JSTを使用。今回の再確認・報告時刻は代用しない。",
+    "後続投稿の時刻を初回発表日時にしない。初発見日保持。3逆転は原根拠へ戻す/不明nullで修正。",
+    "8履歴URLは404のまま。歴史出典を消してCIだけ成功させない。",
+    "relation validation六公開データでエラー0。統合後schema/recordPath/全検査必須。"
+  ]
+}
