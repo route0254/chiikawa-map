@@ -15434,7 +15434,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15443,7 +15443,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-susukino-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15457,11 +15457,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-sendai-20261030",
@@ -15480,7 +15486,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15489,7 +15495,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-sendai-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15509,11 +15515,17 @@
           "observedAt": "2026-10-21T10:02:10.244+00:00",
           "summary": "宮城県仙台市青葉区中央3-7-5 仙台パルコ2 6F。劇場の代表位置",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-hibiya-20261030",
@@ -15532,7 +15544,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15541,7 +15553,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-hibiya-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15555,11 +15567,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-shinjuku-20261030",
@@ -15578,7 +15596,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15587,7 +15605,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-shinjuku-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15601,11 +15619,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-ikebukuro-20261030",
@@ -15624,7 +15648,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15633,7 +15657,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-ikebukuro-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15647,11 +15671,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-shibuya-20261030",
@@ -15670,7 +15700,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15679,7 +15709,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-shibuya-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15699,11 +15729,17 @@
           "observedAt": "2026-10-21T10:02:10.244+00:00",
           "summary": "東京都渋谷区道玄坂2-6-17。劇場の代表位置",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-tjoy-yokohama-20261030",
@@ -15722,7 +15758,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15731,7 +15767,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-tjoy-yokohama-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15751,11 +15787,17 @@
           "observedAt": "2026-10-21T10:02:10.244+00:00",
           "summary": "神奈川県横浜市西区南幸一丁目1番1号 JR横浜タワー8階。入居施設JR横浜タワーの代表位置（公式が掲載する地図）",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-nagoya-sakae-20261030",
@@ -15774,7 +15816,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15783,7 +15825,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-nagoya-sakae-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15797,11 +15839,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-umeda-20261030",
@@ -15820,7 +15868,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15829,7 +15877,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-umeda-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15843,11 +15891,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-namba-20261030",
@@ -15866,7 +15920,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15875,7 +15929,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-namba-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15895,11 +15949,17 @@
           "observedAt": "2026-10-21T10:02:10.244+00:00",
           "summary": "大阪府大阪市中央区難波3-8-9（本館）。本館の施設代表位置。上映スクリーンは未特定。券面・上映スケジュールを確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-hiroshima-wald11-20261030",
@@ -15918,7 +15978,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15927,7 +15987,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-hiroshima-wald11-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15947,11 +16007,17 @@
           "observedAt": "2026-10-21T10:02:10.244+00:00",
           "summary": "広島県安芸郡府中町大須2-1-1 イオンモール広島府中4F。劇場の代表位置",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-cheer-screening-toho-tenjin-solaria-20261030",
@@ -15970,7 +16036,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-23T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -15979,7 +16045,7 @@
       "listingIds": [
         "chiikawa-cheer-screening-toho-tenjin-solaria-20261030"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -15993,11 +16059,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-susukino-20261106",
@@ -16016,7 +16088,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16025,7 +16097,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-susukino-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16039,11 +16111,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-hibiya-20261106",
@@ -16062,7 +16140,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16071,7 +16149,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-hibiya-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16085,11 +16163,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-shinjuku-20261106",
@@ -16108,7 +16192,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16117,7 +16201,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-shinjuku-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16131,11 +16215,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-ikebukuro-20261106",
@@ -16154,7 +16244,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16163,7 +16253,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-ikebukuro-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16177,11 +16267,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
@@ -16200,7 +16296,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16209,7 +16305,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-nagoya-sakae-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16223,11 +16319,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-umeda-20261106",
@@ -16246,7 +16348,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16255,7 +16357,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-umeda-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16269,11 +16371,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
@@ -16292,7 +16400,7 @@
       "releaseAt": null,
       "reservationOpensAt": "2026-10-30T00:00:00+09:00",
       "reflectDueAt": "2026-10-21T23:59:59+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z",
       "existingMatch": {
         "status": "new",
         "ids": [],
@@ -16301,7 +16409,7 @@
       "listingIds": [
         "chiikawa-penlight-screening-toho-tenjin-solaria-20261106"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "evidence": [
         {
@@ -16315,11 +16423,17 @@
           "observedAt": "2026-10-21T09:59:28.428+00:00",
           "summary": "ニュース一覧で本企画2026.10.21を確認。",
           "recordPath": "research/evening-review-2026-10-21-new-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "decision": "実会場・単日上映の新規イベント。予約開始前掲載を優先。 公開完了は未確認で publishedAt=null を維持。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T09:00:00+09:00"
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null
     },
     {
       "id": "fujicolor-chiikawa-newyear-2027-scope-review",
@@ -16386,6 +16500,12 @@
           "observedAt": "2026-10-21T10:00:17.050+00:00",
           "summary": "終了日不明。公式Xの表示時刻のタイムゾーンを断定せず発表日は日精度。",
           "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16428,12 +16548,12 @@
         "chiikawaland-ikebukuro",
         "chiikawaland-koshigaya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存入場条件を保持し、常設ちいかわらんど16店のdescriptionへ購入制限だけを追記して検査・公開照合する。期間限定POP UPへは拡張しない。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z"
     },
     {
       "id": "update-magical-purchase-limit-20261023",
@@ -16456,6 +16576,12 @@
           "observedAt": "2026-10-21T10:02:20.364+00:00",
           "summary": "終了日不明。公式Xの表示時刻のタイムゾーンを断定せず発表日は日精度。",
           "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16472,12 +16598,12 @@
         "magical-umeda",
         "magical-nagoya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存入場条件を保持し、まじかるちいかわ常設3店のdescriptionへ購入制限だけを追記して検査・公開照合する。期間限定POP UPへは拡張しない。",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z"
     },
     {
       "id": "update-tokyo-bakery-entry-20261021",
@@ -16500,6 +16626,12 @@
           "observedAt": "2026-10-21T10:03:01.466+00:00",
           "summary": "当日の現在残枠/受付継続は未確認。14:50は公表された発行時刻で実受付確認時刻ではない。",
           "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16512,12 +16644,12 @@
       "listingIds": [
         "chiikawa-bakery-tokyo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "古い日付の当日整理券案内を更新し継続入場ルールを保持",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z"
     },
     {
       "id": "update-ebina-line-entry-20261021",
@@ -16540,6 +16672,12 @@
           "observedAt": "2026-10-21T10:04:30.297+00:00",
           "summary": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。",
           "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/66",
+          "observedAt": "2026-10-21T11:00:24.313Z",
+          "summary": "PR66 source b42323b4a5655ff3e1fbe5985d9f2dc223fffd22 / main 2b3ee1e6498de29345e3162463eee3926abc36af / Pages run 39588407751。保存済み公開65ファイル初回一致 2026-10-21T11:00:24.313Z に基づき同期。deploy job完了 2026-10-21T10:58:33Z と区別し、同期時刻で公開日を置き換えない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16552,11 +16690,63 @@
       "listingIds": [
         "popup-2026-10-23-ebina-marui"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "LINE入場条件を掲載し受付開始前に公開確認",
-      "nextCheck": "通常掲載内容を適用して検査中。対象commit・配信runと公開実体の一致を確認して証跡を保存し、その観測時刻に基づく公開状態・publishedAtを次回の通常掲載更新PRへ同期する。",
-      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み更新の再登録はしない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T11:00:24.313Z"
+    },
+    {
+      "id": "archive-waon-point-chiikawa-line-emoji-2026-20261022",
+      "title": "WAON POINT×ちいかわ LINE絵文字 無料配布終了",
+      "kind": "listing_update",
+      "targetKey": "waon-point-chiikawa-line-emoji-2026-archive-20261022",
+      "sourceIds": [
+        "corporate-aeon-chiikawa-news-954"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-22",
+      "eventStartsAt": "2026-09-24",
+      "eventEndsAt": "2026-10-21",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-22",
+      "evidence": [
+        {
+          "url": "https://www.aeonmarketing.co.jp/news/954/",
+          "observedAt": "2026-10-22",
+          "summary": "公式本文をクラウドで確認。無料配布は2026年9月24日～10月21日、取得後の利用期間はダウンロード日から180日。延長告知は確認した公式ニュース一覧・検索の範囲で見つからず、網羅的不存在とはしない。PC直接HTTP取得は404で成功扱いしない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/actions/runs/39662205075",
+          "observedAt": "2026-10-22",
+          "summary": "JST10月22日の定期検査。spot検査成功後、collaborations-current.json[1] の全期間が10月21日までに終了しているため失敗。元commit 2b3ee1e6498de29345e3162463eee3926abc36af。検査条件を緩めず掲載データを訂正する。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://store.line.me/officialaccount/event/emoji/6a223b96e6e4db63bfa0ae27/ja",
+          "observedAt": "2026-10-22",
+          "summary": "LINE公式の該当絵文字ページも配布終期2026/10/21、有効期間180日と表示。確認した本文内に延長記載は見当たらない。配布終了と取得後利用を混同しない。",
+          "recordPath": "research/waon-archive-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "waon-point-chiikawa-line-emoji-2026"
+        ],
+        "note": "企画ID・公式URL・配布期間で現行JSONの既存レコードと完全一致。新しい配布・企画ではない。"
+      },
+      "listingIds": [
+        "waon-point-chiikawa-line-emoji-2026"
+      ],
+      "state": "verifying",
+      "priority": "high",
+      "decision": "公式確認後、終了日翌日に同じIDのまま過去へ移動する通常掲載修正。取得済み絵文字の利用終了とは区別。別の終了告知日時・初回発見の時刻は不明のため捏造しない。",
+      "nextCheck": "対象commitのCIと公開JSON一致を確認し、初回一致時刻を別保存して次の通常掲載PRで公開状態を同期する。",
+      "recheckDueAt": "2026-10-22",
       "publishedAt": null
     }
   ]

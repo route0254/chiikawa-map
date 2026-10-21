@@ -1,0 +1,1160 @@
+{
+  "formatVersion": 1,
+  "checkedAt": "2026-10-22",
+  "scope": "WAON distribution archival and PR66 publication ledger synchronization only.",
+  "baseCommit": "2b3ee1e6498de29345e3162463eee3926abc36af",
+  "officialReview": {
+    "url": "https://www.aeonmarketing.co.jp/news/954/",
+    "announcementDate": "2026-09-24",
+    "reviewMethod": "Current task cloud handoff and web reader of official article and news index. Exact cloud acquisition timestamp not supplied; day precision retained.",
+    "reviewDate": "2026-10-22",
+    "distribution": {
+      "startDate": "2026-09-24",
+      "endDate": "2026-10-21"
+    },
+    "usageAfterDownloadDays": 180,
+    "extensionReview": {
+      "result": "No extension found within inspected official news index/search results.",
+      "exhaustive": false
+    },
+    "livePcHttpRetrievalConfirmed": false,
+    "lineOfficialConfirmation": {
+      "url": "https://store.line.me/officialaccount/event/emoji/6a223b96e6e4db63bfa0ae27/ja",
+      "reviewDate": "2026-10-22",
+      "method": "Cloud handoff and current web reader; exact cloud acquisition time not supplied.",
+      "distributionEndDate": "2026-10-21",
+      "validityDays": 180,
+      "extensionMentionFound": false,
+      "scope": "Only the identified official emoji detail page; no inference of exhaustive announcement coverage."
+    }
+  },
+  "pcFetchObservations": [
+    {
+      "name": "official-announcement",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "startedAt": "2026-10-21T20:04:18.022Z",
+      "observedAt": "2026-10-21T20:04:18.155Z",
+      "status": 404,
+      "ok": false,
+      "sha256": "afcae46893aa0f0094b06a05f06856210e517d80eb814d1ae795c3db8a131b65",
+      "bytes": 1865
+    },
+    {
+      "name": "official-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "startedAt": "2026-10-21T20:04:18.054Z",
+      "observedAt": "2026-10-21T20:04:18.157Z",
+      "status": 404,
+      "ok": false,
+      "sha256": "afcae46893aa0f0094b06a05f06856210e517d80eb814d1ae795c3db8a131b65",
+      "bytes": 1865
+    },
+    {
+      "name": "public-current",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "startedAt": "2026-10-21T20:04:18.055Z",
+      "observedAt": "2026-10-21T20:04:18.310Z",
+      "status": 200,
+      "ok": true,
+      "sha256": "6b4379df50cff3e916c1682f08bfa4a3178e48bdb0227b3e22c403c5ddefd5c3",
+      "bytes": 33801
+    },
+    {
+      "name": "public-archive",
+      "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+      "startedAt": "2026-10-21T20:04:18.056Z",
+      "observedAt": "2026-10-21T20:04:18.305Z",
+      "status": 200,
+      "ok": true,
+      "sha256": "4e1cad0f7d6ec5c2cb2c3245d94d13e9d6b83158902d607fdb1ba8008475afcc",
+      "bytes": 43048
+    }
+  ],
+  "previousSourceObservation": {
+    "id": "corporate-aeon-chiikawa-news-954",
+    "name": "www.aeonmarketing.co.jp 個別公式確認 corporate-aeon-chiikawa-news-954",
+    "url": "https://www.aeonmarketing.co.jp/news/954/",
+    "kind": "venue",
+    "scope": [
+      "collaboration"
+    ],
+    "cadence": "morning_evening",
+    "enabled": true,
+    "lastAttemptAt": "2026-10-21T09:59:26.557+00:00",
+    "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+    "lastResult": "fetch_failed",
+    "resultSummary": "Fetch failed; do not infer no change.",
+    "lastFailure": {
+      "at": "2026-10-21T09:59:26.557+00:00",
+      "kind": "fetch_failed",
+      "httpStatus": 403,
+      "detail": "non-200 HTTP",
+      "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
+    },
+    "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
+  },
+  "sourceHandling": "Last successful timestamp is unchanged. Current direct-HTTP 404 and earlier 403 are retained as separate observations; historical URL is preserved.",
+  "failedValidation": {
+    "run": 39662205075,
+    "url": "https://github.com/route0254/chiikawa-map/actions/runs/39662205075",
+    "job": 119437879362,
+    "commit": "2b3ee1e6498de29345e3162463eee3926abc36af",
+    "event": "schedule",
+    "conclusion": "failure",
+    "failureAt": "2026-10-21T19:30:24.8909007Z",
+    "spotValidationSucceeded": true,
+    "collaborationError": "data/collaborations-current.json[1]: 全期間が2026-10-21までに終了しています。公式情報を確認し、過去データへの移動または期間更新を行ってください。"
+  },
+  "change": {
+    "id": "waon-point-chiikawa-line-emoji-2026",
+    "from": "data/collaborations-current.json",
+    "to": "data/collaborations-archive.json",
+    "changedFields": [
+      "status",
+      "summary",
+      "checkedAt"
+    ],
+    "before": {
+      "id": "waon-point-chiikawa-line-emoji-2026",
+      "title": "WAON POINT×ちいかわ LINE絵文字",
+      "partner": "イオンマーケティング",
+      "category": "campaign",
+      "status": "active",
+      "summary": "WAON POINTのLINE公式アカウントを友だち追加すると、ちいかわのオリジナルLINE絵文字を無料でダウンロードできます。",
+      "areaText": "オンライン",
+      "channels": [
+        "オンライン"
+      ],
+      "periods": [
+        {
+          "label": "無料配布期間",
+          "startDate": "2026-09-24",
+          "endDate": "2026-10-21",
+          "note": "ダウンロード後の利用期間は180日間です。"
+        }
+      ],
+      "tags": [
+        "LINE絵文字",
+        "無料配布"
+      ],
+      "sourceUrl": "https://www.aeonmarketing.co.jp/news/954/",
+      "linkedSpotIds": [],
+      "checkedAt": "2026-09-25"
+    },
+    "after": {
+      "id": "waon-point-chiikawa-line-emoji-2026",
+      "title": "WAON POINT×ちいかわ LINE絵文字",
+      "partner": "イオンマーケティング",
+      "category": "campaign",
+      "status": "ended",
+      "summary": "無料配布は2026年10月21日で終了しました。配布期間内にダウンロードした絵文字は、ダウンロード日から180日間利用できます。",
+      "areaText": "オンライン",
+      "channels": [
+        "オンライン"
+      ],
+      "periods": [
+        {
+          "label": "無料配布期間",
+          "startDate": "2026-09-24",
+          "endDate": "2026-10-21",
+          "note": "ダウンロード後の利用期間は180日間です。"
+        }
+      ],
+      "tags": [
+        "LINE絵文字",
+        "無料配布"
+      ],
+      "sourceUrl": "https://www.aeonmarketing.co.jp/news/954/",
+      "linkedSpotIds": [],
+      "checkedAt": "2026-10-22"
+    },
+    "distributionDatesPreserved": true,
+    "usagePeriodPreserved": true,
+    "idPreserved": true
+  },
+  "operations": {
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35",
+    "provenance": "Latest previously supplied task-message copy; verified exact receipt hash. Library searches returned no indexed copy; a newer-version locator was requested without blocking authorized work."
+  },
+  "pr66PublicationSync": {
+    "pr": 66,
+    "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+    "main": "2b3ee1e6498de29345e3162463eee3926abc36af",
+    "pagesRun": 39588407751,
+    "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+    "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+    "publishedAt": "2026-10-21T11:00:24.313Z",
+    "candidateCount": 23,
+    "listingRecordCount": 40,
+    "corrections": [
+      {
+        "id": "chiikawa-cheer-screening-toho-susukino-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-susukino-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-sendai-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-sendai-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-hibiya-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-hibiya-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-shinjuku-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-shinjuku-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-ikebukuro-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-ikebukuro-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-shibuya-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-shibuya-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-tjoy-yokohama-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-tjoy-yokohama-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-nagoya-sakae-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-nagoya-sakae-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-umeda-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-umeda-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-namba-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-namba-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-hiroshima-wald11-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-hiroshima-wald11-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-cheer-screening-toho-tenjin-solaria-20261030",
+        "listingIds": [
+          "chiikawa-cheer-screening-toho-tenjin-solaria-20261030"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-susukino-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-susukino-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-hibiya-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-hibiya-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-shinjuku-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-shinjuku-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-ikebukuro-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-ikebukuro-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-nagoya-sakae-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-umeda-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-umeda-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+        "listingIds": [
+          "chiikawa-penlight-screening-toho-tenjin-solaria-20261106"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "update-land-purchase-limit-20261023",
+        "listingIds": [
+          "chiikawaland-osaka-umeda",
+          "chiikawaland-harajuku",
+          "chiikawaland-fukuoka",
+          "chiikawaland-kyoto",
+          "chiikawaland-tokyo-station",
+          "chiikawaland-solamachi",
+          "chiikawaland-nagoya",
+          "chiikawaland-sendai",
+          "chiikawaland-sapporo",
+          "chiikawaland-yokohama",
+          "chiikawaland-hiroshima",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-shinjuku",
+          "chiikawaland-kanazawa",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "update-magical-purchase-limit-20261023",
+        "listingIds": [
+          "magical-shinjuku",
+          "magical-umeda",
+          "magical-nagoya"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "update-tokyo-bakery-entry-20261021",
+        "listingIds": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      },
+      {
+        "id": "update-ebina-line-entry-20261021",
+        "listingIds": [
+          "popup-2026-10-23-ebina-marui"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-21T11:00:24.313Z",
+        "firstPublicMatchAt": "2026-10-21T11:00:24.313Z",
+        "deployJobCompletedAt": "2026-10-21T10:58:33Z",
+        "pr": 66,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/66",
+        "sourceHead": "b42323b4a5655ff3e1fbe5985d9f2dc223fffd22",
+        "mergeSha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "pagesRun": 39588407751
+      }
+    ],
+    "resourceChecks": [
+      {
+        "path": "data/added-dates.json",
+        "url": "https://chiikatsu-map.com/data/added-dates.json",
+        "status": 200,
+        "sha256": "7edba795f6efb53a993ec29c09210e2e4d98482ddf02b5e42578028c6c2f99af",
+        "actualSha256": "7edba795f6efb53a993ec29c09210e2e4d98482ddf02b5e42578028c6c2f99af",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:21.760Z"
+      },
+      {
+        "path": "data/collaborations-archive.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+        "status": 200,
+        "sha256": "4e1cad0f7d6ec5c2cb2c3245d94d13e9d6b83158902d607fdb1ba8008475afcc",
+        "actualSha256": "4e1cad0f7d6ec5c2cb2c3245d94d13e9d6b83158902d607fdb1ba8008475afcc",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:21.676Z"
+      },
+      {
+        "path": "data/collaborations-current.json",
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+        "status": 200,
+        "sha256": "6b4379df50cff3e916c1682f08bfa4a3178e48bdb0227b3e22c403c5ddefd5c3",
+        "actualSha256": "6b4379df50cff3e916c1682f08bfa4a3178e48bdb0227b3e22c403c5ddefd5c3",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:21.669Z"
+      },
+      {
+        "path": "data/community-spots.json",
+        "url": "https://chiikatsu-map.com/data/community-spots.json",
+        "status": 200,
+        "sha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "actualSha256": "775330bfa84053490221273e1f6f48024ef0c13618a3d82cc03916328de131df",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:21.718Z"
+      },
+      {
+        "path": "data/nagano-history.json",
+        "url": "https://chiikatsu-map.com/data/nagano-history.json",
+        "status": 200,
+        "sha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+        "actualSha256": "647651b3be494177cf942fa325617140bb6a51adc45cc5e8d07c50320cd52899",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:21.977Z"
+      },
+      {
+        "path": "data/nagano-spots.json",
+        "url": "https://chiikatsu-map.com/data/nagano-spots.json",
+        "status": 200,
+        "sha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "actualSha256": "6c05a170ea6b41e4e8fa919f672f4877f02db854f342c1ed1ce08f763ea1f614",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:21.822Z"
+      },
+      {
+        "path": "data/nagano-unlocated-mentions.json",
+        "url": "https://chiikatsu-map.com/data/nagano-unlocated-mentions.json",
+        "status": 200,
+        "sha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+        "actualSha256": "763af4ce696766a5bae916869f21559bad08a77df9ce1f1097619df37e5ab9aa",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.165Z"
+      },
+      {
+        "path": "data/official-events-archive.json",
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+        "status": 200,
+        "sha256": "638bbb753ea3d4260cb4d2f2af32534772f7960620587c1762cf89b6096538f3",
+        "actualSha256": "638bbb753ea3d4260cb4d2f2af32534772f7960620587c1762cf89b6096538f3",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.201Z"
+      },
+      {
+        "path": "data/official-spots.json",
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "status": 200,
+        "sha256": "509e7dc5e406e9b8fccf9581316272238b299d7ffdc6a7f26aedc484351f9aeb",
+        "actualSha256": "509e7dc5e406e9b8fccf9581316272238b299d7ffdc6a7f26aedc484351f9aeb",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.184Z"
+      },
+      {
+        "path": "data/site-meta.json",
+        "url": "https://chiikatsu-map.com/data/site-meta.json",
+        "status": 200,
+        "sha256": "e2893cc1a89140d7b04f95be174270b907d106355f6466b8e2abbf92879e39ce",
+        "actualSha256": "e2893cc1a89140d7b04f95be174270b907d106355f6466b8e2abbf92879e39ce",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.171Z"
+      },
+      {
+        "path": "spot/chiikawa-bakery-tokyo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-tokyo/",
+        "status": 200,
+        "sha256": "de06069ab1080c9665d2251660596bcaa4b9990e012e37a23ae006572aabf0df",
+        "actualSha256": "de06069ab1080c9665d2251660596bcaa4b9990e012e37a23ae006572aabf0df",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.180Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-hiroshima-wald11-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-hiroshima-wald11-20261030/",
+        "status": 200,
+        "sha256": "d64365791d1f3392926245ddfc9faf751d5bb87c3a7afacc9fdacf310997cf24",
+        "actualSha256": "d64365791d1f3392926245ddfc9faf751d5bb87c3a7afacc9fdacf310997cf24",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.181Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-tjoy-yokohama-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-tjoy-yokohama-20261030/",
+        "status": 200,
+        "sha256": "700a27065626b7bac4615523eb044a3b1d175a5e2b47584d4f93c8c1d21a4f72",
+        "actualSha256": "700a27065626b7bac4615523eb044a3b1d175a5e2b47584d4f93c8c1d21a4f72",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.390Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-hibiya-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-hibiya-20261030/",
+        "status": 200,
+        "sha256": "b4db69c1b3db3f4ebee54390a4f335216acef2dcd47cc3c7e822e274229d5271",
+        "actualSha256": "b4db69c1b3db3f4ebee54390a4f335216acef2dcd47cc3c7e822e274229d5271",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.375Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-ikebukuro-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-ikebukuro-20261030/",
+        "status": 200,
+        "sha256": "844bcbe5e0bd5dfdd55a1c718ab69310faa21efba0f80c23513baab68538636a",
+        "actualSha256": "844bcbe5e0bd5dfdd55a1c718ab69310faa21efba0f80c23513baab68538636a",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.499Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-nagoya-sakae-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-nagoya-sakae-20261030/",
+        "status": 200,
+        "sha256": "ef4e1a4dcb26f94c800ccaf18aa0f581980b2f30afc2738c3a9b3521998cc84d",
+        "actualSha256": "ef4e1a4dcb26f94c800ccaf18aa0f581980b2f30afc2738c3a9b3521998cc84d",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.396Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-namba-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-namba-20261030/",
+        "status": 200,
+        "sha256": "0c5eaf51e396b64eefd34926cde37874fa82862f7e09ac1da46138a7a4a4341f",
+        "actualSha256": "0c5eaf51e396b64eefd34926cde37874fa82862f7e09ac1da46138a7a4a4341f",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.399Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-sendai-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-sendai-20261030/",
+        "status": 200,
+        "sha256": "1a7943571bd4128d88028f29e9cf2f960e0210a5aad90de2a179c97ecaacd3a8",
+        "actualSha256": "1a7943571bd4128d88028f29e9cf2f960e0210a5aad90de2a179c97ecaacd3a8",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.386Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-shibuya-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-shibuya-20261030/",
+        "status": 200,
+        "sha256": "ef38f168e906a2541b36293ea2015b6bfdaccd892c258c9bbb0196f0c9bcbce8",
+        "actualSha256": "ef38f168e906a2541b36293ea2015b6bfdaccd892c258c9bbb0196f0c9bcbce8",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.722Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-shinjuku-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-shinjuku-20261030/",
+        "status": 200,
+        "sha256": "86daa1e8f0f187f5e4325333fc5ee1ad9e2a93a9d665ae5f2b965f5d5786714c",
+        "actualSha256": "86daa1e8f0f187f5e4325333fc5ee1ad9e2a93a9d665ae5f2b965f5d5786714c",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.722Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-susukino-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-susukino-20261030/",
+        "status": 200,
+        "sha256": "977c5a3e5d25b2daa6b3238ab221be4964685911fffb37c9a4f07f2a6960e586",
+        "actualSha256": "977c5a3e5d25b2daa6b3238ab221be4964685911fffb37c9a4f07f2a6960e586",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.684Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-tenjin-solaria-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-tenjin-solaria-20261030/",
+        "status": 200,
+        "sha256": "46a655d3773c1dc2629ca0275ab8f19d3b3ee5431d4a2dcd66b7031a2552c290",
+        "actualSha256": "46a655d3773c1dc2629ca0275ab8f19d3b3ee5431d4a2dcd66b7031a2552c290",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.676Z"
+      },
+      {
+        "path": "spot/chiikawa-cheer-screening-toho-umeda-20261030/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-cheer-screening-toho-umeda-20261030/",
+        "status": 200,
+        "sha256": "284a3b1349a4fd9ea22b38f65a0e959306b667a094a7061e9f40743d4c17d373",
+        "actualSha256": "284a3b1349a4fd9ea22b38f65a0e959306b667a094a7061e9f40743d4c17d373",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.724Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-hibiya-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-hibiya-20261106/",
+        "status": 200,
+        "sha256": "ef533070fb45aa37ca0d0d33af9263962e969facab33697ce7b77081b21c93f0",
+        "actualSha256": "ef533070fb45aa37ca0d0d33af9263962e969facab33697ce7b77081b21c93f0",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.723Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-ikebukuro-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-ikebukuro-20261106/",
+        "status": 200,
+        "sha256": "8d9bc0b3d9ba3d0b778a0518681535d9657eb0745325579f8b62e512bf220171",
+        "actualSha256": "8d9bc0b3d9ba3d0b778a0518681535d9657eb0745325579f8b62e512bf220171",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.901Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-nagoya-sakae-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-nagoya-sakae-20261106/",
+        "status": 200,
+        "sha256": "498bb080ce23aebd244945671a92cd989ebcbb372c68de90affab71a0f26165b",
+        "actualSha256": "498bb080ce23aebd244945671a92cd989ebcbb372c68de90affab71a0f26165b",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.068Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-shinjuku-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-shinjuku-20261106/",
+        "status": 200,
+        "sha256": "2553a4c7bcf1a03b533d840f0e53f59cc657166465d3674b5f413f053983587b",
+        "actualSha256": "2553a4c7bcf1a03b533d840f0e53f59cc657166465d3674b5f413f053983587b",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.918Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-susukino-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-susukino-20261106/",
+        "status": 200,
+        "sha256": "24efc9b4c6cad29c1f33d9b18459480e71b6e61958b6d198ce1fa5cf907cfc51",
+        "actualSha256": "24efc9b4c6cad29c1f33d9b18459480e71b6e61958b6d198ce1fa5cf907cfc51",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.072Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-tenjin-solaria-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-tenjin-solaria-20261106/",
+        "status": 200,
+        "sha256": "2db53479bce2892f56173c4b84ecafaac67e3c58eee5e572b4b90ad7280e331d",
+        "actualSha256": "2db53479bce2892f56173c4b84ecafaac67e3c58eee5e572b4b90ad7280e331d",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.899Z"
+      },
+      {
+        "path": "spot/chiikawa-penlight-screening-toho-umeda-20261106/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawa-penlight-screening-toho-umeda-20261106/",
+        "status": 200,
+        "sha256": "6fb96a5d03998c976d2d1a1c5cd763555e9dfae90bff33333274c127dc4d5432",
+        "actualSha256": "6fb96a5d03998c976d2d1a1c5cd763555e9dfae90bff33333274c127dc4d5432",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:22.907Z"
+      },
+      {
+        "path": "spot/chiikawaland-fukuoka/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-fukuoka/",
+        "status": 200,
+        "sha256": "f3cb92002bc6fe98a224cedb75484cc9527815cbbbb3fa3bcca2c0c2f4e28172",
+        "actualSha256": "f3cb92002bc6fe98a224cedb75484cc9527815cbbbb3fa3bcca2c0c2f4e28172",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.260Z"
+      },
+      {
+        "path": "spot/chiikawaland-harajuku/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-harajuku/",
+        "status": 200,
+        "sha256": "979941b70a084c075903657fca586244fe895c70e9ea6ab5c8b7a492746dcf20",
+        "actualSha256": "979941b70a084c075903657fca586244fe895c70e9ea6ab5c8b7a492746dcf20",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.249Z"
+      },
+      {
+        "path": "spot/chiikawaland-hiroshima/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-hiroshima/",
+        "status": 200,
+        "sha256": "2a22b3f7bd771a70cf86e189e58fcb3a487c132cb642fd4ae13c7d12a27c5e0e",
+        "actualSha256": "2a22b3f7bd771a70cf86e189e58fcb3a487c132cb642fd4ae13c7d12a27c5e0e",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.262Z"
+      },
+      {
+        "path": "spot/chiikawaland-ikebukuro/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-ikebukuro/",
+        "status": 200,
+        "sha256": "8c2bc2c527b78ad64abb549d6295f7d9bb3b513398f4ef6f37a809ef72cf1171",
+        "actualSha256": "8c2bc2c527b78ad64abb549d6295f7d9bb3b513398f4ef6f37a809ef72cf1171",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.252Z"
+      },
+      {
+        "path": "spot/chiikawaland-kanazawa/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-kanazawa/",
+        "status": 200,
+        "sha256": "f3a51e0374ce017a2319868f9dd6451d91200884019cabf33da295387c3871ce",
+        "actualSha256": "f3a51e0374ce017a2319868f9dd6451d91200884019cabf33da295387c3871ce",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.269Z"
+      },
+      {
+        "path": "spot/chiikawaland-koshigaya/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-koshigaya/",
+        "status": 200,
+        "sha256": "6d862d83df7f2543576e8bedcfe99f636d81ffe583bbe3d927164d1808e44f1c",
+        "actualSha256": "6d862d83df7f2543576e8bedcfe99f636d81ffe583bbe3d927164d1808e44f1c",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.248Z"
+      },
+      {
+        "path": "spot/chiikawaland-kyoto/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-kyoto/",
+        "status": 200,
+        "sha256": "e55d7baa9c7b008d7a8dacd736bc5ed64480f9861ba81a67135c000bfd3351cf",
+        "actualSha256": "e55d7baa9c7b008d7a8dacd736bc5ed64480f9861ba81a67135c000bfd3351cf",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.471Z"
+      },
+      {
+        "path": "spot/chiikawaland-nagoya/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-nagoya/",
+        "status": 200,
+        "sha256": "82d331d5ec38572c1c043a05bec7c22ff8cf8e03f5ba0b096fd0b65f991f6f4f",
+        "actualSha256": "82d331d5ec38572c1c043a05bec7c22ff8cf8e03f5ba0b096fd0b65f991f6f4f",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.460Z"
+      },
+      {
+        "path": "spot/chiikawaland-osaka-umeda/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-osaka-umeda/",
+        "status": 200,
+        "sha256": "cdf0019b0906b643d2d6bddedaa9d3680bc97870dab54409a7fb460e07ac6c9e",
+        "actualSha256": "cdf0019b0906b643d2d6bddedaa9d3680bc97870dab54409a7fb460e07ac6c9e",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.463Z"
+      },
+      {
+        "path": "spot/chiikawaland-sapporo/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-sapporo/",
+        "status": 200,
+        "sha256": "e70021033c174b50e714195bcb12742f8f11a52edb8e9df214625a4bbd423c27",
+        "actualSha256": "e70021033c174b50e714195bcb12742f8f11a52edb8e9df214625a4bbd423c27",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.460Z"
+      },
+      {
+        "path": "spot/chiikawaland-sendai/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-sendai/",
+        "status": 200,
+        "sha256": "5ba8f6282ac64493abbf46f492397d5ca11121f17e175b3b8b11d67aee29279f",
+        "actualSha256": "5ba8f6282ac64493abbf46f492397d5ca11121f17e175b3b8b11d67aee29279f",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.449Z"
+      },
+      {
+        "path": "spot/chiikawaland-shinjuku/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-shinjuku/",
+        "status": 200,
+        "sha256": "a43cef684df68a8701df87c44e2a1ec190806e6e7830bcc8db905e4cd1de3ab1",
+        "actualSha256": "a43cef684df68a8701df87c44e2a1ec190806e6e7830bcc8db905e4cd1de3ab1",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.453Z"
+      },
+      {
+        "path": "spot/chiikawaland-shinsaibashi/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-shinsaibashi/",
+        "status": 200,
+        "sha256": "f78933a9c6b9859461448dfa19fa80fbef480ab109f9ede0ede390ef18a61fd0",
+        "actualSha256": "f78933a9c6b9859461448dfa19fa80fbef480ab109f9ede0ede390ef18a61fd0",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.655Z"
+      },
+      {
+        "path": "spot/chiikawaland-solamachi/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-solamachi/",
+        "status": 200,
+        "sha256": "b5a675437af8e8fe893ae46fcfc65ca7f02c50bc3f045de0c3879d64bb8bcb8e",
+        "actualSha256": "b5a675437af8e8fe893ae46fcfc65ca7f02c50bc3f045de0c3879d64bb8bcb8e",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.652Z"
+      },
+      {
+        "path": "spot/chiikawaland-tokyo-station/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-tokyo-station/",
+        "status": 200,
+        "sha256": "5e0b041cdbf1a972eca6620f954cb85333bf015a9918a17fcfca868bee8cb82a",
+        "actualSha256": "5e0b041cdbf1a972eca6620f954cb85333bf015a9918a17fcfca868bee8cb82a",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.645Z"
+      },
+      {
+        "path": "spot/chiikawaland-yokohama/index.html",
+        "url": "https://chiikatsu-map.com/spot/chiikawaland-yokohama/",
+        "status": 200,
+        "sha256": "b36e20ad2ce1ff19563be4ce53dbdc39e9c650df635238f71849608dd0522ed3",
+        "actualSha256": "b36e20ad2ce1ff19563be4ce53dbdc39e9c650df635238f71849608dd0522ed3",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.653Z"
+      },
+      {
+        "path": "spot/magical-nagoya/index.html",
+        "url": "https://chiikatsu-map.com/spot/magical-nagoya/",
+        "status": 200,
+        "sha256": "98efd6a545b2deff351c1f11dd8c23068e3bf8ae2651e7e05e59e0d6858350ea",
+        "actualSha256": "98efd6a545b2deff351c1f11dd8c23068e3bf8ae2651e7e05e59e0d6858350ea",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.666Z"
+      },
+      {
+        "path": "spot/magical-shinjuku/index.html",
+        "url": "https://chiikatsu-map.com/spot/magical-shinjuku/",
+        "status": 200,
+        "sha256": "97b085b9e80abd5bc5e328a3fc4f7d949db87d7df87ff9962f04b9b723658175",
+        "actualSha256": "97b085b9e80abd5bc5e328a3fc4f7d949db87d7df87ff9962f04b9b723658175",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.648Z"
+      },
+      {
+        "path": "spot/magical-umeda/index.html",
+        "url": "https://chiikatsu-map.com/spot/magical-umeda/",
+        "status": 200,
+        "sha256": "7f1c917650a2c571b2a223e318a9e646f06a4745374ef7fa510d7e9fe19f109c",
+        "actualSha256": "7f1c917650a2c571b2a223e318a9e646f06a4745374ef7fa510d7e9fe19f109c",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.846Z"
+      },
+      {
+        "path": "spot/popup-2026-10-23-ebina-marui/index.html",
+        "url": "https://chiikatsu-map.com/spot/popup-2026-10-23-ebina-marui/",
+        "status": 200,
+        "sha256": "5ba0161291263c5a24ccf9c745564cbdd66aaee8fa4c806e213fa2f221061cd1",
+        "actualSha256": "5ba0161291263c5a24ccf9c745564cbdd66aaee8fa4c806e213fa2f221061cd1",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.845Z"
+      },
+      {
+        "path": "research/evening-existing-2026-10-21-evidence.json",
+        "url": "https://chiikatsu-map.com/research/evening-existing-2026-10-21-evidence.json",
+        "status": 200,
+        "sha256": "41fd42b3cc5eb28cd82ae25d6172ac509c4cb5ab0741ee550bf354dcea2b185a",
+        "actualSha256": "41fd42b3cc5eb28cd82ae25d6172ac509c4cb5ab0741ee550bf354dcea2b185a",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.857Z"
+      },
+      {
+        "path": "research/evening-review-2026-10-21-evidence.json",
+        "url": "https://chiikatsu-map.com/research/evening-review-2026-10-21-evidence.json",
+        "status": 200,
+        "sha256": "beaa463fcc0843717776fdf3ca2eb8f0df55233977bab66c079f8783db65748c",
+        "actualSha256": "beaa463fcc0843717776fdf3ca2eb8f0df55233977bab66c079f8783db65748c",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.854Z"
+      },
+      {
+        "path": "research/evening-review-2026-10-21-new-evidence.json",
+        "url": "https://chiikatsu-map.com/research/evening-review-2026-10-21-new-evidence.json",
+        "status": 200,
+        "sha256": "aa67894e745be56a0599d321fba658cc9edd600063ac27bd9a612ee5cedfdefd",
+        "actualSha256": "aa67894e745be56a0599d321fba658cc9edd600063ac27bd9a612ee5cedfdefd",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.874Z"
+      },
+      {
+        "path": "research/evening-review-2026-10-21-reconciliation.json",
+        "url": "https://chiikatsu-map.com/research/evening-review-2026-10-21-reconciliation.json",
+        "status": 200,
+        "sha256": "851e51ae3dab889e6ea95d8520ba0c8b40b53d240eca0372f1f66bff3a30441d",
+        "actualSha256": "851e51ae3dab889e6ea95d8520ba0c8b40b53d240eca0372f1f66bff3a30441d",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:23.879Z"
+      },
+      {
+        "path": "research/official-source-ledger.json",
+        "url": "https://chiikatsu-map.com/research/official-source-ledger.json",
+        "status": 200,
+        "sha256": "fda68a99360f368b167d63f8effa52057f40c555b1b4cd04e186c1e4d15cac47",
+        "actualSha256": "fda68a99360f368b167d63f8effa52057f40c555b1b4cd04e186c1e4d15cac47",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.111Z"
+      },
+      {
+        "path": "research/publication-candidate-ledger.json",
+        "url": "https://chiikatsu-map.com/research/publication-candidate-ledger.json",
+        "status": 200,
+        "sha256": "69bd0c03692d8214b54b7d2f6762111cefa031a12e24b55cb817dc4426c9a768",
+        "actualSha256": "69bd0c03692d8214b54b7d2f6762111cefa031a12e24b55cb817dc4426c9a768",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.097Z"
+      },
+      {
+        "path": "sitemap.xml",
+        "url": "https://chiikatsu-map.com/sitemap.xml",
+        "status": 200,
+        "sha256": "c077f0b17520828175c473985cea2a98b664396d86f7eab0cd0307320629503f",
+        "actualSha256": "c077f0b17520828175c473985cea2a98b664396d86f7eab0cd0307320629503f",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.081Z"
+      },
+      {
+        "path": "index.html",
+        "url": "https://chiikatsu-map.com/",
+        "status": 200,
+        "sha256": "74e41d0883f4f4e450a96943209fd423a8063e2da3490479eec31455f81d5a1f",
+        "actualSha256": "74e41d0883f4f4e450a96943209fd423a8063e2da3490479eec31455f81d5a1f",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.069Z"
+      },
+      {
+        "path": "official.html",
+        "url": "https://chiikatsu-map.com/official.html",
+        "status": 200,
+        "sha256": "50a0be88fc631d1c69cd110971440bba1412f67e74b472d858f2509e48bef0a9",
+        "actualSha256": "50a0be88fc631d1c69cd110971440bba1412f67e74b472d858f2509e48bef0a9",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.079Z"
+      },
+      {
+        "path": "collaborations.html",
+        "url": "https://chiikatsu-map.com/collaborations.html",
+        "status": 200,
+        "sha256": "e2c8a88fdfc6d8b6bb88051ce80d274592410628889f5f8e349efa64043d23ed",
+        "actualSha256": "e2c8a88fdfc6d8b6bb88051ce80d274592410628889f5f8e349efa64043d23ed",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.072Z"
+      },
+      {
+        "path": "app.js",
+        "url": "https://chiikatsu-map.com/app.js",
+        "status": 200,
+        "sha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+        "actualSha256": "448b51d2631ba2c9372ff1bd274144c4d39f244217adf5e6b92428cd447137ae",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.313Z"
+      },
+      {
+        "path": "recent-utils.js",
+        "url": "https://chiikatsu-map.com/recent-utils.js",
+        "status": 200,
+        "sha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+        "actualSha256": "1d66de054bae477a39825d2c9a8d0427b9eb4318f8614e331e1e9890a8d958b6",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.309Z"
+      },
+      {
+        "path": "collaborations.js",
+        "url": "https://chiikatsu-map.com/collaborations.js",
+        "status": 200,
+        "sha256": "df7a9a389794b9feb608026c438b64b3e80be1e9cc68366181cdfd1e1d003138",
+        "actualSha256": "df7a9a389794b9feb608026c438b64b3e80be1e9cc68366181cdfd1e1d003138",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.313Z"
+      },
+      {
+        "path": "spot-page.js",
+        "url": "https://chiikatsu-map.com/spot-page.js",
+        "status": 200,
+        "sha256": "7ef07104745596c222577c083a12d7f89235be480039cc9603fdb96d480981cf",
+        "actualSha256": "7ef07104745596c222577c083a12d7f89235be480039cc9603fdb96d480981cf",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.295Z"
+      },
+      {
+        "path": "service-worker.js",
+        "url": "https://chiikatsu-map.com/service-worker.js",
+        "status": 200,
+        "sha256": "a3604d9c5b9bf13ba996c2f64b0f85f128e0d90e1b4939bbd9629bd10da5f367",
+        "actualSha256": "a3604d9c5b9bf13ba996c2f64b0f85f128e0d90e1b4939bbd9629bd10da5f367",
+        "match": true,
+        "completedAt": "2026-10-21T11:00:24.299Z"
+      }
+    ]
+  },
+  "currentPublication": {
+    "candidateId": "archive-waon-point-chiikawa-line-emoji-2026-20261022",
+    "state": "verifying",
+    "publishedAt": null,
+    "note": "Record the actual first public match after deployment; synchronize in the next normal listing PR."
+  },
+  "testFixtureMaintenance": {
+    "file": "tests/unit/recent-additions.test.mjs",
+    "issue": "The historical 2026-10-03 NEW assertion originally loaded only current records, losing a record after its normal archival move.",
+    "change": "Read current and archive and restore the still-running-on-test-date ended entries as historical fixture clones.",
+    "expectedFourIdsUnchanged": [
+      "waon-point-chiikawa-line-emoji-2026",
+      "gu-chiikawa-winter-2026",
+      "oxiclean-chiikawa-2026",
+      "clasic-chiikawa-scrubs-2026"
+    ],
+    "applicationBehaviorOrValidatorChanged": false
+  }
+}

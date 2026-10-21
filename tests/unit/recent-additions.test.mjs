@@ -54,9 +54,14 @@ test("collaboration additions preserve first publication across updates and arch
 });
 
 test("collaboration NEW uses verified introduction dates instead of recent checks", () => {
-  const rows = JSON.parse(readFileSync(new URL("../../data/collaborations-current.json", import.meta.url)));
+  const testDate = "2026-10-03";
+  // Recreate dated entries before later archival moves for this historical fixture.
+  const rows = ["collaborations-current.json", "collaborations-archive.json"].flatMap(name =>
+    JSON.parse(readFileSync(new URL(`../../data/${name}`, import.meta.url)))
+  ).map(row => row.status === "ended" && row.periods.some(period => period.endDate && period.endDate >= testDate)
+    ? { ...row, status: "active" } : row);
   const registry = JSON.parse(readFileSync(new URL("../../data/added-dates.json", import.meta.url)));
-  assert.deepEqual(rows.filter(row => recent.isRecentCollaboration(row, registry.collaborationFirstAdded, "2026-10-03")).map(row => row.id).sort(),
+  assert.deepEqual(rows.filter(row => recent.isRecentCollaboration(row, registry.collaborationFirstAdded, testDate)).map(row => row.id).sort(),
     ["waon-point-chiikawa-line-emoji-2026", "gu-chiikawa-winter-2026", "oxiclean-chiikawa-2026", "clasic-chiikawa-scrubs-2026"].sort());
   assert.equal(registry.collaborationFirstAdded["ana-chiikawa-jet-2026"], null);
 });
