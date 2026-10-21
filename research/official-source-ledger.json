@@ -2149,18 +2149,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-21T09:59:26.557+00:00",
+      "lastAttemptAt": "2026-10-21T20:04:18.155Z",
       "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
       "lastResult": "fetch_failed",
-      "resultSummary": "Fetch failed; do not infer no change.",
+      "resultSummary": "PC側の直接HTTP取得は404で本文未取得。クラウドで確認した公式本文の配布終期2026-10-21と取得後180日利用を区別して過去移動。直接取得を成功扱いせず、過去の成功時刻と取得失敗は証拠記録に保持。",
       "lastFailure": {
-        "at": "2026-10-21T09:59:26.557+00:00",
+        "at": "2026-10-21T20:04:18.155Z",
         "kind": "fetch_failed",
-        "httpStatus": 403,
-        "detail": "non-200 HTTP",
+        "httpStatus": 404,
+        "detail": "Direct PC HTTP retrieval returned 404; no claim of source deletion or comprehensive no-change. Previous 403 and prior successful timestamp retained in research/waon-archive-2026-10-22-evidence.json",
         "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
       },
-      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 2026-10-22: 配布終了の確認とPC取得結果の差は research/waon-archive-2026-10-22-evidence.json を参照。"
     },
     {
       "id": "corporate-aeon-chiikawa-news-index",
