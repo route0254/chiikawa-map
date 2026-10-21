@@ -16730,6 +16730,12 @@
           "observedAt": "2026-10-22",
           "summary": "LINE公式の該当絵文字ページも配布終期2026/10/21、有効期間180日と表示。確認した本文内に延長記載は見当たらない。配布終了と取得後利用を混同しない。",
           "recordPath": "research/waon-archive-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/67",
+          "observedAt": "2026-10-21T20:24:31.950Z",
+          "summary": "PR67公開22ファイルの初回完全一致。対象main 44f0be86af5c6a05e4653356ce967bba9f7faeb1、Pages 39669798122。配信完了 2026-10-21T20:23:55Z と初回一致 2026-10-21T20:24:31.950Z を区別。",
+          "recordPath": "research/morning-existing-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16742,12 +16748,140 @@
       "listingIds": [
         "waon-point-chiikawa-line-emoji-2026"
       ],
-      "state": "verifying",
+      "state": "published",
       "priority": "high",
       "decision": "公式確認後、終了日翌日に同じIDのまま過去へ移動する通常掲載修正。取得済み絵文字の利用終了とは区別。別の終了告知日時・初回発見の時刻は不明のため捏造しない。",
-      "nextCheck": "対象commitのCIと公開JSON一致を確認し、初回一致時刻を別保存して次の通常掲載PRで公開状態を同期する。",
-      "recheckDueAt": "2026-10-22",
+      "nextCheck": "通常巡回で公式条件変更を確認。公開済み終了移管は再実施しない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T20:24:31.950Z"
+    },
+    {
+      "id": "update-ebina-queue-20261022",
+      "title": "ちいかわPOP UP STORE 海老名マルイ 入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "popup-2026-10-23-ebina-marui:entry:2026-10-22",
+      "sourceIds": [
+        "morning-existing22-ebina-queue"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-22",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-25",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+      "reflectDueAt": "2026-10-22T19:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_popup/status/2112870974144290905",
+          "observedAt": "2026-10-21T22:59:47.733+00:00",
+          "summary": "10月23～25日の10:30～11:00入場枠を予約した方は、10:20までに2F公園側店頭（コーチ横）へお並びください。10:20以降に到着した方は開店後、直接5Fイベントスペースの会場前へお越しください。",
+          "recordPath": "research/morning-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-23-ebina-marui"
+        ],
+        "note": "公開official-spots/archive/collaborations JSONと照合。同一ID更新、重複追加なし。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-ebina-marui"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式原文と対象店舗/日付確認済み。検査後に公開実体まで確認。発表時刻の表示TZ未確定につき日精度。 発見日はJST日精度。発見瞬間の正確な時刻は不明。個別原文取得時刻はevidence.observedAtに記録。",
+      "nextCheck": "公開実体照合と当日の追加条件を確認。",
+      "recheckDueAt": "2026-10-22T19:00:00+09:00",
       "publishedAt": null
+    },
+    {
+      "id": "update-laforet-entry-20261022",
+      "title": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿 入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:entry:2026-10-22",
+      "sourceIds": [
+        "morning-existing22-laforet-entry"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-22",
+      "eventStartsAt": "2026-10-22",
+      "eventEndsAt": "2026-10-22",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-22T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2112853907860775384",
+          "observedAt": "2026-10-21T22:59:47.733+00:00",
+          "summary": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
+          "recordPath": "research/morning-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "公開official-spots/archive/collaborations JSONと照合。同一ID更新、重複追加なし。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式原文と対象店舗/日付確認済み。検査後に公開実体まで確認。発表時刻の表示TZ未確定につき日精度。 発見日はJST日精度。発見瞬間の正確な時刻は不明。個別原文取得時刻はevidence.observedAtに記録。",
+      "nextCheck": "公開実体照合と当日の追加条件を確認。",
+      "recheckDueAt": "2026-10-22T10:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "title": "ちいかわもぐもぐ本舗 鎌倉店（開業予定の調査候補）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-mogumogu-kamakura:opening-2026",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-21T23:00:30.703+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "main44f0be86三JSONと候補台帳を鎌倉/小町2-10-18/kamakuraで照合し同店なし。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式採用サイト原本は現在公開されていません。開業時期・住所を原本から再取得できず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiifan.com/articles/404.html",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "二次情報に12月予定・鎌倉市小町2-10-18 二ノ鳥居ビル1F、公式求人への出典リンク。一次確定ではない。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.telacoya.co.jp/",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式企業サイト→中途採用がtelacoya-jobs.net、ニュースに鎌倉告知は見当たらず。",
+          "recordPath": null
+        }
+      ],
+      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。",
+      "nextCheck": "10/22夕方に公式ニュース・店舗案内・公式採用原本を再確認。開業/予約が確定したら開始前掲載。",
+      "recheckDueAt": "2026-10-22T19:00:00+09:00"
     }
   ]
 }

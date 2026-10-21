@@ -1,0 +1,4762 @@
+{
+  "schema": "chiikatsu-map-morning-existing-evidence-v1",
+  "appliedAt": "2026-10-21T23:12:56.669Z",
+  "baseCommit": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+  "intake": {
+    "verifiedAt": "2026-10-21T23:08:35.134Z",
+    "decodedBytes": 84009,
+    "sha256": "ca23c2bef9b4b4f380597ee489f1bbbe7632ad5b0ded056bb2d17763c969e0e1",
+    "base64Characters": 16252,
+    "parts": 2,
+    "hashVerified": true,
+    "files": [
+      {
+        "name": "map-morning-20261022-handoff.json",
+        "utf8Bytes": 22578,
+        "sha256": "5b6895db7458b2686814fea614648c3d5fb7283eb6cb35aaadf51f13698d4055"
+      },
+      {
+        "name": "map-morning-20261022-source-deltas-1.json",
+        "utf8Bytes": 34801,
+        "sha256": "396d3a8491e36947bc88d31fd63079a867d844bd16a1970ed5e18978e88b9ede"
+      },
+      {
+        "name": "map-morning-20261022-source-deltas-2.json",
+        "utf8Bytes": 21376,
+        "sha256": "6e223fbfb6fb9d6d64f8c303234d3ae9f6ff75d2147e5a06cdab597d1f14e328"
+      }
+    ]
+  },
+  "publicChanges": [
+    {
+      "existingId": "popup-2026-10-23-ebina-marui",
+      "file": "data/official-spots.json",
+      "set": {
+        "entryNote": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。 10月23～25日の10:30～11:00入場枠を予約した方は、10:20までに2F公園側店頭（コーチ横）へお並びください。10:20以降に到着した方は開店後、直接5Fイベントスペースの会場前へお越しください。",
+        "importantNotice": "2026年10月23～25日はLINEで取得する入場整理券が必要で、上記日程はお1人さま1回限りの入場です。12:30入場までの整理券は前日19:00から（初回は10月22日19:00）、13:00以降の整理券は各回1時間前から受付します。整理券は入場開始時刻から1時間有効です。混雑状況によって閉場前に入場を締め切る場合があります。 10月23～25日の10:30～11:00入場枠を予約した方は、10:20までに2F公園側店頭（コーチ横）へお並びください。10:20以降に到着した方は開店後、直接5Fイベントスペースの会場前へお越しください。",
+        "entryInfoUrl": "https://x.com/chiikawa_popup/status/2112870974144290905",
+        "entryInfoCheckedAt": "2026-10-22"
+      },
+      "reason": "公式10/21発表の翌日入場/集合条件を既存IDへ更新",
+      "evidenceUrls": [
+        "https://x.com/chiikawa_popup/status/2112870974144290905"
+      ],
+      "preserveFields": [
+        "id",
+        "reservationType",
+        "reservationUrl",
+        "startDate",
+        "endDate",
+        "description"
+      ]
+    },
+    {
+      "existingId": "chiikawa-bakery-shop-laforet",
+      "file": "data/official-spots.json",
+      "set": {
+        "entryNote": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "importantNotice": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2112853907860775384",
+        "entryInfoCheckedAt": "2026-10-22"
+      },
+      "reason": "公式10/21発表の翌日入場/集合条件を既存IDへ更新",
+      "evidenceUrls": [
+        "https://x.com/chiikawabakery/status/2112853907860775384"
+      ],
+      "preserveFields": [
+        "id",
+        "reservationType",
+        "reservationUrl",
+        "startDate",
+        "endDate",
+        "description"
+      ]
+    }
+  ],
+  "candidateUpserts": [
+    {
+      "id": "update-ebina-queue-20261022",
+      "title": "ちいかわPOP UP STORE 海老名マルイ 入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "popup-2026-10-23-ebina-marui:entry:2026-10-22",
+      "sourceIds": [
+        "morning-existing22-ebina-queue"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-22",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-25",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+      "reflectDueAt": "2026-10-22T19:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_popup/status/2112870974144290905",
+          "observedAt": "2026-10-21T22:59:47.733+00:00",
+          "summary": "10月23～25日の10:30～11:00入場枠を予約した方は、10:20までに2F公園側店頭（コーチ横）へお並びください。10:20以降に到着した方は開店後、直接5Fイベントスペースの会場前へお越しください。",
+          "recordPath": "research/morning-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-23-ebina-marui"
+        ],
+        "note": "公開official-spots/archive/collaborations JSONと照合。同一ID更新、重複追加なし。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-ebina-marui"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式原文と対象店舗/日付確認済み。検査後に公開実体まで確認。発表時刻の表示TZ未確定につき日精度。 発見日はJST日精度。発見瞬間の正確な時刻は不明。個別原文取得時刻はevidence.observedAtに記録。",
+      "nextCheck": "公開実体照合と当日の追加条件を確認。",
+      "recheckDueAt": "2026-10-22T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-laforet-entry-20261022",
+      "title": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿 入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:entry:2026-10-22",
+      "sourceIds": [
+        "morning-existing22-laforet-entry"
+      ],
+      "officialAnnouncedAt": "2026-10-21",
+      "discoveredAt": "2026-10-22",
+      "eventStartsAt": "2026-10-22",
+      "eventEndsAt": "2026-10-22",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-22T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2112853907860775384",
+          "observedAt": "2026-10-21T22:59:47.733+00:00",
+          "summary": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
+          "recordPath": "research/morning-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "公開official-spots/archive/collaborations JSONと照合。同一ID更新、重複追加なし。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式原文と対象店舗/日付確認済み。検査後に公開実体まで確認。発表時刻の表示TZ未確定につき日精度。 発見日はJST日精度。発見瞬間の正確な時刻は不明。個別原文取得時刻はevidence.observedAtに記録。",
+      "nextCheck": "公開実体照合と当日の追加条件を確認。",
+      "recheckDueAt": "2026-10-22T10:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "title": "ちいかわもぐもぐ本舗 鎌倉店（開業予定の調査候補）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-mogumogu-kamakura:opening-2026",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-21T23:00:30.703+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "main44f0be86三JSONと候補台帳を鎌倉/小町2-10-18/kamakuraで照合し同店なし。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式採用サイト原本は現在公開されていません。開業時期・住所を原本から再取得できず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiifan.com/articles/404.html",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "二次情報に12月予定・鎌倉市小町2-10-18 二ノ鳥居ビル1F、公式求人への出典リンク。一次確定ではない。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.telacoya.co.jp/",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式企業サイト→中途採用がtelacoya-jobs.net、ニュースに鎌倉告知は見当たらず。",
+          "recordPath": null
+        }
+      ],
+      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。",
+      "nextCheck": "10/22夕方に公式ニュース・店舗案内・公式採用原本を再確認。開業/予約が確定したら開始前掲載。",
+      "recheckDueAt": "2026-10-22T19:00:00+09:00",
+      "discoveryTimingNote": "候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。"
+    }
+  ],
+  "publicationSync": {
+    "id": "archive-waon-point-chiikawa-line-emoji-2026-20261022",
+    "state": "published",
+    "publishedAt": "2026-10-21T20:24:31.950Z",
+    "nextCheck": "通常巡回で公式条件変更を確認。公開済み終了移管は再実施しない。",
+    "recheckDueAt": null,
+    "publicationEvidence": "Parent verified first public JSON match receipt; reconfirmed current public JSON byte equality at 2026-10-21T22:57:56.592887+00:00. Reconfirmation time is not first publication time.",
+    "localReceiptVerified": true,
+    "sourceMain": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+    "sourceHead": "5e7b9d1d98730fdc12308d62941bf6419071a5c2",
+    "firstPublicMatchAt": "2026-10-21T20:24:31.950Z",
+    "deployJobCompletedAt": "2026-10-21T20:23:55Z"
+  },
+  "sourceAttemptHistory": [
+    {
+      "id": "chiikawa-official-index",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:47.142+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:47.142+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:54.208+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-official-index",
+        "lastAttemptAt": "2026-10-21T22:57:21.335+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:21.335+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "chiikawa-popup-list",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:48.301+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:48.301+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T09:59:09.000+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "初回urllib失敗。後の通常curlで同正規URL取得成功。",
+          "evidenceUrl": "https://chiikawa-info.jp/pus.html"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-popup-list",
+        "lastAttemptAt": "2026-10-21T22:58:14.535+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:21.578+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:14.535+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-cafe-list",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:47.197+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:47.197+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:54.171+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/cafe.html"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-cafe-list",
+        "lastAttemptAt": "2026-10-21T22:57:21.247+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:21.247+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "chiikawa-exhibition-list",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:47.193+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:47.193+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:54.190+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/tenrankai.html"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-exhibition-list",
+        "lastAttemptAt": "2026-10-21T22:57:21.353+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:21.353+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "nagano-popup-list",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:47.428+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:47.428+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "nagano-popup-list",
+        "lastAttemptAt": "2026-10-21T22:57:24.157+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "クラウドHTTP取得失敗。前回成功日時を維持。web代替観測は別記。",
+        "lastFailure": {
+          "at": "2026-10-21T22:57:24.157+00:00",
+          "kind": "http_error",
+          "httpStatus": 502,
+          "message": "HTTP Error 502: Bad Gateway",
+          "url": "https://nagano-info.jp/pus.html"
+        }
+      }
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:47.288+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:47.288+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "nagano-aquarium-list",
+        "lastAttemptAt": "2026-10-21T22:57:24.107+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "クラウドHTTP取得失敗。前回成功日時を維持。web代替観測は別記。",
+        "lastFailure": {
+          "at": "2026-10-21T22:57:24.107+00:00",
+          "kind": "http_error",
+          "httpStatus": 502,
+          "message": "HTTP Error 502: Bad Gateway",
+          "url": "https://nagano-info.jp/nagano_aq/index.html"
+        }
+      }
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:46.959+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:46.959+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "nagano-exhibition-list",
+        "lastAttemptAt": "2026-10-21T22:57:24.143+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "クラウドHTTP取得失敗。前回成功日時を維持。web代替観測は別記。",
+        "lastFailure": {
+          "at": "2026-10-21T22:57:24.143+00:00",
+          "kind": "http_error",
+          "httpStatus": 502,
+          "message": "HTTP Error 502: Bad Gateway",
+          "url": "https://nagano-info.jp/museum.html"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-park-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:39.498+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:39.498+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:42:34.895+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-park-news",
+        "lastAttemptAt": "2026-10-21T22:58:10.843+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:20.376+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.843+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "nagano-official-index",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:46.983+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:46.983+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "nagano-official-index",
+        "lastAttemptAt": "2026-10-21T22:57:24.130+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "クラウドHTTP取得失敗。前回成功日時を維持。web代替観測は別記。",
+        "lastFailure": {
+          "at": "2026-10-21T22:57:24.130+00:00",
+          "kind": "http_error",
+          "httpStatus": 502,
+          "message": "HTTP Error 502: Bad Gateway",
+          "url": "https://nagano-info.jp/"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-yaki-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:49.915+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:49.915+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "chiikawa-yaki-official",
+        "lastAttemptAt": "2026-10-21T22:58:10.871+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:10.871+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "chiikawa-bakery-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:47.355+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:47.355+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:42:46.931+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/news/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-bakery-news",
+        "lastAttemptAt": "2026-10-21T22:58:34.963+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:27.076+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:34.963+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-bakery-topics",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:47.370+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:47.370+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "chiikawa-bakery-topics",
+        "lastAttemptAt": "2026-10-21T22:58:35.925+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:27.009+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:35.925+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-71b2d641d1",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:52.580+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:52.580+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-71b2d641d1",
+        "lastAttemptAt": "2026-10-21T22:57:26.908+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-82d181891d",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:52.563+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:52.563+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-82d181891d",
+        "lastAttemptAt": "2026-10-21T22:57:26.872+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:26.872+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-978ffe9215",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:52.559+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:52.559+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-978ffe9215",
+        "lastAttemptAt": "2026-10-21T22:57:26.887+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-9fdf5778d7",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:52.861+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:52.861+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-9fdf5778d7",
+        "lastAttemptAt": "2026-10-21T22:57:26.892+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:26.892+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-5932274e7e",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:52.580+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:52.580+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-5932274e7e",
+        "lastAttemptAt": "2026-10-21T22:57:27.175+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:27.175+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-8759f68d56",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:52.881+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:52.881+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-8759f68d56",
+        "lastAttemptAt": "2026-10-21T22:57:31.556+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:31.556+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f14e0e6fed",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:56.822+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:56.822+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-f14e0e6fed",
+        "lastAttemptAt": "2026-10-21T22:57:31.595+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:31.595+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-fb3fce6c45",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:56.467+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:56.467+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-fb3fce6c45",
+        "lastAttemptAt": "2026-10-21T22:57:31.624+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:31.624+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-9ec22af2cf",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:56.463+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:56.463+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-9ec22af2cf",
+        "lastAttemptAt": "2026-10-21T22:57:31.909+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:31.909+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:06.046+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:06.046+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:56.476+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-b434b2c58a",
+        "lastAttemptAt": "2026-10-21T22:58:23.226+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:23.226+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:56.258+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:56.258+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:56.412+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-425af290b1",
+        "lastAttemptAt": "2026-10-21T22:58:17.798+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:17.798+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-18ba673ff0",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:56.471+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:57:56.471+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T10:01:22.759+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML本文・タイトルと表示画像リンクまで確認。会期は一覧と既存一致だが、この個別ページ画像内条件は今夕未読。新着なしとは断定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/ck_baby2/index.html"
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-18ba673ff0",
+        "lastAttemptAt": "2026-10-21T22:57:31.905+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:31.905+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-c1f1b175b2",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:56.477+00:00",
+        "lastSuccessfulAt": "2026-10-20T10:05:43.830+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:56.477+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-c1f1b175b2",
+        "lastAttemptAt": "2026-10-21T22:57:31.594+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:03.463+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:03.463+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:56.775+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-d5be927094",
+        "lastAttemptAt": "2026-10-21T22:58:18.661+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:18.661+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:59.138+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:59.138+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.559+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-ee275504ea",
+        "lastAttemptAt": "2026-10-21T22:58:18.375+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:18.375+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:59.186+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:59.186+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.558+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+        "lastAttemptAt": "2026-10-21T22:58:18.283+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:18.283+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:59.187+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:59.187+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.566+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_mito/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+        "lastAttemptAt": "2026-10-21T22:58:18.353+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:18.353+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-2db8c290c8",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:59.146+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:59.146+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.545+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tuda/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-2db8c290c8",
+        "lastAttemptAt": "2026-10-21T22:58:18.360+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:18.360+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-64a1504949",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:59.557+00:00",
+        "lastSuccessfulAt": "2026-10-19T10:00:30.408+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.557+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aomr/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-64a1504949",
+        "lastAttemptAt": "2026-10-21T22:57:35.131+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f722193f40",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:59.569+00:00",
+        "lastSuccessfulAt": "2026-10-19T10:00:30.405+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.569+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_asag/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-f722193f40",
+        "lastAttemptAt": "2026-10-21T22:57:35.113+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-1a31b404e0",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:59.493+00:00",
+        "lastSuccessfulAt": "2026-10-12T19:01:46+09:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.493+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-1a31b404e0",
+        "lastAttemptAt": "2026-10-21T22:57:35.100+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-8226b16185",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:57:59.563+00:00",
+        "lastSuccessfulAt": "2026-10-12T19:01:46+09:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:57:59.563+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_ygtm/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-8226b16185",
+        "lastAttemptAt": "2026-10-21T22:57:38.631+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-916f92e32b",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:02.902+00:00",
+        "lastSuccessfulAt": "2026-10-20T10:07:21.638+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:58:02.902+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_naha/index.html",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-916f92e32b",
+        "lastAttemptAt": "2026-10-21T22:57:38.583+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:02.901+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:02.901+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:07:01.366+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "直接HTTPS取得は403で失敗。前回成功日時を保持し、変更なし・取消・自由入場とは推測しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_s.html"
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-6bd3ce9b8b",
+        "lastAttemptAt": "2026-10-21T22:57:38.622+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:38.622+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-a442c90398",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:02.878+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:02.878+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-a442c90398",
+        "lastAttemptAt": "2026-10-21T22:57:38.577+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:38.577+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "observed-chiikawa-info-jp-59c77d83bc",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:02.909+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:02.909+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:02:49.965+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "Direct HTTPS GET returned 403; bounded web extraction date evidence retained separately.",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/ck_baby/aomori/index.html"
+        }
+      },
+      "patch": {
+        "id": "observed-chiikawa-info-jp-59c77d83bc",
+        "lastAttemptAt": "2026-10-21T22:57:38.597+00:00",
+        "lastResult": "partial",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像中心の本文で画像自体の差替えは未検証。完全確認扱いにしない。"
+      }
+    },
+    {
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:52.404+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:52.404+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T23:42:28.307+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "Response compressed bytes were not decoded. No conclusion from this attempt.",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
+        }
+      },
+      "patch": {
+        "id": "morning-https-www-chiikawamogumogu-jp-news",
+        "lastAttemptAt": "2026-10-21T22:58:37.639+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:40.543+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.639+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "corporate-spiralcute-news-index",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:07.203+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:07.203+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-spiralcute-news-index",
+        "lastAttemptAt": "2026-10-21T22:57:40.496+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:40.496+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "corporate-grayparkaservice-news-index",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:07.658+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:07.658+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-grayparkaservice-news-index",
+        "lastAttemptAt": "2026-10-21T22:57:42.074+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:42.074+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "nagano-market-shinsaibashi-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:50.334+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:50.334+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "nagano-market-shinsaibashi-official",
+        "lastAttemptAt": "2026-10-21T22:58:14.499+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:14.499+00:00",
+          "message": "HTTP Error 502: Bad Gateway"
+        }
+      }
+    },
+    {
+      "id": "nagano-market-ginza-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:50.287+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:50.287+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-13T23:03:21.819Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "webメタデータは得られたが、この返却では本文範囲が省略されている。本文を読んだとは扱わない。",
+          "evidenceUrl": "https://nagano-info.jp/tenpo_nm/ginza/"
+        }
+      },
+      "patch": {
+        "id": "nagano-market-ginza-official",
+        "lastAttemptAt": "2026-10-21T22:58:14.528+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:14.528+00:00",
+          "message": "HTTP Error 502: Bad Gateway"
+        }
+      }
+    },
+    {
+      "id": "nagano-market-sapporo-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:50.146+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:50.146+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:21:17.084Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "Error: TypeError: Cannot read properties of null (reading 'innerText')\n    at __playwrightEvaluate (<anonymous>:2686:77)\n    at <anonymous>:2687:14\n    at runUserScript (<anonymous>:2688:10)\n    at <anonymous>:2692:10\n    at <anonymous>:2693:3",
+          "evidenceUrl": "https://nagano-info.jp/tenpo_nm/sapporo/"
+        }
+      },
+      "patch": {
+        "id": "nagano-market-sapporo-official",
+        "lastAttemptAt": "2026-10-21T22:58:14.534+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:14.534+00:00",
+          "message": "HTTP Error 502: Bad Gateway"
+        }
+      }
+    },
+    {
+      "id": "corporate-kodansha-autumn-manga-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:19.145+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:19.145+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-kodansha-autumn-manga-official",
+        "lastAttemptAt": "2026-10-21T22:57:44.477+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:57:44.477+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。"
+      }
+    },
+    {
+      "id": "toshocard-chiikawa-limited-edition2026",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:16.218+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:16.218+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "toshocard-chiikawa-limited-edition2026",
+        "lastAttemptAt": "2026-10-21T22:57:43.982+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastSuccessfulAt": "2026-10-21T22:57:43.982+00:00"
+      }
+    },
+    {
+      "id": "toshocard-news-index",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:20.403+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:20.403+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "toshocard-news-index",
+        "lastAttemptAt": "2026-10-21T22:57:45.951+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastSuccessfulAt": "2026-10-21T22:57:45.951+00:00"
+      }
+    },
+    {
+      "id": "kodansha-cocreco-sealbooks-20261020",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:20.262+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:20.262+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "kodansha-cocreco-sealbooks-20261020",
+        "lastAttemptAt": "2026-10-21T22:57:45.097+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastSuccessfulAt": "2026-10-21T22:57:45.097+00:00"
+      }
+    },
+    {
+      "id": "supplement-0982c3832bf5",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:17.278+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:17.278+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-20T23:05:00.331+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "マルイ公式URLは取得成功だが本文に対象イベントの動的詳細を取得できず。外殻のみで更新なしとは扱わない。",
+          "evidenceUrl": "https://www.0101.co.jp/405/info/index.html?contents_id=1221"
+        }
+      },
+      "patch": {
+        "id": "supplement-0982c3832bf5",
+        "lastFailure": null,
+        "lastAttemptAt": "2026-10-21T22:57:46.737+00:00",
+        "resultSummary": "10/21夕方と抽出本文・リンクを比較し新規国内会場の追加を検出せず。画像/SNS埋込は別確認が必要。",
+        "lastSuccessfulAt": "2026-10-21T22:57:46.737+00:00"
+      }
+    },
+    {
+      "id": "venue-aeon-kasukabe-photoshoot-20261103",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:22.110+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:22.110+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:58:18.586+00:00",
+          "kind": "access_limited",
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+          "httpStatus": 406
+        }
+      },
+      "patch": {
+        "id": "venue-aeon-kasukabe-photoshoot-20261103",
+        "lastAttemptAt": "2026-10-21T22:58:26.586+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:26.586+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "venue-opsia-misumi-muchaphoto-20261122",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:25.342+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:25.342+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "venue-opsia-misumi-muchaphoto-20261122",
+        "lastAttemptAt": "2026-10-21T22:58:26.595+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:26.595+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "chiikawa-bakery-information-osaka",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:24.399+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:24.399+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:42:46.950+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/information-osaka/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-bakery-information-osaka",
+        "lastAttemptAt": "2026-10-21T22:58:04.986+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.986+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-bakery-information-popup-01",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:24.462+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:24.462+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:42:46.941+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/information-popup_01/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-bakery-information-popup-01",
+        "lastAttemptAt": "2026-10-21T22:58:04.987+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.987+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-osaka-umeda",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:26.456+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:26.456+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:11.624+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/osaka/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-osaka-umeda",
+        "lastAttemptAt": "2026-10-21T22:58:04.987+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.987+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-harajuku",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:26.434+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:26.434+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:11.339+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/harajuku/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-harajuku",
+        "lastAttemptAt": "2026-10-21T22:58:04.988+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.988+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-fukuoka",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:26.426+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:26.426+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:11.276+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/fukuoka/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-fukuoka",
+        "lastAttemptAt": "2026-10-21T22:58:04.988+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.988+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-kyoto",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:26.453+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:26.453+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:11.338+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/kyoto/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-kyoto",
+        "lastAttemptAt": "2026-10-21T22:58:04.989+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.989+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-tokyo-station",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:26.465+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:26.465+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:11.312+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-tokyo-station",
+        "lastAttemptAt": "2026-10-21T22:58:04.992+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.992+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-solamachi",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:26.448+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:26.448+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:11.316+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/solamachi/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-solamachi",
+        "lastAttemptAt": "2026-10-21T22:58:04.992+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.992+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-nagoya",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:29.857+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:29.857+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:14.875+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/nagoya/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-nagoya",
+        "lastAttemptAt": "2026-10-21T22:58:04.994+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.994+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-sendai",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:29.851+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:29.851+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:14.869+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/sendai/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-sendai",
+        "lastAttemptAt": "2026-10-21T22:58:04.995+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.995+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-sapporo",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:29.818+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:29.818+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:15.232+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/sapporo/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-sapporo",
+        "lastAttemptAt": "2026-10-21T22:58:04.996+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.996+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-yokohama",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:29.838+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:29.838+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:14.917+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/yokohama/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-yokohama",
+        "lastAttemptAt": "2026-10-21T22:58:04.998+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.998+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-hiroshima",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:29.826+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:29.826+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:14.914+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/hiroshima/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-hiroshima",
+        "lastAttemptAt": "2026-10-21T22:58:04.998+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.998+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-shinsaibashi",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:29.838+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:29.838+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:14.920+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/shinsaibashi/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-shinsaibashi",
+        "lastAttemptAt": "2026-10-21T22:58:04.999+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:04.999+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-shinjuku",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:34.274+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:34.274+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:14.914+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/shinjuku/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-shinjuku",
+        "lastAttemptAt": "2026-10-21T22:58:05.000+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:05.000+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-kanazawa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:34.297+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:34.297+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:07.908+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-kanazawa",
+        "lastAttemptAt": "2026-10-21T22:58:05.001+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:05.001+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-ikebukuro",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:34.292+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:34.292+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:07.900+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/ikebukuro/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-ikebukuro",
+        "lastAttemptAt": "2026-10-21T22:58:09.651+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:09.651+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-chiikawaland-koshigaya",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:34.281+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:34.281+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:07.860+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/koshigaya/"
+        }
+      },
+      "patch": {
+        "id": "individual-chiikawaland-koshigaya",
+        "lastAttemptAt": "2026-10-21T22:58:09.668+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:09.668+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-magical-shinjuku",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:34.251+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:34.251+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:02.516+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/shinjuku/"
+        }
+      },
+      "patch": {
+        "id": "individual-magical-shinjuku",
+        "lastAttemptAt": "2026-10-21T22:58:10.793+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.793+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-magical-umeda",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:34.246+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:34.246+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:02.531+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/umeda/"
+        }
+      },
+      "patch": {
+        "id": "individual-magical-umeda",
+        "lastAttemptAt": "2026-10-21T22:58:10.795+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.795+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "individual-magical-nagoya",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:39.169+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:39.169+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:59:02.567+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML取得はできたが、画像中心・ログイン入口・Loadingのみで対象条件を本文として読み取れず。新着なしとは判定しない。",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/nagoya/"
+        }
+      },
+      "patch": {
+        "id": "individual-magical-nagoya",
+        "lastAttemptAt": "2026-10-21T22:58:10.796+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.796+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "mogumogu-fushimi-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:40.534+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:40.534+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T23:42:12.687+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "Response compressed bytes were not decoded. No conclusion from this attempt.",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/fushimi/"
+        }
+      },
+      "patch": {
+        "id": "mogumogu-fushimi-news",
+        "lastAttemptAt": "2026-10-21T22:58:10.801+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.801+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "mogumogu-kawagoe-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:40.706+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:40.706+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:20.508+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP200のgzip応答を未展開のまま読取したため本文確認失敗。別のdecompressed観測で正しく展開して確認。",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/kawagoe/"
+        }
+      },
+      "patch": {
+        "id": "mogumogu-kawagoe-news",
+        "lastAttemptAt": "2026-10-21T22:58:10.809+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.809+00:00",
+          "message": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+        }
+      }
+    },
+    {
+      "id": "mogumogu-otaru-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:40.666+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:40.666+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T23:42:12.796+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "Response compressed bytes were not decoded. No conclusion from this attempt.",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/otaru/"
+        }
+      },
+      "patch": {
+        "id": "mogumogu-otaru-news",
+        "lastAttemptAt": "2026-10-21T22:58:10.823+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.823+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "baby-castella-otaru-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:40.557+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:40.557+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "baby-castella-otaru-official",
+        "lastAttemptAt": "2026-10-21T22:58:10.830+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.830+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-restaurant-tokyo-information",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:44.307+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:44.307+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "chiikawa-restaurant-tokyo-information",
+        "lastAttemptAt": "2026-10-21T22:58:10.844+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.844+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-information",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:44.406+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:44.406+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-13T23:03:16.981Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "webメタデータは得られたが、この返却では本文範囲が省略されている。本文を読んだとは扱わない。",
+          "evidenceUrl": "https://cafe.parco.jp/event/information/chiikawarestaurant_okinawa?area=030528"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-restaurant-okinawa-information",
+        "lastAttemptAt": "2026-10-21T22:58:10.846+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.846+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "morning-existing21-2cb24f2734c6",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:46.054+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:46.054+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-2cb24f2734c6",
+        "lastAttemptAt": "2026-10-21T22:58:10.849+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.849+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "morning-existing21-d767e5e5e602",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:44.502+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:44.502+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-d767e5e5e602",
+        "lastAttemptAt": "2026-10-21T22:58:10.851+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.851+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "morning-existing21-7844c218d757",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:44.462+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:44.462+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-7844c218d757",
+        "lastAttemptAt": "2026-10-21T22:58:10.851+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.851+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "morning-existing21-776f5622a7a9",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:44.210+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:44.210+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-776f5622a7a9",
+        "lastAttemptAt": "2026-10-21T22:58:10.853+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.853+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "morning-series18-bcc6d96d4eaa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:48.114+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:48.114+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-series18-bcc6d96d4eaa",
+        "lastAttemptAt": "2026-10-21T22:58:10.891+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:10.891+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-cafe-parco-jp-8bf4370b23",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:51.682+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:51.682+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-cafe-parco-jp-8bf4370b23",
+        "lastAttemptAt": "2026-10-21T22:58:17.494+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:17.494+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "tokyo-skytree-chiikawa-2026",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:54.854+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:54.854+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "tokyo-skytree-chiikawa-2026",
+        "lastAttemptAt": "2026-10-21T22:58:17.603+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:17.603+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-tokyo-metro-chiikawa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:56.454+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:56.454+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-tokyo-metro-chiikawa",
+        "lastAttemptAt": "2026-10-21T22:58:17.727+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:17.727+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:56.566+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:56.566+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "tokyo-banana-chiikawa",
+        "lastAttemptAt": "2026-10-21T22:58:17.793+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:17.793+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "morning-existing21-0d23c0b7657f",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:57.178+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:57.178+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-0d23c0b7657f",
+        "lastAttemptAt": "2026-10-21T22:58:17.793+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:17.793+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "observed-www-granduo-jp-2bf7507178",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:56.594+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:56.594+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "observed-www-granduo-jp-2bf7507178",
+        "lastAttemptAt": "2026-10-21T22:58:17.795+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:17.795+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "venue-nagano-fukuoka-entry-20261016",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:00.711+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:00.711+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-14T09:59:43+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Internal Error, no accessible result",
+          "evidenceUrl": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html"
+        }
+      },
+      "patch": {
+        "id": "venue-nagano-fukuoka-entry-20261016",
+        "lastAttemptAt": "2026-10-21T22:58:17.799+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:17.799+00:00",
+          "message": "HTTP Error 502: Bad Gateway"
+        }
+      }
+    },
+    {
+      "id": "lucua-south-opening",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:03.331+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:03.331+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-13T23:03:21.819Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "webメタデータは得られたが、この返却では本文範囲が省略されている。本文を読んだとは扱わない。",
+          "evidenceUrl": "https://www.lucua.jp/special/south-open/"
+        }
+      },
+      "patch": {
+        "id": "lucua-south-opening",
+        "lastAttemptAt": "2026-10-21T22:58:18.388+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:18.388+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "observed-ota-aeonmall-jp-1553585041",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:03.924+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:03.924+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T10:00:45.861+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f"
+        }
+      },
+      "patch": {
+        "id": "observed-ota-aeonmall-jp-1553585041",
+        "lastAttemptAt": "2026-10-21T22:58:18.528+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:18.528+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "observed-natori-aeonmall-jp-4e157b2b3f",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:06.090+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:06.090+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:08:33.054Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable 新着なしとは扱わない。",
+          "evidenceUrl": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f"
+        }
+      },
+      "patch": {
+        "id": "observed-natori-aeonmall-jp-4e157b2b3f",
+        "lastAttemptAt": "2026-10-21T22:58:18.651+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:18.651+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "abema-chiikawa-christmas-release-20261008",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:07.383+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:07.383+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "abema-chiikawa-christmas-release-20261008",
+        "lastAttemptAt": "2026-10-21T22:58:18.996+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:18.996+00:00",
+          "message": "HTTP Error 503: Service Unavailable"
+        }
+      }
+    },
+    {
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:03.422+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:03.422+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T23:01:00.345+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html"
+        }
+      },
+      "patch": {
+        "id": "popup-2026-10-23-ebina-marui-official",
+        "lastAttemptAt": "2026-10-21T22:58:19.225+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:19.225+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:06.030+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:06.030+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T23:01:03.472+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html"
+        }
+      },
+      "patch": {
+        "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+        "lastAttemptAt": "2026-10-21T22:58:23.171+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:23.171+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:36.267+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:36.267+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-20T10:05:34+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "web.open returned Internal Error / inaccessible. Ordinary curl obtained and parsed page; retain this route-specific failure. Route: web.open",
+          "evidenceUrl": "https://nagano-info.jp/popupshop/ebina/index.html"
+        }
+      },
+      "patch": {
+        "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+        "lastAttemptAt": "2026-10-21T22:58:23.448+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:23.448+00:00",
+          "message": "HTTP Error 502: Bad Gateway"
+        }
+      }
+    },
+    {
+      "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:12.838+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:12.838+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:03:55+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "通常HTTPS取得はタイムアウト。",
+          "evidenceUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572"
+        }
+      },
+      "patch": {
+        "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
+        "lastAttemptAt": "2026-10-21T22:58:24.080+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:24.080+00:00",
+          "message": "HTTP Error 503: Service Unavailable"
+        }
+      }
+    },
+    {
+      "id": "venue-muchaphoto-shinrifu-20261122",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:17.290+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:17.290+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:03:31+00:00",
+          "kind": "access_limited",
+          "httpStatus": 406,
+          "detail": "通常HTTPS取得はHTTP406。",
+          "evidenceUrl": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3"
+        }
+      },
+      "patch": {
+        "id": "venue-muchaphoto-shinrifu-20261122",
+        "lastAttemptAt": "2026-10-21T22:58:25.458+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:25.458+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "jr-central-railway-museum-event",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:17.205+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:17.205+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "jr-central-railway-museum-event",
+        "lastAttemptAt": "2026-10-21T22:58:26.576+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:26.576+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "chiikawa-park-christmas-2026",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:17.962+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:17.962+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:43:06.398+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-park-christmas-2026",
+        "lastAttemptAt": "2026-10-21T22:58:26.577+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:26.577+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-pocket-fourth-2026-detail",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:20.234+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:20.234+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:07:19Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-pocket-fourth-2026-detail",
+        "lastAttemptAt": "2026-10-21T22:58:26.579+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:26.579+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "official-observation-bcf4bed6d585",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:24.042+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:24.042+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "official-observation-bcf4bed6d585",
+        "lastAttemptAt": "2026-10-21T22:58:26.579+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:26.579+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "official-observation-c13c6c2b72db",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:20.200+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:20.200+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:58:42.880+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aksk/index.html"
+        }
+      },
+      "patch": {
+        "id": "official-observation-c13c6c2b72db",
+        "lastAttemptAt": "2026-10-21T22:58:26.580+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:26.580+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "official-observation-88c0160fff16",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:23.002+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:23.002+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "official-observation-88c0160fff16",
+        "lastAttemptAt": "2026-10-21T22:58:26.583+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:26.583+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "venue-aeon-kofu-showa-workshop-20261123",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:26.134+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:26.134+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "venue-aeon-kofu-showa-workshop-20261123",
+        "lastAttemptAt": "2026-10-21T22:58:27.026+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:27.026+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "morning-hold21-41a846041bb4",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:56.867+00:00",
+        "lastSuccessfulAt": "2026-10-20T23:02:24+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:59:56.867+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "curl: (28) Operation timed out after 35002 milliseconds with 0 bytes received\n",
+          "evidenceUrl": "https://www.aeon.jp/sc/tsuchiura/event/"
+        }
+      },
+      "patch": {
+        "id": "morning-hold21-41a846041bb4",
+        "lastAttemptAt": "2026-10-21T22:58:27.257+00:00",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:27.257+00:00",
+          "message": "The read operation timed out"
+        }
+      }
+    },
+    {
+      "id": "tamanohikari-chiikawa-release",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:26.202+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:26.202+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "tamanohikari-chiikawa-release",
+        "lastAttemptAt": "2026-10-21T22:58:27.977+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:27.977+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-aeon-chiikawa-news-954",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T20:04:18.155Z",
+        "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-21T20:04:18.155Z",
+          "kind": "fetch_failed",
+          "httpStatus": 404,
+          "detail": "Direct PC HTTP retrieval returned 404; no claim of source deletion or comprehensive no-change. Previous 403 and prior successful timestamp retained in research/waon-archive-2026-10-22-evidence.json",
+          "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
+        }
+      },
+      "patch": {
+        "id": "corporate-aeon-chiikawa-news-954",
+        "lastAttemptAt": "2026-10-21T22:58:28.534+00:00",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:28.534+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "corporate-sunflower-chiikawa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:27.445+00:00",
+        "lastSuccessfulAt": "2026-10-18T10:02:34.730+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:59:27.445+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文27文字のJavaScript shell",
+          "evidenceUrl": "https://www.sunflower.co.jp/lp/chiikawa/"
+        }
+      },
+      "patch": {
+        "id": "corporate-sunflower-chiikawa",
+        "lastAttemptAt": "2026-10-21T22:58:28.626+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:28.626+00:00",
+        "lastResult": "success",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "ana-chiikawa-jet",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:36.819+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:36.819+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "ana-chiikawa-jet",
+        "lastAttemptAt": "2026-10-21T22:58:29.783+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:29.783+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "jr-central-tsutsuurauratabi",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:33.375+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:33.375+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "jr-central-tsutsuurauratabi",
+        "lastAttemptAt": "2026-10-21T22:58:29.853+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:29.853+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-seven-eleven-christmas-products",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:35.114+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:35.114+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-seven-eleven-christmas-products",
+        "lastAttemptAt": "2026-10-21T22:58:30.818+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:30.818+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-chiikawa-release-846",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:35.698+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:35.698+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-chiikawa-release-846",
+        "lastAttemptAt": "2026-10-21T22:58:31.759+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:31.759+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-citen-chiikawa-release",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:35.434+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:35.434+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-citen-chiikawa-release",
+        "lastAttemptAt": "2026-10-21T22:58:31.766+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:31.766+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-merry-jenny-chiikawa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:38.288+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:38.288+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:07:53.923+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "<urlopen error timed out>",
+          "evidenceUrl": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/"
+        }
+      },
+      "patch": {
+        "id": "corporate-merry-jenny-chiikawa",
+        "lastAttemptAt": "2026-10-21T22:58:31.771+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:31.771+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "corporate-panasonic-chiikawa",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:41.426+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:41.426+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-panasonic-chiikawa",
+        "lastAttemptAt": "2026-10-21T22:58:31.771+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:31.771+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-donki-chiikawa-sl6",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:41.261+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:41.261+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-donki-chiikawa-sl6",
+        "lastAttemptAt": "2026-10-21T22:58:32.080+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:32.080+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-epos-chiikawa-card",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:41.274+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:41.274+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T09:59:48.507+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文確認未完了。新着なしと扱わない。",
+          "evidenceUrl": "https://www.eposcard.co.jp/gecard/chiikawa/index.html"
+        }
+      },
+      "patch": {
+        "id": "corporate-epos-chiikawa-card",
+        "lastAttemptAt": "2026-10-21T22:58:32.587+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:32.587+00:00",
+          "message": "'utf-8' codec can't decode byte 0x82 in position 411: invalid start byte"
+        }
+      }
+    },
+    {
+      "id": "corporate-kadokawa-chiikawa-topics",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:41.494+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:41.494+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-kadokawa-chiikawa-topics",
+        "lastAttemptAt": "2026-10-21T22:58:32.836+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:32.836+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-uniqlo-chiikawa-faq",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:42.743+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:42.743+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:10:59.480Z",
+          "kind": "access_limited",
+          "detail": "web openがInternal Error/URLアクセス不可。今回は発売・再入荷条件を再確認できず、前回成功時刻を保持。",
+          "httpStatus": null,
+          "evidenceUrl": "https://faq.uniqlo.com/articles/Knowledge/100015656/"
+        }
+      },
+      "patch": {
+        "id": "corporate-uniqlo-chiikawa-faq",
+        "lastAttemptAt": "2026-10-21T22:58:33.266+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:33.266+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "corporate-gu-chiikawa-faq",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:45.121+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:45.121+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-gu-chiikawa-faq",
+        "lastAttemptAt": "2026-10-21T22:58:33.278+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:33.278+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-chiikawa-release-322",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:44.714+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:44.714+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-chiikawa-release-322",
+        "lastAttemptAt": "2026-10-21T22:58:33.385+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:33.385+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-chiikawa-glasses",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:44.782+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:44.782+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-chiikawa-glasses",
+        "lastAttemptAt": "2026-10-21T22:58:33.386+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:33.386+00:00",
+          "message": "HTTP Error 503: Service Unavailable"
+        }
+      }
+    },
+    {
+      "id": "corporate-minum-chiikawa-release",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:45.266+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:45.266+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-minum-chiikawa-release",
+        "lastAttemptAt": "2026-10-21T22:58:33.389+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:33.389+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-toho-one-chiikawa-campaign",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:46.802+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:46.802+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-toho-one-chiikawa-campaign",
+        "lastAttemptAt": "2026-10-21T22:58:33.539+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:33.539+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:47.562+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:47.562+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:27.038+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "直接HTTPS取得は403で失敗。前回成功日時を保持し、変更なし・取消・自由入場とは推測しない。",
+          "evidenceUrl": "https://chiikawabakery.jp/reservation/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-bakery-reservation",
+        "lastAttemptAt": "2026-10-21T22:58:33.885+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:33.885+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-park-ticket",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:48.506+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:48.506+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-14T09:59:49+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "取得制限のため本文を確認できず。前回確認済み条件を撤回しない。",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/ticket/"
+        }
+      },
+      "patch": {
+        "id": "chiikawa-park-ticket",
+        "lastAttemptAt": "2026-10-21T22:58:34.083+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:34.083+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:48.546+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:48.546+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:27.049+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "直接HTTPS取得は403で失敗。前回成功日時を保持し、変更なし・取消・自由入場とは推測しない。",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/"
+        }
+      },
+      "patch": {
+        "id": "evening-chiikawapark-tokyo-jp-news",
+        "lastAttemptAt": "2026-10-21T22:58:37.119+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.119+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "christmas-faq",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:50.655+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:50.655+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "christmas-faq",
+        "lastAttemptAt": "2026-10-21T22:58:37.239+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:37.239+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "christmas-ticket-details",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:50.663+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:50.663+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "christmas-ticket-details",
+        "lastAttemptAt": "2026-10-21T22:58:37.415+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:37.415+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "evening-x-com-chiikawabakery",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:52.253+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:52.253+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:07:39.675Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      },
+      "patch": {
+        "id": "evening-x-com-chiikawabakery",
+        "lastAttemptAt": "2026-10-21T22:58:37.649+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.649+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "morning-x-com-chiikawabakeryo",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:52.278+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:52.278+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:07:39.675Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "プロフィールは表示されたが投稿一覧が読み込み中。新着なしとは扱わない。",
+          "evidenceUrl": "https://x.com/chiikawabakeryO"
+        }
+      },
+      "patch": {
+        "id": "morning-x-com-chiikawabakeryo",
+        "lastAttemptAt": "2026-10-21T22:58:37.710+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.710+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "priority-four-1b6f0ffdf6c9",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:52.220+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:52.220+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-12T19:20:27+09:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "最初の取得方法で失敗後、HTTPS GETで表示本文だけを取得。全投稿・画像を確認したとは扱わない。",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      },
+      "patch": {
+        "id": "priority-four-1b6f0ffdf6c9",
+        "lastAttemptAt": "2026-10-21T22:58:37.797+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.797+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "nagano-market-shop-x",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:52.292+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:52.292+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-21T09:58:12.430+00:00",
+          "kind": "parse_failed",
+          "detail": "限定的な本文・表示投稿のみ取得。画像/全投稿は網羅未確認。",
+          "evidenceUrl": "https://x.com/nagano_mkt_shop",
+          "httpStatus": 200
+        }
+      },
+      "patch": {
+        "id": "nagano-market-shop-x",
+        "lastAttemptAt": "2026-10-21T22:58:37.896+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.896+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "priority-four-9660f8c42df7",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:55.764+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:55.764+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-12T19:20:27+09:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "最初の取得方法で失敗後、HTTPS GETで表示本文だけを取得。全投稿・画像を確認したとは扱わない。",
+          "evidenceUrl": "https://x.com/kiddyevent"
+        }
+      },
+      "patch": {
+        "id": "priority-four-9660f8c42df7",
+        "lastAttemptAt": "2026-10-21T22:58:37.900+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.900+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "morning-store-20261020-6d00bae52cd2",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:56.570+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:56.570+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-store-20261020-6d00bae52cd2",
+        "lastAttemptAt": "2026-10-21T22:58:37.911+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:37.911+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "mogumogu-kawagoe-store-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:57.758+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:57.758+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:43:07.562+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/store/kawagoe/"
+        }
+      },
+      "patch": {
+        "id": "mogumogu-kawagoe-store-news",
+        "lastAttemptAt": "2026-10-21T22:58:38.005+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:38.005+00:00",
+          "message": "HTTP200だが圧縮本文を正常復号できず。本文確認成功とは扱わない。"
+        }
+      }
+    },
+    {
+      "id": "mogumogu-otaru-category-news",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:56.400+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:56.400+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "mogumogu-otaru-category-news",
+        "lastAttemptAt": "2026-10-21T22:58:38.035+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:38.035+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "morning-existing21-57b4602a613a",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:37.166+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:37.166+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-57b4602a613a",
+        "lastAttemptAt": "2026-10-21T22:58:38.099+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:38.099+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "morning-existing21-4e56f60737d0",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:37.098+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:37.098+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "morning-existing21-4e56f60737d0",
+        "lastAttemptAt": "2026-10-21T22:58:39.562+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:39.562+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "ana-first-flight-airframe-confirmed-20261020",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:37.783+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:37.783+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "ana-first-flight-airframe-confirmed-20261020",
+        "lastAttemptAt": "2026-10-21T22:58:40.404+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:40.404+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "chiikawaland-entry-updates-x",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:37.235+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:37.235+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-18T09:58:53Z",
+          "kind": "fetch_failed",
+          "httpStatus": 403,
+          "detail": "本文取得未確認",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      },
+      "patch": {
+        "id": "chiikawaland-entry-updates-x",
+        "lastAttemptAt": "2026-10-21T22:58:40.599+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:40.599+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "evening-x-com-chiikawa-parkjp",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:37.209+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:37.209+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-x-com-chiikawa-parkjp",
+        "lastAttemptAt": "2026-10-21T22:58:41.701+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:41.701+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:38.722+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:38.722+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:10:58.465Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "19:08台のweb clickは本文成功。その後直接URL再取得はnot accessible。元成功を取り消さず、再取得失敗を成功扱いしない。",
+          "evidenceUrl": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949"
+        }
+      },
+      "patch": {
+        "id": "ana-chiikawa-goods-reservation-full-20261016",
+        "lastAttemptAt": "2026-10-21T22:58:41.727+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:41.727+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "ana-astyle-waiting-room-20261023",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:42.563+00:00",
+        "lastSuccessfulAt": "2026-10-20T10:02:32.563+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:58:42.563+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": 403,
+          "detail": "non-200 HTTP",
+          "evidenceUrl": "https://www.astyle.jp/astyle/news/696/"
+        }
+      },
+      "patch": {
+        "id": "ana-astyle-waiting-room-20261023",
+        "lastAttemptAt": "2026-10-21T22:58:41.732+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:41.732+00:00",
+        "lastResult": "success",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "morning-existing21-4fdf328cdc02",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:42.406+00:00",
+        "lastSuccessfulAt": null,
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-21T09:58:42.406+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": 403,
+          "detail": "non-200 HTTP",
+          "evidenceUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/"
+        }
+      },
+      "patch": {
+        "id": "morning-existing21-4fdf328cdc02",
+        "lastAttemptAt": "2026-10-21T22:58:41.758+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:41.758+00:00",
+        "lastResult": "success",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。",
+        "lastFailure": null
+      }
+    },
+    {
+      "id": "tamanohikari-chiikawa-shop-details",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:42.851+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:42.851+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "tamanohikari-chiikawa-shop-details",
+        "lastAttemptAt": "2026-10-21T22:58:41.959+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:41.959+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "corporate-chiikawa-glasses-orders",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:44.369+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:44.369+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "corporate-chiikawa-glasses-orders",
+        "lastAttemptAt": "2026-10-21T22:58:42.203+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:42.203+00:00",
+          "message": "HTTP Error 503: Service Unavailable"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-restaurant-reservation",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:42.681+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:42.681+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "chiikawa-restaurant-reservation",
+        "lastAttemptAt": "2026-10-21T22:58:42.206+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:42.206+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-reservation",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:42.658+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:42.658+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "chiikawa-restaurant-okinawa-reservation",
+        "lastAttemptAt": "2026-10-21T22:58:42.226+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:42.226+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "ramen-buta-ikebukuro-reservation-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:47.666+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:47.666+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:08:15.298Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+          "evidenceUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688"
+        }
+      },
+      "patch": {
+        "id": "ramen-buta-ikebukuro-reservation-official",
+        "lastAttemptAt": "2026-10-21T22:58:42.258+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:42.258+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "ramen-buta-shibuya-reservation-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:47.990+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:47.990+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:08:15.298Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+          "evidenceUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979"
+        }
+      },
+      "patch": {
+        "id": "ramen-buta-shibuya-reservation-official",
+        "lastAttemptAt": "2026-10-21T22:58:42.276+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:42.276+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-reservation-official",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:47.970+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:47.970+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:08:15.298Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "URL到達情報のみで本文・画像内容をこの取得結果から確認できない。",
+          "evidenceUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689"
+        }
+      },
+      "patch": {
+        "id": "ramen-buta-shinsaibashi-reservation-official",
+        "lastAttemptAt": "2026-10-21T22:58:42.299+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:42.299+00:00",
+          "message": "HTTP Error 404: Not Found"
+        }
+      }
+    },
+    {
+      "id": "venue-yonago-tenmaya-event-calendar",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:58:49.179+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:58:49.179+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "venue-yonago-tenmaya-event-calendar",
+        "lastAttemptAt": "2026-10-21T22:58:42.326+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:42.326+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:34.368+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:34.368+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+        "lastAttemptAt": "2026-10-21T22:58:42.351+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:42.351+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "evening-existing21-1b8230d1a37f",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:35.923+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:35.923+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-existing21-1b8230d1a37f",
+        "lastAttemptAt": "2026-10-21T22:58:42.625+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:42.625+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "evening-existing21-d9434ce2241e",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T09:59:41.745+00:00",
+        "lastSuccessfulAt": "2026-10-21T09:59:41.745+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-existing21-d9434ce2241e",
+        "lastAttemptAt": "2026-10-21T22:58:43.225+00:00",
+        "lastResult": "fetch_failed",
+        "resultSummary": "通常GET取得失敗。別手段の成功観測は別記録、更新なしの証拠にはしない。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:43.225+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      }
+    },
+    {
+      "id": "evening-existing21-d0fa0a0e4e4a",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T10:00:17.050+00:00",
+        "lastSuccessfulAt": "2026-10-21T10:00:17.050+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-existing21-d0fa0a0e4e4a",
+        "lastAttemptAt": "2026-10-21T22:58:48.135+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:48.135+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "magical-store-entry-updates-x",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T10:00:17.155+00:00",
+        "lastSuccessfulAt": "2026-10-21T10:00:17.155+00:00",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:01:37.584Z",
+          "kind": "parse_failed",
+          "httpStatus": null,
+          "detail": "最初のクラウドブラウザ取得は投稿本文のロード未完了。プロフィールだけでは新着なしと判断せず再確認。",
+          "evidenceUrl": "https://x.com/magi_chiikawa"
+        }
+      },
+      "patch": {
+        "id": "magical-store-entry-updates-x",
+        "lastAttemptAt": "2026-10-21T22:58:49.389+00:00",
+        "lastResult": "access_limited",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。 Xプロフィールは限定可視投稿のみ。個別投稿に続報を発見したためプロフィールだけで網羅不可。",
+        "lastFailure": {
+          "at": "2026-10-21T22:58:49.389+00:00",
+          "message": "Limited visible profile posts, not a complete timeline."
+        }
+      }
+    },
+    {
+      "id": "evening-existing21-11a18a96a91d",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T10:02:20.364+00:00",
+        "lastSuccessfulAt": "2026-10-21T10:02:20.364+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-existing21-11a18a96a91d",
+        "lastAttemptAt": "2026-10-21T22:58:49.804+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:49.804+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "evening-existing21-18210ef289a0",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T10:03:01.466+00:00",
+        "lastSuccessfulAt": "2026-10-21T10:03:01.466+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-existing21-18210ef289a0",
+        "lastAttemptAt": "2026-10-21T22:58:50.170+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:50.170+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "evening-existing21-a26bd7dd047c",
+      "previous": {
+        "lastAttemptAt": "2026-10-21T10:04:30.297+00:00",
+        "lastSuccessfulAt": "2026-10-21T10:04:30.297+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "patch": {
+        "id": "evening-existing21-a26bd7dd047c",
+        "lastAttemptAt": "2026-10-21T22:58:50.323+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:58:50.323+00:00",
+        "resultSummary": "今回取得の可視本文を既存掲載と前回保存内容に照合。画像未読、X非表示投稿、販売残枠までは検証しない。"
+      }
+    },
+    {
+      "id": "morning-existing22-ebina-queue",
+      "previous": null,
+      "patch": {
+        "id": "morning-existing22-ebina-queue",
+        "name": "公式入場案内 popup-2026-10-23-ebina-marui",
+        "url": "https://x.com/chiikawa_popup/status/2112870974144290905",
+        "kind": "social",
+        "scope": [
+          "official"
+        ],
+        "cadence": "morning_evening",
+        "enabled": true,
+        "lastAttemptAt": "2026-10-21T22:59:47.733+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:59:47.733+00:00",
+        "lastResult": "success",
+        "lastFailure": null,
+        "resultSummary": "10月23～25日の10:30～11:00入場枠を予約した方は、10:20までに2F公園側店頭（コーチ横）へお並びください。10:20以降に到着した方は開店後、直接5Fイベントスペースの会場前へお越しください。"
+      }
+    },
+    {
+      "id": "morning-existing22-laforet-entry",
+      "previous": null,
+      "patch": {
+        "id": "morning-existing22-laforet-entry",
+        "name": "公式入場案内 chiikawa-bakery-shop-laforet",
+        "url": "https://x.com/chiikawabakery/status/2112853907860775384",
+        "kind": "social",
+        "scope": [
+          "official"
+        ],
+        "cadence": "morning_evening",
+        "enabled": true,
+        "lastAttemptAt": "2026-10-21T22:59:47.733+00:00",
+        "lastSuccessfulAt": "2026-10-21T22:59:47.733+00:00",
+        "lastResult": "success",
+        "lastFailure": null,
+        "resultSummary": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。"
+      }
+    }
+  ],
+  "sourceNormalizations": [
+    {
+      "id": "chiikawa-popup-list",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-popup-list",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-park-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-official-index",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-bakery-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-bakery-topics",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-71b2d641d1",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-978ffe9215",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-c1f1b175b2",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-2db8c290c8",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-64a1504949",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f722193f40",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-1a31b404e0",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-8226b16185",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-916f92e32b",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "observed-chiikawa-info-jp-59c77d83bc",
+      "from": "partial",
+      "to": "parse_failed",
+      "reason": "Existing source schema has no partial enum; limited image/text interpretation remains a parsing limitation, not success."
+    },
+    {
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-market-shinsaibashi-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-market-ginza-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-market-sapporo-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-bakery-information-osaka",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-bakery-information-popup-01",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-osaka-umeda",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-harajuku",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-fukuoka",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-kyoto",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-tokyo-station",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-solamachi",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-nagoya",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-sendai",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-sapporo",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-yokohama",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-hiroshima",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-shinsaibashi",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-shinjuku",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-kanazawa",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-ikebukuro",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-chiikawaland-koshigaya",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-magical-shinjuku",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-magical-umeda",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "individual-magical-nagoya",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "mogumogu-fushimi-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "mogumogu-kawagoe-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "mogumogu-otaru-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "baby-castella-otaru-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-restaurant-tokyo-information",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-information",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-existing21-2cb24f2734c6",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-existing21-d767e5e5e602",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-existing21-7844c218d757",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-existing21-776f5622a7a9",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-series18-bcc6d96d4eaa",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "observed-cafe-parco-jp-8bf4370b23",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-existing21-0d23c0b7657f",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "venue-nagano-fukuoka-entry-20261016",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "abema-chiikawa-christmas-release-20261008",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-park-christmas-2026",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-pocket-fourth-2026-detail",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "official-observation-c13c6c2b72db",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-hold21-41a846041bb4",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "corporate-aeon-chiikawa-news-954",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "corporate-epos-chiikawa-card",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "corporate-chiikawa-glasses",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-park-ticket",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "evening-x-com-chiikawabakery",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-x-com-chiikawabakeryo",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "priority-four-1b6f0ffdf6c9",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "nagano-market-shop-x",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "priority-four-9660f8c42df7",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "morning-store-20261020-6d00bae52cd2",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "mogumogu-kawagoe-store-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "mogumogu-otaru-category-news",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawaland-entry-updates-x",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "evening-x-com-chiikawa-parkjp",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "corporate-chiikawa-glasses-orders",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-restaurant-reservation",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-reservation",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "ramen-buta-ikebukuro-reservation-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "ramen-buta-shibuya-reservation-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-reservation-official",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "evening-existing21-d9434ce2241e",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    },
+    {
+      "id": "magical-store-entry-updates-x",
+      "from": "failure.message",
+      "to": "failure.kind/httpStatus/detail/evidenceUrl"
+    }
+  ],
+  "finalSourceObservations": [
+    {
+      "id": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "result": "success",
+      "summary": "web代替で取得。忠清10/30–11/12は既存rejected候補（海外）、国内新規なし。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-popup-list",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:57:47.428+00:00",
+      "lastAttemptAt": "2026-10-21T22:57:24.157+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "result": "success",
+      "summary": "web代替で取得。直近は2024年タオル美術館、国内新規なし。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-exhibition-list",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:57:46.959+00:00",
+      "lastAttemptAt": "2026-10-21T22:57:24.143+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-official-index",
+      "url": "https://nagano-info.jp/index.html",
+      "result": "success",
+      "summary": "公式index.html代替取得。既存系列と国内3常設店、海外2常設店確認。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-official-index",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:57:46.983+00:00",
+      "lastAttemptAt": "2026-10-21T22:57:24.130+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/",
+      "result": "success",
+      "summary": "末尾index.htmlなしでweb取得。既存2025年会場一覧、国内新規なし。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-aquarium-list",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:57:47.288+00:00",
+      "lastAttemptAt": "2026-10-21T22:57:24.107+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "result": "success",
+      "summary": "web代替取得。10/23通常商品、10/2購入特典。新規会場なし。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-market-shinsaibashi-official",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:58:50.334+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:14.499+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "result": "success",
+      "summary": "web代替取得。10/23通常商品、10/2購入特典。新規会場なし。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-market-sapporo-official",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:58:50.146+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:14.534+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "result": "fetch_failed",
+      "summary": "web代替も502。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": "nagano-market-ginza-official",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:58:50.287+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:14.528+00:00",
+      "bodyRecovery": false
+    },
+    {
+      "id": "kamakura-official-job",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "result": "partial",
+      "summary": "公式企業サイトから採用サイトへのリンクを確認。個別求人は現在公開されていません。求人転載を一次確定扱いにしない。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": null
+    },
+    {
+      "id": "terakoya-company",
+      "url": "https://www.telacoya.co.jp/",
+      "result": "success",
+      "summary": "ニュース最新9/29、鎌倉開店告知なし。公式採用サイトへの導線確認。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "証拠記録作成時刻。個別web呼出しの厳密完了時刻は未保存。",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "ledgerSourceId": null
+    },
+    {
+      "id": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "summary": "webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "chiikawa-publicity-x",
+      "structuredLastResult": "parse_failed",
+      "lastSuccessfulAt": "2026-10-19T23:00:35.908+00:00",
+      "lastAttemptAt": "2026-10-21T09:58:06.229+00:00",
+      "bodyRecovery": false
+    },
+    {
+      "id": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "summary": "webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "chiikawa-author-x",
+      "structuredLastResult": "parse_failed",
+      "lastSuccessfulAt": "2026-10-17T23:13:47.948Z",
+      "lastAttemptAt": "2026-10-21T09:58:06.360+00:00",
+      "bodyRecovery": false
+    },
+    {
+      "id": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "summary": "webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "nagano-author-x",
+      "structuredLastResult": "parse_failed",
+      "lastSuccessfulAt": "2026-10-17T23:13:48.018Z",
+      "lastAttemptAt": "2026-10-21T09:58:12.449+00:00",
+      "bodyRecovery": false
+    },
+    {
+      "id": "morning-series14-006dec658d85",
+      "url": "https://x.com/nagano_market",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "summary": "webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "morning-series14-006dec658d85",
+      "structuredLastResult": "parse_failed",
+      "lastSuccessfulAt": "2026-10-19T10:00:40.862+00:00",
+      "lastAttemptAt": "2026-10-21T09:58:12.404+00:00",
+      "bodyRecovery": false
+    },
+    {
+      "id": "morning-series14-61df76eb104c",
+      "url": "https://x.com/ngngoods_kouhou",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "summary": "webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。",
+      "observedAt": "2026-10-21T23:00:30.703+00:00",
+      "acquiredAt": null,
+      "recordedAt": "2026-10-21T23:00:30.703+00:00",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "morning-series14-61df76eb104c",
+      "structuredLastResult": "parse_failed",
+      "lastSuccessfulAt": "2026-10-19T23:00:40.619+00:00",
+      "lastAttemptAt": "2026-10-21T09:58:12.345+00:00",
+      "bodyRecovery": false
+    },
+    {
+      "id": "morning-existing21-2cb24f2734c6",
+      "url": "https://chiikawabakery.jp/",
+      "result": "success",
+      "acquiredAt": null,
+      "approximateAcquisitionTime": "2026-10-21 23:00 UTC頃",
+      "summary": "webで公式本文確認。",
+      "recordedAt": "2026-10-21T23:12:53.287Z",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "morning-existing21-2cb24f2734c6",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:58:46.054+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:10.849+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "result": "success",
+      "acquiredAt": null,
+      "approximateAcquisitionTime": "2026-10-21 23:00 UTC頃",
+      "summary": "webで公式予約案内本文確認。",
+      "recordedAt": "2026-10-21T23:12:53.287Z",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "chiikawa-bakery-reservation",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:59:47.562+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:33.885+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "result": "success",
+      "acquiredAt": null,
+      "approximateAcquisitionTime": "2026-10-21 22:58:50 UTC頃",
+      "summary": "webで公式ニュース本文確認。",
+      "recordedAt": "2026-10-21T23:12:53.287Z",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "evening-chiikawapark-tokyo-jp-news",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:59:48.546+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:37.119+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "result": "success",
+      "acquiredAt": null,
+      "approximateAcquisitionTime": "2026-10-21 22:59:58 UTC頃",
+      "summary": "webで公式ニュース本文確認。",
+      "recordedAt": "2026-10-21T23:12:53.287Z",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "morning-https-www-chiikawamogumogu-jp-news",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T22:57:40.543+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:37.639+00:00",
+      "bodyRecovery": true
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/",
+      "result": "success",
+      "acquiredAt": null,
+      "approximateAcquisitionTime": "2026-10-21 22:57:50 UTC頃",
+      "summary": "index.htmlのHTTP失敗後、代替URLで本文取得。10/23～25整理券・詳細公式X参照まで確認。詳細配布方法・受付時刻は未解決。ちいかわ海老名の条件を転用しない。",
+      "recordedAt": "2026-10-21T23:12:53.287Z",
+      "timeNote": "補足引継ぎで保存された概数のみ。厳密な本文取得完了時刻・生artifactは未保存。",
+      "ledgerSourceId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "structuredLastResult": "fetch_failed",
+      "lastSuccessfulAt": "2026-10-21T09:59:36.267+00:00",
+      "lastAttemptAt": "2026-10-21T22:58:23.448+00:00",
+      "bodyRecovery": true
+    }
+  ],
+  "sourceTimingContract": {
+    "validatorRule": "success requires exact lastSuccessfulAt equal to lastAttemptAt; failure must retain matching failed attempt",
+    "handling": "No schema or validator changes. Precisely timed HTTP attempts remain in structured fields. Later/alternative web body recovery is explicitly successful in finalSourceObservations and ledger notes. Recording/approximate observation time is never substituted for acquisition time.",
+    "sourceMessageSupplement": {
+      "recordedAt": "2026-10-21T23:12:53.287Z",
+      "basis": "Additional task-message observations; exact acquisition timestamps and raw web artifacts were not retained. Approximate times never populate lastSuccessfulAt.",
+      "webObservations": [
+        {
+          "id": "morning-existing21-2cb24f2734c6",
+          "url": "https://chiikawabakery.jp/",
+          "result": "success",
+          "acquiredAt": null,
+          "approximateAcquisitionTime": "2026-10-21 23:00 UTC頃",
+          "summary": "webで公式本文確認。"
+        },
+        {
+          "id": "chiikawa-bakery-reservation",
+          "url": "https://chiikawabakery.jp/reservation/",
+          "result": "success",
+          "acquiredAt": null,
+          "approximateAcquisitionTime": "2026-10-21 23:00 UTC頃",
+          "summary": "webで公式予約案内本文確認。"
+        },
+        {
+          "id": "evening-chiikawapark-tokyo-jp-news",
+          "url": "https://chiikawapark-tokyo.jp/news/",
+          "result": "success",
+          "acquiredAt": null,
+          "approximateAcquisitionTime": "2026-10-21 22:58:50 UTC頃",
+          "summary": "webで公式ニュース本文確認。"
+        },
+        {
+          "id": "morning-https-www-chiikawamogumogu-jp-news",
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "result": "success",
+          "acquiredAt": null,
+          "approximateAcquisitionTime": "2026-10-21 22:59:58 UTC頃",
+          "summary": "webで公式ニュース本文確認。"
+        },
+        {
+          "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+          "url": "https://nagano-info.jp/popupshop/ebina/",
+          "result": "success",
+          "acquiredAt": null,
+          "approximateAcquisitionTime": "2026-10-21 22:57:50 UTC頃",
+          "summary": "index.htmlのHTTP失敗後、代替URLで本文取得。10/23～25整理券・詳細公式X参照まで確認。詳細配布方法・受付時刻は未解決。ちいかわ海老名の条件を転用しない。"
+        }
+      ],
+      "limits": [
+        "大分の画像主体HTMLと画像403は確認成功に変更しない。",
+        "概数の観測時刻をlastSuccessfulAtやlastAttemptAtへ転記しない。",
+        "公開更新は既存2IDだけ。"
+      ]
+    }
+  },
+  "holds": [
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita",
+      "result": "配布詳細未確定。Webは画像主体、原画像403で今回実読不可。Xプロフィールは限定旧5投稿。新発表なしとは断言しない。",
+      "nextCheck": "本日19時および10/23開店前の公式X・施設。"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui",
+      "result": "公式本文10/23～25整理券、配布方法/受付時刻は公式X参照のまま。X公開可視範囲に詳細なし。ちいかわ海老名19時を転用しない。",
+      "nextCheck": "本日19時より前に個別公式X/施設追確認。"
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+      "result": "公式店舗T2 3Fマーケットプレイスを再確認、精密lat/lng=null。代表点採用の既存判断未解決。"
+    },
+    {
+      "id": "hold-popup-yonago-final-hours-20261012",
+      "result": "施設現行本文は開催名のみ、終了回時刻なし。新訂正根拠得られず16/17時矛盾維持。既存終了履歴は維持。"
+    },
+    {
+      "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+      "result": "主催本文に7/8～10/31開催、5mバルーン。固有フロア/時間/料金未記載継続。代表ピン判断未解決。"
+    }
+  ],
+  "additionalFindings": [
+    "A-style特設/待合室URLは今回正常本文取得（前回404風本文から回復）。掲載済みANA購入制限/時刻/満枠とは整合、削除/新規追加不要。",
+    "現行98スポットに10/22以前終了日のものなし。WAONは現行コラボ23件に含まれず移動重複不要。",
+    "ベーカリー商品在庫欠品/ラスク10/22再入荷は一時的商品在庫。会場/入場/開催終了とは分離し通常商品在庫の逐一掲載はしない。"
+  ],
+  "newReview": {
+    "asOf": "2026-10-21T23:00:30.703+00:00",
+    "baseCommit": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+    "dataOperations": "map-evening-20261020/DATA-OPERATIONS.md (2026-10-14 preserved)",
+    "newReadyListings": [],
+    "newHeldCandidates": [
+      "chiikawa-mogumogu-kamakura-opening-202612"
+    ],
+    "newCandidateCount": 1,
+    "sourceAttempts": 51,
+    "httpSuccess": 43,
+    "httpFailed": 8,
+    "webRecoveredNaganoSources": 6,
+    "sourceLimitations": [
+      "Image-only pages compared text/markup but pixel updates not fully checked",
+      "X profiles 403; searches not comprehensive",
+      "Nagano Ginza 502, Kasukabe406 remain"
+    ],
+    "broadReview": {
+      "lastGlobalBroadReview": null,
+      "supplementalSearchDate": "2026-10-22",
+      "scope": "企業・施設・新店求人・11月撮影会・新系列を補完検索。完全な週次全件監査ではない。",
+      "importantFinding": "運営会社の採用サイトは常設店新規発見の補助情報源。ただし求人原本非公開後は転載だけで掲載確定しない。"
+    },
+    "otherLeads": [
+      {
+        "name": "シーサーだらけくじ10/28",
+        "url": "https://x.com/chiikawa_market/status/2112876559182790836",
+        "decision": "公式投稿403、オンライン専用通常商品。国内実会場新規でないため追加しない。開始日は二次情報で一次未確認。"
+      },
+      {
+        "name": "現代百貨店忠清ナガノPOPUP",
+        "decision": "既存rejected候補、海外対象外。"
+      },
+      {
+        "name": "オリナス錦糸町わーくしょっぷ11/22–24",
+        "decision": "二次カレンダー2026年表示は要注意。元記事11/22土・11/24月祝で2025年情報。2026開催証拠なし、追加しない。"
+      },
+      {
+        "name": "新利府11/22・名取11/7・オプシア11/22・春日部11/3",
+        "decision": "既存IDあり重複追加しない。"
+      }
+    ]
+  },
+  "priorCi": {
+    "checkedAt": "2026-10-21T22:57:14.708Z",
+    "main": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+    "latest": [
+      {
+        "id": 39669798242,
+        "name": "Test site",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+        "created_at": "2026-10-21T20:22:53Z",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39669798242",
+        "path": ".github/workflows/test-site.yml"
+      },
+      {
+        "id": 39669798122,
+        "name": "pages build and deployment",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+        "created_at": "2026-10-21T20:22:53Z",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39669798122",
+        "path": "dynamic/pages/pages-build-deployment"
+      },
+      {
+        "id": 39669798202,
+        "name": "Validate spot data",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "44f0be86af5c6a05e4653356ce967bba9f7faeb1",
+        "created_at": "2026-10-21T20:22:53Z",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39669798202",
+        "path": ".github/workflows/validate-data.yml"
+      },
+      {
+        "id": 39662905139,
+        "name": "Check public site health",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "2b3ee1e6498de29345e3162463eee3926abc36af",
+        "created_at": "2026-10-21T19:35:01Z",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39662905139",
+        "path": ".github/workflows/check-site-health.yml"
+      },
+      {
+        "id": 39177400589,
+        "name": "Check external links",
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "565f28cc7ea947dd2fa04cc7b5996df684aabb63",
+        "created_at": "2026-10-18T23:38:59Z",
+        "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/39177400589",
+        "path": ".github/workflows/check-links.yml"
+      }
+    ],
+    "resolvedFailure": {
+      "id": 39662205075,
+      "workflow": ".github/workflows/validate-data.yml",
+      "supersededBy": 39669798202
+    },
+    "noRunningObserved": true,
+    "note": "Health latest success is older commit, not proof current commit passed that workflow. External links failure has no later same-workflow success."
+  },
+  "priorPublicComparison": [
+    {
+      "file": "official-spots.json",
+      "bytes": 214680,
+      "equal": true,
+      "sha256": "509e7dc5e406e9b8fccf9581316272238b299d7ffdc6a7f26aedc484351f9aeb",
+      "checkedAt": "2026-10-21T22:57:56.569979+00:00"
+    },
+    {
+      "file": "official-events-archive.json",
+      "bytes": 1114485,
+      "equal": true,
+      "sha256": "638bbb753ea3d4260cb4d2f2af32534772f7960620587c1762cf89b6096538f3",
+      "checkedAt": "2026-10-21T22:57:56.568395+00:00"
+    },
+    {
+      "file": "collaborations-current.json",
+      "bytes": 32923,
+      "equal": true,
+      "sha256": "3c04b951779936474ed0402d2b7572237a6b498d2a7380ea7cbb5e522545c4b8",
+      "checkedAt": "2026-10-21T22:57:56.541007+00:00"
+    },
+    {
+      "file": "collaborations-archive.json",
+      "bytes": 43939,
+      "equal": true,
+      "sha256": "e1ea811679165aebc1d4187bd1d90feed92861d610e1385b298ed1d7f37ab093",
+      "checkedAt": "2026-10-21T22:57:56.592887+00:00"
+    }
+  ],
+  "knownOnlyMetricsBefore": {
+    "newListing": {
+      "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+      "preStartPublication": {
+        "eligible": 54,
+        "known": 48,
+        "before": 46,
+        "notBefore": 2,
+        "unpublishedAfterStart": 1,
+        "unknown": 6,
+        "rate": 0.9583333333333334
+      },
+      "announcedToDiscovered": {
+        "elapsedHours": {
+          "samples": 0,
+          "mean": null,
+          "min": null,
+          "max": null
+        },
+        "japanCalendarDays": {
+          "samples": 39,
+          "mean": 2.5641025641025643,
+          "min": 0,
+          "max": 25
+        },
+        "unknownPairs": 15,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 54
+      },
+      "discoveredToPublished": {
+        "elapsedHours": {
+          "samples": 38,
+          "mean": 2.123258757309942,
+          "min": 0.6488888888888888,
+          "max": 17.201181944444443
+        },
+        "japanCalendarDays": {
+          "samples": 50,
+          "mean": 0.22,
+          "min": 0,
+          "max": 1
+        },
+        "unknownPairs": 3,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 15
+      },
+      "announcedToPublished": {
+        "elapsedHours": {
+          "samples": 2,
+          "mean": 304.2463888888889,
+          "min": 9.783333333333333,
+          "max": 598.7094444444444
+        },
+        "japanCalendarDays": {
+          "samples": 39,
+          "mean": 2.7948717948717947,
+          "min": 0,
+          "max": 25
+        },
+        "unknownPairs": 14,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 51
+      }
+    },
+    "nonHistorical": {
+      "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+      "preStartPublication": {
+        "eligible": 54,
+        "known": 48,
+        "before": 46,
+        "notBefore": 2,
+        "unpublishedAfterStart": 1,
+        "unknown": 6,
+        "rate": 0.9583333333333334
+      },
+      "announcedToDiscovered": {
+        "elapsedHours": {
+          "samples": 24,
+          "mean": 24.712444733796293,
+          "min": 0.08666666666666667,
+          "max": 168.4488888888889
+        },
+        "japanCalendarDays": {
+          "samples": 110,
+          "mean": 2.2454545454545456,
+          "min": 0,
+          "max": 90
+        },
+        "unknownPairs": 160,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 246
+      },
+      "discoveredToPublished": {
+        "elapsedHours": {
+          "samples": 123,
+          "mean": 2.372953579494129,
+          "min": 0.2632788888888889,
+          "max": 49.16888888888889
+        },
+        "japanCalendarDays": {
+          "samples": 209,
+          "mean": 0.1291866028708134,
+          "min": 0,
+          "max": 5
+        },
+        "unknownPairs": 58,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 144
+      },
+      "announcedToPublished": {
+        "elapsedHours": {
+          "samples": 27,
+          "mean": 124.40032753086422,
+          "min": 0.9925,
+          "max": 2156.4727047222223
+        },
+        "japanCalendarDays": {
+          "samples": 126,
+          "mean": 13.253968253968255,
+          "min": 0,
+          "max": 1273
+        },
+        "unknownPairs": 141,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 240
+      }
+    },
+    "reservation": {
+      "unknown": 1,
+      "before": 28,
+      "not_before": 8
+    }
+  },
+  "operations": {
+    "path": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261020\\incoming-packet\\DATA-OPERATIONS.md",
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "publication": {
+    "state": "awaiting_public_verification",
+    "publishedAt": null,
+    "candidateIds": [
+      "update-ebina-queue-20261022",
+      "update-laforet-entry-20261022"
+    ]
+  }
+}
