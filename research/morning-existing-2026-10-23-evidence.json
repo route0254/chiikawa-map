@@ -1,0 +1,492 @@
+{
+  "report": {
+    "observedAt": "2026-10-22T23:09:12.333+00:00",
+    "changes": 6,
+    "coverage": {
+      "failed": 47,
+      "success": 72,
+      "partial": 8
+    },
+    "decisions": [
+      "ベーカリー原宿/東京の10/23入場を更新。東京11月優先券完売追加。",
+      "らんど梅田/東京駅/ソラマチ/心斎橋の10/23集合/再入場注意を追加。",
+      "大分・海老名・ANA購入制限継続はPR70等既掲載、重複修正なし。",
+      "施設関連記事の差分とSNS数値のみは更新対象外。もぐもぐ圧縮本文は展開後比較。"
+    ],
+    "limitations": [
+      "Xプロフィールは表示投稿のみ。全投稿取得ではない。",
+      "梅田集合場所図・ソラマチ/心斎橋集合表は403。時刻/場所を推定しない。",
+      "PARCO既知404は今回対象外。",
+      "期限超過の羽田T2/KITTE/米子は保留解消を確認せず。米子event一覧・JR主催本文は再取得し本文差分なしだが個別未確定条件を確定しない。"
+    ],
+    "imageEvidence": [
+      {
+        "id": "HVPLdECacAAHRV-",
+        "url": "https://pbs.twimg.com/media/HVPLdECacAAHRV-.jpg",
+        "success": false,
+        "error": "HTTP Error 403: Forbidden",
+        "observedAt": "2026-10-22T23:07:45.759+00:00"
+      },
+      {
+        "id": "HVPFuuFbgAAEJLL",
+        "url": "https://pbs.twimg.com/media/HVPFuuFbgAAEJLL.jpg",
+        "success": true,
+        "observedAt": "2026-10-22T23:07:45.760+00:00"
+      },
+      {
+        "id": "HVO_GojbcAAomzu",
+        "url": "https://pbs.twimg.com/media/HVO_GojbcAAomzu.jpg",
+        "success": false,
+        "error": "HTTP Error 403: Forbidden",
+        "observedAt": "2026-10-22T23:07:45.760+00:00"
+      },
+      {
+        "id": "HVO-JJjbcAATd5R",
+        "url": "https://pbs.twimg.com/media/HVO-JJjbcAATd5R.jpg",
+        "success": true,
+        "observedAt": "2026-10-22T23:07:45.761+00:00"
+      },
+      {
+        "id": "HVO-JJubUAA8gkb",
+        "url": "https://pbs.twimg.com/media/HVO-JJubUAA8gkb.jpg",
+        "success": false,
+        "error": "HTTP Error 403: Forbidden",
+        "observedAt": "2026-10-22T23:07:45.761+00:00"
+      }
+    ],
+    "publicCompare": "親確認: 公開3JSONはmain一致98/671/23",
+    "artifacts": [
+      "update-packet.json",
+      "candidate-upserts.json",
+      "source-upserts.json",
+      "fetches.json",
+      "visible-diffs.json"
+    ]
+  },
+  "updates": [
+    {
+      "targetFile": "data/official-spots.json",
+      "id": "chiikawa-bakery-shop-laforet",
+      "fields": [
+        {
+          "field": "entryNote",
+          "before": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+          "after": "2026年10月23日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。"
+        },
+        {
+          "field": "importantNotice",
+          "before": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
+          "after": "2026年10月23日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。"
+        },
+        {
+          "field": "entryInfoUrl",
+          "before": "https://x.com/chiikawabakery/status/2112853907860775384",
+          "after": "https://x.com/chiikawabakery/status/2113224950953996424"
+        },
+        {
+          "field": "entryInfoCheckedAt",
+          "before": "2026-10-22",
+          "after": "2026-10-23"
+        }
+      ],
+      "evidenceUrl": "https://x.com/chiikawabakery/status/2113224950953996424",
+      "observedAt": "2026-10-22T23:08:18.824+00:00",
+      "publicVerifiedAt": null,
+      "notes": "10/22投稿の「明日」を10/23と解釈。本文で10時・場所・開店後店頭・1日1回を確認。"
+    },
+    {
+      "targetFile": "data/official-spots.json",
+      "id": "chiikawa-bakery-tokyo",
+      "fields": [
+        {
+          "field": "entryNote",
+          "before": "2026年10月21日の公式告知では、東京店のフリー入場はデジタル整理券で案内します。整理券は当日14:50から発行予定で、呼出しから15分以内に来店しないとキャンセルになります。現在の発行状況・残枠は未確認です。 2026年10月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+          "after": "2026年10月23日の東京店のフリー入場はデジタル整理券で案内します。整理券は当日14:50から発行予定で、呼出しから15分以内に来店しないとキャンセルになります。現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。"
+        },
+        {
+          "field": "entryInfoUrl",
+          "before": "https://x.com/chiikawabakery/status/2112710460600414305",
+          "after": "https://x.com/chiikawabakery/status/2113246934433673659"
+        },
+        {
+          "field": "entryInfoCheckedAt",
+          "before": "2026-10-21",
+          "after": "2026-10-23"
+        }
+      ],
+      "evidenceUrl": "https://x.com/chiikawabakery/status/2113246934433673659",
+      "observedAt": "2026-10-22T23:08:18.824+00:00",
+      "publicVerifiedAt": null,
+      "notes": "10/22公式投稿の明日=10/23。14:50・呼出15分を本文確認。11月完売はhttps://chiikawabakery.jp/reservation/ 2026-10-22T23:05:45Z web open本文で確認。未確認の12月完売は追加しない。"
+    },
+    {
+      "targetFile": "data/official-spots.json",
+      "id": "chiikawaland-osaka-umeda",
+      "fields": [
+        {
+          "field": "entryNote",
+          "before": "2026年10月23日は終日、LINEアプリによる入店チケットが必要です。店舗全体が入場制限の対象です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月20日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "after": "2026年10月23日は終日、LINEアプリによる入店チケットが必要です。店舗全体が入場制限の対象です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月20日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。 10月23日の予約者は公式投稿の画像でチケット番号ごとの集合時刻をご確認ください。集合に遅れると入場できない場合があり、退場後の再入場はできません。A1〜A40の方は9:50までに公式画像指定の場所へお並びください。その他は集合時刻になったら店頭の自分のチケットと同じ番号札の列へお並びください。"
+        },
+        {
+          "field": "importantNotice",
+          "before": "10月23日分の抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。 販売可能数に空きが生じた場合のみ、10月20日20:00から二次先着受付を行います。",
+          "after": "10月23日は予約者のみ入店可能です。A1〜A40は9:50までに公式画像の指定場所へ集合。その他の番号も集合時刻が指定されています。"
+        },
+        {
+          "field": "entryInfoUrl",
+          "before": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "after": "https://x.com/chiikawa_land/status/2113241723224866937"
+        },
+        {
+          "field": "entryInfoCheckedAt",
+          "before": "2026-10-20",
+          "after": "2026-10-23"
+        }
+      ],
+      "evidenceUrl": "https://x.com/chiikawa_land/status/2113241723224866937",
+      "observedAt": "2026-10-22T23:08:18.825+00:00",
+      "publicVerifiedAt": null,
+      "notes": "集合時刻表を画像目視済。別画像の集合場所図は403未取得につき具体的な場所を推定しない。"
+    },
+    {
+      "targetFile": "data/official-spots.json",
+      "id": "chiikawaland-tokyo-station",
+      "fields": [
+        {
+          "field": "entryNote",
+          "before": "2026年10月23日は14:00まで、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月21日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "after": "2026年10月23日は14:00まで、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月21日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。 10月23日の予約者は公式投稿の画像でチケット番号ごとの集合時刻をご確認ください。集合に遅れると入場できない場合があり、退場後の再入場はできません。新商品エリアは予約者のみ入場可能です。A1〜12は10:25集合・10:30〜10:45案内で、各枠の集合は案内開始5分前です。14:00以降の入場方法は決まり次第公式Xで案内予定で、フリー入場とは確定していません。代理の方や当選者以外は入場できません。"
+        },
+        {
+          "field": "importantNotice",
+          "before": "10月23日は14:00まで、対象エリアへの入場にLINEでの予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。対象エリアは15分ごとの入替制です。 販売可能数に空きが生じた場合のみ、10月21日20:00から二次先着受付を行います。",
+          "after": "10月23日の新商品エリアは予約者のみ入場可能です。各枠の集合は案内開始5分前。14:00以降の入場方法は未発表です。"
+        },
+        {
+          "field": "entryInfoUrl",
+          "before": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "after": "https://x.com/chiikawa_land/status/2113250061840961669"
+        },
+        {
+          "field": "entryInfoCheckedAt",
+          "before": "2026-10-20",
+          "after": "2026-10-23"
+        }
+      ],
+      "evidenceUrl": "https://x.com/chiikawa_land/status/2113250061840961669",
+      "observedAt": "2026-10-22T23:08:18.825+00:00",
+      "publicVerifiedAt": null,
+      "notes": "集合表原画像目視。A〜G各24名を12名ずつ15分枠、10:25〜13:40集合。"
+    },
+    {
+      "targetFile": "data/official-spots.json",
+      "id": "chiikawaland-solamachi",
+      "fields": [
+        {
+          "field": "entryNote",
+          "before": "2026年10月23日は終日、LINEアプリによる入店チケットが必要です。店舗全体が入場制限の対象です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月21日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "after": "2026年10月23日は終日、LINEアプリによる入店チケットが必要です。店舗全体が入場制限の対象です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月21日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。 10月23日の予約者は公式投稿の画像でチケット番号ごとの集合時刻をご確認ください。集合に遅れると入場できない場合があり、退場後の再入場はできません。10:00のチケットをお持ちの方は、ソラマチ開館後に店頭へお越しください。代理の方や当選者以外は入場できません。"
+        },
+        {
+          "field": "importantNotice",
+          "before": "10月23日分の抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。 販売可能数に空きが生じた場合のみ、10月21日20:00から二次先着受付を行います。",
+          "after": "10月23日は予約者のみ入店可能です。10:00枠はソラマチ開館後に店頭へ。ほかの枠は公式投稿画像の集合時刻をご確認ください。"
+        },
+        {
+          "field": "entryInfoUrl",
+          "before": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "after": "https://x.com/chiikawa_land/status/2113256355335463143"
+        },
+        {
+          "field": "entryInfoCheckedAt",
+          "before": "2026-10-20",
+          "after": "2026-10-23"
+        }
+      ],
+      "evidenceUrl": "https://x.com/chiikawa_land/status/2113256355335463143",
+      "observedAt": "2026-10-22T23:08:18.825+00:00",
+      "publicVerifiedAt": null,
+      "notes": "本文確認済。集合時間画像は403未取得。本文にない時刻は転記しない。"
+    },
+    {
+      "targetFile": "data/official-spots.json",
+      "id": "chiikawaland-shinsaibashi",
+      "fields": [
+        {
+          "field": "entryNote",
+          "before": "2026年10月23日は終日、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月20日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+          "after": "2026年10月23日は終日、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月20日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。 10月23日の予約者は公式投稿の画像でチケット番号ごとの集合時刻をご確認ください。集合に遅れると入場できない場合があり、退場後の再入場はできません。新商品エリアは予約者のみ入場可能です。代理の方や当選者以外は入場できません。"
+        },
+        {
+          "field": "importantNotice",
+          "before": "10月23日は終日、対象エリアへの入場にLINEでの予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。対象エリアは15分ごとの入替制です。 販売可能数に空きが生じた場合のみ、10月20日20:00から二次先着受付を行います。",
+          "after": "10月23日の新商品エリアは予約者のみ入場可能です。公式投稿画像の集合時刻に遅れると入場できない場合があります。再入場・代理入場はできません。"
+        },
+        {
+          "field": "entryInfoUrl",
+          "before": "https://x.com/chiikawa_land/status/2110643022991892767",
+          "after": "https://x.com/chiikawa_land/status/2113242777773559935"
+        },
+        {
+          "field": "entryInfoCheckedAt",
+          "before": "2026-10-19",
+          "after": "2026-10-23"
+        }
+      ],
+      "evidenceUrl": "https://x.com/chiikawa_land/status/2113242777773559935",
+      "observedAt": "2026-10-22T23:08:18.825+00:00",
+      "publicVerifiedAt": null,
+      "notes": "本文確認済。集合時間画像は403未取得。本文にない時刻は転記しない。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "update-chiikawa-bakery-shop-laforet-entry-20261023",
+      "title": "chiikawa-bakery-shop-laforet 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113224950953996424"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2113224950953996424",
+          "observedAt": "2026-10-22T23:06:30.185+00:00",
+          "summary": "10/22投稿の「明日」を10/23と解釈。本文で10時・場所・開店後店頭・1日1回を確認。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawa-bakery-tokyo-entry-20261023",
+      "title": "chiikawa-bakery-tokyo 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-tokyo:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113246934433673659",
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2113246934433673659",
+          "observedAt": "2026-10-22T23:06:30.184+00:00",
+          "summary": "10/22公式投稿の明日=10/23。14:50・呼出15分を本文確認。11月完売はhttps://chiikawabakery.jp/reservation/ 2026-10-22T23:05:45Z web open本文で確認。未確認の12月完売は追加しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-22T23:05:45.000Z",
+          "summary": "公式予約本文で東京10月・11月の優先入場券完売を確認。12月の東京完売とは書かない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-osaka-umeda-entry-20261023",
+      "title": "chiikawaland-osaka-umeda 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-osaka-umeda:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113241723224866937"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113241723224866937",
+          "observedAt": "2026-10-22T23:06:30.191+00:00",
+          "summary": "集合時刻表を画像目視済。別画像の集合場所図は403未取得につき具体的な場所を推定しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-tokyo-station-entry-20261023",
+      "title": "chiikawaland-tokyo-station 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-tokyo-station:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113250061840961669"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113250061840961669",
+          "observedAt": "2026-10-22T23:06:30.188+00:00",
+          "summary": "集合表原画像目視。A〜G各24名を12名ずつ15分枠、10:25〜13:40集合。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-tokyo-station"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-tokyo-station"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-solamachi-entry-20261023",
+      "title": "chiikawaland-solamachi 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-solamachi:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113256355335463143"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113256355335463143",
+          "observedAt": "2026-10-22T23:06:30.187+00:00",
+          "summary": "本文確認済。集合時間画像は403未取得。本文にない時刻は転記しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-solamachi"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-solamachi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-shinsaibashi-entry-20261023",
+      "title": "chiikawaland-shinsaibashi 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-shinsaibashi:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113242777773559935"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113242777773559935",
+          "observedAt": "2026-10-22T23:06:30.190+00:00",
+          "summary": "本文確認済。集合時間画像は403未取得。本文にない時刻は転記しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-shinsaibashi"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    }
+  ]
+}
