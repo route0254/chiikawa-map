@@ -2281,6 +2281,12 @@
           "observedAt": "2026-10-21T10:05:39.990+00:00",
           "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
           "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/",
+          "observedAt": "2026-10-22T10:05:21Z",
+          "summary": "10/22夕方再確認。ナガノ本文は10/23〜25整理券維持、Xプロフィール取得は投稿なし/403。大分本文は画像主体、主画像直接GET403。開催施設も詳細本文取得不可/古い検索キャッシュ。配布開始・集合条件は未確認で推定しない。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -2294,8 +2300,8 @@
       "state": "published",
       "priority": "high",
       "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
-      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "nextCheck": "10/22 22時JSTまでに公式X・施設の入場続報を再確認。未確認を配布不要/自由入場としない。",
+      "recheckDueAt": "2026-10-22T22:00:00+09:00",
       "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
@@ -9723,6 +9729,12 @@
           "observedAt": "2026-10-21T10:05:39.990+00:00",
           "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
           "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/",
+          "observedAt": "2026-10-22T10:05:21Z",
+          "summary": "10/22夕方再確認。ナガノ本文は10/23〜25整理券維持、Xプロフィール取得は投稿なし/403。大分本文は画像主体、主画像直接GET403。開催施設も詳細本文取得不可/古い検索キャッシュ。配布開始・集合条件は未確認で推定しない。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -9736,10 +9748,10 @@
         "nagano-market-popup-2026-10-23-ebina-marui"
       ],
       "state": "published",
-      "priority": "normal",
+      "priority": "high",
       "decision": "一次本文で対象期間拡大を確認。既存IDと対象外日のunknown区分を維持し、entryNote/importantNoticeのみ10/23〜25へ更新。系列原本の個別checkedAtを更新して生成する。発表日時・受付開始日時は不明のためnull。公開前のためpublishedAtはnull。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/22朝に配布詳細と変更を再確認。",
-      "recheckDueAt": "2026-10-22T08:00:00+09:00",
+      "nextCheck": "10/22 22時JSTまでに公式X・施設の入場続報を再確認。未確認を配布不要/自由入場としない。",
+      "recheckDueAt": "2026-10-22T22:00:00+09:00",
       "publishedAt": "2026-10-14T23:28:21.804+00:00"
     },
     {
@@ -16776,6 +16788,12 @@
           "observedAt": "2026-10-21T22:59:47.733+00:00",
           "summary": "10月23～25日の10:30～11:00入場枠を予約した方は、10:20までに2F公園側店頭（コーチ横）へお並びください。10:20以降に到着した方は開店後、直接5Fイベントスペースの会場前へお越しください。",
           "recordPath": "research/morning-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/68",
+          "observedAt": "2026-10-21T23:29:45.651Z",
+          "summary": "PR68 main c9490b4d5e2c611f494d719330f81f4a3f472366 公開24ファイルの初回一致。Pages 39693643793 配信完了 2026-10-21T23:29:11Z と区別し、後日の同期・再確認日時で置き換えない。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16788,12 +16806,12 @@
       "listingIds": [
         "popup-2026-10-23-ebina-marui"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "公式原文と対象店舗/日付確認済み。検査後に公開実体まで確認。発表時刻の表示TZ未確定につき日精度。 発見日はJST日精度。発見瞬間の正確な時刻は不明。個別原文取得時刻はevidence.observedAtに記録。",
-      "nextCheck": "公開実体照合と当日の追加条件を確認。",
-      "recheckDueAt": "2026-10-22T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。初回実公開照合日時は後日の同期日時に置き換えない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T23:29:45.651Z"
     },
     {
       "id": "update-laforet-entry-20261022",
@@ -16816,6 +16834,12 @@
           "observedAt": "2026-10-21T22:59:47.733+00:00",
           "summary": "2026年10月22日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
           "recordPath": "research/morning-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/68",
+          "observedAt": "2026-10-21T23:29:45.651Z",
+          "summary": "PR68 main c9490b4d5e2c611f494d719330f81f4a3f472366 公開24ファイルの初回一致。Pages 39693643793 配信完了 2026-10-21T23:29:11Z と区別し、後日の同期・再確認日時で置き換えない。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16828,12 +16852,12 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "公式原文と対象店舗/日付確認済み。検査後に公開実体まで確認。発表時刻の表示TZ未確定につき日精度。 発見日はJST日精度。発見瞬間の正確な時刻は不明。個別原文取得時刻はevidence.observedAtに記録。",
-      "nextCheck": "公開実体照合と当日の追加条件を確認。",
-      "recheckDueAt": "2026-10-22T10:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。初回実公開照合日時は後日の同期日時に置き換えない。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-21T23:29:45.651Z"
     },
     {
       "id": "chiikawa-mogumogu-kamakura-opening-202612",
@@ -16854,7 +16878,7 @@
       "existingMatch": {
         "status": "new",
         "ids": [],
-        "note": "main44f0be86三JSONと候補台帳を鎌倉/小町2-10-18/kamakuraで照合し同店なし。"
+        "note": "最新main c9490b4d5e2c611f494d719330f81f4a3f472366公開3JSONにも鎌倉既存IDなし。初回発見は維持。"
       },
       "listingIds": [],
       "state": "on_hold",
@@ -16877,11 +16901,57 @@
           "observedAt": "2026-10-21T23:00:30.703+00:00",
           "summary": "公式企業サイト→中途採用がtelacoya-jobs.net、ニュースに鎌倉告知は見当たらず。",
           "recordPath": null
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T10:06:32.724+00:00",
+          "summary": "公式求人原本は200応答だが現在公開されていません。公式ニュース・店舗一覧にも鎌倉開業の新しい一次告知なし。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
         }
       ],
       "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。",
-      "nextCheck": "10/22夕方に公式ニュース・店舗案内・公式採用原本を再確認。開業/予約が確定したら開始前掲載。",
-      "recheckDueAt": "2026-10-22T19:00:00+09:00"
+      "nextCheck": "10/23朝8時に公式ニュース、店舗一覧、求人原本を再確認。公式開業/受付の確定情報を優先。",
+      "recheckDueAt": "2026-10-23T08:00:00+09:00"
+    },
+    {
+      "id": "update-ana-purchase-limit-extension-20261022",
+      "title": "ANAコラボグッズ購入個数制限を10/26以降も継続",
+      "kind": "listing_update",
+      "targetKey": "ana-chiikawa-jet-2026:purchase-limit-extension",
+      "sourceIds": [
+        "morning-existing21-4fdf328cdc02"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T10:06:27.411+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-10-23",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-22T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+          "observedAt": "2026-10-22T10:06:27.411+00:00",
+          "summary": "10/22付追記とFAQで購入個数制限の10/26以降当面継続を確認。各商品2点・BOX1点。現行コラボIDは旧10/23〜25制限。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "public3JSON相当最新mainと照合。既存コラボperiods第1弾発売noteへの修正。重複登録不要。"
+      },
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "期限変更のみ。10/23発売前の同日反映対象。",
+      "nextCheck": "検査・GitHub反映・公開JSON一致を確認。",
+      "recheckDueAt": "2026-10-22T23:59:59+09:00",
+      "publishedAt": null
     }
   ]
 }
