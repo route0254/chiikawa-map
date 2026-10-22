@@ -12490,6 +12490,40 @@
       "lastFailure": null,
       "resultSummary": "HTTP取得結果。成功時も本文同一性は画像や動的SNSの最新性を保証しない。",
       "note": "2026-10-22朝の公式個別入場案内。確認済み引継ぎ原本を保存。"
+    },
+    {
+      "id": "venue-aeon-oita-entry-news-1972762",
+      "name": "イオンパークプレイス大分 ちいかわPOPUP入場案内",
+      "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-22T13:12:07.058Z",
+      "lastSuccessfulAt": "2026-10-22T13:12:07.058Z",
+      "lastResult": "success",
+      "lastFailure": null,
+      "resultSummary": "入場日程と配布時間・場所を本文で確認。追記時刻は不明。 このPCのGETでもHTTP200と本文の配布場所を確認。",
+      "note": "施設公式の入場案内。ページ表示日は2026-10-19、入場条件の追記日時は不明。"
+    },
+    {
+      "id": "nagano-ebina-entry-tweet-2112739858506756400",
+      "name": "ナガノ海老名 入場整理券公式投稿（Yahoo公開配信確認）",
+      "url": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-22T13:01:27.889+00:00",
+      "lastSuccessfulAt": "2026-10-22T13:01:27.889+00:00",
+      "lastResult": "success",
+      "lastFailure": null,
+      "resultSummary": "公式投稿のYahoo配信本文と添付画像で海老名5F・10/23–25 LINE整理券を確認。12:30入場まで前日19時、13時以降各回1時間前、距離制限なし、期間中1人1回、本人確認必須、有効1時間、30分完全入替。X直読403は別途維持。",
+      "note": "この単一投稿のYahoo公開配信確認成功。X本体直読成功や公式プロフィール全投稿の網羅を意味しない。既存nagano_mkt_shopプロフィールの403/前回成功日時は変更しない。"
     }
   ]
 }
