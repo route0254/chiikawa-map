@@ -2287,6 +2287,12 @@
           "observedAt": "2026-10-22T10:05:21Z",
           "summary": "10/22夕方再確認。ナガノ本文は10/23〜25整理券維持、Xプロフィール取得は投稿なし/403。大分本文は画像主体、主画像直接GET403。開催施設も詳細本文取得不可/古い検索キャッシュ。配布開始・集合条件は未確認で推定しない。",
           "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+          "observedAt": "2026-10-22T12:59:44.228+00:00",
+          "summary": "10/23–25、9:30–10:00イオン東側パン工場入口、開場後残券会場配布を一次本文で確認。従来保留を解消、既存掲載への条件更新を別候補化。",
+          "recordPath": "research/followup-entry-20261022-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -2300,8 +2306,8 @@
       "state": "published",
       "priority": "high",
       "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/22 22時JSTまでに公式X・施設の入場続報を再確認。未確認を配布不要/自由入場としない。",
-      "recheckDueAt": "2026-10-22T22:00:00+09:00",
+      "nextCheck": "施設公式で入場詳細解消。新規更新候補update-oita-entry-details-20261022の公開照合を確認後、開始当日朝に公式変更を確認。",
+      "recheckDueAt": "2026-10-22T23:59:59+09:00",
       "publishedAt": "2026-10-10T02:44:10.255Z"
     },
     {
@@ -9750,8 +9756,8 @@
       "state": "published",
       "priority": "high",
       "decision": "一次本文で対象期間拡大を確認。既存IDと対象外日のunknown区分を維持し、entryNote/importantNoticeのみ10/23〜25へ更新。系列原本の個別checkedAtを更新して生成する。発表日時・受付開始日時は不明のためnull。公開前のためpublishedAtはnull。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
-      "nextCheck": "10/22 22時JSTまでに公式X・施設の入場続報を再確認。未確認を配布不要/自由入場としない。",
-      "recheckDueAt": "2026-10-22T22:00:00+09:00",
+      "nextCheck": "配布方法判明。新更新候補 update-nagano-ebina-entry-details-20261022 の公開照合後、開催朝の公式続報を確認",
+      "recheckDueAt": "2026-10-22T23:59:59+09:00",
       "publishedAt": "2026-10-14T23:28:21.804+00:00"
     },
     {
@@ -16934,6 +16940,12 @@
           "observedAt": "2026-10-22T10:06:27.411+00:00",
           "summary": "10/22付追記とFAQで購入個数制限の10/26以降当面継続を確認。各商品2点・BOX1点。現行コラボIDは旧10/23〜25制限。",
           "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-10-22T10:42:10.183Z",
+          "summary": "PR69 main 610d12aa3610686ce865d41aaf645169a9b4d524 と公開22ファイルの初回一致。配信job完了 2026-10-22T10:41:40Z と別に記録した実確認時刻を使用。",
+          "recordPath": "research/followup-entry-20261022-22-evidence.json"
         }
       ],
       "existingMatch": {
@@ -16946,10 +16958,96 @@
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
+      "state": "published",
+      "priority": "high",
+      "decision": "期限変更のみ。10/23発売前の同日反映対象。 PR69の公開22ファイル初回一致を実時刻で確認し同期。",
+      "nextCheck": "通常巡回で公式条件変更を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-22T10:42:10.183Z"
+    },
+    {
+      "id": "update-oita-entry-details-20261022",
+      "title": "大分POP UP入場整理券10/23～25・9:30配布場所を反映",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-10-23-aeon-parkplace-oita:entry-details-20261023-20261025",
+      "sourceIds": [
+        "venue-aeon-oita-entry-news-1972762"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-22T12:59:44.228+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-08",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-22T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+          "observedAt": "2026-10-22T12:59:44.228+00:00",
+          "summary": "公式開催施設本文に10/23–25、9:30–10:00イオン1階東側パン工場側入口、開場後残券は会場配布。混雑による変更あり。ページ日10/19、追記日時不明。",
+          "recordPath": "research/followup-entry-20261022-22-evidence.json"
+        },
+        {
+          "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+          "observedAt": "2026-10-22T13:12:07.058Z",
+          "summary": "このWindows環境で施設公式本文をGETし、パン工場側入口・サニーウォーク・レプシィムの記載とHTTP200を再確認。",
+          "recordPath": "research/followup-entry-20261022-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-23-aeon-parkplace-oita"
+        ],
+        "note": "12:59:50UTC公開3JSON照合、同ID旧10/23のみ条件を確認。重複なし。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-aeon-parkplace-oita"
+      ],
       "state": "ready",
       "priority": "high",
-      "decision": "期限変更のみ。10/23発売前の同日反映対象。",
-      "nextCheck": "検査・GitHub反映・公開JSON一致を確認。",
+      "decision": "既存条件の拡大・具体化を一次情報で確認。会期/場所はそのまま、当日反映。 施設ページの表示日は10/19だが、入場条件の追記日時は不明のため変更発表日時はnullで保持。",
+      "nextCheck": "公開反映・同IDの条件一致を確認。",
+      "recheckDueAt": "2026-10-22T23:59:59+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-nagano-ebina-entry-details-20261022",
+      "title": "ナガノ海老名LINE整理券受付時刻・本人確認を反映",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-popup-2026-10-23-ebina-marui:entry-details-20261023-20261025",
+      "sourceIds": [
+        "nagano-ebina-entry-tweet-2112739858506756400"
+      ],
+      "officialAnnouncedAt": "2026-10-21T11:56:49+09:00",
+      "discoveredAt": "2026-10-22T13:01:27.889+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+      "reflectDueAt": "2026-10-22T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+          "observedAt": "2026-10-22T13:01:27.889+00:00",
+          "summary": "公式投稿のYahoo配信本文と添付画像で海老名5F・10/23–25 LINE整理券を確認。12:30入場まで前日19時、13時以降各回1時間前、距離制限なし、期間中1人1回、本人確認必須、有効1時間、30分完全入替。X直読403は別途維持。",
+          "recordPath": "research/followup-entry-20261022-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-10-23-ebina-marui"
+        ],
+        "note": "12:59:50UTC公開3JSONに同一ID確認、旧案内は詳細未確定。新規追加せず同一ID更新。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式配信本文・添付画像で通常掲載条件差分を確認。当日優先反映。10/23朝枠の19時受付開始は既に経過、空き未確認。既存publishedレコードの初回公開日時は維持。",
+      "nextCheck": "公開反映と同ID条件一致を確認。集合案内はナガノ公式の追加発表がある場合のみ更新。",
       "recheckDueAt": "2026-10-22T23:59:59+09:00",
       "publishedAt": null
     }

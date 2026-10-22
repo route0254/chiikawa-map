@@ -1,0 +1,1025 @@
+{
+  "recordedAt": "2026-10-22T13:11:39.113Z",
+  "base": "610d12aa3610686ce865d41aaf645169a9b4d524",
+  "operations": {
+    "path": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261020\\incoming-packet\\DATA-OPERATIONS.md",
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "intakes": [
+    {
+      "receivedAt": "2026-10-22T13:03:31.058Z",
+      "encodedCharacters": 2380,
+      "decodedBytes": 4786,
+      "sha256": "0573badb44f88110139d8a91d7e8c9491be074ecf1eda1655848a934cb12af46",
+      "gzipChecksumVerified": true,
+      "jsonParsed": true,
+      "expectedHashProvided": false
+    },
+    {
+      "receivedAt": "2026-10-22T13:07:57.475Z",
+      "encodedCharacters": 3664,
+      "decodedBytes": 7239,
+      "sha256": "5205877d89de4f12a2333683eda8c7a831a78200ff29cd6ded9eae591c0f998e",
+      "gzipChecksumVerified": true,
+      "jsonParsed": true,
+      "hashVerified": true
+    }
+  ],
+  "rawPackets": [
+    {
+      "publicDataPatch": {
+        "targetFile": "data/official-spots.json",
+        "id": "popup-2026-10-23-aeon-parkplace-oita",
+        "canonicalSourceInstruction": "既存の系列原本から生成される場合は系列原本を修正して生成。予約区分・会場・日程・座標・IDは変更しない。",
+        "fields": [
+          {
+            "field": "entryNote",
+            "before": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+            "after": "10月23日～25日は混雑緩和のため入場整理券を配布する案内があります。9:30～10:00はイオン1階東側パン工場側入口で配布し、この入口を優先入口として対応します。10:00開場以降、整理券に余りがある場合はサニーウォーク1階レプシィム前イベント会場で配布します。混雑状況により配布有無を判断し、配布時刻が前後する場合があります。夜間の整列はご遠慮ください。複数名で入店する場合は全員そろってお並びください。混雑状況によって閉場前に入場を締め切る場合があります。"
+          },
+          {
+            "field": "importantNotice",
+            "before": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+            "after": "10月23日～25日は混雑緩和のため入場整理券を配布する案内があります。9:30～10:00はイオン1階東側パン工場側入口で配布し、この入口を優先入口として対応します。10:00開場以降、整理券に余りがある場合はサニーウォーク1階レプシィム前イベント会場で配布します。混雑状況により配布有無を判断し、配布時刻が前後する場合があります。夜間の整列はご遠慮ください。複数名で入店する場合は全員そろってお並びください。混雑状況によって閉場前に入場を締め切る場合があります。"
+          },
+          {
+            "field": "entryInfoUrl",
+            "before": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+            "after": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/"
+          },
+          {
+            "field": "entryInfoCheckedAt",
+            "before": "2026-10-10",
+            "after": "2026-10-22"
+          }
+        ],
+        "evidenceUrl": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+        "observedAt": "2026-10-22T12:59:44.228709+00:00",
+        "officialAnnouncedAt": "2026-10-19",
+        "announcementCaveat": "ページの表示日。入場条件の追記日時は不明。",
+        "publishedAt": null
+      },
+      "candidateUpserts": [
+        {
+          "id": "update-oita-entry-details-20261022",
+          "title": "大分POP UP入場整理券10/23～25・9:30配布場所を反映",
+          "kind": "listing_update",
+          "targetKey": "popup-2026-10-23-aeon-parkplace-oita:entry-details-20261023-20261025",
+          "sourceIds": [
+            "venue-aeon-oita-entry-news-1972762"
+          ],
+          "officialAnnouncedAt": "2026-10-19",
+          "discoveredAt": "2026-10-22T12:59:44.228709+00:00",
+          "eventStartsAt": "2026-10-23",
+          "eventEndsAt": "2026-11-08",
+          "releaseAt": null,
+          "reservationOpensAt": null,
+          "reflectDueAt": "2026-10-22T23:59:59+09:00",
+          "evidence": [
+            {
+              "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+              "observedAt": "2026-10-22T12:59:44.228709+00:00",
+              "summary": "公式開催施設本文に10/23–25、9:30–10:00イオン1階東側パン工場側入口、開場後残券は会場配布。混雑による変更あり。ページ日10/19、追記日時不明。",
+              "recordPath": "research/followup-entry-20261022-22-evidence.json"
+            }
+          ],
+          "existingMatch": {
+            "status": "matched",
+            "ids": [
+              "popup-2026-10-23-aeon-parkplace-oita"
+            ],
+            "note": "12:59:50UTC公開3JSON照合、同ID旧10/23のみ条件を確認。重複なし。"
+          },
+          "listingIds": [
+            "popup-2026-10-23-aeon-parkplace-oita"
+          ],
+          "state": "ready",
+          "priority": "high",
+          "decision": "既存条件の拡大・具体化を一次情報で確認。会期/場所はそのまま、当日反映。",
+          "nextCheck": "公開反映・同IDの条件一致を確認。",
+          "recheckDueAt": "2026-10-22T23:59:59+09:00",
+          "publishedAt": null
+        }
+      ],
+      "sourceUpserts": [
+        {
+          "id": "venue-aeon-oita-entry-news-1972762",
+          "name": "イオンパークプレイス大分 ちいかわPOPUP入場案内",
+          "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+          "kind": "venue_notice",
+          "scope": [
+            "official"
+          ],
+          "cadence": "morning_evening",
+          "enabled": true,
+          "lastAttemptAt": "2026-10-22T12:59:44.228709+00:00",
+          "lastSuccessfulAt": "2026-10-22T12:59:44.228709+00:00",
+          "lastResult": "success",
+          "lastFailure": null,
+          "resultSummary": "入場日程と配布時間・場所を本文で確認。追記時刻は不明。"
+        }
+      ]
+    },
+    {
+      "publicDataPatch": {
+        "targetFile": "data/official-spots.json",
+        "id": "nagano-market-popup-2026-10-23-ebina-marui",
+        "canonicalSourceInstruction": "既存系列原本を修正して生成。予約区分は期間限定条件のためunknown/otherを維持。会期/会場/座標/ID/既存候補publishedAtは変更しない。",
+        "fields": [
+          {
+            "field": "entryNote",
+            "before": "10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ナガノマーケットショップ）をご確認ください。混雑時は会場の案内に従ってください。営業時間より早めに入店を締め切る場合があります。",
+            "after": "10月23～25日はLINEで取得する入場整理券を配布します。開店から12:30入場までの枠は前日19:00に一斉受付開始、13:00以降は各回1時間前から受付開始です。申込は距離制限なし、上記日程は1人1回限りの入場です。申込時に本人確認書類と同じ表記の氏名入力が必須で、入場時は本人確認書類をお持ちください。整理券の有効期限は入場開始時刻から1時間、30分毎の完全入替制です。混雑状況により途中からフリー入場となる場合があります。営業時間より早めに入店を締め切る場合があります。"
+          },
+          {
+            "field": "importantNotice",
+            "before": "10月23～25日は入場整理券の配布対象です。受付方法・開始日時は公式続報をご確認ください。",
+            "after": "10月23～25日はLINE整理券対象。12:30入場までの枠は前日19:00、13:00以降は各回1時間前に受付開始。期間中1人1回、本人確認書類が必要です。"
+          },
+          {
+            "field": "entryInfoUrl",
+            "before": "https://nagano-info.jp/popupshop/ebina/index.html",
+            "after": "https://x.com/nagano_mkt_shop/status/2112739858506756400"
+          },
+          {
+            "field": "entryInfoCheckedAt",
+            "before": "2026-10-15",
+            "after": "2026-10-22"
+          },
+          {
+            "field": "reservationUrl",
+            "before": null,
+            "after": "https://lin.ee/Hn7oCrt"
+          }
+        ],
+        "evidenceUrl": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+        "observedAt": "2026-10-22T13:01:27.889393+00:00",
+        "officialAnnouncedAt": "2026-10-21T11:56:49+09:00",
+        "announcementCaveat": "Yahooリアルタイムの公式投稿オブジェクトcreatedAt=1792551409をJST変換。X直接取得は403であり、Yahoo配信の公式投稿本文・添付画像を確認。",
+        "publishedAt": null,
+        "safetyNotes": [
+          "ちいかわPOP UP STOREの10:20/2Fコーチ横集合案内をナガノへ転用しない。ナガノ集合時刻・場所は未確認。",
+          "10/23朝枠の受付開始は本日19時で既に経過。現在の空き状況は未確認。",
+          "施設記事は145299が正しい。旧143459は使用しない。"
+        ]
+      },
+      "candidateUpserts": [
+        {
+          "id": "update-nagano-ebina-entry-details-20261022",
+          "title": "ナガノ海老名LINE整理券受付時刻・本人確認を反映",
+          "kind": "listing_update",
+          "targetKey": "nagano-market-popup-2026-10-23-ebina-marui:entry-details-20261023-20261025",
+          "sourceIds": [
+            "nagano-ebina-entry-tweet-2112739858506756400"
+          ],
+          "officialAnnouncedAt": "2026-10-21T11:56:49+09:00",
+          "discoveredAt": "2026-10-22T13:01:27.889393+00:00",
+          "eventStartsAt": "2026-10-23",
+          "eventEndsAt": "2026-11-29",
+          "releaseAt": null,
+          "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+          "reflectDueAt": "2026-10-22T23:59:59+09:00",
+          "evidence": [
+            {
+              "url": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+              "observedAt": "2026-10-22T13:01:27.889393+00:00",
+              "summary": "公式投稿のYahoo配信本文と添付画像で海老名5F・10/23–25 LINE整理券を確認。12:30入場まで前日19時、13時以降各回1時間前、距離制限なし、期間中1人1回、本人確認必須、有効1時間、30分完全入替。X直読403は別途維持。",
+              "recordPath": "research/followup-entry-20261022-22-evidence.json",
+              "retrievalUrl": "https://search.yahoo.co.jp/realtime/search?p=%E3%83%8A%E3%82%AC%E3%83%8E%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+10%2F23&ei=UTF-8",
+              "artifact": "research/followup-entry-20261022-22-nagano-ebina-notice.jpg"
+            }
+          ],
+          "existingMatch": {
+            "status": "matched",
+            "ids": [
+              "nagano-market-popup-2026-10-23-ebina-marui"
+            ],
+            "note": "12:59:50UTC公開3JSONに同一ID確認、旧案内は詳細未確定。新規追加せず同一ID更新。"
+          },
+          "listingIds": [
+            "nagano-market-popup-2026-10-23-ebina-marui"
+          ],
+          "state": "ready",
+          "priority": "high",
+          "decision": "公式配信本文・添付画像で通常掲載条件差分を確認。当日優先反映。10/23朝枠の19時受付開始は既に経過、空き未確認。既存publishedレコードの初回公開日時は維持。",
+          "nextCheck": "公開反映と同ID条件一致を確認。集合案内はナガノ公式の追加発表がある場合のみ更新。",
+          "recheckDueAt": "2026-10-22T23:59:59+09:00",
+          "publishedAt": null
+        }
+      ],
+      "sourceUpserts": [
+        {
+          "id": "nagano-ebina-entry-tweet-2112739858506756400",
+          "name": "ナガノ海老名 入場整理券公式投稿（Yahoo公開配信確認）",
+          "url": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+          "kind": "social",
+          "scope": [
+            "official"
+          ],
+          "cadence": "morning_evening",
+          "enabled": true,
+          "lastAttemptAt": "2026-10-22T13:01:27.889393+00:00",
+          "lastSuccessfulAt": "2026-10-22T13:01:27.889393+00:00",
+          "lastResult": "success",
+          "lastFailure": null,
+          "resultSummary": "公式投稿のYahoo配信本文と添付画像で海老名5F・10/23–25 LINE整理券を確認。12:30入場まで前日19時、13時以降各回1時間前、距離制限なし、期間中1人1回、本人確認必須、有効1時間、30分完全入替。X直読403は別途維持。",
+          "note": "この単一投稿のYahoo公開配信確認成功。X本体直読成功や公式プロフィール全投稿の網羅を意味しない。既存nagano_mkt_shopプロフィールの403/前回成功日時は変更しない。"
+        }
+      ],
+      "evidence": {
+        "url": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+        "observedAt": "2026-10-22T13:01:27.889393+00:00",
+        "summary": "公式投稿のYahoo配信本文と添付画像で海老名5F・10/23–25 LINE整理券を確認。12:30入場まで前日19時、13時以降各回1時間前、距離制限なし、期間中1人1回、本人確認必須、有効1時間、30分完全入替。X直読403は別途維持。",
+        "recordPath": "research/followup-entry-20261022-22-evidence.json",
+        "retrievalUrl": "https://search.yahoo.co.jp/realtime/search?p=%E3%83%8A%E3%82%AC%E3%83%8E%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+10%2F23&ei=UTF-8",
+        "artifact": "research/followup-entry-20261022-22-nagano-ebina-notice.jpg"
+      },
+      "existingCandidateDeltas": [
+        {
+          "id": "popup-2026-10-23-aeon-parkplace-oita",
+          "state": "published",
+          "publishedAt": "2026-10-10T02:44:10.255Z",
+          "nextCheck": "施設公式で入場詳細解消。新規更新候補update-oita-entry-details-20261022の公開照合を確認後、開始当日朝に公式変更を確認。",
+          "recheckDueAt": "2026-10-22T23:59:59+09:00",
+          "evidenceAppend": [
+            {
+              "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+              "observedAt": "2026-10-22T12:59:44.228709+00:00",
+              "summary": "10/23–25、9:30–10:00イオン東側パン工場入口、開場後残券会場配布を一次本文で確認。従来保留を解消、既存掲載への条件更新を別候補化。",
+              "recordPath": "research/followup-entry-20261022-22-evidence.json"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "normalizations": {
+    "sourceKind": {
+      "venue_notice": "venue"
+    },
+    "timestampPrecision": "Only supplied fractional digits beyond milliseconds truncated; original timestamps preserved in raw packets.",
+    "oitaAnnouncement": {
+      "pageDisplayedAt": "2026-10-19",
+      "entryConditionAnnouncedAt": null,
+      "basis": "Append time unknown; page display date is not a confirmed date for this update."
+    },
+    "naganoAnnouncement": {
+      "unixCreatedAt": 1792551409,
+      "utc": "2026-10-21T02:56:49.000Z",
+      "basis": "Supplied official-author distribution object. This is not a direct-X fetch time."
+    },
+    "sourceRequiredNote": "New venue source receives a factual note about the page display date and unknown append time; schema unchanged."
+  },
+  "canonicalManagement": [
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita",
+      "seriesManaged": false,
+      "source": "data/official-spots.json (existing unmanaged record retained by special-event generator)",
+      "fields": [
+        "entryNote",
+        "importantNotice",
+        "entryInfoUrl",
+        "entryInfoCheckedAt"
+      ]
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui",
+      "seriesManaged": true,
+      "source": "research/official-special-events-source.json",
+      "fields": [
+        "entryNote",
+        "importantNotice",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "reservationUrl"
+      ]
+    }
+  ],
+  "retrievalLimits": {
+    "naganoDirectX": "HTTP403 as observed in supplied cloud evidence; not claimed successful.",
+    "distributionUrl": "https://search.yahoo.co.jp/realtime/search?p=%E3%83%8A%E3%82%AC%E3%83%8E%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+10%2F23&ei=UTF-8",
+    "cloudImageArtifactPath": "research/followup-entry-20261022-22-nagano-ebina-notice.jpg",
+    "rawImageTransferred": false,
+    "artifactLocallyAssumed": false,
+    "currentTicketAvailability": "unknown",
+    "naganoGatheringDetails": "unknown",
+    "chiikawaEbinaConditionsNotCopied": true
+  },
+  "reservationTimeliness": {
+    "id": "nagano-market-popup-2026-10-23-ebina-marui",
+    "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+    "discoveredAt": "2026-10-22T13:01:27.889393+00:00",
+    "openedBeforeDiscovery": true,
+    "preReservationPublication": "not_before",
+    "currentAvailability": "unknown",
+    "excludedFromNewListingRate": true
+  },
+  "priorPublicationSync": {
+    "sourceMain": "610d12aa3610686ce865d41aaf645169a9b4d524",
+    "firstPublicMatchAt": "2026-10-22T10:42:10.183Z",
+    "deployJobCompletedAt": "2026-10-22T10:41:40Z",
+    "corrections": [
+      {
+        "id": "update-ana-purchase-limit-extension-20261022",
+        "listingIds": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T10:42:10.183Z",
+        "firstPublicMatchAt": "2026-10-22T10:42:10.183Z",
+        "deployJobCompletedAt": "2026-10-22T10:41:40Z",
+        "pr": 69,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/69",
+        "sourceHead": "b0f49fdd8770c4fe8169830964a85c4a9018b705",
+        "mergeSha": "610d12aa3610686ce865d41aaf645169a9b4d524",
+        "pagesRun": 39764927454
+      }
+    ],
+    "receipt": {
+      "completedAt": "2026-10-22T10:46:10.050Z",
+      "pr": 69,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/69",
+      "branch": "updates/ana-limit-extension-20261022",
+      "base": "c9490b4d5e2c611f494d719330f81f4a3f472366",
+      "sourceHead": "b0f49fdd8770c4fe8169830964a85c4a9018b705",
+      "main": "610d12aa3610686ce865d41aaf645169a9b4d524",
+      "mergedAt": "2026-10-22T10:40:58Z",
+      "changedCollaborationId": "ana-chiikawa-jet-2026",
+      "changedPublicFields": [
+        "periods[label=コラボグッズ第1弾発売].note",
+        "checkedAt"
+      ],
+      "purchaseLimit": {
+        "startsAt": "2026-10-23",
+        "until": null,
+        "continuesAfter": "2026-10-26",
+        "perProduct": 2,
+        "perBox": 1,
+        "otherSalesAndReservationConditionsPreserved": true
+      },
+      "checkedAt": "2026-10-22",
+      "publicCounts": {
+        "official": 98,
+        "archive": 671,
+        "collaborations": 23,
+        "collaborationsArchive": 52,
+        "allSpotIds": 863
+      },
+      "additionDatesPreserved": true,
+      "deployJobCompletedAt": "2026-10-22T10:41:40Z",
+      "firstPublicMatchAt": "2026-10-22T10:42:10.183Z",
+      "publishedAt": "2026-10-22T10:42:10.183Z",
+      "publishedBeforeDeadline": true,
+      "publicFiles": {
+        "matching": 22,
+        "total": 22,
+        "canonicalJson": 10,
+        "researchJson": 3,
+        "jsonDeepEqual": 13
+      },
+      "ci": {
+        "pr": [
+          {
+            "name": "Validate spot data",
+            "id": 39763840043,
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/39763840043",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test site",
+            "id": 39763840062,
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/39763840062",
+            "conclusion": "success"
+          }
+        ],
+        "main": [
+          {
+            "name": "Validate spot data",
+            "id": 39764927974,
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/39764927974",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test site",
+            "id": 39764928069,
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/39764928069",
+            "conclusion": "success"
+          },
+          {
+            "name": "pages build and deployment",
+            "id": 39764927454,
+            "url": "https://github.com/route0254/chiikawa-map/actions/runs/39764927454",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "tests": {
+        "unit": 58,
+        "smoke": 111,
+        "buildExitCode": 0,
+        "checkExitCode": 0,
+        "smokeExitCode": 0,
+        "qaChecks": 10,
+        "qaScreens": 4,
+        "qaClock": "advancing page.clock.install({time:new Date()})",
+        "qaExitCode": 0,
+        "siteHealthExitCode": 0
+      },
+      "previousPublicationSynced": {
+        "candidates": 2,
+        "publishedAt": "2026-10-21T23:29:45.651Z",
+        "main": "c9490b4d5e2c611f494d719330f81f4a3f472366"
+      },
+      "nextNormalCandidateSync": {
+        "sourceMain": "610d12aa3610686ce865d41aaf645169a9b4d524",
+        "publishedAt": "2026-10-22T10:42:10.183Z",
+        "publishedAtBasis": "First saved exact public content match; deployment completion recorded separately.",
+        "firstPublicMatchAt": "2026-10-22T10:42:10.183Z",
+        "deployJobCompletedAt": "2026-10-22T10:41:40Z",
+        "corrections": [
+          {
+            "id": "update-ana-purchase-limit-extension-20261022",
+            "listingIds": [
+              "ana-chiikawa-jet-2026"
+            ],
+            "state": "published",
+            "publishedAt": "2026-10-22T10:42:10.183Z",
+            "firstPublicMatchAt": "2026-10-22T10:42:10.183Z",
+            "deployJobCompletedAt": "2026-10-22T10:41:40Z",
+            "pr": 69,
+            "prUrl": "https://github.com/route0254/chiikawa-map/pull/69",
+            "sourceHead": "b0f49fdd8770c4fe8169830964a85c4a9018b705",
+            "mergeSha": "610d12aa3610686ce865d41aaf645169a9b4d524",
+            "pagesRun": 39764927454
+          }
+        ]
+      },
+      "sourceLedger": {
+        "patches": 165,
+        "sources": 643,
+        "candidates": 298,
+        "failureSuccessfulHistoryPreserved": true,
+        "latestExplicitRecoveryTimesNormalized": true,
+        "rawObservationsPreserved": true
+      },
+      "knownOnlyMetrics": {
+        "calculatedAt": "2026-10-22T10:23:06.224Z",
+        "base": "c9490b4d5e2c611f494d719330f81f4a3f472366",
+        "knownOnly": true,
+        "coverageNotice": "台帳に記録した候補・既知日時だけの指標。全新着の網羅率ではない。日付のみを00:00へ変換して経過時間を計算しない。",
+        "newListing": {
+          "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+          "preStartPublication": {
+            "eligible": 55,
+            "known": 48,
+            "before": 46,
+            "notBefore": 2,
+            "unpublishedAfterStart": 1,
+            "unknown": 7,
+            "rate": 0.9583333333333334
+          },
+          "announcedToDiscovered": {
+            "elapsedHours": {
+              "samples": 1,
+              "mean": 1.0296108333333334,
+              "min": 1.0296108333333334,
+              "max": 1.0296108333333334
+            },
+            "japanCalendarDays": {
+              "samples": 47,
+              "mean": 5.1063829787234045,
+              "min": 0,
+              "max": 112
+            },
+            "unknownPairs": 16,
+            "negativeOrderPairs": 0,
+            "pairsWithoutExactHours": 62
+          },
+          "discoveredToPublished": {
+            "elapsedHours": {
+              "samples": 38,
+              "mean": 2.123258757309942,
+              "min": 0.6488888888888888,
+              "max": 17.201181944444443
+            },
+            "japanCalendarDays": {
+              "samples": 50,
+              "mean": 0.22,
+              "min": 0,
+              "max": 1
+            },
+            "unknownPairs": 3,
+            "negativeOrderPairs": 0,
+            "pairsWithoutExactHours": 15
+          },
+          "announcedToPublished": {
+            "elapsedHours": {
+              "samples": 2,
+              "mean": 304.2463888888889,
+              "min": 9.783333333333333,
+              "max": 598.7094444444444
+            },
+            "japanCalendarDays": {
+              "samples": 39,
+              "mean": 2.7948717948717947,
+              "min": 0,
+              "max": 25
+            },
+            "unknownPairs": 14,
+            "negativeOrderPairs": 0,
+            "pairsWithoutExactHours": 51
+          }
+        },
+        "nonHistorical": {
+          "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+          "preStartPublication": {
+            "eligible": 55,
+            "known": 48,
+            "before": 46,
+            "notBefore": 2,
+            "unpublishedAfterStart": 1,
+            "unknown": 7,
+            "rate": 0.9583333333333334
+          },
+          "announcedToDiscovered": {
+            "elapsedHours": {
+              "samples": 26,
+              "mean": 23.23727376068376,
+              "min": 0.08666666666666667,
+              "max": 168.4488888888889
+            },
+            "japanCalendarDays": {
+              "samples": 124,
+              "mean": 3.1693548387096775,
+              "min": 0,
+              "max": 112
+            },
+            "unknownPairs": 163,
+            "negativeOrderPairs": 0,
+            "pairsWithoutExactHours": 261
+          },
+          "discoveredToPublished": {
+            "elapsedHours": {
+              "samples": 123,
+              "mean": 2.372953579494129,
+              "min": 0.2632788888888889,
+              "max": 49.16888888888889
+            },
+            "japanCalendarDays": {
+              "samples": 212,
+              "mean": 0.12735849056603774,
+              "min": 0,
+              "max": 5
+            },
+            "unknownPairs": 58,
+            "negativeOrderPairs": 0,
+            "pairsWithoutExactHours": 147
+          },
+          "announcedToPublished": {
+            "elapsedHours": {
+              "samples": 27,
+              "mean": 124.40032753086422,
+              "min": 0.9925,
+              "max": 2156.4727047222223
+            },
+            "japanCalendarDays": {
+              "samples": 128,
+              "mean": 13.0625,
+              "min": 0,
+              "max": 1273
+            },
+            "unknownPairs": 142,
+            "negativeOrderPairs": 0,
+            "pairsWithoutExactHours": 243
+          }
+        }
+      },
+      "operationsReference": {
+        "path": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261020\\incoming-packet\\DATA-OPERATIONS.md",
+        "updatedAt": "2026-10-14",
+        "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+      },
+      "intake": {
+        "decodedBytes": 93993,
+        "sha256": "83bab600cd97bb17e4a323b22b98e910d395419254a7eb2659122ab0bd44af5d"
+      },
+      "existingWorktreesPreserved": 38,
+      "noApplicationSchemaOrValidationRuleChange": true,
+      "linkCheck": {
+        "run": false,
+        "reason": "No public or source URL changes; no repeated external-link patrol."
+      },
+      "remainingPublicationBlockers": []
+    }
+  },
+  "currentPublication": {
+    "candidateIds": [
+      "update-oita-entry-details-20261022",
+      "update-nagano-ebina-entry-details-20261022"
+    ],
+    "publishedAt": null,
+    "nextSync": "Record first exact public match separately; synchronize in next normal PR."
+  },
+  "previousCandidateFields": [
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita",
+      "title": "ちいかわPOP UP STORE イオンパークプレイス大分店",
+      "kind": "new_listing",
+      "targetKey": "popup-2026-10-23-aeon-parkplace-oita",
+      "sourceIds": [
+        "popup-2026-10-23-aeon-parkplace-oita-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-10T07:31:27+09:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-08",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-10",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-10T07:33:25+09:00",
+          "summary": "保存済みの公式案内確認記録。10:00～19:00（最終日18:00閉場）。10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。初回発表日時は不明。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://tenpo.aeon-kyushu.info/detail/parkplace-oita/",
+          "observedAt": "2026-10-09T23:48:36.206Z",
+          "summary": "このWindows環境の通常GETで公式会場名・住所・会場点の座標を照合。地図の中心や駐車場の点は使用しない。",
+          "recordPath": "research/followup-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-10T02:44:10.255Z",
+          "summary": "PR33配信step 2026-10-10T02:42:37Z、初回公開一致 2026-10-10T02:44:10.255Z を区別して確認。夕方同期日時を初回公開日時へ代用しない。",
+          "recordPath": "research/publication-confirmation-2026-10-10-pr33.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-19T22:58:29.104+00:00",
+          "summary": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-19T23:01:03.472+00:00",
+          "summary": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-20T23:03:05.302+00:00",
+          "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
+          "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/",
+          "observedAt": "2026-10-22T10:05:21Z",
+          "summary": "10/22夕方再確認。ナガノ本文は10/23〜25整理券維持、Xプロフィール取得は投稿なし/403。大分本文は画像主体、主画像直接GET403。開催施設も詳細本文取得不可/古い検索キャッシュ。配布開始・集合条件は未確認で推定しない。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "現行/過去の公式・ナガノ・コミュニティ・コラボをID・名称・公式URL・会場・会期で照合。重複なし。通常物販POP UPのためコラボには追加しない。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-aeon-parkplace-oita"
+      ],
+      "state": "published",
+      "priority": "high",
+      "decision": "掲載前は未公開として公開日時をnullで記録。 PR33の実配信成功・公開45ファイル一致により掲載を確認済み。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
+      "nextCheck": "10/22 22時JSTまでに公式X・施設の入場続報を再確認。未確認を配布不要/自由入場としない。",
+      "recheckDueAt": "2026-10-22T22:00:00+09:00",
+      "publishedAt": "2026-10-10T02:44:10.255Z"
+    },
+    {
+      "id": "update-nagano-ebina-entry-dates-20261015",
+      "title": "ナガノマーケット海老名 入場整理券対象を10/23〜25へ更新",
+      "kind": "listing_update",
+      "targetKey": "nagano-market-popup-2026-10-23-ebina-marui:entry-dates-20261023-20261025",
+      "sourceIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-14T23:08:12+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-15",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-14T23:10:47+00:00",
+          "summary": "公式個別ページの表示本文を実読。入場整理券の対象日は10/23〜10/25。現行掲載と系列原本の10/23のみから対象期間を拡大。会期10/23〜11/29・海老名マルイ5F・10:30〜19:00は維持。詳細リンク先は公式Xプロフィールで、取得できた5投稿内に受付方法・開始日時の確定案内なし。受付日時や自由入場を推定しない。",
+          "recordPath": "research/morning-series-2026-10-15-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-14T23:28:21.804+00:00",
+          "summary": "PR49 merge commit a6274ee35dc0ec5fff72ad30a703a7a39441c39e のPages配信後、公開JSONと検査済み内容がバイト一致。初回公開実体確認時刻を保存。",
+          "recordPath": null
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-15",
+          "summary": "本文は10/23〜25の入場整理券を案内。会期10/23〜11/29、海老名マルイ5F、10:30〜19時。朝に確認済みの対象日拡大から追加変更なし。詳細リンクは公式Xプロフィールで、取得できた投稿内に申込方法・開始日時の確定案内なし。",
+          "recordPath": "research/evening-series-2026-10-15-evidence.json"
+        },
+        {
+          "url": "https://x.com/nagano_mkt_shop",
+          "observedAt": "2026-10-15T10:03:12.201Z",
+          "summary": "未ログイン表示5投稿を確認。先頭は10/15のぬいぐるみくじ入荷案内、10/9海老名・横浜の既知告知を含む。海老名告知画像は会期・会場・営業時間一致。申込方法・開始時刻の新たな確定案内は表示範囲で確認できず。",
+          "recordPath": "research/evening-series-2026-10-15-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-19T22:58:31.309+00:00",
+          "summary": "Normalized HTML text matches prior evening; image contents are not covered unless separately reviewed.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-19T23:01:07.440+00:00",
+          "summary": "Normalized HTML text matches prior evening; image contents are not covered unless separately reviewed.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-20T23:03:11.035+00:00",
+          "summary": "10/21朝に公式本文と主要入場画像を再確認。海老名10/23–25整理券、大分10/23混雑時整理券は確認できるが配布詳細・受付開始時刻の新確定なし。公式Xの可視範囲でも続報未確認。開始日時を推定しない。",
+          "recordPath": "research/morning-review-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+          "observedAt": "2026-10-21T10:05:39.990+00:00",
+          "summary": "公式本文/入場案内画像と開催施設・公式X可視投稿を再確認。既存入場条件から受付方法/開始時刻の新確定なし。不明を推定しない。",
+          "recordPath": "research/evening-existing-2026-10-21-evidence.json"
+        },
+        {
+          "url": "https://nagano-info.jp/popupshop/ebina/",
+          "observedAt": "2026-10-22T10:05:21Z",
+          "summary": "10/22夕方再確認。ナガノ本文は10/23〜25整理券維持、Xプロフィール取得は投稿なし/403。大分本文は画像主体、主画像直接GET403。開催施設も詳細本文取得不可/古い検索キャッシュ。配布開始・集合条件は未確認で推定しない。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-10-23-ebina-marui"
+        ],
+        "note": "現行official-spots・official-events-archive・collaborations-currentをID/名称/公式URL/会場/会期で照合。現行同IDへの更新。通常物販POP UPなのでコラボ新規登録なし。海老名のちいかわPOP UPは別ブランド企画として維持。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-23-ebina-marui"
+      ],
+      "state": "published",
+      "priority": "high",
+      "decision": "一次本文で対象期間拡大を確認。既存IDと対象外日のunknown区分を維持し、entryNote/importantNoticeのみ10/23〜25へ更新。系列原本の個別checkedAtを更新して生成する。発表日時・受付開始日時は不明のためnull。公開前のためpublishedAtはnull。 10/20朝、公式本文・ちいかわ側3会場の入場画像を実読。公開済み会期・整理券対象日は一致。受付開始日時の追加根拠は得られず、未発表/未確認の区別を維持。公式Xは限定5投稿のみのため全量新着なしとはしない。",
+      "nextCheck": "10/22 22時JSTまでに公式X・施設の入場続報を再確認。未確認を配布不要/自由入場としない。",
+      "recheckDueAt": "2026-10-22T22:00:00+09:00",
+      "publishedAt": "2026-10-14T23:28:21.804+00:00"
+    },
+    {
+      "id": "update-ana-purchase-limit-extension-20261022",
+      "title": "ANAコラボグッズ購入個数制限を10/26以降も継続",
+      "kind": "listing_update",
+      "targetKey": "ana-chiikawa-jet-2026:purchase-limit-extension",
+      "sourceIds": [
+        "morning-existing21-4fdf328cdc02"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T10:06:27.411+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-10-23",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-22T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+          "observedAt": "2026-10-22T10:06:27.411+00:00",
+          "summary": "10/22付追記とFAQで購入個数制限の10/26以降当面継続を確認。各商品2点・BOX1点。現行コラボIDは旧10/23〜25制限。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "public3JSON相当最新mainと照合。既存コラボperiods第1弾発売noteへの修正。重複登録不要。"
+      },
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "期限変更のみ。10/23発売前の同日反映対象。",
+      "nextCheck": "検査・GitHub反映・公開JSON一致を確認。",
+      "recheckDueAt": "2026-10-22T23:59:59+09:00",
+      "publishedAt": null
+    }
+  ],
+  "publicChanges": [
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita",
+      "managed": false,
+      "fields": [
+        "entryNote",
+        "importantNotice",
+        "entryInfoUrl",
+        "entryInfoCheckedAt"
+      ],
+      "before": {
+        "id": "popup-2026-10-23-aeon-parkplace-oita",
+        "name": "ちいかわPOP UP STORE イオンパークプレイス大分店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "popup",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-08",
+        "hoursText": "10:00～19:00（最終日18:00閉場）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "entryInfoUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "entryInfoCheckedAt": "2026-10-10",
+        "lat": 33.1951459,
+        "lng": 131.6563326,
+        "address": "大分県大分市公園通り西2丁目1番 イオンパークプレイス大分店 サニーウォーク1階 レプシィム前",
+        "description": "開催記念グッズや新商品などを販売する期間限定ショップです。",
+        "sourceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "importantNotice": "10月23日は当日開店前の整列状況により、当日整理券を配布する場合があります。詳細は公式X（ちいかわPOP UP STORE）で随時案内予定です。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8FPOP%20UP%20STORE%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E5%A4%A7%E5%88%86%E5%BA%97%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E5%85%AC%E5%9C%92%E9%80%9A%E3%82%8A%E8%A5%BF2%E4%B8%81%E7%9B%AE1%E7%95%AA%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E5%A4%A7%E5%88%86%E5%BA%97%20%E3%82%B5%E3%83%8B%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF1%E9%9A%8E%20%E3%83%AC%E3%83%97%E3%82%B7%E3%82%A3%E3%83%A0%E5%89%8D"
+      },
+      "expectedAfter": {
+        "id": "popup-2026-10-23-aeon-parkplace-oita",
+        "name": "ちいかわPOP UP STORE イオンパークプレイス大分店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "popup",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-08",
+        "hoursText": "10:00～19:00（最終日18:00閉場）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "10月23日～25日は混雑緩和のため入場整理券を配布する案内があります。9:30～10:00はイオン1階東側パン工場側入口で配布し、この入口を優先入口として対応します。10:00開場以降、整理券に余りがある場合はサニーウォーク1階レプシィム前イベント会場で配布します。混雑状況により配布有無を判断し、配布時刻が前後する場合があります。夜間の整列はご遠慮ください。複数名で入店する場合は全員そろってお並びください。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "entryInfoUrl": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+        "entryInfoCheckedAt": "2026-10-22",
+        "lat": 33.1951459,
+        "lng": 131.6563326,
+        "address": "大分県大分市公園通り西2丁目1番 イオンパークプレイス大分店 サニーウォーク1階 レプシィム前",
+        "description": "開催記念グッズや新商品などを販売する期間限定ショップです。",
+        "sourceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+        "importantNotice": "10月23日～25日は混雑緩和のため入場整理券を配布する案内があります。9:30～10:00はイオン1階東側パン工場側入口で配布し、この入口を優先入口として対応します。10:00開場以降、整理券に余りがある場合はサニーウォーク1階レプシィム前イベント会場で配布します。混雑状況により配布有無を判断し、配布時刻が前後する場合があります。夜間の整列はご遠慮ください。複数名で入店する場合は全員そろってお並びください。混雑状況によって閉場前に入場を締め切る場合があります。",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8FPOP%20UP%20STORE%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E5%A4%A7%E5%88%86%E5%BA%97%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E5%85%AC%E5%9C%92%E9%80%9A%E3%82%8A%E8%A5%BF2%E4%B8%81%E7%9B%AE1%E7%95%AA%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E5%A4%A7%E5%88%86%E5%BA%97%20%E3%82%B5%E3%83%8B%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF1%E9%9A%8E%20%E3%83%AC%E3%83%97%E3%82%B7%E3%82%A3%E3%83%A0%E5%89%8D"
+      }
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui",
+      "managed": true,
+      "fields": [
+        "entryNote",
+        "importantNotice",
+        "entryInfoUrl",
+        "entryInfoCheckedAt",
+        "reservationUrl"
+      ],
+      "before": {
+        "id": "nagano-market-popup-2026-10-23-ebina-marui",
+        "name": "ナガノマーケット POP UP SHOP 海老名マルイ",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "popup",
+        "brand": "nagano_market",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-29",
+        "hoursText": "10:30～19:00",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://nagano-info.jp/popupshop/ebina/index.html",
+        "hoursCheckedAt": "2026-10-15",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "10月23～25日は入場整理券を配布します。配布方法・受付開始日時などの詳細は公式X（ナガノマーケットショップ）をご確認ください。混雑時は会場の案内に従ってください。営業時間より早めに入店を締め切る場合があります。",
+        "entryInfoUrl": "https://nagano-info.jp/popupshop/ebina/index.html",
+        "entryInfoCheckedAt": "2026-10-15",
+        "lat": 35.452777,
+        "lng": 139.393392,
+        "address": "神奈川県海老名市中央1-6-1 海老名マルイ（開催場所：5F イベントスペース）",
+        "description": "海老名マルイで開催される期間限定のナガノマーケット POP UP SHOPです。",
+        "sourceUrl": "https://nagano-info.jp/popupshop/ebina/index.html",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E8%80%81%E5%90%8D%E3%83%9E%E3%83%AB%E3%82%A4%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%B5%B7%E8%80%81%E5%90%8D%E5%B8%82%E4%B8%AD%E5%A4%AE1-6-1%20%E6%B5%B7%E8%80%81%E5%90%8D%E3%83%9E%E3%83%AB%E3%82%A4",
+        "importantNotice": "10月23～25日は入場整理券の配布対象です。受付方法・開始日時は公式続報をご確認ください。"
+      },
+      "expectedAfter": {
+        "id": "nagano-market-popup-2026-10-23-ebina-marui",
+        "name": "ナガノマーケット POP UP SHOP 海老名マルイ",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "popup",
+        "brand": "nagano_market",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-29",
+        "hoursText": "10:30～19:00",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://nagano-info.jp/popupshop/ebina/index.html",
+        "hoursCheckedAt": "2026-10-15",
+        "reservationType": "unknown",
+        "reservationUrl": "https://lin.ee/Hn7oCrt",
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "10月23～25日はLINEで取得する入場整理券を配布します。開店から12:30入場までの枠は前日19:00に一斉受付開始、13:00以降は各回1時間前から受付開始です。申込は距離制限なし、上記日程は1人1回限りの入場です。申込時に本人確認書類と同じ表記の氏名入力が必須で、入場時は本人確認書類をお持ちください。整理券の有効期限は入場開始時刻から1時間、30分毎の完全入替制です。混雑状況により途中からフリー入場となる場合があります。営業時間より早めに入店を締め切る場合があります。",
+        "entryInfoUrl": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+        "entryInfoCheckedAt": "2026-10-22",
+        "lat": 35.452777,
+        "lng": 139.393392,
+        "address": "神奈川県海老名市中央1-6-1 海老名マルイ（開催場所：5F イベントスペース）",
+        "description": "海老名マルイで開催される期間限定のナガノマーケット POP UP SHOPです。",
+        "sourceUrl": "https://nagano-info.jp/popupshop/ebina/index.html",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E8%80%81%E5%90%8D%E3%83%9E%E3%83%AB%E3%82%A4%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%B5%B7%E8%80%81%E5%90%8D%E5%B8%82%E4%B8%AD%E5%A4%AE1-6-1%20%E6%B5%B7%E8%80%81%E5%90%8D%E3%83%9E%E3%83%AB%E3%82%A4",
+        "importantNotice": "10月23～25日はLINE整理券対象。12:30入場までの枠は前日19:00、13:00以降は各回1時間前に受付開始。期間中1人1回、本人確認書類が必要です。"
+      }
+    }
+  ],
+  "targetedLinkVerification": {
+    "startedAt": "2026-10-22T13:12:06.874Z",
+    "completedAt": "2026-10-22T13:12:07.440Z",
+    "targetedNewUrls": 2,
+    "results": [
+      {
+        "key": "oita",
+        "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+        "startedAt": "2026-10-22T13:12:06.875Z",
+        "completedAt": "2026-10-22T13:12:07.058Z",
+        "status": 200,
+        "finalUrl": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+        "ok": true,
+        "bytes": 95127,
+        "sha256": "774be6cb89359be22f22f283535cc52dbaa269c333b53320b7d20295bda3522f",
+        "oitaTerms": {
+          "bread": true,
+          "venue": true,
+          "sunnyWalk": true
+        }
+      },
+      {
+        "key": "line",
+        "url": "https://lin.ee/Hn7oCrt",
+        "startedAt": "2026-10-22T13:12:06.908Z",
+        "completedAt": "2026-10-22T13:12:07.440Z",
+        "status": 200,
+        "finalUrl": "https://page.line.me/786sasix?oat_content=url&openQrModal=true",
+        "ok": true,
+        "bytes": 56927,
+        "sha256": "f5fb6a058ac594654c58c58e4cc27976d67674f5f3d7344d5c4bdaa8e0ed997d",
+        "oitaTerms": null
+      }
+    ],
+    "xCanonical": {
+      "url": "https://x.com/nagano_mkt_shop/status/2112739858506756400",
+      "directStatus": 403,
+      "basis": "Supplied cloud observation; not retried or claimed directly readable.",
+      "officialAuthorDistributionAndImageConfirmedByCloud": true
+    },
+    "currentTicketAvailability": "not checked"
+  },
+  "nativeSourceArtifact": {
+    "path": "source-oita.html (private cache in this execution environment)",
+    "sha256": "774be6cb89359be22f22f283535cc52dbaa269c333b53320b7d20295bda3522f",
+    "bytes": 95127,
+    "successfulAt": "2026-10-22T13:12:07.058Z"
+  }
+}
