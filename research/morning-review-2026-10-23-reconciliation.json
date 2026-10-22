@@ -1,0 +1,56 @@
+{
+  "baseCommit": "2b6df780e199bd46bcb9abe56657623cac466285",
+  "publicComparison": [
+    {
+      "file": "official-spots.json",
+      "status": 200,
+      "equal": true,
+      "checkedAt": "2026-10-22T23:05:15.629+00:00",
+      "count": 98
+    },
+    {
+      "file": "official-events-archive.json",
+      "status": 200,
+      "equal": true,
+      "checkedAt": "2026-10-22T23:05:19.404+00:00",
+      "count": 671
+    },
+    {
+      "file": "collaborations-current.json",
+      "status": 200,
+      "equal": true,
+      "checkedAt": "2026-10-22T23:05:22.731+00:00",
+      "count": 23
+    }
+  ],
+  "ci": {
+    "validate": "success",
+    "test": "success",
+    "pages": "success",
+    "latestScheduledValidateRun": 39839507204,
+    "latestHealthRun": 39840227215,
+    "unresolvedNonDeferredFailures": [],
+    "deferredKnownExternalLinksRun": 39177400589,
+    "oldValidateFailureSuperseded": 39662205075
+  },
+  "sourceBaseline": {
+    "success": 453,
+    "parse_failed": 82,
+    "fetch_failed": 82,
+    "access_limited": 28
+  },
+  "weeklyReview": {
+    "lastGlobalBroadReview": null,
+    "sevenDayElapsed": null,
+    "reason": "最新台帳に全範囲完了日なし。前回夕の補完レビューを全範囲完了扱いしない。今回も新規担当が補完検索、coverage別記。"
+  },
+  "publicationSync": {
+    "candidateIds": [
+      "update-oita-entry-details-20261022",
+      "update-nagano-ebina-entry-details-20261022"
+    ],
+    "publishedAt": "2026-10-22T15:34:22.476Z",
+    "basis": "Saved PR70 first-public-observation evidence; do not substitute current recheck.",
+    "applyWithNextNormalPR": true
+  }
+}

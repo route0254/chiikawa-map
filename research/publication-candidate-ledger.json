@@ -16884,7 +16884,7 @@
       "existingMatch": {
         "status": "new",
         "ids": [],
-        "note": "最新main c9490b4d5e2c611f494d719330f81f4a3f472366公開3JSONにも鎌倉既存IDなし。初回発見は維持。"
+        "note": "10/23朝の最新main/live一致公開3JSON98/671/23件にも鎌倉既存IDなし。"
       },
       "listingIds": [],
       "state": "on_hold",
@@ -16913,11 +16913,17 @@
           "observedAt": "2026-10-22T10:06:32.724+00:00",
           "summary": "公式求人原本は200応答だが現在公開されていません。公式ニュース・店舗一覧にも鎌倉開業の新しい一次告知なし。",
           "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T23:05:13.776+00:00",
+          "summary": "求人原本は200だが「現在公開されていません」。公式ニュース・TOP店舗・寺子屋企業TOPに鎌倉正式開業告知なし。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
         }
       ],
       "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。",
-      "nextCheck": "10/23朝8時に公式ニュース、店舗一覧、求人原本を再確認。公式開業/受付の確定情報を優先。",
-      "recheckDueAt": "2026-10-23T08:00:00+09:00"
+      "nextCheck": "10/23夜19時に公式ニュース、店舗一覧、求人原本を再確認。開業日・受付・営業時間は推定しない。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00"
     },
     {
       "id": "update-ana-purchase-limit-extension-20261022",
@@ -16992,6 +16998,12 @@
           "observedAt": "2026-10-22T13:12:07.058Z",
           "summary": "このWindows環境で施設公式本文をGETし、パン工場側入口・サニーウォーク・レプシィムの記載とHTTP200を再確認。",
           "recordPath": "research/followup-entry-20261022-22-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-22T23:05:15.629+00:00",
+          "summary": "公開公式現行JSON全98件をmain2b6df780と照合し一致。PR70の初回公開検証値は別保持。",
+          "recordPath": "research/morning-review-2026-10-23-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -17004,12 +17016,12 @@
       "listingIds": [
         "popup-2026-10-23-aeon-parkplace-oita"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既存条件の拡大・具体化を一次情報で確認。会期/場所はそのまま、当日反映。 施設ページの表示日は10/19だが、入場条件の追記日時は不明のため変更発表日時はnullで保持。",
-      "nextCheck": "公開反映・同IDの条件一致を確認。",
-      "recheckDueAt": "2026-10-22T23:59:59+09:00",
-      "publishedAt": null
+      "decision": "既存条件の拡大・具体化を一次情報で確認。会期/場所はそのまま、当日反映。 施設ページの表示日は10/19だが、入場条件の追記日時は不明のため変更発表日時はnullで保持。 PR70で反映。初回公開確認2026-10-22T15:34:22.476Zは保存済の公開検証値。今回の再観測時刻で置換しない。",
+      "nextCheck": "次回通常巡回で公式の条件変更を確認。初回公開確認時刻は保存済PR70検証から維持。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00",
+      "publishedAt": "2026-10-22T15:34:22.476Z"
     },
     {
       "id": "update-nagano-ebina-entry-details-20261022",
@@ -17032,6 +17044,12 @@
           "observedAt": "2026-10-22T13:01:27.889+00:00",
           "summary": "公式投稿のYahoo配信本文と添付画像で海老名5F・10/23–25 LINE整理券を確認。12:30入場まで前日19時、13時以降各回1時間前、距離制限なし、期間中1人1回、本人確認必須、有効1時間、30分完全入替。X直読403は別途維持。",
           "recordPath": "research/followup-entry-20261022-22-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-22T23:05:15.629+00:00",
+          "summary": "公開公式現行JSON全98件をmain2b6df780と照合し一致。PR70の初回公開検証値は別保持。",
+          "recordPath": "research/morning-review-2026-10-23-reconciliation.json"
         }
       ],
       "existingMatch": {
@@ -17044,11 +17062,422 @@
       "listingIds": [
         "nagano-market-popup-2026-10-23-ebina-marui"
       ],
+      "state": "published",
+      "priority": "high",
+      "decision": "公式配信本文・添付画像で通常掲載条件差分を確認。当日優先反映。10/23朝枠の19時受付開始は既に経過、空き未確認。既存publishedレコードの初回公開日時は維持。 PR70で反映。初回公開確認2026-10-22T15:34:22.476Zは保存済の公開検証値。今回の再観測時刻で置換しない。",
+      "nextCheck": "次回通常巡回で公式の条件変更を確認。初回公開確認時刻は保存済PR70検証から維持。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00",
+      "publishedAt": "2026-10-22T15:34:22.476Z"
+    },
+    {
+      "id": "popup-2026-11-06-aeon-suzaka-new",
+      "title": "ちいかわPOP UP STORE イオンモール須坂",
+      "kind": "new_listing",
+      "targetKey": "popup-2026-11-06-aeon-suzaka",
+      "sourceIds": [
+        "venue-aeon-suzaka-popup-20261106"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-22T23:05:10.081+00:00",
+      "eventStartsAt": "2026-11-06",
+      "eventEndsAt": "2026-11-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23",
+      "evidence": [
+        {
+          "url": "https://suzaka.aeonmall.com/news/detail/1834?t=event_news",
+          "observedAt": "2026-10-22T23:06:07.896+00:00",
+          "summary": "10/23付公式告知本文で会場・期間・時間・当日整理券条件を確認。事前予約開始日時はnull。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://suzaka.aeonmall.com/static-pages/access",
+          "observedAt": "2026-10-22T23:06:07.530+00:00",
+          "summary": "住所は長野県須坂市大字福島386番地1。公式GooglemapリンクH13MYaEfFoeT1aM66の施設点!3d36.6396018!4d138.2734196を採用。表示中心36.6470116,138.2677071は使わない。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-06-aeon-suzaka"
+        ],
+        "note": "基準main 2b6df780e199bd46bcb9abe56657623cac466285 の全スポットJSONで未登録・重複なしを照合。本作業で同じIDの新規掲載案を公開予定JSONへ追加済み。公開実体の照合は未完了。"
+      },
+      "listingIds": [
+        "popup-2026-11-06-aeon-suzaka"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "一次確定。通常掲載の追加検査と公開確認へ。未配信のためpublishedにしない。",
+      "nextCheck": "新規2件を検査し通常更新へ同梱。配信後に公開実体を照合。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-photo-2026-11-22-aeon-suzaka-new",
+      "title": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール須坂",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-photo-2026-11-22-aeon-suzaka",
+      "sourceIds": [
+        "venue-aeon-suzaka-photo-20261122"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-22T23:06:07.237+00:00",
+      "eventStartsAt": "2026-11-22",
+      "eventEndsAt": "2026-11-22",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23",
+      "evidence": [
+        {
+          "url": "https://suzaka.aeonmall.com/news/detail/1835",
+          "observedAt": "2026-10-22T23:06:07.237+00:00",
+          "summary": "10/23付公式告知本文で会場・期間・時間・当日整理券条件を確認。事前予約開始日時はnull。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://suzaka.aeonmall.com/static-pages/access",
+          "observedAt": "2026-10-22T23:06:07.530+00:00",
+          "summary": "住所は長野県須坂市大字福島386番地1。公式GooglemapリンクH13MYaEfFoeT1aM66の施設点!3d36.6396018!4d138.2734196を採用。表示中心36.6470116,138.2677071は使わない。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-photo-2026-11-22-aeon-suzaka"
+        ],
+        "note": "基準main 2b6df780e199bd46bcb9abe56657623cac466285 の全スポットJSONで未登録・重複なしを照合。本作業で同じIDの新規掲載案を公開予定JSONへ追加済み。公開実体の照合は未完了。"
+      },
+      "listingIds": [
+        "chiikawa-photo-2026-11-22-aeon-suzaka"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "一次確定。通常掲載の追加検査と公開確認へ。未配信のためpublishedにしない。",
+      "nextCheck": "新規2件を検査し通常更新へ同梱。配信後に公開実体を照合。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-movie-popup-suzaka-2026",
+      "title": "映画ちいかわ 人魚の島のひみつ POP UP STORE イオンモール須坂",
+      "kind": "history_import",
+      "targetKey": "history-chiikawa-movie-popup-suzaka-2026",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-82d181891d"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-22T23:08:18.059+00:00",
+      "eventStartsAt": "2026-07-24",
+      "eventEndsAt": "2026-08-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+          "observedAt": "2026-10-22T23:05:03.975+00:00",
+          "summary": "公式系列本文に須坂3Fイオンホール7/24–8/3物販、別の撮影会一覧に須坂8/1が掲載。夏履歴原本への収録有無と会場・当時条件を追加照合してから履歴反映。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONの須坂/suzaka・住所・名称を照合して一致なし。7/24–8/3物販と8/1撮影会は11月新規と別開催。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "過去開催の収録漏れ候補。今回は11月新規2件を優先し、夏の系列履歴原本との重複・来場条件検証前なので公開案は生成しない。",
+      "nextCheck": "系列履歴原本・既存候補との最終照合と当時の施設告知を確認する。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "history-chiikawa-movie-photo-suzaka-2026",
+      "title": "映画ちいかわ 写真撮影会 イオンモール須坂",
+      "kind": "history_import",
+      "targetKey": "history-chiikawa-movie-photo-suzaka-2026",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-82d181891d"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-22T23:08:18.059+00:00",
+      "eventStartsAt": "2026-08-01",
+      "eventEndsAt": "2026-08-01",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+          "observedAt": "2026-10-22T23:05:03.975+00:00",
+          "summary": "公式系列本文に須坂3Fイオンホール7/24–8/3物販、別の撮影会一覧に須坂8/1が掲載。夏履歴原本への収録有無と会場・当時条件を追加照合してから履歴反映。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "公開3JSONの須坂/suzaka・住所・名称を照合して一致なし。7/24–8/3物販と8/1撮影会は11月新規と別開催。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "過去開催の収録漏れ候補。今回は11月新規2件を優先し、夏の系列履歴原本との重複・来場条件検証前なので公開案は生成しない。",
+      "nextCheck": "系列履歴原本・既存候補との最終照合と当時の施設告知を確認する。",
+      "recheckDueAt": "2026-10-23T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawa-bakery-shop-laforet-entry-20261023",
+      "title": "chiikawa-bakery-shop-laforet 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113224950953996424"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2113224950953996424",
+          "observedAt": "2026-10-22T23:06:30.185+00:00",
+          "summary": "10/22投稿の「明日」を10/23と解釈。本文で10時・場所・開店後店頭・1日1回を確認。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
       "state": "ready",
       "priority": "high",
-      "decision": "公式配信本文・添付画像で通常掲載条件差分を確認。当日優先反映。10/23朝枠の19時受付開始は既に経過、空き未確認。既存publishedレコードの初回公開日時は維持。",
-      "nextCheck": "公開反映と同ID条件一致を確認。集合案内はナガノ公式の追加発表がある場合のみ更新。",
-      "recheckDueAt": "2026-10-22T23:59:59+09:00",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawa-bakery-tokyo-entry-20261023",
+      "title": "chiikawa-bakery-tokyo 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-tokyo:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113246934433673659",
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2113246934433673659",
+          "observedAt": "2026-10-22T23:06:30.184+00:00",
+          "summary": "10/22公式投稿の明日=10/23。14:50・呼出15分を本文確認。11月完売はhttps://chiikawabakery.jp/reservation/ 2026-10-22T23:05:45Z web open本文で確認。未確認の12月完売は追加しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-22T23:05:45.000Z",
+          "summary": "公式予約本文で東京10月・11月の優先入場券完売を確認。12月の東京完売とは書かない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-osaka-umeda-entry-20261023",
+      "title": "chiikawaland-osaka-umeda 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-osaka-umeda:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113241723224866937"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113241723224866937",
+          "observedAt": "2026-10-22T23:06:30.191+00:00",
+          "summary": "集合時刻表を画像目視済。別画像の集合場所図は403未取得につき具体的な場所を推定しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-tokyo-station-entry-20261023",
+      "title": "chiikawaland-tokyo-station 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-tokyo-station:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113250061840961669"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113250061840961669",
+          "observedAt": "2026-10-22T23:06:30.188+00:00",
+          "summary": "集合表原画像目視。A〜G各24名を12名ずつ15分枠、10:25〜13:40集合。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-tokyo-station"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-tokyo-station"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-solamachi-entry-20261023",
+      "title": "chiikawaland-solamachi 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-solamachi:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113256355335463143"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113256355335463143",
+          "observedAt": "2026-10-22T23:06:30.187+00:00",
+          "summary": "本文確認済。集合時間画像は403未取得。本文にない時刻は転記しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-solamachi"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-solamachi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-shinsaibashi-entry-20261023",
+      "title": "chiikawaland-shinsaibashi 10/23入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-shinsaibashi:entry-2026-10-23",
+      "sourceIds": [
+        "morning-existing23-2113242777773559935"
+      ],
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-22T23:09:12.333+00:00",
+      "eventStartsAt": "2026-10-23",
+      "eventEndsAt": "2026-10-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-23T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113242777773559935",
+          "observedAt": "2026-10-22T23:06:30.190+00:00",
+          "summary": "本文確認済。集合時間画像は403未取得。本文にない時刻は転記しない。",
+          "recordPath": "research/morning-existing-2026-10-23-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-shinsaibashi"
+        ],
+        "note": "公開最新main既存IDへの条件差分のみ。"
+      },
+      "listingIds": [
+        "chiikawaland-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/23来店前に既存入場案内を更新。画像未取得分を推定しない。",
+      "nextCheck": "検査・GitHub反映後に公開JSON一致を確認。東京駅14時以降の入場方法は続報を確認。",
+      "recheckDueAt": "2026-10-23T09:00:00+09:00",
       "publishedAt": null
     }
   ]

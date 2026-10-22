@@ -1,0 +1,1996 @@
+{
+  "verifiedIntake": {
+    "verifiedAt": "2026-10-22T23:29:27.336Z",
+    "parts": 14,
+    "encodedCharacters": 55416,
+    "decodedBytes": 246282,
+    "sha256": "8dffd73a0a4c57da9dedd968fe183f5e3cceda975db73dc9e6726094219e8f2d",
+    "hashVerified": true,
+    "gzipChecksumVerified": true,
+    "topLevelKeys": [
+      "version",
+      "baseCommit",
+      "observedAt",
+      "instructions",
+      "newSpotUpserts",
+      "existingSpotUpdates",
+      "sourceUpserts",
+      "candidateUpserts",
+      "evidenceFiles",
+      "publicComparison",
+      "ciSnapshot",
+      "counts",
+      "limits"
+    ]
+  },
+  "baseCommit": "2b6df780e199bd46bcb9abe56657623cac466285",
+  "preparedAt": "2026-10-22T23:32:01.709Z",
+  "scope": {
+    "new": [
+      "popup-2026-11-06-aeon-suzaka",
+      "chiikawa-photo-2026-11-22-aeon-suzaka"
+    ],
+    "updated": [
+      "chiikawa-bakery-shop-laforet",
+      "chiikawa-bakery-tokyo",
+      "chiikawaland-osaka-umeda",
+      "chiikawaland-tokyo-station",
+      "chiikawaland-solamachi",
+      "chiikawaland-shinsaibashi"
+    ],
+    "unchangedAppAndSchemas": true
+  },
+  "normalizations": [
+    {
+      "kind": "public_copy",
+      "id": "popup-2026-11-06-aeon-suzaka",
+      "field": "description",
+      "before": "ちいかわのグッズを扱う期間限定のPOP UP STOREです。11月22日の写真撮影会は別企画として掲載しています。",
+      "after": "ちいかわのグッズを扱う期間限定のPOP UP STOREです。11月22日には写真撮影会も開催されます。",
+      "reason": "Keep visitor information; remove internal publication/grouping wording."
+    },
+    {
+      "kind": "public_copy",
+      "id": "chiikawa-photo-2026-11-22-aeon-suzaka",
+      "field": "description",
+      "before": "2026年11月22日にイオンモール須坂1F Goolightコートで開催される、ちいかわ・ハチワレ・うさぎの写真撮影会です。11時・13時・15時の3回を1企画として掲載しています。",
+      "after": "2026年11月22日にイオンモール須坂1F Goolightコートで開催される、ちいかわ・ハチワレ・うさぎの写真撮影会です。11時・13時・15時の3回開催します。",
+      "reason": "Keep visitor information; remove internal publication/grouping wording."
+    },
+    {
+      "kind": "raw_source_extra",
+      "id": "chiikawa-bakery-news",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "raw_source_extra",
+      "id": "chiikawa-bakery-reservation",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "raw_source_extra",
+      "id": "chiikawa-park-ticket",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "raw_source_extra",
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "source_kind",
+      "id": "morning-existing23-2113246934433673659",
+      "raw": "official_detail",
+      "normalized": "social"
+    },
+    {
+      "kind": "source_kind",
+      "id": "morning-existing23-2113224950953996424",
+      "raw": "official_detail",
+      "normalized": "social"
+    },
+    {
+      "kind": "source_kind",
+      "id": "morning-existing23-2113256355335463143",
+      "raw": "official_detail",
+      "normalized": "social"
+    },
+    {
+      "kind": "source_kind",
+      "id": "morning-existing23-2113250061840961669",
+      "raw": "official_detail",
+      "normalized": "social"
+    },
+    {
+      "kind": "source_kind",
+      "id": "morning-existing23-2113242777773559935",
+      "raw": "official_detail",
+      "normalized": "social"
+    },
+    {
+      "kind": "source_kind",
+      "id": "morning-existing23-2113241723224866937",
+      "raw": "official_detail",
+      "normalized": "social"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-popup-list",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.993+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.993+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/pus.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T23:05:00.977+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "mogumogu-fushimi-news",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.950+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.950+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/fushimi/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T10:07:58.197+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-park-news",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.985+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.985+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T23:04:59.819+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.737+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.737+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:03.422+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.740+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.740+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:06.030+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawaland-entry-updates-x",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:27.285+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:27.285+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:37.235+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "corporate-aeon-chiikawa-news-954",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:32.008+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:32.008+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-20T10:04:00.248+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-kanazawa",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.487+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.487+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:34.297+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-ikebukuro",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:15.848+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:15.848+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/ikebukuro/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:34.292+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-koshigaya",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:15.855+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:15.855+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/koshigaya/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:34.281+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-information-osaka",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.472+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.472+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/information-osaka/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T10:07:41Z"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-information-popup-01",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.473+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.473+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/information-popup_01/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T10:07:41Z"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-topics",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:37.736+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:37.736+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/topics/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T23:05:03.899+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "nagano-market-shop-x",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:24.949+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/nagano_mkt_shop"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:24.949+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/nagano_mkt_shop"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:52.292+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-osaka-umeda",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.473+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.473+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/osaka/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:26.456+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-harajuku",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.473+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.473+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/harajuku/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:26.434+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-fukuoka",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.474+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.474+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/fukuoka/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:26.426+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-kyoto",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.475+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.475+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/kyoto/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:26.453+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-tokyo-station",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.478+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.478+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:26.465+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-solamachi",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.480+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.480+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/solamachi/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:26.448+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-nagoya",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.481+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.481+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/nagoya/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:29.857+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-sendai",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.482+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.482+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/sendai/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:29.851+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-sapporo",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.483+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.483+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/sapporo/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:29.818+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-yokohama",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.484+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.484+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/yokohama/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:29.838+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-hiroshima",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.484+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.484+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/hiroshima/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:29.826+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-shinsaibashi",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.485+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.485+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/shinsaibashi/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:29.838+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-shinjuku",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.487+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:10.487+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/shinjuku/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:34.274+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.782+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.782+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:06.046+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:24.825+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:24.825+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:56.258+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.277+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.277+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tknm/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:03.463+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.000+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:27.000+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_fkmk/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:59.138+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:25.799+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:25.799+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_matd/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:59.186+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:26.278+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:26.278+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_mito/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:59.187+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-2db8c290c8",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:26.998+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:26.998+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tuda/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:59.146+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-x-com-chiikawa-parkjp",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:27.311+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawa_parkjp"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:27.311+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawa_parkjp"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:37.209+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-x-com-chiikawabakery",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:23.444+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:23.444+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:52.253+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "priority-four-1b6f0ffdf6c9",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:24.894+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:24.894+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:52.220+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "priority-four-9660f8c42df7",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:25.569+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/kiddyevent"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:25.569+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/kiddyevent"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:55.764+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-magical-nagoya",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.945+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.945+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/nagoya/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:39.169+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-magical-shinjuku",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.939+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.939+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/shinjuku/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:34.251+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-magical-umeda",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.941+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.941+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/magical_store/umeda/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:34.246+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "magical-store-entry-updates-x",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:30.980+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/magi_chiikawa"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:30.980+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/magi_chiikawa"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T10:00:17.155+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-x-com-chiikawabakeryo",
+      "raw": {
+        "lastResult": "partial",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:24.430+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawabakeryO"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T10:06:24.430+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+          "evidenceUrl": "https://x.com/chiikawabakeryO"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:52.278+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-park-christmas-2026",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:28.006+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:28.006+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:17.962+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "mogumogu-kawagoe-store-news",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:40.190+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:40.190+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/store/kawagoe/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:57.758+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-pocket-fourth-2026-detail",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:28.014+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:28.014+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:20.234+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:39.334+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:39.334+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T23:05:15.879+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "baby-castella-otaru-official",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:06:30.194+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:06:30.194+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/castella/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-22T10:08:08.258+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "official-observation-c13c6c2b72db",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:29.123+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:29.123+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aksk/index.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:20.200+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:41.978+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:41.978+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:38.722+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-series18-bcc6d96d4eaa",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.988+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.988+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/s_fes.html"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:48.114+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-store-20261020-6d00bae52cd2",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:40.057+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:40.057+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/store/fushimi/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:56.570+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing21-0d23c0b7657f",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:24.816+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:24.816+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/9lofnm5f5wy/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:57.178+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing21-2cb24f2734c6",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.986+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.986+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:58:46.054+00:00"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-existing21-d9434ce2241e",
+      "raw": {
+        "lastResult": "failed",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:42.804+00:00",
+          "message": "HTTP Error 403: Forbidden"
+        }
+      },
+      "normalized": {
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:42.804+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://shop.parkplace-oita.com/event/"
+        }
+      },
+      "lastSuccessfulAtPreserved": "2026-10-21T09:59:41.745+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "evening-x-com-chiikawabakery",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:39.383+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/chiikawabakery"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:39.383+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "morning-x-com-chiikawabakeryo",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:39.847+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/chiikawabakeryO"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:39.847+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "priority-four-1b6f0ffdf6c9",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:39.882+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/chiikawa_popup"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:39.882+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "nagano-market-shop-x",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:39.889+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/nagano_mkt_shop"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:39.889+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "priority-four-9660f8c42df7",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:39.890+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/kiddyevent"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:39.890+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "chiikawaland-entry-updates-x",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:41.390+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/chiikawa_land"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:41.390+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "evening-x-com-chiikawa-parkjp",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:41.838+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/chiikawa_parkjp"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:41.838+00:00"
+    },
+    {
+      "kind": "partial_attempt_failure_alignment",
+      "id": "magical-store-entry-updates-x",
+      "previousFailure": {
+        "at": "2026-10-22T23:05:42.824+00:00",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200 profile shell, no readable timeline posts. Not evidence of no new announcements.",
+        "evidenceUrl": "https://x.com/magi_chiikawa"
+      },
+      "partialAttemptAt": "2026-10-22T23:05:42.824+00:00"
+    },
+    {
+      "kind": "new_listing_prepared_id_match",
+      "id": "popup-2026-11-06-aeon-suzaka-new",
+      "before": {
+        "status": "new",
+        "ids": [],
+        "note": "最新mainおよびlive一致の公開3JSON98/671/23件を氏名・住所・suzaka・URLで照合し該当なし。POP UPと1日撮影会を別開催として識別。"
+      }
+    },
+    {
+      "kind": "new_listing_prepared_id_match",
+      "id": "chiikawa-photo-2026-11-22-aeon-suzaka-new",
+      "before": {
+        "status": "new",
+        "ids": [],
+        "note": "最新mainおよびlive一致の公開3JSON98/671/23件を氏名・住所・suzaka・URLで照合し該当なし。POP UPと1日撮影会を別開催として識別。"
+      }
+    },
+    {
+      "kind": "dependent_notice",
+      "id": "chiikawa-bakery-tokyo",
+      "field": "importantNotice",
+      "before": "2026年10月21日の公式告知では、東京店のフリー入場はデジタル整理券で案内します。整理券は当日14:50から発行予定で、呼出しから15分以内に来店しないとキャンセルになります。現在の発行状況・残枠は未確認です。",
+      "after": "2026年10月23日の東京店のフリー入場はデジタル整理券で案内します。整理券は当日14:50から発行予定で、呼出しから15分以内に来店しないとキャンセルになります。現在の発行状況・残枠は未確認です。",
+      "evidenceUrl": "https://x.com/chiikawabakery/status/2113246934433673659",
+      "reason": "Visual QA found the old 10/21 warning still displayed above the updated 10/23 entry note. Synchronize the same six-record admission update scope."
+    }
+  ],
+  "priorPublicationSync": {
+    "sourceMain": "2b6df780e199bd46bcb9abe56657623cac466285",
+    "publishedAt": "2026-10-22T15:34:22.476Z",
+    "publishedAtBasis": "First saved exact public content match; deployment completion recorded separately; original listing publication times preserved.",
+    "firstPublicMatchAt": "2026-10-22T15:34:22.476Z",
+    "deployJobCompletedAt": "2026-10-22T15:33:25Z",
+    "corrections": [
+      {
+        "id": "update-oita-entry-details-20261022",
+        "listingIds": [
+          "popup-2026-10-23-aeon-parkplace-oita"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T15:34:22.476Z",
+        "firstPublicMatchAt": "2026-10-22T15:34:22.476Z",
+        "deployJobCompletedAt": "2026-10-22T15:33:25Z",
+        "pr": 70,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/70",
+        "sourceHead": "6ad4cd8988ab64b1d619bc36db2a66bafd074222",
+        "mergeSha": "2b6df780e199bd46bcb9abe56657623cac466285",
+        "pagesRun": 39805833804,
+        "reservationOpensAt": null,
+        "preReservationPublication": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。"
+      },
+      {
+        "id": "update-nagano-ebina-entry-details-20261022",
+        "listingIds": [
+          "nagano-market-popup-2026-10-23-ebina-marui"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T15:34:22.476Z",
+        "firstPublicMatchAt": "2026-10-22T15:34:22.476Z",
+        "deployJobCompletedAt": "2026-10-22T15:33:25Z",
+        "pr": 70,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/70",
+        "sourceHead": "6ad4cd8988ab64b1d619bc36db2a66bafd074222",
+        "mergeSha": "2b6df780e199bd46bcb9abe56657623cac466285",
+        "pagesRun": 39805833804,
+        "reservationOpensAt": "2026-10-22T19:00:00+09:00",
+        "preReservationPublication": "not_before",
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。"
+      }
+    ]
+  },
+  "sourceHistoryPolicy": "Latest actual attempt; preserve known lastSuccessfulAt and latest failure; raw fetch paths and approximate observations remain distinct.",
+  "publication": "These eight candidates remain ready until deployment content is verified; publication result will be saved separately and synchronized in the next normal listing PR.",
+  "sourceResultNormalization": "Transport failed/partial values mapped to the existing schema; partial social-profile coverage recorded as access_limited, not complete review. Preserve known successful times.",
+  "localValidation": {
+    "recordedAt": "2026-10-22T23:39:28.636Z",
+    "build": {
+      "script": "build:spot-pages",
+      "declaredCommand": "node scripts/build-site-meta.mjs --write && node scripts/build-spot-pages.mjs --write",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-22T23:36:54.941Z",
+      "completedAt": "2026-10-22T23:36:56.443Z",
+      "statuses": [
+        {
+          "command": "node scripts/build-site-meta.mjs --write",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --write",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-morning\\build-spot-pages.log"
+    },
+    "check": {
+      "script": "check",
+      "declaredCommand": "node --check recent-utils.js && node --check scripts/lib/added-dates.mjs && node --check scripts/lib/operations-ledgers.mjs && node --check scripts/check-operations-ledgers.mjs && node --check app.js && node --check official.js && node --check collaborations.js && node --check nagano.js && node --check journal.js && node --check calendar-utils.js && node --check journal-export-utils.js && node --check location-utils.js && node --check spot-page.js && node --check cloud-sync-loader.js && node --check cloud-sync-ui.js && node --check cloud-sync-merge.js && node --check cloud-sync.js && node --check pwa.js && node --check service-worker.js && node --check scripts/build-pwa-icons.mjs && node --check scripts/build-site-meta.mjs && node --check scripts/build-spot-pages.mjs && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/preview-spot-data.mjs && node --check scripts/report-status-candidates.mjs && node --check scripts/archive-ended-events.mjs && node --check scripts/audit-special-series.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/build-special-events.mjs && node --check scripts/import-nagano-official-series.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node --check scripts/test-cloud-sync-merge.mjs && node --check scripts/validate-collaborations.mjs && node --check scripts/validate-nagano-mentions.mjs && node --check scripts/validate-nagano-history.mjs && node --test tests/unit/*.test.mjs && node scripts/test-cloud-sync-merge.mjs && node scripts/validate-data.mjs && node scripts/check-operations-ledgers.mjs && node scripts/validate-collaborations.mjs && node scripts/validate-nagano-mentions.mjs && node scripts/validate-nagano-history.mjs && node scripts/audit-special-series.mjs && node scripts/build-special-events.mjs --check && node scripts/build-site-meta.mjs --check && node scripts/build-spot-pages.mjs --check",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-22T23:36:56.499Z",
+      "completedAt": "2026-10-22T23:37:02.674Z",
+      "statuses": [
+        {
+          "command": "node --check recent-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/added-dates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check app.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check official.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check collaborations.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check nagano.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check calendar-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal-export-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check location-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check spot-page.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-loader.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-ui.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-merge.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check pwa.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check service-worker.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-pwa-icons.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-site-meta.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-spot-pages.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-links.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-site-health.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/preview-spot-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/report-status-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/archive-ended-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-batch.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-special-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/import-nagano-official-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues-gsi.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --test tests/unit/*.test.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-special-events.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-site-meta.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --check",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-morning\\check.log",
+      "unitTests": 58,
+      "unitFailures": 0
+    },
+    "smoke": {
+      "script": "test:smoke",
+      "args": [
+        "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-morning-20261023\\node_modules\\@playwright\\test\\cli.js",
+        "test",
+        "--config=C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-morning\\smoke.config.mjs",
+        "--workers=1"
+      ],
+      "startedAt": "2026-10-22T23:34:48.730Z",
+      "completedAt": "2026-10-22T23:39:18.257Z",
+      "exitCode": 0,
+      "passed": true,
+      "error": null,
+      "passedTests": 111
+    },
+    "browser": {
+      "completedAt": "2026-10-22T23:37:29.078Z",
+      "effectiveChecks": 64,
+      "screens": 32,
+      "widths": [
+        390,
+        1440
+      ],
+      "flows": [
+        "static",
+        "directShared",
+        "sharedReload",
+        "searchSelection"
+      ],
+      "advancingClock": true,
+      "pageErrors": 0,
+      "targetedTokyoRechecks": 8,
+      "liveTilesClaimed": false
+    },
+    "targetedLinks": {
+      "startedAt": null,
+      "completedAt": "2026-10-22T23:33:50.821Z",
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Only the eight added/updated records; original checker unmodified, isolated data fixture; deferred external historical links excluded.",
+      "exitCode": 0,
+      "error": null,
+      "passed": true,
+      "startTimeNote": "Process start timestamp was not captured; completion time is the saved result observation, not an inferred fetch start."
+    },
+    "worktreePreservation": {
+      "count": 40,
+      "passed": true
+    },
+    "knownOnlyMetrics": {
+      "calculatedAt": "2026-10-22T23:38:31.079Z",
+      "base": "2b6df780e199bd46bcb9abe56657623cac466285",
+      "knownOnly": true,
+      "coverageNotice": "台帳に記録した候補・既知日時だけの指標。全新着の網羅率ではない。日付のみを00:00へ変換して経過時間を計算しない。",
+      "newListing": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 57,
+          "known": 48,
+          "before": 46,
+          "notBefore": 2,
+          "unpublishedAfterStart": 1,
+          "unknown": 9,
+          "rate": 0.9583333333333334
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 1,
+            "mean": 1.0296108333333334,
+            "min": 1.0296108333333334,
+            "max": 1.0296108333333334
+          },
+          "japanCalendarDays": {
+            "samples": 49,
+            "mean": 4.8979591836734695,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 16,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 64
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 38,
+            "mean": 2.123258757309942,
+            "min": 0.6488888888888888,
+            "max": 17.201181944444443
+          },
+          "japanCalendarDays": {
+            "samples": 50,
+            "mean": 0.22,
+            "min": 0,
+            "max": 1
+          },
+          "unknownPairs": 3,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 15
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 2,
+            "mean": 304.2463888888889,
+            "min": 9.783333333333333,
+            "max": 598.7094444444444
+          },
+          "japanCalendarDays": {
+            "samples": 39,
+            "mean": 2.7948717948717947,
+            "min": 0,
+            "max": 25
+          },
+          "unknownPairs": 14,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 51
+        }
+      },
+      "nonHistorical": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 57,
+          "known": 48,
+          "before": 46,
+          "notBefore": 2,
+          "unpublishedAfterStart": 1,
+          "unknown": 9,
+          "rate": 0.9583333333333334
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 27,
+            "mean": 23.638762479423868,
+            "min": 0.08666666666666667,
+            "max": 168.4488888888889
+          },
+          "japanCalendarDays": {
+            "samples": 133,
+            "mean": 3.007518796992481,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 164,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 270
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 126,
+            "mean": 2.3618594620811293,
+            "min": 0.2632788888888889,
+            "max": 49.16888888888889
+          },
+          "japanCalendarDays": {
+            "samples": 215,
+            "mean": 0.13488372093023257,
+            "min": 0,
+            "max": 5
+          },
+          "unknownPairs": 58,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 147
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 28,
+            "mean": 121.2655288888889,
+            "min": 0.9925,
+            "max": 2156.4727047222223
+          },
+          "japanCalendarDays": {
+            "samples": 130,
+            "mean": 12.876923076923077,
+            "min": 0,
+            "max": 1273
+          },
+          "unknownPairs": 143,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 245
+        }
+      }
+    }
+  }
+}
