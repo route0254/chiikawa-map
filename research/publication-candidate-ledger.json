@@ -17207,6 +17207,12 @@
           "observedAt": "2026-10-23T10:13:31.103+00:00",
           "summary": "施設公式過去クロール本文：7/24〜8/3、3Fイオンホール、10:00〜19:00（最終18:00）。入場無料。初日・混雑日はSUZAKAノ庭縁イベントの庭に9:30から整理券。混雑時は閉場前入場制限の場合あり。 施設詳細liveHTTPは404。公式過去クロール本文を履歴根拠として使用。",
           "recordPath": "research/evening-suzaka-history-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17219,12 +17225,12 @@
       "listingIds": [
         "movie-popup-2026-07-24-aeon-suzaka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "現行公式系列・公式施設過去本文・公開3JSONを照合。11月開催とは別の夏履歴2件で重複なし。開催案内の履歴掲載準備が可能。",
-      "nextCheck": "履歴登録案を作成し会場別期間と夏の入場条件を検査、公開履歴と照合。施設詳細の404を復旧済扱いにしない。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "履歴掲載済み。通常巡回で公式な訂正・追加を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
     },
     {
       "id": "history-chiikawa-movie-photo-suzaka-2026",
@@ -17254,6 +17260,12 @@
           "observedAt": "2026-10-23T10:13:31.103+00:00",
           "summary": "施設公式過去クロール本文：8/1、3Fキャンドゥ前特設会場、11:00/13:00/15:00各約30〜40分・50組。9:30頃SUZAKAノ庭縁イベントの庭で全150枚。列が途切れ次第3Fイオンホールへ移動。1組上限5名1枚、時間選択可。券記載開始時刻経過は無効。混雑時配布前倒しあり。 施設詳細liveHTTPは404。公式過去クロール本文を履歴根拠として使用。",
           "recordPath": "research/evening-suzaka-history-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17266,12 +17278,12 @@
       "listingIds": [
         "movie-photo-2026-08-01-aeon-suzaka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "現行公式系列・公式施設過去本文・公開3JSONを照合。11月開催とは別の夏履歴2件で重複なし。開催案内の履歴掲載準備が可能。",
-      "nextCheck": "履歴登録案を作成し会場別期間と夏の入場条件を検査、公開履歴と照合。施設詳細の404を復旧済扱いにしない。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "履歴掲載済み。通常巡回で公式な訂正・追加を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
     },
     {
       "id": "update-chiikawa-bakery-shop-laforet-entry-20261023",
@@ -17541,6 +17553,12 @@
           "observedAt": "2026-10-23T10:07:54.801+00:00",
           "summary": "10/23新公式発表の入場無料・池袋券と区別・開業特典。開業日/プレオープン既存条件は変更しない。",
           "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17553,12 +17571,12 @@
       "listingIds": [
         "chiikawa-park-store-osaka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存掲載の条件追記。",
-      "nextCheck": "公開実体照合とLUCUA受付続報。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
     },
     {
       "id": "update-mogumogu-kawagoe-mogumogu-kawagoe-1023",
@@ -17581,6 +17599,12 @@
           "observedAt": "2026-10-23T10:07:30.695+00:00",
           "summary": "10/31から土日祝予約制へ変更。各日前日20時LINE先着。平日は通常入店。",
           "recordPath": "research/evening-existing-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17593,12 +17617,12 @@
       "listingIds": [
         "mogumogu-kawagoe"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存IDに一次情報で確認できた条件のみ更新。",
-      "nextCheck": "検査後に公開実体一致を確認。期限付き条件の続報を翌朝再確認。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
     },
     {
       "id": "update-mogumogu-fushimi-mogumogu-fushimi-1023",
@@ -17621,6 +17645,12 @@
           "observedAt": "2026-10-23T10:07:35.057+00:00",
           "summary": "10/31から土日祝予約制へ変更。各日前日20時LINE先着。平日は通常入店。",
           "recordPath": "research/evening-existing-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17633,12 +17663,12 @@
       "listingIds": [
         "mogumogu-fushimi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存IDに一次情報で確認できた条件のみ更新。",
-      "nextCheck": "検査後に公開実体一致を確認。期限付き条件の続報を翌朝再確認。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
     },
     {
       "id": "update-chiikawaland-fukuoka-land-fukuoka-1024",
@@ -17661,6 +17691,12 @@
           "observedAt": "2026-10-23T10:06:41.224+00:00",
           "summary": "本文確認済み。画像jpg/webp403のため集合場所・時刻は転記せず公式投稿に誘導。",
           "recordPath": "research/evening-existing-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17673,12 +17709,12 @@
       "listingIds": [
         "chiikawaland-fukuoka"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存IDに一次情報で確認できた条件のみ更新。",
-      "nextCheck": "検査後に公開実体一致を確認。期限付き条件の続報を翌朝再確認。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式条件変更を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
     },
     {
       "id": "update-chiikawaland-tokyo-station-land-tokyo-1023-end",
@@ -17701,6 +17737,12 @@
           "observedAt": "2026-10-23T10:06:44.782+00:00",
           "summary": "公式個別投稿で当日入店受付終了を確認。施設閉店やイベント終了とは扱わない。",
           "recordPath": "research/evening-existing-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/72",
+          "observedAt": "2026-10-23T11:00:04.751Z",
+          "summary": "PR72のmain・公開JSON初回完全一致を保存済み記録で照合。配信完了日時 2026-10-23T10:59:24Z とは区別し、元の実公開日時を保持。",
+          "recordPath": "research/morning-20261024-validation-evidence.json"
         }
       ],
       "existingMatch": {
@@ -17713,11 +17755,211 @@
       "listingIds": [
         "chiikawaland-tokyo-station"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存IDに一次情報で確認できた条件のみ更新。",
-      "nextCheck": "検査後に公開実体一致を確認。期限付き条件の続報を翌朝再確認。",
-      "recheckDueAt": "2026-10-24T08:00:00+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-23T11:00:04.751Z"
+    },
+    {
+      "id": "update-chiikawaland-shinsaibashi-entry-20261024",
+      "title": "ちいかわらんど 心斎橋パルコ店 10月24日の入店条件",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-shinsaibashi:entry-20261024",
+      "sourceIds": [
+        "chiikawaland-entry-updates-x"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-23T22:57:37.971Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-24T09:00:00+09:00",
+      "reflectDueAt": "2026-10-24T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113619546305360135",
+          "observedAt": "2026-10-23T23:00:27Z",
+          "summary": "クラウドで公式個別投稿の本文・画像を取得し目視確認済み。承認されたテキスト引継ぎを使用。10/24の限定案内は 2026年10月24日は9:00から心斎橋パルコ1階の公式画像指定場所で入店整理券を配布します。9:00になってから配布場所へお越しください。時間前の整列はできません。1人1枚、代理・代表者への配布は不可で、なくなり次第終了します。整理券は10月24日の記載時間帯のみ有効です。",
+          "recordPath": "research/morning-20261024-cloud-text-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-shinsaibashi"
+        ],
+        "note": "基準mainの既存常設店と照合。ID・会期・開業日・住所・座標を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "確認済み10/24入店条件のみ先行更新。旧日付条件は根拠記録へ保存。",
+      "nextCheck": "検査・正確なcommitのCI・公開実体を照合し、次回巡回で公式続報を確認。",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-ikebukuro-entry-20261024",
+      "title": "ちいかわらんど 池袋パルコ店 10月24日の入店条件",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-ikebukuro:entry-20261024",
+      "sourceIds": [
+        "chiikawaland-entry-updates-x"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-23T22:57:37.971Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-24T10:00:00+09:00",
+      "reflectDueAt": "2026-10-24T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113618107432632441",
+          "observedAt": "2026-10-23T23:00:27Z",
+          "summary": "クラウドで公式個別投稿の本文・画像を取得し目視確認済み。承認されたテキスト引継ぎを使用。10/24の限定案内は 2026年10月24日は10:00から入店整理券を配布し、同時刻から公式画像指定場所で待機列を整理します。整理券配布・列整理の時刻や運営方法は状況により変更される場合があります。早朝・深夜からの整列や座り込みはできません。グループは全員が揃ってからお並びください。詳しい待機場所は公式画像をご確認ください。",
+          "recordPath": "research/morning-20261024-cloud-text-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-ikebukuro"
+        ],
+        "note": "基準mainの既存常設店と照合。ID・会期・開業日・住所・座標を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-ikebukuro"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "確認済み10/24入店条件のみ先行更新。旧日付条件は根拠記録へ保存。",
+      "nextCheck": "検査・正確なcommitのCI・公開実体を照合し、次回巡回で公式続報を確認。",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-osaka-umeda-entry-20261024",
+      "title": "ちいかわらんど 大阪梅田店 10月24日の入店条件",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-osaka-umeda:entry-20261024",
+      "sourceIds": [
+        "chiikawaland-entry-updates-x"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-23T22:57:37.971Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-24T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113607467007701479",
+          "observedAt": "2026-10-23T23:00:27Z",
+          "summary": "クラウドで公式個別投稿の本文・画像を取得し目視確認済み。承認されたテキスト引継ぎを使用。10/24の限定案内は 2026年10月24日の開店前は阪急三番街南館地下1階の公式画像指定場所へお並びください。10:00開店時に並んでいる方から順次案内します。グループは全員が揃ってからお並びください。列はWhityうめだの手前で折り返し、Whityうめだのエリアには並べません。徹夜での整列はできません。混雑状況により入場整理券を配布する場合があります。",
+          "recordPath": "research/morning-20261024-cloud-text-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda"
+        ],
+        "note": "基準mainの既存常設店と照合。ID・会期・開業日・住所・座標を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "確認済み10/24入店条件のみ先行更新。旧日付条件は根拠記録へ保存。",
+      "nextCheck": "検査・正確なcommitのCI・公開実体を照合し、次回巡回で公式続報を確認。",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-hiroshima-entry-20261024",
+      "title": "ちいかわらんど 広島パルコ店 10月24日の入店条件",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-hiroshima:entry-20261024",
+      "sourceIds": [
+        "chiikawaland-entry-updates-x"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-23T22:57:37.971Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-24T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113595240221475089",
+          "observedAt": "2026-10-23T23:00:27Z",
+          "summary": "クラウドで公式個別投稿の本文・画像を取得し目視確認済み。承認されたテキスト引継ぎを使用。10/24の限定案内は 2026年10月24日は9:50から公式画像の星印を先頭とする指定場所へお並びください。混雑緩和・安全対策のため、開店前の整列場所が設けられます。詳しい待機場所は公式画像をご確認ください。",
+          "recordPath": "research/morning-20261024-cloud-text-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-hiroshima"
+        ],
+        "note": "基準mainの既存常設店と照合。ID・会期・開業日・住所・座標を維持。"
+      },
+      "listingIds": [
+        "chiikawaland-hiroshima"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "確認済み10/24入店条件のみ先行更新。旧日付条件は根拠記録へ保存。",
+      "nextCheck": "検査・正確なcommitのCI・公開実体を照合し、次回巡回で公式続報を確認。",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawa-bakery-tokyo-entry-20261024",
+      "title": "ちいかわベーカリー 10月24日の入店条件",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-tokyo:entry-20261024",
+      "sourceIds": [
+        "evening-x-com-chiikawabakery"
+      ],
+      "officialAnnouncedAt": "2026-10-23",
+      "discoveredAt": "2026-10-23T22:57:59.332Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-24T14:50:00+09:00",
+      "reflectDueAt": "2026-10-24T09:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2113596248175628594",
+          "observedAt": "2026-10-23T23:00:27Z",
+          "summary": "クラウドで公式個別投稿の本文・画像を取得し目視確認済み。承認されたテキスト引継ぎを使用。10/24の限定案内は 2026年10月24日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。",
+          "recordPath": "research/morning-20261024-cloud-text-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "基準mainの既存常設店と照合。ID・会期・開業日・住所・座標を維持。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "確認済み10/24入店条件のみ先行更新。旧日付条件は根拠記録へ保存。",
+      "nextCheck": "検査・正確なcommitのCI・公開実体を照合し、次回巡回で公式続報を確認。",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00",
       "publishedAt": null
     }
   ]
