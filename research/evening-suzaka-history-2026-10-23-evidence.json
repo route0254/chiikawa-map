@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-10-23T10:13:31.103407+00:00",
+  "observations": [
+    {
+      "id": "suzaka-summer-popup",
+      "url": "https://suzaka.aeonmall.com/news/detail/1174?t=event_news",
+      "officialAnnouncedAt": "2026-06-16",
+      "summary": "施設公式過去クロール本文：7/24〜8/3、3Fイオンホール、10:00〜19:00（最終18:00）。入場無料。初日・混雑日はSUZAKAノ庭縁イベントの庭に9:30から整理券。混雑時は閉場前入場制限の場合あり。",
+      "webReference": "turn236view2",
+      "crawlAgeReported": "3 months ago",
+      "observedAt": "2026-10-23T10:13:31.103407+00:00",
+      "evidenceType": "official historical page text retrieved via web index; not live HTTP success",
+      "liveHttpResult": 404
+    },
+    {
+      "id": "suzaka-summer-photo",
+      "url": "https://suzaka.aeonmall.com/news/detail/1287",
+      "officialAnnouncedAt": "2026-07-07",
+      "summary": "施設公式過去クロール本文：8/1、3Fキャンドゥ前特設会場、11:00/13:00/15:00各約30〜40分・50組。9:30頃SUZAKAノ庭縁イベントの庭で全150枚。列が途切れ次第3Fイオンホールへ移動。1組上限5名1枚、時間選択可。券記載開始時刻経過は無効。混雑時配布前倒しあり。",
+      "webReference": "turn238view0",
+      "crawlAgeReported": "2 months ago",
+      "observedAt": "2026-10-23T10:13:31.103407+00:00",
+      "evidenceType": "official historical page text retrieved via web index; not live HTTP success",
+      "liveHttpResult": 404
+    }
+  ],
+  "series": {
+    "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+    "observedAt": "2026-10-23T10:13:31.103407+00:00",
+    "liveHttpResult": 200,
+    "summary": "現行公式系列に須坂3Fイオンホール7/24–8/3、別撮影会一覧に8/1が残存。施設過去一覧でも撮影会3Fキャンドゥ前と物販3Fイオンホールを区別。"
+  },
+  "dedup": {
+    "checkedPublicFiles": [
+      "data/official-spots.json",
+      "data/official-events-archive.json",
+      "data/collaborations-current.json"
+    ],
+    "proposedIds": [
+      "movie-popup-2026-07-24-aeon-suzaka",
+      "movie-photo-2026-08-01-aeon-suzaka"
+    ],
+    "existingIdConflicts": []
+  },
+  "limitations": "施設詳細のliveHTTPは404。web取得した公式過去告知の本文を根拠にし、現在復旧や開催実績の独立証明にはしない。",
+  "archiveDecision": {
+    "accepted": true,
+    "basis": "DATA-OPERATIONS.mdの公式履歴基準。現行公式系列に残る会期と施設公式の過去告知本文を照合し、場所・会期を特定。既存の同映画シリーズの個別履歴形式で追加。実施報告・施設ページ復旧・本日原サイト取得成功とは解釈しない。",
+    "canonicalInput": "本研究スナップショット内のarchiveUpserts。対象IDは特設イベント原本に未収録の個別履歴で、既存の他会場や系列を変更しない。",
+    "libraryFileId": "libfile_1f3541aa43288191b6d3e61d7f330e57",
+    "libraryVersion": "0",
+    "sha256": "28ad8dc214efde503837721f32c27337210658e5c074d314f79428229e5898ce"
+  },
+  "proposedListingIds": [
+    "movie-popup-2026-07-24-aeon-suzaka",
+    "movie-photo-2026-08-01-aeon-suzaka"
+  ],
+  "fetches": [
+    {
+      "id": "suzaka-summer-series",
+      "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+      "attemptAt": "2026-10-23T10:12:33.774894+00:00",
+      "status": 200,
+      "bytes": 14216
+    },
+    {
+      "id": "suzaka-summer-popup",
+      "url": "https://suzaka.aeonmall.com/news/detail/1174?t=event_news",
+      "attemptAt": "2026-10-23T10:12:33.775931+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "suzaka-summer-photo",
+      "url": "https://suzaka.aeonmall.com/news/detail/1287",
+      "attemptAt": "2026-10-23T10:12:33.776426+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "suzaka-summer-list",
+      "url": "https://suzaka.aeonmall.com/news?tabs=event_news7",
+      "attemptAt": "2026-10-23T10:12:33.776828+00:00",
+      "status": 200,
+      "bytes": 197863
+    }
+  ],
+  "rawSourceUpserts": [
+    {
+      "id": "suzaka-summer-popup",
+      "name": "suzaka-summer-popup",
+      "url": "https://suzaka.aeonmall.com/news/detail/1174?t=event_news",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:13:31.103407+00:00",
+      "lastSuccessfulAt": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "公式過去クロール本文をwebで確認。直接HTTP取得は404。現行公式系列と日程一致。",
+      "lastFailure": {
+        "at": "2026-10-23T10:13:31.103407+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "Direct HTTP 404; historical official content available in web index.",
+        "evidenceUrl": "https://suzaka.aeonmall.com/news/detail/1174?t=event_news"
+      },
+      "note": "過去クロール日時は精密不明。lastSuccessfulAtを今回のlive成功として埋めない。"
+    },
+    {
+      "id": "suzaka-summer-photo",
+      "name": "suzaka-summer-photo",
+      "url": "https://suzaka.aeonmall.com/news/detail/1287",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:13:31.103407+00:00",
+      "lastSuccessfulAt": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "公式過去クロール本文をwebで確認。直接HTTP取得は404。現行公式系列と日程一致。",
+      "lastFailure": {
+        "at": "2026-10-23T10:13:31.103407+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "Direct HTTP 404; historical official content available in web index.",
+        "evidenceUrl": "https://suzaka.aeonmall.com/news/detail/1287"
+      },
+      "note": "過去クロール日時は精密不明。lastSuccessfulAtを今回のlive成功として埋めない。"
+    }
+  ],
+  "archiveUpserts": [
+    {
+      "id": "movie-popup-2026-07-24-aeon-suzaka",
+      "name": "映画ちいかわ 人魚の島のひみつ POP UP STORE イオンモール須坂",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "popup",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-07-24",
+      "endDate": "2026-08-03",
+      "hoursText": "10:00〜19:00（最終日は18:00閉場）",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://suzaka.aeonmall.com/news/detail/1174?t=event_news",
+      "hoursCheckedAt": "2026-10-23",
+      "reservationType": "unknown",
+      "reservationUrl": null,
+      "defaultEntryType": "walkin",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "when_crowded",
+      "entryNote": "当時の案内では入場無料。初日・混雑日はSUZAKAノ庭縁イベントの庭を優先入口とし、9:30から整理券で案内する予定でした。混雑時は閉場前に入場を制限する場合がありました。",
+      "entryInfoUrl": "https://suzaka.aeonmall.com/news/detail/1174?t=event_news",
+      "entryInfoCheckedAt": "2026-10-23",
+      "lat": 36.6396018,
+      "lng": 138.2734196,
+      "address": "長野県須坂市大字福島386番地1 イオンモール須坂 3F イオンホール",
+      "description": "公式に案内された2026年7月24日〜8月3日の映画ちいかわ期間限定POP UP STOREの開催情報です。会場はイオンモール須坂3Fイオンホールです。会期は終了しています。",
+      "sourceUrl": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+      "mapUrl": "https://maps.app.goo.gl/H13MYaEfFoeT1aM66",
+      "eventStatus": "held"
+    },
+    {
+      "id": "movie-photo-2026-08-01-aeon-suzaka",
+      "name": "映画ちいかわ 人魚の島のひみつ 写真撮影会 イオンモール須坂",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "hoursText": "11:00・13:00・15:00（各回約30～40分）",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://suzaka.aeonmall.com/news/detail/1287",
+      "hoursCheckedAt": "2026-10-23",
+      "reservationType": "not_available",
+      "reservationUrl": null,
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "always",
+      "entryNote": "当時の案内では当日配布の撮影会参加券が必要でした。9:30頃からSUZAKAノ庭縁イベントの庭で全3回分150枚（各回50組）を配布し、列が途切れ次第3Fイオンホールへ移動する案内でした。1組（上限5名）1枚、参加時間を選択可能。混雑時は配布開始前倒しの場合があり、券記載の開催時間を過ぎると無効でした。",
+      "entryInfoUrl": "https://suzaka.aeonmall.com/news/detail/1287",
+      "entryInfoCheckedAt": "2026-10-23",
+      "lat": 36.6396018,
+      "lng": 138.2734196,
+      "address": "長野県須坂市大字福島386番地1 イオンモール須坂 3F キャンドゥ前特設会場",
+      "description": "公式に案内された2026年8月1日の写真撮影会の開催情報です。会場はイオンモール須坂3Fキャンドゥ前特設会場です。会期は終了しています。",
+      "sourceUrl": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+      "mapUrl": "https://maps.app.goo.gl/H13MYaEfFoeT1aM66",
+      "eventStatus": "held"
+    }
+  ]
+}

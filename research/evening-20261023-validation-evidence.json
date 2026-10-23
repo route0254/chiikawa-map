@@ -1,0 +1,1307 @@
+{
+  "baseCommit": "61d0c382d853a565fb81a178e982a1c448c0f439",
+  "preparedAt": "2026-10-23T10:34:17.319Z",
+  "scope": {
+    "currentUpdated": [
+      "chiikawa-park-store-osaka",
+      "mogumogu-kawagoe",
+      "mogumogu-fushimi",
+      "chiikawaland-fukuoka",
+      "chiikawaland-tokyo-station"
+    ],
+    "archiveAdded": [
+      "movie-popup-2026-07-24-aeon-suzaka",
+      "movie-photo-2026-08-01-aeon-suzaka"
+    ],
+    "newCurrent": [],
+    "unchangedAppAndSchemas": true,
+    "novemberSuzakaUnchanged": true
+  },
+  "libraryIntake": {
+    "files": [
+      {
+        "linuxPath": "/tmp/chiikatsu-map-listing-20261023-evening-library/handoff.json",
+        "bytes": 1220407,
+        "sha256": "8b0d4ccd104d67b75efa0f0e8ec5bd7dcfec2643353c5a021cb5dacc1d55f040",
+        "libraryFileId": "libfile_343f5df33d2081918e5c6ff952a6fa93",
+        "version": "0",
+        "jsonVerified": true,
+        "fileId": "file_00000000abd881f5bceea8cbe439a117",
+        "fileName": "handoff.json",
+        "distribution": "ImmichTrial",
+        "helperResult": {
+          "completed": true,
+          "output": "/tmp/chiikatsu-map-listing-20261023-evening-library/handoff.json"
+        }
+      },
+      {
+        "linuxPath": "/tmp/chiikatsu-map-listing-20261023-evening-library/suzaka-history-packet.json",
+        "bytes": 15211,
+        "sha256": "28ad8dc214efde503837721f32c27337210658e5c074d314f79428229e5898ce",
+        "libraryFileId": "libfile_1f3541aa43288191b6d3e61d7f330e57",
+        "version": "0",
+        "jsonVerified": true,
+        "fileId": "file_0000000086a48230941000a3a89d46be",
+        "fileName": "suzaka-history-packet.json",
+        "distribution": "ImmichTrial",
+        "helperResult": {
+          "completed": true,
+          "output": "/tmp/chiikatsu-map-listing-20261023-evening-library/suzaka-history-packet.json"
+        }
+      }
+    ],
+    "method": "Canonical Library helper in existing WSL Linux filesystem, Library identity/version xattrs verified. Original files retained only in Linux. Windows task reads original contents in memory.",
+    "windowsTransferBlockResolved": true
+  },
+  "operations": {
+    "path": "C:/Users/6ikas/Projects/ちい活マップ/chiikawa-map-repo/node_modules/.cache/listing-20261020/incoming-packet/DATA-OPERATIONS.md",
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "normalizations": [
+    {
+      "kind": "conditional_reservation",
+      "id": "mogumogu-kawagoe",
+      "field": "reservationType",
+      "packetProposal": "required",
+      "applied": "unknown",
+      "reason": "Existing enum renders required as unconditional 要予約. Retain unknown/通常時other, and explicitly show the 10/31 onward weekends/holiday condition and weekday walk-in in entryNote/importantNotice. No application/schema change."
+    },
+    {
+      "kind": "conditional_reservation",
+      "id": "mogumogu-fushimi",
+      "field": "reservationType",
+      "packetProposal": "required",
+      "applied": "unknown",
+      "reason": "Existing enum renders required as unconditional 要予約. Retain unknown/通常時other, and explicitly show the 10/31 onward weekends/holiday condition and weekday walk-in in entryNote/importantNotice. No application/schema change."
+    },
+    {
+      "kind": "archive_public_copy",
+      "id": "movie-popup-2026-07-24-aeon-suzaka",
+      "field": "description",
+      "before": "公式に案内された2026年7月24日〜8月3日の映画ちいかわ期間限定POP UP STOREの開催情報です。会場はイオンモール須坂3Fイオンホールです。掲載期間は終了しています。",
+      "after": "公式に案内された2026年7月24日〜8月3日の映画ちいかわ期間限定POP UP STOREの開催情報です。会場はイオンモール須坂3Fイオンホールです。会期は終了しています。"
+    },
+    {
+      "kind": "archive_public_copy",
+      "id": "movie-photo-2026-08-01-aeon-suzaka",
+      "field": "description",
+      "before": "公式に案内された2026年8月1日の写真撮影会の開催情報です。会場はイオンモール須坂3Fキャンドゥ前特設会場です。掲載期間は終了しています。",
+      "after": "公式に案内された2026年8月1日の写真撮影会の開催情報です。会場はイオンモール須坂3Fキャンドゥ前特設会場です。会期は終了しています。"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-popup-list",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-park-news",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_extra_preserved_in_evidence",
+      "id": "chiikawa-bakery-news",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-news",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-topics",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "observed-chiikawa-info-jp-2db8c290c8",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-information-osaka",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-information-popup-01",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-osaka-umeda",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-harajuku",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-fukuoka",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-kyoto",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-tokyo-station",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-solamachi",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-nagoya",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-sendai",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-sapporo",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-yokohama",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-hiroshima",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-shinsaibashi",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-shinjuku",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-kanazawa",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-ikebukuro",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-chiikawaland-koshigaya",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-magical-shinjuku",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-magical-umeda",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "individual-magical-nagoya",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing21-2cb24f2734c6",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-series18-bcc6d96d4eaa",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing21-0d23c0b7657f",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-park-christmas-2026",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-pocket-fourth-2026-detail",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "official-observation-c13c6c2b72db",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-hold21-41a846041bb4",
+      "rawState": "failed",
+      "normalized": "fetch_failed"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "corporate-aeon-chiikawa-news-954",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_extra_preserved_in_evidence",
+      "id": "chiikawa-bakery-reservation",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-bakery-reservation",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_extra_preserved_in_evidence",
+      "id": "chiikawa-park-ticket",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawa-park-ticket",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_extra_preserved_in_evidence",
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "extra": {
+        "method": "web open fallback"
+      }
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-x-com-chiikawabakery",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-x-com-chiikawabakeryo",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "priority-four-1b6f0ffdf6c9",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "nagano-market-shop-x",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "priority-four-9660f8c42df7",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-store-20261020-6d00bae52cd2",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing21-57b4602a613a",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing21-4e56f60737d0",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "ana-first-flight-airframe-confirmed-20261020",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "chiikawaland-entry-updates-x",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-x-com-chiikawa-parkjp",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-existing21-d9434ce2241e",
+      "rawState": "failed",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-existing21-d0fa0a0e4e4a",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "magical-store-entry-updates-x",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-existing21-11a18a96a91d",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-existing21-18210ef289a0",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "evening-existing21-a26bd7dd047c",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing22-ebina-queue",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing22-laforet-entry",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing23-2113246934433673659",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing23-2113224950953996424",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing23-2113256355335463143",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing23-2113250061840961669",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing23-2113242777773559935",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "source_result_schema",
+      "id": "morning-existing23-2113241723224866937",
+      "rawState": "partial",
+      "normalized": "access_limited"
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "source:suzaka-summer-popup.lastAttemptAt",
+      "raw": "2026-10-23T10:13:31.103407+00:00",
+      "normalized": "2026-10-23T10:13:31.103+00:00"
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "source:suzaka-summer-popup.lastFailure.at",
+      "raw": "2026-10-23T10:13:31.103407+00:00",
+      "normalized": "2026-10-23T10:13:31.103+00:00"
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "source:suzaka-summer-popup.actualHttpAttempt",
+      "raw": "2026-10-23T10:12:33.775931+00:00",
+      "normalized": "2026-10-23T10:12:33.775+00:00"
+    },
+    {
+      "kind": "distinct_observation_and_fetch_attempt",
+      "id": "suzaka-summer-popup",
+      "packetObservation": "2026-10-23T10:13:31.103+00:00",
+      "actualHttpAttempt": "2026-10-23T10:12:33.775+00:00",
+      "reason": "Use the recorded HTTP attempt from fetches; indexed historical text observation is not an original-site success."
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "source:suzaka-summer-photo.lastAttemptAt",
+      "raw": "2026-10-23T10:13:31.103407+00:00",
+      "normalized": "2026-10-23T10:13:31.103+00:00"
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "source:suzaka-summer-photo.lastFailure.at",
+      "raw": "2026-10-23T10:13:31.103407+00:00",
+      "normalized": "2026-10-23T10:13:31.103+00:00"
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "source:suzaka-summer-photo.actualHttpAttempt",
+      "raw": "2026-10-23T10:12:33.776426+00:00",
+      "normalized": "2026-10-23T10:12:33.776+00:00"
+    },
+    {
+      "kind": "distinct_observation_and_fetch_attempt",
+      "id": "suzaka-summer-photo",
+      "packetObservation": "2026-10-23T10:13:31.103+00:00",
+      "actualHttpAttempt": "2026-10-23T10:12:33.776+00:00",
+      "reason": "Use the recorded HTTP attempt from fetches; indexed historical text observation is not an original-site success."
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "candidate:history-chiikawa-movie-popup-suzaka-2026.evidence[1].observedAt",
+      "raw": "2026-10-23T10:13:31.103407+00:00",
+      "normalized": "2026-10-23T10:13:31.103+00:00"
+    },
+    {
+      "kind": "timestamp_precision",
+      "path": "candidate:history-chiikawa-movie-photo-suzaka-2026.evidence[1].observedAt",
+      "raw": "2026-10-23T10:13:31.103407+00:00",
+      "normalized": "2026-10-23T10:13:31.103+00:00"
+    },
+    {
+      "kind": "source_url_alias",
+      "aliasId": "mogumogu-shop",
+      "canonicalId": "evening-www-chiikawamogumogu-jp",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "snapshot": {
+        "old": {
+          "id": "evening-www-chiikawamogumogu-jp",
+          "name": "夕方一次情報 https://www.chiikawamogumogu.jp/",
+          "url": "https://www.chiikawamogumogu.jp/",
+          "kind": "venue",
+          "scope": [
+            "official"
+          ],
+          "cadence": "morning_evening",
+          "enabled": true,
+          "lastAttemptAt": "2026-10-20T10:01:38.953+00:00",
+          "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+          "lastResult": "success",
+          "resultSummary": "News latest10/2 limited Kawagoe hours for10/17-18; embedded feed latest10/18 stocks and obsolete10/18 Fushimi ticket-end. Morning cleanup already handled notices. No later posted site text found.",
+          "lastFailure": null,
+          "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。"
+        },
+        "alias": {
+          "id": "mogumogu-shop",
+          "name": " ちいかわもぐもぐ本舗ちいかわもぐもぐ本舗",
+          "url": "https://www.chiikawamogumogu.jp/",
+          "kind": "series",
+          "scope": [
+            "official",
+            "collaboration"
+          ],
+          "cadence": "morning_evening",
+          "enabled": true,
+          "lastAttemptAt": "2026-10-23T10:07:55.326+00:00",
+          "lastSuccessfulAt": "2026-10-23T10:07:55.326+00:00",
+          "lastResult": "success",
+          "resultSummary": "HTTP200本文・リンクを前回と照合。本文範囲のみ。画像内条件や全SNS投稿の網羅を意味しない。",
+          "lastFailure": null,
+          "note": "一次告知または公式施設・企業ページ。"
+        }
+      },
+      "reason": "Do not duplicate same source URL; retain canonical source identity and actual newer observation."
+    }
+  ],
+  "priorPublicationSync": {
+    "sourceMain": "61d0c382d853a565fb81a178e982a1c448c0f439",
+    "publishedAt": "2026-10-22T23:46:48.505Z",
+    "publishedAtBasis": "First saved exact public content match; deployment completion recorded separately; original listing publication times preserved.",
+    "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+    "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+    "corrections": [
+      {
+        "id": "popup-2026-11-06-aeon-suzaka-new",
+        "listingIds": [
+          "popup-2026-11-06-aeon-suzaka"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "chiikawa-photo-2026-11-22-aeon-suzaka-new",
+        "listingIds": [
+          "chiikawa-photo-2026-11-22-aeon-suzaka"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawa-bakery-shop-laforet-entry-20261023",
+        "listingIds": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawa-bakery-tokyo-entry-20261023",
+        "listingIds": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawaland-osaka-umeda-entry-20261023",
+        "listingIds": [
+          "chiikawaland-osaka-umeda"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawaland-tokyo-station-entry-20261023",
+        "listingIds": [
+          "chiikawaland-tokyo-station"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawaland-solamachi-entry-20261023",
+        "listingIds": [
+          "chiikawaland-solamachi"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawaland-shinsaibashi-entry-20261023",
+        "listingIds": [
+          "chiikawaland-shinsaibashi"
+        ],
+        "state": "published",
+        "publishedAt": "2026-10-22T23:46:48.505Z",
+        "firstPublicMatchAt": "2026-10-22T23:46:48.505Z",
+        "deployJobCompletedAt": "2026-10-22T23:45:55Z",
+        "pr": 71,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/71",
+        "sourceHead": "865c192d86380d54f494cecb1c0c329eba4cd350",
+        "mergeSha": "61d0c382d853a565fb81a178e982a1c448c0f439",
+        "pagesRun": 39873833356,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      }
+    ]
+  },
+  "sourceHistoryPolicy": "Latest recorded HTTP attempt; preserve previous known success and failure history in evidence. Indexed text observation time is distinct from live HTTP success. New X account remains not_checked.",
+  "publication": "Current five and historical two candidates remain ready until deployment content is verified; actual first public match will be saved separately and synced in the next normal listing PR.",
+  "localValidation": {
+    "recordedAt": "2026-10-23T10:42:12.725Z",
+    "passed": true,
+    "exitCode": 0,
+    "build": {
+      "script": "build:spot-pages",
+      "declaredCommand": "node scripts/build-site-meta.mjs --write && node scripts/build-spot-pages.mjs --write",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-23T10:34:28.186Z",
+      "completedAt": "2026-10-23T10:34:29.710Z",
+      "statuses": [
+        {
+          "command": "node scripts/build-site-meta.mjs --write",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --write",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-evening\\build-spot-pages.log"
+    },
+    "check": {
+      "script": "check",
+      "declaredCommand": "node --check recent-utils.js && node --check scripts/lib/added-dates.mjs && node --check scripts/lib/operations-ledgers.mjs && node --check scripts/check-operations-ledgers.mjs && node --check app.js && node --check official.js && node --check collaborations.js && node --check nagano.js && node --check journal.js && node --check calendar-utils.js && node --check journal-export-utils.js && node --check location-utils.js && node --check spot-page.js && node --check cloud-sync-loader.js && node --check cloud-sync-ui.js && node --check cloud-sync-merge.js && node --check cloud-sync.js && node --check pwa.js && node --check service-worker.js && node --check scripts/build-pwa-icons.mjs && node --check scripts/build-site-meta.mjs && node --check scripts/build-spot-pages.mjs && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/preview-spot-data.mjs && node --check scripts/report-status-candidates.mjs && node --check scripts/archive-ended-events.mjs && node --check scripts/audit-special-series.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/build-special-events.mjs && node --check scripts/import-nagano-official-series.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node --check scripts/test-cloud-sync-merge.mjs && node --check scripts/validate-collaborations.mjs && node --check scripts/validate-nagano-mentions.mjs && node --check scripts/validate-nagano-history.mjs && node --test tests/unit/*.test.mjs && node scripts/test-cloud-sync-merge.mjs && node scripts/validate-data.mjs && node scripts/check-operations-ledgers.mjs && node scripts/validate-collaborations.mjs && node scripts/validate-nagano-mentions.mjs && node scripts/validate-nagano-history.mjs && node scripts/audit-special-series.mjs && node scripts/build-special-events.mjs --check && node scripts/build-site-meta.mjs --check && node scripts/build-spot-pages.mjs --check",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-23T10:36:09.354Z",
+      "completedAt": "2026-10-23T10:36:15.102Z",
+      "statuses": [
+        {
+          "command": "node --check recent-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/added-dates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check app.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check official.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check collaborations.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check nagano.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check calendar-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal-export-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check location-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check spot-page.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-loader.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-ui.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-merge.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check pwa.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check service-worker.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-pwa-icons.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-site-meta.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-spot-pages.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-links.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-site-health.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/preview-spot-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/report-status-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/archive-ended-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-batch.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-special-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/import-nagano-official-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues-gsi.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --test tests/unit/*.test.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-special-events.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-site-meta.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --check",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-evening\\check.log",
+      "unitTests": 58,
+      "unitFailures": 0
+    },
+    "operations": {
+      "script": "check:operations",
+      "declaredCommand": "node scripts/check-operations-ledgers.mjs",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-23T10:40:08.868Z",
+      "completedAt": "2026-10-23T10:40:09.161Z",
+      "statuses": [
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-evening\\check-operations.log"
+    },
+    "smoke": {
+      "script": "test:smoke",
+      "args": [
+        "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-evening-20261023\\node_modules\\@playwright\\test\\cli.js",
+        "test",
+        "--config=C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261023-evening\\smoke.config.mjs",
+        "--workers=1"
+      ],
+      "startedAt": "2026-10-23T10:36:54.741Z",
+      "completedAt": "2026-10-23T10:41:44.027Z",
+      "exitCode": 0,
+      "passed": true,
+      "error": null,
+      "passedTests": 111
+    },
+    "browser": {
+      "completedAt": "2026-10-23T10:37:50.518Z",
+      "effectiveChecks": 56,
+      "screens": 28,
+      "widths": [
+        390,
+        1440
+      ],
+      "flows": [
+        "static",
+        "directShared",
+        "sharedReload",
+        "searchSelection"
+      ],
+      "advancingClock": true,
+      "pageErrors": 0,
+      "conditionalReservationChecked": true,
+      "historicalSharedUrlAndArchiveSearchChecked": true,
+      "liveTilesClaimed": false,
+      "visualInspected": [
+        "mobile Kawagoe static page: conditional weekdays/weekends notice readable, no overflow",
+        "desktop Suzaka historical photo page: 3F CanDo venue distinct from ticket distribution at 3F Aeon Hall, ended badge"
+      ]
+    },
+    "targetedLinks": {
+      "startedAt": "2026-10-23T10:36:54.768Z",
+      "completedAt": "2026-10-23T10:36:55.459Z",
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Five current updated records, including reservation and official source links; two historical records official-series source URL. Known deleted historical facility detail URLs remain in the data and raw evidence and are not re-requested. Original checker unchanged, isolated fixture.",
+      "exitCode": 0,
+      "error": null,
+      "passed": true
+    },
+    "worktreePreservation": {
+      "count": 41,
+      "passed": true
+    },
+    "knownOnlyMetrics": {
+      "calculatedAt": "2026-10-23T10:39:10.850Z",
+      "base": "61d0c382d853a565fb81a178e982a1c448c0f439",
+      "knownOnly": true,
+      "coverageNotice": "台帳に記録した候補・既知日時だけの指標。全新着の網羅率ではない。日付のみを00:00へ変換して経過時間を計算しない。",
+      "newListing": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 57,
+          "known": 50,
+          "before": 48,
+          "notBefore": 2,
+          "unpublishedAfterStart": 1,
+          "unknown": 7,
+          "rate": 0.96
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 1,
+            "mean": 1.0296108333333334,
+            "min": 1.0296108333333334,
+            "max": 1.0296108333333334
+          },
+          "japanCalendarDays": {
+            "samples": 49,
+            "mean": 4.8979591836734695,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 16,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 64
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 40,
+            "mean": 2.051399236111112,
+            "min": 0.6488888888888888,
+            "max": 17.201181944444443
+          },
+          "japanCalendarDays": {
+            "samples": 52,
+            "mean": 0.21153846153846154,
+            "min": 0,
+            "max": 1
+          },
+          "unknownPairs": 3,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 15
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 2,
+            "mean": 304.2463888888889,
+            "min": 9.783333333333333,
+            "max": 598.7094444444444
+          },
+          "japanCalendarDays": {
+            "samples": 41,
+            "mean": 2.658536585365854,
+            "min": 0,
+            "max": 25
+          },
+          "unknownPairs": 14,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 53
+        }
+      },
+      "nonHistorical": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 57,
+          "known": 50,
+          "before": 48,
+          "notBefore": 2,
+          "unpublishedAfterStart": 1,
+          "unknown": 7,
+          "rate": 0.96
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 28,
+            "mean": 22.821219613095234,
+            "min": 0.08666666666666667,
+            "max": 168.4488888888889
+          },
+          "japanCalendarDays": {
+            "samples": 138,
+            "mean": 2.898550724637681,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 164,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 274
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 134,
+            "mean": 2.259154593698175,
+            "min": 0.2632788888888889,
+            "max": 49.16888888888889
+          },
+          "japanCalendarDays": {
+            "samples": 223,
+            "mean": 0.13004484304932734,
+            "min": 0,
+            "max": 5
+          },
+          "unknownPairs": 58,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 147
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 28,
+            "mean": 121.2655288888889,
+            "min": 0.9925,
+            "max": 2156.4727047222223
+          },
+          "japanCalendarDays": {
+            "samples": 138,
+            "mean": 12.173913043478262,
+            "min": 0,
+            "max": 1273
+          },
+          "unknownPairs": 143,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 253
+        }
+      }
+    },
+    "corrections": {
+      "sourceAlias": "mogumogu-shop merged into existing evening-www-chiikawamogumogu-jp; original failed ledger check retained privately; final checks unchanged and successful",
+      "scopeHelper": "Expected generated archive count and noindex/sitemap policy aligned to existing generator; no generator or application change"
+    }
+  }
+}
