@@ -1,0 +1,641 @@
+{
+  "preparedAt": "2026-10-23T23:09:41.166Z",
+  "baseCommit": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+  "intakeMode": "Explicitly authorized confirmed text handoff; Library ZIP original not acquired or verified; full source observations and three holds deferred.",
+  "operations": {
+    "path": "C:/Users/6ikas/Projects/ちい活マップ/chiikawa-map-repo/node_modules/.cache/listing-20261020/incoming-packet/DATA-OPERATIONS.md",
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "currentUpdates": [
+    "chiikawaland-shinsaibashi",
+    "chiikawaland-ikebukuro",
+    "chiikawaland-osaka-umeda",
+    "chiikawaland-hiroshima",
+    "chiikawa-bakery-tokyo"
+  ],
+  "newCurrent": [],
+  "archiveAdded": [],
+  "priorPublicationSync": {
+    "sourceMain": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+    "publishedAt": "2026-10-23T11:00:04.751Z",
+    "publishedAtBasis": "First saved exact public content match; deployment completion recorded separately; initial listing times preserved for existing update candidates.",
+    "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+    "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+    "corrections": [
+      {
+        "id": "update-chiikawa-park-store-osaka-opening-conditions-20261023",
+        "listingIds": [
+          "chiikawa-park-store-osaka"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-mogumogu-kawagoe-mogumogu-kawagoe-1023",
+        "listingIds": [
+          "mogumogu-kawagoe"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": "2026-10-30T20:00:00+09:00",
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": "before"
+      },
+      {
+        "id": "update-mogumogu-fushimi-mogumogu-fushimi-1023",
+        "listingIds": [
+          "mogumogu-fushimi"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": "2026-10-30T20:00:00+09:00",
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": "before"
+      },
+      {
+        "id": "update-chiikawaland-fukuoka-land-fukuoka-1024",
+        "listingIds": [
+          "chiikawaland-fukuoka"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "update-chiikawaland-tokyo-station-land-tokyo-1023-end",
+        "listingIds": [
+          "chiikawaland-tokyo-station"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "history-chiikawa-movie-popup-suzaka-2026",
+        "listingIds": [
+          "movie-popup-2026-07-24-aeon-suzaka"
+        ],
+        "kind": "history_import",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "履歴掲載済み。通常巡回で公式な訂正・追加を確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "history-chiikawa-movie-photo-suzaka-2026",
+        "listingIds": [
+          "movie-photo-2026-08-01-aeon-suzaka"
+        ],
+        "kind": "history_import",
+        "state": "published",
+        "publishedAt": "2026-10-23T11:00:04.751Z",
+        "firstPublicMatchAt": "2026-10-23T11:00:04.751Z",
+        "deployJobCompletedAt": "2026-10-23T10:59:24Z",
+        "pr": 72,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/72",
+        "sourceHead": "412960905405f904048703701561c0a19faba4f2",
+        "mergeSha": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+        "pagesRun": 39942840722,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "履歴掲載済み。通常巡回で公式な訂正・追加を確認。",
+        "preReservationPublication": null
+      }
+    ]
+  },
+  "preserved": {
+    "allOtherSpotData": true,
+    "applicationLogicAndSchema": true,
+    "existingGeneralEntryConditions": true,
+    "previousFirstPublishedDates": true,
+    "sourceLedgerAndOldHolds": true
+  },
+  "sourceLedgerSyncDeferred": true,
+  "libraryZipOriginalAcquired": false,
+  "localValidation": {
+    "recordedAt": "2026-10-23T23:15:40.904Z",
+    "passed": true,
+    "exitCode": 0,
+    "build": {
+      "script": "build:spot-pages",
+      "declaredCommand": "node scripts/build-site-meta.mjs --write && node scripts/build-spot-pages.mjs --write",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-23T23:09:54.079Z",
+      "completedAt": "2026-10-23T23:09:55.642Z",
+      "statuses": [
+        {
+          "command": "node scripts/build-site-meta.mjs --write",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --write",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-morning\\build-spot-pages.log"
+    },
+    "check": {
+      "script": "check",
+      "declaredCommand": "node --check recent-utils.js && node --check scripts/lib/added-dates.mjs && node --check scripts/lib/operations-ledgers.mjs && node --check scripts/check-operations-ledgers.mjs && node --check app.js && node --check official.js && node --check collaborations.js && node --check nagano.js && node --check journal.js && node --check calendar-utils.js && node --check journal-export-utils.js && node --check location-utils.js && node --check spot-page.js && node --check cloud-sync-loader.js && node --check cloud-sync-ui.js && node --check cloud-sync-merge.js && node --check cloud-sync.js && node --check pwa.js && node --check service-worker.js && node --check scripts/build-pwa-icons.mjs && node --check scripts/build-site-meta.mjs && node --check scripts/build-spot-pages.mjs && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/preview-spot-data.mjs && node --check scripts/report-status-candidates.mjs && node --check scripts/archive-ended-events.mjs && node --check scripts/audit-special-series.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/build-special-events.mjs && node --check scripts/import-nagano-official-series.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node --check scripts/test-cloud-sync-merge.mjs && node --check scripts/validate-collaborations.mjs && node --check scripts/validate-nagano-mentions.mjs && node --check scripts/validate-nagano-history.mjs && node --test tests/unit/*.test.mjs && node scripts/test-cloud-sync-merge.mjs && node scripts/validate-data.mjs && node scripts/check-operations-ledgers.mjs && node scripts/validate-collaborations.mjs && node scripts/validate-nagano-mentions.mjs && node scripts/validate-nagano-history.mjs && node scripts/audit-special-series.mjs && node scripts/build-special-events.mjs --check && node scripts/build-site-meta.mjs --check && node scripts/build-spot-pages.mjs --check",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-23T23:10:32.462Z",
+      "completedAt": "2026-10-23T23:10:38.423Z",
+      "statuses": [
+        {
+          "command": "node --check recent-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/added-dates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check app.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check official.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check collaborations.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check nagano.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check calendar-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal-export-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check location-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check spot-page.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-loader.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-ui.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-merge.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check pwa.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check service-worker.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-pwa-icons.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-site-meta.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-spot-pages.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-links.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-site-health.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/preview-spot-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/report-status-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/archive-ended-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-batch.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-special-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/import-nagano-official-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues-gsi.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --test tests/unit/*.test.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-special-events.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-site-meta.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --check",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-morning\\check.log",
+      "unitTests": 58,
+      "unitFailures": 0
+    },
+    "smoke": {
+      "script": "test:smoke",
+      "args": [
+        "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-morning-20261024\\node_modules\\@playwright\\test\\cli.js",
+        "test",
+        "--config=C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-morning\\smoke.config.mjs",
+        "--workers=1"
+      ],
+      "startedAt": "2026-10-23T23:10:57.467Z",
+      "completedAt": "2026-10-23T23:15:17.354Z",
+      "exitCode": 0,
+      "passed": true,
+      "error": null,
+      "passedTests": 111
+    },
+    "browser": {
+      "completedAt": "2026-10-23T23:11:35.919Z",
+      "effectiveChecks": 40,
+      "screens": 20,
+      "widths": [
+        390,
+        1440
+      ],
+      "flows": [
+        "static",
+        "directShared",
+        "sharedReload",
+        "searchSelection"
+      ],
+      "advancingClock": true,
+      "pageErrors": 0,
+      "liveTilesClaimed": false
+    },
+    "targetedLinks": {
+      "startedAt": "2026-10-23T23:10:57.941Z",
+      "completedAt": "2026-10-23T23:10:59.133Z",
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Only five existing updated records official links; original checker unchanged in isolated fixture. No deferred PARCO historical links requested; not new information research.",
+      "exitCode": 0,
+      "error": null,
+      "passed": true
+    },
+    "worktreePreservation": {
+      "count": 42,
+      "passed": true
+    },
+    "knownOnlyMetrics": {
+      "calculatedAt": "2026-10-23T23:11:46.712Z",
+      "base": "36228cf881d594c7dd55330bcfe4987b02b9ac79",
+      "knownOnly": true,
+      "coverageNotice": "台帳に記録した候補・既知日時だけの指標。全新着の網羅率ではない。日付のみを00:00へ変換して経過時間を計算しない。",
+      "newListing": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 57,
+          "known": 50,
+          "before": 48,
+          "notBefore": 2,
+          "unpublishedAfterStart": 1,
+          "unknown": 7,
+          "rate": 0.96
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 1,
+            "mean": 1.0296108333333334,
+            "min": 1.0296108333333334,
+            "max": 1.0296108333333334
+          },
+          "japanCalendarDays": {
+            "samples": 49,
+            "mean": 4.8979591836734695,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 16,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 64
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 40,
+            "mean": 2.051399236111112,
+            "min": 0.6488888888888888,
+            "max": 17.201181944444443
+          },
+          "japanCalendarDays": {
+            "samples": 52,
+            "mean": 0.21153846153846154,
+            "min": 0,
+            "max": 1
+          },
+          "unknownPairs": 3,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 15
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 2,
+            "mean": 304.2463888888889,
+            "min": 9.783333333333333,
+            "max": 598.7094444444444
+          },
+          "japanCalendarDays": {
+            "samples": 41,
+            "mean": 2.658536585365854,
+            "min": 0,
+            "max": 25
+          },
+          "unknownPairs": 14,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 53
+        }
+      },
+      "nonHistorical": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 57,
+          "known": 50,
+          "before": 48,
+          "notBefore": 2,
+          "unpublishedAfterStart": 1,
+          "unknown": 7,
+          "rate": 0.96
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 28,
+            "mean": 22.821219613095234,
+            "min": 0.08666666666666667,
+            "max": 168.4488888888889
+          },
+          "japanCalendarDays": {
+            "samples": 143,
+            "mean": 2.832167832167832,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 164,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 279
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 139,
+            "mean": 2.2095391127098316,
+            "min": 0.2632788888888889,
+            "max": 49.16888888888889
+          },
+          "japanCalendarDays": {
+            "samples": 228,
+            "mean": 0.12719298245614036,
+            "min": 0,
+            "max": 5
+          },
+          "unknownPairs": 58,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 147
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 29,
+            "mean": 117.14042205938698,
+            "min": 0.9925,
+            "max": 2156.4727047222223
+          },
+          "japanCalendarDays": {
+            "samples": 143,
+            "mean": 11.748251748251748,
+            "min": 0,
+            "max": 1273
+          },
+          "unknownPairs": 143,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 257
+        }
+      }
+    }
+  }
+}
