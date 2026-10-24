@@ -1,0 +1,1526 @@
+{
+  "checkedAt": "2026-10-23T23:00:25+00:00",
+  "scope": "新規公式発表。通常クラウド巡回。外部変更なし。",
+  "result": "要新規掲載企画は検出なし。鎌倉一次確定待ち継続。",
+  "sources": [
+    {
+      "id": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "lastSuccessfulAt": "2026-10-23T22:57:04.412+00:00",
+      "status": 200,
+      "length": 3435,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:04.412+00:00"
+    },
+    {
+      "id": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:04.294+00:00",
+      "status": 200,
+      "length": 28746,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:04.294+00:00"
+    },
+    {
+      "id": "chiikawa-cafe-list",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:04.400+00:00",
+      "status": 200,
+      "length": 1918,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:04.400+00:00"
+    },
+    {
+      "id": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:04.375+00:00",
+      "status": 200,
+      "length": 832,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:04.375+00:00"
+    },
+    {
+      "id": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:03.254+00:00",
+      "status": 200,
+      "length": 9175,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:03.254+00:00"
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:03.243+00:00",
+      "status": 200,
+      "length": 5383,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:03.243+00:00"
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:03.295+00:00",
+      "status": 200,
+      "length": 1009,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:03.295+00:00"
+    },
+    {
+      "id": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "lastSuccessfulAt": "2026-10-23T22:57:03.881+00:00",
+      "status": 200,
+      "length": 1203,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:03.881+00:00"
+    },
+    {
+      "id": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "lastSuccessfulAt": "2026-10-23T22:57:03.653+00:00",
+      "status": 200,
+      "length": 1199,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:03.653+00:00"
+    },
+    {
+      "id": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "lastSuccessfulAt": "2026-10-23T22:57:04.002+00:00",
+      "status": 200,
+      "length": 804,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:04.002+00:00"
+    },
+    {
+      "id": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "lastSuccessfulAt": "2026-10-23T22:57:03.524+00:00",
+      "status": 200,
+      "length": 737,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:03.524+00:00"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:05.857+00:00",
+      "status": 200,
+      "length": 3435,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:05.857+00:00"
+    },
+    {
+      "id": "series-chiikawa-aquarium-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:07.079+00:00",
+      "status": 200,
+      "length": 584,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:07.079+00:00"
+    },
+    {
+      "id": "series-chiikawa-aquarium-2-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:07.056+00:00",
+      "status": 200,
+      "length": 656,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:07.056+00:00"
+    },
+    {
+      "id": "series-chiikawa-tokyo-miyage",
+      "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:07.019+00:00",
+      "status": 200,
+      "length": 770,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:07.019+00:00"
+    },
+    {
+      "id": "nagano-official-index",
+      "url": "https://nagano-info.jp/",
+      "lastSuccessfulAt": "2026-10-23T22:57:08.886+00:00",
+      "status": 200,
+      "length": 1107,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:08.886+00:00"
+    },
+    {
+      "id": "fukuoka-sushi-official",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:07.063+00:00",
+      "status": 200,
+      "length": 143,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:07.063+00:00"
+    },
+    {
+      "id": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "lastSuccessfulAt": "2026-10-23T22:57:11.494+00:00",
+      "status": 200,
+      "length": 2482,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:11.494+00:00"
+    },
+    {
+      "id": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "lastSuccessfulAt": "2026-10-23T22:57:08.689+00:00",
+      "status": 200,
+      "length": 2717,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:08.689+00:00"
+    },
+    {
+      "id": "popup-2026-10-23-ebina-marui-official",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "lastSuccessfulAt": "2026-10-21T09:59:03.422+00:00",
+      "status": 200,
+      "length": 95,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:07.355+00:00"
+    },
+    {
+      "id": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:07.375+00:00",
+      "status": 200,
+      "length": 101,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:07.375+00:00"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:09.029+00:00",
+      "status": 200,
+      "length": 5044,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:09.029+00:00"
+    },
+    {
+      "id": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:15.700+00:00",
+      "status": 200,
+      "length": 1248,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:15.700+00:00"
+    },
+    {
+      "id": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "url": "https://kakogawa.ario.jp/event/3200004379/",
+      "lastSuccessfulAt": "2026-10-23T22:57:12.860+00:00",
+      "status": 200,
+      "length": 1332,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:12.860+00:00"
+    },
+    {
+      "id": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-official",
+      "url": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545",
+      "lastSuccessfulAt": "2026-10-12T08:08:16+09:00",
+      "result": "failed",
+      "error": "HTTP Error 503: Service Unavailable",
+      "status": 503,
+      "attemptAt": "2026-10-23T22:57:15.959+00:00"
+    },
+    {
+      "id": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "lastSuccessfulAt": "2026-10-23T22:57:12.428+00:00",
+      "status": 200,
+      "length": 6401,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:12.428+00:00"
+    },
+    {
+      "id": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "lastSuccessfulAt": "2026-10-23T22:57:12.480+00:00",
+      "status": 200,
+      "length": 6542,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:12.480+00:00"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "lastSuccessfulAt": "2026-10-23T22:57:12.431+00:00",
+      "status": 200,
+      "length": 6556,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:12.431+00:00"
+    },
+    {
+      "id": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+      "result": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "status": 403,
+      "attemptAt": "2026-10-23T22:57:12.481+00:00"
+    },
+    {
+      "id": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "lastSuccessfulAt": "2026-10-18T23:43:41.962+00:00",
+      "result": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "status": 403,
+      "attemptAt": "2026-10-23T22:57:11.846+00:00"
+    },
+    {
+      "id": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:12.552+00:00",
+      "status": 200,
+      "length": 1027,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:12.552+00:00"
+    },
+    {
+      "id": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "lastSuccessfulAt": "2026-10-23T22:57:13.586+00:00",
+      "status": 200,
+      "length": 6084,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:13.586+00:00"
+    },
+    {
+      "id": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "lastSuccessfulAt": "2026-10-23T22:57:13.722+00:00",
+      "status": 200,
+      "length": 5988,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:13.722+00:00"
+    },
+    {
+      "id": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "lastSuccessfulAt": "2026-10-23T22:57:13.637+00:00",
+      "status": 200,
+      "length": 5985,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:13.637+00:00"
+    },
+    {
+      "id": "history-sendai-official-account",
+      "url": "https://www.uminomori.jp/umino/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:15.361+00:00",
+      "status": 200,
+      "length": 2858,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:15.361+00:00"
+    },
+    {
+      "id": "history-haneda-official-map",
+      "url": "https://tokyo-haneda.com/floor/floor-guide.html?tab=terminal2&focus=spot-353023",
+      "lastSuccessfulAt": "2026-10-23T22:57:16.776+00:00",
+      "status": 200,
+      "length": 3009,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:16.776+00:00"
+    },
+    {
+      "id": "series-observed-30cdd2aa304a",
+      "url": "https://livepocket.jp/e/8s-n5",
+      "lastSuccessfulAt": "2026-10-23T22:57:18.399+00:00",
+      "status": 200,
+      "length": 10740,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:18.399+00:00"
+    },
+    {
+      "id": "series-observed-778c9be5bb5d",
+      "url": "https://livepocket.jp/e/piq9x",
+      "lastSuccessfulAt": "2026-10-23T22:57:18.308+00:00",
+      "status": 200,
+      "length": 10742,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:18.308+00:00"
+    },
+    {
+      "id": "evening-chiikawapark-tokyo-jp-news",
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:17.245+00:00",
+      "status": 200,
+      "length": 2094,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:17.245+00:00"
+    },
+    {
+      "id": "evening-chiikawapark-tokyo-jp-news-62d-8modez",
+      "url": "https://chiikawapark-tokyo.jp/news/62d_8modez/",
+      "lastSuccessfulAt": "2026-10-23T22:57:17.645+00:00",
+      "status": 200,
+      "length": 836,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:17.645+00:00"
+    },
+    {
+      "id": "evening-chiikawabakery-jp-20260609-news",
+      "url": "https://chiikawabakery.jp/20260609_news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:18.572+00:00",
+      "status": 200,
+      "length": 1521,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:18.572+00:00"
+    },
+    {
+      "id": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "lastSuccessfulAt": "2026-10-23T22:57:18.208+00:00",
+      "status": 200,
+      "length": 2101,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:18.208+00:00"
+    },
+    {
+      "id": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "lastSuccessfulAt": "2026-10-23T22:57:19.747+00:00",
+      "status": 200,
+      "length": 7262,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:19.747+00:00"
+    },
+    {
+      "id": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "lastSuccessfulAt": "2026-10-23T22:57:18.636+00:00",
+      "status": 200,
+      "length": 1883,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:18.636+00:00"
+    },
+    {
+      "id": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "lastSuccessfulAt": "2026-10-23T22:57:21.059+00:00",
+      "status": 200,
+      "length": 4818,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:21.059+00:00"
+    },
+    {
+      "id": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "lastSuccessfulAt": "2026-10-23T22:57:19.859+00:00",
+      "status": 200,
+      "length": 1423,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:19.859+00:00"
+    },
+    {
+      "id": "morning-osaka-jp-kitte-jp-shop-index-jsp-bf-1-fmt-6-shopid-131210",
+      "url": "https://osaka.jp-kitte.jp/shop/index.jsp?bf=1&fmt=6&shopid=131210",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "HTTP Error 500: Internal Server Error",
+      "status": 500,
+      "attemptAt": "2026-10-23T22:57:20.017+00:00"
+    },
+    {
+      "id": "series-morning-5780a8dc2b70",
+      "url": "https://shinrifu.aeonmall.jp/event",
+      "lastSuccessfulAt": "2026-10-17T10:06:30.921+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "attemptAt": "2026-10-23T22:57:20.786+00:00"
+    },
+    {
+      "id": "series-morning-a256af50b509",
+      "url": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "lastSuccessfulAt": "2026-10-17T10:06:33.026+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "attemptAt": "2026-10-23T22:57:22.105+00:00"
+    },
+    {
+      "id": "weekly-osaka-jp-kitte-jp-shop-index-jsp-bf-8",
+      "url": "https://osaka.jp-kitte.jp/shop/index.jsp?bf=8",
+      "lastSuccessfulAt": "2026-10-23T22:57:20.123+00:00",
+      "status": 200,
+      "length": 9990,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:20.123+00:00"
+    },
+    {
+      "id": "weekly-tokyu-plaza-com-omokado-shop-detail-000000342-tenant-cd-000000342",
+      "url": "https://tokyu-plaza.com/omokado/shop/detail/000000342?tenant_cd=000000342",
+      "lastSuccessfulAt": "2026-10-23T22:57:23.483+00:00",
+      "status": 200,
+      "length": 2795,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:23.483+00:00"
+    },
+    {
+      "id": "weekly-www-laforet-ne-jp-shop-search-shop573",
+      "url": "https://www.laforet.ne.jp/shop_search/shop573",
+      "lastSuccessfulAt": "2026-10-23T22:57:24.539+00:00",
+      "status": 200,
+      "length": 940,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:24.539+00:00"
+    },
+    {
+      "id": "mogumogu-kawagoe-store-news",
+      "url": "https://www.chiikawamogumogu.jp/store/kawagoe/",
+      "lastSuccessfulAt": "2026-10-23T22:57:24.704+00:00",
+      "status": 200,
+      "length": 459,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:24.704+00:00"
+    },
+    {
+      "id": "series-evening-1593f99f24b5",
+      "url": "https://chiikawabakery.jp/topics/20260804/",
+      "lastSuccessfulAt": "2026-10-23T22:57:23.910+00:00",
+      "status": 200,
+      "length": 1597,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:23.910+00:00"
+    },
+    {
+      "id": "series-evening-f7c522a54050",
+      "url": "https://chiikawa.toho-movie.jp/news/page/n_260713.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:24.809+00:00",
+      "status": 200,
+      "length": 813,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:24.809+00:00"
+    },
+    {
+      "id": "series-evening-ec032f425213",
+      "url": "https://prtimes.jp/main/html/rd/p/000002111.000025606.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:21.117+00:00",
+      "status": 200,
+      "length": 5225,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:21.117+00:00"
+    },
+    {
+      "id": "series-observed-0a98af221d1b",
+      "url": "https://chiikawa-info.jp/p25/ck_baby/index.html",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 78,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:24.844+00:00"
+    },
+    {
+      "id": "series-observed-08a3f5f8c71b",
+      "url": "https://chiikawa-info.jp/p22/chiikawa_camp/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:25.224+00:00",
+      "status": 200,
+      "length": 397,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:25.224+00:00"
+    },
+    {
+      "id": "series-observed-8b9d66824d89",
+      "url": "https://chiikawa-info.jp/p22/magical/index.html",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 90,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:24.849+00:00"
+    },
+    {
+      "id": "series-observed-ffaad21694e4",
+      "url": "https://chiikawa-info.jp/p23/cho-magical/",
+      "lastSuccessfulAt": "2026-10-23T22:57:24.888+00:00",
+      "status": 200,
+      "length": 100,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:24.888+00:00"
+    },
+    {
+      "id": "series-observed-432e74545cde",
+      "url": "https://chiikawa-info.jp/p22/kankou_station/index.html",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 70,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:24.847+00:00"
+    },
+    {
+      "id": "series-observed-f11bb8f04c99",
+      "url": "https://chiikawa-info.jp/heroaca_chiikawa.html",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 86,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:24.848+00:00"
+    },
+    {
+      "id": "series-observed-ada5c3a7ab47",
+      "url": "https://chiikawa-info.jp/ck_minishop/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:25.200+00:00",
+      "status": 200,
+      "length": 108,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:25.200+00:00"
+    },
+    {
+      "id": "series-observed-99c587e0fa2a",
+      "url": "https://chiikawa-info.jp/p21/t_o/index.html",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 72,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:24.838+00:00"
+    },
+    {
+      "id": "series-observed-9e2f42134020",
+      "url": "https://art.parco.jp/shinsaibashi/detail/?id=897",
+      "lastSuccessfulAt": "2026-10-23T22:57:28.185+00:00",
+      "status": 200,
+      "length": 4679,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:28.185+00:00"
+    },
+    {
+      "id": "series-observed-bf11798db5e0",
+      "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:30.298+00:00",
+      "status": 200,
+      "length": 2573,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:30.298+00:00"
+    },
+    {
+      "id": "series-observed-d80209040d41",
+      "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "status": 404,
+      "attemptAt": "2026-10-23T22:57:31.216+00:00"
+    },
+    {
+      "id": "morning-series14-21a381168566",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:29.436+00:00",
+      "status": 200,
+      "length": 155,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:29.436+00:00"
+    },
+    {
+      "id": "morning-series14-58fc0ae544fd",
+      "url": "https://sendaikamisugi.aeonmall.com/news?tabs=event_news",
+      "lastSuccessfulAt": "2026-10-23T22:57:33.857+00:00",
+      "status": 200,
+      "length": 15792,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:33.857+00:00"
+    },
+    {
+      "id": "morning-series14-006dec658d85",
+      "url": "https://x.com/nagano_market",
+      "lastSuccessfulAt": "2026-10-19T10:00:40.862+00:00",
+      "status": 200,
+      "length": 1987,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:35.065+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:35.065+00:00"
+    },
+    {
+      "id": "morning-series14-61df76eb104c",
+      "url": "https://x.com/ngngoods_kouhou",
+      "lastSuccessfulAt": "2026-10-19T23:00:40.619+00:00",
+      "status": 200,
+      "length": 1586,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:34.955+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:34.955+00:00"
+    },
+    {
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:31.876+00:00",
+      "status": 200,
+      "length": 718,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:31.876+00:00"
+    },
+    {
+      "id": "baby-castella-otaru-official",
+      "url": "https://www.chiikawamogumogu.jp/stores/castella/",
+      "lastSuccessfulAt": "2026-10-23T22:57:32.840+00:00",
+      "status": 200,
+      "length": 665,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:32.840+00:00"
+    },
+    {
+      "id": "hep-five-official-home",
+      "url": "https://www.hepfive.jp/",
+      "lastSuccessfulAt": "2026-10-23T22:57:37.083+00:00",
+      "status": 200,
+      "length": 175,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:37.083+00:00"
+    },
+    {
+      "id": "hep-five-official-closure-20261015",
+      "url": "https://www.hepfive.jp/lp/uruwashi_hepfive/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:37.215+00:00",
+      "status": 200,
+      "length": 175,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:37.215+00:00"
+    },
+    {
+      "id": "series-morning15-e30698514f6d",
+      "url": "https://www.instagram.com/ngngoods_kouhou/",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 743,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:33.170+00:00"
+    },
+    {
+      "id": "series-morning15-38724ee065ea",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/tokyo.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:29.570+00:00",
+      "status": 200,
+      "length": 152,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:29.570+00:00"
+    },
+    {
+      "id": "series-morning15-acfbe88319f8",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/osaka.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:33.314+00:00",
+      "status": 200,
+      "length": 149,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:33.314+00:00"
+    },
+    {
+      "id": "series-morning15-84336824e5dc",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/fukuoka.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:33.312+00:00",
+      "status": 200,
+      "length": 152,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:33.312+00:00"
+    },
+    {
+      "id": "series-morning15-a3ba5825e784",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/nagoya.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:33.322+00:00",
+      "status": 200,
+      "length": 152,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:33.322+00:00"
+    },
+    {
+      "id": "series-morning15-45c85511e324",
+      "url": "https://livepocket.jp/e/ndciv",
+      "lastSuccessfulAt": "2026-10-23T22:57:34.655+00:00",
+      "status": 200,
+      "length": 10746,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:34.655+00:00"
+    },
+    {
+      "id": "series-morning15-6e3731e8787d",
+      "url": "https://pbs.twimg.com/media/HULlE07bgAAPRiC?format=webp&name=large",
+      "lastSuccessfulAt": "2026-10-23T22:57:37.643+00:00",
+      "status": 200,
+      "length": 54583,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:37.643+00:00"
+    },
+    {
+      "id": "series-morning15-6946a99dc78a",
+      "url": "https://pbs.twimg.com/media/HUhCq9eboAAvwDk?format=webp&name=large",
+      "lastSuccessfulAt": "2026-10-23T22:57:37.642+00:00",
+      "status": 200,
+      "length": 120422,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:37.642+00:00"
+    },
+    {
+      "id": "series-morning15-52923435aeca",
+      "url": "https://pbs.twimg.com/media/HSqe-mCb0AAYVNf?format=webp&name=large",
+      "lastSuccessfulAt": "2026-10-23T22:57:37.612+00:00",
+      "status": 200,
+      "length": 63598,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:37.612+00:00"
+    },
+    {
+      "id": "ana-chiikawa-goods-release-20261015",
+      "url": "https://prtimes.jp/main/html/rd/p/000000018.000035055.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:36.514+00:00",
+      "status": 200,
+      "length": 5399,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:36.514+00:00"
+    },
+    {
+      "id": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "lastSuccessfulAt": "2026-10-23T22:57:39.150+00:00",
+      "status": 200,
+      "length": 7218,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:39.150+00:00"
+    },
+    {
+      "id": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "lastSuccessfulAt": "2026-10-23T10:05:31.099+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "attemptAt": "2026-10-23T22:57:40.803+00:00"
+    },
+    {
+      "id": "official-observation-c13c6c2b72db",
+      "url": "https://chiikawa-info.jp/p26/pus_aksk/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:38.855+00:00",
+      "status": 200,
+      "length": 102,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:38.855+00:00"
+    },
+    {
+      "id": "official-observation-88c0160fff16",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "lastSuccessfulAt": "2026-10-23T10:05:31.500+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "attemptAt": "2026-10-23T22:57:40.503+00:00"
+    },
+    {
+      "id": "morning-series18-nagano-ehyundai",
+      "url": "https://nagano-info.jp/popupshop/ehyundai/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:38.932+00:00",
+      "status": 200,
+      "length": 2926,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:38.932+00:00"
+    },
+    {
+      "id": "morning-series18-2044b9052514",
+      "url": "https://chiikawa.toho-movie.jp/",
+      "lastSuccessfulAt": "2026-10-23T22:57:40.007+00:00",
+      "status": 200,
+      "length": 791,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:40.007+00:00"
+    },
+    {
+      "id": "morning-series18-82c047f25716",
+      "url": "https://chiikawa-info.jp/ramenbuta.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:38.923+00:00",
+      "status": 200,
+      "length": 617,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:38.923+00:00"
+    },
+    {
+      "id": "morning-series18-bcc6d96d4eaa",
+      "url": "https://chiikawa-info.jp/s_fes.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:38.927+00:00",
+      "status": 200,
+      "length": 1770,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:38.927+00:00"
+    },
+    {
+      "id": "morning-series18-b61b0e14cba8",
+      "url": "https://chiikawa.toho-movie.jp/news/index.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:40.034+00:00",
+      "status": 200,
+      "length": 1813,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:40.034+00:00"
+    },
+    {
+      "id": "morning-series18-36534053fb32",
+      "url": "https://chiikawa.toho-movie.jp/news/page/n_261007.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:40.248+00:00",
+      "status": 200,
+      "length": 938,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:40.248+00:00"
+    },
+    {
+      "id": "morning-series18-b06290fced0d",
+      "url": "https://pbs.twimg.com/media/HUwTcx_aYAEFzgy?format=webp&name=large",
+      "lastSuccessfulAt": "2026-10-23T22:57:41.904+00:00",
+      "status": 200,
+      "length": 83542,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:41.904+00:00"
+    },
+    {
+      "id": "morning-series18-b803afe07459",
+      "url": "https://pbs.twimg.com/media/HUrNo4lbMAAfJW_?format=webp&name=large",
+      "lastSuccessfulAt": "2026-10-23T22:57:41.894+00:00",
+      "status": 200,
+      "length": 91840,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:41.894+00:00"
+    },
+    {
+      "id": "corporate-spiralcute-news-index",
+      "url": "https://spiralcute.com/news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:45.195+00:00",
+      "status": 200,
+      "length": 3445,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:45.195+00:00"
+    },
+    {
+      "id": "corporate-grayparkaservice-home",
+      "url": "https://grayparkaservice.com/",
+      "lastSuccessfulAt": "2026-10-23T22:57:45.923+00:00",
+      "status": 200,
+      "length": 930,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:45.923+00:00"
+    },
+    {
+      "id": "corporate-grayparkaservice-news-index",
+      "url": "https://grayparkaservice.com/blogs/info",
+      "lastSuccessfulAt": "2026-10-23T22:57:45.945+00:00",
+      "status": 200,
+      "length": 819,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:45.945+00:00"
+    },
+    {
+      "id": "mogumogu-otaru-category-news",
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "lastSuccessfulAt": "2026-10-23T22:57:45.320+00:00",
+      "status": 200,
+      "length": 327,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:45.320+00:00"
+    },
+    {
+      "id": "ana-official-x",
+      "url": "https://x.com/ANA_travel_info",
+      "lastSuccessfulAt": "2026-10-19T10:00:24.689+00:00",
+      "status": 200,
+      "length": 1546,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:34.953+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:34.953+00:00"
+    },
+    {
+      "id": "movie-seventh-bonus-official-20261019",
+      "url": "https://chiikawa.toho-movie.jp/specialitem.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:46.057+00:00",
+      "status": 200,
+      "length": 3952,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:46.057+00:00"
+    },
+    {
+      "id": "movie-official-x",
+      "url": "https://x.com/chiikawa_movie",
+      "lastSuccessfulAt": "2026-10-19T22:59:54.869+00:00",
+      "status": 200,
+      "length": 1673,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:35.008+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:35.008+00:00"
+    },
+    {
+      "id": "ana-group-news-x",
+      "url": "https://x.com/ANA_Group_News",
+      "lastSuccessfulAt": "2026-10-19T22:59:55.291+00:00",
+      "status": 200,
+      "length": 1812,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:35.049+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:35.049+00:00"
+    },
+    {
+      "id": "toshocard-news-index",
+      "url": "https://www.toshocard.com/news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:55.094+00:00",
+      "status": 200,
+      "length": 617,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:55.094+00:00"
+    },
+    {
+      "id": "fujicolor-chiikawa-2027",
+      "url": "https://www.postcard.jp/character/chiikawa/",
+      "lastSuccessfulAt": "2026-10-23T22:57:47.814+00:00",
+      "status": 200,
+      "length": 2879,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:47.814+00:00"
+    },
+    {
+      "id": "fujicolor-chiikawa-2027-x",
+      "url": "https://x.com/chiikawa_kouhou/status/2112816158026125402",
+      "lastSuccessfulAt": "2026-10-21T09:59:34.546+00:00",
+      "status": 200,
+      "length": 1516,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:44.819+00:00"
+    },
+    {
+      "id": "movie-cheer-third",
+      "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "lastSuccessfulAt": "2026-10-23T22:57:46.063+00:00",
+      "status": 200,
+      "length": 2568,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:46.063+00:00"
+    },
+    {
+      "id": "movie-cheer-third-x",
+      "url": "https://x.com/chiikawa_movie/status/2112816158231457839",
+      "lastSuccessfulAt": "2026-10-21T09:59:34.589+00:00",
+      "status": 200,
+      "length": 1685,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:57:50.273+00:00"
+    },
+    {
+      "id": "movie-news-index",
+      "url": "https://chiikawa.toho-movie.jp/news/",
+      "lastSuccessfulAt": "2026-10-23T22:57:46.501+00:00",
+      "status": 200,
+      "length": 1813,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:46.501+00:00"
+    },
+    {
+      "id": "weekly-gu-chiikawa",
+      "url": "https://www.gu-global.com/jp/ja/feature/contents/collaboration/chiikawa",
+      "lastSuccessfulAt": "2026-10-23T22:57:50.875+00:00",
+      "status": 200,
+      "length": 519,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:50.875+00:00"
+    },
+    {
+      "id": "weekly-kurashiki-events",
+      "url": "https://kurashiki.aeonmall.jp/event",
+      "lastSuccessfulAt": "2026-10-21T09:59:33.443+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "attemptAt": "2026-10-23T22:57:51.757+00:00"
+    },
+    {
+      "id": "venue-aeon-oita-entry-news-1972762",
+      "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+      "lastSuccessfulAt": "2026-10-23T22:57:52.045+00:00",
+      "status": 200,
+      "length": 1565,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:52.045+00:00"
+    },
+    {
+      "id": "park-store-news",
+      "url": "https://chiikawapark-tokyo.jp/news/x0e64eb94v/",
+      "lastSuccessfulAt": "2026-10-23T22:57:53.948+00:00",
+      "status": 200,
+      "length": 1913,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:53.948+00:00"
+    },
+    {
+      "id": "kamakura-recruitment",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "lastSuccessfulAt": "2026-10-23T22:57:54.596+00:00",
+      "status": 200,
+      "length": 215,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:54.596+00:00"
+    },
+    {
+      "id": "telacoya-shop",
+      "url": "https://www.telacoya.co.jp/company/shop-a/",
+      "lastSuccessfulAt": "2026-10-23T22:57:54.299+00:00",
+      "status": 200,
+      "length": 6543,
+      "result": "success",
+      "attemptAt": "2026-10-23T22:57:54.299+00:00"
+    },
+    {
+      "id": "chiikawa-park-store-official-x",
+      "url": "https://x.com/chiikawapark_s",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 842,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:34.832+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:34.832+00:00"
+    },
+    {
+      "id": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "lastSuccessfulAt": "2026-10-17T23:13:47.948Z",
+      "status": 200,
+      "length": 797,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.853+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.853+00:00"
+    },
+    {
+      "id": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "lastSuccessfulAt": "2026-10-19T23:00:35.908+00:00",
+      "status": 200,
+      "length": 1655,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.846+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.846+00:00"
+    },
+    {
+      "id": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "lastSuccessfulAt": "2026-10-17T23:13:48.018Z",
+      "status": 200,
+      "length": 955,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.931+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.931+00:00"
+    },
+    {
+      "id": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.235+00:00",
+      "status": 200,
+      "length": 1477,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.900+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.900+00:00"
+    },
+    {
+      "id": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.292+00:00",
+      "status": 200,
+      "length": 1538,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.832+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.832+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawa-parkjp",
+      "url": "https://x.com/chiikawa_parkjp",
+      "lastSuccessfulAt": "2026-10-21T09:58:37.209+00:00",
+      "status": 200,
+      "length": 1792,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.854+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.854+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "lastSuccessfulAt": "2026-10-20T10:06:09.274+00:00",
+      "status": 200,
+      "length": 1435,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.847+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.847+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawaramensp",
+      "url": "https://x.com/chiikawaramenSP",
+      "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+      "status": 200,
+      "length": 1669,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.891+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.891+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawaramensb",
+      "url": "https://x.com/chiikawaramenSB",
+      "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+      "status": 200,
+      "length": 1734,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.956+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.956+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawaramensh",
+      "url": "https://x.com/chiikawaramenSH",
+      "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+      "status": 200,
+      "length": 1523,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.886+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.886+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.253+00:00",
+      "status": 200,
+      "length": 1762,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.857+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.857+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawabakeryc",
+      "url": "https://x.com/chiikawabakeryC",
+      "lastSuccessfulAt": "2026-10-20T10:06:09.274+00:00",
+      "status": 200,
+      "length": 1953,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:12.901+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "publicExcerptRetrievedAt": "2026-10-23T22:59:12.901+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawayaki",
+      "url": "https://x.com/chiikawayaki",
+      "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.863+00:00"
+    },
+    {
+      "id": "evening-x-com-chiikawarestoki",
+      "url": "https://x.com/chiikawarestOKI",
+      "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.862+00:00"
+    },
+    {
+      "id": "evening-x-com-theguest-ikb",
+      "url": "https://x.com/THEGUEST_ikb",
+      "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.866+00:00"
+    },
+    {
+      "id": "priority-four-1b6f0ffdf6c9",
+      "url": "https://x.com/chiikawa_popup",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.220+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.870+00:00"
+    },
+    {
+      "id": "priority-four-9660f8c42df7",
+      "url": "https://x.com/kiddyevent",
+      "lastSuccessfulAt": "2026-10-21T09:59:55.764+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.875+00:00"
+    },
+    {
+      "id": "priority-four-fdd3d3eaa690",
+      "url": "https://x.com/marui_kanagawa",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.874+00:00"
+    },
+    {
+      "id": "priority-four-58aa287d619b",
+      "url": "https://x.com/marui_limited_a",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.911+00:00"
+    },
+    {
+      "id": "priority-four-0253a73d1f4f",
+      "url": "https://x.com/Juice_inc_event",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.910+00:00"
+    },
+    {
+      "id": "magical-store-entry-updates-x",
+      "url": "https://x.com/magi_chiikawa",
+      "lastSuccessfulAt": "2026-10-21T10:00:17.155+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.920+00:00"
+    },
+    {
+      "id": "morning-x-com-chiikawabakeryo",
+      "url": "https://x.com/chiikawabakeryO",
+      "lastSuccessfulAt": "2026-10-21T09:59:52.278+00:00",
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.918+00:00"
+    },
+    {
+      "id": "store-observed-629ee1d1c3e3",
+      "url": "https://x.com/chiikawa_land/with_replies",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.946+00:00"
+    },
+    {
+      "id": "store-observed-7af4b4895aa1",
+      "url": "https://x.com/magi_chiikawa/with_replies",
+      "lastSuccessfulAt": null,
+      "result": "failed",
+      "error": "<urlopen error timed out>",
+      "status": null,
+      "attemptAt": "2026-10-23T22:59:30.974+00:00"
+    },
+    {
+      "id": "store-observed-9382b0a8adbc",
+      "url": "https://x.com/nagano_mkt_shop/with_replies",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 28,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:39.801+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。"
+    },
+    {
+      "id": "evening-store-20261017-88d3c54d6233",
+      "url": "https://x.com/chiikawamgmg/with_replies",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 28,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:39.811+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。"
+    },
+    {
+      "id": "morning-20261019-dd59ba8f76a3",
+      "url": "https://x.com/chiikawa_popup/with_replies",
+      "lastSuccessfulAt": null,
+      "status": 200,
+      "length": 28,
+      "result": "limited",
+      "attemptAt": "2026-10-23T22:59:39.827+00:00",
+      "note": "公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。"
+    }
+  ],
+  "candidateChecks": [
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "title": "ちいかわもぐもぐ本舗 鎌倉店（開業予定の調査候補）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-mogumogu-kamakura:opening-2026",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-21T23:00:30.703+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/23朝の最新main/live一致公開3JSON98/671/23件にも鎌倉既存IDなし。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式採用サイト原本は現在公開されていません。開業時期・住所を原本から再取得できず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiifan.com/articles/404.html",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "二次情報に12月予定・鎌倉市小町2-10-18 二ノ鳥居ビル1F、公式求人への出典リンク。一次確定ではない。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.telacoya.co.jp/",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式企業サイト→中途採用がtelacoya-jobs.net、ニュースに鎌倉告知は見当たらず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T10:06:32.724+00:00",
+          "summary": "公式求人原本は200応答だが現在公開されていません。公式ニュース・店舗一覧にも鎌倉開業の新しい一次告知なし。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T23:05:13.776+00:00",
+          "summary": "求人原本は200だが「現在公開されていません」。公式ニュース・TOP店舗・寺子屋企業TOPに鎌倉正式開業告知なし。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-23T10:07:56.328+00:00",
+          "summary": "公式採用ページは現在非公開と表示。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-23T10:07:59.285+00:00",
+          "summary": "公式店舗一覧に鎌倉もぐもぐの正式開業告知を確認できない。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/",
+          "observedAt": "2026-10-23T10:07:55.326+00:00",
+          "summary": "公式店舗一覧に鎌倉なし。川越・伏見の条件変更告知は別候補。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-23T22:57:54.596+00:00",
+          "summary": "公式求人は現在公開されていません。開業日・住所・予約開始を確定できない。",
+          "recordPath": "kamakura-recruitment.txt"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-23T22:57:54.299+00:00",
+          "summary": "企業公式店舗一覧に鎌倉もぐもぐの正式開業告知なし。",
+          "recordPath": "telacoya-shop.txt"
+        }
+      ],
+      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。 10/23夕も公式採用ページ非公開、企業店一覧・ブランド店一覧で正式開業日を確定できず保留。求人再掲の12月予定は正確な開業日や営業時間の根拠にしない。 10/24朝も変化なし。二次記事の12月予定を一次確定として転載しない。",
+      "nextCheck": "10/24夜巡回でブランドニュース、企業店一覧、求人原本の再掲載を確認。本人判断待ちではない。",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-park-store-osaka",
+      "state": "already_published",
+      "existingId": "chiikawa-park-store-osaka",
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "checkedAt": "2026-10-23T23:00:25+00:00",
+      "eventStartsAt": "2026-11-24",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "evidenceUrl": "https://www.lucua.jp/special/south-open/",
+      "decision": "公式一覧/公表済み内容と既存公開JSON照合。新規重複登録しない。履歴日付は原台帳を優先。",
+      "nextCheck": "次回定期巡回",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-pocket-2026-10-24-ikebukuro-parco",
+      "state": "already_published",
+      "existingId": "chiikawa-pocket-2026-10-24-ikebukuro-parco",
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "checkedAt": "2026-10-23T23:00:25+00:00",
+      "eventStartsAt": "2026-10-24",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+      "decision": "公式一覧/公表済み内容と既存公開JSON照合。新規重複登録しない。履歴日付は原台帳を優先。",
+      "nextCheck": "次回定期巡回",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00"
+    },
+    {
+      "id": "popup-2026-10-30-aeon-kurashiki",
+      "state": "already_published",
+      "existingId": "popup-2026-10-30-aeon-kurashiki",
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "checkedAt": "2026-10-23T23:00:25+00:00",
+      "eventStartsAt": "2026-10-30",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "evidenceUrl": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "decision": "公式一覧/公表済み内容と既存公開JSON照合。新規重複登録しない。履歴日付は原台帳を優先。",
+      "nextCheck": "次回定期巡回",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00"
+    },
+    {
+      "id": "popup-2026-10-30-aeon-kasukabe",
+      "state": "already_published",
+      "existingId": "popup-2026-10-30-aeon-kasukabe",
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "checkedAt": "2026-10-23T23:00:25+00:00",
+      "eventStartsAt": "2026-10-30",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aksk/index.html",
+      "decision": "公式一覧/公表済み内容と既存公開JSON照合。新規重複登録しない。履歴日付は原台帳を優先。",
+      "nextCheck": "次回定期巡回",
+      "recheckDueAt": "2026-10-24T19:00:00+09:00"
+    }
+  ],
+  "limitations": [
+    "最新公開DATA-OPERATIONS.mdは404。10/7更新の保全原本を読了したが最新非公開原本とは断定しない。",
+    "取得成功は本文取得であり全情報の内容最新や網羅性の保証ではない。Xは部分取得/タイムアウトを区別。",
+    "HTMLコメントを含む抽出テキストのため歴史項目を新規候補扱いしない。",
+    "全ソース665件の全巡回ではなく公式総合/シリーズ/店舗/企業入口と主要SNSを抽出した確認。前回広範調査10/23夕なので週次拡張は未実施。"
+  ],
+  "counts": {
+    "uniqueSourcesAttempted": 145,
+    "resultCounts": {
+      "success": 93,
+      "limited": 30,
+      "failed": 22
+    }
+  },
+  "publicJsonCounts": {
+    "official-spots": 100,
+    "official-events-archive": 673,
+    "collaborations-current": 23
+  }
+}
