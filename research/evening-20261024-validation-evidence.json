@@ -1,0 +1,1033 @@
+{
+  "recordedAt": "2026-10-24T10:15:35.075Z",
+  "localValidationPending": false,
+  "priorPublicationSync": {
+    "pr": 74,
+    "verifiedOriginalPublishedAt": "2026-10-23T23:41:53.643Z",
+    "corrections": [
+      {
+        "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+        "listingIds": [
+          "chiikawa-tokyo-miyage-2025-10-17-haneda-t2"
+        ],
+        "kind": "history_import",
+        "state": "published",
+        "publishedAt": "2026-10-23T23:41:53.643Z",
+        "firstPublicMatchAt": "2026-10-23T23:41:53.643Z",
+        "deployJobCompletedAt": "2026-10-23T23:41:43Z",
+        "pr": 74,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/74",
+        "sourceHead": "18a7d87fbc11942d9b894154cfa387559b41e1ac",
+        "mergeSha": "a27046e78df294274bf78deb1faa395544741893",
+        "pagesRun": 40041022422,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "履歴掲載済み。店舗精密位置・当時の営業時間や入場方法に公式な追加があれば確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+        "listingIds": [
+          "jr-central-tsutsuurauratabi-2026"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T23:41:53.643Z",
+        "firstPublicMatchAt": "2026-10-23T23:41:53.643Z",
+        "deployJobCompletedAt": "2026-10-23T23:41:43Z",
+        "pr": 74,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/74",
+        "sourceHead": "18a7d87fbc11942d9b894154cfa387559b41e1ac",
+        "mergeSha": "a27046e78df294274bf78deb1faa395544741893",
+        "pagesRun": 40041022422,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。KITTE固有の階・撮影可能時間・料金の続報があれば確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "hold-popup-yonago-final-hours-20261012",
+        "listingIds": [
+          "popup-yonago"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T23:41:53.643Z",
+        "firstPublicMatchAt": "2026-10-23T23:41:53.643Z",
+        "deployJobCompletedAt": "2026-10-23T23:41:43Z",
+        "pr": 74,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/74",
+        "sourceHead": "18a7d87fbc11942d9b894154cfa387559b41e1ac",
+        "mergeSha": "a27046e78df294274bf78deb1faa395544741893",
+        "pagesRun": 40041022422,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "履歴の通常時間補足は掲載済み。公式訂正・当時の保存資料により最終閉場16時/17時の矛盾が解消するか通常巡回で確認。",
+        "preReservationPublication": null
+      }
+    ],
+    "oldCandidates": [
+      {
+        "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+        "title": "ちいかわ 東京みやげ 羽田T2 Tokyo’s Tokyo",
+        "kind": "history_import",
+        "targetKey": "chiikawa-tokyo-miyage:haneda-t2:2025-10-17",
+        "sourceIds": [
+          "series-chiikawa-tokyo-miyage"
+        ],
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-05",
+        "eventStartsAt": "2025-10-17",
+        "eventEndsAt": "2026-01-31",
+        "releaseAt": null,
+        "reservationOpensAt": null,
+        "reflectDueAt": null,
+        "evidence": [
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-05T19:00:47+09:00",
+            "summary": "羽田第2ターミナル Tokyo’s Tokyoの会期を公式案内で確認。羽田第1ターミナルの別企画とは区別する。",
+            "recordPath": null
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-11T23:16:32.323Z",
+            "summary": "羽田T2 Tokyo’s Tokyoは2025/10/17〜2026/1/31。T1童心・T3 Edo食賓館とは別。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": "2026-10-12T08:08:43+09:00",
+            "summary": "T2 3Fマーケットプレイス、保安検査前。公式JSON area_number17、店舗ID00266、map_link_id1741、latitude/longitude null。現在10:00〜17:00を2025会期へ流用しない。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/site_resource/whats_new/pdf/000012662.pdf",
+            "observedAt": "2026-10-11T23:16:33.173Z",
+            "summary": "公式施設案内で東京都大田区羽田空港3-4-2を確認。階・店舗は別公式ページ。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/pm_open_shops.json",
+            "observedAt": "2026-10-12T08:10:48+09:00",
+            "summary": "shop_id00266にspot_id353023が対応。公式店舗ページMapボタン生成コードと照合。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/floor/floor-guide.html?tab=terminal2&focus=spot-353023",
+            "observedAt": "2026-10-11T23:16:33.072Z",
+            "summary": "当該店舗選択公式フロアガイドURL。第三者地図表示の座標取得は403で不可。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/site_resource/floor/js/common.js?202610071104",
+            "observedAt": "2026-10-12T08:11:09+09:00",
+            "summary": "area8=terminal2にlat35.5510216,lng139.7886114。T2地図表示中心で店舗ピンではない。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://cyberjapandata.gsi.go.jp/xyz/std/16/58215/25835.png",
+            "observedAt": "2026-10-12T08:16:04+09:00",
+            "summary": "T2中心35.5510216,139.7886114は建物上。店舗個別点や屋内階は地図だけで特定しない。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-13",
+            "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+            "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": "2026-10-12T22:54:12.559Z",
+            "summary": "羽田T2 3Fマーケットプレイス・保安検査前を再確認。公式埋込JSONのlatitude/longitudeはnull、map_link_id1741、area_number17。現在10:00〜17:00を過去会期の営業時間へ代用しない。",
+            "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "羽田T2 Tokyo’s Tokyoの2025/10/17〜2026/1/31を再確認。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "T2 3Fマーケットプレイス、保安検査前という店舗位置の本文を再確認。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": null,
+            "summary": "本日系列本文のT2 Tokyo’s Tokyo2025/10/17〜2026/1/31を再取得。施設本文3Fマーケットプレイス保安検査前。公式JSarea8=terminal2の表示中心35.5510216,139.7886114再取得。店舗精密点としては使わない。現在営業時間10-17を過去へ流用しない。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": null,
+            "summary": "本日系列本文のT2 Tokyo’s Tokyo2025/10/17〜2026/1/31を再取得。施設本文3Fマーケットプレイス保安検査前。公式JSarea8=terminal2の表示中心35.5510216,139.7886114再取得。店舗精密点としては使わない。現在営業時間10-17を過去へ流用しない。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/site_resource/floor/js/common.js?202610071104",
+            "observedAt": null,
+            "summary": "本日系列本文のT2 Tokyo’s Tokyo2025/10/17〜2026/1/31を再取得。施設本文3Fマーケットプレイス保安検査前。公式JSarea8=terminal2の表示中心35.5510216,139.7886114再取得。店舗精密点としては使わない。現在営業時間10-17を過去へ流用しない。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          }
+        ],
+        "existingMatch": {
+          "status": "matched",
+          "ids": [
+            "chiikawa-tokyo-miyage-2025-10-17-haneda-t2"
+          ],
+          "note": "公式の会期・会場を確認し、重複がない対象IDを今回の系列原本から生成する。建物代表点であることを明示。"
+        },
+        "listingIds": [
+          "chiikawa-tokyo-miyage-2025-10-17-haneda-t2"
+        ],
+        "state": "ready",
+        "priority": "normal",
+        "decision": "羽田T2 3Fマーケットプレイス・保安検査前、2025/10/17〜2026/1/31を公式根拠で確認。公式JSのT2代表点を明示して履歴掲載する。店舗精密点・当時営業時間・入場方法は不明のまま。",
+        "nextCheck": "検査・GitHub反映後、対象コミットと公開JSON・表示の実内容を照合し、初回一致時刻を保存する。",
+        "recheckDueAt": "2026-10-24T19:00:00+09:00",
+        "publishedAt": null
+      },
+      {
+        "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+        "title": "JR東海×映画ちいかわ KITTE大阪巨大バルーン",
+        "kind": "listing_update",
+        "targetKey": "jr-central-tsutsuurauratabi-2026:kitte-osaka-balloon:2026-07-08",
+        "sourceIds": [
+          "jr-central-tsutsuurauratabi",
+          "kitte-osaka-event-index",
+          "kitte-osaka-facility-hours",
+          "kitte-osaka-facility-access"
+        ],
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-12",
+        "eventStartsAt": "2026-07-08",
+        "eventEndsAt": "2026-10-31",
+        "releaseAt": null,
+        "reservationOpensAt": null,
+        "reflectDueAt": "2026-10-13T08:00:00.000+09:00",
+        "evidence": [
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-12T19:00:00.000+09:00",
+            "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+            "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "JR東海本文で2店のノベルティ/引換証終了と他拠点欠品時配送を現行一致確認。KITTE7/8～10/31・5m級バルーン。展示固有時間/料金/フロアは本文に明記なし。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "一覧全5件（イベント4、ニュース1）を本文確認。バルーン単独記事はこの一覧にない。企画終了や未開催の証拠とは扱わない。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "一般1F営業時間11:00～20:00とインフォメーション時間を確認。展示時間/撮影可能時間への流用はしない。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "公式所在地大阪市北区梅田3-2-2と埋込地図34.7006219,135.4941733を確認。既存ベーカリーの同一建物座標と一致。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-13T10:12:16.711+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ・引換証配布終了、他所欠品時の後日配送方式は現行一致。KITTE公式バルーン画像内に固有フロア・撮影時間・料金の明記なし。",
+            "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/",
+            "observedAt": "2026-10-13T10:12:16.711+00:00",
+            "summary": "施設ホーム差分は革財布店等のみ。バルーン固有フロア/撮影時間/料金を確定できず、一般営業時間流用なし。",
+            "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-13T10:12:16.711+00:00",
+            "summary": "イベント/ニュース一覧再読、バルーン固有案内なし。一般営業時間/X応募期限を展示時間に使わない。",
+            "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-13T23:03:36.420+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ及び引換証配布終了、他所欠品時の後日配送方式は既存一致。KITTEバルーン固有フロア・撮影時間・料金は本文/画像で確定せず。",
+            "recordPath": null
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-13T23:04:56.830+00:00",
+            "summary": "表示一覧はイベント4件/ニュース1件。フェリー6社イベント等はあるがバルーン単独記事なし。バルーン未開催/終了の証拠とはしない。",
+            "recordPath": null
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-13T23:04:57.062+00:00",
+            "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+            "recordPath": null
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-14T09:59:46.467+00:00",
+            "summary": "公式イベント一覧取得。ちいかわバルーンの追加条件を確認せず。",
+            "recordPath": "research/evening-listings-2026-10-14-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-14T23:07:02.255+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ及び引換証配布終了、他所欠品時の後日配送方式は既存一致。KITTEバルーン固有フロア・撮影時間・料金は本文/画像で確定せず。",
+            "recordPath": "research/morning-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-14T23:07:31.505+00:00",
+            "summary": "イベント4件/ニュース1件の表示を再読。巨大バルーン単独案内は表示一覧になく、フロア・撮影時間・料金未解決。未開催や終了とは解釈しない。",
+            "recordPath": "research/morning-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-14T23:07:31.554+00:00",
+            "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+            "recordPath": "research/morning-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-15T10:12:24.901+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVE配布終了等は既存一致。KITTEバルーンの本文は会期と場所のみでフロア・撮影時間・料金未確定。原画像URL取得は試みたが今回画像実見できず、画像確認済みとは扱わない。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-15T10:11:00.621+00:00",
+            "summary": "イベント4件/ニュース1件の表示を再読。巨大バルーン単独案内は表示一覧になく、フロア・撮影時間・料金未解決。未開催や終了とは解釈しない。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-15T10:10:59.619+00:00",
+            "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+            "observedAt": "2026-10-15T10:10:59.608+00:00",
+            "summary": "所在地大阪市北区梅田3-2-2を再確認。既存同一建物の根拠と一致。展示固有案内ではない。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/oshi-tabi/chiikawa/",
+            "observedAt": "2026-10-17T10:11:26.000+00:00",
+            "summary": "JR公式原画像・施設トップ/イベント一覧を再照合したが展示固有フロア・撮影可能時間・料金の明示なし。写真や施設一般営業時間から推測せず保留。",
+            "recordPath": "research/evening-corporate-2026-10-17-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-17T23:07:30.977+00:00",
+            "summary": "7/8～10/31、TOKYO Station/梅田HEP FIVEノベルティ・引換証配布終了、他所欠品時の引換証/後日配送は既存一致。KITTEバルーン固有のフロア・撮影可能時間・料金の確定記載なし。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/",
+            "observedAt": "2026-10-17T23:07:44.905+00:00",
+            "summary": "施設トップを取得。10/17～18フェリー6社共同催事や3Fベーカリーを掲載するが、バルーン固有のフロア・撮影時間・料金は確認できず保留。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-17T23:07:49.444+00:00",
+            "summary": "現行一覧の10/17～18フェリー6社イベント等を確認。バルーン単独記事の新情報は表示範囲で未検出。未開催・終了と推定しない。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+            "observedAt": "2026-10-17T23:14:15.346+00:00",
+            "summary": "原画像を取得し目視確認。巨大バルーン写真のみでフロア名・撮影可能時間・料金なし。写真からのフロア推定をせずhold維持。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "7/8〜10/31、KITTE大阪の高さ約5mバルーンを再確認。応募期間7/8 11:00〜10/31 23:59はXキャンペーン受付であり展示時間ではない。展示固有フロア・時間・料金の明示を取得できず。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "表示イベント4件とSNS案内を確認。バルーン単独記事は表示されず。ただし非掲載から未開催・終了とは推定しない。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/item_eventnews.jsp?id=5",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "施設公式SNSのX/Instagramはいずれも@kitteosakaと確認。公式アカウント対象の検索結果に今回必要事項の一次原文は見つからず。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "公式原画像を取得して目視確認。巨大バルーン写真のみで階名・時間・料金の文字はない。背景から階を推定しない。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": null,
+            "summary": "主催本文に大阪・KITTE・5m級・7/8〜10/31明記。施設一覧に独立展示詳細なし。新spot・座標・linkedSpotIds変更なし。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": null,
+            "summary": "主催本文に大阪・KITTE・5m級・7/8〜10/31明記。施設一覧に独立展示詳細なし。新spot・座標・linkedSpotIds変更なし。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          }
+        ],
+        "existingMatch": {
+          "status": "matched",
+          "ids": [
+            "jr-central-tsutsuurauratabi-2026"
+          ],
+          "note": "現行mainの既存IDを照合し、同企画を更新する。既存の有効条件と他会場リンクは維持。"
+        },
+        "listingIds": [
+          "jr-central-tsutsuurauratabi-2026"
+        ],
+        "state": "ready",
+        "priority": "normal",
+        "decision": "新ピンを作らず、既存コラボのsummaryとperiodsにKITTE大阪7/8〜10/31・全長5メートル級のバルーンを追記する。階・撮影可能時間・料金は未確認。既存reflectDueAtの超過は保持。",
+        "nextCheck": "検査・GitHub反映後、対象コミットと公開JSON・表示の実内容を照合し、初回一致時刻を保存する。",
+        "recheckDueAt": "2026-10-24T19:00:00+09:00",
+        "publishedAt": null
+      },
+      {
+        "id": "hold-popup-yonago-final-hours-20261012",
+        "title": "米子POP UP STORE 最終閉場の公式案内矛盾",
+        "kind": "listing_update",
+        "targetKey": "popup-yonago:final-hours:2026-10-12",
+        "sourceIds": [
+          "series-observed-db594c9ad917",
+          "venue-yonago-tenmaya-event-calendar"
+        ],
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-12T19:09:05+09:00",
+        "eventStartsAt": "2026-09-18",
+        "eventEndsAt": "2026-10-12",
+        "releaseAt": null,
+        "reservationOpensAt": null,
+        "reflectDueAt": null,
+        "evidence": [
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-12T19:05:58+09:00",
+            "summary": "画像には2026.9.18～10.12、10～19:30、最終日は16時閉場。画像公開日時不明。",
+            "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-12T19:09:05+09:00",
+            "summary": "施設は9/18～10/12、最終日は17時閉場、1階しんまち広場。会期一致、時刻矛盾。",
+            "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-13T07:55:31+09:00",
+            "summary": "今朝取得画像を実読し最終16時閉場を再確認。",
+            "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-13T07:54:48+09:00",
+            "summary": "施設本文は最終17時のまま。10/12最終日については画像と一致。",
+            "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-13T10:02:59+00:00",
+            "summary": "夕方取得の施設一覧はちいかわ開催名をカレンダーに残すが終了回詳細本文が消えた。16時/17時の矛盾解消に必要な新根拠はない。10/12終了・同一IDarchiveは既に朝反映済み。元夕巡回の保持済み観察を復元したもの。",
+            "recordPath": "research/evening-series-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-17T10:08:31+00:00",
+            "summary": "通常取得の現行施設本文では終了回詳細がなく、Web検索取得は5日前の旧本文。新しい訂正根拠にはできない。",
+            "recordPath": "research/evening-review-2026-10-17-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-17T23:07:08.889Z",
+            "summary": "主画像を実読。米子9/18–10/12、10–19:30、最終16時閉場。既存の施設17時案内との矛盾は未解決。",
+            "recordPath": "research/morning-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-17T23:07:10.070Z",
+            "summary": "現行施設カレンダーにちいかわ開催名は残るが終了回の詳細本文はない。最終16時／17時の旧矛盾を解消する訂正は確認できず。既存holdと終了履歴を維持。",
+            "recordPath": "research/morning-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-18T10:02:04.785+00:00",
+            "summary": "米子9/18–10/12、10–19:30、最終16時。施設旧17時との矛盾未解決、hold維持。",
+            "recordPath": "research/evening-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-18T10:01:16.000+00:00",
+            "summary": "現行10月カレンダーに催事名は残るが終了回詳細はなし。16時/17時を解消する新訂正根拠なし。",
+            "recordPath": "research/evening-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": null,
+            "summary": "本日原画像再取得・目視で9/18〜10/12、10:00〜19:30、最終16時。保存済み施設17時と矛盾は解消していない。現在施設一覧は過去時刻本文を含まず。16/17を選ばず最終時刻未確認で表示。archive位置・会期維持。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": null,
+            "summary": "本日原画像再取得・目視で9/18〜10/12、10:00〜19:30、最終16時。保存済み施設17時と矛盾は解消していない。現在施設一覧は過去時刻本文を含まず。16/17を選ばず最終時刻未確認で表示。archive位置・会期維持。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          }
+        ],
+        "existingMatch": {
+          "status": "matched",
+          "ids": [
+            "popup-yonago"
+          ],
+          "note": "現行mainの既存IDを照合し、同企画を更新する。既存の有効条件と他会場リンクは維持。"
+        },
+        "listingIds": [
+          "popup-yonago"
+        ],
+        "state": "ready",
+        "priority": "high",
+        "decision": "archive・ID・会期・会場を維持。通常10:00〜19:30を補足し、最終閉場16時/17時の矛盾は未解決として未確認表示にする。整理券配布・入場制限の既存有効情報を保持。",
+        "nextCheck": "検査・GitHub反映後、対象コミットと公開JSON・表示の実内容を照合し、初回一致時刻を保存する。",
+        "recheckDueAt": "2026-10-24T19:00:00+09:00",
+        "publishedAt": null
+      }
+    ]
+  },
+  "localValidation": {
+    "recordedAt": "2026-10-24T10:21:43.813Z",
+    "passed": true,
+    "exitCode": 0,
+    "build": {
+      "script": "build:spot-pages",
+      "declaredCommand": "node scripts/build-site-meta.mjs --write && node scripts/build-spot-pages.mjs --write",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-24T10:15:44.475Z",
+      "completedAt": "2026-10-24T10:15:46.087Z",
+      "statuses": [
+        {
+          "command": "node scripts/build-site-meta.mjs --write",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --write",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-evening\\build-spot-pages.log"
+    },
+    "check": {
+      "script": "check",
+      "declaredCommand": "node --check recent-utils.js && node --check scripts/lib/added-dates.mjs && node --check scripts/lib/operations-ledgers.mjs && node --check scripts/check-operations-ledgers.mjs && node --check app.js && node --check official.js && node --check collaborations.js && node --check nagano.js && node --check journal.js && node --check calendar-utils.js && node --check journal-export-utils.js && node --check location-utils.js && node --check spot-page.js && node --check cloud-sync-loader.js && node --check cloud-sync-ui.js && node --check cloud-sync-merge.js && node --check cloud-sync.js && node --check pwa.js && node --check service-worker.js && node --check scripts/build-pwa-icons.mjs && node --check scripts/build-site-meta.mjs && node --check scripts/build-spot-pages.mjs && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/preview-spot-data.mjs && node --check scripts/report-status-candidates.mjs && node --check scripts/archive-ended-events.mjs && node --check scripts/audit-special-series.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/build-special-events.mjs && node --check scripts/import-nagano-official-series.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node --check scripts/test-cloud-sync-merge.mjs && node --check scripts/validate-collaborations.mjs && node --check scripts/validate-nagano-mentions.mjs && node --check scripts/validate-nagano-history.mjs && node --test tests/unit/*.test.mjs && node scripts/test-cloud-sync-merge.mjs && node scripts/validate-data.mjs && node scripts/check-operations-ledgers.mjs && node scripts/validate-collaborations.mjs && node scripts/validate-nagano-mentions.mjs && node scripts/validate-nagano-history.mjs && node scripts/audit-special-series.mjs && node scripts/build-special-events.mjs --check && node scripts/build-site-meta.mjs --check && node scripts/build-spot-pages.mjs --check",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-24T10:16:17.625Z",
+      "completedAt": "2026-10-24T10:16:23.999Z",
+      "statuses": [
+        {
+          "command": "node --check recent-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/added-dates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check app.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check official.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check collaborations.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check nagano.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check calendar-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal-export-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check location-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check spot-page.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-loader.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-ui.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-merge.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check pwa.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check service-worker.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-pwa-icons.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-site-meta.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-spot-pages.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-links.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-site-health.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/preview-spot-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/report-status-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/archive-ended-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-batch.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-special-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/import-nagano-official-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues-gsi.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --test tests/unit/*.test.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-special-events.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-site-meta.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --check",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-evening\\check.log",
+      "unitTests": 58,
+      "unitFailures": 0
+    },
+    "finalOperationsCheck": {
+      "script": "check:operations",
+      "declaredCommand": "node scripts/check-operations-ledgers.mjs",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-24T10:17:40.728Z",
+      "completedAt": "2026-10-24T10:17:41.036Z",
+      "statuses": [
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-evening\\check-operations.log"
+    },
+    "smoke": {
+      "script": "test:smoke",
+      "args": [
+        "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-evening-20261024\\node_modules\\@playwright\\test\\cli.js",
+        "test",
+        "--config=C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-evening\\smoke.config.mjs",
+        "--workers=1"
+      ],
+      "startedAt": "2026-10-24T10:16:16.990Z",
+      "completedAt": "2026-10-24T10:20:40.696Z",
+      "exitCode": 0,
+      "passed": true,
+      "error": null,
+      "passedTests": 111
+    },
+    "browser": {
+      "completedAt": "2026-10-24T10:16:47.788Z",
+      "effectiveChecks": 32,
+      "screens": 16,
+      "widths": [
+        390,
+        1440
+      ],
+      "flows": [
+        "static",
+        "directShared",
+        "sharedReload",
+        "searchSelection"
+      ],
+      "advancingClock": true,
+      "pageErrors": 0,
+      "liveTilesClaimed": false
+    },
+    "targetedLinks": {
+      "startedAt": "2026-10-24T10:18:29.147Z",
+      "completedAt": "2026-10-24T10:18:29.940Z",
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Only four existing updated records official links; original checker unchanged in isolated fixture. No deferred PARCO historical links requested; not new information research.",
+      "exitCode": 0,
+      "error": null,
+      "passed": true,
+      "total": 8,
+      "normal": 8,
+      "broken": 0
+    },
+    "worktreePreservation": {
+      "count": 44,
+      "passed": true
+    },
+    "knownOnlyMetrics": {
+      "calculatedAt": "2026-10-24T10:19:40.271Z",
+      "base": "a27046e78df294274bf78deb1faa395544741893",
+      "knownOnly": true,
+      "coverageNotice": "台帳に記録した候補・既知日時だけの指標。全新着の網羅率ではない。日付のみを00:00へ変換して経過時間を計算しない。",
+      "newListing": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 56,
+          "known": 49,
+          "before": 48,
+          "notBefore": 1,
+          "unpublishedAfterStart": 0,
+          "unknown": 7,
+          "rate": 0.9795918367346939
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 1,
+            "mean": 1.0296108333333334,
+            "min": 1.0296108333333334,
+            "max": 1.0296108333333334
+          },
+          "japanCalendarDays": {
+            "samples": 49,
+            "mean": 4.8979591836734695,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 15,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 63
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 40,
+            "mean": 2.051399236111112,
+            "min": 0.6488888888888888,
+            "max": 17.201181944444443
+          },
+          "japanCalendarDays": {
+            "samples": 52,
+            "mean": 0.21153846153846154,
+            "min": 0,
+            "max": 1
+          },
+          "unknownPairs": 3,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 15
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 2,
+            "mean": 304.2463888888889,
+            "min": 9.783333333333333,
+            "max": 598.7094444444444
+          },
+          "japanCalendarDays": {
+            "samples": 41,
+            "mean": 2.658536585365854,
+            "min": 0,
+            "max": 25
+          },
+          "unknownPairs": 14,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 53
+        }
+      },
+      "nonHistorical": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 56,
+          "known": 49,
+          "before": 48,
+          "notBefore": 1,
+          "unpublishedAfterStart": 0,
+          "unknown": 7,
+          "rate": 0.9795918367346939
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 28,
+            "mean": 22.821219613095234,
+            "min": 0.08666666666666667,
+            "max": 168.4488888888889
+          },
+          "japanCalendarDays": {
+            "samples": 147,
+            "mean": 2.7551020408163267,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 164,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 283
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 145,
+            "mean": 4.046331904214554,
+            "min": 0.2632788888888889,
+            "max": 277.5468452777778
+          },
+          "japanCalendarDays": {
+            "samples": 235,
+            "mean": 0.225531914893617,
+            "min": 0,
+            "max": 12
+          },
+          "unknownPairs": 58,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 148
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 29,
+            "mean": 117.14042205938698,
+            "min": 0.9925,
+            "max": 2156.4727047222223
+          },
+          "japanCalendarDays": {
+            "samples": 148,
+            "mean": 11.385135135135135,
+            "min": 0,
+            "max": 1273
+          },
+          "unknownPairs": 145,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 264
+        }
+      }
+    },
+    "timing": {
+      "laforetTicketOpensAt": "2026-10-24T10:00:00+09:00",
+      "laforetDiscoveredAt": "2026-10-24T09:59:31Z",
+      "laforetDiscoveredAfterOpening": true,
+      "beforeTicketPublicationCannotBeClaimed": true
+    },
+    "libraryIntake": {
+      "verifiedAt": "2026-10-24T10:08:12.664440+00:00",
+      "passed": true,
+      "libraryFileId": "libfile_ad1932e42d588191b720d6b3aea92829",
+      "fileId": "file_0000000072e881fb9c6b5fbf7b77c351",
+      "version": 0,
+      "sizeBytes": 759626,
+      "sha256": "19a2e6c896e7058b691c5ea43232eff267129382b2a6aad0f51c34794bc945db",
+      "linuxOriginal": "/tmp/chiikawa-map-evening-20261024-1005/chiikatsu-evening-20261024-evidence.zip",
+      "originalReadable": true,
+      "libraryIdentityVerified": true,
+      "versionAttributeVerified": true,
+      "originalRetainedOnLinux": true,
+      "extractedDirectory": "/mnt/c/Users/6ikas/Projects/ちい活マップ/chiikawa-map-repo/node_modules/.cache/listing-20261024-evening/incoming-packet",
+      "windowsExtractedDirectory": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261024-evening/incoming-packet"
+    },
+    "sourcePatrol": {
+      "morningMeasuredObservations": 145,
+      "eveningMeasuredHttpObservations": 7,
+      "unknownTimeWebObservations": 35,
+      "unknownTimeWebDidNotChangeLastSuccessfulAt": true,
+      "olderMorningDidNotReplaceNewerEveningSuccess": true
+    }
+  }
+}

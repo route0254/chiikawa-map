@@ -1,0 +1,832 @@
+{
+  "recordedAt": "2026-10-24T10:15:35.075Z",
+  "library": {
+    "libraryFileId": "libfile_ad1932e42d588191b720d6b3aea92829",
+    "fileId": "file_0000000072e881fb9c6b5fbf7b77c351",
+    "version": 0,
+    "sizeBytes": 759626,
+    "zipSha256": "19a2e6c896e7058b691c5ea43232eff267129382b2a6aad0f51c34794bc945db",
+    "originalReadableAndIdentityVerified": true,
+    "originalRetainedOnLinux": true,
+    "zipEntriesDerivedIntoProject": true
+  },
+  "scope": "data/official-spots.json の既存4件の4フィールド更新のみ。既存ID、会期、営業、座標は変更しない。",
+  "baselineCommit": "a27046e78df294274bf78deb1faa395544741893",
+  "patches": [
+    {
+      "id": "chiikawaland-koshigaya",
+      "before": {
+        "entryNote": "2026年10月23日は終日、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月21日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "importantNotice": "10月23日は終日、対象エリアへの入場にLINEでの予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。対象エリアは15分ごとの入替制です。 販売可能数に空きが生じた場合のみ、10月21日20:00から二次先着受付を行います。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2110643022991892767",
+        "entryInfoCheckedAt": "2026-10-20"
+      },
+      "after": {
+        "entryNote": "2026年10月25日は、イオンレイクタウンmori 3階の立体駐車場P3入口前、公式案内図の★印の場所からお並びください。開店前に3階P3入口へお越しの際は、P2立体駐車場エレベーターをご利用ください。グループは全員が揃ってからお並びください。混雑状況により入場整理券を配布する場合があります。早朝・深夜からの待機や座り込みはご遠慮ください。運営方法は状況により変更する場合があります。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "importantNotice": "10月25日はmori 3階立体駐車場P3入口前の指定場所へ。開店前はP2立体駐車場エレベーターをご利用ください。混雑時は整理券を配布する場合があります。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2113903169940119610",
+        "entryInfoCheckedAt": "2026-10-24"
+      },
+      "source": "https://x.com/chiikawa_land/status/2113903169940119610",
+      "verifiedAt": "2026-10-24T10:00:36.014112+00:00"
+    },
+    {
+      "id": "chiikawaland-tokyo-station",
+      "before": {
+        "entryNote": "2026年10月23日は、混雑緩和と安全対策のため、公式告知時点で並んでいる方をもって当日の入店受付を終了しました。今後の来店日の入店方法は最新の公式案内をご確認ください。",
+        "importantNotice": "10月23日の入店受付は終了しました（公式告知時点で並んでいた方まで）。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2113548573476528499",
+        "entryInfoCheckedAt": "2026-10-23"
+      },
+      "after": {
+        "entryNote": "2026年10月24日は、混雑緩和と安全対策のため、公式告知時点で並んでいる方をもって当日の入店受付を終了しました。今後の来店日の入店方法は最新の公式案内をご確認ください。",
+        "importantNotice": "10月24日の入店受付は終了しました（公式告知時点で並んでいた方まで）。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2113929838725943732",
+        "entryInfoCheckedAt": "2026-10-24"
+      },
+      "source": "https://x.com/chiikawa_land/status/2113929838725943732",
+      "verifiedAt": "2026-10-24T10:00:35.941397+00:00"
+    },
+    {
+      "id": "chiikawaland-kanazawa",
+      "before": {
+        "entryNote": "2026年10月23日は終日、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月20日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "importantNotice": "10月23日は終日、対象エリアへの入場にLINEでの予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。対象エリアは15分ごとの入替制です。 販売可能数に空きが生じた場合のみ、10月20日20:00から二次先着受付を行います。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2110643022991892767",
+        "entryInfoCheckedAt": "2026-10-19"
+      },
+      "after": {
+        "entryNote": "2026年10月24日の「ちいかわ×ANAコーナー」の入場整理券配布は終了しました。当日は同コーナーへのフリー入場の案内はありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "importantNotice": "10月24日の「ちいかわ×ANAコーナー」は入場整理券配布終了。当日の同コーナーへのフリー入場はありません。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2113885402872639534",
+        "entryInfoCheckedAt": "2026-10-24"
+      },
+      "source": "https://x.com/chiikawa_land/status/2113885402872639534",
+      "verifiedAt": "2026-10-24T10:00:36.071997+00:00"
+    },
+    {
+      "id": "chiikawa-bakery-shop-laforet",
+      "before": {
+        "entryNote": "2026年10月23日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "importantNotice": "2026年10月23日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2113224950953996424",
+        "entryInfoCheckedAt": "2026-10-23"
+      },
+      "after": {
+        "entryNote": "2026年10月24日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "importantNotice": "2026年10月24日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2113782522442404218",
+        "entryInfoCheckedAt": "2026-10-24"
+      },
+      "source": "https://x.com/chiikawabakery/status/2113782522442404218",
+      "verifiedAt": "2026-10-24T10:00:36.106224+00:00"
+    }
+  ],
+  "oldPublicRecords": [
+    {
+      "id": "chiikawa-bakery-shop-laforet",
+      "name": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "official_store",
+      "brand": "chiikawa_bakery",
+      "periodType": "permanent",
+      "startDate": "2026-03-14",
+      "endDate": null,
+      "hoursText": "11:00～20:00（最終入店19:30）",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawabakery.jp/information-popup_01/",
+      "hoursCheckedAt": "2026-10-04",
+      "reservationType": "not_available",
+      "reservationUrl": null,
+      "defaultEntryType": "walkin",
+      "crowdControlType": "other",
+      "crowdControlCondition": "announced",
+      "entryNote": "2026年10月23日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+      "entryInfoUrl": "https://x.com/chiikawabakery/status/2113224950953996424",
+      "entryInfoCheckedAt": "2026-10-23",
+      "lat": 35.6692109,
+      "lng": 139.7052614,
+      "address": "東京都渋谷区神宮前1-11-6 ラフォーレ原宿 B1F",
+      "description": "2026年3月14日に移転オープンした、ちいかわベーカリーのグッズ専門店です。食パン・ジャムなどの一部食品も扱いますが、カウンターで選ぶキャラクターパンの取扱いはありません。 ラフォーレ原宿の本POP UP SHOP限定のPHOTO BOOTHが2026年10月6日から稼働予定です。終了日は未発表です。 2026年10月15日から2周年記念企画の対象店舗として、記念グッズと物販購入特典を展開します。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+      "sourceUrl": "https://chiikawabakery.jp/information-popup_01/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-11-6%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20B1F",
+      "importantNotice": "2026年10月23日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。"
+    },
+    {
+      "id": "chiikawaland-tokyo-station",
+      "name": "ちいかわらんど TOKYO Station",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "official_store",
+      "brand": "chiikawaland",
+      "periodType": "permanent",
+      "startDate": "2022-09-16",
+      "endDate": null,
+      "hoursText": "10:00～20:30",
+      "closedDaysText": "入居施設の営業日に準ずる",
+      "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+      "hoursCheckedAt": "2026-08-24",
+      "reservationType": "not_available",
+      "reservationUrl": null,
+      "defaultEntryType": "walkin",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "announced",
+      "entryNote": "2026年10月23日は、混雑緩和と安全対策のため、公式告知時点で並んでいる方をもって当日の入店受付を終了しました。今後の来店日の入店方法は最新の公式案内をご確認ください。",
+      "entryInfoUrl": "https://x.com/chiikawa_land/status/2113548573476528499",
+      "entryInfoCheckedAt": "2026-10-23",
+      "lat": 35.6806,
+      "lng": 139.7655,
+      "address": "東京都千代田区丸の内1-9-1 東京駅一番街 東京キャラクターストリート",
+      "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+      "sourceUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20TOKYO%20Station",
+      "importantNotice": "10月23日の入店受付は終了しました（公式告知時点で並んでいた方まで）。"
+    },
+    {
+      "id": "chiikawaland-kanazawa",
+      "name": "ちいかわらんど 金沢フォーラス店",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "official_store",
+      "brand": "chiikawaland",
+      "periodType": "permanent",
+      "startDate": "2025-11-21",
+      "endDate": null,
+      "hoursText": "10:00～20:00",
+      "closedDaysText": "入居施設の営業日に準ずる",
+      "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "hoursCheckedAt": "2026-10-13",
+      "reservationType": "not_available",
+      "reservationUrl": null,
+      "defaultEntryType": "walkin",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "announced",
+      "entryNote": "2026年10月23日は終日、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月20日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+      "entryInfoUrl": "https://x.com/chiikawa_land/status/2110643022991892767",
+      "entryInfoCheckedAt": "2026-10-19",
+      "lat": 36.5784,
+      "lng": 136.6485,
+      "address": "石川県金沢市堀川新町3-1 金沢フォーラス3F",
+      "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+      "sourceUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E9%87%91%E6%B2%A2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%82%B9%E5%BA%97",
+      "importantNotice": "10月23日は終日、対象エリアへの入場にLINEでの予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。対象エリアは15分ごとの入替制です。 販売可能数に空きが生じた場合のみ、10月20日20:00から二次先着受付を行います。"
+    },
+    {
+      "id": "chiikawaland-koshigaya",
+      "name": "ちいかわらんど 越谷レイクタウン店",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "official_store",
+      "brand": "chiikawaland",
+      "periodType": "permanent",
+      "startDate": "2026-06-19",
+      "endDate": null,
+      "hoursText": "10:00～21:00",
+      "closedDaysText": "入居施設の営業日に準ずる",
+      "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "hoursCheckedAt": "2026-10-13",
+      "reservationType": "not_available",
+      "reservationUrl": null,
+      "defaultEntryType": "walkin",
+      "crowdControlType": "numbered_ticket",
+      "crowdControlCondition": "announced",
+      "entryNote": "2026年10月23日は終日、対象エリアへの入場にLINEアプリによる入店チケットが必要です。対象エリアは15分ごとの入替制です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月21日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+      "entryInfoUrl": "https://x.com/chiikawa_land/status/2110643022991892767",
+      "entryInfoCheckedAt": "2026-10-20",
+      "lat": 35.8779,
+      "lng": 139.8269,
+      "address": "埼玉県越谷市レイクタウン3-1-1 イオンレイクタウンmori 3F",
+      "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+      "sourceUrl": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E8%B6%8A%E8%B0%B7%E3%83%AC%E3%82%A4%E3%82%AF%E3%82%BF%E3%82%A6%E3%83%B3%E5%BA%97",
+      "importantNotice": "10月23日は終日、対象エリアへの入場にLINEでの予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。対象エリアは15分ごとの入替制です。 販売可能数に空きが生じた場合のみ、10月21日20:00から二次先着受付を行います。"
+    }
+  ],
+  "sourceProvider": "Cloud HTTP retrieval; raw individual posts supplied and compared locally",
+  "localImageVerification": {
+    "recordedAt": "2026-10-24T10:15:35.075Z",
+    "method": "Viewed bundled original image with view_image in this execution",
+    "path": "research/evening-20261024/koshigaya-entry.webp",
+    "sourceUrl": "https://pbs.twimg.com/media/HVYXuMYaoAA_r7N?format=webp&name=large",
+    "verified": true,
+    "findings": [
+      "mori 3階立体駐車場P3入口前、赤い★位置",
+      "早朝・深夜の整列・座り込み禁止",
+      "混雑時整理券配布の場合あり"
+    ],
+    "bodyOnlyFinding": "開店前のP2立体駐車場エレベーター利用とグループ全員集合は公式個別投稿本文による。画像だけから推定していない。"
+  },
+  "timeNormalizations": [
+    {
+      "id": "update-chiikawaland-koshigaya-entry-20261025",
+      "providedEventStartsAt": "2026-10-25",
+      "normalizedEventStartsAt": null,
+      "reason": "既存店の日付限定入場案内。適用日は別途根拠記録に残し、常設店・催事の開始日には転用しない。"
+    },
+    {
+      "id": "update-chiikawaland-tokyo-station-entry-20261024",
+      "providedEventStartsAt": "2026-10-24",
+      "normalizedEventStartsAt": null,
+      "reason": "既存店の日付限定入場案内。適用日は別途根拠記録に残し、常設店・催事の開始日には転用しない。"
+    },
+    {
+      "id": "update-chiikawaland-kanazawa-entry-20261024",
+      "providedEventStartsAt": "2026-10-24",
+      "normalizedEventStartsAt": null,
+      "reason": "既存店の日付限定入場案内。適用日は別途根拠記録に残し、常設店・催事の開始日には転用しない。"
+    },
+    {
+      "id": "update-chiikawa-bakery-shop-laforet-entry-20261024",
+      "providedEventStartsAt": "2026-10-24",
+      "normalizedEventStartsAt": null,
+      "reason": "既存店の日付限定入場案内。適用日は別途根拠記録に残し、常設店・催事の開始日には転用しない。"
+    }
+  ],
+  "knownDelay": {
+    "id": "chiikawa-bakery-shop-laforet",
+    "ticketIssuanceOpensAt": "2026-10-24T10:00:00+09:00",
+    "discoveredAt": "2026-10-24T09:59:31Z",
+    "discoveredAfterOpening": true,
+    "startBeforePublicationCannotBeClaimed": true
+  },
+  "rawFiles": [
+    {
+      "zipMember": "map-evening-20261024-existing/entry-fix-packet.json",
+      "path": "research/evening-20261024/entry-fix-packet.json",
+      "bytes": 17806,
+      "sha256": "69394d3d6b181fa413e06d8f547a3a7b0ff678c844af30fb3ea03e98f4c0cd4c"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/entry-posts.json",
+      "path": "research/evening-20261024/entry-posts.json",
+      "bytes": 17898,
+      "sha256": "5460af55879d25d2d01116c4f961f34c163159cc56fec016f048673c26fd2ca2"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/x-profiles.json",
+      "path": "research/evening-20261024/x-profiles.json",
+      "bytes": 150125,
+      "sha256": "655c18d0844eefc6ec37b5a89ca50f15054d9c4b848c5e0cb0e45b42eaaf0a03"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/koshigaya-entry.webp",
+      "path": "research/evening-20261024/koshigaya-entry.webp",
+      "bytes": 63592,
+      "sha256": "105e8d92a07ffc2e1cababca5d8ae95892edc006e7be921d287996a6c30750c5"
+    },
+    {
+      "zipMember": "morning-carryover/handoff.json",
+      "path": "research/evening-20261024/morning-carryover.json",
+      "bytes": 55999,
+      "sha256": "34aa87a2979c1e139a8fd1a4d1eb49f8214fb7c435ab23c514b2ef241510fbf9"
+    },
+    {
+      "zipMember": "map-evening-20261024-new/research-record.json",
+      "path": "research/evening-20261024/new-research-record.json",
+      "bytes": 6832,
+      "sha256": "be0efb52db518ea3ec0541aa068c3b87519965e93eb6b49349a2bb4b862776d3"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/2113903169940119610.html",
+      "path": "research/evening-20261024/2113903169940119610.html",
+      "bytes": 113587,
+      "sha256": "4f9cf6820a3eadbf156ee592a9325a2648a1b4ccb1009e9d9de1a6dd37074993"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/2113929838725943732.html",
+      "path": "research/evening-20261024/2113929838725943732.html",
+      "bytes": 102084,
+      "sha256": "b9f3669ba43ec5593783f20ec76e00a20d27d580ebc9f7c9e00e58c8cfe43cf9"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/2113885402872639534.html",
+      "path": "research/evening-20261024/2113885402872639534.html",
+      "bytes": 130282,
+      "sha256": "178eef8dd59882d68eaa2cf17acab1526f25e9ff51bc3a2b23e8bc615f9f08ff"
+    },
+    {
+      "zipMember": "map-evening-20261024-existing/2113782522442404218.html",
+      "path": "research/evening-20261024/2113782522442404218.html",
+      "bytes": 105963,
+      "sha256": "c87a127a1080994dbc9f5682efe2bda3ed98d131b50f0c7a2c3ff62494980d1a"
+    }
+  ],
+  "priorPublicationSync": {
+    "pr": 74,
+    "verifiedOriginalPublishedAt": "2026-10-23T23:41:53.643Z",
+    "corrections": [
+      {
+        "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+        "listingIds": [
+          "chiikawa-tokyo-miyage-2025-10-17-haneda-t2"
+        ],
+        "kind": "history_import",
+        "state": "published",
+        "publishedAt": "2026-10-23T23:41:53.643Z",
+        "firstPublicMatchAt": "2026-10-23T23:41:53.643Z",
+        "deployJobCompletedAt": "2026-10-23T23:41:43Z",
+        "pr": 74,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/74",
+        "sourceHead": "18a7d87fbc11942d9b894154cfa387559b41e1ac",
+        "mergeSha": "a27046e78df294274bf78deb1faa395544741893",
+        "pagesRun": 40041022422,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "履歴掲載済み。店舗精密位置・当時の営業時間や入場方法に公式な追加があれば確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+        "listingIds": [
+          "jr-central-tsutsuurauratabi-2026"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T23:41:53.643Z",
+        "firstPublicMatchAt": "2026-10-23T23:41:53.643Z",
+        "deployJobCompletedAt": "2026-10-23T23:41:43Z",
+        "pr": 74,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/74",
+        "sourceHead": "18a7d87fbc11942d9b894154cfa387559b41e1ac",
+        "mergeSha": "a27046e78df294274bf78deb1faa395544741893",
+        "pagesRun": 40041022422,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "通常巡回で公式条件変更を確認。KITTE固有の階・撮影可能時間・料金の続報があれば確認。",
+        "preReservationPublication": null
+      },
+      {
+        "id": "hold-popup-yonago-final-hours-20261012",
+        "listingIds": [
+          "popup-yonago"
+        ],
+        "kind": "listing_update",
+        "state": "published",
+        "publishedAt": "2026-10-23T23:41:53.643Z",
+        "firstPublicMatchAt": "2026-10-23T23:41:53.643Z",
+        "deployJobCompletedAt": "2026-10-23T23:41:43Z",
+        "pr": 74,
+        "prUrl": "https://github.com/route0254/chiikawa-map/pull/74",
+        "sourceHead": "18a7d87fbc11942d9b894154cfa387559b41e1ac",
+        "mergeSha": "a27046e78df294274bf78deb1faa395544741893",
+        "pagesRun": 40041022422,
+        "reservationOpensAt": null,
+        "recheckDueAt": null,
+        "nextCheck": "履歴の通常時間補足は掲載済み。公式訂正・当時の保存資料により最終閉場16時/17時の矛盾が解消するか通常巡回で確認。",
+        "preReservationPublication": null
+      }
+    ],
+    "oldCandidates": [
+      {
+        "id": "history-chiikawa-tokyo-miyage-haneda-t2-20251017",
+        "title": "ちいかわ 東京みやげ 羽田T2 Tokyo’s Tokyo",
+        "kind": "history_import",
+        "targetKey": "chiikawa-tokyo-miyage:haneda-t2:2025-10-17",
+        "sourceIds": [
+          "series-chiikawa-tokyo-miyage"
+        ],
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-05",
+        "eventStartsAt": "2025-10-17",
+        "eventEndsAt": "2026-01-31",
+        "releaseAt": null,
+        "reservationOpensAt": null,
+        "reflectDueAt": null,
+        "evidence": [
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-05T19:00:47+09:00",
+            "summary": "羽田第2ターミナル Tokyo’s Tokyoの会期を公式案内で確認。羽田第1ターミナルの別企画とは区別する。",
+            "recordPath": null
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-11T23:16:32.323Z",
+            "summary": "羽田T2 Tokyo’s Tokyoは2025/10/17〜2026/1/31。T1童心・T3 Edo食賓館とは別。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": "2026-10-12T08:08:43+09:00",
+            "summary": "T2 3Fマーケットプレイス、保安検査前。公式JSON area_number17、店舗ID00266、map_link_id1741、latitude/longitude null。現在10:00〜17:00を2025会期へ流用しない。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/site_resource/whats_new/pdf/000012662.pdf",
+            "observedAt": "2026-10-11T23:16:33.173Z",
+            "summary": "公式施設案内で東京都大田区羽田空港3-4-2を確認。階・店舗は別公式ページ。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/pm_open_shops.json",
+            "observedAt": "2026-10-12T08:10:48+09:00",
+            "summary": "shop_id00266にspot_id353023が対応。公式店舗ページMapボタン生成コードと照合。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/floor/floor-guide.html?tab=terminal2&focus=spot-353023",
+            "observedAt": "2026-10-11T23:16:33.072Z",
+            "summary": "当該店舗選択公式フロアガイドURL。第三者地図表示の座標取得は403で不可。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/site_resource/floor/js/common.js?202610071104",
+            "observedAt": "2026-10-12T08:11:09+09:00",
+            "summary": "area8=terminal2にlat35.5510216,lng139.7886114。T2地図表示中心で店舗ピンではない。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://cyberjapandata.gsi.go.jp/xyz/std/16/58215/25835.png",
+            "observedAt": "2026-10-12T08:16:04+09:00",
+            "summary": "T2中心35.5510216,139.7886114は建物上。店舗個別点や屋内階は地図だけで特定しない。",
+            "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-13",
+            "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+            "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": "2026-10-12T22:54:12.559Z",
+            "summary": "羽田T2 3Fマーケットプレイス・保安検査前を再確認。公式埋込JSONのlatitude/longitudeはnull、map_link_id1741、area_number17。現在10:00〜17:00を過去会期の営業時間へ代用しない。",
+            "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "羽田T2 Tokyo’s Tokyoの2025/10/17〜2026/1/31を再確認。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "T2 3Fマーケットプレイス、保安検査前という店舗位置の本文を再確認。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+            "observedAt": null,
+            "summary": "本日系列本文のT2 Tokyo’s Tokyo2025/10/17〜2026/1/31を再取得。施設本文3Fマーケットプレイス保安検査前。公式JSarea8=terminal2の表示中心35.5510216,139.7886114再取得。店舗精密点としては使わない。現在営業時間10-17を過去へ流用しない。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+            "observedAt": null,
+            "summary": "本日系列本文のT2 Tokyo’s Tokyo2025/10/17〜2026/1/31を再取得。施設本文3Fマーケットプレイス保安検査前。公式JSarea8=terminal2の表示中心35.5510216,139.7886114再取得。店舗精密点としては使わない。現在営業時間10-17を過去へ流用しない。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://tokyo-haneda.com/site_resource/floor/js/common.js?202610071104",
+            "observedAt": null,
+            "summary": "本日系列本文のT2 Tokyo’s Tokyo2025/10/17〜2026/1/31を再取得。施設本文3Fマーケットプレイス保安検査前。公式JSarea8=terminal2の表示中心35.5510216,139.7886114再取得。店舗精密点としては使わない。現在営業時間10-17を過去へ流用しない。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          }
+        ],
+        "existingMatch": {
+          "status": "matched",
+          "ids": [
+            "chiikawa-tokyo-miyage-2025-10-17-haneda-t2"
+          ],
+          "note": "公式の会期・会場を確認し、重複がない対象IDを今回の系列原本から生成する。建物代表点であることを明示。"
+        },
+        "listingIds": [
+          "chiikawa-tokyo-miyage-2025-10-17-haneda-t2"
+        ],
+        "state": "ready",
+        "priority": "normal",
+        "decision": "羽田T2 3Fマーケットプレイス・保安検査前、2025/10/17〜2026/1/31を公式根拠で確認。公式JSのT2代表点を明示して履歴掲載する。店舗精密点・当時営業時間・入場方法は不明のまま。",
+        "nextCheck": "検査・GitHub反映後、対象コミットと公開JSON・表示の実内容を照合し、初回一致時刻を保存する。",
+        "recheckDueAt": "2026-10-24T19:00:00+09:00",
+        "publishedAt": null
+      },
+      {
+        "id": "jr-central-kitte-osaka-balloon-2026-venue-review",
+        "title": "JR東海×映画ちいかわ KITTE大阪巨大バルーン",
+        "kind": "listing_update",
+        "targetKey": "jr-central-tsutsuurauratabi-2026:kitte-osaka-balloon:2026-07-08",
+        "sourceIds": [
+          "jr-central-tsutsuurauratabi",
+          "kitte-osaka-event-index",
+          "kitte-osaka-facility-hours",
+          "kitte-osaka-facility-access"
+        ],
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-12",
+        "eventStartsAt": "2026-07-08",
+        "eventEndsAt": "2026-10-31",
+        "releaseAt": null,
+        "reservationOpensAt": null,
+        "reflectDueAt": "2026-10-13T08:00:00.000+09:00",
+        "evidence": [
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-12T19:00:00.000+09:00",
+            "summary": "国内実会場としてリニア・鉄道館のジオラマ/フォトスポットとKITTE大阪巨大バルーン。KITTE7/8～10/31を確認。",
+            "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "JR東海本文で2店のノベルティ/引換証終了と他拠点欠品時配送を現行一致確認。KITTE7/8～10/31・5m級バルーン。展示固有時間/料金/フロアは本文に明記なし。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "一覧全5件（イベント4、ニュース1）を本文確認。バルーン単独記事はこの一覧にない。企画終了や未開催の証拠とは扱わない。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "一般1F営業時間11:00～20:00とインフォメーション時間を確認。展示時間/撮影可能時間への流用はしない。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+            "observedAt": "2026-10-12T22:57:28.000+00:00",
+            "summary": "公式所在地大阪市北区梅田3-2-2と埋込地図34.7006219,135.4941733を確認。既存ベーカリーの同一建物座標と一致。",
+            "recordPath": "research/morning-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-13T10:12:16.711+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ・引換証配布終了、他所欠品時の後日配送方式は現行一致。KITTE公式バルーン画像内に固有フロア・撮影時間・料金の明記なし。",
+            "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/",
+            "observedAt": "2026-10-13T10:12:16.711+00:00",
+            "summary": "施設ホーム差分は革財布店等のみ。バルーン固有フロア/撮影時間/料金を確定できず、一般営業時間流用なし。",
+            "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-13T10:12:16.711+00:00",
+            "summary": "イベント/ニュース一覧再読、バルーン固有案内なし。一般営業時間/X応募期限を展示時間に使わない。",
+            "recordPath": "research/evening-corporate-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-13T23:03:36.420+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ及び引換証配布終了、他所欠品時の後日配送方式は既存一致。KITTEバルーン固有フロア・撮影時間・料金は本文/画像で確定せず。",
+            "recordPath": null
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-13T23:04:56.830+00:00",
+            "summary": "表示一覧はイベント4件/ニュース1件。フェリー6社イベント等はあるがバルーン単独記事なし。バルーン未開催/終了の証拠とはしない。",
+            "recordPath": null
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-13T23:04:57.062+00:00",
+            "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+            "recordPath": null
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-14T09:59:46.467+00:00",
+            "summary": "公式イベント一覧取得。ちいかわバルーンの追加条件を確認せず。",
+            "recordPath": "research/evening-listings-2026-10-14-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-14T23:07:02.255+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVEのノベルティ及び引換証配布終了、他所欠品時の後日配送方式は既存一致。KITTEバルーン固有フロア・撮影時間・料金は本文/画像で確定せず。",
+            "recordPath": "research/morning-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-14T23:07:31.505+00:00",
+            "summary": "イベント4件/ニュース1件の表示を再読。巨大バルーン単独案内は表示一覧になく、フロア・撮影時間・料金未解決。未開催や終了とは解釈しない。",
+            "recordPath": "research/morning-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-14T23:07:31.554+00:00",
+            "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+            "recordPath": "research/morning-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-15T10:12:24.901+00:00",
+            "summary": "7/8～10/31、TOKYO Station/HEP FIVE配布終了等は既存一致。KITTEバルーンの本文は会期と場所のみでフロア・撮影時間・料金未確定。原画像URL取得は試みたが今回画像実見できず、画像確認済みとは扱わない。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-15T10:11:00.621+00:00",
+            "summary": "イベント4件/ニュース1件の表示を再読。巨大バルーン単独案内は表示一覧になく、フロア・撮影時間・料金未解決。未開催や終了とは解釈しない。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=1",
+            "observedAt": "2026-10-15T10:10:59.619+00:00",
+            "summary": "施設一般営業時間を確認。一般1F案内からバルーン撮影可能時間を推定せず保留継続。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/shop/page.jsp?id=2",
+            "observedAt": "2026-10-15T10:10:59.608+00:00",
+            "summary": "所在地大阪市北区梅田3-2-2を再確認。既存同一建物の根拠と一致。展示固有案内ではない。",
+            "recordPath": "research/evening-corporate-2026-10-15-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/oshi-tabi/chiikawa/",
+            "observedAt": "2026-10-17T10:11:26.000+00:00",
+            "summary": "JR公式原画像・施設トップ/イベント一覧を再照合したが展示固有フロア・撮影可能時間・料金の明示なし。写真や施設一般営業時間から推測せず保留。",
+            "recordPath": "research/evening-corporate-2026-10-17-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-17T23:07:30.977+00:00",
+            "summary": "7/8～10/31、TOKYO Station/梅田HEP FIVEノベルティ・引換証配布終了、他所欠品時の引換証/後日配送は既存一致。KITTEバルーン固有のフロア・撮影可能時間・料金の確定記載なし。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/",
+            "observedAt": "2026-10-17T23:07:44.905+00:00",
+            "summary": "施設トップを取得。10/17～18フェリー6社共同催事や3Fベーカリーを掲載するが、バルーン固有のフロア・撮影時間・料金は確認できず保留。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-17T23:07:49.444+00:00",
+            "summary": "現行一覧の10/17～18フェリー6社イベント等を確認。バルーン単独記事の新情報は表示範囲で未検出。未開催・終了と推定しない。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+            "observedAt": "2026-10-17T23:14:15.346+00:00",
+            "summary": "原画像を取得し目視確認。巨大バルーン写真のみでフロア名・撮影可能時間・料金なし。写真からのフロア推定をせずhold維持。",
+            "recordPath": "research/morning-corporate-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "7/8〜10/31、KITTE大阪の高さ約5mバルーンを再確認。応募期間7/8 11:00〜10/31 23:59はXキャンペーン受付であり展示時間ではない。展示固有フロア・時間・料金の明示を取得できず。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "表示イベント4件とSNS案内を確認。バルーン単独記事は表示されず。ただし非掲載から未開催・終了とは推定しない。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/item_eventnews.jsp?id=5",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "施設公式SNSのX/Instagramはいずれも@kitteosakaと確認。公式アカウント対象の検索結果に今回必要事項の一次原文は見つからず。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/img/event_ph4.png",
+            "observedAt": "2026-10-20T10:10:11.678+00:00",
+            "summary": "公式原画像を取得して目視確認。巨大バルーン写真のみで階名・時間・料金の文字はない。背景から階を推定しない。",
+            "recordPath": "research/evening-review-2026-10-20-evidence.json"
+          },
+          {
+            "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+            "observedAt": null,
+            "summary": "主催本文に大阪・KITTE・5m級・7/8〜10/31明記。施設一覧に独立展示詳細なし。新spot・座標・linkedSpotIds変更なし。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+            "observedAt": null,
+            "summary": "主催本文に大阪・KITTE・5m級・7/8〜10/31明記。施設一覧に独立展示詳細なし。新spot・座標・linkedSpotIds変更なし。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          }
+        ],
+        "existingMatch": {
+          "status": "matched",
+          "ids": [
+            "jr-central-tsutsuurauratabi-2026"
+          ],
+          "note": "現行mainの既存IDを照合し、同企画を更新する。既存の有効条件と他会場リンクは維持。"
+        },
+        "listingIds": [
+          "jr-central-tsutsuurauratabi-2026"
+        ],
+        "state": "ready",
+        "priority": "normal",
+        "decision": "新ピンを作らず、既存コラボのsummaryとperiodsにKITTE大阪7/8〜10/31・全長5メートル級のバルーンを追記する。階・撮影可能時間・料金は未確認。既存reflectDueAtの超過は保持。",
+        "nextCheck": "検査・GitHub反映後、対象コミットと公開JSON・表示の実内容を照合し、初回一致時刻を保存する。",
+        "recheckDueAt": "2026-10-24T19:00:00+09:00",
+        "publishedAt": null
+      },
+      {
+        "id": "hold-popup-yonago-final-hours-20261012",
+        "title": "米子POP UP STORE 最終閉場の公式案内矛盾",
+        "kind": "listing_update",
+        "targetKey": "popup-yonago:final-hours:2026-10-12",
+        "sourceIds": [
+          "series-observed-db594c9ad917",
+          "venue-yonago-tenmaya-event-calendar"
+        ],
+        "officialAnnouncedAt": null,
+        "discoveredAt": "2026-10-12T19:09:05+09:00",
+        "eventStartsAt": "2026-09-18",
+        "eventEndsAt": "2026-10-12",
+        "releaseAt": null,
+        "reservationOpensAt": null,
+        "reflectDueAt": null,
+        "evidence": [
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-12T19:05:58+09:00",
+            "summary": "画像には2026.9.18～10.12、10～19:30、最終日は16時閉場。画像公開日時不明。",
+            "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-12T19:09:05+09:00",
+            "summary": "施設は9/18～10/12、最終日は17時閉場、1階しんまち広場。会期一致、時刻矛盾。",
+            "recordPath": "research/evening-completion-2026-10-12-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-13T07:55:31+09:00",
+            "summary": "今朝取得画像を実読し最終16時閉場を再確認。",
+            "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-13T07:54:48+09:00",
+            "summary": "施設本文は最終17時のまま。10/12最終日については画像と一致。",
+            "recordPath": "research/morning-full-morning-series-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-13T10:02:59+00:00",
+            "summary": "夕方取得の施設一覧はちいかわ開催名をカレンダーに残すが終了回詳細本文が消えた。16時/17時の矛盾解消に必要な新根拠はない。10/12終了・同一IDarchiveは既に朝反映済み。元夕巡回の保持済み観察を復元したもの。",
+            "recordPath": "research/evening-series-2026-10-13-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-17T10:08:31+00:00",
+            "summary": "通常取得の現行施設本文では終了回詳細がなく、Web検索取得は5日前の旧本文。新しい訂正根拠にはできない。",
+            "recordPath": "research/evening-review-2026-10-17-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-17T23:07:08.889Z",
+            "summary": "主画像を実読。米子9/18–10/12、10–19:30、最終16時閉場。既存の施設17時案内との矛盾は未解決。",
+            "recordPath": "research/morning-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-17T23:07:10.070Z",
+            "summary": "現行施設カレンダーにちいかわ開催名は残るが終了回の詳細本文はない。最終16時／17時の旧矛盾を解消する訂正は確認できず。既存holdと終了履歴を維持。",
+            "recordPath": "research/morning-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": "2026-10-18T10:02:04.785+00:00",
+            "summary": "米子9/18–10/12、10–19:30、最終16時。施設旧17時との矛盾未解決、hold維持。",
+            "recordPath": "research/evening-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": "2026-10-18T10:01:16.000+00:00",
+            "summary": "現行10月カレンダーに催事名は残るが終了回詳細はなし。16時/17時を解消する新訂正根拠なし。",
+            "recordPath": "research/evening-series-2026-10-18-evidence.json"
+          },
+          {
+            "url": "https://chiikawa-info.jp/p26/pus_ygtm/img/main_v10.jpg",
+            "observedAt": null,
+            "summary": "本日原画像再取得・目視で9/18〜10/12、10:00〜19:30、最終16時。保存済み施設17時と矛盾は解消していない。現在施設一覧は過去時刻本文を含まず。16/17を選ばず最終時刻未確認で表示。archive位置・会期維持。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          },
+          {
+            "url": "https://www.tenmaya.co.jp/cgi/web/index.cgi?c=event-list&shop_pk=8",
+            "observedAt": null,
+            "summary": "本日原画像再取得・目視で9/18〜10/12、10:00〜19:30、最終16時。保存済み施設17時と矛盾は解消していない。現在施設一覧は過去時刻本文を含まず。16/17を選ばず最終時刻未確認で表示。archive位置・会期維持。 正確な元取得時刻は追補に含まれず不明。Library本文参照時刻・パケット作成時刻を元サイト取得時刻に転記しない。",
+            "recordPath": "research/holds-20261024-cloud-library-evidence.json"
+          }
+        ],
+        "existingMatch": {
+          "status": "matched",
+          "ids": [
+            "popup-yonago"
+          ],
+          "note": "現行mainの既存IDを照合し、同企画を更新する。既存の有効条件と他会場リンクは維持。"
+        },
+        "listingIds": [
+          "popup-yonago"
+        ],
+        "state": "ready",
+        "priority": "high",
+        "decision": "archive・ID・会期・会場を維持。通常10:00〜19:30を補足し、最終閉場16時/17時の矛盾は未解決として未確認表示にする。整理券配布・入場制限の既存有効情報を保持。",
+        "nextCheck": "検査・GitHub反映後、対象コミットと公開JSON・表示の実内容を照合し、初回一致時刻を保存する。",
+        "recheckDueAt": "2026-10-24T19:00:00+09:00",
+        "publishedAt": null
+      }
+    ]
+  }
+}
