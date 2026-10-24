@@ -17035,11 +17035,29 @@
           "observedAt": null,
           "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
           "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-24T23:02:09.628Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-24T23:02:11.117Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-24T23:01:50.971Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
         }
       ],
-      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。 10/23夕も公式採用ページ非公開、企業店一覧・ブランド店一覧で正式開業日を確定できず保留。求人再掲の12月予定は正確な開業日や営業時間の根拠にしない。 10/24朝の観測と夕方web観測を追記。正式開業日・予約開始は未確認のため掲載保留。本人判断待ちではなく、次回通常巡回で一次告知を再確認する。",
-      "nextCheck": "10/25朝にブランド公式ニュース・公式SNS・運営企業の店舗一覧・公式求人原本を再確認し、正式開業日と予約開始を確認。本人判断待ちではない。",
-      "recheckDueAt": "2026-10-25T08:00:00+09:00"
+      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。 10/23夕も公式採用ページ非公開、企業店一覧・ブランド店一覧で正式開業日を確定できず保留。求人再掲の12月予定は正確な開業日や営業時間の根拠にしない。 10/24朝の観測と夕方web観測を追記。正式開業日・予約開始は未確認のため掲載保留。本人判断待ちではなく、次回通常巡回で一次告知を再確認する。 10/25朝の一次本文でも正式開業日未確認。本人判断待ちではなく通常巡回で再確認。",
+      "nextCheck": "ブランド公式ニュース・店舗一覧・公式SNSで正式開業告知を確認。求人の推測月を公開日や開業日にしない。",
+      "recheckDueAt": "2026-10-25T19:00:00+09:00"
     },
     {
       "id": "update-ana-purchase-limit-extension-20261022",
@@ -18112,6 +18130,12 @@
           "observedAt": "2026-10-24T10:00:36.014Z",
           "summary": "10月25日はmori 3階立体駐車場P3入口前の指定場所へ。開店前はP2立体駐車場エレベーターをご利用ください。混雑時は整理券を配布する場合があります。",
           "recordPath": "research/evening-20261024-entry-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-24T10:33:55.365Z",
+          "summary": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec の公開実体40ファイル初回一致。後日の台帳同期・報告時刻ではない。",
+          "recordPath": "research/morning-20261025/pr75-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18124,12 +18148,12 @@
       "listingIds": [
         "chiikawaland-koshigaya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "日付を限定した入場条件更新。日次入場終了を施設閉店やイベント終了として扱わない。 既存ID・会期・営業時間・座標は維持し、案内対象日を店舗開業日として扱わない。",
-      "nextCheck": "反映後の公開JSONとCIを照合し、公開初回一致時刻を記録。翌通常巡回で更新条件を再確認。",
-      "recheckDueAt": "2026-10-25",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定の入場案内変更を公式投稿で確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-24T10:33:55.365Z"
     },
     {
       "id": "update-chiikawaland-tokyo-station-entry-20261024",
@@ -18153,6 +18177,12 @@
           "observedAt": "2026-10-24T10:00:35.941Z",
           "summary": "10月24日の入店受付は終了しました（公式告知時点で並んでいた方まで）。",
           "recordPath": "research/evening-20261024-entry-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-24T10:33:55.365Z",
+          "summary": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec の公開実体40ファイル初回一致。後日の台帳同期・報告時刻ではない。",
+          "recordPath": "research/morning-20261025/pr75-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18165,12 +18195,12 @@
       "listingIds": [
         "chiikawaland-tokyo-station"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "日付を限定した入場条件更新。日次入場終了を施設閉店やイベント終了として扱わない。 既存ID・会期・営業時間・座標は維持し、案内対象日を店舗開業日として扱わない。",
-      "nextCheck": "反映後の公開JSONとCIを照合し、公開初回一致時刻を記録。翌通常巡回で更新条件を再確認。",
-      "recheckDueAt": "2026-10-25",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定の入場案内変更を公式投稿で確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-24T10:33:55.365Z"
     },
     {
       "id": "update-chiikawaland-kanazawa-entry-20261024",
@@ -18194,6 +18224,12 @@
           "observedAt": "2026-10-24T10:00:36.071Z",
           "summary": "10月24日の「ちいかわ×ANAコーナー」は入場整理券配布終了。当日の同コーナーへのフリー入場はありません。",
           "recordPath": "research/evening-20261024-entry-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-24T10:33:55.365Z",
+          "summary": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec の公開実体40ファイル初回一致。後日の台帳同期・報告時刻ではない。",
+          "recordPath": "research/morning-20261025/pr75-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18206,12 +18242,12 @@
       "listingIds": [
         "chiikawaland-kanazawa"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "日付を限定した入場条件更新。日次入場終了を施設閉店やイベント終了として扱わない。 既存ID・会期・営業時間・座標は維持し、案内対象日を店舗開業日として扱わない。",
-      "nextCheck": "反映後の公開JSONとCIを照合し、公開初回一致時刻を記録。翌通常巡回で更新条件を再確認。",
-      "recheckDueAt": "2026-10-25",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定の入場案内変更を公式投稿で確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-24T10:33:55.365Z"
     },
     {
       "id": "update-chiikawa-bakery-shop-laforet-entry-20261024",
@@ -18235,6 +18271,12 @@
           "observedAt": "2026-10-24T10:00:36.106Z",
           "summary": "2026年10月24日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1人1日1回です。",
           "recordPath": "research/evening-20261024-entry-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-24T10:33:55.365Z",
+          "summary": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec の公開実体40ファイル初回一致。後日の台帳同期・報告時刻ではない。",
+          "recordPath": "research/morning-20261025/pr75-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18247,11 +18289,251 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "日付を限定した入場条件更新。日次入場終了を施設閉店やイベント終了として扱わない。 整理券発行開始10:00 JSTを過ぎてから発見したため、開始前掲載として扱わない。 既存ID・会期・営業時間・座標は維持し、案内対象日を店舗開業日として扱わない。",
-      "nextCheck": "反映後の公開JSONとCIを照合し、公開初回一致時刻を記録。翌通常巡回で更新条件を再確認。",
-      "recheckDueAt": "2026-10-25",
+      "nextCheck": "翌通常巡回で日付限定の入場案内変更を公式投稿で確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-24T10:33:55.365Z"
+    },
+    {
+      "id": "update-chiikawaland-sapporo-entry-20261025",
+      "title": "ちいかわらんど 札幌パルコ店 10/25入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-sapporo:entry-20261025",
+      "sourceIds": [
+        "entry-post-2113951499999178855"
+      ],
+      "officialAnnouncedAt": "2026-10-24",
+      "discoveredAt": "2026-10-24T23:01:21.156Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-25T09:30:00+09:00",
+      "reflectDueAt": "2026-10-25T09:30:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113951499999178855",
+          "observedAt": "2026-10-24T23:01:52.533Z",
+          "summary": "2026年10月25日は9:30～10:00に札幌PARCO 1F正面入口で入店整理券を配布します。10:00以降はB2Fのちいかわらんど店舗前で配布します。 同梱の公式画像をPCで目視し1F正面入口と9:30～10:00、以降B2F店舗前を確認。",
+          "recordPath": "research/morning-20261025/entry-fix-packet.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-sapporo"
+        ],
+        "note": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec と公開JSON相当の元データを照合。新規IDの登録なし。"
+      },
+      "listingIds": [
+        "chiikawaland-sapporo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/25の日付限定案内に更新。旧日付条件は原本と変更前記録へ保存。一般条件と購入条件は維持。",
+      "nextCheck": "検査・GitHub反映後、対象commitのCI成功と公開実体一致を確認。実公開日時は確認後に保存する。",
+      "recheckDueAt": "2026-10-25T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-solamachi-entry-20261025",
+      "title": "ちいかわらんど 東京スカイツリータウン・ソラマチ店 10/25入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-solamachi:entry-20261025",
+      "sourceIds": [
+        "entry-post-2113982396739809375"
+      ],
+      "officialAnnouncedAt": "2026-10-24",
+      "discoveredAt": "2026-10-24T23:01:21.156Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-25T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113982396739809375",
+          "observedAt": "2026-10-24T23:01:52.601Z",
+          "summary": "2026年10月25日は事前予約不要です。入店希望の方は店頭へお越しください。状況に応じて列形成や整理券配布を行う場合があります。",
+          "recordPath": "research/morning-20261025/entry-fix-packet.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-solamachi"
+        ],
+        "note": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec と公開JSON相当の元データを照合。新規IDの登録なし。"
+      },
+      "listingIds": [
+        "chiikawaland-solamachi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/25の日付限定案内に更新。旧日付条件は原本と変更前記録へ保存。一般条件と購入条件は維持。 10:00は公開掲載済み営業時間に基づく内部反映目標。新告知の開始時刻としては未確認。",
+      "nextCheck": "検査・GitHub反映後、対象commitのCI成功と公開実体一致を確認。実公開日時は確認後に保存する。",
+      "recheckDueAt": "2026-10-25T10:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-osaka-umeda-entry-20261025",
+      "title": "ちいかわらんど 大阪梅田店 10/25入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-osaka-umeda:entry-20261025",
+      "sourceIds": [
+        "entry-post-2113973798743789887"
+      ],
+      "officialAnnouncedAt": "2026-10-24",
+      "discoveredAt": "2026-10-24T23:01:21.156Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-25T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113973798743789887",
+          "observedAt": "2026-10-24T23:01:52.511Z",
+          "summary": "2026年10月25日の開店前は公式投稿の画像で指定された場所へお並びください。開店時に並んでいる方から順次案内します。グループは全員が揃ってからお並びください。列はWhityうめだの手前で折り返し、Whityうめだのエリアには並べません。混雑状況により入場整理券を配布する場合があります。 梅田・金沢は画像取得403、本文のみ根拠。画像内の具体的な場所は記載しない。",
+          "recordPath": "research/morning-20261025/entry-fix-packet.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda"
+        ],
+        "note": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec と公開JSON相当の元データを照合。新規IDの登録なし。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/25の日付限定案内に更新。旧日付条件は原本と変更前記録へ保存。一般条件と購入条件は維持。 10:00は公開掲載済み営業時間に基づく内部反映目標。新告知の開始時刻としては未確認。",
+      "nextCheck": "検査・GitHub反映後、対象commitのCI成功と公開実体一致を確認。実公開日時は確認後に保存する。",
+      "recheckDueAt": "2026-10-25T10:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawaland-kanazawa-entry-20261025",
+      "title": "ちいかわらんど 金沢フォーラス店 10/25入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-kanazawa:entry-20261025",
+      "sourceIds": [
+        "entry-post-2113949208202096886"
+      ],
+      "officialAnnouncedAt": "2026-10-24",
+      "discoveredAt": "2026-10-24T23:01:21.156Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-25T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2113949208202096886",
+          "observedAt": "2026-10-24T23:01:52.531Z",
+          "summary": "2026年10月25日のちいかわ×ANA商品販売コーナーは、開店前に公式投稿の画像で指定された場所へお並びください。混雑状況に応じて整理券を配布する場合があります。店舗全体ではなくANA商品販売コーナーの案内です。 梅田・金沢は画像取得403、本文のみ根拠。画像内の具体的な場所は記載しない。",
+          "recordPath": "research/morning-20261025/entry-fix-packet.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-kanazawa"
+        ],
+        "note": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec と公開JSON相当の元データを照合。新規IDの登録なし。"
+      },
+      "listingIds": [
+        "chiikawaland-kanazawa"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/25の日付限定案内に更新。旧日付条件は原本と変更前記録へ保存。一般条件と購入条件は維持。 10:00は公開掲載済み営業時間に基づく内部反映目標。新告知の開始時刻としては未確認。",
+      "nextCheck": "検査・GitHub反映後、対象commitのCI成功と公開実体一致を確認。実公開日時は確認後に保存する。",
+      "recheckDueAt": "2026-10-25T10:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-chiikawa-bakery-shop-laforet-entry-20261025",
+      "title": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿 10/25入場案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:entry-20261025",
+      "sourceIds": [
+        "entry-post-2113948627051933978"
+      ],
+      "officialAnnouncedAt": "2026-10-24",
+      "discoveredAt": "2026-10-24T23:01:24.452Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-25T10:00:00+09:00",
+      "reflectDueAt": "2026-10-25T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2113948627051933978",
+          "observedAt": "2026-10-24T23:01:53.379Z",
+          "summary": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。",
+          "recordPath": "research/morning-20261025/entry-fix-packet.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec と公開JSON相当の元データを照合。新規IDの登録なし。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "10/25の日付限定案内に更新。旧日付条件は原本と変更前記録へ保存。一般条件と購入条件は維持。",
+      "nextCheck": "検査・GitHub反映後、対象commitのCI成功と公開実体一致を確認。実公開日時は確認後に保存する。",
+      "recheckDueAt": "2026-10-25T10:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-muchaphoto-aeon-ota-20261025",
+      "title": "イオンモール太田 むちゃフォトパーティの終了移管",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-muchaphoto-aeon-ota-2026:archive-20261025",
+      "sourceIds": [
+        "observed-ota-aeonmall-jp-1553585041"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-24T19:03:23.000Z",
+      "eventStartsAt": "2026-10-24",
+      "eventEndsAt": "2026-10-24",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-25",
+      "evidence": [
+        {
+          "url": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f",
+          "observedAt": null,
+          "summary": "10/25早朝のクラウド一次確認で10/24単日・ARラリー16時終了を確認。後の個別取得は404。元出典を残し、系列原本の基準日から同IDで終了移管。",
+          "recordPath": "research/morning-20261025/entry-fix-packet.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-muchaphoto-aeon-ota-2026"
+        ],
+        "note": "PR75 main 2a5f4aa8699fb4d254062ead647df7514069c4ec と公開JSON相当の元データを照合。新規IDの登録なし。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-ota-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "終了日翌日、公式確認済みの通常終了移管。開催当日の会場・時刻・出典・追加日を維持。",
+      "nextCheck": "検査・GitHub反映後、対象commitのCI成功と公開実体一致を確認。実公開日時は確認後に保存する。",
+      "recheckDueAt": "2026-10-25T08:30:00+09:00",
       "publishedAt": null
     }
   ]
