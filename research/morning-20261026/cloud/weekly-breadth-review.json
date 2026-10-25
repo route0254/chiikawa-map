@@ -1,0 +1,80 @@
+{
+  "lastPriorBroadReviewAt": null,
+  "reason": "Current notes and ledgers did not establish previous broad review completion date; no invented date. Supplementary review performed now.",
+  "observedWindow": "2026-10-25T23:11:00Z/2026-10-25T23:13:00Z",
+  "method": "9 web searches beyond registered source entry, then direct primary-source fetches; company releases, publishers, GU, ANA, Juice, Abema, PARCO, Aeon, Nagano source checked. Not exhaustive universe.",
+  "directObservationsFile": "breadth-observations.json",
+  "results": [
+    {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:58.896095+00:00"
+    },
+    {
+      "url": "https://www.gu-global.com/jp/ja/feature/contents/collaboration/chiikawa/",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:58.575072+00:00"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000019.000035055.html",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:57.710722+00:00"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:57.788741+00:00"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000004081.000064643.html",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:57.795638+00:00"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000483.000027592.html",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:57.717798+00:00"
+    },
+    {
+      "url": "https://suzaka.aeonmall.com/news/detail/1834?t=event_news",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:58.229677+00:00"
+    },
+    {
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:58.576602+00:00"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:56.759649+00:00"
+    },
+    {
+      "url": "https://x.com/ngngoods_kouhou",
+      "result": "success",
+      "observedAt": "2026-10-25T23:12:58.245330+00:00"
+    }
+  ],
+  "duplicateFindings": [
+    "GU winter known gu-chiikawa-winter-2026",
+    "ANA purchase limit extension known ana-chiikawa-jet-2026",
+    "Park Xmas known chiikawa-park-christmas-2026",
+    "ABEMA Xmas known abema-chiikawa-christmas-market-2026",
+    "Suzaka Nov6 popup + Nov22 photo already registered",
+    "Fukuoka Mitsukoshi popup known",
+    "Movie cafe Nagoya known; original opening sticker ended, existing listing does not promise it so no correction needed"
+  ],
+  "excluded": [
+    "Publisher volume9 ordinary book",
+    "Bandai magnets ordinary product",
+    "Nagano Chungcheong Korea event outside domestic scope",
+    "Old2025/2023 results not new2026 information"
+  ],
+  "newEligibleCandidates": 0,
+  "limitations": [
+    "Search coverage not exhaustive",
+    "Historical and image-only holds remain independent work",
+    "Metrics are from fetched current candidate ledger before PR77 timestamp synchronization"
+  ]
+}

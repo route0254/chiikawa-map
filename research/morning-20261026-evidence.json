@@ -1,0 +1,836 @@
+{
+  "recordedAt": "2026-10-25T23:13:33.301Z",
+  "baselineCommit": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+  "operations": {
+    "path": "C:/Users/6ikas/Projects/ちい活マップ/chiikawa-map-repo/node_modules/.cache/listing-20261020/incoming-packet/DATA-OPERATIONS.md",
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "changes": [
+    {
+      "id": "chiikawa-bakery-shop-laforet",
+      "file": "data/official-spots.json",
+      "before": {
+        "id": "chiikawa-bakery-shop-laforet",
+        "name": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2026-03-14",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawabakery.jp/information-popup_01/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2113948627051933978",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 35.6692109,
+        "lng": 139.7052614,
+        "address": "東京都渋谷区神宮前1-11-6 ラフォーレ原宿 B1F",
+        "description": "2026年3月14日に移転オープンした、ちいかわベーカリーのグッズ専門店です。食パン・ジャムなどの一部食品も扱いますが、カウンターで選ぶキャラクターパンの取扱いはありません。 ラフォーレ原宿の本POP UP SHOP限定のPHOTO BOOTHが2026年10月6日から稼働予定です。終了日は未発表です。 2026年10月15日から2周年記念企画の対象店舗として、記念グッズと物販購入特典を展開します。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。",
+        "sourceUrl": "https://x.com/chiikawabakery/status/2114212685642633544",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-11-6%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20B1F",
+        "importantNotice": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。"
+      },
+      "after": {
+        "id": "chiikawa-bakery-shop-laforet",
+        "name": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2026-03-14",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawabakery.jp/information-popup_01/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2114303883845755292",
+        "entryInfoCheckedAt": "2026-10-26",
+        "lat": 35.6692109,
+        "lng": 139.7052614,
+        "address": "東京都渋谷区神宮前1-11-6 ラフォーレ原宿 B1F",
+        "description": "2026年3月14日に移転オープンした、ちいかわベーカリーのグッズ専門店です。食パン・ジャムなどの一部食品も扱いますが、カウンターで選ぶキャラクターパンの取扱いはありません。 ラフォーレ原宿の本POP UP SHOP限定のPHOTO BOOTHが2026年10月6日から稼働予定です。終了日は未発表です。 2026年10月15日から2周年記念企画の対象店舗として、記念グッズと物販購入特典を展開します。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。",
+        "sourceUrl": "https://x.com/chiikawabakery/status/2114212685642633544",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-11-6%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20B1F",
+        "importantNotice": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。"
+      }
+    }
+  ],
+  "handoff": "research/morning-20261026/handoff.json",
+  "rawFiles": [
+    {
+      "path": "research/morning-20261026/handoff.json",
+      "bytes": 1773,
+      "sha256": "4b4f26a8d198098bf51bc5bed760da9e9d45faa575de5101ffcda4057b89c905",
+      "provenance": "Structured transcription of the authorized cloud text handoff; not an original HTML capture"
+    },
+    {
+      "path": "research/morning-20261026/pr77-publication-verification.json",
+      "bytes": 33088,
+      "sha256": "d516b3875f0f3043ecdb0f43763b3518c36895c02ff1956acd75e6d6acaeceae",
+      "provenance": "Unchanged prior actual public verification receipt"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth-observations.json",
+      "source": "breadth-observations.json",
+      "bytes": 86273,
+      "sha256": "a1df12f9c6505597023c39555de86f304efd2959ac590de492432585614a94b0",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/0cec4d875ba6.txt",
+      "source": "breadth/0cec4d875ba6.txt",
+      "bytes": 7116,
+      "sha256": "09fec086efb3a20ae18a30e3299f707b202e5d87e5ec9b96ffef7caf5dc427c3",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/51000bdc8ada.txt",
+      "source": "breadth/51000bdc8ada.txt",
+      "bytes": 23719,
+      "sha256": "af8108f9c4199b12179bc93ad93a17ca6a304c7b0c59d0ef66838c35eec3a174",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/61df76eb104c.txt",
+      "source": "breadth/61df76eb104c.txt",
+      "bytes": 4535,
+      "sha256": "9924a534332892b6d6f5671e9c9b2c3042f6a7c432689930757abf43ae9daafa",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/6670c6afa848.txt",
+      "source": "breadth/6670c6afa848.txt",
+      "bytes": 11847,
+      "sha256": "e504d9512206796848ea214b2e55267c126dab3e850c06b01a42ae881940ebee",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/87f8e091d4d3.txt",
+      "source": "breadth/87f8e091d4d3.txt",
+      "bytes": 36024,
+      "sha256": "50e9c14c74b24b2f6d49d000c92b09e2ebadb6c670310d5a9a7d609bc2f269b0",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/8bf4370b235a.txt",
+      "source": "breadth/8bf4370b235a.txt",
+      "bytes": 7921,
+      "sha256": "9c83aae0718bd150806f984c14ed816a8f6a99c1f02cf8b573641fe42f087014",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/91c38199e1a1.txt",
+      "source": "breadth/91c38199e1a1.txt",
+      "bytes": 10732,
+      "sha256": "d8f9376e6498d313663ee744c785f739d2bd67329c038629fca305920ea76d10",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/b2acf5f3d01a.txt",
+      "source": "breadth/b2acf5f3d01a.txt",
+      "bytes": 12350,
+      "sha256": "36a367b99727a4d09b97a32c0d1c89726f338f73156b7973d9dfeac78842e5a0",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/bc0e0e64becc.txt",
+      "source": "breadth/bc0e0e64becc.txt",
+      "bytes": 9565,
+      "sha256": "d564571e4a49e1daa442609324a01874815ca44bf20dd463b7f48307498cfc28",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/breadth/fc7a299f360b.txt",
+      "source": "breadth/fc7a299f360b.txt",
+      "bytes": 2401,
+      "sha256": "b3912e634251fcae678837e6efabe4a0593aa14807e42f39562ccb147f81a3b0",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/candidate-records.json",
+      "source": "candidate-records.json",
+      "bytes": 1644,
+      "sha256": "fddd6054d651a60f675ccbc267ebbe6c49abb881f953b7179419817d4ec316bd",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core-observations.json",
+      "source": "core-observations.json",
+      "bytes": 218311,
+      "sha256": "748858cbcc2cfcee567659452e58becc1425f9c14a03d35496fdc4ec0045307f",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/090d60b5999f.txt",
+      "source": "core/090d60b5999f.txt",
+      "bytes": 1581,
+      "sha256": "6c55b04dd5555803f41af4d6445d60e0d3bded86f94086f46b9bde12dd182d48",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/1f23ea0ba4db.txt",
+      "source": "core/1f23ea0ba4db.txt",
+      "bytes": 1595,
+      "sha256": "4dc049451aff539c5a3281a40d04b403e5027ee1f09a0436b0d9abeede3c356e",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/20ae597aa0b3.txt",
+      "source": "core/20ae597aa0b3.txt",
+      "bytes": 5402,
+      "sha256": "47df93f53a35a727bf1c962eb45b176d171f919fec1ea40c474dd8eb2db0a613",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/54fb32b34571.txt",
+      "source": "core/54fb32b34571.txt",
+      "bytes": 2312,
+      "sha256": "bba5997b8f8b16e8af695cd3bbdddcd4345ce7137cceb897352218def0064f24",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/5932274e7e06.txt",
+      "source": "core/5932274e7e06.txt",
+      "bytes": 952,
+      "sha256": "64caba7471c5de0bd9daa9807ded8ae19b960869ed1f66027e321bfac85f3bd1",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/6bd3ce9b8b8b.txt",
+      "source": "core/6bd3ce9b8b8b.txt",
+      "bytes": 3281,
+      "sha256": "d7dfcb1f6aea396f6f9f78af9b7aca9b101ecc377a1f797865ea4953c3a2142d",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/706a5cab6474.txt",
+      "source": "core/706a5cab6474.txt",
+      "bytes": 1633,
+      "sha256": "d473382a9e7908a370b5df323fae624a95d1badc0c5cf0c75e7507198e49ac3c",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/71b2d641d124.txt",
+      "source": "core/71b2d641d124.txt",
+      "bytes": 552,
+      "sha256": "6145f61b738b132940f8d83c4d6326d36821ac349759ec492c0d14d8df743949",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/72770ace60bc.txt",
+      "source": "core/72770ace60bc.txt",
+      "bytes": 2224,
+      "sha256": "a44c15f5d658bc06bb8839b5745200998f8178087193097d23f0c93eb5566f1b",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/74943093e48c.txt",
+      "source": "core/74943093e48c.txt",
+      "bytes": 1502,
+      "sha256": "b430dbcae7d099fbb5d57bcd60ae4f05bcc7bec8b25c3c62d7982eff391e007e",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/790b1bec81bf.txt",
+      "source": "core/790b1bec81bf.txt",
+      "bytes": 9563,
+      "sha256": "7ab5340f941c389eba1dc3a707782f7c60afa7f078453d296dfe0def43fe8c5c",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/82c047f25716.txt",
+      "source": "core/82c047f25716.txt",
+      "bytes": 1152,
+      "sha256": "3f17759200d45b855c542e3c894a49cc26161b919b94bfb92070b4eff86e940a",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/9dd43d1126d0.txt",
+      "source": "core/9dd43d1126d0.txt",
+      "bytes": 18909,
+      "sha256": "6bfcd9eb67dc4fbd15da10dec20de96d96d362d636189ff67aaace333c01ffd1",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/9ec22af2cfd1.txt",
+      "source": "core/9ec22af2cfd1.txt",
+      "bytes": 1344,
+      "sha256": "198f842d3860af8cc443db4a0fe3e9427a0bf0ca0fecdd48f250150a78957297",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/9fdf5778d78d.txt",
+      "source": "core/9fdf5778d78d.txt",
+      "bytes": 2514,
+      "sha256": "a59e2667280a5eabc98210909ef18c596de4737087aee306a30f6389d73b17b1",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/a66983b30de1.txt",
+      "source": "core/a66983b30de1.txt",
+      "bytes": 2268,
+      "sha256": "6fb410fbbca71eb2f5f29b8892d5f61662dfae6897900bfa97851264d662d3b2",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/a6b40d729170.txt",
+      "source": "core/a6b40d729170.txt",
+      "bytes": 4135,
+      "sha256": "30b4702b08568edb35558431a5c8cb8f9655cece597cbb2f0f274e560a0b4683",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/b373e64fbb71.txt",
+      "source": "core/b373e64fbb71.txt",
+      "bytes": 5216,
+      "sha256": "91b326673f916286b3f8fd90530b1c2bb14c38df848267b7f951d544431ee124",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/bb03873cdfbb.txt",
+      "source": "core/bb03873cdfbb.txt",
+      "bytes": 7259,
+      "sha256": "84cf0691d5a915bbef06683a84fc11e9459f631572e5d52715ea3fffde77e00a",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/bcc6d96d4eaa.txt",
+      "source": "core/bcc6d96d4eaa.txt",
+      "bytes": 3653,
+      "sha256": "22c4fd777500e966efcd89ce3752fe792a147f867dd1ce25befeafa3d0d54745",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/cebef1631b69.txt",
+      "source": "core/cebef1631b69.txt",
+      "bytes": 7474,
+      "sha256": "11cf9562310b095546b4b591619136a3279eb835c80991c921e75c9280010fac",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/d63b39784832.txt",
+      "source": "core/d63b39784832.txt",
+      "bytes": 7629,
+      "sha256": "0b32dc7d356dea40fc5681e5157040336bd74961f4bb675013e984b405e3f4f7",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/db34579a5f65.txt",
+      "source": "core/db34579a5f65.txt",
+      "bytes": 58181,
+      "sha256": "c6b9142d52c671b30e5d053fad7abed51b57a940a3c8d945604b90ab340cf017",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/f14e0e6fedbe.txt",
+      "source": "core/f14e0e6fedbe.txt",
+      "bytes": 1565,
+      "sha256": "e769e5dc028cd6d5ef6a44aa2ab1ca77b7bd3054ae6bd27056aae82e4902bed9",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/f943a40d21cb.txt",
+      "source": "core/f943a40d21cb.txt",
+      "bytes": 7893,
+      "sha256": "5976ff741cd25a6cb42b7b2e98a5da798d6759af194e1902bf0470453d68d54b",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/fb3fce6c4589.txt",
+      "source": "core/fb3fce6c4589.txt",
+      "bytes": 1199,
+      "sha256": "21d0dd6164041af32e483cb8e8299730b44dd4c41972e651fdef58a35abeb974",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/core/ff026747bd15.txt",
+      "source": "core/ff026747bd15.txt",
+      "bytes": 704,
+      "sha256": "7add86eac9846b1d508c9f9b923983495ac2e2f49801b5fb789e9e1163ea93e7",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-candidate-observations.json",
+      "source": "event-candidate-observations.json",
+      "bytes": 4826,
+      "sha256": "2a8f4d0b10419e6ef64eb59c0d4f8f5ac84a87b069bb4ac049f9828e232736ed",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/1d2ddb136ce5.html",
+      "source": "event-checks/1d2ddb136ce5.html",
+      "bytes": 81845,
+      "sha256": "4a8f1fd6e77484f2c06885695ec1b62330dd959937fd71d4ccf9ca8dc1e5ade6",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/55524c035ce0.html",
+      "source": "event-checks/55524c035ce0.html",
+      "bytes": 304477,
+      "sha256": "5ef90cb837d1e40c2121128e16fd5d4c4c3f405180ea2bbf48b1317d4b45e26f",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/5af3d6edc2aa.html",
+      "source": "event-checks/5af3d6edc2aa.html",
+      "bytes": 6654,
+      "sha256": "612420a18277a3f56ef4cb7da14a8196a54d6a00b0d56f92a727a9f4a2b991ab",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/87f8e091d4d3.html",
+      "source": "event-checks/87f8e091d4d3.html",
+      "bytes": 240956,
+      "sha256": "d9fa0861494a895e3449dfc1e823b62a25fbc3f323319782afd967d9799bb67a",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/89d90164326b.html",
+      "source": "event-checks/89d90164326b.html",
+      "bytes": 178301,
+      "sha256": "b4180fad09495c3e4e2d09e48008e62b8aec49db30135a3b567548399de8ce70",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/9018953e026b.html",
+      "source": "event-checks/9018953e026b.html",
+      "bytes": 29820,
+      "sha256": "3c4d78c1a303c52624b77b0f94f94e89735cf4ae2c3fb8286a571549571328c3",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/969ab7e67057.html",
+      "source": "event-checks/969ab7e67057.html",
+      "bytes": 95044,
+      "sha256": "8caae91617b9c412ff1637ae4dd5d5323195c7af34f68409e644c96f13aebafc",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/9b3b63f07970.html",
+      "source": "event-checks/9b3b63f07970.html",
+      "bytes": 67995,
+      "sha256": "326555e793a219d29da704ac82fa595cf9420e694494d8894227a19e64008be7",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/c9kbk.html",
+      "source": "event-checks/c9kbk.html",
+      "bytes": 89145,
+      "sha256": "d6dfd4a57af08038f74b8272787edbca540ce770997a5d6aec15f91c707a308f",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/d847e9467768.html",
+      "source": "event-checks/d847e9467768.html",
+      "bytes": 575879,
+      "sha256": "cd397ce4459b3f12137bc13c7c6ae31711f111c8d7dc25db1bcd240ee151b816",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/e7e227d045dc.html",
+      "source": "event-checks/e7e227d045dc.html",
+      "bytes": 54112,
+      "sha256": "581bc5a43b58f40a71fb5efd9ab2c883ae7540867ce0eca05a309f0507587306",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/jxlp5.html",
+      "source": "event-checks/jxlp5.html",
+      "bytes": 88993,
+      "sha256": "248299d5b0de8aec74de5b3a048a038024b87b3de70ef5cacdce93cf5cb442ac",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/jy9yc.html",
+      "source": "event-checks/jy9yc.html",
+      "bytes": 88989,
+      "sha256": "6ab7666cbbc0563b708bb8e1bebbaf1fc5c0a66ec49cae3c28a3100e10d74706",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-checks/ymjxa.html",
+      "source": "event-checks/ymjxa.html",
+      "bytes": 89169,
+      "sha256": "6ca5920f3328b8f5746c84719dd06035f5d957ee77934da9a7c2a17b4c71cd9c",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/event-source-observations.json",
+      "source": "event-source-observations.json",
+      "bytes": 5864,
+      "sha256": "7707a73b24fc4cadeb0d5006819bfd38e94b7f1949de4456428fd833d06eb202",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/expired-entry-review.json",
+      "source": "expired-entry-review.json",
+      "bytes": 9017,
+      "sha256": "ac79b1f6eb6c3b9228552b8e6bdbbdaca5c205bfaac4e973d7f742ecd374f38e",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/known-ledger-metrics.json",
+      "source": "known-ledger-metrics.json",
+      "bytes": 1451,
+      "sha256": "d028bc7eb12524561874e1f3d5f029a38496edf0beba6a646405311c6bb1e96f",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/laforet-ready-packet.json",
+      "source": "laforet-ready-packet.json",
+      "bytes": 1467,
+      "sha256": "24152c3be05cbe0efcf41037a9f173599fc523494bacadf9861b1922666d3062",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/more-observations.json",
+      "source": "more-observations.json",
+      "bytes": 19112,
+      "sha256": "1a1c449873aace949e617d13f4f7d29585589384c6cf6e158a00ed8e32b9a94a",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/more/56a9ef503ec9.txt",
+      "source": "more/56a9ef503ec9.txt",
+      "bytes": 2738,
+      "sha256": "bd53b29e2d160dc511cec4821066b7aaa7346eefc92f67a29af26c7a9d58a5d6",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/more/c1979a83aac1.txt",
+      "source": "more/c1979a83aac1.txt",
+      "bytes": 5031,
+      "sha256": "2606a485a569ae05696c90c72c08311a7d85016e74385a4608be868162de85fc",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/more/c4af8b3e3050.html",
+      "source": "more/c4af8b3e3050.html",
+      "bytes": 106871,
+      "sha256": "e593700a48f4429c02c314f30c4961509996dd4cccc6ebacc6c38f190ca5ff47",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/more/c4af8b3e3050.txt",
+      "source": "more/c4af8b3e3050.txt",
+      "bytes": 4419,
+      "sha256": "ff25852d51199f1ff4f460563107cd2c41bb8ea55381ecca41bfc8c202354388",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/nagano-observations.json",
+      "source": "nagano-observations.json",
+      "bytes": 15066,
+      "sha256": "62dc408663a8c4ac9094b5b8703296fd5618a11b1dc256a99c76c3d5164ac539",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/nagano/34f9e49c7939.txt",
+      "source": "nagano/34f9e49c7939.txt",
+      "bytes": 3129,
+      "sha256": "1f5c4daf8ba811a23378f94165f8d83bcd560347cf0401f7e72620a62718e645",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/nagano/8e9ac0497692.txt",
+      "source": "nagano/8e9ac0497692.txt",
+      "bytes": 4460,
+      "sha256": "bac8e4bf3bc6381db0f6f906a2aad7319d47cecb67ae781b2ce3b361c26b348b",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/public-json-observations.json",
+      "source": "public-json-observations.json",
+      "bytes": 637,
+      "sha256": "cb6c7a16d8f27b98cbb5ad2fbf5bb4cba5336257293991573a2466c234d02a38",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social-observations.json",
+      "source": "social-observations.json",
+      "bytes": 50956,
+      "sha256": "41bb138ce7fbefb64d4c9e3d67d89318f4ab501aef03614ef4b86df3d2fa17ea",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/006dec658d85.txt",
+      "source": "social/006dec658d85.txt",
+      "bytes": 5810,
+      "sha256": "efc6df886165b21d704283321ecf42468c981500ca5d06441f5b455ef77d7759",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/054a7aff3737.txt",
+      "source": "social/054a7aff3737.txt",
+      "bytes": 5209,
+      "sha256": "ab968f754d496fb1426970a0e71210a69dbb7bd68a0ec845ee3ce3ab75685e2c",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/295270f05f73.txt",
+      "source": "social/295270f05f73.txt",
+      "bytes": 1257,
+      "sha256": "8ad7c8e43c74fdd8107d673ce7d6bc34f61266812f8aaad5b476aaec2d69a806",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/3a1a45503969.txt",
+      "source": "social/3a1a45503969.txt",
+      "bytes": 6482,
+      "sha256": "6aab6935f8f6d507fd6db35f055c9c67eb77fc0e85add7ce3db2156f4c57f8e6",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/5f3e3c2f8915.txt",
+      "source": "social/5f3e3c2f8915.txt",
+      "bytes": 1323,
+      "sha256": "2e7974f6f1a1b32ac2ec502d19e3043f5a9f625364394d9879d9284a0a3b89c8",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/c068a8700b4f.txt",
+      "source": "social/c068a8700b4f.txt",
+      "bytes": 5289,
+      "sha256": "21d8d99771a782552473d853f5df4d918404ee24467003868978405f0a16b3da",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/social/facf97a9a75b.txt",
+      "source": "social/facf97a9a75b.txt",
+      "bytes": 5487,
+      "sha256": "724cda0d25fbb307b956088a9d91a7a14376cd1428f6d01365888bde5c18bfde",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/source-records.json",
+      "source": "source-records.json",
+      "bytes": 55948,
+      "sha256": "d5288aa6aaf97c62d87507025978d0752c04a6ee992205c4a86c25e0f45394da",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/sources-reviewed.json",
+      "source": "sources-reviewed.json",
+      "bytes": 382988,
+      "sha256": "d855b4d188de19826481dc29a0bc69f95ff9053e33e6b8b85a0de8e16a04201f",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/weekly-breadth-review.json",
+      "source": "weekly-breadth-review.json",
+      "bytes": 3151,
+      "sha256": "8e68dc42c9429e73a4c25ff12583a79bfc6db98b62e146449f32d1bf81ec7aef",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    },
+    {
+      "path": "research/morning-20261026/cloud/manifest.json",
+      "source": "manifest.json",
+      "bytes": 21728,
+      "sha256": "c536119ad52756272a838b25e4821503b4098da8879ac8897a86adeae850b978",
+      "provenance": "Unchanged member of verified Library ZIP version0"
+    }
+  ],
+  "priorPublicationSync": {
+    "pr": 77,
+    "count": 7,
+    "firstPublicMatchAt": "2026-10-25T10:35:52.583Z",
+    "recordPath": "research/morning-20261026/pr77-publication-verification.json"
+  },
+  "newListings": 0,
+  "archiveTransitions": 0,
+  "allOtherSpotsPreserved": 867,
+  "allCollaborationsPreserved": true,
+  "originalAddedDatesPreserved": true,
+  "applicationSchemaHostingAndGscUnchanged": true,
+  "deferredHiraoka": {
+    "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+    "decision": "No archive transition authorized for this update; current listing unchanged.",
+    "cloudFinding": "Latest direct official page returned404. Past official Oct24–25 schedule and absence from current list do not meet the parent review evidence threshold for this migration.",
+    "originalFailedValidate": 40221681087,
+    "knownFailureMustRemainVisible": true
+  },
+  "cloudIntake": {
+    "mergedAt": "2026-10-25T23:22:16.696Z",
+    "passed": true,
+    "exitCode": 0,
+    "library": {
+      "id": "libfile_54422497a23c8191a37bff105d4834d5",
+      "version": 0,
+      "size": 2164606,
+      "sha256": "f3dd21c69a927fcda3d90a322071268769034313a1a7c0a409432b5b70cfe648",
+      "identityVerified": true
+    },
+    "zipMembers": 136,
+    "manifestMembersVerified": 135,
+    "retainedEvidenceFiles": 82,
+    "coreSourceRecords": 49,
+    "eventRouteRecords": 17,
+    "normalizedRecords": 66,
+    "uniqueTouchedSourceIds": 63,
+    "sourceCount": 695,
+    "candidateCount": 341,
+    "publishedListingChanges": 1,
+    "archiveTransitions": 0,
+    "laforetCandidateId": "entry-laforet-20261026",
+    "laforetOriginalDiscoveryAt": "2026-10-25T23:09:52.519Z",
+    "laforetOriginalPublicAt": null,
+    "newHoldOrExcludedCandidateIds": [
+      "chiikawa-movie-furifuri-cpla-kinshicho-20261031",
+      "chiikawa-movie-furifuri-cpla-tressa-20261103",
+      "archive-muchaphoto-sapporo-hiraoka-20261026"
+    ],
+    "holdRecheckAt": "2026-10-26T19:00:00+09:00",
+    "previousBroadReviewAt": null,
+    "broadReviewNotExhaustive": true,
+    "providedMetricsArePrePr77Sync": true,
+    "allOriginalSuccessTimesAndFailureHistoryPreserved": true,
+    "candidateRecordPathsResolved": true,
+    "aliases": {
+      "chiikawa-official-index": "chiikawa-official-index",
+      "chiikawa-popup-list": "chiikawa-popup-list",
+      "chiikawa-cafe-list": "chiikawa-cafe-list",
+      "chiikawa-exhibition-list": "chiikawa-exhibition-list",
+      "nagano-official-index": "nagano-official-index",
+      "nagano-popup-list": "nagano-popup-list",
+      "nagano-aquarium-list": "nagano-aquarium-list",
+      "nagano-exhibition-list": "nagano-exhibition-list",
+      "observed-chiikawa-info-jp-6bd3ce9b8b": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "observed-chiikawa-info-jp-71b2d641d1": "observed-chiikawa-info-jp-71b2d641d1",
+      "observed-chiikawa-info-jp-9fdf5778d7": "observed-chiikawa-info-jp-9fdf5778d7",
+      "observed-chiikawa-info-jp-5932274e7e": "observed-chiikawa-info-jp-5932274e7e",
+      "observed-chiikawa-info-jp-f14e0e6fed": "observed-chiikawa-info-jp-f14e0e6fed",
+      "observed-chiikawa-info-jp-fb3fce6c45": "observed-chiikawa-info-jp-fb3fce6c45",
+      "observed-chiikawa-info-jp-9ec22af2cf": "observed-chiikawa-info-jp-9ec22af2cf",
+      "morning-series18-82c047f25716": "morning-series18-82c047f25716",
+      "morning-series18-bcc6d96d4eaa": "morning-series18-bcc6d96d4eaa",
+      "chiikawa-bakery-news": "chiikawa-bakery-news",
+      "chiikawa-bakery-topics": "chiikawa-bakery-topics",
+      "chiikawa-bakery-information": "chiikawa-bakery-information",
+      "chiikawa-bakery-information-osaka": "chiikawa-bakery-information-osaka",
+      "chiikawa-bakery-information-popup-01": "chiikawa-bakery-information-popup-01",
+      "morning-https-www-chiikawamogumogu-jp-news": "morning-https-www-chiikawamogumogu-jp-news",
+      "chiikawa-park-news": "chiikawa-park-news",
+      "chiikawa-park-ticket": "chiikawa-park-ticket",
+      "chiikawa-yaki-official": "chiikawa-yaki-official",
+      "nagano-market-entry-general": "nagano-market-entry-general",
+      "chiikawaland-entry-updates-x": "chiikawaland-entry-updates-x",
+      "evening-x-com-chiikawabakery": "evening-x-com-chiikawabakery",
+      "morning-series14-006dec658d85": "morning-series14-006dec658d85",
+      "chiikawaland-store-list": "chiikawaland-store-list",
+      "morning26-source-295270f05f73": "morning26-source-295270f05f73",
+      "morning26-source-5f3e3c2f8915": "morning26-source-5f3e3c2f8915",
+      "chiikawa-bakery-reservation": "chiikawa-bakery-reservation",
+      "entry-post-2114303883845755292": "entry-post-2114303883845755292",
+      "chiikawa-publicity-x": "chiikawa-publicity-x",
+      "chiikawa-author-x": "chiikawa-author-x",
+      "nagano-market-shop-x": "nagano-market-shop-x",
+      "nagano-author-x": "nagano-author-x",
+      "corporate-gu-chiikawa-faq": "corporate-gu-chiikawa-faq",
+      "morning26-source-fc7a299f360b": "weekly-gu-chiikawa",
+      "morning26-source-0cec4d875ba6": "morning26-source-0cec4d875ba6",
+      "chiikawa-park-christmas-2026-pr": "chiikawa-park-christmas-2026-pr",
+      "morning26-source-6670c6afa848": "morning26-source-6670c6afa848",
+      "morning26-source-91c38199e1a1": "morning26-source-91c38199e1a1",
+      "venue-aeon-suzaka-popup-20261106": "venue-aeon-suzaka-popup-20261106",
+      "chiikawa-christmas-market-official": "chiikawa-christmas-market-official",
+      "observed-cafe-parco-jp-8bf4370b23": "observed-cafe-parco-jp-8bf4370b23",
+      "morning-series14-61df76eb104c": "morning-series14-61df76eb104c"
+    },
+    "completedAttemptNormalization": {
+      "normalizedAt": "2026-10-25T23:24:15.922Z",
+      "passed": true,
+      "completedAttemptTimesUsed": 11,
+      "changes": [
+        {
+          "id": "ana-chiikawa-jet",
+          "originalStartAt": "2026-10-25T23:10:47.351Z",
+          "completedAttemptAt": "2026-10-25T23:10:50.741Z",
+          "result": "success"
+        },
+        {
+          "id": "jr-central-tsutsuurauratabi",
+          "originalStartAt": "2026-10-25T23:10:43.639Z",
+          "completedAttemptAt": "2026-10-25T23:10:47.351Z",
+          "result": "success"
+        },
+        {
+          "id": "tokyo-skytree-chiikawa-2026",
+          "originalStartAt": "2026-10-25T23:10:50.741Z",
+          "completedAttemptAt": "2026-10-25T23:11:00.484Z",
+          "result": "success"
+        },
+        {
+          "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
+          "originalStartAt": "2026-10-25T23:10:20.200Z",
+          "completedAttemptAt": "2026-10-25T23:10:25.460Z",
+          "result": "fetch_failed"
+        },
+        {
+          "id": "corporate-donki-chiikawa-sl6",
+          "originalStartAt": "2026-10-25T23:11:00.484Z",
+          "completedAttemptAt": "2026-10-25T23:11:04.120Z",
+          "result": "success"
+        },
+        {
+          "id": "corporate-seven-eleven-christmas-products",
+          "originalStartAt": "2026-10-25T23:11:04.120Z",
+          "completedAttemptAt": "2026-10-25T23:11:09.929Z",
+          "result": "success"
+        },
+        {
+          "id": "morning-https-www-chiikawamogumogu-jp-news",
+          "originalStartAt": "2026-10-25T23:10:31.790Z",
+          "completedAttemptAt": "2026-10-25T23:10:36.116Z",
+          "result": "access_limited"
+        },
+        {
+          "id": "kamakura-recruitment",
+          "originalStartAt": "2026-10-25T23:10:40.189Z",
+          "completedAttemptAt": "2026-10-25T23:10:43.639Z",
+          "result": "access_limited"
+        },
+        {
+          "id": "telacoya-shop",
+          "originalStartAt": "2026-10-25T23:10:36.116Z",
+          "completedAttemptAt": "2026-10-25T23:10:40.189Z",
+          "result": "success"
+        },
+        {
+          "id": "morning26-observed-9018953e026b",
+          "originalStartAt": "2026-10-25T23:10:25.460Z",
+          "completedAttemptAt": "2026-10-25T23:10:28.846Z",
+          "result": "success"
+        },
+        {
+          "id": "morning26-observed-969ab7e67057",
+          "originalStartAt": "2026-10-25T23:10:28.846Z",
+          "completedAttemptAt": "2026-10-25T23:10:31.790Z",
+          "result": "success"
+        }
+      ],
+      "sourceStartTimesRetainedInRawAndNormalizedRecords": true,
+      "guessedTimesUsed": false,
+      "unfetchedRejectedCandidateUrlNotAddedToRegistry": "https://kinshicho.parco.jp/shop/detail/?cd=028092",
+      "unfetchedUrlStillRetainedInRawEvidence": true
+    }
+  },
+  "laforetCandidateReconciledToCloudId": "entry-laforet-20261026",
+  "knownHiraokaStatusFailureUnchanged": true
+}

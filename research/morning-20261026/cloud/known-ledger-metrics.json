@@ -1,0 +1,63 @@
+{
+  "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+  "preStartPublication": {
+    "eligible": 56,
+    "known": 49,
+    "before": 48,
+    "notBefore": 1,
+    "unpublishedAfterStart": 0,
+    "unknown": 7,
+    "rate": 0.9795918367346939
+  },
+  "announcedToDiscovered": {
+    "elapsedHours": {
+      "samples": 29,
+      "mean": 23.156678745210726,
+      "min": 0.08666666666666667,
+      "max": 168.4488888888889
+    },
+    "japanCalendarDays": {
+      "samples": 168,
+      "mean": 32.410714285714285,
+      "min": 0,
+      "max": 1214
+    },
+    "unknownPairs": 169,
+    "negativeOrderPairs": 0,
+    "pairsWithoutExactHours": 308
+  },
+  "discoveredToPublished": {
+    "elapsedHours": {
+      "samples": 159,
+      "mean": 5.183400366876304,
+      "min": 0.2632788888888889,
+      "max": 277.5468452777778
+    },
+    "japanCalendarDays": {
+      "samples": 251,
+      "mean": 0.3466135458167331,
+      "min": 0,
+      "max": 19
+    },
+    "unknownPairs": 58,
+    "negativeOrderPairs": 0,
+    "pairsWithoutExactHours": 150
+  },
+  "announcedToPublished": {
+    "elapsedHours": {
+      "samples": 30,
+      "mean": 1090.018445027778,
+      "min": 0.9925,
+      "max": 29303.481111111112
+    },
+    "japanCalendarDays": {
+      "samples": 162,
+      "mean": 25.37037037037037,
+      "min": 0,
+      "max": 1273
+    },
+    "unknownPairs": 147,
+    "negativeOrderPairs": 0,
+    "pairsWithoutExactHours": 279
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "entry-laforet-20261026",
+    "kind": "listing_update",
+    "title": "ラフォーレ原宿10月26日の入場整理券案内",
+    "targetKey": "chiikawa-bakery-shop-laforet:entry-20261026",
+    "officialAnnouncedAt": "2026-10-25",
+    "discoveredAt": "2026-10-25T23:09:52.519+00:00",
+    "eventStartsAt": null,
+    "eventEndsAt": null,
+    "releaseAt": null,
+    "reservationOpensAt": null,
+    "reflectDueAt": "2026-10-26T10:00:00+09:00",
+    "publishedAt": null,
+    "sourceIds": [
+      "entry-post-2114303883845755292"
+    ],
+    "evidence": [
+      {
+        "url": "https://x.com/chiikawabakery/status/2114303883845755292",
+        "observedAt": "2026-10-25T23:10:22.930+00:00",
+        "summary": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。",
+        "recordPath": "research/morning-20261026/core/c4af8b3e3050.txt"
+      }
+    ],
+    "existingMatch": {
+      "status": "matched",
+      "ids": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "note": "公開3JSONとmain同一内容、候補台帳に投稿重複なし。"
+    },
+    "listingIds": [
+      "chiikawa-bakery-shop-laforet"
+    ],
+    "state": "ready",
+    "priority": "high",
+    "decision": "既存IDの10月25日限定入場条件のみ置換。一般案内と缶バッジ配布終了は保持。",
+    "nextCheck": "Verify public JSON / page match after bounded fix; recheck next-day guide tomorrow morning.",
+    "recheckDueAt": "2026-10-27T08:00:00+09:00"
+  }
+]

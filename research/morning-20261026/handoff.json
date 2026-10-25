@@ -1,0 +1,35 @@
+{
+  "transcribedAt": "2026-10-25T23:13:33.270Z",
+  "kind": "trusted_cloud_text_handoff",
+  "targetId": "chiikawa-bakery-shop-laforet",
+  "sourceUrl": "https://x.com/chiikawabakery/status/2114303883845755292",
+  "sourceVerification": {
+    "provider": "parent_cloud",
+    "httpStatus": 200,
+    "fullIndividualPostVerified": true,
+    "verifiedAt": "2026-10-25T23:10:22.930Z",
+    "notPcFetch": true,
+    "rawHtmlProvided": false
+  },
+  "officialAnnouncedAt": "2026-10-25",
+  "officialAnnouncementTimeZoneUnknown": true,
+  "discoveredAt": "2026-10-25T23:09:52.519Z",
+  "appliesOn": "2026-10-26",
+  "replacementText": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。",
+  "entryInfoCheckedAt": "2026-10-26",
+  "reservationOpensAt": "2026-10-26T10:00:00+09:00",
+  "reflectDueAt": "2026-10-26T09:59:59.999+09:00",
+  "nextRecheckDueAt": "2026-10-27T08:00:00+09:00",
+  "scope": "Replace only previous daily prefix and entry source/check date. Preserve general rules, October25 badge distribution ending, period, ID, reservation fields, address and coordinates.",
+  "deferredHiraoka": {
+    "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+    "decision": "No archive transition authorized for this update; current listing unchanged.",
+    "cloudFinding": "Latest direct official page returned404. Past official Oct24–25 schedule and absence from current list do not meet the parent review evidence threshold for this migration.",
+    "originalFailedValidate": 40221681087,
+    "knownFailureMustRemainVisible": true
+  },
+  "gsc": {
+    "affectedUrls": null,
+    "changesAuthorized": false
+  }
+}
