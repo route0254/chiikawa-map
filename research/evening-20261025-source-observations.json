@@ -1,0 +1,3680 @@
+{
+  "recordedAt": "2026-10-25T10:15:32.282Z",
+  "scope": "110 new-side observations include 3 public JSON comparisons; 107 source observations plus 9 relevant existing-side official observations applied/recorded, 2 invalid/nonofficial profiles excluded. Not all 674 baseline sources.",
+  "rawPatrolCounts": {
+    "success": 88,
+    "partial": 11,
+    "failure": 11
+  },
+  "newSideObservations": 110,
+  "officialNewSideObservations": 107,
+  "targetedOfficialObservations": 9,
+  "observations": [
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.744Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.547Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.547Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.744Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.744Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.605Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.662Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.662Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:22.670+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/pus.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.605Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.605Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:22.670+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/pus.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-cafe-list",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.457Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.586Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.586Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.457Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.457Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.708Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.562Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.562Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.708Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.708Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.237Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.074Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.074Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.237Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.237Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.333Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.100Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.100Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.333Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.333Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.149Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.023Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.023Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.149Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.149Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.832Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.802Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.802Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.950+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/fushimi/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.832Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.832Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:21.950+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/fushimi/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.792Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.699Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.699Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.792Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.792Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:56.724Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.706Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.706Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T10:05:53.439+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "HTTP取得結果。成功時も本文同一性は画像や動的SNSの最新性を保証しない。",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/otaru/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:56.724Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:56.724Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T10:05:53.439+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "HTTP取得結果。成功時も本文同一性は画像や動的SNSの最新性を保証しない。",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/otaru/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:00:59.681Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:29.422Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:29.422Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:22.659+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:59.681Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:59.681Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:22.659+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:02.301Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:30.157Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:30.157Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:02.301Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:02.301Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-chiikawa-aquarium-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.230Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.041Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.041Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:57.895+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p23/ck_aquarium/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.230Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:00.230Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:57.895+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p23/ck_aquarium/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-chiikawa-aquarium-2-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.441Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.045Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.045Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:57.841+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.441Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:00.441Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:57.841+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-chiikawa-tokyo-miyage",
+      "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.230Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.038Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.038Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:57.952+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.230Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:00.230Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:05:57.952+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-official-index",
+      "url": "https://nagano-info.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.525Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:33.595Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:33.595Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.525Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:00.525Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "fukuoka-sushi-official",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.441Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.043Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.043Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:58:29.137+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.441Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.043Z",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:00.441Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:02.887Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:33.650Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:33.650Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:02.887Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:02.887Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:02.387Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.824Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.824Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:02.387Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:02.387Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "popup-2026-10-23-ebina-marui-official",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.432Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.262Z",
+        "lastSuccessfulAt": "2026-10-21T09:59:03.422+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:32.262Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.432Z",
+        "lastSuccessfulAt": "2026-10-21T09:59:03.422+00:00",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:00.432Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_ebmr/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "popup-2026-10-23-aeon-parkplace-oita-official",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:00.437Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:32.286Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.286Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:28.414+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:00.437Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:32.286Z",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:00.437Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aoit/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:07.500Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:33.706Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:33.706Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:07.500Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:07.500Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-workshop-lalaport-kashiwanoha-2026-official",
+      "url": "https://mitsui-shopping-park.com/lalaport/kashiwa/event/3647163.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:09.447Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:36.850Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:36.850Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:09.447Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:09.447Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-muchaphoto-ario-kakogawa-2026-official",
+      "url": "https://kakogawa.ario.jp/event/3200004379/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:04.506Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:33.898Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:33.898Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:04.506Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:04.506Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-muchaphoto-2026-10-10-tokiwa-wasada-town-official",
+      "url": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 503,
+      "sourceObservedAt": "2026-10-25T10:01:10.519Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:40.612Z",
+        "lastSuccessfulAt": "2026-10-12T08:08:16+09:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:40.612Z",
+          "kind": "fetch_failed",
+          "httpStatus": 503,
+          "detail": "HTTP Error 503: Service Unavailable",
+          "evidenceUrl": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:10.519Z",
+        "lastSuccessfulAt": "2026-10-12T08:08:16+09:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:10.519Z",
+          "kind": "fetch_failed",
+          "httpStatus": 503,
+          "detail": "HTTP Error 503: Service Unavailable",
+          "evidenceUrl": "https://www.tokiwa-dept.co.jp/wasadatown/shopnews/details/19545"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:05.278Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:36.815Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:36.815Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:05.278Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:05.278Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:05.057Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:36.799Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:36.799Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:05.057Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:05.057Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:05.301Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:36.942Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:36.942Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:05.301Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:05.301Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-aeon-chiikawa-news-954",
+      "url": "https://www.aeonmarketing.co.jp/news/954/",
+      "normalizedResult": "access_limited",
+      "httpStatus": 403,
+      "sourceObservedAt": "2026-10-25T10:01:06.408Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:35.776Z",
+        "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:35.776Z",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:06.408Z",
+        "lastSuccessfulAt": "2026-10-20T10:04:00.248+00:00",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:06.408Z",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.aeonmarketing.co.jp/news/954/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "normalizedResult": "access_limited",
+      "httpStatus": 403,
+      "sourceObservedAt": "2026-10-25T10:01:06.409Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:35.826Z",
+        "lastSuccessfulAt": "2026-10-18T23:43:41.962+00:00",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:35.826Z",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.aeonmarketing.co.jp/news/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:06.409Z",
+        "lastSuccessfulAt": "2026-10-18T23:43:41.962+00:00",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:06.409Z",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.aeonmarketing.co.jp/news/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:06.142Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:37.626Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:37.626Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:37.771+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/news/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:06.142Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:06.142Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:37.771+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/news/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:07.165Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:37.125Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:37.125Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:07.165Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:07.165Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:07.256Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:37.023Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:37.023Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:07.256Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:07.256Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:07.417Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:37.020Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:37.020Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:07.417Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:07.417Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "observed-ota-aeonmall-jp-1553585041",
+      "url": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 406,
+      "sourceObservedAt": "2026-10-25T10:01:08.928Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:52.237Z",
+        "lastSuccessfulAt": "2026-10-23T10:05:28.088+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:52.237Z",
+          "kind": "fetch_failed",
+          "httpStatus": 404,
+          "detail": "HTTP Error 404: Not Found",
+          "evidenceUrl": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:08.928Z",
+        "lastSuccessfulAt": "2026-10-23T10:05:28.088+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:08.928Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://ota.aeonmall.jp/event/c3f7668f-3fd2-4b75-9ade-a31ce914185f"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "history-sendai-official-account",
+      "url": "https://www.uminomori.jp/umino/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:11.870Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:38.015Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:38.015Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:42:57.831+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.uminomori.jp/umino/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:11.870Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:11.870Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:42:57.831+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.uminomori.jp/umino/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "history-haneda-official-map",
+      "url": "https://tokyo-haneda.com/floor/floor-guide.html?tab=terminal2&focus=spot-353023",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:11.809Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:39.592Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:39.592Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:11.809Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:11.809Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "evening-chiikawapark-tokyo-jp-news",
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:11.520Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:39.910Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:39.910Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:39.769+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:11.520Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:11.520Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:39.769+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "evening-chiikawapark-tokyo-jp-news-62d-8modez",
+      "url": "https://chiikawapark-tokyo.jp/news/62d_8modez/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:11.520Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:39.902Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:39.902Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:43:00.645+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/62d_8modez/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:11.520Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:11.520Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:43:00.645+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawapark-tokyo.jp/news/62d_8modez/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "evening-chiikawabakery-jp-20260609-news",
+      "url": "https://chiikawabakery.jp/20260609_news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:11.265Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:37.602Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:37.602Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:43:00.965+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/20260609_news/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:11.265Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:11.265Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T00:43:00.965+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/20260609_news/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "suntory-receipt-campaign-official-2026",
+      "url": "https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:12.717Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:40.946Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:40.946Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:12.717Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:12.717Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-kadokawa-childrens-topics",
+      "url": "https://www.kadokawa.co.jp/topics/?largeGenre=15",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:13.738Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:41.080Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:41.080Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:13.738Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:13.738Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-minum-official-shop",
+      "url": "https://minum-cosme.com/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:15.839Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:41.980Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:41.980Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:15.839Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:15.839Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-prtimes-chiikawa-index",
+      "url": "https://prtimes.jp/main/action.php?page=searchkey&search_word=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:14.251Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:41.423Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:41.423Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:14.251Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:14.251Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:14.600Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:43.094Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:43.094Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:14.600Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:14.600Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-osaka-jp-kitte-jp-shop-index-jsp-bf-1-fmt-6-shopid-131210",
+      "url": "https://osaka.jp-kitte.jp/shop/index.jsp?bf=1&fmt=6&shopid=131210",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 500,
+      "sourceObservedAt": "2026-10-25T10:01:14.514Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:43.069Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:43.069Z",
+          "kind": "fetch_failed",
+          "httpStatus": 500,
+          "detail": "HTTP Error 500: Internal Server Error",
+          "evidenceUrl": "https://osaka.jp-kitte.jp/shop/index.jsp?bf=1&fmt=6&shopid=131210"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:14.514Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:14.514Z",
+          "kind": "fetch_failed",
+          "httpStatus": 500,
+          "detail": "HTTP Error 500: Internal Server Error",
+          "evidenceUrl": "https://osaka.jp-kitte.jp/shop/index.jsp?bf=1&fmt=6&shopid=131210"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-morning-5780a8dc2b70",
+      "url": "https://shinrifu.aeonmall.jp/event",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 406,
+      "sourceObservedAt": "2026-10-25T10:01:15.627Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:43.038Z",
+        "lastSuccessfulAt": "2026-10-17T10:06:30.921+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:43.038Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://shinrifu.aeonmall.jp/event"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:15.627Z",
+        "lastSuccessfulAt": "2026-10-17T10:06:30.921+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:15.627Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://shinrifu.aeonmall.jp/event"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-morning-a256af50b509",
+      "url": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 406,
+      "sourceObservedAt": "2026-10-25T10:01:15.772Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:44.506Z",
+        "lastSuccessfulAt": "2026-10-17T10:06:33.026+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:44.506Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:15.772Z",
+        "lastSuccessfulAt": "2026-10-17T10:06:33.026+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:15.772Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "weekly-osaka-jp-kitte-jp-shop-index-jsp-bf-8",
+      "url": "https://osaka.jp-kitte.jp/shop/index.jsp?bf=8",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:14.601Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:43.014Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:43.014Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:14.601Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:14.601Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "weekly-tokyu-plaza-com-omokado-shop-detail-000000342-tenant-cd-000000342",
+      "url": "https://tokyu-plaza.com/omokado/shop/detail/000000342?tenant_cd=000000342",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:16.621Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:45.391Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:45.391Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:16.621Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:16.621Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "weekly-www-laforet-ne-jp-shop-search-shop573",
+      "url": "https://www.laforet.ne.jp/shop_search/shop573",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:18.893Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:45.623Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:45.623Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:18.893Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:18.893Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "mogumogu-kawagoe-store-news",
+      "url": "https://www.chiikawamogumogu.jp/store/kawagoe/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:18.393Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:45.498Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:45.498Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:40.190+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/store/kawagoe/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:18.393Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:18.393Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:40.190+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/store/kawagoe/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-evening-1593f99f24b5",
+      "url": "https://chiikawabakery.jp/topics/20260804/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:18.109Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:45.722Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:45.722Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:32.509+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/topics/20260804/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:18.109Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:18.109Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:32.509+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawabakery.jp/topics/20260804/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-evening-f7c522a54050",
+      "url": "https://chiikawa.toho-movie.jp/news/page/n_260713.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:18.620Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:45.360Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:45.360Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:18.620Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:18.620Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-evening-ec032f425213",
+      "url": "https://prtimes.jp/main/html/rd/p/000002111.000025606.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:23.170Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.945Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:46.945Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:23.170Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:23.170Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-0a98af221d1b",
+      "url": "https://chiikawa-info.jp/p25/ck_baby/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.673Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.308Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:46.308Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p25/ck_baby/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.673Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.673Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p25/ck_baby/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-08a3f5f8c71b",
+      "url": "https://chiikawa-info.jp/p22/chiikawa_camp/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.502Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.582Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:46.582Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:34.196+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p22/chiikawa_camp/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.502Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:19.502Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T10:06:34.196+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p22/chiikawa_camp/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-8b9d66824d89",
+      "url": "https://chiikawa-info.jp/p22/magical/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.462Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.317Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:46.317Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p22/magical/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.462Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.462Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p22/magical/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-ffaad21694e4",
+      "url": "https://chiikawa-info.jp/p23/cho-magical/",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.712Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.298Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:46.298Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:58:40.083+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "evidenceUrl": "https://chiikawa-info.jp/p23/cho-magical/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.712Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:46.298Z",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.712Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p23/cho-magical/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-432e74545cde",
+      "url": "https://chiikawa-info.jp/p22/kankou_station/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.459Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.271Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:46.271Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p22/kankou_station/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.459Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.459Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p22/kankou_station/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-f11bb8f04c99",
+      "url": "https://chiikawa-info.jp/heroaca_chiikawa.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.454Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.302Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:46.302Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/heroaca_chiikawa.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.454Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.454Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/heroaca_chiikawa.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-ada5c3a7ab47",
+      "url": "https://chiikawa-info.jp/ck_minishop/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.459Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.306Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:46.306Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-19T22:58:42.938+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTML page obtained but substantive conditions image-only. HTML/text equality does not verify image content.",
+          "evidenceUrl": "https://chiikawa-info.jp/ck_minishop/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.459Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:46.306Z",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.459Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/ck_minishop/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-99c587e0fa2a",
+      "url": "https://chiikawa-info.jp/p21/t_o/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:19.458Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:46.512Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:46.512Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p21/t_o/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:19.458Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:19.458Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p21/t_o/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-9e2f42134020",
+      "url": "https://art.parco.jp/shinsaibashi/detail/?id=897",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:26.850Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:49.975Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:49.975Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:26.850Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:26.850Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-bf11798db5e0",
+      "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:28.364Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:51.290Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:51.290Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:28.364Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:28.364Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-observed-d80209040d41",
+      "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 404,
+      "sourceObservedAt": "2026-10-25T10:01:26.617Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:51.037Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:51.037Z",
+          "kind": "fetch_failed",
+          "httpStatus": 404,
+          "detail": "HTTP Error 404: Not Found",
+          "evidenceUrl": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:26.617Z",
+        "lastSuccessfulAt": null,
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:26.617Z",
+          "kind": "fetch_failed",
+          "httpStatus": 404,
+          "detail": "HTTP Error 404: Not Found",
+          "evidenceUrl": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series14-21a381168566",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:24.431Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:53.145Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:53.145Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.430Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:24.431Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:24.431Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.430Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series14-58fc0ae544fd",
+      "url": "https://sendaikamisugi.aeonmall.com/news?tabs=event_news",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:25.081Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:52.866Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:52.866Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:03:15+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "通常HTTPS取得はタイムアウト。",
+          "evidenceUrl": "https://sendaikamisugi.aeonmall.com/news?tabs=event_news"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:25.081Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:25.081Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:03:15+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "通常HTTPS取得はタイムアウト。",
+          "evidenceUrl": "https://sendaikamisugi.aeonmall.com/news?tabs=event_news"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:26.554Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:50.971Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:50.971Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:39.334+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:26.554Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:26.554Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:39.334+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "baby-castella-otaru-official",
+      "url": "https://www.chiikawamogumogu.jp/stores/castella/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:26.300Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:51.112Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:51.112Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:06:30.194+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/castella/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:26.300Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:26.300Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:06:30.194+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/castella/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "hep-five-official-home",
+      "url": "https://www.hepfive.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:33.549Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:58.999Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:58.999Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:21:49.699Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Error: Timed out waiting for tab 5 to navigate to https://www.hepfive.jp/.",
+          "evidenceUrl": "https://www.hepfive.jp/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:33.549Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:33.549Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:21:49.699Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Error: Timed out waiting for tab 5 to navigate to https://www.hepfive.jp/.",
+          "evidenceUrl": "https://www.hepfive.jp/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "hep-five-official-closure-20261015",
+      "url": "https://www.hepfive.jp/lp/uruwashi_hepfive/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:33.528Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:59.062Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:59.062Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:21:59.708Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Error: Timed out waiting for tab 5 to navigate to https://www.hepfive.jp/lp/uruwashi_hepfive/index.html.",
+          "evidenceUrl": "https://www.hepfive.jp/lp/uruwashi_hepfive/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:33.528Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:33.528Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-15T10:21:59.708Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Error: Timed out waiting for tab 5 to navigate to https://www.hepfive.jp/lp/uruwashi_hepfive/index.html.",
+          "evidenceUrl": "https://www.hepfive.jp/lp/uruwashi_hepfive/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-morning15-38724ee065ea",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/tokyo.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:24.428Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:53.159Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:53.159Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.431Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/tokyo.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:24.428Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:24.428Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.431Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/tokyo.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-morning15-acfbe88319f8",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/osaka.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:32.525Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:53.197Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:53.197Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.420Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/osaka.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.525Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:32.525Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.420Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/osaka.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-morning15-84336824e5dc",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/fukuoka.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:32.527Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:53.168Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:53.168Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.466Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/fukuoka.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.527Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:32.527Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.466Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/fukuoka.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "series-morning15-a3ba5825e784",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/nagoya.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:32.528Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:53.142Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:53.142Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.399Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/nagoya.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.528Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:32.528Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:10:14.399Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP本文・タイトルと画像リンクは取得したが、開催条件が画像中心で、この取得から必要な画像内条件を検証できていない。本文ダウンロードだけを詳細確認成功とは扱わずparse_failed。会場一覧画像と仙台入場画像は別sourceで限定確認済み。過去のlastSuccessfulAtは保持。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/nagoya.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ana-chiikawa-goods-release-20261015",
+      "url": "https://prtimes.jp/main/html/rd/p/000000018.000035055.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:29.941Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:59.698Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:59.698Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:29.941Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:29.941Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:32.228Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:59.121Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:59.121Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:07:01.087+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Internal Error",
+          "evidenceUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.228Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:32.228Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:07:01.087+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "Internal Error",
+          "evidenceUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 406,
+      "sourceObservedAt": "2026-10-25T10:01:32.007Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:57.523Z",
+        "lastSuccessfulAt": "2026-10-23T10:05:31.099+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:57.523Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.007Z",
+        "lastSuccessfulAt": "2026-10-23T10:05:31.099+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:32.007Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "official-observation-c13c6c2b72db",
+      "url": "https://chiikawa-info.jp/p26/pus_aksk/index.html",
+      "normalizedResult": "parse_failed",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:32.533Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:57.188Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:57.188Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:31.135+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aksk/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.533Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:57.188Z",
+        "lastResult": "parse_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:32.533Z",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://chiikawa-info.jp/p26/pus_aksk/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "official-observation-88c0160fff16",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 406,
+      "sourceObservedAt": "2026-10-25T10:01:32.009Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:58.239Z",
+        "lastSuccessfulAt": "2026-10-23T10:05:31.500+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:58.239Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.009Z",
+        "lastSuccessfulAt": "2026-10-23T10:05:31.500+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:32.009Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series18-nagano-ehyundai",
+      "url": "https://nagano-info.jp/popupshop/ehyundai/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:34.716Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:57.734Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:57.734Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:09:12Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "web取得失敗。Internal Error／取得エラー、HTTP状態不明。 新着なしとは扱わない。",
+          "evidenceUrl": "https://nagano-info.jp/popupshop/ehyundai/index.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:34.716Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:34.716Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:09:12Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "web取得失敗。Internal Error／取得エラー、HTTP状態不明。 新着なしとは扱わない。",
+          "evidenceUrl": "https://nagano-info.jp/popupshop/ehyundai/index.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series18-2044b9052514",
+      "url": "https://chiikawa.toho-movie.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:37.798Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:00.110Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:00.110Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:37.798Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:37.798Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series18-82c047f25716",
+      "url": "https://chiikawa-info.jp/ramenbuta.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:32.573Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:00.642Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:00.642Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:32.573Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:32.573Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series18-bcc6d96d4eaa",
+      "url": "https://chiikawa-info.jp/s_fes.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:38.020Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:00.654Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:00.654Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:22.667+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/s_fes.html"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:38.020Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:38.020Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:05:22.667+00:00",
+          "kind": "access_limited",
+          "httpStatus": 403,
+          "detail": "HTTP Error 403: Forbidden",
+          "evidenceUrl": "https://chiikawa-info.jp/s_fes.html"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series18-b61b0e14cba8",
+      "url": "https://chiikawa.toho-movie.jp/news/index.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:38.020Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:00.448Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:00.448Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:38.020Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:38.020Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "morning-series18-36534053fb32",
+      "url": "https://chiikawa.toho-movie.jp/news/page/n_261007.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:38.124Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:00.350Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:00.350Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:38.124Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:38.124Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-spiralcute-news-index",
+      "url": "https://spiralcute.com/news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:41.136Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:04.391Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:04.391Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:41.136Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:41.136Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-grayparkaservice-home",
+      "url": "https://grayparkaservice.com/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:40.588Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:08.323Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:08.323Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:08:15.945+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "<urlopen error timed out>",
+          "evidenceUrl": "https://grayparkaservice.com/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:40.588Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:40.588Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-17T23:08:15.945+00:00",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "<urlopen error timed out>",
+          "evidenceUrl": "https://grayparkaservice.com/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "corporate-grayparkaservice-news-index",
+      "url": "https://grayparkaservice.com/blogs/info",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:40.751Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:08.456Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:08.456Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:40.751Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:40.751Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "mogumogu-otaru-category-news",
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:40.169Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:03.577Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:03.577Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:40.169Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:40.169Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "movie-seventh-bonus-official-20261019",
+      "url": "https://chiikawa.toho-movie.jp/specialitem.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:38.127Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:04.522Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:04.522Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:38.127Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:38.127Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "toshocard-news-index",
+      "url": "https://www.toshocard.com/news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:56.572Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:10.481Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:10.481Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:24.519+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP200メンテナンス告知、対象内容未確認。",
+          "evidenceUrl": "https://www.toshocard.com/news/"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:56.572Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:56.572Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-22T23:05:24.519+00:00",
+          "kind": "parse_failed",
+          "httpStatus": 200,
+          "detail": "HTTP200メンテナンス告知、対象内容未確認。",
+          "evidenceUrl": "https://www.toshocard.com/news/"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "fujicolor-chiikawa-2027",
+      "url": "https://www.postcard.jp/character/chiikawa/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:54.000Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:06.700Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:06.700Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:54.000Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:54.000Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "movie-cheer-third",
+      "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:51.419Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:04.907Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:04.907Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:51.419Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:51.419Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "movie-news-index",
+      "url": "https://chiikawa.toho-movie.jp/news/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:51.405Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:04.835Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:04.835Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:51.405Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:51.405Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "weekly-gu-chiikawa",
+      "url": "https://www.gu-global.com/jp/ja/feature/contents/collaboration/chiikawa",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:51.723Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:07.584Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:07.584Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:51.723Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:51.723Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "weekly-kurashiki-events",
+      "url": "https://kurashiki.aeonmall.jp/event",
+      "normalizedResult": "fetch_failed",
+      "httpStatus": 406,
+      "sourceObservedAt": "2026-10-25T10:01:52.541Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:08.377Z",
+        "lastSuccessfulAt": "2026-10-21T09:59:33.443+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-24T23:02:08.377Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kurashiki.aeonmall.jp/event"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:52.541Z",
+        "lastSuccessfulAt": "2026-10-21T09:59:33.443+00:00",
+        "lastResult": "fetch_failed",
+        "lastFailure": {
+          "at": "2026-10-25T10:01:52.541Z",
+          "kind": "fetch_failed",
+          "httpStatus": 406,
+          "detail": "HTTP Error 406: Not Acceptable",
+          "evidenceUrl": "https://kurashiki.aeonmall.jp/event"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "venue-aeon-oita-entry-news-1972762",
+      "url": "https://tenpo.aeon-kyushu.info/aeon/detail/parkplace-oita/event-news/1972762/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:52.544Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:08.896Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:08.896Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:52.544Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:52.544Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "park-store-news",
+      "url": "https://chiikawapark-tokyo.jp/news/x0e64eb94v/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:52.261Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:08.710Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:08.710Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:52.261Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:52.261Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "kamakura-recruitment",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:53.238Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:09.628Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:09.628Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:07:56.328+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "求人は非公開表示。内容未取得。",
+          "evidenceUrl": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:53.238Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:53.238Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T10:07:56.328+00:00",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "求人は非公開表示。内容未取得。",
+          "evidenceUrl": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357"
+        }
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "telacoya-shop",
+      "url": "https://www.telacoya.co.jp/company/shop-a/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:59.321Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:02:11.117Z",
+        "lastSuccessfulAt": "2026-10-24T23:02:11.117Z",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:59.321Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:59.321Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "evening-www-chiikawamogumogu-jp",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:56.252Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": "2026-10-23T10:07:55.326+00:00",
+        "lastSuccessfulAt": "2026-10-23T10:07:55.326+00:00",
+        "lastResult": "success",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:56.252Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:56.252Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "kamakura-c154712c",
+      "url": "https://www.telacoya.co.jp/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:01:57.928Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:01:57.928Z",
+        "lastSuccessfulAt": "2026-10-25T10:01:57.928Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ana-naha-delay-20261022",
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:02:54.999Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:02:54.999Z",
+        "lastSuccessfulAt": "2026-10-25T10:02:54.999Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ana-goods-resale-20261024",
+      "url": "https://x.com/ANA_Group_News/status/2113805171805622424",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:02:58.324Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:02:58.324Z",
+        "lastSuccessfulAt": "2026-10-25T10:02:58.324Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "new-announcement-patrol",
+      "sourceId": "ana-preorder-recovery-20261023",
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "normalizedResult": "success",
+      "httpStatus": 200,
+      "sourceObservedAt": "2026-10-25T10:03:02.901Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:03:02.901Z",
+        "lastSuccessfulAt": "2026-10-25T10:03:02.901Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:57:49.568Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:21.156Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:21.156Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.900Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:21.156Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:21.156Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.900Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:58:04.180Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:24.452Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:24.452Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.857Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:24.452Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:24.452Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.857Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "priority-four-1b6f0ffdf6c9",
+      "url": "https://x.com/chiikawa_popup",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:58:09.872Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:27.716Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:27.716Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:30.870Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "HTTP 不明、朝の提供巡回結果 failed。<urlopen error timed out>",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:27.716Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:27.716Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:30.870Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "HTTP 不明、朝の提供巡回結果 failed。<urlopen error timed out>",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "morning-series14-006dec658d85",
+      "url": "https://x.com/nagano_market",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:58:12.916Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:52.579Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:31.636Z",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:52.579Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://x.com/nagano_market"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:52.579Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:31.636Z",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:52.579Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://x.com/nagano_market"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "entry-post-2114290386562941394",
+      "url": "https://x.com/chiikawa_land/status/2114290386562941394",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": "2026-10-25T09:58:19.117Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T09:58:19.117Z",
+        "lastSuccessfulAt": "2026-10-25T09:58:19.117Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "entry-post-2114260699597926903",
+      "url": "https://x.com/chiikawa_land/status/2114260699597926903",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": "2026-10-25T09:58:20.188Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T09:58:20.188Z",
+        "lastSuccessfulAt": "2026-10-25T09:58:20.188Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "entry-post-2114224071177286017",
+      "url": "https://x.com/chiikawa_land/status/2114224071177286017",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": "2026-10-25T09:58:19.159Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T09:58:19.159Z",
+        "lastSuccessfulAt": "2026-10-25T09:58:19.159Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "entry-post-2114160009890435478",
+      "url": "https://x.com/chiikawabakery/status/2114160009890435478",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": "2026-10-25T10:00:02.600Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T10:00:02.600Z",
+        "lastSuccessfulAt": "2026-10-25T10:00:02.600Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "entry-post-2114212685642633544",
+      "url": "https://x.com/chiikawabakery/status/2114212685642633544",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": "2026-10-25T09:59:59.043Z",
+      "responseFileSavedAt": null,
+      "timeBasis": null,
+      "timestampApplied": true,
+      "before": {
+        "lastAttemptAt": null,
+        "lastSuccessfulAt": null,
+        "lastResult": "not_checked",
+        "lastFailure": null
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-25T09:59:59.043Z",
+        "lastSuccessfulAt": "2026-10-25T09:59:59.043Z",
+        "lastResult": "success",
+        "lastFailure": null
+      }
+    }
+  ],
+  "excludedAndComparison": [
+    {
+      "route": "public-json-comparison",
+      "id": "public-official-spots",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "previousLastSuccessfulAt": null,
+      "status": 200,
+      "finalUrl": "https://chiikatsu-map.com/data/official-spots.json",
+      "result": "success",
+      "bodyPath": "bodies/public-official-spots.html",
+      "textPath": "bodies/public-official-spots.txt",
+      "sha256": "2e37a383758b41bef88817d3654ef1dfaed24e163b35be1e1709d4e484aa4578",
+      "bytes": 216456,
+      "attemptedAt": "2026-10-25T10:01:56.732+00:00",
+      "lastSuccessfulAt": "2026-10-25T10:01:56.732+00:00"
+    },
+    {
+      "route": "public-json-comparison",
+      "id": "public-official-events-archive",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "previousLastSuccessfulAt": null,
+      "status": 200,
+      "finalUrl": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "result": "success",
+      "bodyPath": "bodies/public-official-events-archive.html",
+      "textPath": "bodies/public-official-events-archive.txt",
+      "sha256": "21d2d358129c3b76afd12582685de9e49a85d28f778fc87cea192c5d2b201cc9",
+      "bytes": 1122433,
+      "attemptedAt": "2026-10-25T10:01:56.972+00:00",
+      "lastSuccessfulAt": "2026-10-25T10:01:56.972+00:00"
+    },
+    {
+      "route": "public-json-comparison",
+      "id": "public-collaborations-current",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "previousLastSuccessfulAt": null,
+      "status": 200,
+      "finalUrl": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "result": "success",
+      "bodyPath": "bodies/public-collaborations-current.html",
+      "textPath": "bodies/public-collaborations-current.txt",
+      "sha256": "5377d7351c18a3cb2e3dec88c2f85f94a95268495344bfb9301299e5158e68bc",
+      "bytes": 33731,
+      "attemptedAt": "2026-10-25T10:01:56.975+00:00",
+      "lastSuccessfulAt": "2026-10-25T10:01:56.975+00:00"
+    },
+    {
+      "route": "excluded-profile-not-primary",
+      "url": "https://x.com/chiikawa_park",
+      "status": "invalid_account",
+      "lastSuccessfulFetchAt": null,
+      "failure": "Account does not exist. Not evidence that official park source is unavailable; guessed handle excluded."
+    },
+    {
+      "route": "excluded-profile-not-primary",
+      "url": "https://x.com/chiikawa_info",
+      "status": "excluded_nonofficial",
+      "failure": "Profile self-identifies as fan/affiliate; not used as primary evidence."
+    }
+  ],
+  "fileTimeObservationsNotPromoted": [
+    {
+      "route": "existing-listing-review",
+      "sourceId": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:57:49.568Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:21.156Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:21.156Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.900Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:21.156Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:21.156Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.900Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawa_land"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "evening-x-com-chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:58:04.180Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:24.452Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:24.452Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.857Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:24.452Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:24.452Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:12.857Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+          "evidenceUrl": "https://x.com/chiikawabakery"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "priority-four-1b6f0ffdf6c9",
+      "url": "https://x.com/chiikawa_popup",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:58:09.872Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:27.716Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:27.716Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:30.870Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "HTTP 不明、朝の提供巡回結果 failed。<urlopen error timed out>",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:27.716Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:27.716Z",
+        "lastResult": "success",
+        "lastFailure": {
+          "at": "2026-10-23T22:59:30.870Z",
+          "kind": "fetch_failed",
+          "httpStatus": null,
+          "detail": "HTTP 不明、朝の提供巡回結果 failed。<urlopen error timed out>",
+          "evidenceUrl": "https://x.com/chiikawa_popup"
+        }
+      }
+    },
+    {
+      "route": "existing-listing-review",
+      "sourceId": "morning-series14-006dec658d85",
+      "url": "https://x.com/nagano_market",
+      "normalizedResult": "success",
+      "httpStatus": null,
+      "sourceObservedAt": null,
+      "responseFileSavedAt": "2026-10-25T09:58:12.916Z",
+      "timeBasis": "local saved response file timestamp",
+      "timestampApplied": false,
+      "before": {
+        "lastAttemptAt": "2026-10-24T23:01:52.579Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:31.636Z",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:52.579Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://x.com/nagano_market"
+        }
+      },
+      "after": {
+        "lastAttemptAt": "2026-10-24T23:01:52.579Z",
+        "lastSuccessfulAt": "2026-10-24T23:01:31.636Z",
+        "lastResult": "access_limited",
+        "lastFailure": {
+          "at": "2026-10-24T23:01:52.579Z",
+          "kind": "access_limited",
+          "httpStatus": 200,
+          "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+          "evidenceUrl": "https://x.com/nagano_market"
+        }
+      }
+    }
+  ],
+  "rawHandoff": "research/evening-20261025/new-sources/handoff.json",
+  "rawObservations": "research/evening-20261025/new-sources/observations.json",
+  "existingRawObservations": "research/evening-20261025/source-observations.json",
+  "sourceSuccessPolicy": "Partial/failure never erase previous success; response file timestamps are preserved separately, not inferred as fetch completion times.",
+  "kamakura": {
+    "state": "on_hold",
+    "officialOpeningDate": null,
+    "nextCheck": "ブランド公式ニュース・店舗一覧・公式SNSで正式開業告知を確認。求人の推測月を公開日や開業日にしない。",
+    "recheckDueAt": "2026-10-26T08:00:00+09:00",
+    "userDecisionRequired": false
+  },
+  "providedBodiesChecked": 96,
+  "sameRepresentationHashesVerified": 90,
+  "gzipDecodedBodiesRecordedSeparately": 6,
+  "compressedTransportHashesNotRecomputed": true,
+  "integrityCorrection": {
+    "incorporatedAt": "2026-10-25T10:24:14.577Z",
+    "passed": true,
+    "library": {
+      "id": "libfile_f4e730eb877c81918cecc9a8bb9b79b6",
+      "version": 0,
+      "size": 30855,
+      "sha256": "f4dcd9e39e7cfab5503da05b49d2b17d249f48baa01ed9c6eb70014cd1a96d1b",
+      "identityVerified": true
+    },
+    "auditPath": "research/evening-20261025/integrity-correction/integrity-audit-correction.json",
+    "correctedObservationsPath": "research/evening-20261025/integrity-correction/observations-corrected.json",
+    "persistedHtmlBodiesRehashed": 99,
+    "persistedTextBodiesRehashed": 99,
+    "originalSameRepresentationHashesVerified": 90,
+    "originalHashMissingAnaBodies": 3,
+    "decodedGzipBodies": 6,
+    "unexplainedMismatch": 0,
+    "originalCompressedBodiesRetained": false,
+    "originalCompressedHashesRecomputed": false,
+    "originalObservationsAndFetchTimestampsUnchanged": true,
+    "entryNoticesAndAnaDecisionUnaffected": true,
+    "details": [
+      {
+        "id": "mogumogu-fushimi-news",
+        "file": "bodies/mogumogu-fushimi-news.html",
+        "recordedHash": "5ce07a672b70ac43b1fdd7da4a2010e0a7b2471a3b505d28aa09d995b0c63bd5",
+        "persistedDecodedHash": "609b3030e61e182feddd8f8acc881355f4f1a4ce59d665ce348f534e1e597aa5",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:00:56.832+00:00"
+      },
+      {
+        "id": "mogumogu-kawagoe-news",
+        "file": "bodies/mogumogu-kawagoe-news.html",
+        "recordedHash": "ee903f246d356f22d2577f9a7a297c224eb9f2625eae29e1e7179b928d47e6b8",
+        "persistedDecodedHash": "6bac9f312166a491ade93d26141a2e1019a991639c162ae9561a3f71a1d634f3",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:00:56.792+00:00"
+      },
+      {
+        "id": "mogumogu-otaru-news",
+        "file": "bodies/mogumogu-otaru-news.html",
+        "recordedHash": "c0889264bf4c9e3dc35685259cfc6852d6e7b8bdcff64c7dde2e2473eaf81e91",
+        "persistedDecodedHash": "033ad2a227c061242d996d58ec4c4fd49fd3d4c265c3d5cb231902417e40bb3a",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:00:56.724+00:00"
+      },
+      {
+        "id": "baby-castella-otaru-official",
+        "file": "bodies/baby-castella-otaru-official.html",
+        "recordedHash": "abbbfc4d549c5a7c35f58e5da7e5d27879ebcded6ab464938520d8b4bb6eef21",
+        "persistedDecodedHash": "ee29602f4df1b7358f7be743292c81b805afd02484925073d0f04fd338a23cce",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:01:26.300+00:00"
+      },
+      {
+        "id": "mogumogu-otaru-category-news",
+        "file": "bodies/mogumogu-otaru-category-news.html",
+        "recordedHash": "6133d8e43a93ad2876d57f73b5204799ad5d52f83ec34ca9de404be8ee2a2695",
+        "persistedDecodedHash": "5c88556b89b6796c6cf8c07f772a68e1fd3683fd4d8680541bc677cafe5089d9",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:01:40.169+00:00"
+      },
+      {
+        "id": "evening-www-chiikawamogumogu-jp",
+        "file": "bodies/evening-www-chiikawamogumogu-jp.html",
+        "recordedHash": "f3a450543922fdc8662022fc9a41ea76741da0c153e6f5ad925cd7c9960fd65d",
+        "persistedDecodedHash": "967dbe36e42772727e1f6b15098a9e6d5f9bdec3670de93f1eac344690232aed",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:01:56.252+00:00"
+      },
+      {
+        "id": "ana-naha-delay-20261022",
+        "file": "bodies/ana-naha-delay-20261022.html",
+        "recordedHash": null,
+        "persistedDecodedHash": "d48bc910c619a5f9561bedaec67e7326358604a603289173c518c7b0be3febd0",
+        "hashStatus": "missing",
+        "originalObservedAt": "2026-10-25T10:02:54.999+00:00"
+      },
+      {
+        "id": "ana-goods-resale-20261024",
+        "file": "bodies/ana-goods-resale-20261024.html",
+        "recordedHash": null,
+        "persistedDecodedHash": "2aa084a5df182a55c59d1af2b0cad33615024b093997dba7690d4faa102de73b",
+        "hashStatus": "missing",
+        "originalObservedAt": "2026-10-25T10:02:58.324+00:00"
+      },
+      {
+        "id": "ana-preorder-recovery-20261023",
+        "file": "bodies/ana-preorder-recovery-20261023.html",
+        "recordedHash": null,
+        "persistedDecodedHash": "82780898b82e872c231e4d77555d7fd28de53f61a299302f9d92130bb1c70f02",
+        "hashStatus": "missing",
+        "originalObservedAt": "2026-10-25T10:03:02.901+00:00"
+      }
+    ]
+  }
+}

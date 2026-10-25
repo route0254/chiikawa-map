@@ -1,0 +1,732 @@
+{
+  "recordedAt": "2026-10-25T10:25:27.392Z",
+  "localValidationPending": false,
+  "localValidation": {
+    "recordedAt": "2026-10-25T10:25:27.392Z",
+    "passed": true,
+    "exitCode": 0,
+    "build": {
+      "script": "build:spot-pages",
+      "declaredCommand": "node scripts/build-site-meta.mjs --write && node scripts/build-spot-pages.mjs --write",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-25T10:16:22.737Z",
+      "completedAt": "2026-10-25T10:16:24.156Z",
+      "statuses": [
+        {
+          "command": "node scripts/build-site-meta.mjs --write",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --write",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261025-evening\\build-spot-pages.log"
+    },
+    "check": {
+      "script": "check",
+      "declaredCommand": "node --check recent-utils.js && node --check scripts/lib/added-dates.mjs && node --check scripts/lib/operations-ledgers.mjs && node --check scripts/check-operations-ledgers.mjs && node --check app.js && node --check official.js && node --check collaborations.js && node --check nagano.js && node --check journal.js && node --check calendar-utils.js && node --check journal-export-utils.js && node --check location-utils.js && node --check spot-page.js && node --check cloud-sync-loader.js && node --check cloud-sync-ui.js && node --check cloud-sync-merge.js && node --check cloud-sync.js && node --check pwa.js && node --check service-worker.js && node --check scripts/build-pwa-icons.mjs && node --check scripts/build-site-meta.mjs && node --check scripts/build-spot-pages.mjs && node --check scripts/check-links.mjs && node --check scripts/check-site-health.mjs && node --check scripts/preview-spot-data.mjs && node --check scripts/report-status-candidates.mjs && node --check scripts/archive-ended-events.mjs && node --check scripts/audit-special-series.mjs && node --check scripts/build-history-candidates.mjs && node --check scripts/build-history-batch.mjs && node --check scripts/build-special-events.mjs && node --check scripts/import-nagano-official-series.mjs && node --check scripts/geocode-history-venues.mjs && node --check scripts/geocode-history-venues-gsi.mjs && node --check scripts/test-cloud-sync-merge.mjs && node --check scripts/validate-collaborations.mjs && node --check scripts/validate-nagano-mentions.mjs && node --check scripts/validate-nagano-history.mjs && node --test tests/unit/*.test.mjs && node scripts/test-cloud-sync-merge.mjs && node scripts/validate-data.mjs && node scripts/check-operations-ledgers.mjs && node scripts/validate-collaborations.mjs && node scripts/validate-nagano-mentions.mjs && node scripts/validate-nagano-history.mjs && node scripts/audit-special-series.mjs && node scripts/build-special-events.mjs --check && node scripts/build-site-meta.mjs --check && node scripts/build-spot-pages.mjs --check",
+      "runner": "Exact declared Node commands; pnpm unavailable",
+      "startedAt": "2026-10-25T10:17:43.088Z",
+      "completedAt": "2026-10-25T10:17:49.025Z",
+      "statuses": [
+        {
+          "command": "node --check recent-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/added-dates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/lib/operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check app.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check official.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check collaborations.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check nagano.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check calendar-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check journal-export-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check location-utils.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check spot-page.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-loader.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-ui.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync-merge.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check cloud-sync.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check pwa.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check service-worker.js",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-pwa-icons.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-site-meta.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-spot-pages.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-links.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/check-site-health.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/preview-spot-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/report-status-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/archive-ended-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-candidates.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-history-batch.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/build-special-events.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/import-nagano-official-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/geocode-history-venues-gsi.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --check scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node --test tests/unit/*.test.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/test-cloud-sync-merge.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-data.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/check-operations-ledgers.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-collaborations.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-mentions.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/validate-nagano-history.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/audit-special-series.mjs",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-special-events.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-site-meta.mjs --check",
+          "exitCode": 0,
+          "error": null
+        },
+        {
+          "command": "node scripts/build-spot-pages.mjs --check",
+          "exitCode": 0,
+          "error": null
+        }
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "log": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261025-evening\\check.log",
+      "unitTests": 58,
+      "unitFailures": 0
+    },
+    "officialSpotStatus": {
+      "startedAt": "2026-10-25T10:22:06.323Z",
+      "completedAt": "2026-10-25T10:22:06.410Z",
+      "args": [
+        "scripts/report-status-candidates.mjs",
+        "--github-summary",
+        "--fail-on-archive-candidates"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "error": null,
+      "scope": "Exact Report official spot status command from failing workflow; no changed predicate or workflow.",
+      "archiveCandidates": 0,
+      "providedGitHubSummaryOutputPath": true,
+      "predicateAndWorkflowUnchanged": true
+    },
+    "smoke": {
+      "script": "test:smoke",
+      "args": [
+        "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-evening-20261025\\node_modules\\@playwright\\test\\cli.js",
+        "test",
+        "--config=C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\listing-20261025-evening\\smoke.config.mjs",
+        "--workers=1"
+      ],
+      "startedAt": "2026-10-25T10:20:38.363Z",
+      "completedAt": "2026-10-25T10:25:15.129Z",
+      "exitCode": 0,
+      "passed": true,
+      "error": null,
+      "passedTests": 111,
+      "retries": 0
+    },
+    "browser": {
+      "completedAt": "2026-10-25T10:21:18.684Z",
+      "effectiveChecks": 44,
+      "spotChecks": 40,
+      "collaborationChecks": 4,
+      "screens": 22,
+      "widths": [
+        390,
+        1440
+      ],
+      "flows": [
+        "static",
+        "directShared",
+        "sharedReload",
+        "searchSelection",
+        "collaborationDirect",
+        "collaborationReload"
+      ],
+      "advancingClock": true,
+      "pageErrors": 0,
+      "liveTilesClaimed": false
+    },
+    "targetedLinks": {
+      "startedAt": "2026-10-25T10:23:26.695Z",
+      "completedAt": "2026-10-25T10:23:27.787Z",
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Unmodified existing checker on five updated spots and three ANA evidence URLs. Previously deferred external 404s excluded.",
+      "urls": [
+        "https://chiikawabakery.jp/information-popup_01/",
+        "https://x.com/chiikawabakery/status/2113948627051933978",
+        "https://x.com/chiikawabakery/status/2114212685642633544",
+        "https://chiikawa-info.jp/chiikawaland/tokyo/",
+        "https://x.com/chiikawa_land/status/2114290386562941394",
+        "https://chiikawa-info.jp/chiikawaland/sendai/",
+        "https://x.com/chiikawa_land/status/2114260699597926903",
+        "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+        "https://x.com/chiikawa_land/status/2114224071177286017",
+        "https://chiikawabakery.jp/",
+        "https://chiikawabakery.jp/reservation/",
+        "https://x.com/chiikawabakery/status/2114160009890435478",
+        "https://www.anafesta.com/notice/2026/10/79352/",
+        "https://x.com/ANA_Group_News/status/2113805171805622424",
+        "https://www.anaskyshop.ana.co.jp/news/36"
+      ],
+      "total": 15,
+      "exitCode": 0,
+      "error": null,
+      "passed": true,
+      "normal": 13,
+      "redirect": 0,
+      "warnings": 2,
+      "broken": 0
+    },
+    "worktreePreservation": {
+      "count": 46,
+      "passed": true
+    },
+    "scope": {
+      "checkedAt": "2026-10-25T10:24:34.004Z",
+      "passed": true,
+      "exitCode": 0,
+      "changedFiles": 45,
+      "files": [
+        "data/collaborations-current.json",
+        "data/official-spots.json",
+        "research/official-source-ledger.json",
+        "research/publication-candidate-ledger.json",
+        "sitemap.xml",
+        "spot/chiikawa-bakery-shop-laforet/index.html",
+        "spot/chiikawa-bakery-tokyo/index.html",
+        "spot/chiikawaland-kanazawa/index.html",
+        "spot/chiikawaland-sendai/index.html",
+        "spot/chiikawaland-tokyo-station/index.html",
+        "research/evening-20261025-evidence.json",
+        "research/evening-20261025-source-observations.json",
+        "research/evening-20261025/2114160009890435478.html",
+        "research/evening-20261025/2114212685642633544.html",
+        "research/evening-20261025/2114224071177286017.html",
+        "research/evening-20261025/2114260699597926903.html",
+        "research/evening-20261025/2114290386562941394.html",
+        "research/evening-20261025/chiikawa_popup.html",
+        "research/evening-20261025/chiikawabakery.html",
+        "research/evening-20261025/entry-fix-packet.json",
+        "research/evening-20261025/integrity-correction/integrity-audit-correction.json",
+        "research/evening-20261025/integrity-correction/observations-corrected.json",
+        "research/evening-20261025/land.html",
+        "research/evening-20261025/nagano_market.html",
+        "research/evening-20261025/new-sources/bodies/ana-goods-resale-20261024.html",
+        "research/evening-20261025/new-sources/bodies/ana-goods-resale-20261024.txt",
+        "research/evening-20261025/new-sources/bodies/ana-naha-delay-20261022.html",
+        "research/evening-20261025/new-sources/bodies/ana-naha-delay-20261022.txt",
+        "research/evening-20261025/new-sources/bodies/ana-preorder-recovery-20261023.html",
+        "research/evening-20261025/new-sources/bodies/ana-preorder-recovery-20261023.txt",
+        "research/evening-20261025/new-sources/bodies/baby-castella-otaru-official.html",
+        "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.html",
+        "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.txt",
+        "research/evening-20261025/new-sources/bodies/kamakura-recruitment.txt",
+        "research/evening-20261025/new-sources/bodies/mogumogu-fushimi-news.html",
+        "research/evening-20261025/new-sources/bodies/mogumogu-kawagoe-news.html",
+        "research/evening-20261025/new-sources/bodies/mogumogu-otaru-category-news.html",
+        "research/evening-20261025/new-sources/bodies/mogumogu-otaru-news.html",
+        "research/evening-20261025/new-sources/bodies/morning-https-www-chiikawamogumogu-jp-news.txt",
+        "research/evening-20261025/new-sources/bodies/telacoya-shop.txt",
+        "research/evening-20261025/new-sources/handoff.json",
+        "research/evening-20261025/new-sources/observations.json",
+        "research/evening-20261025/posts.json",
+        "research/evening-20261025/pr76-publication-verification.json",
+        "research/evening-20261025/source-observations.json"
+      ],
+      "dataCounts": {
+        "official": 99,
+        "archive": 675,
+        "totalSpots": 868,
+        "collaborations": 23,
+        "collaborationsArchive": 52,
+        "sources": 683,
+        "candidates": 337
+      },
+      "currentUpdated": 5,
+      "collaborationRecordsUpdated": 1,
+      "collaborationConditionsAdded": 2,
+      "archived": 0,
+      "new": 0,
+      "allOtherSpotsPreserved": 863,
+      "allOtherCollaborationsPreserved": 74,
+      "originalRawFilesVerified": 32,
+      "originalAddedDatesPreserved": true,
+      "generalConditionsPreserved": true,
+      "sourceCanonicalAndCatalogUnchanged": true,
+      "appSchemaAndHostingUnchanged": true,
+      "priorPr76CandidatesSynced": 6,
+      "patrolRecords": 110,
+      "officialSourceObservations": 116
+    },
+    "knownOnlyMetrics": {
+      "calculatedAt": "2026-10-25T10:22:04.952Z",
+      "base": "ef31e921770e1d8837161133677050c9df4f50df",
+      "knownOnly": true,
+      "coverageNotice": "台帳に記録した候補・既知日時だけの指標。全新着の網羅率ではない。日付のみを00:00へ変換して経過時間を計算しない。",
+      "newListing": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 56,
+          "known": 49,
+          "before": 48,
+          "notBefore": 1,
+          "unpublishedAfterStart": 0,
+          "unknown": 7,
+          "rate": 0.9795918367346939
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 1,
+            "mean": 1.0296108333333334,
+            "min": 1.0296108333333334,
+            "max": 1.0296108333333334
+          },
+          "japanCalendarDays": {
+            "samples": 49,
+            "mean": 4.8979591836734695,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 15,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 63
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 40,
+            "mean": 2.051399236111112,
+            "min": 0.6488888888888888,
+            "max": 17.201181944444443
+          },
+          "japanCalendarDays": {
+            "samples": 52,
+            "mean": 0.21153846153846154,
+            "min": 0,
+            "max": 1
+          },
+          "unknownPairs": 3,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 15
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 2,
+            "mean": 304.2463888888889,
+            "min": 9.783333333333333,
+            "max": 598.7094444444444
+          },
+          "japanCalendarDays": {
+            "samples": 41,
+            "mean": 2.658536585365854,
+            "min": 0,
+            "max": 25
+          },
+          "unknownPairs": 14,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 53
+        }
+      },
+      "nonHistorical": {
+        "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+        "preStartPublication": {
+          "eligible": 56,
+          "known": 49,
+          "before": 48,
+          "notBefore": 1,
+          "unpublishedAfterStart": 0,
+          "unknown": 7,
+          "rate": 0.9795918367346939
+        },
+        "announcedToDiscovered": {
+          "elapsedHours": {
+            "samples": 29,
+            "mean": 23.156678745210726,
+            "min": 0.08666666666666667,
+            "max": 168.4488888888889
+          },
+          "japanCalendarDays": {
+            "samples": 159,
+            "mean": 2.6037735849056602,
+            "min": 0,
+            "max": 112
+          },
+          "unknownPairs": 165,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 295
+        },
+        "discoveredToPublished": {
+          "elapsedHours": {
+            "samples": 155,
+            "mean": 3.840959154121858,
+            "min": 0.2632788888888889,
+            "max": 277.5468452777778
+          },
+          "japanCalendarDays": {
+            "samples": 245,
+            "mean": 0.2163265306122449,
+            "min": 0,
+            "max": 12
+          },
+          "unknownPairs": 58,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 148
+        },
+        "announcedToPublished": {
+          "elapsedHours": {
+            "samples": 29,
+            "mean": 117.14042205938698,
+            "min": 0.9925,
+            "max": 2156.4727047222223
+          },
+          "japanCalendarDays": {
+            "samples": 157,
+            "mean": 10.764331210191083,
+            "min": 0,
+            "max": 1273
+          },
+          "unknownPairs": 146,
+          "negativeOrderPairs": 0,
+          "pairsWithoutExactHours": 274
+        }
+      }
+    },
+    "libraryIntake": {
+      "libraryFileId": "libfile_a8059efb3d3481918741a3a21dc338b7",
+      "version": 0,
+      "size": 2745075,
+      "sha256": "99f98afceecbbb68af9aa5e4c378ecaed586c03bd03e4576953dcb18f37e4a10",
+      "identityVerified": true,
+      "originalReadable": true
+    },
+    "integrityCorrection": {
+      "incorporatedAt": "2026-10-25T10:24:14.577Z",
+      "passed": true,
+      "library": {
+        "id": "libfile_f4e730eb877c81918cecc9a8bb9b79b6",
+        "version": 0,
+        "size": 30855,
+        "sha256": "f4dcd9e39e7cfab5503da05b49d2b17d249f48baa01ed9c6eb70014cd1a96d1b",
+        "identityVerified": true
+      },
+      "auditPath": "research/evening-20261025/integrity-correction/integrity-audit-correction.json",
+      "correctedObservationsPath": "research/evening-20261025/integrity-correction/observations-corrected.json",
+      "persistedHtmlBodiesRehashed": 99,
+      "persistedTextBodiesRehashed": 99,
+      "originalSameRepresentationHashesVerified": 90,
+      "originalHashMissingAnaBodies": 3,
+      "decodedGzipBodies": 6,
+      "unexplainedMismatch": 0,
+      "originalCompressedBodiesRetained": false,
+      "originalCompressedHashesRecomputed": false,
+      "originalObservationsAndFetchTimestampsUnchanged": true,
+      "entryNoticesAndAnaDecisionUnaffected": true,
+      "details": [
+        {
+          "id": "mogumogu-fushimi-news",
+          "file": "bodies/mogumogu-fushimi-news.html",
+          "recordedHash": "5ce07a672b70ac43b1fdd7da4a2010e0a7b2471a3b505d28aa09d995b0c63bd5",
+          "persistedDecodedHash": "609b3030e61e182feddd8f8acc881355f4f1a4ce59d665ce348f534e1e597aa5",
+          "hashStatus": "mismatch_after_gzip_decoding",
+          "originalObservedAt": "2026-10-25T10:00:56.832+00:00"
+        },
+        {
+          "id": "mogumogu-kawagoe-news",
+          "file": "bodies/mogumogu-kawagoe-news.html",
+          "recordedHash": "ee903f246d356f22d2577f9a7a297c224eb9f2625eae29e1e7179b928d47e6b8",
+          "persistedDecodedHash": "6bac9f312166a491ade93d26141a2e1019a991639c162ae9561a3f71a1d634f3",
+          "hashStatus": "mismatch_after_gzip_decoding",
+          "originalObservedAt": "2026-10-25T10:00:56.792+00:00"
+        },
+        {
+          "id": "mogumogu-otaru-news",
+          "file": "bodies/mogumogu-otaru-news.html",
+          "recordedHash": "c0889264bf4c9e3dc35685259cfc6852d6e7b8bdcff64c7dde2e2473eaf81e91",
+          "persistedDecodedHash": "033ad2a227c061242d996d58ec4c4fd49fd3d4c265c3d5cb231902417e40bb3a",
+          "hashStatus": "mismatch_after_gzip_decoding",
+          "originalObservedAt": "2026-10-25T10:00:56.724+00:00"
+        },
+        {
+          "id": "baby-castella-otaru-official",
+          "file": "bodies/baby-castella-otaru-official.html",
+          "recordedHash": "abbbfc4d549c5a7c35f58e5da7e5d27879ebcded6ab464938520d8b4bb6eef21",
+          "persistedDecodedHash": "ee29602f4df1b7358f7be743292c81b805afd02484925073d0f04fd338a23cce",
+          "hashStatus": "mismatch_after_gzip_decoding",
+          "originalObservedAt": "2026-10-25T10:01:26.300+00:00"
+        },
+        {
+          "id": "mogumogu-otaru-category-news",
+          "file": "bodies/mogumogu-otaru-category-news.html",
+          "recordedHash": "6133d8e43a93ad2876d57f73b5204799ad5d52f83ec34ca9de404be8ee2a2695",
+          "persistedDecodedHash": "5c88556b89b6796c6cf8c07f772a68e1fd3683fd4d8680541bc677cafe5089d9",
+          "hashStatus": "mismatch_after_gzip_decoding",
+          "originalObservedAt": "2026-10-25T10:01:40.169+00:00"
+        },
+        {
+          "id": "evening-www-chiikawamogumogu-jp",
+          "file": "bodies/evening-www-chiikawamogumogu-jp.html",
+          "recordedHash": "f3a450543922fdc8662022fc9a41ea76741da0c153e6f5ad925cd7c9960fd65d",
+          "persistedDecodedHash": "967dbe36e42772727e1f6b15098a9e6d5f9bdec3670de93f1eac344690232aed",
+          "hashStatus": "mismatch_after_gzip_decoding",
+          "originalObservedAt": "2026-10-25T10:01:56.252+00:00"
+        },
+        {
+          "id": "ana-naha-delay-20261022",
+          "file": "bodies/ana-naha-delay-20261022.html",
+          "recordedHash": null,
+          "persistedDecodedHash": "d48bc910c619a5f9561bedaec67e7326358604a603289173c518c7b0be3febd0",
+          "hashStatus": "missing",
+          "originalObservedAt": "2026-10-25T10:02:54.999+00:00"
+        },
+        {
+          "id": "ana-goods-resale-20261024",
+          "file": "bodies/ana-goods-resale-20261024.html",
+          "recordedHash": null,
+          "persistedDecodedHash": "2aa084a5df182a55c59d1af2b0cad33615024b093997dba7690d4faa102de73b",
+          "hashStatus": "missing",
+          "originalObservedAt": "2026-10-25T10:02:58.324+00:00"
+        },
+        {
+          "id": "ana-preorder-recovery-20261023",
+          "file": "bodies/ana-preorder-recovery-20261023.html",
+          "recordedHash": null,
+          "persistedDecodedHash": "82780898b82e872c231e4d77555d7fd28de53f61a299302f9d92130bb1c70f02",
+          "hashStatus": "missing",
+          "originalObservedAt": "2026-10-25T10:03:02.901+00:00"
+        }
+      ]
+    },
+    "sourcePatrol": {
+      "baselineSources": 674,
+      "newSideObservations": 110,
+      "rawCounts": {
+        "success": 88,
+        "limited": 11,
+        "failed": 11
+      },
+      "selfPublicComparisons": 3,
+      "officialPatrolObservations": 107,
+      "targetedOfficialObservations": 9,
+      "excludedNonofficialOrInvalidProfiles": 2,
+      "fileTimestampsNotPromotedToFetchTimes": 4,
+      "fullAllSourceCoverageClaimed": false,
+      "failedOrLimitedDidNotErasePriorSuccess": true
+    },
+    "timing": {
+      "individualSpotDiscoveryPrecision": "date only",
+      "plannedFreeAdmissionIsNotCompletion": true,
+      "anaNahaDiscoveredAfterApplicablePeriodStarted": true,
+      "anaNahaConditionsDoNotAssertCurrentDisruption": true,
+      "anaResaleUnderConsiderationAndTimingUnknown": true,
+      "actualPublishedAt": null
+    },
+    "priorPublicationSync": {
+      "pr": 76,
+      "count": 6,
+      "firstPublicMatchAt": "2026-10-24T23:25:04.095Z"
+    },
+    "acquisitionDiagnostics": {
+      "initialCorrectionWorkspacePathNotOnPc": true,
+      "correctedExplicitDestinationReturnedSignedTransfer": true,
+      "requiredIdentityRetained": true,
+      "unprivilegedWslServiceReadDenied": true,
+      "oneAuthorizedEscalatedReadSucceeded": true,
+      "rawHttpOrOldHelperUsed": false,
+      "blockers": []
+    }
+  },
+  "scope": "Five existing Oct25 evening notices plus two conditions on one existing ANA collaboration; source/candidate records, PR76 original publication sync and integrity correction. No new listing, archive transition, app, schema, hosting or DNS changes."
+}
