@@ -1,0 +1,816 @@
+{
+  "recordedAt": "2026-10-25T10:15:32.281Z",
+  "baselineCommit": "ef31e921770e1d8837161133677050c9df4f50df",
+  "operations": {
+    "path": "C:/Users/6ikas/Projects/ちい活マップ/chiikawa-map-repo/node_modules/.cache/listing-20261020/incoming-packet/DATA-OPERATIONS.md",
+    "updatedAt": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "library": {
+    "id": "libfile_a8059efb3d3481918741a3a21dc338b7",
+    "version": 0,
+    "size": 2745075,
+    "sha256": "99f98afceecbbb68af9aa5e4c378ecaed586c03bd03e4576953dcb18f37e4a10",
+    "identityVerified": true,
+    "originalRetainedOnLinux": true
+  },
+  "changes": [
+    {
+      "id": "chiikawaland-tokyo-station",
+      "file": "data/official-spots.json",
+      "before": {
+        "id": "chiikawaland-tokyo-station",
+        "name": "ちいかわらんど TOKYO Station",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawaland",
+        "periodType": "permanent",
+        "startDate": "2022-09-16",
+        "endDate": null,
+        "hoursText": "10:00～20:30",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+        "hoursCheckedAt": "2026-08-24",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月24日は、混雑緩和と安全対策のため、公式告知時点で並んでいる方をもって当日の入店受付を終了しました。今後の来店日の入店方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2113929838725943732",
+        "entryInfoCheckedAt": "2026-10-24",
+        "lat": 35.6806,
+        "lng": 139.7655,
+        "address": "東京都千代田区丸の内1-9-1 東京駅一番街 東京キャラクターストリート",
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+        "sourceUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20TOKYO%20Station",
+        "importantNotice": "10月24日の入店受付は終了しました（公式告知時点で並んでいた方まで）。"
+      },
+      "after": {
+        "id": "chiikawaland-tokyo-station",
+        "name": "ちいかわらんど TOKYO Station",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawaland",
+        "periodType": "permanent",
+        "startDate": "2022-09-16",
+        "endDate": null,
+        "hoursText": "10:00～20:30",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+        "hoursCheckedAt": "2026-08-24",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日は、混雑緩和と安全対策のため、公式告知時点で並んでいる方をもって当日の入店受付を終了しました。今後の来店日の入店方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2114290386562941394",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 35.6806,
+        "lng": 139.7655,
+        "address": "東京都千代田区丸の内1-9-1 東京駅一番街 東京キャラクターストリート",
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+        "sourceUrl": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20TOKYO%20Station",
+        "importantNotice": "10月25日の入店受付は終了しました（公式告知時点で並んでいた方まで）。"
+      },
+      "deviationFromPacket": null
+    },
+    {
+      "id": "chiikawaland-sendai",
+      "file": "data/official-spots.json",
+      "before": {
+        "id": "chiikawaland-sendai",
+        "name": "ちいかわらんど 仙台パルコ店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawaland",
+        "periodType": "permanent",
+        "startDate": "2023-03-31",
+        "endDate": null,
+        "hoursText": "10:00～20:00",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/sendai/",
+        "hoursCheckedAt": "2026-10-13",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月23日は終日、LINEアプリによる入店チケットが必要です。店舗全体が入場制限の対象です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。販売可能数に空きが生じた場合のみ、二次先着受付を10月19日20:00から行います。申し込み・チケット取得・入店にはLINEが必要で、チケットは入店案内開始から30分後に失効します。商品購入やノベルティ配布を保証するものではありません。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2110643022991892767",
+        "entryInfoCheckedAt": "2026-10-19",
+        "lat": 38.2604,
+        "lng": 140.8822,
+        "address": "宮城県仙台市青葉区中央1-2-3 仙台PARCO",
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+        "sourceUrl": "https://chiikawa-info.jp/chiikawaland/sendai/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E4%BB%99%E5%8F%B0%E3%83%91%E3%83%AB%E3%82%B3%E5%BA%97",
+        "importantNotice": "10月23日は終日、LINEでの入店予約が必要です。抽選応募は10月18日23:59で終了しました。当選発表は10月19日中です。店舗全体が入場制限の対象です。 販売可能数に空きが生じた場合のみ、10月19日20:00から二次先着受付を行います。"
+      },
+      "after": {
+        "id": "chiikawaland-sendai",
+        "name": "ちいかわらんど 仙台パルコ店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawaland",
+        "periodType": "permanent",
+        "startDate": "2023-03-31",
+        "endDate": null,
+        "hoursText": "10:00～20:00",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/sendai/",
+        "hoursCheckedAt": "2026-10-13",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日は、店頭での入場整理券の配布が終了しました。公式案内では16:45頃からフリー入場を予定しています。混雑状況に応じて再度入場を制限する場合があります。実際の入場状況は最新の公式案内をご確認ください。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2114260699597926903",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 38.2604,
+        "lng": 140.8822,
+        "address": "宮城県仙台市青葉区中央1-2-3 仙台PARCO",
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+        "sourceUrl": "https://chiikawa-info.jp/chiikawaland/sendai/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E4%BB%99%E5%8F%B0%E3%83%91%E3%83%AB%E3%82%B3%E5%BA%97",
+        "importantNotice": "2026年10月25日は、店頭での入場整理券の配布が終了しました。公式案内では16:45頃からフリー入場を予定しています。混雑状況に応じて再度入場を制限する場合があります。実際の入場状況は最新の公式案内をご確認ください。"
+      },
+      "deviationFromPacket": "Preserve generally applicable entry conditions after the new dated notice."
+    },
+    {
+      "id": "chiikawaland-kanazawa",
+      "file": "data/official-spots.json",
+      "before": {
+        "id": "chiikawaland-kanazawa",
+        "name": "ちいかわらんど 金沢フォーラス店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawaland",
+        "periodType": "permanent",
+        "startDate": "2025-11-21",
+        "endDate": null,
+        "hoursText": "10:00～20:00",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+        "hoursCheckedAt": "2026-10-13",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日のちいかわ×ANA商品販売コーナーは、開店前に公式投稿の画像で指定された場所へお並びください。混雑状況に応じて整理券を配布する場合があります。店舗全体ではなくANA商品販売コーナーの案内です。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2113949208202096886",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 36.5784,
+        "lng": 136.6485,
+        "address": "石川県金沢市堀川新町3-1 金沢フォーラス3F",
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+        "sourceUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E9%87%91%E6%B2%A2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%82%B9%E5%BA%97",
+        "importantNotice": "2026年10月25日のちいかわ×ANA商品販売コーナーは、開店前に公式投稿の画像で指定された場所へお並びください。混雑状況に応じて整理券を配布する場合があります。店舗全体ではなくANA商品販売コーナーの案内です。"
+      },
+      "after": {
+        "id": "chiikawaland-kanazawa",
+        "name": "ちいかわらんど 金沢フォーラス店",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawaland",
+        "periodType": "permanent",
+        "startDate": "2025-11-21",
+        "endDate": null,
+        "hoursText": "10:00～20:00",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+        "hoursCheckedAt": "2026-10-13",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日のちいかわ×ANA商品販売コーナーは、店頭での入場整理券配布が終了しました。15:45以降はフリー入場の予定で、希望する方は5分前に店頭へお越しください。品切れの商品があります。混雑状況により入場制限や整理券の再配布を行う場合があります。店舗全体ではなくANA商品販売コーナーの案内です。 混雑時や新商品発売日などは入店制限や整理券の案内が行われる場合があります。最新の入店方法・対象日時は公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawa_land/status/2114224071177286017",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 36.5784,
+        "lng": 136.6485,
+        "address": "石川県金沢市堀川新町3-1 金沢フォーラス3F",
+        "description": "ちいかわのオフィシャルショップ「ちいかわらんど」の常設店です。 2026年10月23日から当面の間、店内の全商品は1会計につき各1点まで、シークレット商品は各1BOXまでの購入制限があります。状況により変更される場合があります。",
+        "sourceUrl": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E9%87%91%E6%B2%A2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%82%B9%E5%BA%97",
+        "importantNotice": "2026年10月25日のちいかわ×ANA商品販売コーナーは、店頭での入場整理券配布が終了しました。15:45以降はフリー入場の予定で、希望する方は5分前に店頭へお越しください。品切れの商品があります。混雑状況により入場制限や整理券の再配布を行う場合があります。店舗全体ではなくANA商品販売コーナーの案内です。"
+      },
+      "deviationFromPacket": "Preserve generally applicable entry conditions after the new dated notice."
+    },
+    {
+      "id": "chiikawa-bakery-tokyo",
+      "file": "data/official-spots.json",
+      "before": {
+        "id": "chiikawa-bakery-tokyo",
+        "name": "ちいかわベーカリー",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2024-10-29",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": "施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawabakery.jp/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "priority",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月24日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。 現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2113596248175628594",
+        "entryInfoCheckedAt": "2026-10-24",
+        "lat": 35.6687,
+        "lng": 139.706,
+        "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
+        "description": "ちいかわたちをモチーフにしたパンやドリンクを楽しめる公式ベーカリーです。 2026年10月15日から2周年記念企画の対象店舗です。記念グッズとお買物特典を展開し、10月29日からはパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+        "sourceUrl": "https://chiikawabakery.jp/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC",
+        "importantNotice": "2026年10月24日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。"
+      },
+      "after": {
+        "id": "chiikawa-bakery-tokyo",
+        "name": "ちいかわベーカリー",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2024-10-29",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": "施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawabakery.jp/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "priority",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。 現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2114160009890435478",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 35.6687,
+        "lng": 139.706,
+        "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
+        "description": "ちいかわたちをモチーフにしたパンやドリンクを楽しめる公式ベーカリーです。 2026年10月15日から2周年記念企画の対象店舗です。記念グッズとお買物特典を展開し、10月29日からはパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+        "sourceUrl": "https://chiikawabakery.jp/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC",
+        "importantNotice": "2026年10月25日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。"
+      },
+      "deviationFromPacket": null
+    },
+    {
+      "id": "chiikawa-bakery-shop-laforet",
+      "file": "data/official-spots.json",
+      "before": {
+        "id": "chiikawa-bakery-shop-laforet",
+        "name": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2026-03-14",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawabakery.jp/information-popup_01/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2113948627051933978",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 35.6692109,
+        "lng": 139.7052614,
+        "address": "東京都渋谷区神宮前1-11-6 ラフォーレ原宿 B1F",
+        "description": "2026年3月14日に移転オープンした、ちいかわベーカリーのグッズ専門店です。食パン・ジャムなどの一部食品も扱いますが、カウンターで選ぶキャラクターパンの取扱いはありません。 ラフォーレ原宿の本POP UP SHOP限定のPHOTO BOOTHが2026年10月6日から稼働予定です。終了日は未発表です。 2026年10月15日から2周年記念企画の対象店舗として、記念グッズと物販購入特典を展開します。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+        "sourceUrl": "https://chiikawabakery.jp/information-popup_01/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-11-6%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20B1F",
+        "importantNotice": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。"
+      },
+      "after": {
+        "id": "chiikawa-bakery-shop-laforet",
+        "name": "ちいかわベーカリー ポップアップショップ ラフォーレ原宿",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "official_store",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2026-03-14",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawabakery.jp/information-popup_01/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2113948627051933978",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 35.6692109,
+        "lng": 139.7052614,
+        "address": "東京都渋谷区神宮前1-11-6 ラフォーレ原宿 B1F",
+        "description": "2026年3月14日に移転オープンした、ちいかわベーカリーのグッズ専門店です。食パン・ジャムなどの一部食品も扱いますが、カウンターで選ぶキャラクターパンの取扱いはありません。 ラフォーレ原宿の本POP UP SHOP限定のPHOTO BOOTHが2026年10月6日から稼働予定です。終了日は未発表です。 2026年10月15日から2周年記念企画の対象店舗として、記念グッズと物販購入特典を展開します。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。",
+        "sourceUrl": "https://x.com/chiikawabakery/status/2114212685642633544",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-11-6%20%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AC%E5%8E%9F%E5%AE%BF%20B1F",
+        "importantNotice": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。"
+      },
+      "deviationFromPacket": "Use the official novelty announcement for the main source link; preserve the separate entry-info link and all admission conditions."
+    },
+    {
+      "id": "ana-chiikawa-jet-2026",
+      "file": "data/collaborations-current.json",
+      "before": {
+        "id": "ana-chiikawa-jet-2026",
+        "title": "ANA × ちいかわ「ちいかわジェット」",
+        "partner": "ANA",
+        "category": "experience",
+        "status": "active",
+        "summary": "公式案内上、特別デザイン機「ちいかわジェット」（ボーイング767-300、機番JA609A）の国内線就航開始日は2026年10月19日です。公式で初便として案内された羽田→長崎ANA661便と長崎→羽田ANA664便は、同日19:06時点のANA運航状況で到着済みと確認できました。10月20日のANA公式発表で、初便ANA661便にちいかわジェット（機番JA609A）が使用されたことを確認しました。ANA664便の機材は未確認です。以降は路線を固定せず、運航状況により当日まで決まりません。就航記念キャンペーン第1弾の参加登録期間は10月19日10:00～12月31日23:59と案内されています。コラボグッズ第1弾は10月23日から順次発売し、A-styleでは仮想待合室を導入します。ANA FESTAの対象4店舗は10月23日〜25日の入店に事前予約が必要で、10月16日19:00に満枠が発表されました。キャンセルが出た場合は予約ページに枠が自動で反映されます。",
+        "areaText": "国内線・対象空港店舗・オンライン",
+        "channels": [
+          "機内",
+          "オンライン",
+          "店舗"
+        ],
+        "periods": [
+          {
+            "label": "公式案内の国内線就航開始日",
+            "startDate": "2026-10-19",
+            "endDate": null,
+            "note": "公式で初便として案内されたANA661便（羽田→長崎）は10月19日08:26出発・10:13到着、ANA664便（長崎→羽田）は11:09出発・12:48到着と、同日19:06のANA運航状況で確認しました。10月20日のANA公式発表によると、初便NH661便はちいかわジェット（機番JA609A）で運航されました。以降の路線は固定せず、当日の運航状況により変更されます。就航企画の終了日は未発表です。公式発表：https://x.com/ANA_travel_info/status/2112461317730640199 運航状況：https://www.ana.co.jp/fs/dom/jp/"
+          },
+          {
+            "label": "就航記念キャンペーン 第1弾参加登録",
+            "startDate": "2026-10-19",
+            "endDate": "2026-12-31",
+            "note": "10月19日10:00～12月31日23:59。ANAアプリのダウンロード・ANAマイレージクラブ会員情報でのログインと、MYキャンペーンでの参加登録が必要です。搭乗不要。抽選500名にアクリルスタンド。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "就航記念キャンペーン 第2弾対象搭乗",
+            "startDate": "2027-02-01",
+            "endDate": "2027-04-30",
+            "note": "事前に第1弾の参加条件を達成した方が対象。ANA国内線のマイル積算可能運賃で1区間以上搭乗し、ANAマイレージクラブへフライトマイルを積算する必要があります。コードシェア便はANA（NH）便名での予約・搭乗に限ります。抽選100名にパスポートケース。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "ANA FESTA対象4店舗の入店予約開始",
+            "startDate": "2026-10-16",
+            "endDate": null,
+            "note": "10月16日11:00から先着受付を開始し、同日19:00に満枠が発表されました。千歳ロビー店、羽田B1フロアギフト店、福岡国内ロビー店、那覇ロビー1号店の10月23日〜25日の入店は完全予約制で、予約のない方は入場できません。キャンセルが出た場合は予約ページに枠が自動で反映されます。最新状況：https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949"
+          },
+          {
+            "label": "コラボグッズ第1弾発売",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "ECサイトと国内線機内販売（ANA STORE@SKY）は10:00、国際線機内プリオーダーは00:00、対象空港店舗は開店時から（予約制店舗は予約時間によります）。空港店舗の開店前待機はお控えください。10月23日から当面の間、ANA関連販売先で各商品2点、BOX商品1点まで。10月22日の公式案内により、10月26日以降も購入個数制限を継続します。ちいかわらんど・ちいかわマーケットは購入制限が異なります。販売先により取扱商品・開始日が異なり、陶器マグは機内先行販売です。国際線免税店は国際線航空券をお持ちの方のみ利用できます。A-styleは国内在住者向けで、海外発送・海外転送サービスや代行サービス宛ての注文はできません。詳細：https://www.astyle.jp/astyle/s/02/chiikawa-ana/#faq"
+          },
+          {
+            "label": "ANA FESTA羽田B1フロアギフト店 ちいかわ仕様",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "羽田空港第2ターミナルB1F（保安検査場通過前）。営業時間8:00〜21:30、初日から3日間の入店は完全予約制（先着）。2027年3月末まで予定と発表されていますが、具体的な終了日は未確定です。"
+          },
+          {
+            "label": "A-style 仮想待合室",
+            "startDate": "2026-10-23",
+            "endDate": "2026-10-23",
+            "note": "9:30〜9:59の事前待機者には10:00にランダムで入場順を割り当て、10:00以降のアクセスはその後の先着順となります。案内後10分以内に入場し、サイト利用は30分以内。約30分で並び直しとなり、カートが無効になる場合があります。待合室は商品の在庫確保を保証しません。詳細：https://www.astyle.jp/astyle/news/696/"
+          }
+        ],
+        "tags": [
+          "旅行",
+          "飛行機"
+        ],
+        "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+        "linkedSpotIds": [],
+        "checkedAt": "2026-10-22"
+      },
+      "after": {
+        "id": "ana-chiikawa-jet-2026",
+        "title": "ANA × ちいかわ「ちいかわジェット」",
+        "partner": "ANA",
+        "category": "experience",
+        "status": "active",
+        "summary": "公式案内上、特別デザイン機「ちいかわジェット」（ボーイング767-300、機番JA609A）の国内線就航開始日は2026年10月19日です。公式で初便として案内された羽田→長崎ANA661便と長崎→羽田ANA664便は、同日19:06時点のANA運航状況で到着済みと確認できました。10月20日のANA公式発表で、初便ANA661便にちいかわジェット（機番JA609A）が使用されたことを確認しました。ANA664便の機材は未確認です。以降は路線を固定せず、運航状況により当日まで決まりません。就航記念キャンペーン第1弾の参加登録期間は10月19日10:00～12月31日23:59と案内されています。コラボグッズ第1弾は10月23日から順次発売し、A-styleでは仮想待合室を導入します。ANA FESTAの対象4店舗は10月23日〜25日の入店に事前予約が必要で、10月16日19:00に満枠が発表されました。キャンセルが出た場合は予約ページに枠が自動で反映されます。 10月24日のANA公式案内では一部店舗に欠品があり、再販売・追加生産を検討中です。実施や対象商品・店舗・時期などの詳細は未発表です。 那覇ロビー1号店の10月23日～25日の予約には、交通遅延等や空港ビル閉鎖・臨時休業の場合の取り扱いが案内されています。",
+        "areaText": "国内線・対象空港店舗・オンライン",
+        "channels": [
+          "機内",
+          "オンライン",
+          "店舗"
+        ],
+        "periods": [
+          {
+            "label": "公式案内の国内線就航開始日",
+            "startDate": "2026-10-19",
+            "endDate": null,
+            "note": "公式で初便として案内されたANA661便（羽田→長崎）は10月19日08:26出発・10:13到着、ANA664便（長崎→羽田）は11:09出発・12:48到着と、同日19:06のANA運航状況で確認しました。10月20日のANA公式発表によると、初便NH661便はちいかわジェット（機番JA609A）で運航されました。以降の路線は固定せず、当日の運航状況により変更されます。就航企画の終了日は未発表です。公式発表：https://x.com/ANA_travel_info/status/2112461317730640199 運航状況：https://www.ana.co.jp/fs/dom/jp/"
+          },
+          {
+            "label": "就航記念キャンペーン 第1弾参加登録",
+            "startDate": "2026-10-19",
+            "endDate": "2026-12-31",
+            "note": "10月19日10:00～12月31日23:59。ANAアプリのダウンロード・ANAマイレージクラブ会員情報でのログインと、MYキャンペーンでの参加登録が必要です。搭乗不要。抽選500名にアクリルスタンド。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "就航記念キャンペーン 第2弾対象搭乗",
+            "startDate": "2027-02-01",
+            "endDate": "2027-04-30",
+            "note": "事前に第1弾の参加条件を達成した方が対象。ANA国内線のマイル積算可能運賃で1区間以上搭乗し、ANAマイレージクラブへフライトマイルを積算する必要があります。コードシェア便はANA（NH）便名での予約・搭乗に限ります。抽選100名にパスポートケース。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "ANA FESTA対象4店舗の入店予約開始",
+            "startDate": "2026-10-16",
+            "endDate": null,
+            "note": "10月16日11:00から先着受付を開始し、同日19:00に満枠が発表されました。千歳ロビー店、羽田B1フロアギフト店、福岡国内ロビー店、那覇ロビー1号店の10月23日〜25日の入店は完全予約制で、予約のない方は入場できません。キャンセルが出た場合は予約ページに枠が自動で反映されます。最新状況：https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949 ANA FESTA那覇ロビー1号店の2026年10月23日～25日の予約では、飛行機の遅延・欠航、または電車・バス等の公共交通機関（タクシーを除く）の遅延の場合、遅延証明（搭乗便の遅延表示画面や遅延証明書など）を提示すれば当日内に入場できます。混雑時は案内まで待つ場合があります。別日への予約振替はできません。自己都合で遅れた場合の買い物は予約枠の時間内に限り、予約時間帯を過ぎると自動キャンセルとなります。空港ビル閉鎖・店舗臨時休業の場合は該当時間帯の予約が自動キャンセルとなり、別日への振替はありません。予約時間の5分以上前からの待機はご遠慮ください。 公式案内：https://www.anafesta.com/notice/2026/10/79352/"
+          },
+          {
+            "label": "コラボグッズ第1弾発売",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "ECサイトと国内線機内販売（ANA STORE@SKY）は10:00、国際線機内プリオーダーは00:00、対象空港店舗は開店時から（予約制店舗は予約時間によります）。空港店舗の開店前待機はお控えください。10月23日から当面の間、ANA関連販売先で各商品2点、BOX商品1点まで。10月22日の公式案内により、10月26日以降も購入個数制限を継続します。ちいかわらんど・ちいかわマーケットは購入制限が異なります。販売先により取扱商品・開始日が異なり、陶器マグは機内先行販売です。国際線免税店は国際線航空券をお持ちの方のみ利用できます。A-styleは国内在住者向けで、海外発送・海外転送サービスや代行サービス宛ての注文はできません。詳細：https://www.astyle.jp/astyle/s/02/chiikawa-ana/#faq 10月24日のANA公式案内では一部店舗に欠品があり、再販売・追加生産を検討中です。実施や対象商品・店舗・時期などの詳細は未発表です。 公式案内：https://x.com/ANA_Group_News/status/2113805171805622424"
+          },
+          {
+            "label": "ANA FESTA羽田B1フロアギフト店 ちいかわ仕様",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "羽田空港第2ターミナルB1F（保安検査場通過前）。営業時間8:00〜21:30、初日から3日間の入店は完全予約制（先着）。2027年3月末まで予定と発表されていますが、具体的な終了日は未確定です。"
+          },
+          {
+            "label": "A-style 仮想待合室",
+            "startDate": "2026-10-23",
+            "endDate": "2026-10-23",
+            "note": "9:30〜9:59の事前待機者には10:00にランダムで入場順を割り当て、10:00以降のアクセスはその後の先着順となります。案内後10分以内に入場し、サイト利用は30分以内。約30分で並び直しとなり、カートが無効になる場合があります。待合室は商品の在庫確保を保証しません。詳細：https://www.astyle.jp/astyle/news/696/"
+          }
+        ],
+        "tags": [
+          "旅行",
+          "飛行機"
+        ],
+        "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+        "linkedSpotIds": [],
+        "checkedAt": "2026-10-25"
+      }
+    }
+  ],
+  "rawFiles": [
+    {
+      "path": "research/evening-20261025/entry-fix-packet.json",
+      "source": "oct25-evening-existing/entry-fix-packet.json",
+      "bytes": 16067,
+      "sha256": "2bfa8a07f9c39ea407311fd04eeeb8d38f577b5702427098ccb5fce6269e6b3a"
+    },
+    {
+      "path": "research/evening-20261025/posts.json",
+      "source": "oct25-evening-existing/posts.json",
+      "bytes": 10337,
+      "sha256": "1bc1444be950198e755c8fc8921367cae2c01f5f2a9761c5231e6126610af137"
+    },
+    {
+      "path": "research/evening-20261025/source-observations.json",
+      "source": "oct25-evening-existing/source-observations.json",
+      "bytes": 2597,
+      "sha256": "cafd1c8a7960e555f73fb15537572033c71317063d965dcf145212e951994a0a"
+    },
+    {
+      "path": "research/evening-20261025/2114290386562941394.html",
+      "source": "oct25-evening-existing/2114290386562941394.html",
+      "bytes": 102332,
+      "sha256": "99c5b4392c3d43248b1cf51b3ab5f0028bb79826d233181cf1dd29cdc3515e53"
+    },
+    {
+      "path": "research/evening-20261025/2114260699597926903.html",
+      "source": "oct25-evening-existing/2114260699597926903.html",
+      "bytes": 122018,
+      "sha256": "040436a0df36633bf4f65ce8a6ffd265080ac95dbe631581ad4adc69979b59e1"
+    },
+    {
+      "path": "research/evening-20261025/2114224071177286017.html",
+      "source": "oct25-evening-existing/2114224071177286017.html",
+      "bytes": 126216,
+      "sha256": "901a6f84f377787af4c16c9faf9717a8568fc78c786960abc670286228f4a836"
+    },
+    {
+      "path": "research/evening-20261025/2114160009890435478.html",
+      "source": "oct25-evening-existing/2114160009890435478.html",
+      "bytes": 113141,
+      "sha256": "3b84d18651917f2756dabb0fc153cbffff4d0b801a453e60cd869c811a759bba"
+    },
+    {
+      "path": "research/evening-20261025/2114212685642633544.html",
+      "source": "oct25-evening-existing/2114212685642633544.html",
+      "bytes": 105488,
+      "sha256": "a7b0778d8c73e2d71f3b4f280887a496ce1d09deaca11b770f6f8325b77823e4"
+    },
+    {
+      "path": "research/evening-20261025/land.html",
+      "source": "oct25-evening-existing/land.html",
+      "bytes": 162613,
+      "sha256": "06d38ef87c354c8cae7744f28b0afd2242db3a8544f20affd1113e22a5057632"
+    },
+    {
+      "path": "research/evening-20261025/chiikawabakery.html",
+      "source": "oct25-evening-existing/chiikawabakery.html",
+      "bytes": 156763,
+      "sha256": "b4850eaed390053e48856bd94dc872c95416a676855255b829194531c0cde428"
+    },
+    {
+      "path": "research/evening-20261025/chiikawa_popup.html",
+      "source": "oct25-evening-existing/chiikawa_popup.html",
+      "bytes": 160642,
+      "sha256": "4e4fbece1c0c54628e192c60fcb3abff7f81b124d3a8f859de854cfbb457f1d9"
+    },
+    {
+      "path": "research/evening-20261025/nagano_market.html",
+      "source": "oct25-evening-existing/nagano_market.html",
+      "bytes": 188952,
+      "sha256": "73b4280248bc2554e7d6ac9c9963abc055a3b9b9559e50d9d0f7840a66efcede"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/handoff.json",
+      "source": "oct25-evening-new/handoff.json",
+      "bytes": 14579,
+      "sha256": "cd50ba3c368bf1e587da1b37f0ecf9bd07dd5bdc4b881daf4f71e8a47bdaf491"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/observations.json",
+      "source": "oct25-evening-new/observations.json",
+      "bytes": 65294,
+      "sha256": "6be205c5ec0a525b3ac40451c6b1def3315357760debcd5fda8d168dc006bc91"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/ana-naha-delay-20261022.txt",
+      "source": "oct25-evening-new/bodies/ana-naha-delay-20261022.txt",
+      "bytes": 4714,
+      "sha256": "78fa7809590b758ce49c589fd6174f9eda0f4ffcfc831f0cb09a4ec77aa0d530"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/ana-naha-delay-20261022.html",
+      "source": "oct25-evening-new/bodies/ana-naha-delay-20261022.html",
+      "bytes": 59499,
+      "sha256": "d48bc910c619a5f9561bedaec67e7326358604a603289173c518c7b0be3febd0"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/ana-goods-resale-20261024.txt",
+      "source": "oct25-evening-new/bodies/ana-goods-resale-20261024.txt",
+      "bytes": 4430,
+      "sha256": "294003aaaa7d16aee220dbd30ec0d099f31a294312923c2eca1b655af34a396b"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/ana-goods-resale-20261024.html",
+      "source": "oct25-evening-new/bodies/ana-goods-resale-20261024.html",
+      "bytes": 143869,
+      "sha256": "2aa084a5df182a55c59d1af2b0cad33615024b093997dba7690d4faa102de73b"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/ana-preorder-recovery-20261023.txt",
+      "source": "oct25-evening-new/bodies/ana-preorder-recovery-20261023.txt",
+      "bytes": 14744,
+      "sha256": "fb5ed863d4b57a7aad5e2f95de2e3b389f1e3f2bd266b4ff42ae4b9d0d3e3485"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/ana-preorder-recovery-20261023.html",
+      "source": "oct25-evening-new/bodies/ana-preorder-recovery-20261023.html",
+      "bytes": 133340,
+      "sha256": "82780898b82e872c231e4d77555d7fd28de53f61a299302f9d92130bb1c70f02"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/kamakura-recruitment.txt",
+      "source": "oct25-evening-new/bodies/kamakura-recruitment.txt",
+      "bytes": 429,
+      "sha256": "178b1cdbce3cd9907b403548a5404ea64860811e3b2d1ffb125a47cf458bc3eb"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/telacoya-shop.txt",
+      "source": "oct25-evening-new/bodies/telacoya-shop.txt",
+      "bytes": 13310,
+      "sha256": "0056bbdf1b2986bf2504d230b62ca35bf75199fa997d2e6451d4823f248fbde3"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/morning-https-www-chiikawamogumogu-jp-news.txt",
+      "source": "oct25-evening-new/bodies/morning-https-www-chiikawamogumogu-jp-news.txt",
+      "bytes": 1570,
+      "sha256": "7e120d3d4193e7e958cdd6696cbe4c9de002cd59b97aecadca804852d99bd726"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.txt",
+      "source": "oct25-evening-new/bodies/evening-www-chiikawamogumogu-jp.txt",
+      "bytes": 7326,
+      "sha256": "cf5a9d9f5b90db6cc92dae1e71346f1e6960707f8e49d3c470b8bbfe14255bae"
+    },
+    {
+      "path": "research/evening-20261025/integrity-correction/observations-corrected.json",
+      "source": "incoming-correction/observations-corrected.json",
+      "sourceRoute": "library-correction",
+      "bytes": 101443,
+      "sha256": "8941862966ddfdb527d4a87506db7ddf07af78c92715fb97876aaf38543be144"
+    },
+    {
+      "path": "research/evening-20261025/integrity-correction/integrity-audit-correction.json",
+      "source": "incoming-correction/integrity-audit-correction.json",
+      "sourceRoute": "library-correction",
+      "bytes": 58634,
+      "sha256": "2d1d9aad50e3b58f2adda96080188ccecbac37e453b2e8f863593e0d8d455575"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/mogumogu-fushimi-news.html",
+      "source": "incoming-packet/oct25-evening-new/bodies/mogumogu-fushimi-news.html",
+      "sourceRoute": "original-evening-packet",
+      "bytes": 53021,
+      "sha256": "609b3030e61e182feddd8f8acc881355f4f1a4ce59d665ce348f534e1e597aa5"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/mogumogu-kawagoe-news.html",
+      "source": "incoming-packet/oct25-evening-new/bodies/mogumogu-kawagoe-news.html",
+      "sourceRoute": "original-evening-packet",
+      "bytes": 53156,
+      "sha256": "6bac9f312166a491ade93d26141a2e1019a991639c162ae9561a3f71a1d634f3"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/mogumogu-otaru-news.html",
+      "source": "incoming-packet/oct25-evening-new/bodies/mogumogu-otaru-news.html",
+      "sourceRoute": "original-evening-packet",
+      "bytes": 46526,
+      "sha256": "033ad2a227c061242d996d58ec4c4fd49fd3d4c265c3d5cb231902417e40bb3a"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/baby-castella-otaru-official.html",
+      "source": "incoming-packet/oct25-evening-new/bodies/baby-castella-otaru-official.html",
+      "sourceRoute": "original-evening-packet",
+      "bytes": 43766,
+      "sha256": "ee29602f4df1b7358f7be743292c81b805afd02484925073d0f04fd338a23cce"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/mogumogu-otaru-category-news.html",
+      "source": "incoming-packet/oct25-evening-new/bodies/mogumogu-otaru-category-news.html",
+      "sourceRoute": "original-evening-packet",
+      "bytes": 26535,
+      "sha256": "5c88556b89b6796c6cf8c07f772a68e1fd3683fd4d8680541bc677cafe5089d9"
+    },
+    {
+      "path": "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.html",
+      "source": "incoming-packet/oct25-evening-new/bodies/evening-www-chiikawamogumogu-jp.html",
+      "sourceRoute": "original-evening-packet",
+      "bytes": 182441,
+      "sha256": "967dbe36e42772727e1f6b15098a9e6d5f9bdec3670de93f1eac344690232aed"
+    }
+  ],
+  "spotPacket": "research/evening-20261025/entry-fix-packet.json",
+  "newPacket": "research/evening-20261025/new-sources/handoff.json",
+  "limits": [
+    "公開3JSONを取得し同一IDで照合。新規ID不要。",
+    "仙台と金沢のフリー入場は予定であり実施確認ではない。",
+    "10/26整理券・予約変更は取得したprofileの現表示範囲では未発見。",
+    "終了日当日のイベントは移動対象にしていない。"
+  ],
+  "timing": {
+    "existingNoticeDiscoveryPrecision": "date only; individual exact instants not recorded",
+    "discoveryWindow": "2026-10-25 18:57–19:00 JST",
+    "sendaiFreeAdmissionPlannedNotConfirmed": true,
+    "kanazawaFreeAdmissionPlannedNotConfirmed": true,
+    "anaNahaApplicableDates": [
+      "2026-10-23",
+      "2026-10-25"
+    ],
+    "anaNahaDiscoveredAfterPeriodStarted": true,
+    "anaNahaDoesNotAssertCurrentTransportDisruption": true,
+    "anaResaleDecisionAndTimingUnknown": true
+  },
+  "recoveredPreorder": {
+    "sourceUrl": "https://www.anaskyshop.ana.co.jp/news/36",
+    "recordPath": "research/evening-20261025/new-sources/bodies/ana-preorder-recovery-20261023.txt",
+    "state": "recovered",
+    "notPublishedAsUnresolvedIncident": true
+  },
+  "priorPublicationSync": {
+    "pr": 76,
+    "count": 6,
+    "firstPublicMatchAt": "2026-10-24T23:25:04.095Z",
+    "recordPath": "research/evening-20261025/pr76-publication-verification.json"
+  },
+  "newListings": 0,
+  "archiveTransitions": 0,
+  "generalConditionsAndOriginalAdditionDatesPreserved": true,
+  "allOtherSpotsPreserved": 863,
+  "allOtherCollaborationsPreserved": true,
+  "applicationSchemaAndHostingUnchanged": true,
+  "integrityCorrection": {
+    "incorporatedAt": "2026-10-25T10:24:14.577Z",
+    "passed": true,
+    "library": {
+      "id": "libfile_f4e730eb877c81918cecc9a8bb9b79b6",
+      "version": 0,
+      "size": 30855,
+      "sha256": "f4dcd9e39e7cfab5503da05b49d2b17d249f48baa01ed9c6eb70014cd1a96d1b",
+      "identityVerified": true
+    },
+    "auditPath": "research/evening-20261025/integrity-correction/integrity-audit-correction.json",
+    "correctedObservationsPath": "research/evening-20261025/integrity-correction/observations-corrected.json",
+    "persistedHtmlBodiesRehashed": 99,
+    "persistedTextBodiesRehashed": 99,
+    "originalSameRepresentationHashesVerified": 90,
+    "originalHashMissingAnaBodies": 3,
+    "decodedGzipBodies": 6,
+    "unexplainedMismatch": 0,
+    "originalCompressedBodiesRetained": false,
+    "originalCompressedHashesRecomputed": false,
+    "originalObservationsAndFetchTimestampsUnchanged": true,
+    "entryNoticesAndAnaDecisionUnaffected": true,
+    "details": [
+      {
+        "id": "mogumogu-fushimi-news",
+        "file": "bodies/mogumogu-fushimi-news.html",
+        "recordedHash": "5ce07a672b70ac43b1fdd7da4a2010e0a7b2471a3b505d28aa09d995b0c63bd5",
+        "persistedDecodedHash": "609b3030e61e182feddd8f8acc881355f4f1a4ce59d665ce348f534e1e597aa5",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:00:56.832+00:00"
+      },
+      {
+        "id": "mogumogu-kawagoe-news",
+        "file": "bodies/mogumogu-kawagoe-news.html",
+        "recordedHash": "ee903f246d356f22d2577f9a7a297c224eb9f2625eae29e1e7179b928d47e6b8",
+        "persistedDecodedHash": "6bac9f312166a491ade93d26141a2e1019a991639c162ae9561a3f71a1d634f3",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:00:56.792+00:00"
+      },
+      {
+        "id": "mogumogu-otaru-news",
+        "file": "bodies/mogumogu-otaru-news.html",
+        "recordedHash": "c0889264bf4c9e3dc35685259cfc6852d6e7b8bdcff64c7dde2e2473eaf81e91",
+        "persistedDecodedHash": "033ad2a227c061242d996d58ec4c4fd49fd3d4c265c3d5cb231902417e40bb3a",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:00:56.724+00:00"
+      },
+      {
+        "id": "baby-castella-otaru-official",
+        "file": "bodies/baby-castella-otaru-official.html",
+        "recordedHash": "abbbfc4d549c5a7c35f58e5da7e5d27879ebcded6ab464938520d8b4bb6eef21",
+        "persistedDecodedHash": "ee29602f4df1b7358f7be743292c81b805afd02484925073d0f04fd338a23cce",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:01:26.300+00:00"
+      },
+      {
+        "id": "mogumogu-otaru-category-news",
+        "file": "bodies/mogumogu-otaru-category-news.html",
+        "recordedHash": "6133d8e43a93ad2876d57f73b5204799ad5d52f83ec34ca9de404be8ee2a2695",
+        "persistedDecodedHash": "5c88556b89b6796c6cf8c07f772a68e1fd3683fd4d8680541bc677cafe5089d9",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:01:40.169+00:00"
+      },
+      {
+        "id": "evening-www-chiikawamogumogu-jp",
+        "file": "bodies/evening-www-chiikawamogumogu-jp.html",
+        "recordedHash": "f3a450543922fdc8662022fc9a41ea76741da0c153e6f5ad925cd7c9960fd65d",
+        "persistedDecodedHash": "967dbe36e42772727e1f6b15098a9e6d5f9bdec3670de93f1eac344690232aed",
+        "hashStatus": "mismatch_after_gzip_decoding",
+        "originalObservedAt": "2026-10-25T10:01:56.252+00:00"
+      },
+      {
+        "id": "ana-naha-delay-20261022",
+        "file": "bodies/ana-naha-delay-20261022.html",
+        "recordedHash": null,
+        "persistedDecodedHash": "d48bc910c619a5f9561bedaec67e7326358604a603289173c518c7b0be3febd0",
+        "hashStatus": "missing",
+        "originalObservedAt": "2026-10-25T10:02:54.999+00:00"
+      },
+      {
+        "id": "ana-goods-resale-20261024",
+        "file": "bodies/ana-goods-resale-20261024.html",
+        "recordedHash": null,
+        "persistedDecodedHash": "2aa084a5df182a55c59d1af2b0cad33615024b093997dba7690d4faa102de73b",
+        "hashStatus": "missing",
+        "originalObservedAt": "2026-10-25T10:02:58.324+00:00"
+      },
+      {
+        "id": "ana-preorder-recovery-20261023",
+        "file": "bodies/ana-preorder-recovery-20261023.html",
+        "recordedHash": null,
+        "persistedDecodedHash": "82780898b82e872c231e4d77555d7fd28de53f61a299302f9d92130bb1c70f02",
+        "hashStatus": "missing",
+        "originalObservedAt": "2026-10-25T10:03:02.901+00:00"
+      }
+    ]
+  }
+}

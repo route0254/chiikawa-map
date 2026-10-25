@@ -1,0 +1,252 @@
+{
+  "checkedAt": "2026-10-25T10:03:39.054+00:00",
+  "sourceObservations": "observations.json",
+  "counts": {
+    "success": 88,
+    "partial": 11,
+    "failure": 11
+  },
+  "candidateUpdates": [
+    {
+      "kind": "existing_update",
+      "targetKey": "ana-chiikawa-jet-2026",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "publishedAt": null,
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "existingMatch": {
+        "status": "existing",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "現行公開collaborations-current.jsonと照合し未記載を確認。"
+      },
+      "reflectDueAt": "2026-10-25",
+      "state": "ready",
+      "priority": "high",
+      "recheckDueAt": "2026-10-26T08:00:00+09:00",
+      "id": "update-ana-naha-reservation-typhoon-20261025",
+      "title": "ANA FESTA那覇ロビー1号店 交通遅延時の入場・休業時の予約扱い",
+      "officialAnnouncedAt": "2026-10-22",
+      "discoveredAt": "2026-10-25T10:02:54.999+00:00",
+      "sourceIds": [
+        "ana-naha-delay-20261022"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.anafesta.com/notice/2026/10/79352/",
+          "observedAt": "2026-10-25T10:02:54.999+00:00",
+          "summary": "那覇ロビー1号店の10/23〜25の予約について、飛行機の遅延・欠航や公共交通（タクシー除く）遅延では証明提示で当日内入場可能。別日振替不可。空港閉鎖・臨時休業時は自動キャンセル、振替なし。自己都合遅延は予約枠内のみ、時間経過で自動キャンセル。5分以上前の待機は不可。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/ana-naha-delay-20261022.txt"
+        }
+      ],
+      "decision": "既存IDに条件と告知を補足。新規企画を作らず発売/就航/予約一般条件を保持。",
+      "nextCheck": "公式販売案内の続報と公開実体の反映を確認。"
+    },
+    {
+      "kind": "existing_update",
+      "targetKey": "ana-chiikawa-jet-2026",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "publishedAt": null,
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "existingMatch": {
+        "status": "existing",
+        "ids": [
+          "ana-chiikawa-jet-2026"
+        ],
+        "note": "現行公開collaborations-current.jsonと照合し未記載を確認。"
+      },
+      "reflectDueAt": "2026-10-25",
+      "state": "ready",
+      "priority": "high",
+      "recheckDueAt": "2026-10-26T08:00:00+09:00",
+      "id": "update-ana-goods-resale-consideration-20261025",
+      "title": "ちいかわ×ANA 一部欠品と再販売・追加生産検討の公式案内",
+      "officialAnnouncedAt": "2026-10-24T01:30:00.000Z",
+      "discoveredAt": "2026-10-25T10:02:58.324+00:00",
+      "sourceIds": [
+        "ana-goods-resale-20261024"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/ANA_Group_News/status/2113805171805622424",
+          "observedAt": "2026-10-25T10:02:58.324+00:00",
+          "summary": "10/24公式発表で一部店舗に欠品があり、再販売・追加生産を検討中。対象商品・店舗・時期は未発表。再販決定や予約開始と扱わない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/ana-goods-resale-20261024.txt"
+        }
+      ],
+      "decision": "既存IDに条件と告知を補足。新規企画を作らず発売/就航/予約一般条件を保持。",
+      "nextCheck": "公式販売案内の続報と公開実体の反映を確認。"
+    },
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "title": "ちいかわもぐもぐ本舗 鎌倉店（開業予定の調査候補）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-mogumogu-kamakura:opening-2026",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-21T23:00:30.703+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/23朝の最新main/live一致公開3JSON98/671/23件にも鎌倉既存IDなし。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式採用サイト原本は現在公開されていません。開業時期・住所を原本から再取得できず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiifan.com/articles/404.html",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "二次情報に12月予定・鎌倉市小町2-10-18 二ノ鳥居ビル1F、公式求人への出典リンク。一次確定ではない。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.telacoya.co.jp/",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式企業サイト→中途採用がtelacoya-jobs.net、ニュースに鎌倉告知は見当たらず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T10:06:32.724+00:00",
+          "summary": "公式求人原本は200応答だが現在公開されていません。公式ニュース・店舗一覧にも鎌倉開業の新しい一次告知なし。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T23:05:13.776+00:00",
+          "summary": "求人原本は200だが「現在公開されていません」。公式ニュース・TOP店舗・寺子屋企業TOPに鎌倉正式開業告知なし。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-23T10:07:56.328+00:00",
+          "summary": "公式採用ページは現在非公開と表示。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-23T10:07:59.285+00:00",
+          "summary": "公式店舗一覧に鎌倉もぐもぐの正式開業告知を確認できない。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/",
+          "observedAt": "2026-10-23T10:07:55.326+00:00",
+          "summary": "公式店舗一覧に鎌倉なし。川越・伏見の条件変更告知は別候補。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-23T22:57:54.596Z",
+          "summary": "公式求人は現在公開されていません。開業日・住所・予約開始を確定できない。 朝の提供観測記録として保存。元の個別本文ファイルは本ZIP未同梱。",
+          "recordPath": "research/evening-20261024/morning-carryover.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-23T22:57:54.299Z",
+          "summary": "企業公式店舗一覧に鎌倉もぐもぐの正式開業告知なし。 朝の提供観測記録として保存。元の個別本文ファイルは本ZIP未同梱。",
+          "recordPath": "research/evening-20261024/morning-carryover.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": null,
+          "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
+          "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": null,
+          "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
+          "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": null,
+          "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
+          "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-24T23:02:09.628Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-24T23:02:11.117Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-24T23:01:50.971Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-25T10:01:53.238+00:00",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/kamakura-recruitment.txt"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-25T10:01:59.321+00:00",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/telacoya-shop.txt"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-25T10:01:26.554+00:00",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/morning-https-www-chiikawamogumogu-jp-news.txt"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/",
+          "observedAt": "2026-10-25T10:01:56.252+00:00",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.txt"
+        }
+      ],
+      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。 10/23夕も公式採用ページ非公開、企業店一覧・ブランド店一覧で正式開業日を確定できず保留。求人再掲の12月予定は正確な開業日や営業時間の根拠にしない。 10/24朝の観測と夕方web観測を追記。正式開業日・予約開始は未確認のため掲載保留。本人判断待ちではなく、次回通常巡回で一次告知を再確認する。 10/25朝の一次本文でも正式開業日未確認。本人判断待ちではなく通常巡回で再確認。 10/25 19時再確認でも正式開業・予約開始の一次確定なし。",
+      "nextCheck": "ブランド公式ニュース・店舗一覧・公式SNSで正式開業告知を確認。求人の推測月を公開日や開業日にしない。",
+      "recheckDueAt": "2026-10-26T08:00:00+09:00"
+    }
+  ],
+  "newListingCandidates": [],
+  "notes": [
+    "公開3JSON取得照合済み。鎌倉は既存IDなし、正式日未確認につき保留。",
+    "ANA購入制限延長は既存記載あり。重複変更不要。",
+    "ANAプリオーダー10/23障害は公式で復旧済み。現在の未解決障害ではない。",
+    "クリスマスマーケットの抽選10/25 23:59まで・10/30 12時結果は既存一致。",
+    "総合/系列/施設の本文取得範囲で他の新規国内企画差分なし。画像中心ページと取得失敗は網羅済み扱い不可。",
+    "週広域は10/23実施済みとの引継ぎ、今回は通常巡回。",
+    "DATA-OPERATIONSは保全10/7原本を読了。CI時刻は最新ユーザー指示優先。"
+  ],
+  "opsPath": "map-evening-recovered-20261013/latest/DATA-OPERATIONS.md"
+}
