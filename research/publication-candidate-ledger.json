@@ -17077,11 +17077,29 @@
           "observedAt": "2026-10-25T10:01:56.252Z",
           "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
           "recordPath": "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.txt"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-25T23:10:36.116Z",
+          "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+          "recordPath": "research/morning-20261026/cloud/event-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-25T23:10:40.189Z",
+          "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/1d2ddb136ce5.html"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-25T23:10:43.639Z",
+          "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/5af3d6edc2aa.html"
         }
       ],
-      "decision": "新規候補として保全。開業日・入場/予約不明、公式採用原本も非公開のため公開JSON追加は見送る。勤務時間を営業時間へ転用しない。本人判断が必要な事項は今のところなく公式発表再確認。 候補として記録した確実な時刻。最初の検索ヒット取得の秒単位時刻は未保存。 10/23夕も公式採用ページ非公開、企業店一覧・ブランド店一覧で正式開業日を確定できず保留。求人再掲の12月予定は正確な開業日や営業時間の根拠にしない。 10/24朝の観測と夕方web観測を追記。正式開業日・予約開始は未確認のため掲載保留。本人判断待ちではなく、次回通常巡回で一次告知を再確認する。 10/25朝の一次本文でも正式開業日未確認。本人判断待ちではなく通常巡回で再確認。 10/25夕も正式開業日・予約開始の一次確定なし。次回10/26朝に再確認。",
-      "nextCheck": "ブランド公式ニュース・店舗一覧・公式SNSで正式開業告知を確認。求人の推測月を公開日や開業日にしない。",
-      "recheckDueAt": "2026-10-26T08:00:00+09:00"
+      "decision": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+      "nextCheck": "公式ブランドnews/shop/SNS、運営店舗案内・求人原本で正式日と入場方法を確認",
+      "recheckDueAt": "2026-10-26T19:00:00+09:00"
     },
     {
       "id": "update-ana-purchase-limit-extension-20261022",
@@ -18617,6 +18635,12 @@
           "observedAt": "2026-10-25T09:58:19.117Z",
           "summary": "10月25日の入店受付は終了しました（公式告知時点で並んでいた方まで）。",
           "recordPath": "research/evening-20261025/entry-fix-packet.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18629,12 +18653,12 @@
       "listingIds": [
         "chiikawaland-tokyo-station"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存掲載だけを更新。日付限定の受付終了・入場予定を反映。予定を実施済みへ読み替えない。 発見日は判明しているが個別の正確な発見時刻は未記録のため日付精度で保存。",
-      "nextCheck": "公開 JSON 一致と配信成功を確認。入場予定は実施済みに読み替えず、最新公式告知を再確認。",
-      "recheckDueAt": "2026-10-25T20:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定入場・配布条件の公式続報を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z"
     },
     {
       "id": "update-chiikawaland-sendai-entry-evening-20261025",
@@ -18657,6 +18681,12 @@
           "observedAt": "2026-10-25T09:58:20.188Z",
           "summary": "2026年10月25日は、店頭での入場整理券の配布が終了しました。公式案内では16:45頃からフリー入場を予定しています。混雑状況に応じて再度入場を制限する場合があります。実際の入場状況は最新の公式案内をご確認ください。",
           "recordPath": "research/evening-20261025/entry-fix-packet.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18669,12 +18699,12 @@
       "listingIds": [
         "chiikawaland-sendai"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存掲載だけを更新。日付限定の受付終了・入場予定を反映。予定を実施済みへ読み替えない。 発見日は判明しているが個別の正確な発見時刻は未記録のため日付精度で保存。",
-      "nextCheck": "公開 JSON 一致と配信成功を確認。入場予定は実施済みに読み替えず、最新公式告知を再確認。",
-      "recheckDueAt": "2026-10-25T20:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定入場・配布条件の公式続報を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z"
     },
     {
       "id": "update-chiikawaland-kanazawa-entry-evening-20261025",
@@ -18697,6 +18727,12 @@
           "observedAt": "2026-10-25T09:58:19.159Z",
           "summary": "2026年10月25日のちいかわ×ANA商品販売コーナーは、店頭での入場整理券配布が終了しました。15:45以降はフリー入場の予定で、希望する方は5分前に店頭へお越しください。品切れの商品があります。混雑状況により入場制限や整理券の再配布を行う場合があります。店舗全体ではなくANA商品販売コーナーの案内です。",
           "recordPath": "research/evening-20261025/entry-fix-packet.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18709,12 +18745,12 @@
       "listingIds": [
         "chiikawaland-kanazawa"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存掲載だけを更新。日付限定の受付終了・入場予定を反映。予定を実施済みへ読み替えない。 発見日は判明しているが個別の正確な発見時刻は未記録のため日付精度で保存。",
-      "nextCheck": "公開 JSON 一致と配信成功を確認。入場予定は実施済みに読み替えず、最新公式告知を再確認。",
-      "recheckDueAt": "2026-10-25T20:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定入場・配布条件の公式続報を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z"
     },
     {
       "id": "update-chiikawa-bakery-tokyo-entry-evening-20261025",
@@ -18737,6 +18773,12 @@
           "observedAt": "2026-10-25T10:00:02.600Z",
           "summary": "2026年10月25日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。",
           "recordPath": "research/evening-20261025/entry-fix-packet.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18749,12 +18791,12 @@
       "listingIds": [
         "chiikawa-bakery-tokyo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存掲載だけを更新。日付限定の受付終了・入場予定を反映。予定を実施済みへ読み替えない。 発見日は判明しているが個別の正確な発見時刻は未記録のため日付精度で保存。",
-      "nextCheck": "公開 JSON 一致と配信成功を確認。入場予定は実施済みに読み替えず、最新公式告知を再確認。",
-      "recheckDueAt": "2026-10-25T20:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定入場・配布条件の公式続報を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z"
     },
     {
       "id": "update-chiikawa-bakery-shop-laforet-matte-badge-ended-20261025",
@@ -18777,6 +18819,12 @@
           "observedAt": "2026-10-25T09:59:59.043Z",
           "summary": "2026年10月25日のフリー入場は、混雑した場合に整理券で案内します。整理券は10:00から店頭で発行します。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。",
           "recordPath": "research/evening-20261025/entry-fix-packet.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18789,12 +18837,12 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存掲載だけを更新。本POP UP SHOPの缶バッジ配布終了に限定し、店舗・他特典・周年企画全体を終了扱いにしない。 発見日は判明しているが個別の正確な発見時刻は未記録のため日付精度で保存。",
-      "nextCheck": "配布終了のdescription/noticeが公開されたことを確認。店舗や周年企画自体は終了扱いにしない。",
-      "recheckDueAt": "2026-10-25T20:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "翌通常巡回で日付限定入場・配布条件の公式続報を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z"
     },
     {
       "kind": "listing_update",
@@ -18803,7 +18851,7 @@
       "eventEndsAt": null,
       "releaseAt": null,
       "reservationOpensAt": null,
-      "publishedAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z",
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
@@ -18815,9 +18863,9 @@
         "note": "現行公開collaborations-current.jsonと照合し未記載を確認。"
       },
       "reflectDueAt": "2026-10-25",
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "recheckDueAt": "2026-10-26T08:00:00+09:00",
+      "recheckDueAt": null,
       "id": "update-ana-naha-reservation-typhoon-20261025",
       "title": "ANA FESTA那覇ロビー1号店 交通遅延時の入場・休業時の予約扱い",
       "officialAnnouncedAt": "2026-10-22",
@@ -18831,10 +18879,16 @@
           "observedAt": "2026-10-25T10:02:54.999Z",
           "summary": "那覇ロビー1号店の10/23〜25の予約について、飛行機の遅延・欠航や公共交通（タクシー除く）遅延では証明提示で当日内入場可能。別日振替不可。空港閉鎖・臨時休業時は自動キャンセル、振替なし。自己都合遅延は予約枠内のみ、時間経過で自動キャンセル。5分以上前の待機は不可。",
           "recordPath": "research/evening-20261025/new-sources/bodies/ana-naha-delay-20261022.txt"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "decision": "既存IDに条件と告知を補足。新規企画を作らず発売/就航/予約一般条件を保持。 適用期間10/23～25の開始後に発見。現在の交通障害・休業を確認したものではなく、条件付きの予約取り扱いだけを反映。",
-      "nextCheck": "公式販売案内の続報と公開実体の反映を確認。"
+      "nextCheck": "通常巡回でANAの再販売・追加生産の確定発表と対象条件の続報を確認。那覇の10/23～25限定条件を将来へ転用しない。"
     },
     {
       "kind": "listing_update",
@@ -18843,7 +18897,7 @@
       "eventEndsAt": null,
       "releaseAt": null,
       "reservationOpensAt": null,
-      "publishedAt": null,
+      "publishedAt": "2026-10-25T10:35:52.583Z",
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
@@ -18855,9 +18909,9 @@
         "note": "現行公開collaborations-current.jsonと照合し未記載を確認。"
       },
       "reflectDueAt": "2026-10-25",
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "recheckDueAt": "2026-10-26T08:00:00+09:00",
+      "recheckDueAt": null,
       "id": "update-ana-goods-resale-consideration-20261025",
       "title": "ちいかわ×ANA 一部欠品と再販売・追加生産検討の公式案内",
       "officialAnnouncedAt": "2026-10-24T01:30:00.000Z",
@@ -18871,10 +18925,202 @@
           "observedAt": "2026-10-25T10:02:58.324Z",
           "summary": "10/24公式発表で一部店舗に欠品があり、再販売・追加生産を検討中。対象商品・店舗・時期は未発表。再販決定や予約開始と扱わない。",
           "recordPath": "research/evening-20261025/new-sources/bodies/ana-goods-resale-20261024.txt"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-25T10:35:52.583Z",
+          "summary": "PR77 main 7bfad92f06fb33495cc9caa109129833c38aedaa の公開64ファイル初回一致。今回の同期・報告時刻で置き換えない。",
+          "recordPath": "research/morning-20261026/pr77-publication-verification.json"
         }
       ],
       "decision": "既存IDに条件と告知を補足。新規企画を作らず発売/就航/予約一般条件を保持。",
-      "nextCheck": "公式販売案内の続報と公開実体の反映を確認。"
+      "nextCheck": "通常巡回でANAの再販売・追加生産の確定発表と対象条件の続報を確認。那覇の10/23～25限定条件を将来へ転用しない。"
+    },
+    {
+      "id": "entry-laforet-20261026",
+      "kind": "listing_update",
+      "title": "ラフォーレ原宿10月26日の入場整理券案内",
+      "targetKey": "chiikawa-bakery-shop-laforet:entry-20261026",
+      "officialAnnouncedAt": "2026-10-25",
+      "discoveredAt": "2026-10-25T23:09:52.519Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-26T10:00:00+09:00",
+      "publishedAt": null,
+      "sourceIds": [
+        "entry-post-2114303883845755292"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2114303883845755292",
+          "observedAt": "2026-10-25T23:10:22.930Z",
+          "summary": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。",
+          "recordPath": "research/morning-20261026/cloud/more/c4af8b3e3050.txt"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "公開3JSONとmain同一内容、候補台帳に投稿重複なし。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "既存IDの10月25日限定入場条件のみ置換。一般案内と缶バッジ配布終了は保持。",
+      "nextCheck": "Verify public JSON / page match after bounded fix; recheck next-day guide tomorrow morning.",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00"
+    },
+    {
+      "id": "chiikawa-movie-furifuri-cpla-kinshicho-20261031",
+      "title": "Cpla錦糸町・カプセルトイ販売のみ（対象外）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-movie-furifuri-cpla-kinshicho-20261031",
+      "sourceIds": [
+        "morning26-observed-3711c1a8f7bb",
+        "morning26-observed-4d351cbaa67e"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-25T23:08:22.000Z",
+      "eventStartsAt": "2026-10-31",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-25T10:00:00+09:00",
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://livepocket.jp/e/jxlp5",
+          "observedAt": "2026-10-25T23:08:37.000Z",
+          "summary": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/jxlp5.html"
+        },
+        {
+          "url": "https://livepocket.jp/e/jy9yc",
+          "observedAt": "2026-10-25T23:08:37.000Z",
+          "summary": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/jy9yc.html"
+        },
+        {
+          "url": "https://kinshicho.parco.jp/shop/detail/?cd=028092",
+          "observedAt": null,
+          "summary": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+          "recordPath": "research/morning-20261026/cloud/event-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "official-spots, official-events-archive, collaborations-current及び候補台帳に一致なし"
+      },
+      "listingIds": [],
+      "state": "rejected",
+      "priority": "normal",
+      "decision": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。 無料整理券を商品無料と扱わず、新規掲載しない。",
+      "nextCheck": "対象範囲の変更が明示された場合のみ再評価",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-movie-furifuri-cpla-tressa-20261103",
+      "title": "Cplaトレッサ・カプセルトイ販売のみ（対象外）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-movie-furifuri-cpla-tressa-20261103",
+      "sourceIds": [
+        "morning26-observed-3b7573270032",
+        "morning26-observed-ea55056ca5d6"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-25T23:08:45.000Z",
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-25T10:00:00+09:00",
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://livepocket.jp/e/ymjxa",
+          "observedAt": "2026-10-25T23:09:33.000Z",
+          "summary": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/ymjxa.html"
+        },
+        {
+          "url": "https://livepocket.jp/e/c9kbk",
+          "observedAt": "2026-10-25T23:09:29.000Z",
+          "summary": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/c9kbk.html"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "3公開JSON一致なし"
+      },
+      "listingIds": [],
+      "state": "rejected",
+      "priority": "normal",
+      "decision": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。 無料整理券を商品無料と扱わず、新規掲載しない。",
+      "nextCheck": "対象範囲の変更が明示された場合のみ再評価",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "archive-muchaphoto-sapporo-hiraoka-20261026",
+      "title": "札幌平岡むちゃフォトパーティ終了移行の確認保留",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026:archive-20261026",
+      "sourceIds": [
+        "venue-muchaphoto-sapporo-hiraoka-20261024",
+        "morning26-observed-9018953e026b",
+        "morning26-observed-969ab7e67057"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-24",
+      "eventEndsAt": "2026-10-25",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+          "observedAt": "2026-10-25T23:10:25.460Z",
+          "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+          "recordPath": "research/morning-20261026/cloud/event-source-observations.json"
+        },
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/event-calendar",
+          "observedAt": "2026-10-25T23:10:28.846Z",
+          "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/9018953e026b.html"
+        },
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news",
+          "observedAt": "2026-10-25T23:10:31.790Z",
+          "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/969ab7e67057.html"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
+        ],
+        "note": "既存IDは現行掲載を維持。公式終了確認が揃うまで移行しない。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。 終了候補の初回発見日時は未記録のため不明とする。",
+      "nextCheck": "施設detail復旧・公式calendar終了表示・公式X個別告知による終了/延長の確認",
+      "recheckDueAt": "2026-10-26T19:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

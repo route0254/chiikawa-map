@@ -1,0 +1,97 @@
+{
+  "candidates": [
+    {
+      "officialAnnouncedAt": null,
+      "publishedAt": null,
+      "existingId": null,
+      "reservationStartsAt": "2026-10-25T10:00:00+09:00",
+      "reservationEndsAt": "2026-10-26T23:59:00+09:00",
+      "status": "excluded",
+      "reason": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+      "nextCheck": "対象範囲の変更が明示された場合のみ再評価",
+      "recheckDue": null,
+      "id": "chiikawa-movie-furifuri-cpla-kinshicho-20261031",
+      "discoveredAt": "2026-10-25T23:08:22Z",
+      "observedAt": "2026-10-25T23:08:37Z",
+      "eventStartDate": "2026-10-31",
+      "eventEndDate": "2026-10-31",
+      "sourceUrls": [
+        "https://livepocket.jp/e/jxlp5",
+        "https://livepocket.jp/e/jy9yc",
+        "https://kinshicho.parco.jp/shop/detail/?cd=028092"
+      ],
+      "notes": "①16:00–16:30/②16:30–17:00 各2個。当選者のみ。無料は整理券であり商品価格不明。",
+      "duplicateCheck": "official-spots, official-events-archive, collaborations-current及び候補台帳に一致なし"
+    },
+    {
+      "officialAnnouncedAt": null,
+      "publishedAt": null,
+      "existingId": null,
+      "reservationStartsAt": "2026-10-25T10:00:00+09:00",
+      "reservationEndsAt": "2026-10-26T23:59:00+09:00",
+      "status": "excluded",
+      "reason": "DATA-OPERATIONS.md §コラボ: カプセルトイだけの展開は対象外。通常spotsへの該当前例なし。",
+      "nextCheck": "対象範囲の変更が明示された場合のみ再評価",
+      "recheckDue": null,
+      "id": "chiikawa-movie-furifuri-cpla-tressa-20261103",
+      "discoveredAt": "2026-10-25T23:08:45Z",
+      "observedAt": "2026-10-25T23:09:33Z",
+      "eventStartDate": "2026-11-03",
+      "eventEndDate": "2026-11-03",
+      "sourceUrls": [
+        "https://livepocket.jp/e/ymjxa",
+        "https://livepocket.jp/e/c9kbk"
+      ],
+      "notes": "①11:00–12:00/②13:00–14:00 各2個。当選者のみ。無料は整理券であり商品価格不明。",
+      "duplicateCheck": "3公開JSON一致なし"
+    },
+    {
+      "id": "archive-muchaphoto-sapporo-hiraoka-20261026",
+      "existingId": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "status": "on_hold",
+      "sourceUrls": [
+        "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "https://sapporohiraoka.aeonmallhokkaido.com/event-calendar",
+        "https://sapporohiraoka.aeonmallhokkaido.com/news"
+      ],
+      "knownDates": {
+        "start": "2026-10-24",
+        "end": "2026-10-25"
+      },
+      "historicalEvidence": {
+        "repositoryPath": "research/evening-listings-2026-10-10-evidence.json",
+        "sha": "d4c03faa76857cb0ed9a1f4dfb1943f8dba4b733",
+        "officialReadAt": "2026-10-10T09:38:55Z",
+        "http200At": "2026-10-10T09:45:17.510Z",
+        "summary": "公式本文で10/24–25、撮影会11/13/15時を確認した記録。生HTML保存でなく構造化要約。"
+      },
+      "reason": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+      "nextCheck": "施設detail復旧・公式calendar終了表示・公式X個別告知による終了/延長の確認",
+      "recheckDue": "2026-10-26T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "existingId": null,
+      "status": "on_hold",
+      "sourceUrls": [
+        "https://www.chiikawamogumogu.jp/news/",
+        "https://www.telacoya.co.jp/company/shop-a/",
+        "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357"
+      ],
+      "eventStartDate": null,
+      "reservationStartsAt": null,
+      "officialAnnouncedAt": null,
+      "publishedAt": null,
+      "reason": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+      "nextCheck": "公式ブランドnews/shop/SNS、運営店舗案内・求人原本で正式日と入場方法を確認",
+      "recheckDue": "2026-10-26T19:00:00+09:00"
+    }
+  ],
+  "scope": "Read-only cloud investigation; no external mutations or PC start",
+  "unchangedVerified": [
+    "もぐもぐ川越・伏見10/31以降のLINE前日20時整理券は現行JSON掲載済み",
+    "JR東海TOKYO Station/梅田HEPFIVE乗車特典終了は掲載済み。KITTE大阪7/8–10/31公式本文一致",
+    "ANA,スカイツリー,ドンキ,セブン,GU一次確認で今回の新規要修正は未特定"
+  ]
+}
