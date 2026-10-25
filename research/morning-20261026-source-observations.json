@@ -15,7 +15,7 @@
       "route": "core-registry-record",
       "sourceId": "chiikawa-official-index",
       "url": "https://chiikawa-info.jp/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.725Z",
@@ -58,13 +58,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-popup-list",
       "url": "https://chiikawa-info.jp/pus.html",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.896Z",
@@ -117,13 +119,15 @@
           "evidenceUrl": "https://chiikawa-info.jp/pus.html"
         },
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-cafe-list",
       "url": "https://chiikawa-info.jp/cafe.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.734Z",
@@ -164,13 +168,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-exhibition-list",
       "url": "https://chiikawa-info.jp/tenrankai.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.720Z",
@@ -211,13 +217,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "nagano-official-index",
       "url": "https://nagano-info.jp/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:15.295Z",
@@ -260,13 +268,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "総合入口を巡回対象へ登録。個別告知・会場別案内は別途照合する。\n朝のweb観測: success。公式index.html代替取得。既存系列と国内3常設店、海外2常設店確認。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "nagano-popup-list",
       "url": "https://nagano-info.jp/pus.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:15.408Z",
@@ -307,13 +317,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: success。web代替で取得。忠清10/30–11/12は既存rejected候補（海外）、国内新規なし。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "nagano-aquarium-list",
       "url": "https://nagano-info.jp/nagano_aq/index.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:15.492Z",
@@ -354,13 +366,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: success。末尾index.htmlなしでweb取得。既存2025年会場一覧、国内新規なし。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "nagano-exhibition-list",
       "url": "https://nagano-info.jp/museum.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:15.277Z",
@@ -401,13 +415,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: success。web代替で取得。直近は2024年タオル美術館、国内新規なし。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved_partial: Full image/detail comparison incomplete 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-6bd3ce9b8b",
       "url": "https://chiikawa-info.jp/magical_s.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.716Z",
@@ -448,13 +464,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-71b2d641d1",
       "url": "https://chiikawa-info.jp/mck_cafe.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.676Z",
@@ -495,13 +513,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-9fdf5778d7",
       "url": "https://chiikawa-info.jp/ckbaby.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.722Z",
@@ -542,13 +562,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-5932274e7e",
       "url": "https://chiikawa-info.jp/ck_pocket.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:14.733Z",
@@ -589,13 +611,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-f14e0e6fed",
       "url": "https://chiikawa-info.jp/ck_sushi.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:17.776Z",
@@ -636,13 +660,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-fb3fce6c45",
       "url": "https://chiikawa-info.jp/tenshi_akuma.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:17.720Z",
@@ -683,13 +709,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-chiikawa-info-jp-9ec22af2cf",
       "url": "https://chiikawa-info.jp/wakuwaku.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:17.784Z",
@@ -730,13 +758,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning-series18-82c047f25716",
       "url": "https://chiikawa-info.jp/ramenbuta.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:17.777Z",
@@ -777,13 +807,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "2026/10/18朝に公式インデックスまたは公式投稿から追跡。本文・画像・検索抜粋と未取得部分を区別。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning-series18-bcc6d96d4eaa",
       "url": "https://chiikawa-info.jp/s_fes.html",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:17.768Z",
@@ -836,13 +868,15 @@
           "evidenceUrl": "https://chiikawa-info.jp/s_fes.html"
         },
         "note": "2026/10/18朝に公式インデックスまたは公式投稿から追跡。本文・画像・検索抜粋と未取得部分を区別。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-bakery-news",
       "url": "https://chiikawabakery.jp/news/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:20.529Z",
@@ -895,13 +929,15 @@
           "evidenceUrl": "https://chiikawabakery.jp/news/"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-bakery-topics",
       "url": "https://chiikawabakery.jp/topics/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:20.396Z",
@@ -954,13 +990,15 @@
           "evidenceUrl": "https://chiikawabakery.jp/topics/"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-bakery-information",
       "url": "https://chiikawabakery.jp/information/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:20.357Z",
@@ -1013,13 +1051,15 @@
           "evidenceUrl": "https://chiikawabakery.jp/information/"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-bakery-information-osaka",
       "url": "https://chiikawabakery.jp/information-osaka/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:20.327Z",
@@ -1072,13 +1112,15 @@
           "evidenceUrl": "https://chiikawabakery.jp/information-osaka/"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-bakery-information-popup-01",
       "url": "https://chiikawabakery.jp/information-popup_01/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:20.358Z",
@@ -1131,13 +1173,15 @@
           "evidenceUrl": "https://chiikawabakery.jp/information-popup_01/"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning-https-www-chiikawamogumogu-jp-news",
       "url": "https://www.chiikawamogumogu.jp/news/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:23.883Z",
@@ -1190,13 +1234,15 @@
           "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
         },
         "note": "2026-10-14朝の公開一次情報確認。全画像・埋込SNS・当日の空きの網羅確認ではない。\n朝のweb観測: success。webで公式ニュース本文確認。 観測の時刻精度: 2026-10-21 22:59:58 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-park-news",
       "url": "https://chiikawapark-tokyo.jp/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:21.040Z",
@@ -1249,13 +1295,15 @@
           "evidenceUrl": "https://chiikawapark-tokyo.jp/"
         },
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-park-ticket",
       "url": "https://chiikawapark-tokyo.jp/ticket/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:21.035Z",
@@ -1308,13 +1356,15 @@
           "evidenceUrl": "https://chiikawapark-tokyo.jp/ticket/"
         },
         "note": "10/12朝の個別一次情報の確認記録。再取得とは区別して観測根拠を保持する。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-yaki-official",
       "url": "https://www.chiikawa-yaki.com/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:22.667Z",
@@ -1355,13 +1405,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "今回確認した店舗/案内の範囲のみ更新。変更の発表日時は未確認。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "nagano-market-entry-general",
       "url": "https://nagano-info.jp/tenpo_nm/goannai.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:07:22.874Z",
@@ -1416,7 +1468,9 @@
           "evidenceUrl": "https://nagano-info.jp/tenpo_nm/goannai.html"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
@@ -1475,7 +1529,9 @@
           "evidenceUrl": "https://x.com/chiikawa_land"
         },
         "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
@@ -1534,7 +1590,9 @@
           "evidenceUrl": "https://x.com/chiikawabakery"
         },
         "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
@@ -1593,13 +1651,15 @@
           "evidenceUrl": "https://x.com/nagano_market"
         },
         "note": "10/14朝の一次情報確認。本文・画像・SNSの取得範囲を分けて記録する。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawaland-store-list",
       "url": "https://chiikawa-info.jp/ck_land.html",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:09:52.755Z",
@@ -1652,13 +1712,15 @@
           "evidenceUrl": "https://chiikawa-info.jp/ck_land.html"
         },
         "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning26-source-295270f05f73",
       "url": "https://chiikawapark-tokyo.jp/news/t157uutqwyk/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:09:53.664Z",
@@ -1699,13 +1761,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/26朝の親クラウド観測。取得経路・本文の範囲は research/morning-20261026-source-observations.json と原観測に保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning26-source-5f3e3c2f8915",
       "url": "https://chiikawapark-tokyo.jp/news/nfod0tdgo/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:09:53.760Z",
@@ -1746,13 +1810,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/26朝の親クラウド観測。取得経路・本文の範囲は research/morning-20261026-source-observations.json と原観測に保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-bakery-reservation",
       "url": "https://chiikawabakery.jp/reservation/",
-      "httpStatus": 403,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:09:54.578Z",
@@ -1805,13 +1871,15 @@
           "evidenceUrl": "https://chiikawabakery.jp/reservation/"
         },
         "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。\n朝のweb観測: success。webで公式予約案内本文確認。 観測の時刻精度: 2026-10-21 23:00 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 403
     },
     {
       "route": "core-registry-record",
       "sourceId": "entry-post-2114303883845755292",
       "url": "https://x.com/chiikawabakery/status/2114303883845755292",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:10:22.930Z",
@@ -1852,7 +1920,9 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "取得完了日時は親クラウドの実測。PC側の再取得・画像確認を行ったとは扱わない。発表時刻のタイムゾーンは不明。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
@@ -1913,7 +1983,9 @@
           "evidenceUrl": "https://x.com/chiikawa_kouhou"
         },
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
@@ -1972,7 +2044,9 @@
           "evidenceUrl": "https://x.com/ngnchiikawa"
         },
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
@@ -2033,7 +2107,9 @@
           "evidenceUrl": "https://x.com/nagano_mkt_shop"
         },
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
@@ -2092,13 +2168,15 @@
           "evidenceUrl": "https://x.com/ngntrtr"
         },
         "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "core-registry-record",
       "sourceId": "corporate-gu-chiikawa-faq",
       "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:58.896Z",
@@ -2139,13 +2217,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "weekly-gu-chiikawa",
       "url": "https://www.gu-global.com/jp/ja/feature/contents/collaboration/chiikawa/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:58.575Z",
@@ -2188,13 +2268,15 @@
         "lastFailure": null,
         "lastResult": "success",
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning26-source-0cec4d875ba6",
       "url": "https://prtimes.jp/main/html/rd/p/000000019.000035055.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:57.710Z",
@@ -2235,13 +2317,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/26朝の親クラウド観測。取得経路・本文の範囲は research/morning-20261026-source-observations.json と原観測に保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-park-christmas-2026-pr",
       "url": "https://prtimes.jp/main/html/rd/p/000000144.000074811.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:57.788Z",
@@ -2282,13 +2366,15 @@
         "lastResult": "success",
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning26-source-6670c6afa848",
       "url": "https://prtimes.jp/main/html/rd/p/000004081.000064643.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:57.795Z",
@@ -2329,13 +2415,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/26朝の親クラウド観測。取得経路・本文の範囲は research/morning-20261026-source-observations.json と原観測に保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "morning26-source-91c38199e1a1",
       "url": "https://prtimes.jp/main/html/rd/p/000000483.000027592.html",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:57.717Z",
@@ -2376,13 +2464,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/26朝の親クラウド観測。取得経路・本文の範囲は research/morning-20261026-source-observations.json と原観測に保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "venue-aeon-suzaka-popup-20261106",
       "url": "https://suzaka.aeonmall.com/news/detail/1834?t=event_news",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:58.229Z",
@@ -2423,13 +2513,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "2026/10/23 UP。施設公式住所と公式リンク先地図の施設座標を確認。地図の表示中心ではなく施設点を採用。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "chiikawa-christmas-market-official",
       "url": "https://contents-abema.com/chiikawa-christmas-market/",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:58.576Z",
@@ -2472,13 +2564,15 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
       "sourceId": "observed-cafe-parco-jp-8bf4370b23",
       "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
-      "httpStatus": null,
+      "httpStatus": 200,
       "originalResult": "success",
       "normalizedResult": "success",
       "attemptAt": "2026-10-25T23:12:56.759Z",
@@ -2519,7 +2613,9 @@
         "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
         "lastFailure": null,
         "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": null
     },
     {
       "route": "core-registry-record",
@@ -2578,7 +2674,9 @@
           "evidenceUrl": "https://x.com/ngngoods_kouhou"
         },
         "note": "10/14朝の一次情報確認。本文・画像・SNSの取得範囲を分けて記録する。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
-      }
+      },
+      "httpStatusBasis": "Current response status from the same URL and observed time in cloud sources-reviewed.json; not its historical lastFailure.",
+      "historicalFailureHttpStatus": 200
     },
     {
       "route": "facility-company-route",
@@ -3618,5 +3716,6 @@
     "guessedTimesUsed": false,
     "unfetchedRejectedCandidateUrlNotAddedToRegistry": "https://kinshicho.parco.jp/shop/detail/?cd=028092",
     "unfetchedUrlStillRetainedInRawEvidence": true
-  }
+  },
+  "httpStatusBasis": "Core current-response statuses reconciled with sources-reviewed.json. Historical failures remain in before/after lastFailure and canonical history. All underlying source timestamps and raw observations are unchanged."
 }
