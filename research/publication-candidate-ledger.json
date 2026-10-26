@@ -19121,6 +19121,126 @@
       "nextCheck": "施設detail復旧・公式calendar終了表示・公式X個別告知による終了/延長の確認",
       "recheckDueAt": "2026-10-26T19:00:00+09:00",
       "publishedAt": null
+    },
+    {
+      "id": "update-gu-online-prereservation-20261026",
+      "title": "GUちいかわ全商品のオンライン先行予約を追記",
+      "kind": "reservation_update",
+      "targetKey": "gu-chiikawa-winter-2026:online-prereservation-20261102",
+      "sourceIds": [
+        "corporate-gu-chiikawa-faq"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-26T10:07:51Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-20",
+      "reservationOpensAt": "2026-11-02T07:15:00+09:00",
+      "reflectDueAt": "2026-11-02T07:15:00+09:00",
+      "evidence": [
+        {
+          "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+          "observedAt": "2026-10-26T10:07:51Z",
+          "summary": "全商品のオンライン先行予約11/2 7:15〜11/8 23:59、期間内でも上限終了、1人1柄1色2点（サイズ違い合算）、11/19までの配送予定と例外。",
+          "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "gu-chiikawa-winter-2026"
+        ],
+        "note": "最新main b4c17f34の既存IDと出典・対象日を照合。新規ID作成なし。"
+      },
+      "listingIds": [
+        "gu-chiikawa-winter-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "通常発売11/20・11/27と既存IDを維持。公式発表日・実公開日時は不明を維持。",
+      "nextCheck": "公開内容一致とCIを確認。次回通常巡回でFAQ変更を再確認し、予約開始前にも確認。",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "entry-bakery-tokyo-20261026",
+      "title": "東京ベーカリー10月26日のデジタル整理券案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-tokyo:entry-20261026",
+      "sourceIds": [
+        "entry-post-2114522408702873878"
+      ],
+      "officialAnnouncedAt": "2026-10-26",
+      "discoveredAt": "2026-10-26",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-26T14:50:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2114522408702873878",
+          "observedAt": "2026-10-26",
+          "summary": "14:50整理券、呼出後15分以内・超過キャンセル、東京店のみ、整理券以外のフリー入店なし。最終入店19:30。",
+          "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "最新main b4c17f34の既存IDと出典・対象日を照合。新規ID作成なし。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "発券開始後の確認で、開始前掲載は未達。日付限定の告知として掲載し、19:30後の現在の入店可否を示さない。初回発見の正確な時刻は未提供のため日付精度。",
+      "nextCheck": "公開一致とCIを確認。翌日分の公式案内を次回通常巡回で確認。",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "entry-ramen-shinsaibashi-20261026",
+      "title": "心斎橋ラーメン豚10月26日の予約満席案内",
+      "kind": "listing_update",
+      "targetKey": "ramen-buta-shinsaibashi:full-reservation-status-20261026",
+      "sourceIds": [
+        "entry-post-2114530565663969727"
+      ],
+      "officialAnnouncedAt": "2026-10-26",
+      "discoveredAt": "2026-10-26",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-26T22:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawaramenSH/status/2114530565663969727",
+          "observedAt": "2026-10-26",
+          "summary": "10/26は事前予約で満席、予約済み客のみ。曜日表記は実際の日付と矛盾するため転載しない。",
+          "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "最新main b4c17f34の既存IDと出典・対象日を照合。新規ID作成なし。"
+      },
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "当日の満席状況のみ更新。予約優先・11月先着受付は維持し、新しい予約受付条件に扱わない。初回発見の正確な時刻は未提供のため日付精度。",
+      "nextCheck": "公開一致とCIを確認。次回通常巡回で当日条件の更新・経過を確認。",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

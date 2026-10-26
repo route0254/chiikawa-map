@@ -1,0 +1,290 @@
+{
+  "recordedAt": "2026-10-26T10:17:15.414Z",
+  "scope": "Three existing listing updates only: GU online pre-reservation, Tokyo bakery October26 entry, Shinsaibashi ramen October26 full-reservation status.",
+  "sourceObservations": {
+    "gu": {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "cloudReadCompletedAt": "2026-10-26T10:07:51Z",
+      "pcWebReadCompletedAt": "2026-10-26T10:11:49.889Z",
+      "httpStatus": null,
+      "officialAnnouncedAt": null,
+      "verifiedFacts": {
+        "allCollaborationProducts": true,
+        "onlineOnly": true,
+        "reservationStartsAt": "2026-11-02T07:15:00+09:00",
+        "reservationEndsAt": "2026-11-08T23:59:00+09:00",
+        "closesAtUpperLimit": true,
+        "limit": "One person: two per design/color across sizes.",
+        "deliveryExpectedBy": "2026-11-19",
+        "deliveryMayBeLaterFor": [
+          "product combinations",
+          "alterations",
+          "region"
+        ],
+        "deliveryAppointmentUnavailable": true
+      },
+      "previousSource": {
+        "id": "corporate-gu-chiikawa-faq",
+        "name": "faq.gu-global.com 個別公式確認 corporate-gu-chiikawa-faq",
+        "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+        "kind": "venue",
+        "scope": [
+          "collaboration"
+        ],
+        "cadence": "morning_evening",
+        "enabled": true,
+        "lastAttemptAt": "2026-10-25T23:12:58.896Z",
+        "lastSuccessfulAt": "2026-10-25T23:12:58.896Z",
+        "lastResult": "success",
+        "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+        "lastFailure": null,
+        "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      }
+    },
+    "socials": [
+      {
+        "id": "chiikawa-bakery-tokyo",
+        "url": "https://x.com/chiikawabakery/status/2114522408702873878",
+        "cloudBodyConfirmed": true,
+        "cloudObservationDate": "2026-10-26",
+        "cloudExactRetrievalAt": null,
+        "pcObservationAt": "2026-10-26T10:14:21.685Z",
+        "pcStatus": 403
+      },
+      {
+        "id": "ramen-buta-shinsaibashi",
+        "url": "https://x.com/chiikawaramenSH/status/2114530565663969727",
+        "cloudBodyConfirmed": true,
+        "cloudObservationDate": "2026-10-26",
+        "cloudExactRetrievalAt": null,
+        "pcObservationAt": "2026-10-26T10:14:21.685Z",
+        "pcStatus": 403,
+        "sourceWeekdayConflict": "Posted date/body date October26 agrees; Saturday text conflicts with Monday and is omitted."
+      }
+    ]
+  },
+  "collaborationChanges": [
+    {
+      "id": "gu-chiikawa-winter-2026",
+      "before": {
+        "id": "gu-chiikawa-winter-2026",
+        "title": "GU×ちいかわ 冬のコレクション",
+        "partner": "ジーユー",
+        "category": "collection",
+        "status": "upcoming",
+        "summary": "冬のコラボアイテムを2回に分けて発売予定です。各日、店舗は開店時、オンラインは7:15から販売予定。おひとり様1柄1色2点までです。",
+        "areaText": "ジーユー全店舗・オンラインストア",
+        "channels": [
+          "店舗",
+          "オンライン"
+        ],
+        "periods": [
+          {
+            "label": "1st collection 発売予定",
+            "startDate": "2026-11-20",
+            "endDate": null,
+            "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+          },
+          {
+            "label": "2nd collection 発売予定",
+            "startDate": "2026-11-27",
+            "endDate": null,
+            "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+          }
+        ],
+        "tags": [
+          "アパレル",
+          "限定商品"
+        ],
+        "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+        "linkedSpotIds": [],
+        "checkedAt": "2026-10-03"
+      },
+      "after": {
+        "id": "gu-chiikawa-winter-2026",
+        "title": "GU×ちいかわ 冬のコレクション",
+        "partner": "ジーユー",
+        "category": "collection",
+        "status": "upcoming",
+        "summary": "冬のコラボアイテムを2回に分けて発売予定です。各日、店舗は開店時、オンラインは7:15から販売予定。おひとり様1柄1色2点までです。 全コラボ商品を対象に、11月2日7:15〜11月8日23:59はオンラインストア限定の先行予約を予定しています。予約上限に達し次第終了します。",
+        "areaText": "ジーユー全店舗・オンラインストア",
+        "channels": [
+          "店舗",
+          "オンライン"
+        ],
+        "periods": [
+          {
+            "label": "オンラインストア先行予約",
+            "startDate": "2026-11-02",
+            "endDate": "2026-11-08",
+            "note": "11月2日7:15〜11月8日23:59、オンラインストア限定で全コラボ商品が対象です。期間中でも上限に達し次第終了。1人1柄1色2点までで、サイズ違いも合算します。11月19日までに順次お届け予定ですが、商品の組み合わせ・補正・配送地域によって遅れる場合があります。配送日時は指定できません。"
+          },
+          {
+            "label": "1st collection 発売予定",
+            "startDate": "2026-11-20",
+            "endDate": null,
+            "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+          },
+          {
+            "label": "2nd collection 発売予定",
+            "startDate": "2026-11-27",
+            "endDate": null,
+            "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+          }
+        ],
+        "tags": [
+          "アパレル",
+          "限定商品"
+        ],
+        "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+        "linkedSpotIds": [],
+        "checkedAt": "2026-10-26"
+      }
+    }
+  ],
+  "spotChanges": [
+    {
+      "id": "chiikawa-bakery-tokyo",
+      "before": {
+        "id": "chiikawa-bakery-tokyo",
+        "name": "ちいかわベーカリー",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2024-10-29",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": "施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawabakery.jp/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "priority",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月25日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。 現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2114160009890435478",
+        "entryInfoCheckedAt": "2026-10-25",
+        "lat": 35.6687,
+        "lng": 139.706,
+        "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
+        "description": "ちいかわたちをモチーフにしたパンやドリンクを楽しめる公式ベーカリーです。 2026年10月15日から2周年記念企画の対象店舗です。記念グッズとお買物特典を展開し、10月29日からはパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+        "sourceUrl": "https://chiikawabakery.jp/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC",
+        "importantNotice": "2026年10月25日の東京店フリー入場は、混雑のためデジタル整理券で案内します。整理券は14:50から発行可能です。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内です。"
+      },
+      "after": {
+        "id": "chiikawa-bakery-tokyo",
+        "name": "ちいかわベーカリー",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2024-10-29",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": "施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawabakery.jp/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "priority",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月26日の東京店の案内：フリー入場はデジタル整理券で、14:50から発行と告知されました。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内で、整理券以外のフリー入店はありません（当日の最終入店19:30）。 現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2114522408702873878",
+        "entryInfoCheckedAt": "2026-10-26",
+        "lat": 35.6687,
+        "lng": 139.706,
+        "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
+        "description": "ちいかわたちをモチーフにしたパンやドリンクを楽しめる公式ベーカリーです。 2026年10月15日から2周年記念企画の対象店舗です。記念グッズとお買物特典を展開し、10月29日からはパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+        "sourceUrl": "https://chiikawabakery.jp/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC",
+        "importantNotice": "2026年10月26日の東京店の案内：フリー入場はデジタル整理券で、14:50から発行と告知されました。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内で、整理券以外のフリー入店はありません（当日の最終入店19:30）。"
+      }
+    },
+    {
+      "id": "ramen-buta-shinsaibashi",
+      "before": {
+        "id": "ramen-buta-shinsaibashi",
+        "name": "ちいかわラーメン 豚 心斎橋PARCO",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "ramen_buta",
+        "periodType": "limited",
+        "startDate": "2024-11-15",
+        "endDate": null,
+        "hoursText": "11:00～23:00（最終入店22:00）",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "hoursCheckedAt": "2026-08-28",
+        "reservationType": "priority",
+        "reservationUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "2026年10月20日は事前予約で満席のため、予約済みのお客様のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2112355351551226367",
+        "entryInfoCheckedAt": "2026-10-20",
+        "lat": 34.6739,
+        "lng": 135.5009,
+        "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO B2F",
+        "description": "作中のラーメンをイメージした公式店舗「ちいかわラーメン 豚」です。",
+        "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E8%B1%9A%20%E5%BF%83%E6%96%8E%E6%A9%8BPARCO",
+        "importantNotice": "2026年10月20日は事前予約で満席のため、予約済みのお客様のみの案内です。"
+      },
+      "after": {
+        "id": "ramen-buta-shinsaibashi",
+        "name": "ちいかわラーメン 豚 心斎橋PARCO",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "ramen_buta",
+        "periodType": "limited",
+        "startDate": "2024-11-15",
+        "endDate": null,
+        "hoursText": "11:00～23:00（最終入店22:00）",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "hoursCheckedAt": "2026-08-28",
+        "reservationType": "priority",
+        "reservationUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "2026年10月26日は事前予約で満席のため、予約済みのお客様のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2114530565663969727",
+        "entryInfoCheckedAt": "2026-10-26",
+        "lat": 34.6739,
+        "lng": 135.5009,
+        "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO B2F",
+        "description": "作中のラーメンをイメージした公式店舗「ちいかわラーメン 豚」です。",
+        "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E8%B1%9A%20%E5%BF%83%E6%96%8E%E6%A9%8BPARCO",
+        "importantNotice": "2026年10月26日は事前予約で満席のため、予約済みのお客様のみの案内です。"
+      }
+    }
+  ],
+  "timing": {
+    "tokyoTicketStartsAt": "2026-10-26T14:50:00+09:00",
+    "tokyoLastEntryAt": "2026-10-26T19:30:00+09:00",
+    "tokyoBeforeTicketOpening": false,
+    "tokyoCopySpecificDayOnly": true,
+    "ramenLastEntryAt": "2026-10-26T22:00:00+09:00"
+  },
+  "publication": {
+    "publishedAt": null,
+    "firstPublicMatchAt": null
+  },
+  "excludedChanges": {
+    "heldHiraokaCommit": "0638d37e9f11672810530a886a1428a7a5c99bbd",
+    "hiraokaMigration": false,
+    "laforetPublicationTimestampSync": false,
+    "otherHoldsUnchanged": true
+  }
+}

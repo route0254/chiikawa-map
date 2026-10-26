@@ -1828,12 +1828,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-25T23:12:58.896Z",
-      "lastSuccessfulAt": "2026-10-25T23:12:58.896Z",
+      "lastAttemptAt": "2026-10-26T10:11:49.889Z",
+      "lastSuccessfulAt": "2026-10-26T10:11:49.889Z",
       "lastResult": "success",
-      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "resultSummary": "GU公式FAQ本文で全商品のオンライン先行予約11/2 7:15〜11/8 23:59、上限終了、数量制限と11/19までの配送予定・例外を確認。通常販売11/20・11/27と区別。",
       "lastFailure": null,
-      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/26夕のweb本文確認。発表日は不明。HTTPステータスはwebツール結果にないため推定しない。"
     },
     {
       "id": "corporate-kadokawa-chiikawa-topics",
@@ -13613,6 +13613,52 @@
       "resultSummary": "親クラウドで公式本文の表示範囲を確認。画像・全投稿・全情報源の網羅は主張しない。",
       "lastFailure": null,
       "note": "10/26朝の親クラウド観測。取得経路・本文の範囲は research/morning-20261026-source-observations.json と原観測に保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "entry-post-2114522408702873878",
+      "name": "ちいかわベーカリー 10月26日公式個別投稿",
+      "url": "https://x.com/chiikawabakery/status/2114522408702873878",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T10:14:21.685Z",
+      "lastSuccessfulAt": null,
+      "lastResult": "access_limited",
+      "resultSummary": "PC webツール直接取得はHTTP403。掲載内容は別経路のクラウド提供の確認済み公式本文に基づく。",
+      "lastFailure": {
+        "at": "2026-10-26T10:14:21.685Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "PC web direct open returned Forbidden; no successful PC body retrieval claimed.",
+        "evidenceUrl": "https://x.com/chiikawabakery/status/2114522408702873878"
+      },
+      "note": "クラウドで公式個別本文確認済み。クラウドの秒単位取得日時は未提供のため、PCの観測日時を取得成功日時へ転記しない。"
+    },
+    {
+      "id": "entry-post-2114530565663969727",
+      "name": "ちいかわラーメン 豚 心斎橋PARCO 10月26日公式個別投稿",
+      "url": "https://x.com/chiikawaramenSH/status/2114530565663969727",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T10:14:21.685Z",
+      "lastSuccessfulAt": null,
+      "lastResult": "access_limited",
+      "resultSummary": "PC webツール直接取得はHTTP403。掲載内容は別経路のクラウド提供の確認済み公式本文に基づく。",
+      "lastFailure": {
+        "at": "2026-10-26T10:14:21.685Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "PC web direct open returned Forbidden; no successful PC body retrieval claimed.",
+        "evidenceUrl": "https://x.com/chiikawaramenSH/status/2114530565663969727"
+      },
+      "note": "クラウドで公式個別本文確認済み。クラウドの秒単位取得日時は未提供のため、PCの観測日時を取得成功日時へ転記しない。"
     }
   ]
 }
