@@ -1,0 +1,93 @@
+{
+  "validatedAt": "2026-10-26T10:24:54.457Z",
+  "base": "b4c17f34fad086079532a98e2e7aede5778cba27",
+  "ids": [
+    "chiikawa-bakery-tokyo",
+    "ramen-buta-shinsaibashi"
+  ],
+  "collaborationIds": [
+    "gu-chiikawa-winter-2026"
+  ],
+  "changeChecksPassed": true,
+  "allChecksSuccessful": false,
+  "build": true,
+  "declaredCheckCommands": 49,
+  "unitTests": 58,
+  "smokeTests": 111,
+  "targetedPcMobileChecks": 18,
+  "advancingClock": true,
+  "targetedLinks": {
+    "total": 3,
+    "normal": 3,
+    "broken": 0,
+    "scope": "Only requested source URLs; separate from body acquisition results"
+  },
+  "dailyStatus": {
+    "startedAt": "2026-10-26T10:21:39.558Z",
+    "completedAt": "2026-10-26T10:21:39.645Z",
+    "args": [
+      "scripts/report-status-candidates.mjs",
+      "--github-summary",
+      "--fail-on-archive-candidates"
+    ],
+    "workflowPassed": false,
+    "exitCode": 1,
+    "assessmentPassed": true,
+    "onlyKnownFailure": true,
+    "candidateId": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+    "candidateCount": 1,
+    "priorFailureUnresolved": true,
+    "validationPredicateUnchanged": true,
+    "hiraokaCurrentRecordUnchanged": true
+  },
+  "scope": {
+    "checkedAt": "2026-10-26T10:20:56.665Z",
+    "passed": true,
+    "exitCode": 0,
+    "paths": [
+      "data/collaborations-current.json",
+      "data/official-spots.json",
+      "research/official-source-ledger.json",
+      "research/publication-candidate-ledger.json",
+      "sitemap.xml",
+      "spot/chiikawa-bakery-tokyo/index.html",
+      "spot/ramen-buta-shinsaibashi/index.html",
+      "research/evening-20261026-three-updates-evidence.json"
+    ],
+    "spotUpdates": 2,
+    "collaborationUpdates": 1,
+    "otherSpotsUnchanged": 866,
+    "otherCollaborationsUnchanged": 74,
+    "allOriginalCandidatesUnchanged": 341,
+    "newCandidates": 3,
+    "hiraokaCurrentRecordUnchanged": true,
+    "hiraokaMigrationExcluded": true,
+    "excludedHeldCommitNotAncestor": true,
+    "laforetActualPublicationTimestampUnsynced": true,
+    "originalAddedDatesUnchanged": true,
+    "appSchemaPredicatesHostingGscUnchanged": true,
+    "preservedWorktrees": 49
+  },
+  "visualReview": {
+    "mobileGuCard": true,
+    "desktopTokyoPage": true,
+    "noOverflowObserved": true
+  },
+  "sourceAcquisition": {
+    "guFaqWebBodyConfirmed": true,
+    "socialCloudBodiesConfirmed": true,
+    "socialPcWeb403Retained": true,
+    "linkReachabilitySuccessDoesNotReplaceBodyObservations": true
+  },
+  "pendingPublication": {
+    "publishedAt": null,
+    "sourceCi": "not_started",
+    "mainCi": "not_started"
+  },
+  "preserved": {
+    "heldCommit": "0638d37e9f11672810530a886a1428a7a5c99bbd",
+    "hiraokaMigrationExcluded": true,
+    "laforetTimestampSyncExcluded": true,
+    "originalSourcesAndIDs": true
+  }
+}

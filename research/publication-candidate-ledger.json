@@ -18948,7 +18948,7 @@
       "releaseAt": null,
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-26T10:00:00+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-25T23:43:13.667Z",
       "sourceIds": [
         "entry-post-2114303883845755292"
       ],
@@ -18958,6 +18958,12 @@
           "observedAt": "2026-10-25T23:10:22.930Z",
           "summary": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。",
           "recordPath": "research/morning-20261026/cloud/more/c4af8b3e3050.txt"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/78",
+          "observedAt": "2026-10-25T23:43:13.667Z",
+          "summary": "PR78のmainと公開109リソースの初回一致。配信完了時刻・台帳同期時刻とは区別。",
+          "recordPath": "research/hiraoka-archive-20261026/pr78-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18970,10 +18976,10 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既存IDの10月25日限定入場条件のみ置換。一般案内と缶バッジ配布終了は保持。",
-      "nextCheck": "Verify public JSON / page match after bounded fix; recheck next-day guide tomorrow morning.",
+      "decision": "PR78の公開実体一致を元記録の実測日時で同期。",
+      "nextCheck": "10月27日08:00 JSTに翌日別の入場案内を公式個別投稿で確認。10月25日の缶バッジ配布終了案内は保持。",
       "recheckDueAt": "2026-10-27T08:00:00+09:00"
     },
     {
@@ -19070,7 +19076,7 @@
     },
     {
       "id": "archive-muchaphoto-sapporo-hiraoka-20261026",
-      "title": "札幌平岡むちゃフォトパーティ終了移行の確認保留",
+      "title": "札幌平岡むちゃフォトパーティの履歴移行",
       "kind": "listing_update",
       "targetKey": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026:archive-20261026",
       "sourceIds": [
@@ -19103,6 +19109,12 @@
           "observedAt": "2026-10-25T23:10:31.790Z",
           "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
           "recordPath": "research/morning-20261026/cloud/event-checks/969ab7e67057.html"
+        },
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+          "observedAt": "2026-10-10T09:38:55Z",
+          "summary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。既存の一次情報取得記録を使用。 確認済み会期の経過を移行根拠とする。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
         }
       ],
       "existingMatch": {
@@ -19110,16 +19122,136 @@
         "ids": [
           "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
         ],
-        "note": "既存IDは現行掲載を維持。公式終了確認が揃うまで移行しない。"
+        "note": "同一IDの現行掲載から履歴への移行。新規登録なし。"
       },
       "listingIds": [
         "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
       ],
-      "state": "on_hold",
+      "state": "ready",
       "priority": "high",
-      "decision": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。 終了候補の初回発見日時は未記録のため不明とする。",
-      "nextCheck": "施設detail復旧・公式calendar終了表示・公式X個別告知による終了/延長の確認",
+      "decision": "保存済み施設公式本文で会期2026年10月24日〜25日を確認済み。会期経過を根拠に同一IDを履歴へ移行する。現ページ404は補助観測とし、削除理由は不明。延長情報は今回確認範囲で未発見。初回発見日時は未記録のためnullを維持。",
+      "nextCheck": "履歴移行の検査、GitHub反映、公開JSON・共有URL・保存状態互換と反映後CIを確認。",
       "recheckDueAt": "2026-10-26T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-gu-online-prereservation-20261026",
+      "title": "GUちいかわ全商品のオンライン先行予約を追記",
+      "kind": "reservation_update",
+      "targetKey": "gu-chiikawa-winter-2026:online-prereservation-20261102",
+      "sourceIds": [
+        "corporate-gu-chiikawa-faq"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-26T10:07:51Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-20",
+      "reservationOpensAt": "2026-11-02T07:15:00+09:00",
+      "reflectDueAt": "2026-11-02T07:15:00+09:00",
+      "evidence": [
+        {
+          "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+          "observedAt": "2026-10-26T10:07:51Z",
+          "summary": "全商品のオンライン先行予約11/2 7:15〜11/8 23:59、期間内でも上限終了、1人1柄1色2点（サイズ違い合算）、11/19までの配送予定と例外。",
+          "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "gu-chiikawa-winter-2026"
+        ],
+        "note": "最新main b4c17f34の既存IDと出典・対象日を照合。新規ID作成なし。"
+      },
+      "listingIds": [
+        "gu-chiikawa-winter-2026"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "通常発売11/20・11/27と既存IDを維持。公式発表日・実公開日時は不明を維持。",
+      "nextCheck": "公開内容一致とCIを確認。次回通常巡回でFAQ変更を再確認し、予約開始前にも確認。",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "entry-bakery-tokyo-20261026",
+      "title": "東京ベーカリー10月26日のデジタル整理券案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-tokyo:entry-20261026",
+      "sourceIds": [
+        "entry-post-2114522408702873878"
+      ],
+      "officialAnnouncedAt": "2026-10-26",
+      "discoveredAt": "2026-10-26",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-26T14:50:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2114522408702873878",
+          "observedAt": "2026-10-26",
+          "summary": "14:50整理券、呼出後15分以内・超過キャンセル、東京店のみ、整理券以外のフリー入店なし。最終入店19:30。",
+          "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "最新main b4c17f34の既存IDと出典・対象日を照合。新規ID作成なし。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "発券開始後の確認で、開始前掲載は未達。日付限定の告知として掲載し、19:30後の現在の入店可否を示さない。初回発見の正確な時刻は未提供のため日付精度。",
+      "nextCheck": "公開一致とCIを確認。翌日分の公式案内を次回通常巡回で確認。",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "entry-ramen-shinsaibashi-20261026",
+      "title": "心斎橋ラーメン豚10月26日の予約満席案内",
+      "kind": "listing_update",
+      "targetKey": "ramen-buta-shinsaibashi:full-reservation-status-20261026",
+      "sourceIds": [
+        "entry-post-2114530565663969727"
+      ],
+      "officialAnnouncedAt": "2026-10-26",
+      "discoveredAt": "2026-10-26",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-26T22:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawaramenSH/status/2114530565663969727",
+          "observedAt": "2026-10-26",
+          "summary": "10/26は事前予約で満席、予約済み客のみ。曜日表記は実際の日付と矛盾するため転載しない。",
+          "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "最新main b4c17f34の既存IDと出典・対象日を照合。新規ID作成なし。"
+      },
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "当日の満席状況のみ更新。予約優先・11月先着受付は維持し、新しい予約受付条件に扱わない。初回発見の正確な時刻は未提供のため日付精度。",
+      "nextCheck": "公開一致とCIを確認。次回通常巡回で当日条件の更新・経過を確認。",
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
       "publishedAt": null
     }
   ]

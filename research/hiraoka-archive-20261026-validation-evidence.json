@@ -1,0 +1,65 @@
+{
+  "validatedAt": "2026-10-26T06:06:52.518Z",
+  "base": "b4c17f34fad086079532a98e2e7aede5778cba27",
+  "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+  "passed": true,
+  "build": true,
+  "declaredCheckCommands": 49,
+  "unitTests": 58,
+  "smokeTests": 111,
+  "targetedPcMobileChecks": 12,
+  "advancingClock": true,
+  "statusCandidateCount": 0,
+  "localStatusCiStep": {
+    "startedAt": "2026-10-26T06:03:06.815Z",
+    "completedAt": "2026-10-26T06:03:06.917Z",
+    "args": [
+      "scripts/report-status-candidates.mjs",
+      "--github-summary",
+      "--fail-on-archive-candidates"
+    ],
+    "summaryPath": "C:\\Users\\6ikas\\Projects\\ちい活マップ\\chiikawa-map-repo\\node_modules\\.cache\\archive-hiraoka-20261026\\daily-status-github-summary.md",
+    "passed": true,
+    "exitCode": 0,
+    "archiveCandidates": 0,
+    "ciPredicateUnchanged": true,
+    "initialLocalHarnessIssue": "First run lacked GITHUB_STEP_SUMMARY; supplied a private local summary file without modifying application or validation."
+  },
+  "scope": {
+    "checkedAt": "2026-10-26T06:02:00.106Z",
+    "passed": true,
+    "exitCode": 0,
+    "paths": [
+      "data/official-events-archive.json",
+      "data/official-spots.json",
+      "data/site-meta.json",
+      "official.html",
+      "research/publication-candidate-ledger.json",
+      "sitemap.xml",
+      "spot/chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026/index.html",
+      "research/hiraoka-archive-20261026-evidence.json",
+      "research/hiraoka-archive-20261026/pr78-publication-verification.json"
+    ],
+    "otherSpotsUnchanged": 867,
+    "allCollaborationsUnchanged": 75,
+    "sourceLedgerUnchanged": true,
+    "specialSeriesUnchanged": true,
+    "originalAddedDatesUnchanged": true,
+    "originalIdsPreserved": true,
+    "existingWorktreesPreserved": 48,
+    "candidateChanges": [
+      "entry-laforet-20261026",
+      "archive-muchaphoto-sapporo-hiraoka-20261026"
+    ],
+    "unrelatedCandidatesUnchanged": 339,
+    "appSchemaWorkflowsHostingGscUnchanged": true,
+    "historyNoindexFollowAndSitemapExclusion": true
+  },
+  "visualReview": {
+    "mobileAndDesktopStaticScreens": true,
+    "noClippingOrOverflowObserved": true
+  },
+  "sourceUrlsRetained": true,
+  "unrelated404OrSettingsChanges": false,
+  "ci": "Source-head and subsequent main CI are pending; no success assumed from local checks."
+}
