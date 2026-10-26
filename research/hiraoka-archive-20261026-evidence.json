@@ -1,0 +1,153 @@
+{
+  "recordedAt": "2026-10-26T05:57:40.104Z",
+  "scope": "One existing official spot archive transition and prior PR78 publication timestamp sync.",
+  "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+  "asOf": "2026-10-26",
+  "primary": {
+    "recordPath": "research/evening-listings-2026-10-10-evidence.json",
+    "sourceUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+    "originalObservationAt": "2026-10-10T09:38:55Z",
+    "summary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。既存の一次情報取得記録を使用。",
+    "nativeRead": {
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "status": 200,
+      "startedAt": "2026-10-10T09:45:17.296Z",
+      "completedAt": "2026-10-10T09:45:17.510Z",
+      "finalUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "bytes": 24461,
+      "containsNumberedTicket": false,
+      "containsOct16": false,
+      "containsHiraoka": true,
+      "containsClosing20": false
+    }
+  },
+  "currentObservations": {
+    "recordPath": "research/morning-20261026/cloud/event-source-observations.json",
+    "detailStatus": 404,
+    "currentOfficialListingAbsent": true,
+    "extensionNotFoundInReviewedSources": true,
+    "observationScope": "Provided cloud morning review; not a new PC fetch",
+    "pageDeletionReason": null
+  },
+  "decision": {
+    "basis": "Previously confirmed official period 2026-10-24 through 2026-10-25 has elapsed.",
+    "notSolelyBasedOn404": true,
+    "implementation": "Unmanaged ID: existing archive-ended-events.mjs --today=2026-10-26 --ids=chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026 --confirm-official --write",
+    "specialSeriesSourceUnchanged": true
+  },
+  "changes": [
+    {
+      "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+      "from": "data/official-spots.json",
+      "to": "data/official-events-archive.json",
+      "before": {
+        "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+        "name": "ちいかわ むちゃフォトパーティ!! イオンモール札幌平岡",
+        "category": "official",
+        "placeType": "spot",
+        "relationType": "event",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-25",
+        "hoursText": "撮影会11:00・13:00・15:00／ARラリー10:00～16:00（各日）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "写真撮影券は各日先着150組（各回50組、1組1枚）、ARラリー景品引換券は各日先着300人（1人1枚）です。各日9:00からフードテラス出入口で2種の券を同じ列で先着配布し、残券がある場合は10:00以降、1F ワンズテラス前で配布します。撮影会の参加回は選択可能で、各回30分前から会場開放、戻った方から案内します。1組の撮影時間は30秒。ARラリーは景品引換券がなくても参加可能です。",
+        "entryInfoUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "entryInfoCheckedAt": "2026-10-10",
+        "lat": 42.9976401,
+        "lng": 141.4588505,
+        "address": "北海道札幌市清田区平岡3条5丁目3-1 イオンモール札幌平岡（開催場所：1F ワンズテラス前／ARラリー：1F センターコート周辺）",
+        "description": "ちいかわ・ハチワレの写真撮影会と、館内4か所のARポイントを巡るスマートフォンのスタンプラリーを楽しむ2日間のファミリーイベントです。",
+        "sourceUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E6%9C%AD%E5%B9%8C%E5%B9%B3%E5%B2%A1%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%B8%85%E7%94%B0%E5%8C%BA%E5%B9%B3%E5%B2%A13%E6%9D%A15%E4%B8%81%E7%9B%AE3-1",
+        "importantNotice": "撮影券とARラリー景品引換券は各日9:00からフードテラス出入口で配布。10:00以降に残券がある場合は1F ワンズテラス前で配布します。"
+      },
+      "after": {
+        "id": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026",
+        "name": "ちいかわ むちゃフォトパーティ!! イオンモール札幌平岡",
+        "category": "official",
+        "placeType": "spot",
+        "relationType": "event",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-25",
+        "hoursText": "撮影会11:00・13:00・15:00／ARラリー10:00～16:00（各日）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "hoursCheckedAt": "2026-10-10",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "other",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "開催当時の案内：写真撮影券は各日先着150組（各回50組、1組1枚）、ARラリー景品引換券は各日先着300人（1人1枚）です。各日9:00からフードテラス出入口で2種の券を同じ列で先着配布し、残券がある場合は10:00以降、1F ワンズテラス前で配布します。撮影会の参加回は選択可能で、各回30分前から会場開放、戻った方から案内します。1組の撮影時間は30秒。ARラリーは景品引換券がなくても参加可能です。2026年10月25日で会期は終了しています。",
+        "entryInfoUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "entryInfoCheckedAt": "2026-10-10",
+        "lat": 42.9976401,
+        "lng": 141.4588505,
+        "address": "北海道札幌市清田区平岡3条5丁目3-1 イオンモール札幌平岡（開催場所：1F ワンズテラス前／ARラリー：1F センターコート周辺）",
+        "description": "ちいかわ・ハチワレの写真撮影会と、館内4か所のARポイントを巡るスマートフォンのスタンプラリーを楽しめる2日間のイベントとして、2026年10月24日・25日に案内されていました。会期は終了しています。",
+        "sourceUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E6%9C%AD%E5%B9%8C%E5%B9%B3%E5%B2%A1%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%B8%85%E7%94%B0%E5%8C%BA%E5%B9%B3%E5%B2%A13%E6%9D%A15%E4%B8%81%E7%9B%AE3-1",
+        "importantNotice": "2026年10月24日・25日の会期は終了しています。以下は開催当時の案内です。撮影券とARラリー景品引換券は各日9:00からフードテラス出入口で配布。10:00以降に残券がある場合は1F ワンズテラス前で配布します。",
+        "eventStatus": "held"
+      }
+    }
+  ],
+  "preserved": {
+    "id": true,
+    "sourceUrl": true,
+    "dates": true,
+    "coordinates": true,
+    "originalEntryAndHoursCheckDates": true,
+    "originalCandidate": {
+      "discoveredAt": null,
+      "officialAnnouncedAt": null,
+      "evidence": [
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+          "observedAt": "2026-10-25T23:10:25.460Z",
+          "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+          "recordPath": "research/morning-20261026/cloud/event-source-observations.json"
+        },
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/event-calendar",
+          "observedAt": "2026-10-25T23:10:28.846Z",
+          "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/9018953e026b.html"
+        },
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news",
+          "observedAt": "2026-10-25T23:10:31.790Z",
+          "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/969ab7e67057.html"
+        }
+      ]
+    }
+  },
+  "priorPr78": {
+    "publishedAt": "2026-10-25T23:43:13.667Z",
+    "count": 1,
+    "recordPath": "research/hiraoka-archive-20261026/pr78-publication-verification.json"
+  },
+  "publication": {
+    "publishedAt": null,
+    "state": "awaiting_actual_public_content_match"
+  },
+  "excluded": [
+    "Other external404 fixes",
+    "GSC",
+    "Kamakura",
+    "Notification settings",
+    "Validation predicate changes"
+  ]
+}

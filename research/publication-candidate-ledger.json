@@ -18948,7 +18948,7 @@
       "releaseAt": null,
       "reservationOpensAt": null,
       "reflectDueAt": "2026-10-26T10:00:00+09:00",
-      "publishedAt": null,
+      "publishedAt": "2026-10-25T23:43:13.667Z",
       "sourceIds": [
         "entry-post-2114303883845755292"
       ],
@@ -18958,6 +18958,12 @@
           "observedAt": "2026-10-25T23:10:22.930Z",
           "summary": "2026年10月26日のフリー入場は整理券で案内します。整理券は10:00からラフォーレ原宿エントランスで発行し、開店後は店頭で発行します。入場は1日おひとり様1回です。",
           "recordPath": "research/morning-20261026/cloud/more/c4af8b3e3050.txt"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/78",
+          "observedAt": "2026-10-25T23:43:13.667Z",
+          "summary": "PR78のmainと公開109リソースの初回一致。配信完了時刻・台帳同期時刻とは区別。",
+          "recordPath": "research/hiraoka-archive-20261026/pr78-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -18970,10 +18976,10 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "既存IDの10月25日限定入場条件のみ置換。一般案内と缶バッジ配布終了は保持。",
-      "nextCheck": "Verify public JSON / page match after bounded fix; recheck next-day guide tomorrow morning.",
+      "decision": "PR78の公開実体一致を元記録の実測日時で同期。",
+      "nextCheck": "10月27日08:00 JSTに翌日別の入場案内を公式個別投稿で確認。10月25日の缶バッジ配布終了案内は保持。",
       "recheckDueAt": "2026-10-27T08:00:00+09:00"
     },
     {
@@ -19070,7 +19076,7 @@
     },
     {
       "id": "archive-muchaphoto-sapporo-hiraoka-20261026",
-      "title": "札幌平岡むちゃフォトパーティ終了移行の確認保留",
+      "title": "札幌平岡むちゃフォトパーティの履歴移行",
       "kind": "listing_update",
       "targetKey": "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026:archive-20261026",
       "sourceIds": [
@@ -19103,6 +19109,12 @@
           "observedAt": "2026-10-25T23:10:31.790Z",
           "summary": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。",
           "recordPath": "research/morning-20261026/cloud/event-checks/969ab7e67057.html"
+        },
+        {
+          "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+          "observedAt": "2026-10-10T09:38:55Z",
+          "summary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。既存の一次情報取得記録を使用。 確認済み会期の経過を移行根拠とする。",
+          "recordPath": "research/evening-listings-2026-10-10-evidence.json"
         }
       ],
       "existingMatch": {
@@ -19110,15 +19122,15 @@
         "ids": [
           "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
         ],
-        "note": "既存IDは現行掲載を維持。公式終了確認が揃うまで移行しない。"
+        "note": "同一IDの現行掲載から履歴への移行。新規登録なし。"
       },
       "listingIds": [
         "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
       ],
-      "state": "on_hold",
+      "state": "ready",
       "priority": "high",
-      "decision": "施設detail現在404。現行calendar/newsから消えたが終了明示なし。旧公式日程と検索キャッシュだけで現在終了・延長無しと断定せず。公式X profile403、検索元投稿未発見。 終了候補の初回発見日時は未記録のため不明とする。",
-      "nextCheck": "施設detail復旧・公式calendar終了表示・公式X個別告知による終了/延長の確認",
+      "decision": "保存済み施設公式本文で会期2026年10月24日〜25日を確認済み。会期経過を根拠に同一IDを履歴へ移行する。現ページ404は補助観測とし、削除理由は不明。延長情報は今回確認範囲で未発見。初回発見日時は未記録のためnullを維持。",
+      "nextCheck": "履歴移行の検査、GitHub反映、公開JSON・共有URL・保存状態互換と反映後CIを確認。",
       "recheckDueAt": "2026-10-26T19:00:00+09:00",
       "publishedAt": null
     },
