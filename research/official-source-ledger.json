@@ -894,12 +894,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-25T23:12:58.576Z",
-      "lastSuccessfulAt": "2026-10-25T23:12:58.576Z",
+      "lastAttemptAt": "2026-10-26T23:05:20.502Z",
+      "lastSuccessfulAt": "2026-10-26T23:05:20.502Z",
       "lastResult": "success",
-      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "resultSummary": "PCの独立HTTP読取で先着販売10/31 12:00、1アカウント1申込最大4名を本文確認。レスポンス取得時刻であり原サイト更新時刻ではない。",
       "lastFailure": null,
-      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の本文確認・経路別観測は research/morning-20261027-source-observations.json を参照。元の成功・失敗履歴は同記録のpriorSourceStatesに保持。"
     },
     {
       "id": "abema-chiikawa-christmas-release-20261008",
@@ -1616,18 +1616,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-25T23:09:52.574Z",
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
       "lastSuccessfulAt": "2026-10-25T23:09:52.574Z",
-      "lastResult": "success",
-      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastResult": "access_limited",
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。",
       "lastFailure": {
-        "at": "2026-10-23T22:59:12.900Z",
+        "at": "2026-10-26T23:01:20Z",
         "kind": "access_limited",
-        "httpStatus": 200,
-        "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
         "evidenceUrl": "https://x.com/chiikawa_land"
       },
-      "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。"
     },
     {
       "id": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
@@ -3308,18 +3308,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-23T10:05:25.320+00:00",
+      "lastAttemptAt": "2026-10-26T23:05:20.471Z",
       "lastSuccessfulAt": "2026-10-21T09:58:59.187+00:00",
       "lastResult": "access_limited",
-      "resultSummary": "取得失敗。新着なし扱いにせず前回成功日時を保持。",
+      "resultSummary": "PC HTTP取得は制限。公式本文は親クラウドおよび別Web表示経路で会期を確認。失敗を新着なしと扱わず、前回成功日時を維持。",
       "lastFailure": {
-        "at": "2026-10-23T10:05:25.320+00:00",
+        "at": "2026-10-26T23:05:20.471Z",
         "kind": "access_limited",
         "httpStatus": 403,
-        "detail": "HTTP Error 403: Forbidden",
+        "detail": "HTTP 403; native response body saved separately from successful cached Web observation.",
         "evidenceUrl": "https://chiikawa-info.jp/p26/pus_mito/index.html"
       },
-      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/27朝の本文確認・経路別観測は research/morning-20261027-source-observations.json を参照。元の成功・失敗履歴は同記録のpriorSourceStatesに保持。"
     },
     {
       "id": "observed-chiikawa-info-jp-2db8c290c8",
@@ -3331,18 +3331,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-23T10:05:26.810+00:00",
+      "lastAttemptAt": "2026-10-26T23:05:20.491Z",
       "lastSuccessfulAt": "2026-10-21T09:58:59.146+00:00",
       "lastResult": "access_limited",
-      "resultSummary": "取得失敗。新着なし扱いにせず前回成功日時を保持。",
+      "resultSummary": "PC HTTP取得は制限。公式本文は親クラウドおよび別Web表示経路で会期を確認。失敗を新着なしと扱わず、前回成功日時を維持。",
       "lastFailure": {
-        "at": "2026-10-23T10:05:26.810+00:00",
+        "at": "2026-10-26T23:05:20.491Z",
         "kind": "access_limited",
         "httpStatus": 403,
-        "detail": "HTTP Error 403: Forbidden",
+        "detail": "HTTP 403; native response body saved separately from successful cached Web observation.",
         "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tuda/index.html"
       },
-      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。"
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/27朝の本文確認・経路別観測は research/morning-20261027-source-observations.json を参照。元の成功・失敗履歴は同記録のpriorSourceStatesに保持。"
     },
     {
       "id": "observed-chiikawa-info-jp-64a1504949",
@@ -5535,18 +5535,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-23T22:59:12.886Z",
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
       "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
       "lastResult": "access_limited",
-      "resultSummary": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。",
       "lastFailure": {
-        "at": "2026-10-23T22:59:12.886Z",
+        "at": "2026-10-26T23:01:20Z",
         "kind": "access_limited",
-        "httpStatus": 200,
-        "detail": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
         "evidenceUrl": "https://x.com/chiikawaramenSH"
       },
-      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。"
+      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。"
     },
     {
       "id": "evening-x-com-chiikawabakery",
@@ -5558,18 +5558,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-25T23:09:52.519Z",
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
       "lastSuccessfulAt": "2026-10-25T23:09:52.519Z",
-      "lastResult": "success",
-      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastResult": "access_limited",
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。",
       "lastFailure": {
-        "at": "2026-10-23T22:59:12.857Z",
+        "at": "2026-10-26T23:01:20Z",
         "kind": "access_limited",
-        "httpStatus": 200,
-        "detail": "HTTP 200、朝の提供巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
         "evidenceUrl": "https://x.com/chiikawabakery"
       },
-      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。"
     },
     {
       "id": "evening-x-com-chiikawabakeryc",
@@ -8534,7 +8534,7 @@
         "detail": "HTTP Error 403: Forbidden",
         "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
       },
-      "note": "2026-10-14朝の公開一次情報確認。全画像・埋込SNS・当日の空きの網羅確認ではない。\n朝のweb観測: success。webで公式ニュース本文確認。 観測の時刻精度: 2026-10-21 22:59:58 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "2026-10-14朝の公開一次情報確認。全画像・埋込SNS・当日の空きの網羅確認ではない。\n朝のweb観測: success。webで公式ニュース本文確認。 観測の時刻精度: 2026-10-21 22:59:58 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の親クラウド表示観測（キャッシュを含み新規live取得時刻は不明）は research/morning-20261027-source-observations.json に保存。正式開業・予約日は未確認、求人掲載終了。lastSuccessfulAtは上書きしない。"
     },
     {
       "id": "baby-castella-otaru-official",
@@ -9588,16 +9588,16 @@
       "enabled": true,
       "lastSuccessfulAt": null,
       "lastFailure": {
-        "at": "2026-10-23T22:59:39.811Z",
+        "at": "2026-10-26T23:01:20Z",
         "kind": "access_limited",
-        "httpStatus": 200,
-        "detail": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
         "evidenceUrl": "https://x.com/chiikawamgmg/with_replies"
       },
-      "note": "本巡回の読取対象。本文と画像・一覧網羅を区別する。",
-      "lastAttemptAt": "2026-10-23T22:59:39.811Z",
+      "note": "本巡回の読取対象。本文と画像・一覧網羅を区別する。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。",
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
       "lastResult": "access_limited",
-      "resultSummary": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。"
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。"
     },
     {
       "id": "evening-store-20261017-55ce9dd192bc",
@@ -12911,7 +12911,7 @@
         "detail": "HTTP200で求人非公開の案内のみ。求人本文・正式開業日の確認成功へ昇格しない。",
         "evidenceUrl": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357"
       },
-      "note": "一次告知または公式施設・企業ページ。 【2026-10-24夕・別web経路】retrieved: job currently nonpublic 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "一次告知または公式施設・企業ページ。 【2026-10-24夕・別web経路】retrieved: job currently nonpublic 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の親クラウド表示観測（キャッシュを含み新規live取得時刻は不明）は research/morning-20261027-source-observations.json に保存。正式開業・予約日は未確認、求人掲載終了。lastSuccessfulAtは上書きしない。"
     },
     {
       "id": "telacoya-shop",
@@ -12929,7 +12929,7 @@
       "lastResult": "success",
       "resultSummary": "親クラウドで公式本文の表示範囲を確認。画像・全投稿・全情報源の網羅は主張しない。",
       "lastFailure": null,
-      "note": "一次告知または公式施設・企業ページ。 【2026-10-24夕・別web経路】retrieved: No Kamakura chiikawa store in retrieved list; not definitive current absence 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+      "note": "一次告知または公式施設・企業ページ。 【2026-10-24夕・別web経路】retrieved: No Kamakura chiikawa store in retrieved list; not definitive current absence 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の親クラウド表示観測（キャッシュを含み新規live取得時刻は不明）は research/morning-20261027-source-observations.json に保存。正式開業・予約日は未確認、求人掲載終了。lastSuccessfulAtは上書きしない。"
     },
     {
       "id": "suzaka-photo",

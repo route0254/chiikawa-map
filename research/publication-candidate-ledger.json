@@ -89,6 +89,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "公式画像をクラウドブラウザで視認。イラストのみで、会場別会期や終了日の追記はない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -102,8 +108,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "仙台第一弾延長後終期2023-05-07を公式Xで確定。既存コラボ履歴のendDate修正が可能。 残課題: 仙台以外は商品取扱店。各会場の取扱終了日/展示範囲は未確認。系列全体を単一会期イベントにしない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。 10/20週次に系列本文取得成功。会場一覧と期間混在は再確認したが、会場ごとの開始/終了や履歴既存保留の解消までは未完了。系列入口確認だけで週次の個別保留を完了扱いしない。 10/20夕再確認: NIFREL公式原文・公式系列画像を再確認したが、全店終了日を追加で確定できず系列hold維持。仙台の既存修正は別管理。",
-      "nextCheck": "原告知に具体的な会場別終了日が見つかった場合のみ独立候補化。既確認の開始日や会場一覧だけで完了扱いしない。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "原告知に具体的な会場別終了日が見つかった場合のみ独立候補化。既確認の開始日や会場一覧だけで完了扱いしない。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -223,6 +229,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "今回web取得は404。本文未取得のまま。過去403記録を今回成功に書き換えない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -236,8 +248,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "仙台のイベント・フォトスポット会期、住所、施設ピンの根拠を揃えた。NIFREL・海響館の6/23物販開始も一次確認。 残課題: 仙台以外の終了日、およびARラリー単体の実終了日は不明。サンシャインの売場移行と物販継続を区別。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。 10/20週次に系列本文取得成功。会場一覧と期間混在は再確認したが、会場ごとの開始/終了や履歴既存保留の解消までは未完了。系列入口確認だけで週次の個別保留を完了扱いしない。 10/20夕再確認: NIFREL・海響館の原文、系列画像を再確認。終了日新確定なし。サンシャイン施設原本は今回404で本文未取得。",
-      "nextCheck": "施設・主催一次告知で臨時売場終期を確認できるまで保留。物販継続と売場会期を区別。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "施設・主催一次告知で臨時売場終期を確認できるまで保留。物販継続と売場会期を区別。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -387,6 +399,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "公式画像本文は一部イベント記念商品の期間限定販売という案内。会場別会期なし。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -398,8 +416,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "羽田T2の会期と住所・店舗位置階を確定。 残課題: その他各会場の開始日/開催回の区別。一覧タイトルの2024-12-26を全店舗に適用しない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。 10/20週次に系列本文取得成功。会場一覧と期間混在は再確認したが、会場ごとの開始/終了や履歴既存保留の解消までは未完了。系列入口確認だけで週次の個別保留を完了扱いしない。 10/20夕再確認: 0%IKEBUKUROは独立候補で解消し、系列全体holdは維持。公式画像には会期の追加情報なし。タイトル2024/12/26開始を全会場へ拡張しない。",
-      "nextCheck": "子候補の新確定情報と本人判断の結論のみ反映し、系列全体の完全解消とはしない。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "子候補の新確定情報と本人判断の結論のみ反映し、系列全体の完全解消とはしない。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -8051,6 +8069,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "銀座5/13まで・羽田T1 9/30までとの延長記述を発見。記事本文に公式X原告知の埋め込みを確認できず、当該記事を一次扱いしない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880148052314374631",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -8062,8 +8086,8 @@
       "state": "verifying",
       "priority": "normal",
       "decision": "公式初回会期は1/24〜3/31、現行特設の終了は10/28。連続延長か別回かの経緯未詳につき終期を単一値で確定しない。住所/座標も未照合。 10/20夕再確認: 二次記事では5/13までの延長記述が見つかったが、10/28までの連続性を示す一次原告知に到達しない。終期null維持。",
-      "nextCheck": "公式延長原文で初回から10/28までを同一開催回と確定できるまで保留。二次記事だけで結合しない。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "公式延長原文で初回から10/28までを同一開催回と確定できるまで保留。二次記事だけで結合しない。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -8112,6 +8136,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "現在の会場ごと終期は初回連続開催を証明しない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -8123,8 +8153,8 @@
       "state": "verifying",
       "priority": "normal",
       "decision": "初回12/26発売は一次確認。初回終期/継続・延長経緯と施設位置は未確定。現行2026/1/31を無条件で初回終期へ結合しない。 10/20夕再確認: 公式訂正の発売日表現を再読。初回開催を後年の会期へ接続できる新一次根拠なし。",
-      "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -8179,6 +8209,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "現在の会場ごと終期は初回連続開催を証明しない。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -8190,8 +8226,8 @@
       "state": "verifying",
       "priority": "normal",
       "decision": "初回12/26発売は一次確認。2025/10/17からの既存候補と別回。初回終期と会期起点・店舗位置は未確定。 10/20夕再確認: 公式訂正の発売日表現を再読。初回開催を後年の会期へ接続できる新一次根拠なし。",
-      "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -8321,6 +8357,12 @@
           "observedAt": "2026-10-20T10:10:11.678+00:00",
           "summary": "1/17〜1/30という二次記述あり。ただし公式開催原図や独立した一次開催開始表現に到達しないため昇格根拠に不採用。",
           "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "existingMatch": {
@@ -8332,8 +8374,8 @@
       "state": "verifying",
       "priority": "normal",
       "decision": "公式は1/17発売、現行特設は1/30終了。イベント開始としての1/17、住所/座標の一次照合を残す。発売日を会期に機械変換しない。 10/20夕再確認: 店舗住所・施設代表点の一次照合を新たに完了。公式訂正を再読しても1/17は発売日であり開催開始へ機械変換しない。",
-      "nextCheck": "開催開始日と明記された原告知・原図が得られるまで保留。店舗住所・位置の再探索は不要。",
-      "recheckDueAt": "2026-10-27",
+      "nextCheck": "開催開始日と明記された原告知・原図が得られるまで保留。店舗住所・位置の再探索は不要。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -17095,11 +17137,29 @@
           "observedAt": "2026-10-25T23:10:43.639Z",
           "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
           "recordPath": "research/morning-20261026/cloud/event-checks/5af3d6edc2aa.html"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウド観測。正式開業・予約日の一次確定なし。店舗案内は先週のキャッシュ、求人は掲載終了。未知はnullを維持。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウド観測。正式開業・予約日の一次確定なし。店舗案内は先週のキャッシュ、求人は掲載終了。未知はnullを維持。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウド観測。正式開業・予約日の一次確定なし。店舗案内は先週のキャッシュ、求人は掲載終了。未知はnullを維持。",
+          "recordPath": "research/morning-20261027-source-observations.json"
         }
       ],
       "decision": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
-      "nextCheck": "公式ブランドnews/shop/SNS、運営店舗案内・求人原本で正式日と入場方法を確認",
-      "recheckDueAt": "2026-10-26T19:00:00+09:00"
+      "nextCheck": "公式ブランドニュースと運営店舗案内で正式開業日・予約日を再確認。求人は掲載終了であり日付を推定しない。",
+      "recheckDueAt": "2026-10-27T19:00:00+09:00"
     },
     {
       "id": "update-ana-purchase-limit-extension-20261022",
@@ -19115,6 +19175,12 @@
           "observedAt": "2026-10-10T09:38:55Z",
           "summary": "公式本文で10/24–25、撮影会11/13/15時、ARラリー10–16時、各日9時の2種類の券配布を確認。既存の一次情報取得記録を使用。 確認済み会期の経過を移行根拠とする。",
           "recordPath": "research/evening-listings-2026-10-10-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+          "observedAt": "2026-10-26T11:01:06.015Z",
+          "summary": "PR79 main edc020449c7300608f5765415236f4844cf19fc0 と公開実体の初回完全一致。後日の台帳同期・報告・配信完了時刻で置換しない。",
+          "recordPath": "research/morning-20261027/pr79-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -19127,12 +19193,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "保存済み施設公式本文で会期2026年10月24日〜25日を確認済み。会期経過を根拠に同一IDを履歴へ移行する。現ページ404は補助観測とし、削除理由は不明。延長情報は今回確認範囲で未発見。初回発見日時は未記録のためnullを維持。",
-      "nextCheck": "履歴移行の検査、GitHub反映、公開JSON・共有URL・保存状態互換と反映後CIを確認。",
-      "recheckDueAt": "2026-10-26T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "通常巡回で公式の訂正・延長等の続報が出た場合に再確認。元出典URLは履歴として保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-10-26T11:01:06.015Z"
     },
     {
       "id": "update-gu-online-prereservation-20261026",
@@ -19155,6 +19221,12 @@
           "observedAt": "2026-10-26T10:07:51Z",
           "summary": "全商品のオンライン先行予約11/2 7:15〜11/8 23:59、期間内でも上限終了、1人1柄1色2点（サイズ違い合算）、11/19までの配送予定と例外。",
           "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-10-26T11:01:06.015Z",
+          "summary": "PR79 main edc020449c7300608f5765415236f4844cf19fc0 と公開実体の初回完全一致。後日の台帳同期・報告・配信完了時刻で置換しない。",
+          "recordPath": "research/morning-20261027/pr79-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -19167,12 +19239,12 @@
       "listingIds": [
         "gu-chiikawa-winter-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "通常発売11/20・11/27と既存IDを維持。公式発表日・実公開日時は不明を維持。",
-      "nextCheck": "公開内容一致とCIを確認。次回通常巡回でFAQ変更を再確認し、予約開始前にも確認。",
+      "nextCheck": "次回通常巡回でGU公式FAQの変更を再確認し、11月2日7:15の予約開始前にも確認。",
       "recheckDueAt": "2026-10-27T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-26T11:01:06.015Z"
     },
     {
       "id": "entry-bakery-tokyo-20261026",
@@ -19195,6 +19267,12 @@
           "observedAt": "2026-10-26",
           "summary": "14:50整理券、呼出後15分以内・超過キャンセル、東京店のみ、整理券以外のフリー入店なし。最終入店19:30。",
           "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-26T11:01:06.015Z",
+          "summary": "PR79 main edc020449c7300608f5765415236f4844cf19fc0 と公開実体の初回完全一致。後日の台帳同期・報告・配信完了時刻で置換しない。",
+          "recordPath": "research/morning-20261027/pr79-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -19207,12 +19285,12 @@
       "listingIds": [
         "chiikawa-bakery-tokyo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "発券開始後の確認で、開始前掲載は未達。日付限定の告知として掲載し、19:30後の現在の入店可否を示さない。初回発見の正確な時刻は未提供のため日付精度。",
-      "nextCheck": "公開一致とCIを確認。翌日分の公式案内を次回通常巡回で確認。",
+      "nextCheck": "次回通常巡回で日付限定案内の経過と翌日の公式告知を確認。",
       "recheckDueAt": "2026-10-27T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-26T11:01:06.015Z"
     },
     {
       "id": "entry-ramen-shinsaibashi-20261026",
@@ -19235,6 +19313,12 @@
           "observedAt": "2026-10-26",
           "summary": "10/26は事前予約で満席、予約済み客のみ。曜日表記は実際の日付と矛盾するため転載しない。",
           "recordPath": "research/evening-20261026-three-updates-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-26T11:01:06.015Z",
+          "summary": "PR79 main edc020449c7300608f5765415236f4844cf19fc0 と公開実体の初回完全一致。後日の台帳同期・報告・配信完了時刻で置換しない。",
+          "recordPath": "research/morning-20261027/pr79-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -19247,11 +19331,133 @@
       "listingIds": [
         "ramen-buta-shinsaibashi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "当日の満席状況のみ更新。予約優先・11月先着受付は維持し、新しい予約受付条件に扱わない。初回発見の正確な時刻は未提供のため日付精度。",
-      "nextCheck": "公開一致とCIを確認。次回通常巡回で当日条件の更新・経過を確認。",
+      "nextCheck": "次回通常巡回で日付限定案内の経過と翌日の公式告知を確認。",
       "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "publishedAt": "2026-10-26T11:01:06.015Z"
+    },
+    {
+      "id": "archive-popup-mito-uchihara-20261027",
+      "title": "ちいかわPOP UP STORE イオンモール水戸内原の会期終了による履歴移行",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-10-09-aeon-mito-uchihara:archive-popup-mito-uchihara-20261027",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-f5e27e8bd8"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-27",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-26",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_mito/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "公式個別ページと公式一覧で会期2026/10/9〜10/26を確認、延長告知は確認範囲で未発見。有限会期経過を根拠に同じID・元出典を保持して履歴へ移行。別の終了宣言を必須としない。",
+          "recordPath": "research/morning-20261027-archive-christmas-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-09-aeon-mito-uchihara"
+        ],
+        "note": "main edc020449c7300608f5765415236f4844cf19fc0 の既存ID・会期・出典と照合。重複登録や新規ピン追加なし。"
+      },
+      "listingIds": [
+        "popup-2026-10-09-aeon-mito-uchihara"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式個別ページと公式一覧で会期2026/10/9〜10/26を確認、延長告知は確認範囲で未発見。有限会期経過を根拠に同じID・元出典を保持して履歴へ移行。別の終了宣言を必須としない。",
+      "nextCheck": "検査・対象commit CI・main配信・公開実体一致を確認し、その実測時刻を保存する。",
+      "recheckDueAt": "2026-10-27T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-popup-tsudanuma-south-20261027",
+      "title": "ちいかわPOP UP STORE イオンモール津田沼Southの会期終了による履歴移行",
+      "kind": "listing_update",
+      "targetKey": "popup-2026-10-09-aeon-tsudanuma-south:archive-popup-tsudanuma-south-20261027",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-2db8c290c8"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-27",
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-10-26",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_tuda/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "公式個別ページと公式一覧で会期2026/10/9〜10/26を確認、延長告知は確認範囲で未発見。有限会期経過を根拠に同じID・元出典を保持して履歴へ移行。別の終了宣言を必須としない。",
+          "recordPath": "research/morning-20261027-archive-christmas-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-09-aeon-tsudanuma-south"
+        ],
+        "note": "main edc020449c7300608f5765415236f4844cf19fc0 の既存ID・会期・出典と照合。重複登録や新規ピン追加なし。"
+      },
+      "listingIds": [
+        "popup-2026-10-09-aeon-tsudanuma-south"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式個別ページと公式一覧で会期2026/10/9〜10/26を確認、延長告知は確認範囲で未発見。有限会期経過を根拠に同じID・元出典を保持して履歴へ移行。別の終了宣言を必須としない。",
+      "nextCheck": "検査・対象commit CI・main配信・公開実体一致を確認し、その実測時刻を保存する。",
+      "recheckDueAt": "2026-10-27T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "abema-christmas-market-firstcome-20261031",
+      "title": "クリスマスマーケットの先着販売10/31 12:00を案内",
+      "kind": "reservation_update",
+      "targetKey": "abema-chiikawa-christmas-market-2026+chiikawa-christmas-market-2026-toyosuna:abema-christmas-market-firstcome-20261031",
+      "sourceIds": [
+        "chiikawa-christmas-market-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-26T23:00:16Z",
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-12-25",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-10-31T12:00:00+09:00",
+      "reflectDueAt": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://contents-abema.com/chiikawa-christmas-market/",
+          "observedAt": "2026-10-26T23:00:16Z",
+          "summary": "公式TOPの先着販売10/31 12:00、1アカウントにつき1回の申込み最大4名分を既存企画・会場へ反映。予約終了日時は不明。抽選結果10/30 12:00、2時間30分制、子どものスマホ例外など既存条件を維持。",
+          "recordPath": "research/morning-20261027-archive-christmas-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "abema-chiikawa-christmas-market-2026",
+          "chiikawa-christmas-market-2026-toyosuna"
+        ],
+        "note": "main edc020449c7300608f5765415236f4844cf19fc0 の既存ID・会期・出典と照合。重複登録や新規ピン追加なし。"
+      },
+      "listingIds": [
+        "abema-chiikawa-christmas-market-2026",
+        "chiikawa-christmas-market-2026-toyosuna"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "公式TOPの先着販売10/31 12:00、1アカウントにつき1回の申込み最大4名分を既存企画・会場へ反映。予約終了日時は不明。抽選結果10/30 12:00、2時間30分制、子どものスマホ例外など既存条件を維持。",
+      "nextCheck": "検査・対象commit CI・main配信・公開実体一致を確認し、その実測時刻を保存する。",
+      "recheckDueAt": "2026-10-27T19:00:00+09:00",
       "publishedAt": null
     }
   ]

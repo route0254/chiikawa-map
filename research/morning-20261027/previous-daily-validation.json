@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-10-26T23:16:48.445Z",
+  "run": 40397856879,
+  "job": 121835570770,
+  "main": "edc020449c7300608f5765415236f4844cf19fc0",
+  "onlyFailedStep": "Report official spot status",
+  "candidateCount": 2,
+  "ids": [
+    "popup-2026-10-09-aeon-mito-uchihara",
+    "popup-2026-10-09-aeon-tsudanuma-south"
+  ],
+  "logExtract": [
+    "2026-10-26T20:41:26.5066914Z アーカイブ移動候補（終了日経過）: 2件",
+    "2026-10-26T20:41:26.5067430Z - 2026-10-26 | 1日経過 | popup-2026-10-09-aeon-mito-uchihara | ちいかわPOP UP STORE イオンモール水戸内原",
+    "2026-10-26T20:41:26.5068089Z - 2026-10-26 | 1日経過 | popup-2026-10-09-aeon-tsudanuma-south | ちいかわPOP UP STORE イオンモール津田沼South",
+    "2026-10-26T20:41:26.5090262Z アーカイブ移動候補が2件あります。公式情報を確認し、現在JSONと過去JSONを更新してください。",
+    "2026-10-26T20:41:26.5092054Z ##[error]2026-10-26に終了した ちいかわPOP UP STORE イオンモール水戸内原（popup-2026-10-09-aeon-mito-uchihara）を公式確認してください",
+    "2026-10-26T20:41:26.5093364Z ##[error]2026-10-26に終了した ちいかわPOP UP STORE イオンモール津田沼South（popup-2026-10-09-aeon-tsudanuma-south）を公式確認してください",
+    "2026-10-26T20:41:26.5135908Z ##[error]Process completed with exit code 1."
+  ],
+  "fullLogPreservedInPrivateTaskCache": true
+}
