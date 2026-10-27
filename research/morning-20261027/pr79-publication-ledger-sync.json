@@ -1,0 +1,111 @@
+{
+  "recordedAt": "2026-10-26T11:03:04.005Z",
+  "sourceMain": "edc020449c7300608f5765415236f4844cf19fc0",
+  "publishedAt": "2026-10-26T11:01:06.015Z",
+  "publishedAtBasis": "First saved exact public content match; never reporting, later sync, or deployment time.",
+  "deployJobCompletedAt": "2026-10-26T10:59:14Z",
+  "corrections": [
+    {
+      "id": "update-gu-online-prereservation-20261026",
+      "listingIds": [
+        "gu-chiikawa-winter-2026"
+      ],
+      "kind": "reservation_update",
+      "state": "published",
+      "publishedAt": "2026-10-26T11:01:06.015Z",
+      "firstPublicMatchAt": "2026-10-26T11:01:06.015Z",
+      "deployJobCompletedAt": "2026-10-26T10:59:14Z",
+      "pr": 79,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/79",
+      "sourceHead": "ac2ca0f2d60f75d25a30366d479d0bcf4e28ac7e",
+      "mergeSha": "edc020449c7300608f5765415236f4844cf19fc0",
+      "pagesRun": 40311461640,
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "nextCheck": "次回通常巡回でGU公式FAQの変更を再確認し、11月2日7:15の予約開始前にも確認。"
+    },
+    {
+      "id": "entry-bakery-tokyo-20261026",
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-26T11:01:06.015Z",
+      "firstPublicMatchAt": "2026-10-26T11:01:06.015Z",
+      "deployJobCompletedAt": "2026-10-26T10:59:14Z",
+      "pr": 79,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/79",
+      "sourceHead": "ac2ca0f2d60f75d25a30366d479d0bcf4e28ac7e",
+      "mergeSha": "edc020449c7300608f5765415236f4844cf19fc0",
+      "pagesRun": 40311461640,
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "nextCheck": "次回通常巡回で日付限定案内の経過と翌日の公式告知を確認。"
+    },
+    {
+      "id": "entry-ramen-shinsaibashi-20261026",
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-26T11:01:06.015Z",
+      "firstPublicMatchAt": "2026-10-26T11:01:06.015Z",
+      "deployJobCompletedAt": "2026-10-26T10:59:14Z",
+      "pr": 79,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/79",
+      "sourceHead": "ac2ca0f2d60f75d25a30366d479d0bcf4e28ac7e",
+      "mergeSha": "edc020449c7300608f5765415236f4844cf19fc0",
+      "pagesRun": 40311461640,
+      "recheckDueAt": "2026-10-27T08:00:00+09:00",
+      "nextCheck": "次回通常巡回で日付限定案内の経過と翌日の公式告知を確認。"
+    },
+    {
+      "id": "archive-muchaphoto-sapporo-hiraoka-20261026",
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-sapporo-hiraoka-2026"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-26T11:01:06.015Z",
+      "firstPublicMatchAt": "2026-10-26T11:01:06.015Z",
+      "deployJobCompletedAt": "2026-10-26T10:59:14Z",
+      "pr": 79,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/79",
+      "sourceHead": "ac2ca0f2d60f75d25a30366d479d0bcf4e28ac7e",
+      "mergeSha": "edc020449c7300608f5765415236f4844cf19fc0",
+      "pagesRun": 40311461640,
+      "recheckDueAt": null,
+      "nextCheck": "通常巡回で公式の訂正・延長等の続報が出た場合に再確認。元出典URLは履歴として保持。"
+    }
+  ],
+  "timing": {
+    "allDataJsonMatched": 10,
+    "jsonDeepEqual": 21,
+    "official": 98,
+    "archive": 676,
+    "totalSpots": 868,
+    "collaborations": 23,
+    "collaborationsArchive": 52,
+    "currentSpotUpdates": 2,
+    "collaborationUpdates": 1,
+    "archiveTransitions": 1,
+    "priorPublicationTimestampSynced": 1,
+    "newListings": 0,
+    "newPublicationCandidates": 4,
+    "sourceCount": 697,
+    "candidateCount": 344,
+    "hiraokaOriginalIdAndSourcePreserved": true,
+    "hiraokaArchiveCandidateCount": 0,
+    "laforetOriginalPublicationAt": "2026-10-25T23:43:13.667Z",
+    "guReservationStartsAt": "2026-11-02T07:15:00+09:00",
+    "guBeforeReservationOpening": true,
+    "tokyoTicketStartsAt": "2026-10-26T14:50:00+09:00",
+    "tokyoBeforeTicketOpening": false,
+    "tokyoLastEntryAt": "2026-10-26T19:30:00+09:00",
+    "tokyoPublishedAfterLastEntry": true,
+    "tokyoCopyHistoricalSpecificDate": true,
+    "ramenLastEntryAt": "2026-10-26T22:00:00+09:00",
+    "ramenBeforeLastEntry": true
+  },
+  "alreadySyncedLaforetActualPublicationAt": "2026-10-25T23:43:13.667Z"
+}
