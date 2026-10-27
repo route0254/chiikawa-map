@@ -1,0 +1,103 @@
+{
+  "recordedAt": "2026-10-27T23:10:59.080Z",
+  "previousNoticeCandidate": "kurashiki-photo-venue-conflict-20261027",
+  "previousNoticeFirstPublicMatchAt": "2026-10-27T10:53:08.680Z",
+  "originalHold": {
+    "id": "kurashiki-photo-exact-venue-hold-20261027",
+    "title": "倉敷撮影会 公式内会場表記不一致",
+    "kind": "listing_update",
+    "targetKey": "chiikawa-photo-2026-11-14-aeon-kurashiki:exact-hall-confirmation",
+    "sourceIds": [
+      "official-observation-88c0160fff16"
+    ],
+    "officialAnnouncedAt": null,
+    "discoveredAt": "2026-10-27T10:02:52+00:00",
+    "eventStartsAt": "2026-11-14",
+    "eventEndsAt": "2026-11-15",
+    "releaseAt": null,
+    "reservationOpensAt": null,
+    "reflectDueAt": null,
+    "evidence": [
+      {
+        "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "observedAt": "2026-10-27T10:04:44.273+00:00",
+        "summary": "正確な会場は未確定。公式施設に対象イベント画像なし。別一次POPUPページは主催ショップ情報のみ、画像main_v10.jpgとosrs.jpgはHTTP403/web取得不可。第三者古いセントラル表記は決め手にしない。",
+        "recordPath": "research/evening-20261027-listing-evidence.json"
+      }
+    ],
+    "existingMatch": {
+      "status": "matched",
+      "ids": [
+        "chiikawa-photo-2026-11-14-aeon-kurashiki"
+      ],
+      "note": "main e23001246abb1ee12f9278845e7418641a3214b8 の既存ID・内容・台帳と照合。新規掲載や重複ID追加なし。"
+    },
+    "listingIds": [
+      "chiikawa-photo-2026-11-14-aeon-kurashiki"
+    ],
+    "state": "on_hold",
+    "priority": "normal",
+    "decision": "注意書きの公開と、正確な会場名の確認は別管理。公式概要と本文の不一致が解消するまで会場名を断定しない。",
+    "nextCheck": "10/28 08JSTに公式本文/概要の整合を再確認。注意書き公開完了と正確会場確認holdを別管理。",
+    "recheckDueAt": "2026-10-28T08:00:00+09:00",
+    "publishedAt": null
+  },
+  "resolvedHold": {
+    "id": "kurashiki-photo-exact-venue-hold-20261027",
+    "title": "倉敷撮影会 公式内会場表記不一致",
+    "kind": "listing_update",
+    "targetKey": "chiikawa-photo-2026-11-14-aeon-kurashiki:exact-hall-confirmation",
+    "sourceIds": [
+      "official-observation-88c0160fff16"
+    ],
+    "officialAnnouncedAt": null,
+    "discoveredAt": "2026-10-27T10:02:52+00:00",
+    "eventStartsAt": "2026-11-14",
+    "eventEndsAt": "2026-11-15",
+    "releaseAt": null,
+    "reservationOpensAt": null,
+    "reflectDueAt": null,
+    "evidence": [
+      {
+        "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "observedAt": "2026-10-27T10:04:44.273+00:00",
+        "summary": "正確な会場は未確定。公式施設に対象イベント画像なし。別一次POPUPページは主催ショップ情報のみ、画像main_v10.jpgとosrs.jpgはHTTP403/web取得不可。第三者古いセントラル表記は決め手にしない。",
+        "recordPath": "research/evening-20261027-listing-evidence.json"
+      },
+      {
+        "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "observedAt": "2026-10-27T22:59:51Z",
+        "summary": "公式概要・本文とも1Fワクワクコートに一致。前回の本文セントラル表記は解消。日付/整理券等は同じ。",
+        "recordPath": "research/morning-20261028-listing-evidence.json"
+      },
+      {
+        "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "observedAt": "2026-10-27T22:59:31.170Z",
+        "summary": "独立coreの直接HTTP200本文でワクワク一致を先に確認。後続web確認とは別の観測。",
+        "recordPath": "research/morning-20261028-listing-evidence.json"
+      }
+    ],
+    "existingMatch": {
+      "status": "matched",
+      "ids": [
+        "chiikawa-photo-2026-11-14-aeon-kurashiki"
+      ],
+      "note": "main e23001246abb1ee12f9278845e7418641a3214b8 の既存ID・内容・台帳と照合。新規掲載や重複ID追加なし。"
+    },
+    "listingIds": [
+      "chiikawa-photo-2026-11-14-aeon-kurashiki"
+    ],
+    "state": "rejected",
+    "priority": "normal",
+    "decision": "公式概要・本文とも1Fワクワクコートに一致したため会場保留を解消。掲載更新と実公開確認は kurashiki-photo-exact-venue-confirmed-20261028 に統合し、この保留を終了。会場確定の事実を否定する判断ではない。",
+    "nextCheck": "掲載更新候補 kurashiki-photo-exact-venue-confirmed-20261028 の公開実体照合後、通常巡回で公式変更を確認。",
+    "recheckDueAt": null,
+    "publishedAt": null
+  },
+  "earliestConfirmedObservationAt": "2026-10-27T22:59:31.170Z",
+  "directReadAt": "2026-10-27T22:59:31.170Z",
+  "independentWebObservationAt": "2026-10-27T22:59:51Z",
+  "confirmationCandidate": "kurashiki-photo-exact-venue-confirmed-20261028",
+  "confirmationPublicationAt": null,
+  "stateNormalization": "Existing rejected state closes a resolved hold merged into a separate listing update, following existing ledger practice; it does not reject the confirmed venue."
+}

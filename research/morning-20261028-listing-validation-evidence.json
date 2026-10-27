@@ -1,0 +1,120 @@
+{
+  "validatedAt": "2026-10-27T23:18:46.795Z",
+  "base": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+  "scope": {
+    "current": [
+      "chiikawa-photo-2026-11-14-aeon-kurashiki",
+      "chiikawa-bakery-tokyo",
+      "ramen-buta-shinsaibashi"
+    ],
+    "collaborations": [],
+    "newListings": [],
+    "newArchiveMoves": []
+  },
+  "tests": {
+    "build": {
+      "passed": true,
+      "generatedSpotPages": 868
+    },
+    "checkCommands": 49,
+    "units": {
+      "tests": 58,
+      "passed": 58,
+      "failed": 0
+    },
+    "uiSmoke": {
+      "passed": 111,
+      "startedAt": "2026-10-27T23:13:45.489Z",
+      "completedAt": "2026-10-27T23:18:10.773Z"
+    },
+    "pcMobile": {
+      "checks": 34,
+      "screenshots": 12,
+      "pageErrors": 0,
+      "advancingClock": true,
+      "normalSearchAndListInteractions": true,
+      "savedStateAndLegacySharePreserved": true
+    },
+    "scope": {
+      "verifiedAt": "2026-10-27T23:14:48.410Z",
+      "passed": true,
+      "exitCode": 0,
+      "current": 96,
+      "archive": 678,
+      "totalSpots": 868,
+      "sources": 701,
+      "candidates": 355,
+      "newListings": 0,
+      "otherSpotsUnchanged": 865,
+      "allCollaborationsUnchanged": 75,
+      "archiveUnchanged": true,
+      "addedDatesUnchanged": true,
+      "coordinatesIdsDatesAndTicketRulesPreserved": true,
+      "kurashikiVenueConfirmed": true,
+      "oldHoldResolvedByMerge": true,
+      "priorNoticePublicationAtPreserved": "2026-10-27T10:53:08.680Z",
+      "newConfirmationStillUnpublished": true,
+      "tokyoBenefitsAndGeneralReservationsPreserved": true,
+      "no1930InNewDailyNote": true,
+      "ramenOnlyExpiredPrefixRemoved": true,
+      "noNewWalkinClaim": true,
+      "priorPr81TimestampsSynced": 4,
+      "otherHoldsUnpublishedAndRetained": 8,
+      "recheckAt": "2026-10-28T19:00:00+09:00",
+      "existingWorktreesPreserved": 52,
+      "sourceCompletionAndFailureTimesPreserved": true,
+      "trackedContentChanges": [
+        ".spot-pages-manifest.json",
+        "data/official-spots.json",
+        "data/site-meta.json",
+        "index.html",
+        "official.html",
+        "research/official-source-ledger.json",
+        "research/publication-candidate-ledger.json",
+        "sitemap.xml",
+        "spot/chiikawa-bakery-tokyo/index.html",
+        "spot/chiikawa-photo-2026-11-14-aeon-kurashiki/index.html",
+        "spot/ramen-buta-shinsaibashi/index.html"
+      ]
+    },
+    "officialStatus": {
+      "archiveCandidates": 0,
+      "predicateUnchanged": true
+    },
+    "links": {
+      "startedAt": "2026-10-27T23:14:47.560Z",
+      "completedAt": "2026-10-27T23:14:48.031Z",
+      "passed": true,
+      "exitCode": 0,
+      "error": null,
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Three target official evidence URLs only. Known historical Naha and other404 remain unchanged and were not rechecked.",
+      "observations": "ちい活マップ 外部リンク確認\n- 対象URL: 3件\n- 同時接続数: 6\n- タイムアウト: 12000ms\n\n確認結果\n- 正常: 3件\n- HTTPS転送: 0件\n- 要確認: 0件\n- 破損: 0件\n\n明確に破損しているリンクは見つかりませんでした。\n"
+    },
+    "sourceAttemptNormalization": {
+      "sources": 41,
+      "basis": "Existing schema lastAttemptAt stores the completed attempt time for success. Explicit cloud retrieval completion timestamps are used; original attempt starts remain in the observations.",
+      "initialFailedCheckRetainedLocally": true,
+      "finalAllRequiredChecksSuccessful": true
+    }
+  },
+  "priorPublicationSync": {
+    "pr": 81,
+    "candidates": 4,
+    "firstPublicMatchAt": "2026-10-27T10:53:08.680Z"
+  },
+  "limits": [
+    "Confirmed official text only; no image-dependent facts added.",
+    "Direct retrieval, limited text, cache and failure observations remain separate; unknown acquisition times stay null.",
+    "Kurashiki prior notice publication, current official venue confirmation and current publication are tracked separately.",
+    "Known historical Naha and other404 were retained unchanged, outside target URL recheck.",
+    "Custom layout checks use local Leaflet assets and transparent tiles; live tile retrieval is not claimed.",
+    "Source-head/main CI and live exact publication remain pending at local validation."
+  ],
+  "operationsDocument": {
+    "lastUpdated": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "allLocalChecksSuccessful": true,
+  "appSchemaWorkflowsAndHostingUnchanged": true
+}

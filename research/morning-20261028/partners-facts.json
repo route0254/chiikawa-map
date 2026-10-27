@@ -1,0 +1,718 @@
+{
+  "checkedAt": "2026-10-27T23:02:10.870+00:00",
+  "baseCommit": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+  "sourceObservations": [
+    {
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "attemptedAt": "2026-10-27T22:59:00.679+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:54.439+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:10.311+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "sourceId": "chiikawa-christmas-market-official",
+      "attemptedAt": "2026-10-27T22:59:00.680+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:53.510+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:09.696+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "sourceId": "corporate-sunflower-chiikawa",
+      "attemptedAt": "2026-10-27T22:59:00.680+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:40.061+00:00",
+      "lastSuccessfulAt": "2026-10-27T10:04:40.061+00:00",
+      "status": 200,
+      "result": "retrieved_partial",
+      "scope": "HTTP200だが画像主体/本文限定。本文だけで全条件を確認した扱いにしない。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "attemptedAt": "2026-10-27T22:59:00.681+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:38.854+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:14.124+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://contents-abema.com/chiikawa-christmas-market/faq/",
+      "sourceId": "christmas-faq",
+      "attemptedAt": "2026-10-27T22:59:00.682+00:00",
+      "priorSuccessfulAt": "2026-10-23T10:05:40.190+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:09.891+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://contents-abema.com/chiikawa-christmas-market/ticket-detail/",
+      "sourceId": "christmas-ticket-details",
+      "attemptedAt": "2026-10-27T22:59:00.683+00:00",
+      "priorSuccessfulAt": "2026-10-23T10:05:40.440+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:09.801+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "sourceId": "kitte-osaka-event-index",
+      "attemptedAt": "2026-10-27T22:59:00.684+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:42.304+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:09.099+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://chiikawa.toho-movie.jp/news/page/n_260713.html",
+      "sourceId": "series-evening-f7c522a54050",
+      "attemptedAt": "2026-10-27T22:59:00.685+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:01:18.620Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:09.537+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "attemptedAt": "2026-10-27T22:59:00.687+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:46.895+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:16.923+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "sourceId": "official-observation-bcf4bed6d585",
+      "attemptedAt": "2026-10-27T22:59:00.689+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:44.497+00:00",
+      "lastSuccessfulAt": "2026-10-27T10:04:44.497+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "sourceId": "official-observation-88c0160fff16",
+      "attemptedAt": "2026-10-27T22:59:08.998+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:44.273+00:00",
+      "lastSuccessfulAt": "2026-10-27T10:04:44.273+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://www.anafesta.com/notice/2026/10/79105/",
+      "sourceId": "ana-festa-chiikawa-inquiry-20261016",
+      "attemptedAt": "2026-10-27T22:59:09.099+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:46.319+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:13.961+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa",
+      "sourceId": "ana-chiikawa-goods-reservation",
+      "attemptedAt": "2026-10-27T22:59:09.278+00:00",
+      "priorSuccessfulAt": "2026-10-20T10:02:32.044+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:15.098+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "sourceId": "ana-chiikawa-goods-reservation-full-20261016",
+      "attemptedAt": "2026-10-27T22:59:09.538+00:00",
+      "priorSuccessfulAt": "2026-10-21T09:58:38.722+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:15.001+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "sourceId": "ana-chiikawa-goods-reservation-faq",
+      "attemptedAt": "2026-10-27T22:59:09.696+00:00",
+      "priorSuccessfulAt": "2026-10-20T10:02:32.360+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:15.065+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://chiikawa.toho-movie.jp/news/index.html",
+      "sourceId": "morning-series18-b61b0e14cba8",
+      "attemptedAt": "2026-10-27T22:59:09.801+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:01:38.020Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:15.365+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://chiikawa.toho-movie.jp/news/page/n_261007.html",
+      "sourceId": "morning-series18-36534053fb32",
+      "attemptedAt": "2026-10-27T22:59:09.891+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:01:38.124Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:15.217+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "sourceId": "venue-aeon-kasukabe-photoshoot-20261103",
+      "attemptedAt": "2026-10-27T22:59:10.311+00:00",
+      "priorSuccessfulAt": "2026-10-23T10:05:31.503+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:31.503+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://kasukabe.aeonmall.jp/event/587712c5-e3bc-461b-bdd1-fe51e6698c2b",
+      "sourceId": "venue-aeon-kasukabe-popup-entry-20261030",
+      "attemptedAt": "2026-10-27T22:59:12.722+00:00",
+      "priorSuccessfulAt": "2026-10-20T10:01:09+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:01:09+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://www.opsia.jp/137234/",
+      "sourceId": "venue-opsia-misumi-muchaphoto-20261122",
+      "attemptedAt": "2026-10-27T22:59:13.961+00:00",
+      "priorSuccessfulAt": "2026-10-23T10:05:31.506+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:18.599+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://kofushowa.aeonmall.jp/event/006db774-cf06-472a-bfce-0e4baf8312ce",
+      "sourceId": "venue-aeon-kofu-showa-workshop-20261123",
+      "attemptedAt": "2026-10-27T22:59:14.124+00:00",
+      "priorSuccessfulAt": "2026-10-23T10:05:31.541+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:31.541+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/tsuchiura/event/index.json",
+      "sourceId": "venue-aeon-tsuchiura-muchaphoto-20261128",
+      "attemptedAt": "2026-10-27T22:59:15.001+00:00",
+      "priorSuccessfulAt": "2026-10-20T23:01:23.368+00:00",
+      "lastSuccessfulAt": "2026-10-20T23:01:23.368+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 404: Not Found",
+      "status": 404,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "sourceId": "morning-existing21-4fdf328cdc02",
+      "attemptedAt": "2026-10-27T22:59:15.065+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:49.904+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:16.028+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "sourceId": "movie-cheer-third",
+      "attemptedAt": "2026-10-27T22:59:15.098+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:01:51.419Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:20.491+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://chiikawa.toho-movie.jp/news/",
+      "sourceId": "movie-news-index",
+      "attemptedAt": "2026-10-27T22:59:15.217+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:01:51.405Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:20.447+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.gu-global.com/jp/ja/feature/contents/collaboration/chiikawa",
+      "sourceId": "weekly-gu-chiikawa",
+      "attemptedAt": "2026-10-27T22:59:15.365+00:00",
+      "priorSuccessfulAt": "2026-10-25T23:12:58.575Z",
+      "lastSuccessfulAt": "2026-10-25T23:12:58.575Z",
+      "status": 200,
+      "result": "retrieved_partial",
+      "scope": "HTTP200だが画像主体/本文限定。本文だけで全条件を確認した扱いにしない。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://kurashiki.aeonmall.jp/event",
+      "sourceId": "weekly-kurashiki-events",
+      "attemptedAt": "2026-10-27T22:59:16.014+00:00",
+      "priorSuccessfulAt": "2026-10-27T10:04:50.733+00:00",
+      "lastSuccessfulAt": "2026-10-27T10:04:50.733+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "status": 406,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://suzaka.aeonmall.com/news/detail/1835",
+      "sourceId": "venue-aeon-suzaka-photo-20261122",
+      "attemptedAt": "2026-10-27T22:59:16.015+00:00",
+      "priorSuccessfulAt": "2026-10-22T23:06:07.237+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:20.594+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://suzaka.aeonmall.com/news/detail/1834?t=event_news",
+      "sourceId": "venue-aeon-suzaka-popup-20261106",
+      "attemptedAt": "2026-10-27T22:59:16.028+00:00",
+      "priorSuccessfulAt": "2026-10-25T23:12:58.229Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:20.338+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://suzaka.aeonmall.com/news/detail/1835?t=event_news",
+      "sourceId": "suzaka-photo",
+      "attemptedAt": "2026-10-27T22:59:16.923+00:00",
+      "priorSuccessfulAt": "2026-10-23T10:07:55.076+00:00",
+      "lastSuccessfulAt": "2026-10-27T22:59:20.326+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "sourceId": "ana-naha-delay-20261022",
+      "attemptedAt": "2026-10-27T22:59:17.431+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:02:54.999Z",
+      "lastSuccessfulAt": "2026-10-25T10:02:54.999Z",
+      "result": "fetch_failed",
+      "error": "HTTP Error 404: Not Found",
+      "status": 404,
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "直接取得失敗。成功とみなさない。"
+    },
+    {
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "sourceId": "ana-preorder-recovery-20261023",
+      "attemptedAt": "2026-10-27T22:59:18.599+00:00",
+      "priorSuccessfulAt": "2026-10-25T10:03:02.901Z",
+      "lastSuccessfulAt": "2026-10-27T22:59:23.363+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "sourceId": "tamanohikari-chiikawa-dashiwari-2026",
+      "attemptedAt": "2026-10-27T22:59:19.161+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:22.820+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "sourceId": "ana-chiikawa-jet-2026",
+      "attemptedAt": "2026-10-27T22:59:20.001+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:24.349+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "sourceId": "tokyo-metro-escape-2026",
+      "attemptedAt": "2026-10-27T22:59:20.197+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:23.598+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:20.326+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:24.306+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "sourceId": "movie-chiikawa-cafe-2026",
+      "attemptedAt": "2026-10-27T22:59:20.338+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:23.482+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "sourceId": "seven-eleven-christmas-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:20.447+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:24.999+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "sourceId": "suntory-movie-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:20.491+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:22.900+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "sourceId": "citen-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:20.594+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:23.632+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "sourceId": "merry-jenny-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:21.341+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:25.454+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "sourceId": "panasonic-energy-movie-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:22.820+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:25.923+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "sourceId": "tokyo-banana-chiikawa",
+      "attemptedAt": "2026-10-27T22:59:22.900+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:27.798+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "sourceId": "donquijote-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:23.363+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:26.940+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "sourceId": "chiikawa-epos-card",
+      "attemptedAt": "2026-10-27T22:59:23.482+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:27.850+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "sourceId": "kadokawa-chiikawa-book-fair-2026-summer",
+      "attemptedAt": "2026-10-27T22:59:23.598+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:26.811+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "sourceId": "uniqlo-movie-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:23.632+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:28.955+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "sourceId": "oxiclean-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:24.306+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:32.904+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "sourceId": "clasic-chiikawa-scrubs-2026",
+      "attemptedAt": "2026-10-27T22:59:24.349+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:28.109+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "sourceId": "abema-chiikawa-christmas-market-2026",
+      "attemptedAt": "2026-10-27T22:59:24.999+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:30.497+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "sourceId": "minum-chiikawa-grip-liner-2026",
+      "attemptedAt": "2026-10-27T22:59:25.454+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:32.910+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "sourceId": "toho-one-movie-chiikawa-2026",
+      "attemptedAt": "2026-10-27T22:59:25.923+00:00",
+      "priorSuccessfulAt": null,
+      "lastSuccessfulAt": "2026-10-27T22:59:29.762+00:00",
+      "status": 200,
+      "result": "retrieved",
+      "scope": "当該一次ページの取得本文を確認。全SNS/在庫/予約空きの網羅は未確認。",
+      "assessment": "確認範囲で新たな掲載変更を特定せず。"
+    },
+    {
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "attemptedAt": "2026-10-27T22:59:51Z",
+      "observedAt": "2026-10-27T22:59:51Z",
+      "method": "web_open",
+      "result": "retrieved_cached_or_current",
+      "originUpdatedAt": null,
+      "assessment": "公式概要・本文とも1Fワクワクコートに一致。前回の本文セントラル表記は解消。日付/整理券等は同じ。",
+      "scope": "web取得表示。HTTP直接失敗がある場合は別に保持。キャッシュ有無/原サイト更新正確時刻は未確定。"
+    },
+    {
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "attemptedAt": "2026-10-27T22:59:51Z",
+      "observedAt": "2026-10-27T22:59:51Z",
+      "method": "web_open",
+      "result": "retrieved_cached_or_current",
+      "originUpdatedAt": null,
+      "assessment": "10/30〜11/16専門店2Fサウスコート、9:30ワクワク東入口エスカレーター下整理券。既掲載一致。",
+      "scope": "web取得表示。HTTP直接失敗がある場合は別に保持。キャッシュ有無/原サイト更新正確時刻は未確定。"
+    },
+    {
+      "url": "https://kasukabe.aeonmall.jp/event/587712c5-e3bc-461b-bdd1-fe51e6698c2b",
+      "attemptedAt": "2026-10-27T22:59:51Z",
+      "observedAt": "2026-10-27T22:59:51Z",
+      "method": "web_open",
+      "result": "retrieved_cached_or_current",
+      "originUpdatedAt": null,
+      "assessment": "10/30〜11/16 1F藤の広場、9:30 Dモール西入口整理券。既掲載一致。",
+      "scope": "web取得表示。HTTP直接失敗がある場合は別に保持。キャッシュ有無/原サイト更新正確時刻は未確定。"
+    },
+    {
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "attemptedAt": "2026-10-27T23:00:43Z",
+      "observedAt": "2026-10-27T23:00:43Z",
+      "method": "web_open",
+      "result": "retrieved_cached_or_current",
+      "originUpdatedAt": null,
+      "assessment": "11/3 3F西レストスペース、11/13/15時、9:30 D入口整理券。既掲載一致。",
+      "scope": "web取得表示。HTTP直接失敗がある場合は別に保持。キャッシュ有無/原サイト更新正確時刻は未確定。"
+    },
+    {
+      "url": "https://kofushowa.aeonmall.jp/event/006db774-cf06-472a-bfce-0e4baf8312ce",
+      "attemptedAt": "2026-10-27T23:00:43Z",
+      "observedAt": "2026-10-27T23:00:43Z",
+      "method": "web_open",
+      "result": "retrieved_cached_or_current",
+      "originUpdatedAt": null,
+      "assessment": "11/23 1Fほたる広場10回各18名、10時E-1入口配布。700円アプリ200円引、現金のみ。既掲載一致。",
+      "scope": "web取得表示。HTTP直接失敗がある場合は別に保持。キャッシュ有無/原サイト更新正確時刻は未確定。"
+    },
+    {
+      "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+      "attemptedAt": "2026-10-27T23:00:43Z",
+      "observedAt": "2026-10-27T23:00:43Z",
+      "method": "web_open",
+      "result": "retrieved_cached_or_current",
+      "originUpdatedAt": null,
+      "assessment": "8/6〜10/31出港便、夕方便さっぽろ/ふらのの船内ラリー。期間延長の記載なし。",
+      "scope": "web取得表示。HTTP直接失敗がある場合は別に保持。キャッシュ有無/原サイト更新正確時刻は未確定。"
+    },
+    {
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "observedAt": "2026-10-27T22:59:51Z",
+      "method": "web_open",
+      "result": "fetch_failed",
+      "status": 404,
+      "assessment": "過去10/23〜25予約条件出典。根拠なく削除しない。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?search_osh_no=61061&mode=list_detail",
+      "observedAt": "2026-10-27T23:01:09Z",
+      "result": "fetch_failed",
+      "status": 403,
+      "assessment": "公式予約TOPに10/22那覇予約扱い表題は残存、リンク先本文はweb不可/HTTP403。過去出典保留維持。"
+    },
+    {
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_main.jpg",
+      "observedAt": "2026-10-27T23:01:19Z",
+      "result": "retrieved_image_reviewed",
+      "assessment": "画像目視で8/6〜10/31確認。全LP画像の精査は未了。"
+    }
+  ],
+  "newProjects": [],
+  "conditionUpdates": [
+    {
+      "id": "kurashiki-photo-exact-venue-confirmed-20261028",
+      "kind": "listing_update",
+      "existingIds": [
+        "chiikawa-photo-2026-11-14-aeon-kurashiki"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-27T22:59:31.170Z",
+      "eventStartsAt": "2026-11-14",
+      "eventEndsAt": "2026-11-15",
+      "reservationOpensAt": null,
+      "releaseAt": null,
+      "reflectDueAt": "2026-10-28T23:59:59+09:00",
+      "publishedAt": null,
+      "state": "ready",
+      "sourcePageUpdatedDate": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+          "observedAt": "2026-10-27T22:59:51Z",
+          "summary": "公式概要・本文とも1Fワクワクコートに一致。前回の本文セントラル表記は解消。日付/整理券等は同じ。"
+        },
+        {
+          "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+          "observedAt": "2026-10-27T22:59:31.170Z",
+          "summary": "独立coreの直接HTTP200本文でワクワク一致を先に確認。後続web確認とは別の観測。"
+        }
+      ],
+      "decision": "既存IDへ住所/表示/mapUrlを専門店1Fワクワクコートへ通常修正し不一致注意書きを解除。座標・会期・整理券条件は維持。exact-hall on_holdは公式確認済みへ、公開完了は別途実体照合まで未確認。",
+      "nextCheck": "今回公開後の同ID実体照合、その後10/28夕方定期巡回",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "duplicateNote": "core worker同一発見と統合し1件のみ。既存イベントの重複作成なし。"
+    }
+  ],
+  "unchanged": {
+    "ANA": "A-style10/27遅延継続、再販売追加生産検討中。解消日/再販確定なし。国際線プリオーダー10/23障害は公式自身が復旧済みと表示。",
+    "GU": "先行予約11/2 07:15〜11/8 23:59。10/30ではない。既存掲載一致。",
+    "TOHO": "通常応援10/30 19時12館、11/6 19時ペンライト7館の販売10/30 0時。既存一致。",
+    "Christmas": "10/31 12時先着、1申込最大4名。10/30 12時当落。既存一致。",
+    "JR": "10/31まで、TOKYO Station/梅田HEPFIVE配布終了既知。KITTE階/時間/料金未解決。",
+    "venues": "須坂11/6POPUP/11/22写真、オプシア11/22、春日部、甲府昭和は確認範囲で既掲載一致。"
+  },
+  "limitations": [
+    "直接HTTP52 URL中44取得/8失敗、うち画像主体2はpartial扱い。別web6 URL本文補完。",
+    "他現行コラボ入口本文も読んだが全リンク/在庫/画像条件網羅を意味しない。",
+    "土浦index.json直接403、過去404の削除根拠にしない。",
+    "ANA那覇過去notice404/代替本文403、終了済期間条件出典を維持。",
+    "原本DATA-OPERATIONSは別worker担当。外部変更/PC起動なし。"
+  ]
+}

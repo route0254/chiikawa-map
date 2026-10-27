@@ -1,0 +1,198 @@
+{
+  "main": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+  "fetches": [
+    {
+      "file": "official-spots.json",
+      "kind": "public",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "observedAt": "2026-10-27T22:59:12.573+00:00",
+      "bytes": 212008,
+      "sha256": "77f14b2b475e97934e88f1f32eed099bb482ccca059802f07c1067348e89ba72"
+    },
+    {
+      "file": "official-spots.json",
+      "kind": "repo",
+      "url": "https://raw.githubusercontent.com/route0254/chiikawa-map/f407d43c98c1ad8c8efca9a3e261ffc652204a65/data/official-spots.json",
+      "observedAt": "2026-10-27T22:59:14.241+00:00",
+      "bytes": 212008,
+      "sha256": "77f14b2b475e97934e88f1f32eed099bb482ccca059802f07c1067348e89ba72"
+    },
+    {
+      "file": "official-events-archive.json",
+      "kind": "public",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "observedAt": "2026-10-27T22:59:12.778+00:00",
+      "bytes": 1129023,
+      "sha256": "99e52390d5e7ae6f3d6ab6de7e686b626a919a405c03d074e3253b53765360bc"
+    },
+    {
+      "file": "official-events-archive.json",
+      "kind": "repo",
+      "url": "https://raw.githubusercontent.com/route0254/chiikawa-map/f407d43c98c1ad8c8efca9a3e261ffc652204a65/data/official-events-archive.json",
+      "observedAt": "2026-10-27T22:59:14.218+00:00",
+      "bytes": 1129023,
+      "sha256": "99e52390d5e7ae6f3d6ab6de7e686b626a919a405c03d074e3253b53765360bc"
+    },
+    {
+      "file": "collaborations-current.json",
+      "kind": "public",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "observedAt": "2026-10-27T22:59:13.189+00:00",
+      "bytes": 36906,
+      "sha256": "059c01c46ffdd966b8038acb8e1fa35428d5b3a95e28efca94aa73fcd1fcf5ae"
+    },
+    {
+      "file": "collaborations-current.json",
+      "kind": "repo",
+      "url": "https://raw.githubusercontent.com/route0254/chiikawa-map/f407d43c98c1ad8c8efca9a3e261ffc652204a65/data/collaborations-current.json",
+      "observedAt": "2026-10-27T22:59:14.153+00:00",
+      "bytes": 36906,
+      "sha256": "059c01c46ffdd966b8038acb8e1fa35428d5b3a95e28efca94aa73fcd1fcf5ae"
+    }
+  ],
+  "checks": [
+    {
+      "file": "official-spots.json",
+      "count": 96,
+      "byteEqual": true,
+      "duplicateIDs": [],
+      "endedDateCandidates": [],
+      "sameNamePeriodGroups": []
+    },
+    {
+      "file": "official-events-archive.json",
+      "count": 678,
+      "byteEqual": true,
+      "duplicateIDs": [],
+      "sameNamePeriodGroups": [],
+      "endedDateCandidatesCount": 678
+    },
+    {
+      "file": "collaborations-current.json",
+      "count": 23,
+      "byteEqual": true,
+      "duplicateIDs": [],
+      "endedDateCandidates": [],
+      "sameNamePeriodGroups": []
+    }
+  ],
+  "currentArchiveIDOverlap": [],
+  "collaborationElapsedSubPeriods": [
+    {
+      "id": "ana-chiikawa-jet-2026",
+      "title": "ANA × ちいかわ「ちいかわジェット」",
+      "period": {
+        "label": "A-style 仮想待合室",
+        "startDate": "2026-10-23",
+        "endDate": "2026-10-23",
+        "note": "9:30〜9:59の事前待機者には10:00にランダムで入場順を割り当て、10:00以降のアクセスはその後の先着順となります。案内後10分以内に入場し、サイト利用は30分以内。約30分で並び直しとなり、カートが無効になる場合があります。待合室は商品の在庫確保を保証しません。詳細：https://www.astyle.jp/astyle/news/696/"
+      }
+    },
+    {
+      "id": "movie-chiikawa-cafe-2026",
+      "title": "映画『ちいかわ 人魚の島のひみつ』コラボカフェ",
+      "period": {
+        "label": "渋谷PARCO",
+        "startDate": "2026-07-10",
+        "endDate": "2026-09-14",
+        "note": ""
+      }
+    },
+    {
+      "id": "movie-chiikawa-cafe-2026",
+      "title": "映画『ちいかわ 人魚の島のひみつ』コラボカフェ",
+      "period": {
+        "label": "心斎橋PARCO",
+        "startDate": "2026-07-24",
+        "endDate": "2026-09-28",
+        "note": ""
+      }
+    },
+    {
+      "id": "suntory-movie-chiikawa-2026",
+      "title": "サントリー×映画『ちいかわ 人魚の島のひみつ』",
+      "period": {
+        "label": "レシート有効期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-08-31",
+        "note": "終了済み。対象商品の購入日が7月16日～8月31日のレシートが対象でした。"
+      }
+    },
+    {
+      "id": "suntory-movie-chiikawa-2026",
+      "title": "サントリー×映画『ちいかわ 人魚の島のひみつ』",
+      "period": {
+        "label": "レシートアップロード期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-09-01",
+        "note": "終了済み。7月16日9:00～9月1日23:59。"
+      }
+    },
+    {
+      "id": "suntory-movie-chiikawa-2026",
+      "title": "サントリー×映画『ちいかわ 人魚の島のひみつ』",
+      "period": {
+        "label": "応募受付期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-09-08",
+        "note": "終了済み。7月16日9:00～9月8日23:59。詳細：https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/"
+      }
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "title": "ちいかわ×東京ばな奈",
+      "period": {
+        "label": "JR池袋駅 POP UP SHOP",
+        "startDate": "2026-09-17",
+        "endDate": "2026-10-14",
+        "note": "イベントステーション池袋南通路で開催。"
+      }
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "title": "ちいかわ×東京ばな奈",
+      "period": {
+        "label": "盛岡駅 POP UP SHOP",
+        "startDate": "2026-09-18",
+        "endDate": "2026-09-30",
+        "note": "盛岡駅ビル フェザンのフェザンタベナクルで開催。"
+      }
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "title": "ちいかわ×東京ばな奈",
+      "period": {
+        "label": "東京ソラマチ POP UP SHOP",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-14",
+        "note": "イーストヤード1F 10番地「空の小町」で開催。"
+      }
+    },
+    {
+      "id": "kadokawa-chiikawa-book-fair-2026-summer",
+      "title": "KADOKAWA ちいかわブックフェア 2026サマー",
+      "period": {
+        "label": "レシート対象期間",
+        "startDate": "2026-07-13",
+        "endDate": "2026-09-30",
+        "note": "9月30日23:59までの購入分が対象でした。レシートは購入後1週間以内の投稿が必要でした。賞品への応募期限はKADOKAWAアプリの応募要項をご確認ください。"
+      }
+    },
+    {
+      "id": "abema-chiikawa-christmas-market-2026",
+      "title": "ABEMA×ちいかわ クリスマスマーケット",
+      "period": {
+        "label": "先行抽選受付",
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-25",
+        "note": "10月15日12:00～10月25日23:59。10月30日12:00以降に当落発表。"
+      }
+    }
+  ],
+  "limits": [
+    "Date scan is only a candidate detector, not official ending confirmation.",
+    "Same title+partner or same name+period exact matches only; same-series distinct venues intentionally retained.",
+    "CI success does not establish source coverage or content freshness.",
+    "Elapsed collaboration subperiod does not establish entire collaboration ended."
+  ]
+}
