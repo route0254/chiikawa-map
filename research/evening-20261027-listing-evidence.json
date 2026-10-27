@@ -1,0 +1,440 @@
+{
+  "recordedAt": "2026-10-27T10:23:41.101Z",
+  "base": "e23001246abb1ee12f9278845e7418641a3214b8",
+  "scope": {
+    "spotIds": [
+      "chiikawa-bakery-tokyo",
+      "chiikawa-bakery-osaka",
+      "ramen-buta-shinsaibashi",
+      "chiikawa-photo-2026-11-14-aeon-kurashiki"
+    ],
+    "collaborationIds": [
+      "ana-chiikawa-jet-2026"
+    ],
+    "newListingIds": [],
+    "candidateIds": [
+      "bakery-novdec-novelty-20261027",
+      "ramen-shinsaibashi-entry-20261027",
+      "ana-astyle-shipping-delay-20261027",
+      "kurashiki-photo-venue-conflict-20261027"
+    ],
+    "separateVenueHoldId": "kurashiki-photo-exact-venue-hold-20261027"
+  },
+  "changes": [
+    {
+      "id": "chiikawa-bakery-tokyo",
+      "before": {
+        "id": "chiikawa-bakery-tokyo",
+        "name": "ちいかわベーカリー",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2024-10-29",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": "施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawabakery.jp/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "priority",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月26日の東京店の案内：フリー入場はデジタル整理券で、14:50から発行と告知されました。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内で、整理券以外のフリー入店はありません（当日の最終入店19:30）。 現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2114522408702873878",
+        "entryInfoCheckedAt": "2026-10-26",
+        "lat": 35.6687,
+        "lng": 139.706,
+        "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
+        "description": "ちいかわたちをモチーフにしたパンやドリンクを楽しめる公式ベーカリーです。 2026年10月15日から2周年記念企画の対象店舗です。記念グッズとお買物特典を展開し、10月29日からはパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。",
+        "sourceUrl": "https://chiikawabakery.jp/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC",
+        "importantNotice": "2026年10月26日の東京店の案内：フリー入場はデジタル整理券で、14:50から発行と告知されました。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内で、整理券以外のフリー入店はありません（当日の最終入店19:30）。"
+      },
+      "after": {
+        "id": "chiikawa-bakery-tokyo",
+        "name": "ちいかわベーカリー",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2024-10-29",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）",
+        "closedDaysText": "施設の営業日に準ずる",
+        "hoursInfoUrl": "https://chiikawabakery.jp/",
+        "hoursCheckedAt": "2026-10-04",
+        "reservationType": "priority",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月26日の東京店の案内：フリー入場はデジタル整理券で、14:50から発行と告知されました。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内で、整理券以外のフリー入店はありません（当日の最終入店19:30）。 現在の発行状況・残枠は未確認です。 2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://x.com/chiikawabakery/status/2114522408702873878",
+        "entryInfoCheckedAt": "2026-10-26",
+        "lat": 35.6687,
+        "lng": 139.706,
+        "address": "東京都渋谷区神宮前4-30-3 東急プラザ表参道「オモカド」3F",
+        "description": "ちいかわたちをモチーフにしたパンやドリンクを楽しめる公式ベーカリーです。 2026年10月15日から2周年記念企画の対象店舗です。記念グッズとお買物特典を展開し、10月29日からはパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。 2026年11～12月のノベルティ付き優先入場券をご購入のうえ店舗をご利用のお客様には、クリスマス限定パンステッカー（ランダム3種）を1つプレゼントします。",
+        "sourceUrl": "https://chiikawabakery.jp/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC",
+        "importantNotice": "2026年10月26日の東京店の案内：フリー入場はデジタル整理券で、14:50から発行と告知されました。呼び出しから15分以内に店頭へお越しください。15分を過ぎるとキャンセルになります。呼び出し前の集合や店舗前での立ち止まりはご遠慮ください。東京店のみの案内で、整理券以外のフリー入店はありません（当日の最終入店19:30）。"
+      }
+    },
+    {
+      "id": "chiikawa-bakery-osaka",
+      "before": {
+        "id": "chiikawa-bakery-osaka",
+        "name": "ちいかわベーカリー OSAKA",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2026-06-26",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）／店舗内の期間限定物販は11:20～20:00",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawabakery.jp/information-osaka/",
+        "hoursCheckedAt": "2026-09-18",
+        "reservationType": "required",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_required",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月・11月・12月分の優先入場券は完売しています。当面の間、ベーカリーへの入場はノベルティ付き優先入場券（1,000円分のお買物券付き）をお持ちの方のみです。隣接するOSAKA POP UP SHOPはフリー入場です。混雑時に入場制限を行う場合があり、待機列形成は11:00からです。物販の会計はキャッシュレスのみです。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。最新の案内は公式予約ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://chiikawabakery.jp/reservation/",
+        "entryInfoCheckedAt": "2026-10-17",
+        "lat": 34.7006219,
+        "lng": 135.4941733,
+        "address": "大阪府大阪市北区梅田3-2-2 KITTE大阪 3F",
+        "description": "ちいかわをモチーフにしたパンやドリンクを扱うベーカリーです。2026年6月26日から店舗内にグッズ・焼き菓子を扱うOSAKA POP UP SHOPも併設しています（期間限定・終了日未定）。 2026年10月15日から、店舗と併設のOSAKA POP UP SHOPは2周年記念企画の対象です。記念グッズとお買物特典を展開し、ベーカリーでは10月29日からパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。 2026年10月20日の公式案内で、併設のOSAKA POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。ベーカリー本体や他店舗・他の特典の終了を示す案内ではありません。",
+        "sourceUrl": "https://chiikawabakery.jp/information-osaka/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20OSAKA%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B03-2-2%20KITTE%E5%A4%A7%E9%98%AA%203F"
+      },
+      "after": {
+        "id": "chiikawa-bakery-osaka",
+        "name": "ちいかわベーカリー OSAKA",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "chiikawa_bakery",
+        "periodType": "permanent",
+        "startDate": "2026-06-26",
+        "endDate": null,
+        "hoursText": "11:00～20:00（最終入店19:30）／店舗内の期間限定物販は11:20～20:00",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://chiikawabakery.jp/information-osaka/",
+        "hoursCheckedAt": "2026-09-18",
+        "reservationType": "required",
+        "reservationUrl": "https://chiikawabakery.jp/reservation/",
+        "defaultEntryType": "reservation_required",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "2026年10月・11月・12月分の優先入場券は完売しています。当面の間、ベーカリーへの入場はノベルティ付き優先入場券（1,000円分のお買物券付き）をお持ちの方のみです。隣接するOSAKA POP UP SHOPはフリー入場です。混雑時に入場制限を行う場合があり、待機列形成は11:00からです。物販の会計はキャッシュレスのみです。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。最新の案内は公式予約ページをご確認ください。2027年1月以降の販売日程は後日案内予定です。",
+        "entryInfoUrl": "https://chiikawabakery.jp/reservation/",
+        "entryInfoCheckedAt": "2026-10-17",
+        "lat": 34.7006219,
+        "lng": 135.4941733,
+        "address": "大阪府大阪市北区梅田3-2-2 KITTE大阪 3F",
+        "description": "ちいかわをモチーフにしたパンやドリンクを扱うベーカリーです。2026年6月26日から店舗内にグッズ・焼き菓子を扱うOSAKA POP UP SHOPも併設しています（期間限定・終了日未定）。 2026年10月15日から、店舗と併設のOSAKA POP UP SHOPは2周年記念企画の対象です。記念グッズとお買物特典を展開し、ベーカリーでは10月29日からパン購入者向けのランチボックスも販売予定です。企画の終了日は公表されておらず、ノベルティはなくなり次第終了します。 2026年10月20日の公式案内で、併設のOSAKA POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。ベーカリー本体や他店舗・他の特典の終了を示す案内ではありません。 2026年11～12月のノベルティ付き優先入場券をご購入のうえ店舗をご利用のお客様には、クリスマス限定パンステッカー（ランダム3種）を1つプレゼントします。",
+        "sourceUrl": "https://chiikawabakery.jp/information-osaka/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20OSAKA%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B03-2-2%20KITTE%E5%A4%A7%E9%98%AA%203F"
+      }
+    },
+    {
+      "id": "ramen-buta-shinsaibashi",
+      "before": {
+        "id": "ramen-buta-shinsaibashi",
+        "name": "ちいかわラーメン 豚 心斎橋PARCO",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "ramen_buta",
+        "periodType": "limited",
+        "startDate": "2024-11-15",
+        "endDate": null,
+        "hoursText": "11:00～23:00（最終入店22:00）",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "hoursCheckedAt": "2026-08-28",
+        "reservationType": "priority",
+        "reservationUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "2026年10月26日は事前予約で満席のため、予約済みのお客様のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2114530565663969727",
+        "entryInfoCheckedAt": "2026-10-26",
+        "lat": 34.6739,
+        "lng": 135.5009,
+        "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO B2F",
+        "description": "作中のラーメンをイメージした公式店舗「ちいかわラーメン 豚」です。",
+        "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E8%B1%9A%20%E5%BF%83%E6%96%8E%E6%A9%8BPARCO",
+        "importantNotice": "2026年10月26日は事前予約で満席のため、予約済みのお客様のみの案内です。"
+      },
+      "after": {
+        "id": "ramen-buta-shinsaibashi",
+        "name": "ちいかわラーメン 豚 心斎橋PARCO",
+        "category": "official",
+        "placeType": "food",
+        "relationType": "official_facility",
+        "brand": "ramen_buta",
+        "periodType": "limited",
+        "startDate": "2024-11-15",
+        "endDate": null,
+        "hoursText": "11:00～23:00（最終入店22:00）",
+        "closedDaysText": "入居施設の営業日に準ずる",
+        "hoursInfoUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "hoursCheckedAt": "2026-08-28",
+        "reservationType": "priority",
+        "reservationUrl": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+        "defaultEntryType": "reservation_priority",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "when_crowded",
+        "entryNote": "2026年10月27日は事前予約で満席のため、予約済みのお客様のみの案内です。 通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "entryInfoUrl": "https://x.com/chiikawaramenSH/status/2114892025418097138",
+        "entryInfoCheckedAt": "2026-10-27",
+        "lat": 34.6739,
+        "lng": 135.5009,
+        "address": "大阪府大阪市中央区心斎橋筋1-8-3 心斎橋PARCO B2F",
+        "description": "作中のラーメンをイメージした公式店舗「ちいかわラーメン 豚」です。",
+        "sourceUrl": "https://cafe.parco.jp/event/chiikawaramenbuta_shinsaibashi?area=029689",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E8%B1%9A%20%E5%BF%83%E6%96%8E%E6%A9%8BPARCO",
+        "importantNotice": "2026年10月27日は事前予約で満席のため、予約済みのお客様のみの案内です。"
+      }
+    },
+    {
+      "id": "chiikawa-photo-2026-11-14-aeon-kurashiki",
+      "before": {
+        "id": "chiikawa-photo-2026-11-14-aeon-kurashiki",
+        "name": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール倉敷",
+        "category": "official",
+        "placeType": "spot",
+        "relationType": "event",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-11-14",
+        "endDate": "2026-11-15",
+        "hoursText": "各日11:00・13:00・15:00（各回約30～40分）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "hoursCheckedAt": "2026-10-17",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "ticket_required",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "always",
+        "entryNote": "当日配布の撮影会参加券が必要。各日9:30頃から1F E入口で3回分合計150枚を配布。各回50組、1組上限5名・1枚。参加時間を選べます。列が途切れ次第POP UP STORE会場で継続配布。混雑により配布開始が早まる場合があります。記載時間を過ぎた券は無効。カメラは各自持参。",
+        "entryInfoUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "entryInfoCheckedAt": "2026-10-17",
+        "lat": 34.601658,
+        "lng": 133.744385,
+        "address": "岡山県倉敷市水江1番地 イオンモール倉敷 専門店1F セントラルコート",
+        "description": "ちいかわ・ハチワレ・うさぎと撮影できる期間限定の写真撮影会です。",
+        "sourceUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%80%89%E6%95%B7%E5%B8%82%E6%B0%B4%E6%B1%9F1%E7%95%AA%E5%9C%B0%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E5%80%89%E6%95%B7%20%E5%B0%82%E9%96%80%E5%BA%971F%20%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%88"
+      },
+      "after": {
+        "id": "chiikawa-photo-2026-11-14-aeon-kurashiki",
+        "name": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール倉敷",
+        "category": "official",
+        "placeType": "spot",
+        "relationType": "event",
+        "brand": "chiikawa",
+        "periodType": "limited",
+        "startDate": "2026-11-14",
+        "endDate": "2026-11-15",
+        "hoursText": "各日11:00・13:00・15:00（各回約30～40分）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "hoursCheckedAt": "2026-10-17",
+        "reservationType": "not_available",
+        "reservationUrl": null,
+        "defaultEntryType": "ticket_required",
+        "crowdControlType": "numbered_ticket",
+        "crowdControlCondition": "always",
+        "entryNote": "当日配布の撮影会参加券が必要。各日9:30頃から1F E入口で3回分合計150枚を配布。各回50組、1組上限5名・1枚。参加時間を選べます。列が途切れ次第POP UP STORE会場で継続配布。混雑により配布開始が早まる場合があります。記載時間を過ぎた券は無効。カメラは各自持参。 公式ページ内で会場が「ワクワクコート」と「セントラルコート」で一致していません。来場前に最新の公式案内をご確認ください。",
+        "entryInfoUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "entryInfoCheckedAt": "2026-10-27",
+        "lat": 34.601658,
+        "lng": 133.744385,
+        "address": "岡山県倉敷市水江1番地 イオンモール倉敷 専門店1F",
+        "description": "ちいかわ・ハチワレ・うさぎと撮影できる期間限定の写真撮影会です。",
+        "sourceUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%80%89%E6%95%B7%E5%B8%82%E6%B0%B4%E6%B1%9F1%E7%95%AA%E5%9C%B0%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E5%80%89%E6%95%B7%20%E5%B0%82%E9%96%80%E5%BA%971F",
+        "importantNotice": "公式ページ内で会場が「ワクワクコート」と「セントラルコート」で一致していません。来場前に最新の公式案内をご確認ください。"
+      }
+    },
+    {
+      "id": "ana-chiikawa-jet-2026",
+      "before": {
+        "id": "ana-chiikawa-jet-2026",
+        "title": "ANA × ちいかわ「ちいかわジェット」",
+        "partner": "ANA",
+        "category": "experience",
+        "status": "active",
+        "summary": "公式案内上、特別デザイン機「ちいかわジェット」（ボーイング767-300、機番JA609A）の国内線就航開始日は2026年10月19日です。公式で初便として案内された羽田→長崎ANA661便と長崎→羽田ANA664便は、同日19:06時点のANA運航状況で到着済みと確認できました。10月20日のANA公式発表で、初便ANA661便にちいかわジェット（機番JA609A）が使用されたことを確認しました。ANA664便の機材は未確認です。以降は路線を固定せず、運航状況により当日まで決まりません。就航記念キャンペーン第1弾の参加登録期間は10月19日10:00～12月31日23:59と案内されています。コラボグッズ第1弾は10月23日から順次発売し、A-styleでは仮想待合室を導入します。ANA FESTAの対象4店舗は10月23日〜25日の入店に事前予約が必要で、10月16日19:00に満枠が発表されました。キャンセルが出た場合は予約ページに枠が自動で反映されます。 10月24日のANA公式案内では一部店舗に欠品があり、再販売・追加生産を検討中です。実施や対象商品・店舗・時期などの詳細は未発表です。 那覇ロビー1号店の10月23日～25日の予約には、交通遅延等や空港ビル閉鎖・臨時休業の場合の取り扱いが案内されています。",
+        "areaText": "国内線・対象空港店舗・オンライン",
+        "channels": [
+          "機内",
+          "オンライン",
+          "店舗"
+        ],
+        "periods": [
+          {
+            "label": "公式案内の国内線就航開始日",
+            "startDate": "2026-10-19",
+            "endDate": null,
+            "note": "公式で初便として案内されたANA661便（羽田→長崎）は10月19日08:26出発・10:13到着、ANA664便（長崎→羽田）は11:09出発・12:48到着と、同日19:06のANA運航状況で確認しました。10月20日のANA公式発表によると、初便NH661便はちいかわジェット（機番JA609A）で運航されました。以降の路線は固定せず、当日の運航状況により変更されます。就航企画の終了日は未発表です。公式発表：https://x.com/ANA_travel_info/status/2112461317730640199 運航状況：https://www.ana.co.jp/fs/dom/jp/"
+          },
+          {
+            "label": "就航記念キャンペーン 第1弾参加登録",
+            "startDate": "2026-10-19",
+            "endDate": "2026-12-31",
+            "note": "10月19日10:00～12月31日23:59。ANAアプリのダウンロード・ANAマイレージクラブ会員情報でのログインと、MYキャンペーンでの参加登録が必要です。搭乗不要。抽選500名にアクリルスタンド。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "就航記念キャンペーン 第2弾対象搭乗",
+            "startDate": "2027-02-01",
+            "endDate": "2027-04-30",
+            "note": "事前に第1弾の参加条件を達成した方が対象。ANA国内線のマイル積算可能運賃で1区間以上搭乗し、ANAマイレージクラブへフライトマイルを積算する必要があります。コードシェア便はANA（NH）便名での予約・搭乗に限ります。抽選100名にパスポートケース。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "ANA FESTA対象4店舗の入店予約開始",
+            "startDate": "2026-10-16",
+            "endDate": null,
+            "note": "10月16日11:00から先着受付を開始し、同日19:00に満枠が発表されました。千歳ロビー店、羽田B1フロアギフト店、福岡国内ロビー店、那覇ロビー1号店の10月23日〜25日の入店は完全予約制で、予約のない方は入場できません。キャンセルが出た場合は予約ページに枠が自動で反映されます。最新状況：https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949 ANA FESTA那覇ロビー1号店の2026年10月23日～25日の予約では、飛行機の遅延・欠航、または電車・バス等の公共交通機関（タクシーを除く）の遅延の場合、遅延証明（搭乗便の遅延表示画面や遅延証明書など）を提示すれば当日内に入場できます。混雑時は案内まで待つ場合があります。別日への予約振替はできません。自己都合で遅れた場合の買い物は予約枠の時間内に限り、予約時間帯を過ぎると自動キャンセルとなります。空港ビル閉鎖・店舗臨時休業の場合は該当時間帯の予約が自動キャンセルとなり、別日への振替はありません。予約時間の5分以上前からの待機はご遠慮ください。 公式案内：https://www.anafesta.com/notice/2026/10/79352/"
+          },
+          {
+            "label": "コラボグッズ第1弾発売",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "ECサイトと国内線機内販売（ANA STORE@SKY）は10:00、国際線機内プリオーダーは00:00、対象空港店舗は開店時から（予約制店舗は予約時間によります）。空港店舗の開店前待機はお控えください。10月23日から当面の間、ANA関連販売先で各商品2点、BOX商品1点まで。10月22日の公式案内により、10月26日以降も購入個数制限を継続します。ちいかわらんど・ちいかわマーケットは購入制限が異なります。販売先により取扱商品・開始日が異なり、陶器マグは機内先行販売です。国際線免税店は国際線航空券をお持ちの方のみ利用できます。A-styleは国内在住者向けで、海外発送・海外転送サービスや代行サービス宛ての注文はできません。詳細：https://www.astyle.jp/astyle/s/02/chiikawa-ana/#faq 10月24日のANA公式案内では一部店舗に欠品があり、再販売・追加生産を検討中です。実施や対象商品・店舗・時期などの詳細は未発表です。 公式案内：https://x.com/ANA_Group_News/status/2113805171805622424"
+          },
+          {
+            "label": "ANA FESTA羽田B1フロアギフト店 ちいかわ仕様",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "羽田空港第2ターミナルB1F（保安検査場通過前）。営業時間8:00〜21:30、初日から3日間の入店は完全予約制（先着）。2027年3月末まで予定と発表されていますが、具体的な終了日は未確定です。"
+          },
+          {
+            "label": "A-style 仮想待合室",
+            "startDate": "2026-10-23",
+            "endDate": "2026-10-23",
+            "note": "9:30〜9:59の事前待機者には10:00にランダムで入場順を割り当て、10:00以降のアクセスはその後の先着順となります。案内後10分以内に入場し、サイト利用は30分以内。約30分で並び直しとなり、カートが無効になる場合があります。待合室は商品の在庫確保を保証しません。詳細：https://www.astyle.jp/astyle/news/696/"
+          }
+        ],
+        "tags": [
+          "旅行",
+          "飛行機"
+        ],
+        "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+        "linkedSpotIds": [],
+        "checkedAt": "2026-10-25"
+      },
+      "after": {
+        "id": "ana-chiikawa-jet-2026",
+        "title": "ANA × ちいかわ「ちいかわジェット」",
+        "partner": "ANA",
+        "category": "experience",
+        "status": "active",
+        "summary": "公式案内上、特別デザイン機「ちいかわジェット」（ボーイング767-300、機番JA609A）の国内線就航開始日は2026年10月19日です。公式で初便として案内された羽田→長崎ANA661便と長崎→羽田ANA664便は、同日19:06時点のANA運航状況で到着済みと確認できました。10月20日のANA公式発表で、初便ANA661便にちいかわジェット（機番JA609A）が使用されたことを確認しました。ANA664便の機材は未確認です。以降は路線を固定せず、運航状況により当日まで決まりません。就航記念キャンペーン第1弾の参加登録期間は10月19日10:00～12月31日23:59と案内されています。コラボグッズ第1弾は10月23日から順次発売し、A-styleでは仮想待合室を導入します。ANA FESTAの対象4店舗は10月23日〜25日の入店に事前予約が必要で、10月16日19:00に満枠が発表されました。キャンセルが出た場合は予約ページに枠が自動で反映されます。 10月24日のANA公式案内では一部店舗に欠品があり、再販売・追加生産を検討中です。実施や対象商品・店舗・時期などの詳細は未発表です。 那覇ロビー1号店の10月23日～25日の予約には、交通遅延等や空港ビル閉鎖・臨時休業の場合の取り扱いが案内されています。 10月27日のA-style公式案内では、10月23日発売商品の注文集中により、出荷元倉庫の出荷作業に遅延が生じています。発送完了後に「商品発送のお知らせ」メールを送付します。個別の正確なお届け日の案内が難しい場合があり、遅延解消日は未発表です。",
+        "areaText": "国内線・対象空港店舗・オンライン",
+        "channels": [
+          "機内",
+          "オンライン",
+          "店舗"
+        ],
+        "periods": [
+          {
+            "label": "公式案内の国内線就航開始日",
+            "startDate": "2026-10-19",
+            "endDate": null,
+            "note": "公式で初便として案内されたANA661便（羽田→長崎）は10月19日08:26出発・10:13到着、ANA664便（長崎→羽田）は11:09出発・12:48到着と、同日19:06のANA運航状況で確認しました。10月20日のANA公式発表によると、初便NH661便はちいかわジェット（機番JA609A）で運航されました。以降の路線は固定せず、当日の運航状況により変更されます。就航企画の終了日は未発表です。公式発表：https://x.com/ANA_travel_info/status/2112461317730640199 運航状況：https://www.ana.co.jp/fs/dom/jp/"
+          },
+          {
+            "label": "就航記念キャンペーン 第1弾参加登録",
+            "startDate": "2026-10-19",
+            "endDate": "2026-12-31",
+            "note": "10月19日10:00～12月31日23:59。ANAアプリのダウンロード・ANAマイレージクラブ会員情報でのログインと、MYキャンペーンでの参加登録が必要です。搭乗不要。抽選500名にアクリルスタンド。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "就航記念キャンペーン 第2弾対象搭乗",
+            "startDate": "2027-02-01",
+            "endDate": "2027-04-30",
+            "note": "事前に第1弾の参加条件を達成した方が対象。ANA国内線のマイル積算可能運賃で1区間以上搭乗し、ANAマイレージクラブへフライトマイルを積算する必要があります。コードシェア便はANA（NH）便名での予約・搭乗に限ります。抽選100名にパスポートケース。賞品送付先は日本国内限定。詳細：https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/"
+          },
+          {
+            "label": "ANA FESTA対象4店舗の入店予約開始",
+            "startDate": "2026-10-16",
+            "endDate": null,
+            "note": "10月16日11:00から先着受付を開始し、同日19:00に満枠が発表されました。千歳ロビー店、羽田B1フロアギフト店、福岡国内ロビー店、那覇ロビー1号店の10月23日〜25日の入店は完全予約制で、予約のない方は入場できません。キャンセルが出た場合は予約ページに枠が自動で反映されます。最新状況：https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949 ANA FESTA那覇ロビー1号店の2026年10月23日～25日の予約では、飛行機の遅延・欠航、または電車・バス等の公共交通機関（タクシーを除く）の遅延の場合、遅延証明（搭乗便の遅延表示画面や遅延証明書など）を提示すれば当日内に入場できます。混雑時は案内まで待つ場合があります。別日への予約振替はできません。自己都合で遅れた場合の買い物は予約枠の時間内に限り、予約時間帯を過ぎると自動キャンセルとなります。空港ビル閉鎖・店舗臨時休業の場合は該当時間帯の予約が自動キャンセルとなり、別日への振替はありません。予約時間の5分以上前からの待機はご遠慮ください。 公式案内：https://www.anafesta.com/notice/2026/10/79352/"
+          },
+          {
+            "label": "コラボグッズ第1弾発売",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "ECサイトと国内線機内販売（ANA STORE@SKY）は10:00、国際線機内プリオーダーは00:00、対象空港店舗は開店時から（予約制店舗は予約時間によります）。空港店舗の開店前待機はお控えください。10月23日から当面の間、ANA関連販売先で各商品2点、BOX商品1点まで。10月22日の公式案内により、10月26日以降も購入個数制限を継続します。ちいかわらんど・ちいかわマーケットは購入制限が異なります。販売先により取扱商品・開始日が異なり、陶器マグは機内先行販売です。国際線免税店は国際線航空券をお持ちの方のみ利用できます。A-styleは国内在住者向けで、海外発送・海外転送サービスや代行サービス宛ての注文はできません。詳細：https://www.astyle.jp/astyle/s/02/chiikawa-ana/#faq 10月24日のANA公式案内では一部店舗に欠品があり、再販売・追加生産を検討中です。実施や対象商品・店舗・時期などの詳細は未発表です。 公式案内：https://x.com/ANA_Group_News/status/2113805171805622424 10月27日のA-style公式案内では、10月23日発売商品の注文集中により、出荷元倉庫の出荷作業に遅延が生じています。発送完了後に「商品発送のお知らせ」メールを送付します。個別の正確なお届け日の案内が難しい場合があり、遅延解消日は未発表です。"
+          },
+          {
+            "label": "ANA FESTA羽田B1フロアギフト店 ちいかわ仕様",
+            "startDate": "2026-10-23",
+            "endDate": null,
+            "note": "羽田空港第2ターミナルB1F（保安検査場通過前）。営業時間8:00〜21:30、初日から3日間の入店は完全予約制（先着）。2027年3月末まで予定と発表されていますが、具体的な終了日は未確定です。"
+          },
+          {
+            "label": "A-style 仮想待合室",
+            "startDate": "2026-10-23",
+            "endDate": "2026-10-23",
+            "note": "9:30〜9:59の事前待機者には10:00にランダムで入場順を割り当て、10:00以降のアクセスはその後の先着順となります。案内後10分以内に入場し、サイト利用は30分以内。約30分で並び直しとなり、カートが無効になる場合があります。待合室は商品の在庫確保を保証しません。詳細：https://www.astyle.jp/astyle/news/696/"
+          }
+        ],
+        "tags": [
+          "旅行",
+          "飛行機"
+        ],
+        "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+        "linkedSpotIds": [],
+        "checkedAt": "2026-10-27"
+      }
+    }
+  ],
+  "sourceObservations": "research/evening-20261027/source-observations.json",
+  "sourceExtracts": [
+    "research/evening-20261027/core/update-facts.json",
+    "research/evening-20261027/partners/update-facts.json"
+  ],
+  "priorPublicationSync": {
+    "pr": 80,
+    "publishedAt": "2026-10-27T00:24:53.699Z",
+    "count": 3,
+    "receiptPath": "research/evening-20261027/pr80-first-public-match.json"
+  },
+  "kamakura": {
+    "beforeNextCheck": "2026-10-27T19:00:00+09:00",
+    "nextCheck": "2026-10-28T08:00:00+09:00",
+    "formalDatesUnknown": true
+  },
+  "constraints": {
+    "bakeryOnlyTokyoAndOsaka": true,
+    "laforetUnchanged": true,
+    "ramenDateSpecificOnly": true,
+    "kurashikiHallUnresolved": true,
+    "kurashikiCoordinatesAndDatesAndTicketRulesPreserved": true,
+    "anaDelayOnlyAstyle": true,
+    "anaResaleStillUnderConsideration": true,
+    "historicalNahaSourceRetained": true,
+    "imagesNotVerified": true,
+    "historicalSevenHoldsUnchanged": true
+  },
+  "operationsDocument": {
+    "lastUpdated": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "publicSourceFactsOnly": true
+}

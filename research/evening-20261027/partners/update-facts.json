@@ -1,0 +1,439 @@
+{
+  "checkedAt": "2026-10-27T10:07:06.192+00:00",
+  "newListings": [],
+  "candidateUpdates": [
+    {
+      "kind": "condition_change",
+      "officialAnnouncedAt": "2026-10-27",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "publishedAt": null,
+      "reflectDueAt": "2026-10-27",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "id": "ana-astyle-shipping-delay-20261027",
+      "title": "ANAコラボ A-style出荷遅延",
+      "discoveredAt": "2026-10-27T10:05:39+00:00",
+      "eventStartsAt": null,
+      "existingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "state": "ready",
+      "evidenceUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "sourceObservedAt": "2026-10-27T10:04:49.904+00:00",
+      "summary": "10/27付公式告知。10/23発売商品の注文集中で出荷元倉庫の出荷作業に遅延。発送完了後に商品発送のお知らせメールを送付。個別の正確なお届け日の案内が困難な場合がある。解消日未発表。再販売/追加生産は検討中のまま。",
+      "proposedScope": "既存collab summaryおよびグッズ第1弾period noteへ10/27付配送遅延案内を簡潔追記。再販確定・全販売先遅延としない。新規ID/新規会場作成なし。",
+      "nextCheck": "公式の遅延解消/再販確定を確認する。"
+    },
+    {
+      "kind": "condition_change",
+      "officialAnnouncedAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "publishedAt": null,
+      "reflectDueAt": "2026-10-27",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "id": "kurashiki-photo-venue-conflict-20261027",
+      "title": "倉敷撮影会 公式内会場表記不一致",
+      "discoveredAt": "2026-10-27T10:02:52+00:00",
+      "eventStartsAt": "2026-11-14",
+      "eventEndsAt": "2026-11-15",
+      "existingIds": [
+        "chiikawa-photo-2026-11-14-aeon-kurashiki"
+      ],
+      "state": "ready_notice_with_hold",
+      "evidenceUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "sourceObservedAt": "2026-10-27T10:04:44.273+00:00",
+      "summary": "施設ページ更新日10/27。概要の場所欄は専門店1Fワクワクコート、本文の撮影会場/並び場所は1Fセントラルコート。同じ公式ページ内で不一致。開催期間/各回時間/9:30頃E入口整理券等は現行と一致。更新日だけで初回発表日としない。",
+      "proposedScope": "既存IDとlat/lngを保持。住所は確認済み施設1Fまで、mapUrlも住所に合わせる。entryNote等に公式概要ワクワク/本文セントラルの不一致と来場前公式確認を短く付記。正しい会場名は断定しない。",
+      "hold": "正確な会場は未確定。公式施設に対象イベント画像なし。別一次POPUPページは主催ショップ情報のみ、画像main_v10.jpgとosrs.jpgはHTTP403/web取得不可。第三者古いセントラル表記は決め手にしない。",
+      "nextCheck": "10/28 08JSTに公式本文/概要の整合を再確認。注意書き公開完了と正確会場確認holdを別管理。"
+    }
+  ],
+  "observations": [
+    {
+      "id": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "previousSuccessfulAt": "2026-10-25T10:01:02.301Z",
+      "attemptAt": "2026-10-27T10:04:30.358+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:40.369+00:00",
+      "bytes": 60397,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "previousSuccessfulAt": "2026-10-25T23:10:50.741Z",
+      "attemptAt": "2026-10-27T10:04:30.366+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.493+00:00",
+      "bytes": 575185,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "previousSuccessfulAt": "2026-10-20T10:02:22.178+00:00",
+      "attemptAt": "2026-10-27T10:04:30.369+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.382+00:00",
+      "bytes": 572685,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "previousSuccessfulAt": "2026-10-23T10:05:32.682+00:00",
+      "attemptAt": "2026-10-27T10:04:30.373+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:40.061+00:00",
+      "bytes": 15374,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "previousSuccessfulAt": "2026-10-23T10:05:36.489+00:00",
+      "attemptAt": "2026-10-27T10:04:30.377+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.349+00:00",
+      "bytes": 312367,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "previousSuccessfulAt": "2026-10-26T10:11:49.889Z",
+      "attemptAt": "2026-10-27T10:04:30.379+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:38.854+00:00",
+      "bytes": 240954,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "previousSuccessfulAt": "2026-10-23T10:05:46.124+00:00",
+      "attemptAt": "2026-10-27T10:04:30.381+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:40.346+00:00",
+      "bytes": 309717,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "previousSuccessfulAt": "2026-10-23T10:05:45.509+00:00",
+      "attemptAt": "2026-10-27T10:04:30.382+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.594+00:00",
+      "bytes": 716269,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "previousSuccessfulAt": "2026-10-25T10:01:14.600Z",
+      "attemptAt": "2026-10-27T10:04:38.856+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:42.304+00:00",
+      "bytes": 40627,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "previousSuccessfulAt": "2026-10-23T10:05:37.090+00:00",
+      "attemptAt": "2026-10-27T10:04:39.351+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:44.521+00:00",
+      "bytes": 23443,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "previousSuccessfulAt": "2026-10-25T10:01:32.228Z",
+      "attemptAt": "2026-10-27T10:04:39.384+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:46.895+00:00",
+      "bytes": 98272,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "previousSuccessfulAt": "2026-10-23T10:05:31.099+00:00",
+      "attemptAt": "2026-10-27T10:04:39.494+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:44.497+00:00",
+      "bytes": 124547,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "official-observation-88c0160fff16",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "previousSuccessfulAt": "2026-10-23T10:05:31.500+00:00",
+      "attemptAt": "2026-10-27T10:04:39.597+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:44.273+00:00",
+      "bytes": 122579,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-festa-chiikawa-inquiry-20261016",
+      "url": "https://www.anafesta.com/notice/2026/10/79105/",
+      "previousSuccessfulAt": "2026-10-20T10:02:31.247+00:00",
+      "attemptAt": "2026-10-27T10:04:40.062+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:46.319+00:00",
+      "bytes": 58499,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation",
+      "url": "https://reserva.be/ana_chiikawa",
+      "previousSuccessfulAt": "2026-10-20T10:02:32.044+00:00",
+      "attemptAt": "2026-10-27T10:04:40.346+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:44.265+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "previousSuccessfulAt": "2026-10-21T09:58:38.722+00:00",
+      "attemptAt": "2026-10-27T10:04:40.370+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:44.259+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-faq",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "previousSuccessfulAt": "2026-10-20T10:02:32.360+00:00",
+      "attemptAt": "2026-10-27T10:04:42.305+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:44.218+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-sunflower-main-image",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_main.jpg",
+      "previousSuccessfulAt": "2026-10-19T23:01:20.553+00:00",
+      "attemptAt": "2026-10-27T10:04:44.218+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:47.979+00:00",
+      "bytes": 1729872,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "corporate-sunflower-photorally-details",
+      "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+      "previousSuccessfulAt": "2026-10-20T10:00:59.792+00:00",
+      "attemptAt": "2026-10-27T10:04:44.259+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:47.892+00:00",
+      "bytes": 23885,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-chiikawa-registration",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/registration.html",
+      "previousSuccessfulAt": "2026-10-20T10:02:30.457+00:00",
+      "attemptAt": "2026-10-27T10:04:44.265+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:49.509+00:00",
+      "bytes": 538546,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-official-x",
+      "url": "https://x.com/ANA_travel_info",
+      "previousSuccessfulAt": "2026-10-19T10:00:24.689+00:00",
+      "attemptAt": "2026-10-27T10:04:44.274+00:00",
+      "result": "partial_success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:51.455+00:00",
+      "bytes": 164586,
+      "coverage": "Public profile and visible recent posts only; no new chiikawa announcement found in visible excerpts, full feed not verified. Preserve previous lastSuccessfulAt."
+    },
+    {
+      "id": "ana-astyle-waiting-room-20261023",
+      "url": "https://www.astyle.jp/astyle/news/696/",
+      "previousSuccessfulAt": "2026-10-23T10:05:44.534+00:00",
+      "attemptAt": "2026-10-27T10:04:44.497+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:46.788+00:00",
+      "bytes": 58438,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-group-news-x",
+      "url": "https://x.com/ANA_Group_News",
+      "previousSuccessfulAt": "2026-10-19T22:59:55.291+00:00",
+      "attemptAt": "2026-10-27T10:04:44.522+00:00",
+      "result": "partial_success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.335+00:00",
+      "bytes": 156565,
+      "coverage": "Public profile and visible recent posts only; no new chiikawa announcement found in visible excerpts, full feed not verified. Preserve previous lastSuccessfulAt."
+    },
+    {
+      "id": "ana-first-flight-airframe-confirmed-20261020",
+      "url": "https://x.com/ANA_travel_info/status/2112461317730640199",
+      "previousSuccessfulAt": "2026-10-22T23:05:40.536+00:00",
+      "attemptAt": "2026-10-27T10:04:46.319+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.764+00:00",
+      "bytes": 152024,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "morning-existing21-4fdf328cdc02",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "previousSuccessfulAt": "2026-10-23T10:05:44.541+00:00",
+      "attemptAt": "2026-10-27T10:04:46.788+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:49.904+00:00",
+      "bytes": 98272,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "weekly-kurashiki-events",
+      "url": "https://kurashiki.aeonmall.jp/event",
+      "previousSuccessfulAt": "2026-10-21T09:59:33.443+00:00",
+      "attemptAt": "2026-10-27T10:04:46.896+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.733+00:00",
+      "bytes": 182542,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-naha-delay-20261022",
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "previousSuccessfulAt": "2026-10-25T10:02:54.999Z",
+      "attemptAt": "2026-10-27T10:04:47.893+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 404: Not Found",
+      "observedAt": "2026-10-27T10:04:52.225+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-goods-resale-20261024",
+      "url": "https://x.com/ANA_Group_News/status/2113805171805622424",
+      "previousSuccessfulAt": "2026-10-25T10:02:58.324Z",
+      "attemptAt": "2026-10-27T10:04:47.983+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.481+00:00",
+      "bytes": 144503,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "ana-preorder-recovery-20261023",
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "previousSuccessfulAt": "2026-10-25T10:03:02.901Z",
+      "attemptAt": "2026-10-27T10:04:49.510+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:52.299+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "christmas-market",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "previousSuccessfulAt": null,
+      "attemptAt": "2026-10-27T10:04:49.905+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:53.510+00:00",
+      "bytes": 370279,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    },
+    {
+      "id": "jr-central",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "previousSuccessfulAt": null,
+      "attemptAt": "2026-10-27T10:04:50.336+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:54.439+00:00",
+      "bytes": 54112,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified."
+    }
+  ],
+  "additionalAccessFindings": [
+    {
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "result": "HTTP404 confirmed by direct fetch and web tool",
+      "scope": "Past Oct23–25 Naha reservation exception source only. Do not delete/change historical evidence. Reserva top still shows the Oct22 announcement title.",
+      "observedAt": "2026-10-27T10:05:32+00:00"
+    }
+  ],
+  "unchanged": [
+    "GU11/2 07:15先行予約、11/20・27発売",
+    "ChristmasMarket10/31 12:00先着/1回4名は既存掲載と一致",
+    "TOHO通常10/30・ペンライト11/6/10/30 00:00販売は既存掲載済",
+    "東京ばな奈掲載催事、さんふらわあ10/31まで、JR東海10/31まで",
+    "玉乃光2027年中配送時期未定、クラシコ完売/再入荷時期未定",
+    "春日部撮影会11/3とPOPUP10/30–11/16、倉敷POPUP10/30–11/16条件一致"
+  ],
+  "limits": [
+    "Full source coverage not claimed. Web response may be cached; direct observation timestamps separate from announcements.",
+    "KITTE大阪バルーン詳細は施設最新一覧で解消せず。",
+    "ANA X profiles only visible recent excerpts; no full-feed completeness.",
+    "Public JSON3 snapshots retrieved for matching; CI handled by separate worker."
+  ],
+  "weeklySweep": "前回10/26広範囲調査から7日未満。今回は差分/補完検索のみ。",
+  "alternateWebObservations": [
+    {
+      "url": "https://reserva.be/ana_chiikawa",
+      "observedAt": "2026-10-27T10:04:53+00:00",
+      "result": "partial_success",
+      "note": "Web今日クロール本文閲覧。Oct22那覇予約告知題名/Oct16満枠/FAQ。予約メニューなし。直取得403は保持。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "observedAt": "2026-10-27T10:07:29+00:00",
+      "result": "cached_body_success",
+      "note": "10/16 FAQ本文。3歳以上人数に含む/予約メールで変更取消。直取得403は保持、最新成功時刻と混同しない。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "observedAt": "2026-10-27T10:07:29+00:00",
+      "result": "fetch_failed",
+      "note": "webも取得不可。"
+    },
+    {
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "observedAt": "2026-10-27T10:04:53+00:00",
+      "result": "cached_body_success",
+      "note": "web本文閲覧は可能、direct403と区別。"
+    }
+  ]
+}

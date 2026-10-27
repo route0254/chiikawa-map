@@ -1,0 +1,110 @@
+{
+  "validatedAt": "2026-10-27T10:32:48.454Z",
+  "base": "e23001246abb1ee12f9278845e7418641a3214b8",
+  "scope": {
+    "current": [
+      "chiikawa-bakery-tokyo",
+      "chiikawa-bakery-osaka",
+      "ramen-buta-shinsaibashi",
+      "chiikawa-photo-2026-11-14-aeon-kurashiki"
+    ],
+    "collaborations": [
+      "ana-chiikawa-jet-2026"
+    ],
+    "newListings": [],
+    "newArchiveMoves": []
+  },
+  "tests": {
+    "build": {
+      "passed": true,
+      "generatedSpotPages": 868
+    },
+    "checkCommands": 49,
+    "units": {
+      "tests": 58,
+      "passed": 58,
+      "failed": 0
+    },
+    "uiSmoke": {
+      "passed": 111,
+      "startedAt": "2026-10-27T10:25:27.249Z",
+      "completedAt": "2026-10-27T10:30:12.937Z"
+    },
+    "pcMobile": {
+      "checks": 46,
+      "screenshots": 18,
+      "pageErrors": 0,
+      "advancingClock": true,
+      "normalSearchAndListInteractions": true,
+      "savedStateAndLegacySharePreserved": true
+    },
+    "scope": {
+      "verifiedAt": "2026-10-27T10:28:24.055Z",
+      "passed": true,
+      "exitCode": 0,
+      "current": 96,
+      "archive": 678,
+      "totalSpots": 868,
+      "sources": 700,
+      "candidates": 352,
+      "newListings": 0,
+      "otherSpotsUnchanged": 864,
+      "otherCollaborationsUnchanged": 74,
+      "archiveUnchanged": true,
+      "addedDatesUnchanged": true,
+      "laforetUnchanged": true,
+      "kurashikiTimesTicketsCoordinatesPreserved": true,
+      "kurashikiExactHallUnresolved": true,
+      "anaDelayOnlyAstyle": true,
+      "anaHistoricalNahaSourceRetained": true,
+      "priorPr80TimestampsSynced": 3,
+      "historicalSevenHoldsUnchanged": true,
+      "existingWorktreesPreserved": 51,
+      "sourceFailuresAndCacheSuccessTimesPreserved": true,
+      "trackedContentChanges": [
+        "data/collaborations-current.json",
+        "data/official-spots.json",
+        "research/official-source-ledger.json",
+        "research/publication-candidate-ledger.json",
+        "sitemap.xml",
+        "spot/chiikawa-bakery-osaka/index.html",
+        "spot/chiikawa-bakery-tokyo/index.html",
+        "spot/chiikawa-photo-2026-11-14-aeon-kurashiki/index.html",
+        "spot/ramen-buta-shinsaibashi/index.html"
+      ]
+    },
+    "officialStatus": {
+      "archiveCandidates": 0,
+      "predicateUnchanged": true
+    },
+    "links": {
+      "startedAt": "2026-10-27T10:28:23.975Z",
+      "completedAt": "2026-10-27T10:28:24.641Z",
+      "passed": true,
+      "exitCode": 0,
+      "error": null,
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Five current update evidence URLs plus retained historical Oct23–25 Naha exception source. Other known404 not rechecked.",
+      "observations": "ちい活マップ 外部リンク確認\n- 対象URL: 6件\n- 同時接続数: 6\n- タイムアウト: 12000ms\n\n確認結果\n- 正常: 5件\n- HTTPS転送: 0件\n- 要確認: 1件\n- 破損: 0件\n\n明確に破損しているリンクは見つかりませんでした。\n- [要確認] https://www.anafesta.com/notice/2026/10/79352/ - HTTP 404（終了済みイベントの公式ページは公開終了の可能性） - undefined (sourceUrl)\n"
+    }
+  },
+  "priorPublicationSync": {
+    "pr": 80,
+    "candidates": 3,
+    "firstPublicMatchAt": "2026-10-27T00:24:53.699Z"
+  },
+  "limits": [
+    "Images were not retrieved; changes use confirmed official text only.",
+    "Source observations distinguish direct full-body success, limited profile text, cache and failures; previous successful timestamps and failure history are retained.",
+    "Known historical Naha exception source returned404 and is retained; other known404 outside this update were not rechecked.",
+    "Custom layout checks use local Leaflet assets and transparent tiles; external tile retrieval is not a success claim.",
+    "Kurashiki exact hall remains unresolved; facility1F address, existing coordinates/dates/ticket conditions are retained.",
+    "Source-head/main CI and live exact publication are pending at local validation."
+  ],
+  "operationsDocument": {
+    "lastUpdated": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "allLocalChecksSuccessful": true,
+  "appSchemaWorkflowsAndHostingUnchanged": true
+}
