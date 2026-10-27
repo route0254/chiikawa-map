@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-10-27T10:06:35+00:00",
+  "newListings": [],
+  "existingUpdates": [
+    {
+      "id": "bakery-novdec-novelty-20261027",
+      "kind": "existing_update",
+      "title": "優先入場券11～12月ノベルティ変更",
+      "targetKey": "chiikawa-bakery-tokyo:chiikawa-bakery-osaka:bakery-novdec-novelty-20261027",
+      "officialAnnouncedAt": "2026-10-27T01:36:28+00:00",
+      "discoveredAt": "2026-10-27T10:02:46+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-27",
+      "publishedAt": null,
+      "listingIds": [
+        "chiikawa-bakery-tokyo",
+        "chiikawa-bakery-osaka"
+      ],
+      "existingMatch": {
+        "status": "existing",
+        "ids": [
+          "chiikawa-bakery-tokyo",
+          "chiikawa-bakery-osaka"
+        ],
+        "note": "Live official-spots IDs verified; candidate ledger has no matching URL/text."
+      },
+      "state": "ready",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2114893963572474013",
+          "officialAnnouncedAt": "2026-10-27T01:36:28+00:00",
+          "observedAt": "2026-10-27T10:02:46+00:00",
+          "text": " ちいかわベーカリー・ちいかわベーカリーPOP UP SHOP【公式】 @chiikawabakery 8h 🍞11〜12月のノベルティが新しくなります！ ノベルティ付き優先入場券をご購入の上当店をご利用いただいたお客様に 「クリスマス限定パンステッカー（ランダム3種）」を1つプレゼント🎁 昨年ご好評いただいたクリスマスのパンがステッカーに♪ 👇優先入場券のご購入はこちらから Show more 1 240 1.3K 135K "
+        },
+        {
+          "url": "https://x.com/chiikawabakeryO/status/2114894340023894478",
+          "observedAt": "2026-10-27T10:04:28+00:00",
+          "summary": "大阪公式も東京の特典告知を引用し、同ステッカーを案内。"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-27T10:03:49+00:00",
+          "summary": "Web reader today cache: 11～12月ノベルティ画像へのリンク。東京10・11月完売/大阪10・11・12月完売は変更なし。画像本体403のため画像にしかない条件は採用しない。"
+        }
+      ],
+      "nextCheck": "同一通常PRでテスト後、main対象commitと公開JSON・個別ページ一致を確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "periodText": "2026年11～12月（公式本文の月単位表記、正確な開始/終了時刻は不明）",
+      "proposedText": "2026年11～12月のノベルティ付き優先入場券をご購入のうえ店舗をご利用のお客様には、クリスマス限定パンステッカー（ランダム3種）を1つプレゼントします。",
+      "constraints": "ラフォーレPOPUPは優先入場券の対象外。東京・大阪既存予約完売/入場条件は維持。商品購入特典や店舗全体の新規企画として重複登録しない。"
+    },
+    {
+      "id": "ramen-shinsaibashi-entry-20261027",
+      "kind": "existing_update",
+      "title": "10/27予約満席・予約者のみの入店",
+      "targetKey": "ramen-buta-shinsaibashi:ramen-shinsaibashi-entry-20261027",
+      "officialAnnouncedAt": "2026-10-27T01:28:46+00:00",
+      "discoveredAt": "2026-10-27T10:02:46+00:00",
+      "eventStartsAt": "2026-10-27",
+      "eventEndsAt": "2026-10-27",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-27",
+      "publishedAt": null,
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "existingMatch": {
+        "status": "existing",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "Live official-spots IDs verified; candidate ledger has no matching URL/text."
+      },
+      "state": "ready",
+      "priority": "high",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawaramenSH/status/2114892025418097138",
+          "officialAnnouncedAt": "2026-10-27T01:28:46+00:00",
+          "observedAt": "2026-10-27T10:02:46+00:00",
+          "text": " ちいかわラーメン豚 心斎橋 @chiikawaramenSH 8h 10/27（火） 本日は事前ご予約で満席のためご予約いただいてるお客様のみのご案内となります。 ご来店を予定されていたお客様には大変申し訳ございませんが、 ご理解のほど、よろしくお願いいたします。 #ちいかわラーメン豚 5 26 5K "
+        }
+      ],
+      "nextCheck": "同一通常PRでテスト後、main対象commitと公開JSON・個別ページ一致を確認。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "proposedText": "2026年10月27日は事前予約で満席のため、予約済みのお客様のみの案内です。",
+      "constraints": "10/26限定文を10/27へ置換。通常の事前予約優先制と11月QR整理券条件は維持。翌日以降へ一般化しない。営業時間11～23時/最終入店22時のため19時台は情報が有効。"
+    }
+  ],
+  "holdUpdates": [
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "title": "ちいかわもぐもぐ本舗 鎌倉店（開業予定の調査候補）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-mogumogu-kamakura:opening-2026",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-21T23:00:30.703+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/23朝の最新main/live一致公開3JSON98/671/23件にも鎌倉既存IDなし。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-27T10:02:48+00:00",
+          "summary": "直接200本文は現在公開されていません。運営店舗一覧も鎌倉もぐもぐ未掲載、ブランドニュース最新10/23。正式開業日・予約開始未確定。",
+          "recordPath": "research/evening-20261027/core/source-observations-safe.json"
+        }
+      ],
+      "decision": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+      "nextCheck": "ブランド公式ニュース・店舗一覧・運営公式店舗一覧・公式SNSを再確認。求人終了だけで開業日を推定しない。",
+      "recheckDueAt": "2026-10-28T08:00:00+09:00"
+    }
+  ],
+  "excludedFindings": [
+    "11/6ちいかわらんど/まじかるの一般商品発売、ナガノ靴下新商品は新会場/コラボ対象外。",
+    "ナガノ韓国忠清店10/30～11/12は海外対象外。",
+    "もぐもぐ各店10/27欠品/再入荷は一般在庫情報で掲載店舗の入場・予約条件変更なし。"
+  ],
+  "limitations": [
+    "Xプロフィールは直近5投稿の本文取得。全投稿・画像網羅ではない。",
+    "ちいかわ公式サイトの直接HTTPは403、web reader今日キャッシュで系列本文を補完。tenrankaiは昨日cacheで成功日時は更新不可。",
+    "画像本体（ベーカリー公式予約画像、X添付画像）403。上記更新は本文で明示された条件だけ。"
+  ],
+  "officialContradictions": [],
+  "sourceCoverage": {
+    "directHTTP": 26,
+    "successHTTP200": 17,
+    "failure": 9,
+    "notCoverageClaim": "情報源台帳697件全件巡回ではありません。Xは直近5件まで。公開JSONと既存台帳の対象一致だけ照合。"
+  }
+}

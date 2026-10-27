@@ -1,0 +1,89 @@
+{
+  "recordedAt": "2026-10-27T00:25:49.658Z",
+  "sourceMain": "e23001246abb1ee12f9278845e7418641a3214b8",
+  "publishedAt": "2026-10-27T00:24:53.699Z",
+  "publishedAtBasis": "First saved exact public content match; never reporting, sync, or deployment time.",
+  "deployJobCompletedAt": "2026-10-27T00:24:01Z",
+  "corrections": [
+    {
+      "id": "archive-popup-mito-uchihara-20261027",
+      "listingIds": [
+        "popup-2026-10-09-aeon-mito-uchihara"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T00:24:53.699Z",
+      "firstPublicMatchAt": "2026-10-27T00:24:53.699Z",
+      "deployJobCompletedAt": "2026-10-27T00:24:01Z",
+      "pr": 80,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/80",
+      "sourceHead": "f9c1ee4a2ca43167db74422c441951623b612dbd",
+      "mergeSha": "e23001246abb1ee12f9278845e7418641a3214b8",
+      "pagesRun": 40426068702,
+      "recheckDueAt": null,
+      "nextCheck": "通常巡回で公式訂正・延長等の続報が出た場合に再確認。元出典URLは履歴として保持。"
+    },
+    {
+      "id": "archive-popup-tsudanuma-south-20261027",
+      "listingIds": [
+        "popup-2026-10-09-aeon-tsudanuma-south"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T00:24:53.699Z",
+      "firstPublicMatchAt": "2026-10-27T00:24:53.699Z",
+      "deployJobCompletedAt": "2026-10-27T00:24:01Z",
+      "pr": 80,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/80",
+      "sourceHead": "f9c1ee4a2ca43167db74422c441951623b612dbd",
+      "mergeSha": "e23001246abb1ee12f9278845e7418641a3214b8",
+      "pagesRun": 40426068702,
+      "recheckDueAt": null,
+      "nextCheck": "通常巡回で公式訂正・延長等の続報が出た場合に再確認。元出典URLは履歴として保持。"
+    },
+    {
+      "id": "abema-christmas-market-firstcome-20261031",
+      "listingIds": [
+        "abema-chiikawa-christmas-market-2026",
+        "chiikawa-christmas-market-2026-toyosuna"
+      ],
+      "kind": "reservation_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T00:24:53.699Z",
+      "firstPublicMatchAt": "2026-10-27T00:24:53.699Z",
+      "deployJobCompletedAt": "2026-10-27T00:24:01Z",
+      "pr": 80,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/80",
+      "sourceHead": "f9c1ee4a2ca43167db74422c441951623b612dbd",
+      "mergeSha": "e23001246abb1ee12f9278845e7418641a3214b8",
+      "pagesRun": 40426068702,
+      "recheckDueAt": "2026-10-27T19:00:00+09:00",
+      "nextCheck": "通常巡回で公式チケット条件の変更を確認し、10/31 12:00の先着販売開始前にも再確認。"
+    }
+  ],
+  "timing": {
+    "allDataJsonMatched": 10,
+    "jsonDeepEqual": 22,
+    "official": 96,
+    "archive": 678,
+    "totalSpots": 868,
+    "collaborations": 23,
+    "collaborationsArchive": 52,
+    "archiveTransitions": 2,
+    "currentSpotUpdates": 1,
+    "collaborationUpdates": 1,
+    "priorPublicationTimestampsSynced": 4,
+    "priorPublicationAt": "2026-10-26T11:01:06.015Z",
+    "newListings": 0,
+    "newPublicationCandidates": 3,
+    "sourceCount": 697,
+    "candidateCount": 347,
+    "idsSourcesAndAddedDatesPreserved": true,
+    "firstComeReservationAt": "2026-10-31T12:00:00+09:00",
+    "reservationEndUnknown": true,
+    "publishedBeforeReservation": true,
+    "privateCookieValuesAbsent": true
+  },
+  "alreadySyncedPr79PublicationAt": "2026-10-26T11:01:06.015Z",
+  "metadataOnlyPrNotCreated": true
+}

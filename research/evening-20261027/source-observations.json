@@ -1,0 +1,1954 @@
+{
+  "recordedAt": "2026-10-27T10:23:41.099Z",
+  "basis": "Cloud supplied public-source extracts; no raw HTML, cookies, auth or private account data copied",
+  "timestampNormalization": "Sub-millisecond digits truncated; no unknown times inferred",
+  "coreSourceCount": 26,
+  "partnerSourceCount": 31,
+  "coreCoverage": {
+    "directHTTP": 26,
+    "successHTTP200": 17,
+    "failure": 9,
+    "notCoverageClaim": "情報源台帳697件全件巡回ではありません。Xは直近5件まで。公開JSONと既存台帳の対象一致だけ照合。"
+  },
+  "limitations": [
+    "Xプロフィールは直近5投稿の本文取得。全投稿・画像網羅ではない。",
+    "ちいかわ公式サイトの直接HTTPは403、web reader今日キャッシュで系列本文を補完。tenrankaiは昨日cacheで成功日時は更新不可。",
+    "画像本体（ベーカリー公式予約画像、X添付画像）403。上記更新は本文で明示された条件だけ。"
+  ],
+  "partnerLimitations": [
+    "Full source coverage not claimed. Web response may be cached; direct observation timestamps separate from announcements.",
+    "KITTE大阪バルーン詳細は施設最新一覧で解消せず。",
+    "ANA X profiles only visible recent excerpts; no full-feed completeness.",
+    "Public JSON3 snapshots retrieved for matching; CI handled by separate worker."
+  ],
+  "observations": [
+    {
+      "url": "https://chiikawa-info.jp/",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.725Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://chiikawa-info.jp/pus.html",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.896Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.734Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.720Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://x.com/ngnchiikawa",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/ngnchiikawa",
+      "date": "Tue, 27 Oct 2026 10:02:41 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "53e03a7407c45fc52edd0c07ce843338d8d97b1458ba62fdbeabefc642ca028d",
+      "lastSuccessfulAt": "2026-10-27T10:02:34+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://x.com/chiikawa_kouhou",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/chiikawa_kouhou",
+      "date": "Tue, 27 Oct 2026 10:02:40 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "0ebf2aa9f28b82cd8bc17de2643b0b252f44cdc01b5412627bb1423be891cfe9",
+      "lastSuccessfulAt": "2026-10-27T10:02:34+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://x.com/ngntrtr",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/ngntrtr",
+      "date": "Tue, 27 Oct 2026 10:02:40 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "80ccc6a8c2dcefb3ec0bc23587386b4756d308a44f0f94cc0102b9acb9789c67",
+      "lastSuccessfulAt": "2026-10-27T10:02:34+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://nagano-info.jp/pus.html",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "status": 200,
+      "finalUrl": "https://nagano-info.jp/pus.html",
+      "date": "Tue, 27 Oct 2026 10:02:41 GMT",
+      "age": null,
+      "lastModified": "Fri, 16 Oct 2026 08:03:00 GMT",
+      "sha256": "0fa4cb36e54e6ea798c1eb0a4a134d71984bb9f8a1af35a71be6cbc19e5d1254",
+      "lastSuccessfulAt": "2026-10-27T10:02:34+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "status": 200,
+      "finalUrl": "https://nagano-info.jp/nagano_aq/index.html",
+      "date": "Tue, 27 Oct 2026 10:02:41 GMT",
+      "age": null,
+      "lastModified": "Fri, 18 Jul 2025 08:52:34 GMT",
+      "sha256": "3f3bbca8e8d8afe78b7f91da93172e212dcaf3e468fb02764c5f0373df314a96",
+      "lastSuccessfulAt": "2026-10-27T10:02:34+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://nagano-info.jp/museum.html",
+      "observedAt": "2026-10-27T10:02:34+00:00",
+      "status": 200,
+      "finalUrl": "https://nagano-info.jp/museum.html",
+      "date": "Tue, 27 Oct 2026 10:02:41 GMT",
+      "age": null,
+      "lastModified": "Fri, 16 May 2025 07:22:00 GMT",
+      "sha256": "b81cdc41220ad983e511ad5462a169f85343c61ac96aaa128035ee21afc4d767",
+      "lastSuccessfulAt": "2026-10-27T10:02:34+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:34+00:00"
+    },
+    {
+      "url": "https://nagano-info.jp/",
+      "observedAt": "2026-10-27T10:02:40+00:00",
+      "status": 200,
+      "finalUrl": "https://nagano-info.jp/",
+      "date": "Tue, 27 Oct 2026 10:02:44 GMT",
+      "age": null,
+      "lastModified": "Wed, 05 Aug 2026 02:45:00 GMT",
+      "sha256": "6b9180a6ed45439b85ca4d5d024629185c3b41f42dfff0d153a588266402ec7e",
+      "lastSuccessfulAt": "2026-10-27T10:02:40+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:40+00:00"
+    },
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "observedAt": "2026-10-27T10:02:40+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:09:54.578Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:40+00:00"
+    },
+    {
+      "url": "https://www.chiikawa-yaki.com/",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "status": 200,
+      "finalUrl": "https://www.chiikawa-yaki.com/",
+      "date": "Tue, 27 Oct 2026 10:02:48 GMT",
+      "age": "220",
+      "lastModified": "Tue, 20 Oct 2026 02:39:47 GMT",
+      "sha256": "28881feb709ab456bd95e8e1c2c326e48ee8ad655b50e779d32f08cfe121e03f",
+      "lastSuccessfulAt": "2026-10-27T10:02:41+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://x.com/chiikawa_land",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/chiikawa_land",
+      "date": "Tue, 27 Oct 2026 10:02:46 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "77c4420cc56f2266d466a3481dfc6ce950997680691ef9d9e3ae3393b7db6252",
+      "lastSuccessfulAt": "2026-10-27T10:02:41+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:07:21.035Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "status": 200,
+      "finalUrl": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "date": "Tue, 27 Oct 2026 10:02:47 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "00ab1a4d0926a3647f3769a7a140c8d960dc4c6030c4e4bf4edecf05714d91a4",
+      "lastSuccessfulAt": "2026-10-27T10:02:41+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "status": 200,
+      "finalUrl": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "date": "Tue, 27 Oct 2026 10:02:48 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "612420a18277a3f56ef4cb7da14a8196a54d6a00b0d56f92a727a9f4a2b991ab",
+      "lastSuccessfulAt": "2026-10-27T10:02:41+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://www.telacoya.co.jp/company/shop-a/",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "status": 200,
+      "finalUrl": "https://www.telacoya.co.jp/company/shop-a/",
+      "date": "Tue, 27 Oct 2026 10:02:49 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "4a8f1fd6e77484f2c06885695ec1b62330dd959937fd71d4ccf9ca8dc1e5ade6",
+      "lastSuccessfulAt": "2026-10-27T10:02:41+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://www.telacoya.co.jp/",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "status": 200,
+      "finalUrl": "https://www.telacoya.co.jp/",
+      "date": "Tue, 27 Oct 2026 10:02:49 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "86a3088a65a279a16444a85ff61663c1de7d115e97dd41f4a4d0cbc2d7b6732e",
+      "lastSuccessfulAt": "2026-10-27T10:02:41+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://chiikawabakery.jp/",
+      "observedAt": "2026-10-27T10:02:41+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-21T09:58:46.054+00:00",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:41+00:00"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "observedAt": "2026-10-27T10:02:44+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": "2026-10-25T23:08:18.000Z",
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:44+00:00"
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/news",
+      "observedAt": "2026-10-27T10:02:46+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "lastSuccessfulAt": null,
+      "lastResult": "failure",
+      "summary": "直接HTTP取得失敗。代替web readerで取得できたURLは別記録。",
+      "route": "cloud_direct_core",
+      "outcome": "failure",
+      "completedAt": "2026-10-27T10:02:46+00:00"
+    },
+    {
+      "url": "https://x.com/chiikawabakery",
+      "observedAt": "2026-10-27T10:02:46+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/chiikawabakery",
+      "date": "Tue, 27 Oct 2026 10:02:52 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "5f458c7429f34d616e9360040b370f976036c7e60bf0ff07d1136603e73fdf02",
+      "lastSuccessfulAt": "2026-10-27T10:02:46+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:46+00:00"
+    },
+    {
+      "url": "https://x.com/chiikawaramenSH",
+      "observedAt": "2026-10-27T10:02:46+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/chiikawaramenSH",
+      "date": "Tue, 27 Oct 2026 10:02:52 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "0c57ee7f45cc8ba4dcca66249b161a37153efec25ebd63544bf01af98c26f41c",
+      "lastSuccessfulAt": "2026-10-27T10:02:46+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:46+00:00"
+    },
+    {
+      "url": "https://x.com/chiikawamgmg",
+      "observedAt": "2026-10-27T10:02:46+00:00",
+      "status": 200,
+      "finalUrl": "https://x.com/chiikawamgmg",
+      "date": "Tue, 27 Oct 2026 10:02:52 GMT",
+      "age": null,
+      "lastModified": null,
+      "sha256": "66c06e4167b6a62ac49c710fa0d6964c8b30b897656b84aafda623aba2200940",
+      "lastSuccessfulAt": "2026-10-27T10:02:46+00:00",
+      "lastResult": "success",
+      "summary": "本文取得。Xは直近5投稿範囲の確認。",
+      "route": "cloud_direct_core",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:02:46+00:00"
+    },
+    {
+      "url": "https://chiikawa-pocket-goods-store.com/news",
+      "observedAt": "2026-10-27T10:02:47+00:00",
+      "status": 200,
+      "finalUrl": "https://chiikawa-pocket-goods-store.com/news",
+      "date": "Tue, 27 Oct 2026 10:02:53 GMT",
+      "age": null,
+      "lastModified": "Fri, 23 Oct 2026 12:07:59 GMT",
+      "sha256": "8a4a2ac8b5cef31e270650418e22fe6d78722b1cb800b0b26df2d12d5abc68de",
+      "lastSuccessfulAt": null,
+      "lastResult": "partial_js_content",
+      "note": "200 but news items not extracted, not proof of no new item.",
+      "summary": "本文取得。新規掲載を示す差分なし。",
+      "route": "cloud_direct_core",
+      "outcome": "partial_js_content",
+      "completedAt": "2026-10-27T10:02:47+00:00"
+    },
+    {
+      "id": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "previousSuccessfulAt": "2026-10-26T10:11:49.889Z",
+      "attemptAt": "2026-10-27T10:04:30.379+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:38.854+00:00",
+      "bytes": 240954,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:38.854+00:00"
+    },
+    {
+      "id": "corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "previousSuccessfulAt": "2026-10-23T10:05:36.489+00:00",
+      "attemptAt": "2026-10-27T10:04:30.377+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.349+00:00",
+      "bytes": 312367,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:39.349+00:00"
+    },
+    {
+      "id": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "previousSuccessfulAt": "2026-10-20T10:02:22.178+00:00",
+      "attemptAt": "2026-10-27T10:04:30.369+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.382+00:00",
+      "bytes": 572685,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:39.382+00:00"
+    },
+    {
+      "id": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "previousSuccessfulAt": "2026-10-25T23:10:50.741Z",
+      "attemptAt": "2026-10-27T10:04:30.366+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.493+00:00",
+      "bytes": 575185,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:39.493+00:00"
+    },
+    {
+      "id": "tamanohikari-chiikawa-shop-details",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "previousSuccessfulAt": "2026-10-23T10:05:45.509+00:00",
+      "attemptAt": "2026-10-27T10:04:30.382+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:39.594+00:00",
+      "bytes": 716269,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:39.594+00:00"
+    },
+    {
+      "id": "corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "previousSuccessfulAt": "2026-10-23T10:05:32.682+00:00",
+      "attemptAt": "2026-10-27T10:04:30.373+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:40.061+00:00",
+      "bytes": 15374,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:40.061+00:00"
+    },
+    {
+      "id": "corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "previousSuccessfulAt": "2026-10-23T10:05:46.124+00:00",
+      "attemptAt": "2026-10-27T10:04:30.381+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:40.346+00:00",
+      "bytes": 309717,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:40.346+00:00"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "previousSuccessfulAt": "2026-10-25T10:01:02.301Z",
+      "attemptAt": "2026-10-27T10:04:30.358+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:40.369+00:00",
+      "bytes": 60397,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:40.369+00:00"
+    },
+    {
+      "id": "kitte-osaka-event-index",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "previousSuccessfulAt": "2026-10-25T10:01:14.600Z",
+      "attemptAt": "2026-10-27T10:04:38.856+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:42.304+00:00",
+      "bytes": 40627,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:42.304+00:00"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-faq",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "previousSuccessfulAt": "2026-10-20T10:02:32.360+00:00",
+      "attemptAt": "2026-10-27T10:04:42.305+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:44.218+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "fetch_failed",
+      "completedAt": "2026-10-27T10:04:44.218+00:00"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "previousSuccessfulAt": "2026-10-21T09:58:38.722+00:00",
+      "attemptAt": "2026-10-27T10:04:40.370+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:44.259+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "fetch_failed",
+      "completedAt": "2026-10-27T10:04:44.259+00:00"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation",
+      "url": "https://reserva.be/ana_chiikawa",
+      "previousSuccessfulAt": "2026-10-20T10:02:32.044+00:00",
+      "attemptAt": "2026-10-27T10:04:40.346+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:44.265+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "fetch_failed",
+      "completedAt": "2026-10-27T10:04:44.265+00:00"
+    },
+    {
+      "id": "official-observation-88c0160fff16",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "previousSuccessfulAt": "2026-10-23T10:05:31.500+00:00",
+      "attemptAt": "2026-10-27T10:04:39.597+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:44.273+00:00",
+      "bytes": 122579,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:44.273+00:00"
+    },
+    {
+      "id": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "previousSuccessfulAt": "2026-10-23T10:05:31.099+00:00",
+      "attemptAt": "2026-10-27T10:04:39.494+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:44.497+00:00",
+      "bytes": 124547,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:44.497+00:00"
+    },
+    {
+      "id": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "previousSuccessfulAt": "2026-10-23T10:05:37.090+00:00",
+      "attemptAt": "2026-10-27T10:04:39.351+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:44.521+00:00",
+      "bytes": 23443,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:44.521+00:00"
+    },
+    {
+      "id": "ana-festa-chiikawa-inquiry-20261016",
+      "url": "https://www.anafesta.com/notice/2026/10/79105/",
+      "previousSuccessfulAt": "2026-10-20T10:02:31.247+00:00",
+      "attemptAt": "2026-10-27T10:04:40.062+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:46.319+00:00",
+      "bytes": 58499,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:46.319+00:00"
+    },
+    {
+      "id": "ana-astyle-waiting-room-20261023",
+      "url": "https://www.astyle.jp/astyle/news/696/",
+      "previousSuccessfulAt": "2026-10-23T10:05:44.534+00:00",
+      "attemptAt": "2026-10-27T10:04:44.497+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:46.788+00:00",
+      "bytes": 58438,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:46.788+00:00"
+    },
+    {
+      "id": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "previousSuccessfulAt": "2026-10-25T10:01:32.228Z",
+      "attemptAt": "2026-10-27T10:04:39.384+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:46.895+00:00",
+      "bytes": 98272,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:46.895+00:00"
+    },
+    {
+      "id": "corporate-sunflower-photorally-details",
+      "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+      "previousSuccessfulAt": "2026-10-20T10:00:59.792+00:00",
+      "attemptAt": "2026-10-27T10:04:44.259+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:47.892+00:00",
+      "bytes": 23885,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:47.892+00:00"
+    },
+    {
+      "id": "corporate-sunflower-main-image",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_main.jpg",
+      "previousSuccessfulAt": "2026-10-19T23:01:20.553+00:00",
+      "attemptAt": "2026-10-27T10:04:44.218+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:47.979+00:00",
+      "bytes": 1729872,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:47.979+00:00"
+    },
+    {
+      "id": "ana-chiikawa-registration",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/registration.html",
+      "previousSuccessfulAt": "2026-10-20T10:02:30.457+00:00",
+      "attemptAt": "2026-10-27T10:04:44.265+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:49.509+00:00",
+      "bytes": 538546,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:49.509+00:00"
+    },
+    {
+      "id": "morning-existing21-4fdf328cdc02",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "previousSuccessfulAt": "2026-10-23T10:05:44.541+00:00",
+      "attemptAt": "2026-10-27T10:04:46.788+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:49.904+00:00",
+      "bytes": 98272,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:49.904+00:00"
+    },
+    {
+      "id": "ana-group-news-x",
+      "url": "https://x.com/ANA_Group_News",
+      "previousSuccessfulAt": "2026-10-19T22:59:55.291+00:00",
+      "attemptAt": "2026-10-27T10:04:44.522+00:00",
+      "result": "partial_success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.335+00:00",
+      "bytes": 156565,
+      "coverage": "Public profile and visible recent posts only; no new chiikawa announcement found in visible excerpts, full feed not verified. Preserve previous lastSuccessfulAt.",
+      "route": "cloud_direct_partners",
+      "outcome": "partial_success",
+      "completedAt": "2026-10-27T10:04:50.335+00:00"
+    },
+    {
+      "id": "ana-goods-resale-20261024",
+      "url": "https://x.com/ANA_Group_News/status/2113805171805622424",
+      "previousSuccessfulAt": "2026-10-25T10:02:58.324Z",
+      "attemptAt": "2026-10-27T10:04:47.983+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.481+00:00",
+      "bytes": 144503,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:50.481+00:00"
+    },
+    {
+      "id": "weekly-kurashiki-events",
+      "url": "https://kurashiki.aeonmall.jp/event",
+      "previousSuccessfulAt": "2026-10-21T09:59:33.443+00:00",
+      "attemptAt": "2026-10-27T10:04:46.896+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.733+00:00",
+      "bytes": 182542,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:50.733+00:00"
+    },
+    {
+      "id": "ana-first-flight-airframe-confirmed-20261020",
+      "url": "https://x.com/ANA_travel_info/status/2112461317730640199",
+      "previousSuccessfulAt": "2026-10-22T23:05:40.536+00:00",
+      "attemptAt": "2026-10-27T10:04:46.319+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:50.764+00:00",
+      "bytes": 152024,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:50.764+00:00"
+    },
+    {
+      "id": "ana-official-x",
+      "url": "https://x.com/ANA_travel_info",
+      "previousSuccessfulAt": "2026-10-19T10:00:24.689+00:00",
+      "attemptAt": "2026-10-27T10:04:44.274+00:00",
+      "result": "partial_success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:51.455+00:00",
+      "bytes": 164586,
+      "coverage": "Public profile and visible recent posts only; no new chiikawa announcement found in visible excerpts, full feed not verified. Preserve previous lastSuccessfulAt.",
+      "route": "cloud_direct_partners",
+      "outcome": "partial_success",
+      "completedAt": "2026-10-27T10:04:51.455+00:00"
+    },
+    {
+      "id": "ana-naha-delay-20261022",
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "previousSuccessfulAt": "2026-10-25T10:02:54.999Z",
+      "attemptAt": "2026-10-27T10:04:47.893+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 404: Not Found",
+      "observedAt": "2026-10-27T10:04:52.225+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "fetch_failed",
+      "completedAt": "2026-10-27T10:04:52.225+00:00"
+    },
+    {
+      "id": "ana-preorder-recovery-20261023",
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "previousSuccessfulAt": "2026-10-25T10:03:02.901Z",
+      "attemptAt": "2026-10-27T10:04:49.510+00:00",
+      "result": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-10-27T10:04:52.299+00:00",
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "fetch_failed",
+      "completedAt": "2026-10-27T10:04:52.299+00:00"
+    },
+    {
+      "id": "christmas-market",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "previousSuccessfulAt": null,
+      "attemptAt": "2026-10-27T10:04:49.905+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:53.510+00:00",
+      "bytes": 370279,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:53.510+00:00"
+    },
+    {
+      "id": "jr-central",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "previousSuccessfulAt": null,
+      "attemptAt": "2026-10-27T10:04:50.336+00:00",
+      "result": "success",
+      "httpStatus": 200,
+      "observedAt": "2026-10-27T10:04:54.439+00:00",
+      "bytes": 54112,
+      "coverage": "Retrieved official page body only; images, all posts, inventories and live transaction availability not comprehensively verified.",
+      "route": "cloud_direct_partners",
+      "outcome": "success",
+      "completedAt": "2026-10-27T10:04:54.439+00:00"
+    }
+  ],
+  "alternateWebObservations": [
+    {
+      "url": "https://reserva.be/ana_chiikawa",
+      "observedAt": "2026-10-27T10:04:53+00:00",
+      "result": "partial_success",
+      "note": "Web今日クロール本文閲覧。Oct22那覇予約告知題名/Oct16満枠/FAQ。予約メニューなし。直取得403は保持。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "observedAt": "2026-10-27T10:07:29+00:00",
+      "result": "cached_body_success",
+      "note": "10/16 FAQ本文。3歳以上人数に含む/予約メールで変更取消。直取得403は保持、最新成功時刻と混同しない。"
+    },
+    {
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "observedAt": "2026-10-27T10:07:29+00:00",
+      "result": "fetch_failed",
+      "note": "webも取得不可。"
+    },
+    {
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "observedAt": "2026-10-27T10:04:53+00:00",
+      "result": "cached_body_success",
+      "note": "web本文閲覧は可能、direct403と区別。"
+    }
+  ],
+  "historicalNahaSource": [
+    {
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "result": "HTTP404 confirmed by direct fetch and web tool",
+      "scope": "Past Oct23–25 Naha reservation exception source only. Do not delete/change historical evidence. Reserva top still shows the Oct22 announcement title.",
+      "observedAt": "2026-10-27T10:05:32+00:00"
+    }
+  ],
+  "priorSourceStates": [
+    {
+      "id": "chiikawa-official-index",
+      "name": "ちいかわ公式総合",
+      "url": "https://chiikawa-info.jp/",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:14.725Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.725Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-popup-list",
+      "name": "ちいかわ POP UP公式一覧",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:14.896Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.896Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:22.670+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawa-info.jp/pus.html"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-cafe-list",
+      "name": "ちいかわカフェ公式一覧",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:14.734Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.734Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-exhibition-list",
+      "name": "ちいかわ展覧会公式一覧",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:14.720Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:14.720Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-author-x",
+      "name": "ちいかわ作者公式X",
+      "url": "https://x.com/ngnchiikawa",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:22.923Z",
+      "lastSuccessfulAt": "2026-10-25T23:10:22.923Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-23T22:59:12.853Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "evidenceUrl": "https://x.com/ngnchiikawa"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-publicity-x",
+      "name": "ちいかわ公式広報X",
+      "url": "https://x.com/chiikawa_kouhou",
+      "kind": "social",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:23.122Z",
+      "lastSuccessfulAt": "2026-10-25T23:10:23.122Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-23T22:59:12.846Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "evidenceUrl": "https://x.com/chiikawa_kouhou"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "nagano-author-x",
+      "name": "ナガノ先生公式X",
+      "url": "https://x.com/ngntrtr",
+      "kind": "social",
+      "scope": [
+        "nagano"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:11:14.570Z",
+      "lastSuccessfulAt": "2026-10-25T23:11:14.570Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-23T22:59:12.931Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "evidenceUrl": "https://x.com/ngntrtr"
+      },
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: fetch_failed。webプロフィール403。検索補完でも更新全件確認不可。前回成功維持。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "nagano-popup-list",
+      "name": "ナガノマーケット POP UP公式一覧",
+      "url": "https://nagano-info.jp/pus.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:15.408Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:15.408Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: success。web代替で取得。忠清10/30–11/12は既存rejected候補（海外）、国内新規なし。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "name": "ナガノの水族館公式一覧",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:15.492Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:15.492Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: success。末尾index.htmlなしでweb取得。既存2025年会場一覧、国内新規なし。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "name": "ナガノ展公式一覧",
+      "url": "https://nagano-info.jp/museum.html",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:15.277Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:15.277Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。\n朝のweb観測: success。web代替で取得。直近は2024年タオル美術館、国内新規なし。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved_partial: Full image/detail comparison incomplete 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "nagano-official-index",
+      "name": "ナガノ公式総合",
+      "url": "https://nagano-info.jp/",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "nagano"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:15.295Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:15.295Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "総合入口を巡回対象へ登録。個別告知・会場別案内は別途照合する。\n朝のweb観測: success。公式index.html代替取得。既存系列と国内3常設店、海外2常設店確認。 観測の時刻精度: 2026-10-22朝の巡回（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "name": "ちいかわベーカリー 予約案内",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:09:54.578Z",
+      "lastSuccessfulAt": "2026-10-25T23:09:54.578Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:37.345+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawabakery.jp/reservation/"
+      },
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。\n朝のweb観測: success。webで公式予約案内本文確認。 観測の時刻精度: 2026-10-21 23:00 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-yaki-official",
+      "name": "ちいかわ焼き 公式店舗案内",
+      "url": "https://www.chiikawa-yaki.com/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:22.667Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:22.667Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "今回確認した店舗/案内の範囲のみ更新。変更の発表日時は未確認。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawaland-entry-updates-x",
+      "name": "ちいかわらんど 最新入店案内 公式X",
+      "url": "https://x.com/chiikawa_land",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
+      "lastSuccessfulAt": "2026-10-25T23:09:52.574Z",
+      "lastResult": "access_limited",
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。",
+      "lastFailure": {
+        "at": "2026-10-26T23:01:20Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
+        "evidenceUrl": "https://x.com/chiikawa_land"
+      },
+      "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。"
+    },
+    {
+      "id": "chiikawa-park-ticket",
+      "name": "ちいかわパーク 公式入場案内",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:07:21.035Z",
+      "lastSuccessfulAt": "2026-10-25T23:07:21.035Z",
+      "lastResult": "success",
+      "resultSummary": "公式表示本文を取得・確認。画像内条件や全SNS投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:37.737+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawapark-tokyo.jp/ticket/"
+      },
+      "note": "10/12朝の個別一次情報の確認記録。再取得とは区別して観測根拠を保持する。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "chiikawa-restaurant-reservation",
+      "name": "ちいかわレストラン 池袋PARCO店 公式入場案内",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-22T10:06:27.487+00:00",
+      "lastSuccessfulAt": "2026-10-22T10:06:27.487+00:00",
+      "lastResult": "success",
+      "resultSummary": "HTTP取得結果。成功時も本文同一性は画像や動的SNSの最新性を保証しない。",
+      "lastFailure": null,
+      "note": "10/12朝の個別一次情報の確認記録。再取得とは区別して観測根拠を保持する。"
+    },
+    {
+      "id": "kamakura-recruitment",
+      "name": " 株式会社寺子屋 この案件は現在公開されていません。",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:43.639Z",
+      "lastSuccessfulAt": "2026-10-25T10:01:53.238Z",
+      "lastResult": "access_limited",
+      "resultSummary": "HTTP200で求人非公開の案内のみ。求人本文・正式開業日の確認成功へ昇格しない。",
+      "lastFailure": {
+        "at": "2026-10-25T23:10:43.639Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP200で求人非公開の案内のみ。求人本文・正式開業日の確認成功へ昇格しない。",
+        "evidenceUrl": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357"
+      },
+      "note": "一次告知または公式施設・企業ページ。 【2026-10-24夕・別web経路】retrieved: job currently nonpublic 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の親クラウド表示観測（キャッシュを含み新規live取得時刻は不明）は research/morning-20261027-source-observations.json に保存。正式開業・予約日は未確認、求人掲載終了。lastSuccessfulAtは上書きしない。"
+    },
+    {
+      "id": "telacoya-shop",
+      "name": "株式会社 寺子屋（てらこや）   » 店舗案内-地区別",
+      "url": "https://www.telacoya.co.jp/company/shop-a/",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:40.189Z",
+      "lastSuccessfulAt": "2026-10-25T23:10:40.189Z",
+      "lastResult": "success",
+      "resultSummary": "親クラウドで公式本文の表示範囲を確認。画像・全投稿・全情報源の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "一次告知または公式施設・企業ページ。 【2026-10-24夕・別web経路】retrieved: No Kamakura chiikawa store in retrieved list; not definitive current absence 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の親クラウド表示観測（キャッシュを含み新規live取得時刻は不明）は research/morning-20261027-source-observations.json に保存。正式開業・予約日は未確認、求人掲載終了。lastSuccessfulAtは上書きしない。"
+    },
+    {
+      "id": "kamakura-c154712c",
+      "url": "https://www.telacoya.co.jp/",
+      "name": "寺子屋公式企業サイト",
+      "kind": "official_index",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:57.928Z",
+      "lastSuccessfulAt": "2026-10-25T10:01:57.928Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "10/25夕の公式観測。原本・範囲と取得時刻は research/evening-20261025-source-observations.json に記録。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "morning-existing21-2cb24f2734c6",
+      "name": "morning-existing21-2cb24f2734c6",
+      "url": "https://chiikawabakery.jp/",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:22.660+00:00",
+      "lastSuccessfulAt": "2026-10-21T09:58:46.054+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "取得失敗。新着なし扱いにせず前回成功日時を保持。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:22.660+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawabakery.jp/"
+      },
+      "note": "Official source recovered during existing listing condition check. Original result scope and limitations retained.\n朝のweb観測: success。webで公式本文確認。 観測の時刻精度: 2026-10-21 23:00 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。"
+    },
+    {
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "name": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:36.116Z",
+      "lastSuccessfulAt": "2026-10-25T23:08:18.000Z",
+      "lastResult": "access_limited",
+      "resultSummary": "HTTP Error 403: Forbidden",
+      "lastFailure": {
+        "at": "2026-10-25T23:10:36.116Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://www.chiikawamogumogu.jp/news/"
+      },
+      "note": "2026-10-14朝の公開一次情報確認。全画像・埋込SNS・当日の空きの網羅確認ではない。\n朝のweb観測: success。webで公式ニュース本文確認。 観測の時刻精度: 2026-10-21 22:59:58 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の親クラウド表示観測（キャッシュを含み新規live取得時刻は不明）は research/morning-20261027-source-observations.json に保存。正式開業・予約日は未確認、求人掲載終了。lastSuccessfulAtは上書きしない。"
+    },
+    {
+      "id": "evening-x-com-chiikawabakery",
+      "name": "夕方一次情報 https://x.com/chiikawabakery",
+      "url": "https://x.com/chiikawabakery",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
+      "lastSuccessfulAt": "2026-10-25T23:09:52.519Z",
+      "lastResult": "access_limited",
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。",
+      "lastFailure": {
+        "at": "2026-10-26T23:01:20Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
+        "evidenceUrl": "https://x.com/chiikawabakery"
+      },
+      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 【2026-10-24夕・別web経路】failed: web403; parent independent HTTP succeeded 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕に表示本文を確認。提示時刻は保存ファイル時刻由来のため、取得完了の実測時刻へ転記せず別観測として保全。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。"
+    },
+    {
+      "id": "evening-x-com-chiikawaramensh",
+      "name": "夕方一次情報 https://x.com/chiikawaramenSH",
+      "url": "https://x.com/chiikawaramenSH",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T23:01:20Z",
+      "lastSuccessfulAt": "2026-10-20T10:01:38.953+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "10/27 08:01:20 JST の親クラウド取得は403。個別投稿全件や当日案内は未確認であり、新着なしとは扱わない。",
+      "lastFailure": {
+        "at": "2026-10-26T23:01:20Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "Cloud Web HTTP403. Prior successful retrieval timestamp preserved.",
+        "evidenceUrl": "https://x.com/chiikawaramenSH"
+      },
+      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。 10/27朝の取得制約は research/morning-20261027-source-observations.json。前日の入場案内を当日へ延長しない。"
+    },
+    {
+      "id": "evening-x-com-chiikawamgmg",
+      "name": "夕方一次情報 https://x.com/chiikawamgmg",
+      "url": "https://x.com/chiikawamgmg",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T22:59:12.847Z",
+      "lastSuccessfulAt": "2026-10-20T10:06:09.274+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+      "lastFailure": {
+        "at": "2026-10-23T22:59:12.847Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "HTTP 200、提供された巡回結果 limited。公開ページ一部取得。最新投稿・全タイムライン網羅は未保証。",
+        "evidenceUrl": "https://x.com/chiikawamgmg"
+      },
+      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。"
+    },
+    {
+      "id": "corporate-gu-chiikawa-faq",
+      "name": "faq.gu-global.com 個別公式確認 corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T10:11:49.889Z",
+      "lastSuccessfulAt": "2026-10-26T10:11:49.889Z",
+      "lastResult": "success",
+      "resultSummary": "GU公式FAQ本文で全商品のオンライン先行予約11/2 7:15〜11/8 23:59、上限終了、数量制限と11/19までの配送予定・例外を確認。通常販売11/20・11/27と区別。",
+      "lastFailure": null,
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/26夕のweb本文確認。発表日は不明。HTTPステータスはwebツール結果にないため推定しない。"
+    },
+    {
+      "id": "corporate-chiikawa-glasses",
+      "name": "www.clasic.jp 個別公式確認 corporate-chiikawa-glasses",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:36.489+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:36.489+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
+    },
+    {
+      "id": "ana-chiikawa-campaign",
+      "name": "ANA ちいかわ就航記念キャンペーン",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-20T10:02:22.178+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:02:22.178+00:00",
+      "lastResult": "success",
+      "resultSummary": "搭乗キャンペーンの登録・対象便・応募条件を確認。既存条件と整合。",
+      "lastFailure": null,
+      "note": "就航開始・キャンペーン登録・対象搭乗の期間を区別。予約や当日の運航を保証しない。"
+    },
+    {
+      "id": "ana-chiikawa-jet",
+      "name": "ANA ちいかわジェット公式",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:50.741Z",
+      "lastSuccessfulAt": "2026-10-25T23:10:50.741Z",
+      "lastResult": "success",
+      "resultSummary": "親クラウドで公式本文の表示範囲を確認。画像・全投稿・全情報源の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "就航開始・キャンペーン登録・対象搭乗の期間を区別。予約や当日の運航を保証しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "tamanohikari-chiikawa-shop-details",
+      "name": "tamanohikari-chiikawa-dashiwari-2026 10/12夕方の一次根拠",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:45.509+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:45.509+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "本文・画像の目視確認と、その後の別の取得を区別して記録。発表・初回発見・元掲載の公開日時を確認時計から補わない。"
+    },
+    {
+      "id": "corporate-sunflower-chiikawa",
+      "name": "www.sunflower.co.jp 個別公式確認 corporate-sunflower-chiikawa",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:32.682+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:32.682+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 【2026-10-24夕・別web経路】retrieved_partial: Full image/detail comparison incomplete 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。"
+    },
+    {
+      "id": "corporate-chiikawa-glasses-orders",
+      "name": "www.clasic.jp 個別公式確認 corporate-chiikawa-glasses-orders",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4189",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:46.124+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:46.124+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "name": "東京ばな奈公式ちいかわ情報",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:02.301Z",
+      "lastSuccessfulAt": "2026-10-25T10:01:02.301Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "kitte-osaka-event-index",
+      "name": "夕方一次情報 kitte-events",
+      "url": "https://osaka.jp-kitte.jp/event/eventnews.jsp",
+      "kind": "venue",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:14.600Z",
+      "lastSuccessfulAt": "2026-10-25T10:01:14.600Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "対象原本文/画像の実読範囲を記録。未確認の在庫・予約状態を推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-faq",
+      "name": "ana-chiikawa-goods-reservation-faq",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-20T10:02:32.360+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:02:32.360+00:00",
+      "lastResult": "success",
+      "resultSummary": "対象4店舗・時間枠・本人来店などFAQを確認。10/26以降制限解除も記載、既存10/23～25限定表記と矛盾なし。",
+      "lastFailure": {
+        "at": "2026-10-17T10:08:56.123+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60941"
+      },
+      "note": "公式企業・施設の一次案内。日時・対象会場の変更を確認。 19:08台のweb本文取得は成功、正確な秒が不明のためlastSuccessfulAtは捏造せずnull。分精度の成功記録は夕方企業証拠に保持。"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation-full-20261016",
+      "name": "ana-chiikawa-goods-reservation-full-20261016",
+      "url": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:42.158+00:00",
+      "lastSuccessfulAt": "2026-10-21T09:58:38.722+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "取得失敗。新着なし扱いにせず前回成功日時を保持。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:42.158+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://reserva.be/ana_chiikawa/news?mode=list_detail&search_osh_no=60949"
+      },
+      "note": "公式企業・施設の一次案内。日時・対象会場の変更を確認。 19:08台のweb本文取得は成功、正確な秒が不明のためlastSuccessfulAtは捏造せずnull。分精度の成功記録は夕方企業証拠に保持。"
+    },
+    {
+      "id": "ana-chiikawa-goods-reservation",
+      "name": "ana-chiikawa-goods-reservation",
+      "url": "https://reserva.be/ana_chiikawa",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-20T10:02:32.044+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:02:32.044+00:00",
+      "lastResult": "success",
+      "resultSummary": "予約入口と10/23～25の全予約制を確認。個別現在空席は未確認。",
+      "lastFailure": {
+        "at": "2026-10-17T10:08:39.810+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://reserva.be/ana_chiikawa"
+      },
+      "note": "公式企業・施設の一次案内。日時・対象会場の変更を確認。 19:08台のweb本文取得は成功、正確な秒が不明のためlastSuccessfulAtは捏造せずnull。分精度の成功記録は夕方企業証拠に保持。"
+    },
+    {
+      "id": "official-observation-88c0160fff16",
+      "name": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール倉敷",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:32.009Z",
+      "lastSuccessfulAt": "2026-10-23T10:05:31.500+00:00",
+      "lastResult": "fetch_failed",
+      "resultSummary": "HTTP Error 406: Not Acceptable",
+      "lastFailure": {
+        "at": "2026-10-25T10:01:32.009Z",
+        "kind": "fetch_failed",
+        "httpStatus": 406,
+        "detail": "HTTP Error 406: Not Acceptable",
+        "evidenceUrl": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639"
+      },
+      "note": "会場・入場条件の公式告知を確認する。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "official-observation-bcf4bed6d585",
+      "name": "ちいかわPOP UP STORE イオンモール倉敷",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:32.007Z",
+      "lastSuccessfulAt": "2026-10-23T10:05:31.099+00:00",
+      "lastResult": "fetch_failed",
+      "resultSummary": "HTTP Error 406: Not Acceptable",
+      "lastFailure": {
+        "at": "2026-10-25T10:01:32.007Z",
+        "kind": "fetch_failed",
+        "httpStatus": 406,
+        "detail": "HTTP Error 406: Not Acceptable",
+        "evidenceUrl": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab"
+      },
+      "note": "会場・入場条件の公式告知を確認する。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "corporate-toho-one-chiikawa-campaign",
+      "name": "TOHO-ONE ちいかわキャンペーン特設",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:37.090+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:37.090+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "企画期間と先着枠/受付稼働を区別する。"
+    },
+    {
+      "id": "ana-festa-chiikawa-inquiry-20261016",
+      "name": "ana-festa-chiikawa-inquiry-20261016",
+      "url": "https://www.anafesta.com/notice/2026/10/79105/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-20T10:02:31.247+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:02:31.247+00:00",
+      "lastResult": "success",
+      "resultSummary": "店舗への在庫問い合わせ不可・予約対象4店舗案内を確認。",
+      "lastFailure": null,
+      "note": "公式企業・施設の一次案内。日時・対象会場の変更を確認。"
+    },
+    {
+      "id": "ana-astyle-waiting-room-20261023",
+      "url": "https://www.astyle.jp/astyle/news/696/",
+      "lastAttemptAt": "2026-10-23T10:05:44.534+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:44.534+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "name": "ANA A-style 10月23日仮想待合室案内",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "note": "10月19日夕方の公式根拠。本文・表示状態の確認範囲と未確認事項を結果へ記録。"
+    },
+    {
+      "id": "ana-chiikawa-goods-astyle",
+      "name": "ANA A-style ちいかわコラボ販売・入店予約",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:32.228Z",
+      "lastSuccessfulAt": "2026-10-25T10:01:32.228Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": {
+        "at": "2026-10-17T23:07:01.087+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": null,
+        "detail": "Internal Error",
+        "evidenceUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/"
+      },
+      "note": "2026-10-15夕方に当日公式発表から追加。予約操作・在庫確認は含まない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "corporate-sunflower-photorally-details",
+      "name": "さんふらわあ公式 船内フォトラリー開催案内",
+      "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-20T10:00:59.792+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:00:59.792+00:00",
+      "lastResult": "success",
+      "resultSummary": "さんふらわあ公式別記事で8/6～10/31・夕方便のARフォトラリー条件を確認。LP画像全体の代替確認とは扱わない。",
+      "lastFailure": null,
+      "note": "2026-10-18朝の公式企業・権利元確認で登録。取得本文と画像目視を区別する。"
+    },
+    {
+      "id": "corporate-sunflower-main-image",
+      "name": "さんふらわあ×映画ちいかわ公式主画像",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/img/img_main.jpg",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-19T23:01:20.553+00:00",
+      "lastSuccessfulAt": "2026-10-19T23:01:20.553+00:00",
+      "lastResult": "success",
+      "resultSummary": "主画像を実読し2026/8/6～10/31を確認。既存コラボ会期に一致。",
+      "lastFailure": null,
+      "note": "2026-10-18朝の公式企業・権利元確認で登録。取得本文と画像目視を区別する。"
+    },
+    {
+      "id": "ana-chiikawa-registration",
+      "name": "ANAちいかわジェットキャンペーン登録入口",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/registration.html",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-20T10:02:30.457+00:00",
+      "lastSuccessfulAt": "2026-10-20T10:02:30.457+00:00",
+      "lastResult": "success",
+      "resultSummary": "キャンペーン参加登録入口と条件を確認。登録操作はしていない。",
+      "lastFailure": null,
+      "note": "就航開始・キャンペーン登録・対象搭乗の期間を区別。予約や当日の運航を保証しない。"
+    },
+    {
+      "id": "morning-existing21-4fdf328cdc02",
+      "name": "morning-existing21-4fdf328cdc02",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:44.541+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:44.541+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "Official source recovered during existing listing condition check. Original result scope and limitations retained."
+    },
+    {
+      "id": "ana-group-news-x",
+      "url": "https://x.com/ANA_Group_News",
+      "lastAttemptAt": "2026-10-24T23:02:03.587Z",
+      "lastSuccessfulAt": "2026-10-19T22:59:55.291+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+      "lastFailure": {
+        "at": "2026-10-24T23:02:03.587Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+        "evidenceUrl": "https://x.com/ANA_Group_News"
+      },
+      "name": "ANAグループ公式ニュースX",
+      "kind": "social",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "note": "10月19日夕方の公式根拠。本文・表示状態の確認範囲と未確認事項を結果へ記録。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。"
+    },
+    {
+      "id": "ana-goods-resale-20261024",
+      "url": "https://x.com/ANA_Group_News/status/2113805171805622424",
+      "name": "ANA Group News コラボグッズ販売・追加生産検討",
+      "kind": "social",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:02:58.324Z",
+      "lastSuccessfulAt": "2026-10-25T10:02:58.324Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "10/25夕の公式観測。原本・範囲と取得時刻は research/evening-20261025-source-observations.json に記録。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "weekly-kurashiki-events",
+      "url": "https://kurashiki.aeonmall.jp/event",
+      "name": "イベント｜イオンモール倉敷",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "note": "公開一次告知の定期確認。HTTP取得成功は画像・全投稿の網羅確認を意味しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。",
+      "lastAttemptAt": "2026-10-25T10:01:52.541Z",
+      "lastSuccessfulAt": "2026-10-21T09:59:33.443+00:00",
+      "lastFailure": {
+        "at": "2026-10-25T10:01:52.541Z",
+        "kind": "fetch_failed",
+        "httpStatus": 406,
+        "detail": "HTTP Error 406: Not Acceptable",
+        "evidenceUrl": "https://kurashiki.aeonmall.jp/event"
+      },
+      "lastResult": "fetch_failed",
+      "resultSummary": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "ana-first-flight-airframe-confirmed-20261020",
+      "name": "ANA公式が初便NH661の特別塗装機使用を確認 公式告知",
+      "url": "https://x.com/ANA_travel_info/status/2112461317730640199",
+      "kind": "social",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:41.769+00:00",
+      "lastSuccessfulAt": "2026-10-22T23:05:40.536+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "公開プロフィール／投稿の表示範囲だけ確認。全量確認ではない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:41.769+00:00",
+        "kind": "access_limited",
+        "httpStatus": null,
+        "detail": "公開プロフィール／投稿の表示範囲だけ確認。全量確認ではない。",
+        "evidenceUrl": "https://x.com/ANA_travel_info/status/2112461317730640199"
+      },
+      "note": "公式発表本文または原画像を確認。取得と掲載・公開完了は区別する。"
+    },
+    {
+      "id": "ana-official-x",
+      "url": "https://x.com/ANA_travel_info",
+      "lastAttemptAt": "2026-10-24T23:02:03.359Z",
+      "lastSuccessfulAt": "2026-10-19T10:00:24.689+00:00",
+      "lastResult": "access_limited",
+      "resultSummary": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+      "lastFailure": {
+        "at": "2026-10-24T23:02:03.359Z",
+        "kind": "access_limited",
+        "httpStatus": 200,
+        "detail": "本文が短い・限定取得のため内容確認は不十分。新着なしとは扱わない。",
+        "evidenceUrl": "https://x.com/ANA_travel_info"
+      },
+      "name": "ANA公式旅行情報X",
+      "kind": "social",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "note": "10月19日夕方の公式根拠。本文・表示状態の確認範囲と未確認事項を結果へ記録。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。"
+    },
+    {
+      "id": "ana-naha-delay-20261022",
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "name": "ANA FESTA那覇ロビー1号店 予約の取り扱い（10/23～25）",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:02:54.999Z",
+      "lastSuccessfulAt": "2026-10-25T10:02:54.999Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "10/25夕の公式観測。原本・範囲と取得時刻は research/evening-20261025-source-observations.json に記録。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "ana-preorder-recovery-20261023",
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "name": "ANA国際線プリオーダー 復旧済み案内",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:03:02.901Z",
+      "lastSuccessfulAt": "2026-10-25T10:03:02.901Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文またはプロフィール表示範囲を確認。画像・全投稿の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "10/25夕の公式観測。原本・範囲と取得時刻は research/evening-20261025-source-observations.json に記録。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "chiikawa-christmas-market-official",
+      "name": "ちいかわクリスマスマーケット公式特設",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "kind": "series",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-26T23:05:20.502Z",
+      "lastSuccessfulAt": "2026-10-26T23:05:20.502Z",
+      "lastResult": "success",
+      "resultSummary": "PCの独立HTTP読取で先着販売10/31 12:00、1アカウント1申込最大4名を本文確認。レスポンス取得時刻であり原サイト更新時刻ではない。",
+      "lastFailure": null,
+      "note": "確認対象は登録URLの本文。全SNS・予約空き・在庫の網羅確認ではない。補助FAQ・券詳細の根拠は今回の調査記録に個別取得時刻とともに保存。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27朝の本文確認・経路別観測は research/morning-20261027-source-observations.json を参照。元の成功・失敗履歴は同記録のpriorSourceStatesに保持。"
+    },
+    {
+      "id": "jr-central-tsutsuurauratabi",
+      "name": "JR東海 ツツウラウラ旅公式",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T23:10:47.351Z",
+      "lastSuccessfulAt": "2026-10-25T23:10:47.351Z",
+      "lastResult": "success",
+      "resultSummary": "親クラウドで公式本文の表示範囲を確認。画像・全投稿・全情報源の網羅は主張しない。",
+      "lastFailure": null,
+      "note": "今回確認した店舗/案内の範囲のみ更新。変更の発表日時は未確認。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。"
+    }
+  ],
+  "unmatchedObservedUrlsKeptAsResearchOnly": [
+    "https://chiikawapark-tokyo.jp/news",
+    "https://chiikawa-pocket-goods-store.com/news"
+  ],
+  "fullSourceCoverageClaimed": false
+}
