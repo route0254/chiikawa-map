@@ -1,0 +1,114 @@
+{
+  "recordedAt": "2026-10-27T10:53:41.391Z",
+  "sourceMain": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+  "publishedAt": "2026-10-27T10:53:08.680Z",
+  "publishedAtBasis": "First saved exact public content match; never reporting, sync, or deployment time.",
+  "deployJobCompletedAt": "2026-10-27T10:51:56Z",
+  "corrections": [
+    {
+      "id": "bakery-novdec-novelty-20261027",
+      "listingIds": [
+        "chiikawa-bakery-tokyo",
+        "chiikawa-bakery-osaka"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T10:53:08.680Z",
+      "firstPublicMatchAt": "2026-10-27T10:53:08.680Z",
+      "deployJobCompletedAt": "2026-10-27T10:51:56Z",
+      "pr": 81,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/81",
+      "sourceHead": "51a69140a0067e9b8b80798a75c76ededea5c948",
+      "mergeSha": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+      "pagesRun": 40490782916,
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。"
+    },
+    {
+      "id": "ramen-shinsaibashi-entry-20261027",
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T10:53:08.680Z",
+      "firstPublicMatchAt": "2026-10-27T10:53:08.680Z",
+      "deployJobCompletedAt": "2026-10-27T10:51:56Z",
+      "pr": 81,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/81",
+      "sourceHead": "51a69140a0067e9b8b80798a75c76ededea5c948",
+      "mergeSha": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+      "pagesRun": 40490782916,
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "nextCheck": "通常巡回で次の日別入店案内を確認。10/27限定案内を翌日に延長しない。"
+    },
+    {
+      "id": "ana-astyle-shipping-delay-20261027",
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T10:53:08.680Z",
+      "firstPublicMatchAt": "2026-10-27T10:53:08.680Z",
+      "deployJobCompletedAt": "2026-10-27T10:51:56Z",
+      "pr": 81,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/81",
+      "sourceHead": "51a69140a0067e9b8b80798a75c76ededea5c948",
+      "mergeSha": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+      "pagesRun": 40490782916,
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。"
+    },
+    {
+      "id": "kurashiki-photo-venue-conflict-20261027",
+      "listingIds": [
+        "chiikawa-photo-2026-11-14-aeon-kurashiki"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T10:53:08.680Z",
+      "firstPublicMatchAt": "2026-10-27T10:53:08.680Z",
+      "deployJobCompletedAt": "2026-10-27T10:51:56Z",
+      "pr": 81,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/81",
+      "sourceHead": "51a69140a0067e9b8b80798a75c76ededea5c948",
+      "mergeSha": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+      "pagesRun": 40490782916,
+      "recheckDueAt": "2026-10-28T08:00:00+09:00",
+      "nextCheck": "会場表記不一致の注意と施設1F住所を公開確認済み。正確な会場は別の保留候補で再確認。"
+    }
+  ],
+  "timing": {
+    "allDataJsonMatched": 10,
+    "jsonDeepEqual": 22,
+    "official": 96,
+    "archive": 678,
+    "totalSpots": 868,
+    "collaborations": 23,
+    "collaborationsArchive": 52,
+    "archiveTransitions": 0,
+    "currentSpotUpdates": 4,
+    "collaborationUpdates": 1,
+    "newListings": 0,
+    "newPublicationCandidates": 4,
+    "sourceCount": 700,
+    "candidateCount": 352,
+    "priorPublicationTimestampsSynced": 3,
+    "priorPublicationAt": "2026-10-27T00:24:53.699Z",
+    "laforetUnchanged": true,
+    "kurashikiExactHallUnresolved": true,
+    "existingCoordinatesDatesAndTicketRulesPreserved": true,
+    "anaDelayOnlyAstyle": true,
+    "anaResaleUnderConsideration": true,
+    "historicalNahaSourceRetained": true,
+    "privateTransferAndCredentialValuesAbsent": true
+  },
+  "alreadySyncedPr80PublicationAt": "2026-10-27T00:24:53.699Z",
+  "separateVenueHoldRetained": {
+    "id": "kurashiki-photo-exact-venue-hold-20261027",
+    "state": "on_hold",
+    "recheckDueAt": "2026-10-28T08:00:00+09:00"
+  },
+  "metadataOnlyPrNotCreated": true
+}
