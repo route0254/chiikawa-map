@@ -1,0 +1,126 @@
+{
+  "validatedAt": "2026-10-28T23:28:55.943Z",
+  "base": "547e9e8705f804e75e126222c0c15748b0b7ee4d",
+  "scope": {
+    "current": [
+      "chiikawa-bakery-shop-laforet",
+      "chiikawa-restaurant-ikebukuro",
+      "chiikawa-bakery-tokyo",
+      "ramen-buta-shinsaibashi",
+      "collab-skytree-2026"
+    ],
+    "collaborations": [
+      "ana-chiikawa-jet-2026"
+    ],
+    "newListings": [
+      "popup-2026-11-11-aeon-kobekita"
+    ],
+    "newArchiveMoves": []
+  },
+  "tests": {
+    "build": {
+      "passed": true,
+      "generatedSpotPages": 872
+    },
+    "checkCommands": 49,
+    "units": {
+      "tests": 58,
+      "passed": 58,
+      "failed": 0
+    },
+    "uiSmoke": {
+      "passed": 111,
+      "startedAt": "2026-10-28T23:23:24.439Z",
+      "completedAt": "2026-10-28T23:27:40.190Z"
+    },
+    "pcMobile": {
+      "checks": 66,
+      "screenshots": 26,
+      "pageErrors": 0,
+      "advancingClock": true,
+      "normalSearchAndListInteractions": true,
+      "savedStateAndSharePreserved": true
+    },
+    "scope": {
+      "verifiedAt": "2026-10-28T23:28:38.384Z",
+      "passed": true,
+      "exitCode": 0,
+      "current": 100,
+      "archive": 678,
+      "totalSpots": 872,
+      "sources": 725,
+      "candidates": 373,
+      "newListings": 1,
+      "currentUpdates": 5,
+      "collaborationUpdates": 1,
+      "archiveMoves": 0,
+      "otherSpotsUnchanged": 866,
+      "otherCollaborationsUnchanged": 74,
+      "archiveAndSeriesSourcesUnchanged": true,
+      "existingAddedDatesPreserved": true,
+      "kobeFacilityRepresentativeCoordinates": true,
+      "kobeNotFirstAnnouncedFromUpdateDate": true,
+      "kobeDiscoveryPending": true,
+      "priorPr83TimestampsSynced": 9,
+      "priorPublicationAt": "2026-10-28T10:51:23.139Z",
+      "osakaConflictRetainedUntil": "2026-10-29T16:00:00+09:00",
+      "otherHoldsRetained": 8,
+      "newAdventHoldUnknownDate": true,
+      "holdRecheckAt": "2026-10-29T19:00:00+09:00",
+      "existingWorktreesPreserved": 54,
+      "sourceCompletionAndFailureTimesPreserved": true,
+      "trackedContentChanges": [
+        ".spot-pages-manifest.json",
+        "data/added-dates.json",
+        "data/collaborations-current.json",
+        "data/official-spots.json",
+        "data/site-meta.json",
+        "index.html",
+        "official.html",
+        "research/official-source-ledger.json",
+        "research/publication-candidate-ledger.json",
+        "sitemap.xml",
+        "spot/chiikawa-bakery-shop-laforet/index.html",
+        "spot/chiikawa-bakery-tokyo/index.html",
+        "spot/chiikawa-restaurant-ikebukuro/index.html",
+        "spot/collab-skytree-2026/index.html",
+        "spot/ramen-buta-shinsaibashi/index.html"
+      ]
+    },
+    "officialStatus": {
+      "archiveCandidates": 0,
+      "predicateUnchanged": true
+    },
+    "links": {
+      "startedAt": "2026-10-28T23:24:25.427Z",
+      "completedAt": "2026-10-28T23:24:26.302Z",
+      "passed": true,
+      "exitCode": 0,
+      "error": null,
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Seven target official evidence URLs only. Known external404 and two cloud-observed recoveries remain separate from workflow resolution.",
+      "observations": "ちい活マップ 外部リンク確認\n- 対象URL: 7件\n- 同時接続数: 6\n- タイムアウト: 12000ms\n\n確認結果\n- 正常: 7件\n- HTTPS転送: 0件\n- 要確認: 0件\n- 破損: 0件\n\n明確に破損しているリンクは見つかりませんでした。\n"
+    }
+  },
+  "priorPublicationSync": {
+    "pr": 83,
+    "candidates": 9,
+    "firstPublicMatchAt": "2026-10-28T10:51:23.139Z"
+  },
+  "limits": [
+    "Kobe coordinates represent the verified facility place feature, not the indoor hall. Facility page update date is not treated as its first announcement.",
+    "Kobe discovery timestamp was missing from the supplied core packet and is retained as null pending clarification.",
+    "Ishigaki closure is a planned November9–26 renovation at the gate store only. Existing shortage, resale consideration, shipping delay and other-store conditions preserved.",
+    "Only expired October28 entry notices and the specified October8/14/21/22 screening suspension text were removed; current walk-in access and screening resumption are not inferred.",
+    "Direct retrieval, limited text, cache and failure observations remain separate; unknown acquisition times stay null.",
+    "The two cloud-observed external-link recoveries do not establish a later successful External Links workflow; Tsuchiura404 and original URLs retained.",
+    "Custom layout checks use local Leaflet assets and transparent tiles; live tile retrieval is not claimed.",
+    "Source-head/main CI and live exact publication remain pending at local validation."
+  ],
+  "operationsDocument": {
+    "lastUpdated": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "allLocalChecksSuccessful": true,
+  "appSchemaWorkflowsAndHostingUnchanged": true
+}
