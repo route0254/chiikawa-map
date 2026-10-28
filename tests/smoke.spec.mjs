@@ -2651,7 +2651,7 @@ test(
         '#current-brand option[value="baby_castella"]'
       )
     ).toHaveText(
-      /^ちいかわベビーカステラ（1）$/
+      /^ちいかわベビーカステラ（2）$/
     );
 
     await page.locator(
@@ -2665,7 +2665,10 @@ test(
         "#current-groups .official-spot-card h4"
       )
     ).toHaveText(
-      "ちいかわベビーカステラ 小樽店"
+      [
+        "ちいかわベビーカステラ 小樽店",
+        "ちいかわベビーカステラ 京都錦店"
+      ]
     );
 
     await page.locator(

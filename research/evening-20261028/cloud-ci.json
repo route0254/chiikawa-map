@@ -1,0 +1,87 @@
+{
+  "observedAt": "2026-10-28T09:57:55.478Z",
+  "mainSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+  "checkedRunCount": 100,
+  "running": [],
+  "latestWorkflows": {
+    "dynamic/pages/pages-build-deployment": {
+      "id": 40601910429,
+      "name": "pages build and deployment",
+      "status": "completed",
+      "conclusion": "success",
+      "headSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+      "event": "dynamic",
+      "createdAt": "2026-10-27T23:24:25Z",
+      "updatedAt": "2026-10-27T23:25:02Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40601910429"
+    },
+    ".github/workflows/test-site.yml": {
+      "id": 40601910370,
+      "name": "Test site",
+      "status": "completed",
+      "conclusion": "success",
+      "headSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+      "event": "push",
+      "createdAt": "2026-10-27T23:24:25Z",
+      "updatedAt": "2026-10-27T23:27:49Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40601910370"
+    },
+    ".github/workflows/validate-data.yml": {
+      "id": 40601910364,
+      "name": "Validate spot data",
+      "status": "completed",
+      "conclusion": "success",
+      "headSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+      "event": "push",
+      "createdAt": "2026-10-27T23:24:25Z",
+      "updatedAt": "2026-10-27T23:24:36Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40601910364"
+    },
+    ".github/workflows/check-site-health.yml": {
+      "id": 40576092009,
+      "name": "Check public site health",
+      "status": "completed",
+      "conclusion": "success",
+      "headSha": "f407d43c98c1ad8c8efca9a3e261ffc652204a65",
+      "event": "schedule",
+      "createdAt": "2026-10-27T20:13:24Z",
+      "updatedAt": "2026-10-27T20:13:39Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40576092009"
+    },
+    ".github/workflows/check-links.yml": {
+      "id": 40245231045,
+      "name": "Check external links",
+      "status": "completed",
+      "conclusion": "failure",
+      "headSha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "event": "schedule",
+      "createdAt": "2026-10-25T23:32:28Z",
+      "updatedAt": "2026-10-25T23:34:45Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40245231045"
+    },
+    "dynamic/dependabot/dependabot-updates": {
+      "id": 40234731775,
+      "name": "github_actions in /. - Update #1652023634",
+      "status": "completed",
+      "conclusion": "success",
+      "headSha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "event": "dynamic",
+      "createdAt": "2026-10-25T21:16:43Z",
+      "updatedAt": "2026-10-25T21:17:23Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40234731775"
+    }
+  },
+  "unresolvedWorkflowFailures": [
+    {
+      "id": 40245231045,
+      "name": "Check external links",
+      "status": "completed",
+      "conclusion": "failure",
+      "headSha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "event": "schedule",
+      "createdAt": "2026-10-25T23:32:28Z",
+      "updatedAt": "2026-10-25T23:34:45Z",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/40245231045"
+    }
+  ]
+}
