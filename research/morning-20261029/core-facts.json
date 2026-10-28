@@ -1,0 +1,1577 @@
+{
+  "checkedAt": "2026-10-28T23:12:10.412+00:00",
+  "baseline": "main latest downloaded; CI sibling identifies 547e9e",
+  "sources": [
+    {
+      "id": "chiikawa-official-index",
+      "url": "https://chiikawa-info.jp/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "ca43f9c0f77d5d246f68c2063d51465ea0e2ed5f1c5709a4a6ee8a9bc44076b3",
+      "lastAttemptAt": "2026-10-28T23:06:34.842+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.842+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "fcc21e552d91961f502c4f85c7cbf91df82fe11eeb1f90ab1b3abcd09b0259fd",
+      "lastAttemptAt": "2026-10-28T23:06:34.848+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.848+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-cafe-list",
+      "url": "https://chiikawa-info.jp/cafe.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "c5f711686aebbce170a6113c0dcca1c82e4657c20436bad492220009242479ac",
+      "lastAttemptAt": "2026-10-28T23:06:34.809+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.809+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-exhibition-list",
+      "url": "https://chiikawa-info.jp/tenrankai.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "0099351b9b9b1ea419901d46f732e55ad9450e92fdd99d5a120362f741aafe6a",
+      "lastAttemptAt": "2026-10-28T23:06:34.700+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.700+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-popup-list",
+      "url": "https://nagano-info.jp/pus.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "0fa4cb36e54e6ea798c1eb0a4a134d71984bb9f8a1af35a71be6cbc19e5d1254",
+      "lastAttemptAt": "2026-10-28T23:06:33.801+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:33.801+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-aquarium-list",
+      "url": "https://nagano-info.jp/nagano_aq/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "3f3bbca8e8d8afe78b7f91da93172e212dcaf3e468fb02764c5f0373df314a96",
+      "lastAttemptAt": "2026-10-28T23:06:33.799+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:33.799+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-exhibition-list",
+      "url": "https://nagano-info.jp/museum.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "b81cdc41220ad983e511ad5462a169f85343c61ac96aaa128035ee21afc4d767",
+      "lastAttemptAt": "2026-10-28T23:06:33.721+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:33.721+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-fushimi-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "42f7de34c7c45a0e8eec4c7c4656f8f3476df5b393c0093ced5bc9490cbb9203",
+      "lastAttemptAt": "2026-10-28T23:06:34.603+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.603+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-kawagoe-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "ebbef20db06ea34c5cc8119f57b7c36bb152e6d98f3de06f5925111674402ed6",
+      "lastAttemptAt": "2026-10-28T23:06:34.536+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.536+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-otaru-news",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "69e6916b2a307f45f8e5e55b49ff454ca48b1df5ab1be7404b649b67da337b03",
+      "lastAttemptAt": "2026-10-28T23:06:34.713+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:34.713+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-official-index",
+      "url": "https://nagano-info.jp/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "6b9180a6ed45439b85ca4d5d024629185c3b41f42dfff0d153a588266402ec7e",
+      "lastAttemptAt": "2026-10-28T23:06:36.754+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:36.754+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "0bfa72ccac34bcaf63e58f2fbd59af00e0c2f7acc5ab905d32731ffc8dd0fd45",
+      "lastAttemptAt": "2026-10-28T23:06:37.201+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:37.201+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "venue-nagano-market-popup-2026-09-18-a-wakayama",
+      "url": "https://nagano-info.jp/popupshop/a_wakayama/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "fefe20dad36246a0493210861d7e7671b8bec171265eaa0f2e20226c56fe11b1",
+      "lastAttemptAt": "2026-10-28T23:06:36.965+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:36.965+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-kawagoe-hours-20261017",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2406/",
+      "lastResult": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "lastAttemptAt": "2026-10-28T23:06:41.374+00:00",
+      "lastSuccessfulAt": "2026-10-19T23:01:52.016+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-23-ebina-marui-official",
+      "url": "https://nagano-info.jp/popupshop/ebina/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "f368ff5372e2a181898718ea367b359f91243c72550af1522cca0f777e97f770",
+      "lastAttemptAt": "2026-10-28T23:06:36.920+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:36.920+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "ramen-buta-ikebukuro-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_ikebukuro?area=029688",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "2f42ea571a725c485c8cc3f05c43bf645673d0b31d89b826d3f7f392837c9afa",
+      "lastAttemptAt": "2026-10-28T23:06:40.465+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:40.465+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "ramen-buta-shibuya-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "49f5bbec4c362b891ec85102afb58369e74375d734dbbbb60a5156b31dd3777f",
+      "lastAttemptAt": "2026-10-28T23:06:40.477+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:40.477+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-reservation-official",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "a61a31624cec90a8ef20db598296648fad94e0e3f47926ff84ab371590ccaa36",
+      "lastAttemptAt": "2026-10-28T23:06:40.453+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:40.453+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-restaurant-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "00ab1a4d0926a3647f3769a7a140c8d960dc4c6030c4e4bf4edecf05714d91a4",
+      "lastAttemptAt": "2026-10-28T23:06:40.460+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:40.460+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-fushimi-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2443/",
+      "lastResult": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "lastAttemptAt": "2026-10-28T23:06:41.609+00:00",
+      "lastSuccessfulAt": "2026-10-13T07:52:04+09:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-kawagoe-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2436/",
+      "lastResult": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "lastAttemptAt": "2026-10-28T23:06:41.600+00:00",
+      "lastSuccessfulAt": "2026-10-13T07:52:03+09:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-otaru-reservation-20261010",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/02/post-2429/",
+      "lastResult": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "lastAttemptAt": "2026-10-28T23:06:41.540+00:00",
+      "lastSuccessfulAt": "2026-10-13T07:52:04+09:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-information",
+      "url": "https://chiikawabakery.jp/information/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "7434b6033291553aef2fc74d99b879dd2a15e414aa1c40f29fbdca51e84b7884",
+      "lastAttemptAt": "2026-10-28T23:06:41.169+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:41.169+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-information-osaka",
+      "url": "https://chiikawabakery.jp/information-osaka/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "b079ae541ee3b329d2c8d65570d31609ff112c5c07489151756e09aa00322b35",
+      "lastAttemptAt": "2026-10-28T23:06:41.282+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:41.282+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-information-popup-01",
+      "url": "https://chiikawabakery.jp/information-popup_01/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "94ae636a714da34f2e8d6eb5bf367643c295194ecd86f84178b0f20d708510c5",
+      "lastAttemptAt": "2026-10-28T23:06:45.117+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:45.117+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-news",
+      "url": "https://chiikawabakery.jp/news/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "897c4231d29eb68e1c141865dc6a73efb19e90f7df9159b2f8aedc1b3583e008",
+      "lastAttemptAt": "2026-10-28T23:06:45.127+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:45.127+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-topics",
+      "url": "https://chiikawabakery.jp/topics/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "cc6d22eb6a6d3d9cb1ce9127280deebea5908ab54f4d999b9bf0d15a0843f2ec",
+      "lastAttemptAt": "2026-10-28T23:06:45.150+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:45.150+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-bakery-2nd-anniversary",
+      "url": "https://chiikawabakery.jp/topics/20260928/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "70cde405a56e359735fe10465c78d3b2a57bd6f62d7426feab0d9794ddf3676f",
+      "lastAttemptAt": "2026-10-28T23:06:45.157+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:45.157+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-restaurant-tokyo-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_tokyo?area=029439",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "47ba696c3b534dff8253fafd037ba53320dc8c81014f623b27240b2a9ae98d83",
+      "lastAttemptAt": "2026-10-28T23:06:46.357+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.357+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-information",
+      "url": "https://cafe.parco.jp/event/information/chiikawarestaurant_okinawa?area=030528",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "2fdea451d0e61bba953f87e46d2ea20260756ca8629eeb26f1e3d84de0ba609d",
+      "lastAttemptAt": "2026-10-28T23:06:46.424+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.424+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-restaurant-okinawa-reservation",
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_okinawa?area=030528",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "722c8e5752e3e2cf85b122f0a0fc30ca875edad02217c07f4f8ceaaec4bd5c3f",
+      "lastAttemptAt": "2026-10-28T23:06:46.373+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.373+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-market-shinsaibashi-official",
+      "url": "https://nagano-info.jp/tenpo_nm/shinsaibashi/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "7164a7e3f845f3f1fda602d068df99ad899e858fea7470c422b98a0a6d6058e6",
+      "lastAttemptAt": "2026-10-28T23:06:46.403+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.403+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-market-ginza-official",
+      "url": "https://nagano-info.jp/tenpo_nm/ginza/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "543c1d7da8629185641ac6ea2ae1bb9a9c55af5faf3696251991848ddfb79eb3",
+      "lastAttemptAt": "2026-10-28T23:06:46.304+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.304+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-market-sapporo-official",
+      "url": "https://nagano-info.jp/tenpo_nm/sapporo/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "351d2e9f15551892dfbc98f6b80c2d0c5ae3afe1e9009653f79c11eada05ce4b",
+      "lastAttemptAt": "2026-10-28T23:06:46.340+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.340+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-market-entry-general",
+      "url": "https://nagano-info.jp/tenpo_nm/goannai.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "646902f3c9924927fa3e969b7e3446adaac0b1d5f83ab7f99390ce5b5f001187",
+      "lastAttemptAt": "2026-10-28T23:06:46.134+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:46.134+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "nagano-market-shop-x",
+      "url": "https://x.com/nagano_mkt_shop",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "9b1c7daba875aafb6e9420329883f0fb7b6276c4c71e4a706593328f7b01c85c",
+      "lastAttemptAt": "2026-10-28T23:06:50.841+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:50.841+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-71b2d641d1",
+      "url": "https://chiikawa-info.jp/mck_cafe.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "f7eff6fc08ccf1b731f7593e5f9f76dabf999828235157aebf641ebcb1ebd88b",
+      "lastAttemptAt": "2026-10-28T23:06:49.823+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.823+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-82d181891d",
+      "url": "https://chiikawa-info.jp/p26/mck_scpus/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "c04e6863e0df265998d8638fe143863b375fa5173a3a9136ca1236d180c76880",
+      "lastAttemptAt": "2026-10-28T23:06:49.641+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.641+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-978ffe9215",
+      "url": "https://chiikawa-info.jp/p26/ck_tokyo/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "1e2d812b75c180b06640191950af9b41e11bf076f50c1a09789484565d949b8e",
+      "lastAttemptAt": "2026-10-28T23:06:49.889+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.889+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-9fdf5778d7",
+      "url": "https://chiikawa-info.jp/ckbaby.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "0c5f78f27e8d45dc165ce260134828e172ad9704367c59e0a1bd684e4e3c70b7",
+      "lastAttemptAt": "2026-10-28T23:06:49.896+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.896+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-5932274e7e",
+      "url": "https://chiikawa-info.jp/ck_pocket.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "1b48be1887080f1e7df67929d3fd844544dee84715666b5ff8282159c68c6369",
+      "lastAttemptAt": "2026-10-28T23:06:49.632+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.632+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-8759f68d56",
+      "url": "https://chiikawa-info.jp/p25/ck_sanrio/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "6a4bff85bec6e60b66ac8919d51b6c8aecca98caa7f88042d463d67eb200e7b8",
+      "lastAttemptAt": "2026-10-28T23:06:49.873+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.873+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f14e0e6fed",
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "b4d81e5ac5c94e758504c4cf7af926fa3cf564c8e427c1d33d4906085aa30dc4",
+      "lastAttemptAt": "2026-10-28T23:06:49.821+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.821+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-fb3fce6c45",
+      "url": "https://chiikawa-info.jp/tenshi_akuma.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "9c2374bde41bf5b97c84195153f183c2d99b4a9c413c82470448c78aa196494f",
+      "lastAttemptAt": "2026-10-28T23:06:49.876+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.876+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-9ec22af2cf",
+      "url": "https://chiikawa-info.jp/wakuwaku.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "6aed7221722558b8e1f1956f3d96ed167c9a6bcfba1a88802c69286d46776d08",
+      "lastAttemptAt": "2026-10-28T23:06:49.964+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:49.964+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "805c6be3b546c0aa6b391f72e442d3962542c9d399e5cb453c9cb3d77dc35f00",
+      "lastAttemptAt": "2026-10-28T23:06:52.912+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.912+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "36101ce6d148ffcbd84f5d730f668c38e3eade946c1034b98d2a2b41ac71aac4",
+      "lastAttemptAt": "2026-10-28T23:06:52.843+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.843+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-18ba673ff0",
+      "url": "https://chiikawa-info.jp/p26/ck_baby2/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "eb920f07f2e8e12282a67ae6ce06c8769211147acae404ec5e0f3466dc94a9cb",
+      "lastAttemptAt": "2026-10-28T23:06:52.929+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.929+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-c1f1b175b2",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket032608/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "8ea4d5bbb22b67090273d7882791957d1aee68c8b8e0874e74f4e081e9d20d5e",
+      "lastAttemptAt": "2026-10-28T23:06:53.050+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:53.050+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "be9484fddd87ab6157dceb40e50e567ef6d0baa4c5d49d5e68de3c89821dbc12",
+      "lastAttemptAt": "2026-10-28T23:06:52.929+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.929+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "9cdb1a769a996fcaa9a2a1080378a3f28c5fea86f7f606ef2ed1ef4f5c404a2c",
+      "lastAttemptAt": "2026-10-28T23:06:52.818+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.818+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "3179f5c67e4bf570ea52d4c37b740267c87cd3f2b6121a89c2feffc8066b8c55",
+      "lastAttemptAt": "2026-10-28T23:06:52.905+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.905+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f5e27e8bd8",
+      "url": "https://chiikawa-info.jp/p26/pus_mito/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "616a9bb5fe38200f1c356a56e896c13f57bf9ba5213f336f3f9915a5aadd0fec",
+      "lastAttemptAt": "2026-10-28T23:06:52.901+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.901+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-2db8c290c8",
+      "url": "https://chiikawa-info.jp/p26/pus_tuda/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "aaf1945a72475acdab1bf3f02bbd872420949dd4903c959c0dfe37701fa640e0",
+      "lastAttemptAt": "2026-10-28T23:06:52.849+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.849+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-64a1504949",
+      "url": "https://chiikawa-info.jp/p26/pus_aomr/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "71b80d5a67305be8c6dd68e145c491d8cde1b5275c494c8fdd95cedebb82417b",
+      "lastAttemptAt": "2026-10-28T23:06:52.818+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:52.818+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-f722193f40",
+      "url": "https://chiikawa-info.jp/p26/pus_asag/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "e2ad30fb7297b696f73ea73ead803250c53db389da1be1b4ee3bda386bc85a9d",
+      "lastAttemptAt": "2026-10-28T23:06:56.065+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.065+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-1a31b404e0",
+      "url": "https://chiikawa-info.jp/p26/pus_anhm/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "d39005a236398bee4bff0b7602a031e741684f44f1d13412c9771d884d9d146c",
+      "lastAttemptAt": "2026-10-28T23:06:56.066+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.066+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-8226b16185",
+      "url": "https://chiikawa-info.jp/p26/pus_ygtm/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "901af8baccb1407bc2ca1acd939d911b30222b38d3fd74e2d619eddaccecc12a",
+      "lastAttemptAt": "2026-10-28T23:06:56.018+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.018+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-916f92e32b",
+      "url": "https://chiikawa-info.jp/p26/pus_naha/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "5fec97a8e38046d3de1b9725b4b109c4417f6fcd7bf086b2c3f4453d50e39694",
+      "lastAttemptAt": "2026-10-28T23:06:56.100+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.100+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "url": "https://chiikawa-info.jp/magical_s.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "8bec4762c9639fdb80fcd251b50a618b4626624f2e135c79252ee5db557990bb",
+      "lastAttemptAt": "2026-10-28T23:06:56.113+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.113+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-a442c90398",
+      "url": "https://chiikawa-info.jp/p25/ck_mlb/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "3f4c0bee8658259e6fc4568e67c06491364ee3fd6f7291d3e895b6c2acaeacb3",
+      "lastAttemptAt": "2026-10-28T23:06:56.096+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.096+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-59c77d83bc",
+      "url": "https://chiikawa-info.jp/p26/ck_baby/aomori/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "2aa78f66c674ded463a0435b0ab0354c6b52cbd475463ae388081e5275801740",
+      "lastAttemptAt": "2026-10-28T23:06:56.133+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:56.133+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "evening-www-chiikawamogumogu-jp",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "cd06f738648ac7a83c79fd526fb31b853acea5082f60bc8a84b8d03f9a3a7480",
+      "lastAttemptAt": "2026-10-28T23:06:58.759+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.759+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "morning-www-chiikawamogumogu-jp-2025-10-30-post-1330",
+      "url": "https://www.chiikawamogumogu.jp/2025/10/30/post-1330/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "7656f981da484bde0a215b6cf8dadceebad76aa070dc4ddba9ef9504b668c67d",
+      "lastAttemptAt": "2026-10-28T23:06:58.021+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.021+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-kawagoe-store-news",
+      "url": "https://www.chiikawamogumogu.jp/store/kawagoe/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "de2ded866747d62cb9c9945f17abc08f0e52b66ed22ca7e63e0b26149b7de6c2",
+      "lastAttemptAt": "2026-10-28T23:06:58.406+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.406+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "morning-https-www-chiikawamogumogu-jp-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "787de0300d2e931d4dadb7e5d76063500897b7cb9874da85d7fccc9510af262f",
+      "lastAttemptAt": "2026-10-28T23:06:58.407+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.407+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-otaru-category-news",
+      "url": "https://www.chiikawamogumogu.jp/otaru/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "aa098fd8cceb7d4f7ab37616bae9282e83a47ffc4a4bbd691dc923ae55cd6a4a",
+      "lastAttemptAt": "2026-10-28T23:06:58.022+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.022+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "kamakura-recruitment",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "612420a18277a3f56ef4cb7da14a8196a54d6a00b0d56f92a727a9f4a2b991ab",
+      "lastAttemptAt": "2026-10-28T23:07:00.222+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:07:00.222+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "telacoya-shop",
+      "url": "https://www.telacoya.co.jp/company/shop-a/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "4a8f1fd6e77484f2c06885695ec1b62330dd959937fd71d4ccf9ca8dc1e5ade6",
+      "lastAttemptAt": "2026-10-28T23:07:01.663+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:07:01.663+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "evening-existing23-mogumogu-kawagoe-1023",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/23/post-2486/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "14570929f6f1dc315a215be5a34354874e8932121ae6da758817758d88be3559",
+      "lastAttemptAt": "2026-10-28T23:06:58.177+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.177+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "evening-existing23-mogumogu-fushimi-1023",
+      "url": "https://www.chiikawamogumogu.jp/2026/10/23/post-2472/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "7e0beef31eb62fb0e37544b4217b38c01fbf8f2836257b4af003c99c22fbbedf",
+      "lastAttemptAt": "2026-10-28T23:06:58.407+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.407+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "mogumogu-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "787de0300d2e931d4dadb7e5d76063500897b7cb9874da85d7fccc9510af262f",
+      "lastAttemptAt": "2026-10-28T23:06:58.167+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:58.167+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "bakery-osaka-x",
+      "url": "https://x.com/chiikawabakeryO",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "dcfae3d2b4b1acedee983c15687877a48f45cc2060454923b97fd82e1539e300",
+      "lastAttemptAt": "2026-10-28T23:07:03.107+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:07:03.107+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "bakery-x",
+      "url": "https://x.com/chiikawabakery",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "03f017ba3c74a964cd1fc622587b00e303fbde53a184fdade7059c9b25c07274",
+      "lastAttemptAt": "2026-10-28T23:07:02.736+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:07:02.736+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "ramen-sh-x",
+      "url": "https://x.com/chiikawaramenSH",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "56ca2291660954be7196c8167f27a5bdb54bee3017846c1f1e70c46b23d2c267",
+      "lastAttemptAt": "2026-10-28T23:07:03.027+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:07:03.027+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "restaurant-ikb-x",
+      "url": "https://x.com/THEGUEST_ikb",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "e2e7c5871e0c11eb0ec9c1ae80190bfb575ebd17d180ce2a78034a93917d8cfc",
+      "lastAttemptAt": "2026-10-28T23:07:02.656+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:07:02.656+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "chiikawa-author-x",
+      "url": "https://x.com/ngnchiikawa",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "dfc16b550aa28d4fee99cde3e85290147e9024ee5116569f821e112f8945c503",
+      "lastAttemptAt": "2026-10-28T23:08:34.121+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:34.121+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "chiikawa-publicity-x",
+      "url": "https://x.com/chiikawa_kouhou",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "42383a172d0b810fa7451e071080431c813b363eb0f2bd1b00533d64c1947b7f",
+      "lastAttemptAt": "2026-10-28T23:08:34.178+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:34.178+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "nagano-author-x",
+      "url": "https://x.com/ngntrtr",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "e84a98bbbed1ecefd38c7661e24a36e092751c1b8abd96c48863b505c0646c74",
+      "lastAttemptAt": "2026-10-28T23:08:35.302+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:35.302+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "chiikawa-park-news",
+      "url": "https://chiikawapark-tokyo.jp/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "3e45c1ef65b2426d3154ef2f9a10e8e0d6b273f212debe6430cfd54c56d62a62",
+      "lastAttemptAt": "2026-10-28T23:08:33.586+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:33.586+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-yaki-official",
+      "url": "https://www.chiikawa-yaki.com/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "2331325fe506d309c6b6f2e013fea726c4aa0438bb67c318c9979a945c1d4d74",
+      "lastAttemptAt": "2026-10-28T23:08:34.187+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:34.187+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawaland-entry-updates-x",
+      "url": "https://x.com/chiikawa_land",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "32a9934554f77dc4295025a1af495b0a7e24413d4b1998bc1208d153ca124677",
+      "lastAttemptAt": "2026-10-28T23:08:34.138+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:34.138+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "chiikawa-park-ticket",
+      "url": "https://chiikawapark-tokyo.jp/ticket/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "64d9fd49b934c233cad181f42a451a837ab6e6d023a332b981e02ce732a0defd",
+      "lastAttemptAt": "2026-10-28T23:08:33.604+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:33.604+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-kanazawa",
+      "url": "https://chiikawa-info.jp/chiikawaland/kanazawa/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "88613cb4fcf5ad19e5a050b704d79bcf5e28d9c18341071e49426e28f4970493",
+      "lastAttemptAt": "2026-10-28T23:08:36.033+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.033+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-ikebukuro",
+      "url": "https://chiikawa-info.jp/chiikawaland/ikebukuro/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "0cc56c1eaed049b8c6f3b11677d5ab97eef826d74330b535de45f6c64d893fe3",
+      "lastAttemptAt": "2026-10-28T23:08:36.027+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.027+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-koshigaya",
+      "url": "https://chiikawa-info.jp/chiikawaland/koshigaya/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "94b8d6d22411f7609b2e40d7211b3fce09b192b52dc8c715ed60a78eb14c01a1",
+      "lastAttemptAt": "2026-10-28T23:08:36.034+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.034+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-popup-2026-09-11-amu-oita",
+      "url": "https://chiikawa-info.jp/chiikawaland/oita/index.html",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "15f307b9f7d7db27cca2ecad378cb6f7446e56e3ff97244e7fa7a29fe80f5a05",
+      "lastAttemptAt": "2026-10-28T23:08:36.016+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.016+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-osaka-umeda",
+      "url": "https://chiikawa-info.jp/chiikawaland/osaka/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "83efc17a01bc891ad4debe9d800d184c506534a2a8cc3db23fdc92442abc9000",
+      "lastAttemptAt": "2026-10-28T23:08:36.277+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.277+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-harajuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/harajuku/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "d5bf6d2957145ce970d3e9bbfafe645cf06171d8b99ce1eb801c36b40495fdea",
+      "lastAttemptAt": "2026-10-28T23:08:36.025+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.025+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-fukuoka",
+      "url": "https://chiikawa-info.jp/chiikawaland/fukuoka/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "e71f355c264e3633e59cc3e4e88e0e873b12a701fa5a997b58d76bf732bd0a4b",
+      "lastAttemptAt": "2026-10-28T23:08:36.028+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.028+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-kyoto",
+      "url": "https://chiikawa-info.jp/chiikawaland/kyoto/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "d012d9e8e8b6833450d821b83f103a7b6cca4ea2dd6a443d8c55f4546cc6afe2",
+      "lastAttemptAt": "2026-10-28T23:08:36.035+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.035+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-tokyo-station",
+      "url": "https://chiikawa-info.jp/chiikawaland/tokyo/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "ed9fa645debd01a47fdbd8074af459339604b18c1eac69c6697974c57dbceab2",
+      "lastAttemptAt": "2026-10-28T23:08:36.036+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.036+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-solamachi",
+      "url": "https://chiikawa-info.jp/chiikawaland/solamachi/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "5a2fc543c06afda090a58415cb5a47bd595aa795815e744f063e063f25dcbfbc",
+      "lastAttemptAt": "2026-10-28T23:08:36.025+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:36.025+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-nagoya",
+      "url": "https://chiikawa-info.jp/chiikawaland/nagoya/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "99bd29d3ebb6a2e4ac5a43f84bf7efd4281d1e5c5319c3056378270db47f9983",
+      "lastAttemptAt": "2026-10-28T23:08:41.750+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.750+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-sendai",
+      "url": "https://chiikawa-info.jp/chiikawaland/sendai/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "4bb8235a92e82cea10481c0899db2570dcab9b9b3e5005453ade5983025c4940",
+      "lastAttemptAt": "2026-10-28T23:08:41.797+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.797+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-sapporo",
+      "url": "https://chiikawa-info.jp/chiikawaland/sapporo/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "86133a53b863ff6596e636ef40bbeb4b06eb5e6a889178dd89f4214f628a7f51",
+      "lastAttemptAt": "2026-10-28T23:08:41.800+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.800+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-yokohama",
+      "url": "https://chiikawa-info.jp/chiikawaland/yokohama/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "fe8af513aeff8469abd8baa28b18dbf9d3302a1b235ce49f3d2efc9c54e49fd0",
+      "lastAttemptAt": "2026-10-28T23:08:41.808+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.808+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-hiroshima",
+      "url": "https://chiikawa-info.jp/chiikawaland/hiroshima/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "0545e79c896c24bec63674efeef6b7352e931eb23ad9caee9c9b64b565094301",
+      "lastAttemptAt": "2026-10-28T23:08:41.804+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.804+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-shinsaibashi",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinsaibashi/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "61d9a739fa21c75a696f6d926108afb5f84f23c5ad7da86f92442b0133787732",
+      "lastAttemptAt": "2026-10-28T23:08:41.797+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.797+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "individual-chiikawaland-shinjuku",
+      "url": "https://chiikawa-info.jp/chiikawaland/shinjuku/",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "4f56b13ee545a1506bf4995aaf815b7e1ee5c11186576bfb3ec9db5310a372e1",
+      "lastAttemptAt": "2026-10-28T23:08:41.801+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.801+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "chiikawa-park-store-official-x",
+      "url": "https://x.com/chiikawapark_s",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "b3aad27c0f1cfbc744dfac11f9cc01301523f1b5671f707a4348fcad906183e4",
+      "lastAttemptAt": "2026-10-28T23:08:41.750+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:41.750+00:00",
+      "coverageNote": "公開タイムラインの取得できた一部投稿のみ。全投稿の網羅は未確認。"
+    },
+    {
+      "id": "post-2115391961171726485",
+      "url": "https://x.com/chiikawabakery/status/2115391961171726485",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "05c5d5f6f44d28b3579821d067b8a8b46b6396f3d95332a354b3c66ad5f329ee",
+      "lastAttemptAt": "2026-10-28T23:08:12.414+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:12.414+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "post-2115440217364861165",
+      "url": "https://x.com/THEGUEST_ikb/status/2115440217364861165",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "a073ec413824c9ddff5c599f9715a14cd6a5d664db4c088b89a2eb13ffe9a107",
+      "lastAttemptAt": "2026-10-28T23:08:23.698+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:23.698+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "post-2115383142798553197",
+      "url": "https://x.com/chiikawabakery/status/2115383142798553197",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "255cdc0229665be27f70745096317a7f4ecb10458e0022ef231f30c68261fafc",
+      "lastAttemptAt": "2026-10-28T23:08:29.847+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:29.847+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    },
+    {
+      "id": "post-2115398171329548375",
+      "url": "https://x.com/chiikawabakery/status/2115398171329548375",
+      "httpStatus": 200,
+      "lastResult": "success",
+      "sha256": "cafe901b0820d323200a414308ffc4ff3aa61b727df190a86c75336f781afb79",
+      "lastAttemptAt": "2026-10-28T23:08:33.464+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:08:33.464+00:00",
+      "coverageNote": "取得できた本文の確認。サイト全体の網羅を意味しない。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "chiikawa-bakery-shop-laforet-entry-20261029",
+      "title": "ラフォーレ10月29日整理券入場",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:chiikawa-bakery-shop-laforet-entry-20261029",
+      "sourceIds": [
+        "post-2115391961171726485"
+      ],
+      "officialAnnouncedAt": "2026-10-28",
+      "discoveredAt": "2026-10-28T23:07:02.736+00:00",
+      "eventStartsAt": "2026-10-29",
+      "eventEndsAt": "2026-10-29",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-29T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2115391961171726485",
+          "observedAt": "2026-10-28T23:08:12.414+00:00",
+          "summary": "2026年10月29日は整理券による入場です。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1日1人1回です。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "現行99件・履歴678件・collaborations23件と照合。既存ID保持。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "2026年10月29日は整理券による入場です。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1日1人1回です。",
+      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
+      "recheckDueAt": "2026-10-30T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-restaurant-ikebukuro-entry-20261029",
+      "title": "池袋レストラン10月29日満席",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-restaurant-ikebukuro:chiikawa-restaurant-ikebukuro-entry-20261029",
+      "sourceIds": [
+        "post-2115440217364861165"
+      ],
+      "officialAnnouncedAt": "2026-10-28",
+      "discoveredAt": "2026-10-28T23:07:02.656+00:00",
+      "eventStartsAt": "2026-10-29",
+      "eventEndsAt": "2026-10-29",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-29T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/THEGUEST_ikb/status/2115440217364861165",
+          "observedAt": "2026-10-28T23:08:23.698+00:00",
+          "summary": "2026年10月29日のレストランは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-restaurant-ikebukuro"
+        ],
+        "note": "現行99件・履歴678件・collaborations23件と照合。既存ID保持。"
+      },
+      "listingIds": [
+        "chiikawa-restaurant-ikebukuro"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "2026年10月29日のレストランは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。",
+      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
+      "recheckDueAt": "2026-10-30T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-bakery-tokyo-expired-notice-20261029",
+      "title": "10月28日限定入場注記の期限経過整理",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-tokyo:chiikawa-bakery-tokyo-expired-notice-20261029",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-28T23:06:37.201+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-29T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-28T23:06:37.201+00:00",
+          "summary": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "現行99件・履歴678件・collaborations23件と照合。既存ID保持。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
+      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
+      "recheckDueAt": "2026-10-30T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-expired-notice-20261029",
+      "title": "10月28日限定入場注記の期限経過整理",
+      "kind": "listing_update",
+      "targetKey": "ramen-buta-shinsaibashi:ramen-buta-shinsaibashi-expired-notice-20261029",
+      "sourceIds": [
+        "ramen-buta-shinsaibashi-reservation-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-28T23:06:40.453+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-29T10:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shinsaibashi?area=029689",
+          "observedAt": "2026-10-28T23:06:40.453+00:00",
+          "summary": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "ramen-buta-shinsaibashi"
+        ],
+        "note": "現行99件・履歴678件・collaborations23件と照合。既存ID保持。"
+      },
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
+      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
+      "recheckDueAt": "2026-10-30T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "bakery-osaka-january-sale-year-conflict-20261028",
+      "title": "大阪ベーカリー2027年1月券 発売年の公式表記不一致",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-osaka:bakery-osaka-january-sale-year-conflict-20261028",
+      "sourceIds": [
+        "official-post-2115368214985396503",
+        "chiikawa-bakery-reservation",
+        "official-observation-33f24c9a2968"
+      ],
+      "officialAnnouncedAt": "2026-10-28",
+      "discoveredAt": "2026-10-28T09:58:08.466+00:00",
+      "eventStartsAt": "2027-01-02",
+      "eventEndsAt": "2027-01-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakeryO/status/2115368214985396503",
+          "observedAt": "2026-10-28T10:00:18.561+00:00",
+          "summary": "公式Xは2027年1/2–1/31分を10/29(木)17時先着発売と案内。ただし予約ページ大阪画像は販売開始年2027と表記。年を推測修正せず、X案内と画像の年不一致を明記して公式最新情報確認へ誘導。既存10〜12月完売・ベーカリー券所持者のみ・隣接POPUP無料/キャッシュレス等は保持。",
+          "recordPath": "research/evening-20261028-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-28T09:57:55.864+00:00",
+          "summary": "公式Xは2027年1/2–1/31分を10/29(木)17時先着発売と案内。ただし予約ページ大阪画像は販売開始年2027と表記。年を推測修正せず、X案内と画像の年不一致を明記して公式最新情報確認へ誘導。既存10〜12月完売・ベーカリー券所持者のみ・隣接POPUP無料/キャッシュレス等は保持。",
+          "recordPath": "research/evening-20261028-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/27b68224cf3131d4d85470c69c24dce5.png",
+          "observedAt": "2026-10-28T10:10:56.618Z",
+          "summary": "公式Xは2027年1/2–1/31分を10/29(木)17時先着発売と案内。ただし予約ページ大阪画像は販売開始年2027と表記。年を推測修正せず、X案内と画像の年不一致を明記して公式最新情報確認へ誘導。既存10〜12月完売・ベーカリー券所持者のみ・隣接POPUP無料/キャッシュレス等は保持。",
+          "recordPath": "research/evening-20261028-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-28T23:06:37.201+00:00",
+          "summary": "大阪予約画像は今回も発売開始年2027、公式Xは10/29(木)17時。画像を目視確認したが不一致未解消。JapanTicketはHTTP403で確認不可。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/wp-content/uploads/2026/10/27b68224cf3131d4d85470c69c24dce5.png",
+          "observedAt": "2026-10-28T23:07:21.279+00:00",
+          "summary": "ダウンロードした公式画像を目視。2027年10月29日(木)17:00表記が残存。observedAtは取得完了ファイル時刻。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-osaka"
+        ],
+        "note": "main acf5596c95cc5f8868cb18ea6b6e43f5db9e4583 の現行・履歴・同一企画と照合。既存ID維持、別開催回は新規ID。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-osaka"
+      ],
+      "state": "on_hold",
+      "priority": "high",
+      "decision": "大阪画像の発売年2027と対象期間・X日付の不整合。公式リンク先JapanTicketはweb/direct共HTTP403、年の独立検証不可。断定年を構造化しない。",
+      "nextCheck": "本日17時案内前に公式X・画像・購入先を再確認。断定年を構造化しない。",
+      "recheckDueAt": "2026-10-29T16:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-mogumogu-kamakura-opening-202612",
+      "title": "ちいかわもぐもぐ本舗 鎌倉店（開業予定の調査候補）",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-mogumogu-kamakura:opening-2026",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-10-21T23:00:30.703+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "publishedAt": null,
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/23朝の最新main/live一致公開3JSON98/671/23件にも鎌倉既存IDなし。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "evidence": [
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式採用サイト原本は現在公開されていません。開業時期・住所を原本から再取得できず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiifan.com/articles/404.html",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "二次情報に12月予定・鎌倉市小町2-10-18 二ノ鳥居ビル1F、公式求人への出典リンク。一次確定ではない。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.telacoya.co.jp/",
+          "observedAt": "2026-10-21T23:00:30.703+00:00",
+          "summary": "公式企業サイト→中途採用がtelacoya-jobs.net、ニュースに鎌倉告知は見当たらず。",
+          "recordPath": null
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T10:06:32.724+00:00",
+          "summary": "公式求人原本は200応答だが現在公開されていません。公式ニュース・店舗一覧にも鎌倉開業の新しい一次告知なし。",
+          "recordPath": "research/evening-existing-2026-10-22-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-22T23:05:13.776+00:00",
+          "summary": "求人原本は200だが「現在公開されていません」。公式ニュース・TOP店舗・寺子屋企業TOPに鎌倉正式開業告知なし。",
+          "recordPath": "research/morning-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-23T10:07:56.328+00:00",
+          "summary": "公式採用ページは現在非公開と表示。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-23T10:07:59.285+00:00",
+          "summary": "公式店舗一覧に鎌倉もぐもぐの正式開業告知を確認できない。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/",
+          "observedAt": "2026-10-23T10:07:55.326+00:00",
+          "summary": "公式店舗一覧に鎌倉なし。川越・伏見の条件変更告知は別候補。",
+          "recordPath": "research/evening-new-2026-10-23-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-23T22:57:54.596Z",
+          "summary": "公式求人は現在公開されていません。開業日・住所・予約開始を確定できない。 朝の提供観測記録として保存。元の個別本文ファイルは本ZIP未同梱。",
+          "recordPath": "research/evening-20261024/morning-carryover.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-23T22:57:54.299Z",
+          "summary": "企業公式店舗一覧に鎌倉もぐもぐの正式開業告知なし。 朝の提供観測記録として保存。元の個別本文ファイルは本ZIP未同梱。",
+          "recordPath": "research/evening-20261024/morning-carryover.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": null,
+          "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
+          "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": null,
+          "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
+          "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": null,
+          "summary": "10/24夕のweb観測はキャッシュを含み、個別取得完了時刻不明。正式開業日・予約開始の新しい一次確定には至らず。求人の12月予定や勤務時間を営業日・営業時間に転用しない。",
+          "recordPath": "research/evening-20261024/new-research-record.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-24T23:02:09.628Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-24T23:02:11.117Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-24T23:01:50.971Z",
+          "summary": "公式ニュースに鎌倉開業告知なし、運営店舗一覧に該当店の開業日なし、求人は現在非公開。取得本文で正式開業日を確認できないため推定せず保留。",
+          "recordPath": "research/morning-20261025-source-observations.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-25T10:01:53.238Z",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/kamakura-recruitment.txt"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-25T10:01:59.321Z",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/telacoya-shop.txt"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-25T10:01:26.554Z",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/morning-https-www-chiikawamogumogu-jp-news.txt"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/",
+          "observedAt": "2026-10-25T10:01:56.252Z",
+          "summary": "求人は現在非公開。ブランドニュース・店一覧と運営店一覧に鎌倉もぐもぐ正式開業告知は確認できない。",
+          "recordPath": "research/evening-20261025/new-sources/bodies/evening-www-chiikawamogumogu-jp.txt"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-25T23:10:36.116Z",
+          "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+          "recordPath": "research/morning-20261026/cloud/event-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-25T23:10:40.189Z",
+          "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/1d2ddb136ce5.html"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-25T23:10:43.639Z",
+          "summary": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+          "recordPath": "research/morning-20261026/cloud/event-checks/5af3d6edc2aa.html"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウド観測。正式開業・予約日の一次確定なし。店舗案内は先週のキャッシュ、求人は掲載終了。未知はnullを維持。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウド観測。正式開業・予約日の一次確定なし。店舗案内は先週のキャッシュ、求人は掲載終了。未知はnullを維持。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウド観測。正式開業・予約日の一次確定なし。店舗案内は先週のキャッシュ、求人は掲載終了。未知はnullを維持。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-27T10:02:48+00:00",
+          "summary": "直接200本文は現在公開されていません。運営店舗一覧も鎌倉もぐもぐ未掲載、ブランドニュース最新10/23。正式開業日・予約開始未確定。",
+          "recordPath": "research/evening-20261027/source-observations.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/Kanto/36357",
+          "observedAt": "2026-10-28T23:07:00.222+00:00",
+          "summary": "取得成功だが現在公開されていません。開店確定根拠なし。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-10-28T23:06:58.407+00:00",
+          "summary": "ニュース取得、鎌倉の確定開店告知なし。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "decision": "公式news最終10/23は川越・京都伏見入場条件。鎌倉正式開業日なし。運営店舗一覧にも確認できず。公式求人200だが現在公開されていません。求人勤務時間を営業時間へ転用しない。",
+      "nextCheck": "公式店舗一覧・ニュース・求人を再確認。開店日や住所は推測掲載しない。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00"
+    },
+    {
+      "id": "bakery-advent-store-sale-correction-20261029",
+      "title": "アドベントカレンダー店頭発売日訂正待ち",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-tokyo:bakery-advent-store-sale-correction-20261029",
+      "sourceIds": [
+        "post-2115383142798553197"
+      ],
+      "officialAnnouncedAt": "2026-10-28",
+      "discoveredAt": "2026-10-28T23:07:02.736+00:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakery/status/2115383142798553197",
+          "observedAt": "2026-10-28T23:08:29.847+00:00",
+          "summary": "10/28公式が誤った店頭発売日投稿を削除、正式日程は後日案内。公開3JSONにアドベントの該当日程なし。訂正日程が出るまで掲載変更なし。",
+          "recordPath": "research/morning-20261029-core-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "現行99件・履歴678件・collaborations23件と照合。既存ID保持。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "10/28公式が誤った店頭発売日投稿を削除、正式日程は後日案内。公開3JSONにアドベントの該当日程なし。訂正日程が出るまで掲載変更なし。",
+      "nextCheck": "公式Xの訂正発売日を確認。未確定日を掲載しない。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": null
+    }
+  ],
+  "recommendedChanges": [
+    {
+      "id": "chiikawa-bakery-shop-laforet",
+      "fields": {
+        "entryNote": "2026年10月29日は整理券による入場です。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1日1人1回です。 通常は事前予約不要のフリー入場です。混雑時は入場規制や整理券配布、混雑が予想される指定日は事前予約を行う場合があります。ベーカリーのノベルティ付き優先入場券は販売していません。来店日の入場方法は最新の公式案内をご確認ください。",
+        "importantNotice": "2026年10月29日は整理券による入場です。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1日1人1回です。 2026年10月25日の公式案内で、ラフォーレ原宿の本POP UP SHOPの「2周年オリジナルマット缶バッジ」は予定数に達し、配布終了と発表されました。他店舗や他の特典の終了を示す案内ではありません。"
+      },
+      "preserve": "10/25特典配布終了と通常条件を保持"
+    },
+    {
+      "id": "chiikawa-restaurant-ikebukuro",
+      "fields": {
+        "entryNote": "2026年10月29日のレストランは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。 カフェは事前予約優先です。予約整理券が売り切れた日時は当日席がありません。併設のグッズショップは予約整理券不要ですが、混雑が見込まれる場合は別途ショップ入場整理券を発行する場合があります。来店日の入店方法は最新の公式案内をご確認ください。 2026年9月26日～11月20日分のお食事券付き予約整理券は、2026年9月6日12:00からローソンチケットで先着販売（各来店日の2日前まで、抽選販売なし）。11月21日以降の販売予定は後日案内です。",
+        "importantNotice": "2026年10月29日のレストランは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。"
+      },
+      "preserve": "グッズショップ一般条件・予約販売予定を保持。当日のグッズ入場を推測しない。"
+    },
+    {
+      "id": "chiikawa-bakery-tokyo",
+      "fields": {
+        "entryNote": "2026年10月・11月分の優先入場券は完売しています。OPEN～15:00は優先入場券をお持ちの方を優先して案内します。15:00以降は当面の間、公式Xで発行するデジタル整理券による入場です（14:50からアクセス可能）。最新の公式案内をご確認ください。 公式予約ページの販売スケジュールでは、2026年11月1日～12月31日分の優先入場券を10月7日17:00から先着販売と案内しています。現在の空き状況・購入可能日は販売ページをご確認ください。2027年1月2日～1月31日分のノベルティ付き優先入場券は、2026年10月29日17:00から先着販売です。1月のノベルティは後日案内予定です。2027年2月1日以降の詳しい販売日程も後日案内予定です。",
+        "importantNotice": null
+      },
+      "preserve": "10/28限定条件だけ期限経過整理。現在の空き状況を推測しない。importantNoticeはschemaに合わせキー削除も可。"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi",
+      "fields": {
+        "entryNote": "通常は事前予約優先制です。空き状況により予約なしでも入店できる場合があります。 2026年11月1～30日分の無料QR待機列整理券は、10月16日12:00からLivePocketで先着受付予定です。各日2日前まで申込み可能で、1申込みにつき最大2枚。入店時はQRチケットと本人確認書類が必要です。整理券は入店時刻や商品の購入を保証するものではありません。",
+        "importantNotice": null
+      },
+      "preserve": "10/28限定条件だけ期限経過整理。現在の空き状況を推測しない。importantNoticeはschemaに合わせキー削除も可。"
+    }
+  ],
+  "newListingDelegated": {
+    "url": "https://chiikawa-info.jp/p26/pus_kbkt/index.html",
+    "start": "2026-11-11",
+    "end": "2026-11-25",
+    "venue": "イオンモール神戸北 専門店1階さざんかコート",
+    "detailOwner": "partners sibling"
+  },
+  "coverage": [
+    "総合・シリーズ・常設店ニュース、各ちいかわらんど店舗を本文確認。",
+    "ちいかわ焼き10/29–11/3予約例外は既存掲載済み。既存条件保持。",
+    "新規企画発見と既存当日条件を分離。",
+    "過去4件mogumogu個別告知404。歴史出典削除なし。",
+    "アドベント訂正は保留記録のみ、公開済誤情報なし。"
+  ],
+  "limitations": [
+    "Xは取得範囲限定。全投稿網羅は未確認。",
+    "公式販売先JapanTicketの403で大阪年矛盾未解消。",
+    "実公開日時は不明のまま。公開報告時刻を代入しない。"
+  ]
+}
