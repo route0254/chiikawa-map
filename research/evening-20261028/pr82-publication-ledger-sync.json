@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-10-27T23:26:42.640Z",
+  "sourceMain": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+  "publishedAt": "2026-10-27T23:26:08.704Z",
+  "publishedAtBasis": "First saved exact public content match, distinct from reporting, sync or deployment time.",
+  "deployJobCompletedAt": "2026-10-27T23:25:01Z",
+  "corrections": [
+    {
+      "id": "kurashiki-photo-exact-venue-confirmed-20261028",
+      "listingIds": [
+        "chiikawa-photo-2026-11-14-aeon-kurashiki"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T23:26:08.704Z",
+      "firstPublicMatchAt": "2026-10-27T23:26:08.704Z",
+      "deployJobCompletedAt": "2026-10-27T23:25:01Z",
+      "pr": 82,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/82",
+      "sourceHead": "12502cfae0cbe6a87d8e0a6ade6b970541941b7c",
+      "mergeSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+      "pagesRun": 40601910429,
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。日付限定案内を翌日に延長しない。"
+    },
+    {
+      "id": "bakery-tokyo-entry-20261028",
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T23:26:08.704Z",
+      "firstPublicMatchAt": "2026-10-27T23:26:08.704Z",
+      "deployJobCompletedAt": "2026-10-27T23:25:01Z",
+      "pr": 82,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/82",
+      "sourceHead": "12502cfae0cbe6a87d8e0a6ade6b970541941b7c",
+      "mergeSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+      "pagesRun": 40601910429,
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "nextCheck": "通常巡回で公式条件変更を確認。日付限定案内を翌日に延長しない。"
+    },
+    {
+      "id": "ramen-shinsaibashi-expired-note-20261028",
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "kind": "listing_update",
+      "state": "published",
+      "publishedAt": "2026-10-27T23:26:08.704Z",
+      "firstPublicMatchAt": "2026-10-27T23:26:08.704Z",
+      "deployJobCompletedAt": "2026-10-27T23:25:01Z",
+      "pr": 82,
+      "prUrl": "https://github.com/route0254/chiikawa-map/pull/82",
+      "sourceHead": "12502cfae0cbe6a87d8e0a6ade6b970541941b7c",
+      "mergeSha": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+      "pagesRun": 40601910429,
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "nextCheck": "通常巡回で新しい日別案内を確認。10/28の空席・フリー入店可を推測しない。"
+    }
+  ],
+  "alreadySyncedPr81PublicationAt": "2026-10-27T10:53:08.680Z",
+  "venueConfirmation": {
+    "candidateId": "kurashiki-photo-exact-venue-confirmed-20261028",
+    "confirmedAt": "2026-10-27T22:59:31.170Z",
+    "previousNoticePublishedAt": "2026-10-27T10:53:08.680Z",
+    "currentVenueFirstPublicMatchAt": "2026-10-27T23:26:08.704Z"
+  },
+  "metadataOnlyPrNotCreated": true
+}

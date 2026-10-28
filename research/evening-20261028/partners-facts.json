@@ -1,0 +1,1612 @@
+{
+  "checkedAt": "2026-10-28T10:04:06.717+00:00",
+  "scope": "Oct28 evening partner and venue primary-source pass; no PC or external mutation",
+  "sourceCounts": {
+    "directAttempts": 79,
+    "directSuccess": 67,
+    "directFailures": 12
+  },
+  "sources": [
+    {
+      "sourceId": "chiikawa-popup-list",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "attemptAt": "2026-10-28T09:58:16.097+00:00",
+      "previousLastSuccessfulAt": "2026-10-25T23:07:14.896Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:21.976+00:00",
+      "textLength": 28913
+    },
+    {
+      "sourceId": "ana-chiikawa-jet",
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "attemptAt": "2026-10-28T09:58:16.097+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:24.349+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:22.196+00:00",
+      "textLength": 5096
+    },
+    {
+      "sourceId": "ana-chiikawa-campaign",
+      "url": "https://www.ana.co.jp/ja/jp/mycampaign/chiikawa-jet/",
+      "attemptAt": "2026-10-28T09:58:16.098+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T10:04:39.382+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:22.068+00:00",
+      "textLength": 6195
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "attemptAt": "2026-10-28T09:58:16.098+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:10.311+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:23.831+00:00",
+      "textLength": 8754
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-official",
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "attemptAt": "2026-10-28T09:58:16.099+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:09.696+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:22.717+00:00",
+      "textLength": 3210
+    },
+    {
+      "sourceId": "chiikawa-christmas-market-asoview",
+      "url": "https://www.asoview.com/base/165182/",
+      "attemptAt": "2026-10-28T09:58:16.100+00:00",
+      "previousLastSuccessfulAt": "2026-10-20T10:02:23.696+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:22.303+00:00",
+      "textLength": 1555
+    },
+    {
+      "sourceId": "corporate-gu-chiikawa-faq",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "attemptAt": "2026-10-28T09:58:16.100+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:14.124+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:23.698+00:00",
+      "textLength": 5865
+    },
+    {
+      "sourceId": "corporate-aeon-chiikawa-news-index",
+      "url": "https://www.aeonmarketing.co.jp/news/",
+      "attemptAt": "2026-10-28T09:58:16.101+00:00",
+      "previousLastSuccessfulAt": "2026-10-18T23:43:41.962+00:00",
+      "result": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "httpStatus": 403
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-9ec22af2cf",
+      "url": "https://chiikawa-info.jp/wakuwaku.html",
+      "attemptAt": "2026-10-28T09:58:16.102+00:00",
+      "previousLastSuccessfulAt": "2026-10-25T23:07:17.784Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:21.765+00:00",
+      "textLength": 601
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-6bd3ce9b8b",
+      "url": "https://chiikawa-info.jp/magical_s.html",
+      "attemptAt": "2026-10-28T09:58:16.103+00:00",
+      "previousLastSuccessfulAt": "2026-10-25T23:07:14.716Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:21.848+00:00",
+      "textLength": 1542
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-astyle",
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/?link_position=topbn01&link_source=astyletop&link_target=chiikawa-ana",
+      "attemptAt": "2026-10-28T09:58:16.103+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:16.923+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:23.988+00:00",
+      "textLength": 7839
+    },
+    {
+      "sourceId": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "attemptAt": "2026-10-28T09:58:16.105+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T10:04:44.497+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "official-observation-88c0160fff16",
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "attemptAt": "2026-10-28T09:58:21.765+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:31.170+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "ana-chiikawa-goods-reservation",
+      "url": "https://reserva.be/ana_chiikawa",
+      "attemptAt": "2026-10-28T09:58:21.848+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:15.098+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:28.166+00:00",
+      "textLength": 343
+    },
+    {
+      "sourceId": "venue-aeon-kasukabe-photoshoot-20261103",
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "attemptAt": "2026-10-28T09:58:21.976+00:00",
+      "previousLastSuccessfulAt": "2026-10-23T10:05:31.503+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "venue-aeon-kasukabe-popup-entry-20261030",
+      "url": "https://kasukabe.aeonmall.jp/event/587712c5-e3bc-461b-bdd1-fe51e6698c2b",
+      "attemptAt": "2026-10-28T09:58:22.068+00:00",
+      "previousLastSuccessfulAt": "2026-10-20T10:01:09+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "venue-aeon-kofu-showa-workshop-20261123",
+      "url": "https://kofushowa.aeonmall.jp/event/006db774-cf06-472a-bfce-0e4baf8312ce",
+      "attemptAt": "2026-10-28T09:58:22.196+00:00",
+      "previousLastSuccessfulAt": "2026-10-23T10:05:31.541+00:00",
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "venue-aeon-tsuchiura-muchaphoto-20261128",
+      "url": "https://www.aeon.jp/sc/tsuchiura/event/index.json",
+      "attemptAt": "2026-10-28T09:58:22.303+00:00",
+      "previousLastSuccessfulAt": "2026-10-20T23:01:23.368+00:00",
+      "result": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "httpStatus": 404
+    },
+    {
+      "sourceId": "movie-cheer-third",
+      "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "attemptAt": "2026-10-28T09:58:22.359+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:20.491+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:29.368+00:00",
+      "textLength": 2568
+    },
+    {
+      "sourceId": "movie-news-index",
+      "url": "https://chiikawa.toho-movie.jp/news/",
+      "attemptAt": "2026-10-28T09:58:22.717+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:20.447+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:29.340+00:00",
+      "textLength": 1813
+    },
+    {
+      "sourceId": "weekly-gu-chiikawa",
+      "url": "https://www.gu-global.com/jp/ja/feature/contents/collaboration/chiikawa",
+      "attemptAt": "2026-10-28T09:58:23.055+00:00",
+      "previousLastSuccessfulAt": "2026-10-25T23:12:58.575Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:29.786+00:00",
+      "textLength": 655
+    },
+    {
+      "sourceId": "venue-aeon-suzaka-photo-20261122",
+      "url": "https://suzaka.aeonmall.com/news/detail/1835",
+      "attemptAt": "2026-10-28T09:58:23.100+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:20.594+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:28.856+00:00",
+      "textLength": 1937
+    },
+    {
+      "sourceId": "venue-aeon-suzaka-popup-20261106",
+      "url": "https://suzaka.aeonmall.com/news/detail/1834?t=event_news",
+      "attemptAt": "2026-10-28T09:58:23.698+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:20.338+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:28.816+00:00",
+      "textLength": 2216
+    },
+    {
+      "sourceId": "ana-naha-delay-20261022",
+      "url": "https://www.anafesta.com/notice/2026/10/79352/",
+      "attemptAt": "2026-10-28T09:58:23.831+00:00",
+      "previousLastSuccessfulAt": "2026-10-25T10:02:54.999Z",
+      "result": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "httpStatus": 404
+    },
+    {
+      "sourceId": "ana-preorder-recovery-20261023",
+      "url": "https://www.anaskyshop.ana.co.jp/news/36",
+      "attemptAt": "2026-10-28T09:58:23.988+00:00",
+      "previousLastSuccessfulAt": "2026-10-27T22:59:23.363+00:00",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:35.040+00:00",
+      "textLength": 5756
+    },
+    {
+      "sourceId": "collab-tamanohikari-chiikawa-dashiwari-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000020.000096911.html",
+      "attemptAt": "2026-10-28T09:58:28.166+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:34.502+00:00",
+      "textLength": 3484
+    },
+    {
+      "sourceId": "collab-sunflower-movie-chiikawa-2026",
+      "url": "https://www.sunflower.co.jp/lp/chiikawa/",
+      "attemptAt": "2026-10-28T09:58:28.467+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:34.108+00:00",
+      "textLength": 29
+    },
+    {
+      "sourceId": "collab-tokyo-metro-escape-2026",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "attemptAt": "2026-10-28T09:58:28.700+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:32.796+00:00",
+      "textLength": 1892
+    },
+    {
+      "sourceId": "collab-tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "attemptAt": "2026-10-28T09:58:28.816+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:35.249+00:00",
+      "textLength": 8884
+    },
+    {
+      "sourceId": "collab-movie-chiikawa-cafe-2026",
+      "url": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
+      "attemptAt": "2026-10-28T09:58:28.856+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:33.488+00:00",
+      "textLength": 1745
+    },
+    {
+      "sourceId": "collab-seven-eleven-christmas-chiikawa-2026",
+      "url": "https://www.sej.co.jp/products/christmas.html",
+      "attemptAt": "2026-10-28T09:58:29.340+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:36.842+00:00",
+      "textLength": 11151
+    },
+    {
+      "sourceId": "collab-suntory-movie-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html",
+      "attemptAt": "2026-10-28T09:58:29.368+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:34.406+00:00",
+      "textLength": 3704
+    },
+    {
+      "sourceId": "collab-citen-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000511.000003197.html",
+      "attemptAt": "2026-10-28T09:58:29.786+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:34.414+00:00",
+      "textLength": 3607
+    },
+    {
+      "sourceId": "collab-merry-jenny-chiikawa-2026",
+      "url": "https://merryjenny.jp/news/%E3%80%8E%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%80%8Fmerry-jenny-special-collection%EF%BC%81%E2%99%A1/",
+      "attemptAt": "2026-10-28T09:58:29.965+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:36.062+00:00",
+      "textLength": 1560
+    },
+    {
+      "sourceId": "collab-panasonic-energy-movie-chiikawa-2026",
+      "url": "https://news.panasonic.com/jp/topics/206785",
+      "attemptAt": "2026-10-28T09:58:30.479+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:34.705+00:00",
+      "textLength": 5607
+    },
+    {
+      "sourceId": "collab-tokyo-banana-chiikawa",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "attemptAt": "2026-10-28T09:58:31.207+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:37.180+00:00",
+      "textLength": 3435
+    },
+    {
+      "sourceId": "collab-donquijote-chiikawa-2026",
+      "url": "https://www.donki.com/products/chiikawa_sl6/",
+      "attemptAt": "2026-10-28T09:58:32.796+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:38.367+00:00",
+      "textLength": 4568
+    },
+    {
+      "sourceId": "collab-chiikawa-epos-card",
+      "url": "https://www.eposcard.co.jp/gecard/chiikawa/index.html",
+      "attemptAt": "2026-10-28T09:58:33.488+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:38.776+00:00",
+      "textLength": 7940
+    },
+    {
+      "sourceId": "collab-kadokawa-chiikawa-book-fair-2026-summer",
+      "url": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html",
+      "attemptAt": "2026-10-28T09:58:34.108+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:39.786+00:00",
+      "textLength": 3450
+    },
+    {
+      "sourceId": "collab-uniqlo-movie-chiikawa-2026",
+      "url": "https://faq.uniqlo.com/articles/Knowledge/100015656/",
+      "attemptAt": "2026-10-28T09:58:34.406+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:41.267+00:00",
+      "textLength": 4630
+    },
+    {
+      "sourceId": "collab-oxiclean-chiikawa-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000009939.html",
+      "attemptAt": "2026-10-28T09:58:34.414+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:39.594+00:00",
+      "textLength": 3416
+    },
+    {
+      "sourceId": "collab-clasic-chiikawa-scrubs-2026",
+      "url": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
+      "attemptAt": "2026-10-28T09:58:34.502+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:41.396+00:00",
+      "textLength": 10130
+    },
+    {
+      "sourceId": "collab-abema-chiikawa-christmas-market-2026",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33894",
+      "attemptAt": "2026-10-28T09:58:34.705+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:43.052+00:00",
+      "textLength": 7300
+    },
+    {
+      "sourceId": "collab-minum-chiikawa-grip-liner-2026",
+      "url": "https://prtimes.jp/main/html/rd/p/000000204.000034263.html",
+      "attemptAt": "2026-10-28T09:58:35.040+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:39.365+00:00",
+      "textLength": 3739
+    },
+    {
+      "sourceId": "collab-toho-one-movie-chiikawa-2026",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "attemptAt": "2026-10-28T09:58:35.249+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:40.712+00:00",
+      "textLength": 3765
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+      "attemptAt": "2026-10-28T09:58:36.062+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:40.020+00:00",
+      "textLength": 584
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2023",
+      "url": "https://prtimes.jp/main/html/rd/p/000000538.000011571.html",
+      "attemptAt": "2026-10-28T09:58:36.842+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:39.345+00:00",
+      "textLength": 2560
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2023",
+      "url": "https://www.uminomori.jp/umino/index.html",
+      "attemptAt": "2026-10-28T09:58:37.180+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:43.028+00:00",
+      "textLength": 2931
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2023",
+      "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+      "attemptAt": "2026-10-28T09:58:38.367+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:45.077+00:00",
+      "textLength": 2573
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2-2023",
+      "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+      "attemptAt": "2026-10-28T09:58:38.776+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:40.016+00:00",
+      "textLength": 656
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2-2023",
+      "url": "https://www.uminomori.jp/umino/2023chiikawa2/index.html",
+      "attemptAt": "2026-10-28T09:58:39.345+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:42.836+00:00",
+      "textLength": 1996
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2-2023",
+      "url": "https://www.nifrel.jp/eventnews/2023/06/623nifrelnifrel.html",
+      "attemptAt": "2026-10-28T09:58:39.365+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:45.193+00:00",
+      "textLength": 2540
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2-2023",
+      "url": "https://www.kaikyokan.com/cms/%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E6%B0%B4%E6%97%8F%E9%A4%A8%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E9%96%8B%E5%A7%8B%EF%BC%81%EF%BC%81/",
+      "attemptAt": "2026-10-28T09:58:39.594+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:47.505+00:00",
+      "textLength": 1020
+    },
+    {
+      "sourceId": "hold-chiikawa-aquarium-2-2023",
+      "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+      "attemptAt": "2026-10-28T09:58:39.786+00:00",
+      "previousLastSuccessfulAt": null,
+      "result": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "httpStatus": 404
+    },
+    {
+      "sourceId": "hold-chiikawa-tokyo-miyage",
+      "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+      "attemptAt": "2026-10-28T09:58:40.016+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:45.500+00:00",
+      "textLength": 770
+    },
+    {
+      "sourceId": "hold-chiikawa-tokyo-miyage",
+      "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+      "attemptAt": "2026-10-28T09:58:40.020+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:44.711+00:00",
+      "textLength": 7809
+    },
+    {
+      "sourceId": "hold-chiikawa-tokyo-miyage",
+      "url": "https://tokyo-haneda.com/shop_and_dine/pm_open_shops.json",
+      "attemptAt": "2026-10-28T09:58:40.712+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:44.559+00:00",
+      "textLength": 15355
+    },
+    {
+      "sourceId": "hold-chiikawa-tokyo-miyage",
+      "url": "https://tokyo-haneda.com/floor/floor-guide.html?tab=terminal2&focus=spot-353023",
+      "attemptAt": "2026-10-28T09:58:41.268+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:44.686+00:00",
+      "textLength": 3009
+    },
+    {
+      "sourceId": "hold-chiikawa-tokyo-miyage",
+      "url": "https://tokyo-haneda.com/site_resource/floor/js/common.js?202610071104",
+      "attemptAt": "2026-10-28T09:58:41.397+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:44.532+00:00",
+      "textLength": 3982
+    },
+    {
+      "sourceId": "hold-chiikawa-tokyo-miyage",
+      "url": "https://www.0101.co.jp/084/access/?from=01_pc_st084_top_gnav-access",
+      "attemptAt": "2026-10-28T09:58:42.836+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T09:58:47.660+00:00",
+      "textLength": 978
+    },
+    {
+      "sourceId": "venue-magical-popup-2026-09-30-granduo-tachikawa",
+      "url": "https://www.granduo.jp/tachikawa/events/events-26889/",
+      "attemptAt": "2026-10-28T10:00:12.485+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:19.160+00:00",
+      "textLength": 1323
+    },
+    {
+      "sourceId": "venue-magical-popup-2026-10-02-sapporo-apia",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "attemptAt": "2026-10-28T10:00:12.486+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.294+00:00",
+      "textLength": 101
+    },
+    {
+      "sourceId": "venue-popup-2026-10-09-machida-modi",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "attemptAt": "2026-10-28T10:00:12.486+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.368+00:00",
+      "textLength": 96
+    },
+    {
+      "sourceId": "venue-popup-2026-10-16-fukuoka-mitsukoshi",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "attemptAt": "2026-10-28T10:00:12.487+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.373+00:00",
+      "textLength": 93
+    },
+    {
+      "sourceId": "venue-chiikawa-muchaphoto-aeon-natori-2026",
+      "url": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f",
+      "attemptAt": "2026-10-28T10:00:12.488+00:00",
+      "previousLastSuccessfulAt": null,
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "venue-popup-2026-10-16-aeon-tokoname",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "attemptAt": "2026-10-28T10:00:12.490+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.375+00:00",
+      "textLength": 97
+    },
+    {
+      "sourceId": "venue-popup-2026-10-23-ebina-marui",
+      "url": "https://chiikawa-info.jp/p26/pus_ebmr/index.html",
+      "attemptAt": "2026-10-28T10:00:12.491+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.373+00:00",
+      "textLength": 107
+    },
+    {
+      "sourceId": "venue-popup-2026-10-23-aeon-parkplace-oita",
+      "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+      "attemptAt": "2026-10-28T10:00:12.493+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.372+00:00",
+      "textLength": 113
+    },
+    {
+      "sourceId": "venue-chiikawa-muchaphoto-aeon-shinrifu-2026",
+      "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "attemptAt": "2026-10-28T10:00:12.494+00:00",
+      "previousLastSuccessfulAt": null,
+      "result": "failed",
+      "error": "HTTP Error 406: Not Acceptable",
+      "httpStatus": 406
+    },
+    {
+      "sourceId": "venue-chiikawa-pocket-2026-11-13-nagoya-parco",
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/index.html",
+      "attemptAt": "2026-10-28T10:00:12.495+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:18.372+00:00",
+      "textLength": 126
+    },
+    {
+      "sourceId": "venue-popup-2026-10-30-aeon-kasukabe",
+      "url": "https://chiikawa-info.jp/p26/pus_aksk/index.html",
+      "attemptAt": "2026-10-28T10:00:18.205+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:32.960+00:00",
+      "textLength": 114
+    },
+    {
+      "sourceId": "venue-chiikawa-muchaphoto-opsia-misumi-2026",
+      "url": "https://www.opsia.jp/137234/",
+      "attemptAt": "2026-10-28T10:00:18.294+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:35.197+00:00",
+      "textLength": 2016
+    },
+    {
+      "sourceId": "venue-chiikawa-muchaphoto-2026-11-28-aeon-tsuchiura",
+      "url": "https://www.aeon.jp/sc/tsuchiura/event/",
+      "attemptAt": "2026-10-28T10:00:18.368+00:00",
+      "previousLastSuccessfulAt": null,
+      "result": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "httpStatus": 404
+    },
+    {
+      "sourceId": "history-chiikawa-tokyo-miyage-ginza-20250124",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_kouhou%2Fstatus%2F1880148052314374631",
+      "attemptAt": "2026-10-28T10:00:18.372+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:34.013+00:00",
+      "textLength": 1286
+    },
+    {
+      "sourceId": "history-chiikawa-tokyo-miyage-ginza-20250124",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_kouhou%2Fstatus%2F1880181772903981470",
+      "attemptAt": "2026-10-28T10:00:18.372+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:33.989+00:00",
+      "textLength": 992
+    },
+    {
+      "sourceId": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_kouhou%2Fstatus%2F1869319359908532598",
+      "attemptAt": "2026-10-28T10:00:18.373+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:33.990+00:00",
+      "textLength": 1079
+    },
+    {
+      "sourceId": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_kouhou%2Fstatus%2F1869637746446516526",
+      "attemptAt": "2026-10-28T10:00:18.373+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:33.991+00:00",
+      "textLength": 1007
+    },
+    {
+      "sourceId": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+      "url": "https://store.kinokuniya.co.jp/store/shinjuku-main-store/",
+      "attemptAt": "2026-10-28T10:00:18.375+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:35.811+00:00",
+      "textLength": 18838
+    },
+    {
+      "sourceId": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+      "url": "https://store.kinokuniya.co.jp/event/?keyword=%E6%9D%B1%E4%BA%AC%E3%81%BF%E3%82%84%E3%81%92",
+      "attemptAt": "2026-10-28T10:00:18.687+00:00",
+      "previousLastSuccessfulAt": null,
+      "httpStatus": 200,
+      "result": "retrieved",
+      "successfulAt": "2026-10-28T10:00:37.518+00:00",
+      "textLength": 4630
+    }
+  ],
+  "webFallbacks": [
+    {
+      "url": "https://kurashiki.aeonmall.jp/event/63d94836-fd12-437d-bce8-01f22915b639",
+      "checkedAt": "2026-10-28T10:04:06.717+00:00",
+      "result": "readable via web tool; underlying direct HTTP failure retained",
+      "originFetchTime": null
+    },
+    {
+      "url": "https://kasukabe.aeonmall.jp/event/587712c5-e3bc-461b-bdd1-fe51e6698c2b",
+      "checkedAt": "2026-10-28T10:04:06.717+00:00",
+      "result": "readable via web tool; underlying direct HTTP failure retained",
+      "originFetchTime": null
+    },
+    {
+      "url": "https://kofushowa.aeonmall.jp/event/006db774-cf06-472a-bfce-0e4baf8312ce",
+      "checkedAt": "2026-10-28T10:04:06.717+00:00",
+      "result": "readable via web tool; underlying direct HTTP failure retained",
+      "originFetchTime": null
+    },
+    {
+      "url": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f",
+      "checkedAt": "2026-10-28T10:04:06.717+00:00",
+      "result": "readable via web tool; underlying direct HTTP failure retained",
+      "originFetchTime": null
+    },
+    {
+      "url": "https://shinrifu.aeonmall.jp/event/61f6f28d-d030-4879-8ff4-38f4e05ee1b3",
+      "checkedAt": "2026-10-28T10:04:06.717+00:00",
+      "result": "readable via web tool; underlying direct HTTP failure retained",
+      "originFetchTime": null
+    }
+  ],
+  "newVerifiedCandidates": [],
+  "existingConditionReview": [
+    {
+      "subject": "ANA",
+      "decision": "Already reflected: Oct27 shipping delay and reproduction under consideration only; no release promise or delay resolution."
+    },
+    {
+      "subject": "JR Central",
+      "decision": "Oct31 end remains future; voucher conditions match; no archive."
+    },
+    {
+      "subject": "Christmas market",
+      "decision": "Oct31 noon firstcome, Oct30 noon lottery result unchanged."
+    },
+    {
+      "subject": "GU",
+      "decision": "Nov2 07:15 preorder through Nov8 23:59 unchanged."
+    },
+    {
+      "subject": "TOHO",
+      "decision": "Oct30 midnight Nov6 cheer tickets unchanged; no individual seat availability claim."
+    },
+    {
+      "subject": "Kurashiki",
+      "decision": "1F Wakuwaku venue confirmed in official photo body, PR82 resolved; no restored hold."
+    },
+    {
+      "subject": "Natori/Shinrifu/Suzaka/Opsia/Granduo",
+      "decision": "Dates, venue and entry conditions reviewed, match existing entries."
+    }
+  ],
+  "historicalHolds": [
+    {
+      "id": "hold-chiikawa-aquarium-2023",
+      "title": "ちいかわ 水族館",
+      "kind": "history_import",
+      "targetKey": "chiikawa-aquarium-2023",
+      "sourceIds": [
+        "series-chiikawa-aquarium-2023"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": null,
+          "summary": "取扱店舗ごとの終了日がなく、水槽展示会場と商品取扱いのみの会場が混在するため",
+          "recordPath": "research/official-special-series-catalog.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-05",
+          "summary": "公式本文と掲載データを照合。会場ごとの確認済み事項を分離し、系列全体の未確定会期は保留を維持。",
+          "recordPath": null
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000538.000011571.html",
+          "observedAt": "2026-10-11T23:16:33.836Z",
+          "summary": "当初会期2023/4/15〜4/23。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://x.com/sendaiuminomori/status/1648465751152672772",
+          "observedAt": "2026-10-12T08:11:43+09:00",
+          "summary": "公式XのoEmbed原文で5/7(日)までの期間延長を確認。施設トップの公式SNSリンク先が同一アカウント。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.uminomori.jp/umino/index.html",
+          "observedAt": "2026-10-11T23:16:34.113Z",
+          "summary": "Official SNS公式SNSがtwitter.com/sendaiuminomoriへリンクする。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+          "observedAt": "2026-10-12T22:56:07.550Z",
+          "summary": "NIFREL公式4/8告知を追加回収。2023/4/15からショップ内販売、入館料不要。販売終了日は本文にない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "仙台以外は取扱店舗。大洗・マリホ・海響館は4/29からカプセルトイのみ。全館の最終日や展示実施を一括で確定しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-13T10:00:30.979Z",
+          "summary": "仙台水槽展示と商品取扱店舗を区別。大洗・マリホ・海響館は4/29カプセルトイのみ。仙台以外の最終日新確定なし。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+          "recordPath": "research/evening-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-19T22:58:24.635+00:00",
+          "summary": "Returned page body inspected; not an assertion of complete source coverage.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://www.nifrel.jp/eventnews/2023/04/content-4.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "4/15からミュージアムショップ内販売、入館料不要。本文に販売終了日の明記なし。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "水槽展示の仙台と商品取扱店舗を区別。大洗・マリホ・海響館は4/29からカプセルトイのみ。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/img/main_02.jpg",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "公式画像をクラウドブラウザで視認。イラストのみで、会場別会期や終了日の追記はない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-aquarium-sendai-2023"
+        ],
+        "note": "仙台の既存コラボIDで当初4/23から公式延長後5/7へ補正。他館は販売終了日/展示範囲未確認。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "仙台第一弾延長後終期2023-05-07を公式Xで確定。既存コラボ履歴のendDate修正が可能。 残課題: 仙台以外は商品取扱店。各会場の取扱終了日/展示範囲は未確認。系列全体を単一会期イベントにしない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。 10/20週次に系列本文取得成功。会場一覧と期間混在は再確認したが、会場ごとの開始/終了や履歴既存保留の解消までは未完了。系列入口確認だけで週次の個別保留を完了扱いしない。 10/20夕再確認: NIFREL公式原文・公式系列画像を再確認したが、全店終了日を追加で確定できず系列hold維持。仙台の既存修正は別管理。",
+      "nextCheck": "原告知に具体的な会場別終了日が見つかった場合のみ独立候補化。既確認の開始日や会場一覧だけで完了扱いしない。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    },
+    {
+      "id": "hold-chiikawa-aquarium-2-2023",
+      "title": "ちいかわ 水族館 第二弾",
+      "kind": "history_import",
+      "targetKey": "chiikawa-aquarium-2-2023",
+      "sourceIds": [
+        "series-chiikawa-aquarium-2-2023"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": null,
+          "summary": "仙台のフォトスポット・ARラリーは確認できるが、会場別終了日がないため",
+          "recordPath": "research/official-special-series-catalog.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-05",
+          "summary": "公式本文と掲載データを照合。会場ごとの確認済み事項を分離し、系列全体の未確定会期は保留を維持。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.uminomori.jp/umino/2023chiikawa2/index.html",
+          "observedAt": "2026-10-05T19:00:47+09:00",
+          "summary": "仙台イベント全体・フォトスポットの2023-06-23〜07-02を確認。ARラリーは景品がなくなり次第終了。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-11T23:16:31.438Z",
+          "summary": "仙台のフォトスポット・ARラリー記載。各取扱店舗の終期は一括確定できない。サンシャインは7月中旬以降アクアポケット継続販売予定。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.nifrel.jp/eventnews/2023/06/623nifrelnifrel.html",
+          "observedAt": "2026-10-11T23:16:31.512Z",
+          "summary": "6/23からミュージアムショップ販売、入館料不要。販売終了日なし。イベント展示と同一扱いにしない。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://www.kaikyokan.com/cms/%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E6%B0%B4%E6%97%8F%E9%A4%A8%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E9%96%8B%E5%A7%8B%EF%BC%81%EF%BC%81/",
+          "observedAt": "2026-10-11T23:16:34.905Z",
+          "summary": "2023/6/23からミュージアムショップ販売。販売終了日なし。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "第二弾のサンシャインは7月中旬以降アクアポケット継続販売予定。他館全体の終期なし。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/Juice_inc_/status/1673273628052566017",
+          "observedAt": "2026-10-12T22:56:58.428Z",
+          "summary": "主催事業者Juiceの6/26投稿を通常GET取得。サンシャインアネックスB1で水族館・通常POPUP・ナガノマーケットの同時開催、フォトスポットを案内。終了日なし。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://mitte-x-img.istsw.jp/kanko-toshima/file/calendar/202307.pdf",
+          "observedAt": "2026-10-13",
+          "summary": "観光協会系カレンダーPDFの本文にサンシャインアネックスB1「ちいかわ水族館」第2弾7/17まで。ただし配信元の公式リンク来歴と会場主催原本を未確定。特設会場の終期候補に限り、アクアポケット物販終期へ流用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+          "observedAt": "2026-10-12T22:57:51.803Z",
+          "summary": "Juice公式投稿から会場原本URLを回収したが、web取得不可・通常GET403。本文未取得。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-13T10:00:30.979Z",
+          "summary": "仙台フォトスポット・ARラリー、サンシャイン7月中旬以降アクアポケット継続予定を再確認。施設別物販終期やAR単体終期の新確定なし。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+          "recordPath": "research/evening-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-19T22:58:24.681+00:00",
+          "summary": "Returned page body inspected; not an assertion of complete source coverage.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://www.nifrel.jp/eventnews/2023/06/623nifrelnifrel.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "6/23からミュージアムショップ販売、入館料不要。終了日なし。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://www.kaikyokan.com/cms/%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E6%B0%B4%E6%97%8F%E9%A4%A8%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E9%96%8B%E5%A7%8B%EF%BC%81%EF%BC%81/",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "6/23からミュージアムショップ販売。有料エリア。終了日なし。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "サンシャインは6/23よりAnnex B1の特設売場、7月中旬以降はアクアポケットへ移して販売継続予定。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/img/main_02.jpg",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "公式画像をクラウドブラウザで視認。イラストのみで、会場別終了日の追記なし。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://sunshinecity.jp/aquarium/event_performance/event/entry-24948.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "今回web取得は404。本文未取得のまま。過去403記録を今回成功に書き換えない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p23/ck_aquarium2/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-aquarium-2-2023-sendai"
+        ],
+        "note": "仙台の独立履歴IDだけ追加。その他会場とARラリー単体終了日は未確定。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "仙台のイベント・フォトスポット会期、住所、施設ピンの根拠を揃えた。NIFREL・海響館の6/23物販開始も一次確認。 残課題: 仙台以外の終了日、およびARラリー単体の実終了日は不明。サンシャインの売場移行と物販継続を区別。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。 10/20週次に系列本文取得成功。会場一覧と期間混在は再確認したが、会場ごとの開始/終了や履歴既存保留の解消までは未完了。系列入口確認だけで週次の個別保留を完了扱いしない。 10/20夕再確認: NIFREL・海響館の原文、系列画像を再確認。終了日新確定なし。サンシャイン施設原本は今回404で本文未取得。",
+      "nextCheck": "施設・主催一次告知で臨時売場終期を確認できるまで保留。物販継続と売場会期を区別。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    },
+    {
+      "id": "hold-chiikawa-tokyo-miyage",
+      "title": "ちいかわ 東京みやげ POP UP SHOP",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": null,
+          "summary": "既存店舗での商品取扱いが中心で、多くの会場は開始日が確認できないため",
+          "recordPath": "research/official-special-series-catalog.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-05",
+          "summary": "公式本文と掲載データを照合。会場ごとの確認済み事項を分離し、系列全体の未確定会期は保留を維持。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-11T23:16:32.323Z",
+          "summary": "羽田T2 Tokyo’s Tokyoは2025/10/17〜2026/1/31。T1童心・T3 Edo食賓館とは別。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+          "observedAt": "2026-10-12T08:08:43+09:00",
+          "summary": "T2 3Fマーケットプレイス、保安検査前。公式JSON area_number17、店舗ID00266、map_link_id1741、latitude/longitude null。現在10:00〜17:00を2025会期へ流用しない。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/site_resource/whats_new/pdf/000012662.pdf",
+          "observedAt": "2026-10-11T23:16:33.173Z",
+          "summary": "公式施設案内で東京都大田区羽田空港3-4-2を確認。階・店舗は別公式ページ。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/shop_and_dine/pm_open_shops.json",
+          "observedAt": "2026-10-12T08:10:48+09:00",
+          "summary": "shop_id00266にspot_id353023が対応。公式店舗ページMapボタン生成コードと照合。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/floor/floor-guide.html?tab=terminal2&focus=spot-353023",
+          "observedAt": "2026-10-11T23:16:33.072Z",
+          "summary": "当該店舗選択公式フロアガイドURL。第三者地図表示の座標取得は403で不可。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/site_resource/floor/js/common.js?202610071104",
+          "observedAt": "2026-10-12T08:11:09+09:00",
+          "summary": "area8=terminal2にlat35.5510216,lng139.7886114。T2地図表示中心で店舗ピンではない。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/std/16/58215/25835.png",
+          "observedAt": "2026-10-12T08:16:04+09:00",
+          "summary": "T2中心35.5510216,139.7886114は建物上。店舗個別点や屋内階は地図だけで特定しない。",
+          "recordPath": "research/morning-remainder-2026-10-12-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880148052314374631",
+          "observedAt": "2026-10-12T22:56:08.077Z",
+          "summary": "公式1/17告知：銀座三越本館8階JapanDutyFreeGINZA、当初2025/1/24〜3/31。翌同日訂正投稿で開始曜日を金曜へ修正。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880181772903981470",
+          "observedAt": "2026-10-12T22:57:52.473Z",
+          "summary": "公式訂正を個別取得。2025/1/24(金)〜3/31(月)。現行特設の終期10/28までとの関係は延長/別回を未確定。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1915693328689226033",
+          "observedAt": "2026-10-12T22:57:54.069Z",
+          "summary": "公式4/25告知の個別原文で0%IKEBUKURO、2025/5/9〜6/9を確認。現行特設の6/9終了と一致。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1958454039005565233",
+          "observedAt": "2026-10-12T22:57:00.103Z",
+          "summary": "公式8/21告知の個別原文で北千住マルイ2Fカレンダリウム、2025/9/4〜9/15を確認。現行特設の9/15終了と一致。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://www.0101.co.jp/084/access/?from=01_pc_st084_top_gnav-access",
+          "observedAt": "2026-10-13",
+          "summary": "北千住マルイ公式アクセスの東京都足立区千住3-92を本文確認。既存同館アーカイブ2件の施設座標35.7494,139.805を既存方針どおり再利用。2F屋内の精密座標とは扱わない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13T10:00:30.979Z",
+          "summary": "本文の会場別終了表記は朝と同じ。羽田T2は2025/10/17～2026/1/31、北千住9/15、池袋0%6/9等。開始日を一覧タイトルから推定しない。 本文範囲のみ成功。画像内更新未確認、系列hold維持。",
+          "recordPath": "research/evening-series-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-19T22:58:24.621+00:00",
+          "summary": "Returned page body inspected; not an assertion of complete source coverage.",
+          "recordPath": "research/morning-series-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "会場別終了表記を再読。0%IKEBUKURO6/9、紀伊國屋1/30、銀座10/28、北千住9/15、T2別回10/17〜1/31等。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/img/main.jpg",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "公式メイン画像を視認。商品・キャラクター図で会場別会期なし。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/img/ck_txt.jpg",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "公式画像本文は一部イベント記念商品の期間限定販売という案内。会場別会期なし。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "2026-10-05に現行公式77件・過去公式638件・現行コラボ20件・過去コラボ52件のID・名称・URL・会期を照合。同じ会期の企画は未掲載。同会場の別企画とは区別する。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "羽田T2の会期と住所・店舗位置階を確定。 残課題: その他各会場の開始日/開催回の区別。一覧タイトルの2024-12-26を全店舗に適用しない。 作業目標。2026-10-13の広域レビュー時に残課題または反映状況を確認する日であり、公式イベント期限ではない。 10/20週次に系列本文取得成功。会場一覧と期間混在は再確認したが、会場ごとの開始/終了や履歴既存保留の解消までは未完了。系列入口確認だけで週次の個別保留を完了扱いしない。 10/20夕再確認: 0%IKEBUKUROは独立候補で解消し、系列全体holdは維持。公式画像には会期の追加情報なし。タイトル2024/12/26開始を全会場へ拡張しない。",
+      "nextCheck": "子候補の新確定情報と本人判断の結論のみ反映し、系列全体の完全解消とはしない。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-ginza-20250124",
+      "title": "ちいかわ 東京みやげ 銀座三越",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:ginza-mitsukoshi:2025-01-24",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2025-01-17",
+      "discoveredAt": "2026-10-12T22:56:08.077Z",
+      "eventStartsAt": "2025-01-24",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880148052314374631",
+          "observedAt": "2026-10-12T22:56:08.077Z",
+          "summary": "公式1/17告知：銀座三越本館8階JapanDutyFreeGINZA、当初2025/1/24〜3/31。翌同日訂正投稿で開始曜日を金曜へ修正。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880181772903981470",
+          "observedAt": "2026-10-12T22:57:52.473Z",
+          "summary": "公式訂正を個別取得。2025/1/24(金)〜3/31(月)。現行特設の終期10/28までとの関係は延長/別回を未確定。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "銀座三越8F JapanDutyFreeGINZAの2025/10/28終了表記を再確認。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawapark.com/events/6110/",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "銀座5/13まで・羽田T1 9/30までとの延長記述を発見。記事本文に公式X原告知の埋め込みを確認できず、当該記事を一次扱いしない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1880148052314374631",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "公式初回会期は1/24〜3/31、現行特設の終了は10/28。連続延長か別回かの経緯未詳につき終期を単一値で確定しない。住所/座標も未照合。 10/20夕再確認: 二次記事では5/13までの延長記述が見つかったが、10/28までの連続性を示す一次原告知に到達しない。終期null維持。",
+      "nextCheck": "公式延長原文で初回から10/28までを同一開催回と確定できるまで保留。二次記事だけで結合しない。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t1-20241226",
+      "title": "ちいかわ 東京みやげ 羽田T1童心 初回",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:haneda-t1:2024-12-26",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2024-12-18",
+      "discoveredAt": "2026-10-12T22:53:59.100Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2024-12-26",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "羽田T1/T2は12/26発売と記載。イベント開催開始・終了の独立した表現ではない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "現在の会場ごと終期は初回連続開催を証明しない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "初回12/26発売は一次確認。初回終期/継続・延長経緯と施設位置は未確定。現行2026/1/31を無条件で初回終期へ結合しない。 10/20夕再確認: 公式訂正の発売日表現を再読。初回開催を後年の会期へ接続できる新一次根拠なし。",
+      "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-haneda-t2-20241226",
+      "title": "ちいかわ 東京みやげ 羽田T2 Tokyo’s Tokyo 初回",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:haneda-t2:2024-12-26",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2024-12-18",
+      "discoveredAt": "2026-10-12T22:53:59.100Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2024-12-26",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://tokyo-haneda.com/shop_and_dine/detail/tenant_00266.html",
+          "observedAt": "2026-10-12T22:54:12.559Z",
+          "summary": "羽田T2 3Fマーケットプレイス・保安検査前を再確認。公式埋込JSONのlatitude/longitudeはnull、map_link_id1741、area_number17。現在10:00〜17:00を過去会期の営業時間へ代用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "羽田T1/T2は12/26発売と記載。イベント開催開始・終了の独立した表現ではない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "現在の会場ごと終期は初回連続開催を証明しない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "初回12/26発売は一次確認。2025/10/17からの既存候補と別回。初回終期と会期起点・店舗位置は未確定。 10/20夕再確認: 公式訂正の発売日表現を再読。初回開催を後年の会期へ接続できる新一次根拠なし。",
+      "nextCheck": "初回会期と延長・再開催を分離できる原図を待つ。T2の2025/10/17回とは別候補を維持。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    },
+    {
+      "id": "history-chiikawa-tokyo-miyage-kinokuniya-20250117",
+      "title": "ちいかわ 東京みやげ 紀伊國屋書店新宿本店",
+      "kind": "history_import",
+      "targetKey": "chiikawa-tokyo-miyage:kinokuniya-shinjuku:2025-01-17",
+      "sourceIds": [
+        "series-chiikawa-tokyo-miyage",
+        "chiikawa-publicity-x"
+      ],
+      "officialAnnouncedAt": "2024-12-18",
+      "discoveredAt": "2026-10-12T22:53:59.100Z",
+      "eventStartsAt": null,
+      "eventEndsAt": "2025-01-30",
+      "releaseAt": "2025-01-17",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-12T22:53:59.100Z",
+          "summary": "12/18初回告知を取得。翌日訂正があり、初回の池袋サンシャイン12/26発売の表記は採用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-12T22:55:05.039Z",
+          "summary": "12/19公式訂正。羽田T1/T2は12/26発売、紀伊國屋書店新宿本店1階THE ENTRANCEは1/17発売。池袋サンシャインは既発売へ訂正。発売日を自動的にイベント開始日へ変換しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p24/tokyo_miyage/index.html",
+          "observedAt": "2026-10-13",
+          "summary": "現行特設の各会場最終表記を確認。羽田T2は2025/10/17〜2026/1/31。紀伊國屋1/30、銀座10/28、池袋0%6/9、北千住9/15で終了。一覧開始2024/12/26を他会場へ適用しない。",
+          "recordPath": "research/morning-holds-2026-10-13-evidence.json"
+        },
+        {
+          "url": "https://store.kinokuniya.co.jp/store/shinjuku-main-store/",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "公式店舗ページの住所およびBookStore JSON-LD geoを確認。35.69222784248618,139.7029960155487は店舗代表位置で1F催事区画位置とは区別。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869637746446516526",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "12/19訂正の原文を通常未ログインブラウザで再読。紀伊國屋新宿本店1F THE ENTRANCEは1/17発売、羽田T1/T2は12/26発売。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://store.kinokuniya.co.jp/event/?keyword=%E6%9D%B1%E4%BA%AC%E3%81%BF%E3%82%84%E3%81%92",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "公式イベントキーワード検索の表示本文は該当なし。サイト全体に情報がないという証明ではない。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://chiikawapark.com/events/3718/",
+          "observedAt": "2026-10-20T10:10:11.678+00:00",
+          "summary": "1/17〜1/30という二次記述あり。ただし公式開催原図や独立した一次開催開始表現に到達しないため昇格根拠に不採用。",
+          "recordPath": "research/evening-review-2026-10-20-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_kouhou/status/1869319359908532598",
+          "observedAt": "2026-10-27",
+          "summary": "親クラウドの既知原文再確認。会場別会期・連続開催根拠の不足を解消しておらず、保留状態と不明日時を維持。個別live取得時刻不明。",
+          "recordPath": "research/morning-20261027-source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "10/13に公式現行86・公式過去647・コラボ現行22・コラボ過去52件のID/名称/会場/URL/日程を照合。同一開催回は未掲載。同館別企画とは区別。"
+      },
+      "listingIds": [],
+      "state": "verifying",
+      "priority": "normal",
+      "decision": "公式は1/17発売、現行特設は1/30終了。イベント開始としての1/17、住所/座標の一次照合を残す。発売日を会期に機械変換しない。 10/20夕再確認: 店舗住所・施設代表点の一次照合を新たに完了。公式訂正を再読しても1/17は発売日であり開催開始へ機械変換しない。",
+      "nextCheck": "開催開始日と明記された原告知・原図が得られるまで保留。店舗住所・位置の再探索は不要。 10/27朝の既知原文再確認でも会場別終了日・連続開催を示す根拠の不足が残るため保留継続。追加一次根拠を次回確認。 2026年10月28日朝も必要な一次根拠を確定できず、同日19:00 JSTに再確認。",
+      "recheckDueAt": "2026-10-28T19:00:00+09:00",
+      "publishedAt": null,
+      "thisReview": {
+        "checkedAt": "2026-10-28T10:04:06.717+00:00",
+        "result": "No additional evidence sufficient to resolve historical venue boundaries. Retain current state, never combine later cycle end with earlier sale date.",
+        "nextCheck": "Official venue/history evidence recheck",
+        "recheckDueAt": "2026-10-29T08:00:00+09:00"
+      }
+    }
+  ],
+  "secondaryLeadDelegated": {
+    "subject": "Kyoto Nishiki baby castella Nov18 opening",
+    "url": "https://oshigoods.blog/",
+    "status": "Sent core worker for primary verification; not publication evidence"
+  },
+  "limits": [
+    "Image-only popup pages mostly title/date readable; no claim all image changes detected.",
+    "Historical X oembed may truncate text; dates/venue continuity not inferred.",
+    "Not a full 701-source crawl; weekly broad pass Oct26 not due.",
+    "Direct data snapshot fetched from main; final publicsite equality handled by parent."
+  ],
+  "publicationChangesRequiredFromThisPass": false
+}

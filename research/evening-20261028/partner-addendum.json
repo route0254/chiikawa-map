@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-28T10:09:35.287+00:00",
+  "publicDuplicateCheck": {
+    "spots": 96,
+    "archive": 678,
+    "collabs": 23,
+    "matchesForThese2026Cycles": 0
+  },
+  "candidates": [
+    {
+      "existingID": null,
+      "existingMatch": null,
+      "state": "ready",
+      "reservationOpensAt": null,
+      "publishedAt": null,
+      "reflectDueAt": "2026-10-28T23:59:59+09:00",
+      "recheckDueAt": "2026-10-29T08:00:00+09:00",
+      "nextCheck": "Confirm merged public JSON and first actual public visibility; preserve true publication time.",
+      "id": "chiikawa-muchaphoto-2026-11-03-wraqua-midorii",
+      "title": "ちいかわ むちゃフォトパーティ!! ラクア緑井",
+      "officialAnnouncedAt": "2026-10-20",
+      "discoveredAt": "2026-10-28T19:08:10+09:00",
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-03",
+      "sourceUrl": "https://wraqua.com/event/2026/10/21542/",
+      "address": "広島県広島市安佐南区緑井5-22-1 ラクア緑井 1Fセンターコート",
+      "hoursText": "撮影会12:00～12:30・14:00～14:30・16:00～16:30／ARラリー10:30～17:00",
+      "entryNote": "参加無料。撮影会は当日10:30から1Fセンターコートで全3回分各50組・計150枚の参加券を先着配布。館外の正面出入口に並んだ方を優先して会場へ誘導。参加回を選択可能、撮影会への案内は整理番号順ではなく整列順。ARラリー景品引換券（先着300名）も同時・同場所で配布。景品券終了後もラリー参加可能。スマートフォンは各自用意。",
+      "geoStatus": "verify official access map before insert, do not guess",
+      "decision": "New one-day event absent current/archive/collab public JSON and candidate ledger. Venue announcement Oct20, discovered Oct28: known 8-calendar-day discovery delay, not announcement today."
+    },
+    {
+      "existingID": null,
+      "existingMatch": null,
+      "state": "ready",
+      "reservationOpensAt": null,
+      "publishedAt": null,
+      "reflectDueAt": "2026-10-28T23:59:59+09:00",
+      "recheckDueAt": "2026-10-29T08:00:00+09:00",
+      "nextCheck": "Confirm merged public JSON and first actual public visibility; preserve true publication time.",
+      "id": "cafe-2026-11-06-shizuoka-parco",
+      "title": "ちいかわレストラン 討伐フェア ドリンクスタンド＆グッズショップ 静岡PARCO",
+      "officialAnnouncedAt": "2026-10-28",
+      "discoveredAt": "2026-10-28T19:08:10+09:00",
+      "eventStartsAt": "2026-11-06",
+      "eventEndsAt": "2026-12-13",
+      "sourceUrl": "https://cafe.parco.jp/event/chiikawarestaurant_drinkT_shizuoka?area=031750",
+      "pressUrl": "https://parco.co.jp/pdf/jp/store/storage/cname_20261028161451.pdf",
+      "address": "静岡県静岡市葵区紺屋町6-7 静岡PARCO 1F ぱるけカフェ・イベントスペース",
+      "hoursText": "平日10:30～19:30／土日祝10:00～19:30。12月4～13日は毎日20:00まで。フードL.O.閉店1時間前、ドリンクL.O.閉店30分前。館営業時間に準じ変更あり。",
+      "entryNote": "ドリンクスタンド・グッズショップとも予約不要。混雑時は待機列形成または入店整理券を発行する場合あり。",
+      "geoStatus": "Reuse exact same venue proven archive coordinates if appropriate; do not reuse old dates/IDs",
+      "decision": "New venue cycle absent current/collab public and candidate ledger; older Shizuoka archive entries are distinct, do not overwrite. Official corporate PDF fetched and extracted successfully."
+    }
+  ],
+  "sourceResults": [
+    {
+      "url": "https://wraqua.com/event/2026/10/21542/",
+      "lastSuccessfulAt": "2026-10-28T10:09:35.287+00:00",
+      "method": "web official page"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/chiikawarestaurant_drinkT_shizuoka?area=031750",
+      "lastSuccessfulAt": "2026-10-28T10:09:35.287+00:00",
+      "method": "web official page"
+    },
+    {
+      "url": "https://parco.co.jp/pdf/jp/store/storage/cname_20261028161451.pdf",
+      "lastSuccessfulAt": "2026-10-28T10:09:35.287+00:00",
+      "method": "direct urllib PDF + pdftotext",
+      "httpStatus": 200
+    }
+  ],
+  "safeForEngineeringHandoff": true
+}

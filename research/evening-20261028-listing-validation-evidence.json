@@ -1,0 +1,144 @@
+{
+  "validatedAt": "2026-10-28T10:43:15.763Z",
+  "base": "acf5596c95cc5f8868cb18ea6b6e43f5db9e4583",
+  "scope": {
+    "current": [
+      "chiikawa-bakery-tokyo",
+      "chiikawa-bakery-osaka",
+      "baby-castella-otaru",
+      "ramen-buta-shinsaibashi",
+      "chiikawa-bakery-shop-laforet",
+      "chiikawa-restaurant-ikebukuro"
+    ],
+    "collaborations": [],
+    "newListings": [
+      "baby-castella-kyoto-nishiki",
+      "chiikawa-muchaphoto-2026-11-03-wraqua-midorii",
+      "cafe-2026-11-06-shizuoka-parco"
+    ],
+    "newArchiveMoves": []
+  },
+  "tests": {
+    "build": {
+      "passed": true,
+      "generatedSpotPages": 871
+    },
+    "specialImport": {
+      "sourceEvents": 253,
+      "currentManaged": 20,
+      "archiveManaged": 233,
+      "previewExitCode": 0,
+      "writeExitCode": 0
+    },
+    "checkCommands": 49,
+    "units": {
+      "tests": 58,
+      "passed": 58,
+      "failed": 0
+    },
+    "uiSmoke": {
+      "passed": 111,
+      "startedAt": "2026-10-28T10:38:25.694Z",
+      "completedAt": "2026-10-28T10:43:03.231Z",
+      "initialResult": {
+        "passed": 110,
+        "failed": 1,
+        "reason": "The existing baby-castella catalog assertion expected one store. Added Kyoto changes the correct count to two; expected count and both store names updated, other assertions retained."
+      }
+    },
+    "pcMobile": {
+      "checks": 94,
+      "focusedVisualChecks": 40,
+      "screenshots": 36,
+      "pageErrors": 0,
+      "advancingClock": true,
+      "normalSearchAndListInteractions": true,
+      "savedStateAndSharePreserved": true
+    },
+    "scope": {
+      "verifiedAt": "2026-10-28T10:40:19.908Z",
+      "passed": true,
+      "exitCode": 0,
+      "current": 99,
+      "archive": 678,
+      "totalSpots": 871,
+      "sources": 716,
+      "candidates": 365,
+      "newListings": 3,
+      "currentUpdates": 6,
+      "archiveMoves": 0,
+      "otherSpotsUnchanged": 862,
+      "allCollaborationsUnchanged": 75,
+      "archiveUnchanged": true,
+      "priorAddedDatesPreserved": true,
+      "newFirstAddedDates": "2026-10-28",
+      "seriesImportPreserved": true,
+      "coordinatesAndExistingDatesPreserved": true,
+      "priorPr82TimestampsSynced": 3,
+      "priorPublicationAt": "2026-10-27T23:26:08.704Z",
+      "oldHoldsRetained": 8,
+      "newOsakaHoldUnresolved": true,
+      "recheckAt": "2026-10-29T08:00:00+09:00",
+      "existingWorktreesPreserved": 53,
+      "sourceCompletionAndFailureTimesPreserved": true,
+      "trackedContentChanges": [
+        ".spot-pages-manifest.json",
+        "data/added-dates.json",
+        "data/official-spots.json",
+        "data/site-meta.json",
+        "research/official-source-ledger.json",
+        "research/official-special-events-source.json",
+        "research/publication-candidate-ledger.json",
+        "sitemap.xml",
+        "spot/baby-castella-otaru/index.html",
+        "spot/chiikawa-bakery-osaka/index.html",
+        "spot/chiikawa-bakery-shop-laforet/index.html",
+        "spot/chiikawa-bakery-tokyo/index.html",
+        "spot/chiikawa-restaurant-ikebukuro/index.html",
+        "spot/ramen-buta-shinsaibashi/index.html",
+        "tests/smoke.spec.mjs"
+      ]
+    },
+    "officialStatus": {
+      "archiveCandidates": 0,
+      "predicateUnchanged": true
+    },
+    "links": {
+      "startedAt": "2026-10-28T10:35:15.844Z",
+      "completedAt": "2026-10-28T10:35:16.737Z",
+      "passed": true,
+      "exitCode": 0,
+      "error": null,
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Target official evidence URLs for the nine candidates only. Known historical Naha and other404 remain unchanged and were not rechecked.",
+      "observations": "ちい活マップ 外部リンク確認\n- 対象URL: 14件\n- 同時接続数: 6\n- タイムアウト: 12000ms\n\n確認結果\n- 正常: 14件\n- HTTPS転送: 0件\n- 要確認: 0件\n- 破損: 0件\n\n明確に破損しているリンクは見つかりませんでした。\n"
+    },
+    "ledgerNormalization": {
+      "preparedNewRecordsMatched": 3,
+      "publicationClaimed": false,
+      "initialFailureRetainedLocally": true,
+      "finalRequiredChecksSuccessful": true
+    }
+  },
+  "priorPublicationSync": {
+    "pr": 82,
+    "candidates": 3,
+    "firstPublicMatchAt": "2026-10-27T23:26:08.704Z"
+  },
+  "limits": [
+    "Bakery Tokyo and Osaka reservation images were retrieved and visually reviewed; Osaka explicitly has conflicting sale-year text. Its reservationOpensAt remains null.",
+    "Kyoto-only complete time-slot replacement and cashless payment were not applied to Otaru. Otaru reservation is limited to November18–29.",
+    "Wraqua is a separate November3 event announced October20, discovered October28 (eight calendar days); place coordinates use the verified facility feature, not camera center.",
+    "Shizuoka is a new venue cycle; same-facility validated historical coordinates retained.",
+    "Direct retrieval, limited text, cache and failure observations remain separate; unknown acquisition times stay null.",
+    "Known historical Naha and other404 were retained unchanged, outside target URL recheck.",
+    "Custom layout checks use local Leaflet assets and transparent tiles; live tile retrieval is not claimed.",
+    "Source-head/main CI and live exact publication remain pending at local validation."
+  ],
+  "operationsDocument": {
+    "lastUpdated": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "allLocalChecksSuccessful": true,
+  "appSchemaWorkflowsAndHostingUnchanged": true
+}
