@@ -1,0 +1,79 @@
+{
+  "recordedAt": "2026-10-29T08:08:34.636Z",
+  "observations": [
+    {
+      "url": "https://x.com/chiikawabakeryO/status/2115702592705814545",
+      "sourceId": "official-post-2115702592705814545",
+      "route": "cloud_verified_text_handoff",
+      "observedAt": "2026-10-29T17:00:28+09:00",
+      "officialAnnouncedAt": "2026-10-29T16:09:40+09:00",
+      "result": "body_confirmed",
+      "originCompletionAt": null,
+      "lastSuccessfulAt": null,
+      "summary": "16:30からJapanticketメンテナンスにより予約受付停止。再開日時未発表。発見時刻と取得完了時刻は区別。"
+    },
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "sourceId": "chiikawa-bakery-reservation",
+      "route": "cloud_verified_text_handoff",
+      "observedAt": null,
+      "reportedObservation": "2026-10-29 17:01 JST（秒精度は未収録）",
+      "result": "body_confirmed",
+      "lastSuccessfulAt": null,
+      "summary": "共通予約ページでも予約受付一時停止と再開の再告知を確認。"
+    },
+    {
+      "url": "https://x.com/chiikawabakeryO/status/2115702592705814545",
+      "route": "pc_web",
+      "observedAt": null,
+      "recordedAt": "2026-10-29T08:08:34.621Z",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "originCompletionAt": null,
+      "lastSuccessfulAt": null,
+      "summary": "別Web経路の取得は403。クラウド本文確認成功の引継ぎと両方記録。"
+    },
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "startedAt": "2026-10-29T08:06:21.460Z",
+      "completedAt": "2026-10-29T08:06:21.586Z",
+      "status": 200,
+      "bytes": 53025,
+      "sha256": "6b91b5dac6a25d28a1c39bb2ce43a4ec33f3994e640b940b0659608f9f657e26",
+      "sourceId": "chiikawa-bakery-reservation",
+      "route": "pc_direct_body",
+      "result": "success",
+      "observedAt": "2026-10-29T08:06:21.586Z",
+      "lastSuccessfulAt": "2026-10-29T08:06:21.586Z",
+      "summary": "共通予約ページの本文を直接取得。10/29 16:30から予約受付を一時停止し、再開は改めて公式案内すると確認。再開日時は未公表。"
+    }
+  ],
+  "priorSourceStates": [
+    {
+      "id": "chiikawa-bakery-reservation",
+      "name": "ちいかわベーカリー 予約案内",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-28T23:06:37.201+00:00",
+      "lastSuccessfulAt": "2026-10-28T23:06:37.201+00:00",
+      "lastResult": "success",
+      "resultSummary": "取得できた本文の確認。サイト全体の網羅を意味しない。",
+      "lastFailure": {
+        "at": "2026-10-27T22:59:23.147+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawabakery.jp/reservation/"
+      },
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。\n朝のweb観測: success。webで公式予約案内本文確認。 観測の時刻精度: 2026-10-21 23:00 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27夕の経路別・部分/失敗/キャッシュ観測は research/evening-20261027/source-observations.json を参照。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。"
+    }
+  ],
+  "fullSourceCoverageClaimed": false,
+  "unknownOriginTimesNotInferred": true,
+  "rawBodyKeptOutsidePublishedFiles": true
+}
