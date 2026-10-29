@@ -462,8 +462,8 @@
     "partner": "東京ばな奈ワールド",
     "category": "food",
     "status": "active",
-    "summary": "ちいかわたちをデザインした東京ばな奈を販売するコラボです。販売場所と取扱日は公式ページで更新されています。",
-    "areaText": "東京都内の対象店舗・JR池袋駅・盛岡駅・東京ソラマチほか",
+    "summary": "ちいかわたちをデザインした東京ばな奈を販売するコラボです。販売場所と取扱日は公式ページで更新されています。 期間限定ショップは、グランスタ東京のスクエア ゼロで2026年10月23日～11月2日、浦添PARCO CITYの2F センタープラザで10月30日～11月8日に開催されます。",
+    "areaText": "東京都内の対象店舗・JR池袋駅・盛岡駅・東京ソラマチほか・グランスタ東京 スクエア ゼロ・浦添PARCO CITY",
     "channels": [
       "店舗",
       "オンライン"
@@ -492,6 +492,20 @@
         "startDate": "2026-10-01",
         "endDate": "2026-10-14",
         "note": "イーストヤード1F 10番地「空の小町」で開催。"
+      },
+      {
+        "label": "浦添PARCO CITY POP UP SHOP",
+        "startDate": "2026-10-30",
+        "endDate": "2026-11-08",
+        "note": "10:00～20:00。入場無料。混雑時は入場規制を行う場合があります。商品は早期完売の場合があります。販売方法の最新情報は公式案内をご確認ください。",
+        "sourceUrl": "https://prtimes.jp/main/html/rd/p/000002181.000025606.html"
+      },
+      {
+        "label": "グランスタ東京 スクエア ゼロ POP UP SHOP",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-02",
+        "note": "平日・土 8:00～22:00／日・祝 8:00～21:00（最終日は20:00閉店）。JR東京駅の改札内にある催事です。ご利用の際は乗車券・入場経路などを施設公式案内でご確認ください。商品は売り切れる場合があります。",
+        "sourceUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/"
       }
     ],
     "tags": [
@@ -504,9 +518,11 @@
       "collab-tokyobanana-tokyo",
       "tokyo-banana-popup-ikebukuro-2026-09",
       "tokyo-banana-popup-morioka-2026-09",
-      "tokyo-banana-popup-solamachi-2026-10"
+      "tokyo-banana-popup-solamachi-2026-10",
+      "tokyo-banana-popup-urasoe-2026-10",
+      "tokyo-banana-popup-gransta-2026-10"
     ],
-    "checkedAt": "2026-10-01"
+    "checkedAt": "2026-10-30"
   },
   {
     "id": "donquijote-chiikawa-2026",
