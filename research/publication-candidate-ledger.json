@@ -20396,7 +20396,8 @@
       "sourceIds": [
         "official-post-2115368214985396503",
         "chiikawa-bakery-reservation",
-        "official-observation-33f24c9a2968"
+        "official-observation-33f24c9a2968",
+        "official-post-2115702592705814545"
       ],
       "officialAnnouncedAt": "2026-10-28",
       "discoveredAt": "2026-10-28T09:58:08.466+00:00",
@@ -20435,6 +20436,12 @@
           "observedAt": "2026-10-28T23:07:21.279+00:00",
           "summary": "ダウンロードした公式画像を目視。2027年10月29日(木)17:00表記が残存。observedAtは取得完了ファイル時刻。",
           "recordPath": "research/morning-20261029/core-facts.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-29T08:06:21.586Z",
+          "summary": "予約受付はメンテナンス停止。大阪旧画像の年表記不一致は未解消として保持し、再開と年表記を19時再確認。",
+          "recordPath": "research/bakery-maintenance-20261029-listing-evidence.json"
         }
       ],
       "existingMatch": {
@@ -20450,8 +20457,8 @@
       "state": "on_hold",
       "priority": "normal",
       "decision": "大阪画像の発売年2027と対象期間・X日付の不整合。公式リンク先JapanTicketはweb/direct共HTTP403、年の独立検証不可。断定年を構造化しない。",
-      "nextCheck": "本日17時案内前に公式X・画像・購入先を再確認。断定年を構造化しない。",
-      "recheckDueAt": "2026-10-29T16:00:00+09:00",
+      "nextCheck": "19時に予約受付の再開と公式X・画像・購入先の発売年表記を再確認。年の不一致と再開日時を推測補完しない。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -20475,6 +20482,12 @@
           "observedAt": "2026-10-28T23:08:12.414+00:00",
           "summary": "2026年10月29日は整理券による入場です。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1日1人1回です。",
           "recordPath": "research/morning-20261029/core-facts.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20487,12 +20500,12 @@
       "listingIds": [
         "chiikawa-bakery-shop-laforet"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "2026年10月29日は整理券による入場です。整理券は10:00からラフォーレ原宿エントランスで、開店後は店頭で発行します。入場は1日1人1回です。",
-      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
-      "recheckDueAt": "2026-10-30T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "元の初回公開一致記録を同期済み。通常巡回で公式条件変更を確認。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": "2026-10-28T23:38:06.330Z"
     },
     {
       "id": "chiikawa-restaurant-ikebukuro-entry-20261029",
@@ -20515,6 +20528,12 @@
           "observedAt": "2026-10-28T23:08:23.698+00:00",
           "summary": "2026年10月29日のレストランは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。",
           "recordPath": "research/morning-20261029/core-facts.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20527,12 +20546,12 @@
       "listingIds": [
         "chiikawa-restaurant-ikebukuro"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "2026年10月29日のレストランは事前予約で満席のため、当日券はありません。予約整理券をお持ちの方のみの案内です。",
-      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
-      "recheckDueAt": "2026-10-30T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "元の初回公開一致記録を同期済み。通常巡回で公式条件変更を確認。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": "2026-10-28T23:38:06.330Z"
     },
     {
       "id": "chiikawa-bakery-tokyo-expired-notice-20261029",
@@ -20555,6 +20574,12 @@
           "observedAt": "2026-10-28T23:06:37.201+00:00",
           "summary": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
           "recordPath": "research/morning-20261029/core-facts.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20567,12 +20592,12 @@
       "listingIds": [
         "chiikawa-bakery-tokyo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
-      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
-      "recheckDueAt": "2026-10-30T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "元の初回公開一致記録を同期済み。通常巡回で公式条件変更を確認。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": "2026-10-28T23:38:06.330Z"
     },
     {
       "id": "ramen-buta-shinsaibashi-expired-notice-20261029",
@@ -20595,6 +20620,12 @@
           "observedAt": "2026-10-28T23:06:40.453+00:00",
           "summary": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
           "recordPath": "research/morning-20261029/core-facts.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20607,12 +20638,12 @@
       "listingIds": [
         "ramen-buta-shinsaibashi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "終了済み10/28限定注記だけ削除。恒常条件と将来予約は保持。",
-      "nextCheck": "公開後に実JSONとCIを確認。翌朝に当日限定条件を整理。",
-      "recheckDueAt": "2026-10-30T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "元の初回公開一致記録を同期済み。通常巡回で公式条件変更を確認。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": "2026-10-28T23:38:06.330Z"
     },
     {
       "id": "bakery-advent-store-sale-correction-20261029",
@@ -20675,6 +20706,12 @@
           "observedAt": "2026-10-28T23:06:38.556+00:00",
           "summary": "2026年コラボ特設の販売先一覧で石垣ゲート店直下に11月9日(月)〜11月26日(木)の改装休業予定。発表日時不明。",
           "recordPath": "research/morning-20261029/partner-facts.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20687,12 +20724,12 @@
       "listingIds": [
         "ana-chiikawa-jet-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "既存コラボグッズ発売期間noteに石垣ゲート店のみ11/9〜11/26改装休業予定を補足。新スポットは作らず、他店やコラボ全体の休止にしない。",
-      "nextCheck": "次の通常更新で反映し公開JSONと同一commitのCIを確認",
+      "nextCheck": "元の初回公開一致記録を同期済み。通常巡回で公式条件変更を確認。",
       "recheckDueAt": "2026-10-29T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-28T23:38:06.330Z"
     },
     {
       "id": "skytree-expired-screening-notice-20261029",
@@ -20715,6 +20752,12 @@
           "observedAt": "2026-10-28T23:06:45.064+00:00",
           "summary": "公式特設にも同じ過去日休止が残るが新しい休止日は本文にない。公開現行の重要注意から経過日部分を整理する。",
           "recordPath": "research/morning-20261029/partner-facts.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20727,12 +20770,12 @@
       "listingIds": [
         "collab-skytree-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "importantNoticeから10/8・14・21・22の19:30上映休止という経過日限定部分のみ除去。一般の「上映の最新状況は公式案内をご確認ください」は保持。通常上映再開は断定しない。",
-      "nextCheck": "次の通常更新で反映し公開JSONと同一commitのCIを確認",
+      "nextCheck": "元の初回公開一致記録を同期済み。通常巡回で公式条件変更を確認。",
       "recheckDueAt": "2026-10-29T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-28T23:38:06.330Z"
     },
     {
       "id": "popup-2026-11-11-aeon-kobekita",
@@ -20746,7 +20789,7 @@
         "chiikawa-popup-list"
       ],
       "officialAnnouncedAt": null,
-      "discoveredAt": null,
+      "discoveredAt": "2026-10-29",
       "eventStartsAt": "2026-11-11",
       "eventEndsAt": "2026-11-25",
       "releaseAt": null,
@@ -20776,6 +20819,18 @@
           "observedAt": "2026-10-28T23:06:34.848+00:00",
           "summary": "公式一覧本文の取得記録とcoreの新規神戸北会期11/11～25・会場照合を保存。これは一覧の取得完了時刻であり、未収録の初回発見日時を推定補完する根拠には使いません。個別特設ページの取得失敗とは分けます。",
           "recordPath": "research/morning-20261029/core-facts.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/pus.html",
+          "observedAt": null,
+          "summary": "初回発見日は2026-10-29 JSTと担当確認。秒精度の発見時刻は記録なし。一覧取得完了2026-10-28T23:06:34.848Zを発見日時へ代入しない。",
+          "recordPath": "research/bakery-maintenance-20261029/kobe-discovery-day-confirmation.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-10-28T23:38:06.330Z",
+          "summary": "PR84 main e291bf267bc9400118f8a275391634aa4e5480b3 と公開実体の初回完全一致。今回の同期・報告時刻に置き換えない。",
+          "recordPath": "research/bakery-maintenance-20261029/pr84-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -20788,10 +20843,104 @@
       "listingIds": [
         "popup-2026-11-11-aeon-kobekita"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "施設一次告知の会期・会場・整理券条件と公式一覧を照合。",
-      "nextCheck": "初日入場整理券条件の変更を朝夕確認、11/11開始前に再確認。 初回発見日時は引継ぎcore資料に未収録のため確認待ち。集計・施設更新日・今回の検証時刻で補完しません。",
+      "nextCheck": "初回発見日は10/29 JSTの日精度で確定（秒不明）。初日整理券条件の変更を通常巡回で確認。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": "2026-10-28T23:38:06.330Z"
+    },
+    {
+      "id": "bakery-tokyo-reservation-maintenance-20261029",
+      "title": "東京ベーカリー 予約受付一時停止",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-tokyo:reservation-maintenance-20261029",
+      "sourceIds": [
+        "official-post-2115702592705814545",
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": "2026-10-29T16:09:40+09:00",
+      "discoveredAt": "2026-10-29T17:00:28+09:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-29T19:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakeryO/status/2115702592705814545",
+          "observedAt": "2026-10-29T17:00:28+09:00",
+          "summary": "公式大阪Xの本文確認引継ぎ。10/29 16:30から予約受付停止、再開日時未発表。店舗休業や購入済み券の扱いに関する変更は確認されていない。",
+          "recordPath": "research/bakery-maintenance-20261029-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-29T08:06:21.586Z",
+          "summary": "共通予約ページの本文を直接取得。10/29 16:30から予約受付を一時停止し、再開は改めて公式案内すると確認。再開日時は未公表。",
+          "recordPath": "research/bakery-maintenance-20261029/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-tokyo"
+        ],
+        "note": "基準mainの既存店舗・予約条件と照合。新店舗・重複IDは作成せず、受付停止を優先表示。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "共通予約受付停止を掲載。17時に販売開始したとは扱わず、一般予約条件と大阪の発売年不一致を保持。再開日時は未確定。",
+      "nextCheck": "19時に公式ホームページ・公式Xで予約受付再開を確認。未発表の再開日時は推測しない。",
+      "recheckDueAt": "2026-10-29T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "bakery-osaka-reservation-maintenance-20261029",
+      "title": "大阪ベーカリー 予約受付一時停止",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-bakery-osaka:reservation-maintenance-20261029",
+      "sourceIds": [
+        "official-post-2115702592705814545",
+        "chiikawa-bakery-reservation"
+      ],
+      "officialAnnouncedAt": "2026-10-29T16:09:40+09:00",
+      "discoveredAt": "2026-10-29T17:00:28+09:00",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-10-29T19:00:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawabakeryO/status/2115702592705814545",
+          "observedAt": "2026-10-29T17:00:28+09:00",
+          "summary": "公式大阪Xの本文確認引継ぎ。10/29 16:30から予約受付停止、再開日時未発表。店舗休業や購入済み券の扱いに関する変更は確認されていない。",
+          "recordPath": "research/bakery-maintenance-20261029-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-10-29T08:06:21.586Z",
+          "summary": "共通予約ページの本文を直接取得。10/29 16:30から予約受付を一時停止し、再開は改めて公式案内すると確認。再開日時は未公表。",
+          "recordPath": "research/bakery-maintenance-20261029/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-osaka"
+        ],
+        "note": "基準mainの既存店舗・予約条件と照合。新店舗・重複IDは作成せず、受付停止を優先表示。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-osaka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "共通予約受付停止を掲載。17時に販売開始したとは扱わず、一般予約条件と大阪の発売年不一致を保持。再開日時は未確定。",
+      "nextCheck": "19時に公式ホームページ・公式Xで予約受付再開を確認。未発表の再開日時は推測しない。",
       "recheckDueAt": "2026-10-29T19:00:00+09:00",
       "publishedAt": null
     }

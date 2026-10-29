@@ -504,10 +504,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-28T23:06:37.201+00:00",
-      "lastSuccessfulAt": "2026-10-28T23:06:37.201+00:00",
+      "lastAttemptAt": "2026-10-29T08:06:21.586Z",
+      "lastSuccessfulAt": "2026-10-29T08:06:21.586Z",
       "lastResult": "success",
-      "resultSummary": "取得できた本文の確認。サイト全体の網羅を意味しない。",
+      "resultSummary": "共通予約ページの本文を直接取得。10/29 16:30から予約受付を一時停止し、再開は改めて公式案内すると確認。再開日時は未公表。",
       "lastFailure": {
         "at": "2026-10-27T22:59:23.147+00:00",
         "kind": "access_limited",
@@ -515,7 +515,7 @@
         "detail": "HTTP Error 403: Forbidden",
         "evidenceUrl": "https://chiikawabakery.jp/reservation/"
       },
-      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。\n朝のweb観測: success。webで公式予約案内本文確認。 観測の時刻精度: 2026-10-21 23:00 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27夕の経路別・部分/失敗/キャッシュ観測は research/evening-20261027/source-observations.json を参照。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。"
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。\n朝のweb観測: success。webで公式予約案内本文確認。 観測の時刻精度: 2026-10-21 23:00 UTC頃（取得成功の厳密時刻は未保存）。HTTP取得履歴・既知のlastSuccessfulAtを維持。根拠: research/morning-existing-2026-10-22-evidence.json 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/27夕の経路別・部分/失敗/キャッシュ観測は research/evening-20261027/source-observations.json を参照。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29予約システムメンテナンスの確認は research/bakery-maintenance-20261029/source-observations.json。"
     },
     {
       "id": "venue-popup-centrair",
@@ -14297,6 +14297,23 @@
       "resultSummary": null,
       "lastFailure": null,
       "note": "公式根拠の定期確認先。観測経路と取得結果は research/morning-20261029/source-observations.json。未確認の成功時刻を推定しない。"
+    },
+    {
+      "id": "official-post-2115702592705814545",
+      "name": "ちいかわベーカリーOSAKA 予約システムメンテナンス告知",
+      "url": "https://x.com/chiikawabakeryO/status/2115702592705814545",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "2026年10月29日16:09:40 JST発表、17:00:28 JSTに発見。発見時刻を取得成功時刻へ転用しない。本文要約と別経路の失敗は research/bakery-maintenance-20261029/source-observations.json。19時に再確認。 クラウドの公式本文確認を引継ぎ済み。秒単位の原サイト取得完了日時は未収録。別Web経路は403で取得できず。"
     }
   ]
 }

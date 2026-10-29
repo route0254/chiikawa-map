@@ -1,0 +1,119 @@
+{
+  "validatedAt": "2026-10-29T08:14:40.965Z",
+  "base": "e291bf267bc9400118f8a275391634aa4e5480b3",
+  "scope": {
+    "current": [
+      "chiikawa-bakery-tokyo",
+      "chiikawa-bakery-osaka"
+    ],
+    "collaborations": [],
+    "newListings": [],
+    "newArchiveMoves": []
+  },
+  "tests": {
+    "build": {
+      "passed": true,
+      "generatedSpotPages": 872
+    },
+    "checkCommands": 49,
+    "units": {
+      "tests": 58,
+      "passed": 58,
+      "failed": 0
+    },
+    "uiSmoke": {
+      "passed": 111,
+      "startedAt": "2026-10-29T08:09:33.146Z",
+      "completedAt": "2026-10-29T08:13:52.777Z"
+    },
+    "pcMobile": {
+      "checks": 24,
+      "screenshots": 8,
+      "pageErrors": 0,
+      "advancingClock": true,
+      "normalSearchAndListInteractions": true,
+      "savedStateAndSharePreserved": true
+    },
+    "scope": {
+      "verifiedAt": "2026-10-29T08:13:17.956Z",
+      "passed": true,
+      "exitCode": 0,
+      "current": 100,
+      "archive": 678,
+      "totalSpots": 872,
+      "currentUpdates": 2,
+      "newListings": 0,
+      "archiveMoves": 0,
+      "collaborationUpdates": 0,
+      "otherSpotsUnchanged": 870,
+      "allCollaborationsUnchanged": 75,
+      "sources": 726,
+      "candidates": 375,
+      "existingAddedDatesPreserved": true,
+      "allDatesCoordinatesIdsAndGeneralReservationConditionsPreserved": true,
+      "maintenancePriorityVisible": true,
+      "saleStartedAt17NotClaimed": true,
+      "osakaYearConflictRetained": true,
+      "reservationReopensAt": null,
+      "storesClosedNotInferred": true,
+      "purchasedTicketsInvalidNotInferred": true,
+      "priorPr84TimestampsSynced": 7,
+      "priorPublicationAt": "2026-10-28T23:38:06.330Z",
+      "kobeDiscoveredAt": "2026-10-29",
+      "kobeDiscoveryPrecision": "Japan date only, exact seconds not recorded",
+      "otherHoldsUnchanged": true,
+      "existingWorktreesPreserved": 55,
+      "sourceFailureHistoryPreserved": true,
+      "trackedContentChanges": [
+        "data/official-spots.json",
+        "research/official-source-ledger.json",
+        "research/publication-candidate-ledger.json",
+        "sitemap.xml",
+        "spot/chiikawa-bakery-osaka/index.html",
+        "spot/chiikawa-bakery-tokyo/index.html"
+      ]
+    },
+    "officialStatus": {
+      "archiveCandidates": 0,
+      "predicateUnchanged": true
+    },
+    "links": {
+      "startedAt": "2026-10-29T08:11:28.827Z",
+      "completedAt": "2026-10-29T08:11:29.276Z",
+      "passed": true,
+      "exitCode": 0,
+      "error": null,
+      "checkerSha256": "ab5df95b18c6e3b6bf33307f3c8d369ac207b2dd970c7cb1a4a593939b97f53a",
+      "scope": "Two target official evidence URLs only. A web403 route is preserved separately from any successful link response or cloud body observation; other external problems unchanged.",
+      "observations": "ちい活マップ 外部リンク確認\n- 対象URL: 2件\n- 同時接続数: 6\n- タイムアウト: 12000ms\n\n確認結果\n- 正常: 2件\n- HTTPS転送: 0件\n- 要確認: 0件\n- 破損: 0件\n\n明確に破損しているリンクは見つかりませんでした。\n"
+    },
+    "ledgerSourceNormalization": {
+      "unrecordedOriginCompletionKeptNull": true,
+      "cloudBodyObservationAndWeb403KeptSeparately": true,
+      "notCheckedSummaryMovedToProvenanceNote": true,
+      "initialFailureRetainedLocally": true
+    }
+  },
+  "priorPublicationSync": {
+    "pr": 84,
+    "candidates": 7,
+    "firstPublicMatchAt": "2026-10-28T23:38:06.330Z",
+    "kobeDiscoveredAt": "2026-10-29",
+    "kobePrecision": "Japan date only; exact seconds not recorded"
+  },
+  "limits": [
+    "Reservation-system maintenance affects new reservations for Tokyo and Osaka; store closure or invalidation of already purchased tickets is not inferred.",
+    "Tokyo17:00 was an initial sale plan, not a claim that sales started; Osaka old-image sale-year conflict remains unresolved and reservationOpensAt stays null.",
+    "Cloud discovery, origin completion, independent web403 and current direct common-page body confirmation are recorded separately.",
+    "Existing general reservations, benefits, dates, coordinates, IDs and saved state are preserved.",
+    "Known external-link issues, GSC and hosting remain unchanged.",
+    "Custom layout checks use local Leaflet assets and transparent tiles; live tile retrieval is not claimed.",
+    "Source-head/main CI and live exact publication remain pending at local validation."
+  ],
+  "operationsDocument": {
+    "lastUpdated": "2026-10-14",
+    "sha256": "64e671fbe2cb0c1a813e1df7c98e9a99b60c132b6f732bc07e7a715ef25b7d35"
+  },
+  "allLocalChecksSuccessful": true,
+  "appSchemaWorkflowsAndHostingUnchanged": true
+}
