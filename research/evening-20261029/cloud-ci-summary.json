@@ -1,0 +1,253 @@
+{
+  "observedAt": "2026-10-29T09:59:30.167+00:00",
+  "mainSha": "2157193a9aeca0fce7435658f77627a40d6b5b23",
+  "runsInspected": 100,
+  "inProgress": [],
+  "latestSameWorkflow": {
+    "dynamic/pages/pages-build-deployment": {
+      "id": 40842068483,
+      "name": "pages build and deployment",
+      "head_sha": "2157193a9aeca0fce7435658f77627a40d6b5b23",
+      "path": "dynamic/pages/pages-build-deployment",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-29T08:25:50Z",
+      "updated_at": "2026-10-29T08:26:33Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40842068483"
+    },
+    ".github/workflows/validate-data.yml": {
+      "id": 40842068205,
+      "name": "Validate spot data",
+      "head_sha": "2157193a9aeca0fce7435658f77627a40d6b5b23",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-29T08:25:50Z",
+      "updated_at": "2026-10-29T08:26:05Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40842068205"
+    },
+    ".github/workflows/test-site.yml": {
+      "id": 40842068149,
+      "name": "Test site",
+      "head_sha": "2157193a9aeca0fce7435658f77627a40d6b5b23",
+      "path": ".github/workflows/test-site.yml",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-29T08:25:50Z",
+      "updated_at": "2026-10-29T08:28:52Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40842068149"
+    },
+    ".github/workflows/check-site-health.yml": {
+      "id": 40764121942,
+      "name": "Check public site health",
+      "head_sha": "547e9e8705f804e75e126222c0c15748b0b7ee4d",
+      "path": ".github/workflows/check-site-health.yml",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-28T20:32:00Z",
+      "updated_at": "2026-10-28T20:32:17Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40764121942"
+    },
+    ".github/workflows/check-links.yml": {
+      "id": 40245231045,
+      "name": "Check external links",
+      "head_sha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "path": ".github/workflows/check-links.yml",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-25T23:32:28Z",
+      "updated_at": "2026-10-25T23:34:45Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40245231045"
+    },
+    "dynamic/dependabot/dependabot-updates": {
+      "id": 40234731775,
+      "name": "github_actions in /. - Update #1652023634",
+      "head_sha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "path": "dynamic/dependabot/dependabot-updates",
+      "event": "dynamic",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-25T21:16:43Z",
+      "updated_at": "2026-10-25T21:17:23Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40234731775"
+    }
+  },
+  "failedRuns": [
+    {
+      "id": 40397856879,
+      "name": "Validate spot data",
+      "head_sha": "edc020449c7300608f5765415236f4844cf19fc0",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-26T20:41:17Z",
+      "updated_at": "2026-10-26T20:41:30Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40397856879",
+      "laterSuccessRunId": 40842068205
+    },
+    {
+      "id": 40307566597,
+      "name": "Validate spot data",
+      "head_sha": "6e364217ec46e872fb4efea3f4b7cf846b088482",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-26T10:27:32Z",
+      "updated_at": "2026-10-26T10:27:44Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40307566597",
+      "laterSuccessRunId": 40842068205
+    },
+    {
+      "id": 40245914130,
+      "name": "Validate spot data",
+      "head_sha": "b4c17f34fad086079532a98e2e7aede5778cba27",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-25T23:41:40Z",
+      "updated_at": "2026-10-25T23:41:50Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40245914130",
+      "laterSuccessRunId": 40842068205
+    },
+    {
+      "id": 40245507293,
+      "name": "Validate spot data",
+      "head_sha": "dbb82ab8317c378fae9945765e487a2a65e2e619",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-25T23:36:09Z",
+      "updated_at": "2026-10-25T23:36:20Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40245507293",
+      "laterSuccessRunId": 40842068205
+    },
+    {
+      "id": 40245231045,
+      "name": "Check external links",
+      "head_sha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "path": ".github/workflows/check-links.yml",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-25T23:32:28Z",
+      "updated_at": "2026-10-25T23:34:45Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40245231045",
+      "laterSuccessRunId": null
+    },
+    {
+      "id": 40244918610,
+      "name": "Validate spot data",
+      "head_sha": "0fb27a42c592de25d879587716b254849029288a",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-25T23:28:26Z",
+      "updated_at": "2026-10-25T23:28:36Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40244918610",
+      "laterSuccessRunId": 40842068205
+    },
+    {
+      "id": 40221681087,
+      "name": "Validate spot data",
+      "head_sha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-25T18:31:48Z",
+      "updated_at": "2026-10-25T18:32:02Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40221681087",
+      "laterSuccessRunId": 40842068205
+    },
+    {
+      "id": 40120094611,
+      "name": "Validate spot data",
+      "head_sha": "2a5f4aa8699fb4d254062ead647df7514069c4ec",
+      "path": ".github/workflows/validate-data.yml",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-24T18:18:30Z",
+      "updated_at": "2026-10-24T18:18:41Z",
+      "html_url": "https://github.com/route0254/chiikawa-map/actions/runs/40120094611",
+      "laterSuccessRunId": 40842068205
+    }
+  ],
+  "publicationSync": {
+    "candidates": [
+      {
+        "id": "bakery-tokyo-reservation-maintenance-20261029",
+        "state": "ready",
+        "publishedAt": null,
+        "recheckDueAt": "2026-10-29T19:00:00+09:00"
+      },
+      {
+        "id": "bakery-osaka-reservation-maintenance-20261029",
+        "state": "ready",
+        "publishedAt": null,
+        "recheckDueAt": "2026-10-29T19:00:00+09:00"
+      }
+    ],
+    "firstPublicMatchAtFromPriorVerification": "2026-10-29T08:27:23.850Z",
+    "action": "Sync original first public verification timestamp in next normal listing PR; do not create ledger-only chain PR or classify as unpublished."
+  },
+  "externalLinks": {
+    "latestWorkflowRun": 40245231045,
+    "laterSameWorkflowSuccess": false,
+    "observations": [
+      {
+        "url": "https://www.aeon.jp/sc/tsuchiura/event/",
+        "observedAt": "2026-10-29T09:59:47.029+00:00",
+        "status": 404,
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.fujisawa-foodies.jp/search/detail.php?shop_id=1600063",
+        "observedAt": "2026-10-29T09:59:47.030+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fujisawa-foodies.jp/search/detail.php?shop_id=1600063",
+        "bytes": 17510,
+        "title": [
+          "しらす問屋とびっちょ<br>江の島弁財天仲見世通り店<br>|List of Restaurants|FUJISAWA Foodies / Official gourmet guide of Enoshima and Fujisawa"
+        ],
+        "bodyTerms": {
+          "1600063": true,
+          "1600073": false,
+          "とびっちょ": true,
+          "井上": false,
+          "総本舗": false
+        }
+      },
+      {
+        "url": "https://www.fujisawa-foodies.jp/search/omiyage.php?lang=jp&shop_id=1600073",
+        "observedAt": "2026-10-29T09:59:47.030+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fujisawa-foodies.jp/search/omiyage.php?lang=jp&shop_id=1600073",
+        "bytes": 19678,
+        "title": [
+          "井上総本舗|飲食店一覧|【公式】藤沢のおすすめグルメガイドFUJISAWA Foodies"
+        ],
+        "bodyTerms": {
+          "1600063": false,
+          "1600073": true,
+          "とびっちょ": false,
+          "井上": true,
+          "総本舗": true
+        }
+      }
+    ],
+    "action": "No URL removal. Tsuchiura404 persists; Fujisawa two pages return200 correct store title/body; retrieval recovery is not workflow recovery.",
+    "naganoStep": "skipped in original run; no later workflow success"
+  },
+  "completedAt": "2026-10-29T10:00:27.697+00:00"
+}

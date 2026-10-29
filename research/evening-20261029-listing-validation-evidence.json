@@ -1,0 +1,68 @@
+{
+  "validatedAt": "2026-10-29T10:32:27.147Z",
+  "dataBaseCommit": "2157193a9aeca0fce7435658f77627a40d6b5b23",
+  "scope": {
+    "existingSpots": 21,
+    "existingCollaborations": 1,
+    "newListings": 0,
+    "archiveMoves": 0,
+    "unchangedSpots": 851,
+    "unchangedOtherCollaborations": 74
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionRetries": 0,
+    "pcMobileSpotChecks": 214,
+    "pcMobileCollaborationChecks": 4,
+    "screenshots": 30,
+    "pageErrors": 0,
+    "generatedPages": 872,
+    "targetUrls": 7,
+    "targetBrokenUrls": 0,
+    "targetHttpsRedirects": 1
+  },
+  "compatibility": {
+    "idsDatesAddressesCoordinatesPreserved": true,
+    "normalEntryTypePreserved": true,
+    "conditionalReservationAvailableFor19Stores": true,
+    "sharedUrlsAndThreeStorageKeysPreserved": true,
+    "archiveHiddenByDefault": true
+  },
+  "sourceAndCandidateRecords": {
+    "sources": 757,
+    "candidates": 397,
+    "newReadyCandidates": 22,
+    "originalDiscoveryAndFailureHistoryPreserved": true,
+    "priorPr85PublishedAt": "2026-10-29T08:27:23.850Z",
+    "priorPr85SyncedCandidates": 2,
+    "reportedTimeNeverUsedAsPublishedAt": true
+  },
+  "visualReview": {
+    "officialImages": 3,
+    "pcMobileScreenshotsReviewed": 4,
+    "publicScreenshotsNotAdded": true
+  },
+  "privateInformationCheck": {
+    "passed": true,
+    "rawHtmlAndLibraryOriginalExcluded": true,
+    "credentialsCookiesAndAbsoluteLocalPathsExcluded": true
+  },
+  "unresolved": {
+    "reservationResumesAt": null,
+    "osakaSaleYearConflict": true,
+    "kamakuraOpeningDate": null,
+    "historicalHolds": 7,
+    "adventCorrectedSaleDate": null,
+    "nextCheck": "2026-10-30T08:00:00+09:00",
+    "externalLinksWorkflowPriorFailure": "40245231045",
+    "unrelatedExternal404AndGscUnchanged": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "main配信後、対象commitのCIと公開JSON・個別ページ・関連リソースの完全一致、公開後Healthを確認し実測を別記録。"
+  }
+}
