@@ -1,0 +1,81 @@
+{
+  "validatedAt": "2026-10-29T23:34:09.560Z",
+  "dataBaseCommit": "f4a5c9333a8e156585e5ca1d04c1369dd240717e",
+  "scope": {
+    "newListings": 2,
+    "existingSpotUpdates": 5,
+    "existingCollaborationUpdated": 1,
+    "archiveMoves": 0,
+    "current": 102,
+    "archive": 678,
+    "totalSpots": 874
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionRetries": 0,
+    "pcMobileSpotChecks": 74,
+    "pcMobileCollaborationChecks": 4,
+    "screenshots": 30,
+    "pageErrors": 0,
+    "generatedPages": 874,
+    "targetUrls": 9,
+    "targetBrokenUrls": 0
+  },
+  "compatibility": {
+    "existingIdsDatesAddressesCoordinatesPreserved": true,
+    "normalConditionsAndUmedaNovemberLotteryPreserved": true,
+    "sharedUrlsAndThreeStorageKeysPreserved": true,
+    "archiveHiddenByDefault": true,
+    "existingTokyoBananaCollaborationReused": true,
+    "seriesSourceImportUsed": true,
+    "newFacilityCoordinatesVerified": true,
+    "granstaRepresentativePointNotIndoorPrecise": true,
+    "urasoeRepresentativePointNotIndoorPrecise": true,
+    "endingToday12RemainCurrent": true
+  },
+  "sourceAndCandidateRecords": {
+    "sources": 772,
+    "candidates": 404,
+    "newReadyCandidates": 7,
+    "coreRequestStartNotPromotedToSuccessfulCompletion": true,
+    "originalDiscoveryAndFailureHistoryPreserved": true,
+    "priorPr86PublishedAt": "2026-10-29T10:45:13.873Z",
+    "priorPr86SyncedCandidates": 22,
+    "reportedTimeNeverUsedAsPublishedAt": true,
+    "granstaDiscoveredAfterStart": true
+  },
+  "visualReview": {
+    "officialImages": 2,
+    "pcMobileScreenshotsReviewed": 3,
+    "publicScreenshotsNotAdded": true
+  },
+  "privateInformationCheck": {
+    "passed": true,
+    "rawHtmlAndLibraryOriginalExcluded": true,
+    "credentialsCookiesAndAbsoluteLocalPathsExcluded": true
+  },
+  "resolvedDuringValidation": {
+    "newCrowdControlEnumsNormalized": true,
+    "locallyGeneratedNewIdsMatchedWithoutClaimingPublication": true,
+    "collaborationTestCorrectedToExistingSingleMapLinkBehavior": true,
+    "productLogicAndValidationCriteriaUnchanged": true
+  },
+  "unresolved": {
+    "reservationResumesAt": null,
+    "osakaSaleYearConflict": true,
+    "kamakuraOpeningDate": null,
+    "historicalHolds": 7,
+    "adventCorrectedSaleDate": null,
+    "nextCheck": "2026-10-30T19:00:00+09:00",
+    "externalLinksWorkflowPriorFailure": "40245231045",
+    "unrelatedExternal404AndGscUnchanged": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象mainの配信後、CIと公開JSON・個別ページ・関連リソースの完全一致、公開後Healthを確認し初回実測を別記録。"
+  }
+}

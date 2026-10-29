@@ -1,0 +1,882 @@
+{
+  "observedAt": "2026-10-29T23:06:28.489+00:00",
+  "main": "f4a5c9333a8e156585e5ca1d04c1369dd240717e",
+  "publicMatches": {
+    "official-spots.json": {
+      "count": 100,
+      "byteExact": true,
+      "sha256": "4c1b652147710f7ec45e338f8b252ba005233a46d508ea742cddfc2411718cc6"
+    },
+    "official-events-archive.json": {
+      "count": 678,
+      "byteExact": true,
+      "sha256": "99e52390d5e7ae6f3d6ab6de7e686b626a919a405c03d074e3253b53765360bc"
+    },
+    "collaborations-current.json": {
+      "count": 23,
+      "byteExact": true,
+      "sha256": "f84d45eb26706789d1bdc8514e9e85d1a7ceb182a08098b1f9b3e6c8e46aae70"
+    }
+  },
+  "duplicateIds": {
+    "official-spots.json": [],
+    "official-events-archive.json": [],
+    "collaborations-current.json": []
+  },
+  "currentArchiveOverlap": [],
+  "endedCurrent": [],
+  "endingToday": [
+    {
+      "id": "chiikawa-cheer-screening-toho-susukino-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ すすきの",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 43.0551326,
+      "lng": 141.352701,
+      "address": "北海道札幌市中央区南4条西4丁目1-1 COCONO SUSUKINO 5F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E3%81%99%E3%81%99%E3%81%8D%E3%81%AE%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%974%E6%9D%A1%E8%A5%BF4%E4%B8%81%E7%9B%AE1-1%20COCONO%20SUSUKINO%205F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-sendai-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 仙台",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 38.2589327,
+      "lng": 140.8795642,
+      "address": "宮城県仙台市青葉区中央3-7-5 仙台パルコ2 6F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E4%BB%99%E5%8F%B0%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E4%B8%AD%E5%A4%AE3-7-5%20%E4%BB%99%E5%8F%B0%E3%83%91%E3%83%AB%E3%82%B32%206F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-hibiya-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 日比谷",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。地図は施設代表位置です。チケットに記載された建物・スクリーンをご確認ください。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 35.6737436,
+      "lng": 139.7591762,
+      "address": "東京都千代田区有楽町1-1-2 東京ミッドタウン日比谷4F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E6%97%A5%E6%AF%94%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E6%9C%89%E6%A5%BD%E7%94%BA1-1-2%20%E6%9D%B1%E4%BA%AC%E3%83%9F%E3%83%83%E3%83%89%E3%82%BF%E3%82%A6%E3%83%B3%E6%97%A5%E6%AF%94%E8%B0%B74F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-shinjuku-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 新宿",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 35.6954153,
+      "lng": 139.7020545,
+      "address": "東京都新宿区歌舞伎町1-19-1 新宿東宝ビル3F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E6%96%B0%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA1-19-1%20%E6%96%B0%E5%AE%BF%E6%9D%B1%E5%AE%9D%E3%83%93%E3%83%AB3F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-ikebukuro-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 池袋",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 35.7324251,
+      "lng": 139.7153486,
+      "address": "東京都豊島区東池袋1-18-1 Hareza Tower内",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E6%B1%A0%E8%A2%8B%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B1-18-1%20Hareza%20Tower%E5%86%85",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-shibuya-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 渋谷",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 35.6590414,
+      "lng": 139.6989317,
+      "address": "東京都渋谷区道玄坂2-6-17",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%822-6-17",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-tjoy-yokohama-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 T・ジョイ横浜",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 35.4667112,
+      "lng": 139.622346,
+      "address": "神奈川県横浜市西区南幸一丁目1番1号 JR横浜タワー8階",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=T%E3%83%BB%E3%82%B8%E3%83%A7%E3%82%A4%E6%A8%AA%E6%B5%9C%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E8%A5%BF%E5%8C%BA%E5%8D%97%E5%B9%B8%E4%B8%80%E4%B8%81%E7%9B%AE1%E7%95%AA1%E5%8F%B7%20JR%E6%A8%AA%E6%B5%9C%E3%82%BF%E3%83%AF%E3%83%BC8%E9%9A%8E",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-nagoya-sakae-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 名古屋栄",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 35.1693698,
+      "lng": 136.907751,
+      "address": "愛知県名古屋市中区錦3丁目25-1 ザ・ランドマーク名古屋栄5F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E6%A0%84%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E5%8C%BA%E9%8C%A63%E4%B8%81%E7%9B%AE25-1%20%E3%82%B6%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%89%E3%83%9E%E3%83%BC%E3%82%AF%E5%90%8D%E5%8F%A4%E5%B1%8B%E6%A0%845F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-umeda-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 梅田",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 34.70331958171439,
+      "lng": 135.50001049384838,
+      "address": "大阪府大阪市北区角田町7-10 HEP NAVIO 8F（本館）",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E6%A2%85%E7%94%B0%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%A7%92%E7%94%B0%E7%94%BA7-10%20HEP%20NAVIO%208F%EF%BC%88%E6%9C%AC%E9%A4%A8%EF%BC%89",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-namba-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ なんば",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。地図は施設代表位置です。チケットに記載された建物・スクリーンをご確認ください。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 34.6655785,
+      "lng": 135.5011098,
+      "address": "大阪府大阪市中央区難波3-8-9（本館）",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E3%81%AA%E3%82%93%E3%81%B0%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%A3%E6%B3%A23-8-9%EF%BC%88%E6%9C%AC%E9%A4%A8%EF%BC%89",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-hiroshima-wald11-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 広島バルト11",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 34.394397,
+      "lng": 132.4996548,
+      "address": "広島県安芸郡府中町大須2-1-1 イオンモール広島府中4F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%BA%83%E5%B3%B6%E3%83%90%E3%83%AB%E3%83%8811%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%AE%89%E8%8A%B8%E9%83%A1%E5%BA%9C%E4%B8%AD%E7%94%BA%E5%A4%A7%E9%A0%882-1-1%20%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E5%BA%83%E5%B3%B6%E5%BA%9C%E4%B8%AD4F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    },
+    {
+      "id": "chiikawa-cheer-screening-toho-tenjin-solaria-20261030",
+      "name": "映画ちいかわ “なんとかなれーッ！”応援上映 TOHOシネマズ 天神・ソラリア館",
+      "category": "official",
+      "placeType": "spot",
+      "relationType": "event",
+      "brand": "chiikawa_movie",
+      "periodType": "limited",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hoursText": "19:00上映開始",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "hoursCheckedAt": "2026-10-21",
+      "reservationType": "optional",
+      "reservationUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "defaultEntryType": "ticket_required",
+      "crowdControlType": "timed_entry",
+      "crowdControlCondition": "always",
+      "entryNote": "対象上映回の有料チケットが必要です。10月23日0:00から各劇場ホームページで販売開始。会員先行販売等の対象外です。発声や応援グッズの持ち込みが可能な特別上映です。",
+      "entryInfoUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "entryInfoCheckedAt": "2026-10-21",
+      "lat": 33.5890297,
+      "lng": 130.3990942,
+      "address": "福岡県福岡市中央区天神2-2-43 ソラリアプラザ7F",
+      "description": "「映画ちいかわ 人魚の島のひみつ」の第3回応援上映。声援を送りながら鑑賞できる特別上映です。",
+      "sourceUrl": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOHO%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%20%E5%A4%A9%E7%A5%9E%E3%83%BB%E3%82%BD%E3%83%A9%E3%83%AA%E3%82%A2%E9%A4%A8%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E2-2-43%20%E3%82%BD%E3%83%A9%E3%83%AA%E3%82%A2%E3%83%97%E3%83%A9%E3%82%B67F",
+      "importantNotice": "チケットは10月23日0:00発売。通常の上映日程とは異なる単日イベントです。"
+    }
+  ],
+  "endedCollaborationSubperiods": [
+    {
+      "id": "ana-chiikawa-jet-2026",
+      "period": {
+        "label": "A-style 仮想待合室",
+        "startDate": "2026-10-23",
+        "endDate": "2026-10-23",
+        "note": "9:30〜9:59の事前待機者には10:00にランダムで入場順を割り当て、10:00以降のアクセスはその後の先着順となります。案内後10分以内に入場し、サイト利用は30分以内。約30分で並び直しとなり、カートが無効になる場合があります。待合室は商品の在庫確保を保証しません。詳細：https://www.astyle.jp/astyle/news/696/"
+      },
+      "sourceUrl": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/"
+    },
+    {
+      "id": "movie-chiikawa-cafe-2026",
+      "period": {
+        "label": "渋谷PARCO",
+        "startDate": "2026-07-10",
+        "endDate": "2026-09-14",
+        "note": ""
+      },
+      "sourceUrl": "https://cafe.parco.jp/event/information/chiikawamovie_cafe"
+    },
+    {
+      "id": "movie-chiikawa-cafe-2026",
+      "period": {
+        "label": "心斎橋PARCO",
+        "startDate": "2026-07-24",
+        "endDate": "2026-09-28",
+        "note": ""
+      },
+      "sourceUrl": "https://cafe.parco.jp/event/information/chiikawamovie_cafe"
+    },
+    {
+      "id": "suntory-movie-chiikawa-2026",
+      "period": {
+        "label": "レシート有効期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-08-31",
+        "note": "終了済み。対象商品の購入日が7月16日～8月31日のレシートが対象でした。"
+      },
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html"
+    },
+    {
+      "id": "suntory-movie-chiikawa-2026",
+      "period": {
+        "label": "レシートアップロード期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-09-01",
+        "note": "終了済み。7月16日9:00～9月1日23:59。"
+      },
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html"
+    },
+    {
+      "id": "suntory-movie-chiikawa-2026",
+      "period": {
+        "label": "応募受付期間",
+        "startDate": "2026-07-16",
+        "endDate": "2026-09-08",
+        "note": "終了済み。7月16日9:00～9月8日23:59。詳細：https://www.suntory.co.jp/softdrink/allbrands/202607/cp01/"
+      },
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000846.000027480.html"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "period": {
+        "label": "JR池袋駅 POP UP SHOP",
+        "startDate": "2026-09-17",
+        "endDate": "2026-10-14",
+        "note": "イベントステーション池袋南通路で開催。"
+      },
+      "sourceUrl": "https://www.tokyobanana.jp/products/banana_chiikawa.html"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "period": {
+        "label": "盛岡駅 POP UP SHOP",
+        "startDate": "2026-09-18",
+        "endDate": "2026-09-30",
+        "note": "盛岡駅ビル フェザンのフェザンタベナクルで開催。"
+      },
+      "sourceUrl": "https://www.tokyobanana.jp/products/banana_chiikawa.html"
+    },
+    {
+      "id": "tokyo-banana-chiikawa",
+      "period": {
+        "label": "東京ソラマチ POP UP SHOP",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-14",
+        "note": "イーストヤード1F 10番地「空の小町」で開催。"
+      },
+      "sourceUrl": "https://www.tokyobanana.jp/products/banana_chiikawa.html"
+    },
+    {
+      "id": "kadokawa-chiikawa-book-fair-2026-summer",
+      "period": {
+        "label": "レシート対象期間",
+        "startDate": "2026-07-13",
+        "endDate": "2026-09-30",
+        "note": "9月30日23:59までの購入分が対象でした。レシートは購入後1週間以内の投稿が必要でした。賞品への応募期限はKADOKAWAアプリの応募要項をご確認ください。"
+      },
+      "sourceUrl": "https://group.kadokawa.co.jp/information/promotional_topics/article-15217.html"
+    },
+    {
+      "id": "abema-chiikawa-christmas-market-2026",
+      "period": {
+        "label": "先行抽選受付",
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-25",
+        "note": "10月15日12:00～10月25日23:59。10月30日12:00以降に当落発表。"
+      },
+      "sourceUrl": "https://www.cyberagent.co.jp/news/detail/id=33894"
+    }
+  ],
+  "metrics": {
+    "scope": "Only recorded known dates, not overall coverage. Main ledger before PR86 timestamp sync. Date-only pairs excluded from elapsed hours.",
+    "preStartPublication": {
+      "eligible": 60,
+      "known": 53,
+      "before": 52,
+      "notBefore": 1,
+      "unpublishedAfterStart": 0,
+      "unknown": 7,
+      "rate": 0.9811320754716981
+    },
+    "announcedToDiscovered": {
+      "elapsedHours": {
+        "samples": 35,
+        "mean": 20.23499376190476,
+        "min": 0.08666666666666667,
+        "max": 168.4488888888889
+      },
+      "japanCalendarDays": {
+        "samples": 210,
+        "mean": 26.004761904761907,
+        "min": 0,
+        "max": 1214
+      },
+      "unknownPairs": 187,
+      "negativeOrderPairs": 0,
+      "pairsWithoutExactHours": 362
+    },
+    "discoveredToPublished": {
+      "elapsedHours": {
+        "samples": 188,
+        "mean": 4.489886239657211,
+        "min": 0.2632788888888889,
+        "max": 277.5468452777778
+      },
+      "japanCalendarDays": {
+        "samples": 290,
+        "mean": 0.3,
+        "min": 0,
+        "max": 19
+      },
+      "unknownPairs": 59,
+      "negativeOrderPairs": 0,
+      "pairsWithoutExactHours": 161
+    },
+    "announcedToPublished": {
+      "elapsedHours": {
+        "samples": 42,
+        "mean": 780.9427440410053,
+        "min": 0.9634952777777778,
+        "max": 29303.481111111112
+      },
+      "japanCalendarDays": {
+        "samples": 188,
+        "mean": 21.9468085106383,
+        "min": 0,
+        "max": 1273
+      },
+      "unknownPairs": 161,
+      "negativeOrderPairs": 0,
+      "pairsWithoutExactHours": 307
+    }
+  },
+  "publicationSyncPending": [
+    {
+      "id": "chiikawaland-harajuku-entry-20261106",
+      "listingIds": [
+        "chiikawaland-harajuku"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-tokyo-station-entry-20261106",
+      "listingIds": [
+        "chiikawaland-tokyo-station"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-solamachi-entry-20261106",
+      "listingIds": [
+        "chiikawaland-solamachi"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-yokohama-entry-20261106",
+      "listingIds": [
+        "chiikawaland-yokohama"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-shinjuku-entry-20261106",
+      "listingIds": [
+        "chiikawaland-shinjuku"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-ikebukuro-entry-20261106",
+      "listingIds": [
+        "chiikawaland-ikebukuro"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-koshigaya-entry-20261106",
+      "listingIds": [
+        "chiikawaland-koshigaya"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-nagoya-entry-20261106",
+      "listingIds": [
+        "chiikawaland-nagoya"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-kyoto-entry-20261106",
+      "listingIds": [
+        "chiikawaland-kyoto"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-osaka-umeda-entry-20261106",
+      "listingIds": [
+        "chiikawaland-osaka-umeda"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-shinsaibashi-entry-20261106",
+      "listingIds": [
+        "chiikawaland-shinsaibashi"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-kanazawa-entry-20261106",
+      "listingIds": [
+        "chiikawaland-kanazawa"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-sapporo-entry-20261106",
+      "listingIds": [
+        "chiikawaland-sapporo"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-sendai-entry-20261106",
+      "listingIds": [
+        "chiikawaland-sendai"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-hiroshima-entry-20261106",
+      "listingIds": [
+        "chiikawaland-hiroshima"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawaland-fukuoka-entry-20261106",
+      "listingIds": [
+        "chiikawaland-fukuoka"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "ramen-buta-shinsaibashi-entry-20261029",
+      "listingIds": [
+        "ramen-buta-shinsaibashi"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "chiikawa-restaurant-ikebukuro-reservation-20261121",
+      "listingIds": [
+        "chiikawa-restaurant-ikebukuro"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "magical-shinjuku-nov6-entry-20261029",
+      "listingIds": [
+        "magical-shinjuku"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "magical-umeda-nov6-entry-20261029",
+      "listingIds": [
+        "magical-umeda"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "magical-nagoya-nov6-entry-20261029",
+      "listingIds": [
+        "magical-nagoya"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    },
+    {
+      "id": "market-inventory-shipping-ana-channel-20261029",
+      "listingIds": [
+        "ana-chiikawa-jet-2026"
+      ],
+      "publishedAtToSync": "2026-10-29T10:45:13.873Z"
+    }
+  ],
+  "ci": {
+    "runCountReviewed": 100,
+    "activeRunIds": [],
+    "latestByWorkflow": [
+      {
+        "id": 40950254662,
+        "name": "Check public site health",
+        "workflowId": 342809520,
+        "headSha": "f4a5c9333a8e156585e5ca1d04c1369dd240717e",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "schedule",
+        "createdAt": "2026-10-29T20:34:36Z",
+        "updatedAt": "2026-10-29T20:34:50Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40950254662"
+      },
+      {
+        "id": 40949397471,
+        "name": "Validate spot data",
+        "workflowId": 342280137,
+        "headSha": "f4a5c9333a8e156585e5ca1d04c1369dd240717e",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "schedule",
+        "createdAt": "2026-10-29T20:28:50Z",
+        "updatedAt": "2026-10-29T20:29:06Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40949397471"
+      },
+      {
+        "id": 40859843354,
+        "name": "Test site",
+        "workflowId": 342550527,
+        "headSha": "f4a5c9333a8e156585e5ca1d04c1369dd240717e",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "push",
+        "createdAt": "2026-10-29T10:43:49Z",
+        "updatedAt": "2026-10-29T10:48:21Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40859843354"
+      },
+      {
+        "id": 40859843050,
+        "name": "pages build and deployment",
+        "workflowId": 340583706,
+        "headSha": "f4a5c9333a8e156585e5ca1d04c1369dd240717e",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "dynamic",
+        "createdAt": "2026-10-29T10:43:49Z",
+        "updatedAt": "2026-10-29T10:44:42Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40859843050"
+      },
+      {
+        "id": 40245231045,
+        "name": "Check external links",
+        "workflowId": 342736379,
+        "headSha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+        "status": "completed",
+        "conclusion": "failure",
+        "event": "schedule",
+        "createdAt": "2026-10-25T23:32:28Z",
+        "updatedAt": "2026-10-25T23:34:45Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40245231045"
+      },
+      {
+        "id": 40234731775,
+        "name": "github_actions in /. - Update #1652023634",
+        "workflowId": 347200571,
+        "headSha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "dynamic",
+        "createdAt": "2026-10-25T21:16:43Z",
+        "updatedAt": "2026-10-25T21:17:23Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40234731775"
+      }
+    ],
+    "unresolvedLatestWorkflowFailures": [
+      {
+        "id": 40245231045,
+        "name": "Check external links",
+        "workflowId": 342736379,
+        "headSha": "7bfad92f06fb33495cc9caa109129833c38aedaa",
+        "status": "completed",
+        "conclusion": "failure",
+        "event": "schedule",
+        "createdAt": "2026-10-25T23:32:28Z",
+        "updatedAt": "2026-10-25T23:34:45Z",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/40245231045"
+      }
+    ],
+    "resolvedOldFailureIds": [
+      40397856879,
+      40307566597,
+      40245914130,
+      40245507293,
+      40244918610,
+      40221681087,
+      40120094611
+    ],
+    "externalLinkJob": {
+      "id": 121325274137,
+      "conclusion": "failure",
+      "naganoOfficialListStep": "skipped",
+      "latestRunId": 40245231045,
+      "laterSameWorkflowSuccess": false
+    }
+  },
+  "externalObservations": [
+    {
+      "url": "https://www.aeon.jp/sc/tsuchiura/event/",
+      "completedAt": "2026-10-29T23:06:36.944+00:00",
+      "httpStatus": 404,
+      "finalUrl": "https://www.aeon.jp/sc/tsuchiura/event/",
+      "bytes": 5516,
+      "hasTobiccho": false,
+      "hasInoue": false,
+      "lastSuccessfulAt": null
+    },
+    {
+      "url": "https://www.fujisawa-foodies.jp/search/detail.php?shop_id=1600063",
+      "completedAt": "2026-10-29T23:06:33.772+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.fujisawa-foodies.jp/search/detail.php?shop_id=1600063",
+      "bytes": 17512,
+      "hasTobiccho": true,
+      "hasInoue": false,
+      "lastSuccessfulAt": "2026-10-29T23:06:33.772+00:00"
+    },
+    {
+      "url": "https://www.fujisawa-foodies.jp/search/omiyage.php?lang=jp&shop_id=1600073",
+      "completedAt": "2026-10-29T23:06:33.706+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.fujisawa-foodies.jp/search/omiyage.php?lang=jp&shop_id=1600073",
+      "bytes": 19678,
+      "hasTobiccho": false,
+      "hasInoue": true,
+      "lastSuccessfulAt": "2026-10-29T23:06:33.706+00:00"
+    },
+    {
+      "url": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "completedAt": "2026-10-29T23:06:34.940+00:00",
+      "httpStatus": 404,
+      "finalUrl": "https://sapporohiraoka.aeonmallhokkaido.com/news/detail/2572",
+      "bytes": 18319,
+      "hasTobiccho": false,
+      "hasInoue": false,
+      "lastSuccessfulAt": null
+    }
+  ],
+  "weeklyBroadReview": {
+    "lastKnown": "2026-10-26",
+    "sevenDaysElapsed": false
+  },
+  "notes": [
+    "CI success is not proof of announcement coverage.",
+    "All 12 endingToday entries remain current on 2026-10-30; require official confirmation before moving after today.",
+    "11 expired collaboration subperiods are not automatic evidence that entire collaboration ended.",
+    "PR86 ready entries are actually published; 22 timestamps await next normal update, not metadata-only PR.",
+    "404 historical pages are retained, not deleted; Fujisawa 200 recovery is not same-workflow CI success."
+  ]
+}

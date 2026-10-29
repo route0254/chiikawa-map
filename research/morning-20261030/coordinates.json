@@ -1,0 +1,37 @@
+{
+  "verifiedAt": "2026-10-29T23:26:41.737Z",
+  "urasoe": {
+    "lat": 26.2617542,
+    "lng": 127.6981799,
+    "precision": "PARCO CITY施設代表地点。2F催事区画の屋内精密点ではない。",
+    "officialAddressUrl": "https://www.parcocity.jp/access/",
+    "officialAddress": "沖縄県浦添市西洲3-1-1",
+    "mapSource": "https://www.google.com/maps?q=%E3%82%B5%E3%83%B3%E3%82%A8%E3%83%BC%E6%B5%A6%E6%B7%BB%E8%A5%BF%E6%B5%B7%E5%B2%B8%20PARCO%20CITY%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E8%A5%BF%E6%B4%B23-1-1&output=embed",
+    "featureId": "0x34e56b0af61f94c5:0x78aac934fb2b5c0",
+    "cid": "543436453748848064",
+    "mapName": "PARCO CITY",
+    "mapAddress": "3 Chome-1-1 Irijima, Urasoe, Okinawa 901-2123",
+    "rejectedCameraOnlyLink": true,
+    "officialScriptMarkerDifferent": {
+      "lat": 26.264167,
+      "lng": 127.700109,
+      "adopted": false,
+      "note": "施設名・公式住所に一致する実place featureを採用。既存他店舗の座標は変更しない。"
+    }
+  },
+  "gransta": {
+    "lat": 35.6798702,
+    "lng": 139.7675145,
+    "precision": "公式施設ページの埋込地図のグランスタ東京実place代表点。スクエアゼロの屋内精密点ではない。",
+    "officialFacilityUrl": "https://www.gransta.jp/mall/gransta_tokyo/",
+    "officialHallUrl": "https://www.gransta.jp/news/info/eventsquarezero/",
+    "featureId": "0x60188bfbd9008ca1:0x5fc9c642387233ad",
+    "cid": "6902265891639145389",
+    "mapName": "グランスタ東京",
+    "mapAddress": "東京都千代田区丸の内1丁目9−1 JR東日本 東京駅構内 B1～1F",
+    "rejectedEmbedCameraCenter": {
+      "lat": 35.68134298019421,
+      "lng": 139.76468531558993
+    }
+  }
+}
