@@ -1,0 +1,82 @@
+{
+  "validatedAt": "2026-10-30T10:29:18.056Z",
+  "dataBaseCommit": "305cf618c28f6b92b46391fd534d983652e3520e",
+  "scope": {
+    "newListings": 1,
+    "existingSpotUpdates": 7,
+    "archiveMoves": 0,
+    "current": 103,
+    "archive": 678,
+    "totalSpots": 875,
+    "collaborationsUnchanged": 23
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionRetries": 0,
+    "pcMobileSpotChecks": 84,
+    "finalEnumSpotRechecks": 14,
+    "screenshots": 36,
+    "pageErrors": 0,
+    "generatedPages": 875,
+    "targetUrls": 22,
+    "targetBrokenUrls": 0
+  },
+  "compatibility": {
+    "existingIdsDatesAddressesCoordinatesPreserved": true,
+    "normalBookingAndNovemberLotteryPreserved": true,
+    "sharedUrlsAndThreeStorageKeysPreserved": true,
+    "archiveHiddenByDefault": true,
+    "newVenueRepresentativePointReusedFromVerifiedHistory": true,
+    "endingToday12RemainCurrent": true,
+    "pr89ChangesExcluded": true,
+    "existingEnabledSourcesUnchanged": 749
+  },
+  "sourceAndCandidateRecords": {
+    "sources": 790,
+    "candidates": 412,
+    "newReadyCandidates": 8,
+    "discoveredAtUnknownNotEstimated": true,
+    "discoveryWindowsStoredSeparately": true,
+    "originalDiscoveryAndFailureHistoryPreserved": true,
+    "priorPr87PublishedAt": "2026-10-29T23:43:18.163Z",
+    "priorPr87SyncedCandidates": 7,
+    "reportedTimeNeverUsedAsPublishedAt": true,
+    "lucuaLocalJsShellNotPromotedToContentSuccess": true,
+    "utsunomiyaBody403SeparateFromOtherSuccessfulRoutes": true
+  },
+  "visualReview": {
+    "officialImages": 6,
+    "pcMobileScreenshotsReviewed": 3,
+    "publicScreenshotsNotAdded": true
+  },
+  "privateInformationCheck": {
+    "passed": true,
+    "rawHtmlAndUnfilteredLinksExcluded": true,
+    "credentialsCookiesAndAbsoluteLocalPathsExcluded": true
+  },
+  "resolvedDuringValidation": {
+    "newCrowdControlEnumNormalizedToWhenCrowded": true,
+    "finalNewSpotDisplayRechecked": true,
+    "productLogicAndValidationCriteriaUnchanged": true
+  },
+  "unresolved": {
+    "reservationResumesAt": null,
+    "osakaJanuary2027SaleYearConflict": true,
+    "kurashikiVenueConflict": true,
+    "kamakuraOpeningDate": null,
+    "historicalHolds": 7,
+    "adventCorrectedSaleDate": null,
+    "externalLinksWorkflowPriorFailure": "40245231045",
+    "futureTsuchiuraUrlUnchanged": true,
+    "gscUnchanged": true,
+    "pr89OpenAndSeparate": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象mainの配信後、CIと公開JSON・個別ページ・関連リソースの完全一致、公開後Healthを確認し初回実測を別記録。"
+  }
+}
