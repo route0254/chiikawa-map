@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-30T20:11:21.785Z",
+  "observations": [
+    {
+      "sourceId": "movie-cheer-third",
+      "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T20:09:01.561Z",
+      "completedAt": "2026-10-30T20:09:01.644Z",
+      "httpStatus": 200,
+      "bytes": 22632,
+      "sha256": "31c358c85dba6f85e4d69ba88f4b89cdd1556491c66db1c70143b7dfa8314de4",
+      "result": "success",
+      "summary": "通常版第3回は2026/10/30 19:00、8都道府県12劇場と確認。11/6 19:00のペンライト演出付き7劇場は別の上映回。"
+    },
+    {
+      "sourceId": "movie-news-index",
+      "url": "https://chiikawa.toho-movie.jp/news/",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T20:09:01.594Z",
+      "completedAt": "2026-10-30T20:09:01.646Z",
+      "httpStatus": 200,
+      "bytes": 23716,
+      "sha256": "81ee6b3185317ca09881d581d2dcf7834c547d2ba12c3445522a496a32babf98",
+      "result": "success",
+      "summary": "公式ニュース一覧と第三回告知を照合し、10/30通常版の延長案内は確認範囲で未発見。"
+    }
+  ],
+  "scope": {
+    "normalThirdScreeningDate": "2026-10-30",
+    "normalStartsAt": "19:00 JST",
+    "normalTheaterCount": 12,
+    "extensionNoticeFoundInCheckedOfficialSources": false,
+    "separatePenlightDate": "2026-11-06",
+    "separatePenlightTheaterCount": 7,
+    "unrelatedScreeningsUnchanged": true
+  },
+  "announcementDatePrecision": {
+    "articleDateLabel": "2026-09-17",
+    "newsIndexDateLabel": "2026-10-21",
+    "reconciled": false,
+    "officialAnnouncedAt": null
+  },
+  "nativeHtmlExcluded": true,
+  "unfilteredLinksExcluded": true
+}
