@@ -3,6 +3,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { collectLinkCheckTargets, japanToday, protectedLinkUrls } from "./lib/link-check-targets.mjs";
 
 const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -35,7 +36,10 @@ if (args.has("--help")) {
 
 オプション:
   --include-map  GoogleマップのURLも確認します
-  --limit=N      先頭N URLだけ確認します（動作テスト用）
+  --limit=N      対象選別後の先頭N URLだけ確認します（動作テスト用）
+
+終了済み履歴と、終了日を過ぎた期間限定行だけのURLは取得しません。
+終了日当日・終了日不明・常設・共通情報源・現行と共有するURLは維持します。
 
 環境変数:
   LINK_CHECK_CONCURRENCY  同時接続数（既定: 6）
@@ -93,41 +97,25 @@ function describeReferences(references) {
     : preview;
 }
 
+async function loadOptionalJSON(file, fallback) {
+  try { return JSON.parse(await readFile(path.join(projectRoot, file), "utf8")); }
+  catch (error) { if (error.code === "ENOENT") return fallback; throw error; }
+}
+
 async function loadTargets() {
-  const targets = new Map();
-
-  for (const file of datasets) {
-    const absolutePath = path.join(projectRoot, file);
-    const spots = JSON.parse(
-      await readFile(absolutePath, "utf8")
-    );
-
-    for (const spot of spots) {
-      for (const field of linkFields) {
-        const url = spot[field];
-
-        if (typeof url !== "string" || !url.trim()) {
-          continue;
-        }
-
-        if (!targets.has(url)) {
-          targets.set(url, {
-            url,
-            references: []
-          });
-        }
-
-        targets.get(url).references.push({
-          file,
-          field,
-          spotId: spot.id,
-          spotName: spot.name
-        });
-      }
-    }
-  }
-
-  return [...targets.values()].slice(0, limit);
+  const today = japanToday();
+  const loaded = await Promise.all(datasets.map(async file => ({
+    file, records: JSON.parse(await readFile(path.join(projectRoot, file), "utf8"))
+  })));
+  const sources = await loadOptionalJSON("research/official-source-ledger.json", { sources: [] });
+  const candidates = await loadOptionalJSON("research/publication-candidate-ledger.json", { candidates: [] });
+  const collaborations = await loadOptionalJSON("data/collaborations-current.json", []);
+  const protectedUrls = protectedLinkUrls({
+    sources: sources.sources, candidates: candidates.candidates, collaborations
+  }, today);
+  return collectLinkCheckTargets(loaded, {
+    today, fields: linkFields, protectedUrls: protectedUrls.filter(url => typeof url === "string")
+  });
 }
 
 async function requestUrl(url, method) {
@@ -208,16 +196,7 @@ function classifyResponse(target, response) {
   const finalUrl = response.url || target.url;
 
   if (status === 404 || status === 410) {
-    const archiveOnly = target.references.every(
-      reference => reference.file === "data/official-events-archive.json"
-    );
-    return {
-      kind: archiveOnly ? "warning" : "broken",
-      target,
-      message: archiveOnly
-        ? `HTTP ${status}（終了済みイベントの公式ページは公開終了の可能性）`
-        : `HTTP ${status}`
-    };
+    return { kind: "broken", target, message: "HTTP " + status };
   }
 
   if (status < 200 || status >= 400) {
@@ -277,10 +256,14 @@ async function runWithConcurrency(items, worker, count) {
   return results;
 }
 
-const targets = await loadTargets();
+const { targets: allTargets, summary } = await loadTargets();
+const targets = allTargets.slice(0, limit);
 
 console.log("ちい活マップ 外部リンク確認");
 console.log(`- 対象URL: ${targets.length}件`);
+console.log("- 終了済みのみのURLを除外: " + summary.excludedUrls + "件");
+console.log("- 現行と共有するURLを維持: " + summary.sharedUrls + "件");
+console.log("- 共通情報源として維持: " + summary.commonUrls + "件");
 console.log(`- 同時接続数: ${concurrency}`);
 console.log(`- タイムアウト: ${timeoutMs}ms`);
 
