@@ -1,0 +1,382 @@
+{
+  "recordedAt": "2026-10-30T10:21:48.560Z",
+  "scope": "今回8スポットの公開一次根拠だけを対象。広範囲巡回はクラウドで実施済み。取得完了・内容確認・初回発見・実公開を区別。",
+  "observations": [
+    {
+      "sourceId": "observed-1d8187228636",
+      "url": "https://chiikawabakery.jp/20261030_news/",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:26.605Z",
+      "completedAt": "2026-10-30T10:13:26.723Z",
+      "httpStatus": 200,
+      "bytes": 45839,
+      "sha256": "5aaf3a414a21cef7d36c0f8e5c656cc11b0d402ffe41b7aaf2bbd726b3d1a2a6",
+      "result": "success",
+      "detail": "優先入場券の販売停止継続・再開日時未発表。購入済みQR有効、取り直し・再発行不要を本文確認。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "chiikawa-bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:26.638Z",
+      "completedAt": "2026-10-30T10:13:26.724Z",
+      "httpStatus": 200,
+      "bytes": 53293,
+      "sha256": "789e96b6875ae4758829b418dc69e55e9c12683d75019c91d3a593238ff627c4",
+      "result": "success",
+      "detail": "東京・大阪の既存予約条件と販売停止中の案内を確認。既購入券の無効や店舗休業とは扱わない。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-d4348848d3df",
+      "url": "https://x.com/chiikawabakery/status/2115995260946198576",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:26.639Z",
+      "completedAt": "2026-10-30T10:13:26.959Z",
+      "httpStatus": 200,
+      "bytes": 105899,
+      "sha256": "f30efb778e3e0341d431aafc5ba3f7dede2f6267f01ff251505e5a32c143bdb1",
+      "result": "success",
+      "detail": "東京店の2周年コースターは予定数量に達し配布終了。別の特典や周年企画全体の終了ではない。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-08f98c0a240e",
+      "url": "https://x.com/chiikawabakeryO/status/2116051648728764706",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:26.639Z",
+      "completedAt": "2026-10-30T10:13:26.984Z",
+      "httpStatus": 200,
+      "bytes": 105722,
+      "sha256": "3d60d3cfa00ef2051356ce8e87552ce13b365ad9b8ae80c21155e88542f2e3ad",
+      "result": "success",
+      "detail": "大阪店の2周年コースターは予定数量に達し配布終了。別の特典や周年企画全体の終了ではない。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-b851bfd08e79",
+      "url": "https://x.com/chiikawamgmg/status/2116025404133683695",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:26.640Z",
+      "completedAt": "2026-10-30T10:13:26.999Z",
+      "httpStatus": 200,
+      "bytes": 133717,
+      "sha256": "d5f977b7a0283c363048a6db02fb3f7ba45b96dfb15f59a6b55bcd7f1e2ae95f",
+      "result": "success",
+      "detail": "訂正された京都伏見11/13～15抽選案内。添付画像3枚も取得・視認。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-6ba8b2aff011",
+      "url": "https://x.com/chiikawa_land/status/2116104895485067681",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:26.999Z",
+      "completedAt": "2026-10-30T10:13:28.081Z",
+      "httpStatus": 200,
+      "bytes": 120910,
+      "sha256": "c32b554c84a54761cbab5587733839a91c9e8c9cba40de166b268b96eef72975",
+      "result": "success",
+      "detail": "10/31限定のmori3F P3入口前整列、P2エレベーター、全員整列・混雑時整理券。画像も視認。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "lucua-south-opening",
+      "url": "https://www.lucua.jp/special/south-open/",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:27.000Z",
+      "completedAt": "2026-10-30T10:13:27.044Z",
+      "httpStatus": 200,
+      "bytes": 117126,
+      "sha256": "f258160841cc4d30b428ecf8c541db16fba694f71aa7971676e4f963371c61a8",
+      "result": "success",
+      "detail": "施設2次募集10/29 12:00～11/4 24:00・結果11/13午後が確定。両店の空き有無は各日のフォームで別確認。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "morning-store-20261019-5f6e62de1916",
+      "url": "https://forms.cloud.microsoft/r/pN19YTLZSA",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:27.001Z",
+      "completedAt": "2026-10-30T10:13:27.132Z",
+      "httpStatus": 200,
+      "bytes": 67574,
+      "sha256": "4ded3ae89e832365a46aa94fe6cfca2c86311e350cd10ebc9dd616404b874810",
+      "result": "access_limited",
+      "detail": "HTTP200の公開フォーム取得。ローカル取得はJS初期画面のみのため内容成功へ昇格しない。クラウドで6日分の公開説明に両店×空き枠なしを確認済み。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-b8e4ad73df74",
+      "url": "https://forms.cloud.microsoft/r/0HREQQxkyb",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:27.001Z",
+      "completedAt": "2026-10-30T10:13:27.149Z",
+      "httpStatus": 200,
+      "bytes": 67574,
+      "sha256": "fc547c58c6624913fee9963c577eea16f49a0e96ab72bc80a0284d664ca451cd",
+      "result": "access_limited",
+      "detail": "HTTP200の公開フォーム取得。ローカル取得はJS初期画面のみのため内容成功へ昇格しない。クラウドで6日分の公開説明に両店×空き枠なしを確認済み。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-dce01e43e3f0",
+      "url": "https://forms.cloud.microsoft/r/mbZ893GP3Y",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:27.002Z",
+      "completedAt": "2026-10-30T10:13:27.128Z",
+      "httpStatus": 200,
+      "bytes": 67574,
+      "sha256": "ac45fc7c509f4a0a37170beef0adc442771f04a9ef22e1d4cea5d6443a337da9",
+      "result": "access_limited",
+      "detail": "HTTP200の公開フォーム取得。ローカル取得はJS初期画面のみのため内容成功へ昇格しない。クラウドで6日分の公開説明に両店×空き枠なしを確認済み。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-1985c95f1b3d",
+      "url": "https://forms.cloud.microsoft/r/VrrH8yyVhs",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.082Z",
+      "completedAt": "2026-10-30T10:13:28.190Z",
+      "httpStatus": 200,
+      "bytes": 67574,
+      "sha256": "ddd5efaadd300b5ab0652391f6c53d52197dbca92fef2e77432150227fdadff7",
+      "result": "access_limited",
+      "detail": "HTTP200の公開フォーム取得。ローカル取得はJS初期画面のみのため内容成功へ昇格しない。クラウドで6日分の公開説明に両店×空き枠なしを確認済み。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-2bbdfe54a908",
+      "url": "https://forms.cloud.microsoft/r/cZ4YMXSmum",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.082Z",
+      "completedAt": "2026-10-30T10:13:28.191Z",
+      "httpStatus": 200,
+      "bytes": 67574,
+      "sha256": "21590dc2054e162e1d396d2dfbb204117d06d340de67bf2e386365c2ae576fa5",
+      "result": "access_limited",
+      "detail": "HTTP200の公開フォーム取得。ローカル取得はJS初期画面のみのため内容成功へ昇格しない。クラウドで6日分の公開説明に両店×空き枠なしを確認済み。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-f9f5d643cf00",
+      "url": "https://forms.cloud.microsoft/r/MDGtKu3dcE",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.082Z",
+      "completedAt": "2026-10-30T10:13:28.190Z",
+      "httpStatus": 200,
+      "bytes": 67574,
+      "sha256": "61120268da50b43b7dfde02f0c7284f120fac79de22d6b0727c09f4d66f70fb4",
+      "result": "access_limited",
+      "detail": "HTTP200の公開フォーム取得。ローカル取得はJS初期画面のみのため内容成功へ昇格しない。クラウドで6日分の公開説明に両店×空き枠なしを確認済み。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "official-observation-bcf4bed6d585",
+      "url": "https://kurashiki.aeonmall.jp/event/45ff8373-61dc-475f-bec7-d3a8e3a06cab",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.082Z",
+      "completedAt": "2026-10-30T10:13:28.325Z",
+      "httpStatus": 200,
+      "bytes": 126107,
+      "sha256": "86f470c38aa58aea67aa304caddcccf14a4175d6098b0b17eb54ee74c3febf90",
+      "result": "success",
+      "detail": "10/30更新本文で整理券対象10/30・31・11/1・11/6、9:30ワクワク東入口エスカレーター下を確認。会場表記の別問題は未解消。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-56bcac6888a0",
+      "url": "https://chiikawa-info.jp/p26/pus_tbun/index.html",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.083Z",
+      "completedAt": "2026-10-30T10:13:28.132Z",
+      "httpStatus": 403,
+      "bytes": 5507,
+      "sha256": "4e4c5e6c1c37d8a37c8ea4122794f0a2a27849600760d0bd9b09a32699f0790d",
+      "result": "access_limited",
+      "detail": "この取得経路ではHTTP403。クラウドの確認済み告知本文、直接取得した公式投稿と実画像を別根拠として保持。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-1ec5525b8a37",
+      "url": "https://x.com/chiikawa_popup/status/2116094014722318775",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.326Z",
+      "completedAt": "2026-10-30T10:13:28.591Z",
+      "httpStatus": 200,
+      "bytes": 110328,
+      "sha256": "fd2d71a10cbc458dcf3fe1d8ed950e4927af1251920bdd052c116eea3bda0d07",
+      "result": "success",
+      "detail": "同会期の東武宇都宮百貨店5Fイベントプラザ、11/13～12/1を公式投稿本文で確認。",
+      "visualReview": null
+    },
+    {
+      "sourceId": "observed-99be2c76c68d",
+      "url": "https://pbs.twimg.com/media/HV2h4umX0AAV71k?format=webp&name=large",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.326Z",
+      "completedAt": "2026-10-30T10:13:28.386Z",
+      "httpStatus": 200,
+      "bytes": 82892,
+      "sha256": "d27807dafd9cf430f533b3647d2bd4b52d43418b6a2adfa8446b5a66c2732041",
+      "result": "success",
+      "detail": "11/13～15は抽選予約必須、11/1 18:00～11/5 18:00受付、11/7結果、複数日各1枠申込・全日程当選1回、距離制限なしを実画像で確認。",
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-30T10:21:48.560Z"
+      }
+    },
+    {
+      "sourceId": "observed-26ecc60a31c4",
+      "url": "https://pbs.twimg.com/media/HV2h453WsAESBAg?format=webp&name=large",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.326Z",
+      "completedAt": "2026-10-30T10:13:28.407Z",
+      "httpStatus": 200,
+      "bytes": 86096,
+      "sha256": "57569b752bbdeb5790de7dde840ffafa521d879300b40e064d090777404d40a8",
+      "result": "success",
+      "detail": "残枠がある場合に来店前日20:00先着。一般の平日入店文を11/13の例外へ拡張しない。",
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-30T10:21:48.560Z"
+      }
+    },
+    {
+      "sourceId": "observed-a0fa7fe8b2af",
+      "url": "https://pbs.twimg.com/media/HV2h5EdXgAAtxTo?format=webp&name=large",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.327Z",
+      "completedAt": "2026-10-30T10:13:28.388Z",
+      "httpStatus": 200,
+      "bytes": 62014,
+      "sha256": "c977ae89d551fc911b2206888e09c7fff0c82a49aaeebc84acffa54a1920b976",
+      "result": "success",
+      "detail": "公式LINEの入店予約タブから京都伏見の予約。前日20時の残枠受付と抽選申込を区別。",
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-30T10:21:48.560Z"
+      }
+    },
+    {
+      "sourceId": "observed-8062f38ea708",
+      "url": "https://pbs.twimg.com/media/HV3p_9qaUAA652Q?format=webp&name=large",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.327Z",
+      "completedAt": "2026-10-30T10:13:28.383Z",
+      "httpStatus": 200,
+      "bytes": 63642,
+      "sha256": "69b09e567ea0af464487f87f022614373cb2cccbd55b0c00e46db8475e662810",
+      "result": "success",
+      "detail": "実画像でmori3F立体駐車場P3入口前の星印を確認。",
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-30T10:21:48.560Z"
+      }
+    },
+    {
+      "sourceId": "observed-323f3bbafb18",
+      "url": "https://chiikawa-info.jp/p26/pus_tbun/img/main_v10.jpg",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.591Z",
+      "completedAt": "2026-10-30T10:13:28.666Z",
+      "httpStatus": 200,
+      "bytes": 312595,
+      "sha256": "87fd0cbb193577b98cef3b2ecfe179031f09513f1ed91e94e974d368fb4431eb",
+      "result": "success",
+      "detail": "実画像で2026/11/13～12/1、10～19時・最終18時、5階イベントプラザを確認。",
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-30T10:21:48.560Z"
+      }
+    },
+    {
+      "sourceId": "observed-4975b684638f",
+      "url": "https://chiikawa-info.jp/p26/pus_tbun/img/moushikomi_261030.jpg",
+      "route": "executor-native-official",
+      "requestStartedAt": "2026-10-30T10:13:28.592Z",
+      "completedAt": "2026-10-30T10:13:28.649Z",
+      "httpStatus": 200,
+      "bytes": 74633,
+      "sha256": "ef77a17d26eff67b4d003e00f6a7df0f71b5a1c66251c8a7bfb6132347a07b0b",
+      "result": "success",
+      "detail": "実画像で11/13は当日開店前の並び状況により整理券の場合あり、詳細は公式X随時案内と確認。",
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-30T10:21:48.560Z"
+      }
+    }
+  ],
+  "cloudVerification": {
+    "observedOn": "2026-10-30",
+    "completedAt": null,
+    "lucuaAllSixPublicForms": {
+      "urls": [
+        "https://forms.cloud.microsoft/r/pN19YTLZSA",
+        "https://forms.cloud.microsoft/r/0HREQQxkyb",
+        "https://forms.cloud.microsoft/r/mbZ893GP3Y",
+        "https://forms.cloud.microsoft/r/VrrH8yyVhs",
+        "https://forms.cloud.microsoft/r/cZ4YMXSmum",
+        "https://forms.cloud.microsoft/r/MDGtKu3dcE"
+      ],
+      "bothStoresNoSlotsAtSecondRoundStart": true,
+      "noApplicationSubmitted": true,
+      "mainDeadline": "11/4 24:00",
+      "formDeadline": "11/4 23:59",
+      "updatedAt": null
+    },
+    "nativeMainPage403KeptSeparate": true
+  },
+  "discoveryPrecision": {
+    "discoveredAtUnknown": true,
+    "doNotSubstituteFetchCompletion": true,
+    "windows": [
+      {
+        "candidateIds": [
+          "bakery-tokyo-ticket-qr-coaster-20261030",
+          "bakery-osaka-ticket-qr-coaster-20261030"
+        ],
+        "firstDiscoveryDate": "2026-10-30",
+        "windowsUtc": [
+          {
+            "from": "2026-10-30T09:58:00Z",
+            "to": "2026-10-30T10:00:31Z",
+            "scope": "販売停止・QR条件"
+          },
+          {
+            "from": "2026-10-30T10:03:01Z",
+            "to": "2026-10-30T10:03:07Z",
+            "scope": "コースター配布終了"
+          }
+        ],
+        "exactTimestampKnown": false
+      },
+      {
+        "candidateIds": [
+          "koshigaya-queue-20261031"
+        ],
+        "firstDiscoveryDate": "2026-10-30",
+        "windowsUtc": [
+          {
+            "from": "2026-10-30T10:00:15Z",
+            "to": "2026-10-30T10:00:31Z"
+          }
+        ],
+        "exactTimestampKnown": false
+      },
+      {
+        "candidateIds": [
+          "mogumogu-fushimi-lottery-20261113"
+        ],
+        "firstDiscoveryDate": "2026-10-30",
+        "windowsUtc": [
+          {
+            "from": "2026-10-30T10:03:01Z",
+            "to": "2026-10-30T10:03:07Z"
+          }
+        ],
+        "exactTimestampKnown": false
+      }
+    ]
+  }
+}
