@@ -1,0 +1,75 @@
+{
+  "validatedAt": "2026-10-30T20:23:26.983Z",
+  "dataBaseCommit": "07fcb9692d82579a37f9b238b47bd3f497b36c73",
+  "scope": {
+    "archiveMoves": 12,
+    "newListings": 0,
+    "current": 91,
+    "archive": 690,
+    "totalSpots": 875,
+    "collaborationsUnchanged": 23
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionRetries": 0,
+    "pcMobileHistoryChecks": 148,
+    "screenshots": 48,
+    "pageErrors": 0,
+    "generatedPages": 875,
+    "officialPagesRead": 2,
+    "officialPagesHttp200": 2,
+    "dailyArchiveCandidatesBefore": 12,
+    "dailyArchiveCandidatesAfter": 0,
+    "exactDailyWorkflowCommandPassed": true
+  },
+  "compatibility": {
+    "idsSourcesAddressesCoordinatesPeriodsAndFirstAddedDatesPreserved": true,
+    "normalSharedAndLegacySharedUrlsPreserved": true,
+    "favoritesVisitedAndVisitNotesPreserved": true,
+    "defaultHistoryHidden": true,
+    "historyFilterSearchAndListPassed": true,
+    "archivedStaticPagesNoindexFollow": true,
+    "archivedPagesRemovedFromSitemap": true,
+    "separateNovember6ScreeningsPreserved": true,
+    "allOtherCurrentArchiveAndCollaborationDataUnchanged": true,
+    "sourceEnabledFlagsUnchanged": true,
+    "pr89Excluded": true
+  },
+  "ledger": {
+    "sources": 790,
+    "candidates": 413,
+    "newReadyCandidates": 1,
+    "listingIdsInNewCandidate": 12,
+    "priorPr90PublishedAt": "2026-10-30T10:40:11.164Z",
+    "priorPr90SyncedCandidates": 8,
+    "unknownDiscoveryNotEstimated": true,
+    "originalDiscoveryAndFailureRecordsPreserved": true,
+    "reportTimeNeverUsedAsPublishedAt": true
+  },
+  "visualReview": {
+    "officialImagesRequired": false,
+    "pcMobileScreenshotsReviewed": 3,
+    "publicScreenshotsNotAdded": true
+  },
+  "privateInformationCheck": {
+    "passed": true,
+    "rawHtmlUnfilteredLinksAndPrivateOriginalsExcluded": true,
+    "credentialsCookiesAndAbsoluteLocalPathsExcluded": true
+  },
+  "productAndValidationLogicUnchanged": true,
+  "unresolved": {
+    "otherHoldsUnchanged": true,
+    "pr89OpenAndSeparate": true,
+    "externalLinksWorkflowPriorFailure": "40245231045",
+    "knownFutureTsuchiura404AndGscUnchanged": true,
+    "existingGoogleKeyHistoryAndAlertNotClaimedResolved": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象mainの公開JSON・履歴個別ページ・関連リソースを完全照合し、同SHAのCIと公開後Healthを確認。初回実測は別保存し次回通常PRで同期。"
+  }
+}
