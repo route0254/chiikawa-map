@@ -1,0 +1,88 @@
+{
+  "validatedAt": "2026-10-31T10:18:16.762Z",
+  "dataBaseCommit": "3acdc38459fd87b0b10e550f259264e5d8a17db8",
+  "scope": {
+    "publicationCandidates": 2,
+    "newCollaborations": 1,
+    "updatedSpots": 1,
+    "relatedCollaborationUpdates": 1,
+    "newStorePins": 0,
+    "current": 92,
+    "archive": 690,
+    "totalSpots": 876,
+    "collaborations": 24
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionRetries": 0,
+    "pcMobileTargetChecks": 26,
+    "screenshots": 10,
+    "pageErrors": 0,
+    "generatedPages": 876,
+    "exactDailyWorkflowCommandPassed": true,
+    "archiveCandidates": 0,
+    "targetOfficialUrls": 2,
+    "targetUrlNormal": 2,
+    "unchangedLinkCheckerUsed": true,
+    "fullExternalLinkWorkflowNotClaimedResolved": true
+  },
+  "compatibility": {
+    "existingIdsLocationsAndEventDatesPreserved": true,
+    "minumFirstCollaborationUnchanged": true,
+    "minumSecondIsIndependentCompanyAnnouncedProject": true,
+    "unknownReleaseEndReservationAndEcNotInferred": true,
+    "noNovember1FallbackDate": true,
+    "noNewStorePins": true,
+    "faqClarifiesSpecifiedActivityDeadlinesNotImmediateExit": true,
+    "faqAnnouncementDateUnknownAndNotClaimedNewRule": true,
+    "otherBookingConditionsAndChildPhoneExceptionPreserved": true,
+    "relatedAbemaDescriptionConsistent": true,
+    "firstAddedDatesPreserved": true,
+    "sharedUrlsFavoritesVisitedAndVisitNotesPreserved": true,
+    "sourceEnabledFlagsUnchanged": true,
+    "pr89Excluded": true
+  },
+  "ledger": {
+    "sources": 802,
+    "candidates": 422,
+    "newReadyCandidates": 2,
+    "providedObservations": 59,
+    "priorPr92SyncedCandidates": 5,
+    "priorPr92PublishedAt": "2026-10-30T23:40:26.833Z",
+    "sourceKindsNormalizedToExistingEnum": true,
+    "candidateKindsNormalizedToExistingEnum": true,
+    "timestampsNormalizedToMillisecondsWithProvidedPrecisionRetained": true,
+    "unknownsRemainNull": true,
+    "originalDiscoveryAndFailureRecordsPreserved": true,
+    "elevenHoldOrVerifyingStatesPreserved": true,
+    "nextHoldCheck": "2026-11-01T08:00:00+09:00",
+    "broadResearchLatest": "2026-10-26",
+    "newWeeklyOrCompleteCoverageNotClaimed": true
+  },
+  "visualReview": {
+    "imageDependentPublicationChanges": false,
+    "pcMobileScreenshotsReviewed": 3,
+    "publicScreenshotsNotAdded": true
+  },
+  "privacy": {
+    "passed": true,
+    "rawHtmlUnfilteredLinksAndPrivateOriginalsExcluded": true,
+    "credentialsCookiesAndAbsoluteLocalPathsExcluded": true
+  },
+  "productAndValidationLogicUnchanged": true,
+  "unresolved": {
+    "historySevenKamakuraOsakaJanuaryAdventFushimiDetailsRemainUncertain": true,
+    "routeSpecificHttp403AndPartialReadsKeptDistinctFromSuccess": true,
+    "pr89OpenAndSeparate": true,
+    "externalLinksWorkflowPriorFailure": "40245231045",
+    "gscAndHistoricalGoogleKeyAlertNotClaimedResolved": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象mainの公開データ・対象ページ・台帳を完全照合し、同SHAのCIと公開後Healthを確認。初回実測を次回通常PR用に別保存。"
+  }
+}
