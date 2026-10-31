@@ -23877,6 +23877,126 @@
       "nextCheck": "必要検査・同SHAのCIと公開実体を確認し、初回公開一致時刻を保存。",
       "recheckDueAt": "2026-11-01T08:00:00+09:00",
       "publishedAt": null
+    },
+    {
+      "id": "archive-collab-skytree-2026-20261101",
+      "title": "ちいかわ☆星ふるスカイツリー®とひみつの島 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-collab-skytree-2026-20261101",
+      "sourceIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-10",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+          "observedAt": "2026-10-31T20:22:28.039Z",
+          "summary": "公式会期7/10〜10/31。延長記載なし。期間限定企画のみ終了。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "collab-skytree-2026"
+        ],
+        "note": "既存の期間限定企画と同じID・出典・会期・場所を保持して履歴へ移行。"
+      },
+      "listingIds": [
+        "collab-skytree-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確認済み有限会期が終了。施設自体の閉鎖とは扱わない。初回発見の正確な日時は未確定のためnull。",
+      "nextCheck": "最終差分の全検査・同SHA CI・公開実体を確認し初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-park-halloween-2026-20261101",
+      "title": "ちいかわパーク CHIIKAWA Halloween PUMPKIN PARK 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-park-halloween-2026-20261101",
+      "sourceIds": [
+        "morning-existing21-0d23c0b7657f"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-09-25",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/9lofnm5f5wy/",
+          "observedAt": "2026-10-31T20:22:27.930Z",
+          "summary": "公式のハロウィーン限定企画は9/25〜10/31。常設パークは移行対象に含めない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-halloween-2026"
+        ],
+        "note": "既存の期間限定企画と同じID・出典・会期・場所を保持して履歴へ移行。"
+      },
+      "listingIds": [
+        "chiikawa-park-halloween-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確認済み有限会期が終了。施設自体の閉鎖とは扱わない。初回発見の正確な日時は未確定のためnull。",
+      "nextCheck": "最終差分の全検査・同SHA CI・公開実体を確認し初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-jr-central-linear-railway-museum-2026-20261101",
+      "title": "JR東海×映画ちいかわ リニア・鉄道館コラボ 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-jr-central-linear-railway-museum-2026-20261101",
+      "sourceIds": [
+        "jr-central-railway-museum-event"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-08",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://museum.jr-central.co.jp/event/",
+          "observedAt": "2026-10-31T20:22:27.675Z",
+          "summary": "公式の映画ちいかわコラボ欄は7/8〜10/31。鉄道館自体は終了扱いにしない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "jr-central-linear-railway-museum-2026"
+        ],
+        "note": "既存の期間限定企画と同じID・出典・会期・場所を保持して履歴へ移行。"
+      },
+      "listingIds": [
+        "jr-central-linear-railway-museum-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確認済み有限会期が終了。施設自体の閉鎖とは扱わない。初回発見の正確な日時は未確定のためnull。",
+      "nextCheck": "最終差分の全検査・同SHA CI・公開実体を確認し初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }
