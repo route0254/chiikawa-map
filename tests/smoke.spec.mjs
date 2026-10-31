@@ -1966,6 +1966,7 @@ test(
   "同一座標の2〜6スポットを件数別パターンで外向きに配置する",
   async ({ page }) => {
     await includeArchivedSpotsForLayout(page, [
+      "collab-skytree-2026",
       "pocket-popup-ikebukuro",
       "nagano-market-popup-2026-09-04-nagoya-p",
       "movie-cafe-shinsaibashi",
@@ -1977,6 +1978,7 @@ test(
       // 現行全件（新POPUPを含む）は別の非モック検査で検証する。
       "chiikawa-pocket-2026-11-13-nagoya-parco"
     ], {
+      "collab-skytree-2026": "collab-tokyo-metro-escape",
       "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
     });
     const scenarios = [

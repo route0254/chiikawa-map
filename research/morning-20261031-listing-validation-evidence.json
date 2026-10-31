@@ -1,0 +1,88 @@
+{
+  "validatedAt": "2026-10-30T23:31:10.505Z",
+  "dataBaseCommit": "e82ecadfb3e8f227a7e56e20b82ccf9ceceba72d",
+  "scope": {
+    "newListings": 1,
+    "existingUpdates": 4,
+    "archiveMoves": 0,
+    "current": 92,
+    "archive": 690,
+    "totalSpots": 876,
+    "collaborationsUnchanged": 23
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionRetries": 0,
+    "pcMobileTargetChecks": 54,
+    "screenshots": 20,
+    "pageErrors": 0,
+    "generatedPages": 876,
+    "exactDailyWorkflowCommandPassed": true,
+    "dailyArchiveCandidates": 0,
+    "officialTargetRetrievals": 10,
+    "officialImagesHttp200AndReviewed": 4
+  },
+  "compatibility": {
+    "existingIdsSourcesAddressesCoordinatesPeriodsAndFirstAddedDatesPreserved": true,
+    "naritaUsesVerifiedFacilityRepresentativePin": true,
+    "naritaUpdatedDateNotUsedAsAnnouncement": true,
+    "pocketSeparateTicketPeriodsPreserved": true,
+    "pocketActualExhibitionThroughNovember15Preserved": true,
+    "yakiMakuhariAndReservationRulesUnchanged": true,
+    "bakeryPurchaseSuspensionAndQrValidityPreserved": true,
+    "bakeryJanuaryLatestScheduleAndResumptionUnknown": true,
+    "sharedUrlsFavoritesVisitedAndVisitNotesPreserved": true,
+    "canonicalEventSourcesUsed": true,
+    "sourceEnabledFlagsUnchanged": true,
+    "pr89Excluded": true
+  },
+  "ledger": {
+    "sources": 797,
+    "candidates": 420,
+    "newReadyCandidates": 5,
+    "newHoldCandidates": 1,
+    "newRejectedCandidates": 1,
+    "observations": 65,
+    "priorPr91PublishedAt": "2026-10-30T20:32:55.970Z",
+    "priorPr91SyncedCandidates": 1,
+    "priorPr91SyncedListings": 12,
+    "unknownCompletionObservations": 15,
+    "unknownCompletionsKeptSeparateFromLedgerSuccessTimes": true,
+    "estimatedCompletionTimestampsAdded": 0,
+    "originalDiscoveryAndFailureRecordsPreserved": true,
+    "familyMartOriginalDiscoveryPreserved": true,
+    "historyHoldStatesPreserved": true,
+    "broadResearchLatestDate": "2026-10-26",
+    "weeklyBroadResearchNotRepeatedOrClaimedComplete": true,
+    "reportTimeNeverUsedAsPublishedAt": true
+  },
+  "visualReview": {
+    "officialImagesReviewed": 4,
+    "pcMobileScreenshotsReviewed": 3,
+    "publicScreenshotsNotAdded": true
+  },
+  "privateInformationCheck": {
+    "passed": true,
+    "rawHtmlUnfilteredLinksAndPrivateOriginalsExcluded": true,
+    "credentialsCookiesAndAbsoluteLocalPathsExcluded": true
+  },
+  "productAndValidationLogicUnchanged": true,
+  "unresolved": {
+    "historySevenKamakuraAdventAndOsakaJanuaryDateStillUncertain": true,
+    "fushimiTeaserReleaseConditionsUnknown": true,
+    "recheckDueAt": "2026-10-31T19:00:00+09:00",
+    "directNarita406AndReservationPocket403KeptSeparateFromCloudSuccess": true,
+    "pr89OpenAndSeparate": true,
+    "externalLinksWorkflowPriorFailure": "40245231045",
+    "knownFutureTsuchiura404AndGscUnchanged": true,
+    "existingGoogleKeyHistoryAndAlertNotClaimedResolved": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象mainの公開JSON・対象個別ページ・関連リソースを完全照合し、同SHAのCIと公開後Healthを確認。初回実測は別保存し次回通常PRで同期。"
+  }
+}

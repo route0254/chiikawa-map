@@ -1,0 +1,109 @@
+{
+  "observedOn": "2026-11-01",
+  "cloudReviewWindow": {
+    "dateUtc": "2026-10-31",
+    "from": "19:56",
+    "through": "19:57",
+    "precision": "minute-range",
+    "perUrlCompletionTime": null
+  },
+  "observations": [
+    {
+      "sourceId": "corporate-sunflower-photorally-details",
+      "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+      "route": "direct-official-http",
+      "startedAt": "2026-10-31T20:01:04.612Z",
+      "completedAt": "2026-10-31T20:01:04.799Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 23885,
+      "sha256": "f6bde861f34448544f2f09a257438e2f7862785974975dea8fd74d74ca43a4d8",
+      "scope": "8/6〜10/31出港便が対象。翌日の景品交換は対象便期間の延長ではない。"
+    },
+    {
+      "sourceId": "jr-central-tsutsuurauratabi",
+      "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+      "route": "direct-official-http",
+      "startedAt": "2026-10-31T20:01:04.643Z",
+      "completedAt": "2026-10-31T20:01:04.728Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 53265,
+      "sha256": "170a6fb98fbc9460679e548dcdfc5189e04a1477154a805b5c341edb7e1b6c52",
+      "scope": "公式に終了表示。最終日は10/31、引換証の申請期限も10/31。後日発送は延長ではない。"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "route": "direct-official-http",
+      "startedAt": "2026-10-31T20:01:04.644Z",
+      "completedAt": "2026-10-31T20:01:05.166Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 304477,
+      "sha256": "360e011ef0d83d071a9f6a3e3f93cb7fa4013c4d5d6657905c90458d93fbe6f6",
+      "scope": "公式会期7/10〜10/31。今回確認範囲で延長記載なし。"
+    },
+    {
+      "sourceId": "corporate-toho-one-chiikawa-campaign",
+      "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+      "route": "direct-official-http",
+      "startedAt": "2026-10-31T20:01:04.645Z",
+      "completedAt": "2026-10-31T20:01:04.707Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 23443,
+      "sha256": "83110b6944be769be1b5671ddbd0def9c26e85028e059aaad20dc28c4815db0a",
+      "scope": "7/17受付開始、10月末受付終了。11月発送は受付延長ではない。旧記録の23:59は今回再確認できず、時刻を再断定しない。"
+    },
+    {
+      "sourceId": "tokyo-skytree-chiikawa-2026",
+      "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+      "route": "direct-official-http-addendum",
+      "startedAt": "2026-10-31T20:22:27.507Z",
+      "completedAt": "2026-10-31T20:22:28.039Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 304477,
+      "sha256": "360e011ef0d83d071a9f6a3e3f93cb7fa4013c4d5d6657905c90458d93fbe6f6",
+      "scope": "公式会期7/10〜10/31。延長記載なし。期間限定企画のみ終了。"
+    },
+    {
+      "sourceId": "morning-existing21-0d23c0b7657f",
+      "url": "https://chiikawapark-tokyo.jp/news/9lofnm5f5wy/",
+      "route": "direct-official-http-addendum",
+      "startedAt": "2026-10-31T20:22:27.539Z",
+      "completedAt": "2026-10-31T20:22:27.930Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 33051,
+      "sha256": "a088c5f6d0633b771946a7bd4a9c10884e4c10e01265afc6eee66119ef79ba11",
+      "scope": "公式のハロウィーン限定企画は9/25〜10/31。常設パークは移行対象に含めない。"
+    },
+    {
+      "sourceId": "jr-central-railway-museum-event",
+      "url": "https://museum.jr-central.co.jp/event/",
+      "route": "direct-official-http-addendum",
+      "startedAt": "2026-10-31T20:22:27.540Z",
+      "completedAt": "2026-10-31T20:22:27.675Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 225285,
+      "sha256": "0e6c7ea4c28920c642afb92af4da8e7a1c12c0a8af5a54f70869e3117c23d491",
+      "scope": "公式の映画ちいかわコラボ欄は7/8〜10/31。鉄道館自体は終了扱いにしない。"
+    }
+  ],
+  "scope": "指定コラボ4件と追加承認3スポットの終了確認のみ。広範囲巡回ではない。",
+  "shippingAndNextDayExchangeNotTreatedAsExtensions": true,
+  "addedScopeCloudReview": {
+    "dateUtc": "2026-10-31",
+    "from": "20:19",
+    "through": "20:20",
+    "precision": "minute-range",
+    "publicDuplicateCheckWindow": {
+      "from": "20:20:14",
+      "through": "20:20:17"
+    },
+    "scope": "追加3件の有限会期・延長根拠なし・同ID重複なしを確認。"
+  }
+}
