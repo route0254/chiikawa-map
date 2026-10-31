@@ -1,0 +1,60 @@
+{
+  "validatedAt": "2026-10-31T20:11:18.735Z",
+  "baseCommit": "c0acbed076740c61ac7a52a88e563f8a1e2264b8",
+  "scope": {
+    "collaborationArchiveMoves": 4,
+    "currentCollaborations": 20,
+    "archiveCollaborations": 56,
+    "spotDataUnchanged": true
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "uiRegressionPassed": 111,
+    "uiRegressionFlaky": 0,
+    "pcMobileChecks": 24,
+    "screenshots": 10,
+    "pageErrors": 0,
+    "officialPagesHttp200": 4,
+    "generatedPages": 876,
+    "sourceAndPeriodDatePreservation": true,
+    "oldArchiveFormattingPreserved": true
+  },
+  "separateBlockingCheck": {
+    "command": "node scripts/report-status-candidates.mjs --github-summary --fail-on-archive-candidates",
+    "exitCode": 1,
+    "archiveCandidates": 3,
+    "ids": [
+      "collab-skytree-2026",
+      "chiikawa-park-halloween-2026",
+      "jr-central-linear-railway-museum-2026"
+    ],
+    "reason": "今回指定コラボ4件とは別に、期限経過した現行スポットが残る。公式終了確認と対象範囲が未追加のため変更していない。",
+    "criteriaUnchanged": true,
+    "failedResultNotHidden": true
+  },
+  "ledger": {
+    "sources": 802,
+    "candidates": 426,
+    "observations": 4,
+    "newReadyCandidates": 4,
+    "priorPr93SyncedCandidates": 2,
+    "priorPr93PublishedAt": "2026-10-31T10:26:56.825Z",
+    "originalDiscoveryAndFailureHistoryPreserved": true,
+    "unconfirmedTohoClockTimesNotRepeated": true,
+    "otherHoldsUnchanged": true,
+    "sourceEnabledFlagsUnchanged": true
+  },
+  "privacy": {
+    "passed": true,
+    "credentialValuesAdded": 0,
+    "rawHtmlUnfilteredLinksAbsolutePathsAndPrivateOriginalsExcluded": true
+  },
+  "pr89Excluded": true,
+  "readyForMainPublication": false,
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "reason": "Separate required status check remains failed; main merge and deployment are pending."
+  }
+}
