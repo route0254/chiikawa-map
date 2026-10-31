@@ -1,0 +1,82 @@
+{
+  "validatedAt": "2026-10-31T20:39:16.417Z",
+  "baseCommit": "c0acbed076740c61ac7a52a88e563f8a1e2264b8",
+  "scope": {
+    "collaborationArchiveMoves": 4,
+    "spotArchiveMoves": 3,
+    "publicationCandidates": 7,
+    "currentSpots": 89,
+    "archiveSpots": 693,
+    "currentCollaborations": 20,
+    "archiveCollaborations": 56,
+    "totalSpots": 876
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 58,
+    "unitFailed": 0,
+    "uiRegressionPassed": 111,
+    "uiRegressionFlaky": 0,
+    "pcMobileCollaborationChecks": 24,
+    "pcMobileSpotChecks": 40,
+    "pcMobileCombinedChecks": 64,
+    "screenshots": 22,
+    "pageErrors": 0,
+    "officialHttp200Retrievals": 7,
+    "officialUniqueUrls": 6,
+    "generatedPages": 876,
+    "exactRequiredStatusCommandPassed": true,
+    "archiveCandidates": 0
+  },
+  "compatibility": {
+    "allIdsSourcesPeriodDatesCoordinatesAndFirstAddedPreserved": true,
+    "allOtherCurrentArchiveAndCollaborationDataUnchanged": true,
+    "permanentFacilitiesUnchanged": true,
+    "canonicalSourceAndRegularArchiveCommandUsed": true,
+    "archivedPagesNoindexFollow": true,
+    "archivedPagesRemovedFromSitemap": true,
+    "directAndLegacySharedUrlsPreserved": true,
+    "historySearchAndListPassed": true,
+    "favoritesVisitedAndVisitDetailsPreserved": true,
+    "tohoUnconfirmedClockTimesNotReasserted": true,
+    "shippingAndNextDayExchangeNotTreatedAsPeriodExtensions": true,
+    "validationCriteriaUnchanged": true
+  },
+  "ledger": {
+    "sources": 802,
+    "candidates": 429,
+    "observations": 7,
+    "newReadyCandidates": 7,
+    "priorPr93SyncedCandidates": 2,
+    "priorPr93PublishedAt": "2026-10-31T10:26:56.825Z",
+    "unknownFirstDiscoveryTimesRemainNull": true,
+    "otherHoldStatesAndOriginalPublicationTimesPreserved": true,
+    "sourceEnabledFlagsUnchanged": true
+  },
+  "previousFailures": {
+    "originalDailyRun": 41234414540,
+    "originalDailyJob": 124635078001,
+    "expiredCollaborations": 4,
+    "initialDraftValidateRun": 41237849379,
+    "initialDraftStatusCandidates": 3,
+    "threeSpotOfficialPeriodsVerifiedAndAddedToSamePr": true,
+    "localRequiredStatusCandidatesAfter": 0,
+    "failedResultsPreserved": true,
+    "localInitialUiPassed": 110,
+    "localInitialUiFailed": 1,
+    "localUiFailureCause": "履歴移行したスカイツリー企画が合成配置fixtureの現行データから外れたため。既存履歴読込の対象と挿入位置だけ追加し、全配置・重なり期待値を維持。",
+    "layoutAssertionsAndProductionCodeUnchanged": true
+  },
+  "privacy": {
+    "passed": true,
+    "credentialValuesAdded": 0,
+    "rawHtmlUnfilteredLinksPrivateOriginalsAndLocalPathsExcluded": true
+  },
+  "pr89Excluded": true,
+  "readyForMainPublication": true,
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "最終SHAのCI成功後、同じPR94をmainへ反映し、公開JSON・履歴ページ・関連リソースの初回一致と公開後Healthを保存。"
+  }
+}

@@ -23645,6 +23645,12 @@
           "observedAt": "2026-10-31T10:01:08Z",
           "summary": "企業自身が第2弾と明記。11月上旬から順次、ボトル4180円・詰替3520円、ヘアバンド付き。",
           "recordPath": "research/evening-20261031/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-10-31T10:26:56.825Z",
+          "summary": "PR93の28リソース初回一致と公開後Health成功を保全記録から同期。同期や報告の時刻で置換しない。",
+          "recordPath": "research/archive-collaborations-20261101/pr93-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -23657,12 +23663,12 @@
       "listingIds": [
         "minum-chiikawa-turlin-haircare-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
-      "decision": "独立した企業コラボ第2弾として追加。第1弾と分離。具体的な発売日・終了・予約・ECは未知nullのまま。",
-      "nextCheck": "公開実体と同SHAのCIを照合後、初回公開確認日時を別記録。翌朝、具体的発売日・条件の追記有無を確認。",
+      "decision": "独立した企業コラボ第2弾として追加。第1弾と分離。具体的な発売日・終了・予約・ECは未知nullのまま。 PR93の元公開日時を保存済み実測から同期。",
+      "nextCheck": "通常巡回で既存掲載を再確認。元の初回公開日時を保持。",
       "recheckDueAt": "2026-11-01T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-10-31T10:26:56.825Z"
     },
     {
       "id": "christmas-market-time-limit-clarification-20261031",
@@ -23685,6 +23691,12 @@
           "observedAt": "2026-10-31T10:02:28Z",
           "summary": "注文、整理券取得、指定待機列へのチェックイン、再入場が2時間30分以内。経過時の即時退場は不要。",
           "recordPath": "research/evening-20261031/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-10-31T10:26:56.825Z",
+          "summary": "PR93の28リソース初回一致と公開後Health成功を保全記録から同期。同期や報告の時刻で置換しない。",
+          "recordPath": "research/archive-collaborations-20261101/pr93-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -23699,10 +23711,290 @@
         "chiikawa-christmas-market-2026-toyosuna",
         "abema-chiikawa-christmas-market-2026"
       ],
+      "state": "published",
+      "priority": "normal",
+      "decision": "既存説明の明確化。今日の新規規則変更・発表とは断定せず、他の予約条件は保持。 PR93の元公開日時を保存済み実測から同期。",
+      "nextCheck": "通常巡回で既存掲載を再確認。元の初回公開日時を保持。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": "2026-10-31T10:26:56.825Z"
+    },
+    {
+      "id": "archive-sunflower-movie-chiikawa-2026-20261101",
+      "title": "さんふらわあ × 映画『ちいかわ 人魚の島のひみつ』 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-sunflower-movie-chiikawa-2026-20261101",
+      "sourceIds": [
+        "corporate-sunflower-photorally-details"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-08-06",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.sunflower.co.jp/information/event/20260806.html",
+          "observedAt": "2026-10-31T20:01:04.799Z",
+          "summary": "8/6〜10/31出港便が対象。翌日の景品交換は対象便期間の延長ではない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "sunflower-movie-chiikawa-2026"
+        ],
+        "note": "既存コラボIDの同一企画・期間・出典を保持して履歴へ移行。新規企画を作らない。"
+      },
+      "listingIds": [
+        "sunflower-movie-chiikawa-2026"
+      ],
       "state": "ready",
       "priority": "normal",
-      "decision": "既存説明の明確化。今日の新規規則変更・発表とは断定せず、他の予約条件は保持。",
-      "nextCheck": "公開実体と同SHAのCIを照合後、初回公開確認日時を別記録。翌朝、具体的発売日・条件の追記有無を確認。",
+      "decision": "公式の有限期間終了を確認。初回発見の正確な時刻は不明のためnull。発送・翌日交換を受付/出港便期間の延長としない。",
+      "nextCheck": "必要検査・同SHAのCIと公開実体を確認し、初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-jr-central-tsutsuurauratabi-2026-20261101",
+      "title": "ちいかわ×東海道新幹線「ツツウラウラ旅」 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-jr-central-tsutsuurauratabi-2026-20261101",
+      "sourceIds": [
+        "jr-central-tsutsuurauratabi"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-08",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://recommend.jr-central.co.jp/tsutsuurauratabi/",
+          "observedAt": "2026-10-31T20:01:04.728Z",
+          "summary": "公式に終了表示。最終日は10/31、引換証の申請期限も10/31。後日発送は延長ではない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "jr-central-tsutsuurauratabi-2026"
+        ],
+        "note": "既存コラボIDの同一企画・期間・出典を保持して履歴へ移行。新規企画を作らない。"
+      },
+      "listingIds": [
+        "jr-central-tsutsuurauratabi-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限期間終了を確認。初回発見の正確な時刻は不明のためnull。発送・翌日交換を受付/出港便期間の延長としない。",
+      "nextCheck": "必要検査・同SHAのCIと公開実体を確認し、初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-tokyo-skytree-chiikawa-2026-20261101",
+      "title": "ちいかわ×東京スカイツリー® 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-tokyo-skytree-chiikawa-2026-20261101",
+      "sourceIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-10",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+          "observedAt": "2026-10-31T20:01:05.166Z",
+          "summary": "公式会期7/10〜10/31。今回確認範囲で延長記載なし。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tokyo-skytree-chiikawa-2026"
+        ],
+        "note": "既存コラボIDの同一企画・期間・出典を保持して履歴へ移行。新規企画を作らない。"
+      },
+      "listingIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限期間終了を確認。初回発見の正確な時刻は不明のためnull。発送・翌日交換を受付/出港便期間の延長としない。",
+      "nextCheck": "必要検査・同SHAのCIと公開実体を確認し、初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-toho-one-movie-chiikawa-2026-20261101",
+      "title": "TOHO-ONE×映画『ちいかわ 人魚の島のひみつ』 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-toho-one-movie-chiikawa-2026-20261101",
+      "sourceIds": [
+        "corporate-toho-one-chiikawa-campaign"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-17",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.toho-one.com/about/campaign/chiikawa2026/",
+          "observedAt": "2026-10-31T20:01:04.707Z",
+          "summary": "7/17受付開始、10月末受付終了。11月発送は受付延長ではない。旧記録の23:59は今回再確認できず、時刻を再断定しない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "toho-one-movie-chiikawa-2026"
+        ],
+        "note": "既存コラボIDの同一企画・期間・出典を保持して履歴へ移行。新規企画を作らない。"
+      },
+      "listingIds": [
+        "toho-one-movie-chiikawa-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限期間終了を確認。初回発見の正確な時刻は不明のためnull。発送・翌日交換を受付/出港便期間の延長としない。",
+      "nextCheck": "必要検査・同SHAのCIと公開実体を確認し、初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-collab-skytree-2026-20261101",
+      "title": "ちいかわ☆星ふるスカイツリー®とひみつの島 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-collab-skytree-2026-20261101",
+      "sourceIds": [
+        "tokyo-skytree-chiikawa-2026"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-10",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.tokyo-skytree.jp/event/special/chiikawa/",
+          "observedAt": "2026-10-31T20:22:28.039Z",
+          "summary": "公式会期7/10〜10/31。延長記載なし。期間限定企画のみ終了。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "collab-skytree-2026"
+        ],
+        "note": "既存の期間限定企画と同じID・出典・会期・場所を保持して履歴へ移行。"
+      },
+      "listingIds": [
+        "collab-skytree-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確認済み有限会期が終了。施設自体の閉鎖とは扱わない。初回発見の正確な日時は未確定のためnull。",
+      "nextCheck": "最終差分の全検査・同SHA CI・公開実体を確認し初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-park-halloween-2026-20261101",
+      "title": "ちいかわパーク CHIIKAWA Halloween PUMPKIN PARK 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-park-halloween-2026-20261101",
+      "sourceIds": [
+        "morning-existing21-0d23c0b7657f"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-09-25",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/9lofnm5f5wy/",
+          "observedAt": "2026-10-31T20:22:27.930Z",
+          "summary": "公式のハロウィーン限定企画は9/25〜10/31。常設パークは移行対象に含めない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-halloween-2026"
+        ],
+        "note": "既存の期間限定企画と同じID・出典・会期・場所を保持して履歴へ移行。"
+      },
+      "listingIds": [
+        "chiikawa-park-halloween-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確認済み有限会期が終了。施設自体の閉鎖とは扱わない。初回発見の正確な日時は未確定のためnull。",
+      "nextCheck": "最終差分の全検査・同SHA CI・公開実体を確認し初回公開一致時刻を保存。",
+      "recheckDueAt": "2026-11-01T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-jr-central-linear-railway-museum-2026-20261101",
+      "title": "JR東海×映画ちいかわ リニア・鉄道館コラボ 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-jr-central-linear-railway-museum-2026-20261101",
+      "sourceIds": [
+        "jr-central-railway-museum-event"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-08",
+      "eventEndsAt": "2026-10-31",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-01T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://museum.jr-central.co.jp/event/",
+          "observedAt": "2026-10-31T20:22:27.675Z",
+          "summary": "公式の映画ちいかわコラボ欄は7/8〜10/31。鉄道館自体は終了扱いにしない。",
+          "recordPath": "research/archive-collaborations-20261101/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "jr-central-linear-railway-museum-2026"
+        ],
+        "note": "既存の期間限定企画と同じID・出典・会期・場所を保持して履歴へ移行。"
+      },
+      "listingIds": [
+        "jr-central-linear-railway-museum-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確認済み有限会期が終了。施設自体の閉鎖とは扱わない。初回発見の正確な日時は未確定のためnull。",
+      "nextCheck": "最終差分の全検査・同SHA CI・公開実体を確認し初回公開一致時刻を保存。",
       "recheckDueAt": "2026-11-01T08:00:00+09:00",
       "publishedAt": null
     }
