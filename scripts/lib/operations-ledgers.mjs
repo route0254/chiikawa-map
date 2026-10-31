@@ -212,8 +212,9 @@ export function operationsQueue(sources, candidates, now) {
   if (!isTimestamp(now)) throw new Error('--now must be a timestamp with seconds and timezone');
   const time = Date.parse(now);
   const isOverdue = value => { const bounds = temporalBounds(value); return bounds ? time > bounds.latest : null; };
+  const activeSources = sources.filter(source => source.enabled);
   return {
-    sources: { registered: sources.length, enabled: sources.filter(s => s.enabled).length, withoutRecordedAttempt: sources.filter(s => s.lastResult === 'not_checked').length, latestSuccess: sources.filter(s => s.lastResult === 'success').length, latestFailure: sources.filter(s => FAILURES.has(s.lastResult)).length },
+    sources: { registered: sources.length, enabled: activeSources.length, withoutRecordedAttempt: activeSources.filter(s => s.lastResult === 'not_checked').length, latestSuccess: activeSources.filter(s => s.lastResult === 'success').length, latestFailure: activeSources.filter(s => FAILURES.has(s.lastResult)).length },
     pending: candidates.filter(candidate => OPEN_STATES.has(candidate.state)).map(candidate => ({
       id: candidate.id, state: candidate.state, priority: candidate.priority,
       reflectDueAt: candidate.reflectDueAt, reflectOverdue: isOverdue(candidate.reflectDueAt),
