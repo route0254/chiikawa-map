@@ -1,0 +1,89 @@
+{
+  "observedWindow": {
+    "startedAt": "2026-11-01T22:50:18.000Z",
+    "completedAt": "2026-11-01T22:58:27.964Z"
+  },
+  "originalCompletionPrecision": "2026-11-01T22:58:27.964118+00:00",
+  "scope": "read-only supplemental breadth",
+  "queries": [
+    "ちいかわ 2026 11月 12月 新店舗 イベント site:prtimes.jp",
+    "ちいかわ 2026 11月 イベント site:aeonmall.com",
+    "ナガノ 2026 11月 イベント site:parco.jp",
+    "ちいかわ 2026 11月 コラボ site:kodansha.co.jp"
+  ],
+  "sourceObservations": [
+    {
+      "url": "https://grayparkaservice.com/blogs/info",
+      "observedAt": null,
+      "result": "success",
+      "summary": "会社移転・休業中心。商品・設置発表は網羅しない。個別完了時刻未提示。"
+    },
+    {
+      "url": "https://sendaikamisugi.aeonmall.com/news/detail/2186",
+      "observedAt": null,
+      "result": "failed",
+      "summary": "Web direct InternalError、検索抜粋のみ。既存ID照合。"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000145.000074811.html",
+      "observedAt": null,
+      "result": "success",
+      "summary": "既存ちいかわパークストア大阪。"
+    },
+    {
+      "url": "https://morning.kodansha.co.jp/c/chiikawa.html",
+      "observedAt": null,
+      "result": "success",
+      "summary": "抽出したニュース範囲に新会場なし。"
+    }
+  ],
+  "openIssues": {
+    "nonPR": 0,
+    "existingDependencyPRs": [
+      58,
+      2,
+      1
+    ]
+  },
+  "gap": "既存GPSトップ・ニュースは有効だが最終巡回10/25。企業PRと会場別ブランドページを補完する。空本文の企業一覧は全量成功としない。",
+  "priorActualWeeklyWindow": "2026-10-26 08:11～08:13 JST",
+  "weeklyBoundary": "厳密な7日境界より少し前、承認済み朝の窓内で実施。08:13まで待ったり完了日時を補正しない。",
+  "nextSupplementDueAt": "2026-11-08T22:58:27.964Z",
+  "metricSnapshot": {
+    "candidateCount": 432,
+    "newTwoUnpublishedCandidatesIncluded": false,
+    "officialAnnouncedAtToDiscoveredAt": {
+      "knownExactPairs": 37,
+      "unknownOrDateOnly": 395,
+      "negativePairs": 0,
+      "medianHoursNonnegative": 9.016170555555556
+    },
+    "discoveredAtToPublishedAt": {
+      "knownExactPairs": 224,
+      "unknownOrDateOnly": 208,
+      "negativePairs": 0,
+      "medianHoursNonnegative": 0.8416666666666667
+    },
+    "officialAnnouncedAtToPublishedAt": {
+      "knownExactPairs": 44,
+      "unknownOrDateOnly": 388,
+      "negativePairs": 0,
+      "medianHoursNonnegative": 9.576765277777778
+    },
+    "newListingPrestart": {
+      "unknownStart": 4,
+      "beforeStart": 55,
+      "sameDayUnknownTime": 1,
+      "afterOrAtStart": 2,
+      "futureOrSameDayNoKnownPublication": 1,
+      "publishedButUnknownPublicTime": 2
+    },
+    "prestartComparable": {
+      "numerator": 55,
+      "denominator": 57,
+      "percent": 96.49122807017544,
+      "excludedUnknown": 8
+    }
+  },
+  "limits": "記録済み既知値のみ。全新発表の網羅率ではない。未同期公開日時と未公開は区別。日精度の同日比較から0時を仮定しない。"
+}
