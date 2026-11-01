@@ -1,3 +1,4 @@
+import { withArchivedMachidaAsCurrentFixture } from './helpers/historical-current-fixtures.mjs';
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 import RecentAdditions from '../recent-utils.js';
@@ -67,7 +68,7 @@ test('mapped collaborations still connect to the existing detail and private pla
 });
 
 test('published catalogue recent URLs retain their AND condition and reset without new controls', async ({page}) => {
-  const currentSpots = JSON.parse(await readFile(new URL('../data/official-spots.json', import.meta.url), 'utf8'));
+  const currentSpots = await withArchivedMachidaAsCurrentFixture(page);
   const currentCollaborations = JSON.parse(await readFile(new URL('../data/collaborations-current.json', import.meta.url), 'utf8'));
   const addedDates = JSON.parse(await readFile(new URL('../data/added-dates.json', import.meta.url), 'utf8'));
   const today = '2026-10-03';

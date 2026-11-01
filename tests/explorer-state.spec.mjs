@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
+import { withArchivedMachidaAsCurrentFixture } from './helpers/historical-current-fixtures.mjs';
 
 test.use({ timezoneId: 'Asia/Tokyo' });
 test.beforeEach(async ({ page }) => {
@@ -16,6 +17,7 @@ test.beforeEach(async ({ page }) => {
 
 for (const width of [390, 1180, 1440]) {
   test(`original filter dialog closes on a mode change and keeps conditions (${width}px)`, async ({page}) => {
+    await withArchivedMachidaAsCurrentFixture(page);
     await page.setViewportSize({width, height: 844});
     await page.goto('/?q=町田&pref=東京都&view=list');
     await expect(page.locator('#result-count')).toHaveText('2件表示');
@@ -95,6 +97,7 @@ for (const width of [390, 1180, 1440]) {
   }
 
   test(`hidden map retains a centered marker through view switches, zoom and reload (${width}px)`, async ({page}) => {
+    await withArchivedMachidaAsCurrentFixture(page);
     await page.setViewportSize({width, height: 844});
     await page.goto('/?q=町田&view=list&recent=1');
     await expect(page.locator('#result-count')).toHaveText('1件表示');
@@ -122,6 +125,7 @@ for (const width of [390, 1180, 1440]) {
 }
 
 test('a combined long query survives reload, site navigation and history', async ({page}) => {
+    await withArchivedMachidaAsCurrentFixture(page);
   const query = 'ちいかわPOP UP STORE 中部国際空港 第1ターミナル';
   await page.goto('/?view=list&past=1&tileTest=primary-fail');
   await expect(page.locator('.spot-list-card').first()).toBeVisible();
@@ -193,6 +197,7 @@ for (const width of [390, 1440]) test(`a single Hokkaido search stays usable aft
 for (const width of [390, 1440]) test.describe(`consecutive exploration with saved data (${width}px)`, () => {
   test.use({isMobile: width === 390, hasTouch: width === 390});
   test('search detail returns and hidden filtering keep the final marker selectable', async ({page}) => {
+    await withArchivedMachidaAsCurrentFixture(page);
     await page.setViewportSize({width, height: width === 390 ? 844 : 1000});
     await page.addInitScript(() => {
       localStorage.setItem('chiikawa-map-favorites-v1', JSON.stringify(['chiikawaland-osaka-umeda', 'nagano-takao-mountain']));
