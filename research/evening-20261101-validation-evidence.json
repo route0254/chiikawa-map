@@ -1,0 +1,65 @@
+{
+  "validatedAt": "2026-11-01T10:22:26.584Z",
+  "baseCommit": "671a19850ac75b9c15fe3fa2ad6860cc60b30c25",
+  "scope": {
+    "newPublicationCandidates": 1,
+    "existingSpotUpdates": 1,
+    "existingCollaborationUpdates": 1,
+    "noNewListingsOrHistoryMoves": true,
+    "ids": [
+      "chiikawa-christmas-market-2026-toyosuna",
+      "abema-chiikawa-christmas-market-2026"
+    ]
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 67,
+    "uiPassed": 111,
+    "uiFlaky": 0,
+    "pcMobileTargetChecks": 20,
+    "screenshots": 6,
+    "pageErrors": 0,
+    "generatedPages": 876,
+    "officialOembedHttpStatus": 200,
+    "fullSoldoutAndNoSameDayTextConfirmed": true
+  },
+  "preservation": {
+    "eventPeriod": "2026-11-24～2026-12-25",
+    "eventPeriodAndCoordinatesPreserved": true,
+    "reservationEnumsAndHoursPreserved": true,
+    "generalFaqAndChildExceptionPreserved": true,
+    "firstAddedDatesPreserved": true,
+    "pr89LinkScopeAndStoppedSourcesPreserved": true,
+    "otherListingDataUnchanged": true,
+    "appTestsWorkflowsAndSettingsUnchanged": true
+  },
+  "records": {
+    "sources": 808,
+    "candidates": 430,
+    "observations": 64,
+    "newOfficialSources": 6,
+    "pr94SyncedCandidates": 7,
+    "pr94OriginalPublishedAt": "2026-10-31T20:46:53.609Z",
+    "holdsReviewed": 11,
+    "holdStatesAndUnknownFactsPreserved": true,
+    "nextHoldReview": "2026-11-02T08:00:00+09:00",
+    "cachedReadsAndUnknownCompletionTimesNotSubstitutedForLiveSuccess": true,
+    "failedAndPartialObservationsPreserved": true,
+    "noUnverifiedImageConditionsAdded": true,
+    "officialAnnouncementDayOnly": "2026-10-31",
+    "discoveredAt": "2026-11-01T10:02:28.000Z",
+    "exactSoldoutTime": null,
+    "discoveryCalendarDayDifference": 1,
+    "discoveryDelayHours": null
+  },
+  "privacy": {
+    "passed": true,
+    "addedCredentialValues": 0,
+    "rawHtmlLocalPathsPrivateOriginalsAndUnfilteredLinkListsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象SHAのCI成功後にmainへ反映し、公開JSON・個別ページの初回一致時刻と公開後Healthを保存。今回実測は次回通常更新で同期。"
+  }
+}
