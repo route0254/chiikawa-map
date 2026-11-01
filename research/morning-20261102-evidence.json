@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-02",
+  "baseCommit": "61317fd574c8d9908075f2e8ac1aa1b1f6e49a78",
+  "newSpots": [
+    {
+      "id": "gpsbox-kiramekko-2026-10-21-daimaru-umeda",
+      "name": "GPSBOX＆Kiramekko POPUP STORE 大丸梅田店",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "popup",
+      "brand": "chiikawa",
+      "periodType": "limited",
+      "startDate": "2026-10-21",
+      "endDate": "2026-11-03",
+      "hoursText": "10:00～20:00（営業時間より早く入店受付を締め切る場合があります）",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+      "hoursCheckedAt": "2026-11-02",
+      "reservationType": "unknown",
+      "reservationUrl": null,
+      "defaultEntryType": "other",
+      "crowdControlType": "other",
+      "crowdControlCondition": "when_crowded",
+      "entryNote": "混雑時の入場等は会場で案内されます。係員の指示に従ってください。営業時間より早く入店受付を締め切る場合があります。10月21日のオンライン整理券は初日限定の案内です。10月22日以降の入場方法は、公式ページの最新の案内をご確認ください。",
+      "entryInfoUrl": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+      "entryInfoCheckedAt": "2026-11-02",
+      "lat": 34.701881,
+      "lng": 135.496338,
+      "address": "大阪府大阪市北区梅田3-1-1 大丸梅田店 1階 東イベントスペース",
+      "description": "GPSBOXやKiramekkoの商品を扱う期間限定ショップです。ちいかわのフィギュアなども参加します。「ちいかわだらけフィギュア」は納品遅延のため入荷次第発売と案内されています。地図の位置は大丸梅田店の施設代表点です。",
+      "sourceUrl": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=GPSBOX%20Kiramekko%20POPUP%20STORE%20%E5%A4%A7%E4%B8%B8%E6%A2%85%E7%94%B0%E5%BA%97%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B03-1-1",
+      "importantNotice": "「ちいかわだらけフィギュア」は納品遅延のため入荷次第発売という案内です。入荷済みとは確認できていません。"
+    }
+  ],
+  "newReadyCandidates": [
+    "new-gpsbox-kiramekko-daimaru-umeda-20261021"
+  ],
+  "kitteClassificationPending": true,
+  "gpsOfficialAnnouncedAt": null,
+  "gpsDiscoveredAt": "2026-11-01T22:53:29.000Z",
+  "gpsStartedBeforeDiscovery": true,
+  "gpsDiscoveryCalendarDayDelay": 12,
+  "coordinateBasis": {
+    "gpsbox-kiramekko-2026-10-21-daimaru-umeda": {
+      "facilityRepresentative": true,
+      "notIndoorExact": true,
+      "reusedIds": [
+        "wakuwaku-amusement-2022-08-10-osaka-umeda",
+        "nagano-market-popup-2025-11-07-umeda",
+        "nagano-exhibition-2023-04-19-umeda"
+      ],
+      "lat": 34.701881,
+      "lng": 135.496338
+    }
+  },
+  "consumerOfficialReads": [
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "startedAt": "2026-11-01T22:59:34.242Z",
+      "completedAt": "2026-11-01T22:59:34.332Z",
+      "httpStatus": 200,
+      "sha256": "b3435e95ab24b0daac8e062a2b60428e1ffdfd95be039d5eb7206d95974b06e1",
+      "bytes": 268865
+    },
+    {
+      "url": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+      "startedAt": "2026-11-01T22:59:34.274Z",
+      "completedAt": "2026-11-01T22:59:34.377Z",
+      "httpStatus": 200,
+      "sha256": "978d8712d771a8ce7c7402d3a56570c34a456ff5a834a4cce682c896892537e6",
+      "bytes": 38991
+    }
+  ],
+  "semanticNormalization": {
+    "defaultEntryType": "other（通常入場が未確認。walkin推定なし）",
+    "crowdControlType": "other（具体的な当日券・整理券運用は未確認）",
+    "sourceKind": "venue/official_index",
+    "cadence": "morning_evening/weekly"
+  },
+  "sourceRecord": "research/morning-20261102/source-observations.json",
+  "weeklyRecord": "research/morning-20261102/weekly-supplement.json",
+  "pr96SyncedCandidates": 2,
+  "pr96PublishedAt": "2026-11-01T20:17:08.517Z",
+  "existingHoldsReviewed": 11,
+  "newMarunouchiHold": true,
+  "newHanedaHistoryCandidate": true,
+  "rejectedOrdinaryProducts": 2,
+  "newSourceIds": [
+    "corporate-gps-kitte-nagoya-vending-20261101",
+    "corporate-gps-prtimes-index",
+    "gpsbox-kiramekko-umeda-20261021-official",
+    "kitte-nagoya-official-access",
+    "corporate-gps-kitte-marunouchi-vending-20260718",
+    "kitte-marunouchi-official-access",
+    "gpsbox-kiramekko-haneda-20260818-official"
+  ],
+  "sourceCount": 815,
+  "candidateCount": 438,
+  "thisPublishedAt": null,
+  "cloudPublishedDuplicateCheck": {
+    "baseCommit": "61317fd574c8d9908075f2e8ac1aa1b1f6e49a78",
+    "counts": {
+      "current": 87,
+      "archive": 695,
+      "currentCollaborations": 20,
+      "archiveCollaborations": 56,
+      "candidates": 432,
+      "sources": 808
+    },
+    "fetches": [
+      {
+        "url": "https://chiikatsu-map.com/data/official-spots.json",
+        "completedAt": "2026-11-01T22:50:41.232Z",
+        "result": "success"
+      },
+      {
+        "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+        "completedAt": "2026-11-01T22:50:41.364Z",
+        "result": "success"
+      },
+      {
+        "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+        "completedAt": "2026-11-01T22:50:41.252Z",
+        "result": "success"
+      },
+      {
+        "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+        "completedAt": "2026-11-01T22:52:55.889Z",
+        "result": "success"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/route0254/chiikawa-map/main/research/publication-candidate-ledger.json",
+        "completedAt": "2026-11-01T22:50:40.475Z",
+        "result": "success"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/route0254/chiikawa-map/main/research/official-source-ledger.json",
+        "completedAt": "2026-11-01T22:50:40.633Z",
+        "result": "success"
+      }
+    ],
+    "newTargetMatches": 0,
+    "nearbyFacilityPinsAreDifferentEvents": true,
+    "existingGPSHomeAndNewsNotWholeVenueCoverage": true
+  }
+}

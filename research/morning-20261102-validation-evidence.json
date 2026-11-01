@@ -1,0 +1,59 @@
+{
+  "validatedAt": "2026-11-01T23:09:57.917Z",
+  "baseCommit": "61317fd574c8d9908075f2e8ac1aa1b1f6e49a78",
+  "scope": {
+    "newSpots": 1,
+    "ids": [
+      "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
+    ],
+    "kitteClassificationPending": true
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 67,
+    "uiPassed": 111,
+    "pcMobileTargetChecks": 14,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "generatedPages": 877,
+    "archiveCandidates": 0,
+    "sourceAndCandidateReferencesValid": true
+  },
+  "records": {
+    "sources": 815,
+    "candidates": 438,
+    "newSources": 7,
+    "newCandidates": 6,
+    "sourceObservations": 90,
+    "pr96SyncedCandidates": 2,
+    "pr96OriginalPublishedAt": "2026-11-01T20:17:08.517Z",
+    "existingHoldsReviewed": 11,
+    "holdRecheckDueAt": "2026-11-02T19:00:00+09:00",
+    "newMarunouchiHold": true,
+    "hanedaHistoricalOnly": true,
+    "ordinaryNaganoProductsRejected": 2,
+    "weeklyActualCompletionAt": "2026-11-01T22:58:27.964Z",
+    "weeklyMetricSnapshotBeforeNewCandidates": true,
+    "inputTruncationNotReconstructed": true
+  },
+  "preservation": {
+    "allExistingDataIdsPeriodsCoordinatesAndFirstAddedPreserved": true,
+    "allExistingSourceEnabledFlagsIncludingPr89Preserved": true,
+    "priorSuccessesAndFailureHistoryPreserved": true,
+    "cachedAndPartialReadsNotClaimedAsLiveSuccess": true,
+    "checkerCriteriaAppTestsWorkflowsAndSettingsUnchanged": true,
+    "firstDayOnlyTicketNotGeneralized": true,
+    "deliveryDelayNotClaimedRecovered": true,
+    "unknownEntryTypeMappedToExistingOther": true
+  },
+  "privacy": {
+    "passed": true,
+    "addedCredentialValues": 0,
+    "rawHtmlLocalPathsAndPrivateOriginalsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象SHA CIの成功後main反映と公開実体を確認。実公開初回一致時刻を次回通常同期用に保存。"
+  }
+}
