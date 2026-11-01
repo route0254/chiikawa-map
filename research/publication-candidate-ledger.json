@@ -24135,6 +24135,12 @@
           "observedAt": "2026-11-01T10:03:26.000Z",
           "summary": "企業公式記事が@chiikawa_xmasを公式Xとして紹介。完売そのものは個別投稿の本文を根拠とする。",
           "recordPath": "research/evening-20261101-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/95",
+          "observedAt": "2026-11-01T10:32:42.253Z",
+          "summary": "PR95の公開28リソースが初回完全一致した保存済み実測。配信完了時刻・今回の報告時刻とは区別。",
+          "recordPath": "research/archive-machida-sushi-20261102/pr95-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -24149,10 +24155,97 @@
         "chiikawa-christmas-market-2026-toyosuna",
         "abema-chiikawa-christmas-market-2026"
       ],
+      "state": "published",
+      "priority": "normal",
+      "decision": "既存2レコードの販売状況更新。会期・入場条件・FAQを保持。発表から発見の日付差は1日、時間単位の遅延や正確な完売時刻は不明。 保存済み初回公開一致時刻を今回の通常更新で同期。",
+      "nextCheck": "公開済みの販売状況・既存ID・会期・初回発見を保持。新しい公式案内がある場合に確認。",
+      "recheckDueAt": "2026-11-02T08:00:00+09:00",
+      "publishedAt": "2026-11-01T10:32:42.253Z"
+    },
+    {
+      "id": "archive-popup-2026-10-09-machida-modi-20261102",
+      "title": "ちいかわPOP UP STORE 町田モディ 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-popup-2026-10-09-machida-modi-20261102",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-4fc9bffa0f"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-09",
+      "eventEndsAt": "2026-11-01",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-02T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+          "observedAt": null,
+          "summary": "公式ページタイトルで10/9〜11/1。施設の検索掲載本文も一致。直取得本文欠落・画像403未視認の限界を保持。",
+          "recordPath": "research/archive-machida-sushi-20261102-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-09-machida-modi"
+        ],
+        "note": "現行に同ID1件、履歴同ID0件。既存ID・期間・出典・地点を保持する履歴整理。"
+      },
+      "listingIds": [
+        "popup-2026-10-09-machida-modi"
+      ],
       "state": "ready",
       "priority": "normal",
-      "decision": "既存2レコードの販売状況更新。会期・入場条件・FAQを保持。発表から発見の日付差は1日、時間単位の遅延や正確な完売時刻は不明。",
-      "nextCheck": "通常検査・公開実体照合後、初回一致時刻を保存。次回通常更新で元実測を台帳同期。追加販売を推測しない。",
+      "decision": "公式で確認済みの有限会期が経過。施設閉鎖や404のみを根拠とする移行ではない。新規発見の秒精度時刻・初回発表日は不明のためnull。",
+      "nextCheck": "必要検査・同SHA CI・公開実体照合後に初回一致時刻を保存し、次回通常更新へ引き継ぐ。",
+      "recheckDueAt": "2026-11-02T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-sushi-2026-10-22-yokohama-skybuilding-20261102",
+      "title": "むちゃうま!!ちいかわ寿司 POP UP STORE 横浜スカイビル 終了履歴移行",
+      "kind": "listing_update",
+      "targetKey": "archive-chiikawa-sushi-2026-10-22-yokohama-skybuilding-20261102",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-f14e0e6fed",
+        "observed-chiikawa-info-jp-b434b2c58a"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-22",
+      "eventEndsAt": "2026-11-01",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-02T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/ck_sushi.html",
+          "observedAt": null,
+          "summary": "公式一覧本文と個別ページタイトルで10/22〜11/1。確認範囲に延長根拠なし。画像未視認と直接HTTP403は別記録。",
+          "recordPath": "research/archive-machida-sushi-20261102-evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+          "observedAt": null,
+          "summary": "公式一覧本文と個別ページタイトルで10/22〜11/1。確認範囲に延長根拠なし。画像未視認と直接HTTP403は別記録。",
+          "recordPath": "research/archive-machida-sushi-20261102-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
+        ],
+        "note": "現行に同ID1件、履歴同ID0件。既存ID・期間・出典・地点を保持する履歴整理。"
+      },
+      "listingIds": [
+        "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式で確認済みの有限会期が経過。施設閉鎖や404のみを根拠とする移行ではない。新規発見の秒精度時刻・初回発表日は不明のためnull。",
+      "nextCheck": "必要検査・同SHA CI・公開実体照合後に初回一致時刻を保存し、次回通常更新へ引き継ぐ。",
       "recheckDueAt": "2026-11-02T08:00:00+09:00",
       "publishedAt": null
     }

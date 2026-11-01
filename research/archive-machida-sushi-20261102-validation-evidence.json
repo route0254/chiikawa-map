@@ -1,0 +1,59 @@
+{
+  "validatedAt": "2026-11-01T20:08:32.469Z",
+  "baseCommit": "255322f9c746fc04f1ca7a5c8a83ca444efa2bab",
+  "scope": {
+    "spotArchiveMoves": 2,
+    "newListings": 0,
+    "ids": [
+      "popup-2026-10-09-machida-modi",
+      "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
+    ]
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 67,
+    "uiPassed": 111,
+    "pcMobileTargetChecks": 28,
+    "screenshots": 8,
+    "pageErrors": 0,
+    "generatedPages": 876,
+    "archiveCandidates": 0,
+    "canonicalSourceAndGeneratedJsonMatched": true
+  },
+  "preservation": {
+    "idsPeriodsCoordinatesHoursReservationEnumsAndFirstAddedPreserved": true,
+    "pastEntryConditionsRetained": true,
+    "originalSourcesRetained": true,
+    "pr89LinkScopeAndSourceFlagsPreserved": true,
+    "otherListingDataAndElevenHoldsUnchanged": true,
+    "holdRecheckDueAt": "2026-11-02T08:00:00+09:00",
+    "checkerCriteriaAndAppCodeUnchanged": true,
+    "limitedHistoricalCurrentFixturesOnly": true,
+    "testAssertionsUnchanged": true
+  },
+  "records": {
+    "sources": 808,
+    "candidates": 432,
+    "newCandidates": 2,
+    "sourceObservations": 6,
+    "pr95SyncedCandidates": 1,
+    "pr95OriginalPublishedAt": "2026-11-01T10:32:42.253Z",
+    "officialTitlesAndSushiListPeriodConfirmed": true,
+    "machidaFacilityDirectBodyMissing": true,
+    "imagesUnviewed403": true,
+    "directHttp403NotMarkedSuccess": true,
+    "priorLastSuccessfulTimesPreserved": true,
+    "cloudReviewTimePrecision": "2026-11-02 04:54 JST minute",
+    "unknownAnnouncementAndDiscoveryTimes": null
+  },
+  "privacy": {
+    "passed": true,
+    "addedCredentialValues": 0,
+    "rawHtmlLocalPathsPrivateOriginalsAndUnfilteredLinksExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象SHAのCI・main反映・公開JSONと個別ページの初回完全一致を確認し、実測を次回通常更新用へ保存。"
+  }
+}

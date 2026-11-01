@@ -1,0 +1,158 @@
+{
+  "checkedDate": "2026-11-02",
+  "cloudReview": {
+    "route": "cloud_official_review",
+    "observedAt": null,
+    "observedLocalMinute": "2026-11-02T04:54+09:00",
+    "timePrecision": "minute",
+    "noExtensionFoundWithinCheckedScope": true,
+    "imagesVisuallyInspected": false,
+    "scope": "町田は公式個別ページタイトルと施設検索掲載本文、横浜寿司は公式一覧本文と個別ページタイトルで有限会期を確認。施設直取得は本文欠落。画像403・未視認。全画像や全媒体を網羅した確認ではない。"
+  },
+  "observations": [
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "route": "consumer_web_read",
+      "observedAt": null,
+      "observedDate": "2026-11-02",
+      "result": "partial",
+      "scope": "Web読取の公式ページタイトルに会期。画像の内容は未視認。キャッシュを含むためライブ完了日時は不明。",
+      "lastSuccessfulAt": null,
+      "ledgerApplied": false
+    },
+    {
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "route": "consumer_web_read",
+      "observedAt": null,
+      "observedDate": "2026-11-02",
+      "result": "partial",
+      "scope": "Web読取の公式一覧本文に横浜10/22〜11/1。キャッシュを含むためライブ完了日時は不明。",
+      "lastSuccessfulAt": null,
+      "ledgerApplied": false
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "route": "consumer_web_read",
+      "observedAt": null,
+      "observedDate": "2026-11-02",
+      "result": "partial",
+      "scope": "Web読取の公式ページタイトルに会期。画像の内容は未視認。キャッシュを含むためライブ完了日時は不明。",
+      "lastSuccessfulAt": null,
+      "ledgerApplied": false
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "route": "consumer_direct_http",
+      "startedAt": "2026-11-01T19:59:07.583Z",
+      "completedAt": "2026-11-01T19:59:07.687Z",
+      "result": "failed",
+      "httpStatus": 403,
+      "bytes": 5507,
+      "sha256": "eb5f0a541ea26afa5892024d4ce93269aef3156bcf6763f023f9251eeeaef30e",
+      "scope": "アクセス制限応答。公式内容の取得成功として扱わない。",
+      "ledgerApplied": true
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-f14e0e6fed",
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "route": "consumer_direct_http",
+      "startedAt": "2026-11-01T19:59:07.618Z",
+      "completedAt": "2026-11-01T19:59:07.689Z",
+      "result": "failed",
+      "httpStatus": 403,
+      "bytes": 5456,
+      "sha256": "9fc5e1a13ea2d89d23a9b3fcd399f403537ec26bdabdea882259b5a0500c34c2",
+      "scope": "アクセス制限応答。公式内容の取得成功として扱わない。",
+      "ledgerApplied": true
+    },
+    {
+      "sourceId": "observed-chiikawa-info-jp-b434b2c58a",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "route": "consumer_direct_http",
+      "startedAt": "2026-11-01T19:59:07.619Z",
+      "completedAt": "2026-11-01T19:59:07.688Z",
+      "result": "failed",
+      "httpStatus": 403,
+      "bytes": 5568,
+      "sha256": "4e4f7f96f478e0fa0556e79d217a2bd6fa8c97a598c52a6dcfce8a261c16bec6",
+      "scope": "アクセス制限応答。公式内容の取得成功として扱わない。",
+      "ledgerApplied": true
+    }
+  ],
+  "priorSourceStates": {
+    "observed-chiikawa-info-jp-4fc9bffa0f": {
+      "id": "observed-chiikawa-info-jp-4fc9bffa0f",
+      "name": "ちいかわPOP UP STORE 町田モディ(2026/10/9(金)～11/1(日))",
+      "url": "https://chiikawa-info.jp/p26/pus_matd/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-29T09:58:58.211+00:00",
+      "lastSuccessfulAt": "2026-10-29T09:58:58.211+00:00",
+      "lastResult": "success",
+      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:25.319+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/pus_matd/index.html"
+      },
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
+    },
+    "observed-chiikawa-info-jp-f14e0e6fed": {
+      "id": "observed-chiikawa-info-jp-f14e0e6fed",
+      "name": "むちゃうま!!ちいかわ寿司 ｜ スパイラルキュート",
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-29T09:58:53.603+00:00",
+      "lastSuccessfulAt": "2026-10-29T09:58:53.603+00:00",
+      "lastResult": "success",
+      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastFailure": null,
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/26朝の親クラウド観測を追記。成功と別経路の失敗を原記録へ併記し、過去の成功日時・失敗履歴を保持。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。 今回の観測は取得完了時刻が未記録のため、既存の最終試行・成功日時・結果を保持。観測本文と時刻精度は別記録を参照。"
+    },
+    "observed-chiikawa-info-jp-b434b2c58a": {
+      "id": "observed-chiikawa-info-jp-b434b2c58a",
+      "name": "むちゃうま!!ちいかわ寿司 POP UP STORE 横浜スカイビル(2026/10/22(木)～11/1(日))",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-29T09:58:57.927+00:00",
+      "lastSuccessfulAt": "2026-10-29T09:58:57.927+00:00",
+      "lastResult": "success",
+      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:28.417+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/yokohama/"
+      },
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
+    }
+  },
+  "facilityCheck": {
+    "url": "https://www.0101.co.jp/723/event/detail.html?article_seq=145260&article_type=sto",
+    "searchStoredTextPeriodMatches": true,
+    "directBodyComplete": false,
+    "imagesHttpStatus": 403,
+    "imagesViewed": false
+  },
+  "sourceFlagsUnchanged": true,
+  "lastSuccessfulTimesUnchanged": true,
+  "holdsUnchanged": true
+}
