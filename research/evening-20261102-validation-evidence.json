@@ -1,0 +1,69 @@
+{
+  "validatedAt": "2026-11-02T10:13:25.525Z",
+  "baseCommit": "9ad73cf1003f7efc55058a4666f44f4fcc140ac3",
+  "scope": {
+    "newCurrent": 1,
+    "newArchive": 1,
+    "descriptionOnlyUpdates": 2,
+    "ids": [
+      "necogusa-2026-11-04-kyoto-mini",
+      "chiikawa-bakery-tokyo",
+      "chiikawa-bakery-osaka",
+      "gpsbox-kiramekko-2026-08-18-haneda-t1"
+    ]
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 67,
+    "uiPassed": 111,
+    "pcMobileTargetChecks": 48,
+    "finalHanedaWordingChecks": 18,
+    "screenshots": 16,
+    "pageErrors": 0,
+    "generatedPages": 879,
+    "archiveCandidates": 0,
+    "sourceAndCandidateReferencesValid": true
+  },
+  "records": {
+    "sources": 825,
+    "candidates": 441,
+    "newSources": 10,
+    "newCandidates": 3,
+    "publicationCandidates": 4,
+    "sourceObservations": 59,
+    "pr97SyncedCandidates": 1,
+    "pr97OriginalPublishedAt": "2026-11-01T23:19:00.013Z",
+    "holdsBefore": 14,
+    "holdsAfter": 12,
+    "adventResolution": "根拠確認済み・掲載変更不要",
+    "adventScheduledRelease": "2026-11-24",
+    "adventPublishedAt": null,
+    "hanedaExplicitFirstDiscovery": "2026-11-01T22:54:22.000Z",
+    "remainingHoldRecheckDueAt": "2026-11-03T08:00:00+09:00",
+    "kitteNagoyaNotPublishedOrSchemaChanged": true,
+    "marunouchiOriginalMorningConfirmationPreserved": true,
+    "receivedTruncatedInputNotReconstructed": true
+  },
+  "preservation": {
+    "allExistingListingsExceptTwoDescriptionSuffixesUnchanged": true,
+    "existingEntryRulesReservationStopAndOsakaJanuaryHoldPreserved": true,
+    "allExistingSourceEnabledFlagsAndPr89Preserved": true,
+    "priorSuccessAndFailuresPreserved": true,
+    "cachedAndPartialNotClaimedLiveSuccess": true,
+    "newArchiveFirstAddedNullAndExcludedFromPrestartMetric": true,
+    "kyotoMiniDistinctFromWestExitAndRepresentativePoint": true,
+    "hanedaGpsAndBabyDistinctAndBothRetained": true,
+    "menuScopeDatesPlannedAndQuantityLimitedPreserved": true,
+    "checkerCriteriaAppTestsWorkflowsAndSettingsUnchanged": true
+  },
+  "privacy": {
+    "passed": true,
+    "addedCredentialValues": 0,
+    "rawHtmlLocalPathsPrivateOriginalsAndUnfilteredLinkListsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象SHA CIの成功後main反映・公開JSON/ページの初回完全一致を確認し、元実測を次回通常更新へ保存。"
+  }
+}
