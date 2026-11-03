@@ -57,6 +57,7 @@ for (const width of [390, 1440]) {
 
 test('mapped collaborations still connect to the existing detail and private plan', async ({page}) => {
   await page.goto('/collaborations.html');
+  await page.locator('#collaboration-tab-archive').click();
   const card = page.locator('.collaboration-card').filter({hasText: '東京メトロ脱出ゲーム'});
   await expect(card).toBeVisible();await card.locator('.collaboration-card-action.is-map').click();
   await expect(page.locator('.spot-detail-title')).toBeVisible();

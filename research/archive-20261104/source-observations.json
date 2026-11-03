@@ -1,0 +1,569 @@
+{
+  "checkedDate": "2026-11-04",
+  "baseCommit": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+  "observations": [
+    {
+      "key": "metro",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "startedAt": "2026-11-03T22:01:38.297Z",
+      "completedAt": "2026-11-03T22:01:38.398Z",
+      "httpStatus": 200,
+      "sha256": "fb2efa088267a291741988cd9b6d66de36186fd869dc73a3bfe31af615f9ab8a",
+      "result": "retrieved",
+      "title": "「ちいかわ、さがしてます。 『映画ちいかわ』東京メトロ脱出ゲーム」を開催！｜東京メトロ",
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.398Z",
+      "summary": "公式本文の全角日付で2026/7/24～11/3を確認。両掲載は同一企画で、スポットIDとlinkedSpotIdsを保って履歴へ整理。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "magical-sapporo",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "startedAt": "2026-11-03T22:01:38.331Z",
+      "completedAt": "2026-11-03T22:01:38.396Z",
+      "httpStatus": 403,
+      "sha256": "2804c424430aa68d4b6eca23c6af2992cd97765bbbe2570590cbf2b89f7d33a4",
+      "result": "failed",
+      "method": "normal_http",
+      "lastSuccessfulAt": null,
+      "summary": "公式ページタイトルの10/2～11/3を確認。通常HTTPは403。公式main画像を別途HTTP200で取得し目視して11/3終了を確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "nagano-fukuoka",
+      "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "startedAt": "2026-11-03T22:01:38.332Z",
+      "completedAt": "2026-11-03T22:01:38.703Z",
+      "httpStatus": 200,
+      "sha256": "ee45d0d964b849b934fc3d598ff3f0e2d8e8721fbd24240de23040309854b88a",
+      "result": "retrieved",
+      "title": "ナガノマーケット POP UP SHOP 福岡三越(2026/10/16(金)～11/3(火祝))",
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.703Z",
+      "summary": "公式本文に2026/10/16～11/3、福岡三越9階三越ギャラリーと記載。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "fukuoka",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "startedAt": "2026-11-03T22:01:38.333Z",
+      "completedAt": "2026-11-03T22:01:38.397Z",
+      "httpStatus": 403,
+      "sha256": "a1ce0125b40d4e618f0876338662c6015ae3ebfff0f1ce9e8e2ef4bba083b855",
+      "result": "failed",
+      "method": "normal_http",
+      "lastSuccessfulAt": null,
+      "summary": "公式ページタイトルと目視した公式main画像に2026/10/16～11/3。施設本文の同会期・寿司同時開催も確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "tokoname",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "startedAt": "2026-11-03T22:01:38.333Z",
+      "completedAt": "2026-11-03T22:01:38.397Z",
+      "httpStatus": 403,
+      "sha256": "e93df4de1d2b7fa2ba55c918f602acd8da8c60f27bfade0dc8378a12be474af4",
+      "result": "failed",
+      "method": "normal_http",
+      "lastSuccessfulAt": null,
+      "summary": "公式タイトル・目視した公式main画像に2026/10/16～11/3。施設のweb抽出本文も同期間。通常HTTPは公式403・施設404で別記録。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "kasukabe",
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "startedAt": "2026-11-03T22:01:38.704Z",
+      "completedAt": "2026-11-03T22:01:38.885Z",
+      "httpStatus": 404,
+      "sha256": "a5947d260607c7494b546b505f749959370412961a5caea0101e5c65451829b1",
+      "result": "failed",
+      "method": "normal_http",
+      "lastSuccessfulAt": null,
+      "summary": "web抽出の施設公式本文は2026/11/3の写真撮影会。通常HTTPは404で、取得経路を区別。別のPOPUP会期へ延長しない。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "midorii",
+      "url": "https://wraqua.com/event/2026/10/21542/",
+      "startedAt": "2026-11-03T22:01:38.705Z",
+      "completedAt": "2026-11-03T22:01:38.847Z",
+      "httpStatus": 200,
+      "sha256": "678c447d5bc85fb3c559b55850ded40522b2992660048d96b4c7ac1b2cb5779e",
+      "result": "retrieved",
+      "title": "【11/3(火)】ちいかわ むちゃフォトパーティ!! | ラクア緑井",
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.847Z",
+      "summary": "施設公式本文に11/3の写真撮影会とARラリーを確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "gps-umeda",
+      "url": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+      "startedAt": "2026-11-03T22:01:38.705Z",
+      "completedAt": "2026-11-03T22:01:38.819Z",
+      "httpStatus": 200,
+      "sha256": "978d8712d771a8ce7c7402d3a56570c34a456ff5a834a4cce682c896892537e6",
+      "result": "retrieved",
+      "title": "GPSBOX＆Kiramekko POPUP STORE 大丸梅田店(2026/10/21(水)～11/3(火祝))イベント・グッズ情報",
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.819Z",
+      "summary": "メーカー公式本文に2026/10/21～11/3と大丸梅田1階東イベントスペースを確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "venue-fukuoka",
+      "url": "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/chiikawa.html",
+      "startedAt": "2026-11-03T22:01:38.706Z",
+      "completedAt": "2026-11-03T22:01:38.803Z",
+      "httpStatus": 200,
+      "sha256": "5f26599e0d4bc197e1aa6b88854d4e2c49e8a6a94acd9af0c67997cda938f60b",
+      "result": "retrieved",
+      "title": "ちいかわ POP UP STORE | 福岡三越 | 三越 店舗情報",
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.803Z",
+      "summary": "施設本文で10/16～11/3と、ちいかわPOPUP・寿司同時開催・ナガノマーケットの関係を確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "venue-tokoname",
+      "url": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "startedAt": "2026-11-03T22:01:38.707Z",
+      "completedAt": "2026-11-03T22:01:38.783Z",
+      "httpStatus": 404,
+      "sha256": "df8de670ea49104631dd144accf162e4dcbd9776010e2e49ca385a790c2bf963",
+      "result": "failed",
+      "method": "normal_http",
+      "lastSuccessfulAt": null,
+      "summary": "通常HTTP404。web抽出本文は10/16～11/3。404を終了判定の根拠にせず有限会期を採用。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "sushi-fukuoka",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "startedAt": "2026-11-03T22:01:38.885Z",
+      "completedAt": "2026-11-03T22:01:38.933Z",
+      "httpStatus": 403,
+      "sha256": "4ca92c35779e4568f5266f0a72606a582b00e50c01a9781fb27032cedc5aecd0",
+      "result": "failed",
+      "method": "normal_http",
+      "lastSuccessfulAt": null,
+      "summary": "直接HTTP403。既存の通常POPUP同時開催分類と根拠URLを保持し、独立ピンは追加しない。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "public-official-spots",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "startedAt": "2026-11-03T22:01:38.886Z",
+      "completedAt": "2026-11-03T22:01:39.129Z",
+      "httpStatus": 200,
+      "sha256": "4fce26c5133f387f564d5a3874163b49b4023452095742ab1f40cea8571d1391",
+      "result": "retrieved",
+      "count": 89,
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:39.129Z",
+      "summary": "公開4JSONとGit mainのバイト一致を別途確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "public-official-events-archive",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "startedAt": "2026-11-03T22:01:38.886Z",
+      "completedAt": "2026-11-03T22:01:39.172Z",
+      "httpStatus": 200,
+      "sha256": "95ca274e8136e1b1ca42460ec9d497fea7892257b014600673b7a1fe6c8cfcd6",
+      "result": "retrieved",
+      "count": 697,
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:39.172Z",
+      "summary": "公開4JSONとGit mainのバイト一致を別途確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "public-collaborations-current",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "startedAt": "2026-11-03T22:01:38.886Z",
+      "completedAt": "2026-11-03T22:01:39.136Z",
+      "httpStatus": 200,
+      "sha256": "0a2e818f6822403f4f8ea4bb7c44df3a937b273ee0902af4281ccf915f643e89",
+      "result": "retrieved",
+      "count": 20,
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:39.136Z",
+      "summary": "公開4JSONとGit mainのバイト一致を別途確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "public-collaborations-archive",
+      "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+      "startedAt": "2026-11-03T22:01:38.887Z",
+      "completedAt": "2026-11-03T22:01:39.120Z",
+      "httpStatus": 200,
+      "sha256": "0acf9b7d377faf8428aa9a79bd77c6c545e2ee31e572ccba60f5d8581dd5936f",
+      "result": "retrieved",
+      "count": 56,
+      "method": "normal_http",
+      "lastSuccessfulAt": "2026-11-03T22:01:39.120Z",
+      "summary": "公開4JSONとGit mainのバイト一致を別途確認。",
+      "priorSuccessPreservedOnFailure": true
+    },
+    {
+      "key": "magical-main",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/img/main_9.jpg",
+      "startedAt": "2026-11-03T22:02:43.590Z",
+      "completedAt": "2026-11-03T22:02:43.703Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "sha256": "c98951058d0b868102a5b4531e2f22df06a38229562a4d698c7a499db55e9403",
+      "method": "normal_http_image",
+      "lastSuccessfulAt": "2026-11-03T22:02:43.703Z",
+      "imageViewedAt": "2026-11-03T22:02:53Z",
+      "summary": "2026-10-02/2026-11-03"
+    },
+    {
+      "key": "fukuoka-main",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/main_v10.jpg",
+      "startedAt": "2026-11-03T22:02:43.622Z",
+      "completedAt": "2026-11-03T22:02:43.708Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "sha256": "807023ffb4eee24801bccd50721cff2c322c29ca837330489192e12db350b5e4",
+      "method": "normal_http_image",
+      "lastSuccessfulAt": "2026-11-03T22:02:43.708Z",
+      "imageViewedAt": "2026-11-03T22:02:53Z",
+      "summary": "2026-10-16/2026-11-03"
+    },
+    {
+      "key": "tokoname-main",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/img/main_v10.jpg",
+      "startedAt": "2026-11-03T22:02:43.623Z",
+      "completedAt": "2026-11-03T22:02:43.706Z",
+      "httpStatus": 200,
+      "result": "retrieved",
+      "sha256": "5b91b78d70c67aa3f2815ffb6065b14b23a6c332a4e71106374e42568d9e6c3c",
+      "method": "normal_http_image",
+      "lastSuccessfulAt": "2026-11-03T22:02:43.706Z",
+      "imageViewedAt": "2026-11-03T22:02:53Z",
+      "summary": "2026-10-16/2026-11-03"
+    },
+    {
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "method": "web_extraction",
+      "result": "partial",
+      "observedAt": null,
+      "observedDate": "2026-11-04",
+      "timePrecision": "date",
+      "lastSuccessfulAt": null,
+      "summary": "ページタイトル10/2～11/3。本文は画像リンクのみ。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "method": "web_extraction",
+      "result": "partial",
+      "observedAt": null,
+      "observedDate": "2026-11-04",
+      "timePrecision": "date",
+      "lastSuccessfulAt": null,
+      "summary": "ページタイトル10/16～11/3。本文は画像リンクのみ。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "method": "web_extraction",
+      "result": "partial",
+      "observedAt": null,
+      "observedDate": "2026-11-04",
+      "timePrecision": "date",
+      "lastSuccessfulAt": null,
+      "summary": "ページタイトル10/16～11/3。本文は画像リンクのみ。"
+    },
+    {
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "method": "web_extraction",
+      "result": "success",
+      "observedAt": null,
+      "observedDate": "2026-11-04",
+      "timePrecision": "date",
+      "lastSuccessfulAt": null,
+      "summary": "web抽出の公式本文11/3・写真撮影3回。通常HTTP404と区別。"
+    },
+    {
+      "url": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "method": "web_extraction",
+      "result": "success",
+      "observedAt": null,
+      "observedDate": "2026-11-04",
+      "timePrecision": "date",
+      "lastSuccessfulAt": null,
+      "summary": "web抽出の公式本文10/16～11/3。通常HTTP404と区別。"
+    }
+  ],
+  "allSourcesCovered": false,
+  "noExtensionFoundScope": "取得できた対象公式本文、タイトル、目視した3画像とクラウド側確認。全情報源の網羅や未取得本文の確認を主張しない。",
+  "publicBaseline": [
+    {
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "observedAt": "2026-11-03T22:01:39.129Z",
+      "sourceMain": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+      "gitBlobSha256": "4fce26c5133f387f564d5a3874163b49b4023452095742ab1f40cea8571d1391",
+      "publicSha256": "4fce26c5133f387f564d5a3874163b49b4023452095742ab1f40cea8571d1391",
+      "gitBlobByteMatch": true,
+      "jsonEqual": true,
+      "count": 89
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "observedAt": "2026-11-03T22:01:39.172Z",
+      "sourceMain": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+      "gitBlobSha256": "95ca274e8136e1b1ca42460ec9d497fea7892257b014600673b7a1fe6c8cfcd6",
+      "publicSha256": "95ca274e8136e1b1ca42460ec9d497fea7892257b014600673b7a1fe6c8cfcd6",
+      "gitBlobByteMatch": true,
+      "jsonEqual": true,
+      "count": 697
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "observedAt": "2026-11-03T22:01:39.136Z",
+      "sourceMain": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+      "gitBlobSha256": "0a2e818f6822403f4f8ea4bb7c44df3a937b273ee0902af4281ccf915f643e89",
+      "publicSha256": "0a2e818f6822403f4f8ea4bb7c44df3a937b273ee0902af4281ccf915f643e89",
+      "gitBlobByteMatch": true,
+      "jsonEqual": true,
+      "count": 20
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+      "observedAt": "2026-11-03T22:01:39.120Z",
+      "sourceMain": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+      "gitBlobSha256": "0acf9b7d377faf8428aa9a79bd77c6c545e2ee31e572ccba60f5d8581dd5936f",
+      "publicSha256": "0acf9b7d377faf8428aa9a79bd77c6c545e2ee31e572ccba60f5d8581dd5936f",
+      "gitBlobByteMatch": true,
+      "jsonEqual": true,
+      "count": 56
+    }
+  ],
+  "previousSourceStates": [
+    {
+      "id": "fukuoka-sushi-official",
+      "name": "むちゃうま!!ちいかわ寿司 福岡公式",
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-25T10:01:00.441Z",
+      "lastSuccessfulAt": "2026-10-24T23:01:32.043Z",
+      "lastResult": "parse_failed",
+      "resultSummary": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+      "lastFailure": {
+        "at": "2026-10-25T10:01:00.441Z",
+        "kind": "parse_failed",
+        "httpStatus": 200,
+        "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html"
+      },
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+    },
+    {
+      "id": "venue-nagano-fukuoka-entry-20261016",
+      "name": "ナガノマーケット福岡三越10/16入店",
+      "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:25.313+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:25.313+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "初回発表日時不明。10/16整理券を確認。方式・開始時刻は未確認であり未発表とは断言しない。今回のページ取得で既存営業時間も確認。"
+    },
+    {
+      "id": "venue-fukuoka-mitsukoshi-popup-entry-20261016",
+      "name": "福岡三越 ちいかわ・ナガノ入場案内",
+      "url": "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/chiikawa.html",
+      "kind": "venue",
+      "scope": [
+        "official",
+        "nagano"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-23T10:05:46.212+00:00",
+      "lastSuccessfulAt": "2026-10-23T10:05:46.212+00:00",
+      "lastResult": "success",
+      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "lastFailure": null,
+      "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。"
+    },
+    {
+      "id": "corporate-tokyo-metro-chiikawa",
+      "name": "www.tokyometro.jp 個別公式確認 corporate-tokyo-metro-chiikawa",
+      "url": "https://www.tokyometro.jp/news/2026/224766.html",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:51:40.000Z",
+      "lastSuccessfulAt": "2026-11-01T22:51:40.000Z",
+      "lastResult": "success",
+      "resultSummary": "既存11/3まで。（cloud_web）",
+      "lastFailure": null,
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-425af290b1",
+      "name": "まじかるちいかわ キデイランド POP UP SHOP 札幌(2026/10/2(金)～11/3(火祝))",
+      "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-29T09:58:57.850+00:00",
+      "lastSuccessfulAt": "2026-10-29T09:58:57.850+00:00",
+      "lastResult": "success",
+      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastFailure": {
+        "at": "2026-10-23T10:05:25.310+00:00",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "HTTP Error 403: Forbidden",
+        "evidenceUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html"
+      },
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-d5be927094",
+      "name": "ちいかわPOP UP STORE イオンモール常滑(2026/10/16(金)～11/3(火祝))",
+      "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:51:40.000Z",
+      "lastSuccessfulAt": "2026-10-29T09:58:57.847+00:00",
+      "lastResult": "parse_failed",
+      "resultSummary": "タイトル11/3、画像本文未視認。（cloud_web）",
+      "lastFailure": {
+        "at": "2026-11-01T22:51:40.000Z",
+        "kind": "parse_failed",
+        "httpStatus": null,
+        "detail": "タイトル11/3、画像本文未視認。",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tknm/index.html"
+      },
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+    },
+    {
+      "id": "observed-chiikawa-info-jp-ee275504ea",
+      "name": "ちいかわPOP UP STORE 福岡三越(2026/10/16(金)～11/3(火祝))",
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:51:40.000Z",
+      "lastSuccessfulAt": "2026-10-29T09:58:57.850+00:00",
+      "lastResult": "parse_failed",
+      "resultSummary": "タイトル11/3、画像本文未視認。（cloud_web）",
+      "lastFailure": {
+        "at": "2026-11-01T22:51:40.000Z",
+        "kind": "parse_failed",
+        "httpStatus": null,
+        "detail": "タイトル11/3、画像本文未視認。",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/pus_fkmk/index.html"
+      },
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+    },
+    {
+      "id": "series-morning-a256af50b509",
+      "name": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "url": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-29T23:05:57.829+00:00",
+      "lastSuccessfulAt": "2026-10-29T10:00:28.761+00:00",
+      "lastResult": "fetch_failed",
+      "resultSummary": "HTTP Error 406: Not Acceptable",
+      "lastFailure": {
+        "at": "2026-10-29T23:05:57.829+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 406,
+        "detail": "HTTP Error 406: Not Acceptable",
+        "evidenceUrl": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241"
+      },
+      "note": "2026-10-13朝の一次情報確認記録。本文・画像実読・表示SNSの範囲を区別し、発表日・初回発見日・公開日を推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
+    },
+    {
+      "id": "venue-aeon-kasukabe-photoshoot-20261103",
+      "name": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール春日部 公式告知",
+      "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:50:59.847Z",
+      "lastSuccessfulAt": "2026-11-01T22:50:59.847Z",
+      "lastResult": "success",
+      "resultSummary": "既存春日部案内一致。（cloud_public_http）",
+      "lastFailure": {
+        "at": "2026-10-29T23:06:07.575+00:00",
+        "kind": "fetch_failed",
+        "httpStatus": 406,
+        "detail": "HTTP Error 406: Not Acceptable",
+        "evidenceUrl": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47"
+      },
+      "note": "公式発表本文または原画像を確認。取得と掲載・公開完了は区別する。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 Webキャッシュ等の観測時刻は新しい原サイト取得成功日時へ転記しない。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+    },
+    {
+      "id": "official-observation-023448ad3c32",
+      "name": "公式掲載根拠 wraqua.com/event/2026/10/21542/",
+      "url": "https://wraqua.com/event/2026/10/21542/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:51:03.069Z",
+      "lastSuccessfulAt": "2026-11-01T22:51:03.069Z",
+      "lastResult": "success",
+      "resultSummary": "既存緑井案内一致。（cloud_public_http）",
+      "lastFailure": null,
+      "note": "今回候補の公式根拠。本文・画像・取得経路の観測は research/evening-20261028/source-observations.json。不明な成功時刻は推測しない。 Web表示・集約観測を新たなorigin取得成功時刻へ転記しない。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+    },
+    {
+      "id": "gpsbox-kiramekko-umeda-20261021-official",
+      "name": "GPSBOX＆Kiramekko 大丸梅田 会場別公式案内",
+      "url": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-02T09:53:12Z",
+      "lastSuccessfulAt": "2026-11-02T09:53:12Z",
+      "lastResult": "success",
+      "resultSummary": "Web回復。11/3まで、初日整理券は10/21限定のまま。在庫未確認。（cloud_web）",
+      "lastFailure": null,
+      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。 今回の経路別観測は research/evening-20261102/source-observations.json。既存enabledと過去成功・失敗を保持。"
+    }
+  ]
+}

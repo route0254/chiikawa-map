@@ -65,7 +65,7 @@ for (const width of [390, 1180, 1440]) {
 
   for (const method of ['pointer', 'keyboard']) {
     test(`a ${method} search from the original list opens visible detail and returns (${width}px)`, async ({page}) => {
-      const query = method === 'pointer' ? '常滑' : '原宿';
+      const query = method === 'pointer' ? '名古屋' : '原宿';
       const prefecture = method === 'pointer' ? '愛知県' : '東京都';
       await page.setViewportSize({width, height: 844});
       await page.goto('/?view=list&pref=' + encodeURIComponent(prefecture));
