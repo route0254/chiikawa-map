@@ -25062,6 +25062,12 @@
           "observedAt": "2026-11-03T22:01:38.398Z",
           "summary": "公式本文の全角日付で2026/7/24～11/3を確認。両掲載は同一企画で、スポットIDとlinkedSpotIdsを保って履歴へ整理。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25074,12 +25080,12 @@
       "listingIds": [
         "collab-tokyo-metro-escape"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-magical-popup-2026-10-02-sapporo-apia-20261104",
@@ -25108,6 +25114,12 @@
           "observedAt": "2026-11-03T22:02:53Z",
           "summary": "公式画像を実見。会場と2026年11月3日終了を確認。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25120,12 +25132,12 @@
       "listingIds": [
         "magical-popup-2026-10-02-sapporo-apia"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-20261104",
@@ -25148,6 +25160,12 @@
           "observedAt": "2026-11-03T22:01:38.703Z",
           "summary": "公式本文に2026/10/16～11/3、福岡三越9階三越ギャラリーと記載。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25160,12 +25178,12 @@
       "listingIds": [
         "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-popup-2026-10-16-fukuoka-mitsukoshi-20261104",
@@ -25194,6 +25212,12 @@
           "observedAt": "2026-11-03T22:02:53Z",
           "summary": "公式画像を実見。会場と2026年11月3日終了を確認。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25206,12 +25230,12 @@
       "listingIds": [
         "popup-2026-10-16-fukuoka-mitsukoshi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-popup-2026-10-16-aeon-tokoname-20261104",
@@ -25240,6 +25264,12 @@
           "observedAt": "2026-11-03T22:02:53Z",
           "summary": "公式画像を実見。会場と2026年11月3日終了を確認。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25252,12 +25282,12 @@
       "listingIds": [
         "popup-2026-10-16-aeon-tokoname"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-chiikawa-photo-2026-11-03-aeon-kasukabe-20261104",
@@ -25280,6 +25310,12 @@
           "observedAt": "2026-11-04",
           "summary": "web抽出の施設公式本文は2026/11/3の写真撮影会。通常HTTPは404で、取得経路を区別。別のPOPUP会期へ延長しない。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25292,12 +25328,12 @@
       "listingIds": [
         "chiikawa-photo-2026-11-03-aeon-kasukabe"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-chiikawa-muchaphoto-2026-11-03-wraqua-midorii-20261104",
@@ -25320,6 +25356,12 @@
           "observedAt": "2026-11-03T22:01:38.847Z",
           "summary": "施設公式本文に11/3の写真撮影会とARラリーを確認。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25332,12 +25374,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-2026-11-03-wraqua-midorii"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-gpsbox-kiramekko-2026-10-21-daimaru-umeda-20261104",
@@ -25360,6 +25402,12 @@
           "observedAt": "2026-11-03T22:01:38.819Z",
           "summary": "メーカー公式本文に2026/10/21～11/3と大丸梅田1階東イベントスペースを確認。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25372,12 +25420,12 @@
       "listingIds": [
         "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
     },
     {
       "id": "archive-tokyo-metro-escape-2026-20261104",
@@ -25400,6 +25448,12 @@
           "observedAt": "2026-11-03T22:01:38.398Z",
           "summary": "公式本文の全角日付で2026/7/24～11/3を確認。両掲載は同一企画で、スポットIDとlinkedSpotIdsを保って履歴へ整理。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
           "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/collab-tokyo-metro-escape/",
+          "observedAt": "2026-11-03T22:25:10.093Z",
+          "summary": "PR105で対象mainと公開35リソースの初回完全一致、公開後Health・PC/スマートフォン確認成功を保存済み。今回の同期日時で置換しない。",
+          "recordPath": "research/yaki-nagoya-20261104/pr105-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25412,10 +25466,56 @@
       "listingIds": [
         "tokyo-metro-escape-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
-      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "nextCheck": "終了整理の公開実体一致を保存済み元実測で同期済み。既存掲載の初回時刻・期間・根拠を保持。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T22:25:10.093Z"
+    },
+    {
+      "id": "update-chiikawa-yaki-nagoya-entry-expired-20261104",
+      "title": "ちいかわ焼き名古屋 10/29～11/3特例終了後の入場案内整理",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-yaki-nagoya:expired-entry:20261029-1103",
+      "sourceIds": [
+        "chiikawa-yaki-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-04",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.chiikawa-yaki.com/",
+          "observedAt": "2026-11-03T22:59:12.504Z",
+          "summary": "通常入場条件を公式本文で再確認。先着受付は前日10時。予約リンクと現在予約可能日程なしの併記から空席を推測しない。",
+          "recordPath": "research/yaki-nagoya-20261104/source-observations.json"
+        },
+        {
+          "url": "https://x.com/chiikawayaki/status/2110641831952437514",
+          "observedAt": "2026-10-15",
+          "summary": "既存の確認済み掲載・候補に保持されていた10/29～11/3の6日間限定特例。今回は期間経過後として過去形にし、特例だけの重要通知を解除。今回の投稿再取得成功とは扱わない。",
+          "recordPath": "research/yaki-nagoya-20261104-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-yaki-nagoya"
+        ],
+        "note": "基点main・現行/履歴・コラボ・候補台帳を照合。既存の常設店IDを更新し、新規ピン・履歴移動・期間変更は行わない。"
+      },
+      "listingIds": [
+        "chiikawa-yaki-nagoya"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "2026年10月29日～11月3日の特例だけを過去形に整理し、その特例だけの重要通知を解除。通常条件、予約URL、旧公式投稿の根拠・他情報は保持。新規条件の発表や空席有無は断定しない。発見日は11/4朝、正確な時刻は未提示。",
+      "nextCheck": "必要検査・同一head/main CI・公開実体とPC/スマートフォン表示を確認。初回実公開時刻は確認後に保存し次回通常PRで同期。",
       "recheckDueAt": "2026-11-04T19:00:00+09:00",
       "publishedAt": null
     }
