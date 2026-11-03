@@ -1,0 +1,191 @@
+{
+  "checkedDate": "2026-11-03",
+  "cloudReview": {
+    "route": "cloud_official_review",
+    "observedAt": null,
+    "observedDate": "2026-11-03",
+    "timePrecision": "date",
+    "officialCachedIndex": {
+      "url": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+      "period": "2026-10-23/2026-11-02",
+      "crawlAgeReported": "6日前",
+      "livePageStatus": 404
+    },
+    "priorEvidence": {
+      "candidateId": "tokyo-banana-popup-gransta-2026-10",
+      "recordPath": "research/morning-20261030/partner-evidence.json",
+      "observedAt": "2026-10-29T23:08:21+00:00",
+      "eventEndsAt": "2026-11-02T20:00:00+09:00"
+    },
+    "scope": "確認済み有限会期とメーカー公式商品ページの確認範囲で延長告知なし。404そのものを終了の根拠にせず、元URLを履歴出典として保持。",
+    "allSourcesCovered": false
+  },
+  "observations": [
+    {
+      "url": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+      "route": "consumer_web_open",
+      "observedAt": null,
+      "observedDate": "2026-11-03",
+      "result": "failed",
+      "httpStatus": 404,
+      "lastSuccessfulAt": null,
+      "ledgerApplied": false,
+      "summary": "公式URLのWeb直読は404。過去の取得成功時刻は維持。"
+    },
+    {
+      "url": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+      "route": "consumer_web_official_search_index",
+      "observedAt": null,
+      "observedDate": "2026-11-03",
+      "result": "partial",
+      "cached": true,
+      "lastSuccessfulAt": null,
+      "ledgerApplied": false,
+      "summary": "公式検索掲載本文に10/23～11/2、最終20時。キャッシュの観測とライブ取得成功を区別。"
+    },
+    {
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "route": "consumer_web_open",
+      "observedAt": null,
+      "observedDate": "2026-11-03",
+      "result": "partial",
+      "cached": true,
+      "lastSuccessfulAt": null,
+      "ledgerApplied": false,
+      "summary": "公式商品ページの可読本文を確認。対象会場の延長告知を確認範囲に見つけず。ライブ完了時刻や全媒体網羅の根拠にはしない。"
+    },
+    {
+      "url": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+      "sourceIds": [
+        "tokyo-banana-gransta-20261023-venue"
+      ],
+      "route": "consumer_direct_http",
+      "startedAt": "2026-11-02T23:56:20.542Z",
+      "completedAt": "2026-11-02T23:56:20.687Z",
+      "result": "failed",
+      "httpStatus": 404,
+      "bytes": 3531,
+      "sha256": "250b2e8f7e8fc0850d8443b8bb0c790f161b1fcfe78c4a4013891f4a9195d70c",
+      "lastSuccessfulAt": null,
+      "ledgerApplied": true,
+      "scope": "HTTP404応答。公式情報の取得成功として扱わず、過去成功を消さない。"
+    },
+    {
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "sourceIds": [
+        "tokyo-banana-chiikawa"
+      ],
+      "route": "consumer_direct_http",
+      "startedAt": "2026-11-02T23:56:20.573Z",
+      "completedAt": "2026-11-02T23:56:20.660Z",
+      "result": "success",
+      "httpStatus": 200,
+      "bytes": 60397,
+      "sha256": "33cd765449a6e4a28a0498d6b66310158eba5fe7596e556022a94ae04bcadeb5",
+      "lastSuccessfulAt": "2026-11-02T23:56:20.660Z",
+      "ledgerApplied": true,
+      "scope": "本文取得の成功。画像視認・実在庫・延長の全媒体確認とは別。"
+    },
+    {
+      "url": "https://prtimes.jp/companyrdf.php?company_id=168561",
+      "sourceIds": [
+        "corporate-gps-prtimes-rss"
+      ],
+      "route": "cloud_direct_http_xml",
+      "requestStartedAt": "2026-11-02T22:52:53.596Z",
+      "completedAt": "2026-11-02T22:52:57.927Z",
+      "result": "success",
+      "httpStatus": 200,
+      "summary": "メーカー公式PR記事からリンクされた公式RSSを通常HTTP/XMLで取得。最新は既知11/1名古屋。HTML一覧の空本文・別経路Web XML400と区別。",
+      "ledgerApplied": true,
+      "precision": "millisecond; original microsecond values truncated without rounding"
+    },
+    {
+      "url": "https://prtimes.jp/companyrdf.php?company_id=168561",
+      "startedAt": "2026-11-03T00:00:23.242Z",
+      "completedAt": "2026-11-03T00:00:23.362Z",
+      "status": 200,
+      "contentType": "application/xml",
+      "bytes": 55460,
+      "sha256": "37fd11a92e5a7cbbd5a66ba0e38aa53b82db7b226ab55505bd92086f6988d30a",
+      "xml": true,
+      "passed": true,
+      "scope": "RSS応答のHTTP/XML検査。各配信記事全量の確認・新着の網羅とは別。",
+      "route": "consumer_direct_http_xml",
+      "result": "success",
+      "lastSuccessfulAt": "2026-11-03T00:00:23.362Z",
+      "ledgerApplied": true,
+      "sourceIds": [
+        "corporate-gps-prtimes-rss"
+      ]
+    }
+  ],
+  "priorSourceStates": {
+    "tokyo-banana-gransta-20261023-venue": {
+      "id": "tokyo-banana-gransta-20261023-venue",
+      "name": "tokyo-banana-gransta-20261023-venue",
+      "url": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+      "kind": "series",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:51:16.000Z",
+      "lastSuccessfulAt": "2026-11-01T22:51:16.000Z",
+      "lastResult": "success",
+      "resultSummary": "東京ばな奈11/2 20時まで。終了当日は現行維持。（cloud_web）",
+      "lastFailure": null,
+      "note": "10/30朝の根拠・経路別観測は research/morning-20261030/source-observations.json。観測登録だけで取得完了時刻や網羅成功とは扱わない。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+    },
+    "tokyo-banana-chiikawa": {
+      "id": "tokyo-banana-chiikawa",
+      "name": "東京ばな奈公式ちいかわ情報",
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-10-30T23:06:08Z",
+      "lastSuccessfulAt": "2026-10-30T23:06:08Z",
+      "lastResult": "success",
+      "resultSummary": "ブランドページは9月の例示。現行全会場網羅を推測しない。",
+      "lastFailure": null,
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/27夕の経路別・部分/失敗/キャッシュ観測は research/evening-20261027/source-observations.json を参照。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。"
+    },
+    "corporate-gps-prtimes-rss": {
+      "id": "corporate-gps-prtimes-rss",
+      "name": "グレイ・パーカー・サービス公式PR RSS",
+      "url": "https://prtimes.jp/companyrdf.php?company_id=168561",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-02T22:52:57.927Z",
+      "lastSuccessfulAt": "2026-11-02T22:52:57.927Z",
+      "lastResult": "success",
+      "resultSummary": "メーカー公式PR記事からリンクされた公式RSSを通常HTTP/XMLで取得。最新は既知11/1名古屋。HTML一覧の空本文・別経路Web XML400と区別。",
+      "lastFailure": null,
+      "note": "GPS会場・催事・設置告知を朝夕確認。一般商品の発売は別扱い。lastAttemptAtは取得完了時刻、試行開始は観測記録に保存。既存HTML一覧の空本文やWeb XML400を成功へ変更しない。観測記録: research/archive-gransta-20261103/source-observations.json"
+    }
+  },
+  "sourceFlagsUnchanged": true,
+  "previousSuccessPreservedOn404": true,
+  "missingPriorObservations": {
+    "observationRows": 26,
+    "distinctUrls": 24,
+    "origin": "2026-11-02夕方転送の欠落部分",
+    "state": "unavailable",
+    "recovered": false,
+    "backfilled": false,
+    "morningObservationsUsedAsReplacement": false,
+    "note": "クラウド環境でも原本回復未了。今回時刻で遡及補完しない。11/3朝の新規観測原本とは別。"
+  },
+  "morningObservationScope": "クラウド朝巡回は掲載変更0件・保留12件を再確認。今朝の全観測原本はクラウド側保存済み。ここには受信した対象1件・保留結論・RSS経路と受信側の対象限定確認を記録し、未転送行を推測しない。"
+}

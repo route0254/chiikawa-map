@@ -1,0 +1,163 @@
+{
+  "checkedDate": "2026-11-03",
+  "baseCommit": "61a3c3124e276441797702948f285ef1e86be98d",
+  "officialPeriods": [
+    {
+      "id": "tokyo-banana-popup-gransta-2026-10",
+      "startDate": "2026-10-23",
+      "endDate": "2026-11-02",
+      "officialEndAt": "2026-11-02T20:00:00+09:00",
+      "sourceUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/"
+    }
+  ],
+  "cloudReview": {
+    "route": "cloud_official_review",
+    "observedAt": null,
+    "observedDate": "2026-11-03",
+    "timePrecision": "date",
+    "officialCachedIndex": {
+      "url": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+      "period": "2026-10-23/2026-11-02",
+      "crawlAgeReported": "6日前",
+      "livePageStatus": 404
+    },
+    "priorEvidence": {
+      "candidateId": "tokyo-banana-popup-gransta-2026-10",
+      "recordPath": "research/morning-20261030/partner-evidence.json",
+      "observedAt": "2026-10-29T23:08:21+00:00",
+      "eventEndsAt": "2026-11-02T20:00:00+09:00"
+    },
+    "scope": "確認済み有限会期とメーカー公式商品ページの確認範囲で延長告知なし。404そのものを終了の根拠にせず、元URLを履歴出典として保持。",
+    "allSourcesCovered": false
+  },
+  "sourceRecord": "research/archive-gransta-20261103/source-observations.json",
+  "canonicalSourceStatusAsOf": {
+    "before": "2026-11-02",
+    "after": "2026-11-03",
+    "onlyEndingManagedId": "tokyo-banana-popup-gransta-2026-10",
+    "hoursAndEntryCheckedAtPreserved": true
+  },
+  "readyCandidateIds": [
+    "archive-tokyo-banana-popup-gransta-2026-10-20261103"
+  ],
+  "pr98SyncedCandidates": 4,
+  "pr98OriginalPublishedAt": "2026-11-02T10:24:20.423Z",
+  "holds": {
+    "before": 12,
+    "after": 12,
+    "statesAndUnknownsPreserved": true,
+    "nextRecheck": "2026-11-03T19:00:00+09:00",
+    "kitteSchemaNotAuthorizedAndUnpublished": true
+  },
+  "missingPriorObservations": {
+    "observationRows": 26,
+    "distinctUrls": 24,
+    "origin": "2026-11-02夕方転送の欠落部分",
+    "state": "unavailable",
+    "recovered": false,
+    "backfilled": false,
+    "morningObservationsUsedAsReplacement": false,
+    "note": "クラウド環境でも原本回復未了。今回時刻で遡及補完しない。11/3朝の新規観測原本とは別。"
+  },
+  "sourceFlagsAndPr89Preserved": true,
+  "newSources": [
+    "corporate-gps-prtimes-rss"
+  ],
+  "newRssOriginalRequestStartedAt": "2026-11-02T22:52:53.596Z",
+  "newRssOriginalCompletedAt": "2026-11-02T22:52:57.927Z",
+  "oldLinks": {
+    "run": 41370233666,
+    "knownTsuchiura404Unresolved": true,
+    "downstreamNaganoSkipped": true
+  },
+  "thisPublishedAt": null,
+  "changes": [
+    {
+      "id": "tokyo-banana-popup-gransta-2026-10",
+      "before": {
+        "id": "tokyo-banana-popup-gransta-2026-10",
+        "name": "ちいかわ×東京ばな奈 POP UP SHOP グランスタ東京 スクエア ゼロ",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "collaboration",
+        "brand": "tokyo_banana",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-02",
+        "hoursText": "平日・土 8:00～22:00／日・祝 8:00～21:00（最終日は20:00閉店）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+        "hoursCheckedAt": "2026-10-30",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "JR東京駅の改札内にある催事です。ご利用の際は乗車券・入場経路などを施設公式案内でご確認ください。商品は売り切れる場合があります。",
+        "entryInfoUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+        "entryInfoCheckedAt": "2026-10-30",
+        "lat": 35.6798702,
+        "lng": 139.7675145,
+        "address": "東京都千代田区丸の内1-9-1 JR東京駅（開催場所：JR東京駅 B1 改札内 スクエア ゼロ）",
+        "description": "ちいかわ×東京ばな奈の期間限定ショップです。JR東京駅B1改札内のスクエア ゼロで、2026年10月23日～11月2日に開催されます。",
+        "sourceUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B9%E3%82%BF%E6%9D%B1%E4%BA%AC%20%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%20%E3%82%BC%E3%83%AD%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%851-9-1%20JR%E6%9D%B1%E4%BA%AC%E9%A7%85"
+      },
+      "after": {
+        "id": "tokyo-banana-popup-gransta-2026-10",
+        "name": "ちいかわ×東京ばな奈 POP UP SHOP グランスタ東京 スクエア ゼロ",
+        "category": "official",
+        "placeType": "shop",
+        "relationType": "collaboration",
+        "brand": "tokyo_banana",
+        "periodType": "limited",
+        "startDate": "2026-10-23",
+        "endDate": "2026-11-02",
+        "hoursText": "平日・土 8:00～22:00／日・祝 8:00～21:00（最終日は20:00閉店）",
+        "closedDaysText": null,
+        "hoursInfoUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+        "hoursCheckedAt": "2026-10-30",
+        "reservationType": "unknown",
+        "reservationUrl": null,
+        "defaultEntryType": "walkin",
+        "crowdControlType": "other",
+        "crowdControlCondition": "announced",
+        "entryNote": "開催当時はJR東京駅の改札内にある催事として、乗車券・入場経路などを施設公式案内で確認するよう案内されていました。商品は売り切れる場合があるという案内でした。",
+        "entryInfoUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+        "entryInfoCheckedAt": "2026-10-30",
+        "lat": 35.6798702,
+        "lng": 139.7675145,
+        "address": "東京都千代田区丸の内1-9-1 JR東京駅（開催場所：JR東京駅 B1 改札内 スクエア ゼロ）",
+        "description": "JR東京駅B1改札内のスクエア ゼロで、2026年10月23日～11月2日に開催された、ちいかわ×東京ばな奈の期間限定ショップです。",
+        "sourceUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B9%E3%82%BF%E6%9D%B1%E4%BA%AC%20%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%20%E3%82%BC%E3%83%AD%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%851-9-1%20JR%E6%9D%B1%E4%BA%AC%E9%A7%85",
+        "importantNotice": "2026年11月2日に終了した期間限定イベントです。",
+        "eventStatus": "held"
+      }
+    }
+  ],
+  "spotArchiveMoves": 1,
+  "newListings": 0,
+  "currentSpots": 88,
+  "archiveSpots": 697,
+  "canonicalImportUsed": true,
+  "todayEndingIdsRetained": [
+    "collab-tokyo-metro-escape",
+    "magical-popup-2026-10-02-sapporo-apia",
+    "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+    "popup-2026-10-16-fukuoka-mitsukoshi",
+    "popup-2026-10-16-aeon-tokoname",
+    "chiikawa-photo-2026-11-03-aeon-kasukabe",
+    "chiikawa-muchaphoto-2026-11-03-wraqua-midorii",
+    "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
+  ],
+  "newRssConsumerVerifiedAt": "2026-11-03T00:00:23.362Z",
+  "sourceObservationCount": 7,
+  "linkVerification": {
+    "knownTsuchiura404": true,
+    "gransta404AndPendingCandidateSelection": true,
+    "newRssDirectHttp200AndXml": true,
+    "warningCount": 30,
+    "ruleAndExistingEnabledChanges": false
+  }
+}

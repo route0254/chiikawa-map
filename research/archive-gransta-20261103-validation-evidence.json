@@ -1,0 +1,86 @@
+{
+  "validatedAt": "2026-11-03T00:05:16.681Z",
+  "baseCommit": "61a3c3124e276441797702948f285ef1e86be98d",
+  "scope": {
+    "spotArchiveMoves": 1,
+    "newListings": 0,
+    "ids": [
+      "tokyo-banana-popup-gransta-2026-10"
+    ]
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 67,
+    "uiPassed": 111,
+    "pcMobileTargetChecks": 16,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "generatedPages": 879,
+    "archiveCandidates": 0,
+    "canonicalSourceAndGeneratedJsonMatched": true
+  },
+  "preservation": {
+    "idsPeriodsCoordinatesHoursSourceUrlsAndFirstAddedPreserved": true,
+    "originalGranstaListingPublishedAt": "2026-10-29T23:43:18.163Z",
+    "pr89LinkScopeAndExistingSourceEnabledPreserved": true,
+    "todayEndingSpotsRetained": 8,
+    "holds": 12,
+    "holdRecheckDueAt": "2026-11-03T19:00:00+09:00",
+    "kitteSchemaNotApprovedAndUnpublished": true,
+    "checkerCriteriaTestsAppWorkflowsAndSettingsUnchanged": true
+  },
+  "records": {
+    "sources": 826,
+    "newSources": 1,
+    "candidates": 442,
+    "newCandidates": 1,
+    "sourceObservations": 7,
+    "pr98SyncedCandidates": 4,
+    "pr98OriginalPublishedAt": "2026-11-02T10:24:20.423Z",
+    "granstaFinitePeriodOfficialCachedIndexAndPriorObservationConfirmed": true,
+    "currentGranstaUrl404AndPriorSuccessPreserved": true,
+    "rssOriginalRequestStartedAt": "2026-11-02T22:52:53.596Z",
+    "rssOriginalHttpXmlCompletedAt": "2026-11-02T22:52:57.927Z",
+    "rssConsumerHttpXmlVerifiedAt": "2026-11-03T00:00:23.362Z",
+    "htmlIndexFailureUnchanged": true,
+    "missingPriorObservations": {
+      "rows": 26,
+      "urls": 24,
+      "recovered": false,
+      "backfilled": false
+    },
+    "unknownAnnouncementAndDiscoveryTimes": null
+  },
+  "externalLinks": {
+    "exitCode": 1,
+    "broken": 2,
+    "knownTsuchiura404": true,
+    "gransta404NewlySelectedDueToPendingArchiveCandidate": true,
+    "gransta404KnownBeforeEdit": true,
+    "warnings": 30,
+    "warningClasses": {
+      "400": 1,
+      "403": 26,
+      "fetch_failed": 3
+    },
+    "newRssHttp200Xml": true,
+    "ruleAndSourceEnabledChanges": false,
+    "oldLinksRun": 41370233666,
+    "oldDownstreamNaganoJobSkipped": true
+  },
+  "privacy": {
+    "passed": true,
+    "addedCredentialValues": 0,
+    "rawHtmlLocalPathsPrivateOriginalsAndUnfilteredLinksExcluded": true
+  },
+  "execution": {
+    "initialBrowserAttemptsStoppedBeforeTestsBySandboxPackageRead": true,
+    "authorizedEscalatedBrowserChecksPassed": true,
+    "approvalDenials": false
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "同一head/main SHAのCI終端成功と公開JSON・個別ページの初回一致を確認し、実測を次回通常更新用へ保存。"
+  }
+}
