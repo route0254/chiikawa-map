@@ -5,6 +5,12 @@ on:
     - cron: "41 6 * * 1"
       timezone: "Asia/Tokyo"
   workflow_dispatch:
+    inputs:
+      verify_link_failure:
+        description: "後続照合の検証用にリンク検査ジョブを意図的に失敗させる"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -13,6 +19,7 @@ jobs:
   check:
     name: Check official information links
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Check out repository
@@ -23,8 +30,33 @@ jobs:
         with:
           node-version: 22
 
+      - name: Intentional link failure for follow-up verification
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.verify_link_failure }}
+        run: exit 1
+
       - name: Check external links
         run: node scripts/check-links.mjs
+
+  nagano:
+    name: Check Nagano official event lists
+    needs: check
+    if: ${{ !cancelled() && (needs.check.result == 'success' || needs.check.result == 'failure') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Report link check result
+        env:
+          LINK_CHECK_RESULT: ${{ needs.check.result }}
+        run: echo "Link check result = $LINK_CHECK_RESULT" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check Nagano official event lists
         run: node scripts/import-nagano-official-series.mjs --check
