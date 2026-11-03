@@ -1,0 +1,47 @@
+{
+  "pr": 98,
+  "sourceMain": "61a3c3124e276441797702948f285ef1e86be98d",
+  "firstPublicMatchAt": "2026-11-02T10:24:20.423Z",
+  "deployJobCompletedAt": "2026-11-02T10:22:49Z",
+  "candidateIds": [
+    "new-necogusa-20261104-kyoto-mini",
+    "chiikawa-bakery-tokyo-christmas-menu-20261113",
+    "chiikawa-bakery-osaka-christmas-menu-20261113",
+    "history-gpsbox-kiramekko-20260818-haneda-t1"
+  ],
+  "corrections": [
+    {
+      "id": "new-necogusa-20261104-kyoto-mini",
+      "listingIds": [
+        "necogusa-2026-11-04-kyoto-mini"
+      ],
+      "kind": "new_listing",
+      "publishedAt": "2026-11-02T10:24:20.423Z"
+    },
+    {
+      "id": "chiikawa-bakery-tokyo-christmas-menu-20261113",
+      "listingIds": [
+        "chiikawa-bakery-tokyo"
+      ],
+      "kind": "listing_update",
+      "publishedAt": "2026-11-02T10:24:20.423Z"
+    },
+    {
+      "id": "chiikawa-bakery-osaka-christmas-menu-20261113",
+      "listingIds": [
+        "chiikawa-bakery-osaka"
+      ],
+      "kind": "listing_update",
+      "publishedAt": "2026-11-02T10:24:20.423Z"
+    },
+    {
+      "id": "history-gpsbox-kiramekko-20260818-haneda-t1",
+      "listingIds": [
+        "gpsbox-kiramekko-2026-08-18-haneda-t1"
+      ],
+      "kind": "history_import",
+      "publishedAt": "2026-11-02T10:24:20.423Z"
+    }
+  ],
+  "basis": "保存済み公開33リソース初回一致の元実測。今回の報告・同期・配信完了時刻ではない。"
+}

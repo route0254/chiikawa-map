@@ -383,12 +383,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-30T23:06:08Z",
-      "lastSuccessfulAt": "2026-10-30T23:06:08Z",
+      "lastAttemptAt": "2026-11-02T23:56:20.660Z",
+      "lastSuccessfulAt": "2026-11-02T23:56:20.660Z",
       "lastResult": "success",
-      "resultSummary": "ブランドページは9月の例示。現行全会場網羅を推測しない。",
+      "resultSummary": "メーカー公式商品ページの本文取得。確認範囲にグランスタ会期延長告知なし。画像や全会場の網羅確認ではない。",
       "lastFailure": null,
-      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/27夕の経路別・部分/失敗/キャッシュ観測は research/evening-20261027/source-observations.json を参照。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。"
+      "note": "既存official-links.html、公開JSON、公式履歴原本または特設系列台帳からURLを登録。取得結果と完了日時は巡回記録で管理する。登録だけで取得成功・新着網羅とは扱わない。 【2026-10-24夕・別web経路】retrieved: Available official content compared; no publication change identified within reviewed scope. 個別取得完了時刻は不明（キャッシュを含む）なので、既知の最終試行・成功日時や結果を置き換えず、別の観測記録に保存。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/27夕の経路別・部分/失敗/キャッシュ観測は research/evening-20261027/source-observations.json を参照。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。 11/3の対象限定・経路別観測は research/archive-gransta-20261103/source-observations.json。既存enabledを保持。"
     },
     {
       "id": "series-chiikawa-aquarium-2023",
@@ -15052,12 +15052,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:16.000Z",
+      "lastAttemptAt": "2026-11-02T23:56:20.687Z",
       "lastSuccessfulAt": "2026-11-01T22:51:16.000Z",
-      "lastResult": "success",
-      "resultSummary": "東京ばな奈11/2 20時まで。終了当日は現行維持。（cloud_web）",
-      "lastFailure": null,
-      "note": "10/30朝の根拠・経路別観測は research/morning-20261030/source-observations.json。観測登録だけで取得完了時刻や網羅成功とは扱わない。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "lastResult": "fetch_failed",
+      "resultSummary": "公式URLはHTTP 404。既存の有限会期根拠と過去の取得成功を保持。",
+      "lastFailure": {
+        "at": "2026-11-02T23:56:20.687Z",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "公式URLはHTTP 404。既存の有限会期根拠と過去の取得成功を保持。",
+        "evidenceUrl": "https://www.gransta.jp/news/info/tokyobanana2610-sqzevent/"
+      },
+      "note": "10/30朝の根拠・経路別観測は research/morning-20261030/source-observations.json。観測登録だけで取得完了時刻や網羅成功とは扱わない。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 11/3の対象限定・経路別観測は research/archive-gransta-20261103/source-observations.json。既存enabledを保持。"
     },
     {
       "id": "familymart-prison-potato-20261102",
@@ -16239,6 +16245,24 @@
       "resultSummary": "KITTE丸の内1Fの自動販売機がmofusandラッピングへ変更。B1Fのちいかわ現況はこの投稿では確定しない。（cloud_prior_official_oembed）",
       "lastFailure": null,
       "note": "今回の経路別観測・確認範囲は research/evening-20261102/source-observations.json。画像視認、本文、キャッシュ、失敗と最終成功を区別。"
+    },
+    {
+      "id": "corporate-gps-prtimes-rss",
+      "name": "グレイ・パーカー・サービス公式PR RSS",
+      "url": "https://prtimes.jp/companyrdf.php?company_id=168561",
+      "kind": "official_index",
+      "scope": [
+        "official",
+        "collaboration"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-03T00:00:23.362Z",
+      "lastSuccessfulAt": "2026-11-03T00:00:23.362Z",
+      "lastResult": "success",
+      "resultSummary": "受信側でも公式RSSをHTTP200・application/xmlで取得し、XML応答を確認。元のクラウドHTTP/XML成功時刻は観測記録に保持。HTML一覧・別経路Web XML400と区別。",
+      "lastFailure": null,
+      "note": "GPS会場・催事・設置告知を朝夕確認。一般商品の発売は別扱い。lastAttemptAtは取得完了時刻、試行開始は観測記録に保存。既存HTML一覧の空本文やWeb XML400を成功へ変更しない。観測記録: research/archive-gransta-20261103/source-observations.json"
     }
   ]
 }
