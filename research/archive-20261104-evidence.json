@@ -1,0 +1,113 @@
+{
+  "checkedDate": "2026-11-04",
+  "baseCommit": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+  "failedValidate": {
+    "run": 41719743284,
+    "job": 126209046545,
+    "reason": "東京メトロ企画のコラボ全期間終了後も現行に残存。spot検査成功、後続skip。URLアクセス状態が失敗理由ではない。"
+  },
+  "sameShaHealth": {
+    "run": 41720015862,
+    "conclusion": "success"
+  },
+  "officialPeriods": [
+    {
+      "id": "collab-tokyo-metro-escape",
+      "startDate": "2026-07-24",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://www.tokyometro.jp/news/2026/224766.html"
+    },
+    {
+      "id": "magical-popup-2026-10-02-sapporo-apia",
+      "startDate": "2026-10-02",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html"
+    },
+    {
+      "id": "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+      "startDate": "2026-10-16",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html"
+    },
+    {
+      "id": "popup-2026-10-16-fukuoka-mitsukoshi",
+      "startDate": "2026-10-16",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://chiikawa-info.jp/p26/pus_fkmk/index.html"
+    },
+    {
+      "id": "popup-2026-10-16-aeon-tokoname",
+      "startDate": "2026-10-16",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://chiikawa-info.jp/p26/pus_tknm/index.html"
+    },
+    {
+      "id": "chiikawa-photo-2026-11-03-aeon-kasukabe",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47"
+    },
+    {
+      "id": "chiikawa-muchaphoto-2026-11-03-wraqua-midorii",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://wraqua.com/event/2026/10/21542/"
+    },
+    {
+      "id": "gpsbox-kiramekko-2026-10-21-daimaru-umeda",
+      "startDate": "2026-10-21",
+      "endDate": "2026-11-03",
+      "sourceUrl": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html"
+    }
+  ],
+  "collaboration": {
+    "id": "tokyo-metro-escape-2026",
+    "periods": [
+      {
+        "label": "開催期間",
+        "startDate": "2026-07-24",
+        "endDate": "2026-11-03",
+        "note": ""
+      }
+    ],
+    "linkedSpotIds": [
+      "collab-tokyo-metro-escape"
+    ]
+  },
+  "sourceRecord": "research/archive-20261104/source-observations.json",
+  "readyCandidateIds": [
+    "archive-collab-tokyo-metro-escape-20261104",
+    "archive-magical-popup-2026-10-02-sapporo-apia-20261104",
+    "archive-nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-20261104",
+    "archive-popup-2026-10-16-fukuoka-mitsukoshi-20261104",
+    "archive-popup-2026-10-16-aeon-tokoname-20261104",
+    "archive-chiikawa-photo-2026-11-03-aeon-kasukabe-20261104",
+    "archive-chiikawa-muchaphoto-2026-11-03-wraqua-midorii-20261104",
+    "archive-gpsbox-kiramekko-2026-10-21-daimaru-umeda-20261104",
+    "archive-tokyo-metro-escape-2026-20261104"
+  ],
+  "managedIds": [
+    "magical-popup-2026-10-02-sapporo-apia",
+    "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+    "chiikawa-photo-2026-11-03-aeon-kasukabe",
+    "chiikawa-muchaphoto-2026-11-03-wraqua-midorii"
+  ],
+  "unmanagedIds": [
+    "collab-tokyo-metro-escape",
+    "popup-2026-10-16-fukuoka-mitsukoshi",
+    "popup-2026-10-16-aeon-tokoname",
+    "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
+  ],
+  "newListings": 0,
+  "expectedCounts": [
+    81,
+    705,
+    19,
+    57
+  ],
+  "todayEndingIdsRetained": [],
+  "unknownAnnouncementAndDiscoveryTimes": null,
+  "originalPublicationAndFirstAddedPreserved": true,
+  "pr104OriginalPublishedAt": "2026-11-03T10:40:57.821Z",
+  "thisPublishedAt": null
+}

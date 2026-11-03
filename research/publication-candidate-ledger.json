@@ -25016,6 +25016,12 @@
           "observedAt": "2026-11-03T10:05:12Z",
           "summary": "既存画像を実見し、受付時刻と本人確認等の独立根拠を確認。旧画像の対象日は11/3のみ。日程の更新根拠は新しい公式投稿。",
           "recordPath": "research/sendai-entry-20261103/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi/",
+          "observedAt": "2026-11-03T10:40:57.821Z",
+          "summary": "PR104の対象mainと公開25リソースの初回完全一致、公開後Health成功。",
+          "recordPath": "research/archive-20261104/pr104-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25028,11 +25034,389 @@
       "listingIds": [
         "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "11/3だけの案内を最新の公式投稿に合わせて11/3～8へ更新。「1人1回」の範囲は公式表現を保持し、日ごと・全会期等を推定しない。初回発見時刻は依頼に記載がなくnullを保持。",
-      "nextCheck": "同じhead/main SHAの検査と公開実体一致を確認し、実測公開日時を保存。次回の通常更新PRで公開状態を同期。",
+      "decision": "公式投稿に基づく11/3～8の無料LINE整理券対象を既存IDに反映し、PR104の公開実体一致を保存済み元実測で同期。",
+      "nextCheck": "11/4通常巡回で公式の対象日程・条件変更を確認。",
       "recheckDueAt": "2026-11-04T08:00:00+09:00",
+      "publishedAt": "2026-11-03T10:40:57.821Z"
+    },
+    {
+      "id": "archive-collab-tokyo-metro-escape-20261104",
+      "title": "ちいかわ、さがしてます。『映画ちいかわ』東京メトロ脱出ゲーム 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:collab-tokyo-metro-escape:20261103",
+      "sourceIds": [
+        "corporate-tokyo-metro-chiikawa"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-24",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.tokyometro.jp/news/2026/224766.html",
+          "observedAt": "2026-11-03T22:01:38.398Z",
+          "summary": "公式本文の全角日付で2026/7/24～11/3を確認。両掲載は同一企画で、スポットIDとlinkedSpotIdsを保って履歴へ整理。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "collab-tokyo-metro-escape"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "collab-tokyo-metro-escape"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-magical-popup-2026-10-02-sapporo-apia-20261104",
+      "title": "まじかるちいかわ キデイランド POP UP SHOP 札幌 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:magical-popup-2026-10-02-sapporo-apia:20261103",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-425af290b1"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-02",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/magical_store/kd_spr/index.html",
+          "observedAt": "2026-11-04",
+          "summary": "公式ページタイトルの10/2～11/3を確認。通常HTTPは403。公式main画像を別途HTTP200で取得し目視して11/3終了を確認。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/magical_store/kd_spr/img/main_9.jpg",
+          "observedAt": "2026-11-03T22:02:53Z",
+          "summary": "公式画像を実見。会場と2026年11月3日終了を確認。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-popup-2026-10-02-sapporo-apia"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "magical-popup-2026-10-02-sapporo-apia"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-nagano-market-popup-2026-10-16-fukuoka-mitsukoshi-20261104",
+      "title": "ナガノマーケット POP UP SHOP 福岡三越 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:nagano-market-popup-2026-10-16-fukuoka-mitsukoshi:20261103",
+      "sourceIds": [
+        "venue-nagano-fukuoka-entry-20261016"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/fukuoka_mk/index.html",
+          "observedAt": "2026-11-03T22:01:38.703Z",
+          "summary": "公式本文に2026/10/16～11/3、福岡三越9階三越ギャラリーと記載。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-popup-2026-10-16-fukuoka-mitsukoshi-20261104",
+      "title": "ちいかわPOP UP STORE 福岡三越 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:popup-2026-10-16-fukuoka-mitsukoshi:20261103",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-ee275504ea"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+          "observedAt": "2026-11-04",
+          "summary": "公式ページタイトルと目視した公式main画像に2026/10/16～11/3。施設本文の同会期・寿司同時開催も確認。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_fkmk/img/main_v10.jpg",
+          "observedAt": "2026-11-03T22:02:53Z",
+          "summary": "公式画像を実見。会場と2026年11月3日終了を確認。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-16-fukuoka-mitsukoshi"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "popup-2026-10-16-fukuoka-mitsukoshi"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-popup-2026-10-16-aeon-tokoname-20261104",
+      "title": "ちいかわPOP UP STORE イオンモール常滑 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:popup-2026-10-16-aeon-tokoname:20261103",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-d5be927094"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-16",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_tknm/index.html",
+          "observedAt": "2026-11-04",
+          "summary": "公式タイトル・目視した公式main画像に2026/10/16～11/3。施設のweb抽出本文も同期間。通常HTTPは公式403・施設404で別記録。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_tknm/img/main_v10.jpg",
+          "observedAt": "2026-11-03T22:02:53Z",
+          "summary": "公式画像を実見。会場と2026年11月3日終了を確認。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-16-aeon-tokoname"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "popup-2026-10-16-aeon-tokoname"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-photo-2026-11-03-aeon-kasukabe-20261104",
+      "title": "ちいかわ＆ハチワレ＆うさぎ 写真撮影会 イオンモール春日部 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:chiikawa-photo-2026-11-03-aeon-kasukabe:20261103",
+      "sourceIds": [
+        "venue-aeon-kasukabe-photoshoot-20261103"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47",
+          "observedAt": "2026-11-04",
+          "summary": "web抽出の施設公式本文は2026/11/3の写真撮影会。通常HTTPは404で、取得経路を区別。別のPOPUP会期へ延長しない。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-photo-2026-11-03-aeon-kasukabe"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "chiikawa-photo-2026-11-03-aeon-kasukabe"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-chiikawa-muchaphoto-2026-11-03-wraqua-midorii-20261104",
+      "title": "ちいかわ むちゃフォトパーティ!! ラクア緑井 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:chiikawa-muchaphoto-2026-11-03-wraqua-midorii:20261103",
+      "sourceIds": [
+        "official-observation-023448ad3c32"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://wraqua.com/event/2026/10/21542/",
+          "observedAt": "2026-11-03T22:01:38.847Z",
+          "summary": "施設公式本文に11/3の写真撮影会とARラリーを確認。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-muchaphoto-2026-11-03-wraqua-midorii"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-2026-11-03-wraqua-midorii"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-gpsbox-kiramekko-2026-10-21-daimaru-umeda-20261104",
+      "title": "GPSBOX＆Kiramekko POPUP STORE 大丸梅田店 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:spot:gpsbox-kiramekko-2026-10-21-daimaru-umeda:20261103",
+      "sourceIds": [
+        "gpsbox-kiramekko-umeda-20261021-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-10-21",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://info.grayparkaservice.com/gpsboxkira_pus/umeda/index.html",
+          "observedAt": "2026-11-03T22:01:38.819Z",
+          "summary": "メーカー公式本文に2026/10/21～11/3と大丸梅田1階東イベントスペースを確認。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "archive-tokyo-metro-escape-2026-20261104",
+      "title": "ちいかわ、さがしてます。『映画ちいかわ』東京メトロ脱出ゲーム 終了後の履歴整理",
+      "kind": "listing_update",
+      "targetKey": "archive:collaboration:tokyo-metro-escape-2026:20261103",
+      "sourceIds": [
+        "corporate-tokyo-metro-chiikawa"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-07-24",
+      "eventEndsAt": "2026-11-03",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.tokyometro.jp/news/2026/224766.html",
+          "observedAt": "2026-11-03T22:01:38.398Z",
+          "summary": "公式本文の全角日付で2026/7/24～11/3を確認。両掲載は同一企画で、スポットIDとlinkedSpotIdsを保って履歴へ整理。 今回確認範囲に延長の一次根拠なし。終了日経過後の履歴整理であり、URL取得成否を会期終了判定と混同しない。",
+          "recordPath": "research/archive-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tokyo-metro-escape-2026"
+        ],
+        "note": "基点main・公開4JSON・候補台帳を照合。既存ID・期間・出典と参照関係を維持して現行から履歴へ移行。"
+      },
+      "listingIds": [
+        "tokyo-metro-escape-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "公式の有限会期が11/3で終了し、11/4となったため履歴へ整理。福岡の通常POPUPと寿司は既存の同時開催分類を保持し、新規IDを作らない。初回発見秒精度は未提示のためnull。",
+      "nextCheck": "同じhead/main SHAのCI終端と公開実体を確認。初回公開実測は保存して次回通常PRで同期。",
+      "recheckDueAt": "2026-11-04T19:00:00+09:00",
       "publishedAt": null
     }
   ]

@@ -5,8 +5,11 @@ import path from "node:path";
 const current = JSON.parse(await readFile(new URL("../data/official-spots.json", import.meta.url), "utf8"));
 const archive = JSON.parse(await readFile(new URL("../data/official-events-archive.json", import.meta.url), "utf8"));
 const id = "popup-2026-10-16-fukuoka-mitsukoshi";
-const fukuoka = current.find(spot => spot.id === id);
-const pastCount = archive.filter(spot => spot.brand === "chiikawa_sushi").length;
+// 11/3時点の同時開催fixtureを、実掲載の履歴移動後も維持する。
+const fukuoka = [...current, ...archive].find(spot => spot.id === id);
+const currentFixture = [...current.filter(spot => spot.id !== id), fukuoka];
+const archiveFixture = archive.filter(spot => spot.id !== id);
+const pastCount = archiveFixture.filter(spot => spot.brand === "chiikawa_sushi").length;
 const future = { ...fukuoka, id: "test-upcoming-sushi", name: "開催予定の寿司シリーズ", brand: "chiikawa_sushi",
   address: "京都府京都市", description: "開催予定の寿司シリーズを検証するテスト会場です。",
   startDate: "2026-11-04", endDate: "2026-11-17" };
@@ -28,7 +31,10 @@ async function prepare(page, zero = false) {
     contentType: "image/png", body: Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=", "base64")
   }));
   await page.route("**/data/official-spots.json", route => route.fulfill({
-    contentType: "application/json", body: JSON.stringify([...current.filter(spot => !zero || spot.id !== id), ...(zero ? [] : [future]), kura])
+    contentType: "application/json", body: JSON.stringify([...currentFixture.filter(spot => !zero || spot.id !== id), ...(zero ? [] : [future]), kura])
+  }));
+  await page.route("**/data/official-events-archive.json", route => route.fulfill({
+    contentType: "application/json", body: JSON.stringify(archiveFixture)
   }));
   return errors;
 }

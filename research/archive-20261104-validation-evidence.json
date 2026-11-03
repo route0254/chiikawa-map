@@ -1,0 +1,90 @@
+{
+  "validatedAt": "2026-11-03T22:15:51.643Z",
+  "baseCommit": "04e234ca75ae57a35be99d77ae8717a63fbe9536",
+  "scope": {
+    "spotArchiveMoves": 8,
+    "collaborationArchiveMoves": 1,
+    "newListings": 0,
+    "spotIds": [
+      "collab-tokyo-metro-escape",
+      "magical-popup-2026-10-02-sapporo-apia",
+      "nagano-market-popup-2026-10-16-fukuoka-mitsukoshi",
+      "popup-2026-10-16-fukuoka-mitsukoshi",
+      "popup-2026-10-16-aeon-tokoname",
+      "chiikawa-photo-2026-11-03-aeon-kasukabe",
+      "chiikawa-muchaphoto-2026-11-03-wraqua-midorii",
+      "gpsbox-kiramekko-2026-10-21-daimaru-umeda"
+    ],
+    "collaborationIds": [
+      "tokyo-metro-escape-2026"
+    ],
+    "counts": {
+      "officialCurrent": 81,
+      "officialArchive": 705,
+      "collaborationsCurrent": 19,
+      "collaborationsArchive": 57
+    }
+  },
+  "checks": {
+    "mandatoryCommands": 50,
+    "unitPassed": 80,
+    "unitFailed": 0,
+    "uiPassed": 117,
+    "uiFlaky": 0,
+    "generatedPages": 880,
+    "targetPcMobileCases": 16,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "archiveCandidates": 0,
+    "canonicalSourceAndGeneratedJsonMatched": true
+  },
+  "initialUiRun": {
+    "passed": 113,
+    "failed": 4,
+    "cause": "終了した常滑の現行検索3件と東京メトロの現行カード1件を前提にした既存テスト。検索データ・履歴導線のみ追従し、全117件を再検査。判定条件・タイムアウト・回数は変更しない。",
+    "finalAll117Passed": true
+  },
+  "preservation": {
+    "idsPeriodsCoordinatesHoursEntryRulesSourceUrlsAndFirstAddedPreserved": true,
+    "linkedSpotIdsPreserved": true,
+    "sushiCohostAdditionalBrandPreserved": true,
+    "noDuplicateFukuokaSushiPin": true,
+    "nonTargetDataAndHoldsUnchanged": true,
+    "existingSourceEnabledUnchanged": true,
+    "oldSuccessPreservedOnFailure": true,
+    "todayEndingMoved": 0,
+    "appWorkflowsSchemaAndValidationCriteriaUnchanged": true,
+    "testAssertionsUnchanged": true
+  },
+  "records": {
+    "newCandidates": 9,
+    "newSources": 0,
+    "observations": 23,
+    "pr104SyncedCandidates": 1,
+    "pr104OriginalPublishedAt": "2026-11-03T10:40:57.821Z",
+    "unknownAnnouncementAndDiscoveryTimes": null,
+    "firstPublicationOfThisUpdate": null
+  },
+  "sourceAccess": {
+    "normalHttpPages": {
+      "retrieved": 5,
+      "failed403": 4,
+      "failed404": 2
+    },
+    "officialImagesDownloadedAndVisuallyInspected": 3,
+    "webExtractionSeparate": true,
+    "noWebsiteAvailabilityInferredFromCI": true,
+    "officialUrlsRetained": true,
+    "rawHtmlOrFullLinkListsPublished": false
+  },
+  "privacy": {
+    "passed": true,
+    "findings": 0,
+    "rawHtmlLocalPathsPrivateOriginalsCookiesAndCredentialsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "対象head/main SHAのCI終端成功、公開JSON・関連生成物・PC/スマートフォン実画面、公開後Healthを確認し、初回実測を次回通常PR同期用に保存。"
+  }
+}

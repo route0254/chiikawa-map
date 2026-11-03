@@ -676,18 +676,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-25T10:01:00.441Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.933Z",
       "lastSuccessfulAt": "2026-10-24T23:01:32.043Z",
-      "lastResult": "parse_failed",
-      "resultSummary": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+      "lastResult": "access_limited",
+      "resultSummary": "直接HTTP403。既存の通常POPUP同時開催分類と根拠URLを保持し、独立ピンは追加しない。",
       "lastFailure": {
-        "at": "2026-10-25T10:01:00.441Z",
-        "kind": "parse_failed",
-        "httpStatus": 200,
-        "detail": "部分取得のため必要な本文確認は不十分。新着なしとは扱わない。",
+        "at": "2026-11-03T22:01:38.933Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "通常HTTP 403。別経路の確認範囲は今回の観測記録を参照。",
         "evidenceUrl": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html"
       },
-      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。"
+      "note": "掲載対象の個別案内。未確認の変更日・発表日時は推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "chiikawaland-reservation-x-20261009",
@@ -1325,12 +1325,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-23T10:05:25.313+00:00",
-      "lastSuccessfulAt": "2026-10-23T10:05:25.313+00:00",
+      "lastAttemptAt": "2026-11-03T22:01:38.703Z",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.703Z",
       "lastResult": "success",
-      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "resultSummary": "公式本文に2026/10/16～11/3、福岡三越9階三越ギャラリーと記載。",
       "lastFailure": null,
-      "note": "初回発表日時不明。10/16整理券を確認。方式・開始時刻は未確認であり未発表とは断言しない。今回のページ取得で既存営業時間も確認。"
+      "note": "初回発表日時不明。10/16整理券を確認。方式・開始時刻は未確認であり未発表とは断言しない。今回のページ取得で既存営業時間も確認。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "venue-muchaphoto-sapporo-hiraoka-20261024",
@@ -1664,12 +1664,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-23T10:05:46.212+00:00",
-      "lastSuccessfulAt": "2026-10-23T10:05:46.212+00:00",
+      "lastAttemptAt": "2026-11-03T22:01:38.803Z",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.803Z",
       "lastResult": "success",
-      "resultSummary": "一次ページ取得、前回本文との差分を確認。",
+      "resultSummary": "施設本文で10/16～11/3と、ちいかわPOPUP・寿司同時開催・ナガノマーケットの関係を確認。",
       "lastFailure": null,
-      "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。"
+      "note": "2026年10月11日の提供済み巡回で実訪問した、既存掲載の入場・応募条件確認に必要な公式URL。画像・SNS・在庫・残席は観測範囲を超えて確認済みと扱わない。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "seven-eleven-christmas-campaign-2026",
@@ -2040,12 +2040,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:40.000Z",
-      "lastSuccessfulAt": "2026-11-01T22:51:40.000Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.398Z",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.398Z",
       "lastResult": "success",
-      "resultSummary": "既存11/3まで。（cloud_web）",
+      "resultSummary": "公式本文の全角日付で2026/7/24～11/3を確認。両掲載は同一企画で、スポットIDとlinkedSpotIdsを保って履歴へ整理。",
       "lastFailure": null,
-      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "corporate-seven-eleven-christmas-products",
@@ -3201,18 +3201,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-29T09:58:57.850+00:00",
+      "lastAttemptAt": "2026-11-03T22:01:38.396Z",
       "lastSuccessfulAt": "2026-10-29T09:58:57.850+00:00",
-      "lastResult": "success",
-      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastResult": "access_limited",
+      "resultSummary": "公式ページタイトルの10/2～11/3を確認。通常HTTPは403。公式main画像を別途HTTP200で取得し目視して11/3終了を確認。",
       "lastFailure": {
-        "at": "2026-10-23T10:05:25.310+00:00",
+        "at": "2026-11-03T22:01:38.396Z",
         "kind": "access_limited",
         "httpStatus": 403,
-        "detail": "HTTP Error 403: Forbidden",
+        "detail": "通常HTTP 403。別経路の確認範囲は今回の観測記録を参照。",
         "evidenceUrl": "https://chiikawa-info.jp/magical_store/kd_spr/index.html"
       },
-      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "observed-chiikawa-info-jp-3a916f6ae7",
@@ -3293,18 +3293,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:40.000Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.397Z",
       "lastSuccessfulAt": "2026-10-29T09:58:57.847+00:00",
-      "lastResult": "parse_failed",
-      "resultSummary": "タイトル11/3、画像本文未視認。（cloud_web）",
+      "lastResult": "access_limited",
+      "resultSummary": "公式タイトル・目視した公式main画像に2026/10/16～11/3。施設のweb抽出本文も同期間。通常HTTPは公式403・施設404で別記録。",
       "lastFailure": {
-        "at": "2026-11-01T22:51:40.000Z",
-        "kind": "parse_failed",
-        "httpStatus": null,
-        "detail": "タイトル11/3、画像本文未視認。",
+        "at": "2026-11-03T22:01:38.397Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "通常HTTP 403。別経路の確認範囲は今回の観測記録を参照。",
         "evidenceUrl": "https://chiikawa-info.jp/p26/pus_tknm/index.html"
       },
-      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "observed-chiikawa-info-jp-ee275504ea",
@@ -3316,18 +3316,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:40.000Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.397Z",
       "lastSuccessfulAt": "2026-10-29T09:58:57.850+00:00",
-      "lastResult": "parse_failed",
-      "resultSummary": "タイトル11/3、画像本文未視認。（cloud_web）",
+      "lastResult": "access_limited",
+      "resultSummary": "公式ページタイトルと目視した公式main画像に2026/10/16～11/3。施設本文の同会期・寿司同時開催も確認。",
       "lastFailure": {
-        "at": "2026-11-01T22:51:40.000Z",
-        "kind": "parse_failed",
-        "httpStatus": null,
-        "detail": "タイトル11/3、画像本文未視認。",
+        "at": "2026-11-03T22:01:38.397Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "通常HTTP 403。別経路の確認範囲は今回の観測記録を参照。",
         "evidenceUrl": "https://chiikawa-info.jp/p26/pus_fkmk/index.html"
       },
-      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "observed-chiikawa-info-jp-4fc9bffa0f",
@@ -7104,18 +7104,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-29T23:05:57.829+00:00",
+      "lastAttemptAt": "2026-11-03T22:01:38.783Z",
       "lastSuccessfulAt": "2026-10-29T10:00:28.761+00:00",
       "lastResult": "fetch_failed",
-      "resultSummary": "HTTP Error 406: Not Acceptable",
+      "resultSummary": "通常HTTP404。web抽出本文は10/16～11/3。404を終了判定の根拠にせず有限会期を採用。",
       "lastFailure": {
-        "at": "2026-10-29T23:05:57.829+00:00",
+        "at": "2026-11-03T22:01:38.783Z",
         "kind": "fetch_failed",
-        "httpStatus": 406,
-        "detail": "HTTP Error 406: Not Acceptable",
+        "httpStatus": 404,
+        "detail": "通常HTTP 404。別経路の確認範囲は今回の観測記録を参照。",
         "evidenceUrl": "https://tokoname.aeonmall.jp/event/7b5455d4-7215-4358-94d6-88480fb5a241"
       },
-      "note": "2026-10-13朝の一次情報確認記録。本文・画像実読・表示SNSの範囲を区別し、発表日・初回発見日・公開日を推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
+      "note": "2026-10-13朝の一次情報確認記録。本文・画像実読・表示SNSの範囲を区別し、発表日・初回発見日・公開日を推測しない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "social-chiikawaland-oita-closed-20261012",
@@ -11837,18 +11837,18 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:50:59.847Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.885Z",
       "lastSuccessfulAt": "2026-11-01T22:50:59.847Z",
-      "lastResult": "success",
-      "resultSummary": "既存春日部案内一致。（cloud_public_http）",
+      "lastResult": "fetch_failed",
+      "resultSummary": "web抽出の施設公式本文は2026/11/3の写真撮影会。通常HTTPは404で、取得経路を区別。別のPOPUP会期へ延長しない。",
       "lastFailure": {
-        "at": "2026-10-29T23:06:07.575+00:00",
+        "at": "2026-11-03T22:01:38.885Z",
         "kind": "fetch_failed",
-        "httpStatus": 406,
-        "detail": "HTTP Error 406: Not Acceptable",
+        "httpStatus": 404,
+        "detail": "通常HTTP 404。別経路の確認範囲は今回の観測記録を参照。",
         "evidenceUrl": "https://kasukabe.aeonmall.jp/event/d9b66d1c-2199-4862-80df-9ede0c8fcb47"
       },
-      "note": "公式発表本文または原画像を確認。取得と掲載・公開完了は区別する。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 Webキャッシュ等の観測時刻は新しい原サイト取得成功日時へ転記しない。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "note": "公式発表本文または原画像を確認。取得と掲載・公開完了は区別する。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 別Web/検索の補助観測は原サイトのlive取得成功日時へ転記しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 Webキャッシュ等の観測時刻は新しい原サイト取得成功日時へ転記しない。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "venue-aeon-kasukabe-popup-entry-20261030",
@@ -14136,12 +14136,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:03.069Z",
-      "lastSuccessfulAt": "2026-11-01T22:51:03.069Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.847Z",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.847Z",
       "lastResult": "success",
-      "resultSummary": "既存緑井案内一致。（cloud_public_http）",
+      "resultSummary": "施設公式本文に11/3の写真撮影会とARラリーを確認。",
       "lastFailure": null,
-      "note": "今回候補の公式根拠。本文・画像・取得経路の観測は research/evening-20261028/source-observations.json。不明な成功時刻は推測しない。 Web表示・集約観測を新たなorigin取得成功時刻へ転記しない。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "note": "今回候補の公式根拠。本文・画像・取得経路の観測は research/evening-20261028/source-observations.json。不明な成功時刻は推測しない。 Web表示・集約観測を新たなorigin取得成功時刻へ転記しない。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "official-observation-6911ca3c5d89",
@@ -15989,12 +15989,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-02T09:53:12Z",
-      "lastSuccessfulAt": "2026-11-02T09:53:12Z",
+      "lastAttemptAt": "2026-11-03T22:01:38.819Z",
+      "lastSuccessfulAt": "2026-11-03T22:01:38.819Z",
       "lastResult": "success",
-      "resultSummary": "Web回復。11/3まで、初日整理券は10/21限定のまま。在庫未確認。（cloud_web）",
+      "resultSummary": "メーカー公式本文に2026/10/21～11/3と大丸梅田1階東イベントスペースを確認。",
       "lastFailure": null,
-      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。 今回の経路別観測は research/evening-20261102/source-observations.json。既存enabledと過去成功・失敗を保持。"
+      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。 今回の経路別観測は research/evening-20261102/source-observations.json。既存enabledと過去成功・失敗を保持。 今回の経路別観測：research/archive-20261104/source-observations.json。失敗で過去成功を消さず、既存enabledを維持。"
     },
     {
       "id": "kitte-nagoya-official-access",
