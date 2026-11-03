@@ -8115,10 +8115,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:30.000Z",
-      "lastSuccessfulAt": "2026-10-31T10:03:17.000Z",
-      "lastResult": "parse_failed",
-      "resultSummary": "画像未視認、別HTTP403。（cloud_web）",
+      "lastAttemptAt": "2026-11-03T10:03:44.068Z",
+      "lastSuccessfulAt": "2026-11-03T10:03:44.068Z",
+      "lastResult": "success",
+      "resultSummary": "画像を取得・実見。旧対象日は11/3のみ。受付時刻、本人確認、距離制限なし、30分入替等の独立根拠を確認。最新の対象日程11/3～8は11/2・3の公式投稿を優先。",
       "lastFailure": {
         "at": "2026-11-01T22:51:30.000Z",
         "kind": "parse_failed",
@@ -8482,15 +8482,15 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-02T09:51:37Z",
+      "lastAttemptAt": "2026-11-03T10:03:43.974Z",
       "lastSuccessfulAt": "2026-10-25T10:01:24.431Z",
-      "lastResult": "parse_failed",
-      "resultSummary": "画像3枚。取得失敗で現在条件・19時実受付は未検証。（cloud_web）",
+      "lastResult": "access_limited",
+      "resultSummary": "通常HTTPは403。今回の対象日程は公式投稿のoEmbedで別途確認。ページ全体・現画像確認の成功へ転用しない。",
       "lastFailure": {
-        "at": "2026-11-02T09:51:37Z",
-        "kind": "parse_failed",
-        "httpStatus": null,
-        "detail": "画像3枚。取得失敗で現在条件・19時実受付は未検証。",
+        "at": "2026-11-03T10:03:43.974Z",
+        "kind": "access_limited",
+        "httpStatus": 403,
+        "detail": "通常HTTP403。web経路は画像リンクだけ取得し本文条件は未確認。過去の成功時刻を保持。",
         "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html"
       },
       "note": "10/14朝の一次情報確認。本文・画像・SNSの取得範囲を分けて記録する。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 今回観測は research/morning-20261031/source-observations.json。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測は research/evening-20261102/source-observations.json。既存enabledと過去成功・失敗を保持。"
@@ -16263,6 +16263,40 @@
       "resultSummary": "受信側でも公式RSSをHTTP200・application/xmlで取得し、XML応答を確認。元のクラウドHTTP/XML成功時刻は観測記録に保持。HTML一覧・別経路Web XML400と区別。",
       "lastFailure": null,
       "note": "GPS会場・催事・設置告知を朝夕確認。一般商品の発売は別扱い。lastAttemptAtは取得完了時刻、試行開始は観測記録に保存。既存HTML一覧の空本文やWeb XML400を成功へ変更しない。観測記録: research/archive-gransta-20261103/source-observations.json"
+    },
+    {
+      "id": "chiikawa-pocket-sendai-entry-20261102-official-post",
+      "name": "ちいかわぽけっと公式 仙台入場整理券 11/2告知",
+      "url": "https://x.com/chiikawa_pt_jp/status/2117090231648419864",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-03T10:03:43.599Z",
+      "lastSuccessfulAt": "2026-11-03T10:03:43.599Z",
+      "lastResult": "success",
+      "resultSummary": "公式oEmbed本文で11/3～8、LINE無料整理券、対象日程は1人1回限りの入場を確認。後半省略あり、全文・投稿画像・残枠の確認ではありません。",
+      "lastFailure": null,
+      "note": "直接Xのweb取得403と公式oEmbedの成功を分けて research/sendai-entry-20261103/source-observations.json に記録。直接取得の秒精度時刻は未記録。"
+    },
+    {
+      "id": "chiikawa-pocket-sendai-entry-20261103-official-post",
+      "name": "ちいかわぽけっと公式 仙台入場整理券 11/3再告知",
+      "url": "https://x.com/chiikawa_pt_jp/status/2117452566208672220",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-03T10:03:43.862Z",
+      "lastSuccessfulAt": "2026-11-03T10:03:43.862Z",
+      "lastResult": "success",
+      "resultSummary": "公式oEmbed本文で11/3～8、LINE無料整理券、対象日程は1人1回限りの入場を確認。後半省略あり、全文・投稿画像・残枠の確認ではありません。",
+      "lastFailure": null,
+      "note": "直接Xのweb取得403と公式oEmbedの成功を分けて research/sendai-entry-20261103/source-observations.json に記録。直接取得の秒精度時刻は未記録。"
     }
   ]
 }

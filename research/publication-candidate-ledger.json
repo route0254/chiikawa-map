@@ -24980,6 +24980,60 @@
       "nextCheck": "終了した有限会期と歴史出典を保持。新しい一次根拠のある場合だけ通常確認。",
       "recheckDueAt": "2026-11-03T19:00:00+09:00",
       "publishedAt": "2026-11-03T00:22:29.185Z"
+    },
+    {
+      "id": "update-pocket-sendai-entry-20261103-08",
+      "title": "ちいかわぽけっと仙台上杉 入場整理券対象を11/3～8へ更新",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi:entry-period:20261103-08",
+      "sourceIds": [
+        "chiikawa-pocket-sendai-entry-20261102-official-post",
+        "chiikawa-pocket-sendai-entry-20261103-official-post",
+        "chiikawa-pocket-fourth-2026-entry-sendai"
+      ],
+      "officialAnnouncedAt": "2026-11-02",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-03",
+      "eventEndsAt": "2026-11-23",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-03T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_pt_jp/status/2117090231648419864",
+          "observedAt": "2026-11-03T10:03:43.599Z",
+          "summary": "公式oEmbedで11/3～8、LINE無料入場整理券、対象日程は1人1回限りの入場を確認。各日1回や会期全体等へ補足解釈しない。",
+          "recordPath": "research/sendai-entry-20261103/source-observations.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_pt_jp/status/2117452566208672220",
+          "observedAt": "2026-11-03T10:03:43.862Z",
+          "summary": "公式oEmbedで11/3～8、LINE無料入場整理券、対象日程は1人1回限りの入場を確認。各日1回や会期全体等へ補足解釈しない。",
+          "recordPath": "research/sendai-entry-20261103/source-observations.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+          "observedAt": "2026-11-03T10:05:12Z",
+          "summary": "既存画像を実見し、受付時刻と本人確認等の独立根拠を確認。旧画像の対象日は11/3のみ。日程の更新根拠は新しい公式投稿。",
+          "recordPath": "research/sendai-entry-20261103/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
+        ],
+        "note": "同一開催回の既存IDを更新。会期11/3～23、会場・座標・既存条件と初回掲載日時を維持。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "11/3だけの案内を最新の公式投稿に合わせて11/3～8へ更新。「1人1回」の範囲は公式表現を保持し、日ごと・全会期等を推定しない。初回発見時刻は依頼に記載がなくnullを保持。",
+      "nextCheck": "同じhead/main SHAの検査と公開実体一致を確認し、実測公開日時を保存。次回の通常更新PRで公開状態を同期。",
+      "recheckDueAt": "2026-11-04T08:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

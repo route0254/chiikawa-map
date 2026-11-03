@@ -1,0 +1,88 @@
+{
+  "recordedAt": "2026-11-03T10:08:59.147Z",
+  "scope": "仙台の入場対象日程更新と既存条件の限定再確認",
+  "observations": [
+    {
+      "url": "https://x.com/chiikawa_pt_jp/status/2117090231648419864",
+      "method": "web_direct",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "attemptedAt": null,
+      "completedAt": null,
+      "observationDate": "2026-11-03",
+      "summary": "web取得は403。秒精度の取得時刻は未記録のため補完せず、公式oEmbedの成功とは別経路として保持。"
+    },
+    {
+      "url": "https://x.com/chiikawa_pt_jp/status/2117452566208672220",
+      "method": "web_direct",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "attemptedAt": null,
+      "completedAt": null,
+      "observationDate": "2026-11-03",
+      "summary": "web取得は403。秒精度の取得時刻は未記録のため補完せず、公式oEmbedの成功とは別経路として保持。"
+    },
+    {
+      "url": "https://x.com/chiikawa_pt_jp/status/2117090231648419864",
+      "requestUrl": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_pt_jp%2Fstatus%2F2117090231648419864&omit_script=true",
+      "method": "official_oembed",
+      "startedAt": "2026-11-03T10:03:43.215Z",
+      "completedAt": "2026-11-03T10:03:43.599Z",
+      "result": "success",
+      "httpStatus": 200,
+      "sha256": "8267f474b6d421224859b81460b6c0118bc012a4b500e2cbb1e96a6653810d07",
+      "scope": "対象日程・LINE無料・入場回数の該当2文は完全に含まれる。後半省略部分と画像はこの取得では未確認。",
+      "officialAnnouncedDate": "2026-11-02"
+    },
+    {
+      "url": "https://x.com/chiikawa_pt_jp/status/2117452566208672220",
+      "requestUrl": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_pt_jp%2Fstatus%2F2117452566208672220&omit_script=true",
+      "method": "official_oembed",
+      "startedAt": "2026-11-03T10:03:43.600Z",
+      "completedAt": "2026-11-03T10:03:43.862Z",
+      "result": "success",
+      "httpStatus": 200,
+      "sha256": "7d0cc1cb0a36fbb96d86d2b01a506098a239531805927f67f3e71732586fb2fb",
+      "scope": "対象日程・LINE無料・入場回数の該当2文は完全に含まれる。後半省略部分と画像はこの取得では未確認。",
+      "officialAnnouncedDate": "2026-11-03"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html",
+      "method": "public_http",
+      "startedAt": "2026-11-03T10:03:43.863Z",
+      "completedAt": "2026-11-03T10:03:43.974Z",
+      "result": "access_limited",
+      "httpStatus": 403,
+      "sha256": "ba46bed58cd8d5beb766ab87706492fd2c4375dc235b5f4c28cd3f0a58a3cacc",
+      "previousLastSuccessfulAt": "2026-10-25T10:01:24.431Z",
+      "previousLastFailure": {
+        "at": "2026-11-02T09:51:37Z",
+        "kind": "parse_failed",
+        "httpStatus": null,
+        "detail": "画像3枚。取得失敗で現在条件・19時実受付は未検証。",
+        "evidenceUrl": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html"
+      },
+      "scope": "この経路では本文・画像を取得できず。過去成功を消去しない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/sendai.html",
+      "method": "web",
+      "startedAt": null,
+      "completedAt": null,
+      "observationDate": "2026-11-03",
+      "result": "partial",
+      "scope": "画像リンク3枚のみ。本文・画像条件の実読成功とは扱わない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawa_pocket042610/img/tenpo_sendai_261024.jpg",
+      "method": "public_http_and_view_image",
+      "startedAt": "2026-11-03T10:03:43.974Z",
+      "completedAt": "2026-11-03T10:03:44.068Z",
+      "imageViewedAt": "2026-11-03T10:05:12Z",
+      "result": "success",
+      "httpStatus": 200,
+      "sha256": "a2061ce8b299c60f03e57b4c7181d0d534addb5f82d48ccf828d5e6d4152be50",
+      "scope": "画像を実見。開店～12:30分は前日19時、13時以降は各1時間前、氏名一致・本人確認原本、距離制限なし、30分完全入替、開始1時間後失効。画像の日程は11/3のみであり、更新後日程の根拠へは転用しない。"
+    }
+  ]
+}
