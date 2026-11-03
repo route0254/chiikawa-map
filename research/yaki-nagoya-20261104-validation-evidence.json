@@ -1,0 +1,67 @@
+{
+  "validatedAt": "2026-11-03T23:06:59.043Z",
+  "baseCommit": "ef377606bf50e47c898adef94440c0881104583f",
+  "scope": {
+    "changedSpots": 1,
+    "newSpots": 0,
+    "archiveMoves": 0,
+    "ids": [
+      "chiikawa-yaki-nagoya"
+    ],
+    "changedFields": [
+      "entryNote",
+      "entryInfoUrl",
+      "entryInfoCheckedAt",
+      "importantNotice"
+    ]
+  },
+  "checks": {
+    "mandatoryCommands": 50,
+    "unitPassed": 80,
+    "unitFailed": 0,
+    "uiPassed": 117,
+    "uiFlaky": 0,
+    "targetPcMobile": 2,
+    "generatedPages": 880,
+    "archiveCandidates": 0,
+    "publicStructuredDataUnchanged": true
+  },
+  "preservation": {
+    "ordinaryEntryConditionsExactSuffixPreserved": true,
+    "originalIdPeriodClassificationCoordinatesHoursReservationUrlAutumnMenuAndFirstAddedPreserved": true,
+    "otherDataAndHoldsUnchanged": true,
+    "sourceEnabledAndFailureHistoryPreserved": true,
+    "appTestsSchemaWorkflowsAndCheckCriteriaUnchanged": true
+  },
+  "ledger": {
+    "pr105SyncedCandidates": 9,
+    "pr105OriginalPublishedAt": "2026-11-03T22:25:10.093Z",
+    "newCandidates": 1,
+    "newSources": 0,
+    "currentPublishedAt": null,
+    "discoveryDate": "2026-11-04",
+    "discoveryExactTime": null,
+    "officialAnnouncementUnknown": null
+  },
+  "externalLinks": {
+    "exitCode": 1,
+    "targets": 289,
+    "normal": 258,
+    "unconfirmed": 29,
+    "broken": 1,
+    "knownTsuchiura404": true,
+    "changedOfficialUrlHttpStatus": 200,
+    "reservationAvailability": null,
+    "checkCriteriaUnchanged": true
+  },
+  "privacy": {
+    "passed": true,
+    "findings": 0,
+    "privateOriginalsRawHtmlFullLinkListsCredentialsAndLocalPathsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "同一head/main SHAのCI終端成功と公開JSON/対象ページ/関連資源の完全一致を確認し、実公開初回実測と公開後Healthを保存。"
+  }
+}
