@@ -1,0 +1,29 @@
+{
+  "validatedAt": "2026-11-03T01:17:03.986Z",
+  "scope": "過去調査終了と既公開日時同期",
+  "checks": {
+    "mandatoryCommands": 49,
+    "unit": 76,
+    "generatedPages": 880,
+    "allPassed": true
+  },
+  "closedCandidates": 7,
+  "continuedCurrentFutureCandidates": 4,
+  "closedMissingRecordSearch": {
+    "rows": 26,
+    "urls": 24,
+    "recovered": false,
+    "backfilled": false
+  },
+  "preservation": {
+    "publishedVenueAndCollaborationData": true,
+    "sourceEnabledAndLastSuccess": true,
+    "originalCandidateEvidenceAndDates": true,
+    "pr89AndLinksWorkflow": true
+  },
+  "publicationTimestampSync": {
+    "pr": 100,
+    "firstPublicMatchAt": "2026-11-03T00:56:37.218Z"
+  },
+  "limits": "新たな会期や観測を復元・推定していません。4件の継続確認と土浦404は別管理です。"
+}
