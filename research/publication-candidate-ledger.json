@@ -24545,18 +24545,34 @@
           "observedAt": null,
           "summary": "2026年11月3日朝のクラウド限定再確認。保留の未知値は未確定のまま、状態・初回発見・既知公開時刻を保持。秒精度の確認時刻は未受信。",
           "recordPath": "research/archive-gransta-20261103-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+          "observedAt": "2026-11-03T00:30:32.683Z",
+          "summary": "本文で11/1開始・B1F・施設時間準拠・数量限定。設置期間・終了日未公表。",
+          "recordPath": "research/kitte-nagoya-20261103/source-observations.json"
+        },
+        {
+          "url": "https://nagoya.jp-kitte.jp/shop/page.jsp?id=3",
+          "observedAt": "2026-11-03T00:30:33.127Z",
+          "summary": "施設公式住所を再確認。地図は既知の施設代表点であり機械精密位置ではない。",
+          "recordPath": "research/kitte-nagoya-20261103/source-observations.json"
         }
       ],
       "existingMatch": {
-        "status": "new",
-        "ids": [],
-        "note": "基点の現行・履歴・コラボ・候補台帳を照合。同じ会場/会期/企画の重複なし。"
+        "status": "matched",
+        "ids": [
+          "chiikawa-vending-kitte-nagoya"
+        ],
+        "note": "基点mainの現行・履歴・コラボに同じ訪問先なし。既存の候補IDを保持して新規スポット1件へ実装。"
       },
-      "listingIds": [],
-      "state": "on_hold",
+      "listingIds": [
+        "chiikawa-vending-kitte-nagoya"
+      ],
+      "state": "ready",
       "priority": "high",
-      "decision": "販売開始11/1・B1F・施設時間準拠・数量限定を確認。終了日・恒久設置・期間限定の明示はない。現行periodTypeがpermanent/limitedのみのため、事実を推定せず期間分類の取扱いを確認中。",
-      "nextCheck": "設置期間未公表区分の仕様変更は本人承認待ち。未実装・未掲載を保持し、承認と一次続報のみ次回確認。",
+      "decision": "一次根拠のある訪問可能な購入拠点として掲載。設置期間未公表を独立区分で表し、常設・期間限定を推定しない。終了日nullを保持し、構造化データはPlace。初発見と当初の反映目標を保持。",
+      "nextCheck": "検査・同一head/main SHAのCI・公開実体初回一致を確認。以後、設置継続・終了や条件変更の一次続報を通常確認。",
       "recheckDueAt": "2026-11-03T19:00:00+09:00",
       "publishedAt": null
     },
@@ -24934,6 +24950,12 @@
           "observedAt": null,
           "summary": "11/3の公式検索キャッシュにも10/23～11/2、最終20時。現在404、メーカー本文の確認範囲に延長告知なし。404単独を理由にしない。",
           "recordPath": "research/archive-gransta-20261103-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/99",
+          "observedAt": "2026-11-03T00:22:29.185Z",
+          "summary": "PR99の公開28リソース初回完全一致の保存済み実測。報告時刻ではない。",
+          "recordPath": "research/kitte-nagoya-20261103/pr99-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -24946,12 +24968,12 @@
       "listingIds": [
         "tokyo-banana-popup-gransta-2026-10"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
-      "decision": "確認済みの有限会期が終了。11/3が終了日の他案件は当日現行を維持。更新を信頼して初めて発見した正確な時刻は未受信のためnull、過去の掲載公開時刻は上書きしない。",
-      "nextCheck": "必要検査・同じhead/main SHAのCI終端成功・公開JSONと個別ページの初回一致を確認し、実測を次回通常更新用へ保存。",
+      "decision": "確認済みの有限会期が終了。11/3が終了日の他案件は当日現行を維持。更新を信頼して初めて発見した正確な時刻は未受信のためnull、過去の掲載公開時刻は上書きしない。 保存済み元公開時刻を次の通常更新で同期。",
+      "nextCheck": "終了した有限会期と歴史出典を保持。新しい一次根拠のある場合だけ通常確認。",
       "recheckDueAt": "2026-11-03T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-03T00:22:29.185Z"
     }
   ]
 }

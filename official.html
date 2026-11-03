@@ -231,6 +231,7 @@
 
           <div class="status-summary" aria-label="開催状況別件数">
             <span><b id="permanent-count">--</b> 常設</span>
+            <span><b id="unannounced-count">--</b> 設置期間未公表</span>
             <span><b id="active-count">--</b> 開催中</span>
             <span><b id="upcoming-count">--</b> 開催予定</span>
           </div>
@@ -274,6 +275,7 @@
               <option value="limited-shop">期間限定ショップ</option>
               <option value="limited-food">期間限定カフェ・フード</option>
               <option value="limited-event">イベント・体験</option>
+              <option value="unannounced">設置期間未公表</option>
             </select>
           </label>
 
@@ -289,6 +291,7 @@
             <select id="current-status">
               <option value="">すべての状況</option>
               <option value="permanent">常設</option>
+              <option value="unannounced">設置期間未公表</option>
               <option value="active">開催中</option>
               <option value="upcoming">開催予定</option>
               <option value="ending-soon">まもなく終了（7日以内）</option>
@@ -707,7 +710,7 @@
 
   <p id="catalog-action-status" class="catalog-action-status" role="status" aria-live="polite" hidden></p>
 
-  <script src="official.js?v=20261004-layout-restore-1" defer></script>
+  <script src="official.js?v=20261103-unannounced-period-1" defer></script>
   <script src="pwa.js?v=20261004-layout-restore-1" defer></script>
 </body>
 

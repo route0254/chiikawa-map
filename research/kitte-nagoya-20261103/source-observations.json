@@ -1,0 +1,96 @@
+{
+  "checkedDate": "2026-11-03",
+  "observations": [
+    {
+      "key": "manufacturer",
+      "url": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "startedAt": "2026-11-03T00:30:32.591Z",
+      "completedAt": "2026-11-03T00:30:32.683Z",
+      "status": 200,
+      "bytes": 268863,
+      "sha256": "edd51a0febec1508ee3177c34dfbc43606d1b880ffc3d486fb811c007be1acda",
+      "route": "consumer_direct_official_http",
+      "result": "success",
+      "sourceIds": [
+        "corporate-gps-kitte-nagoya-vending-20261101"
+      ],
+      "lastSuccessfulAt": "2026-11-03T00:30:32.683Z",
+      "ledgerApplied": true
+    },
+    {
+      "key": "facility",
+      "url": "https://nagoya.jp-kitte.jp/shop/page.jsp?id=3",
+      "startedAt": "2026-11-03T00:30:32.624Z",
+      "completedAt": "2026-11-03T00:30:33.127Z",
+      "status": 200,
+      "bytes": 34318,
+      "sha256": "ce1c7051d81cd27f4e777b083a8543de3a03dc1f17aca97d44b2e4b934e13333",
+      "route": "consumer_direct_official_http",
+      "result": "success",
+      "sourceIds": [
+        "kitte-nagoya-official-access"
+      ],
+      "lastSuccessfulAt": "2026-11-03T00:30:33.127Z",
+      "ledgerApplied": true
+    }
+  ],
+  "priorSourceStates": {
+    "corporate-gps-kitte-nagoya-vending-20261101": {
+      "id": "corporate-gps-kitte-nagoya-vending-20261101",
+      "name": "GPS公式 KITTE名古屋自販機告知",
+      "url": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:59:34.332Z",
+      "lastSuccessfulAt": "2026-11-01T22:59:34.332Z",
+      "lastResult": "success",
+      "resultSummary": "メーカー公式本文に11/1販売開始・KITTE名古屋B1F・施設時間準拠・数量限定。期間限定や終了日の明示なし。（consumer_direct_official_http）",
+      "lastFailure": null,
+      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。"
+    },
+    "kitte-nagoya-official-access": {
+      "id": "kitte-nagoya-official-access",
+      "name": "KITTE名古屋公式アクセス",
+      "url": "https://nagoya.jp-kitte.jp/shop/page.jsp?id=3",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "weekly",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-01T22:52:15.710Z",
+      "lastSuccessfulAt": "2026-11-01T22:52:15.710Z",
+      "lastResult": "success",
+      "resultSummary": "施設公式住所とアクセス確認。（cloud_public_http）",
+      "lastFailure": null,
+      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。"
+    }
+  },
+  "cachedWebRead": {
+    "observedAt": null,
+    "observedDate": "2026-11-03",
+    "urls": [
+      "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "https://nagoya.jp-kitte.jp/shop/page.jsp?id=3"
+    ],
+    "ledgerApplied": false,
+    "scope": "Web読取は本文範囲。直接HTTPの完了時刻・画像視認と区別。"
+  },
+  "coordinates": {
+    "lat": 35.1731005,
+    "lng": 136.8823482,
+    "precision": "施設代表点、機械の精密位置ではない",
+    "priorEvidencePath": "research/morning-20261102-evidence.json"
+  },
+  "missingPriorObservationRows": {
+    "rows": 26,
+    "urls": 24,
+    "recovered": false,
+    "backfilled": false
+  },
+  "existingSourceEnabledUnchanged": true
+}

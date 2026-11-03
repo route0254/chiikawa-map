@@ -236,6 +236,13 @@ const CURRENT_GROUPS = [
       spot =>
         spot.periodType === "limited" &&
         spot.placeType === "spot"
+  },
+  {
+    id: "unannounced",
+    icon: "📍",
+    title: "設置期間未公表",
+    description: "設置期間が公式に公表されていない訪問先",
+    matches: spot => spot.periodType === "unannounced"
   }
 ];
 
@@ -823,6 +830,8 @@ function getPeriodStatus(
     return "ended";
   }
 
+  if (spot.periodType === "unannounced") return "unannounced";
+
   return "active";
 }
 
@@ -927,6 +936,10 @@ function formatDate(
 function formatPeriod(
   spot
 ) {
+  if (spot.periodType === "unannounced") {
+    return "設置期間未公表" +
+      (spot.startDate ? "（" + formatDate(spot.startDate) + "設置開始）" : "");
+  }
   if (
     spot.periodType ===
     "permanent"
@@ -969,6 +982,9 @@ function getStatusPresentation(
   const status =
     getPeriodStatus(spot);
 
+  if (status === "unannounced") {
+    return { className: "status-unknown", label: "設置期間未公表" };
+  }
   if (status === "cancelled") {
     return {
       className:
@@ -1737,6 +1753,7 @@ function sortCurrentSpots(
   second
 ) {
   const statusOrder = {
+    unannounced: 0,
     active: 0,
     permanent: 0,
     upcoming: 1,
@@ -2665,6 +2682,9 @@ function populateCurrentSummary() {
     "current-total-count"
   ).textContent =
     String(visibleSpots.length);
+
+  document.getElementById("unannounced-count").textContent =
+    String(statuses.filter(status => status === "unannounced").length);
 
   document.getElementById(
     "permanent-count"

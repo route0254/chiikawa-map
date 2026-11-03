@@ -474,6 +474,7 @@ function getPlaceTypeLabel(
 function getPeriodLabel(
   spot
 ) {
+  if (spot.periodType === "unannounced") return "設置期間未公表";
   if (
     spot.periodType !==
     "limited"
@@ -1058,7 +1059,7 @@ function getFavoriteStatus(
   }
 
   if (
-    spot.periodType === "limited" &&
+    (spot.periodType === "limited" || spot.periodType === "unannounced") &&
     spot.startDate &&
     spot.startDate > today
   ) {
@@ -1086,6 +1087,8 @@ function getFavoriteStatusLabel(
   ) {
     return "開催中止";
   }
+
+  if (status === "current" && spot.periodType === "unannounced") return "設置期間未公表";
 
   return {
     current:

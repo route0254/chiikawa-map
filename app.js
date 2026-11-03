@@ -1037,6 +1037,12 @@ function getSpotPeriodStatus(
   spot
 ) {
 
+  if (spot.periodType === "unannounced") {
+    return spot.startDate && getTodayInJapan() < spot.startDate
+      ? "upcoming"
+      : "unannounced";
+  }
+
   if (
     spot.periodType ===
     "permanent"
@@ -1231,7 +1237,7 @@ function doesSpotOverlapDateRange(
 
   if (
     spot.periodType ===
-    "permanent"
+    "permanent" || spot.periodType === "unannounced"
   ) {
     return !spot.startDate || spot.startDate <= rangeEnd;
   }
@@ -1605,7 +1611,8 @@ function getSpotSearchText(
       ),
       getRelationTypeLabel(
         spot.category,
-        spot.relationType
+        spot.relationType,
+        spot.periodType
       ),
       spot.evidenceNote
     ]
@@ -2188,6 +2195,9 @@ function getPeriodStatusLabel(
 
   const labels = {
 
+    unannounced:
+      "設置期間未公表",
+
     permanent:
       "常設",
 
@@ -2290,8 +2300,13 @@ function getPlaceTypeLabel(
 
 function getRelationTypeLabel(
   category,
-  relationType
+  relationType,
+  periodType
 ) {
+
+  if (category === "official" && relationType === "official_facility" && periodType === "unannounced") {
+    return "公式施設";
+  }
 
   const officialLabels = {
 
@@ -5195,8 +5210,10 @@ function createSpotListCard(
         ),
         getRelationTypeLabel(
           spot.category,
-          spot.relationType
-        )
+          spot.relationType,
+          spot.periodType
+        ),
+        spot.periodType === "unannounced" ? "設置期間未公表" : null
       ]
         .filter(Boolean)
         .join(" ・ ")
@@ -6534,7 +6551,7 @@ function getNearbySpotRecords(
       record =>
         record.spot.id !== spot.id &&
         !isSpotUnavailableForVisit(record.spot) &&
-        !(record.spot.periodType === "permanent" &&
+        !((record.spot.periodType === "permanent" || record.spot.periodType === "unannounced") &&
           record.spot.startDate > getTodayInJapan())
     )
     .map(
@@ -7053,7 +7070,8 @@ function createSpotDetail(
       "🏷️ " +
       getRelationTypeLabel(
         spot.category,
-        spot.relationType
+        spot.relationType,
+        spot.periodType
       )
     )
   );
@@ -7221,6 +7239,11 @@ function createSpotDetail(
 
     periodText =
       "🗓 常設";
+
+  } else if (spot.periodType === "unannounced") {
+
+    periodText = "🗓 設置期間未公表" +
+      (spot.startDate ? "（" + formatDate(spot.startDate) + "設置開始）" : "");
 
   } else {
 

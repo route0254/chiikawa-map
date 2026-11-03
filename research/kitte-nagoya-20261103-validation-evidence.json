@@ -1,0 +1,76 @@
+{
+  "validatedAt": "2026-11-03T00:46:08.875Z",
+  "baseCommit": "709a3ee12ded398b2194ae14be971a58fec230e6",
+  "scope": {
+    "newSpots": 1,
+    "ids": [
+      "chiikawa-vending-kitte-nagoya"
+    ],
+    "periodType": "unannounced"
+  },
+  "checks": {
+    "mandatoryCommands": 49,
+    "unitPassed": 74,
+    "newPeriodUnitTests": 7,
+    "uiPassed": 113,
+    "newUiScenarios": 2,
+    "pcMobileTargetChecks": 30,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "generatedPages": 880
+  },
+  "semantics": {
+    "label": "設置期間未公表",
+    "oldPermanentAndLimitedFiltersPreserved": true,
+    "newFilterAndDirectoryGroup": true,
+    "statusCountsPreservedAndNewCountAdded": true,
+    "endDateNullRequired": true,
+    "knownInstallationStartRetained": true,
+    "structuredData": "Place",
+    "noEventDates": true,
+    "savedPlaceLabelsConsistent": true,
+    "sharedUrlsAndSavedIdsPreserved": true,
+    "existingTestsUnchanged": true,
+    "pwaCacheGenerationAndChangedPageScriptVersionsUpdated": true
+  },
+  "records": {
+    "sources": 826,
+    "candidates": 442,
+    "newCandidates": 0,
+    "existingCandidateReused": true,
+    "originalDiscoveredAt": "2026-11-01T22:51:40.000Z",
+    "originalAnnouncedAt": "2026-11-01T11:38:00+09:00",
+    "originalDeadlineRetained": "2026-11-02T23:59:59+09:00",
+    "firstAdded": "2026-11-03",
+    "pr99SyncedCandidates": 1,
+    "pr99OriginalPublishedAt": "2026-11-03T00:22:29.185Z",
+    "remainingHolds": 11,
+    "otherHoldStatesAndDeadlinesUnchanged": true,
+    "marunouchiNotListed": true,
+    "sourceEnabledAndPr89Preserved": true,
+    "priorMissingObservationsNotReconstructed": true
+  },
+  "externalLinks": {
+    "exitCode": 1,
+    "knownTsuchiura404": true,
+    "warnings": 26,
+    "warningClasses": {
+      "400": 1,
+      "403": 22,
+      "fetch_failed": 3
+    },
+    "newTargetFindings": 0,
+    "newOfficialSourceAndFacilityHttp200": true,
+    "granstaArchiveOnlyUrlExcludedAfterActualPublicationSync": true,
+    "checkerRulesUnchanged": true
+  },
+  "privacy": {
+    "credentialValuesAdded": 0,
+    "privatePathsRawHtmlAndPrivateOriginalsExcluded": true
+  },
+  "publication": {
+    "publishedAt": null,
+    "verified": false,
+    "nextAction": "同一head/main SHAのCI終端成功と公開リソース一致を確認し、初回一致実測を次回通常更新へ保存。"
+  }
+}

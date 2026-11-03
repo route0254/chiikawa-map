@@ -1,0 +1,62 @@
+{
+  "checkedDate": "2026-11-03",
+  "baseCommit": "709a3ee12ded398b2194ae14be971a58fec230e6",
+  "newSpots": [
+    {
+      "id": "chiikawa-vending-kitte-nagoya",
+      "name": "ちいかわデザイン自動販売機 KITTE名古屋",
+      "category": "official",
+      "placeType": "shop",
+      "relationType": "official_facility",
+      "brand": "chiikawa",
+      "periodType": "unannounced",
+      "startDate": "2026-11-01",
+      "endDate": null,
+      "hoursText": "施設営業時間に準ずる",
+      "closedDaysText": null,
+      "hoursInfoUrl": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "hoursCheckedAt": "2026-11-03",
+      "reservationType": "unknown",
+      "reservationUrl": null,
+      "defaultEntryType": "other",
+      "crowdControlType": "other",
+      "crowdControlCondition": "announced",
+      "entryNote": "商品は数量に限りがあり、取扱商品は時期や在庫により予告なく変更される場合があります。施設へのお問い合わせはお控えください。",
+      "entryInfoUrl": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "entryInfoCheckedAt": "2026-11-03",
+      "lat": 35.1731005,
+      "lng": 136.8823482,
+      "address": "愛知県名古屋市中村区名駅1-1-1 JPタワー名古屋 KITTE名古屋 B1F",
+      "description": "グレイ・パーカー・サービスが設置する、ちいかわデザインの自動販売機です。2026年11月1日から、KiramekkoやGPSBOXなどのグッズを販売しています。設置期間は公表されていません。地図の位置はKITTE名古屋の施設代表点です。",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000081.000168561.html",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=KITTE%E5%90%8D%E5%8F%A4%E5%B1%8B"
+    }
+  ],
+  "readyCandidateIds": [
+    "new-chiikawa-vending-kitte-nagoya-20261101"
+  ],
+  "existingCandidateReused": true,
+  "originalDiscoveredAt": "2026-11-01T22:51:40.000Z",
+  "originalReflectDueAt": "2026-11-02T23:59:59+09:00",
+  "schemaChange": {
+    "field": "periodType",
+    "newValue": "unannounced",
+    "displayLabel": "設置期間未公表",
+    "endDateMustBeNull": true,
+    "permanentAndLimitedSemanticsPreserved": true,
+    "structuredType": "Place",
+    "noEventDatesOrInventedEnd": true
+  },
+  "sourceRecord": "research/kitte-nagoya-20261103/source-observations.json",
+  "pr99SyncedCandidates": 1,
+  "pr99OriginalPublishedAt": "2026-11-03T00:22:29.185Z",
+  "holds": {
+    "before": 12,
+    "after": 11,
+    "remainingStatesAndDeadlinesUnchanged": true
+  },
+  "pr89AndExistingSourceEnabledPreserved": true,
+  "marunouchiNotAdded": true,
+  "missingPriorObservationsNotReconstructed": true,
+  "thisPublishedAt": null
+}
