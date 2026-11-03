@@ -3,6 +3,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import SpotBrands from "../brand-utils.js";
 
 const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -58,9 +59,10 @@ const datasets = [
   {
     file: "data/official-spots.json",
     category: "official",
-    fields: commonFields,
+    fields: [...commonFields, "additionalBrands"],
     optionalFields: [
-      "importantNotice"
+      "importantNotice",
+      "additionalBrands"
     ],
     requiredStrings: [
       "id",
@@ -86,11 +88,13 @@ const datasets = [
     archive: true,
     fields: [
       ...commonFields,
-      "eventStatus"
+      "eventStatus",
+      "additionalBrands"
     ],
     optionalFields: [
       "eventStatus",
-      "importantNotice"
+      "importantNotice",
+      "additionalBrands"
     ],
     requiredStrings: [
       "id",
@@ -449,7 +453,7 @@ function validateShape(dataset, spot, index) {
   }
 
   for (const [field, value] of Object.entries(spot)) {
-    if (numericFields.has(field)) {
+    if (numericFields.has(field) || field === "additionalBrands") {
       continue;
     }
 
@@ -546,6 +550,11 @@ function validateEnums(dataset, spot, location) {
       location,
       `brand の値 ${JSON.stringify(spot.brand)} は app.js のブランド一覧にありません`
     );
+  }
+
+  if (Object.hasOwn(spot, "additionalBrands") &&
+      (dataset.category !== "official" || !SpotBrands.validAdditionalBrands(spot, officialBrands))) {
+    addError(location, "additionalBrands は主分類と重複しない既存ブランドキーの配列である必要があります");
   }
 
   if (

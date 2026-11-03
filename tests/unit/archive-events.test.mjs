@@ -8,6 +8,8 @@ import {
 
 const ended = {
   id: "ended",
+  brand: "chiikawa",
+  additionalBrands: ["chiikawa_sushi"],
   name: "終了済みイベント",
   periodType: "limited",
   endDate: "2026-08-31",
@@ -66,6 +68,8 @@ test(
       result.archive[0].eventStatus,
       "held"
     );
+    assert.equal(result.archive[0].brand, "chiikawa");
+    assert.deepEqual(result.archive[0].additionalBrands, ["chiikawa_sushi"]);
     assert.deepEqual(
       result.warnings,
       [{

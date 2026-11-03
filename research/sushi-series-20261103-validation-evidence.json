@@ -1,0 +1,37 @@
+{
+  "validatedAt": "2026-11-03T01:48:39.135Z",
+  "scope": "既存寿司シリーズ分類の修正",
+  "checks": {
+    "mandatoryCommands": 50,
+    "unit": 80,
+    "ui": 117,
+    "targetPcMobileCases": 4,
+    "flaky": 0,
+    "generatedPages": 880
+  },
+  "coverage": [
+    "過去表示オン/オフ",
+    "開催中0件でも既存寿司分類を選択可能",
+    "現在・今後・過去の系列一致",
+    "同時開催を通常POPUPと寿司双方で同一IDとして検索",
+    "くら寿司・名前文字列だけでの誤分類を除外",
+    "検索条件・再読込との組合せ",
+    "現行と履歴の生成・移動時に追加分類を保持"
+  ],
+  "preservation": {
+    "currentSpots": 89,
+    "archiveSpots": 697,
+    "existingSushiArchiveRecords": 15,
+    "totalSpots": 880,
+    "newPins": 0,
+    "existingMainBrandIdsPeriodGeoAndEntryConditions": true,
+    "originalDiscoveryPublicationAndFirstAdded": true,
+    "ledgersEnabledAndPr89": true
+  },
+  "visual": {
+    "pcMobileImagesInspected": 3,
+    "layoutIssuesFound": 0
+  },
+  "publicationAt": null,
+  "limits": "公式本文・タイトルの確認範囲から分類だけを修正。新しい開催・入場条件を画像や名称から推測していません。"
+}

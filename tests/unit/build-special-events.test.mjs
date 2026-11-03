@@ -17,6 +17,7 @@ test("会場・系列の確認日と案内を現在・過去データへ保持�
   const event = {
     id: "new-event", name: "新しい会場", startDate: "2026-09-01", endDate: "2026-09-09",
     venueName: "会場", address: "東京都新宿区", lat: 35.69, lng: 139.70,
+    additionalBrands: ["chiikawa_sushi"],
     sourceUrl: "https://example.com/event",
     hoursText: "10:00～21:00（最終日16:00まで）", entryNote: "フリー入場です。"
   };
@@ -38,6 +39,8 @@ test("会場・系列の確認日と案内を現在・過去データへ保持�
   execFileSync(process.execPath, [script, "--check"]);
   const current = JSON.parse(await readFile(path.join(root, "data", "official-spots.json")));
   const archive = JSON.parse(await readFile(path.join(root, "data", "official-events-archive.json")));
+  assert.deepEqual(current[0].additionalBrands, ["chiikawa_sushi"]);
+  assert.deepEqual(archive[0].additionalBrands, ["chiikawa_sushi"]);
   assert.equal(current[0].hoursCheckedAt, "2026-09-04");
   assert.equal(current[0].entryInfoCheckedAt, "2026-09-04");
   assert.equal(current[0].hoursText, event.hoursText);

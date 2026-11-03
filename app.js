@@ -1600,9 +1600,7 @@ function getSpotSearchText(
       spot.name,
       spot.address,
       spot.description,
-      getBrandLabel(
-        spot.brand
-      ),
+      SpotBrands.getSpotBrands(spot).map(getBrandLabel).join(" / "),
       getCategoryLabel(
         spot.category
       ),
@@ -7055,9 +7053,7 @@ function createSpotDetail(
         "spot-relation",
 
         "✨ " +
-        getBrandLabel(
-          spot.brand
-        )
+        SpotBrands.getSpotBrands(spot).map(getBrandLabel).join(" / ")
       )
     );
   }
@@ -8210,15 +8206,7 @@ function renderBrandFilters() {
 
 
   const brands =
-    Array.from(
-      new Set(
-        spotRecords.map(
-          record =>
-            record.spot.brand ||
-            "other"
-        )
-      )
-    )
+    SpotBrands.getFilterBrands(spotRecords.map(record => record.spot))
     .sort(
       (a, b) =>
         getBrandLabel(a)
@@ -8505,10 +8493,7 @@ function recordMatchesFilters(
 
   if (
     state.brands &&
-    !state.brands.has(
-      spot.brand ||
-      "other"
-    )
+    !SpotBrands.matchesAnyBrand(spot, state.brands)
   ) {
     return false;
   }

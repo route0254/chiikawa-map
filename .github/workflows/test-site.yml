@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - "brand-utils.js"
       - "app.js"
       - "index.html"
       - "style.css"
@@ -48,6 +49,7 @@ on:
       - ".github/workflows/test-site.yml"
   pull_request:
     paths:
+      - "brand-utils.js"
       - "app.js"
       - "index.html"
       - "style.css"
