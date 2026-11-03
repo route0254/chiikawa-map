@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-11-03T01:30:44.612Z",
+  "checkedDate": "2026-11-03",
+  "kind": "既存寿司シリーズの分類修正",
+  "id": "popup-2026-10-16-fukuoka-mitsukoshi",
+  "primaryBrand": "chiikawa",
+  "additionalBrands": [
+    "chiikawa_sushi"
+  ],
+  "newSpots": 0,
+  "newSeriesKeys": 0,
+  "existingArchiveSushiRecordsUnchanged": 15,
+  "officialEvidence": [
+    {
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "observedAt": null,
+      "observationDate": "2026-11-03",
+      "scope": "本文に福岡三越9階三越ギャラリー、10/16〜11/3の寿司シリーズを明記。個別秒精度の観測時刻は未確定。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/muchauma-chiikawasushi/fukuoka/index.html",
+      "observedAt": null,
+      "observationDate": "2026-11-03",
+      "scope": "公式タイトルのシリーズ・会場・会期を確認。画像主体の本文から他の入場条件を推測しない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_fkmk/index.html",
+      "observedAt": null,
+      "observationDate": "2026-11-03",
+      "scope": "既存POP UPの会場・会期と同時開催の一次出典。既存の入場条件・期間・位置・IDは保持。"
+    }
+  ],
+  "futureEntryRule": "主分類brandを保持し、一次根拠のある同時開催だけadditionalBrandsへ既存キーを追加。同じ会場・開催回のピンを複製せず、名称文字列で分類しない。管理対象の系列原本はevent.additionalBrandsにも記録し、現行・履歴へ引き継ぐ。",
+  "kuraSushiSeparate": true,
+  "persistentExistingFilter": "chiikawa_sushi",
+  "zeroCurrentResultsSupported": true,
+  "publicationCandidateAdded": false,
+  "reason": "新しい企画や会期の発見ではなく、既存分類の表示・絞り込みの不具合修正。既存掲載の初回発見・公開日時を変更しません。",
+  "publishedAt": null
+}

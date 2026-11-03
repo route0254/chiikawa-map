@@ -1629,10 +1629,7 @@ function createSpotCard(
     createElement(
       "p",
       "spot-card-brand",
-      BRAND_LABELS[
-        spot.brand
-      ] ||
-      BRAND_LABELS.other
+      SpotBrands.getSpotBrands(spot).map(brand => BRAND_LABELS[brand] || BRAND_LABELS.other).join(" / ")
     )
   );
 
@@ -2095,9 +2092,7 @@ function getSearchableText(
       spot.name,
       spot.address,
       spot.description,
-      BRAND_LABELS[
-        spot.brand
-      ]
+      SpotBrands.getSpotBrands(spot).map(brand => BRAND_LABELS[brand] || BRAND_LABELS.other).join(" ")
     ].filter(Boolean).join(" ")
   );
 }
@@ -2168,7 +2163,7 @@ function matchesCurrentSpot(
     ) &&
     (
       !state.brand ||
-      spot.brand === state.brand
+      SpotBrands.matchesBrand(spot, state.brand)
     ) &&
     (
       !state.status ||
@@ -2279,7 +2274,7 @@ function matchesPastSpot(
     ) &&
     (
       !state.brand ||
-      spot.brand === state.brand
+      SpotBrands.matchesBrand(spot, state.brand)
     ) &&
     (
       !state.status ||
@@ -2753,13 +2748,7 @@ function populatePrefectures() {
 
 function populateBrands() {
   const brands =
-    Array.from(
-      new Set(
-        getCurrentVisibleSpots()
-          .map(spot => spot.brand)
-          .filter(Boolean)
-      )
-    ).sort(
+    SpotBrands.getFilterBrands(getCurrentVisibleSpots()).sort(
       (first, second) =>
         (
           BRAND_LABELS[first] || first
@@ -2877,13 +2866,7 @@ function populateArchiveBrands() {
     .forEach(option => option.remove());
 
   const brands =
-    Array.from(
-      new Set(
-        getAllPastSpots()
-          .map(spot => spot.brand)
-          .filter(Boolean)
-      )
-    ).sort(
+    SpotBrands.getFilterBrands(getAllPastSpots()).sort(
       (first, second) =>
         (
           BRAND_LABELS[first] || first
@@ -2922,9 +2905,7 @@ function updateGuideCounts() {
         getCurrentVisibleSpots()
           .filter(
             spot =>
-              brands.has(
-                spot.brand
-              )
+              SpotBrands.matchesAnyBrand(spot, brands)
           ).length;
 
       const countElement =

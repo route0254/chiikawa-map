@@ -139,6 +139,11 @@ function createRecord(
     )
   };
 
+  if (event.additionalBrands !== undefined) {
+    if (!Array.isArray(event.additionalBrands)) throw new Error("additionalBrands は配列で指定してください: " + event.id);
+    record.additionalBrands = [...event.additionalBrands];
+  }
+
   if (event.importantNotice) {
     record.importantNotice = event.importantNotice;
   }

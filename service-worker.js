@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_VERSION =
-  "chiikatsu-map-v20261103-unannounced-period-1";
+  "chiikatsu-map-v20261103-sushi-series-1";
 const CORE_CACHE =
   CACHE_VERSION + "-core";
 const RUNTIME_CACHE =
@@ -28,6 +28,7 @@ const CORE_FILES = [
   "./official-links.css",
   "./legal.css",
   "./app.js",
+  "./brand-utils.js",
   "./recent-utils.js",
   "./data/added-dates.json",
   "./official.js",
