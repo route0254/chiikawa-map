@@ -15949,12 +15949,12 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:59:34.332Z",
-      "lastSuccessfulAt": "2026-11-01T22:59:34.332Z",
+      "lastAttemptAt": "2026-11-03T00:30:32.683Z",
+      "lastSuccessfulAt": "2026-11-03T00:30:32.683Z",
       "lastResult": "success",
-      "resultSummary": "メーカー公式本文に11/1販売開始・KITTE名古屋B1F・施設時間準拠・数量限定。期間限定や終了日の明示なし。（consumer_direct_official_http）",
+      "resultSummary": "公式本文で11/1開始・B1F・施設時間準拠・数量限定を確認。設置期間・終了日・常設/期間限定の明記なし。画像の全条件確認ではない。",
       "lastFailure": null,
-      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。"
+      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。 11/3の対象限定観測は research/kitte-nagoya-20261103/source-observations.json。"
     },
     {
       "id": "corporate-gps-prtimes-index",
@@ -16006,12 +16006,12 @@
       ],
       "cadence": "weekly",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:52:15.710Z",
-      "lastSuccessfulAt": "2026-11-01T22:52:15.710Z",
+      "lastAttemptAt": "2026-11-03T00:30:33.127Z",
+      "lastSuccessfulAt": "2026-11-03T00:30:33.127Z",
       "lastResult": "success",
-      "resultSummary": "施設公式住所とアクセス確認。（cloud_public_http）",
+      "resultSummary": "公式住所は名駅1-1-1 JPタワー名古屋。機械の精密座標は公表確認できず、既知の施設代表点を使用。",
       "lastFailure": null,
-      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。"
+      "note": "11/2朝の根拠・経路別観測は research/morning-20261102/source-observations.json。本文・画像・部分取得・キャッシュ・失敗を区別。 11/3の対象限定観測は research/kitte-nagoya-20261103/source-observations.json。"
     },
     {
       "id": "corporate-gps-kitte-marunouchi-vending-20260718",

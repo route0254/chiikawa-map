@@ -190,7 +190,8 @@ const enumValues = {
   ]),
   periodType: new Set([
     "permanent",
-    "limited"
+    "limited",
+    "unannounced"
   ]),
   reservationType: new Set([
     "not_available",
@@ -615,6 +616,10 @@ function validateCoordinates(spot, location) {
 }
 
 function validateDates(spot, location) {
+  if (spot.periodType === "unannounced" && spot.endDate !== null) {
+    addError(location, "設置期間未公表の endDate は null にしてください");
+  }
+
   for (const field of dateFields) {
     const value = spot[field];
 

@@ -67,6 +67,10 @@ function formatDate(value) {
 
 function formatPeriod(spot) {
   if (spot.periodType === "permanent") return "常設";
+  if (spot.periodType === "unannounced") {
+    const start = formatDate(spot.startDate);
+    return "設置期間未公表" + (start ? `（${start}設置開始）` : "");
+  }
   const start = formatDate(spot.startDate);
   const end = formatDate(spot.endDate);
   if (start && end) return `${start}～${end}`;
@@ -120,6 +124,7 @@ function detailRow(label, value) {
 
 function getStatusLabel(spot) {
   if (spot.isArchive) return "終了済みの記録";
+  if (spot.periodType === "unannounced") return "設置期間未公表";
   return spot.periodType === "permanent" ? "常設" : "期間限定";
 }
 
