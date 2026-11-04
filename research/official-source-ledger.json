@@ -5488,10 +5488,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-02T09:51:15Z",
-      "lastSuccessfulAt": "2026-11-02T09:51:15Z",
+      "lastAttemptAt": "2026-11-04T09:57:18.260Z",
+      "lastSuccessfulAt": "2026-11-04T09:57:18.260Z",
       "lastResult": "success",
-      "resultSummary": "11/2伏見混雑整理券は埋込で確認。閉店後のため恒久入場条件に転用しない。（cloud_web）",
+      "resultSummary": "11/4の京都錦ノベルティ記事へのdata-srcリンクと、マスコット告知の埋込投稿者chiikawamgmg・投稿IDを確認。",
       "lastFailure": {
         "at": "2026-10-31T10:01:03.113Z",
         "kind": "access_limited",
@@ -5499,7 +5499,7 @@
         "detail": "HTTP 403 Forbidden。",
         "evidenceUrl": "https://www.chiikawamogumogu.jp/"
       },
-      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。\n10月23日巡回の同一URL別名mogumogu-shopは既存IDへ統合。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測は research/evening-20261102/source-observations.json。既存enabledと過去成功・失敗を保持。"
+      "note": "2026-10-12の確認記録。HTML取得・画像の目視確認・SNS表示範囲を区別し、保存場所の異なる原画像は取得記録により照合する。\n10月23日巡回の同一URL別名mogumogu-shopは既存IDへ統合。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/28朝の経路別・部分/失敗/キャッシュ観測は research/morning-20261028/source-observations.json を参照。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。 今回の経路別観測は research/evening-20261031/source-observations.json。失敗・部分取得で過去成功日時は消去しない。 11/1夕の経路別観測は research/evening-20261101/source-observations.json。失敗・部分確認・キャッシュで従来の成功時刻を消さず、終了専用情報源の停止設定も維持。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 今回の経路別観測は research/evening-20261102/source-observations.json。既存enabledと過去成功・失敗を保持。 今回の限定観測は research/evening-20261104/source-observations.json。既存enabled・過去成功・失敗履歴は保持。"
     },
     {
       "id": "evening-cafe-parco-jp-event-information-chiikawaramenbuta-ikebukuro-area-029688",
@@ -7805,10 +7805,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-20T10:00:58.398+00:00",
-      "lastSuccessfulAt": "2026-10-20T10:00:58.398+00:00",
+      "lastAttemptAt": "2026-11-04T09:57:18.357Z",
+      "lastSuccessfulAt": "2026-11-04T09:57:18.357Z",
       "lastResult": "success",
-      "resultSummary": "配送キットの10/16～29・10/23～11/3選択肢と最終プレイ20時を確認。既存条件と整合。",
+      "resultSummary": "郵送販売11/4、発送11/9、プレイ11/9～2027/2/28、価格2,530円と送料別途、ESCAPE.IDアプリ必須、現地キット利用可を本文で確認。在庫・購入操作は未検証。",
       "lastFailure": {
         "at": "2026-10-17T10:06:34.024+00:00",
         "kind": "access_limited",
@@ -7816,7 +7816,7 @@
         "detail": "HTTP Error 403: Forbidden",
         "evidenceUrl": "https://escape.id/chiikawa-org/p-chiikawa-kit/"
       },
-      "note": "対象原本文/画像の実読範囲を記録。未確認の在庫・予約状態を推測しない。"
+      "note": "対象原本文/画像の実読範囲を記録。未確認の在庫・予約状態を推測しない。 今回の限定観測は research/evening-20261104/source-observations.json。既存enabled・過去成功・失敗履歴は保持。"
     },
     {
       "id": "tokyo-skytree-chiikawa-october-cafe-ticket",
@@ -8654,10 +8654,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-28T23:06:32.691+00:00",
-      "lastSuccessfulAt": "2026-10-28T23:06:32.691+00:00",
+      "lastAttemptAt": "2026-11-04T10:01:02.415Z",
+      "lastSuccessfulAt": "2026-11-04T10:01:02.415Z",
       "lastResult": "success",
-      "resultSummary": "text retrieval only; linked images and full social timeline not exhaustive",
+      "resultSummary": "小樽と京都錦の店舗一覧を確認。ただし11/18発売マスコットの店舗別取扱い根拠ではない。",
       "lastFailure": {
         "at": "2026-10-22T23:06:30.194+00:00",
         "kind": "access_limited",
@@ -8665,7 +8665,7 @@
         "detail": "HTTP Error 403: Forbidden",
         "evidenceUrl": "https://www.chiikawamogumogu.jp/stores/castella/"
       },
-      "note": "2026-10-14朝の公開一次情報確認。全画像・埋込SNS・当日の空きの網羅確認ではない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。"
+      "note": "2026-10-14朝の公開一次情報確認。全画像・埋込SNS・当日の空きの網羅確認ではない。 10/25朝の観測は research/morning-20261025-source-observations.json に保存。限定・失敗では過去の成功日時を保持。 10/25夕の観測を追記。失敗・部分取得では過去の成功日時を保持。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 今回の限定観測は research/evening-20261104/source-observations.json。既存enabled・過去成功・失敗履歴は保持。"
     },
     {
       "id": "hep-five-official-home",
@@ -16297,6 +16297,40 @@
       "resultSummary": "公式oEmbed本文で11/3～8、LINE無料整理券、対象日程は1人1回限りの入場を確認。後半省略あり、全文・投稿画像・残枠の確認ではありません。",
       "lastFailure": null,
       "note": "直接Xのweb取得403と公式oEmbedの成功を分けて research/sendai-entry-20261103/source-observations.json に記録。直接取得の秒精度時刻は未記録。"
+    },
+    {
+      "id": "baby-castella-kyoto-nishiki-open-novelty-20261104",
+      "name": "ちいかわベビーカステラ 京都錦OPEN記念ノベルティ",
+      "url": "https://www.chiikawamogumogu.jp/2026/11/04/post-2710/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-04T10:01:02.349Z",
+      "lastSuccessfulAt": "2026-11-04T10:01:02.349Z",
+      "lastResult": "success",
+      "resultSummary": "11/4付公式ニュース。京都錦店のみ、11/18から購入特典ステッカー1人1会計1点、会計分割不可、なくなり次第終了。",
+      "lastFailure": null,
+      "note": "公式サイトから辿った一次情報。店舗範囲・日程と取得経路を区別して確認する。 今回の限定観測は research/evening-20261104/source-observations.json。既存enabled・過去成功・失敗履歴は保持。"
+    },
+    {
+      "id": "baby-castella-mascot-set-20261118-official-post",
+      "name": "ちいかわもぐもぐ本舗公式 マスコットセット告知",
+      "url": "https://x.com/chiikawamgmg/status/2117783961967452290",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-04T09:57:18.689Z",
+      "lastSuccessfulAt": "2026-11-04T09:57:18.689Z",
+      "lastResult": "success",
+      "resultSummary": "公式トップから特定した投稿者と一致。11/18発売・5,280円税込・オンライン取扱なしを確認。本文に省略あり。ベビーカステラ店舗という共通案内で、対象2店を個別明記していない。",
+      "lastFailure": null,
+      "note": "公式サイトから辿った一次情報。店舗範囲・日程と取得経路を区別して確認する。 今回の限定観測は research/evening-20261104/source-observations.json。既存enabled・過去成功・失敗履歴は保持。"
     }
   ]
 }
