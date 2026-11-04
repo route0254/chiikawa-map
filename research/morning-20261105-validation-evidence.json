@@ -1,0 +1,40 @@
+{
+  "validatedAt": "2026-11-04T23:07:16.858Z",
+  "baseCommit": "e38d789e9905c187987cece468e6426394e29e25",
+  "checks": {
+    "aggregateCheck": "passed",
+    "unitPassed": 80,
+    "unitFailed": 0,
+    "generatedSpotPages": 880,
+    "preservationChecks": "passed",
+    "diffWhitespaceCheck": "passed",
+    "uiLocal": "blocked_before_test_execution",
+    "uiReason": "Chromium could not start because the cloud OS disallows the required socket. The authorized execution path returned the same result. GitHub Actions must pass on the exact PR head before merging.",
+    "externalLinks": {
+      "exitCode": 1,
+      "targets": 288,
+      "normal": 276,
+      "httpsRedirect": 0,
+      "unconfirmed": 11,
+      "broken": 1,
+      "knownTsuchiura404": true,
+      "changedPrimaryUrls": "No failures recorded for the changed primary URLs.",
+      "checkCriteriaUnchanged": true
+    }
+  },
+  "preserved": [
+    "IDs, fields, coordinates, event dates and firstAdded",
+    "Laforet 10/25 badge history and usual entry rules",
+    "Otaru 11/23–29 lottery schedule",
+    "Kyoto-only novelty, complete rotation and cashless conditions",
+    "All application code, tests, schema, workflows, CNAME and DNS settings"
+  ],
+  "privacy": {
+    "passed": true,
+    "rawHtmlPrivateInstructionsCredentialsAndLocalPathsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null
+  }
+}
