@@ -22613,6 +22613,12 @@
           "observedAt": "2026-10-29T23:43:18.163Z",
           "summary": "PR87の公開39リソース初回完全一致の保存記録。キー除去PR88や今回報告の時刻とは区別。",
           "recordPath": "research/evening-20261030/pr87-first-public-match.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/information-popup_01/",
+          "observedAt": "2026-11-04T23:00:13Z",
+          "summary": "通常は予約不要のフリー入場。混雑時の入場制限・整理券、指定日の事前予約の可能性があり、優先入場券の販売なし。10/30限定条件を現在の注意から除き、入場方法の末尾に過去形で保存。10/25の缶バッジ終了履歴は保持。",
+          "recordPath": "research/morning-20261105-listing-evidence.json"
         }
       ],
       "existingMatch": {
@@ -22627,9 +22633,9 @@
       ],
       "state": "published",
       "priority": "high",
-      "decision": "確認済み根拠の対象範囲に限定して更新。 10:00は整理券発行時刻であり、催事開始や予約受付開始として登録しない。 公開実体一致までpublishedAtはnull。",
-      "nextCheck": "元の初回公開一致日時を同期済み。以後の条件は通常の公式続報を確認。",
-      "recheckDueAt": "2026-10-31T08:00:00+09:00",
+      "decision": "確認済み根拠の対象範囲に限定して更新。 10:00は整理券発行時刻であり、催事開始や予約受付開始として登録しない。 公開実体一致までpublishedAtはnull。 11/5に通常案内を再確認。10/30の条件は終了した日付限定案内として過去形で保持する。元の初回公開日は変更しない。",
+      "nextCheck": "通常の公式続報を確認。10/30限定文の履歴化は別候補 laforet-ticket-history-20261105 で公開確認する。",
+      "recheckDueAt": "2026-11-05T19:00:00+09:00",
       "publishedAt": "2026-10-29T23:43:18.163Z"
     },
     {
@@ -25546,6 +25552,12 @@
           "observedAt": "2026-11-04T09:57:18.357Z",
           "summary": "自宅向け郵送版の販売・発送・プレイ期間・価格・アプリ条件を確認。実会場・連携ピンなし。",
           "recordPath": "research/evening-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+          "observedAt": "2026-11-04T10:24:59.548Z",
+          "summary": "PR107のmain e38d789に対する公開28リソース初回一致の保存記録を同期。今回の確認・台帳同期時刻で上書きしない。",
+          "recordPath": "research/morning-20261105-pr107-publication-record.json"
         }
       ],
       "existingMatch": {
@@ -25559,9 +25571,9 @@
       "state": "published",
       "priority": "normal",
       "decision": "既存仕様のコラボ一覧へ追加。掲載データ反映状態はpublished、公開実体は未確認のためpublishedAtはnull。発表時刻は未確認、販売開始日や取得時刻を初発表・初発見の秒精度へ転用しない。",
-      "nextCheck": "同じhead/mainの検査と公開実体一致を確認し、実公開時刻を次回通常PR用に保存。",
-      "recheckDueAt": "2026-11-05T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "PR107の保存済み初回公開一致日時を同期済み。通常の公式続報を確認。",
+      "recheckDueAt": "2026-11-05T19:00:00+09:00",
+      "publishedAt": "2026-11-04T10:24:59.548Z"
     },
     {
       "id": "update-baby-castella-kyoto-nishiki-open-novelty-20261104",
@@ -25584,6 +25596,12 @@
           "observedAt": "2026-11-04T10:01:02.349Z",
           "summary": "京都錦店限定・11/18から・1人1会計1点・会計分割不可・なくなり次第終了。公式画像も実視認。",
           "recordPath": "research/evening-20261104/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-04T10:24:59.548Z",
+          "summary": "PR107のmain e38d789に対する公開28リソース初回一致の保存記録を同期。今回の確認・台帳同期時刻で上書きしない。",
+          "recordPath": "research/morning-20261105-pr107-publication-record.json"
         }
       ],
       "existingMatch": {
@@ -25596,12 +25614,12 @@
       "listingIds": [
         "baby-castella-kyoto-nishiki"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "既存descriptionだけ追記。京都錦の予約・完全入替・決済条件と他店の説明は保持。実配布開始・在庫は未確認。",
-      "nextCheck": "同じhead/mainの検査と公開実体一致を確認し、実公開時刻を次回通常PR用に保存。",
-      "recheckDueAt": "2026-11-05T08:00:00+09:00",
-      "publishedAt": null
+      "nextCheck": "PR107の保存済み初回公開一致日時を同期済み。通常の公式続報を確認。",
+      "recheckDueAt": "2026-11-05T19:00:00+09:00",
+      "publishedAt": "2026-11-04T10:24:59.548Z"
     },
     {
       "id": "hold-baby-castella-mascot-set-store-scope-20261118",
@@ -25610,7 +25628,8 @@
       "targetKey": "baby-castella:mascot-set:20261118:store-scope",
       "sourceIds": [
         "baby-castella-mascot-set-20261118-official-post",
-        "baby-castella-otaru-official"
+        "baby-castella-otaru-official",
+        "official-observation-06bf22efc5d0"
       ],
       "officialAnnouncedAt": "2026-11-04",
       "discoveredAt": "2026-11-04",
@@ -25618,26 +25637,124 @@
       "eventEndsAt": null,
       "releaseAt": "2026-11-18",
       "reservationOpensAt": null,
-      "reflectDueAt": null,
+      "reflectDueAt": "2026-11-05T23:59:59+09:00",
       "evidence": [
         {
           "url": "https://x.com/chiikawamgmg/status/2117783961967452290",
           "observedAt": "2026-11-04T09:57:18.689Z",
           "summary": "公式トップから正しい投稿者を検証。11/18、5,280円税込、通販なし。添付2画像に対象店舗名はなく、本文は一部省略あり。",
           "recordPath": "research/evening-20261104/source-observations.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000186.000035374.html",
+          "observedAt": "2026-11-04T23:00:55Z",
+          "summary": "寺子屋発表の新発売グッズ節が11/18から京都錦店・小樽店と個別明記。カップと繋がるマスコットセット5,280円税込、ぬいぐるみカップホルダー全3種各2,200円税込。店頭限定、通販なし、商品単独購入可。ページ発表日は10/28だが追加編集時刻は不明。京都限定ノベルティと各店の既存条件は保持。",
+          "recordPath": "research/morning-20261105-listing-evidence.json"
         }
       ],
       "existingMatch": {
-        "status": "ambiguous",
-        "ids": [],
-        "note": "公式はベビーカステラ店舗と記載。現行店舗一覧の2店を商品取扱対象と推定せず、店舗別掲載先は未確定。"
+        "status": "matched",
+        "ids": [
+          "baby-castella-otaru",
+          "baby-castella-kyoto-nishiki"
+        ],
+        "note": "寺子屋の新商品節に京都錦店・小樽店と個別明記。現mainの両IDへ照合済み。"
       },
-      "listingIds": [],
-      "state": "on_hold",
+      "listingIds": [
+        "baby-castella-otaru",
+        "baby-castella-kyoto-nishiki"
+      ],
+      "state": "ready",
       "priority": "normal",
-      "decision": "ユーザー指定に従い店舗個別の追記を見送り。初期に渡された未検証アカウント部分を根拠にしない。商品発売日を店舗開業日や全店条件へ転用しない。",
-      "nextCheck": "公式もぐもぐ本舗の店舗別案内・商品詳細で取扱対象を確認できた場合だけ既存店舗へ追記。",
-      "recheckDueAt": "2026-11-05T08:00:00+09:00",
+      "decision": "寺子屋一次発表で対象2店舗を確定し、マスコットセットと同日発売のカップホルダーを既存店舗の説明に追記。初回発見日を保持し、商品発売日を店舗開業日へ流用しない。",
+      "nextCheck": "検査・配信後、対象commitの公開JSONと2店舗ページを照合し、初回一致時刻を保存。",
+      "recheckDueAt": "2026-11-05T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "laforet-ticket-history-20261105",
+      "title": "ラフォーレ10/30限定整理券案内の履歴化",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-bakery-shop-laforet:laforet-ticket-history-20261105",
+      "sourceIds": [
+        "chiikawa-bakery-information-popup-01"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-05",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-05T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawabakery.jp/information-popup_01/",
+          "observedAt": "2026-11-04T23:00:13Z",
+          "summary": "通常は予約不要のフリー入場。混雑時の入場制限・整理券、指定日の事前予約の可能性があり、優先入場券の販売なし。10/30限定条件を現在の注意から除き、入場方法の末尾に過去形で保存。10/25の缶バッジ終了履歴は保持。",
+          "recordPath": "research/morning-20261105-listing-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-bakery-shop-laforet"
+        ],
+        "note": "現main e38d789 の既存IDと照合。ID、座標、会期、通常条件は維持。"
+      },
+      "listingIds": [
+        "chiikawa-bakery-shop-laforet"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "通常は予約不要のフリー入場。混雑時の入場制限・整理券、指定日の事前予約の可能性があり、優先入場券の販売なし。10/30限定条件を現在の注意から除き、入場方法の末尾に過去形で保存。10/25の缶バッジ終了履歴は保持。",
+      "nextCheck": "検査・配信後、対象commitの公開JSONと店舗ページを照合し、初回一致時刻を保存。",
+      "recheckDueAt": "2026-11-05T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "baby-castella-otaru-entry-20261104",
+      "title": "小樽11/18〜22入店の空き枠条件",
+      "kind": "reservation_update",
+      "targetKey": "baby-castella-otaru:baby-castella-otaru-entry-20261104",
+      "sourceIds": [
+        "baby-castella-otaru-entry-20261104"
+      ],
+      "officialAnnouncedAt": "2026-11-04",
+      "discoveredAt": "2026-11-05",
+      "eventStartsAt": "2026-11-18",
+      "eventEndsAt": "2026-11-22",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-04T18:00:00+09:00",
+      "reflectDueAt": "2026-11-05T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/11/04/post-2517/",
+          "observedAt": "2026-11-04T23:01:31Z",
+          "summary": "11/18〜22の抽選は11/4 18時〜11/7 18時、11/9発表。空き枠は来店前日20時から公式LINE先着、店舗半径約30km以内・位置情報ON。事前抽選に距離制限なし。既存11/23〜29の予約日程は寺子屋発表でも確認できるため保持。",
+          "recordPath": "research/morning-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000186.000035374.html",
+          "observedAt": "2026-11-04T23:00:55Z",
+          "summary": "寺子屋発表の新発売グッズ節が11/18から京都錦店・小樽店と個別明記。カップと繋がるマスコットセット5,280円税込、ぬいぐるみカップホルダー全3種各2,200円税込。店頭限定、通販なし、商品単独購入可。ページ発表日は10/28だが追加編集時刻は不明。京都限定ノベルティと各店の既存条件は保持。",
+          "recordPath": "research/morning-20261105-listing-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "baby-castella-otaru"
+        ],
+        "note": "現main e38d789 の既存IDと照合。ID、座標、会期、通常条件は維持。"
+      },
+      "listingIds": [
+        "baby-castella-otaru"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "11/18〜22の抽選は11/4 18時〜11/7 18時、11/9発表。空き枠は来店前日20時から公式LINE先着、店舗半径約30km以内・位置情報ON。事前抽選に距離制限なし。既存11/23〜29の予約日程は寺子屋発表でも確認できるため保持。",
+      "nextCheck": "検査・配信後、対象commitの公開JSONと店舗ページを照合し、初回一致時刻を保存。",
+      "recheckDueAt": "2026-11-05T19:00:00+09:00",
       "publishedAt": null
     }
   ]
