@@ -1,0 +1,62 @@
+{
+  "validatedAt": "2026-11-04T10:15:19.996Z",
+  "baseCommit": "8ace189812cdaff20b138baeacf84b9c749ea20b",
+  "scope": {
+    "newCollaborations": 1,
+    "updatedSpots": 1,
+    "newPins": 0,
+    "archiveMoves": 0,
+    "mascotStoreUpdateDeferred": true
+  },
+  "checks": {
+    "mandatoryCommands": 50,
+    "unitPassed": 80,
+    "unitFailed": 0,
+    "uiPassed": 117,
+    "uiFlaky": 0,
+    "targetPcMobile": 2,
+    "generatedSpotPages": 880,
+    "archiveCandidates": 0
+  },
+  "preservation": {
+    "oldInPersonGameStillArchived": true,
+    "kyotoReservationDatesCoordinatesHoursAndImportantNoticePreserved": true,
+    "otherStoresAndHoldsUnchanged": true,
+    "sourceEnabledAndFailureHistoryPreserved": true,
+    "existingFirstAddedPreserved": true,
+    "appSchemaTestsWorkflowsAndCheckCriteriaUnchanged": true
+  },
+  "ledger": {
+    "pr106SyncedCandidates": 1,
+    "pr106OriginalPublishedAt": "2026-11-03T23:21:38.852Z",
+    "newCandidates": 3,
+    "newSources": 2,
+    "currentPublishedAt": null,
+    "discoveryDate": "2026-11-04",
+    "discoveryExactTime": null
+  },
+  "externalLinks": {
+    "exitCode": 1,
+    "targets": 289,
+    "normal": 278,
+    "httpsRedirect": 1,
+    "unconfirmed": 9,
+    "broken": 1,
+    "knownTsuchiura404": true,
+    "changedPrimaryPagesNormalHttp200": true,
+    "mascotOfficialOembed200": true,
+    "mascotStoreScope": null,
+    "checkCriteriaUnchanged": true,
+    "sandboxAttempt": "All 289 requests failed to connect; not treated as link success. Normal authorized network run recorded separately."
+  },
+  "privacy": {
+    "passed": true,
+    "findings": 0,
+    "privateOriginalsRawHtmlFullLinkListsCredentialsAndLocalPathsExcluded": true
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null,
+    "nextAction": "同じhead/main SHAのCI終端成功、公開JSON・対象ページ・関連リソース一致、公開後Healthを確認し、初回実公開照合時刻を保存。"
+  }
+}

@@ -25500,6 +25500,12 @@
           "observedAt": "2026-10-15",
           "summary": "既存の確認済み掲載・候補に保持されていた10/29～11/3の6日間限定特例。今回は期間経過後として過去形にし、特例だけの重要通知を解除。今回の投稿再取得成功とは扱わない。",
           "recordPath": "research/yaki-nagoya-20261104-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/spot/chiikawa-yaki-nagoya/",
+          "observedAt": "2026-11-03T23:21:38.852Z",
+          "summary": "PR106のmainと公開28リソースが初回完全一致。CI時刻・報告時刻へ置換しない。",
+          "recordPath": "research/evening-20261104/pr106-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -25512,11 +25518,126 @@
       "listingIds": [
         "chiikawa-yaki-nagoya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "2026年10月29日～11月3日の特例だけを過去形に整理し、その特例だけの重要通知を解除。通常条件、予約URL、旧公式投稿の根拠・他情報は保持。新規条件の発表や空席有無は断定しない。発見日は11/4朝、正確な時刻は未提示。",
-      "nextCheck": "必要検査・同一head/main CI・公開実体とPC/スマートフォン表示を確認。初回実公開時刻は確認後に保存し次回通常PRで同期。",
-      "recheckDueAt": "2026-11-04T19:00:00+09:00",
+      "nextCheck": "PR106の公開実体一致を元の実測時刻で同期済み。通常巡回で新たな入場案内のみ確認する。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-03T23:21:38.852Z"
+    },
+    {
+      "id": "new-tokyo-metro-escape-home-20261104",
+      "title": "東京メトロ脱出ゲーム おうちで遊べる版",
+      "kind": "new_listing",
+      "targetKey": "tokyo-metro:escape:home-kit:20261104",
+      "sourceIds": [
+        "corporate-tokyo-metro-escape-delivery-kit"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-04",
+      "eventStartsAt": "2026-11-09",
+      "eventEndsAt": "2027-02-28",
+      "releaseAt": "2026-11-04",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+          "observedAt": "2026-11-04T09:57:18.357Z",
+          "summary": "自宅向け郵送版の販売・発送・プレイ期間・価格・アプリ条件を確認。実会場・連携ピンなし。",
+          "recordPath": "research/evening-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "基点mainの現行81/履歴705/現行コラボ19/履歴コラボ57と候補台帳を照合。旧現地版は終了済み別企画として保持。郵送版URL・同企画IDの重複なし。"
+      },
+      "listingIds": [
+        "tokyo-metro-escape-home-2026"
+      ],
+      "state": "published",
+      "priority": "normal",
+      "decision": "既存仕様のコラボ一覧へ追加。掲載データ反映状態はpublished、公開実体は未確認のためpublishedAtはnull。発表時刻は未確認、販売開始日や取得時刻を初発表・初発見の秒精度へ転用しない。",
+      "nextCheck": "同じhead/mainの検査と公開実体一致を確認し、実公開時刻を次回通常PR用に保存。",
+      "recheckDueAt": "2026-11-05T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "update-baby-castella-kyoto-nishiki-open-novelty-20261104",
+      "title": "京都錦OPEN記念ステッカー",
+      "kind": "listing_update",
+      "targetKey": "baby-castella:kyoto-nishiki:open-novelty:20261118",
+      "sourceIds": [
+        "baby-castella-kyoto-nishiki-open-novelty-20261104"
+      ],
+      "officialAnnouncedAt": "2026-11-04",
+      "discoveredAt": "2026-11-04",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-18",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-04T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/11/04/post-2710/",
+          "observedAt": "2026-11-04T10:01:02.349Z",
+          "summary": "京都錦店限定・11/18から・1人1会計1点・会計分割不可・なくなり次第終了。公式画像も実視認。",
+          "recordPath": "research/evening-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "baby-castella-kyoto-nishiki"
+        ],
+        "note": "既存店舗ID・会期・予約条件を照合。新規ピンなし、京都錦descriptionだけ追記。"
+      },
+      "listingIds": [
+        "baby-castella-kyoto-nishiki"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "既存descriptionだけ追記。京都錦の予約・完全入替・決済条件と他店の説明は保持。実配布開始・在庫は未確認。",
+      "nextCheck": "同じhead/mainの検査と公開実体一致を確認し、実公開時刻を次回通常PR用に保存。",
+      "recheckDueAt": "2026-11-05T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "hold-baby-castella-mascot-set-store-scope-20261118",
+      "title": "カップと繋がるマスコットセット 店舗別対象範囲の確認",
+      "kind": "listing_update",
+      "targetKey": "baby-castella:mascot-set:20261118:store-scope",
+      "sourceIds": [
+        "baby-castella-mascot-set-20261118-official-post",
+        "baby-castella-otaru-official"
+      ],
+      "officialAnnouncedAt": "2026-11-04",
+      "discoveredAt": "2026-11-04",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-18",
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawamgmg/status/2117783961967452290",
+          "observedAt": "2026-11-04T09:57:18.689Z",
+          "summary": "公式トップから正しい投稿者を検証。11/18、5,280円税込、通販なし。添付2画像に対象店舗名はなく、本文は一部省略あり。",
+          "recordPath": "research/evening-20261104/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "ambiguous",
+        "ids": [],
+        "note": "公式はベビーカステラ店舗と記載。現行店舗一覧の2店を商品取扱対象と推定せず、店舗別掲載先は未確定。"
+      },
+      "listingIds": [],
+      "state": "on_hold",
+      "priority": "normal",
+      "decision": "ユーザー指定に従い店舗個別の追記を見送り。初期に渡された未検証アカウント部分を根拠にしない。商品発売日を店舗開業日や全店条件へ転用しない。",
+      "nextCheck": "公式もぐもぐ本舗の店舗別案内・商品詳細で取扱対象を確認できた場合だけ既存店舗へ追記。",
+      "recheckDueAt": "2026-11-05T08:00:00+09:00",
       "publishedAt": null
     }
   ]
