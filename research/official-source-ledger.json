@@ -3569,10 +3569,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-29T23:05:53.080+00:00",
-      "lastSuccessfulAt": "2026-10-29T10:00:32.592+00:00",
-      "lastResult": "fetch_failed",
-      "resultSummary": "HTTP Error 406: Not Acceptable",
+      "lastAttemptAt": "2026-11-05T10:52:37.863Z",
+      "lastSuccessfulAt": "2026-11-05T10:52:37.863Z",
+      "lastResult": "success",
+      "resultSummary": "撮影券は9:30に3回合計150組分、1組1枚・最大4名、時間超過無効。ARラリー参加は誰でも可、景品引換券は300名分・9:30に同じ列で配布。代表者1人で同行人数分受取可。スマートフォン必須。",
       "lastFailure": {
         "at": "2026-10-29T23:05:53.080+00:00",
         "kind": "fetch_failed",
@@ -15302,10 +15302,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-30T10:13:26.999Z",
-      "lastSuccessfulAt": "2026-10-30T10:13:26.999Z",
+      "lastAttemptAt": "2026-11-05T10:53:45.867Z",
+      "lastSuccessfulAt": "2026-11-05T10:53:45.867Z",
       "lastResult": "success",
-      "resultSummary": "訂正された京都伏見11/13～15抽選案内。添付画像3枚も取得・視認。",
+      "resultSummary": "11/13〜15の事前抽選は11/5 18時締切、11/7結果発表。確認時点は締切後。既存の残枠先着案内は維持。",
       "lastFailure": null,
       "note": "10/30夕の対象掲載の根拠。経路・取得状態・内容確認は research/evening-20261030/source-observations.json に記録。過去の成功日時と失敗記録を保持。"
     },
@@ -16348,6 +16348,142 @@
       "resultSummary": "11/18〜22の抽選は11/4 18時〜11/7 18時、11/9発表。空き枠は来店前日20時から公式LINE先着、店舗半径約30km以内・位置情報ON。事前抽選に距離制限なし。既存11/23〜29の予約日程は寺子屋発表でも確認できるため保持。",
       "lastFailure": null,
       "note": "11/4公式記事の本文を確認。 11/5朝の本文確認は research/morning-20261105-listing-evidence.json。過去の失敗履歴は保持。"
+    },
+    {
+      "id": "mogumogu-fushimi-novelty-20261113",
+      "name": "伏見3周年ノベルティ",
+      "url": "https://www.chiikawamogumogu.jp/2026/11/05/2600/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:51:22.970Z",
+      "lastSuccessfulAt": "2026-11-05T10:51:22.970Z",
+      "lastResult": "success",
+      "resultSummary": "11/13から伏見店限定で税込3,000円以上の会計にアクリルコネクタチャーム1枚（全8種・選択不可）、税込8,000円以上にダイカットハンドタオル1点。各1人1会計1点ずつ、会計分割不可、なくなり次第終了、通販対象外。本文と画像を目視照合。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "mogumogu-fushimi-products-20261113",
+      "name": "もぐもぐ11/13新商品",
+      "url": "https://www.chiikawamogumogu.jp/products/product-2649/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:51:23.299Z",
+      "lastSuccessfulAt": "2026-11-05T10:51:23.299Z",
+      "lastResult": "success",
+      "resultSummary": "伏見11/13発売。店舗共通の和装マスコット等と伏見限定の舞妓デザイン商品・稲荷Tシャツ。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "mogumogu-kawagoe-products-20261113",
+      "name": "もぐもぐ11/13新商品",
+      "url": "https://www.chiikawamogumogu.jp/products/product-2683/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:51:23.365Z",
+      "lastSuccessfulAt": "2026-11-05T10:51:23.365Z",
+      "lastResult": "success",
+      "resultSummary": "川越11/13発売。店舗共通商品と川越限定の鯛だらけ巾着ショルダー2,750円、デニムトート3,300円。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "mogumogu-otaru-products-20261113",
+      "name": "もぐもぐ11/13新商品",
+      "url": "https://www.chiikawamogumogu.jp/products/product-2701/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:51:23.441Z",
+      "lastSuccessfulAt": "2026-11-05T10:51:23.441Z",
+      "lastResult": "success",
+      "resultSummary": "小樽11/13発売。店舗共通商品と小樽限定の不織布バッグ レトロ880円。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "popup-ebina-purchase-ticket-20261106",
+      "name": "POP UP新商品購入整理券",
+      "url": "https://x.com/chiikawa_popup/status/2117196160083669028",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:52:36.132Z",
+      "lastSuccessfulAt": "2026-11-05T10:52:36.132Z",
+      "lastResult": "success",
+      "resultSummary": "海老名11/6新商品専用LINE購入整理券。12:30までの枠は前日19時、13時以降は各回1時間前受付。1人1回・距離制限なし・本人確認書類必須。通常物販は券不要。添付画像を目視確認。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "popup-naha-purchase-ticket-20261106",
+      "name": "POP UP新商品購入整理券",
+      "url": "https://x.com/chiikawa_popup/status/2117196439046787273",
+      "kind": "social",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:52:36.499Z",
+      "lastSuccessfulAt": "2026-11-05T10:52:36.499Z",
+      "lastResult": "success",
+      "resultSummary": "那覇11/6新商品専用LINE購入整理券。12:30までの枠は前日19時、13時以降は各回1時間前受付。1人1回・距離制限なし・本人確認書類必須。通常物販は券不要。添付画像を目視確認。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "chiikawa-park-asoview-notice-20261105",
+      "name": "パーク 不審メール注意",
+      "url": "https://chiikawapark-tokyo.jp/news/9b_jx3w6_tdr/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:51:23.968Z",
+      "lastSuccessfulAt": "2026-11-05T10:51:23.968Z",
+      "lastResult": "success",
+      "resultSummary": "アソビューの委託先メール配信サービスへの不正アクセスについて11/5告知。現時点でパーク運用・入場券効力の変更なし。不審メールのリンクを開かず個人情報やパスワードを入力しない。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
+    },
+    {
+      "id": "kamakura-recruitment-36318",
+      "name": "鎌倉店 倉庫スタッフ求人",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/All/36318",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-05T10:52:38.246Z",
+      "lastSuccessfulAt": "2026-11-05T10:52:38.246Z",
+      "lastResult": "success",
+      "resultSummary": "11/5更新の公式求人で2026年12月OPEN予定・鎌倉市小町2-10-18 二ノ鳥居ビル1Fの記載を確認。正式開業日・予約日未確定。求人を一般来店確定告知へ転用せず保留維持。",
+      "lastFailure": null,
+      "note": "一次情報の本文または添付画像に確認できた範囲のみ採用。過去の取得失敗記録は保持。"
     }
   ]
 }
