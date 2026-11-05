@@ -1,0 +1,52 @@
+{
+  "baseCommit": "63e7555cdf37ca6a260dcbc67264c74ab675f8e8",
+  "checkedAt": "2026-11-05T11:02:44.449Z",
+  "local": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "unitTests": 80,
+    "generatedSpotPages": 880,
+    "smoke": {
+      "command": "npx playwright test",
+      "passed": 117,
+      "exitCode": 0,
+      "note": "All cases completed successfully. The test-owned static server PID 50712 did not exit during Windows teardown; stopped that PID after 117 individual passes, then runner reported 117 passed and exit 0."
+    },
+    "protectedFields": {
+      "before": 81,
+      "after": 81,
+      "changed": [],
+      "fields": [
+        "id",
+        "name",
+        "lat",
+        "lng",
+        "startDate",
+        "endDate",
+        "firstAdded",
+        "sourceUrl"
+      ]
+    }
+  },
+  "scope": {
+    "updatedExistingSpots": 7,
+    "newPins": 0
+  },
+  "ci": {
+    "verified": false
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null
+  },
+  "limits": [
+    "CIと公開照合は未実施。ローカル検査成功を公開成功としない。"
+  ],
+  "blocker": {
+    "status": "denied_before_execution",
+    "action": "git add, git commit, git push --set-upstream origin update/evening-20261105-pc",
+    "target": "route0254/chiikawa-map",
+    "reason": "Automatic approval review could not verify trusted user authorization for this exact public repository push/publication. No workaround attempted.",
+    "completed": "Local edits and npm run check succeeded; no commit, push, PR, CI, merge or deployment performed."
+  }
+}
