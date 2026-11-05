@@ -1,0 +1,148 @@
+{
+  "pullRequest": "https://github.com/route0254/chiikawa-map/pull/109",
+  "startedAt": "2026-11-05T11:12:02.877Z",
+  "completedAt": "2026-11-05T11:12:04.572Z",
+  "allMatched": true,
+  "firstAllMatchedAt": "2026-11-05T11:12:04.572Z",
+  "measurement": "Actual HTTP response completion times; publication means the first successful complete comparison in this verification, not a guessed deployment time.",
+  "results": [
+    {
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:03.192Z",
+      "etag": "W/\"6aec6445-332b1\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:01 GMT",
+      "kind": "published_json",
+      "ids": [
+        "mogumogu-fushimi",
+        "mogumogu-kawagoe",
+        "mogumogu-otaru",
+        "chiikawa-park-tokyo",
+        "popup-naha",
+        "chiikawa-muchaphoto-aeon-natori-2026",
+        "popup-2026-10-23-ebina-marui"
+      ],
+      "matched": true,
+      "sha256": "cead1c1b3e3a8d21772d1a1b5cb3da7292717ddb0a083fa6f991a3408542e0d8"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/mogumogu-fushimi/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:03.406Z",
+      "etag": "W/\"6aec6445-2ed6\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:01 GMT",
+      "kind": "spot_page",
+      "id": "mogumogu-fushimi",
+      "matched": true,
+      "expectedSha256": "cac380c757b7558e859f2a6064a296027c26002883aee28458701aa367a09cb0",
+      "actualSha256": "cac380c757b7558e859f2a6064a296027c26002883aee28458701aa367a09cb0"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/mogumogu-kawagoe/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:03.600Z",
+      "etag": "W/\"6aec6445-2660\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:01 GMT",
+      "kind": "spot_page",
+      "id": "mogumogu-kawagoe",
+      "matched": true,
+      "expectedSha256": "d498192e025c3ec98bdaee54af7ef895ba34a3d66bfea6486831b125c92d7d1a",
+      "actualSha256": "d498192e025c3ec98bdaee54af7ef895ba34a3d66bfea6486831b125c92d7d1a"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/mogumogu-otaru/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:03.783Z",
+      "etag": "W/\"6aec6445-2332\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:01 GMT",
+      "kind": "spot_page",
+      "id": "mogumogu-otaru",
+      "matched": true,
+      "expectedSha256": "06645184fc83a75c1b2eb5b3dec86278cd067f5b8543d519c7e194c2d6245c02",
+      "actualSha256": "06645184fc83a75c1b2eb5b3dec86278cd067f5b8543d519c7e194c2d6245c02"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/chiikawa-park-tokyo/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:03.981Z",
+      "etag": "W/\"6aec6444-2a2c\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:00 GMT",
+      "kind": "spot_page",
+      "id": "chiikawa-park-tokyo",
+      "matched": true,
+      "expectedSha256": "f54539c61a1935f6ad7e14cee5076cd5185eff1fec76152b143cc7f52064fc4b",
+      "actualSha256": "f54539c61a1935f6ad7e14cee5076cd5185eff1fec76152b143cc7f52064fc4b"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/popup-naha/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:04.161Z",
+      "etag": "W/\"6aec6444-2244\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:00 GMT",
+      "kind": "spot_page",
+      "id": "popup-naha",
+      "matched": true,
+      "expectedSha256": "32bf773945e0dd92081e6f22ea9420e5f738e1af9256967ea785901b7c16c76e",
+      "actualSha256": "32bf773945e0dd92081e6f22ea9420e5f738e1af9256967ea785901b7c16c76e"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/chiikawa-muchaphoto-aeon-natori-2026/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:04.366Z",
+      "etag": "W/\"6aec6445-25db\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:01 GMT",
+      "kind": "spot_page",
+      "id": "chiikawa-muchaphoto-aeon-natori-2026",
+      "matched": true,
+      "expectedSha256": "d18e80a05d034076361139565183eca0c87485fe73fdbc6364d7d98e2e588638",
+      "actualSha256": "d18e80a05d034076361139565183eca0c87485fe73fdbc6364d7d98e2e588638"
+    },
+    {
+      "url": "https://chiikatsu-map.com/spot/popup-2026-10-23-ebina-marui/",
+      "status": 200,
+      "observedAt": "2026-11-05T11:12:04.571Z",
+      "etag": "W/\"6aec6445-278b\"",
+      "lastModified": "Thu, 05 Nov 2026 11:11:01 GMT",
+      "kind": "spot_page",
+      "id": "popup-2026-10-23-ebina-marui",
+      "matched": true,
+      "expectedSha256": "591f83de418f58ced48ef968a03cb9831d925e069eaf0037362e22b49d26c41b",
+      "actualSha256": "591f83de418f58ced48ef968a03cb9831d925e069eaf0037362e22b49d26c41b"
+    }
+  ],
+  "mergeCommit": "2397297feb960a5173a32b530d88058e592b1907",
+  "ci": [
+    {
+      "name": "Validate spot data",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/42015988334",
+      "conclusion": "success"
+    },
+    {
+      "name": "Test site",
+      "url": "https://github.com/route0254/chiikawa-map/actions/runs/42015988432",
+      "conclusion": "success"
+    }
+  ],
+  "candidateIds": [
+    "mogumogu-fushimi-third-anniversary-teaser-20261114",
+    "mogumogu-kawagoe-products-20261113",
+    "mogumogu-otaru-products-20261113",
+    "popup-2026-10-23-ebina-marui-purchase-ticket-20261106",
+    "popup-naha-purchase-ticket-20261106",
+    "natori-photo-ar-conditions-20261107",
+    "chiikawa-park-asoview-notice-20261105"
+  ],
+  "recordedAt": "2026-11-05T11:12:04.647Z",
+  "approvalHistory": "Initial execution was denied before it ran. After receiving original user authorization, the same operation was retried once and succeeded. No alternate path was used.",
+  "pagesDeployment": {
+    "url": "https://github.com/route0254/chiikawa-map/actions/runs/42016763135",
+    "conclusion": "success"
+  },
+  "publicSiteHealth": {
+    "command": "node scripts/check-site-health.mjs",
+    "exitCode": 0,
+    "passed": 36,
+    "failed": 0,
+    "recordedAt": "2026-11-05T11:12:32.244Z"
+  }
+}

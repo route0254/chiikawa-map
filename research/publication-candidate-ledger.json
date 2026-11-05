@@ -23862,6 +23862,12 @@
           "observedAt": "2026-11-05T10:53:45.867Z",
           "summary": "11/13〜15の事前抽選は11/5 18時締切、11/7結果発表。確認時点は締切後。既存の残枠先着案内は維持。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -23874,12 +23880,12 @@
       "listingIds": [
         "mogumogu-fushimi"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "11/13から伏見店限定で税込3,000円以上の会計にアクリルコネクタチャーム1枚（全8種・選択不可）、税込8,000円以上にダイカットハンドタオル1点。各1人1会計1点ずつ、会計分割不可、なくなり次第終了、通販対象外。本文と画像を目視照合。 伏見11/13発売。店舗共通の和装マスコット等と伏見限定の舞妓デザイン商品・稲荷Tシャツ。 11/13〜15の事前抽選は11/5 18時締切、11/7結果発表。確認時点は締切後。既存の残枠先着案内は維持。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     },
     {
       "id": "familymart-prison-potato-20261102",
@@ -25824,6 +25830,12 @@
           "observedAt": "2026-11-05T10:51:23.365Z",
           "summary": "川越11/13発売。店舗共通商品と川越限定の鯛だらけ巾着ショルダー2,750円、デニムトート3,300円。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -25836,12 +25848,12 @@
       "listingIds": [
         "mogumogu-kawagoe"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "川越11/13発売。店舗共通商品と川越限定の鯛だらけ巾着ショルダー2,750円、デニムトート3,300円。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     },
     {
       "id": "mogumogu-otaru-products-20261113",
@@ -25864,6 +25876,12 @@
           "observedAt": "2026-11-05T10:51:23.441Z",
           "summary": "小樽11/13発売。店舗共通商品と小樽限定の不織布バッグ レトロ880円。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -25876,12 +25894,12 @@
       "listingIds": [
         "mogumogu-otaru"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "小樽11/13発売。店舗共通商品と小樽限定の不織布バッグ レトロ880円。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     },
     {
       "id": "popup-2026-10-23-ebina-marui-purchase-ticket-20261106",
@@ -25904,6 +25922,12 @@
           "observedAt": "2026-11-05T10:52:36.132Z",
           "summary": "海老名11/6新商品専用LINE購入整理券。12:30までの枠は前日19時、13時以降は各回1時間前受付。1人1回・距離制限なし・本人確認書類必須。通常物販は券不要。添付画像を目視確認。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -25916,12 +25940,12 @@
       "listingIds": [
         "popup-2026-10-23-ebina-marui"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "海老名11/6新商品専用LINE購入整理券。12:30までの枠は前日19時、13時以降は各回1時間前受付。1人1回・距離制限なし・本人確認書類必須。通常物販は券不要。添付画像を目視確認。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     },
     {
       "id": "popup-naha-purchase-ticket-20261106",
@@ -25944,6 +25968,12 @@
           "observedAt": "2026-11-05T10:52:36.499Z",
           "summary": "那覇11/6新商品専用LINE購入整理券。12:30までの枠は前日19時、13時以降は各回1時間前受付。1人1回・距離制限なし・本人確認書類必須。通常物販は券不要。添付画像を目視確認。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -25956,12 +25986,12 @@
       "listingIds": [
         "popup-naha"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "那覇11/6新商品専用LINE購入整理券。12:30までの枠は前日19時、13時以降は各回1時間前受付。1人1回・距離制限なし・本人確認書類必須。通常物販は券不要。添付画像を目視確認。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     },
     {
       "id": "natori-photo-ar-conditions-20261107",
@@ -25984,6 +26014,12 @@
           "observedAt": "2026-11-05T10:52:37.863Z",
           "summary": "撮影券は9:30に3回合計150組分、1組1枚・最大4名、時間超過無効。ARラリー参加は誰でも可、景品引換券は300名分・9:30に同じ列で配布。代表者1人で同行人数分受取可。スマートフォン必須。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -25996,12 +26032,12 @@
       "listingIds": [
         "chiikawa-muchaphoto-aeon-natori-2026"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "撮影券は9:30に3回合計150組分、1組1枚・最大4名、時間超過無効。ARラリー参加は誰でも可、景品引換券は300名分・9:30に同じ列で配布。代表者1人で同行人数分受取可。スマートフォン必須。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     },
     {
       "id": "chiikawa-park-asoview-notice-20261105",
@@ -26024,6 +26060,12 @@
           "observedAt": "2026-11-05T10:51:23.968Z",
           "summary": "アソビューの委託先メール配信サービスへの不正アクセスについて11/5告知。現時点でパーク運用・入場券効力の変更なし。不審メールのリンクを開かず個人情報やパスワードを入力しない。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-05T11:12:04.572Z",
+          "summary": "PR109の公開JSONで対象7件の全フィールドが一致し、7店舗ページも生成HTMLと一致。各応答時刻・ハッシュは公開記録に保存。",
+          "recordPath": "research/publication-confirmation-20261105-pr109.json"
         }
       ],
       "existingMatch": {
@@ -26036,12 +26078,12 @@
       "listingIds": [
         "chiikawa-park-tokyo"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
       "decision": "アソビューの委託先メール配信サービスへの不正アクセスについて11/5告知。現時点でパーク運用・入場券効力の変更なし。不審メールのリンクを開かず個人情報やパスワードを入力しない。",
-      "nextCheck": "CI成功後に公開JSONと生成店舗ページを照合し、実測した初回一致時刻を記録する。",
-      "recheckDueAt": "2026-11-05T23:59:59+09:00",
-      "publishedAt": null
+      "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
+      "recheckDueAt": null,
+      "publishedAt": "2026-11-05T11:12:04.572Z"
     }
   ]
 }

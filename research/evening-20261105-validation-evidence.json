@@ -33,20 +33,48 @@
     "newPins": 0
   },
   "ci": {
-    "verified": false
+    "verified": true,
+    "checks": [
+      {
+        "name": "Validate spot data",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/42015988334",
+        "conclusion": "success"
+      },
+      {
+        "name": "Test site",
+        "url": "https://github.com/route0254/chiikawa-map/actions/runs/42015988432",
+        "conclusion": "success"
+      }
+    ]
   },
   "publication": {
-    "verified": false,
-    "publishedAt": null
+    "verified": true,
+    "publishedAt": "2026-11-05T11:12:04.572Z",
+    "recordPath": "research/publication-confirmation-20261105-pr109.json"
   },
   "limits": [
-    "CIと公開照合は未実施。ローカル検査成功を公開成功としない。"
+    "初回公開一致時刻はこの照合で初めて全8応答の一致を確認した完了時刻。配信開始時刻の推定ではない。",
+    "福岡差替え画像は未確認。鎌倉は正式開業日未確定で保留を維持。"
   ],
   "blocker": {
-    "status": "denied_before_execution",
+    "status": "resolved_same_operation_retry",
     "action": "git add, git commit, git push --set-upstream origin update/evening-20261105-pc",
     "target": "route0254/chiikawa-map",
     "reason": "Automatic approval review could not verify trusted user authorization for this exact public repository push/publication. No workaround attempted.",
-    "completed": "Local edits and npm run check succeeded; no commit, push, PR, CI, merge or deployment performed."
+    "completed": "Commit 0e2318bba8d90481e430a9f146ad289e763dec40 を保存しPR109を作成。CI2件成功後マージ。公開JSONと対象7ページの一致を実測確認。",
+    "originalStatus": "denied_before_execution",
+    "resolutionObservedAt": "2026-11-05T11:12:04.646Z",
+    "resolution": "本人の通常掲載修正のGitHub反映・公開許可の原文を親スレッドから受領。未実行確認後、同じGit操作を一度だけ再試行して成功。別経路での迂回なし。"
+  },
+  "pagesDeployment": {
+    "url": "https://github.com/route0254/chiikawa-map/actions/runs/42016763135",
+    "conclusion": "success"
+  },
+  "publicSiteHealth": {
+    "command": "node scripts/check-site-health.mjs",
+    "exitCode": 0,
+    "passed": 36,
+    "failed": 0,
+    "recordedAt": "2026-11-05T11:12:32.244Z"
   }
 }
