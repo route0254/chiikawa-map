@@ -1977,6 +1977,7 @@ test(
       // 過去イベントを加えた合成fixtureの件数を固定する（名古屋6件・池袋5件）。
       // 現行全件（新POPUPを含む）は別の非モック検査で検証する。
       "chiikawa-pocket-2026-11-13-nagoya-parco",
+      "chiikawa-clinic-2026-11-27-nagoya-parco",
       "popup-2026-11-24-jr-ikebukuro"
     ], {
       "collab-skytree-2026": "collab-tokyo-metro-escape",
@@ -2114,7 +2115,8 @@ test(
       "nagano-market-popup-2026-09-04-nagoya-p",
       "ramen-buta-nagoya"
     ], [
-      "chiikawa-pocket-2026-11-13-nagoya-parco"
+      "chiikawa-pocket-2026-11-13-nagoya-parco",
+      "chiikawa-clinic-2026-11-27-nagoya-parco"
     ], {
       "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
     });
