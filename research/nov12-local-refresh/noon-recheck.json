@@ -1,0 +1,63 @@
+{
+  "observations": [
+    {
+      "observedAt": "2026-11-12T03:05:20.285Z",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "route": "direct_http",
+      "status": 200,
+      "sha256": "c9da46a17e519d53eeddb8c002e8d49b94dad2c6af3bf3d0b98c27b9b0a833e3",
+      "summary": "11/12更新。11/12 11:30よりフリー入場、混雑時は整理券の可能性。朝の9:30配布予定を現在条件から差替え。6時前禁止・駐車場予定等は維持。現地実績・残数は未確認。"
+    },
+    {
+      "observedAt": "2026-11-12T03:04:01.109Z",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "route": "web",
+      "status": "body_retrieved",
+      "summary": "11/12更新・11:30フリー入場を同様に確認。"
+    },
+    {
+      "observedAt": "2026-11-12T03:05:23.564Z",
+      "url": "https://x.com/chiikawa_popup/status/2120354068426342687",
+      "route": "direct_http",
+      "status": 200,
+      "sha256": "cc4a8ba35ba780a18c423b0ff486eec582de4bb09260a4f29134c214598715b7",
+      "summary": "本文は11/13～15で1人1回、12:30まで前日19時、13時以降各回1時間前、開始から1時間で失効。今朝の準備内容と一致、初回11/12 19時。残枠未確認。"
+    },
+    {
+      "observedAt": "2026-11-12T03:04:53.354Z",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_popup%2Fstatus%2F2120354068426342687",
+      "route": "oembed",
+      "status": 200,
+      "sha256": "374729181362e1e6c07869b7a1fe7020d5ee05f38f7ba01a411688e906eed13d",
+      "summary": "今朝と同SHA。ただし本文は途中省略。"
+    },
+    {
+      "observedAt": "2026-11-12T03:04:01.109Z",
+      "url": "https://x.com/chiikawa_popup/status/2120354068426342687",
+      "route": "web",
+      "status": 403
+    },
+    {
+      "observedAt": "2026-11-12T03:04:56.424Z",
+      "url": "https://pbs.twimg.com/media/HW0CyJfawAE_qBt.jpg",
+      "route": "direct_http",
+      "status": 403,
+      "summary": "画像の昼再取得は失敗。今朝の目視済み根拠を保持、昼の同hash確認成功とはしない。"
+    },
+    {
+      "observedAt": "2026-11-12T03:04:59.222Z",
+      "url": "https://chiikawa-info.jp/p26/pus_tbun/index.html",
+      "route": "direct_http",
+      "status": 403,
+      "summary": "Web経路は本文参照取得成功だが画像主体。"
+    },
+    {
+      "observedAt": "2026-11-12T03:05:26.260Z",
+      "url": "https://x.com/chiikawa_popup",
+      "route": "direct_http",
+      "status": 200,
+      "summary": "表示されたプロフィール部分では宇都宮の変更発表なし。全投稿の不存在や網羅を保証しない。"
+    }
+  ],
+  "decision": "神戸北のみ現況差替え。宇都宮は今朝の条件維持。公開・予約操作なし、土浦取得なし。"
+}

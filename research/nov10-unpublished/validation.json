@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-10",
+  "aggregateCheck": {
+    "passed": true,
+    "unitTests": 80,
+    "generatedSpotPages": 884,
+    "officialCurrent": 74,
+    "officialArchive": 716,
+    "collaborationsCurrent": 21
+  },
+  "archiveCandidates": 0,
+  "localUiSmoke": {
+    "passed": false,
+    "executedAssertions": false,
+    "reason": "Chromium could not create its process singleton socket: Operation not permitted. Retried through approved elevated command with the same result. Remote CI must pass before merge."
+  },
+  "publication": {
+    "verified": false,
+    "publishedAt": null
+  }
+}

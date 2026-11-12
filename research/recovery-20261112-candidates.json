@@ -1,0 +1,406 @@
+{
+  "recreatedAtDate": "2026-11-12",
+  "status": "recreated_from_recovered_evidence_not_byte_identical_original",
+  "baselineCount": 464,
+  "baselineBlobSha": "ac157b1ed856638f1a202dd6f5b59a7c5adc9b12",
+  "preservation": "基準464件の全文・既存ID・公開日時を変更せず、候補配列末尾に31件を追加。基準配列末尾以前のバイト列を維持。",
+  "newCount": 31,
+  "totalCount": 495,
+  "candidateIds": [
+    "nov10-publish-01-chiikawaland-osaka-umeda",
+    "nov10-publish-02-magical-shinjuku",
+    "nov10-publish-03-chiikawa-pocket-2026-11-06-fukuoka-parco",
+    "nov10-publish-04-chiikawa-restaurant-ikebukuro",
+    "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+    "nov10-publish-06-chiikawa-christmas-market-2026-toyosuna",
+    "nov10-publish-07-gu-chiikawa-winter-2026",
+    "nov10-publish-08-tamanohikari-chiikawa-dashiwari-2026",
+    "nov10-publish-09-tokyo-metro-escape-home-2026",
+    "nov10-publish-10-kodansha-chiikawa-drill-fair-2026",
+    "nov10-publish-11-popup-2026-11-21-aeon-asahikawa-ekimae",
+    "nov10-publish-12-popup-2026-11-20-aeon-hamamatsu-ichino",
+    "nov10-publish-13-popup-2026-11-20-aeon-ota",
+    "nov10-publish-14-nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino",
+    "nov10-publish-15-magical-popup-2026-09-30-granduo-tachikawa",
+    "nov10-publish-16-chiikawa-muchaphoto-aeon-natori-2026",
+    "nov10-publish-17-popup-2026-10-23-aeon-parkplace-oita",
+    "nov10-publish-18-chiikawa-penlight-screening-toho-susukino-20261106",
+    "nov10-publish-19-chiikawa-penlight-screening-toho-hibiya-20261106",
+    "nov10-publish-20-chiikawa-penlight-screening-toho-shinjuku-20261106",
+    "nov10-publish-21-chiikawa-penlight-screening-toho-ikebukuro-20261106",
+    "nov10-publish-22-chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+    "nov10-publish-23-chiikawa-penlight-screening-toho-umeda-20261106",
+    "nov10-publish-24-chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+    "nov10-publish-25-tokyo-banana-popup-urasoe-2026-10",
+    "park-january-hours-20261110",
+    "new-popup-2026-11-24-jr-ikebukuro",
+    "tamanohikari-retail-stores-20261110",
+    "mogumogu-fushimi-entry-20261116-20",
+    "baby-castella-otaru-entry-20261123-29",
+    "popup-tobu-utsunomiya-line-entry-20261113-15"
+  ],
+  "allAddedState": "ready",
+  "allAddedPublishedAt": null,
+  "expectedLostBlobSha": "15e713d0b2efbb65dc6c7cb1fb1d4e5487ca08a2",
+  "recreatedBlobSha": "9442e310eacd937195cad4b28c27db1342d22de7",
+  "inputs": [
+    {
+      "path": "research/nov10-unpublished/change-groups.json",
+      "sha256": "324c997faa1febf5eb5654707abbcffcdd14e9c17d3a2c0f007d6d25e0a03867"
+    },
+    {
+      "path": "research/nov10-unpublished/recovery-and-scope.json",
+      "sha256": "37d3dac69dca2e4ddf0878a69d4dc4500ba451eabbf083bd2f8b6239206fa344"
+    },
+    {
+      "path": "research/nov12-local-refresh/evidence.json",
+      "sha256": "5cddda5350c54993ef25f6c04d124e11b48ee6c008ccbd17c2ff95f199c298da"
+    },
+    {
+      "path": "research/nov12-local-refresh/noon-recheck.json",
+      "sha256": "93427983a89ddd0b3fa7d1bfe68419c5c5da1317e99b67c1365f8405b569d600"
+    },
+    {
+      "path": "research/official-source-ledger.json",
+      "sha256": "f63c3a87dad42c988f5b08383036a131a88deab36fa015dd07947deacd2c8b1c"
+    }
+  ],
+  "dateBasis": "観測・発見日時は回収証拠とこの担当の先行候補読取結果による。過去運用期限は個別の明示記録が残るものだけを採用し、不明はnull。期限の修正詳細と根拠はdeadlineCorrection参照。",
+  "limitations": [
+    "旧候補台帳そのものではなく証拠と前作業の記録から再作成したもの。旧SHA一致とは主張しない。",
+    "神戸北9:29・宇都宮18:59の反映目標は過ぎて未公開。遅延を隠すため期限や発見日時を繰り上げない。",
+    "現時点の残枠・現地運営・実公開は未確認。",
+    "元一次資料の全量再取得や画像の今回再目視を行ったとはしない。",
+    "候補台帳とこの復元記録のみ編集。公開・commit・pushなし。"
+  ],
+  "deadlineCorrection": {
+    "reason": "初回再作成時にnov10候補へ一律補完した発見日末23:59:59と11/12 19時は個別根拠不足。撤回し不明な期限はnullとした。",
+    "changes": [
+      {
+        "id": "nov10-publish-01-chiikawaland-osaka-umeda",
+        "previousRecreatedValues": [
+          "2026-11-06T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-03-chiikawa-pocket-2026-11-06-fukuoka-parco",
+        "previousRecreatedValues": [
+          "2026-11-06T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-04-chiikawa-restaurant-ikebukuro",
+        "previousRecreatedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-12T09:29:00+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ]
+      },
+      {
+        "id": "nov10-publish-06-chiikawa-christmas-market-2026-toyosuna",
+        "previousRecreatedValues": [
+          "2026-11-06T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-07-gu-chiikawa-winter-2026",
+        "previousRecreatedValues": [
+          "2026-11-10T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-08-tamanohikari-chiikawa-dashiwari-2026",
+        "previousRecreatedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-09-tokyo-metro-escape-home-2026",
+        "previousRecreatedValues": [
+          "2026-11-10T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-10-kodansha-chiikawa-drill-fair-2026",
+        "previousRecreatedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-11-popup-2026-11-21-aeon-asahikawa-ekimae",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-12-popup-2026-11-20-aeon-hamamatsu-ichino",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-13-popup-2026-11-20-aeon-ota",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-14-nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-15-magical-popup-2026-09-30-granduo-tachikawa",
+        "previousRecreatedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-16-chiikawa-muchaphoto-aeon-natori-2026",
+        "previousRecreatedValues": [
+          "2026-11-08T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-17-popup-2026-10-23-aeon-parkplace-oita",
+        "previousRecreatedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-18-chiikawa-penlight-screening-toho-susukino-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-19-chiikawa-penlight-screening-toho-hibiya-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-20-chiikawa-penlight-screening-toho-shinjuku-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-21-chiikawa-penlight-screening-toho-ikebukuro-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-22-chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-23-chiikawa-penlight-screening-toho-umeda-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-24-chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+        "previousRecreatedValues": [
+          "2026-11-07T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nov10-publish-25-tokyo-banana-popup-urasoe-2026-10",
+        "previousRecreatedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-09T23:59:59+09:00",
+          "2026-11-10T23:59:59+09:00"
+        ]
+      },
+      {
+        "id": "park-january-hours-20261110",
+        "previousRecreatedValues": [
+          "2026-11-10T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-10T23:59:59+09:00",
+          "2026-11-12T08:00:00+09:00"
+        ]
+      },
+      {
+        "id": "new-popup-2026-11-24-jr-ikebukuro",
+        "previousRecreatedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-11T19:00:00+09:00"
+        ]
+      },
+      {
+        "id": "tamanohikari-retail-stores-20261110",
+        "previousRecreatedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-11T19:00:00+09:00"
+        ]
+      },
+      {
+        "id": "mogumogu-fushimi-entry-20261116-20",
+        "previousRecreatedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-12T08:00:00+09:00"
+        ]
+      },
+      {
+        "id": "baby-castella-otaru-entry-20261123-29",
+        "previousRecreatedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-12T19:00:00+09:00"
+        ],
+        "correctedValues": [
+          "2026-11-11T23:59:59+09:00",
+          "2026-11-12T08:00:00+09:00"
+        ]
+      }
+    ],
+    "retainedBasis": [
+      "nov10-02とnov10-25のreflectDueAtは旧台帳レコードをこの担当の先行読取結果に全文保存していたため保持。nov10-25のrecheckDueAtも同記録。",
+      "まじかる再確認11/13 08時は先行実装の明示記録。",
+      "神戸北11/12 09:29は当時の追補候補の明示反映目標。元候補全体の初期期限を再現したとはせず、当日配布案内の目標として保持。11/12 19時は先行昼再確認実装の明示計画。",
+      "追加6件は先行候補原文に明記の期限・再確認予定を使用。パークは当日券追補時の11/12 08時を保持。新しい再作成時刻を期限へ転用しない。"
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "note": "一次資料はローカル調査原本に保全。公開repoには事実要約・URL・観測日時・SHAと目視結果のみ。直接HTTP失敗や未取得を成功にせず、過去成功日時を保持。",
+  "records": [
+    {
+      "candidateId": "nov10-publish-02-magical-shinjuku",
+      "url": "https://x.com/magi_chiikawa/status/2119633348410908981",
+      "observedAt": "2026-11-11T23:04:58.857+00:00",
+      "summary": "11/9〜12、番号別集合時刻に東館地下1階連絡通路へ。1券1会計・追加購入不可。案内開始60分後失効。番号順の待機列なし。画像はA1〜15が10:25集合/10:30〜10:45案内。",
+      "sha256": "9292609a5f76537eaab010497ad8f09321fd096ffda22ecbf494ef3df3dfbe7c",
+      "originalEvidence": "map-morning-20261112-official/http/magical-nagoya-followup.html"
+    },
+    {
+      "candidateId": "nov10-publish-02-magical-shinjuku",
+      "url": "https://pbs.twimg.com/media/HWpzSs2bEAAq8lU.jpg",
+      "observedAt": "2026-11-11T23:04:57.004+00:00",
+      "summary": "11/9〜12、番号別集合時刻に東館地下1階連絡通路へ。1券1会計・追加購入不可。案内開始60分後失効。番号順の待機列なし。画像はA1〜15が10:25集合/10:30〜10:45案内。",
+      "sha256": "9a7a06e758077c7002def7b7b882354f0c3b1ab1074a1649cfa3b95f743da1ce",
+      "originalEvidence": "map-morning-20261112-official/http/magical-nagoya-followup-image.html"
+    },
+    {
+      "candidateId": "nov10-publish-02-magical-shinjuku",
+      "url": "https://x.com/magi_chiikawa/status/2119606395456925953",
+      "observedAt": "2026-11-11T23:04:02.306+00:00",
+      "summary": "11/9〜12、番号別集合時刻に店内レジへ直接。1券1会計・追加購入不可、番号順待機列なし。画像はA1〜10が11:25集合/11:30〜11:45案内。失効券は使えないが本文/画像に一律60分の記載はない。",
+      "sha256": "ce2ea819b0039af7569e6811199121ab859b06c1329f95d3dccdb96095f10fba",
+      "originalEvidence": "map-morning-20261112-official/http/magical-shinjuku-meeting.html"
+    },
+    {
+      "candidateId": "nov10-publish-02-magical-shinjuku",
+      "url": "https://pbs.twimg.com/media/HWpax6-bAAAQM0C.jpg",
+      "observedAt": "2026-11-11T23:04:28.970+00:00",
+      "summary": "11/9〜12、番号別集合時刻に店内レジへ直接。1券1会計・追加購入不可、番号順待機列なし。画像はA1〜10が11:25集合/11:30〜11:45案内。失効券は使えないが本文/画像に一律60分の記載はない。",
+      "sha256": "beb05238f5711b6c3d34a034daac859c39d75a9f3ae3c67304ec2ebcd349f045",
+      "originalEvidence": "map-morning-20261112-official/http/magical-shinjuku-meeting-image.html"
+    },
+    {
+      "candidateId": "nov10-publish-02-magical-shinjuku",
+      "url": "https://x.com/magi_chiikawa/status/2119400977203937498",
+      "observedAt": "2026-11-11T23:03:24.568+00:00",
+      "summary": "11/9〜12、番号別案内時間に店頭へ。1券1会計・追加購入不可、番号順待機列なし。案内開始60分後失効。画像はA1〜20が11:30〜11:45、R21〜40が20:15〜20:30。",
+      "sha256": "b05662291cf4fb6fd5dfc5e510b74454891ae4919e7e30159e0970c9aa52bc47",
+      "originalEvidence": "map-morning-20261112-official/http/magical-post-2119400977203937498.html"
+    },
+    {
+      "candidateId": "nov10-publish-02-magical-shinjuku",
+      "url": "https://pbs.twimg.com/media/HWmf9HiaAAAUcFm.jpg",
+      "observedAt": "2026-11-11T23:04:01.590+00:00",
+      "summary": "11/9〜12、番号別案内時間に店頭へ。1券1会計・追加購入不可、番号順待機列なし。案内開始60分後失効。画像はA1〜20が11:30〜11:45、R21〜40が20:15〜20:30。",
+      "sha256": "34436dfa48c87f0b8cc1bfbede12b3eddfba8a76235d61f12ec7db84ea339cb1",
+      "originalEvidence": "map-morning-20261112-official/http/magical-umeda-meeting-image.html"
+    },
+    {
+      "candidateId": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "observedAt": "2026-11-10T09:56:23.591Z",
+      "summary": "公式11/10更新で夜間/早朝整列を控える案内、早朝は周辺店舗/トイレが営業・開放されないこと、駐車場6:00から順次・7:00全面開場予定（状況で変更あり）が追加。既存9:30 E入口・混雑時変更を保持して短く追記。",
+      "sha256": "a594e280e880e9df2cbbd43a693a968b90d6755072d1a76ce2482fd9a7a013cf",
+      "originalEvidence": "map-evening-20261110-official/web03.json"
+    },
+    {
+      "candidateId": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "observedAt": "2026-11-10T22:57:54.991Z",
+      "summary": "昨夕本文から、当日6:00までE入口整列禁止、およびシート等の場所取り禁止が追加。11/10更新表示だが初回発表日時は不明。",
+      "sha256": "92dacd275f95f9923eb193094fb82431601492187d8ed07e0f6d8450768bda99",
+      "originalEvidence": "map-morning-20261111-official/web01.json"
+    },
+    {
+      "candidateId": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "observedAt": "2026-11-10T22:58:52.078+00:00",
+      "summary": "直接HTTP406。Web取得本文を原サイトlive成功へ昇格しない。",
+      "sha256": "59ec489e16c3b4203bd3a7a09b00a402cdd09b0d38cabcd62822724e828c5871",
+      "originalEvidence": "map-morning-20261111-official/http-observations.json"
+    },
+    {
+      "candidateId": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "observedAt": "2026-11-11T23:00:10.377Z",
+      "summary": "11/12も整理券配布、9:30 E入口、長蛇列時は配布を前倒しする可能性。昨夕の16:30枠配布終了は撤去。",
+      "sha256": "2ec434145ebfd2541e02371ac558254f1c13067e2da10f11a698ef045018e8b0",
+      "originalEvidence": "map-morning-20261112-official/web08.json"
+    },
+    {
+      "candidateId": "park-january-hours-20261110",
+      "url": "https://chiikawapark-tokyo.jp/news/vjkclz7fmr8i/",
+      "observedAt": "2026-11-10T09:57:03.479Z",
+      "summary": "公式11/10告知。1/1休館、1/2・1/3・1/30は10:00～18:00（最終入場16:00）、1/4より通常10:00～19:00（最終17:40）。hoursText/closedDaysTextと根拠URL・確認日への追記候補。既存12月条件とクリスマス会期は保持。",
+      "sha256": "03865d663c3bb65bd1a820f1abe600bc3c312204fe2d324c70f229e5cbe6b0e7",
+      "originalEvidence": "map-evening-20261110-official/web04b.json"
+    },
+    {
+      "candidateId": "park-january-hours-20261110",
+      "url": "https://chiikawapark-tokyo.jp/news/vjkclz7fmr8i/",
+      "observedAt": "2026-11-11T09:58:06.357+00:00",
+      "summary": "11/10付営業案内に、アソビューで完売の時間帯は当日券販売なし、の文が朝から追加。既存entryNoteへ補足可能。時間帯ごとの条件を全日程当日券なし・新規規則発効11/11へ拡大しない。",
+      "sha256": "5725fd8c0c2d24c03857b6199c0ded71b63bdacb4f408cb0d27b65eb92bae19a",
+      "originalEvidence": "map-evening-20261111-official/http/park-hours.html"
+    },
+    {
+      "candidateId": "new-popup-2026-11-24-jr-ikebukuro",
+      "url": "https://chiikawa-info.jp/pus.html",
+      "observedAt": "2026-11-10T22:58:54.605+00:00",
+      "summary": "公式会場一覧の新開催回。11/24〜12/7、南改札外イベントスペース。",
+      "sha256": "fd98c6db305728061c6a4b81af2366e2edac3a8f7142643e4dcf0b5b965c69af",
+      "originalEvidence": "map-morning-20261111-official/http/popup-list.html"
+    },
+    {
+      "candidateId": "new-popup-2026-11-24-jr-ikebukuro",
+      "url": "https://chiikawa-info.jp/p26/pus_ikek/img/main_v10.jpg",
+      "observedAt": "2026-11-10T22:59:23.478+00:00",
+      "summary": "画像を目視。10:00〜21:00、初日13時開店・最終日18時閉店。混雑時には閉場前入場制限の場合あり。",
+      "sha256": "5b8d311913a2d17e9a128dc1cb1582c3ed02795b110aa92f3e59d71ae2b9cfca",
+      "originalEvidence": "map-morning-20261111-official/http/jr-main.jpg"
+    },
+    {
+      "candidateId": "new-popup-2026-11-24-jr-ikebukuro",
+      "url": "https://chiikawa-info.jp/p26/pus_ikek/img/moushikomi_261110.jpg",
+      "observedAt": "2026-11-10T22:59:23.472+00:00",
+      "summary": "画像を目視。全日整理券制、混雑状況次第でフリー入場へ変更する場合あり。最新情報は公式X。",
+      "sha256": "d474fbbd9ad3b9ca7faf569c426a1362af74deb60aedc456a2f811d95c9eaf16",
+      "originalEvidence": "map-morning-20261111-official/http/jr-entry.jpg"
+    },
+    {
+      "candidateId": "tamanohikari-retail-stores-20261110",
+      "url": "https://tamanohikari.co.jp/info/2275.html",
+      "observedAt": "2026-11-10T23:02:42.996+00:00",
+      "summary": "本社・直営店以外に京都の取扱先4店を記載。数量限定・早期完売可能・購入保証なし。",
+      "sha256": "e8d45a496213f14d915af10295274c0b12b1899dbe4b7c0fe5864585519615cd",
+      "originalEvidence": "map-morning-20261111-official/http/tama-stores-new.html"
+    },
+    {
+      "candidateId": "tamanohikari-retail-stores-20261110",
+      "url": "https://tamanohikari.co.jp/info",
+      "observedAt": "2026-11-10T22:59:27.802+00:00",
+      "summary": "企業公式ニュース一覧の新取扱店記事は2026.11.10付。",
+      "sha256": "f7f6f28d0cf16a4628eedf723871270dab39cbc9699a482237cb19d4304b3fab",
+      "originalEvidence": "map-morning-20261111-official/http/tama-news.html"
+    },
+    {
+      "candidateId": "tamanohikari-retail-stores-20261110",
+      "url": "https://tamanohikari.co.jp/info/2255.html",
+      "observedAt": "2026-11-10T22:59:27.818+00:00",
+      "summary": "既存本社・直営店での販売案内。11/4更新の整理券配布時刻は発売日11/10のみであり毎日には適用しない。",
+      "sha256": "d8a45051bed4b745420c06123104df8cb880e68e78616198d42037bbaaf35fdb",
+      "originalEvidence": "map-morning-20261111-official/http/tama-store-old.html"
+    },
+    {
+      "candidateId": "mogumogu-fushimi-entry-20261116-20",
+      "url": "https://www.chiikawamogumogu.jp/2026/11/11/post-2807/",
+      "observedAt": "2026-11-11T09:58:40.266+00:00",
+      "summary": "11/16〜20の平日もLINEデジタル入店券を事前取得。各日前日20時先着、1人1枚、位置情報による距離制限なし、予定枚数で終了。既存の土日祝・11/13〜15抽選条件を保持し、「平日通常」の対象外日に11/16〜20を加える。",
+      "sha256": "50981aaf38381478c381caf21ce94754d1880c374742dacf09d76a669959b6cf",
+      "originalEvidence": "map-evening-20261111-official/http/fushimi-1116-entry.html"
+    },
+    {
+      "candidateId": "baby-castella-otaru-entry-20261123-29",
+      "url": "https://www.chiikawamogumogu.jp/2026/11/11/post-2528/",
+      "observedAt": "2026-11-11T09:58:39.855+00:00",
+      "summary": "11/23〜29分の残枠も前日20時からLINE先着、店舗約30km内で位置情報ON。抽選11/11 18時〜14日18時、結果16日は既掲載のため新規日時発見としない。公開の残枠適用11/18〜22を11/23〜29にも補足。抽選は距離制限なし、各日1枠複数日申込可、当選は今回の11/23〜29を通じLINE1アカウント1回。購入保証なし。",
+      "sha256": "38d0b72f694fb54eebeac67b5b21233a3abd0d3845885bb8740a21fc233594fa",
+      "originalEvidence": "map-evening-20261111-official/http/otaru-1111-notice.html"
+    },
+    {
+      "candidateId": "popup-tobu-utsunomiya-line-entry-20261113-15",
+      "url": "https://x.com/chiikawa_popup/status/2120354068426342687",
+      "observedAt": "2026-11-11T23:00:13.559+00:00",
+      "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+      "sha256": "9c577441a5dd8bd5da2c2770c7840fcc820daea8dee63eb2de49a71cb790683a",
+      "originalEvidence": "map-morning-20261112-official/http/tobu-primary-x.html"
+    },
+    {
+      "candidateId": "popup-tobu-utsunomiya-line-entry-20261113-15",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_popup%2Fstatus%2F2120354068426342687",
+      "observedAt": "2026-11-11T23:00:17.862+00:00",
+      "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+      "sha256": "374729181362e1e6c07869b7a1fe7020d5ee05f38f7ba01a411688e906eed13d",
+      "originalEvidence": "map-morning-20261112-official/http/tobu-ticket-oembed.json"
+    },
+    {
+      "candidateId": "popup-tobu-utsunomiya-line-entry-20261113-15",
+      "url": "https://pbs.twimg.com/media/HW0CyJfawAE_qBt.jpg",
+      "observedAt": "2026-11-11T23:00:13.530+00:00",
+      "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+      "sha256": "5f98616b7ba74455c4ea7857cc01b4b5514be07dd75870fb9631c220230f4c9e",
+      "originalEvidence": "map-morning-20261112-official/http/tobu-ticket-image.html"
+    },
+    {
+      "candidateId": "popup-tobu-utsunomiya-line-entry-20261113-15",
+      "url": "https://t.co/IfpJsQw2n3",
+      "observedAt": "2026-11-11T23:01:57.109+00:00",
+      "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+      "sha256": "1275b555610917bd013a4626ec18f2538e6bf0bbe8b7dc1684337e46cd5af331",
+      "originalEvidence": "map-morning-20261112-official/http/tobu-line-link.html"
+    }
+  ],
+  "visualReview": [
+    {
+      "sourceFile": "map-evening-20261111-official/http/jr-main.jpg",
+      "sha256": "5b8d311913a2d17e9a128dc1cb1582c3ed02795b110aa92f3e59d71ae2b9cfca",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-evening-20261111-official/http/jr-entry.jpg",
+      "sha256": "d474fbbd9ad3b9ca7faf569c426a1362af74deb60aedc456a2f811d95c9eaf16",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-morning-20261112-official/http/magical-nagoya-followup-image.jpg",
+      "sha256": "9a7a06e758077c7002def7b7b882354f0c3b1ab1074a1649cfa3b95f743da1ce",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-morning-20261112-official/http/magical-shinjuku-meeting-image.jpg",
+      "sha256": "beb05238f5711b6c3d34a034daac859c39d75a9f3ae3c67304ec2ebcd349f045",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-morning-20261112-official/http/tobu-ticket-image.jpg",
+      "sha256": "5f98616b7ba74455c4ea7857cc01b4b5514be07dd75870fb9631c220230f4c9e",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-morning-20261112-official/http/magical-umeda-meeting-image.jpg",
+      "sha256": "34436dfa48c87f0b8cc1bfbede12b3eddfba8a76235d61f12ec7db84ea339cb1",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-morning-20261111-official/http/jr-main.jpg",
+      "sha256": "5b8d311913a2d17e9a128dc1cb1582c3ed02795b110aa92f3e59d71ae2b9cfca",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    },
+    {
+      "sourceFile": "map-morning-20261111-official/http/jr-entry.jpg",
+      "sha256": "d474fbbd9ad3b9ca7faf569c426a1362af74deb60aedc456a2f811d95c9eaf16",
+      "review": "保存画像を目視確認。JR池袋は会期・時刻・全日整理券、宇都宮は3日間1回・前日19時/各回1時間前、まじかるは店別集合場所を確認。新宿画像に60分は未記載だが既存共通条件を保持。黒塗り部分は推測せず全番号の転記なし。"
+    }
+  ]
+}

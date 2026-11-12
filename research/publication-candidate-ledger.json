@@ -26084,6 +26084,1403 @@
       "nextCheck": "公開JSONと対象7ページの一致を実測確認。以後は通常の公式続報・終了条件を確認。",
       "recheckDueAt": null,
       "publishedAt": "2026-11-05T11:12:04.572Z"
+    },
+    {
+      "id": "nov10-publish-01-chiikawaland-osaka-umeda",
+      "title": "ちいかわらんど16店 11月14日の入店・購入条件",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-01-chiikawaland-osaka-umeda",
+      "sourceIds": [
+        "nov10-publish-01-chiikawaland-osaka-umeda-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2118255283336266088",
+          "observedAt": "2026-11-10",
+          "summary": "ちいかわらんど16店 11月14日の入店・購入条件。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda",
+          "chiikawaland-harajuku",
+          "chiikawaland-fukuoka",
+          "chiikawaland-kyoto",
+          "chiikawaland-tokyo-station",
+          "chiikawaland-solamachi",
+          "chiikawaland-nagoya",
+          "chiikawaland-sendai",
+          "chiikawaland-sapporo",
+          "chiikawaland-yokohama",
+          "chiikawaland-hiroshima",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-shinjuku",
+          "chiikawaland-kanazawa",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda",
+        "chiikawaland-harajuku",
+        "chiikawaland-fukuoka",
+        "chiikawaland-kyoto",
+        "chiikawaland-tokyo-station",
+        "chiikawaland-solamachi",
+        "chiikawaland-nagoya",
+        "chiikawaland-sendai",
+        "chiikawaland-sapporo",
+        "chiikawaland-yokohama",
+        "chiikawaland-hiroshima",
+        "chiikawaland-shinsaibashi",
+        "chiikawaland-shinjuku",
+        "chiikawaland-kanazawa",
+        "chiikawaland-ikebukuro",
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわらんど16店 11月14日の入店・購入条件",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-02-magical-shinjuku",
+      "title": "まじかる3店 11月9～12日の購入券条件",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-02-magical-shinjuku",
+      "sourceIds": [
+        "nov10-publish-02-magical-shinjuku-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-06T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/magi_chiikawa/status/2117061672292823484",
+          "observedAt": "2026-11-06",
+          "summary": "まじかる3店 11月9～12日の購入券条件。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        },
+        {
+          "url": "https://x.com/magi_chiikawa/status/2119633348410908981",
+          "observedAt": "2026-11-11T23:04:58.857+00:00",
+          "summary": "11/9〜12、番号別集合時刻に東館地下1階連絡通路へ。1券1会計・追加購入不可。案内開始60分後失効。番号順の待機列なし。画像はA1〜15が10:25集合/10:30〜10:45案内。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HWpzSs2bEAAq8lU.jpg",
+          "observedAt": "2026-11-11T23:04:57.004+00:00",
+          "summary": "11/9〜12、番号別集合時刻に東館地下1階連絡通路へ。1券1会計・追加購入不可。案内開始60分後失効。番号順の待機列なし。画像はA1〜15が10:25集合/10:30〜10:45案内。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://x.com/magi_chiikawa/status/2119606395456925953",
+          "observedAt": "2026-11-11T23:04:02.306+00:00",
+          "summary": "11/9〜12、番号別集合時刻に店内レジへ直接。1券1会計・追加購入不可、番号順待機列なし。画像はA1〜10が11:25集合/11:30〜11:45案内。失効券は使えないが本文/画像に一律60分の記載はない。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HWpax6-bAAAQM0C.jpg",
+          "observedAt": "2026-11-11T23:04:28.970+00:00",
+          "summary": "11/9〜12、番号別集合時刻に店内レジへ直接。1券1会計・追加購入不可、番号順待機列なし。画像はA1〜10が11:25集合/11:30〜11:45案内。失効券は使えないが本文/画像に一律60分の記載はない。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://x.com/magi_chiikawa/status/2119400977203937498",
+          "observedAt": "2026-11-11T23:03:24.568+00:00",
+          "summary": "11/9〜12、番号別案内時間に店頭へ。1券1会計・追加購入不可、番号順待機列なし。案内開始60分後失効。画像はA1〜20が11:30〜11:45、R21〜40が20:15〜20:30。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HWmf9HiaAAAUcFm.jpg",
+          "observedAt": "2026-11-11T23:04:01.590+00:00",
+          "summary": "11/9〜12、番号別案内時間に店頭へ。1券1会計・追加購入不可、番号順待機列なし。案内開始60分後失効。画像はA1〜20が11:30〜11:45、R21〜40が20:15〜20:30。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-shinjuku",
+          "magical-umeda",
+          "magical-nagoya"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "magical-shinjuku",
+        "magical-umeda",
+        "magical-nagoya"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "まじかる3店 11月9～12日の購入券条件",
+      "nextCheck": "11/13朝に購入券対象期間11/9～12の終了を再確認。新宿共通案内のQR5分前・60分失効は後日の集合画像が再掲しないだけなので保持。",
+      "recheckDueAt": "2026-11-13T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-03-chiikawa-pocket-2026-11-06-fukuoka-parco",
+      "title": "福岡ぽけっと 入場整理券対象期間を11月15日まで延長",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-03-chiikawa-pocket-2026-11-06-fukuoka-parco",
+      "sourceIds": [
+        "nov10-publish-03-chiikawa-pocket-2026-11-06-fukuoka-parco-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_pt_jp/status/2118177398248329251",
+          "observedAt": "2026-11-06",
+          "summary": "福岡ぽけっと 入場整理券対象期間を11月15日まで延長。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-pocket-2026-11-06-fukuoka-parco"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-pocket-2026-11-06-fukuoka-parco"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "福岡ぽけっと 入場整理券対象期間を11月15日まで延長",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-04-chiikawa-restaurant-ikebukuro",
+      "title": "池袋レストラン 終了した10月30日限定注意を整理",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-04-chiikawa-restaurant-ikebukuro",
+      "sourceIds": [
+        "chiikawa-restaurant-reservation"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-09",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+          "observedAt": "2026-11-10",
+          "summary": "池袋レストラン 終了した10月30日限定注意を整理。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-restaurant-ikebukuro"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-restaurant-ikebukuro"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "池袋レストラン 終了した10月30日限定注意を整理",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+      "title": "神戸北 未就学児の入場と個数制限商品条件",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-05-popup-2026-11-11-aeon-kobekita",
+      "sourceIds": [
+        "official-observation-c1d172d22833"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-12T09:29:00+09:00",
+      "evidence": [
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-10",
+          "summary": "神戸北 未就学児の入場と個数制限商品条件。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        },
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-10T09:56:23.591Z",
+          "summary": "公式11/10更新で夜間/早朝整列を控える案内、早朝は周辺店舗/トイレが営業・開放されないこと、駐車場6:00から順次・7:00全面開場予定（状況で変更あり）が追加。既存9:30 E入口・混雑時変更を保持して短く追記。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-10T22:57:54.991Z",
+          "summary": "昨夕本文から、当日6:00までE入口整列禁止、およびシート等の場所取り禁止が追加。11/10更新表示だが初回発表日時は不明。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-10T22:58:52.078+00:00",
+          "summary": "直接HTTP406。Web取得本文を原サイトlive成功へ昇格しない。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-11T23:00:10.377Z",
+          "summary": "11/12も整理券配布、9:30 E入口、長蛇列時は配布を前倒しする可能性。昨夕の16:30枠配布終了は撤去。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-12T03:05:20.285Z",
+          "summary": "11/12更新。11/12 11:30よりフリー入場、混雑時は整理券の可能性。朝の9:30配布予定を現在条件から差替え。6時前禁止・駐車場予定等は維持。現地実績・残数は未確認。",
+          "recordPath": "research/nov12-local-refresh/noon-recheck.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-11-aeon-kobekita"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-11-11-aeon-kobekita"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "11/12昼の公式更新では11:30からフリー入場、混雑時整理券。9:30配布予定を現在条件にしない。期限を過ぎて未公開の遅延を保持し、公開前に最新状態を再確認する。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-12T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-06-chiikawa-christmas-market-2026-toyosuna",
+      "title": "クリスマスマーケット 不審メール注意",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-06-chiikawa-christmas-market-2026-toyosuna",
+      "sourceIds": [
+        "nov10-publish-06-chiikawa-christmas-market-2026-toyosuna-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-06",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://contents-abema.com/chiikawa-christmas-market/news/",
+          "observedAt": "2026-11-06",
+          "summary": "クリスマスマーケット 不審メール注意。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-christmas-market-2026-toyosuna"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-christmas-market-2026-toyosuna"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "クリスマスマーケット 不審メール注意",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-07-gu-chiikawa-winter-2026",
+      "title": "GU 先行予約終了・通常販売ポーチ4商品の購入制限",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-07-gu-chiikawa-winter-2026",
+      "sourceIds": [
+        "corporate-gu-chiikawa-faq"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-10",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+          "observedAt": "2026-11-10",
+          "summary": "GU 先行予約終了・通常販売ポーチ4商品の購入制限。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "gu-chiikawa-winter-2026"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "gu-chiikawa-winter-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "GU 先行予約終了・通常販売ポーチ4商品の購入制限",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-08-tamanohikari-chiikawa-dashiwari-2026",
+      "title": "玉乃光 予約商品の配送遅延注意",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-08-tamanohikari-chiikawa-dashiwari-2026",
+      "sourceIds": [
+        "tamanohikari-chiikawa-shop-details"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-09",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://ec.tamanohikari.co.jp/products/cds",
+          "observedAt": "2026-11-10",
+          "summary": "玉乃光 予約商品の配送遅延注意。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tamanohikari-chiikawa-dashiwari-2026"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "tamanohikari-chiikawa-dashiwari-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "玉乃光 予約商品の配送遅延注意",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-09-tokyo-metro-escape-home-2026",
+      "title": "東京メトロおうち版 プレイ期間開始に伴う状態更新",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-09-tokyo-metro-escape-home-2026",
+      "sourceIds": [
+        "corporate-tokyo-metro-escape-delivery-kit"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-10",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+          "observedAt": "2026-11-10",
+          "summary": "東京メトロおうち版 プレイ期間開始に伴う状態更新。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tokyo-metro-escape-home-2026"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "tokyo-metro-escape-home-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "東京メトロおうち版 プレイ期間開始に伴う状態更新",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-10-kodansha-chiikawa-drill-fair-2026",
+      "title": "講談社 ちいかわドリルフェア新規掲載",
+      "kind": "new_listing",
+      "targetKey": "nov10-publish-10-kodansha-chiikawa-drill-fair-2026",
+      "sourceIds": [
+        "nov10-publish-10-kodansha-chiikawa-drill-fair-2026-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-09",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://cocreco.kodansha.co.jp/cocreco/general/study/mmGE7",
+          "observedAt": "2026-11-10",
+          "summary": "講談社 ちいかわドリルフェア新規掲載。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "kodansha-chiikawa-drill-fair-2026"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "kodansha-chiikawa-drill-fair-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "講談社 ちいかわドリルフェア新規掲載",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-11-popup-2026-11-21-aeon-asahikawa-ekimae",
+      "title": "ちいかわPOP UP STORE イオンモール旭川駅前 新規掲載",
+      "kind": "new_listing",
+      "targetKey": "nov10-publish-11-popup-2026-11-21-aeon-asahikawa-ekimae",
+      "sourceIds": [
+        "nov10-publish-11-popup-2026-11-21-aeon-asahikawa-ekimae-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": "2026-11-21",
+      "eventEndsAt": "2026-12-06",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aake/index.html",
+          "observedAt": "2026-11-08",
+          "summary": "ちいかわPOP UP STORE イオンモール旭川駅前 新規掲載。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-21-aeon-asahikawa-ekimae"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-11-21-aeon-asahikawa-ekimae"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわPOP UP STORE イオンモール旭川駅前 新規掲載",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-12-popup-2026-11-20-aeon-hamamatsu-ichino",
+      "title": "ちいかわPOP UP STORE イオンモール浜松市野 新規掲載",
+      "kind": "new_listing",
+      "targetKey": "nov10-publish-12-popup-2026-11-20-aeon-hamamatsu-ichino",
+      "sourceIds": [
+        "nov10-publish-12-popup-2026-11-20-aeon-hamamatsu-ichino-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": "2026-11-20",
+      "eventEndsAt": "2026-12-07",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ahmi/index.html",
+          "observedAt": "2026-11-08",
+          "summary": "ちいかわPOP UP STORE イオンモール浜松市野 新規掲載。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-20-aeon-hamamatsu-ichino"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-11-20-aeon-hamamatsu-ichino"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわPOP UP STORE イオンモール浜松市野 新規掲載",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-13-popup-2026-11-20-aeon-ota",
+      "title": "ちいかわPOP UP STORE イオンモール太田 新規掲載",
+      "kind": "new_listing",
+      "targetKey": "nov10-publish-13-popup-2026-11-20-aeon-ota",
+      "sourceIds": [
+        "nov10-publish-13-popup-2026-11-20-aeon-ota-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": "2026-11-20",
+      "eventEndsAt": "2026-12-07",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_amot/index.html",
+          "observedAt": "2026-11-08",
+          "summary": "ちいかわPOP UP STORE イオンモール太田 新規掲載。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-20-aeon-ota"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-11-20-aeon-ota"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわPOP UP STORE イオンモール太田 新規掲載",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-14-nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino",
+      "title": "ナガノマーケット POP UP SHOP イオンモール浜松市野 新規掲載",
+      "kind": "new_listing",
+      "targetKey": "nov10-publish-14-nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino",
+      "sourceIds": [
+        "nov10-publish-14-nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino-source"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": "2026-11-20",
+      "eventEndsAt": "2026-12-07",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://nagano-info.jp/popupshop/hamamatsuichino/index.html",
+          "observedAt": "2026-11-10",
+          "summary": "ナガノマーケット POP UP SHOP イオンモール浜松市野 新規掲載。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "nagano-market-popup-2026-11-20-aeon-hamamatsu-ichino"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ナガノマーケット POP UP SHOP イオンモール浜松市野 新規掲載",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-15-magical-popup-2026-09-30-granduo-tachikawa",
+      "title": "まじかるちいかわPOP UP STORE グランデュオ立川 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-15-magical-popup-2026-09-30-granduo-tachikawa",
+      "sourceIds": [
+        "observed-www-granduo-jp-2bf7507178"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-09",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://www.granduo.jp/tachikawa/events/events-26889/",
+          "observedAt": null,
+          "summary": "まじかるちいかわPOP UP STORE グランデュオ立川 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-popup-2026-09-30-granduo-tachikawa"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "magical-popup-2026-09-30-granduo-tachikawa"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "まじかるちいかわPOP UP STORE グランデュオ立川 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-16-chiikawa-muchaphoto-aeon-natori-2026",
+      "title": "ちいかわ むちゃフォトパーティ!! イオンモール名取 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-16-chiikawa-muchaphoto-aeon-natori-2026",
+      "sourceIds": [
+        "observed-natori-aeonmall-jp-4e157b2b3f"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-08",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://natori.aeonmall.jp/event/8da7abf2-e12f-4c35-ae40-63699a42494f",
+          "observedAt": null,
+          "summary": "ちいかわ むちゃフォトパーティ!! イオンモール名取 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-muchaphoto-aeon-natori-2026"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-muchaphoto-aeon-natori-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわ むちゃフォトパーティ!! イオンモール名取 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-17-popup-2026-10-23-aeon-parkplace-oita",
+      "title": "ちいかわPOP UP STORE イオンパークプレイス大分店 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-17-popup-2026-10-23-aeon-parkplace-oita",
+      "sourceIds": [
+        "popup-2026-10-23-aeon-parkplace-oita-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-09",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_aoit/index.html",
+          "observedAt": null,
+          "summary": "ちいかわPOP UP STORE イオンパークプレイス大分店 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-10-23-aeon-parkplace-oita"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-10-23-aeon-parkplace-oita"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわPOP UP STORE イオンパークプレイス大分店 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-18-chiikawa-penlight-screening-toho-susukino-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ すすきの 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-18-chiikawa-penlight-screening-toho-susukino-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ すすきの 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-susukino-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-susukino-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ すすきの 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-19-chiikawa-penlight-screening-toho-hibiya-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 日比谷 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-19-chiikawa-penlight-screening-toho-hibiya-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 日比谷 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-hibiya-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-hibiya-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 日比谷 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-20-chiikawa-penlight-screening-toho-shinjuku-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 新宿 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-20-chiikawa-penlight-screening-toho-shinjuku-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 新宿 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-shinjuku-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-shinjuku-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 新宿 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-21-chiikawa-penlight-screening-toho-ikebukuro-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 池袋 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-21-chiikawa-penlight-screening-toho-ikebukuro-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 池袋 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-ikebukuro-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-ikebukuro-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 池袋 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-22-chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 名古屋栄 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-22-chiikawa-penlight-screening-toho-nagoya-sakae-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 名古屋栄 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-nagoya-sakae-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-nagoya-sakae-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 名古屋栄 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-23-chiikawa-penlight-screening-toho-umeda-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 梅田 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-23-chiikawa-penlight-screening-toho-umeda-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 梅田 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-umeda-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-umeda-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 梅田 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-24-chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+      "title": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 天神・ソラリア館 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-24-chiikawa-penlight-screening-toho-tenjin-solaria-20261106",
+      "sourceIds": [
+        "movie-cheer-third"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-07",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa.toho-movie.jp/news/page/cheer_03.html",
+          "observedAt": "2026-11-10",
+          "summary": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 天神・ソラリア館 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-penlight-screening-toho-tenjin-solaria-20261106"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-penlight-screening-toho-tenjin-solaria-20261106"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "映画ちいかわ 自動制御ペンライト演出付き応援上映 TOHOシネマズ 天神・ソラリア館 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": null,
+      "publishedAt": null
+    },
+    {
+      "id": "nov10-publish-25-tokyo-banana-popup-urasoe-2026-10",
+      "title": "ちいかわ×東京ばな奈 POP UP SHOP 浦添PARCO CITY 終了済み履歴への移動",
+      "kind": "listing_update",
+      "targetKey": "nov10-publish-25-tokyo-banana-popup-urasoe-2026-10",
+      "sourceIds": [
+        "tokyo-banana-urasoe-20261030-release"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-09",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-09T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000002181.000025606.html",
+          "observedAt": "2026-11-10",
+          "summary": "ちいかわ×東京ばな奈 POP UP SHOP 浦添PARCO CITY 終了済み履歴への移動。回収済み変更グループの記録に基づく。精密時刻が不明な観測は補完しない。",
+          "recordPath": "research/nov10-unpublished/change-groups.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tokyo-banana-popup-urasoe-2026-10"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "tokyo-banana-popup-urasoe-2026-10"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわ×東京ばな奈 POP UP SHOP 浦添PARCO CITY 終了済み履歴への移動",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-10T23:59:59+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "park-january-hours-20261110",
+      "title": "ちいかわパーク 2027年1月営業・完売時間帯の当日券",
+      "kind": "listing_update",
+      "targetKey": "park-january-hours-20261110",
+      "sourceIds": [
+        "chiikawa-park-news",
+        "chiikawa-park-hours-20261110"
+      ],
+      "officialAnnouncedAt": "2026-11-10",
+      "discoveredAt": "2026-11-10T09:57:03.479Z",
+      "eventStartsAt": "2027-01-01",
+      "eventEndsAt": "2027-01-30",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-10T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/vjkclz7fmr8i/",
+          "observedAt": "2026-11-10T09:57:03.479Z",
+          "summary": "公式11/10告知。1/1休館、1/2・1/3・1/30は10:00～18:00（最終入場16:00）、1/4より通常10:00～19:00（最終17:40）。hoursText/closedDaysTextと根拠URL・確認日への追記候補。既存12月条件とクリスマス会期は保持。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://chiikawapark-tokyo.jp/news/vjkclz7fmr8i/",
+          "observedAt": "2026-11-11T09:58:06.357+00:00",
+          "summary": "11/10付営業案内に、アソビューで完売の時間帯は当日券販売なし、の文が朝から追加。既存entryNoteへ補足可能。時間帯ごとの条件を全日程当日券なし・新規規則発効11/11へ拡大しない。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-tokyo"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "chiikawa-park-tokyo"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわパーク 2027年1月営業・完売時間帯の当日券。公式11/10告知。1/1休館、1/2・1/3・1/30は10:00～18:00（最終入場16:00）、1/4より通常10:00～19:00（最終17:40）。hoursText/closedDaysTextと根拠URL・確認日への追記候補。既存12月条件とクリスマス会期は保持。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-12T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "new-popup-2026-11-24-jr-ikebukuro",
+      "title": "ちいかわPOP UP STORE JR池袋駅 11月新開催回",
+      "kind": "new_listing",
+      "targetKey": "new-popup-2026-11-24-jr-ikebukuro",
+      "sourceIds": [
+        "chiikawa-popup-list",
+        "observed-jr-ikebukuro-20261124"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-10T22:57:54.991Z",
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-12-07",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-11T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/pus.html",
+          "observedAt": "2026-11-10T22:58:54.605+00:00",
+          "summary": "公式会場一覧の新開催回。11/24〜12/7、南改札外イベントスペース。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ikek/img/main_v10.jpg",
+          "observedAt": "2026-11-10T22:59:23.478+00:00",
+          "summary": "画像を目視。10:00〜21:00、初日13時開店・最終日18時閉店。混雑時には閉場前入場制限の場合あり。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ikek/img/moushikomi_261110.jpg",
+          "observedAt": "2026-11-10T22:59:23.472+00:00",
+          "summary": "画像を目視。全日整理券制、混雑状況次第でフリー入場へ変更する場合あり。最新情報は公式X。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-24-jr-ikebukuro"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-11-24-jr-ikebukuro"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "ちいかわPOP UP STORE JR池袋駅 11月新開催回。公式会場一覧の新開催回。11/24〜12/7、南改札外イベントスペース。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-11T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "tamanohikari-retail-stores-20261110",
+      "title": "玉乃光 国内実店舗取扱先追記",
+      "kind": "listing_update",
+      "targetKey": "tamanohikari-retail-stores-20261110",
+      "sourceIds": [
+        "tamanohikari-retail-stores-20261110"
+      ],
+      "officialAnnouncedAt": "2026-11-10",
+      "discoveredAt": "2026-11-10T22:59:21.274Z",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-10",
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-11T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://tamanohikari.co.jp/info/2275.html",
+          "observedAt": "2026-11-10T23:02:42.996+00:00",
+          "summary": "本社・直営店以外に京都の取扱先4店を記載。数量限定・早期完売可能・購入保証なし。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://tamanohikari.co.jp/info",
+          "observedAt": "2026-11-10T22:59:27.802+00:00",
+          "summary": "企業公式ニュース一覧の新取扱店記事は2026.11.10付。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://tamanohikari.co.jp/info/2255.html",
+          "observedAt": "2026-11-10T22:59:27.818+00:00",
+          "summary": "既存本社・直営店での販売案内。11/4更新の整理券配布時刻は発売日11/10のみであり毎日には適用しない。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "tamanohikari-chiikawa-dashiwari-2026"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "tamanohikari-chiikawa-dashiwari-2026"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "玉乃光 国内実店舗取扱先追記。本社・直営店以外に京都の取扱先4店を記載。数量限定・早期完売可能・購入保証なし。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-11T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "mogumogu-fushimi-entry-20261116-20",
+      "title": "伏見11/16～20 平日入店チケット特例",
+      "kind": "reservation_update",
+      "targetKey": "mogumogu-fushimi-entry-20261116-20",
+      "sourceIds": [
+        "mogumogu-fushimi-entry-20261116-20-official"
+      ],
+      "officialAnnouncedAt": "2026-11-11",
+      "discoveredAt": "2026-11-11T09:58:40.266+00:00",
+      "eventStartsAt": "2026-11-16",
+      "eventEndsAt": "2026-11-20",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-15T20:00:00+09:00",
+      "reflectDueAt": "2026-11-11T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/11/11/post-2807/",
+          "observedAt": "2026-11-11T09:58:40.266+00:00",
+          "summary": "11/16〜20の平日もLINEデジタル入店券を事前取得。各日前日20時先着、1人1枚、位置情報による距離制限なし、予定枚数で終了。既存の土日祝・11/13〜15抽選条件を保持し、「平日通常」の対象外日に11/16〜20を加える。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "mogumogu-fushimi"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "mogumogu-fushimi"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "伏見11/16～20 平日入店チケット特例。11/16〜20の平日もLINEデジタル入店券を事前取得。各日前日20時先着、1人1枚、位置情報による距離制限なし、予定枚数で終了。既存の土日祝・11/13〜15抽選条件を保持し、「平日通常」の対象外日に11/16〜20を加える。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-12T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "baby-castella-otaru-entry-20261123-29",
+      "title": "小樽11/23～29 残枠先着条件",
+      "kind": "reservation_update",
+      "targetKey": "baby-castella-otaru-entry-20261123-29",
+      "sourceIds": [
+        "baby-castella-otaru-entry-20261123-29-official"
+      ],
+      "officialAnnouncedAt": "2026-11-11",
+      "discoveredAt": "2026-11-11T09:58:39.855+00:00",
+      "eventStartsAt": "2026-11-23",
+      "eventEndsAt": "2026-11-29",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-11T18:00:00+09:00",
+      "reflectDueAt": "2026-11-11T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/11/11/post-2528/",
+          "observedAt": "2026-11-11T09:58:39.855+00:00",
+          "summary": "11/23〜29分の残枠も前日20時からLINE先着、店舗約30km内で位置情報ON。抽選11/11 18時〜14日18時、結果16日は既掲載のため新規日時発見としない。公開の残枠適用11/18〜22を11/23〜29にも補足。抽選は距離制限なし、各日1枠複数日申込可、当選は今回の11/23〜29を通じLINE1アカウント1回。購入保証なし。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "baby-castella-otaru"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "baby-castella-otaru"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "小樽11/23～29 残枠先着条件。11/23〜29分の残枠も前日20時からLINE先着、店舗約30km内で位置情報ON。抽選11/11 18時〜14日18時、結果16日は既掲載のため新規日時発見としない。公開の残枠適用11/18〜22を11/23〜29にも補足。抽選は距離制限なし、各日1枠複数日申込可、当選は今回の11/23〜29を通じLINE1アカウント1回。購入保証なし。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-12T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "popup-tobu-utsunomiya-line-entry-20261113-15",
+      "title": "東武宇都宮11/13～15 LINE整理券",
+      "kind": "reservation_update",
+      "targetKey": "popup-tobu-utsunomiya-line-entry-20261113-15",
+      "sourceIds": [
+        "popup-tobu-utsunomiya-line-entry-20261111-x",
+        "popup-tobu-utsunomiya-line-entry-20261111-image"
+      ],
+      "officialAnnouncedAt": "2026-11-11",
+      "discoveredAt": "2026-11-11T23:00:13.559+00:00",
+      "eventStartsAt": "2026-11-13",
+      "eventEndsAt": "2026-11-15",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-12T19:00:00+09:00",
+      "reflectDueAt": "2026-11-12T18:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_popup/status/2120354068426342687",
+          "observedAt": "2026-11-11T23:00:13.559+00:00",
+          "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_popup%2Fstatus%2F2120354068426342687",
+          "observedAt": "2026-11-11T23:00:17.862+00:00",
+          "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://pbs.twimg.com/media/HW0CyJfawAE_qBt.jpg",
+          "observedAt": "2026-11-11T23:00:13.530+00:00",
+          "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://t.co/IfpJsQw2n3",
+          "observedAt": "2026-11-11T23:01:57.109+00:00",
+          "summary": "既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+          "recordPath": "research/nov12-local-refresh/evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_popup/status/2120354068426342687",
+          "observedAt": "2026-11-12T03:05:23.564Z",
+          "summary": "本文は11/13～15で1人1回、12:30まで前日19時、13時以降各回1時間前、開始から1時間で失効。今朝の準備内容と一致、初回11/12 19時。残枠未確認。",
+          "recordPath": "research/nov12-local-refresh/noon-recheck.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-13-tobu-utsunomiya"
+        ],
+        "note": "既存mainと回収した未公開差分を照合。新規IDも同じ準備データ内に存在するためmatched。実公開は未確認。"
+      },
+      "listingIds": [
+        "popup-2026-11-13-tobu-utsunomiya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "11/13～15のLINE整理券、3日間1人1回。午前～12:30枠は前日19時、13時以降は各回1時間前。初回11/12 19時。18:59反映目標を過ぎて未公開であり、遅延を記録し実残枠や公開実績は捏造しない。。既存会場を更新。11/13〜15の対象全期間1人1回、LINE整理券。開店〜12:30入場分は各来店日前日19時、13時以降は各回1時間前、距離制限なし、本人確認書類と同氏名で申込み・当日書類必須。開始時刻から1時間で失効、30分入替制、1券1人1会計。途中フリー入場への変更可能性あり。会期11/13〜12/1は維持。",
+      "nextCheck": "公開前に期限経過と最新条件を再確認し、実公開内容一致までpublishedAtはnullを維持。",
+      "recheckDueAt": "2026-11-12T19:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

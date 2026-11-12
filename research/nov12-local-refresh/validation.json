@@ -1,0 +1,14 @@
+{
+  "buildSpotPages": "passed: 885 pages",
+  "check": "passed: 80/80 unit tests; data, ledgers, canonical special-source and generated checks",
+  "diffCheck": "passed",
+  "ui": "not rerun: Chromium singleton socket Operation not permitted remains unverified",
+  "externalActions": "none; no commit/push/branch/registration",
+  "counts": {
+    "officialCurrent": 75,
+    "officialArchive": 716,
+    "collaborationsCurrent": 21,
+    "candidates": 495,
+    "sources": 856
+  }
+}
