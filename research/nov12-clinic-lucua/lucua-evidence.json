@@ -1,0 +1,48 @@
+{
+  "observedAt": "2026-11-12T14:31:57.654Z",
+  "scope": "Confirmed LUCUA building/store admission distinction; ticket application URLs not confirmed",
+  "officialEvidence": [
+    {
+      "url": "https://www.lucua.jp/south-entry/",
+      "status": 200,
+      "observedAt": "2026-11-12T14:31:57.654Z",
+      "sha256": "3fbfa7fe4f3b63ae6115b37acf1748e7a3c640aae3e026c14a11dd7833d881db",
+      "verifiedStoreWebRestrictionDates": [
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27",
+        "2026-11-28",
+        "2026-11-29",
+        "2026-11-30"
+      ],
+      "facts": [
+        "店舗券と館内券は代替関係で、店舗券があれば館内入場可能。ただし館内券のみでは制限店舗への入店不可。",
+        "館内券は当日朝6時からAirウェイト先着。店舗券の受付開始日時を示す情報ではない。",
+        "館内券取得ボタンはspan/aria-disabled=true、店舗名の日別行はリンクなし。現時点で両者の取得URLは未確認。",
+        "店舗券所持者は1Fサウス南エレベーター前へ。館内券1〜100番は1F南側広場東に9:30〜10:00集合、101番以降は呼出後14Fへ。",
+        "原則再入場不可。混雑によりフリー入場切替・券発行中断の可能性あり。",
+        "12月以降の館内枠のみ表示を、店舗制限終了・店舗フリー入場の根拠として扱わない。"
+      ]
+    },
+    {
+      "url": "https://nagano-info.jp/tenpo_nm/umeda/",
+      "status": 200,
+      "observationPrecision": "Read during this investigation; separate exact per-request timestamp not retained.",
+      "facts": [
+        "UMEDAの営業時間10〜20時・11/24開店・入場無料・フロアは事前抽選または先着券制と確認。取得方法は公式XとLUCUA特設サイト参照。具体的な店舗券申込URLは現行可視本文で未確認。"
+      ]
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/news/x0e64eb94v/",
+      "method": "web search open; direct Python HTTP403",
+      "facts": [
+        "10/23の公式発表は11/24開店・入場無料・東京池袋のチケットとは異なる旨。店舗詳細はLUCUAと公式Xで随時案内。具体的店舗券申込URLの根拠にはしない。"
+      ]
+    }
+  ],
+  "unresolved": [
+    "店舗券の申込方式（抽選か先着か）、受付開始日時、取得URL、人数制限、11/30以降の店舗別制限。",
+    "館内券のAirウェイト取得URLはボタンが無効で未確認。予約受付中とは表示しない。"
+  ]
+}

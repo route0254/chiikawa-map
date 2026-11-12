@@ -27667,6 +27667,437 @@
       "nextCheck": "公開JSON・更新対象51ファイルの内容一致を実測確認。以後は通常の公式続報・条件期限を確認する。",
       "recheckDueAt": "2026-11-12T19:00:00+09:00",
       "publishedAt": "2026-11-12T14:12:08.731Z"
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-tokyo-station-listing",
+      "title": "ちいかわクリニック＠東京駅一番街新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-tokyo-station",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-tokyo-station-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2026-12-24",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/tokyo.html",
+          "observedAt": "2026-11-12T14:39:22.451Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/18 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-tokyo-station"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-tokyo-station"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-ginza-listing",
+      "title": "ちいかわクリニック＠ギンザミライミュージアム新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-ginza",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-ginza-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2026-12-27",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/ginza.html",
+          "observedAt": "2026-11-12T14:39:25.146Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/18 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-ginza"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-ginza"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-nagoya-parco-listing",
+      "title": "ちいかわクリニック＠名古屋PARCO新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-nagoya-parco",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-nagoya-parco-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2026-12-20",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/nagoya.html",
+          "observedAt": "2026-11-12T14:39:27.689Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/17 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-nagoya-parco"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-nagoya-parco"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-osaka-umeda-listing",
+      "title": "ちいかわクリニック＠キデイランド大阪梅田店新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-osaka-umeda",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-osaka-umeda-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2026-12-09",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/umeda.html",
+          "observedAt": "2026-11-12T14:39:30.271Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/17 20:00から二次受付（先着）。12/1〜12/9は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-osaka-umeda"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-osaka-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-hiroshima-parco-listing",
+      "title": "ちいかわクリニック＠キデイランド広島パルコ店新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-hiroshima-parco",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-hiroshima-parco-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2027-01-06",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/hiroshima.html",
+          "observedAt": "2026-11-12T14:39:32.959Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/16 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-hiroshima-parco"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-hiroshima-parco"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-sapporo-apia-listing",
+      "title": "ちいかわクリニック＠札幌アピア新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-sapporo-apia",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-sapporo-apia-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2027-01-05",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/sapporo.html",
+          "observedAt": "2026-11-12T14:39:36.179Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/16 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-sapporo-apia"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-sapporo-apia"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-sendai-parco-listing",
+      "title": "ちいかわクリニック＠仙台PARCO新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-sendai-parco",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-sendai-parco-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2026-12-20",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/sendai.html",
+          "observedAt": "2026-11-12T14:39:39.112Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/16 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-sendai-parco"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-sendai-parco"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-amu-kumamoto-listing",
+      "title": "ちいかわクリニック＠アミュプラザくまもと新規掲載",
+      "kind": "new_listing",
+      "targetKey": "chiikawa-clinic-2026-11-27-amu-kumamoto",
+      "sourceIds": [
+        "chiikawa-clinic-2026-11-27-amu-kumamoto-official",
+        "chiikawa-clinic-2026-index"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": "2027-01-11",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-13T10:00:00+09:00",
+      "reflectDueAt": "2026-11-13T09:59:00+09:00",
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/kumamoto.html",
+          "observedAt": "2026-11-12T14:39:41.900Z",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "11/27〜11/30の入場はLINE事前抽選予約制。申込期間は11/13 10:00〜11/15 23:59、結果は11/16中に案内。空きがある場合のみ11/16 20:00から二次受付（先着）。12/1〜12/10は各入場日の前日18:00から先着受付。予約申込みは各日・各会場につき1人1回まで。顔写真・氏名の登録と当日の本人確認書類原本が必要。入場QRは開始5分前に届き、開始30分後に無効になります。 12/11以降の入場方法は未確認のため、公式の続報をご確認ください。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-clinic-2026-11-27-amu-kumamoto"
+        ],
+        "note": "公開基準358f1e7eには未掲載。今回の準備データ内に新規IDを登録し、そのレコードとの一致を確認。公開済みの意味ではない。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-clinic-2026-11-27-amu-kumamoto"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "会場別期間と代表座標を確認して新規掲載。予約開始前09:59は運用上の反映目標。予約や在庫の確保は行わない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "clinic-2026-land-stores-notice",
+      "title": "ちいかわクリニック取扱らんど11店舗",
+      "kind": "listing_update",
+      "targetKey": "chiikawa-clinic-2026-land",
+      "sourceIds": [
+        "chiikawa-clinic-2026-land",
+        "chiikawa-clinic-2026-11-27-tokyo-station-official"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-27",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/chiikawaclinic/img/tokyo_01.jpg",
+          "observedAt": "2026-11-12",
+          "recordPath": "research/nov12-clinic-lucua/clinic-evidence.json",
+          "summary": "公式画像を実読。既存11店の11/27取扱と、専用整理券詳細の後日発表を確認。画像実読の正確な時刻は未保持のため日付のみ。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-harajuku",
+          "chiikawaland-fukuoka",
+          "chiikawaland-kyoto",
+          "chiikawaland-solamachi",
+          "chiikawaland-sapporo",
+          "chiikawaland-yokohama",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-shinjuku",
+          "chiikawaland-kanazawa",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya"
+        ],
+        "note": "公開基準358f1e7eとID・同一会場を照合。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawaland-harajuku",
+        "chiikawaland-fukuoka",
+        "chiikawaland-kyoto",
+        "chiikawaland-solamachi",
+        "chiikawaland-sapporo",
+        "chiikawaland-yokohama",
+        "chiikawaland-shinsaibashi",
+        "chiikawaland-shinjuku",
+        "chiikawaland-kanazawa",
+        "chiikawaland-ikebukuro",
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "常設店舗の期間・ID・直近11/14等の入場条件を保持し、取扱企画だけ追記。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "lucua-south-entry-20261124-30",
+      "title": "LUCUA SOUTH 2店舗の11/24〜30入場案内",
+      "kind": "reservation_update",
+      "targetKey": "lucua-south-entry-calendar",
+      "sourceIds": [
+        "lucua-south-entry-calendar"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-11-30",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": null,
+      "evidence": [
+        {
+          "url": "https://www.lucua.jp/south-entry/",
+          "observedAt": "2026-11-12T14:31:57.654Z",
+          "recordPath": "research/nov12-clinic-lucua/lucua-evidence.json",
+          "summary": "本店舗WEB券と館内当日6時Airウェイト券を区別。館内券だけでは対象店舗入場不可。店舗券の申込時刻・方式・取得先は未確認。"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-store-osaka",
+          "nagano-market-umeda"
+        ],
+        "note": "公開基準358f1e7eとID・同一会場を照合。先行巡回の正確な発見時刻は未保持のためdiscoveredAtはnull。"
+      },
+      "listingIds": [
+        "chiikawa-park-store-osaka",
+        "nagano-market-umeda"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "確定した券種の違いと対象日だけ反映。6時を店舗券受付時刻にしない。",
+      "nextCheck": "検査後に公開し、実サイトの内容一致を確認してから公開時刻を記録する。",
+      "recheckDueAt": "2026-11-13T09:30:00+09:00",
+      "publishedAt": null
     }
   ]
 }

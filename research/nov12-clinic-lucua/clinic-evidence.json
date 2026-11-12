@@ -1,0 +1,195 @@
+{
+  "verifiedAtDate": "2026-11-12",
+  "scope": "Eight domestic temporary merchandise venues and campaign notices on eleven existing official stores; no medical services; no schema/UI changes",
+  "coordinateEvidence": [
+    {
+      "id": "chiikawa-clinic-2026-11-27-tokyo-station",
+      "reusedRecordId": "chiikawa-baby-2025-09-05-tokyo-station",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-ginza",
+      "reusedRecordId": null,
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "Mapion会場固有地図（非公式地図）",
+      "sourceUrl": "https://www.mapion.co.jp/phonebook/M04101/13102/0000GZMM_001pa/",
+      "mapUrl": "https://www.mapion.co.jp/m2/15.00/35.67441071/139.76595344/0/0?poi=0000GZMM_001pa",
+      "note": "会場名・銀座2-3-6の住所一致を確認。数値の桁数は地図出力であり測量精度を意味しない。GSI住所APIはタイムアウトし根拠に使用していない。"
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-nagoya-parco",
+      "reusedRecordId": "chiikawaland-nagoya",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-osaka-umeda",
+      "reusedRecordId": "chiikawaland-osaka-umeda",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-hiroshima-parco",
+      "reusedRecordId": "chiikawaland-hiroshima",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-sapporo-apia",
+      "reusedRecordId": "magical-popup-2026-10-02-sapporo-apia",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-sendai-parco",
+      "reusedRecordId": "chiikawa-pocket-2026-04-10-sendai-parco",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    },
+    {
+      "id": "chiikawa-clinic-2026-11-27-amu-kumamoto",
+      "reusedRecordId": "chiikawaland-popup-2025-12-05-amu-kumamoto",
+      "precision": "施設代表点。催事区画の精密位置ではない。",
+      "source": "既存掲載／歴史原本の同一施設",
+      "sourceUrl": null,
+      "mapUrl": null,
+      "note": ""
+    }
+  ],
+  "evidence": {
+    "primaryUrls": [
+      "https://chiikawa-info.jp/p26/chiikawaclinic/index.html",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/tenpo_list_01.jpg",
+      "https://prtimes.jp/main/html/rd/p/000000412.000001117.html"
+    ],
+    "entryImages": [
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/tokyo_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/ginza_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/nagoya_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/umeda_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/hiroshima_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/sapporo_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/sendai_01.jpg",
+      "https://chiikawa-info.jp/p26/chiikawaclinic/img/kumamoto_01.jpg"
+    ],
+    "method": "公式ページ本文、公式会場一覧・入場案内画像を読み取り。期間・会場・住所・時間は主催者公式発表と照合。",
+    "unknowns": [
+      "梅田以外の12/11以降の入場方法",
+      "11らんど店舗のクリニック専用整理券詳細",
+      "年末年始の具体的な変更営業時間"
+    ]
+  },
+  "excludedOverseas": {
+    "reason": "国内マップの対象外",
+    "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/img/tenpo_list_02_2.jpg",
+    "venues": [
+      "ソウル",
+      "香港",
+      "上海",
+      "台湾・華山",
+      "深圳"
+    ]
+  },
+  "entrySemantics": "Only Osaka Umeda has confirmed reservation requirements for its complete event period. Seven later-ending events retain unknown/other general entry status with mandatory reservation dates explicitly limited to November 27–December 10. Existing permanent-store November 14 conditions preserved.",
+  "reservationHrefChecks": [
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/tokyo.html",
+      "observedAt": "2026-11-12T14:39:22.451Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://lin.ee/ZkmtWxk"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/ginza.html",
+      "observedAt": "2026-11-12T14:39:25.146Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://lin.ee/ZkmtWxk"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/nagoya.html",
+      "observedAt": "2026-11-12T14:39:27.689Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://line.me/R/ti/p/@786sasix?ts=08250834&oat_content=url"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/umeda.html",
+      "observedAt": "2026-11-12T14:39:30.271Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://line.me/R/ti/p/@786sasix?ts=08250834&oat_content=url"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/hiroshima.html",
+      "observedAt": "2026-11-12T14:39:32.959Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://line.me/R/ti/p/@786sasix?ts=08250834&oat_content=url"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/sapporo.html",
+      "observedAt": "2026-11-12T14:39:36.179Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://line.me/R/ti/p/@786sasix?ts=08250834&oat_content=url"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/sendai.html",
+      "observedAt": "2026-11-12T14:39:39.112Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://line.me/R/ti/p/@786sasix?ts=08250834&oat_content=url"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    },
+    {
+      "sourceUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/kumamoto.html",
+      "observedAt": "2026-11-12T14:39:41.900Z",
+      "httpStatus": 200,
+      "reservationHrefs": [
+        "https://lin.ee/ZkmtWxk"
+      ],
+      "officialPublishedAt": null,
+      "method": "公式HTMLのa要素hrefを抽出。LINE先での予約可否・受付状態は未検査。"
+    }
+  ]
+}
