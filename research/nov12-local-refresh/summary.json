@@ -1,0 +1,24 @@
+{
+  "changedSpotIds": [
+    "magical-shinjuku",
+    "magical-umeda",
+    "magical-nagoya",
+    "mogumogu-fushimi",
+    "baby-castella-otaru",
+    "chiikawa-park-tokyo",
+    "popup-2026-11-11-aeon-kobekita",
+    "popup-2026-11-13-tobu-utsunomiya",
+    "popup-2026-11-24-jr-ikebukuro"
+  ],
+  "newSpotId": "popup-2026-11-24-jr-ikebukuro",
+  "addressCoordinateInheritance": "popup-2026-09-18-jr-ikebukuro の同一南改札外会場。旧開催回は保持。",
+  "canonicalSourceCheck": "今回の9IDはspecial-events-source管理外。既存のspecial-events-sourceは変更せず同期検査で確認する。",
+  "firstAdded": "未公開の新規5スポットと講談社コラボ、計6件を公開予定日2026-11-12へ設定。既存公開IDは維持。延期時は最終公開日を再確認。",
+  "limits": [
+    "公開・push・commit・branch操作なし",
+    "実残枠・配布実績は未確認",
+    "UI再実行なし。既知Chromium singleton socket制限のため未検証",
+    "公開前の期限再確認:神戸北11/12 09:29、宇都宮11/12 18:59、まじかる11/13朝",
+    "既存候補の初回発見日、期限、publishedAt null、過去成功日時は維持"
+  ]
+}

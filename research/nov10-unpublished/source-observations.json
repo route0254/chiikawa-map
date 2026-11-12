@@ -1,0 +1,590 @@
+{
+  "dateJST": "2026-11-10",
+  "coverageNote": "調査した情報源のみ。839件全情報源の当日巡回・全SNS取得を意味しない。土浦は今回対象外。既存台帳は変更せず観測を別記録へ保存。",
+  "observations": [
+    {
+      "url": "https://chiikawa-info.jp/pus.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:42.358Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web01.json",
+      "sourceIds": [
+        "chiikawa-popup-list"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:29Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://nagano-info.jp/pus.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:42.358Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web01.json",
+      "sourceIds": [
+        "nagano-popup-list"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:29Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:42.358Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web01.json",
+      "sourceIds": [
+        "morning-https-www-chiikawamogumogu-jp-news"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-31T10:01:14.000Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/news/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:42.358Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web01.json",
+      "sourceIds": [
+        "evening-chiikawapark-tokyo-jp-news"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:37Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawabakery.jp/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:56.485Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web02.json",
+      "sourceIds": [
+        "morning-existing21-2cb24f2734c6"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:52:14Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:56.485Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web02.json",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:15Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://cocreco.kodansha.co.jp/cocreco/general/study/mmGE7",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:56.485Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web02.json",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": [],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T22:59:56.485Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web02.json",
+      "sourceIds": [
+        "tamanohikari-chiikawa-shop-details"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T23:10:20.435+00:00"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:00:22.377Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web03.json",
+      "sourceIds": [
+        "official-observation-c1d172d22833"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:51:03.163Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/2026/10/28/post-2535/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:00:22.377Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web03.json",
+      "sourceIds": [
+        "official-observation-894ca986cd6d"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:50:58.000Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://fukuoka.parco.jp/event/detail/?id=39437",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:00:22.377Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web03.json",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": [],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/chiikawarestaurant_drinkT_shizuoka?area=031750",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:00:22.377Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web03.json",
+      "sourceIds": [
+        "official-observation-6911ca3c5d89"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T23:06:16.240+00:00"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://www.lucua.jp/special/south-open/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:00:22.377Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web03.json",
+      "sourceIds": [
+        "lucua-south-opening"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-30T10:13:27.044Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/ck_land.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web04.json",
+      "sourceIds": [
+        "chiikawaland-store-list"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:29Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/magical_s.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web04.json",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-6bd3ce9b8b"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:29Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://x.com/chiikawa_land/status/2118255283336266088",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "recordPath": "web04.json",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": [],
+      "limitation": "取得不可。従来の成功日時と証拠は保持。"
+    },
+    {
+      "url": "https://x.com/magi_chiikawa/status/2117061672292823484",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "recordPath": "web04.json",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": [],
+      "limitation": "取得不可。従来の成功日時と証拠は保持。"
+    },
+    {
+      "url": "https://x.com/Kiramekko_pr/status/2111294371736047763",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "fetch_failed",
+      "httpStatus": 403,
+      "recordPath": "web04.json",
+      "sourceIds": [
+        "kiramekko-kitte-marunouchi-1f-20261017-official"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:54:29.690Z"
+      ],
+      "limitation": "取得不可。従来の成功日時と証拠は保持。"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawarestaurant_tokyo?area=029439",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web04.json",
+      "sourceIds": [
+        "chiikawa-restaurant-reservation"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T10:02:22.000Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://www.chiikawa-yaki.com/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:10.288Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web04.json",
+      "sourceIds": [
+        "chiikawa-yaki-official"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-03T22:59:12.504Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://contents-abema.com/chiikawa-christmas-market/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "chiikawa-christmas-market-official"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T10:02:39.862Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://www.ana.co.jp/ja/jp/domestic/theme/chiikawa-jet/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "ana-chiikawa-jet"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T23:05:48.604+00:00"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://www.tokyobanana.jp/products/banana_chiikawa.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "tokyo-banana-chiikawa"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T23:56:20.660Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://escape.id/chiikawa-org/p-chiikawa-kit/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "corporate-tokyo-metro-escape-delivery-kit"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-04T09:57:18.357Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/ck_sushi.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "observed-chiikawa-info-jp-f14e0e6fed"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T09:58:53.603+00:00"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/ramenbuta.html",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "morning-series18-82c047f25716"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:52:46.000Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://cafe.parco.jp/event/reservation/chiikawaramenbuta_shibuya?area=029979",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:01:28.685Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web05.json",
+      "sourceIds": [
+        "ramen-buta-shibuya-reservation-official"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T09:58:47.563+00:00"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "route": "cloud_web",
+      "completedAt": "2026-11-09T23:05:23.062Z",
+      "timePrecision": "batch_tool_completion",
+      "result": "body_retrieved_partial",
+      "httpStatus": null,
+      "recordPath": "web06.json",
+      "sourceIds": [
+        "corporate-gu-chiikawa-faq"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:50:59.819Z"
+      ],
+      "limitation": "Web取得本文の確認。画像全体・SNS続報・ライブ在庫・全ページ網羅を保証しない。原サイトlive成功日時として既存台帳を上書きしない。"
+    },
+    {
+      "key": "drill",
+      "url": "https://cocreco.kodansha.co.jp/cocreco/general/study/mmGE7",
+      "status": 200,
+      "finalUrl": "https://cocreco.kodansha.co.jp/cocreco/general/study/mmGE7",
+      "bytes": 275776,
+      "sha256": "1319967826d83ca78acdf566bf0ee048acf76e4c9ca5b7afd7bf2258e617b01f",
+      "completedAt": "2026-11-09T23:01:16.921733+00:00",
+      "route": "direct_http",
+      "result": "body_retrieved",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": []
+    },
+    {
+      "key": "tamanohikari",
+      "url": "https://ec.tamanohikari.co.jp/products/cds",
+      "status": 200,
+      "finalUrl": "https://ec.tamanohikari.co.jp/products/cds",
+      "bytes": 723587,
+      "sha256": "6b9576faeca95af18188dfe1683b7102e2a6fb7c219ff61453a730452cdb7ad8",
+      "completedAt": "2026-11-09T23:01:15.757679+00:00",
+      "route": "direct_http",
+      "result": "body_retrieved",
+      "sourceIds": [
+        "tamanohikari-chiikawa-shop-details"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T23:10:20.435+00:00"
+      ]
+    },
+    {
+      "key": "gu",
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "status": 200,
+      "finalUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "bytes": 241029,
+      "sha256": "b86bc5dc2ebcb026d5cbeab6299c571363edcde6766e6fcabd039dcce62b89f7",
+      "completedAt": "2026-11-09T23:01:15.895865+00:00",
+      "route": "direct_http",
+      "result": "body_retrieved",
+      "sourceIds": [
+        "corporate-gu-chiikawa-faq"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:50:59.819Z"
+      ]
+    },
+    {
+      "key": "bakery",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "status": 200,
+      "finalUrl": "https://chiikawabakery.jp/reservation/",
+      "bytes": 51555,
+      "sha256": "55f213e6ee6add5a42233d3820ea436c3bbf45563b88b31911c52764759c3c12",
+      "completedAt": "2026-11-09T23:01:14.441370+00:00",
+      "route": "direct_http",
+      "result": "body_retrieved",
+      "sourceIds": [
+        "chiikawa-bakery-reservation"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-02T09:51:15Z"
+      ]
+    },
+    {
+      "key": "kamakura",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/All/36318",
+      "status": 200,
+      "finalUrl": "https://telacoya-jobs.net/jobfind-pc/job/All/36318",
+      "bytes": 6654,
+      "sha256": "612420a18277a3f56ef4cb7da14a8196a54d6a00b0d56f92a727a9f4a2b991ab",
+      "completedAt": "2026-11-09T23:01:13.762748+00:00",
+      "route": "direct_http",
+      "result": "body_retrieved",
+      "sourceIds": [
+        "kamakura-recruitment-36318"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-05T10:52:38.246Z"
+      ]
+    },
+    {
+      "key": "kobe",
+      "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+      "status": 406,
+      "error": "HTTP Error 406: Not Acceptable",
+      "completedAt": "2026-11-09T23:01:14.478088+00:00",
+      "route": "direct_http",
+      "result": "fetch_failed",
+      "sourceIds": [
+        "official-observation-c1d172d22833"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-11-01T22:51:03.163Z"
+      ]
+    },
+    {
+      "key": "parco-shizuoka",
+      "url": "https://cafe.parco.jp/event/chiikawarestaurant_drinkT_shizuoka?area=031750",
+      "status": 200,
+      "finalUrl": "https://cafe.parco.jp/event/chiikawarestaurant_drinkT_shizuoka?area=031750",
+      "bytes": 30702,
+      "sha256": "adc46c3c4bca7ac02c0e6b4eb223896361447d8ea889a6e22df8d913b21c66f1",
+      "completedAt": "2026-11-09T23:01:13.859395+00:00",
+      "route": "direct_http",
+      "result": "body_retrieved",
+      "sourceIds": [
+        "official-observation-6911ca3c5d89"
+      ],
+      "previousLedgerLastSuccessfulAt": [
+        "2026-10-29T23:06:16.240+00:00"
+      ]
+    },
+    {
+      "key": "land-oembed",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_land%2Fstatus%2F2118255283336266088",
+      "status": 200,
+      "finalUrl": "https://publish.x.com/oembed?url=https%3A%2F%2Fx.com%2Fchiikawa_land%2Fstatus%2F2118255283336266088",
+      "bytes": 1508,
+      "sha256": "2ec0b7893d7af24c9b0bb148f23995fe2227863569d60696ce5a15b1d0d96d6f",
+      "completedAt": "2026-11-09T23:01:18.223022+00:00",
+      "route": "direct_http",
+      "result": "oembed_text_only",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": []
+    },
+    {
+      "key": "land-entry",
+      "url": "https://pbs.twimg.com/media/HWWN85rbUAEr9Y-?format=jpg&name=medium",
+      "status": 200,
+      "finalUrl": "https://pbs.twimg.com/media/HWWN85rbUAEr9Y-?format=jpg&name=medium",
+      "bytes": 207993,
+      "sha256": "1c7b0a39a7cc6ad5c00e166455202aeb0da0b390f4b7bc539a101325defe96e5",
+      "completedAt": "2026-11-09T23:01:17.431857+00:00",
+      "route": "direct_http",
+      "result": "image_retrieved_and_visually_checked",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": []
+    },
+    {
+      "key": "land-products",
+      "url": "https://pbs.twimg.com/media/HWWN85sbsAASWLw?format=jpg&name=medium",
+      "status": 200,
+      "finalUrl": "https://pbs.twimg.com/media/HWWN85sbsAASWLw?format=jpg&name=medium",
+      "bytes": 150105,
+      "sha256": "19167f9d0e1567ecceb2988b8a13eea6e125c73bf858aa2ba4831b2defc56d94",
+      "completedAt": "2026-11-09T23:01:17.379291+00:00",
+      "route": "direct_http",
+      "result": "image_retrieved_and_visually_checked",
+      "sourceIds": [],
+      "previousLedgerLastSuccessfulAt": []
+    }
+  ]
+}
