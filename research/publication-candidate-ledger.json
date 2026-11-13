@@ -17300,7 +17300,7 @@
       "existingMatch": {
         "status": "new",
         "ids": [],
-        "note": "10/23朝の最新main/live一致公開3JSON98/671/23件にも鎌倉既存IDなし。"
+        "note": "11/13朝の公開3JSON83/716/21件と基準main f4fb4632を照合。同一候補ID・既存掲載IDを保持し重複登録しない。"
       },
       "listingIds": [],
       "state": "on_hold",
@@ -17545,11 +17545,35 @@
           "observedAt": "2026-11-05T10:52:38.246Z",
           "summary": "11/5更新の公式求人で2026年12月OPEN予定・鎌倉市小町2-10-18 二ノ鳥居ビル1Fの記載を確認。正式開業日・予約日未確定。求人を一般来店確定告知へ転用せず保留維持。",
           "recordPath": "research/evening-20261105-listing-evidence.json"
+        },
+        {
+          "url": "https://telacoya-jobs.net/jobfind-pc/job/All/36318",
+          "observedAt": "2026-11-12T23:12:17.658+00:00",
+          "summary": "公式求人はHTTP200で現在非公開。11/5に確認した12月予定から正確な開業日を補わない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": "2026-11-12T23:12:17.742+00:00",
+          "summary": "公式新着の最新は11/11の伏見・小樽案内。今回の取得本文に鎌倉の開業日・予約日なし。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/",
+          "observedAt": "2026-11-12T23:16:56.070+00:00",
+          "summary": "ブランド公式トップを取得。取得本文に鎌倉の正式開業日・予約日なし。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://www.telacoya.co.jp/company/shop-a/",
+          "observedAt": "2026-11-12T23:16:58.315+00:00",
+          "summary": "運営公式店舗一覧の鎌倉欄は遊膳2店・みっふぃー1店。もぐもぐ本舗の開業告知なし。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
         }
       ],
-      "decision": "11/5更新の公式求人で2026年12月OPEN予定・鎌倉市小町2-10-18 二ノ鳥居ビル1Fの記載を確認。正式開業日・予約日未確定。求人を一般来店確定告知へ転用せず保留維持。",
-      "nextCheck": "公式の店舗・開業・予約告知を次回の朝夕巡回で確認。求人の月表記や勤務時間から開業日・営業時間を補完しない。",
-      "recheckDueAt": "2026-11-06T08:00:00+09:00"
+      "decision": "11/13朝、公式求人は非公開。公式ニュース・トップ・運営店舗一覧にも正式開業日・予約日は確認できない。12月予定の既知根拠は保持するが一般来店の開始日を推定せず保留。",
+      "nextCheck": "公式ニュース・店舗案内・求人に鎌倉の正式開業日や予約告知が出たか確認。勤務時間を営業時間に転用しない。",
+      "recheckDueAt": "2026-11-13T19:00:00+09:00"
     },
     {
       "id": "update-ana-purchase-limit-extension-20261022",
@@ -20857,6 +20881,24 @@
           "observedAt": null,
           "summary": "2026年11月3日朝のクラウド限定再確認。保留の未知値は未確定のまま、状態・初回発見・既知公開時刻を保持。秒精度の確認時刻は未受信。",
           "recordPath": "research/archive-gransta-20261103-evidence.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-11-12T23:12:16.042+00:00",
+          "summary": "通常HTTPは403。別Web閲覧本文は券販売停止継続・大阪10〜12月完売。実受付と1月日程は未確認。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": "2026-11-13",
+          "summary": "取得本文で優先入場券販売停止と大阪10〜12月完売を確認。取得基盤のキャッシュを含み得るため通常HTTP200とはしない。1月日程・再開は未確認。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/20261030_news/",
+          "observedAt": "2026-11-13",
+          "summary": "公式告知本文は販売停止、再開は公式HP/Xで別途案内、既存QR有効・再取得不要。確認手段はWeb閲覧で通常HTTPと区別。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
         }
       ],
       "existingMatch": {
@@ -20864,16 +20906,16 @@
         "ids": [
           "chiikawa-bakery-osaka"
         ],
-        "note": "main acf5596c95cc5f8868cb18ea6b6e43f5db9e4583 の現行・履歴・同一企画と照合。既存ID維持、別開催回は新規ID。"
+        "note": "11/13朝の公開3JSON83/716/21件と基準main f4fb4632を照合。同一候補ID・既存掲載IDを保持し重複登録しない。"
       },
       "listingIds": [
         "chiikawa-bakery-osaka"
       ],
       "state": "on_hold",
       "priority": "normal",
-      "decision": "旧1月分画像は現在未掲載。現画像は11～12月分で、2027年1月1日以降の詳細は後日案内。画像差替えは旧表記の訂正確定・1月発売日確定・受付再開の根拠にはならない。 2026-10-31夕の限定確認でも未知の開始・終期・連続性・販売詳細は未解決。既存状態と元の初回発見を保持。",
-      "nextCheck": "11/3朝のクラウド再確認で未確定事項の新しい根拠なし。次回19時に対象の一次続報を限定確認。画像未取得・実受付未確認を成功としない。",
-      "recheckDueAt": "2026-11-03T19:00:00+09:00",
+      "decision": "11/13朝、通常HTTP403と別Web本文を区別。公式本文は優先入場券販売停止継続、大阪10〜12月完売。1月券の正式日程・受付再開は未確認。旧年表記不一致を解消済みとせず保留。",
+      "nextCheck": "公式予約ページと大阪公式Xで1月詳細・受付再開・訂正を確認。画像未取得や予約画面未確認を受付成功とみなさない。",
+      "recheckDueAt": "2026-11-13T19:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -24657,19 +24699,37 @@
           "observedAt": null,
           "summary": "2026年11月3日朝のクラウド限定再確認。保留の未知値は未確定のまま、状態・初回発見・既知公開時刻を保持。秒精度の確認時刻は未受信。",
           "recordPath": "research/archive-gransta-20261103-evidence.json"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000063.000168561.html",
+          "observedAt": "2026-11-12T23:12:17.223+00:00",
+          "summary": "7/18の丸の内1F・B1F各1台設置告知。現在の稼働継続の根拠にはしない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://x.com/grayparkasevice/status/2111290444542001379",
+          "observedAt": "2026-11-12T23:12:20.154+00:00",
+          "summary": "メーカー公式oEmbed本文でKITTE丸の内のラッピングがmofusandへ変更したことを確認。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://x.com/Kiramekko_pr/status/2111294371736047763",
+          "observedAt": "2026-11-12T23:12:20.153+00:00",
+          "summary": "Kiramekko公式oEmbed本文は丸の内1Fのmofusand変更を明示。B1Fのちいかわ現況は示さない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
         }
       ],
       "existingMatch": {
         "status": "new",
         "ids": [],
-        "note": "基点の現行・履歴・コラボ・候補台帳を照合。同じ会場/会期/企画の重複なし。"
+        "note": "11/13朝の公開3JSON83/716/21件と基準main f4fb4632を照合。同一候補ID・既存掲載IDを保持し重複登録しない。"
       },
       "listingIds": [],
       "state": "on_hold",
       "priority": "normal",
-      "decision": "朝のメーカー・Kiramekko公式投稿原文を保全。1Fは10/17にmofusandへ変更済み。B1Fのちいかわ現況は未確定のため、当時の2台を現役掲載しない。",
-      "nextCheck": "11/3朝のクラウド再確認で未確定事項の新しい根拠なし。次回19時に対象の一次続報を限定確認。画像未取得・実受付未確認を成功としない。",
-      "recheckDueAt": "2026-11-03T19:00:00+09:00",
+      "decision": "11/13朝、公式oEmbed本文で1Fのmofusand変更を再確認。B1Fのちいかわ現況は確定せず保留。7月の2台告知や別会場のKITTE名古屋案内から現役2台を推定掲載しない。",
+      "nextCheck": "メーカー・Kiramekko・施設の公式案内で丸の内B1Fの現況を確認。1F変更済みとB1F未確定を区別。",
+      "recheckDueAt": "2026-11-13T19:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -28158,6 +28218,68 @@
       "nextCheck": "公開内容一致を確認済み。以後は予約受付・未発表の後半入場方法や店舗券取得先の公式続報を通常巡回で確認する。",
       "recheckDueAt": "2026-11-13T09:30:00+09:00",
       "publishedAt": "2026-11-12T15:16:01.210Z"
+    },
+    {
+      "id": "magical-purchase-ticket-expiry-20261113",
+      "title": "まじかる常設3店 11/9〜12購入券終了の案内整理",
+      "kind": "reservation_update",
+      "targetKey": "magical-three-stores:purchase-ticket-expiry-20261113",
+      "sourceIds": [
+        "magical-store-entry-updates-x"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-13",
+      "eventStartsAt": null,
+      "eventEndsAt": "2026-11-12",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-13T23:59:59+09:00",
+      "evidence": [
+        {
+          "url": "https://x.com/magi_chiikawa",
+          "observedAt": "2026-11-12T23:16:24.036+00:00",
+          "summary": "公式プロフィールHTTP200。可視本文は11/9までで、11/9〜12購入券の案内を確認。取得範囲内で11/13以後の販売条件は確認できない。全投稿の網羅確認ではない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://x.com/magi_chiikawa/status/2119606395456925953",
+          "observedAt": "2026-11-12T23:16:58.179+00:00",
+          "summary": "公式oEmbed本文で新宿の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://x.com/magi_chiikawa/status/2119400977203937498",
+          "observedAt": "2026-11-12T23:16:58.195+00:00",
+          "summary": "公式oEmbed本文で梅田の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://x.com/magi_chiikawa/status/2119633348410908981",
+          "observedAt": "2026-11-12T23:16:58.185+00:00",
+          "summary": "公式oEmbed本文で名古屋の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
+          "recordPath": "research/maintenance-20261113/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "magical-shinjuku",
+          "magical-umeda",
+          "magical-nagoya"
+        ],
+        "note": "公開main f4fb4632の常設3店に旧購入券条件が現在形で残存。店舗そのものは終了していない。"
+      },
+      "listingIds": [
+        "magical-shinjuku",
+        "magical-umeda",
+        "magical-nagoya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "購入券の対象期間終了を明示し、旧抽選・二次先着・集合案内を現行注意から整理。常設掲載、通常入場、10/23からの購入数制限を保持。後続販売・在庫は未確認とし、らんど11/14条件を転用しない。",
+      "nextCheck": "公開内容一致を実測後にpublishedAtへ記録。まじかるの新しい購入方法や在庫は次回公式巡回で確認。",
+      "recheckDueAt": "2026-11-13T19:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

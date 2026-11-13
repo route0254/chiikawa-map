@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-11-12T23:19:07.944+00:00",
+  "baselineCommit": "f4fb4632042513764e35adff9329c02fbf9d1343",
+  "scope": "まじかる常設3店の11/9〜12購入券終了と既存保留3件のみ。土浦は確認対象外。",
+  "httpObservations": [
+    {
+      "id": "kamakura-jobs",
+      "url": "https://telacoya-jobs.net/jobfind-pc/job/All/36318",
+      "httpStatus": 200,
+      "sha256": "f26c451e1addc140a8f8d5219b9d24253e83510e1e4554032b2b571ac1adb497",
+      "completedAt": "2026-11-12T23:12:17.658+00:00",
+      "summary": "公式求人はHTTP200で現在非公開。11/5に確認した12月予定から正確な開業日を補わない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "mogumogu-news",
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "httpStatus": 200,
+      "sha256": "c17ad78519697dbe814b8126f5d0e207a3c27e9ebb19f0ca539bbb5eff5184a9",
+      "completedAt": "2026-11-12T23:12:17.742+00:00",
+      "contentEncoding": "gzip",
+      "decodedSha256": "7c90096247a4f61599be152c5940203d1ffcacb5c073c1742971b068aa461ce2",
+      "parsedAt": "2026-11-12T23:12:45.127+00:00",
+      "summary": "公式新着の最新は11/11の伏見・小樽案内。今回の取得本文に鎌倉の開業日・予約日なし。",
+      "method": "normal_http"
+    },
+    {
+      "id": "bakery-reservation",
+      "url": "https://chiikawabakery.jp/reservation/",
+      "error": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-11-12T23:12:16.042+00:00",
+      "summary": "通常HTTPは403。別Web閲覧本文は券販売停止継続・大阪10〜12月完売。実受付と1月日程は未確認。",
+      "method": "normal_http"
+    },
+    {
+      "id": "kitte-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000063.000168561.html",
+      "httpStatus": 200,
+      "sha256": "e63f5b05b597defff84177165ec2ac75b97a8202b94c243ea1fc248ab4eb65a4",
+      "completedAt": "2026-11-12T23:12:17.223+00:00",
+      "summary": "7/18の丸の内1F・B1F各1台設置告知。現在の稼働継続の根拠にはしない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "kitte-gps-oembed",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fgrayparkasevice%2Fstatus%2F2111290444542001379",
+      "httpStatus": 200,
+      "sha256": "6f70f52e1dcd320b6fd53ef9221f4d607e2dd4adbfb01e9bcfeec3cc25dbccdd",
+      "completedAt": "2026-11-12T23:12:20.154+00:00",
+      "summary": "メーカー公式oEmbed本文でKITTE丸の内のラッピングがmofusandへ変更したことを確認。",
+      "canonicalUrl": "https://x.com/grayparkasevice/status/2111290444542001379",
+      "method": "official_oembed"
+    },
+    {
+      "id": "kitte-kiramekko-oembed",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2FKiramekko_pr%2Fstatus%2F2111294371736047763",
+      "httpStatus": 200,
+      "sha256": "d14f975d905731c111d5d0a77fa031ebd391638abd0015ccddbe6bf7cfae8d02",
+      "completedAt": "2026-11-12T23:12:20.153+00:00",
+      "summary": "Kiramekko公式oEmbed本文は丸の内1Fのmofusand変更を明示。B1Fのちいかわ現況は示さない。",
+      "canonicalUrl": "https://x.com/Kiramekko_pr/status/2111294371736047763",
+      "method": "official_oembed"
+    },
+    {
+      "id": "magical-profile",
+      "url": "https://x.com/magi_chiikawa",
+      "httpStatus": 200,
+      "sha256": "0228c8d2a30e865694ef70fd9d9babb5b35a16895a7e3dbbb196f4f4ec1003b7",
+      "completedAt": "2026-11-12T23:16:24.036+00:00",
+      "summary": "公式プロフィールHTTP200。可視本文は11/9までで、11/9〜12購入券の案内を確認。取得範囲内で11/13以後の販売条件は確認できない。全投稿の網羅確認ではない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "magical-shinjuku-store",
+      "url": "https://chiikawa-info.jp/magical_store/shinjuku/",
+      "error": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-11-12T23:16:20.572+00:00",
+      "summary": "店舗公式ページはHTTP403。本文の最新条件を取得できない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "magical-umeda-store",
+      "url": "https://chiikawa-info.jp/magical_store/umeda/",
+      "error": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-11-12T23:16:20.574+00:00",
+      "summary": "店舗公式ページはHTTP403。本文の最新条件を取得できない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "magical-nagoya-store",
+      "url": "https://chiikawa-info.jp/magical_store/nagoya/",
+      "error": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-11-12T23:16:20.571+00:00",
+      "summary": "店舗公式ページはHTTP403。本文の最新条件を取得できない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "mogumogu-shops",
+      "url": "https://www.chiikawamogumogu.jp/shop/",
+      "error": "HTTP Error 403: Forbidden",
+      "completedAt": "2026-11-12T23:16:23.750+00:00",
+      "summary": "店舗一覧として試したURLはHTTP403。店舗内容を確認できていない。",
+      "method": "normal_http"
+    },
+    {
+      "id": "magical-shinjuku-oembed",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fmagi_chiikawa%2Fstatus%2F2119606395456925953",
+      "httpStatus": 200,
+      "sha256": "d19e2db84f6e4fc9419c2600e74b8af237648205ea8319f104a00bd3169c04d0",
+      "completedAt": "2026-11-12T23:16:58.179+00:00",
+      "summary": "公式oEmbed本文で新宿の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
+      "canonicalUrl": "https://x.com/magi_chiikawa/status/2119606395456925953",
+      "method": "official_oembed"
+    },
+    {
+      "id": "magical-umeda-oembed",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fmagi_chiikawa%2Fstatus%2F2119400977203937498",
+      "httpStatus": 200,
+      "sha256": "00c536d0b7255b540c004a29219d378376592e8bf4f00832f931d573caa77faf",
+      "completedAt": "2026-11-12T23:16:58.195+00:00",
+      "summary": "公式oEmbed本文で梅田の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
+      "canonicalUrl": "https://x.com/magi_chiikawa/status/2119400977203937498",
+      "method": "official_oembed"
+    },
+    {
+      "id": "magical-nagoya-oembed",
+      "url": "https://publish.twitter.com/oembed?url=https%3A%2F%2Fx.com%2Fmagi_chiikawa%2Fstatus%2F2119633348410908981",
+      "httpStatus": 200,
+      "sha256": "aecca40c1896ce702bfcc4a78c3969a51f2bf3a3aa91a0719c82b5e7c3e870ad",
+      "completedAt": "2026-11-12T23:16:58.185+00:00",
+      "summary": "公式oEmbed本文で名古屋の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
+      "canonicalUrl": "https://x.com/magi_chiikawa/status/2119633348410908981",
+      "method": "official_oembed"
+    },
+    {
+      "id": "mogumogu-home",
+      "url": "https://www.chiikawamogumogu.jp/",
+      "httpStatus": 200,
+      "sha256": "b56129358a5af18696b0f49633096091872ca630720b855ae504bc52d74c2a36",
+      "completedAt": "2026-11-12T23:16:56.070+00:00",
+      "summary": "ブランド公式トップを取得。取得本文に鎌倉の正式開業日・予約日なし。",
+      "method": "normal_http"
+    },
+    {
+      "id": "telacoya-shops",
+      "url": "https://www.telacoya.co.jp/company/shop-a/",
+      "httpStatus": 200,
+      "sha256": "f2288ccfd05a44703d77c148e6a7e0db1a51f61b439c9de891389e31001a792e",
+      "completedAt": "2026-11-12T23:16:58.315+00:00",
+      "summary": "運営公式店舗一覧の鎌倉欄は遊膳2店・みっふぃー1店。もぐもぐ本舗の開業告知なし。",
+      "method": "normal_http"
+    }
+  ],
+  "webObservations": [
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "observedAt": "2026-11-13",
+      "method": "web_reader",
+      "httpStatus": null,
+      "summary": "取得本文で優先入場券販売停止と大阪10〜12月完売を確認。取得基盤のキャッシュを含み得るため通常HTTP200とはしない。1月日程・再開は未確認。"
+    },
+    {
+      "url": "https://chiikawabakery.jp/20261030_news/",
+      "observedAt": "2026-11-13",
+      "method": "web_reader",
+      "httpStatus": null,
+      "summary": "公式告知本文は販売停止、再開は公式HP/Xで別途案内、既存QR有効・再取得不要。確認手段はWeb閲覧で通常HTTPと区別。"
+    }
+  ],
+  "limitations": [
+    "11/13以降のまじかる対象商品の販売・在庫を確定できていない。11/14のらんど条件をまじかる常設3店へ転用しない。",
+    "画像の今回再確認は行っていない。",
+    "保留3件の反映期限、発見日、未知値、過去根拠を保持。新たな保留IDを作らない。"
+  ]
+}
