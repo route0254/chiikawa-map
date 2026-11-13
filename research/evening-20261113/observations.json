@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-13",
+  "basisCommit": "8d52de056bec4c542fff4d27fba8eb3358c1bdf7",
+  "lastBroadRecorded": "2026-11-02",
+  "broaderDiscovery": {
+    "coverage": "会社・施設・系列の一次告知を補完検索。公式総合、ナガノ系列、パーク、ベーカリー、もぐもぐ本舗、商業施設、GU・郵便局・エンスカイを調べた範囲。巡回全件の網羅は未確認。",
+    "newListing": "京都駅西口店",
+    "conditionChanges": "浜松市野・太田は既存の条件と一致。あべのGUの施設別整理券案内を確認、全国コラボを一律に変更しない。",
+    "holds": [
+      {
+        "id": "chiikawa-mogumogu-kamakura-opening-202612",
+        "url": "https://www.chiikawamogumogu.jp/news/",
+        "summary": "公式ニュースの確認範囲は11/11伏見・小樽まで。鎌倉の正式日程・受付は未確認。",
+        "observedAt": null
+      },
+      {
+        "id": "bakery-osaka-january-sale-year-conflict-20261028",
+        "url": "https://chiikawabakery.jp/reservation/",
+        "summary": "公式予約案内では販売停止。大阪10～12月は完売、1月の受付と再開は未確定。",
+        "observedAt": null
+      },
+      {
+        "id": "hold-chiikawa-vending-kitte-marunouchi-current",
+        "url": "https://www.gps.co.jp/",
+        "summary": "検索では7月の設置告知と名古屋の別会場のみ。丸の内B1の現況は確認できず、1Fと混同しない。",
+        "observedAt": null
+      }
+    ],
+    "baselineMetrics": {
+      "preStartKnown": 74,
+      "preStartPublished": 70,
+      "unknown": 10,
+      "announcementToDiscovery": {
+        "n": 41,
+        "medianHours": 9.0046
+      },
+      "discoveryToPublic": {
+        "n": 237,
+        "medianHours": 0.8436
+      },
+      "announcementToPublic": {
+        "n": 48,
+        "medianHours": 9.4809
+      }
+    }
+  },
+  "limitations": [
+    "土浦の404は本人指定で今回も対象外。",
+    "週次リンク検査は後続成功未確認。",
+    "公開JSONの新規HTTP取得はタイムアウトがあり、GitHub Pages成功済みmainの3公開データで重複照合。今回の公開確認ではない。"
+  ]
+}

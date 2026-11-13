@@ -17569,11 +17569,17 @@
           "observedAt": "2026-11-12T23:16:58.315+00:00",
           "summary": "運営公式店舗一覧の鎌倉欄は遊膳2店・みっふぃー1店。もぐもぐ本舗の開業告知なし。",
           "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://www.chiikawamogumogu.jp/news/",
+          "observedAt": null,
+          "summary": "公式ニュースの確認範囲は11/11伏見・小樽まで。鎌倉の正式日程・受付は未確認。",
+          "recordPath": "research/evening-20261113/observations.json"
         }
       ],
       "decision": "11/13朝、公式求人は非公開。公式ニュース・トップ・運営店舗一覧にも正式開業日・予約日は確認できない。12月予定の既知根拠は保持するが一般来店の開始日を推定せず保留。",
       "nextCheck": "公式ニュース・店舗案内・求人に鎌倉の正式開業日や予約告知が出たか確認。勤務時間を営業時間に転用しない。",
-      "recheckDueAt": "2026-11-13T19:00:00+09:00"
+      "recheckDueAt": "2026-11-14T08:00:00+09:00"
     },
     {
       "id": "update-ana-purchase-limit-extension-20261022",
@@ -20899,6 +20905,12 @@
           "observedAt": "2026-11-13",
           "summary": "公式告知本文は販売停止、再開は公式HP/Xで別途案内、既存QR有効・再取得不要。確認手段はWeb閲覧で通常HTTPと区別。",
           "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://chiikawabakery.jp/reservation/",
+          "observedAt": null,
+          "summary": "公式予約案内では販売停止。大阪10～12月は完売、1月の受付と再開は未確定。",
+          "recordPath": "research/evening-20261113/observations.json"
         }
       ],
       "existingMatch": {
@@ -20915,7 +20927,7 @@
       "priority": "normal",
       "decision": "11/13朝、通常HTTP403と別Web本文を区別。公式本文は優先入場券販売停止継続、大阪10〜12月完売。1月券の正式日程・受付再開は未確認。旧年表記不一致を解消済みとせず保留。",
       "nextCheck": "公式予約ページと大阪公式Xで1月詳細・受付再開・訂正を確認。画像未取得や予約画面未確認を受付成功とみなさない。",
-      "recheckDueAt": "2026-11-13T19:00:00+09:00",
+      "recheckDueAt": "2026-11-14T08:00:00+09:00",
       "publishedAt": null
     },
     {
@@ -28286,6 +28298,102 @@
       "nextCheck": "PR116の公開対象11ファイルの完全一致を実測確認。今後の購入方法・在庫は次回公式巡回で確認。",
       "recheckDueAt": "2026-11-13T19:00:00+09:00",
       "publishedAt": "2026-11-13T01:48:09.119Z"
+    },
+    {
+      "kind": "new_listing",
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-13",
+      "eventStartsAt": "2026-11-26T10:00:00+09:00",
+      "eventEndsAt": "2026-12-10T18:00:00+09:00",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-25T23:59:59+09:00",
+      "listingIds": [
+        "popup-2026-11-26-ekimaru-jr-kyoto-west"
+      ],
+      "priority": "normal",
+      "recheckDueAt": "2026-11-14T08:00:00+09:00",
+      "publishedAt": null,
+      "id": "new-popup-2026-11-26-ekimaru-jr-kyoto-west",
+      "title": "ちいかわPOP UP STORE エキマル ア・ラ・モードJR京都駅西口店",
+      "targetKey": "popup-2026-11-26-ekimaru-jr-kyoto-west",
+      "sourceIds": [
+        "chiikawa-popup-kyoto-west-20261126",
+        "ekimaru-alamode-official-index"
+      ],
+      "state": "ready",
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-26-ekimaru-jr-kyoto-west"
+        ],
+        "note": "現行・履歴・コラボを照合。西口店の過去寿司催事と11月の京都mini企画はいずれも別。 今回のデータ案で新設したIDとの照合。"
+      },
+      "evidence": [
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ekky/img/main_v10.jpg",
+          "observedAt": "2026-11-13T10:05:52.757Z",
+          "summary": "会期11/26～12/10、10～21時、最終18時。",
+          "recordPath": null
+        },
+        {
+          "url": "https://chiikawa-info.jp/p26/pus_ekky/img/moushikomi_261030.jpg",
+          "observedAt": "2026-11-13T10:05:52.757Z",
+          "summary": "11/26～29整理券。混雑次第でフリー入場。受付方法・時刻未確認。",
+          "recordPath": null
+        },
+        {
+          "url": "https://ekimarualamode.com/#kyoto_nishi",
+          "observedAt": "2026-11-13T10:05:36.273Z",
+          "summary": "JR京都駅2階西口改札外。京都miniとは別区画。",
+          "recordPath": null
+        }
+      ],
+      "decision": "実会場の期間限定POP UP。既存履歴の同会場の駅代表座標を利用し、公開実測まで公開済みとしない。",
+      "nextCheck": "公開データ一致と公式Xで整理券の配布方法・受付開始を確認。判明した受付が開催より早ければ期限を前倒し。"
+    },
+    {
+      "kind": "new_listing",
+      "officialAnnouncedAt": "2026-11-09T15:00:00+09:00",
+      "discoveredAt": "2026-11-13",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": "2026-11-13",
+      "reservationOpensAt": "2026-11-13T15:00:00+09:00",
+      "reflectDueAt": null,
+      "listingIds": [],
+      "priority": "normal",
+      "recheckDueAt": null,
+      "publishedAt": null,
+      "id": "new-ensky-chiikawa-nenga-2027-scope-review",
+      "title": "エンスカイ ちいかわ年賀はがき2027 郵便局販売",
+      "targetKey": "ensky-chiikawa-nenga-2027",
+      "sourceIds": [
+        "ensky-chiikawa-nenga-2027",
+        "japanpost-chiikawa-nenga-2027"
+      ],
+      "state": "rejected",
+      "existingMatch": {
+        "status": "new",
+        "ids": [],
+        "note": "現行・履歴・コラボ・候補台帳に同一企画なし。"
+      },
+      "evidence": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000119.000012840.html",
+          "observedAt": null,
+          "summary": "11/13から約200局の店頭販売、15時からオンライン受注。",
+          "recordPath": null
+        },
+        {
+          "url": "https://www.shop.post.japanpost.jp/shop/pages/chiikawa-nenga.aspx",
+          "observedAt": null,
+          "summary": "オンライン受注は11/17 23:59:59まで。",
+          "recordPath": null
+        }
+      ],
+      "decision": "通常のデザイン商品販売。独立した催事・体験・店頭キャンペーンを確認できないため対象外。",
+      "nextCheck": "独立した会場企画が発表された場合のみ再判定。"
     }
   ]
 }
