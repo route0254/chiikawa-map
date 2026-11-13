@@ -16114,10 +16114,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-02T10:00:11.324Z",
-      "lastSuccessfulAt": "2026-11-02T10:00:11.324Z",
+      "lastAttemptAt": "2026-11-13T10:05:36.273Z",
+      "lastSuccessfulAt": "2026-11-13T10:05:36.273Z",
       "lastResult": "success",
-      "resultSummary": "対象公式本文の直接HTTP取得。根拠の要点は掲載根拠記録へ保存。（consumer_direct_official_http）",
+      "resultSummary": "店舗公式で西口改札外と京都miniが別区画であることを確認。",
       "lastFailure": null,
       "note": "今回の経路別観測・確認範囲は research/evening-20261102/source-observations.json。画像視認、本文、キャッシュ、失敗と最終成功を区別。"
     },
@@ -16972,6 +16972,57 @@
       "resultSummary": "11/24〜30の対象2店WEB整理券と、別の館内券当日6時Airウェイトを確認。店舗券の受付時刻・取得先は未確認。",
       "lastFailure": null,
       "note": "今回の根拠は research/nov12-clinic-lucua に記録。未確定の日時・受付状態は推測しない。"
+    },
+    {
+      "id": "chiikawa-popup-kyoto-west-20261126",
+      "name": "ちいかわPOP UP STORE エキマル ア・ラ・モードJR京都駅西口店",
+      "url": "https://chiikawa-info.jp/p26/pus_ekky/",
+      "kind": "series",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-13T10:05:52.757Z",
+      "lastSuccessfulAt": "2026-11-13T10:05:52.757Z",
+      "lastResult": "success",
+      "resultSummary": "公式本文を取得、会期・営業時間・整理券画像を視認。",
+      "lastFailure": null,
+      "note": "公式告知の会場・会期・販売または入場条件を照合する。"
+    },
+    {
+      "id": "ensky-chiikawa-nenga-2027",
+      "name": "エンスカイ ちいかわ年賀はがき販売発表",
+      "url": "https://prtimes.jp/main/html/rd/p/000000119.000012840.html",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "weekly",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "Webで公式本文を確認。取得完了時刻は不明。"
+    },
+    {
+      "id": "japanpost-chiikawa-nenga-2027",
+      "name": "郵便局ネットショップ ちいかわ年賀はがき受注販売",
+      "url": "https://www.shop.post.japanpost.jp/shop/pages/chiikawa-nenga.aspx",
+      "kind": "venue",
+      "scope": [
+        "collaboration"
+      ],
+      "cadence": "weekly",
+      "enabled": true,
+      "lastAttemptAt": null,
+      "lastSuccessfulAt": null,
+      "lastResult": "not_checked",
+      "resultSummary": null,
+      "lastFailure": null,
+      "note": "Webで公式の受付期間を確認。取得完了時刻は不明。"
     }
   ]
 }
