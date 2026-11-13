@@ -28258,6 +28258,12 @@
           "observedAt": "2026-11-12T23:16:58.185+00:00",
           "summary": "公式oEmbed本文で名古屋の購入券来店対象が11/9〜12と再確認。添付画像の今回再取得・目視はしていない。",
           "recordPath": "research/maintenance-20261113/source-observations.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-13T01:48:09.119Z",
+          "summary": "PR116の公開対象11ファイルが検査済みデータと一致。ドットmanifestは公開対象外。公開確認時刻は報告送信時刻と区別。",
+          "recordPath": "research/maintenance-20261113/pr116-first-public-match.json"
         }
       ],
       "existingMatch": {
@@ -28274,12 +28280,12 @@
         "magical-umeda",
         "magical-nagoya"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
       "decision": "購入券の対象期間終了を明示し、旧抽選・二次先着・集合案内を現行注意から整理。常設掲載、通常入場、10/23からの購入数制限を保持。後続販売・在庫は未確認とし、らんど11/14条件を転用しない。",
-      "nextCheck": "公開内容一致を実測後にpublishedAtへ記録。まじかるの新しい購入方法や在庫は次回公式巡回で確認。",
+      "nextCheck": "PR116の公開対象11ファイルの完全一致を実測確認。今後の購入方法・在庫は次回公式巡回で確認。",
       "recheckDueAt": "2026-11-13T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-13T01:48:09.119Z"
     }
   ]
 }
