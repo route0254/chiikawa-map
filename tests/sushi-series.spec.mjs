@@ -5,15 +5,23 @@ import path from "node:path";
 const current = JSON.parse(await readFile(new URL("../data/official-spots.json", import.meta.url), "utf8"));
 const archive = JSON.parse(await readFile(new URL("../data/official-events-archive.json", import.meta.url), "utf8"));
 const id = "popup-2026-10-16-fukuoka-mitsukoshi";
-// 11/3時点の同時開催fixtureを、実掲載の履歴移動後も維持する。
-const fukuoka = [...current, ...archive].find(spot => spot.id === id);
-const currentFixture = [...current.filter(spot => spot.id !== id), fukuoka];
-const archiveFixture = archive.filter(spot => spot.id !== id);
-const pastCount = archiveFixture.filter(spot => spot.brand === "chiikawa_sushi").length;
-const future = { ...fukuoka, id: "test-upcoming-sushi", name: "開催予定の寿司シリーズ", brand: "chiikawa_sushi",
-  address: "京都府京都市", description: "開催予定の寿司シリーズを検証するテスト会場です。",
-  startDate: "2026-11-04", endDate: "2026-11-17" };
-delete future.additionalBrands;
+// 掲載追加・履歴移動に影響されない、11/3時点の開催状態を検証する固定fixture。
+// 対象IDの実データだけを使い、現在の全会場を混ぜてゼロ件条件を壊さない。
+function fixtureSpot(spotId) {
+  const spot = [...current, ...archive].find(spot => spot.id === spotId);
+  if (!spot) throw new Error("Missing sushi fixture: " + spotId);
+  return spot;
+}
+const fukuoka = fixtureSpot(id);
+const currentFixture = [fukuoka];
+const historicalIds = [
+  "chiikawa-sushi-2024-09-06-tokyo-ichiban-plaza",
+  "chiikawa-sushi-2024-09-06-chiikawaland-yokohama",
+  "chiikawa-sushi-2026-10-22-yokohama-skybuilding"
+];
+const archiveFixture = historicalIds.map(fixtureSpot);
+const pastCount = archiveFixture.length;
+const future = fixtureSpot("chiikawa-sushi-2026-11-27-new-chitose-airport");
 const kura = { ...fukuoka, id: "test-kura-sushi", name: "くら寿司×ちいかわ", brand: "chiikawa" };
 delete kura.additionalBrands;
 
@@ -67,13 +75,15 @@ for (const width of [390, 1440]) {
     const errors = await prepare(page);
     expect(fukuoka.brand).toBe("chiikawa");
     expect(fukuoka.additionalBrands).toEqual(["chiikawa_sushi"]);
+    expect(future.brand).toBe("chiikawa_sushi");
+    expect(future.startDate).toBe("2026-11-27");
     await page.goto("/?brand=chiikawa_sushi&view=list");
     const sushi = page.locator('input[name="filter-brand"][value="chiikawa_sushi"]');
     await expect(sushi).toHaveCount(1);
     await expect(sushi).toBeChecked();
     await expect(page.locator(".spot-list-card")).toHaveCount(2);
     await expect(page.locator('.spot-list-card[data-spot-id="' + id + '"]')).toHaveCount(1);
-    await expect(page.locator('.spot-list-card[data-spot-id="test-upcoming-sushi"]')).toHaveCount(1);
+    await expect(page.locator('.spot-list-card[data-spot-id="' + future.id + '"]')).toHaveCount(1);
     await expect(page.locator('.spot-list-card[data-spot-id="test-kura-sushi"]')).toHaveCount(0);
     await shot(page, "current-and-upcoming", width);
     await page.locator("#spot-search").fill("福岡");
@@ -95,6 +105,7 @@ for (const width of [390, 1440]) {
     await page.goto("/official.html");
     await select(page, "#current-brand", "chiikawa_sushi", "#current-filter-toggle");
     await expect(page.locator("#current-result-summary")).toHaveText("2件を表示しています。");
+    await expect(page.getByRole("heading", { name: future.name, exact: true })).toBeVisible();
     await page.locator("#current-search").fill("福岡");
     await expect(page.getByRole("heading", { name: fukuoka.name, exact: true })).toBeVisible();
     await expect(page.locator("#current-result-summary")).toHaveText("1件を表示しています。");
