@@ -28428,6 +28428,12 @@
           "observedAt": null,
           "summary": "施設公式で初日・混雑日の9:30 G入口前の整理券案内を確認。",
           "recordPath": "research/new-listings-20261114-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-14T11:04:45+09:00",
+          "summary": "PR121の公開JSONと対象3ページの一致を実測。配信開始の正確な時刻は不明。",
+          "recordPath": "research/evening-20261114/pr121-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28440,12 +28446,12 @@
       "listingIds": [
         "popup-2026-11-27-aeon-narita"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
-      "decision": "検証済みの会場・会期・時間・入場条件のみで掲載準備。未確認の整理券受付方法・時刻は断定しない。公開は未確認。",
-      "nextCheck": "最新mainへ統合して検査後、公開JSONと生成ページの実体を照合。整理券受付の続報があれば掲載期限を前倒し。",
+      "decision": "検証済みの会場・会期・時間・入場条件のみで掲載準備。未確認の整理券受付方法・時刻は断定しない。PR #121 の公開データと各掲載ページの一致を11/14 11:04:45 JSTに確認。配信開始時刻は不明。",
+      "nextCheck": "公式の整理券受付方法・時刻に続報があれば確認し、掲載へ反映。",
       "recheckDueAt": "2026-11-14T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-14"
     },
     {
       "id": "new-popup-2026-11-28-aeon-hanyu",
@@ -28474,6 +28480,12 @@
           "observedAt": null,
           "summary": "公式発表時刻・開催内容の根拠。",
           "recordPath": "research/new-listings-20261114-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-14T11:04:45+09:00",
+          "summary": "PR121の公開JSONと対象3ページの一致を実測。配信開始の正確な時刻は不明。",
+          "recordPath": "research/evening-20261114/pr121-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28486,12 +28498,12 @@
       "listingIds": [
         "popup-2026-11-28-aeon-hanyu"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
-      "decision": "検証済みの会場・会期・時間・入場条件のみで掲載準備。未確認の整理券受付方法・時刻は断定しない。公開は未確認。",
-      "nextCheck": "最新mainへ統合して検査後、公開JSONと生成ページの実体を照合。整理券受付の続報があれば掲載期限を前倒し。",
+      "decision": "検証済みの会場・会期・時間・入場条件のみで掲載準備。未確認の整理券受付方法・時刻は断定しない。PR #121 の公開データと各掲載ページの一致を11/14 11:04:45 JSTに確認。配信開始時刻は不明。",
+      "nextCheck": "公式の整理券受付方法・時刻に続報があれば確認し、掲載へ反映。",
       "recheckDueAt": "2026-11-14T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-14"
     },
     {
       "id": "new-chiikawa-sushi-2026-11-27-new-chitose-airport",
@@ -28520,6 +28532,12 @@
           "observedAt": null,
           "summary": "公式発表時刻・開催内容の根拠。",
           "recordPath": "research/new-listings-20261114-evidence.json"
+        },
+        {
+          "url": "https://chiikatsu-map.com/data/official-spots.json",
+          "observedAt": "2026-11-14T11:04:45+09:00",
+          "summary": "PR121の公開JSONと対象3ページの一致を実測。配信開始の正確な時刻は不明。",
+          "recordPath": "research/evening-20261114/pr121-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28532,12 +28550,12 @@
       "listingIds": [
         "chiikawa-sushi-2026-11-27-new-chitose-airport"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
-      "decision": "検証済みの会場・会期・時間・入場条件のみで掲載準備。未確認の整理券受付方法・時刻は断定しない。公開は未確認。",
-      "nextCheck": "最新mainへ統合して検査後、公開JSONと生成ページの実体を照合。整理券受付の続報があれば掲載期限を前倒し。",
+      "decision": "検証済みの会場・会期・時間・入場条件のみで掲載準備。未確認の整理券受付方法・時刻は断定しない。PR #121 の公開データと各掲載ページの一致を11/14 11:04:45 JSTに確認。配信開始時刻は不明。",
+      "nextCheck": "公式の整理券受付方法・時刻に続報があれば確認し、掲載へ反映。",
       "recheckDueAt": "2026-11-14T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-14"
     },
     {
       "id": "entry-update-chiikawa-photo-2026-11-14-aeon-kurashiki-20261114",
@@ -28642,6 +28660,93 @@
       "nextCheck": "次回巡回で施設公式の入場条件に変更がないか確認。終了日経過後に履歴移動の対象とする。",
       "recheckDueAt": "2026-11-14T19:00:00+09:00",
       "publishedAt": "2026-11-14"
+    },
+    {
+      "id": "entry-update-laketown-20261115",
+      "title": "ちいかわらんど 越谷レイクタウン店 11月15日入店案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-koshigaya:entry-20261115",
+      "sourceIds": [
+        "venue-laketown-entry-20261115",
+        "official-chiikawaland-koshigaya-entry-20261115"
+      ],
+      "officialAnnouncedAt": "2026-11-14",
+      "discoveredAt": "2026-11-14T09:58:22.897Z",
+      "eventStartsAt": "2026-11-15",
+      "eventEndsAt": "2026-11-15",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-14",
+      "evidence": [
+        {
+          "url": "https://laketown.aeonmall.jp/news/shopnews/f6586882-d6af-4a30-971f-fc15fd51dc16",
+          "observedAt": "2026-11-14T10:00:46Z",
+          "summary": "11月15日の施設公式入店案内本文を直接取得。配布時刻や配布確約は記載なし。",
+          "recordPath": "research/evening-20261114/laketown-entry-evidence.json"
+        },
+        {
+          "url": "https://x.com/chiikawa_land/status/2121519606192042032",
+          "observedAt": "2026-11-15T08:03:36+09:00",
+          "summary": "11月15日は公式案内図の★印から整列。早朝・深夜の整列や座り込みは不可。P3入口、開店前P2エレベーター、全員揃って整列、混雑時整理券。予約不要との記載なし。",
+          "recordPath": "research/morning-20261115/current-day-entry-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-koshigaya"
+        ],
+        "note": "公開3JSONと既存ID照合。同じ常設店への日付限定条件追記。新規登録・営業時間・会期変更なし。"
+      },
+      "listingIds": [
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "翌日対象の条件変更につき当日反映対象。11/14 LINE券条件と11/15対象商品の販売なしを保持。公開未確認。 11/15公式店舗投稿で早朝・深夜の整列/座り込み禁止を補足。11/14案内は終了済みと明記。",
+      "nextCheck": "検査後公開し実体照合。11/15通常巡回で当日変更、11/16朝に日付限定案内整理を確認。",
+      "recheckDueAt": "2026-11-15T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "entry-update-solamachi-20261115",
+      "title": "ちいかわらんど ソラマチ店 11月15日入店案内",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland-solamachi:entry-20261115",
+      "sourceIds": [
+        "official-chiikawaland-solamachi-entry-20261115"
+      ],
+      "officialAnnouncedAt": "2026-11-14",
+      "discoveredAt": "2026-11-15T08:02:46+09:00",
+      "eventStartsAt": "2026-11-15",
+      "eventEndsAt": "2026-11-15",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-15",
+      "evidence": [
+        {
+          "url": "https://x.com/chiikawa_land/status/2121588271239274703",
+          "observedAt": "2026-11-15T08:03:35+09:00",
+          "summary": "2026年11月15日は事前予約不要です。入店希望の方は店頭へお越しください。状況に応じて列形成・整理券配布を行う場合があります。11月15日はボンボンドロップシールの販売はありません。11月16日以降の販売も未定です。",
+          "recordPath": "research/morning-20261115/current-day-entry-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-solamachi"
+        ],
+        "note": "既存常設店の当日入店条件を更新。新規登録なし。"
+      },
+      "listingIds": [
+        "chiikawaland-solamachi"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "予約不要・混雑時列/整理券、対象シール販売なしを当日反映。11/14券案内は終了、11/27クリニック案内を保持。未公開。",
+      "nextCheck": "公開後実体一致を確認。次回巡回で変更と11/16以降の対象商品販売続報を確認。",
+      "recheckDueAt": "2026-11-15T19:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

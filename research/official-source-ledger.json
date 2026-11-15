@@ -17074,6 +17074,57 @@
       "resultSummary": "新千歳空港 国内線旅客ターミナル2F センタープラザ、2026-11-27～2026-12-20、10:00～19:00。全日程で整理券配布。混雑状況でフリー入場。配布方法・時刻未確認。",
       "lastFailure": null,
       "note": "2026年11月14日朝の公式本文・告知画像確認を引き継ぎ。受付の詳細続報を確認する。"
+    },
+    {
+      "id": "venue-laketown-entry-20261115",
+      "name": "イオンレイクタウンmori ちいかわらんど 11月15日入店案内",
+      "url": "https://laketown.aeonmall.jp/news/shopnews/f6586882-d6af-4a30-971f-fc15fd51dc16",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-14T10:00:46Z",
+      "lastSuccessfulAt": "2026-11-14T10:00:46Z",
+      "lastResult": "success",
+      "resultSummary": "公式ページ本文を直接HTTP200取得。11/14掲載、11/15対象、3F P3入口・開店前P2エレベーター、全員揃って整列、混雑時整理券を確認。",
+      "lastFailure": null,
+      "note": "別Web取得は失敗、直接HTTP取得は成功。対象日と店舗開業日を区別。詳細は research/evening-20261114/laketown-entry-evidence.json"
+    },
+    {
+      "id": "official-chiikawaland-solamachi-entry-20261115",
+      "name": "ちいかわらんど solamachi 11月15日公式入店案内",
+      "url": "https://x.com/chiikawa_land/status/2121588271239274703",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-15T08:03:35+09:00",
+      "lastSuccessfulAt": "2026-11-15T08:03:35+09:00",
+      "lastResult": "success",
+      "resultSummary": "2026年11月15日は事前予約不要です。入店希望の方は店頭へお越しください。状況に応じて列形成・整理券配布を行う場合があります。11月15日はボンボンドロップシールの販売はありません。11月16日以降の販売も未定です。",
+      "lastFailure": null,
+      "note": "11月15日限定案内。確認証跡: research/morning-20261115/current-day-entry-evidence.json"
+    },
+    {
+      "id": "official-chiikawaland-koshigaya-entry-20261115",
+      "name": "ちいかわらんど koshigaya 11月15日公式入店案内",
+      "url": "https://x.com/chiikawa_land/status/2121519606192042032",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-15T08:03:36+09:00",
+      "lastSuccessfulAt": "2026-11-15T08:03:36+09:00",
+      "lastResult": "success",
+      "resultSummary": "11月15日は公式案内図の★印から整列。早朝・深夜の整列や座り込みは不可。P3入口、開店前P2エレベーター、全員揃って整列、混雑時整理券。予約不要との記載なし。",
+      "lastFailure": null,
+      "note": "11月15日限定案内。確認証跡: research/morning-20261115/current-day-entry-evidence.json"
     }
   ]
 }

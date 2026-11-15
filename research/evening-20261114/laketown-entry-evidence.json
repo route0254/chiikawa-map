@@ -1,0 +1,38 @@
+{
+  "observedAt": "2026-11-14T10:00:46Z",
+  "url": "https://laketown.aeonmall.jp/news/shopnews/f6586882-d6af-4a30-971f-fc15fd51dc16",
+  "officialPageDate": "2026-11-14",
+  "applicableDate": "2026-11-15",
+  "httpStatus": 200,
+  "htmlSha256": "dec53b46a58d191ad3c2ac4018ce032a0939f4eb9524afa0a6602b4aa5777b30",
+  "facts": [
+    "3F P3入口の案内図★印から整列",
+    "開店前はP2立体駐車場エレベーター",
+    "グループ全員揃って整列",
+    "混雑時整理券の場合あり",
+    "状況で運営方法変更あり"
+  ],
+  "unknown": [
+    "整理券配布時刻",
+    "整理券配布の確約"
+  ],
+  "preserved": [
+    "11/14 LINE入店券条件",
+    "11/15対象商品販売なし"
+  ],
+  "retrievals": [
+    {
+      "method": "web.open",
+      "result": "inaccessible"
+    },
+    {
+      "method": "direct_https_get",
+      "result": "success",
+      "httpStatus": 200
+    }
+  ],
+  "publication": {
+    "state": "not_published",
+    "publishedAt": null
+  }
+}
