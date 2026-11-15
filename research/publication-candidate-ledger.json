@@ -28793,6 +28793,12 @@
           "observedAt": "2026-11-15T07:06:59.874Z",
           "summary": "公式GOODS本文・画像で第5弾ショッパー税込4,400円、1人1点等を照合（調査担当）。",
           "recordPath": "research/evening-20261115/restaurant-perks-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/123",
+          "observedAt": "2026-11-15T10:08:14.648+00:00",
+          "summary": "PR123公開5ファイルの実体一致確認。配信開始時刻ではない。",
+          "recordPath": "research/morning-20261116/pr123-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28807,12 +28813,12 @@
         "chiikawa-restaurant-ikebukuro",
         "chiikawa-restaurant-okinawa"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "開始前反映対象。金額・配布単位・店舗別対象・終了条件を保持。予約条件の変更なし。公開未確認。",
-      "nextCheck": "検査後公開実体を照合。11/16の配布状況・終了告知を公式で確認。",
+      "decision": "開始前反映対象。金額・配布単位・店舗別対象・終了条件を保持。予約条件の変更なし。 11/16開始前に池袋・沖縄の公開ページと掲載データの一致を確認。",
+      "nextCheck": "次の通常巡回で公式の追加・終了・入場条件の変更を確認。",
       "recheckDueAt": "2026-11-16T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-15"
     },
     {
       "id": "pocket-nagoya-entry-extension-20261123",
@@ -28835,6 +28841,12 @@
           "observedAt": "2026-11-15T19:00:15.218+09:00",
           "summary": "整理券対象期間11/13〜11/23。11/16分の12:30までの受付は11/15 19時から。会期とは別の期間。",
           "recordPath": "research/evening-20261115/nagoya-entry-extension-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/123",
+          "observedAt": "2026-11-15T10:08:14.648+00:00",
+          "summary": "PR123公開5ファイルの実体一致確認。配信開始時刻ではない。",
+          "recordPath": "research/morning-20261116/pr123-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28847,12 +28859,12 @@
       "listingIds": [
         "chiikawa-pocket-2026-11-13-nagoya-parco"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "今夜から翌日分に影響するため優先反映。旧11/15までを11/23までへ訂正。未公開。",
-      "nextCheck": "公開実体照合と11/16の受付・入場条件の続報を確認。",
+      "decision": "今夜から翌日分に影響するため優先反映。旧11/15までを11/23までへ訂正。 公開ページと掲載データの一致を確認。11/16昼枠の前日19:00受付より後。",
+      "nextCheck": "次の通常巡回で公式の追加・終了・入場条件の変更を確認。",
       "recheckDueAt": "2026-11-16T08:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-15"
     }
   ]
 }
