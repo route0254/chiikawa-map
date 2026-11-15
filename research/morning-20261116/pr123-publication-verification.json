@@ -1,0 +1,63 @@
+{
+  "observedAt": "2026-11-15T10:08:14.648+00:00",
+  "allMatch": true,
+  "observations": [
+    {
+      "path": "data/official-spots.json",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "code": 200,
+      "sha256": "c4353382b2ee685524dab53ecdb6c8ac455ed03b22599842fefcc79f08081c85",
+      "expectedSha256": "c4353382b2ee685524dab53ecdb6c8ac455ed03b22599842fefcc79f08081c85",
+      "matches": true,
+      "completedAt": "2026-11-15T10:08:14.579+00:00"
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://chiikatsu-map.com/sitemap.xml",
+      "code": 200,
+      "sha256": "6c26ece1c1d955218d021349891dd042ea20d21510d7708a3124aa68875c941f",
+      "expectedSha256": "6c26ece1c1d955218d021349891dd042ea20d21510d7708a3124aa68875c941f",
+      "matches": true,
+      "completedAt": "2026-11-15T10:08:14.571+00:00"
+    },
+    {
+      "path": "spot/chiikawa-pocket-2026-11-13-nagoya-parco/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-pocket-2026-11-13-nagoya-parco/",
+      "code": 200,
+      "sha256": "110b408588b21a96704b4259919fbe60f8d12613d0bd1a032401d1bad07a0bb3",
+      "expectedSha256": "110b408588b21a96704b4259919fbe60f8d12613d0bd1a032401d1bad07a0bb3",
+      "matches": true,
+      "completedAt": "2026-11-15T10:08:14.563+00:00"
+    },
+    {
+      "path": "spot/chiikawa-restaurant-ikebukuro/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-restaurant-ikebukuro/",
+      "code": 200,
+      "sha256": "19ddb45ed3d147af366aa0b1f4ce9b5ec4309da9cd1e91cc4fb6a54960347ce1",
+      "expectedSha256": "19ddb45ed3d147af366aa0b1f4ce9b5ec4309da9cd1e91cc4fb6a54960347ce1",
+      "matches": true,
+      "completedAt": "2026-11-15T10:08:14.603+00:00"
+    },
+    {
+      "path": "spot/chiikawa-restaurant-okinawa/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-restaurant-okinawa/",
+      "code": 200,
+      "sha256": "0d49e7ced22cfb69df34ab95166ddd87bae6170194ba247029c1713e11fc0a47",
+      "expectedSha256": "0d49e7ced22cfb69df34ab95166ddd87bae6170194ba247029c1713e11fc0a47",
+      "matches": true,
+      "completedAt": "2026-11-15T10:08:14.647+00:00"
+    }
+  ],
+  "pr": 123,
+  "mergeCommit": "1bb36e5efb1462ec5a7ee59ab5d66a02589afb77",
+  "actualDeliveryStartAt": null,
+  "prRuns": {
+    "data": 43702217190,
+    "site": 43702217192
+  },
+  "mainRuns": {
+    "data": 43702532366,
+    "site": 43702532343,
+    "pages": 43702532392
+  }
+}
