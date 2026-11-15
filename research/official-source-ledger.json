@@ -17125,6 +17125,40 @@
       "resultSummary": "11月15日は公式案内図の★印から整列。早朝・深夜の整列や座り込みは不可。P3入口、開店前P2エレベーター、全員揃って整列、混雑時整理券。予約不要との記載なし。",
       "lastFailure": null,
       "note": "11月15日限定案内。確認証跡: research/morning-20261115/current-day-entry-evidence.json"
+    },
+    {
+      "id": "official-restaurant-perks-20261116",
+      "name": "ちいかわレストラン池袋公式 3周年ステッカー・第5弾ショッパー",
+      "url": "https://x.com/THEGUEST_ikb/status/2121181340322435271",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-15T07:04:27.989Z",
+      "lastSuccessfulAt": "2026-11-15T07:04:27.989Z",
+      "lastResult": "success",
+      "resultSummary": "公式個別投稿HTTP200本文、画像2枚を目視確認。池袋3周年ステッカーと池袋・沖縄第5弾ショッパーの11/16開始を確認。",
+      "lastFailure": null,
+      "note": "research/evening-20261115/restaurant-perks-evidence.json。池袋ステッカーと池袋・沖縄ショッパーを区別。"
+    },
+    {
+      "id": "official-pocket-nagoya-entry-20261123",
+      "name": "ちいかわぽけっと公式 名古屋整理券対象期間延長",
+      "url": "https://x.com/chiikawa_pt_jp/status/2120713902820671691",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-15T19:00:15.218+09:00",
+      "lastSuccessfulAt": "2026-11-15T19:00:15.218+09:00",
+      "lastResult": "success",
+      "resultSummary": "公式本文HTTP200でLINE整理券対象11/13〜11/23への延長を確認。期間中1人1回。12:30まで前日19時、13時以降各回1時間前受付。",
+      "lastFailure": null,
+      "note": "research/evening-20261115/nagoya-entry-extension-evidence.json。会期11/29終了は変更しない。"
     }
   ]
 }
