@@ -28865,6 +28865,86 @@
       "nextCheck": "次の通常巡回で公式の追加・終了・入場条件の変更を確認。",
       "recheckDueAt": "2026-11-16T08:00:00+09:00",
       "publishedAt": "2026-11-15"
+    },
+    {
+      "id": "entry-refresh-popup-2026-11-11-aeon-kobekita-20261116",
+      "title": "ちいかわPOP UP STORE イオンモール神戸北 入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "popup-2026-11-11-aeon-kobekita:entry-20261116",
+      "sourceIds": [
+        "official-observation-c1d172d22833"
+      ],
+      "officialAnnouncedAt": "2026-11-14",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-11",
+      "eventEndsAt": "2026-11-25",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-16",
+      "evidence": [
+        {
+          "url": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114",
+          "observedAt": "2026-11-15T23:07:17.652Z",
+          "summary": "入場無料。混雑状況によっては整理券を配布する場合があります。整理券配布を行う場合の案内は9:30から、専門店街E入口（さざんかコート入口）です。初日・混雑日はこの入口を優先入口として整理券で対応します。配布の有無は当日の混雑状況により判断されます。整理券は1人1枚、複数名は全員そろって並んでください。朝6:00前の整理券配布列・E入口への整列、シート等の場所取り、割り込み・途中合流は禁止です。夜間・早朝の来場や整列はお控えください。早朝は周辺店舗・トイレ等が営業・開放していません。駐車場は6:00から順次開放、7:00全面開場予定ですが、当日の状況により変更されます。未就学児は整理券不要ですが、個数制限対象商品は購入できません。当日の配布状況は現地の最新案内をご確認ください。",
+          "recordPath": "research/morning-20261116/kobekita-asahikawa-entry-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-11-aeon-kobekita"
+        ],
+        "note": "既存会場の入場案内のみ更新。初回発見は先行調査のため時刻不明を保持。"
+      },
+      "listingIds": [
+        "popup-2026-11-11-aeon-kobekita"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "現行公式の配布時間・場所と混雑時条件を反映。配布実績・確約とは区別。未公開。",
+      "nextCheck": "公開実体を照合し次回通常巡回で当日の変更を確認。",
+      "recheckDueAt": "2026-11-16T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "entry-refresh-popup-2026-11-21-aeon-asahikawa-ekimae-20261116",
+      "title": "ちいかわPOP UP STORE イオンモール旭川駅前 入場案内更新",
+      "kind": "reservation_update",
+      "targetKey": "popup-2026-11-21-aeon-asahikawa-ekimae:entry-20261116",
+      "sourceIds": [
+        "venue-asahikawa-entry-20261116"
+      ],
+      "officialAnnouncedAt": "2026-11-09",
+      "discoveredAt": null,
+      "eventStartsAt": "2026-11-21",
+      "eventEndsAt": "2026-12-06",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-16",
+      "evidence": [
+        {
+          "url": "https://asahikawaekimae.aeonmall.jp/event/dc66d057-d464-4603-b335-e73e2306bdd4",
+          "observedAt": "2026-11-15T23:07:20.931Z",
+          "summary": "初日の11月21日は混雑緩和のため整理券を配布する案内です。配布時間は9:30から、場所は1F旭川駅コンコース入口です。混雑状況により配布の有無を判断し、配布時刻が前後する場合があります。初日・混雑日はこの入口を優先入口として整理券で対応します。夜間の整列、割り込み、途中合流は禁止です。複数名で入店する場合は全員そろって並んでください。最新の入店方法は公式案内をご確認ください。",
+          "recordPath": "research/morning-20261116/kobekita-asahikawa-entry-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "popup-2026-11-21-aeon-asahikawa-ekimae"
+        ],
+        "note": "既存会場の入場案内のみ更新。初回発見は先行調査のため時刻不明を保持。"
+      },
+      "listingIds": [
+        "popup-2026-11-21-aeon-asahikawa-ekimae"
+      ],
+      "state": "ready",
+      "priority": "normal",
+      "decision": "現行公式の配布時間・場所と混雑時条件を反映。配布実績・確約とは区別。未公開。",
+      "nextCheck": "公開実体を照合し次回通常巡回で当日の変更を確認。",
+      "recheckDueAt": "2026-11-16T19:00:00+09:00",
+      "publishedAt": null
     }
   ]
 }

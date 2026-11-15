@@ -14295,10 +14295,10 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-01T22:51:03.163Z",
-      "lastSuccessfulAt": "2026-11-01T22:51:03.163Z",
+      "lastAttemptAt": "2026-11-15T23:07:17.652Z",
+      "lastSuccessfulAt": "2026-11-15T23:07:17.652Z",
       "lastResult": "success",
-      "resultSummary": "既存神戸北案内一致。（cloud_public_http）",
+      "resultSummary": "公式現行本文の整理券配布時刻・場所・混雑時条件を確認。research/morning-20261116/kobekita-asahikawa-entry-evidence.json",
       "lastFailure": {
         "at": "2026-10-29T23:06:15.388+00:00",
         "kind": "fetch_failed",
@@ -14306,7 +14306,7 @@
         "detail": "HTTP Error 406: Not Acceptable",
         "evidenceUrl": "https://kobekita.aeonmall.jp/event/bfd0d631-6e18-45ce-b93c-1d004e887114"
       },
-      "note": "公式根拠の定期確認先。観測経路と取得結果は research/morning-20261029/source-observations.json。未確認の成功時刻を推定しない。 Webキャッシュ等の観測時刻は新しい原サイト取得成功日時へ転記しない。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。"
+      "note": "公式根拠の定期確認先。観測経路と取得結果は research/morning-20261029/source-observations.json。未確認の成功時刻を推定しない。 Webキャッシュ等の観測時刻は新しい原サイト取得成功日時へ転記しない。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。 今回観測は research/morning-20261031/source-observations.json。 今回の経路別観測は research/morning-20261102/source-observations.json。既存enabled・過去成功・失敗履歴を保持。 11/16直接HTTP200本文確認。過去失敗履歴は保持。"
     },
     {
       "id": "official-observation-6fdad34ac9ac",
@@ -17159,6 +17159,23 @@
       "resultSummary": "公式本文HTTP200でLINE整理券対象11/13〜11/23への延長を確認。期間中1人1回。12:30まで前日19時、13時以降各回1時間前受付。",
       "lastFailure": null,
       "note": "research/evening-20261115/nagoya-entry-extension-evidence.json。会期11/29終了は変更しない。"
+    },
+    {
+      "id": "venue-asahikawa-entry-20261116",
+      "name": "イオンモール旭川駅前 ちいかわPOP UP入場案内",
+      "url": "https://asahikawaekimae.aeonmall.jp/event/dc66d057-d464-4603-b335-e73e2306bdd4",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastFailure": null,
+      "note": " 11/16直接HTTP200本文確認。過去失敗履歴は保持。",
+      "lastAttemptAt": "2026-11-15T23:07:20.931Z",
+      "lastSuccessfulAt": "2026-11-15T23:07:20.931Z",
+      "lastResult": "success",
+      "resultSummary": "公式現行本文の整理券配布時刻・場所・混雑時条件を確認。research/morning-20261116/kobekita-asahikawa-entry-evidence.json"
     }
   ]
 }
