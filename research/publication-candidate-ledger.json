@@ -28887,6 +28887,12 @@
           "observedAt": "2026-11-15T23:07:17.652Z",
           "summary": "入場無料。混雑状況によっては整理券を配布する場合があります。整理券配布を行う場合の案内は9:30から、専門店街E入口（さざんかコート入口）です。初日・混雑日はこの入口を優先入口として整理券で対応します。配布の有無は当日の混雑状況により判断されます。整理券は1人1枚、複数名は全員そろって並んでください。朝6:00前の整理券配布列・E入口への整列、シート等の場所取り、割り込み・途中合流は禁止です。夜間・早朝の来場や整列はお控えください。早朝は周辺店舗・トイレ等が営業・開放していません。駐車場は6:00から順次開放、7:00全面開場予定ですが、当日の状況により変更されます。未就学児は整理券不要ですが、個数制限対象商品は購入できません。当日の配布状況は現地の最新案内をご確認ください。",
           "recordPath": "research/morning-20261116/kobekita-asahikawa-entry-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/124",
+          "observedAt": "2026-11-16",
+          "summary": "保存された11/16朝の本番画面確認記録。正確な配信開始時刻は不明。",
+          "recordPath": "research/morning-20261116/pr124-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28899,12 +28905,12 @@
       "listingIds": [
         "popup-2026-11-11-aeon-kobekita"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "high",
-      "decision": "現行公式の配布時間・場所と混雑時条件を反映。配布実績・確約とは区別。未公開。",
-      "nextCheck": "公開実体を照合し次回通常巡回で当日の変更を確認。",
+      "decision": "現行公式の配布時間・場所と混雑時条件を反映。配布実績・確約とは区別。 11/16朝に公開詳細ページの入場案内を目視確認。実公開開始の正確な時刻は未確認。",
+      "nextCheck": "次の通常巡回で施設公式の入場案内の変更を確認。",
       "recheckDueAt": "2026-11-16T19:00:00+09:00",
-      "publishedAt": null
+      "publishedAt": "2026-11-16"
     },
     {
       "id": "entry-refresh-popup-2026-11-21-aeon-asahikawa-ekimae-20261116",
@@ -28927,6 +28933,12 @@
           "observedAt": "2026-11-15T23:07:20.931Z",
           "summary": "初日の11月21日は混雑緩和のため整理券を配布する案内です。配布時間は9:30から、場所は1F旭川駅コンコース入口です。混雑状況により配布の有無を判断し、配布時刻が前後する場合があります。初日・混雑日はこの入口を優先入口として整理券で対応します。夜間の整列、割り込み、途中合流は禁止です。複数名で入店する場合は全員そろって並んでください。最新の入店方法は公式案内をご確認ください。",
           "recordPath": "research/morning-20261116/kobekita-asahikawa-entry-evidence.json"
+        },
+        {
+          "url": "https://github.com/route0254/chiikawa-map/pull/124",
+          "observedAt": "2026-11-16",
+          "summary": "保存された11/16朝の本番画面確認記録。正確な配信開始時刻は不明。",
+          "recordPath": "research/morning-20261116/pr124-publication-verification.json"
         }
       ],
       "existingMatch": {
@@ -28939,10 +28951,80 @@
       "listingIds": [
         "popup-2026-11-21-aeon-asahikawa-ekimae"
       ],
-      "state": "ready",
+      "state": "published",
       "priority": "normal",
-      "decision": "現行公式の配布時間・場所と混雑時条件を反映。配布実績・確約とは区別。未公開。",
-      "nextCheck": "公開実体を照合し次回通常巡回で当日の変更を確認。",
+      "decision": "現行公式の配布時間・場所と混雑時条件を反映。配布実績・確約とは区別。 11/16朝に公開詳細ページの入場案内を目視確認。実公開開始の正確な時刻は未確認。",
+      "nextCheck": "次の通常巡回で施設公式の入場案内の変更を確認。",
+      "recheckDueAt": "2026-11-16T19:00:00+09:00",
+      "publishedAt": "2026-11-16"
+    },
+    {
+      "id": "land-expired-entry-cleanup-20261116",
+      "title": "ちいかわらんど16店 11/14–15限定案内の終了整理",
+      "kind": "listing_update",
+      "targetKey": "chiikawaland:expired-entry-20261116",
+      "sourceIds": [
+        "venue-laketown-entry-20261115"
+      ],
+      "officialAnnouncedAt": null,
+      "discoveredAt": "2026-11-16",
+      "eventStartsAt": null,
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-16",
+      "evidence": [
+        {
+          "url": "https://laketown.aeonmall.jp/news/shopnews/f6586882-d6af-4a30-971f-fc15fd51dc16",
+          "observedAt": "2026-11-16T02:00:34.003Z",
+          "summary": "404は終了理由ではなくリンク整理理由。終了判定は保存一次案内の11/14–15限定日付に基づく。",
+          "recordPath": "research/morning-20261116/land-expired-entry-cleanup-evidence.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawaland-osaka-umeda",
+          "chiikawaland-harajuku",
+          "chiikawaland-fukuoka",
+          "chiikawaland-kyoto",
+          "chiikawaland-tokyo-station",
+          "chiikawaland-solamachi",
+          "chiikawaland-nagoya",
+          "chiikawaland-sendai",
+          "chiikawaland-sapporo",
+          "chiikawaland-yokohama",
+          "chiikawaland-hiroshima",
+          "chiikawaland-shinsaibashi",
+          "chiikawaland-shinjuku",
+          "chiikawaland-kanazawa",
+          "chiikawaland-ikebukuro",
+          "chiikawaland-koshigaya"
+        ],
+        "note": "既存16店のみ。新規ピン・営業日時変更なし。"
+      },
+      "listingIds": [
+        "chiikawaland-osaka-umeda",
+        "chiikawaland-harajuku",
+        "chiikawaland-fukuoka",
+        "chiikawaland-kyoto",
+        "chiikawaland-tokyo-station",
+        "chiikawaland-solamachi",
+        "chiikawaland-nagoya",
+        "chiikawaland-sendai",
+        "chiikawaland-sapporo",
+        "chiikawaland-yokohama",
+        "chiikawaland-hiroshima",
+        "chiikawaland-shinsaibashi",
+        "chiikawaland-shinjuku",
+        "chiikawaland-kanazawa",
+        "chiikawaland-ikebukuro",
+        "chiikawaland-koshigaya"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "失効済み日付限定条件のみ整理。新しい当日の入場ルールは推定しない。未公開。",
+      "nextCheck": "公開実体照合後、通常巡回で各店舗の新しい入場・販売条件を確認。",
       "recheckDueAt": "2026-11-16T19:00:00+09:00",
       "publishedAt": null
     }
