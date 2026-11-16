@@ -1985,7 +1985,8 @@ test(
       "nagano-market-popup-2026-09-04-nagoya-p",
       "movie-cafe-shinsaibashi",
       "popup-2026-09-18-jr-ikebukuro",
-      "ramen-buta-nagoya"
+      "ramen-buta-nagoya",
+      "movie-cafe-nagoya"
     ], [
       "tokyo-banana-popup-solamachi-2026-10",
       // 過去イベントを加えた合成fixtureの件数を固定する（名古屋6件・池袋5件）。
@@ -1995,7 +1996,8 @@ test(
       "popup-2026-11-24-jr-ikebukuro"
     ], {
       "collab-skytree-2026": "collab-tokyo-metro-escape",
-      "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
+      "ramen-buta-nagoya": "chiikawa-yaki-nagoya",
+      "movie-cafe-nagoya": "nagano-market-popup-2026-09-04-nagoya-p"
     });
     const scenarios = [
       {
@@ -2127,12 +2129,14 @@ test(
   async ({ page }) => {
     await includeArchivedSpotsForLayout(page, [
       "nagano-market-popup-2026-09-04-nagoya-p",
-      "ramen-buta-nagoya"
+      "ramen-buta-nagoya",
+      "movie-cafe-nagoya"
     ], [
       "chiikawa-pocket-2026-11-13-nagoya-parco",
       "chiikawa-clinic-2026-11-27-nagoya-parco"
     ], {
-      "ramen-buta-nagoya": "chiikawa-yaki-nagoya"
+      "ramen-buta-nagoya": "chiikawa-yaki-nagoya",
+      "movie-cafe-nagoya": "nagano-market-popup-2026-09-04-nagoya-p"
     });
     await page.goto(
       "/?spot=chiikawaland-nagoya"
