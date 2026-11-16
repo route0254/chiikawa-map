@@ -101,51 +101,6 @@
     "checkedAt": "2026-10-29"
   },
   {
-    "id": "movie-chiikawa-cafe-2026",
-    "title": "映画『ちいかわ 人魚の島のひみつ』コラボカフェ",
-    "partner": "THE GUEST cafe&diner",
-    "category": "food",
-    "status": "active",
-    "summary": "映画をテーマにしたメニュー、店内装飾、カフェ限定グッズを展開する巡回コラボカフェです。",
-    "areaText": "東京・大阪・愛知",
-    "channels": [
-      "飲食店",
-      "店舗"
-    ],
-    "periods": [
-      {
-        "label": "渋谷PARCO",
-        "startDate": "2026-07-10",
-        "endDate": "2026-09-14",
-        "note": ""
-      },
-      {
-        "label": "心斎橋PARCO",
-        "startDate": "2026-07-24",
-        "endDate": "2026-09-28",
-        "note": ""
-      },
-      {
-        "label": "名古屋PARCO",
-        "startDate": "2026-09-04",
-        "endDate": "2026-11-16",
-        "note": ""
-      }
-    ],
-    "tags": [
-      "映画",
-      "コラボカフェ",
-      "予約案内あり"
-    ],
-    "sourceUrl": "https://cafe.parco.jp/event/information/chiikawamovie_cafe",
-    "linkedSpotIds": [
-      "movie-cafe-shibuya",
-      "movie-cafe-shinsaibashi",
-      "movie-cafe-nagoya"
-    ],
-    "checkedAt": "2026-09-04"
-  },
-  {
     "id": "seven-eleven-christmas-chiikawa-2026",
     "title": "セブン‐イレブン×ちいかわ クリスマス2026",
     "partner": "セブン‐イレブン",
@@ -525,7 +480,7 @@
     "partner": "ジーユー",
     "category": "collection",
     "status": "upcoming",
-    "summary": "冬のコラボアイテムを11月20日・27日の2回に分けて発売予定です。各日、店舗は開店時、オンラインは7:15から販売予定。通常販売はおひとり様1柄1色2点までですが、ポーチ CHIIKAWAの4商品は1点までです。オンライン限定の先行予約（11月2日7:15～11月8日23:59）は終了しました。",
+    "summary": "冬のコラボアイテムを11月20日・27日の2回に分けて発売予定です。各日、店舗は開店時、オンラインは7:15から販売予定。通常販売はおひとり様1柄1色2点までですが、ポーチ CHIIKAWAの4商品は1点までです。オンライン限定の先行予約（11月2日7:15～11月8日23:59）は終了しました。 通常販売で品切れになった商品はオンラインストア限定で追加予約販売を予定しています。追加予約も上限数に達し次第、期間内でも終了します。",
     "areaText": "ジーユー全店舗・オンラインストア",
     "channels": [
       "店舗",
@@ -549,15 +504,27 @@
         "startDate": "2026-11-27",
         "endDate": null,
         "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+      },
+      {
+        "label": "1st collection オンライン追加予約",
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-29",
+        "note": "通常販売で品切れになった商品から追加予約を受け付けます。11月29日23:59まで。オンライン限定で、上限数に達し次第早期終了。1人1柄1色2点まで、ポーチ CHIIKAWAの4商品は1点まで。"
+      },
+      {
+        "label": "2nd collection オンライン追加予約",
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-29",
+        "note": "通常販売で品切れになった商品から追加予約を受け付けます。11月29日23:59まで。オンライン限定で、上限数に達し次第早期終了。1人1柄1色2点まで、ポーチ CHIIKAWAの4商品は1点まで。"
       }
     ],
     "tags": [
       "アパレル",
       "限定商品"
     ],
-    "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+    "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015905/",
     "linkedSpotIds": [],
-    "checkedAt": "2026-11-10"
+    "checkedAt": "2026-11-16"
   },
   {
     "id": "oxiclean-chiikawa-2026",
