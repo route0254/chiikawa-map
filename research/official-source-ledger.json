@@ -2251,15 +2251,15 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-29T09:59:15.131+00:00",
+      "lastAttemptAt": "2026-11-16T02:00:27.782Z",
       "lastSuccessfulAt": "2026-10-29T09:59:15.131+00:00",
-      "lastResult": "success",
-      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastResult": "access_limited",
+      "resultSummary": "直接HTTP取得失敗。過去成功日時を保持し、Web補助取得をライブ成功として扱わない。",
       "lastFailure": {
-        "at": "2026-10-28T09:58:20.344+00:00",
+        "at": "2026-11-16T02:00:27.782Z",
         "kind": "access_limited",
-        "httpStatus": 200,
-        "detail": "text_only; linked images and full timeline not exhaustively reviewed",
+        "httpStatus": 403,
+        "detail": "HTTP 403",
         "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/koshigaya/"
       },
       "note": "10/12朝調査で実際に確認した個別一次情報。本文中央の未受信観測を補完・推測しない。リンク到達性検査とは別の記録。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
@@ -2835,15 +2835,15 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-10-29T09:59:14.879+00:00",
+      "lastAttemptAt": "2026-11-16T02:00:30.515Z",
       "lastSuccessfulAt": "2026-10-29T09:59:14.879+00:00",
-      "lastResult": "success",
-      "resultSummary": "提供されたHTTP本文取得の範囲。画像・SNSの全件網羅を意味しない。",
+      "lastResult": "access_limited",
+      "resultSummary": "直接HTTP取得失敗。過去成功日時を保持し、Web補助取得をライブ成功として扱わない。",
       "lastFailure": {
-        "at": "2026-10-28T09:58:26.736+00:00",
+        "at": "2026-11-16T02:00:30.515Z",
         "kind": "access_limited",
-        "httpStatus": 200,
-        "detail": "text_only; linked images and full timeline not exhaustively reviewed",
+        "httpStatus": 403,
+        "detail": "HTTP 403",
         "evidenceUrl": "https://chiikawa-info.jp/chiikawaland/solamachi/"
       },
       "note": "10/12提供済みの個別一次調査を取り込む。本文/画像の確認範囲を保持し、網羅を推定しない。 10/28夕の経路別観測は research/evening-20261028/source-observations.json。 10/29朝の経路別観測は research/morning-20261029/source-observations.json。 10/29夕の経路別観測は research/evening-20261029/source-observations.json。過去成功時刻と失敗履歴を保持。 10/30朝の経路別観測は research/morning-20261030/source-observations.json。過去の成功日時・失敗履歴を保持。"
@@ -17085,11 +17085,17 @@
       ],
       "cadence": "morning_evening",
       "enabled": true,
-      "lastAttemptAt": "2026-11-14T10:00:46Z",
+      "lastAttemptAt": "2026-11-16T02:00:34.003Z",
       "lastSuccessfulAt": "2026-11-14T10:00:46Z",
-      "lastResult": "success",
-      "resultSummary": "公式ページ本文を直接HTTP200取得。11/14掲載、11/15対象、3F P3入口・開店前P2エレベーター、全員揃って整列、混雑時整理券を確認。",
-      "lastFailure": null,
+      "lastResult": "fetch_failed",
+      "resultSummary": "直接HTTP取得失敗。過去成功日時を保持し、Web補助取得をライブ成功として扱わない。",
+      "lastFailure": {
+        "at": "2026-11-16T02:00:34.003Z",
+        "kind": "fetch_failed",
+        "httpStatus": 404,
+        "detail": "HTTP 404",
+        "evidenceUrl": "https://laketown.aeonmall.jp/news/shopnews/f6586882-d6af-4a30-971f-fc15fd51dc16"
+      },
       "note": "別Web取得は失敗、直接HTTP取得は成功。対象日と店舗開業日を区別。詳細は research/evening-20261114/laketown-entry-evidence.json"
     },
     {
