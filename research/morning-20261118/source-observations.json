@@ -1,0 +1,128 @@
+{
+  "baseCommit": "4a30e8b3ad7cd197e08a74fd3f84a3d791de19af",
+  "asOf": "2026-11-18",
+  "observations": [
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000002444.000095753.html",
+      "lastAttemptAt": "2026-11-17T23:09:59.456Z",
+      "lastSuccessfulAt": "2026-11-17T23:09:59.456Z",
+      "lastResult": "success",
+      "observation": "JR西日本の出店案内は11月4日～17日。延長の公式発表は確認されていない。現行に残る同一IDを履歴へ移動。"
+    },
+    {
+      "url": "https://x.com/nagano_mkt_shop/status/2122305655457697818",
+      "imageUrl": "https://pbs.twimg.com/media/HXPxvnwbsAAD2Z_.jpg",
+      "reservationUrl": "https://page.line.me/786sasix",
+      "lastAttemptAt": "2026-11-17T23:09:59.456Z",
+      "lastSuccessfulAt": "2026-11-17T23:09:59.456Z",
+      "lastResult": "success",
+      "retrieval": "公式アカウントの投稿リンクと公式配信用画像を照合。画像を直接取得し表示内容を確認。",
+      "observation": "11/24～30の各日、前日19時に全枠開始。既存LUCUA館内券とは別。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/pus.html",
+      "lastAttemptAt": "2026-11-17T23:09:59.456Z",
+      "lastSuccessfulAt": "2026-11-17T23:09:59.456Z",
+      "lastResult": "success",
+      "observation": "公式国内POP UPの開催前7会場は既存日程と一致。浜松市野・太田・旭川の入場案内は確定差分なし。"
+    },
+    {
+      "url": "https://nagano-info.jp/pus.html",
+      "lastAttemptAt": "2026-11-17T23:09:59.456Z",
+      "lastSuccessfulAt": "2026-11-17T23:09:59.456Z",
+      "lastResult": "success",
+      "observation": "国内の浜松市野・海老名は既掲載。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_ikek/index.html",
+      "lastAttemptAt": "2026-11-17T23:09:59.456Z",
+      "lastSuccessfulAt": "2026-11-17T23:09:59.456Z",
+      "lastResult": "success",
+      "observation": "現行は全日程整理券。11月開催の配布方法、受付開始時刻、1枚で入れる人数の確定情報は確認できない。9月開催の運用で補完しない。",
+      "nextCheck": "開催前の公式会場ページ・公式POP UP投稿を次回巡回で再確認。",
+      "recheckDueAt": "2026-11-18T19:00:00+09:00"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "archive-necogusa-kyoto-mini-20261118",
+      "title": "CHARACTER STORE by Necogusa 京都miniの終了整理",
+      "kind": "existing_update",
+      "targetKey": "necogusa-2026-11-04-kyoto-mini:archive-20261118",
+      "sourceIds": [
+        "jrwest-necogusa-kyoto-mini-20261104"
+      ],
+      "officialAnnouncedAt": "2026-11-02T14:00:00+09:00",
+      "discoveredAt": "2026-11-18",
+      "eventStartsAt": "2026-11-04T13:00:00+09:00",
+      "eventEndsAt": "2026-11-17T19:00:00+09:00",
+      "releaseAt": null,
+      "reservationOpensAt": null,
+      "reflectDueAt": "2026-11-18",
+      "evidence": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000002444.000095753.html",
+          "observedAt": "2026-11-17T23:09:59.456Z",
+          "summary": "主催側の一次案内は11月17日最終日。同じIDのまま履歴へ。",
+          "recordPath": "research/morning-20261118/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "necogusa-2026-11-04-kyoto-mini"
+        ],
+        "note": "元の会期・URL・IDを保持。"
+      },
+      "listingIds": [
+        "necogusa-2026-11-04-kyoto-mini"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "現行掲載の終了整理。",
+      "nextCheck": "配信後に現行なし・履歴1件・共有ページの終了表示を確認。",
+      "recheckDueAt": "2026-11-18T19:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "nagano-umeda-line-entry-20261124",
+      "title": "ナガノマーケットUMEDA 11/24～30 LINE整理券",
+      "kind": "reservation_update",
+      "targetKey": "nagano-market-umeda:line-entry-20261124",
+      "sourceIds": [
+        "nagano-umeda-entry-image-20261116"
+      ],
+      "officialAnnouncedAt": "2026-11-16T21:27:00+09:00",
+      "discoveredAt": "2026-11-18",
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-11-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-23T19:00:00+09:00",
+      "reflectDueAt": "2026-11-18",
+      "evidence": [
+        {
+          "url": "https://pbs.twimg.com/media/HXPxvnwbsAAD2Z_.jpg",
+          "observedAt": "2026-11-17T23:09:59.456Z",
+          "summary": "公式アカウントの画像に各来店日前日19:00、距離制限なし、対象期間中1人1回、顔写真付き本人確認。",
+          "recordPath": "research/morning-20261118/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "nagano-market-umeda"
+        ],
+        "note": "既存店舗の入店案内のみ。"
+      },
+      "listingIds": [
+        "nagano-market-umeda"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "11/23受付開始前に追記。プレオープンと施設側整理券は別。",
+      "nextCheck": "本番ページ・公開データの一致と、週明けの施設側案内の続報。",
+      "recheckDueAt": "2026-11-18T19:00:00+09:00",
+      "publishedAt": null
+    }
+  ]
+}
