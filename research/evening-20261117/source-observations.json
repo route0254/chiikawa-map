@@ -1,0 +1,161 @@
+{
+  "baseCommit": "bf2560caa7b58247b71ba44427ab30249489fbc1",
+  "asOf": "2026-11-17",
+  "observations": [
+    {
+      "spotId": "baby-castella-otaru",
+      "url": "https://x.com/chiikawamgmg/status/2122525181587427408",
+      "imageUrl": "https://pbs.twimg.com/media/HXS5Z37XAAAxVDm.png",
+      "announcedAt": "2026-11-17T12:00:00+09:00",
+      "observation": "2026年11月30日以降は毎日、入店にデジタル整理券が必要です。来店前日の20:00から公式LINEで先着受付し、初回は11月29日20:00から11月30日分を受け付けます。1人1枚必要で、取得時の距離制限はありません。受付は上限に達し次第終了し、運用が変更される場合があります。",
+      "preserved": "11/18～29の抽選と残枠先着（約30km内・位置情報ON）の条件、公式LINE https://lin.ee/Di0FUyj は保持。日付付きで運用変更を明記し、継続する必須整理券運用に合わせて予約必須に更新。",
+      "primaryOfficialUrl": "https://www.chiikawamogumogu.jp/2026/11/17/post-2782/",
+      "observedAt": "2026-11-17T10:07:55Z",
+      "discoveredAt": "2026-11-17",
+      "eventStartsAt": "2026-11-30",
+      "eventEndsAt": null,
+      "reservationOpensAt": "2026-11-29T20:00:00+09:00",
+      "reflectDueAt": "2026-11-17",
+      "candidateId": "otaru-daily-entry-20261130",
+      "sourceId": "official-otaru-daily-entry-20261130",
+      "retrieval": "公式ページ本文を直接取得。"
+    },
+    {
+      "spotId": "chiikawa-park-store-osaka",
+      "url": "https://x.com/chiikawapark_s/status/2122305214376263881",
+      "imageUrl": "https://pbs.twimg.com/media/HXPxV2JboAA1A_D.jpg",
+      "announcedAt": "2026-11-16T21:26:00+09:00",
+      "lineUrl": "https://page.line.me/786sasix",
+      "facilityUrl": "https://www.lucua.jp/south-entry/",
+      "observation": "2026年11月24～30日分の店舗整理券は、各来店日の前日19:00から全時間帯を公式の共通LINEで受け付けます（初回は11月23日19:00）。共通LINE内で本店舗の案内をご確認ください。取得時の距離制限はなく、期間中の入店は1人1回までです。氏名・顔写真の登録と顔写真付き本人確認書類が必要です。 館内Airウェイトの当日06:00とは別。公式画像を親調査で目視確認。30分完全入替、券は記載開始時刻から1時間有効、原則1人1枚（小学生以下・要介助者の付添い可）、会計1回、再入場不可、スクリーンショット・譲渡・転売不可、購入保証なし、混雑状況によりフリー入場切替あり。",
+      "preserved": "会員プレオープンと館内券／店舗券の区別、開業日、特典は保持。",
+      "observedAt": "2026-11-17T10:07:58Z",
+      "discoveredAt": "2026-11-17",
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-11-30",
+      "reservationOpensAt": "2026-11-23T19:00:00+09:00",
+      "reflectDueAt": "2026-11-17",
+      "candidateId": "park-osaka-line-entry-20261124",
+      "sourceId": "official-park-osaka-line-entry-20261124",
+      "retrieval": "公式画像を直接取得。内容は親調査の目視確認と照合。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "otaru-daily-entry-20261130",
+      "title": "小樽ベビーカステラ 11/30以降の毎日整理券",
+      "kind": "reservation_update",
+      "targetKey": "baby-castella-otaru:otaru-daily-entry-20261130",
+      "sourceIds": [
+        "official-otaru-daily-entry-20261130"
+      ],
+      "officialAnnouncedAt": "2026-11-17T12:00:00+09:00",
+      "discoveredAt": "2026-11-17",
+      "eventStartsAt": "2026-11-30",
+      "eventEndsAt": null,
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-29T20:00:00+09:00",
+      "reflectDueAt": "2026-11-17",
+      "evidence": [
+        {
+          "url": "https://www.chiikawamogumogu.jp/2026/11/17/post-2782/",
+          "observedAt": "2026-11-17T10:07:55Z",
+          "summary": "2026年11月30日以降は毎日、入店にデジタル整理券が必要です。来店前日の20:00から公式LINEで先着受付し、初回は11月29日20:00から11月30日分を受け付けます。1人1枚必要で、取得時の距離制限はありません。受付は上限に達し次第終了し、運用が変更される場合があります。",
+          "recordPath": "research/evening-20261117/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "baby-castella-otaru"
+        ],
+        "note": "既存店舗IDの入店条件のみ更新。新規ピン・会期変更なし。"
+      },
+      "listingIds": [
+        "baby-castella-otaru"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "一次案内に基づき受付開始前に反映する候補。ローカル検査済み、未公開。過去期間の条件を保持。",
+      "nextCheck": "公開実体照合後、通常巡回で入店条件の変更を確認。",
+      "recheckDueAt": "2026-11-18T08:00:00+09:00",
+      "publishedAt": null
+    },
+    {
+      "id": "park-osaka-line-entry-20261124",
+      "title": "大阪パークストア 11/24～30 LINE整理券",
+      "kind": "reservation_update",
+      "targetKey": "chiikawa-park-store-osaka:park-osaka-line-entry-20261124",
+      "sourceIds": [
+        "official-park-osaka-line-entry-20261124"
+      ],
+      "officialAnnouncedAt": "2026-11-16T21:26:00+09:00",
+      "discoveredAt": "2026-11-17",
+      "eventStartsAt": "2026-11-24",
+      "eventEndsAt": "2026-11-30",
+      "releaseAt": null,
+      "reservationOpensAt": "2026-11-23T19:00:00+09:00",
+      "reflectDueAt": "2026-11-17",
+      "evidence": [
+        {
+          "url": "https://pbs.twimg.com/media/HXPxV2JboAA1A_D.jpg",
+          "observedAt": "2026-11-17T10:07:58Z",
+          "summary": "2026年11月24～30日分の店舗整理券は、各来店日の前日19:00から全時間帯を公式の共通LINEで受け付けます（初回は11月23日19:00）。共通LINE内で本店舗の案内をご確認ください。取得時の距離制限はなく、期間中の入店は1人1回までです。氏名・顔写真の登録と顔写真付き本人確認書類が必要です。 館内Airウェイトの当日06:00とは別。公式画像を親調査で目視確認。30分完全入替、券は記載開始時刻から1時間有効、原則1人1枚（小学生以下・要介助者の付添い可）、会計1回、再入場不可、スクリーンショット・譲渡・転売不可、購入保証なし、混雑状況によりフリー入場切替あり。",
+          "recordPath": "research/evening-20261117/source-observations.json"
+        }
+      ],
+      "existingMatch": {
+        "status": "matched",
+        "ids": [
+          "chiikawa-park-store-osaka"
+        ],
+        "note": "既存店舗IDの入店条件のみ更新。新規ピン・会期変更なし。"
+      },
+      "listingIds": [
+        "chiikawa-park-store-osaka"
+      ],
+      "state": "ready",
+      "priority": "high",
+      "decision": "一次案内に基づき受付開始前に反映する候補。ローカル検査済み、未公開。過去期間の条件を保持。",
+      "nextCheck": "公開実体照合後、通常巡回で入店条件の変更を確認。",
+      "recheckDueAt": "2026-11-18T08:00:00+09:00",
+      "publishedAt": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "official-otaru-daily-entry-20261130",
+      "name": "小樽ベビーカステラ 11/30以降の毎日整理券",
+      "url": "https://www.chiikawamogumogu.jp/2026/11/17/post-2782/",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-17T10:07:55Z",
+      "lastSuccessfulAt": "2026-11-17T10:07:55Z",
+      "lastResult": "success",
+      "resultSummary": "2026年11月30日以降は毎日、入店にデジタル整理券が必要です。来店前日の20:00から公式LINEで先着受付し、初回は11月29日20:00から11月30日分を受け付けます。1人1枚必要で、取得時の距離制限はありません。受付は上限に達し次第終了し、運用が変更される場合があります。",
+      "lastFailure": null,
+      "note": "research/evening-20261117/source-observations.json。取得完了時刻を記録。公式告知日時・対象期間・受付開始を区別。"
+    },
+    {
+      "id": "official-park-osaka-line-entry-20261124",
+      "name": "大阪パークストア 11/24～30 LINE整理券",
+      "url": "https://pbs.twimg.com/media/HXPxV2JboAA1A_D.jpg",
+      "kind": "venue",
+      "scope": [
+        "official"
+      ],
+      "cadence": "morning_evening",
+      "enabled": true,
+      "lastAttemptAt": "2026-11-17T10:07:58Z",
+      "lastSuccessfulAt": "2026-11-17T10:07:58Z",
+      "lastResult": "success",
+      "resultSummary": "2026年11月24～30日分の店舗整理券は、各来店日の前日19:00から全時間帯を公式の共通LINEで受け付けます（初回は11月23日19:00）。共通LINE内で本店舗の案内をご確認ください。取得時の距離制限はなく、期間中の入店は1人1回までです。氏名・顔写真の登録と顔写真付き本人確認書類が必要です。 館内Airウェイトの当日06:00とは別。公式画像を親調査で目視確認。30分完全入替、券は記載開始時刻から1時間有効、原則1人1枚（小学生以下・要介助者の付添い可）、会計1回、再入場不可、スクリーンショット・譲渡・転売不可、購入保証なし、混雑状況によりフリー入場切替あり。",
+      "lastFailure": null,
+      "note": "research/evening-20261117/source-observations.json。取得完了時刻を記録。公式告知日時・対象期間・受付開始を区別。"
+    }
+  ]
+}
