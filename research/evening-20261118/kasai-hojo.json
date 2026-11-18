@@ -1,0 +1,43 @@
+{
+  "candidateId": "new-chiikawa-muchaphoto-2026-11-21-aeon-kasai-hojo",
+  "listingId": "chiikawa-muchaphoto-2026-11-21-aeon-kasai-hojo",
+  "discoveredAt": "2026-11-18",
+  "officialAnnouncedAt": null,
+  "eventStartsAt": "2026-11-21T10:00:00+09:00",
+  "eventEndsAt": "2026-11-23T16:00:00+09:00",
+  "ticketDistributionAt": "2026-11-21T09:30:00+09:00",
+  "reservationOpensAt": null,
+  "releaseAt": null,
+  "reflectDueAt": "2026-11-18",
+  "recheckDueAt": "2026-11-18",
+  "publishedAt": null,
+  "state": "ready",
+  "existingMatch": "現行・履歴に同会場の同企画なし。",
+  "nextCheck": "公開JSON・canonicalに一致する時刻を記録。",
+  "sources": [
+    {
+      "url": "https://www.aeon.jp/sc/kasaihojo/event/event_e94923_as.html",
+      "observedAt": "2026-11-18T10:17:38Z",
+      "result": "success",
+      "notes": "施設本文を実取得。会場・期間、先着整理券と配布場所、時間、対象人数を確認。"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/kasaihojo/event/",
+      "observedAt": "2026-11-18T10:16:20Z",
+      "result": "success",
+      "notes": "2026年11月の現行一覧から同施設の正式開催ページにリンク。SNS転載で不足した開催年を解消。"
+    },
+    {
+      "url": "https://www.aeonmall.com/facility/detail/3698/",
+      "observedAt": "2026-11-18T10:17:38Z",
+      "result": "success",
+      "notes": "公式施設住所。"
+    },
+    {
+      "url": "https://mapfan.com/spots/SCQQA%2CJ%2CRU",
+      "observedAt": "2026-11-18T10:17:38Z",
+      "result": "success",
+      "notes": "施設の代表座標を照合。"
+    }
+  ]
+}
