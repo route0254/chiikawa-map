@@ -480,7 +480,7 @@
     "partner": "ジーユー",
     "category": "collection",
     "status": "upcoming",
-    "summary": "冬のコラボアイテムを11月20日・27日の2回に分けて発売予定です。各日、店舗は開店時、オンラインは7:15から販売予定。通常販売はおひとり様1柄1色2点までですが、ポーチ CHIIKAWAの4商品は1点までです。オンライン限定の先行予約（11月2日7:15～11月8日23:59）は終了しました。 通常販売で品切れになった商品はオンラインストア限定で追加予約販売を予定しています。追加予約も上限数に達し次第、期間内でも終了します。",
+    "summary": "冬のコラボアイテムを11月20日・27日の2回に分けて発売予定です。各日、オンラインは7:15から、店舗は原則開店時から販売予定。店頭では発売日当日に整理券を配布します。配布時刻・方法は店舗ごとに異なります。通常販売はおひとり様1柄1色2点までですが、ポーチ CHIIKAWAの4商品は1点までです。オンライン限定の先行予約（11月2日7:15～11月8日23:59）は終了しました。 通常販売で品切れになった商品はオンラインストア限定で追加予約販売を予定しています。追加予約も上限数に達し次第、期間内でも終了します。",
     "areaText": "ジーユー全店舗・オンラインストア",
     "channels": [
       "店舗",
@@ -497,13 +497,13 @@
         "label": "1st collection 発売予定",
         "startDate": "2026-11-20",
         "endDate": null,
-        "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+        "note": "オンラインストアは7:15から販売開始予定。店頭は発売日当日に整理券を配布します。配布時刻・場所は店舗ごとに異なるため、利用店舗の案内をご確認ください。"
       },
       {
         "label": "2nd collection 発売予定",
         "startDate": "2026-11-27",
         "endDate": null,
-        "note": "店舗は開店時、オンラインストアは7:15から販売開始予定。終了日未発表。"
+        "note": "オンラインストアは7:15から販売開始予定。店頭は発売日当日に整理券を配布します。配布時刻・場所は店舗ごとに異なるため、利用店舗の案内をご確認ください。"
       },
       {
         "label": "1st collection オンライン追加予約",
@@ -522,9 +522,9 @@
       "アパレル",
       "限定商品"
     ],
-    "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015905/",
+    "sourceUrl": "https://faq.gu-global.com/articles/Knowledge/100015685/",
     "linkedSpotIds": [],
-    "checkedAt": "2026-11-16"
+    "checkedAt": "2026-11-19"
   },
   {
     "id": "oxiclean-chiikawa-2026",
@@ -796,5 +796,86 @@
     "sourceUrl": "https://prtimes.jp/main/html/rd/p/000009231.000016756.html",
     "linkedSpotIds": [],
     "checkedAt": "2026-11-18"
+  },
+  {
+    "id": "tsutaya-chiikawa-volume9-bonus-2026",
+    "title": "TSUTAYA ちいかわ9巻 限定ミニイラストカード",
+    "partner": "TSUTAYA",
+    "category": "campaign",
+    "status": "while_supplies_last",
+    "summary": "対象店舗でちいかわ9巻の通常版または特装版を購入すると、パラレルワールド編のミニイラストカードが付きます。先着で、なくなり次第終了。",
+    "areaText": "全国の対象店",
+    "channels": [
+      "店舗"
+    ],
+    "periods": [
+      {
+        "label": "店頭購入特典",
+        "startDate": null,
+        "endDate": null,
+        "note": "11月20日頃から。取扱店は公式一覧をご確認ください。予約の可否は店舗によって異なります。"
+      }
+    ],
+    "tags": [
+      "書籍",
+      "購入特典"
+    ],
+    "sourceUrl": "https://tsutaya.tsite.jp/articles/book-comic-5991",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-11-19"
+  },
+  {
+    "id": "kinokuniya-chiikawa-volume9-bonus-2026",
+    "title": "紀伊國屋書店 ちいかわ9巻 限定イラストカード",
+    "partner": "紀伊國屋書店",
+    "category": "campaign",
+    "status": "while_supplies_last",
+    "summary": "対象店舗の店頭でちいかわ9巻の通常版または特装版を購入すると、紀伊國屋書店限定イラストカードが付きます。書店共通のチェキ風カードも別に先着配布されます。ウェブストア、店舗受取サービス、店頭在庫配送は対象外です。",
+    "areaText": "全国の対象69店舗",
+    "channels": [
+      "店舗"
+    ],
+    "periods": [
+      {
+        "label": "店頭購入特典",
+        "startDate": null,
+        "endDate": null,
+        "note": "11月20日発売予定。地域で発売日・入荷時期が異なり、特装版は入荷次第販売。限定カードは初回入荷在庫がなくなり次第終了します。"
+      }
+    ],
+    "tags": [
+      "書籍",
+      "購入特典"
+    ],
+    "sourceUrl": "https://store.kinokuniya.co.jp/event/1790736506/",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-11-19"
+  },
+  {
+    "id": "umeda-tsutaya-chiikawa-volume9-sale-2026",
+    "title": "梅田 蔦屋書店 ちいかわ9巻 販売・整列案内",
+    "partner": "梅田 蔦屋書店",
+    "category": "campaign",
+    "status": "active",
+    "summary": "11月19日・20日の店頭販売案内。通常版はTSUTAYA特典のみ。特装版にはTSUTAYA特典と出版社のチェキ風カードが付き、両方付きは1人1会計1冊。特典はなくなり次第終了。",
+    "areaText": "大阪市北区・ルクア イーレ9F",
+    "channels": [
+      "店舗"
+    ],
+    "periods": [
+      {
+        "label": "販売時の案内",
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-20",
+        "note": "店内の新刊棚裏で8:30から整列、販売は9:00頃から準備ができ次第。8:30～10:30はルクア イーレ1F・3Fのアトリウム側エレベーターを利用し、会計はセルフレジのみ（現金・交通系ICなど使用不可）。"
+      }
+    ],
+    "tags": [
+      "書籍",
+      "購入特典"
+    ],
+    "sourceUrl": "https://store.tsite.jp/umeda/event/shop/58017-2040471111.html",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-11-19"
   }
 ]

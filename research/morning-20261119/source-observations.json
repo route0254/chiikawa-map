@@ -1,0 +1,26 @@
+{
+  "dateJST": "2026-11-19",
+  "observations": [
+    {"url":"https://chiikawa-info.jp/","result":"success","note":"公式総合の本文を取得。新着と現行掲載を照合。個別取得完了時刻不明。"},
+    {"url":"https://chiikawa-info.jp/pus.html","result":"success","note":"ポップアップ公式一覧の本文取得。"},
+    {"url":"https://nagano-info.jp/","result":"success","note":"公式総合・ポップアップの本文取得。"},
+    {"url":"https://nagano-info.jp/tenpo_nm/ginza/","result":"success","note":"11/24から心斎橋・銀座・札幌限定の購入特典。"},
+    {"url":"https://nagano-info.jp/tenpo_nm/sapporo/","result":"success","note":"銀座公式と同じ対象3店舗・購入条件を確認。"},
+    {"url":"https://nagano-info.jp/tenpo_nm/shinsaibashi/","result":"fetch_failed","httpStatus":503,"note":"直接取得失敗。銀座・札幌の一次情報で特典の対象店だと確認済み。心斎橋固有情報の確認に代用しない。"},
+    {"url":"https://chiikawabakery.jp/topics/20261117/","result":"success","note":"東京・大阪で11/18からちいまん。東京のみテラス開放。"},
+    {"url":"https://chiikawapark-tokyo.jp/news/cm5k0_3-gq5p/","result":"success","note":"クリスマスは別の現行IDで掲載済み。"},
+    {"url":"https://faq.gu-global.com/articles/Knowledge/100015685/","result":"success","note":"11/20・27の両発売日の店頭整理券、配布時間等は店舗案内。"},
+    {"url":"https://faq.gu-global.com/articles/Knowledge/100015905/","result":"previously_verified","note":"従来掲載の売り切れ商品オンライン追加予約の出典。"},
+    {"url":"https://www.cocooncity.jp/shopnews/detail/43007","result":"success","note":"店別の例：11/20 8:00、コクーン1の1F GU前入口。"},
+    {"url":"https://kawaguchimaekawa.aeonmall.jp/news/shopnews/da3f7349-581f-4c7d-8ec0-5a03a3ef476e","result":"success","note":"店別の例：11/20 9:00–10:00、1Fイースト南入口（1番）外。"},
+    {"url":"https://www.aeon.jp/sc/tsuchiura/event/","result":"success","note":"一覧は現在HTTP 200。掲載ソースは該当詳細に切替。"},
+    {"url":"https://www.aeon.jp/sc/tsuchiura/event/event_e91114_as.html","result":"success","note":"直接HTTP 200、11/28～29、整理券・会場・撮影・AR情報一致。"},
+    {"url":"https://tsutaya.tsite.jp/articles/book-comic-5991","result":"partial","note":"直開きに失敗した経路あり。公式サイトの索引と検索取得本文、梅田店の公式本文を照合。"},
+    {"url":"https://store.kinokuniya.co.jp/event/1790736506/","result":"success","note":"対象69店舗・店頭初回在庫・両版。地域別日程。"},
+    {"url":"https://store.tsite.jp/umeda/event/shop/58017-2040471111.html","result":"success","note":"梅田店の整列タイミング、会計、店舗独自の特典条件。"},
+    {"url":"https://hanyu.aeonmall.jp/event/17fcfd22-dabc-43e6-a27d-c9ee381d7ba6","result":"success","note":"羽生の物販初日9:30北B、東コート。"},
+    {"url":"https://hanyu.aeonmall.jp/event/0645f4d8-4295-4bdd-a9dc-b7860a30ec59","result":"success","note":"羽生の12/6撮影会は9:30頃に北Cで参加券、西コートで撮影。"},
+    {"url":"https://www.aeon.jp/sc/hamamatsuichino/event/event_e95912_as.html","result":"success","note":"浜松市野の11/21撮影会・配布場所を施設本文で照合。"}
+  ],
+  "coverageNote":"公式総合・系列、恒常店舗、施設と企業の一次案内を現行・過去・コラボデータと照合。既存イベント11/18終了の該当なし。SNS掲載の全数確認や別経路の取得成功時刻は主張しない。"
+}
