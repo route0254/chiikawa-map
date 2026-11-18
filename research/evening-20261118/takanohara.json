@@ -1,0 +1,49 @@
+{
+  "candidateId": "new-chiikawa-muchaphoto-2026-11-22-aeon-takanohara",
+  "listingId": "chiikawa-muchaphoto-2026-11-22-aeon-takanohara",
+  "discoveredAt": "2026-11-18",
+  "officialAnnouncedAt": null,
+  "eventStartsAt": "2026-11-22T10:00:00+09:00",
+  "eventEndsAt": "2026-11-22T16:00:00+09:00",
+  "releaseAt": null,
+  "reservationOpensAt": null,
+  "ticketDistributionAt": "2026-11-22T09:00:00+09:00",
+  "reflectDueAt": "2026-11-18",
+  "recheckDueAt": "2026-11-18",
+  "publishedAt": null,
+  "state": "ready",
+  "existingMatch": "なし。現行と履歴のID・会場名を照合。",
+  "nextCheck": "配信後に公開JSON・canonicalを照合し観測日時を記録。",
+  "sources": [
+    {
+      "url": "https://www.aeon.jp/sc/takanohara/event/event_e93546_as.html",
+      "observedAt": "2026-11-18T10:13:32Z",
+      "result": "success",
+      "notes": "施設開催一覧からリンクされる正式ページ。11/22、2F平安コート、3回の無料撮影会とARラリー及び整理券の条件を本文取得で確認。"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/takanohara/event/",
+      "observedAt": "2026-11-18T10:13:32Z",
+      "result": "success",
+      "notes": "現行イベント一覧で開催年を照合。"
+    },
+    {
+      "url": "https://www.aeon.com/store/lp/592935/",
+      "observedAt": "2026-11-18T10:13:32Z",
+      "result": "success",
+      "notes": "イオングループの同一イベントページと告知画像。"
+    },
+    {
+      "url": "https://www.aeonmall.com/facility/detail/3389/",
+      "observedAt": "2026-11-18T10:13:32Z",
+      "result": "success",
+      "notes": "施設代表住所。"
+    },
+    {
+      "url": "https://www.pref.kyoto.jp/hinan/documents/2621450109.pdf",
+      "observedAt": "2026-11-18T10:13:32Z",
+      "result": "success",
+      "notes": "府の施設カルテ。地図は館内のポイントではなく建物代表位置。"
+    }
+  ]
+}
