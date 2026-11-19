@@ -381,6 +381,33 @@
     "checkedAt": "2026-09-02"
   },
   {
+    "id": "donquijote-apita-chiikawa-apparel-20261121",
+    "title": "ドン・キホーテ・アピタ×ちいかわ 大人向けアパレル",
+    "partner": "ドン・キホーテ・アピタ",
+    "category": "collection",
+    "status": "upcoming",
+    "summary": "全国の対象のドン・キホーテ、アピタで、ちいかわの大人向けアパレルを発売。取扱店舗は公式ページのリストをご確認ください。",
+    "areaText": "全国の対象店舗",
+    "channels": [
+      "店舗"
+    ],
+    "periods": [
+      {
+        "label": "発売日",
+        "startDate": "2026-11-21",
+        "endDate": null,
+        "note": "11月21日9:00から順次発売。開店・入荷時間、取扱サイズや整理券・点数制限は店舗により異なります。"
+      }
+    ],
+    "tags": [
+      "アパレル",
+      "限定商品"
+    ],
+    "sourceUrl": "https://www.donki.com/products/chiikawa_sl7/",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-11-19"
+  },
+  {
     "id": "chiikawa-epos-card",
     "title": "ちいかわエポスカード",
     "partner": "エポスカード",
@@ -497,13 +524,25 @@
         "label": "1st collection 発売予定",
         "startDate": "2026-11-20",
         "endDate": null,
-        "note": "オンラインストアは7:15から販売開始予定。店頭は発売日当日に整理券を配布します。配布時刻・場所は店舗ごとに異なるため、利用店舗の案内をご確認ください。"
+        "note": "オンラインストアは7:15から販売開始予定。店頭は発売日当日に整理券を配布します。配布時刻・場所は店舗ごとに異なるため、利用店舗の案内をご確認ください。 発売日は対象商品のORDER & PICKを休止し、7:00以降の注文は翌日配送の対象外です。"
+      },
+      {
+        "label": "11月20日 コクーンシティ店の整理券",
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-20",
+        "note": "8:00からコクーン1の1階、GU前入口で先着配布予定。早期終了・完売の場合あり。11:00以降の配布状況は店頭スタッフへ。"
+      },
+      {
+        "label": "11月20日 イオンモール川口前川店の整理券",
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-20",
+        "note": "9:00〜10:00は1階イースト南入口（1番出入口）外、10:00以降は2階GUの店頭。混雑により配布開始が早まる場合があります。券の指定時間に来店してください。"
       },
       {
         "label": "2nd collection 発売予定",
         "startDate": "2026-11-27",
         "endDate": null,
-        "note": "オンラインストアは7:15から販売開始予定。店頭は発売日当日に整理券を配布します。配布時刻・場所は店舗ごとに異なるため、利用店舗の案内をご確認ください。"
+        "note": "オンラインストアは7:15から販売開始予定。店頭は発売日当日に整理券を配布します。配布時刻・場所は店舗ごとに異なるため、利用店舗の案内をご確認ください。 発売日は対象商品のORDER & PICKを休止し、7:00以降の注文は翌日配送の対象外です。"
       },
       {
         "label": "1st collection オンライン追加予約",
@@ -583,6 +622,40 @@
     "sourceUrl": "https://www.clasic.jp/blog/detail?product_id=4176&tp_category_id=31",
     "linkedSpotIds": [],
     "checkedAt": "2026-10-03"
+  },
+  {
+    "id": "abema-chiikawa-christmas-free-channel-2026",
+    "title": "ABEMA ちいかわ公式無料チャンネル（クリスマスマーケット記念）",
+    "partner": "ABEMA",
+    "category": "media_sports",
+    "status": "upcoming",
+    "summary": "クリスマスマーケット開催を記念し、アニメ「ちいかわ」第1話〜第382話をABEMAで無料放送。現地イベントとは別のオンライン企画です。",
+    "areaText": "オンライン",
+    "channels": [
+      "オンライン"
+    ],
+    "periods": [
+      {
+        "label": "土日限定の無料放送",
+        "startDate": "2026-11-21",
+        "endDate": "2026-12-20",
+        "note": "初回は11月21日9:00から。毎週土日の2日間で第1話〜第382話を3周放送。視聴リンクは公式案内にあり、チャンネル開設時に公開予定です。"
+      },
+      {
+        "label": "無料見逃し配信",
+        "startDate": "2026-11-21",
+        "endDate": "2026-12-27",
+        "note": "各回は放送後1週間、無料で視聴できます。"
+      }
+    ],
+    "tags": [
+      "アニメ",
+      "無料配信",
+      "クリスマス"
+    ],
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000004262.000064643.html",
+    "linkedSpotIds": [],
+    "checkedAt": "2026-11-19"
   },
   {
     "id": "abema-chiikawa-christmas-market-2026",
