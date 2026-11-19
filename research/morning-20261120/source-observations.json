@@ -1,0 +1,338 @@
+{
+  "dateJST": "2026-11-20",
+  "basisCommit": "d83dd495685fb1691e31e0631f00a4a7d063eee6",
+  "weeklyBroaderReview": {
+    "previous": "2026-11-13",
+    "scope": "公式総合・系列・常設店に加え全国の商業施設、衣料・楽器の企業公式を補完検索。施設別整理券と新規撮影会を別管理。登録履歴のみの指標で網羅性は測定しない。",
+    "metrics": {
+      "scope": "Only recorded candidates and known dates; not a measure of all new announcements",
+      "preStartPublication": {
+        "eligible": 88,
+        "known": 78,
+        "before": 74,
+        "notBefore": 4,
+        "unpublishedAfterStart": 0,
+        "unknown": 10,
+        "rate": 0.9487179487179487
+      },
+      "announcedToDiscovered": {
+        "elapsedHours": {
+          "samples": 41,
+          "mean": 20.073768387533878,
+          "min": 0.08666666666666667,
+          "max": 168.4488888888889
+        },
+        "japanCalendarDays": {
+          "samples": 246,
+          "mean": 22.43089430894309,
+          "min": 0,
+          "max": 1214
+        },
+        "unknownPairs": 274,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 479
+      },
+      "discoveredToPublished": {
+        "elapsedHours": {
+          "samples": 237,
+          "mean": 5.2409410771214215,
+          "min": 0.2632788888888889,
+          "max": 277.5468452777778
+        },
+        "japanCalendarDays": {
+          "samples": 386,
+          "mean": 0.5492227979274611,
+          "min": 0,
+          "max": 19
+        },
+        "unknownPairs": 102,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 251
+      },
+      "announcedToPublished": {
+        "elapsedHours": {
+          "samples": 48,
+          "mean": 686.3151410532406,
+          "min": 0.9634952777777778,
+          "max": 29303.481111111112
+        },
+        "japanCalendarDays": {
+          "samples": 254,
+          "mean": 16.543307086614174,
+          "min": 0,
+          "max": 1273
+        },
+        "unknownPairs": 234,
+        "negativeOrderPairs": 0,
+        "pairsWithoutExactHours": 440
+      }
+    },
+    "holds": "鎌倉もぐもぐ正式日、ベーカリー大阪1月・再開、丸の内KITTE B1Fの新たな確認なし。伏見の平日特例は11/20当日有効。"
+  },
+  "observations": [
+    {
+      "url": "https://nocty.kohga.tokyo/news/detail.html?aid=549451&mode=shop",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://nocty.kohga.tokyo/news/detail.html?aid=549451&mode=shop",
+      "bytes": 27541,
+      "observedAt": "2026-11-19T23:08:29.742+00:00"
+    },
+    {
+      "url": "https://www.jrccd.co.jp/celeo/news/hachioji/23890/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://dzhsooa1gf53a.cloudfront.net/jrccd/sorrypage.html",
+      "bytes": 4604,
+      "observedAt": "2026-11-19T23:08:34.732+00:00"
+    },
+    {
+      "url": "https://yamato.aeonmall.jp/news/bb02d34d-bf52-4f10-a09b-81e7285ec394",
+      "httpStatus": 406,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 406: Not Acceptable",
+      "observedAt": "2026-11-19T23:08:26.158+00:00"
+    },
+    {
+      "url": "https://www.aeontown.co.jp/chikusa/shopnews/detail/?id=034595&scd=004682",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.aeontown.co.jp/chikusa/shopnews/detail/?id=034595&scd=004682",
+      "bytes": 22201,
+      "observedAt": "2026-11-19T23:08:30.007+00:00"
+    },
+    {
+      "url": "https://www.aeontown.co.jp/chuzai/uploads/images/resized/0x0/aeontown/000096/000096/552734a9.jpg",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.aeontown.co.jp/chuzai/uploads/images/resized/0x0/aeontown/000096/000096/552734a9.jpg",
+      "bytes": 148545,
+      "observedAt": "2026-11-19T23:08:29.479+00:00"
+    },
+    {
+      "url": "https://www.aeontown.co.jp/meisei/shopnews/detail/?id=034603&scd=001912",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.aeontown.co.jp/meisei/shopnews/detail/?id=034603&scd=001912",
+      "bytes": 27491,
+      "observedAt": "2026-11-19T23:08:29.935+00:00"
+    },
+    {
+      "url": "https://okazaki.aeonmall.jp/news/8869f723-30aa-49cf-8d35-2ea30fb84689",
+      "httpStatus": 406,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 406: Not Acceptable",
+      "observedAt": "2026-11-19T23:08:27.661+00:00"
+    },
+    {
+      "url": "https://kyotogojo.aeonmall.jp/event/fdc72548-d927-40a8-bad8-983213c12bed",
+      "httpStatus": 406,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 406: Not Acceptable",
+      "observedAt": "2026-11-19T23:08:29.592+00:00"
+    },
+    {
+      "url": "https://tsurumiryokuchi.aeonmall.jp/news/shopnews/36b0369b-bc49-4dc3-8327-e85b4a7795b1",
+      "httpStatus": 406,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 406: Not Acceptable",
+      "observedAt": "2026-11-19T23:08:27.198+00:00"
+    },
+    {
+      "url": "https://kusatsu.aeonmall.jp/event/49357f2c-8e2f-4c75-b23e-3d0165743bad",
+      "httpStatus": 406,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 406: Not Acceptable",
+      "observedAt": "2026-11-19T23:08:28.455+00:00"
+    },
+    {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015905/?fs=RelatedArticle&l=ja&q=Favorite",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://faq.gu-global.com/articles/Knowledge/100015905/?fs=RelatedArticle&l=ja&q=Favorite",
+      "bytes": 239201,
+      "observedAt": "2026-11-19T23:08:28.996+00:00"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/inagawa/event/event_e94104_as.html",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.aeon.jp/sc/inagawa/event/event_e94104_as.html",
+      "bytes": 28234,
+      "observedAt": "2026-11-19T23:08:27.999+00:00"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/inagawa/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.aeon.jp/sc/inagawa/",
+      "bytes": 40983,
+      "observedAt": "2026-11-19T23:08:28.307+00:00"
+    },
+    {
+      "url": "https://mapfan.com/spots/SCYHC%2CJ%2CZ0W",
+      "httpStatus": 429,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 429: Too Many Requests",
+      "observedAt": "2026-11-19T23:08:28.203+00:00"
+    },
+    {
+      "url": "https://x.com/gravail/status/2123204706030006443",
+      "httpStatus": 403,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 403: Forbidden",
+      "observedAt": "2026-11-19T23:08:30.810+00:00"
+    },
+    {
+      "url": "https://cdn.syndication.twimg.com/tweet-result?id=2123204706030006443&token=0",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://cdn.syndication.twimg.com/tweet-result?id=2123204706030006443&token=0",
+      "bytes": 2789,
+      "observedAt": "2026-11-19T23:08:33.494+00:00"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HXcjbN-bEAAdu-8.jpg",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://pbs.twimg.com/media/HXcjbN-bEAAdu-8.jpg",
+      "bytes": 301346,
+      "observedAt": "2026-11-19T23:08:33.227+00:00"
+    },
+    {
+      "url": "https://www.shimamura.gr.jp/avail/flier/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.shimamura.gr.jp/avail/flier/",
+      "bytes": 16387,
+      "observedAt": "2026-11-19T23:08:32.247+00:00"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000501.000066095.html",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000501.000066095.html",
+      "bytes": 252065,
+      "observedAt": "2026-11-19T23:08:33.935+00:00"
+    },
+    {
+      "url": "https://kyoritsu-group.com/news/news_products/96301/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://kyoritsu-group.com/news/news_products/96301/",
+      "bytes": 173953,
+      "observedAt": "2026-11-19T23:08:39.551+00:00"
+    },
+    {
+      "url": "https://chiikawa-info.jp/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikawa-info.jp/",
+      "bytes": 42916,
+      "observedAt": "2026-11-19T23:08:34.464+00:00"
+    },
+    {
+      "url": "https://chiikawa-info.jp/pus.html",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikawa-info.jp/pus.html",
+      "bytes": 232756,
+      "observedAt": "2026-11-19T23:08:34.645+00:00"
+    },
+    {
+      "url": "https://nagano-info.jp/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://nagano-info.jp/",
+      "bytes": 15164,
+      "observedAt": "2026-11-19T23:08:34.439+00:00"
+    },
+    {
+      "url": "https://nagano-info.jp/pus.html",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://nagano-info.jp/pus.html",
+      "bytes": 71498,
+      "observedAt": "2026-11-19T23:08:34.608+00:00"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/chiikawaclinic/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikawa-info.jp/p26/chiikawaclinic/",
+      "bytes": 11929,
+      "observedAt": "2026-11-19T23:08:34.411+00:00"
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikawapark-tokyo.jp/",
+      "bytes": 37521,
+      "observedAt": "2026-11-19T23:08:33.699+00:00"
+    },
+    {
+      "url": "https://chiikawabakery.jp/reservation/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikawabakery.jp/reservation/",
+      "bytes": 49944,
+      "observedAt": "2026-11-19T23:08:33.427+00:00"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/news/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.chiikawamogumogu.jp/news/",
+      "bytes": 31828,
+      "observedAt": "2026-11-19T23:08:36.454+00:00"
+    },
+    {
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "bytes": 54097,
+      "observedAt": "2026-11-19T23:08:36.600+00:00"
+    },
+    {
+      "url": "https://www.gps.co.jp/",
+      "httpStatus": 503,
+      "transport": "fetch_failed",
+      "reason": "HTTP Error 503: Service Unavailable",
+      "observedAt": "2026-11-19T23:08:36.644+00:00"
+    },
+    {
+      "url": "https://www.nagano-market.jp/",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://nagano-market.jp/",
+      "bytes": 842979,
+      "observedAt": "2026-11-19T23:08:44.539+00:00"
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikatsu-map.com/data/official-spots.json",
+      "bytes": 228147,
+      "observedAt": "2026-11-19T23:08:40.139+00:00"
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "bytes": 1225910,
+      "observedAt": "2026-11-19T23:08:40.135+00:00"
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "httpStatus": 200,
+      "transport": "body_returned",
+      "finalUrl": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "bytes": 47321,
+      "observedAt": "2026-11-19T23:08:40.132+00:00"
+    }
+  ]
+}
