@@ -1,0 +1,341 @@
+{
+  "dateJST": "2026-11-21",
+  "basisCommit": "35faf3c9b31c501e0fb611495a0695223a2bd8a6",
+  "observations": [
+    {
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "observedAt": "2026-11-21T10:09:55.276+00:00",
+      "lastSuccessfulAt": "2026-11-20T22:55:59.311+00:00",
+      "httpStatus": null,
+      "result": "fetch_or_parse_failed",
+      "failure": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "observedAt": "2026-11-21T10:09:55.277+00:00",
+      "lastSuccessfulAt": "2026-11-20T22:55:59.303+00:00",
+      "httpStatus": null,
+      "result": "fetch_or_parse_failed",
+      "failure": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "observedAt": "2026-11-21T10:09:55.279+00:00",
+      "lastSuccessfulAt": "2026-11-20T22:55:59.264+00:00",
+      "httpStatus": null,
+      "result": "fetch_or_parse_failed",
+      "failure": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://chiikatsu-map.com/data/collaborations-archive.json",
+      "observedAt": "2026-11-21T10:09:55.278+00:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": null,
+      "result": "fetch_or_parse_failed",
+      "failure": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://chiikawa-info.jp/",
+      "observedAt": "2026-11-21T10:10:44.340+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:44.340+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://chiikawa-info.jp/",
+      "bytes": 42916,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://chiikawa-info.jp/",
+        "observedAt": "2026-11-21T10:09:55.279+00:00",
+        "lastSuccessfulAt": "2026-11-20T22:55:58.460+00:00",
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://chiikawa-info.jp/pus.html",
+      "observedAt": "2026-11-21T10:10:44.570+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:44.570+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://chiikawa-info.jp/pus.html",
+      "bytes": 233352,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://chiikawa-info.jp/pus.html",
+        "observedAt": "2026-11-21T10:09:55.278+00:00",
+        "lastSuccessfulAt": "2026-11-20T22:55:58.587+00:00",
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://nagano-info.jp/",
+      "observedAt": "2026-11-21T10:10:44.533+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:44.533+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://nagano-info.jp/",
+      "bytes": 15164,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://nagano-info.jp/",
+        "observedAt": "2026-11-21T10:09:55.277+00:00",
+        "lastSuccessfulAt": "2026-11-20T22:55:56.656+00:00",
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://nagano-info.jp/popupshop/",
+      "observedAt": "2026-11-21T10:10:44.714+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:44.714+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://nagano-info.jp/popupshop/",
+      "bytes": 3123,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://nagano-info.jp/popupshop/",
+        "observedAt": "2026-11-21T10:09:55.280+00:00",
+        "lastSuccessfulAt": null,
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://chiikawaland.jp/",
+      "observedAt": "2026-11-21T10:09:55.279+00:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": null,
+      "result": "fetch_or_parse_failed",
+      "failure": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/news/4ih42cnudl28/",
+      "observedAt": "2026-11-21T10:10:44.203+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:44.203+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://chiikawapark-tokyo.jp/news/4ih42cnudl28/",
+      "bytes": 19210,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://chiikawapark-tokyo.jp/news/4ih42cnudl28/",
+        "observedAt": "2026-11-21T10:09:55.280+00:00",
+        "lastSuccessfulAt": null,
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://chiikawamogumogu.jp/",
+      "observedAt": "2026-11-21T10:09:55.275+00:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": null,
+      "result": "fetch_or_parse_failed",
+      "failure": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://www.chiikawa-yaki.com/",
+      "observedAt": "2026-11-21T10:10:45.404+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:45.404+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.chiikawa-yaki.com/",
+      "bytes": 36494,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://www.chiikawa-yaki.com/",
+        "observedAt": "2026-11-21T10:09:55.282+00:00",
+        "lastSuccessfulAt": null,
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000026.000157539.html",
+      "observedAt": "2026-11-21T10:10:48.715+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:48.715+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://prtimes.jp/main/html/rd/p/000000026.000157539.html",
+      "bytes": 291694,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000026.000157539.html",
+        "observedAt": "2026-11-21T10:10:01.287+00:00",
+        "lastSuccessfulAt": null,
+        "httpStatus": null,
+        "result": "fetch_or_parse_failed",
+        "failure": "<urlopen error timed out>"
+      }
+    },
+    {
+      "url": "https://nagano-info.jp/popupshop/shizuoka_p/index.html",
+      "observedAt": "2026-11-21T10:09:58.545+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:09:58.545+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://nagano-info.jp/popupshop/shizuoka_p/index.html",
+      "bytes": 34073,
+      "result": "http_body"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/takanohara/event/event_e93546_as.html",
+      "observedAt": "2026-11-21T10:10:01.802+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:01.802+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.aeon.jp/sc/takanohara/event/event_e93546_as.html",
+      "bytes": 28038,
+      "result": "http_body"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/inagawa/",
+      "observedAt": "2026-11-21T10:10:01.814+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:01.814+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.aeon.jp/sc/inagawa/",
+      "bytes": 40983,
+      "result": "http_body"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_ikek/index.html",
+      "observedAt": "2026-11-21T10:09:58.576+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:09:58.576+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://chiikawa-info.jp/p26/pus_ikek/index.html",
+      "bytes": 8272,
+      "result": "http_body"
+    },
+    {
+      "url": "https://donki-aizu.jp/event/index.html",
+      "observedAt": "2026-11-21T10:10:00.676+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:00.676+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://donki-aizu.jp/event/index.html",
+      "bytes": 9100,
+      "result": "http_body"
+    },
+    {
+      "url": "https://chiikawa-info.jp/p26/pus_mtes/index.html",
+      "observedAt": "2026-11-21T10:09:58.342+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:09:58.342+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://chiikawa-info.jp/p26/pus_mtes/index.html",
+      "bytes": 5454,
+      "result": "http_body"
+    },
+    {
+      "url": "https://tokoname.aeonmall.jp/event/dd7671c7-f536-4c2b-bf69-3d8c35441aa9",
+      "observedAt": "2026-11-21T10:10:48.486+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:48.486+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://tokoname.aeonmall.jp/event/dd7671c7-f536-4c2b-bf69-3d8c35441aa9",
+      "bytes": 101428,
+      "result": "http_body_after_retry",
+      "priorAttempt": {
+        "url": "https://tokoname.aeonmall.jp/event/dd7671c7-f536-4c2b-bf69-3d8c35441aa9",
+        "observedAt": "2026-11-21T10:09:59.651+00:00",
+        "lastSuccessfulAt": "2026-11-21",
+        "httpStatus": 406,
+        "result": "fetch_or_parse_failed",
+        "failure": "HTTP Error 406: Not Acceptable"
+      }
+    },
+    {
+      "url": "https://www.kurasushi.co.jp/topic/009011.html",
+      "observedAt": "2026-11-21T10:10:00.399+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:00.399+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.kurasushi.co.jp/topic/009011.html",
+      "bytes": 4380,
+      "result": "http_body"
+    },
+    {
+      "url": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "observedAt": "2026-11-21T10:10:01.113+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:01.113+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.astyle.jp/astyle/s/02/chiikawa-ana/",
+      "bytes": 105115,
+      "result": "http_body"
+    },
+    {
+      "url": "https://www.tokyoeki-1bangai.co.jp/event/detail/?cd=001281",
+      "observedAt": "2026-11-21T10:10:00.810+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:00.810+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.tokyoeki-1bangai.co.jp/event/detail/?cd=001281",
+      "bytes": 25139,
+      "result": "http_body"
+    },
+    {
+      "url": "https://www.tokyoeki-1bangai.co.jp/feature/detail/?cd=000048",
+      "observedAt": "2026-11-21T10:10:00.845+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:00.845+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.tokyoeki-1bangai.co.jp/feature/detail/?cd=000048",
+      "bytes": 30359,
+      "result": "http_body"
+    },
+    {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685",
+      "observedAt": "2026-11-21T10:10:02.503+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:02.503+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://faq.gu-global.com/articles/Knowledge/100015685",
+      "bytes": 243181,
+      "result": "http_body"
+    },
+    {
+      "url": "https://x.com/nagano_mkt_shop/status/2123718128551301236",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:02.505+00:00",
+      "httpStatus": null,
+      "result": "official_text_via_public_mirror"
+    },
+    {
+      "url": "https://x.com/nagano_mkt_shop/status/2123718256955715967",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:02.505+00:00",
+      "httpStatus": null,
+      "result": "official_text_via_public_mirror"
+    },
+    {
+      "url": "https://x.com/nagano_mkt_shop/status/2123718384529686834",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:02.505+00:00",
+      "httpStatus": null,
+      "result": "official_text_via_public_mirror"
+    },
+    {
+      "url": "https://x.com/chiikawa_kouhou/status/2123307794594226219",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": "2026-11-21T10:10:02.505+00:00",
+      "httpStatus": null,
+      "result": "official_text_via_public_mirror"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HXj2YPFa4AASklh.jpg",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": null,
+      "result": "fetch_timed_out",
+      "summary": "公式投稿本文のみ採用。未読添付画像から条件を推定しない。"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HXj2fsrakAAqsdX.jpg",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": null,
+      "result": "fetch_timed_out",
+      "summary": "公式投稿本文のみ採用。未読添付画像から条件を推定しない。"
+    },
+    {
+      "url": "https://pbs.twimg.com/media/HXj2nJlbIAAGysO.jpg",
+      "observedAt": "2026-11-21T10:10:02.505+00:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": null,
+      "result": "fetch_timed_out",
+      "summary": "公式投稿本文のみ採用。未読添付画像から条件を推定しない。"
+    }
+  ]
+}
