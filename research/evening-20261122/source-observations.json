@@ -1,0 +1,164 @@
+{
+  "dateJST": "2026-11-22",
+  "basisCommit": "614578cf7e18ce933ea5d7ae5bfae573691ee0d9",
+  "observations": [
+    {
+      "url": "https://chiikawabakery.jp/20261120_news/",
+      "observedAt": "2026-11-22T19:07:55+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:07:55+09:00",
+      "httpStatus": 200,
+      "bytes": 47263,
+      "result": "http_body",
+      "note": "公式復旧案内とフォームへの直接リンク、レシート必須を確認。"
+    },
+    {
+      "url": "https://business.form-mailer.jp/fms/fcfc7de6379487",
+      "observedAt": "2026-11-22T19:07:55+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:07:55+09:00",
+      "httpStatus": 200,
+      "bytes": 19617,
+      "result": "http_body",
+      "note": "既存会員の未押印、対象2店、税込1000円以上、11/27 23:59申請、12/1以降反映。"
+    },
+    {
+      "url": "https://toki.aeonmall.jp/news/shopnews/98106c07-97e5-4365-b110-8df45fc94e93",
+      "observedAt": "2026-11-22T19:07:58+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:07:58+09:00",
+      "httpStatus": 200,
+      "bytes": 124669,
+      "result": "http_body",
+      "note": "11/27整理券配布9:00、映画館横。"
+    },
+    {
+      "url": "https://qs-mall.jp/abeno/shopnews/detail/7444?tenant_cd=91320003",
+      "observedAt": "2026-11-22T19:07:55+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:07:55+09:00",
+      "httpStatus": 200,
+      "bytes": 112257,
+      "result": "http_body",
+      "note": "11/27整理券8:30、1FペットスーパーWAN側入口。"
+    },
+    {
+      "url": "https://chiikawamarket.jp/blogs/info/20261120",
+      "observedAt": "2026-11-22T19:07:55+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:07:55+09:00",
+      "httpStatus": 200,
+      "bytes": 662330,
+      "result": "http_body",
+      "note": "11/27の10:00–18:00の決済3手段。"
+    },
+    {
+      "url": "https://chiikawamarket.jp/blogs/info/20261120-2",
+      "observedAt": "2026-11-22T19:07:55+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:07:55+09:00",
+      "httpStatus": 200,
+      "bytes": 660544,
+      "result": "http_body",
+      "note": "11/27以降の注文で出荷8営業日以上の可能性。"
+    },
+    {
+      "url": "https://omuta.aeonmall.jp/news/3da1c7fe-17ce-4825-8a22-ca6490da0bf9",
+      "observedAt": "2026-11-22T19:08:57+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:08:57+09:00",
+      "httpStatus": 200,
+      "bytes": 135502,
+      "result": "http_body",
+      "note": "11/27整理券9:00、ありあけコート南入口。"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/ishinomaki/event/event_e95664_as.html",
+      "observedAt": "2026-11-22T19:08:54+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:08:54+09:00",
+      "httpStatus": 200,
+      "bytes": 25706,
+      "result": "http_body",
+      "note": "11/27整理券9:00–10:00、入口F。"
+    },
+    {
+      "url": "https://omuta.aeonmall.jp/event/6abbcbb4-f787-45ce-8933-acb460a398eb",
+      "observedAt": "2026-11-22T19:08:56+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:08:56+09:00",
+      "httpStatus": 200,
+      "bytes": 95797,
+      "result": "http_body",
+      "note": "12/26撮影会とARラリー。候補台帳に記録。"
+    },
+    {
+      "url": "https://www.aeon.jp/sc/nagoyadomemae/event/event_e95942_as.html",
+      "observedAt": "2026-11-22T19:08:54+09:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": 404,
+      "bytes": 10522,
+      "result": "http_failure",
+      "note": "公式個別は404。検索保存表示のみでは採用しない。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/",
+      "observedAt": "2026-11-22T19:10:04+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:10:04+09:00",
+      "httpStatus": 200,
+      "bytes": 42916,
+      "result": "http_body",
+      "note": "公式公開ページ本文取得。"
+    },
+    {
+      "url": "https://nagano-info.jp/pus.html",
+      "observedAt": "2026-11-22T19:10:03+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:10:03+09:00",
+      "httpStatus": 200,
+      "bytes": 72066,
+      "result": "http_body",
+      "note": "公式公開ページ本文取得。"
+    },
+    {
+      "url": "https://chiikawa-info.jp/chiikawaland/",
+      "observedAt": "2026-11-22T19:10:04+09:00",
+      "lastSuccessfulAt": null,
+      "httpStatus": 403,
+      "bytes": 199,
+      "result": "access_limited",
+      "note": "直取得403。関連の公式情報は取得済みの総合・個別告知で一部照合、一覧の全件確認とはしない。"
+    },
+    {
+      "url": "https://chiikawapark-tokyo.jp/",
+      "observedAt": "2026-11-22T19:10:02+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:10:02+09:00",
+      "httpStatus": 200,
+      "bytes": 37596,
+      "result": "http_body",
+      "note": "公式公開ページ本文取得。"
+    },
+    {
+      "url": "https://faq.gu-global.com/articles/Knowledge/100015685/",
+      "observedAt": "2026-11-22T19:10:05+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:10:05+09:00",
+      "httpStatus": 200,
+      "bytes": 243175,
+      "result": "http_body",
+      "note": "公式公開ページ本文取得。"
+    },
+    {
+      "url": "https://www.lucua.jp/south-entry/",
+      "observedAt": "2026-11-22T19:10:06+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:10:06+09:00",
+      "httpStatus": 200,
+      "bytes": 116921,
+      "result": "http_body",
+      "note": "掲載済みのLUCUA入場案内を再照合。"
+    },
+    {
+      "url": "https://www.kurasushi.co.jp/topic/009011.html",
+      "observedAt": "2026-11-22T19:10:03+09:00",
+      "lastSuccessfulAt": "2026-11-22T19:10:03+09:00",
+      "httpStatus": 200,
+      "bytes": 4380,
+      "result": "http_body",
+      "note": "公式企画と既存コラボIDを照合。新規登録なし。"
+    }
+  ],
+  "status": {
+    "archiveCandidates": 0,
+    "endDateToday": 9,
+    "linkWorkflowLastRun": 43785916675
+  }
+}
