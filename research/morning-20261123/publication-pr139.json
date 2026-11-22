@@ -1,0 +1,40 @@
+{
+  "observedAt": "2026-11-22T19:17:01.181645+09:00",
+  "paths": [
+    {
+      "path": "data/official-spots.json",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "812a5abfb4e315a11b04942a3f66f5069e3a1ed334b1a1ff7a7e9ad378f570b4"
+    },
+    {
+      "path": "data/official-events-archive.json",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "6c06374922c8da44622904c933a1f85dd9523545417b714a407eb10c66751d82"
+    },
+    {
+      "path": "data/collaborations-current.json",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "e4c41c6b9d2408bd72273f938417ee721667230e226a79174c341bb633cc6cce"
+    },
+    {
+      "path": "spot/chiikawa-bakery-tokyo/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-tokyo/",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "b8ba82a320127828282ad5c4cbaa417d8d653d2d3fdc3b2bab2dbbd931f1fcc1"
+    },
+    {
+      "path": "spot/chiikawa-bakery-osaka/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-bakery-osaka/",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "7bcac7b4b8247e8981417e3a39d447a6b1a1df37c761dc3799db91cf4e69ce0e"
+    }
+  ]
+}
