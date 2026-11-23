@@ -1,0 +1,42 @@
+{
+  "pullRequest": 141,
+  "mainCommit": "e94d898de330dc9e52bb90877c1a57aeae7a9311",
+  "observedAt": "2026-11-23T08:15:51+09:00",
+  "paths": [
+    {
+      "path": "data/collaborations-current.json",
+      "url": "https://chiikatsu-map.com/data/collaborations-current.json",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "88abfddf5f4d438ec6682fc9d2619511f4cbaa3d48c47f904c26e1e66a9a1794"
+    },
+    {
+      "path": "data/official-events-archive.json",
+      "url": "https://chiikatsu-map.com/data/official-events-archive.json",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "f38294a02a90b799f4dcccc00520e071aa49987999c3b803b1cd51239748a545"
+    },
+    {
+      "path": "data/official-spots.json",
+      "url": "https://chiikatsu-map.com/data/official-spots.json",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "4b89c19df9782e0b6b8f834e56371423f52a396bdff47f43a8a215909e86aa11"
+    },
+    {
+      "path": "spot/chiikawa-christmas-market-2026-toyosuna/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-christmas-market-2026-toyosuna/",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "3f8bd5be2fd6cec04080fd4f61476eec2bdd74a04ecee3e8474e9b334c2be167"
+    },
+    {
+      "path": "spot/chiikawa-photo-2026-12-26-aeon-omuta/index.html",
+      "url": "https://chiikatsu-map.com/spot/chiikawa-photo-2026-12-26-aeon-omuta/",
+      "httpStatus": 200,
+      "expectedEquals": true,
+      "sha256": "62aaad5599e9a5116c02ffaec12a1184c27f126ea77d316b6025f824dd23130f"
+    }
+  ]
+}
