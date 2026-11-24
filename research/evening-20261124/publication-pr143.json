@@ -1,0 +1,34 @@
+{
+  "pullRequest": 143,
+  "mainCommit": "8900cc4d07301cf0344dcdede858455de1f0ddba",
+  "pagesRun": "https://github.com/route0254/chiikawa-map/actions/runs/45285828404",
+  "exactPublishStartedAt": null,
+  "observations": [
+    {
+      "observedAt": "2026-11-24T08:07:38.822+09:00",
+      "publicPathsMatched": [
+        "data/official-spots.json",
+        "data/official-events-archive.json",
+        "data/collaborations-current.json",
+        "data/site-meta.json",
+        "sitemap.xml",
+        "spot/chiikawa-muchaphoto-2026-11-21-aeon-kasai-hojo/index.html"
+      ]
+    },
+    {
+      "observedAt": "2026-11-24T08:09:22.748+09:00",
+      "publicPathsMatched": [
+        "index.html",
+        "official.html",
+        "spot/chiikawa-pocket-2026-10-24-ikebukuro-parco/index.html",
+        "spot/chiikawa-pocket-2026-11-03-aeonmall-sendai-kamisugi/index.html",
+        "spot/chiikawa-pocket-2026-11-06-fukuoka-parco/index.html",
+        "spot/chiikawa-workshop-2026-11-23-aeon-kofu-showa/index.html",
+        "spot/popup-2026-11-06-aeon-suzaka/index.html",
+        "spot/chiikawa-muchaphoto-2026-11-23-aeon-narita/index.html",
+        "spot/chiikawa-muchaphoto-2026-11-23-aeon-inagawa/index.html"
+      ]
+    }
+  ],
+  "note": "15ファイルは同一mainコミットとHTTP 200・バイト一致。候補の公開時刻は一覧JSONを最初に確認した時点であり、別途行った個別ページの照合時刻や正確な公開開始時刻ではない。"
+}
