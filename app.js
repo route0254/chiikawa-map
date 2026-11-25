@@ -7874,9 +7874,11 @@ function createSpotGroupMarker(records, coordinateKey) {
     name.textContent = record.spot.name;
     const status = document.createElement("span");
     status.className = "spot-group-status";
+    const cancelled = isCancelledEvent(record.spot);
     status.textContent = archiveStatus(record)
-      ? "履歴"
-      : getPeriodStatusLabel(isCancelledEvent(record.spot) ? "cancelled" : getSpotPeriodStatus(record.spot));
+      ? (cancelled ? "履歴・開催中止" : "履歴")
+      : getPeriodStatusLabel(cancelled ? "cancelled" : getSpotPeriodStatus(record.spot));
+    if (cancelled) status.classList.add("is-cancelled");
     if (record.spot.startDate || record.spot.endDate) {
       status.textContent += " · " + [record.spot.startDate, record.spot.endDate]
         .filter(Boolean).map(formatDate).join("〜");

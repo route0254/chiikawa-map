@@ -2161,6 +2161,11 @@ button {
   font-weight: 500;
 }
 
+.spot-group-status.is-cancelled {
+  color: #9b3158;
+  font-weight: 700;
+}
+
 /* 単独ピンのスポット名 */
 .spot-name-label {
   max-width: 220px;

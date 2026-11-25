@@ -1330,6 +1330,18 @@ test(
       )
     ).toContainText("開催中止");
 
+    // The real station shares coordinates with multiple histories. Its
+    // cancelled record must keep that status in the chooser as well as
+    // on an individual pin when the active search narrows it down.
+    const point = cancelledSpot.lat.toFixed(6) + "," + cancelledSpot.lng.toFixed(6);
+    const groupMarker = page.locator(`.spot-group-marker[data-spot-group="${point}"]`);
+    await groupMarker.click();
+    const cancelledOption = page.locator(`.spot-group-option[data-spot-id="${cancelledSpot.id}"]`);
+    await expect(cancelledOption.locator(".spot-group-status.is-cancelled")).toContainText("開催中止");
+    await cancelledOption.click();
+    await expect(page.locator("#spot-detail-title")).toHaveText(cancelledSpot.name);
+    await page.locator("#spot-search").fill(cancelledSpot.name);
+
     await expect(
       page.locator(
         '[data-spot-id="' +
@@ -2523,9 +2535,10 @@ test.describe("スマホの同地点ピン", () => {
 
     async function setPast(value) {
       await toggle.tap();
-      await ended.setChecked(value);
+      await page.locator("label.filter-chip-archive > span").tap();
+      await expect(ended).toBeChecked({ checked: value });
       await expect(ended).toBeEnabled();
-      await toggle.tap();
+      await page.locator("#filter-close").tap();
       if (value) await expect(marker).toHaveText(String(expected.length));
     }
     await setPast(true);
