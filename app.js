@@ -1947,9 +1947,9 @@ function focusSpotRecord(
     openRecord();
     if(options.fromSearch && typeof spotLayer.zoomToShowLayer === 'function') {
       const openedRequest=mapSelectionRequest;
-      spotLayer.zoomToShowLayer(record.marker,()=>{
+      spotLayer.zoomToShowLayer(getDisplayedSpotMarker(record),()=>{
         if(openedRequest!==mapSelectionRequest || selectedRecord!==record)return;
-        record.marker.getElement()?.classList.add('is-selected');
+        getDisplayedSpotMarker(record).getElement()?.classList.add('is-selected');
       });
     }
   } else if (
@@ -1957,7 +1957,7 @@ function focusSpotRecord(
     "function"
   ) {
     spotLayer.zoomToShowLayer(
-      record.marker,
+      getDisplayedSpotMarker(record),
       openRecord
     );
   } else {
@@ -2709,7 +2709,7 @@ function createClusterIcon(
 
 
   const count =
-    cluster.getChildCount();
+    markers.reduce((total, marker) => total + (marker.options.spotGroup?.length || 1), 0);
 
 
   let hasOfficial =
@@ -2724,9 +2724,9 @@ function createClusterIcon(
     marker => {
 
       if (
-        marker.options
-          .spotCategory ===
-        "official"
+        marker.options.spotGroup
+          ? marker.options.spotGroup.some(record => record.spot.category === "official")
+          : marker.options.spotCategory === "official"
       ) {
 
         hasOfficial =
@@ -2735,9 +2735,9 @@ function createClusterIcon(
 
 
       if (
-        marker.options
-          .spotCategory ===
-        "nagano"
+        marker.options.spotGroup
+          ? marker.options.spotGroup.some(record => record.spot.category === "nagano")
+          : marker.options.spotCategory === "nagano"
       ) {
 
         hasNagano =
@@ -2927,6 +2927,13 @@ spotLayer.addTo(
 
 const spotRecords =
   [];
+
+const groupedSpotMarkers = new Map();
+let openSpotGroup = null;
+
+function getDisplayedSpotMarker(record) {
+  return groupedSpotMarkers.get(record) || record.marker;
+}
 
 
 let selectedRecord =
@@ -7589,7 +7596,7 @@ function showSpotDetail(
     selectedRecord
   ) {
 
-    selectedRecord.marker
+    getDisplayedSpotMarker(selectedRecord)
       .getElement()
       ?.classList
       .remove(
@@ -7618,7 +7625,7 @@ function showSpotDetail(
   );
 
 
-  record.marker
+  getDisplayedSpotMarker(record)
     .getElement()
     ?.classList
     .add(
@@ -7698,7 +7705,7 @@ function closeSpotDetail(
     selectedRecord
   ) {
 
-    selectedRecord.marker
+    getDisplayedSpotMarker(selectedRecord)
       .getElement()
       ?.classList
       .remove(
@@ -7812,128 +7819,140 @@ function getDuplicateTooltipDirection(
     ]
   };
 
-  const pattern =
-    directionPatterns[count];
-
-  if (
-    pattern?.[index]
-  ) {
-    return pattern[index];
-  }
-
-  const markerAngle =
-    -(
-      index + 1
-    ) *
-    Math.PI * 2 /
-    count;
-
-  const horizontal =
-    Math.cos(markerAngle);
-
-  const vertical =
-    Math.sin(markerAngle);
-
-  if (
-    Math.abs(horizontal) >=
-    Math.abs(vertical)
-  ) {
-    return horizontal >= 0
-      ? "right"
-      : "left";
-  }
-
-  return vertical >= 0
-    ? "bottom"
-    : "top";
+  return directionPatterns[count]?.[index] || "top";
 }
 
 
-function createDuplicateTooltipLayoutMap(
-  spots
-) {
+// The individual pin/label layout has distinct outward positions for up
+// to six records. Denser exact-coordinate groups need one explicit chooser.
+const MAX_INDIVIDUAL_SPOTS_AT_POINT = 6;
 
-  const coordinateGroups =
-    new Map();
+function groupVisibleRecordsByPoint(records) {
+  const groups = new Map();
+  for (const record of records) {
+    const key = getSpotCoordinateKey(record.spot);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(record);
+  }
+  return groups;
+}
 
-  spots.forEach(
-    spot => {
-      if (
-        typeof spot.lat !==
-          "number" ||
-        typeof spot.lng !==
-          "number"
-      ) {
-        return;
-      }
+function createSpotGroupMarker(records, coordinateKey) {
+  const first = records[0].spot;
+  const count = records.length;
+  const label = "同じ地点のスポット " + count + "件を選ぶ";
+  const marker = L.marker([first.lat, first.lng], {
+    icon: L.divIcon({
+      className: "spot-group-marker",
+      html: '<span aria-hidden="true">' + count + '</span>',
+      iconSize: [44, 44],
+      iconAnchor: [22, 22]
+    }),
+    spotGroup: records,
+    title: label,
+    alt: label,
+    zIndexOffset: 500
+  });
 
-      const coordinateKey =
-        getSpotCoordinateKey(spot);
-
-      const group =
-        coordinateGroups.get(
-          coordinateKey
-        ) || [];
-
-      group.push(spot);
-
-      coordinateGroups.set(
-        coordinateKey,
-        group
-      );
+  const panel = document.createElement("section");
+  panel.className = "spot-group-panel";
+  panel.setAttribute("aria-label", label);
+  const heading = createDiv("spot-group-heading", "同じ地点のスポット（" + count + "件）");
+  const list = document.createElement("ul");
+  list.className = "spot-group-list";
+  panel.append(heading, list);
+  const archiveStatus = record => getSpotPeriodStatus(record.spot) === "ended";
+  const ordered = [...records].sort((a, b) =>
+    Number(archiveStatus(a)) - Number(archiveStatus(b)));
+  for (const record of ordered) {
+    const item = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "spot-group-option";
+    button.dataset.spotId = record.spot.id;
+    const name = document.createElement("span");
+    name.textContent = record.spot.name;
+    const status = document.createElement("span");
+    status.className = "spot-group-status";
+    status.textContent = archiveStatus(record)
+      ? "履歴"
+      : getPeriodStatusLabel(isCancelledEvent(record.spot) ? "cancelled" : getSpotPeriodStatus(record.spot));
+    if (record.spot.startDate || record.spot.endDate) {
+      status.textContent += " · " + [record.spot.startDate, record.spot.endDate]
+        .filter(Boolean).map(formatDate).join("〜");
     }
-  );
-
-  const layouts =
-    new Map();
-
-  coordinateGroups.forEach(
-    group => {
-      if (
-        group.length < 2
-      ) {
-        return;
+    button.append(name, status);
+    button.addEventListener("click", () => {
+      marker.closePopup();
+      showSpotDetail(record, { scrollOnMobile: true, returnFocusTo: marker.getElement() });
+    });
+    item.append(button);
+    list.append(item);
+  }
+  marker.bindPopup(panel, {
+    className: "spot-group-popup",
+    maxWidth: 290,
+    minWidth: 180,
+    autoPanPadding: [18, 18],
+    closeOnEscapeKey: false
+  });
+  marker.on("add", () => {
+    const element = marker.getElement();
+    if (!element) return;
+    element.dataset.spotGroup = coordinateKey;
+    element.setAttribute("aria-label", label);
+    element.setAttribute("aria-expanded", "false");
+    element.addEventListener("keydown", event => {
+      if (event.key === " ") {
+        event.preventDefault();
+        marker.togglePopup();
       }
-
-      group.forEach(
-        (spot, index) => {
-          const direction =
-            getDuplicateTooltipDirection(
-              index,
-              group.length
-            );
-
-          const offsets = {
-            top: [0, -80],
-            right: [40, 0],
-            bottom: [0, 80],
-            left: [-40, 0]
-          };
-
-          layouts.set(
-            spot.id,
-            {
-              direction,
-              offset:
-                offsets[direction],
-              groupSize:
-                group.length,
-              groupIndex:
-                index
-            }
-          );
-        }
-      );
+    });
+  });
+  marker.on("popupopen", () => {
+    openSpotGroup = marker;
+    marker.getElement()?.setAttribute("aria-expanded", "true");
+    requestAnimationFrame(() => {
+      if (openSpotGroup === marker) list.querySelector("button")?.focus({ preventScroll: true });
+    });
+  });
+  marker.on("popupclose", () => {
+    if (openSpotGroup === marker) openSpotGroup = null;
+    const element = marker.getElement();
+    element?.setAttribute("aria-expanded", "false");
+    if (element?.isConnected && (document.activeElement === document.body ||
+        panel.contains(document.activeElement) ||
+        marker.getPopup().getElement()?.contains(document.activeElement))) {
+      element?.focus({ preventScroll: true });
     }
-  );
+  });
+  return marker;
+}
 
-  return layouts;
+function addVisibleSpotMarkers(records) {
+  groupedSpotMarkers.clear();
+  const offsets = { top: [0, -80], right: [40, 0], bottom: [0, 80], left: [-40, 0] };
+  for (const [key, group] of groupVisibleRecordsByPoint(records)) {
+    if (group.length > MAX_INDIVIDUAL_SPOTS_AT_POINT) {
+      const marker = createSpotGroupMarker(group, key);
+      for (const record of group) groupedSpotMarkers.set(record, marker);
+      continue;
+    }
+    group.forEach((record, index) => {
+      const direction = group.length > 1
+        ? getDuplicateTooltipDirection(index, group.length)
+        : null;
+      setSpotTooltip(record, direction, direction && offsets[direction]);
+    });
+  }
+  // Preserve marker insertion order (the cluster plugin uses it for spiderfying).
+  const markers = new Set(records.map(getDisplayedSpotMarker));
+  for (const marker of markers) spotLayer.addLayer(marker);
 }
 
 
 function createSpotRecord(
-  spot,
-  tooltipLayout = null
+  spot
 ) {
 
   if (
@@ -8018,37 +8037,6 @@ function createSpotRecord(
   };
 
 
-  marker.bindTooltip(
-    markerLabel,
-    {
-      permanent:
-        true,
-
-      direction:
-        tooltipLayout?.direction ||
-        "top",
-
-      offset:
-        tooltipLayout?.offset ||
-        [0, -15],
-
-      opacity:
-        1,
-
-      className:
-        "spot-name-label" +
-        (
-          tooltipLayout
-            ? " spot-name-label-duplicate " +
-              "spot-name-label-" +
-              tooltipLayout.direction
-            : ""
-        ),
-
-      interactive:
-        false
-    }
-  );
 
 
   marker.on(
@@ -8077,7 +8065,7 @@ function createSpotRecord(
         );
 
       if (
-        !tooltipLayout ||
+        !record.tooltipDirection ||
         !tooltipElement ||
         tooltipElement.dataset
           .spotActionBound ===
@@ -8165,6 +8153,27 @@ function createSpotRecord(
 
 
   return record;
+}
+
+
+function setSpotTooltip(record, direction, offset) {
+  if (record.tooltipDirection === direction) return;
+  record.tooltipDirection = direction;
+  const marker = record.marker;
+  marker.unbindTooltip();
+  // Leaflet interprets strings as HTML. Names must stay plain text here.
+  const label = document.createElement("span");
+  label.textContent = marker.options.title;
+  marker.bindTooltip(label, {
+    permanent: true,
+    direction: direction || "top",
+    offset: offset || [0, -15],
+    opacity: 1,
+    className: "spot-name-label" + (direction
+      ? " spot-name-label-duplicate spot-name-label-" + direction
+      : ""),
+    interactive: false
+  });
 }
 
 
@@ -8750,59 +8759,18 @@ function updateSpotFilters() {
   spotLayer.clearLayers();
 
 
-  let visibleCount =
-    0;
+  const visibleRecords = spotRecords.filter(record => recordMatchesFilters(record, filterState));
+  const visibleCount = visibleRecords.length;
+  addVisibleSpotMarkers(visibleRecords);
 
-
-  const visibleRecords =
-    [];
-
-
-  spotRecords.forEach(
-    record => {
-
-      if (
-        recordMatchesFilters(
-          record,
-          filterState
-        )
-      ) {
-
-        spotLayer.addLayer(
-          record.marker
-        );
-
-
-        visibleCount++;
-
-
-        visibleRecords.push(
-          record
-        );
-
-
-        if (
-          record ===
-          selectedRecord
-        ) {
-
-          requestAnimationFrame(
-            () => {
-
-              record.marker
-                .getElement()
-                ?.classList
-                .add(
-                  "is-selected"
-                );
-
-            }
-          );
-        }
+  if (selectedRecord) {
+    const selected = selectedRecord;
+    requestAnimationFrame(() => {
+      if (selectedRecord === selected) {
+        getDisplayedSpotMarker(selected).getElement()?.classList.add("is-selected");
       }
-    }
-  );
-
+    });
+  }
 
   if (
     resultCount
@@ -9283,11 +9251,6 @@ function appendSpotRecords(
   spots
 ) {
 
-  const duplicateTooltipLayouts =
-    createDuplicateTooltipLayoutMap(
-      spots
-    );
-
   let addedCount = 0;
   let skippedCount = 0;
 
@@ -9310,10 +9273,7 @@ function appendSpotRecords(
 
       const record =
         createSpotRecord(
-          spot,
-          duplicateTooltipLayouts.get(
-            spot.id
-          ) || null
+          spot
         );
 
       if (record) {
@@ -9660,11 +9620,9 @@ async function loadSpots() {
         : null;
 
     if (
-      sharedRecord &&
-      getSpotPeriodStatus(
-        sharedRecord.spot
-      ) === "ended" &&
-      endedFilter
+      endedFilter &&
+      (shouldLoadArchiveInitially && archiveDataLoaded ||
+        sharedRecord && getSpotPeriodStatus(sharedRecord.spot) === "ended")
     ) {
       endedFilter.checked = true;
     }
@@ -10495,6 +10453,13 @@ document.addEventListener(
       return;
     }
 
+
+    if (openSpotGroup) {
+      const marker = openSpotGroup;
+      marker.closePopup();
+      marker.getElement()?.focus({ preventScroll: true });
+      return;
+    }
 
     const extraTools = document.getElementById("map-extra-tools");
     if (extraTools?.open) {
