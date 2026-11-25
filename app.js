@@ -2930,6 +2930,7 @@ const spotRecords =
 
 const groupedSpotMarkers = new Map();
 let openSpotGroup = null;
+let lastActiveSpotGroupPoint = null;
 
 function getDisplayedSpotMarker(record) {
   return groupedSpotMarkers.get(record) || record.marker;
@@ -7608,6 +7609,9 @@ function showSpotDetail(
   selectedRecord =
     record;
 
+  if (groupedSpotMarkers.has(record)) {
+    lastActiveSpotGroupPoint = getSpotCoordinateKey(record.spot);
+  }
 
   detailBody.replaceChildren(
     createSpotDetail(
@@ -7913,6 +7917,7 @@ function createSpotGroupMarker(records, coordinateKey) {
   });
   marker.on("popupopen", () => {
     openSpotGroup = marker;
+    lastActiveSpotGroupPoint = coordinateKey;
     marker.getElement()?.setAttribute("aria-expanded", "true");
     requestAnimationFrame(() => {
       if (openSpotGroup === marker) list.querySelector("button")?.focus({ preventScroll: true });
@@ -8758,12 +8763,37 @@ function updateSpotFilters() {
   }
 
 
+  // If the user is working with an open same-point group, keep that
+  // location expanded when filters turn the group back into ordinary pins.
+  const activePoint = lastActiveSpotGroupPoint;
+  const previousGroupedRecord = activePoint && [...groupedSpotMarkers].find(([record, marker]) =>
+    getSpotCoordinateKey(record.spot) === activePoint &&
+    marker.getElement()?.isConnected &&
+    map.getBounds().contains(marker.getLatLng())
+  );
   spotLayer.clearLayers();
 
 
   const visibleRecords = spotRecords.filter(record => recordMatchesFilters(record, filterState));
   const visibleCount = visibleRecords.length;
   addVisibleSpotMarkers(visibleRecords);
+
+  if (previousGroupedRecord && typeof spotLayer.getVisibleParent === "function") {
+    const localRecords = visibleRecords.filter(record => getSpotCoordinateKey(record.spot) === activePoint);
+    if (localRecords.length > 1 && !groupedSpotMarkers.has(localRecords[0])) {
+      const request = mapSelectionRequest;
+      const marker = localRecords.find(record => record === selectedRecord)?.marker || localRecords[0].marker;
+      requestAnimationFrame(() => {
+        if (request !== mapSelectionRequest || !spotLayer.hasLayer(marker)) return;
+        const cluster = spotLayer.getVisibleParent(marker);
+        // Only open the exact-point cluster, not an unrelated nearby cluster.
+        if (cluster?.getAllChildMarkers?.().length === localRecords.length &&
+            cluster.getAllChildMarkers().every(child => localRecords.some(record => record.marker === child))) {
+          cluster.spiderfy();
+        }
+      });
+    }
+  }
 
   if (selectedRecord) {
     const selected = selectedRecord;
