@@ -1330,6 +1330,18 @@ test(
       )
     ).toContainText("開催中止");
 
+    // The real station shares coordinates with multiple histories. Its
+    // cancelled record must keep that status in the chooser as well as
+    // on an individual pin when the active search narrows it down.
+    const point = cancelledSpot.lat.toFixed(6) + "," + cancelledSpot.lng.toFixed(6);
+    const groupMarker = page.locator(`.spot-group-marker[data-spot-group="${point}"]`);
+    await groupMarker.click();
+    const cancelledOption = page.locator(`.spot-group-option[data-spot-id="${cancelledSpot.id}"]`);
+    await expect(cancelledOption.locator(".spot-group-status.is-cancelled")).toContainText("開催中止");
+    await cancelledOption.click();
+    await expect(page.locator("#spot-detail-title")).toHaveText(cancelledSpot.name);
+    await page.locator("#spot-search").fill(cancelledSpot.name);
+
     await expect(
       page.locator(
         '[data-spot-id="' +
@@ -1993,6 +2005,7 @@ test(
       // 現行全件（新POPUPを含む）は別の非モック検査で検証する。
       "chiikawa-pocket-2026-11-13-nagoya-parco",
       "chiikawa-clinic-2026-11-27-nagoya-parco",
+      "chiikawa-bakery-popup-2026-12-11-nagoya-parco",
       "popup-2026-11-24-jr-ikebukuro"
     ], {
       "collab-skytree-2026": "collab-tokyo-metro-escape",
@@ -2133,7 +2146,8 @@ test(
       "movie-cafe-nagoya"
     ], [
       "chiikawa-pocket-2026-11-13-nagoya-parco",
-      "chiikawa-clinic-2026-11-27-nagoya-parco"
+      "chiikawa-clinic-2026-11-27-nagoya-parco",
+      "chiikawa-bakery-popup-2026-12-11-nagoya-parco"
     ], {
       "ramen-buta-nagoya": "chiikawa-yaki-nagoya",
       "movie-cafe-nagoya": "nagano-market-popup-2026-09-04-nagoya-p"
@@ -2435,6 +2449,115 @@ for (const location of [
 
 }
 
+
+const NAGOYA_LAND = "chiikawaland-nagoya";
+const NAGOYA_BAKERY = "chiikawa-bakery-popup-2026-12-11-nagoya-parco";
+const NAGOYA_ARCHIVE = "pocket-popup-nagoya";
+const NAGOYA_POINT = '.spot-group-marker[data-spot-group="35.163600,136.907400"]';
+const NAGOYA_TODAY = new Date("2026-11-25T03:00:00Z");
+
+async function realNagoyaSpots() {
+  const sources = ["official-spots", "nagano-spots", "community-spots", "official-events-archive"];
+  return (await Promise.all(sources.map(async file =>
+    JSON.parse(await readFile(resolve(projectDirectory, "data", file + ".json"), "utf8"))
+  ))).flat().filter(spot => spot.lat === 35.1636 && spot.lng === 136.9074);
+}
+
+test("名古屋PARCOの履歴付き共有URLから実データ全件を正しい詳細に開ける", async ({ page }) => {
+  await page.clock.setFixedTime(NAGOYA_TODAY);
+  test.setTimeout(70000);
+  const expected = await realNagoyaSpots();
+  const bakery = expected.find(spot => spot.id === NAGOYA_BAKERY);
+  const archived = expected.find(spot => spot.id === NAGOYA_ARCHIVE);
+  expect(bakery).toBeTruthy();
+  expect(archived).toBeTruthy();
+  expect(expected.length).toBeGreaterThan(6);
+  await page.goto("/?spot=" + NAGOYA_LAND + "&past=1");
+
+  const marker = page.locator(NAGOYA_POINT);
+  const options = page.locator(".spot-group-option");
+  const detail = page.locator("#spot-detail-panel");
+  await expect(detail.locator("#spot-detail-title")).toHaveText(
+    expected.find(spot => spot.id === NAGOYA_LAND).name
+  );
+  await expect(page.locator("#filter-ended")).toBeChecked();
+  await expect(marker).toHaveText(String(expected.length));
+  await page.locator("#detail-close").click();
+
+  await marker.focus();
+  await marker.press("Enter");
+  await expect(marker).toHaveAttribute("aria-expanded", "true");
+  await expect(options.first()).toBeFocused();
+  await expect(options).toHaveCount(expected.length);
+  expect(await options.evaluateAll(buttons => buttons.map(button => button.dataset.spotId).sort()))
+    .toEqual(expected.map(spot => spot.id).sort());
+  await page.keyboard.press("Escape");
+  await expect(options).toHaveCount(0);
+  await expect(marker).toBeFocused();
+
+  for (const spot of expected) {
+    await marker.click();
+    const exact = page.locator(`.spot-group-option[data-spot-id="${spot.id}"]`);
+    await expect(exact).toContainText(spot.name);
+    if (spot.id === NAGOYA_ARCHIVE) await expect(exact).toContainText("履歴");
+    if (spot.id === NAGOYA_BAKERY) await expect(exact).toContainText("開催前");
+    await exact.click();
+    await expect(detail.locator("#spot-detail-title")).toHaveText(spot.name);
+    if (spot.address) await expect(detail.locator(".spot-address")).toContainText(spot.address);
+    await expect(marker).toHaveAttribute("aria-expanded", "false");
+    await page.locator("#detail-close").click();
+    await expect(marker).toBeFocused();
+  }
+
+  // An archive deep link without past=1 still fetches the archive and opens the exact spot.
+  await page.goto("/?spot=" + NAGOYA_ARCHIVE);
+  await expect(detail.locator("#spot-detail-title")).toHaveText(archived.name);
+  await expect(page.locator("#filter-ended")).toBeChecked();
+  await expect(marker).toHaveText(String(expected.length));
+});
+
+test.describe("スマホの同地点ピン", () => {
+  test.use({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+
+  test("履歴を後から読み込み、入切とタップで開催前・履歴の詳細を開ける", async ({ page }) => {
+    await page.clock.setFixedTime(NAGOYA_TODAY);
+    const expected = await realNagoyaSpots();
+    await page.goto("/?spot=" + NAGOYA_LAND);
+    const detail = page.locator("#spot-detail-panel");
+    await expect(detail).toBeVisible();
+    await expect(page.locator(NAGOYA_POINT)).toHaveCount(0);
+    await page.locator("#detail-close").tap();
+    const anchorPin = page.locator('.spot-marker[data-spot-id="' + NAGOYA_LAND + '"]');
+    await expect(anchorPin).toBeVisible();
+    const toggle = page.locator("#filter-toggle");
+    const ended = page.locator("#filter-ended");
+    const marker = page.locator(NAGOYA_POINT);
+
+    async function setPast(value) {
+      await toggle.tap();
+      await page.locator("label.filter-chip-archive > span").tap();
+      await expect(ended).toBeChecked({ checked: value });
+      await expect(ended).toBeEnabled();
+      await page.locator("#filter-close").tap();
+      if (value) await expect(marker).toHaveText(String(expected.length));
+    }
+    await setPast(true);
+    for (const id of [NAGOYA_BAKERY, NAGOYA_ARCHIVE]) {
+      await marker.tap();
+      const option = page.locator(`.spot-group-option[data-spot-id="${id}"]`);
+      const rect = await option.boundingBox();
+      expect(rect.height).toBeGreaterThanOrEqual(44);
+      await option.tap();
+      await expect(detail.locator("#spot-detail-title")).toHaveText(expected.find(spot => spot.id === id).name);
+      await page.locator("#detail-close").tap();
+    }
+    await setPast(false);
+    await expect(marker).toHaveCount(0);
+    await expect(anchorPin).toBeVisible();
+    await setPast(true);
+    await expect(marker).toBeVisible();
+  });
+});
 
 test(
   "スマートフォン幅で主要操作を44px以上に保つ",
